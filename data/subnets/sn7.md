@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-07-28T12:11:51Z  |  block: 8720370  |  row_status: ok
+snapshot_utc: 2026-07-28T12:13:44Z  |  block: 8720379  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.41608464252203703**
-- registration cost: 0.15 TAO (28.1865 USD), open=True
+- miner_burn: **0.5039360832888633**
+- registration cost: 0.15 TAO (28.194 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 28  |  free: 0
 - subnet age: 846.2 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1187.4448623578487** (uid 73) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.2186477808424069
-- top_miner_usd_day: 1187.4448623578487 (uid 73, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1187.7608234196225** (uid 73) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.21870595969953066
+- top_miner_usd_day: 1187.7608234196225 (uid 73, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
 - earners: 16  |  gini: 0.8837966637160037  |  top1_share: 0.580202069533897  |  top10_share: 0.999893165654284
-- owner_incentive_share: 0.4161655627117609 (independent check on miner_burn; disagreement 0.0001)
+- owner_incentive_share: 0.4161655627117609 (independent check on miner_burn; disagreement 0.0878)
 
 ## Repository
 
@@ -36,7 +36,7 @@ snapshot_utc: 2026-07-28T12:11:51Z  |  block: 8720370  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.0318 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.0317 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

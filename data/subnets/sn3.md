@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-07-28T07:29:48Z  |  block: 8718960  |  row_status: ok
+snapshot_utc: 2026-07-28T08:02:24Z  |  block: 8719123  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.005677314 TAO (1.06614279606 USD), open=True
+- registration cost: 0.016598238 TAO (3.10453443552 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
 - subnet age: 632.4 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3399.0059063620815** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 3399.0059063620815
-- top_miner_usd_day: 3399.0059063620815 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3385.6833355968965** (uid 21) <- the only figure quotable as achievable
+- median_miner_usd_day: 3385.6833355968965
+- top_miner_usd_day: 3385.6833355968965 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-07-28T07:29:48Z  |  block: 8718960  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3390.7867 USD/day  |  payback on registration: 0.0 days
+- net margin: 3377.4642 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 32.0 (rank 55), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
-- components: income 32.11 / freshness 0.0 / resource 11.25 / registration 10.0
+- components: income 32.09 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

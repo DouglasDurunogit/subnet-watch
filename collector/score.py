@@ -127,6 +127,18 @@ def _confidence(row: Dict[str, Any]) -> tuple:
     if row.get("repo_status") not in ("ok", "redirected"):
         reasons.append(f"repo {row.get('repo_status')}")
 
+    # A median over one or two samples is not an estimate. Scoring the median
+    # instead of the ceiling fixed the winner-take-all bias, but on a subnet with
+    # a single competitive miner the two are the same number by definition, so
+    # the fix buys nothing there and the figure deserves the same scepticism as
+    # missing data. 31 ranked subnets are in this position, 6 of them in the top
+    # 8 - so this is the difference between a supported ranking and a confident
+    # one built on n=1.
+    ce = _f(row, "competitive_earners")
+    if ce is not None and ce <= 2 and _f(row, "net_margin_usd_day") is not None:
+        reasons.append(f"income rests on {int(ce)} competitive miner"
+                       f"{'s' if ce != 1 else ''} (n<=2: not a distribution)")
+
     if not reasons:
         return 1.00, ""
     if len(reasons) == 1:

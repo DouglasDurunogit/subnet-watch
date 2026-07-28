@@ -150,6 +150,8 @@ def build_row(nid: int, sw: Dict[str, Any], now_iso: str) -> Dict[str, Any]:
             "competitive_miner_usd_day": a["competitive_miner_usd_day"],
             "competitive_miner_alpha_day": a["competitive_miner_alpha_day"],
             "competitive_miner_uid": a["competitive_miner_uid"],
+            "competitive_median_usd_day": a["competitive_median_usd_day"],
+            "competitive_earners": a["competitive_earners"],
             "median_miner_usd_day": d["median_miner_usd_day"],
             "top_miner_usd_day": a["top_miner_usd_day"],
             "top_miner_uid": a["top_miner_uid"],

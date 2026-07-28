@@ -295,20 +295,26 @@ def write_dashboard(path: str, rows: List[Dict[str, Any]], manifest: Dict[str, A
         "",
         "## Top 20",
         "",
-        "| # | subnet | score | net $/day | machine | burn | earners | top-1 share |",
-        "|---:|---|---:|---:|---|---:|---:|---:|",
+        "| # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |",
+        "|---:|---|---:|---:|---:|---|---:|---:|",
     ]
     for r in ranked[:20]:
-        nm, b, t1 = _f(r, "net_margin_usd_day"), _f(r, "miner_burn"), _f(r, "top1_share")
+        nm, top, t1 = (_f(r, "net_margin_usd_day"), _f(r, "net_margin_top_usd_day"),
+                       _f(r, "top1_share"))
         asm = "*" if str(r.get("machine_assumed")) == "True" else ""
         L.append(
             f"| {r['rank']} | sn{r['netuid']} {str(r.get('name',''))[:16]} | {r.get('score','')} "
             f"| {('%.2f' % nm) if nm is not None else 'n/a'} "
-            f"| {r.get('machine_class_cheapest','n/a')}{asm} "
-            f"| {('%.2f' % b) if b is not None else 'n/a'} | {r.get('earners','')} "
+            f"| {('%.0f' % top) if top is not None else 'n/a'} "
+            f"| {r.get('machine_class_cheapest','n/a')}{asm} | {r.get('earners','')} "
             f"| {('%.0f%%' % (t1*100)) if t1 is not None else 'n/a'} |"
         )
     L += [
+        "",
+        "`net $/day (median)` is what a newcomer should expect: the MEDIAN non-owner,",
+        "non-permitted miner, minus machine cost. `ceiling $/day` is the BEST competitive",
+        "miner - reachable only by beating everyone already there. Where the two diverge",
+        "wildly, the subnet is winner-take-all and the ceiling is not a plan.",
         "",
         "`*` = machine is an assumed default; no hardware evidence was found for that subnet.",
         "",

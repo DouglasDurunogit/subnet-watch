@@ -215,6 +215,21 @@ def analyze(
     earner_alpha = [p["miner_alpha_day"] for p in miners]
     earner_sorted = sorted(earner_alpha)
 
+    # The MEDIAN competitive earner — what a newcomer should actually expect.
+    #
+    # `competitive_miner_usd_day` above is the BEST non-owner miner, i.e. the
+    # ceiling. On a winner-take-all subnet that number is a fantasy for anyone
+    # arriving today: sn15 ORO's best competitive miner earns $10,151/day while
+    # its median earner gets $10.20 — a 995x gap, because one UID holds 93% of
+    # miner emission. Scoring the ceiling systematically ranked winner-take-all
+    # subnets above genuinely open ones. This is the same error as quoting the
+    # owner's income, one level down.
+    competitive_alpha = sorted(
+        p["miner_alpha_day"] for p in miners
+        if not p["is_owner"] and not p["validator_permit"]
+    )
+    competitive_median_alpha = _percentile(competitive_alpha, 0.5) if competitive_alpha else None
+
     # Owner-captured share of incentive — an independent reconstruction of
     # MinerBurned from the metagraph, used to sanity-check the chain value.
     total_incentive = sum(incentive)
@@ -248,8 +263,11 @@ def analyze(
         "top_miner_uid": top_miner["uid"] if top_miner else None,
         "top_miner_is_owner": bool(top_miner["is_owner"]) if top_miner else None,
         "top_miner_is_permitted": bool(top_miner["validator_permit"]) if top_miner else None,
+        # ceiling (best competitive miner) vs realistic (median competitive miner)
         "competitive_miner_usd_day": competitive["miner_usd_day"] if competitive else None,
         "competitive_miner_alpha_day": competitive["miner_alpha_day"] if competitive else None,
         "competitive_miner_uid": competitive["uid"] if competitive else None,
+        "competitive_median_usd_day": to_usd(competitive_median_alpha) if competitive_median_alpha else None,
+        "competitive_earners": len(competitive_alpha),
         "players": players,
     }

@@ -25,6 +25,7 @@ COLUMNS = [
     "price_tao", "tao_usd", "subnet_age_days", "registered_block",
     "weights_version", "mechanism_count",
     "competitive_miner_alpha_day", "competitive_miner_usd_day", "competitive_miner_uid",
+    "competitive_median_usd_day", "competitive_earners",
     "median_miner_usd_day", "top_miner_usd_day", "top_miner_uid",
     "top_miner_is_owner", "top_miner_is_permitted",
     "top1_share", "top10_share", "gini", "earners",
@@ -36,7 +37,7 @@ COLUMNS = [
     "min_compute_present", "min_compute_is_template",
     "required_vram_gb", "gpu_class_required", "gpu_class_basis",
     "machine_class_cheapest", "machine_cost_usd_day", "machine_tier", "machine_assumed",
-    "net_margin_usd_day", "payback_days",
+    "net_margin_usd_day", "net_margin_top_usd_day", "payback_days",
     "gate_status", "gate_reason",
     "income_pts", "freshness_pts", "resource_pts", "registration_pts",
     "freshness_reason", "confidence", "confidence_reason", "score", "rank",
@@ -174,13 +175,15 @@ def write_ranking(path: str, ranked: List[Dict[str, Any]], all_rows: List[Dict[s
         "Incentive structure is weight ZERO by explicit decision - it is reported per subnet",
         "but never scored, and no incentive-structure subscore is published to re-weight.",
         "",
-        "Income is `competitive_miner_usd_day`: the best NON-owner, NON-validator-permitted",
-        "miner. The headline top miner is owner- or validator-captured on most subnets and is",
-        "not achievable by a newcomer.",
+        "Income is the MEDIAN non-owner, non-validator-permitted miner - what a newcomer",
+        "should actually expect. The best competitive miner is shown separately as the",
+        "ceiling: on a winner-take-all subnet the two differ by orders of magnitude (sn15",
+        "ORO's best clears $10k/day while its median earner makes $10.20), and scoring the",
+        "ceiling ranked winner-take-all subnets above genuinely open ones.",
         "",
         f"## TOP {top}",
         "",
-        "| # | netuid | name | score | conf | net $/day | machine | burn | reg TAO | earners | top1% | freshness |",
+        "| # | netuid | name | score | conf | net $/day (median) | ceiling $/day | machine | burn | earners | top1% | freshness |",
         "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
 
@@ -193,9 +196,11 @@ def write_ranking(path: str, ranked: List[Dict[str, Any]], all_rows: List[Dict[s
         t1 = r.get("top1_share")
         L.append(
             f"| {r['rank']} | {r['netuid']} | {g(r,'name')} | {g(r,'score')} | {g(r,'confidence')} "
-            f"| {('%.2f' % net) if net is not None else 'n/a'} | {g(r,'machine_class_cheapest','n/a')} "
+            f"| {('%.2f' % net) if net is not None else 'n/a'} "
+            f"| {('%.0f' % float(r['net_margin_top_usd_day'])) if g(r,'net_margin_top_usd_day')!='' else 'n/a'} "
+            f"| {g(r,'machine_class_cheapest','n/a')} "
             f"| {('%.3f' % float(r['miner_burn'])) if g(r,'miner_burn')!='' else 'n/a'} "
-            f"| {g(r,'reg_cost_tao','n/a')} | {g(r,'earners','n/a')} "
+            f"| {g(r,'earners','n/a')} "
             f"| {('%.0f%%' % (float(t1)*100)) if t1 not in (None,'') else 'n/a'} "
             f"| {g(r,'freshness_reason','-')} |"
         )

@@ -239,19 +239,31 @@ def compute(row: Dict[str, Any], machines: List[Dict[str, Any]]) -> Dict[str, An
         # Only reachable when the requirement IS known and exceeds every class.
         out.update(machine_class_cheapest="", machine_cost_usd_day=None,
                    machine_vram_gb=None, machine_bandwidth_mbps=None,
-                   net_margin_usd_day=None, payback_days=None)
+                   net_margin_usd_day=None, net_margin_top_usd_day=None,
+                   payback_days=None)
         return out
 
     cost_day = m["usd_month"] * 12.0 / 365.0
-    income = row.get("competitive_miner_usd_day")
-    income = float(income) if income not in (None, "") else None
+
+    def _income(key):
+        v = row.get(key)
+        return float(v) if v not in (None, "") else None
+
+    # The SCORED margin uses the MEDIAN competitive miner, not the best one.
+    # Scoring the ceiling ranked winner-take-all subnets above open ones: sn15
+    # ORO's best competitive miner clears $10k/day while its median earner makes
+    # $10.20, because one UID holds 93% of emission. The top figure is kept
+    # alongside as upside, clearly labelled.
+    realistic = _income("competitive_median_usd_day")
+    ceiling = _income("competitive_miner_usd_day")
 
     out.update(
         machine_class_cheapest=m["class_id"],
         machine_cost_usd_day=round(cost_day, 4),
         machine_vram_gb=m["vram_gb"],
         machine_bandwidth_mbps=m["bandwidth_mbps"],
-        net_margin_usd_day=(round(income - cost_day, 4) if income is not None else None),
+        net_margin_usd_day=(round(realistic - cost_day, 4) if realistic is not None else None),
+        net_margin_top_usd_day=(round(ceiling - cost_day, 4) if ceiling is not None else None),
     )
 
     # Payback on the registration burn, at the current net margin.

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-28T10:58:29Z · block 8720003 · run_status **ok**_
+_snapshot 2026-07-28T11:16:50Z · block 8720095 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 71 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,7 +17,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **71** | income beats machine cost |
+| **Positive margin** | **53** | income beats machine cost |
 | New events this window | 9 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -32,37 +32,42 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 59 | `████████████████████████████` |
 | 0–0.2 | 4 | `██` |
 | 0.2–0.4 | 8 | `████` |
-| 0.4–0.6 | 4 | `██` |
+| 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 9 | `████` |
+| 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 37 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
 ## Top 20
 
-| # | subnet | score | net $/day | machine | burn | earners | top-1 share |
-|---:|---|---:|---:|---|---:|---:|---:|
-| 1 | sn68 NOVA | 77.2 | 6306.57 | rtx4090* | 0.00 | 1 | 100% |
-| 2 | sn67 Harnyx | 70.7 | 915.71 | rtx4090* | 0.09 | 60 | 19% |
-| 3 | sn85 Vidaio | 68.9 | 532.76 | rtx4090* | 0.00 | 10 | 17% |
-| 4 | sn107 Minos | 65 | 25605.60 | cpu-small | 0.00 | 20 | 91% |
-| 5 | sn89 InfiniteQuant | 64.6 | 147.68 | rtx4090* | 0.71 | 33 | 42% |
-| 6 | sn93 Bitcast | 62.1 | 69.73 | rtx4090* | 0.81 | 3 | 97% |
-| 7 | sn79 MVTRX | 50 | 566.38 | cpu-small | 0.00 | 214 | 13% |
-| 8 | sn15 ORO | 49 | 10142.40 | rtx4090* | 0.00 | 81 | 93% |
-| 9 | sn54 Yanez MIID | 48 | 882.14 | a4000 | 0.30 | 103 | 35% |
-| 10 | sn4 Targon | 47.8 | 7126.80 | rtx4090* | 0.00 | 8 | 30% |
-| 11 | sn120 Affine | 47.4 | 6262.97 | rtx4090* | 0.00 | 5 | 20% |
-| 12 | sn17 404—GEN | 47 | 5570.73 | rtx4090* | 0.00 | 1 | 100% |
-| 13 | sn11 TrajectoryRL | 46.8 | 5255.66 | rtx4090* | 0.00 | 1 | 100% |
-| 14 | sn63 Enigma | 46.4 | 4599.07 | rtx4090* | 0.00 | 3 | 100% |
-| 15 | sn114 SOMA | 45.9 | 4029.04 | rtx4090* | 0.00 | 3 | 65% |
-| 16 | sn51 lium.io | 45.6 | 3604.81 | rtx4090* | 0.00 | 40 | 63% |
-| 17 | sn91 cascade | 45.2 | 3277.35 | rtx4090* | 0.00 | 3 | 54% |
-| 18 | sn38 ChronoLLM | 44.7 | 2797.69 | rtx4090* | 0.00 | 10 | 52% |
-| 19 | sn9 iota | 44.5 | 2638.89 | rtx4090* | 0.80 | 3 | 80% |
-| 20 | sn78 Vocence | 43.8 | 2144.94 | rtx4090* | 0.00 | 1 | 100% |
+| # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
+|---:|---|---:|---:|---:|---|---:|---:|
+| 1 | sn85 Vidaio | 67.9 | 400.00 | 528 | rtx4090* | 10 | 17% |
+| 2 | sn68 NOVA | 54.5 | 6285.40 | 6285 | rtx4090* | 1 | 100% |
+| 3 | sn67 Harnyx | 50.6 | 1.61 | 913 | rtx4090* | 60 | 19% |
+| 4 | sn120 Affine | 47.4 | 6264.07 | 6264 | rtx4090* | 5 | 20% |
+| 5 | sn4 Targon | 45.9 | 4044.16 | 7130 | rtx4090* | 8 | 30% |
+| 6 | sn93 Bitcast | 43.8 | 69.46 | 69 | rtx4090* | 3 | 97% |
+| 7 | sn114 SOMA | 42.7 | 1522.97 | 3973 | rtx4090* | 3 | 65% |
+| 8 | sn107 Minos | 41.9 | 86.20 | 25530 | cpu-small | 20 | 91% |
+| 9 | sn23 Trishool | 41.4 | 1029.85 | 1030 | rtx4090* | 3 | 33% |
+| 10 | sn1 Apex | 41.3 | 1017.95 | 1871 | rtx4090* | 5 | 40% |
+| 11 | sn89 InfiniteQuant | 39.3 | -8.15 | 147 | rtx4090* | 33 | 42% |
+| 12 | sn44 Score | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
+| 13 | sn77 Liquidity | 37.9 | 363.79 | 648 | rtx4090* | 11 | 18% |
+| 14 | sn64 Chutes | 37.3 | 2032.07 | 10557 | a100-80 | 17 | 23% |
+| 15 | sn124 Swarm | 37.3 | 311.31 | 491 | rtx4090* | 16 | 13% |
+| 16 | sn96 Verathos | 34.5 | 29.22 | 166 | rtx4090 | 141 | 3% |
+| 17 | sn101 Tag101 | 34.4 | 10.17 | 17 | cpu-small | 245 | 1% |
+| 18 | sn38 ChronoLLM | 34 | 124.41 | 2789 | rtx4090* | 10 | 52% |
+| 19 | sn55 NIOME | 33.8 | 108.47 | 303 | rtx4090* | 11 | 20% |
+| 20 | sn17 404—GEN | 33.2 | 5543.47 | 5543 | rtx4090* | 1 | 100% |
+
+`net $/day (median)` is what a newcomer should expect: the MEDIAN non-owner,
+non-permitted miner, minus machine cost. `ceiling $/day` is the BEST competitive
+miner - reachable only by beating everyone already there. Where the two diverge
+wildly, the subnet is winner-take-all and the ceiling is not a plan.
 
 `*` = machine is an assumed default; no hardware evidence was found for that subnet.
 
@@ -76,10 +81,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 29 |
-| concentrated (30–60%) | 19 |
+| wide (<30%) | 28 |
+| concentrated (30–60%) | 21 |
 | dominated (60–90%) | 14 |
-| captured (>90%) | 26 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 

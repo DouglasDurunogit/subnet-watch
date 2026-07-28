@@ -354,3 +354,22 @@ def test_no_gpu_required_is_not_read_as_a_gpu_signal():
     """The contradiction tokens must not appear inside a negation, or every
     genuinely CPU-only subnet would be forced to UNKNOWN."""
     assert not margin._GPU_PRESENT.search("Miners need no GPU required at all.")
+
+
+def test_thin_competitive_sample_costs_confidence():
+    """Scoring the median instead of the ceiling fixes winner-take-all bias, but
+    where a single competitive miner exists the two are the same number by
+    definition. n=1 must not be presented as a supported estimate."""
+    thin = score.score_row(
+        base(net_margin_usd_day=5000, machine_tier=1, payback_days=1,
+             competitive_earners=1, readme_sha="abc", repo_status="ok",
+             gpu_class_basis="min_compute.yml (curated)"),
+        {}, now=datetime.now(timezone.utc))
+    thick = score.score_row(
+        base(net_margin_usd_day=5000, machine_tier=1, payback_days=1,
+             competitive_earners=40, readme_sha="abc", repo_status="ok",
+             gpu_class_basis="min_compute.yml (curated)"),
+        {}, now=datetime.now(timezone.utc))
+    assert thin["confidence"] < thick["confidence"]
+    assert "not a distribution" in thin["confidence_reason"]
+    assert thin["score"] < thick["score"]

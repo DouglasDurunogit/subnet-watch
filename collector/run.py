@@ -106,6 +106,13 @@ def build_row(nid: int, sw: Dict[str, Any], now_iso: str) -> Dict[str, Any]:
         "weights_version": sw["weights_version"].get(nid),
         "mechanism_count": sw["mechanism_count"].get(nid),
     }
+    # A raw storage map that failed reports None for every netuid. That is
+    # missing data and the row must say so, or a later sweep reads the gap as a
+    # change (see chain._query_map).
+    if any(sw[k].get(nid) is None for k in ("miner_burn", "weights_version", "mechanism_count")):
+        row["row_status"] = "partial"
+        row["gate_reason"] = "a chain storage map did not return for this sweep"
+
     if info is None or meta is None:
         row["row_status"] = "failed"
         row["gate_reason"] = "no chain data returned for this netuid"

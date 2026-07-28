@@ -200,23 +200,44 @@ def _substrate(st: Any):
     return get_attr_any(st, ["substrate"], None)
 
 
-def _query_map(st: Any, module: str, item: str) -> Dict[int, Any]:
-    """{netuid: raw_value} for a storage map keyed by netuid. {} on failure."""
+def _query_map(st: Any, module: str, item: str, attempts: int = 2) -> Optional[Dict[int, Any]]:
+    """{netuid: raw_value} for a storage map keyed by netuid.
+
+    Returns **None on failure**, which is NOT the same as an empty map. These are
+    ValueQuery maps: an absent key legitimately means "the default applies", so a
+    caller must be able to tell "the chain says nothing about netuid 5" from "the
+    query did not run".
+
+    Conflating those two caused a real false alarm. A transient failure returned
+    {}, every subnet fell back to the MechanismCount default of 1, and the next
+    successful sweep read 2 again — firing MECHANISM_ADDED "1->2" for all six
+    multi-mechanism subnets in the same second, when nothing had changed on
+    chain. The MinerBurned version of this bug would be far worse: its default is
+    0.0, so one failed query would make every dead subnet look alive and fire a
+    P0 BURN_DROP for each.
+    """
     sub = _substrate(st)
     if sub is None:
-        return {}
-    try:
-        res = sub.query_map(module, item)
-    except Exception:
-        return {}
-    out: Dict[int, Any] = {}
-    for key, val in res:
+        return None
+    last: Optional[Exception] = None
+    for _ in range(max(1, attempts)):
         try:
-            nid = int(getattr(key, "value", key))
-        except Exception:
+            res = sub.query_map(module, item)
+        except Exception as e:      # public finney does drop connections
+            last = e
             continue
-        out[nid] = getattr(val, "value", val)
-    return out
+        out: Dict[int, Any] = {}
+        for key, val in res:
+            try:
+                nid = int(getattr(key, "value", key))
+            except Exception:
+                continue
+            out[nid] = getattr(val, "value", val)
+        return out
+    print(f"  chain: query_map({module}.{item}) FAILED "
+          f"({type(last).__name__ if last else 'no substrate'}) - "
+          f"values will be reported MISSING, not defaulted", flush=True)
+    return None
 
 
 def _defix(raw: Any, frac_bits: int) -> Optional[float]:
@@ -241,10 +262,12 @@ def miner_burned_map(st: Any, netuids: List[int]) -> Dict[int, Optional[float]]:
     U96F32 fixed-point: divide by 2**32. Absent netuids default to 0.0.
     """
     raw = _query_map(st, "SubtensorModule", "MinerBurned")
+    if raw is None:
+        return {n: None for n in netuids}      # missing, NOT 0.0 ("everyone alive")
     return {n: (_defix(raw[n], 32) if n in raw else 0.0) for n in netuids}
 
 
-def weights_version_map(st: Any, netuids: List[int]) -> Dict[int, int]:
+def weights_version_map(st: Any, netuids: List[int]) -> Dict[int, Optional[int]]:
     """{netuid: weights_version_key} — 0 means the version gate is disabled.
 
     Only the subnet owner can raise this, and raising it hard-rejects weight
@@ -253,7 +276,9 @@ def weights_version_map(st: Any, netuids: List[int]) -> Dict[int, int]:
     monotonic counter, NOT semver: observed values range from 1 to 1000910.
     """
     raw = _query_map(st, "SubtensorModule", "WeightsVersionKey")
-    out: Dict[int, int] = {}
+    if raw is None:
+        return {n: None for n in netuids}      # missing, NOT 0 ("gate disabled")
+    out: Dict[int, Optional[int]] = {}
     for n in netuids:
         try:
             out[n] = int(raw.get(n, 0) or 0)
@@ -262,12 +287,14 @@ def weights_version_map(st: Any, netuids: List[int]) -> Dict[int, int]:
     return out
 
 
-def mechanism_count_map(st: Any, netuids: List[int]) -> Dict[int, int]:
+def mechanism_count_map(st: Any, netuids: List[int]) -> Dict[int, Optional[int]]:
     """{netuid: mechanism count} — a 1 -> 2 transition means a second, distinct
     incentive mechanism (a whole new challenge) was added under one netuid.
     Absent netuids default to 1."""
     raw = _query_map(st, "SubtensorModule", "MechanismCountCurrent")
-    out: Dict[int, int] = {}
+    if raw is None:
+        return {n: None for n in netuids}      # missing, NOT 1 ("one mechanism")
+    out: Dict[int, Optional[int]] = {}
     for n in netuids:
         try:
             out[n] = int(raw.get(n, 1) or 1)
@@ -280,6 +307,8 @@ def subnet_owner_map(st: Any, netuids: List[int]) -> Dict[int, str]:
     """{netuid: owner coldkey ss58}. Owner detection by coldkey catches an owner
     mining under a fresh hotkey, which hotkey-only matching misses."""
     raw = _query_map(st, "SubtensorModule", "SubnetOwner")
+    if raw is None:
+        return {n: "" for n in netuids}
     return {n: str(raw.get(n, "") or "") for n in netuids}
 
 

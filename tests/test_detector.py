@@ -414,3 +414,22 @@ def test_submit_alone_does_not_trigger_the_submission_rung():
         "readme_text": "Miners submit responses to each query within 12 seconds.",
     })
     assert got["gpu_class_basis"] != margin.BASIS_SUBMISSION
+
+
+def test_missing_chain_value_never_fires_an_event():
+    """The false-alarm bug: a transient query_map failure returned {}, every
+    subnet fell back to the MechanismCount default of 1, and the next successful
+    sweep read 2 - firing MECHANISM_ADDED for all six multi-mechanism subnets in
+    the same second. chain._query_map now returns None on failure so the column
+    is MISSING, and a missing value on either side must fire nothing."""
+    for field in ("mechanism_count", "weights_version", "miner_burn"):
+        assert events.detect(base(**{field: ""}), base()) == [], f"{field}: missing -> value fired"
+        assert events.detect(base(), base(**{field: ""})) == [], f"{field}: value -> missing fired"
+
+
+def test_burn_drop_needs_both_sides_present():
+    """The same bug in its worst form: MinerBurned's default is 0.0, so one
+    failed query would make every dead subnet look alive and fire a P0 per
+    subnet."""
+    assert events.detect(base(miner_burn=""), base(miner_burn=0.4)) == []
+    assert events.detect(base(miner_burn=1.0), base(miner_burn="")) == []

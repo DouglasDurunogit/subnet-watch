@@ -1,0 +1,5 @@
+# Exactly what the sweep installs. Also the cache key for actions/setup-python,
+# which fails outright if no dependency file exists to hash.
+bittensor==10.5.0
+requests>=2.31
+pytest>=8.0

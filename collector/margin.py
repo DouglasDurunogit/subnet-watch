@@ -28,6 +28,7 @@ from typing import Any, Dict, List, Optional
 
 # Ordered strongest-evidence-first. The label lands in `gpu_class_basis`.
 BASIS_MIN_COMPUTE = "min_compute.yml (curated)"
+BASIS_README_STATED = "README stated VRAM (explicit)"
 BASIS_README = "README keywords (GUESS)"
 BASIS_NONE = "no evidence"
 
@@ -82,18 +83,30 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
             return {"required_vram_gb": 0, "gpu_class_basis": BASIS_MIN_COMPUTE,
                     "gpu_class_required": "cpu-only"}
 
-    # Rung 2: README keywords. Explicitly a guess.
     readme = row.get("readme_text", "") or ""
     if readme:
+        # Rung 2: an EXPLICIT VRAM figure stated in the README. This must be
+        # checked BEFORE model-name keywords. Doing it the other way round was a
+        # real bug: sn26's README states "8+ GB VRAM" but the word "efficientnet"
+        # matched a 24 GB hint, so the pipeline priced an RTX 4090 and understated
+        # the margin. A number the author wrote always beats a number we inferred
+        # from a model name they happened to mention.
+        #
+        # When several are stated, take the smallest: READMEs conventionally give
+        # "minimum X, recommended Y", and the entry requirement is what decides
+        # whether you can play at all.
+        stated = [int(m.group(1)) for m in _VRAM_RE.finditer(readme)]
+        stated = [v for v in stated if 1 <= v <= 640]
+        if stated:
+            vram = min(stated)
+            return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README_STATED,
+                    "gpu_class_required": _label(vram)}
+
+        # Rung 3: model-name keywords. Explicitly a guess.
         for pat, vram in _HINTS:
             if pat.search(readme):
                 return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README,
                         "gpu_class_required": _label(vram)}
-        m = _VRAM_RE.search(readme)
-        if m:
-            vram = int(m.group(1))
-            return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README,
-                    "gpu_class_required": _label(vram)}
 
     return {"required_vram_gb": None, "gpu_class_basis": BASIS_NONE,
             "gpu_class_required": "unknown"}

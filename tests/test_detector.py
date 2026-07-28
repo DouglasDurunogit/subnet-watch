@@ -172,6 +172,29 @@ def test_edited_min_compute_is_evidence():
     assert got["gpu_class_basis"] == margin.BASIS_MIN_COMPUTE
 
 
+def test_stated_vram_beats_a_model_name_keyword():
+    """Real bug, caught in review: sn26's README states '8+ GB VRAM' but the word
+    'EfficientNetV2-L' matched a 24 GB keyword hint, so the pipeline priced an
+    RTX 4090 and understated the margin. A number the author wrote must always
+    beat one inferred from a model name they happened to mention."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Attacks EfficientNetV2-L. Miner minimum: 8 GB VRAM, 16 GB RAM.",
+    })
+    assert got["required_vram_gb"] == 8
+    assert got["gpu_class_basis"] == margin.BASIS_README_STATED
+
+
+def test_stated_vram_takes_the_minimum_of_several():
+    """READMEs say 'minimum X, recommended Y'. The entry requirement decides
+    whether you can play at all, so the minimum is the one that matters."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Recommended 24 GB VRAM. Minimum 8 GB VRAM.",
+    })
+    assert got["required_vram_gb"] == 8
+
+
 def test_readme_inference_is_labelled_a_guess():
     got = margin.infer_requirement({
         "min_compute_present": False, "min_compute_is_template": False,

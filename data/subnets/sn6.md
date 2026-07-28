@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-07-28T16:57:54Z  |  block: 8721800  |  row_status: ok
+snapshot_utc: 2026-07-28T18:40:00Z  |  block: 8722311  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (38.21 USD), open=True
+- registration cost: 0.2 TAO (38.11600000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 237  |  free: 0
-- subnet age: 764.1 days  |  registered at block 3219949
+- subnet age: 764.2 days  |  registered at block 3219949
 - weights_version: 2018  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 200.12530519489005** (uid 253) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.051301026709789824
-- top_miner_usd_day: 282.5404046041674 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 234.23338342036243** (uid 121) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.051519494868659935
+- top_miner_usd_day: 283.7436179891446 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 223  |  gini: 0.9545780300443909  |  top1_share: 0.16832727161588068  |  top10_share: 0.8939606956202818
+- earners: 223  |  gini: 0.9545780300443907  |  top1_share: 0.16832727161588068  |  top10_share: 0.8939606956202817
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-07-28T16:57:54Z  |  block: 8721800  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.935 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9348 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 15.0 (rank 58), confidence 1.0 
+- score: 15.0 (rank 57), confidence 1.0 
 - components: income 0.0 / freshness 0.0 / resource 15.0 / registration 0.0
 - freshness basis: no challenge change on record
 

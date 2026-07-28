@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-28T16:57:54Z, block 8721800
+# ALARMS - generated 2026-07-28T18:40:00Z, block 8722311
 
-window: first_seen in [2026-07-28T15:43:29Z, 2026-07-28T16:58:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-28T17:25:29Z, 2026-07-28T18:40:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn55:burn_drop:0.020` | 55 | BURN_DROP | P0 | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
-| `sn74:release:release-20260728-153232: chore(weights):` | 74 | RELEASE | P1 | 2026-07-28T16:58:29Z | sn74 released release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663) |
-| `sn76:scoring_commit:2026-07-28T16:00:07Z` | 76 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn76 commit touches scoring: Pay the reserved share in full from the first round and cap rewards a… |
-| `sn102:release:v0.3.2` | 102 | RELEASE | P1 | 2026-07-28T16:58:29Z | sn102 released v0.3.2 |
-| `sn102:scoring_commit:2026-07-24T20:54:05Z` | 102 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn102 commit touches scoring: 📊 telemetry: per-round baseline loss (validator_baseline_loss_by_round |
-| `sn124:scoring_commit:2026-07-28T16:31:54Z` | 124 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn124 commit touches scoring: Start evaluation at the full worker width |
+| `sn76:burn_drop:0.000` | 76 | BURN_DROP | P0 | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn69:scoring_commit:2026-07-28T18:18:51Z` | 69 | SCORING_COMMIT | P1 | 2026-07-28T18:40:29Z | sn69 commit touches scoring: Add miner/validator operator guides + validator Docker fixes (#1) |
+| `sn76:scoring_commit:2026-07-28T17:57:20Z` | 76 | SCORING_COMMIT | P1 | 2026-07-28T18:40:29Z | sn76 commit touches scoring: Stop counting unrunnable tasks as wrong answers, and say why a repeti… |
+| `sn98:scoring_commit:2026-07-28T17:46:47Z` | 98 | SCORING_COMMIT | P1 | 2026-07-28T18:40:29Z | sn98 commit touches scoring: feat: auto-prune old validator round workspaces to bound disk use (#21 |
 
 ### detail
 
-- **`sn55:burn_drop:0.020`** - sn55 burn fell 1.000 -> 0.020 - miners can earn again
+- **`sn76:burn_drop:0.000`** - sn76 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn74:release:release-20260728-153232: chore(weights):`** - sn74 released release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663)
-  - published 2026-07-28T15:27:26Z (was release-20260721-140419)
-- **`sn76:scoring_commit:2026-07-28T16:00:07Z`** - sn76 commit touches scoring: Pay the reserved share in full from the first round and cap rewards a…
+- **`sn69:scoring_commit:2026-07-28T18:18:51Z`** - sn69 commit touches scoring: Add miner/validator operator guides + validator Docker fixes (#1)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.3.2`** - sn102 released v0.3.2
-  - published 2026-07-28T15:57:44Z (was v0.3.1)
-- **`sn102:scoring_commit:2026-07-24T20:54:05Z`** - sn102 commit touches scoring: 📊 telemetry: per-round baseline loss (validator_baseline_loss_by_round
+- **`sn76:scoring_commit:2026-07-28T17:57:20Z`** - sn76 commit touches scoring: Stop counting unrunnable tasks as wrong answers, and say why a repeti…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-07-28T16:31:54Z`** - sn124 commit touches scoring: Start evaluation at the full worker width
+- **`sn98:scoring_commit:2026-07-28T17:46:47Z`** - sn98 commit touches scoring: feat: auto-prune old validator round workspaces to bound disk use (#21
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -37,6 +31,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|
 | `sn104:burn_drop:0.965` | 104 | BURN_DROP | 2026-07-28T07:30:22Z | sn104 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.000` | 117 | BURN_DROP | 2026-07-28T10:44:07Z | sn117 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn55:burn_drop:0.020` | 55 | BURN_DROP | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -49,6 +44,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-07-28T14:03:58Z` | 76 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn76 commit touches scoring: Retry validator self registration until it succeeds |
 | `sn103:release:v2003: validator: restore miner burn fra` | 103 | RELEASE | 2026-07-28T15:04:08Z | sn103 released v2003: validator: restore miner burn fraction to 0.8 |
 | `sn103:scoring_commit:2026-07-28T13:16:22Z` | 103 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn103 commit touches scoring: validator: restore miner burn fraction to 0.8 |
+| `sn74:release:release-20260728-153232: chore(weights):` | 74 | RELEASE | 2026-07-28T16:58:29Z | sn74 released release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663) |
+| `sn76:scoring_commit:2026-07-28T16:00:07Z` | 76 | SCORING_COMMIT | 2026-07-28T16:58:29Z | sn76 commit touches scoring: Pay the reserved share in full from the first round and cap rewards a… |
+| `sn102:release:v0.3.2` | 102 | RELEASE | 2026-07-28T16:58:29Z | sn102 released v0.3.2 |
+| `sn102:scoring_commit:2026-07-24T20:54:05Z` | 102 | SCORING_COMMIT | 2026-07-28T16:58:29Z | sn102 commit touches scoring: 📊 telemetry: per-round baseline loss (validator_baseline_loss_by_round |
+| `sn124:scoring_commit:2026-07-28T16:31:54Z` | 124 | SCORING_COMMIT | 2026-07-28T16:58:29Z | sn124 commit touches scoring: Start evaluation at the full worker width |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW

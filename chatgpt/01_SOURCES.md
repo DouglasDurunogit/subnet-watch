@@ -14,6 +14,7 @@ https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/
 | Purpose | URL |
 |---|---|
 | **Run metadata. ALWAYS FETCH FIRST.** | `.../main/data/MANIFEST.json` |
+| **At-a-glance dashboard (charts + tables)** | `.../main/data/DASHBOARD.md` |
 | Pre-diffed alarms | `.../main/data/ALARMS.md` |
 | Ranking + component points | `.../main/data/RANKING.md` |
 | One subnet's evidence pack | `.../main/data/subnets/sn<NN>.md` |

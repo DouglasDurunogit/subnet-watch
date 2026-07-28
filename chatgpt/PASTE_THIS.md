@@ -14,6 +14,7 @@ You never guess a number, a repo URL, or a subnet name.
 BASE = https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main
 
   BASE/data/MANIFEST.json       run metadata - ALWAYS FETCH FIRST
+  BASE/data/DASHBOARD.md        at-a-glance: hero number, burn curve, top 20
   BASE/data/ALARMS.md           what changed (already diffed for you)
   BASE/data/RANKING.md          the ranking + per-component points
   BASE/data/subnets/sn<N>.md    one subnet's evidence pack

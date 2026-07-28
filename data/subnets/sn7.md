@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-07-28T08:07:51Z  |  block: 8719150  |  row_status: ok
+snapshot_utc: 2026-07-28T08:09:57Z  |  block: 8719160  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.977801708271727**
-- registration cost: 0.15 TAO (28.089 USD), open=True
+- registration cost: 0.15 TAO (28.070999999999998 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 22  |  free: 0
 - subnet age: 846.0 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 18.025733266599588** (uid 87) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.5642838239979001
-- top_miner_usd_day: 2008.8504134325244 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 18.014177164625437** (uid 87) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.5639220677621877
+- top_miner_usd_day: 2007.5625612333881 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-07-28T08:07:51Z  |  block: 8719150  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 9.8066 USD/day  |  payback on registration: 2.86 days
+- net margin: 9.795 USD/day  |  payback on registration: 2.87 days
 
 ## Score
 
 - gate: **OK** 
-- score: 25.2 (rank 69), confidence 0.85 - hardware requirement unknown
-- components: income 9.4 / freshness 0.0 / resource 11.25 / registration 9.05
+- score: 25.2 (rank 70), confidence 0.85 - hardware requirement unknown
+- components: income 9.4 / freshness 0.0 / resource 11.25 / registration 9.04
 - freshness basis: no challenge change on record
 
 ## On-chain description

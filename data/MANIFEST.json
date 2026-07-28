@@ -1,13 +1,13 @@
 {
-  "block": 8719929,
+  "block": 8719989,
   "config": {
     "_note": "If you change the ChatGPT Task schedule, change watch_interval_minutes in the SAME commit. Run less often than the window and events report late; more often and they appear once then sit in STILL OPEN.",
     "staleness_alarm_minutes": 90,
     "watch_interval_minutes": 60,
     "window_overlap_minutes": 15
   },
-  "duration_seconds": 31.7,
-  "events_new": 3,
+  "duration_seconds": 24.8,
+  "events_new": 9,
   "events_still_open": 4,
   "failed_netuids": [],
   "files": {
@@ -23,12 +23,12 @@
   "gated": {
     "BLOCKED:burn": 37
   },
-  "generated_utc": "2026-07-28T10:43:35Z",
+  "generated_utc": "2026-07-28T10:55:40Z",
   "ranked": 91,
   "run_status": "ok",
   "subnets_failed": 0,
   "subnets_total": 128,
-  "tao_usd": 187.78,
-  "window_end": "2026-07-28T10:44:07Z",
-  "window_start": "2026-07-28T09:29:07Z"
+  "tao_usd": 187.8,
+  "window_end": "2026-07-28T10:56:04Z",
+  "window_start": "2026-07-28T09:41:04Z"
 }

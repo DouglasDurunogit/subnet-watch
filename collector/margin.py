@@ -100,7 +100,7 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
             return {"required_vram_gb": 0, "gpu_class_basis": BASIS_MIN_COMPUTE,
                     "gpu_class_required": "cpu-only"}
 
-    readme = row.get("readme_text", "") or ""
+    readme = _miner_scope(row.get("readme_text", "") or "")
     if readme:
         # Rung 2: an EXPLICIT VRAM figure stated in the README. This must be
         # checked BEFORE model-name keywords. Doing it the other way round was a
@@ -121,13 +121,61 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
                     "gpu_class_required": _label(vram)}
 
         # Rung 3: model-name keywords. Explicitly a guess.
-        for pat, vram in _HINTS:
-            if pat.search(readme):
-                return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README,
-                        "gpu_class_required": _label(vram)}
+        #
+        # A "CPU-only" phrase sitting alongside any GPU-requiring signal is a
+        # CONTRADICTION, not a cheaper answer. Resolving it toward CPU is the
+        # expensive direction to be wrong in: it prices a $30/month box and
+        # inflates the margin by orders of magnitude. Report no evidence and let
+        # the assumed default carry it, with confidence paying the cost.
+        hits = [vram for pat, vram in _HINTS if pat.search(readme)]
+        if hits:
+            if 0 in hits and any(v > 0 for v in hits):
+                return {"required_vram_gb": None, "gpu_class_basis": BASIS_NONE,
+                        "gpu_class_required": "unknown"}
+            vram = hits[0]
+            return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README,
+                    "gpu_class_required": _label(vram)}
 
     return {"required_vram_gb": None, "gpu_class_basis": BASIS_NONE,
             "gpu_class_required": "unknown"}
+
+
+_HEADING_RE = re.compile(r"^(#{1,6})\s*(.+?)\s*$", re.M)
+_MINER_HEAD = re.compile(r"\bminer|mining\b", re.I)
+_VALIDATOR_HEAD = re.compile(r"\bvalidator|validating|auditor|gateway\b", re.I)
+
+
+def _miner_scope(readme: str) -> str:
+    """The part of a README that describes what a MINER needs.
+
+    Requirement text must be read in miner context. sn53 is the worked example:
+    its README says "engy serves frontier open models on consumer GPUs" for
+    miners, and — thirty lines later, inside the validator runbook — "CPU-only;
+    no GPU, no database". A whole-document keyword scan read the second sentence,
+    concluded miners need no GPU, priced a $30/month CPU box against $2,767/day
+    of income and ranked the subnet 8th on a margin that does not exist.
+
+    So: drop sections whose heading is about validators/auditors/gateways. If any
+    explicitly miner-headed sections remain, use only those; otherwise use what
+    is left of the document.
+    """
+    if not readme:
+        return ""
+    marks = list(_HEADING_RE.finditer(readme))
+    if not marks:
+        return readme
+
+    preamble = readme[: marks[0].start()]
+    miner_parts, neutral_parts = [], [preamble]
+    for i, m in enumerate(marks):
+        end = marks[i + 1].start() if i + 1 < len(marks) else len(readme)
+        head, body = m.group(2), readme[m.end():end]
+        if _VALIDATOR_HEAD.search(head) and not _MINER_HEAD.search(head):
+            continue                      # validator-only section: not our answer
+        (miner_parts if _MINER_HEAD.search(head) else neutral_parts).append(body)
+
+    scoped = "\n".join(miner_parts) if miner_parts else "\n".join(neutral_parts)
+    return scoped if scoped.strip() else readme
 
 
 def _label(vram: int) -> str:

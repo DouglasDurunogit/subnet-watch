@@ -277,3 +277,53 @@ def test_disk_size_after_the_word_vram_is_not_read_as_vram():
         "readme_text": "Recommended: 8 vCPU, 32 GB RAM, NVIDIA GPU with 8+ GB VRAM, 100+ GB SSD",
     })
     assert got["required_vram_gb"] == 8
+
+
+SN53_README = """# engy
+engy serves frontier open models on consumer GPUs, with cryptographic
+verification that the model you pay for is the model that ran.
+
+## Miner
+Serve frontier open models. Each response carries an activation fingerprint.
+
+## Validator
+The light validator syncs the master-signed epoch result from the provider API
+and submits that weight vector on chain. CPU-only; no GPU, no database.
+"""
+
+
+def test_validator_section_does_not_set_the_miner_requirement():
+    """The bug the user caught. sn53's README says miners serve models on
+    consumer GPUs; thirty lines later the VALIDATOR runbook says 'CPU-only; no
+    GPU'. A whole-document scan priced a $30/month CPU box against $2,767/day of
+    income and ranked the subnet 8th on a margin that does not exist."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": SN53_README,
+    })
+    assert got["gpu_class_required"] != "cpu-only", "validator hardware leaked into the miner requirement"
+
+
+def test_miner_scope_drops_validator_sections():
+    scope = margin._miner_scope(SN53_README)
+    assert "activation fingerprint" in scope
+    assert "no GPU, no database" not in scope
+
+
+def test_contradictory_hardware_evidence_yields_unknown():
+    """'CPU-only' beside a GPU signal is a contradiction, not a cheaper answer.
+    Resolving toward CPU is the expensive direction to be wrong in."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Runs Llama-3-70B. Also supports a cpu-only mode.",
+    })
+    assert got["required_vram_gb"] is None
+    assert got["gpu_class_basis"] == margin.BASIS_NONE
+
+
+def test_genuine_cpu_only_readme_still_classifies_as_cpu():
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "A scraping subnet. Miners need no GPU required at all.",
+    })
+    assert got["required_vram_gb"] == 0

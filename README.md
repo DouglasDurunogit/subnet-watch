@@ -88,6 +88,12 @@ on every subnet; reporting it would mean ~3000 alarms a day and the feed would b
 ignored within a week. Two consecutive sweeps of this pipeline produce **0**
 events.
 
+## Dashboard
+
+At-a-glance view, regenerated every sweep: [`data/DASHBOARD.md`](data/DASHBOARD.md)
+(hero figure, burn distribution, top 20, concentration) plus three SVG charts in
+`data/charts/`.
+
 ## Setup
 
 See `chatgpt/PROJECT_SETUP.md`. Replace `OWNER/REPO` in `chatgpt/01_SOURCES.md`

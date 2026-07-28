@@ -312,6 +312,14 @@ def main(argv=None) -> int:
             readme_text=readme_texts.get(int(r["netuid"]), ""),
         )
 
+    # Built from the files just written, so the dashboard can never disagree with
+    # the snapshot it summarises.
+    try:
+        from . import dashboard
+        dashboard.main(["--data", out])
+    except Exception as e:  # a broken chart must not cost us the sweep
+        print(f"  dashboard: SKIPPED ({type(e).__name__}: {e})", flush=True)
+
     gated = sum(1 for r in rows if r.get("gate_status", "OK") != "OK")
     print(f"  published: {len(rows)} rows, {len(ranked)} ranked, {gated} gated, "
           f"status={run_status}, {time.time()-t_start:.1f}s total", flush=True)

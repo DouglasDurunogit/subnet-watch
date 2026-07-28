@@ -1,0 +1,11 @@
+class_id,label,gpu_count,vram_gb,vcpu,ram_gb,disk_gb,bandwidth_mbps,usd_hour,usd_month,tier,notes
+cpu-small,CPU only (4 vCPU / 16 GB),0,0,4,16,80,1000,0.04,30,0,"VPS class. Fine for scraping/API/data subnets."
+cpu-large,CPU only (16 vCPU / 64 GB),0,0,16,64,320,1000,0.11,80,0,"CPU-heavy indexing or many concurrent HTTP workers."
+rtx4090,RTX 4090 (24 GB),1,24,8,32,200,1000,0.34,250,1,"Consumer baseline. Most 7B-class inference and vision workloads fit."
+rtx5090,RTX 5090 (32 GB),1,32,12,48,300,1000,0.45,330,1,"Consumer top end. sm_120; matches the SN26 validator GPU."
+a6000,RTX A6000 (48 GB),1,48,12,64,400,1000,0.62,450,2,"48 GB without datacentre pricing. Good for 30B-class 4-bit."
+a100-40,A100 (40 GB),1,40,12,96,500,2000,0.85,620,2,"Datacentre class, NVLink-capable."
+a100-80,A100 (80 GB),1,80,16,128,750,2000,1.25,900,3,"80 GB single card. 70B 4-bit inference."
+h100-80,H100 SXM (80 GB),1,80,20,180,1000,5000,2.35,1700,4,"Training-grade single card."
+h200-141,H200 (141 GB),1,141,24,256,1500,5000,3.30,2400,4,"Largest single-card VRAM."
+8xh100,8x H100 SXM (640 GB),8,640,160,1500,8000,10000,18.50,13300,4,"Multi-GPU node. Only for subnets that genuinely require training at scale."

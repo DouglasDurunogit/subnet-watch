@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-28T12:19:14Z · block 8720407 · run_status **ok**_
+_snapshot 2026-07-28T12:59:03Z · block 8720606 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn67 Harnyx | 69 | 8.88 | 923 | cpu-small | 60 | 19% |
-| 2 | sn85 Vidaio | 67.9 | 398 | 529 | rtx4090* | 10 | 17% |
-| 3 | sn23 Trishool | 52.5 | 1,044 | 1,044 = | cpu-small | 3 | 33% |
-| 4 | sn71 Leadpoet | 50.4 | 1.15 | 287 | rtx4090* | 50 | 30% |
-| 5 | sn120 Affine | 47.4 | 6,291 | 6,291 = | rtx4090* | 5 | 20% |
-| 6 | sn4 Targon | 46 | 4,052 | 7,143 | rtx4090* | 8 | 30% |
-| 7 | sn114 SOMA | 42.7 | 1,529 | 3,989 | rtx4090* | 3 | 65% |
-| 8 | sn107 Minos | 42.1 | 89.50 | 25,404 | cpu-small | 20 | 90% |
-| 9 | sn1 Apex | 41.5 | 1,089 | 1,912 | rtx4090* | 5 | 41% |
-| 10 | sn102 ConnitoAI | 40.4 | 774 | 1,200 | rtx4090* | 6 | 32% |
-| 11 | sn98 NeverPlayAlone | 38 | 149 | 149 = | cpu-small | 2 | 91% |
-| 12 | sn77 Liquidity | 37.9 | 365 | 651 | rtx4090* | 11 | 18% |
-| 13 | sn64 Chutes | 37.3 | 2,055 | 10,635 | a100-80 | 17 | 23% |
-| 14 | sn124 Swarm | 37.2 | 307 | 484 | rtx4090* | 16 | 13% |
-| 15 | sn96 Verathos | 34.5 | 29.60 | 172 | rtx4090 | 143 | 3% |
-| 16 | sn101 Tag101 | 34.3 | 9.88 | 17.32 | cpu-small | 244 | 1% |
-| 17 | sn38 ChronoLLM | 33.9 | 123 | 2,767 | rtx4090* | 10 | 52% |
-| 18 | sn55 NIOME | 33.8 | 109 | 303 | rtx4090* | 11 | 20% |
-| 19 | sn68 NOVA | 33.5 | 6,297 | 6,297 = | rtx4090* | 1 | 100% |
-| 20 | sn17 404—GEN | 33.2 | 5,547 | 5,547 = | rtx4090* | 1 | 100% |
+| 1 | sn67 Harnyx | 68.9 | 8.89 | 924 | cpu-small | 60 | 19% |
+| 2 | sn85 Vidaio | 67.9 | 399 | 530 | rtx4090* | 10 | 17% |
+| 3 | sn23 Trishool | 52.5 | 1,047 | 1,047 = | cpu-small | 3 | 33% |
+| 4 | sn71 Leadpoet | 51.2 | 1.76 | 307 | rtx4090* | 50 | 30% |
+| 5 | sn120 Affine | 47.4 | 6,306 | 6,306 = | rtx4090* | 5 | 20% |
+| 6 | sn4 Targon | 46 | 4,066 | 7,167 | rtx4090* | 8 | 30% |
+| 7 | sn114 SOMA | 42.7 | 1,525 | 3,978 | rtx4090* | 3 | 65% |
+| 8 | sn107 Minos | 42.2 | 90.78 | 25,765 | cpu-small | 20 | 90% |
+| 9 | sn1 Apex | 41.5 | 1,078 | 1,935 | rtx4090* | 5 | 41% |
+| 10 | sn102 ConnitoAI | 40.4 | 766 | 1,189 | rtx4090* | 6 | 32% |
+| 11 | sn89 InfiniteQuant | 39.3 | -8.15 | 148 | rtx4090* | 33 | 42% |
+| 12 | sn98 NeverPlayAlone | 38 | 149 | 149 = | cpu-small | 2 | 91% |
+| 13 | sn77 Liquidity | 37.9 | 366 | 652 | rtx4090* | 11 | 18% |
+| 14 | sn64 Chutes | 37.3 | 2,062 | 10,668 | a100-80 | 17 | 23% |
+| 15 | sn124 Swarm | 37.2 | 307 | 485 | rtx4090* | 16 | 13% |
+| 16 | sn96 Verathos | 34.4 | 28.63 | 167 | rtx4090 | 143 | 3% |
+| 17 | sn101 Tag101 | 34.3 | 9.96 | 17.25 | cpu-small | 242 | 1% |
+| 18 | sn38 ChronoLLM | 34 | 124 | 2,787 | rtx4090* | 10 | 52% |
+| 19 | sn55 NIOME | 33.8 | 109 | 304 | rtx4090* | 11 | 20% |
+| 20 | sn68 NOVA | 33.5 | 6,312 | 6,312 = | rtx4090* | 1 | 100% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-07-28T12:59 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: hf scoreboard: publish n_submitters_3d |
 | 2026-07-28T12:10 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify durable chain settlement readback |
 | 2026-07-28T11:29 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Poll for validator image updates every tw |
 | 2026-07-28T10:44 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |

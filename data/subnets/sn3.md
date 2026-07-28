@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-07-28T21:37:21Z  |  block: 8723197  |  row_status: ok
+snapshot_utc: 2026-07-28T22:44:06Z  |  block: 8723531  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.021198114 TAO (4.09420373796 USD), open=True
+- registration cost: 0.017690699 TAO (3.43694900172 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 10  |  free: 0
-- subnet age: 633.0 days  |  registered at block 4165565
+- subnet age: 633.1 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2832.1587922140234** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 2832.1587922140234
-- top_miner_usd_day: 2832.1587922140234 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2853.845090728261** (uid 21) <- the only figure quotable as achievable
+- median_miner_usd_day: 2853.845090728261
+- top_miner_usd_day: 2853.845090728261 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-07-28T21:37:21Z  |  block: 8723197  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2823.9396 USD/day  |  payback on registration: 0.0 days
+- net margin: 2845.6259 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 31.6 (rank 34), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
-- components: income 31.39 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 31.6 (rank 35), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- components: income 31.42 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

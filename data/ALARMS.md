@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-28T21:37:21Z, block 8723197
+# ALARMS - generated 2026-07-28T22:44:06Z, block 8723531
 
-window: first_seen in [2026-07-28T20:22:49Z, 2026-07-28T21:37:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-28T21:29:37Z, 2026-07-28T22:44:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn46:burn_drop:0.760` | 46 | BURN_DROP | P0 | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
 | `sn100:scoring_commit:2026-07-28T20:25:29Z` | 100 | SCORING_COMMIT | P1 | 2026-07-28T21:37:49Z | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight … |
 | `sn103:release:v2004: validator: default settle gate bu` | 103 | RELEASE | P1 | 2026-07-28T21:37:49Z | sn103 released v2004: validator: default settle gate budget to 1024 |
 | `sn103:scoring_commit:2026-07-28T20:35:46Z` | 103 | SCORING_COMMIT | P1 | 2026-07-28T21:37:49Z | sn103 commit touches scoring: validator: default settle gate budget to 1024 |
+| `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | P1 | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
+| `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | P1 | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
+| `sn74:release:release-20260728-214235` | 74 | RELEASE | P1 | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |
 
 ### detail
 
+- **`sn46:burn_drop:0.760`** - sn46 burn fell 1.000 -> 0.760 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn100:scoring_commit:2026-07-28T20:25:29Z`** - sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn103:release:v2004: validator: default settle gate bu`** - sn103 released v2004: validator: default settle gate budget to 1024
   - published 2026-07-28T20:35:46Z (was v2003: validator: restore miner burn fraction to 0.8)
 - **`sn103:scoring_commit:2026-07-28T20:35:46Z`** - sn103 commit touches scoring: validator: default settle gate budget to 1024
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn13:scoring_commit:2026-07-27T16:11:26Z`** - sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn56:scoring_commit:2026-07-28T22:18:44Z`** - sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260728-214235`** - sn74 released release-20260728-214235
+  - published 2026-07-28T21:41:18Z (was release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663))
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -373,3 +373,44 @@ def test_thin_competitive_sample_costs_confidence():
     assert thin["confidence"] < thick["confidence"]
     assert "not a distribution" in thin["confidence_reason"]
     assert thin["score"] < thick["score"]
+
+
+ORO_README = """## For Miners
+Miners submit Python agents that define an `agent_main()` function. Inside the
+sandbox, your agent can search 2.5M real products.
+
+## How It Works
+Validators run each agent in an isolated Docker sandbox against the benchmark.
+"""
+
+
+def test_code_submission_subnet_is_not_charged_for_a_served_gpu():
+    """sn15 ORO: miners submit Python agents, the VALIDATOR executes them in a
+    sandbox. There is no persistent miner process, so pricing a rented RTX 4090
+    against its income is the wrong cost model entirely."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": ORO_README,
+    })
+    assert got["required_vram_gb"] == 0
+    assert got["gpu_class_basis"] == margin.BASIS_SUBMISSION
+
+
+def test_submission_plus_training_still_needs_hardware():
+    """Submitting a MODEL you had to train yourself is a large GPU bill, even
+    though the validator does the serving."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": ORO_README + "\nMiners train a 70B model before submitting.",
+    })
+    assert got["gpu_class_basis"] != margin.BASIS_SUBMISSION
+
+
+def test_submit_alone_does_not_trigger_the_submission_rung():
+    """'Miners submit responses' is near-universal phrasing; both halves of the
+    pattern are required."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Miners submit responses to each query within 12 seconds.",
+    })
+    assert got["gpu_class_basis"] != margin.BASIS_SUBMISSION

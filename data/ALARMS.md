@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-28T11:18:54Z, block 8720105
+# ALARMS - generated 2026-07-28T11:28:09Z, block 8720151
 
-window: first_seen in [2026-07-28T10:04:21Z, 2026-07-28T11:19:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-28T10:14:26Z, 2026-07-28T11:29:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -17,6 +17,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn93:mechanism_added:1to2` | 93 | MECHANISM_ADDED | P0 | 2026-07-28T10:56:04Z | sn93 now runs 2 incentive mechanisms (was 1) |
 | `sn113:mechanism_added:1to2` | 113 | MECHANISM_ADDED | P0 | 2026-07-28T10:56:04Z | sn113 now runs 2 incentive mechanisms (was 1) |
 | `sn67:scoring_commit:2026-07-28T09:37:00Z` | 67 | SCORING_COMMIT | P1 | 2026-07-28T10:44:07Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post5 |
+| `sn76:scoring_commit:2026-07-28T11:28:42Z` | 76 | SCORING_COMMIT | P1 | 2026-07-28T11:29:26Z | sn76 commit touches scoring: Poll for validator image updates every two minutes |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | P2 | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 
 ### detail
@@ -36,6 +37,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn113:mechanism_added:1to2`** - sn113 now runs 2 incentive mechanisms (was 1)
   - A second distinct challenge now runs under this netuid.
 - **`sn67:scoring_commit:2026-07-28T09:37:00Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-07-28T11:28:42Z`** - sn76 commit touches scoring: Poll for validator image updates every two minutes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:readme_task_diff:b615b92c78ccda43`** - sn67 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.

@@ -29,8 +29,29 @@ from typing import Any, Dict, List, Optional
 # Ordered strongest-evidence-first. The label lands in `gpu_class_basis`.
 BASIS_MIN_COMPUTE = "min_compute.yml (curated)"
 BASIS_README_STATED = "README stated VRAM (explicit)"
+BASIS_SUBMISSION = "code-submission (validator runs it)"
 BASIS_README = "README keywords (GUESS)"
 BASIS_NONE = "no evidence"
+
+# Some subnets do not ask miners to RUN anything. The miner writes code and
+# submits it; the validator executes it in its own sandbox. sn15 ORO is the clear
+# case: "Miners submit Python agents that define an agent_main() function.
+# Validators run each agent in an isolated Docker sandbox." There is no
+# persistent miner process, so charging rented-GPU rates against that subnet's
+# income is simply the wrong cost model — it was pricing an RTX 4090 at
+# $8.22/day against a $10.54/day median and calling the subnet marginal.
+#
+# Both halves are required. "Miners submit X" alone is far too common, and
+# validator-side execution alone does not mean the miner is idle.
+_SUBMITS = re.compile(
+    r"(miners?\s+(submit|upload|push)|submit\s+(your|an?|the)\s+(agent|model|solution|code)"
+    r"|agent_main)", re.I)
+_VALIDATOR_EXECUTES = re.compile(
+    r"(validators?\s+(run|execute|evaluate)s?[^.]{0,60}(agent|submission|sandbox|container)"
+    r"|docker\s+sandbox|isolated\s+sandbox)", re.I)
+# ...unless the miner still has to TRAIN the thing before submitting it, which is
+# a large GPU bill even though the validator does the serving.
+_TRAINS = re.compile(r"\b(train|fine-?tun|checkpoint|pretrain|gradient)\w*", re.I)
 
 # Two orderings, both requiring the word VRAM/GPU explicitly.
 #
@@ -100,7 +121,8 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
             return {"required_vram_gb": 0, "gpu_class_basis": BASIS_MIN_COMPUTE,
                     "gpu_class_required": "cpu-only"}
 
-    readme = _miner_scope(row.get("readme_text", "") or "")
+    full = row.get("readme_text", "") or ""
+    readme = _miner_scope(full)
     if readme:
         # Rung 2: an EXPLICIT VRAM figure stated in the README. This must be
         # checked BEFORE model-name keywords. Doing it the other way round was a
@@ -120,7 +142,23 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
             return {"required_vram_gb": vram, "gpu_class_basis": BASIS_README_STATED,
                     "gpu_class_required": _label(vram)}
 
-        # Rung 3: model-name keywords. Explicitly a guess.
+        # Rung 3: the miner submits code and the validator runs it, so the miner
+        # needs a development box, not a served GPU. Ranked below an explicit
+        # VRAM statement: if a README says miners need 24 GB, believe it — they
+        # may well be building the submission locally.
+        #
+        # Matched against the FULL document, not the miner-scoped text. Who
+        # executes the code is a property of the protocol and is usually stated
+        # in an architecture section; sn15 ORO says "Miners submit Python agents"
+        # under "For Miners" but "Validators run each agent in an isolated Docker
+        # sandbox" under "How It Works", so scoping to the miner section alone
+        # sees only half the pattern. Sizing stays scoped; architecture does not.
+        if (_SUBMITS.search(full) and _VALIDATOR_EXECUTES.search(full)
+                and not _TRAINS.search(full)):
+            return {"required_vram_gb": 0, "gpu_class_basis": BASIS_SUBMISSION,
+                    "gpu_class_required": "cpu-only (dev box)"}
+
+        # Rung 4: model-name keywords. Explicitly a guess.
         #
         # A "CPU-only" phrase sitting alongside any GPU-requiring signal is a
         # CONTRADICTION, not a cheaper answer. Resolving it toward CPU is the

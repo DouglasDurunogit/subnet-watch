@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-28T15:03:42Z, block 8721229
+# ALARMS - generated 2026-07-28T16:57:54Z, block 8721800
 
-window: first_seen in [2026-07-28T13:49:08Z, 2026-07-28T15:04:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-28T15:43:29Z, 2026-07-28T16:58:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.3.12` | 28 | RELEASE | P1 | 2026-07-28T15:04:08Z | sn28 released v0.3.12 |
-| `sn56:scoring_commit:2026-07-28T14:55:22Z` | 56 | SCORING_COMMIT | P1 | 2026-07-28T15:04:08Z | sn56 commit touches scoring: feat(validator): auto-balance emission split from tournament particip… |
-| `sn76:scoring_commit:2026-07-28T14:03:58Z` | 76 | SCORING_COMMIT | P1 | 2026-07-28T15:04:08Z | sn76 commit touches scoring: Retry validator self registration until it succeeds |
-| `sn103:release:v2003: validator: restore miner burn fra` | 103 | RELEASE | P1 | 2026-07-28T15:04:08Z | sn103 released v2003: validator: restore miner burn fraction to 0.8 |
-| `sn103:scoring_commit:2026-07-28T13:16:22Z` | 103 | SCORING_COMMIT | P1 | 2026-07-28T15:04:08Z | sn103 commit touches scoring: validator: restore miner burn fraction to 0.8 |
+| `sn55:burn_drop:0.020` | 55 | BURN_DROP | P0 | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
+| `sn74:release:release-20260728-153232: chore(weights):` | 74 | RELEASE | P1 | 2026-07-28T16:58:29Z | sn74 released release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663) |
+| `sn76:scoring_commit:2026-07-28T16:00:07Z` | 76 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn76 commit touches scoring: Pay the reserved share in full from the first round and cap rewards a… |
+| `sn102:release:v0.3.2` | 102 | RELEASE | P1 | 2026-07-28T16:58:29Z | sn102 released v0.3.2 |
+| `sn102:scoring_commit:2026-07-24T20:54:05Z` | 102 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn102 commit touches scoring: 📊 telemetry: per-round baseline loss (validator_baseline_loss_by_round |
+| `sn124:scoring_commit:2026-07-28T16:31:54Z` | 124 | SCORING_COMMIT | P1 | 2026-07-28T16:58:29Z | sn124 commit touches scoring: Start evaluation at the full worker width |
 
 ### detail
 
-- **`sn28:release:v0.3.12`** - sn28 released v0.3.12
-  - published 2026-07-28T14:30:33Z (was v0.3.13-dev)
-- **`sn56:scoring_commit:2026-07-28T14:55:22Z`** - sn56 commit touches scoring: feat(validator): auto-balance emission split from tournament particip…
+- **`sn55:burn_drop:0.020`** - sn55 burn fell 1.000 -> 0.020 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn74:release:release-20260728-153232: chore(weights):`** - sn74 released release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663)
+  - published 2026-07-28T15:27:26Z (was release-20260721-140419)
+- **`sn76:scoring_commit:2026-07-28T16:00:07Z`** - sn76 commit touches scoring: Pay the reserved share in full from the first round and cap rewards a…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-07-28T14:03:58Z`** - sn76 commit touches scoring: Retry validator self registration until it succeeds
+- **`sn102:release:v0.3.2`** - sn102 released v0.3.2
+  - published 2026-07-28T15:57:44Z (was v0.3.1)
+- **`sn102:scoring_commit:2026-07-24T20:54:05Z`** - sn102 commit touches scoring: 📊 telemetry: per-round baseline loss (validator_baseline_loss_by_round
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn103:release:v2003: validator: restore miner burn fra`** - sn103 released v2003: validator: restore miner burn fraction to 0.8
-  - published 2026-07-28T13:16:22Z (was v2002: validator: chunk oversized settle batches to a deterministic gate budget)
-- **`sn103:scoring_commit:2026-07-28T13:16:22Z`** - sn103 commit touches scoring: validator: restore miner burn fraction to 0.8
+- **`sn124:scoring_commit:2026-07-28T16:31:54Z`** - sn124 commit touches scoring: Start evaluation at the full worker width
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -41,6 +44,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-07-28T11:28:42Z` | 76 | SCORING_COMMIT | 2026-07-28T11:29:26Z | sn76 commit touches scoring: Poll for validator image updates every two minutes |
 | `sn71:scoring_commit:2026-07-28T12:00:19Z` | 71 | SCORING_COMMIT | 2026-07-28T12:10:04Z | sn71 commit touches scoring: Verify durable chain settlement readback |
 | `sn89:scoring_commit:2026-07-28T12:59:01Z` | 89 | SCORING_COMMIT | 2026-07-28T12:59:29Z | sn89 commit touches scoring: hf scoreboard: publish n_submitters_3d |
+| `sn28:release:v0.3.12` | 28 | RELEASE | 2026-07-28T15:04:08Z | sn28 released v0.3.12 |
+| `sn56:scoring_commit:2026-07-28T14:55:22Z` | 56 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn56 commit touches scoring: feat(validator): auto-balance emission split from tournament particip… |
+| `sn76:scoring_commit:2026-07-28T14:03:58Z` | 76 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn76 commit touches scoring: Retry validator self registration until it succeeds |
+| `sn103:release:v2003: validator: restore miner burn fra` | 103 | RELEASE | 2026-07-28T15:04:08Z | sn103 released v2003: validator: restore miner burn fraction to 0.8 |
+| `sn103:scoring_commit:2026-07-28T13:16:22Z` | 103 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn103 commit touches scoring: validator: restore miner burn fraction to 0.8 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW

@@ -15,7 +15,7 @@ name: sweep
 
 on:
   schedule:
-    - cron: "7 * * * *"      # hourly at :07, off the peak-of-hour stampede
+    - cron: "7,27,47 * * * *"      # hourly at :07, off the peak-of-hour stampede
   workflow_dispatch:          # manual "Run workflow" button
     inputs:
       skip_github:

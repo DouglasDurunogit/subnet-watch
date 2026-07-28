@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-07-28T08:02:24Z  |  block: 8719123  |  row_status: ok
+snapshot_utc: 2026-07-28T08:05:03Z  |  block: 8719136  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.796727184439078**
-- registration cost: 0.0005 TAO (0.09351999999999999 USD), open=True
+- registration cost: 0.0005 TAO (0.09358 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
 - subnet age: 1004.1 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2626.1142140415727** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 2626.1142140415727
-- top_miner_usd_day: 14944.665009019358 (uid 209, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2627.797358912146** (uid 21) <- the only figure quotable as achievable
+- median_miner_usd_day: 2627.797358912146
+- top_miner_usd_day: 14954.243433338408 (uid 209, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-07-28T08:02:24Z  |  block: 8719123  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: 24GB consumer (~16 GB VRAM)  |  basis: **README stated VRAM (explicit)**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day
-- net margin: 2617.895 USD/day  |  payback on registration: 0.0 days
+- net margin: 2619.5782 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 52.3 (rank 4), confidence 1.0 
+- score: 52.3 (rank 3), confidence 1.0 
 - components: income 31.09 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 

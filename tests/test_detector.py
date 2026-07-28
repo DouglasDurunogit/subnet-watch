@@ -266,3 +266,14 @@ def test_ranking_ties_break_deterministically():
     order = [r["netuid"] for r in score.rank(list(rows))]
     assert order == [30, 10, 50]
     assert [r["netuid"] for r in score.rank(list(reversed(rows)))] == order
+
+
+def test_disk_size_after_the_word_vram_is_not_read_as_vram():
+    """sn26 again: '...NVIDIA GPU with 8+ GB VRAM, 100+ GB SSD'. A permissive
+    separator let the reversed pattern reach past the comma and claim a 100 GB
+    VRAM requirement."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Recommended: 8 vCPU, 32 GB RAM, NVIDIA GPU with 8+ GB VRAM, 100+ GB SSD",
+    })
+    assert got["required_vram_gb"] == 8

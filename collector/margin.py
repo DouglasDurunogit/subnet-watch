@@ -43,8 +43,12 @@ _VRAM_RE = re.compile(
     r"(\d{1,3})\s*\+?\s*(?:gb|gib)\s*(?:of\s+)?(?:v-?ram|gpu(?:\s+memory)?|graphics\s+memory)",
     re.I,
 )
+# Reversed phrasing ("VRAM: 48 GB"). The separator must NOT cross a comma or
+# newline: on sn26 a permissive `\W{0,12}` turned "...8+ GB VRAM, 100+ GB SSD"
+# into a claimed 100 GB VRAM requirement by reaching past the comma to the disk
+# size. Only spaces, colons and dashes may sit between the word and its number.
 _VRAM_RE_REVERSED = re.compile(
-    r"(?:v-?ram|gpu\s+memory)\W{0,12}?(\d{1,3})\s*\+?\s*(?:gb|gib)", re.I,
+    r"(?:v-?ram|gpu\s+memory)[ :=-]{0,4}(\d{1,3})\s*\+?\s*(?:gb|gib)", re.I,
 )
 _MIN_VRAM_RE = re.compile(r"min_vram\s*:\s*(\d+)", re.I)
 _GPU_REQUIRED_RE = re.compile(r"required\s*:\s*(true|false)", re.I)

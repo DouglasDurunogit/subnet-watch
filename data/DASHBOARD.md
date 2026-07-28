@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-28T10:55:40Z · block 8719989 · run_status **ok**_
+_snapshot 2026-07-28T10:58:29Z · block 8720003 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day | machine | burn | earners | top-1 share |
 |---:|---|---:|---:|---|---:|---:|---:|
-| 1 | sn68 NOVA | 77.2 | 6308.20 | rtx4090* | 0.00 | 1 | 100% |
-| 2 | sn67 Harnyx | 70.7 | 915.96 | rtx4090* | 0.09 | 60 | 19% |
-| 3 | sn85 Vidaio | 68.9 | 532.96 | rtx4090* | 0.00 | 10 | 17% |
-| 4 | sn107 Minos | 65 | 25185.30 | cpu-small | 0.00 | 20 | 91% |
-| 5 | sn89 InfiniteQuant | 64.6 | 147.72 | rtx4090* | 0.71 | 33 | 42% |
-| 6 | sn93 Bitcast | 62.1 | 69.75 | rtx4090* | 0.81 | 3 | 97% |
-| 7 | sn79 MVTRX | 50 | 566.53 | cpu-small | 0.00 | 214 | 13% |
-| 8 | sn15 ORO | 49 | 10144.90 | rtx4090* | 0.00 | 81 | 93% |
-| 9 | sn54 Yanez MIID | 48 | 882.38 | a4000 | 0.30 | 103 | 35% |
-| 10 | sn4 Targon | 47.9 | 7128.64 | rtx4090* | 0.00 | 8 | 30% |
-| 11 | sn120 Affine | 47.4 | 6264.51 | rtx4090* | 0.00 | 5 | 20% |
-| 12 | sn17 404—GEN | 47 | 5572.19 | rtx4090* | 0.00 | 1 | 100% |
-| 13 | sn11 TrajectoryRL | 46.8 | 5257.04 | rtx4090* | 0.00 | 1 | 100% |
-| 14 | sn63 Enigma | 46.4 | 4600.27 | rtx4090* | 0.00 | 3 | 100% |
-| 15 | sn114 SOMA | 45.9 | 4029.66 | rtx4090* | 0.00 | 3 | 65% |
-| 16 | sn51 lium.io | 45.6 | 3605.73 | rtx4090* | 0.00 | 40 | 63% |
-| 17 | sn91 cascade | 45.2 | 3278.25 | rtx4090* | 0.00 | 3 | 54% |
-| 18 | sn38 ChronoLLM | 44.7 | 2798.37 | rtx4090* | 0.00 | 10 | 52% |
-| 19 | sn9 iota | 44.5 | 2639.60 | rtx4090* | 0.80 | 3 | 80% |
-| 20 | sn78 Vocence | 43.8 | 2145.53 | rtx4090* | 0.00 | 1 | 100% |
+| 1 | sn68 NOVA | 77.2 | 6306.57 | rtx4090* | 0.00 | 1 | 100% |
+| 2 | sn67 Harnyx | 70.7 | 915.71 | rtx4090* | 0.09 | 60 | 19% |
+| 3 | sn85 Vidaio | 68.9 | 532.76 | rtx4090* | 0.00 | 10 | 17% |
+| 4 | sn107 Minos | 65 | 25605.60 | cpu-small | 0.00 | 20 | 91% |
+| 5 | sn89 InfiniteQuant | 64.6 | 147.68 | rtx4090* | 0.71 | 33 | 42% |
+| 6 | sn93 Bitcast | 62.1 | 69.73 | rtx4090* | 0.81 | 3 | 97% |
+| 7 | sn79 MVTRX | 50 | 566.38 | cpu-small | 0.00 | 214 | 13% |
+| 8 | sn15 ORO | 49 | 10142.40 | rtx4090* | 0.00 | 81 | 93% |
+| 9 | sn54 Yanez MIID | 48 | 882.14 | a4000 | 0.30 | 103 | 35% |
+| 10 | sn4 Targon | 47.8 | 7126.80 | rtx4090* | 0.00 | 8 | 30% |
+| 11 | sn120 Affine | 47.4 | 6262.97 | rtx4090* | 0.00 | 5 | 20% |
+| 12 | sn17 404—GEN | 47 | 5570.73 | rtx4090* | 0.00 | 1 | 100% |
+| 13 | sn11 TrajectoryRL | 46.8 | 5255.66 | rtx4090* | 0.00 | 1 | 100% |
+| 14 | sn63 Enigma | 46.4 | 4599.07 | rtx4090* | 0.00 | 3 | 100% |
+| 15 | sn114 SOMA | 45.9 | 4029.04 | rtx4090* | 0.00 | 3 | 65% |
+| 16 | sn51 lium.io | 45.6 | 3604.81 | rtx4090* | 0.00 | 40 | 63% |
+| 17 | sn91 cascade | 45.2 | 3277.35 | rtx4090* | 0.00 | 3 | 54% |
+| 18 | sn38 ChronoLLM | 44.7 | 2797.69 | rtx4090* | 0.00 | 10 | 52% |
+| 19 | sn9 iota | 44.5 | 2638.89 | rtx4090* | 0.80 | 3 | 80% |
+| 20 | sn78 Vocence | 43.8 | 2144.94 | rtx4090* | 0.00 | 1 | 100% |
 
 `*` = machine is an assumed default; no hardware evidence was found for that subnet.
 
@@ -88,9 +88,9 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 114 |
+| no evidence | 115 |
 | min_compute.yml (curated) | 9 |
-| README keywords (GUESS) | 4 |
+| README keywords (GUESS) | 3 |
 | README stated VRAM (explicit) | 1 |
 
 ## Recent changes (last 7 days)

@@ -55,6 +55,20 @@ SEVEN RULES:
    browsing (RPC is POST-only), so any chain number not from the repo is
    fabricated.
 
+8. CITE ONLY REAL FIELDS. [snap:<netuid>.<column>] is valid ONLY for a column
+   that actually exists in SNAPSHOT.csv. For anything from ALARMS.md or
+   EVENTS.jsonl (event class, first_seen_utc, one_line, detail) cite
+   [ev:<event_id>] instead. For a brief cite [brief:sn<N> P<n>], for an evidence
+   pack [pack:sn<N>]. Never invent a column name to satisfy the citation format
+   - a citation pointing at a field that does not exist is worse than none.
+
+9. NEVER re-decide BOX TYPE. Quote it verbatim from briefs/sn<N>.md paragraph 3.
+   If the brief says BLACK, say BLACK. You may add nuance in a sentence, but you
+   may not overturn the verdict. A forecast scored against a FUTURE outcome is
+   BLACK even when the resolver is objective and public, because you cannot
+   compute your score before submitting. Same for anything judged by an LLM or
+   a human, or scored relative to other miners.
+
 A 0 in a row whose row_status is not "ok" means MISSING, not zero.
 You never compute - quote the cell. Label any arithmetic of your own DERIVED.
 If the data cannot answer something, say so. "I don't have that" is correct;
@@ -94,10 +108,23 @@ Run the Bittensor subnet watch.
    WEIGHTS_VERSION_BUMP or MECHANISM_ADDED also fetch
    https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/subnets/sn<NN>.md
    and add three lines: INPUT, BOX TYPE, cheapest machine + net margin/day.
+   Take BOX TYPE VERBATIM from
+   https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/briefs/sn<NN>.md
+   paragraph 3. Do NOT re-derive it. If the brief says BLACK, say BLACK - a
+   forecast scored against a future outcome is BLACK even when the resolver is
+   objective and public, because you cannot score yourself before submitting.
    Cap at 5 alarms; list any remainder by netuid only.
 
-Every number needs a citation [snap:<netuid>.<column> @<utc> b<block>].
+CITATIONS: use [ev:<event_id>] for anything from ALARMS.md (class, first_seen,
+one_line, detail). Use [snap:<netuid>.<column> @<utc> b<block>] ONLY for a
+column that really exists in SNAPSHOT.csv. Never invent a column name to satisfy
+the format - there is no first_seen_utc, cheapest_machine or scoring_commit
+column; they are machine_class_cheapest and scoring_commit_title.
+
 Achievable income is competitive_miner_usd_day, never top_miner_usd_day.
-If miner_burn >= 0.99, say miners earn nothing there.
+If miner_burn >= 0.99, say miners earn nothing there - flag it even when the
+event itself looks interesting, because a scoring change on a dead subnet is
+not actionable.
+If machine_assumed is True, say the machine is an assumed default.
 Never fetch taostats, taomarketcap, or any subnet list.
 ```

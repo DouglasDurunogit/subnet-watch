@@ -1,8 +1,8 @@
 # Setting up the ChatGPT Project
 
-Everything below assumes the repo is **public** and the Action is committing to
-`data/`. Replace `OWNER/REPO` with your repo path in `01_SOURCES.md` first —
-that is the only file that needs editing.
+Everything below assumes the repo `DouglasDurunogit/subnet-watch` is **public** and
+the Action is committing to `data/`. The URLs below are already filled in; if the
+repo ever moves, `01_SOURCES.md` is the only file that needs editing.
 
 ---
 
@@ -59,13 +59,13 @@ rule kernel. Do not shorten it to "run the subnet watch".
 ```
 Run the Bittensor subnet watch.
 
-1. Fetch https://raw.githubusercontent.com/OWNER/REPO/main/data/MANIFEST.json
+1. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
    If generated_utc is more than 90 minutes old, reply exactly:
      "STALE FEED - last sweep <generated_utc> (<N>h <M>m ago). Pipeline may be
       down. No changes are known since then."
    and STOP. Do not say "no new challenges" - a dead pipeline is not quiet.
 
-2. Fetch https://raw.githubusercontent.com/OWNER/REPO/main/data/ALARMS.md
+2. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/ALARMS.md
 
 3. Report ONLY rows under "## NEW SINCE LAST RUN".
    Never promote anything from "## STILL OPEN" into the headline - those were
@@ -81,7 +81,7 @@ Run the Bittensor subnet watch.
 5. If NEW is non-empty, for each event give: class, netuid, name, first_seen,
    the one_line, and its detail. For NEW_SUBNET / RELEASE /
    WEIGHTS_VERSION_BUMP / MECHANISM_ADDED also fetch
-   https://raw.githubusercontent.com/OWNER/REPO/main/data/subnets/sn<NN>.md
+   https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/subnets/sn<NN>.md
    and add three lines: INPUT / BOX TYPE / cheapest machine + net margin.
    Cap at 5 alarms; list any remainder by netuid only.
 
@@ -103,9 +103,9 @@ seconds you will stop reading it, and the alarms lose their meaning.
 Run the daily Bittensor subnet digest.
 
 Fetch, in order:
-  https://raw.githubusercontent.com/OWNER/REPO/main/data/MANIFEST.json
-  https://raw.githubusercontent.com/OWNER/REPO/main/data/ALARMS.md
-  https://raw.githubusercontent.com/OWNER/REPO/main/data/RANKING.md
+  https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
+  https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/ALARMS.md
+  https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/RANKING.md
 Apply the staleness gate first (>90 min = STALE FEED; >24 h = refuse rankings).
 
 Produce:

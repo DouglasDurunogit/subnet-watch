@@ -1,13 +1,12 @@
 # 01_SOURCES — the only URLs you may visit
 
-**Before using this file, replace `OWNER/REPO` everywhere below with your actual
-public repo path.** Every other file refers back to this one, so this is the
-single place that needs editing.
+Repo: **`DouglasDurunogit/subnet-watch`** (public). Every other file refers back to
+this one, so if the repo ever moves, this is the only file that needs editing.
 
 Base (all data files live here):
 
 ```
-https://raw.githubusercontent.com/OWNER/REPO/main/
+https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/
 ```
 
 ## ALLOWED — fetch these, in this order

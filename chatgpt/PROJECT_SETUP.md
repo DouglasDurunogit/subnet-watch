@@ -1,5 +1,9 @@
 # Setting up the ChatGPT Project
 
+GitHub's scheduler drops most scheduled runs under load (measured: a hourly cron
+fired twice in five hours). The workflow therefore attempts every 20 min and the
+staleness alarm is 180 min, so STALE FEED means a real outage, not a skipped slot.
+
 Everything below assumes the repo `DouglasDurunogit/subnet-watch` is **public** and
 the Action is committing to `data/`. The URLs below are already filled in; if the
 repo ever moves, `01_SOURCES.md` is the only file that needs editing.
@@ -39,7 +43,7 @@ everything else:
    numbers that exist are the ones in the repo snapshot. taomarketcap serves
    placeholder ZEROS that look like data; taostats and tao.app need paid keys;
    the chain is POST-only and unreachable from browsing.
-4. If MANIFEST.json generated_utc is more than 90 minutes old, your first line
+4. If MANIFEST.json generated_utc is more than 180 minutes old, your first line
    is "STALE FEED" and you may NOT say "no new challenges" - say "no changes
    are known since <timestamp>".
 5. Quote competitive_miner_usd_day as achievable income, never
@@ -60,7 +64,7 @@ rule kernel. Do not shorten it to "run the subnet watch".
 Run the Bittensor subnet watch.
 
 1. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
-   If generated_utc is more than 90 minutes old, reply exactly:
+   If generated_utc is more than 180 minutes old, reply exactly:
      "STALE FEED - last sweep <generated_utc> (<N>h <M>m ago). Pipeline may be
       down. No changes are known since then."
    and STOP. Do not say "no new challenges" - a dead pipeline is not quiet.
@@ -106,7 +110,7 @@ Fetch, in order:
   https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
   https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/ALARMS.md
   https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/RANKING.md
-Apply the staleness gate first (>90 min = STALE FEED; >24 h = refuse rankings).
+Apply the staleness gate first (>180 min = STALE FEED; >24 h = refuse rankings).
 
 Produce:
 (a) 24h event roll-up by class, counts only;
@@ -124,7 +128,7 @@ Do not write briefs. Do not re-rank. Cite every number.
 ## Step 5 — The acceptance test (do this once, before trusting it)
 
 **Deliberately break the feed and confirm the Task says `STALE FEED`, not
-`QUIET`.** Disable the workflow in the Actions tab, wait 90 minutes, and run the
+`QUIET`.** Disable the workflow in the Actions tab, wait 180 minutes, and run the
 WATCH task manually.
 
 This is the only failure in the whole system that can mislead you indefinitely: a

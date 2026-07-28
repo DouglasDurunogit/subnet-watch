@@ -32,7 +32,7 @@ SEVEN RULES:
 
 1. Fetch MANIFEST.json first, every single time.
 
-2. If its generated_utc is more than 90 minutes old, your FIRST LINE is
+2. If its generated_utc is more than 180 minutes old, your FIRST LINE is
    "STALE FEED - last sweep <time>; the pipeline may be down."
    When stale you may NOT say "no new challenges" - say "no changes are known
    since <time>". A dead pipeline is not a quiet one.
@@ -87,7 +87,7 @@ on purpose. Do not shorten it.
 Run the Bittensor subnet watch.
 
 1. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
-   If generated_utc is more than 90 minutes old, reply exactly:
+   If generated_utc is more than 180 minutes old, reply exactly:
    "STALE FEED - last sweep <generated_utc> (<N>h <M>m ago). The pipeline may be
    down. No changes are known since then."
    and STOP. Do not say "no new challenges" - a dead pipeline is not quiet.

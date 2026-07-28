@@ -33,7 +33,7 @@ you skipped and why.
 
 `MANIFEST.json` carries `generated_utc`, `block`, `run_status`, `subnets_failed`.
 
-- **Older than 90 minutes** → your reply's **first line** must be:
+- **Older than 180 minutes** → your reply's **first line** must be:
   `STALE FEED — last successful sweep <generated_utc> (<N>h <M>m ago). The pipeline may be down.`
   In this state you must **not** write "no new challenges", "all quiet", or any
   all-clear phrasing. The only correct phrasing is:

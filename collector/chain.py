@@ -89,13 +89,48 @@ def _call_first(obj: Any, names: List[str], *args):
 
 # --- connection --------------------------------------------------------------
 
-def connect(network: str = "finney"):
-    """Return a Subtensor, compatible across new/old SDK casing."""
+# Public finney does drop connections. When it does, the sweep must fall back
+# rather than die: an hourly job that gives up on a blip goes stale, and stale is
+# the one state this monitor cannot usefully report on itself.
+FALLBACK_NETWORKS = ["finney", "lite", "latent-lite", "archive"]
+
+
+def _new_subtensor(network: str):
     if hasattr(bt, "Subtensor"):
         return bt.Subtensor(network=network)
     if hasattr(bt, "subtensor"):
         return bt.subtensor(network=network)
     raise RuntimeError("No bt.Subtensor / bt.subtensor in installed bittensor.")
+
+
+def connect(network: str = "finney", *, attempts: int = 3, verify: bool = True):
+    """Return a Subtensor, retrying and falling back across public endpoints.
+
+    `verify` makes the connection prove itself by enumerating subnets before it
+    is handed back. Without that check a socket that connects but cannot answer
+    still passes, and the caller dies one call later on
+    "Could not enumerate subnets" — which is exactly how a sweep was lost.
+    """
+    order = [network] + [n for n in FALLBACK_NETWORKS if n != network]
+    last: Optional[Exception] = None
+    for net in order:
+        for attempt in range(max(1, attempts)):
+            try:
+                st = _new_subtensor(net)
+                if verify:
+                    list_netuids(st)
+                if net != network:
+                    print(f"  chain: connected via fallback '{net}' "
+                          f"(primary '{network}' unavailable)", flush=True)
+                return st
+            except Exception as e:
+                last = e
+                if attempt + 1 < attempts:
+                    time.sleep(2.0 * (attempt + 1))   # linear backoff
+    raise RuntimeError(
+        f"could not reach any Bittensor endpoint ({', '.join(order)}): "
+        f"{type(last).__name__ if last else 'unknown'}"
+    ) from last
 
 
 def current_block(st: Any) -> Optional[int]:

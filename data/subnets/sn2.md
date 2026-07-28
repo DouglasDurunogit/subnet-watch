@@ -1,11 +1,11 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-07-28T12:08:40Z  |  block: 8720354  |  row_status: ok
+snapshot_utc: 2026-07-28T12:11:51Z  |  block: 8720370  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.093905 USD), open=True
+- registration cost: 0.0005 TAO (0.093955 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
 - subnet age: 831.4 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1

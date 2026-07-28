@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-28T11:28:09Z · block 8720151 · run_status **ok**_
+_snapshot 2026-07-28T11:30:20Z · block 8720162 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn67 Harnyx | 68.9 | 8.86 | 921 | cpu-small | 60 | 19% |
-| 2 | sn85 Vidaio | 67.9 | 400.43 | 528 | rtx4090* | 10 | 17% |
-| 3 | sn68 NOVA | 54.5 | 6292.12 | 6292 | rtx4090* | 1 | 100% |
-| 4 | sn23 Trishool | 52.4 | 1042.02 | 1042 | cpu-small | 3 | 33% |
-| 5 | sn11 TrajectoryRL | 50 | 5258.74 | 5259 | cpu-small | 1 | 100% |
-| 6 | sn120 Affine | 47.4 | 6275.91 | 6276 | rtx4090* | 5 | 20% |
-| 7 | sn4 Targon | 46 | 4053.01 | 7145 | rtx4090* | 8 | 30% |
-| 8 | sn93 Bitcast | 43.8 | 69.59 | 70 | rtx4090* | 3 | 97% |
-| 9 | sn114 SOMA | 42.7 | 1526.97 | 3983 | rtx4090* | 3 | 65% |
-| 10 | sn107 Minos | 41.9 | 85.61 | 25360 | cpu-small | 20 | 91% |
-| 11 | sn1 Apex | 41.3 | 1018.14 | 1872 | rtx4090* | 5 | 40% |
+| 1 | sn67 Harnyx | 68.9 | 8.85 | 921 | cpu-small | 60 | 19% |
+| 2 | sn85 Vidaio | 67.9 | 400.14 | 528 | rtx4090* | 10 | 17% |
+| 3 | sn68 NOVA | 54.5 | 6287.80 | 6288 | rtx4090* | 1 | 100% |
+| 4 | sn23 Trishool | 52.4 | 1041.30 | 1041 | cpu-small | 3 | 33% |
+| 5 | sn11 TrajectoryRL | 50 | 5255.11 | 5255 | cpu-small | 1 | 100% |
+| 6 | sn120 Affine | 47.4 | 6271.35 | 6271 | rtx4090* | 5 | 20% |
+| 7 | sn4 Targon | 46 | 4050.22 | 7140 | rtx4090* | 8 | 30% |
+| 8 | sn93 Bitcast | 43.8 | 69.54 | 70 | rtx4090* | 3 | 97% |
+| 9 | sn114 SOMA | 42.7 | 1525.93 | 3981 | rtx4090* | 3 | 65% |
+| 10 | sn107 Minos | 41.9 | 85.56 | 25343 | cpu-small | 20 | 91% |
+| 11 | sn1 Apex | 41.3 | 1017.42 | 1871 | rtx4090* | 5 | 40% |
 | 12 | sn89 InfiniteQuant | 39.3 | -8.15 | 147 | rtx4090* | 33 | 42% |
 | 13 | sn44 Score | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
-| 14 | sn98 NeverPlayAlone | 38.4 | 164.22 | 164 | cpu-small | 2 | 90% |
-| 15 | sn77 Liquidity | 37.9 | 364.43 | 649 | rtx4090* | 11 | 18% |
-| 16 | sn64 Chutes | 37.3 | 2035.65 | 10575 | a100-80 | 17 | 23% |
-| 17 | sn124 Swarm | 37.3 | 312.47 | 493 | rtx4090* | 16 | 13% |
-| 18 | sn96 Verathos | 34.5 | 29.28 | 167 | rtx4090 | 141 | 3% |
-| 19 | sn101 Tag101 | 34.4 | 10.22 | 17 | cpu-small | 244 | 1% |
-| 20 | sn38 ChronoLLM | 34 | 124.64 | 2793 | rtx4090* | 10 | 52% |
+| 14 | sn98 NeverPlayAlone | 38.4 | 164.10 | 164 | cpu-small | 2 | 90% |
+| 15 | sn77 Liquidity | 37.9 | 364.17 | 649 | rtx4090* | 11 | 18% |
+| 16 | sn64 Chutes | 37.3 | 2034.23 | 10568 | a100-80 | 17 | 23% |
+| 17 | sn124 Swarm | 37.3 | 312.25 | 493 | rtx4090* | 16 | 13% |
+| 18 | sn96 Verathos | 34.5 | 29.25 | 167 | rtx4090 | 141 | 3% |
+| 19 | sn101 Tag101 | 34.4 | 10.21 | 17 | cpu-small | 244 | 1% |
+| 20 | sn38 ChronoLLM | 34 | 123.82 | 2776 | rtx4090* | 10 | 52% |
 
 `net $/day (median)` is what a newcomer should expect: the MEDIAN non-owner,
 non-permitted miner, minus machine cost. `ceiling $/day` is the BEST competitive

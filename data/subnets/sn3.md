@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-07-28T11:28:09Z  |  block: 8720151  |  row_status: ok
+snapshot_utc: 2026-07-28T11:30:20Z  |  block: 8720162  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.011539643 TAO (2.1628752874900004 USD), open=True
+- registration cost: 0.011319579 TAO (2.1201571467 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
 - subnet age: 632.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3454.5154585446953** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 3454.5154585446953
-- top_miner_usd_day: 3454.5154585446953 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3452.1362963756073** (uid 21) <- the only figure quotable as achievable
+- median_miner_usd_day: 3452.1362963756073
+- top_miner_usd_day: 3452.1362963756073 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-07-28T11:28:09Z  |  block: 8720151  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3446.2963 USD/day  |  payback on registration: 0.0 days
+- net margin: 3443.9171 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 32.1 (rank 26), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- score: 32.1 (rank 25), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
 - components: income 32.17 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 

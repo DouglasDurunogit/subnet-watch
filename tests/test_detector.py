@@ -177,12 +177,32 @@ def test_stated_vram_beats_a_model_name_keyword():
     'EfficientNetV2-L' matched a 24 GB keyword hint, so the pipeline priced an
     RTX 4090 and understated the margin. A number the author wrote must always
     beat one inferred from a model name they happened to mention."""
+    # Verbatim shape of sn26's README, including the two traps it exposed:
+    # "16 GB RAM" is system memory and must NOT be read as VRAM, and the "+" in
+    # "8+ GB VRAM" must not prevent a match.
     got = margin.infer_requirement({
         "min_compute_present": False, "min_compute_is_template": False,
-        "readme_text": "Attacks EfficientNetV2-L. Miner minimum: 8 GB VRAM, 16 GB RAM.",
+        "readme_text": ("Attacks EfficientNetV2-L. Minimum: 4 vCPU, 16 GB RAM, 50 GB SSD. "
+                        "Recommended: 8 vCPU, 32 GB RAM, an NVIDIA GPU with 8+ GB VRAM."),
     })
-    assert got["required_vram_gb"] == 8
+    assert got["required_vram_gb"] == 8, "system RAM or the '+' broke VRAM parsing"
     assert got["gpu_class_basis"] == margin.BASIS_README_STATED
+
+
+def test_system_ram_is_never_mistaken_for_vram():
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Requires 64 GB RAM and 1 TB of disk. No GPU needed.",
+    })
+    assert got["gpu_class_basis"] != margin.BASIS_README_STATED
+
+
+def test_reversed_vram_phrasing_is_caught():
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": "Hardware: VRAM 48 GB, CPU 16 cores.",
+    })
+    assert got["required_vram_gb"] == 48
 
 
 def test_stated_vram_takes_the_minimum_of_several():

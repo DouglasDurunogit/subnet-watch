@@ -32,7 +32,20 @@ BASIS_README_STATED = "README stated VRAM (explicit)"
 BASIS_README = "README keywords (GUESS)"
 BASIS_NONE = "no evidence"
 
-_VRAM_RE = re.compile(r"(\d{1,3})\s*(?:gb|g)\s*(?:of\s*)?(?:v?ram|vram|gpu)", re.I)
+# Two orderings, both requiring the word VRAM/GPU explicitly.
+#
+# The obvious regex is wrong twice over, and both errors were observed on sn26:
+#   * `v?ram` also matches bare "RAM", so "16 GB RAM" (system memory) was read
+#     as a 16 GB VRAM requirement.
+#   * "8+ GB VRAM" did not match at all, because `\s*` cannot cross the "+".
+# Between them the pipeline read sn26 as needing 16 GB when its README says 8.
+_VRAM_RE = re.compile(
+    r"(\d{1,3})\s*\+?\s*(?:gb|gib)\s*(?:of\s+)?(?:v-?ram|gpu(?:\s+memory)?|graphics\s+memory)",
+    re.I,
+)
+_VRAM_RE_REVERSED = re.compile(
+    r"(?:v-?ram|gpu\s+memory)\W{0,12}?(\d{1,3})\s*\+?\s*(?:gb|gib)", re.I,
+)
 _MIN_VRAM_RE = re.compile(r"min_vram\s*:\s*(\d+)", re.I)
 _GPU_REQUIRED_RE = re.compile(r"required\s*:\s*(true|false)", re.I)
 
@@ -96,6 +109,7 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
         # "minimum X, recommended Y", and the entry requirement is what decides
         # whether you can play at all.
         stated = [int(m.group(1)) for m in _VRAM_RE.finditer(readme)]
+        stated += [int(m.group(1)) for m in _VRAM_RE_REVERSED.finditer(readme)]
         stated = [v for v in stated if 1 <= v <= 640]
         if stated:
             vram = min(stated)

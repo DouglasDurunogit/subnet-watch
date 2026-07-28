@@ -327,3 +327,30 @@ def test_genuine_cpu_only_readme_still_classifies_as_cpu():
         "readme_text": "A scraping subnet. Miners need no GPU required at all.",
     })
     assert got["required_vram_gb"] == 0
+
+
+SN106_README = """# nodexo
+bash scripts/setup_miner.sh      # GPU host
+bash scripts/setup_validator.sh  # CPU-only validator host
+
+| Role | Minimum |
+|---|---|
+| Miner | Ubuntu GPU host, supported NVIDIA GPU, working `nvidia-smi`, 16 GB RAM |
+"""
+
+
+def test_cpu_phrase_loses_to_a_bare_gpu_requirement():
+    """sn106 slipped past the first fix: 'CPU-only validator host' sat in a setup
+    snippet with no heading to drop, and no SIZING keyword opposed it, so the CPU
+    phrase won unopposed even though the miner row demands nvidia-smi."""
+    got = margin.infer_requirement({
+        "min_compute_present": False, "min_compute_is_template": False,
+        "readme_text": SN106_README,
+    })
+    assert got["gpu_class_required"] != "cpu-only"
+
+
+def test_no_gpu_required_is_not_read_as_a_gpu_signal():
+    """The contradiction tokens must not appear inside a negation, or every
+    genuinely CPU-only subnet would be forced to UNKNOWN."""
+    assert not margin._GPU_PRESENT.search("Miners need no GPU required at all.")

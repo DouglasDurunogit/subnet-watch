@@ -129,7 +129,8 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
         # the assumed default carry it, with confidence paying the cost.
         hits = [vram for pat, vram in _HINTS if pat.search(readme)]
         if hits:
-            if 0 in hits and any(v > 0 for v in hits):
+            contradicted = any(v > 0 for v in hits) or bool(_GPU_PRESENT.search(readme))
+            if 0 in hits and contradicted:
                 return {"required_vram_gb": None, "gpu_class_basis": BASIS_NONE,
                         "gpu_class_required": "unknown"}
             vram = hits[0]
@@ -139,6 +140,20 @@ def infer_requirement(row: Dict[str, Any]) -> Dict[str, Any]:
     return {"required_vram_gb": None, "gpu_class_basis": BASIS_NONE,
             "gpu_class_required": "unknown"}
 
+
+# "A GPU is required" signals, used ONLY to detect contradiction — never to size
+# the requirement. Deliberately made of tokens that cannot appear inside a
+# negation: "no GPU required" contains none of them, while "NVIDIA GPU",
+# "nvidia-smi", "CUDA" and "GPU host" all imply real silicon.
+#
+# This exists because sn106 slipped through the first fix: its README says
+# "CPU-only validator host" in a setup snippet and "Miner | GPU host, supported
+# NVIDIA GPU, working nvidia-smi" in a table, neither under a heading the scoper
+# could drop. No sizing keyword matched, so the CPU phrase won unopposed.
+_GPU_PRESENT = re.compile(
+    r"(nvidia|cuda|nvidia-smi|vram|\brtx\s*\d|\ba100\b|\bh100\b|\bh200\b|tesla|gpu host)",
+    re.I,
+)
 
 _HEADING_RE = re.compile(r"^(#{1,6})\s*(.+?)\s*$", re.M)
 _MINER_HEAD = re.compile(r"\bminer|mining\b", re.I)

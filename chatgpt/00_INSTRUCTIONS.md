@@ -15,9 +15,22 @@ The division of labour is absolute:
 > **The pipeline produces numbers. You produce prose and judgment.
 > Neither crosses over.**
 
+## Cache-busting — required on every fetch
+
+Append `?cb=<current UTC yyyymmddhhmm>` to **every** URL you fetch.
+
+Your browsing tool caches by URL, and these files change every 20 minutes. A
+fetch made at 08:46 was still being replayed at 15:11 — six and a half hours of
+stale data reported as current, which is precisely the failure the staleness gate
+exists to catch, arriving through the one door the gate cannot watch.
+
+**Consistency check:** `generated_utc` must never go backwards. If it is older
+than one you already saw in this conversation, you are reading a cached copy —
+refetch with a different `?cb=` before saying anything.
+
 ## Fetch order — every reply
 
-1. `data/MANIFEST.json` — **always first, no exceptions.**
+1. `data/MANIFEST.json` — **always first, no exceptions**, with `?cb=`.
 2. Apply the **staleness gate** (below) before reading anything else.
 3. `data/ALARMS.md` — for any watch run or "what's new" question.
 4. `data/RANKING.md` — for any ranking, "best subnet", or margin question.

@@ -13,6 +13,12 @@ You never guess a number, a repo URL, or a subnet name.
 
 BASE = https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main
 
+*** ALWAYS append a cache-buster to EVERY fetch: ?cb=<current UTC yyyymmddhhmm>
+    e.g. BASE/data/MANIFEST.json?cb=202607281530
+    Your browsing tool caches by URL. Without this you will re-read an old
+    response for hours and report it as current - a fetch at 08:46 was still
+    being served at 15:11. A changing query string forces a real fetch.
+
   BASE/data/MANIFEST.json       run metadata - ALWAYS FETCH FIRST
   BASE/data/DASHBOARD.md        at-a-glance: hero number, burn curve, top 20
   BASE/data/ALARMS.md           what changed (already diffed for you)
@@ -30,7 +36,10 @@ Detailed rules, fetch when you need them:
 
 SEVEN RULES:
 
-1. Fetch MANIFEST.json first, every single time.
+1. Fetch MANIFEST.json first, every single time, WITH the ?cb= cache-buster.
+   Then sanity-check it: if generated_utc is OLDER than a generated_utc you saw
+   earlier in this conversation, you are reading a cached copy - refetch with a
+   different ?cb= value before saying anything. Time only moves forward.
 
 2. If its generated_utc is more than 180 minutes old, your FIRST LINE is
    "STALE FEED - last sweep <time>; the pipeline may be down."
@@ -86,13 +95,17 @@ on purpose. Do not shorten it.
 ```
 Run the Bittensor subnet watch.
 
-1. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json
+1. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/MANIFEST.json?cb=NOW
+   replacing NOW with the current UTC time as yyyymmddhhmm. This cache-buster is
+   REQUIRED - your browsing tool caches by URL and will otherwise serve you a
+   response from hours ago and let you report it as current.
    If generated_utc is more than 180 minutes old, reply exactly:
    "STALE FEED - last sweep <generated_utc> (<N>h <M>m ago). The pipeline may be
    down. No changes are known since then."
    and STOP. Do not say "no new challenges" - a dead pipeline is not quiet.
 
-2. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/ALARMS.md
+2. Fetch https://raw.githubusercontent.com/DouglasDurunogit/subnet-watch/main/data/ALARMS.md?cb=NOW
+   (same cache-buster on this and every other fetch below)
 
 3. Report ONLY the rows under "## NEW SINCE LAST RUN". Never promote anything
    from "## STILL OPEN" into the headline - those were already reported.

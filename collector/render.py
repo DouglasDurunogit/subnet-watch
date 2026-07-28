@@ -53,6 +53,14 @@ def _atomic(path: str, text: str) -> None:
     os.replace(tmp, path)
 
 
+def _money(v: Optional[float]) -> str:
+    """Shared precision for median and ceiling. Rendering them differently made
+    the same number look like a ceiling below its own median."""
+    if v is None:
+        return "n/a"
+    return f"{v:,.0f}" if abs(v) >= 100 else f"{v:,.2f}"
+
+
 def _fmt(v: Any) -> str:
     if v is None:
         return ""
@@ -196,8 +204,8 @@ def write_ranking(path: str, ranked: List[Dict[str, Any]], all_rows: List[Dict[s
         t1 = r.get("top1_share")
         L.append(
             f"| {r['rank']} | {r['netuid']} | {g(r,'name')} | {g(r,'score')} | {g(r,'confidence')} "
-            f"| {('%.2f' % net) if net is not None else 'n/a'} "
-            f"| {('%.0f' % float(r['net_margin_top_usd_day'])) if g(r,'net_margin_top_usd_day')!='' else 'n/a'} "
+            f"| {_money(net)} "
+            f"| {_money(float(r['net_margin_top_usd_day']) if g(r,'net_margin_top_usd_day')!='' else None)} "
             f"| {g(r,'machine_class_cheapest','n/a')} "
             f"| {('%.3f' % float(r['miner_burn'])) if g(r,'miner_burn')!='' else 'n/a'} "
             f"| {g(r,'earners','n/a')} "

@@ -239,6 +239,19 @@ def chart_funnel(rows: List[Dict[str, Any]], path: str) -> List[tuple]:
 
 # --- the markdown dashboard --------------------------------------------------
 
+def _money(v: Optional[float]) -> str:
+    """One formatter for every money column.
+
+    Median and ceiling MUST render at the same precision. Formatting median to
+    2dp and ceiling to 0dp made 6301.11 and 6301 - the same number - look like a
+    ceiling BELOW its own median, which is mathematically impossible and rightly
+    destroyed confidence in the table.
+    """
+    if v is None:
+        return "n/a"
+    return f"{v:,.0f}" if abs(v) >= 100 else f"{v:,.2f}"
+
+
 def _textbar(v: float, vmax: float, width: int = 28, ch: str = "█") -> str:
     n = 0 if vmax <= 0 else int(round(width * max(0.0, v) / vmax))
     return ch * n
@@ -304,12 +317,15 @@ def write_dashboard(path: str, rows: List[Dict[str, Any]], manifest: Dict[str, A
         asm = "*" if str(r.get("machine_assumed")) == "True" else ""
         L.append(
             f"| {r['rank']} | sn{r['netuid']} {str(r.get('name',''))[:16]} | {r.get('score','')} "
-            f"| {('%.2f' % nm) if nm is not None else 'n/a'} "
-            f"| {('%.0f' % top) if top is not None else 'n/a'} "
+            f"| {_money(nm)} | {_money(top)}{' =' if (nm is not None and top is not None and abs(top-nm) < 0.005) else ''} "
             f"| {r.get('machine_class_cheapest','n/a')}{asm} | {r.get('earners','')} "
             f"| {('%.0f%%' % (t1*100)) if t1 is not None else 'n/a'} |"
         )
     L += [
+        "",
+        "`=` after the ceiling means it equals the median exactly - either one competitive",
+        "miner exists, or they all earn the same. Both columns use identical precision;",
+        "if they ever disagree the data is wrong, since a median cannot exceed its own max.",
         "",
         "`net $/day (median)` is what a newcomer should expect: the MEDIAN non-owner,",
         "non-permitted miner, minus machine cost. `ceiling $/day` is the BEST competitive",

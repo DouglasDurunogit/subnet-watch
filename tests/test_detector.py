@@ -433,3 +433,24 @@ def test_burn_drop_needs_both_sides_present():
     subnet."""
     assert events.detect(base(miner_burn=""), base(miner_burn=0.4)) == []
     assert events.detect(base(miner_burn=1.0), base(miner_burn="")) == []
+
+
+def test_median_can_never_exceed_the_ceiling():
+    """An invariant, not a preference: both come from the same set of competitive
+    miners, so median <= max always. The user questioned the table when rounding
+    made 6301.11 and 6301 look like a ceiling below its own median; if this ever
+    fails for real, the two figures are being computed from different sets."""
+    import csv, os
+    snap = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "SNAPSHOT.csv")
+    if not os.path.exists(snap):
+        return
+    bad = []
+    for r in csv.DictReader(open(snap, encoding="utf-8")):
+        try:
+            m, c = float(r["net_margin_usd_day"]), float(r["net_margin_top_usd_day"])
+        except (ValueError, KeyError):
+            continue
+        if m > c + 1e-6:
+            bad.append((r["netuid"], m, c))
+    assert not bad, f"median above ceiling on {bad}"

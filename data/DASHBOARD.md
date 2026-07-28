@@ -44,25 +44,29 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn67 Harnyx | 69 | 8.89 | 924 | cpu-small | 60 | 19% |
-| 2 | sn85 Vidaio | 67.9 | 398.41 | 529 | rtx4090* | 10 | 17% |
-| 3 | sn23 Trishool | 52.5 | 1044.99 | 1045 | cpu-small | 3 | 33% |
+| 2 | sn85 Vidaio | 67.9 | 398 | 529 | rtx4090* | 10 | 17% |
+| 3 | sn23 Trishool | 52.5 | 1,045 | 1,045 = | cpu-small | 3 | 33% |
 | 4 | sn71 Leadpoet | 50.4 | 1.15 | 288 | rtx4090* | 50 | 30% |
-| 5 | sn120 Affine | 47.4 | 6301.11 | 6301 | rtx4090* | 5 | 20% |
-| 6 | sn4 Targon | 46 | 4066.91 | 7170 | rtx4090* | 8 | 30% |
-| 7 | sn114 SOMA | 42.7 | 1530.13 | 3992 | rtx4090* | 3 | 65% |
-| 8 | sn107 Minos | 42.1 | 89.51 | 25409 | cpu-small | 20 | 90% |
-| 9 | sn1 Apex | 41.5 | 1089.20 | 1913 | rtx4090* | 5 | 41% |
-| 10 | sn102 ConnitoAI | 40.4 | 774.41 | 1202 | rtx4090* | 6 | 32% |
-| 11 | sn98 NeverPlayAlone | 38 | 148.99 | 149 | cpu-small | 2 | 91% |
-| 12 | sn77 Liquidity | 37.9 | 365.48 | 651 | rtx4090* | 11 | 18% |
-| 13 | sn64 Chutes | 37.3 | 2056.35 | 10641 | a100-80 | 17 | 23% |
-| 14 | sn124 Swarm | 37.2 | 306.71 | 484 | rtx4090* | 16 | 13% |
+| 5 | sn120 Affine | 47.4 | 6,301 | 6,301 = | rtx4090* | 5 | 20% |
+| 6 | sn4 Targon | 46 | 4,067 | 7,170 | rtx4090* | 8 | 30% |
+| 7 | sn114 SOMA | 42.7 | 1,530 | 3,992 | rtx4090* | 3 | 65% |
+| 8 | sn107 Minos | 42.1 | 89.51 | 25,409 | cpu-small | 20 | 90% |
+| 9 | sn1 Apex | 41.5 | 1,089 | 1,913 | rtx4090* | 5 | 41% |
+| 10 | sn102 ConnitoAI | 40.4 | 774 | 1,202 | rtx4090* | 6 | 32% |
+| 11 | sn98 NeverPlayAlone | 38 | 149 | 149 = | cpu-small | 2 | 91% |
+| 12 | sn77 Liquidity | 37.9 | 365 | 651 | rtx4090* | 11 | 18% |
+| 13 | sn64 Chutes | 37.3 | 2,056 | 10,641 | a100-80 | 17 | 23% |
+| 14 | sn124 Swarm | 37.2 | 307 | 484 | rtx4090* | 16 | 13% |
 | 15 | sn96 Verathos | 34.5 | 29.52 | 171 | rtx4090 | 143 | 3% |
-| 16 | sn101 Tag101 | 34.3 | 9.89 | 17 | cpu-small | 244 | 1% |
-| 17 | sn38 ChronoLLM | 33.9 | 123.50 | 2769 | rtx4090* | 10 | 52% |
-| 18 | sn55 NIOME | 33.8 | 108.65 | 303 | rtx4090* | 11 | 20% |
-| 19 | sn68 NOVA | 33.5 | 6301.29 | 6301 | rtx4090* | 1 | 100% |
-| 20 | sn17 404—GEN | 33.2 | 5571.63 | 5572 | rtx4090* | 1 | 100% |
+| 16 | sn101 Tag101 | 34.3 | 9.89 | 17.33 | cpu-small | 244 | 1% |
+| 17 | sn38 ChronoLLM | 33.9 | 124 | 2,769 | rtx4090* | 10 | 52% |
+| 18 | sn55 NIOME | 33.8 | 109 | 303 | rtx4090* | 11 | 20% |
+| 19 | sn68 NOVA | 33.5 | 6,301 | 6,301 = | rtx4090* | 1 | 100% |
+| 20 | sn17 404—GEN | 33.2 | 5,572 | 5,572 = | rtx4090* | 1 | 100% |
+
+`=` after the ceiling means it equals the median exactly - either one competitive
+miner exists, or they all earn the same. Both columns use identical precision;
+if they ever disagree the data is wrong, since a median cannot exceed its own max.
 
 `net $/day (median)` is what a newcomer should expect: the MEDIAN non-owner,
 non-permitted miner, minus machine cost. `ceiling $/day` is the BEST competitive

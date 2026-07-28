@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-28T08:09:57Z · block 8719160 · run_status **ok**_
+_snapshot 2026-07-28T08:46:51Z · block 8719345 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 91 | `miner_burn` < 0.99 |
-| Ranked | 91 | passed every gate |
+| Pays miners at all | 90 | `miner_burn` < 0.99 |
+| Ranked | 90 | passed every gate |
 | **Positive margin** | **71** | income beats machine cost |
-| New events this window | 4 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -34,8 +34,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 10 | `█████` |
-| ≥0.99 dead | 37 | `██████████████████` |
+| 0.8–0.99 | 9 | `████` |
+| ≥0.99 dead | 38 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day | machine | burn | earners | top-1 share |
 |---:|---|---:|---:|---|---:|---:|---:|
-| 1 | sn85 Vidaio | 68.9 | 539.33 | rtx4090* | 0.00 | 10 | 16% |
-| 2 | sn107 Minos | 64.9 | 24385.20 | cpu-small | 0.00 | 20 | 90% |
-| 3 | sn9 iota | 52.3 | 2622.42 | a4000 | 0.80 | 3 | 80% |
-| 4 | sn79 MVTRX | 50.7 | 675.72 | cpu-small | 0.00 | 218 | 16% |
-| 5 | sn15 ORO | 48.9 | 9870.93 | rtx4090* | 0.00 | 81 | 93% |
-| 6 | sn54 Yanez MIID | 48.2 | 906.74 | a4000 | 0.30 | 104 | 35% |
-| 7 | sn4 Targon | 47.8 | 7094.78 | rtx4090* | 0.00 | 8 | 30% |
-| 8 | sn53 engy | 47.7 | 2617.41 | cpu-small | 0.00 | 38 | 18% |
-| 9 | sn68 NOVA | 47.4 | 6299.97 | rtx4090* | 0.00 | 1 | 100% |
-| 10 | sn120 Affine | 47.3 | 6137.51 | rtx4090* | 0.00 | 5 | 20% |
-| 11 | sn11 TrajectoryRL | 46.8 | 5218.43 | rtx4090* | 0.00 | 1 | 100% |
-| 12 | sn114 SOMA | 46.1 | 4256.29 | rtx4090* | 0.00 | 3 | 65% |
-| 13 | sn51 lium.io | 45.8 | 3917.03 | rtx4090* | 0.00 | 22 | 70% |
-| 14 | sn38 ChronoLLM | 45.1 | 3183.05 | rtx4090* | 0.00 | 10 | 52% |
-| 15 | sn82 Compelle | 44.9 | 2931.48 | rtx4090* | 0.00 | 1 | 100% |
-| 16 | sn91 cascade | 44.8 | 2846.07 | rtx4090* | 0.00 | 3 | 46% |
-| 17 | sn78 Vocence | 43.9 | 2177.98 | rtx4090* | 0.00 | 1 | 100% |
-| 18 | sn1 Apex | 43.4 | 1899.87 | rtx4090* | 0.14 | 5 | 41% |
-| 19 | sn49 Nepher Robotics | 42.8 | 4084.92 | a6000 | 0.00 | 2 | 99% |
-| 20 | sn64 Chutes | 42.7 | 10350.70 | a100-80 | 0.00 | 17 | 23% |
+| 1 | sn85 Vidaio | 69.2 | 580.33 | rtx4090* | 0.00 | 10 | 18% |
+| 2 | sn107 Minos | 64.9 | 24549.70 | cpu-small | 0.00 | 20 | 90% |
+| 3 | sn9 iota | 52.3 | 2625.42 | a4000 | 0.80 | 3 | 80% |
+| 4 | sn79 MVTRX | 50.9 | 698.38 | cpu-small | 0.00 | 219 | 16% |
+| 5 | sn15 ORO | 49 | 9956.10 | rtx4090* | 0.00 | 81 | 93% |
+| 6 | sn54 Yanez MIID | 48.1 | 902.38 | a4000 | 0.31 | 104 | 35% |
+| 7 | sn4 Targon | 48 | 7378.70 | rtx4090* | 0.00 | 7 | 37% |
+| 8 | sn53 engy | 47.7 | 2624.59 | cpu-small | 0.00 | 38 | 18% |
+| 9 | sn68 NOVA | 47.4 | 6301.42 | rtx4090* | 0.00 | 1 | 100% |
+| 10 | sn120 Affine | 47.3 | 6149.37 | rtx4090* | 0.00 | 5 | 20% |
+| 11 | sn11 TrajectoryRL | 46.8 | 5226.51 | rtx4090* | 0.00 | 1 | 100% |
+| 12 | sn114 SOMA | 46.1 | 4231.35 | rtx4090* | 0.00 | 3 | 65% |
+| 13 | sn91 cascade | 45.3 | 3329.67 | rtx4090* | 0.00 | 3 | 54% |
+| 14 | sn51 lium.io | 45.3 | 3313.41 | rtx4090* | 0.00 | 39 | 63% |
+| 15 | sn38 ChronoLLM | 45.1 | 3187.67 | rtx4090* | 0.00 | 10 | 52% |
+| 16 | sn82 Compelle | 44.9 | 2934.76 | rtx4090* | 0.00 | 1 | 100% |
+| 17 | sn78 Vocence | 44 | 2239.10 | rtx4090* | 0.00 | 1 | 100% |
+| 18 | sn28 gm | 43.5 | 1951.15 | rtx4090* | 0.64 | 9 | 64% |
+| 19 | sn1 Apex | 43.4 | 1899.96 | rtx4090* | 0.14 | 5 | 41% |
+| 20 | sn63 Enigma | 43.2 | 4521.77 | h200-141 | 0.00 | 3 | 100% |
 
 `*` = machine is an assumed default; no hardware evidence was found for that subnet.
 
@@ -76,9 +76,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 29 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 16 |
+| wide (<30%) | 28 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 14 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality

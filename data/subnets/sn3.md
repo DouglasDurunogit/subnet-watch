@@ -1,24 +1,24 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-07-28T08:46:51Z  |  block: 8719345  |  row_status: ok
+snapshot_utc: 2026-07-28T10:43:35Z  |  block: 8719929  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.01082488 TAO (2.0289072584000003 USD), open=True
+- registration cost: 0.011166756 TAO (2.09689344168 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
-- subnet age: 632.5 days  |  registered at block 4165565
+- subnet age: 632.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3463.766013280264** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 3463.766013280264
-- top_miner_usd_day: 3463.766013280264 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3470.178197021262** (uid 55) <- the only figure quotable as achievable
+- median_miner_usd_day: 3470.178197021262
+- top_miner_usd_day: 3470.178197021262 (uid 55, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.0  |  top1_share: 0.25  |  top10_share: 1.0
+- earners: 4  |  gini: 4.57791613257541e-05  |  top1_share: 0.2500152597204419  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,13 +36,13 @@ snapshot_utc: 2026-07-28T08:46:51Z  |  block: 8719345  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3455.5468 USD/day  |  payback on registration: 0.0 days
+- net margin: 3461.959 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 32.1 (rank 55), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
-- components: income 32.18 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 32.1 (rank 56), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- components: income 32.19 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

@@ -1,13 +1,44 @@
-# ALARMS - generated 2026-07-29T17:58:54Z, block 8729297
+# ALARMS - generated 2026-07-29T19:39:31Z, block 8729800
 
-window: first_seen in [2026-07-29T16:44:21Z, 2026-07-29T17:59:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T18:24:57Z, 2026-07-29T19:39:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn7:release:release-20260729-181714` | 7 | RELEASE | P1 | 2026-07-29T19:39:57Z | sn7 released release-20260729-181714 |
+| `sn7:scoring_commit:2026-07-29T18:16:30Z` | 7 | SCORING_COMMIT | P1 | 2026-07-29T19:39:57Z | sn7 commit touches scoring: Add BURN_RATE with pools scaled to the miner share (#607) |
+| `sn66:scoring_commit:2026-07-29T18:25:12Z` | 66 | SCORING_COMMIT | P1 | 2026-07-29T19:39:57Z | sn66 commit touches scoring: Introduce tiered solver task pool |
+| `sn74:release:release-20260729-181654` | 74 | RELEASE | P1 | 2026-07-29T19:39:57Z | sn74 released release-20260729-181654 |
+| `sn100:scoring_commit:2026-07-29T19:04:37Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T19:39:57Z | sn100 commit touches scoring: fix(agent-challenge): supply LLM_MODEL to the evaluated agent |
+| `sn103:release:v2006: validator: start signer balance g` | 103 | RELEASE | P1 | 2026-07-29T19:39:57Z | sn103 released v2006: validator: start signer balance gauge at the unknown sentinel |
+| `sn103:scoring_commit:2026-07-29T19:27:15Z` | 103 | SCORING_COMMIT | P1 | 2026-07-29T19:39:57Z | sn103 commit touches scoring: validator: start signer balance gauge at the unknown sentinel |
+| `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | P2 | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |
+| `sn66:readme_task_diff:93fd61d3541878a9` | 66 | README_TASK_DIFF | P2 | 2026-07-29T19:39:57Z | sn66 README task/scoring sections changed |
+
+### detail
+
+- **`sn7:release:release-20260729-181714`** - sn7 released release-20260729-181714
+  - published 2026-07-29T18:16:30Z (was release-20260728-234943)
+- **`sn7:scoring_commit:2026-07-29T18:16:30Z`** - sn7 commit touches scoring: Add BURN_RATE with pools scaled to the miner share (#607)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-07-29T18:25:12Z`** - sn66 commit touches scoring: Introduce tiered solver task pool
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260729-181654`** - sn74 released release-20260729-181654
+  - published 2026-07-29T18:16:34Z (was release-20260728-214235)
+- **`sn100:scoring_commit:2026-07-29T19:04:37Z`** - sn100 commit touches scoring: fix(agent-challenge): supply LLM_MODEL to the evaluated agent
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn103:release:v2006: validator: start signer balance g`** - sn103 released v2006: validator: start signer balance gauge at the unknown sentinel
+  - published 2026-07-29T19:27:15Z (was v2004: validator: default settle gate budget to 1024)
+- **`sn103:scoring_commit:2026-07-29T19:27:15Z`** - sn103 commit touches scoring: validator: start signer balance gauge at the unknown sentinel
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn6:readme_task_diff:b7a9d9192013aa91`** - sn6 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn66:readme_task_diff:93fd61d3541878a9`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

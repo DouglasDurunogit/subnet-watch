@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-07-29T17:58:54Z  |  block: 8729297  |  row_status: ok
+snapshot_utc: 2026-07-29T19:39:31Z  |  block: 8729800  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (38.426 USD), open=True
+- registration cost: 0.2 TAO (38.112 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 229  |  free: 0
-- subnet age: 765.2 days  |  registered at block 3219949
+- subnet age: 765.3 days  |  registered at block 3219949
 - weights_version: 2018  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 250.4100873321995** (uid 148) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.051161525657819895
-- top_miner_usd_day: 250.4100873321995 (uid 148, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 248.35729422857727** (uid 148) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.05074211752550358
+- top_miner_usd_day: 248.35729422857727 (uid 148, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,9 +26,9 @@ snapshot_utc: 2026-07-29T17:58:54Z  |  block: 8729297  |  row_status: ok
 - on-chain URL: `https://github.com/numinouslabs/numinous`
 - resolved URL: `https://github.com/numinouslabs/numinous`
 - status: **ok** 
-- README: 4722 bytes, sha cd994dea4b134746
+- README: 5473 bytes, sha 358a7cb13606d9bf
 - latest release: (none) 
-- last commit: 2026-06-30T16:35:51Z
+- last commit: 2026-07-29T19:30:45Z
 - scoring-related commit: Merge pull request #39 from koskotheim/lightning-rod-miner-guide 2026-06-26T14:29:38Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-07-29T17:58:54Z  |  block: 8729297  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9351 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9356 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 15.0 (rank 60), confidence 1.0 
-- components: income 0.0 / freshness 0.0 / resource 15.0 / registration 0.0
-- freshness basis: no challenge change on record
+- score: 50.0 (rank 17), confidence 1.0 
+- components: income 0.0 / freshness 35.0 / resource 15.0 / registration 0.0
+- freshness basis: README_TASK_DIFF 0.0d ago
 
 ## On-chain description
 
@@ -63,6 +63,8 @@ snapshot_utc: 2026-07-29T17:58:54Z  |  block: 8729297  |  row_status: ok
 ---
 
 </div>
+
+### 👉 New here? Start with the **[Miner Setup Guide](docs/miner-setup.md)** — it is the entry point to all the documentation.
 
 ## Introduction
 
@@ -91,8 +93,8 @@ Validators spin up parallel sandboxes where miners are evaluated on batches of e
 ### Key Components
 
   * **The Sandbox:** Isolated execution environment with strict resource limits.
-  * **The Gateway:** A signing proxy allowing agents to access **Chutes (SN64)** for compute, **Desearch (SN22)** for live data, **OpenAI** for GPT-5 models, **Vericore** for statement verification, **LunarCrush** for social intelligence, **OpenRouter** for multi-provider LLM access, and **Numinous Signals** for event-relevant scored news signals without exposing validator keys.
-  * **Forecasting logic:** Agents execute once per event; only agent which were registered prior to broadcasting execute.
+  * **The Gateway:** A signing proxy allowing agents to reach **OpenAI**, **OpenRouter** and **Lightning Rod** for inference, plus **Numinous Signals** and **Numinous Indicia** for scored news and OSINT signals — all without exposing validator keys.
+  * **Forecasting logic:** Agents re-forecast every live event every interval, carrying a private memory blob between runs.
 
 📖 **[Read the full system architecture](docs/architecture.md)**
 
@@ -111,9 +113,9 @@ To survive in the Numinous arena, agents must adhere to strict constraints. Viol
 
 ### Scoring
 
-We utilize a **Winner-Takes-All** mechanism based on **Brier Score**. Agents are scored on their average performance over a rolling window of 100 events.
+Forecasts are scored against the **market's own price**, not the outcome alone: `S = (prediction − target)² − (market_price − target)²`, where the target is the market price 7 days later. Matching the market scores exactly 0 — it is the baseline you have to beat. Rewards are split by how far ahead of the field you are, and miners below **85% coverage** earn nothing.
 
-⚠️ **[Read the full subnet rules](docs/subnet-rules.md)**
+⚠️ **[Read the full subnet rules](docs/subnet-rules.md)** • 📊 **[Read the scoring system](docs/scoring-system.md)**
 
 
 -----
@@ -124,8 +126,10 @@ We utilize a **Winner-Takes-All** mechanism based on **Brier Score**. Agents are
 
 Develop and deploy forecasting agents that compete for the daily reward pool.
 
-  * [**Miner Setup Guide**](docs/miner-setup.md) – Installation, wallet registration, and deployment.
-  * [**Gateway Guide**](docs/gateway-guide.md) – How to use the Desearch and Chutes APIs.
+  * [**Miner Setup Guide**](docs/miner-setup.md) – **Start here.** Installation, wallet registration, writing an agent, and deployment.
+  * [**Subnet Rules**](docs/subnet-rules.md) – Execution limits, memory, event selection, penalties.
+  * [**Scoring System**](docs/scoring-system.md) – How you are scored and paid.
+  * [**Gateway Guide**](docs/gateway-guide.md) – Every API endpoint your agent can call.
 
 ### For Validators
 
@@ -146,23 +150,28 @@ Agents must adhere to the interface defined in the architecture. Code size is li
 ```python
 def agent_main(event_data: dict) -> dict:
     """
+    Called once per event, per interval — the same event comes back
+    every interval until its cutoff.
+
     Args:
         event_data: {
             "event_id": str,
             "title": str,
             "description": str,
-            "cutoff": str,  # ISO 8601
-            "metadata": dict
+            "cutoff": str,          # ISO 8601
+            "metadata": dict,
+            "memory": str | None,   # what you returned last interval
         }
 
     Returns:
         {
             "event_id": str,
-            "prediction": float  # 0.0 to 1.0
+            "prediction": float,    # 0.0 to 1.0
+            "memory": str | None,   # optional, <= 32768 chars
         }
     """
     # Logic goes here
-    return {"event_id": event_data["event_id"], "prediction": 0.75}
+    return {"event_id": event_data["event_id"], "prediction": 0.75, "memory": None}
 ```
 
 For details on available libraries and API access, refer to the [Gateway Guide](docs/gateway-guide.md).

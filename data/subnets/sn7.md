@@ -1,49 +1,49 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-07-28T23:44:35Z  |  block: 8723834  |  row_status: ok
+snapshot_utc: 2026-07-29T01:13:04Z  |  block: 8724270  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.24698924319818616**
-- registration cost: 0.15 TAO (29.008499999999998 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
+- miner_burn: **0.4589702761732042**
+- registration cost: 0.15 TAO ([UNKNOWN] USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 23  |  free: 0
 - subnet age: 846.7 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1567.4908116342185** (uid 73) <- the only figure quotable as achievable
-- median_miner_usd_day: 263.6034023888683
-- top_miner_usd_day: 1567.4908116342185 (uid 73, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: [UNKNOWN]** (uid 73) <- the only figure quotable as achievable
+- median_miner_usd_day: [UNKNOWN]
+- top_miner_usd_day: [UNKNOWN] (uid 73, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.6217800024417042  |  top1_share: 0.7482908069832742  |  top10_share: 1.0
-- owner_incentive_share: 0.24700891222073007 (independent check on miner_burn; disagreement 0.0)
+- earners: 11  |  gini: 0.8237907158385116  |  top1_share: 0.5362358650368538  |  top10_share: 0.9999847395809488
+- owner_incentive_share: 0.45900288421920066 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 3103 bytes, sha 0813063647d71f0c
-- latest release: release-20260727-232657: Persist the direction pool on every score row (#600) 2026-07-27T22:41:44Z
-- last commit: 2026-07-27T22:41:44Z
-- scoring-related commit: Persist the direction pool on every score row (#600) 2026-07-27T22:41:44Z
+- README: 3314 bytes, sha 9ce1a41a5ac77071
+- latest release: release-20260728-234943 2026-07-28T23:48:01Z
+- last commit: 2026-07-28T23:48:01Z
+- scoring-related commit: Verify TAO transfers by settlement rather than by the decoded call (#… 2026-07-28T23:48:01Z
 
 ## Resources
 
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1.5629 USD/day  |  payback on registration: 18.56 days
+- net margin: [UNKNOWN] USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 16.0 (rank 59), confidence 0.85 - hardware requirement unknown
-- components: income 3.72 / freshness 0.0 / resource 11.25 / registration 3.81
-- freshness basis: no challenge change on record
+- score: 39.3 (rank 13), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 
@@ -56,7 +56,7 @@ snapshot_utc: 2026-07-28T23:44:35Z  |  block: 8723834  |  row_status: ok
 
 **Universal Transaction Layer**
 
-Trustless native transactions across independent assets — Bittensor Subnet 7 (SN7).
+Native transactions across independent assets — no wrapped tokens, no bridges, no custodian. Bittensor Subnet 7 (SN7).
 
 [![Twitter](https://img.shields.io/twitter/follow/allways_io?style=social)](https://x.com/allways_io)
 
@@ -155,6 +155,6 @@ MIT License
 
 ---
 
-<sub>Allways is permissionless, open-source, beta software. The protocol facilitates trustless peer-to-peer transactions — the creators and contributors do not custody, control, or intermediate any funds. Use at your own risk. This software is provided "as is" without warranty of any kind. Nothing herein constitutes financial advice, and the creators assume no liability for losses arising from use of the protocol.</sub>
+<sub>Allways is permissionless, open-source, beta software. Swaps settle directly between counterparty wallets; the protocol never takes custody of user funds, and the protocol fee is charged against miner collateral rather than any user transfer. Validator operators, including those run by the project, verify swap outcomes but cannot redirect or receive any transferred amount. Use at your own risk. This software is provided "as is" without warranty of any kind. Nothing herein constitutes financial advice, and the creators assume no liability for losses arising from use of the protocol.</sub>
 
 ```

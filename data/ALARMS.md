@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-28T23:44:35Z, block 8723834
+# ALARMS - generated 2026-07-29T01:13:04Z, block 8724270
 
-window: first_seen in [2026-07-28T22:30:02Z, 2026-07-28T23:45:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-28T23:58:34Z, 2026-07-29T01:13:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn46:burn_drop:0.760` | 46 | BURN_DROP | P0 | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
-| `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | P1 | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
-| `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | P1 | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
-| `sn74:release:release-20260728-214235` | 74 | RELEASE | P1 | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |
+| `sn7:release:release-20260728-234943` | 7 | RELEASE | P1 | 2026-07-29T01:13:34Z | sn7 released release-20260728-234943 |
+| `sn7:scoring_commit:2026-07-28T23:48:01Z` | 7 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#… |
+| `sn67:scoring_commit:2026-07-28T14:27:25Z` | 67 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9 |
+| `sn100:scoring_commit:2026-07-29T00:37:31Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only… |
+| `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | P2 | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 
 ### detail
 
-- **`sn46:burn_drop:0.760`** - sn46 burn fell 1.000 -> 0.760 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn13:scoring_commit:2026-07-27T16:11:26Z`** - sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures
+- **`sn7:release:release-20260728-234943`** - sn7 released release-20260728-234943
+  - published 2026-07-28T23:48:01Z (was release-20260727-232657: Persist the direction pool on every score row (#600))
+- **`sn7:scoring_commit:2026-07-28T23:48:01Z`** - sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-07-28T22:18:44Z`** - sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi…
+- **`sn67:scoring_commit:2026-07-28T14:27:25Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260728-214235`** - sn74 released release-20260728-214235
-  - published 2026-07-28T21:41:18Z (was release-20260728-153232: chore(weights): zero metagraphed and loopover emission shares (#1663))
+- **`sn100:scoring_commit:2026-07-29T00:37:31Z`** - sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:readme_task_diff:2c3937a290a2972c`** - sn67 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,6 +37,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.020` | 55 | BURN_DROP | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
 | `sn76:burn_drop:0.000` | 76 | BURN_DROP | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn62:burn_drop:0.038` | 62 | BURN_DROP | 2026-07-28T20:08:41Z | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
+| `sn46:burn_drop:0.760` | 46 | BURN_DROP | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -59,6 +63,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-07-28T20:25:29Z` | 100 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight … |
 | `sn103:release:v2004: validator: default settle gate bu` | 103 | RELEASE | 2026-07-28T21:37:49Z | sn103 released v2004: validator: default settle gate budget to 1024 |
 | `sn103:scoring_commit:2026-07-28T20:35:46Z` | 103 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn103 commit touches scoring: validator: default settle gate budget to 1024 |
+| `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
+| `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
+| `sn74:release:release-20260728-214235` | 74 | RELEASE | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-29T10:20:30Z, block 8727005
+# ALARMS - generated 2026-07-29T12:28:21Z, block 8727644
 
-window: first_seen in [2026-07-29T09:05:57Z, 2026-07-29T10:20:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T11:13:47Z, 2026-07-29T12:28:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn8:scoring_commit:2026-07-29T09:27:07Z` | 8 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn8 commit touches scoring: Full miner payouts (#862) |
-| `sn51:scoring_commit:2026-07-29T08:36:45Z` | 51 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s… |
-| `sn53:scoring_commit:2026-07-29T08:32:57Z` | 53 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section |
-| `sn100:scoring_commit:2026-07-29T10:11:17Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g… |
+| `sn71:scoring_commit:2026-07-29T09:31:54Z` | 71 | SCORING_COMMIT | P1 | 2026-07-29T12:28:47Z | sn71 commit touches scoring: Cap champion lifetime rewards |
+| `sn93:scoring_commit:2026-07-29T10:29:48Z` | 93 | SCORING_COMMIT | P1 | 2026-07-29T12:28:47Z | sn93 commit touches scoring: feat: Double product placement reward payouts (#161) |
 
 ### detail
 
-- **`sn8:scoring_commit:2026-07-29T09:27:07Z`** - sn8 commit touches scoring: Full miner payouts (#862)
+- **`sn71:scoring_commit:2026-07-29T09:31:54Z`** - sn71 commit touches scoring: Cap champion lifetime rewards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-07-29T08:36:45Z`** - sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-07-29T08:32:57Z`** - sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-07-29T10:11:17Z`** - sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g…
+- **`sn93:scoring_commit:2026-07-29T10:29:48Z`** - sn93 commit touches scoring: feat: Double product placement reward payouts (#161)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -74,6 +68,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:release:4.8.1` | 61 | RELEASE | 2026-07-29T07:34:26Z | sn61 released 4.8.1 |
 | `sn71:scoring_commit:2026-07-29T07:01:02Z` | 71 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn71 commit touches scoring: Preserve live validator runtime during release prune |
 | `sn100:scoring_commit:2026-07-29T06:48:23Z` | 100 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context |
+| `sn8:scoring_commit:2026-07-29T09:27:07Z` | 8 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn8 commit touches scoring: Full miner payouts (#862) |
+| `sn51:scoring_commit:2026-07-29T08:36:45Z` | 51 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s… |
+| `sn53:scoring_commit:2026-07-29T08:32:57Z` | 53 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section |
+| `sn100:scoring_commit:2026-07-29T10:11:17Z` | 100 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 

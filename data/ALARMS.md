@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-29T04:44:02Z, block 8725325
+# ALARMS - generated 2026-07-29T07:33:54Z, block 8726172
 
-window: first_seen in [2026-07-29T03:29:34Z, 2026-07-29T04:44:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T06:19:26Z, 2026-07-29T07:34:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-07-29T02:30:43Z` | 76 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn76 commit touches scoring: Create a writable state directory in the validator image |
-| `sn100:scoring_commit:2026-07-29T02:56:56Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy |
-| `sn101:scoring_commit:2026-07-29T03:26:19Z` | 101 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation |
+| `sn7:burn_drop:0.317` | 7 | BURN_DROP | P0 | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
+| `sn61:release:4.8.1` | 61 | RELEASE | P1 | 2026-07-29T07:34:26Z | sn61 released 4.8.1 |
+| `sn71:scoring_commit:2026-07-29T07:01:02Z` | 71 | SCORING_COMMIT | P1 | 2026-07-29T07:34:26Z | sn71 commit touches scoring: Preserve live validator runtime during release prune |
+| `sn100:scoring_commit:2026-07-29T06:48:23Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T07:34:26Z | sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context |
 
 ### detail
 
-- **`sn76:scoring_commit:2026-07-29T02:30:43Z`** - sn76 commit touches scoring: Create a writable state directory in the validator image
+- **`sn7:burn_drop:0.317`** - sn7 burn fell 1.000 -> 0.317 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn61:release:4.8.1`** - sn61 released 4.8.1
+  - published 2026-07-29T06:40:08Z (was 4.8.0)
+- **`sn71:scoring_commit:2026-07-29T07:01:02Z`** - sn71 commit touches scoring: Preserve live validator runtime during release prune
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-07-29T02:56:56Z`** - sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn101:scoring_commit:2026-07-29T03:26:19Z`** - sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation
+- **`sn100:scoring_commit:2026-07-29T06:48:23Z`** - sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -64,6 +67,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:scoring_commit:2026-07-28T23:48:01Z` | 7 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#… |
 | `sn67:scoring_commit:2026-07-28T14:27:25Z` | 67 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9 |
 | `sn100:scoring_commit:2026-07-29T00:37:31Z` | 100 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only… |
+| `sn76:scoring_commit:2026-07-29T02:30:43Z` | 76 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn76 commit touches scoring: Create a writable state directory in the validator image |
+| `sn100:scoring_commit:2026-07-29T02:56:56Z` | 100 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy |
+| `sn101:scoring_commit:2026-07-29T03:26:19Z` | 101 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 

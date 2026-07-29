@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-29T14:59:44Z, block 8728401
+# ALARMS - generated 2026-07-29T16:37:54Z, block 8728892
 
-window: first_seen in [2026-07-29T13:45:19Z, 2026-07-29T15:00:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T15:23:26Z, 2026-07-29T16:38:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn23:scoring_commit:2026-07-27T09:03:23Z` | 23 | SCORING_COMMIT | P1 | 2026-07-29T15:00:19Z | sn23 commit touches scoring: Add universal template support for miners (tri-check + CLI). |
-| `sn51:scoring_commit:2026-07-29T14:53:39Z` | 51 | SCORING_COMMIT | P1 | 2026-07-29T15:00:19Z | sn51 commit touches scoring: DAH-2527, exclude idle filler ports from port verification and publis… |
-| `sn67:scoring_commit:2026-07-29T09:00:51Z` | 67 | SCORING_COMMIT | P1 | 2026-07-29T15:00:19Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260729.post3 |
-| `sn93:scoring_commit:2026-07-29T14:43:46Z` | 93 | SCORING_COMMIT | P1 | 2026-07-29T15:00:19Z | sn93 commit touches scoring: fix: deploy workflows not updating ECS service to new task definition… |
-| `sn100:scoring_commit:2026-07-29T13:14:35Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T15:00:19Z | sn100 commit touches scoring: fix(agent-challenge): allow PyPI index for agent dependency install |
-| `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | P2 | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
-| `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | P2 | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
+| `sn9:release:v4.9.1` | 9 | RELEASE | P1 | 2026-07-29T16:38:26Z | sn9 released v4.9.1 |
+| `sn15:release:v1.2.2` | 15 | RELEASE | P1 | 2026-07-29T16:38:26Z | sn15 released v1.2.2 |
+| `sn53:scoring_commit:2026-07-29T16:37:29Z` | 53 | SCORING_COMMIT | P1 | 2026-07-29T16:38:26Z | sn53 commit touches scoring: Merge pull request #30 from hanlinai/docs/miner-tool-call-parser |
+| `sn124:scoring_commit:2026-07-29T09:25:10Z` | 124 | SCORING_COMMIT | P1 | 2026-07-29T16:38:26Z | sn124 commit touches scoring: Raise validator action compute budget |
 
 ### detail
 
-- **`sn23:scoring_commit:2026-07-27T09:03:23Z`** - sn23 commit touches scoring: Add universal template support for miners (tri-check + CLI).
+- **`sn9:release:v4.9.1`** - sn9 released v4.9.1
+  - published 2026-07-29T15:39:58Z (was v4.8.3)
+- **`sn15:release:v1.2.2`** - sn15 released v1.2.2
+  - published 2026-07-28T19:11:33Z (was v1.2.1)
+- **`sn53:scoring_commit:2026-07-29T16:37:29Z`** - sn53 commit touches scoring: Merge pull request #30 from hanlinai/docs/miner-tool-call-parser
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-07-29T14:53:39Z`** - sn51 commit touches scoring: DAH-2527, exclude idle filler ports from port verification and publis…
+- **`sn124:scoring_commit:2026-07-29T09:25:10Z`** - sn124 commit touches scoring: Raise validator action compute budget
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-07-29T09:00:51Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260729.post3
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn93:scoring_commit:2026-07-29T14:43:46Z`** - sn93 commit touches scoring: fix: deploy workflows not updating ECS service to new task definition…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-07-29T13:14:35Z`** - sn100 commit touches scoring: fix(agent-challenge): allow PyPI index for agent dependency install
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn23:readme_task_diff:f1596712006feba5`** - sn23 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn67:readme_task_diff:214039ad4d05eaac`** - sn67 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -89,8 +80,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-07-29T10:11:17Z` | 100 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g… |
 | `sn71:scoring_commit:2026-07-29T09:31:54Z` | 71 | SCORING_COMMIT | 2026-07-29T12:28:47Z | sn71 commit touches scoring: Cap champion lifetime rewards |
 | `sn93:scoring_commit:2026-07-29T10:29:48Z` | 93 | SCORING_COMMIT | 2026-07-29T12:28:47Z | sn93 commit touches scoring: feat: Double product placement reward payouts (#161) |
+| `sn23:scoring_commit:2026-07-27T09:03:23Z` | 23 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn23 commit touches scoring: Add universal template support for miners (tri-check + CLI). |
+| `sn51:scoring_commit:2026-07-29T14:53:39Z` | 51 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn51 commit touches scoring: DAH-2527, exclude idle filler ports from port verification and publis… |
+| `sn67:scoring_commit:2026-07-29T09:00:51Z` | 67 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260729.post3 |
+| `sn93:scoring_commit:2026-07-29T14:43:46Z` | 93 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn93 commit touches scoring: fix: deploy workflows not updating ECS service to new task definition… |
+| `sn100:scoring_commit:2026-07-29T13:14:35Z` | 100 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn100 commit touches scoring: fix(agent-challenge): allow PyPI index for agent dependency install |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
+| `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
+| `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

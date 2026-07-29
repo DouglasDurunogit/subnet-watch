@@ -1,29 +1,13 @@
-# ALARMS - generated 2026-07-29T16:37:54Z, block 8728892
+# ALARMS - generated 2026-07-29T17:58:54Z, block 8729297
 
-window: first_seen in [2026-07-29T15:23:26Z, 2026-07-29T16:38:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T16:44:21Z, 2026-07-29T17:59:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn9:release:v4.9.1` | 9 | RELEASE | P1 | 2026-07-29T16:38:26Z | sn9 released v4.9.1 |
-| `sn15:release:v1.2.2` | 15 | RELEASE | P1 | 2026-07-29T16:38:26Z | sn15 released v1.2.2 |
-| `sn53:scoring_commit:2026-07-29T16:37:29Z` | 53 | SCORING_COMMIT | P1 | 2026-07-29T16:38:26Z | sn53 commit touches scoring: Merge pull request #30 from hanlinai/docs/miner-tool-call-parser |
-| `sn124:scoring_commit:2026-07-29T09:25:10Z` | 124 | SCORING_COMMIT | P1 | 2026-07-29T16:38:26Z | sn124 commit touches scoring: Raise validator action compute budget |
-
-### detail
-
-- **`sn9:release:v4.9.1`** - sn9 released v4.9.1
-  - published 2026-07-29T15:39:58Z (was v4.8.3)
-- **`sn15:release:v1.2.2`** - sn15 released v1.2.2
-  - published 2026-07-28T19:11:33Z (was v1.2.1)
-- **`sn53:scoring_commit:2026-07-29T16:37:29Z`** - sn53 commit touches scoring: Merge pull request #30 from hanlinai/docs/miner-tool-call-parser
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-07-29T09:25:10Z`** - sn124 commit touches scoring: Raise validator action compute budget
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -85,6 +69,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-07-29T09:00:51Z` | 67 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260729.post3 |
 | `sn93:scoring_commit:2026-07-29T14:43:46Z` | 93 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn93 commit touches scoring: fix: deploy workflows not updating ECS service to new task definition… |
 | `sn100:scoring_commit:2026-07-29T13:14:35Z` | 100 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn100 commit touches scoring: fix(agent-challenge): allow PyPI index for agent dependency install |
+| `sn9:release:v4.9.1` | 9 | RELEASE | 2026-07-29T16:38:26Z | sn9 released v4.9.1 |
+| `sn15:release:v1.2.2` | 15 | RELEASE | 2026-07-29T16:38:26Z | sn15 released v1.2.2 |
+| `sn53:scoring_commit:2026-07-29T16:37:29Z` | 53 | SCORING_COMMIT | 2026-07-29T16:38:26Z | sn53 commit touches scoring: Merge pull request #30 from hanlinai/docs/miner-tool-call-parser |
+| `sn124:scoring_commit:2026-07-29T09:25:10Z` | 124 | SCORING_COMMIT | 2026-07-29T16:38:26Z | sn124 commit touches scoring: Raise validator action compute budget |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

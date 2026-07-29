@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-29T01:13:04Z · block 8724270 · run_status **ok**_
+_snapshot 2026-07-29T04:44:02Z · block 8725325 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 0 of 128
+# 49 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 93 | `miner_burn` < 0.99 |
-| Ranked | 93 | passed every gate |
-| **Positive margin** | **0** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| Pays miners at all | 92 | `miner_burn` < 0.99 |
+| Ranked | 92 | passed every gate |
+| **Positive margin** | **49** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 57 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
+| 0 (none) | 58 | `████████████████████████████` |
+| 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 8 | `████` |
-| 0.6–0.8 | 8 | `████` |
+| 0.4–0.6 | 6 | `███` |
+| 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 8 | `████` |
-| ≥0.99 dead | 35 | `█████████████████` |
+| ≥0.99 dead | 36 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 50 | n/a | n/a | cpu-small | 1 | 100% |
-| 2 | sn67 Harnyx | 50 | n/a | n/a | cpu-small | 60 | 19% |
-| 3 | sn98 NeverPlayAlone | 50 | n/a | n/a | cpu-small | 1 | 100% |
-| 4 | sn15 ORO | 50 | n/a | n/a | cpu-small | 83 | 93% |
-| 5 | sn71 Leadpoet | 39.3 | n/a | n/a | rtx4090* | 47 | 30% |
-| 6 | sn85 Vidaio | 39.3 | n/a | n/a | rtx4090* | 10 | 17% |
-| 7 | sn102 ConnitoAI | 39.3 | n/a | n/a | rtx4090* | 9 | 36% |
-| 8 | sn56 Gradients | 39.3 | n/a | n/a | rtx4090* | 6 | 61% |
-| 9 | sn13 Data Universe | 39.3 | n/a | n/a | rtx4090* | 236 | 69% |
-| 10 | sn89 InfiniteQuant | 39.3 | n/a | n/a | rtx4090* | 36 | 44% |
-| 11 | sn28 gm | 39.3 | n/a | n/a | rtx4090* | 10 | 56% |
-| 12 | sn74 Gittensor | 39.3 | n/a | n/a | rtx4090* | 55 | 45% |
-| 13 | sn7 Allways | 39.3 | n/a | n/a | rtx4090* | 11 | 54% |
-| 14 | sn103 Djinn | 39.3 | n/a | n/a | rtx4090* | 250 | 80% |
-| 15 | sn124 Swarm | 39.3 | n/a | n/a | rtx4090* | 16 | 13% |
-| 16 | sn86 kaunan | 27.8 | n/a | n/a | rtx4090* | 1 | n/a |
-| 17 | sn90 KubeTEE AI Facto | 27.8 | n/a | n/a | rtx4090* | 1 | n/a |
-| 18 | sn60 Bitsec.ai | 15 | n/a | n/a | cpu-small | 2 | 51% |
-| 19 | sn101 Tag101 | 15 | n/a | n/a | cpu-small | 249 | 1% |
-| 20 | sn11 TrajectoryRL | 15 | n/a | n/a | cpu-small | 1 | 100% |
+| 1 | sn98 NeverPlayAlone | 76.1 | 1,740 | 1,740 = | cpu-small | 1 | 100% |
+| 2 | sn56 Gradients | 69.1 | 574 | 1,450 | rtx4090* | 6 | 62% |
+| 3 | sn67 Harnyx | 68.5 | 8.32 | 977 | cpu-small | 99 | 21% |
+| 4 | sn15 ORO | 67.9 | 10.04 | 19.45 | cpu-small | 84 | 93% |
+| 5 | sn101 Tag101 | 67.5 | 6.26 | 36.96 | cpu-small | 243 | 1% |
+| 6 | sn124 Swarm | 67.4 | 346 | 703 | rtx4090* | 16 | 13% |
+| 7 | sn85 Vidaio | 67.3 | 334 | 574 | rtx4090* | 10 | 19% |
+| 8 | sn28 gm | 57 | 16.15 | 1,724 | rtx4090* | 10 | 67% |
+| 9 | sn102 ConnitoAI | 56 | 10.49 | 945 | rtx4090* | 9 | 26% |
+| 10 | sn23 Trishool | 52.2 | 986 | 986 = | cpu-small | 3 | 33% |
+| 11 | sn76 Phylax | 50 | n/a | n/a | cpu-small | 1 | 100% |
+| 12 | sn120 Affine | 47.5 | 6,480 | 6,480 = | rtx4090* | 5 | 20% |
+| 13 | sn4 Targon | 47.2 | 5,960 | 9,844 | rtx4090* | 8 | 31% |
+| 14 | sn60 Bitsec.ai | 44.3 | 969 | 969 = | cpu-small | 2 | 51% |
+| 15 | sn107 Minos | 42.8 | 104 | 30,916 | cpu-small | 20 | 90% |
+| 16 | sn1 Apex | 41.3 | 1,004 | 1,799 | rtx4090* | 5 | 40% |
+| 17 | sn71 Leadpoet | 39.3 | -0.16 | 375 | rtx4090* | 24 | 35% |
+| 18 | sn13 Data Universe | 39.3 | -2.71 | 2.50 | rtx4090* | 233 | 69% |
+| 19 | sn74 Gittensor | 39.3 | -3.88 | 264 | rtx4090* | 56 | 46% |
+| 20 | sn103 Djinn | 39.3 | -7.36 | -7.28 | rtx4090* | 250 | 80% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
-| concentrated (30–60%) | 23 |
-| dominated (60–90%) | 17 |
-| captured (>90%) | 26 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 18 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-07-29T04:44 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Create a writable state directory in the  |
+| 2026-07-29T04:44 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(master): allowlist public FE agent-c |
+| 2026-07-29T04:44 | sn101 | SCORING_COMMIT | sn101 commit touches scoring: Penalize incomplete tag submissions in m |
 | 2026-07-29T01:13 | sn7 | RELEASE | sn7 released release-20260728-234943 |
 | 2026-07-29T01:13 | sn7 | SCORING_COMMIT | sn7 commit touches scoring: Verify TAO transfers by settlement rather  |
 | 2026-07-29T01:13 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-07-28T21:37 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pip |
 | 2026-07-28T21:37 | sn103 | RELEASE | sn103 released v2004: validator: default settle gate budget to 1024 |
 | 2026-07-28T21:37 | sn103 | SCORING_COMMIT | sn103 commit touches scoring: validator: default settle gate budget to |
-| 2026-07-28T20:08 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: feat(validator): warn on startup when hos |
-| 2026-07-28T20:08 | sn62 | BURN_DROP | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
-| 2026-07-28T20:08 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Let the sandboxed agent write its workspa |
 
 ---
 

@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-07-29T01:13:04Z  |  block: 8724270  |  row_status: ok
+snapshot_utc: 2026-07-29T04:44:02Z  |  block: 8725325  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.4589702761732042**
-- registration cost: 0.15 TAO ([UNKNOWN] USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 23  |  free: 0
-- subnet age: 846.7 days  |  registered at block 2627691
+- miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
+- registration cost: 0.15 TAO (28.787999999999997 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
+- subnet age: 846.9 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: [UNKNOWN]** (uid 73) <- the only figure quotable as achievable
-- median_miner_usd_day: [UNKNOWN]
-- top_miner_usd_day: [UNKNOWN] (uid 73, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
+- median_miner_usd_day: 2059.5794555193065
+- top_miner_usd_day: 2059.5794555193065 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 11  |  gini: 0.8237907158385116  |  top1_share: 0.5362358650368538  |  top10_share: 0.9999847395809488
-- owner_incentive_share: 0.45900288421920066 (independent check on miner_burn; disagreement 0.0)
+- earners: 1  |  gini: 0.0  |  top1_share: 1.0  |  top10_share: 1.0
+- owner_incentive_share: 1.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -40,10 +40,10 @@ snapshot_utc: 2026-07-29T01:13:04Z  |  block: 8724270  |  row_status: ok
 
 ## Score
 
-- gate: **OK** 
-- score: 39.3 (rank 13), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 0.0d ago
+- gate: **BLOCKED:burn** - miner_burn=1.000 - 100.0% of miner emission is withheld by owner-controlled hotkeys, so miners earn nothing here
+- score: [UNKNOWN] (rank -), confidence [UNKNOWN] 
+- components: income [UNKNOWN] / freshness [UNKNOWN] / resource [UNKNOWN] / registration [UNKNOWN]
+- freshness basis: -
 
 ## On-chain description
 

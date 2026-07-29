@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-29T01:13:04Z, block 8724270
+# ALARMS - generated 2026-07-29T04:44:02Z, block 8725325
 
-window: first_seen in [2026-07-28T23:58:34Z, 2026-07-29T01:13:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T03:29:34Z, 2026-07-29T04:44:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20260728-234943` | 7 | RELEASE | P1 | 2026-07-29T01:13:34Z | sn7 released release-20260728-234943 |
-| `sn7:scoring_commit:2026-07-28T23:48:01Z` | 7 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#… |
-| `sn67:scoring_commit:2026-07-28T14:27:25Z` | 67 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9 |
-| `sn100:scoring_commit:2026-07-29T00:37:31Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T01:13:34Z | sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only… |
-| `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | P2 | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
+| `sn76:scoring_commit:2026-07-29T02:30:43Z` | 76 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn76 commit touches scoring: Create a writable state directory in the validator image |
+| `sn100:scoring_commit:2026-07-29T02:56:56Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy |
+| `sn101:scoring_commit:2026-07-29T03:26:19Z` | 101 | SCORING_COMMIT | P1 | 2026-07-29T04:44:34Z | sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation |
 
 ### detail
 
-- **`sn7:release:release-20260728-234943`** - sn7 released release-20260728-234943
-  - published 2026-07-28T23:48:01Z (was release-20260727-232657: Persist the direction pool on every score row (#600))
-- **`sn7:scoring_commit:2026-07-28T23:48:01Z`** - sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#…
+- **`sn76:scoring_commit:2026-07-29T02:30:43Z`** - sn76 commit touches scoring: Create a writable state directory in the validator image
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-07-28T14:27:25Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9
+- **`sn100:scoring_commit:2026-07-29T02:56:56Z`** - sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-07-29T00:37:31Z`** - sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only…
+- **`sn101:scoring_commit:2026-07-29T03:26:19Z`** - sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:readme_task_diff:2c3937a290a2972c`** - sn67 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -66,7 +60,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
 | `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
 | `sn74:release:release-20260728-214235` | 74 | RELEASE | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |
+| `sn7:release:release-20260728-234943` | 7 | RELEASE | 2026-07-29T01:13:34Z | sn7 released release-20260728-234943 |
+| `sn7:scoring_commit:2026-07-28T23:48:01Z` | 7 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#… |
+| `sn67:scoring_commit:2026-07-28T14:27:25Z` | 67 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9 |
+| `sn100:scoring_commit:2026-07-29T00:37:31Z` | 100 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE product path (host-trust only… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
+| `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

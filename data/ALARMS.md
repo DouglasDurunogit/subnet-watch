@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-07-29T21:41:15Z, block 8730409
+# ALARMS - generated 2026-07-29T22:42:52Z, block 8730717
 
-window: first_seen in [2026-07-29T20:26:48Z, 2026-07-29T21:41:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T21:28:24Z, 2026-07-29T22:43:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn100:scoring_commit:2026-07-29T22:07:42Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T22:43:24Z | sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w… |
+| `sn111:scoring_commit:2026-07-29T22:01:10Z` | 111 | SCORING_COMMIT | P1 | 2026-07-29T22:43:24Z | sn111 commit touches scoring: Add tests for agent v1 Silver scoring |
+
+### detail
+
+- **`sn100:scoring_commit:2026-07-29T22:07:42Z`** - sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-07-29T22:01:10Z`** - sn111 commit touches scoring: Add tests for agent v1 Silver scoring
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

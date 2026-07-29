@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-29T07:33:54Z, block 8726172
+# ALARMS - generated 2026-07-29T10:20:30Z, block 8727005
 
-window: first_seen in [2026-07-29T06:19:26Z, 2026-07-29T07:34:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T09:05:57Z, 2026-07-29T10:20:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:burn_drop:0.317` | 7 | BURN_DROP | P0 | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
-| `sn61:release:4.8.1` | 61 | RELEASE | P1 | 2026-07-29T07:34:26Z | sn61 released 4.8.1 |
-| `sn71:scoring_commit:2026-07-29T07:01:02Z` | 71 | SCORING_COMMIT | P1 | 2026-07-29T07:34:26Z | sn71 commit touches scoring: Preserve live validator runtime during release prune |
-| `sn100:scoring_commit:2026-07-29T06:48:23Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T07:34:26Z | sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context |
+| `sn8:scoring_commit:2026-07-29T09:27:07Z` | 8 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn8 commit touches scoring: Full miner payouts (#862) |
+| `sn51:scoring_commit:2026-07-29T08:36:45Z` | 51 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s… |
+| `sn53:scoring_commit:2026-07-29T08:32:57Z` | 53 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section |
+| `sn100:scoring_commit:2026-07-29T10:11:17Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T10:20:57Z | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g… |
 
 ### detail
 
-- **`sn7:burn_drop:0.317`** - sn7 burn fell 1.000 -> 0.317 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn61:release:4.8.1`** - sn61 released 4.8.1
-  - published 2026-07-29T06:40:08Z (was 4.8.0)
-- **`sn71:scoring_commit:2026-07-29T07:01:02Z`** - sn71 commit touches scoring: Preserve live validator runtime during release prune
+- **`sn8:scoring_commit:2026-07-29T09:27:07Z`** - sn8 commit touches scoring: Full miner payouts (#862)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-07-29T06:48:23Z`** - sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context
+- **`sn51:scoring_commit:2026-07-29T08:36:45Z`** - sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn53:scoring_commit:2026-07-29T08:32:57Z`** - sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-07-29T10:11:17Z`** - sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -35,6 +35,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.000` | 76 | BURN_DROP | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn62:burn_drop:0.038` | 62 | BURN_DROP | 2026-07-28T20:08:41Z | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
 | `sn46:burn_drop:0.760` | 46 | BURN_DROP | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
+| `sn7:burn_drop:0.317` | 7 | BURN_DROP | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -70,6 +71,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-07-29T02:30:43Z` | 76 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn76 commit touches scoring: Create a writable state directory in the validator image |
 | `sn100:scoring_commit:2026-07-29T02:56:56Z` | 100 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy |
 | `sn101:scoring_commit:2026-07-29T03:26:19Z` | 101 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation |
+| `sn61:release:4.8.1` | 61 | RELEASE | 2026-07-29T07:34:26Z | sn61 released 4.8.1 |
+| `sn71:scoring_commit:2026-07-29T07:01:02Z` | 71 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn71 commit touches scoring: Preserve live validator runtime during release prune |
+| `sn100:scoring_commit:2026-07-29T06:48:23Z` | 100 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 

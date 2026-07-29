@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-07-29T07:33:54Z  |  block: 8726172  |  row_status: ok
+snapshot_utc: 2026-07-29T10:20:30Z  |  block: 8727005  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.09636499999999999 USD), open=True
+- registration cost: 0.0005 TAO (0.09734000000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 865.9 days  |  registered at block 2491604
+- subnet age: 866.0 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 7915.835284336617
-- top_miner_usd_day: 7915.835284336617 (uid 251, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 7996.098386429105
+- top_miner_usd_day: 7996.098386429105 (uid 251, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

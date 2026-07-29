@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-07-29T07:33:54Z · block 8726172 · run_status **ok**_
+_snapshot 2026-07-29T10:20:30Z · block 8727005 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -29,12 +29,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
+| 0 (none) | 59 | `████████████████████████████` |
 | 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 8 | `████` |
-| 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 7 | `███` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 6 | `███` |
+| 0.6–0.8 | 10 | `█████` |
+| 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 35 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.6 | 66.93 | 431 | cpu-small | 4 | 68% |
-| 2 | sn98 NeverPlayAlone | 76.1 | 1,742 | 1,742 = | cpu-small | 1 | 100% |
-| 3 | sn56 Gradients | 69.2 | 576 | 1,439 | rtx4090* | 6 | 62% |
-| 4 | sn67 Harnyx | 68.4 | 8.34 | 977 | cpu-small | 103 | 21% |
-| 5 | sn15 ORO | 68.2 | 10.54 | 11,021 | cpu-small | 73 | 93% |
-| 6 | sn124 Swarm | 67.4 | 348 | 708 | rtx4090* | 16 | 13% |
-| 7 | sn101 Tag101 | 66.5 | 4.59 | 49.39 | cpu-small | 247 | 2% |
-| 8 | sn28 gm | 65.4 | 191 | 1,531 | rtx4090* | 7 | 69% |
-| 9 | sn85 Vidaio | 64.3 | 135 | 561 | rtx4090* | 10 | 18% |
-| 10 | sn61 RedTeam | 58.3 | 21.93 | 152 | rtx4090* | 84 | 5% |
-| 11 | sn102 ConnitoAI | 55.2 | 8.15 | 1,206 | rtx4090* | 9 | 32% |
-| 12 | sn23 Trishool | 52.2 | 984 | 984 = | cpu-small | 3 | 33% |
-| 13 | sn7 Allways | 50.1 | 3.19 | 1,382 | rtx4090* | 5 | 67% |
-| 14 | sn120 Affine | 47.6 | 6,569 | 6,569 = | rtx4090* | 5 | 20% |
-| 15 | sn4 Targon | 47.3 | 6,140 | 10,142 | rtx4090* | 8 | 31% |
-| 16 | sn60 Bitsec.ai | 44.4 | 973 | 973 = | cpu-small | 2 | 51% |
-| 17 | sn107 Minos | 43.2 | 114 | 33,934 | cpu-small | 20 | 90% |
-| 18 | sn1 Apex | 41.4 | 1,032 | 1,787 | rtx4090* | 5 | 40% |
-| 19 | sn71 Leadpoet | 39.3 | -0.10 | 296 | rtx4090* | 19 | 59% |
-| 20 | sn13 Data Universe | 39.3 | -2.70 | 0.44 | rtx4090* | 236 | 69% |
+| 1 | sn76 Phylax | 81 | 202 | 339 | cpu-small | 4 | 60% |
+| 2 | sn56 Gradients | 69.2 | 582 | 1,444 | rtx4090* | 6 | 62% |
+| 3 | sn15 ORO | 68.7 | 11.79 | 12,070 | cpu-small | 76 | 93% |
+| 4 | sn85 Vidaio | 68.5 | 474 | 517 | rtx4090* | 10 | 17% |
+| 5 | sn67 Harnyx | 68.5 | 8.48 | 992 | cpu-small | 108 | 21% |
+| 6 | sn124 Swarm | 67.4 | 354 | 719 | rtx4090* | 16 | 13% |
+| 7 | sn28 gm | 66.4 | 258 | 1,801 | rtx4090* | 7 | 63% |
+| 8 | sn101 Tag101 | 65.9 | 3.99 | 57.78 | cpu-small | 242 | 2% |
+| 9 | sn53 engy | 62.4 | 77.15 | 2,303 | rtx4090 | 45 | 13% |
+| 10 | sn71 Leadpoet | 61.4 | 56.93 | 271 | rtx4090* | 6 | 70% |
+| 11 | sn61 RedTeam | 58.5 | 23.15 | 155 | rtx4090* | 82 | 5% |
+| 12 | sn51 lium.io | 55.3 | 15.07 | 3,150 | rtx4090* | 38 | 66% |
+| 13 | sn102 ConnitoAI | 55.1 | 7.65 | 986 | rtx4090* | 9 | 26% |
+| 14 | sn7 Allways | 51.8 | 2,061 | 2,061 = | rtx4090* | 1 | 100% |
+| 15 | sn23 Trishool | 50.2 | 593 | 593 = | cpu-small | 5 | 20% |
+| 16 | sn98 NeverPlayAlone | 50 | n/a | n/a | cpu-small | 1 | 100% |
+| 17 | sn120 Affine | 47.6 | 6,655 | 6,655 = | rtx4090* | 5 | 20% |
+| 18 | sn4 Targon | 47.4 | 6,216 | 10,267 | rtx4090* | 8 | 31% |
+| 19 | sn60 Bitsec.ai | 44.5 | 1,001 | 1,001 = | cpu-small | 2 | 51% |
+| 20 | sn107 Minos | 43.3 | 118 | 35,003 | cpu-small | 20 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 20 |
-| captured (>90%) | 25 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -97,16 +97,20 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 107 |
+| no evidence | 106 |
 | min_compute.yml (curated) | 9 |
 | code-submission (validator runs it) | 8 |
-| README keywords (GUESS) | 3 |
+| README keywords (GUESS) | 4 |
 | README stated VRAM (explicit) | 1 |
 
 ## Recent changes (last 7 days)
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-07-29T10:20 | sn8 | SCORING_COMMIT | sn8 commit touches scoring: Full miner payouts (#862) |
+| 2026-07-29T10:20 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring |
+| 2026-07-29T10:20 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs |
+| 2026-07-29T10:20 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock mine |
 | 2026-07-29T07:34 | sn7 | BURN_DROP | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
 | 2026-07-29T07:34 | sn61 | RELEASE | sn61 released 4.8.1 |
 | 2026-07-29T07:34 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve live validator runtime during re |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-07-29T01:13 | sn7 | SCORING_COMMIT | sn7 commit touches scoring: Verify TAO transfers by settlement rather  |
 | 2026-07-29T01:13 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-07-29T01:13 | sn67 | README_TASK_DIFF | sn67 README task/scoring sections changed |
-| 2026-07-29T01:13 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(agent-challenge): remove Phala TEE  |
-| 2026-07-28T22:44 | sn13 | SCORING_COMMIT | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evid |
-| 2026-07-28T22:44 | sn46 | BURN_DROP | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
-| 2026-07-28T22:44 | sn56 | SCORING_COMMIT | sn56 commit touches scoring: fix(validator): read the dynamic emission |
 
 ---
 

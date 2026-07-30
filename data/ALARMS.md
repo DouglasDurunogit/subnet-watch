@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-30T17:56:27Z, block 8736484
+# ALARMS - generated 2026-07-30T19:47:19Z, block 8737038
 
-window: first_seen in [2026-07-30T16:42:00Z, 2026-07-30T17:57:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-30T18:32:43Z, 2026-07-30T19:47:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn55:burn_drop:0.022` | 55 | BURN_DROP | P0 | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
-| `sn121:burn_drop:0.826` | 121 | BURN_DROP | P0 | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | P1 | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
+| `sn28:release:v0.3.15` | 28 | RELEASE | P1 | 2026-07-30T19:47:43Z | sn28 released v0.3.15 |
 
 ### detail
 
-- **`sn55:burn_drop:0.022`** - sn55 burn fell 1.000 -> 0.022 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.826`** - sn121 burn fell 1.000 -> 0.826 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn89:scoring_commit:2026-07-30T17:06:44Z`** - sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.3.15`** - sn28 released v0.3.15
+  - published 2026-07-30T18:44:15Z (was v0.3.14)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -38,6 +32,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn43:burn_drop:0.800` | 43 | BURN_DROP | 2026-07-30T09:58:45Z | sn43 burn fell 1.000 -> 0.800 - miners can earn again |
 | `sn92:burn_drop:0.000` | 92 | BURN_DROP | 2026-07-30T12:02:23Z | sn92 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
+| `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
+| `sn121:burn_drop:0.826` | 121 | BURN_DROP | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -115,6 +111,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
 | `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
 | `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
+| `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

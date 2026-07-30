@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-07-30T01:06:02Z, block 8731433
+# ALARMS - generated 2026-07-30T04:17:51Z, block 8732392
 
-window: first_seen in [2026-07-29T23:51:35Z, 2026-07-30T01:06:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-30T03:03:19Z, 2026-07-30T04:18:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | P2 | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
+
+### detail
+
+- **`sn26:readme_task_diff:b7cabe77688b0c40`** - sn26 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

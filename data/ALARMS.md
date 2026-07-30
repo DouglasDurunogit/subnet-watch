@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-30T16:16:58Z, block 8735986
+# ALARMS - generated 2026-07-30T17:56:27Z, block 8736484
 
-window: first_seen in [2026-07-30T15:02:33Z, 2026-07-30T16:17:33Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-30T16:42:00Z, 2026-07-30T17:57:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | P1 | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
-| `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | P1 | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
-| `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | P1 | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
-| `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | P2 | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
+| `sn55:burn_drop:0.022` | 55 | BURN_DROP | P0 | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
+| `sn121:burn_drop:0.826` | 121 | BURN_DROP | P0 | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
+| `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | P1 | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
 
 ### detail
 
-- **`sn49:scoring_commit:2026-07-30T15:52:08Z`** - sn49 commit touches scoring: Updated Discord link across documentation to new invite.
+- **`sn55:burn_drop:0.022`** - sn55 burn fell 1.000 -> 0.022 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn121:burn_drop:0.826`** - sn121 burn fell 1.000 -> 0.826 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn89:scoring_commit:2026-07-30T17:06:44Z`** - sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-07-30T14:08:31Z`** - sn71 commit touches scoring: Verify no-burn fallback allocation inputs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn98:scoring_commit:2026-07-30T15:31:29Z`** - sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:readme_task_diff:b5ae57c5d606b138`** - sn26 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -115,6 +112,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-07-29T19:09:30Z` | 97 | SCORING_COMMIT | 2026-07-30T12:02:23Z | sn97 commit touches scoring: update: Updated evaluator & judge prompts |
 | `sn51:scoring_commit:2026-07-30T14:18:11Z` | 51 | SCORING_COMMIT | 2026-07-30T14:28:38Z | sn51 commit touches scoring: feat: DAH-2251 — pay referral incentive from residual burn, split acr… |
 | `sn74:release:release-20260730-140609` | 74 | RELEASE | 2026-07-30T14:28:38Z | sn74 released release-20260730-140609 |
+| `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
+| `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
+| `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
@@ -124,6 +124,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
+| `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

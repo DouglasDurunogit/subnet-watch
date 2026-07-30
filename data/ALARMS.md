@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-07-29T23:46:03Z, block 8731033
+# ALARMS - generated 2026-07-30T01:06:02Z, block 8731433
 
-window: first_seen in [2026-07-29T22:31:39Z, 2026-07-29T23:46:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-29T23:51:35Z, 2026-07-30T01:06:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn100:scoring_commit:2026-07-29T22:07:42Z` | 100 | SCORING_COMMIT | P1 | 2026-07-29T22:43:24Z | sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w… |
-| `sn111:scoring_commit:2026-07-29T22:01:10Z` | 111 | SCORING_COMMIT | P1 | 2026-07-29T22:43:24Z | sn111 commit touches scoring: Add tests for agent v1 Silver scoring |
-
-### detail
-
-- **`sn100:scoring_commit:2026-07-29T22:07:42Z`** - sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-07-29T22:01:10Z`** - sn111 commit touches scoring: Add tests for agent v1 Silver scoring
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -90,6 +80,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-07-29T19:04:37Z` | 100 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn100 commit touches scoring: fix(agent-challenge): supply LLM_MODEL to the evaluated agent |
 | `sn103:release:v2006: validator: start signer balance g` | 103 | RELEASE | 2026-07-29T19:39:57Z | sn103 released v2006: validator: start signer balance gauge at the unknown sentinel |
 | `sn103:scoring_commit:2026-07-29T19:27:15Z` | 103 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn103 commit touches scoring: validator: start signer balance gauge at the unknown sentinel |
+| `sn100:scoring_commit:2026-07-29T22:07:42Z` | 100 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w… |
+| `sn111:scoring_commit:2026-07-29T22:01:10Z` | 111 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn111 commit touches scoring: Add tests for agent v1 Silver scoring |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

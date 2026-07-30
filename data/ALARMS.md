@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-30T20:51:23Z, block 8737357
+# ALARMS - generated 2026-07-30T22:16:33Z, block 8737782
 
-window: first_seen in [2026-07-30T19:37:02Z, 2026-07-30T20:52:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-30T21:01:59Z, 2026-07-30T22:16:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.3.15` | 28 | RELEASE | P1 | 2026-07-30T19:47:43Z | sn28 released v0.3.15 |
+| `sn14:scoring_commit:2026-07-27T16:11:45Z` | 14 | SCORING_COMMIT | P1 | 2026-07-30T22:16:59Z | sn14 commit touches scoring: Add object-store proposal transport and validator recovery |
 
 ### detail
 
-- **`sn28:release:v0.3.15`** - sn28 released v0.3.15
-  - published 2026-07-30T18:44:15Z (was v0.3.14)
+- **`sn14:scoring_commit:2026-07-27T16:11:45Z`** - sn14 commit touches scoring: Add object-store proposal transport and validator recovery
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -112,6 +112,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
 | `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
 | `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
+| `sn28:release:v0.3.15` | 28 | RELEASE | 2026-07-30T19:47:43Z | sn28 released v0.3.15 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-30T04:17:51Z, block 8732392
+# ALARMS - generated 2026-07-30T07:10:15Z, block 8733254
 
-window: first_seen in [2026-07-30T03:03:19Z, 2026-07-30T04:18:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-30T05:55:45Z, 2026-07-30T07:10:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | P2 | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
+| `sn5:burn_drop:0.846` | 5 | BURN_DROP | P0 | 2026-07-30T07:10:45Z | sn5 burn fell 1.000 -> 0.846 - miners can earn again |
+| `sn100:burn_drop:0.579` | 100 | BURN_DROP | P0 | 2026-07-30T07:10:45Z | sn100 burn fell 1.000 -> 0.579 - miners can earn again |
+| `sn15:release:v1.2.3` | 15 | RELEASE | P1 | 2026-07-30T07:10:45Z | sn15 released v1.2.3 |
+| `sn71:scoring_commit:2026-07-30T04:15:15Z` | 71 | SCORING_COMMIT | P1 | 2026-07-30T07:10:45Z | sn71 commit touches scoring: Parallelize safe validator restart preparation |
+| `sn76:scoring_commit:2026-07-30T05:52:31Z` | 76 | SCORING_COMMIT | P1 | 2026-07-30T07:10:45Z | sn76 commit touches scoring: Evaluate the smaller tracks before skills so a long skills pass canno… |
+| `sn107:scoring_commit:2026-07-30T06:35:32Z` | 107 | SCORING_COMMIT | P1 | 2026-07-30T07:10:45Z | sn107 commit touches scoring: Fix stale reward split: winner 90% / burn 0% / dust top-20 |
+| `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | P2 | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
+| `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | P2 | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
 
 ### detail
 
-- **`sn26:readme_task_diff:b7cabe77688b0c40`** - sn26 README task/scoring sections changed
+- **`sn5:burn_drop:0.846`** - sn5 burn fell 1.000 -> 0.846 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn100:burn_drop:0.579`** - sn100 burn fell 1.000 -> 0.579 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v1.2.3`** - sn15 released v1.2.3
+  - published 2026-07-29T22:46:23Z (was v1.2.2)
+- **`sn71:scoring_commit:2026-07-30T04:15:15Z`** - sn71 commit touches scoring: Parallelize safe validator restart preparation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-07-30T05:52:31Z`** - sn76 commit touches scoring: Evaluate the smaller tracks before skills so a long skills pass canno…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn107:scoring_commit:2026-07-30T06:35:32Z`** - sn107 commit touches scoring: Fix stale reward split: winner 90% / burn 0% / dust top-20
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn80:readme_task_diff:524075fdda445069`** - sn80 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn107:readme_task_diff:ae5ae44af5a81eba`** - sn107 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -95,6 +116,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
 | `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |
 | `sn66:readme_task_diff:93fd61d3541878a9` | 66 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn66 README task/scoring sections changed |
+| `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

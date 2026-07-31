@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-31T13:05:02Z, block 8742221
+# ALARMS - generated 2026-07-31T15:28:16Z, block 8742935
 
-window: first_seen in [2026-07-31T11:50:28Z, 2026-07-31T13:05:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T14:13:47Z, 2026-07-31T15:28:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | P1 | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
+| `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | P1 | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
 
 ### detail
 
-- **`sn76:scoring_commit:2026-07-31T12:40:54Z`** - sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus…
+- **`sn126:scoring_commit:2026-07-31T15:20:36Z`** - sn126 commit touches scoring: docs: align miner and validator release guides
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -121,6 +121,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-07-30T21:28:44Z` | 124 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn124 commit touches scoring: Kill host workers when the validator process dies |
 | `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
 | `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
+| `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

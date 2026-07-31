@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-31T08:08:02Z, block 8740738
+# ALARMS - generated 2026-07-31T11:05:11Z, block 8741623
 
-window: first_seen in [2026-07-31T06:53:30Z, 2026-07-31T08:08:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T09:50:37Z, 2026-07-31T11:05:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | P1 | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
+| `sn8:burn_drop:0.000` | 8 | BURN_DROP | P0 | 2026-07-31T11:05:37Z | sn8 burn fell 0.998 -> 0.000 - miners can earn again |
+| `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | P1 | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
 
 ### detail
 
-- **`sn80:scoring_commit:2026-07-31T05:39:39Z`** - sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se…
+- **`sn8:burn_drop:0.000`** - sn8 burn fell 0.998 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:scoring_commit:2026-07-31T11:00:01Z`** - sn76 commit touches scoring: Evaluate two agents at a time within a track
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -118,6 +121,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn8:scoring_commit:2026-07-30T22:26:28Z` | 8 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn8 commit touches scoring: create subaccount elimination cache on entity miner (#861) |
 | `sn62:release:v0.2.3` | 62 | RELEASE | 2026-07-30T23:33:07Z | sn62 released v0.2.3 |
 | `sn124:scoring_commit:2026-07-30T21:28:44Z` | 124 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn124 commit touches scoring: Kill host workers when the validator process dies |
+| `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

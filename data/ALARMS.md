@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-31T21:49:30Z, block 8744841
+# ALARMS - generated 2026-07-31T23:14:03Z, block 8745264
 
-window: first_seen in [2026-07-31T20:35:00Z, 2026-07-31T21:50:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T21:59:36Z, 2026-07-31T23:14:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn74:release:release-20260731-214128: chore(weights):` | 74 | RELEASE | P1 | 2026-07-31T21:50:00Z | sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675) |
-| `sn74:scoring_commit:2026-07-31T15:04:46Z` | 74 | SCORING_COMMIT | P1 | 2026-07-31T21:50:00Z | sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673) |
-| `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | P1 | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
+| `sn102:release:v0.4.0` | 102 | RELEASE | P1 | 2026-07-31T23:14:36Z | sn102 released v0.4.0 |
+| `sn102:scoring_commit:2026-07-31T18:12:56Z` | 102 | SCORING_COMMIT | P1 | 2026-07-31T23:14:36Z | sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s… |
 
 ### detail
 
-- **`sn74:release:release-20260731-214128: chore(weights):`** - sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675)
-  - published 2026-07-31T21:30:45Z (was release-20260730-140609)
-- **`sn74:scoring_commit:2026-07-31T15:04:46Z`** - sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-07-31T21:43:47Z`** - sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes
+- **`sn102:release:v0.4.0`** - sn102 released v0.4.0
+  - published 2026-07-31T23:02:21Z (was v0.3.4)
+- **`sn102:scoring_commit:2026-07-31T18:12:56Z`** - sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -137,6 +134,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.3.4` | 102 | RELEASE | 2026-07-31T17:12:35Z | sn102 released v0.3.4 |
 | `sn126:scoring_commit:2026-07-31T17:01:33Z` | 126 | SCORING_COMMIT | 2026-07-31T17:12:35Z | sn126 commit touches scoring: fix: protect validator dashboard outbox |
 | `sn126:scoring_commit:2026-07-31T17:23:08Z` | 126 | SCORING_COMMIT | 2026-07-31T18:52:56Z | sn126 commit touches scoring: release: enable validator auto-update 0.2.1 |
+| `sn74:release:release-20260731-214128: chore(weights):` | 74 | RELEASE | 2026-07-31T21:50:00Z | sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675) |
+| `sn74:scoring_commit:2026-07-31T15:04:46Z` | 74 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673) |
+| `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

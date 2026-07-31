@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-07-31T04:57:03Z, block 8739785
+# ALARMS - generated 2026-07-31T08:08:02Z, block 8740738
 
-window: first_seen in [2026-07-31T03:42:37Z, 2026-07-31T04:57:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T06:53:30Z, 2026-07-31T08:08:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | P1 | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
+
+### detail
+
+- **`sn80:scoring_commit:2026-07-31T05:39:39Z`** - sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

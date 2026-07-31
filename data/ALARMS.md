@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-07-31T18:52:28Z, block 8743956
+# ALARMS - generated 2026-07-31T20:35:22Z, block 8744471
 
-window: first_seen in [2026-07-31T17:37:56Z, 2026-07-31T18:52:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T19:20:50Z, 2026-07-31T20:35:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn126:scoring_commit:2026-07-31T17:23:08Z` | 126 | SCORING_COMMIT | P1 | 2026-07-31T18:52:56Z | sn126 commit touches scoring: release: enable validator auto-update 0.2.1 |
-
-### detail
-
-- **`sn126:scoring_commit:2026-07-31T17:23:08Z`** - sn126 commit touches scoring: release: enable validator auto-update 0.2.1
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -130,6 +123,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn101:scoring_commit:2026-07-31T16:39:07Z` | 101 | SCORING_COMMIT | 2026-07-31T17:12:35Z | sn101 commit touches scoring: Allocate 90% of validator weight to burn UID |
 | `sn102:release:v0.3.4` | 102 | RELEASE | 2026-07-31T17:12:35Z | sn102 released v0.3.4 |
 | `sn126:scoring_commit:2026-07-31T17:01:33Z` | 126 | SCORING_COMMIT | 2026-07-31T17:12:35Z | sn126 commit touches scoring: fix: protect validator dashboard outbox |
+| `sn126:scoring_commit:2026-07-31T17:23:08Z` | 126 | SCORING_COMMIT | 2026-07-31T18:52:56Z | sn126 commit touches scoring: release: enable validator auto-update 0.2.1 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

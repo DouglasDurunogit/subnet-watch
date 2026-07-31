@@ -1,13 +1,26 @@
-# ALARMS - generated 2026-07-31T20:35:22Z, block 8744471
+# ALARMS - generated 2026-07-31T21:49:30Z, block 8744841
 
-window: first_seen in [2026-07-31T19:20:50Z, 2026-07-31T20:35:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T20:35:00Z, 2026-07-31T21:50:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn74:release:release-20260731-214128: chore(weights):` | 74 | RELEASE | P1 | 2026-07-31T21:50:00Z | sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675) |
+| `sn74:scoring_commit:2026-07-31T15:04:46Z` | 74 | SCORING_COMMIT | P1 | 2026-07-31T21:50:00Z | sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673) |
+| `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | P1 | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
+
+### detail
+
+- **`sn74:release:release-20260731-214128: chore(weights):`** - sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675)
+  - published 2026-07-31T21:30:45Z (was release-20260730-140609)
+- **`sn74:scoring_commit:2026-07-31T15:04:46Z`** - sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-07-31T21:43:47Z`** - sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

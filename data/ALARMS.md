@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-07-31T15:28:16Z, block 8742935
+# ALARMS - generated 2026-07-31T17:12:07Z, block 8743454
 
-window: first_seen in [2026-07-31T14:13:47Z, 2026-07-31T15:28:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T15:57:35Z, 2026-07-31T17:12:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | P1 | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
+| `sn7:burn_drop:0.926` | 7 | BURN_DROP | P0 | 2026-07-31T17:12:35Z | sn7 burn fell 0.995 -> 0.926 - miners can earn again |
+| `sn66:burn_drop:0.000` | 66 | BURN_DROP | P0 | 2026-07-31T17:12:35Z | sn66 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn9:release:v4.9.2` | 9 | RELEASE | P1 | 2026-07-31T17:12:35Z | sn9 released v4.9.2 |
+| `sn15:release:v1.2.4` | 15 | RELEASE | P1 | 2026-07-31T17:12:35Z | sn15 released v1.2.4 |
+| `sn101:scoring_commit:2026-07-31T16:39:07Z` | 101 | SCORING_COMMIT | P1 | 2026-07-31T17:12:35Z | sn101 commit touches scoring: Allocate 90% of validator weight to burn UID |
+| `sn102:release:v0.3.4` | 102 | RELEASE | P1 | 2026-07-31T17:12:35Z | sn102 released v0.3.4 |
+| `sn126:scoring_commit:2026-07-31T17:01:33Z` | 126 | SCORING_COMMIT | P1 | 2026-07-31T17:12:35Z | sn126 commit touches scoring: fix: protect validator dashboard outbox |
 
 ### detail
 
-- **`sn126:scoring_commit:2026-07-31T15:20:36Z`** - sn126 commit touches scoring: docs: align miner and validator release guides
+- **`sn7:burn_drop:0.926`** - sn7 burn fell 0.995 -> 0.926 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn66:burn_drop:0.000`** - sn66 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn9:release:v4.9.2`** - sn9 released v4.9.2
+  - published 2026-07-31T15:48:20Z (was v4.9.1)
+- **`sn15:release:v1.2.4`** - sn15 released v1.2.4
+  - published 2026-07-31T16:37:09Z (was v1.2.3)
+- **`sn101:scoring_commit:2026-07-31T16:39:07Z`** - sn101 commit touches scoring: Allocate 90% of validator weight to burn UID
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn102:release:v0.3.4`** - sn102 released v0.3.4
+  - published 2026-07-31T16:09:57Z (was v0.3.2)
+- **`sn126:scoring_commit:2026-07-31T17:01:33Z`** - sn126 commit touches scoring: fix: protect validator dashboard outbox
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -122,6 +140,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
 | `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
 | `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
+| `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

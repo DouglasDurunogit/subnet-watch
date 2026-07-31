@@ -1,29 +1,13 @@
-# ALARMS - generated 2026-07-30T23:32:33Z, block 8738162
+# ALARMS - generated 2026-07-31T01:16:55Z, block 8738684
 
-window: first_seen in [2026-07-30T22:18:07Z, 2026-07-30T23:33:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-07-31T00:02:33Z, 2026-07-31T01:17:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn115:burn_drop:0.000` | 115 | BURN_DROP | P0 | 2026-07-30T23:33:07Z | sn115 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn8:scoring_commit:2026-07-30T22:26:28Z` | 8 | SCORING_COMMIT | P1 | 2026-07-30T23:33:07Z | sn8 commit touches scoring: create subaccount elimination cache on entity miner (#861) |
-| `sn62:release:v0.2.3` | 62 | RELEASE | P1 | 2026-07-30T23:33:07Z | sn62 released v0.2.3 |
-| `sn124:scoring_commit:2026-07-30T21:28:44Z` | 124 | SCORING_COMMIT | P1 | 2026-07-30T23:33:07Z | sn124 commit touches scoring: Kill host workers when the validator process dies |
-
-### detail
-
-- **`sn115:burn_drop:0.000`** - sn115 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn8:scoring_commit:2026-07-30T22:26:28Z`** - sn8 commit touches scoring: create subaccount elimination cache on entity miner (#861)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.2.3`** - sn62 released v0.2.3
-  - published 2026-07-30T22:43:47Z (was v0.2.2)
-- **`sn124:scoring_commit:2026-07-30T21:28:44Z`** - sn124 commit touches scoring: Kill host workers when the validator process dies
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,6 +27,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
 | `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
 | `sn121:burn_drop:0.826` | 121 | BURN_DROP | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
+| `sn115:burn_drop:0.000` | 115 | BURN_DROP | 2026-07-30T23:33:07Z | sn115 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -123,6 +108,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
 | `sn28:release:v0.3.15` | 28 | RELEASE | 2026-07-30T19:47:43Z | sn28 released v0.3.15 |
 | `sn14:scoring_commit:2026-07-27T16:11:45Z` | 14 | SCORING_COMMIT | 2026-07-30T22:16:59Z | sn14 commit touches scoring: Add object-store proposal transport and validator recovery |
+| `sn8:scoring_commit:2026-07-30T22:26:28Z` | 8 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn8 commit touches scoring: create subaccount elimination cache on entity miner (#861) |
+| `sn62:release:v0.2.3` | 62 | RELEASE | 2026-07-30T23:33:07Z | sn62 released v0.2.3 |
+| `sn124:scoring_commit:2026-07-30T21:28:44Z` | 124 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn124 commit touches scoring: Kill host workers when the validator process dies |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

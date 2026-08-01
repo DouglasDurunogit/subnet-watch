@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T04:31:01Z, block 8746849
+# ALARMS - generated 2026-08-01T07:17:18Z, block 8747678
 
-window: first_seen in [2026-08-01T03:16:25Z, 2026-08-01T04:31:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T06:02:44Z, 2026-08-01T07:17:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
-| `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | P2 | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
+| `sn102:burn_drop:0.254` | 102 | BURN_DROP | P0 | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
+| `sn76:scoring_commit:2026-08-01T05:18:26Z` | 76 | SCORING_COMMIT | P1 | 2026-08-01T07:17:44Z | sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-01T03:43:59Z`** - sn71 commit touches scoring: Extend validator gateway alignment wait
+- **`sn102:burn_drop:0.254`** - sn102 burn fell 1.000 -> 0.254 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:scoring_commit:2026-08-01T05:18:26Z`** - sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:readme_task_diff:2ad9289f8c86f6ec`** - sn89 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -140,6 +140,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.4.0` | 102 | RELEASE | 2026-07-31T23:14:36Z | sn102 released v0.4.0 |
 | `sn102:scoring_commit:2026-07-31T18:12:56Z` | 102 | SCORING_COMMIT | 2026-07-31T23:14:36Z | sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s… |
 | `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
+| `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
@@ -150,6 +151,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
+| `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T20:00:32Z, block 8751493
+# ALARMS - generated 2026-08-01T21:07:04Z, block 8751826
 
-window: first_seen in [2026-08-01T18:46:00Z, 2026-08-01T20:01:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T19:52:37Z, 2026-08-01T21:07:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,16 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
+| `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
+| `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | P1 | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |
 
 ### detail
 
 - **`sn71:scoring_commit:2026-08-01T18:51:00Z`** - sn71 commit touches scoring: Refresh validator ancestry workflow manifest
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-01T20:24:52Z`** - sn71 commit touches scoring: Fix baseline replay and compact weight validation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-01T20:30:47Z`** - sn111 commit touches scoring: Wire production Silver run metadata into validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

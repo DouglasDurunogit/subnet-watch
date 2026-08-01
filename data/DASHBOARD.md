@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-01T20:00:32Z · block 8751493 · run_status **ok**_
+_snapshot 2026-08-01T21:07:04Z · block 8751826 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 57 of 128
+# 56 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 96 | `miner_burn` < 0.99 |
 | Ranked | 96 | passed every gate |
-| **Positive margin** | **57** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| **Positive margin** | **56** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,10 +30,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 58 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 8 | `████` |
-| 0.6–0.8 | 9 | `████` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 6 | `███` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 10 | `█████` |
 | ≥0.99 dead | 32 | `███████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn23 Trishool | 85 | 564 | 564 = | cpu-small | 5 | 20% |
-| 2 | sn107 Minos | 77.5 | 97.19 | 27,060 | cpu-small | 20 | 90% |
-| 3 | sn76 Phylax | 77.1 | 74.17 | 149 | cpu-small | 7 | 70% |
-| 4 | sn98 NeverPlayAlone | 76 | 1,693 | 1,693 = | cpu-small | 1 | 100% |
-| 5 | sn67 Harnyx | 72.9 | 26.15 | 954 | cpu-small | 132 | 21% |
-| 6 | sn62 Ridges | 71.1 | 1,041 | 4,794 | rtx4090* | 6 | 57% |
-| 7 | sn102 ConnitoAI | 70.6 | 898 | 970 | rtx4090* | 6 | 26% |
-| 8 | sn26 Perturb | 69.8 | 31.50 | 925 | rtx3060 | 11 | 51% |
-| 9 | sn56 Gradients | 69.1 | 574 | 1,209 | rtx4090* | 6 | 64% |
-| 10 | sn85 Vidaio | 68.1 | 426 | 561 | rtx4090* | 10 | 19% |
-| 11 | sn15 ORO | 67.9 | 9.43 | 18.81 | cpu-small | 65 | 94% |
-| 12 | sn124 Swarm | 66 | 231 | 675 | rtx4090* | 20 | 12% |
-| 13 | sn38 ChronoLLM | 63.2 | 108 | 1,564 | rtx4090* | 10 | 52% |
-| 14 | sn53 engy | 63.1 | 94.63 | 2,374 | rtx4090 | 34 | 13% |
-| 15 | sn71 Leadpoet | 62.6 | 81.48 | 165 | rtx4090* | 10 | 70% |
-| 16 | sn28 gm | 60.1 | 39.83 | 2,515 | rtx4090* | 15 | 58% |
-| 17 | sn101 Tag101 | 58.9 | 0.12 | 1.19 | cpu-small | 242 | 90% |
-| 18 | sn61 RedTeam | 58.3 | 21.98 | 88.11 | rtx4090* | 97 | 3% |
-| 19 | sn9 iota | 54.8 | 7,102 | 12,880 | rtx4090* | 3 | 65% |
-| 20 | sn51 lium.io | 53.5 | 10.56 | 6,894 | rtx4090* | 42 | 41% |
+| 1 | sn23 Trishool | 85 | 566 | 566 = | cpu-small | 5 | 20% |
+| 2 | sn107 Minos | 77.3 | 94.25 | 27,981 | cpu-small | 20 | 90% |
+| 3 | sn76 Phylax | 77.1 | 74.56 | 150 | cpu-small | 7 | 70% |
+| 4 | sn67 Harnyx | 72.9 | 26.22 | 957 | cpu-small | 132 | 21% |
+| 5 | sn62 Ridges | 71.2 | 1,044 | 4,806 | rtx4090* | 6 | 57% |
+| 6 | sn102 ConnitoAI | 70.7 | 900 | 973 | rtx4090* | 6 | 26% |
+| 7 | sn26 Perturb | 69.8 | 31.55 | 928 | rtx3060 | 11 | 51% |
+| 8 | sn56 Gradients | 69.2 | 575 | 1,212 | rtx4090* | 6 | 64% |
+| 9 | sn85 Vidaio | 68.5 | 470 | 495 | rtx4090* | 10 | 16% |
+| 10 | sn15 ORO | 67.9 | 9.47 | 18.87 | cpu-small | 65 | 94% |
+| 11 | sn124 Swarm | 66 | 231 | 676 | rtx4090* | 20 | 12% |
+| 12 | sn38 ChronoLLM | 63.2 | 108 | 1,565 | rtx4090* | 10 | 52% |
+| 13 | sn53 engy | 63.1 | 95.23 | 2,388 | rtx4090 | 34 | 13% |
+| 14 | sn71 Leadpoet | 62.6 | 81.49 | 165 | rtx4090* | 10 | 70% |
+| 15 | sn28 gm | 61.4 | 57.30 | 2,203 | rtx4090* | 14 | 55% |
+| 16 | sn101 Tag101 | 58.9 | 0.12 | 1.07 | cpu-small | 243 | 90% |
+| 17 | sn61 RedTeam | 58.4 | 22.55 | 90.07 | rtx4090* | 97 | 3% |
+| 18 | sn51 lium.io | 55 | 14.03 | 6,683 | rtx4090* | 41 | 41% |
+| 19 | sn9 iota | 54.8 | 7,102 | 12,906 | rtx4090* | 3 | 65% |
+| 20 | sn99 Thirty Spokes | 52.9 | 3,226 | 3,226 = | rtx4090* | 1 | 100% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-01T21:07 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Fix baseline replay and compact weight va |
+| 2026-08-01T21:07 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Wire production Silver run metadata into |
 | 2026-08-01T20:01 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Refresh validator ancestry workflow manif |
 | 2026-08-01T17:45 | sn99 | BURN_DROP | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-01T16:29 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Wire silver adjudication into validator  |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-01T09:32 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Validate concurrent restart state continu |
 | 2026-08-01T09:32 | sn126 | SCORING_COMMIT | sn126 commit touches scoring: docs: introduce Poker44 evaluation netwo |
 | 2026-08-01T07:17 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Carry a track's standing forward when a p |
-| 2026-08-01T07:17 | sn102 | BURN_DROP | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
-| 2026-08-01T04:31 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Extend validator gateway alignment wait |
 
 ---
 

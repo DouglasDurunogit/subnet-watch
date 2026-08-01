@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T01:01:49Z, block 8745803
+# ALARMS - generated 2026-08-01T04:31:01Z, block 8746849
 
-window: first_seen in [2026-07-31T23:47:18Z, 2026-08-01T01:02:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T03:16:25Z, 2026-08-01T04:31:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
+| `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
+| `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | P2 | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-07-31T23:59:50Z`** - sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries
+- **`sn71:scoring_commit:2026-08-01T03:43:59Z`** - sn71 commit touches scoring: Extend validator gateway alignment wait
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:readme_task_diff:2ad9289f8c86f6ec`** - sn89 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -136,6 +139,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
 | `sn102:release:v0.4.0` | 102 | RELEASE | 2026-07-31T23:14:36Z | sn102 released v0.4.0 |
 | `sn102:scoring_commit:2026-07-31T18:12:56Z` | 102 | SCORING_COMMIT | 2026-07-31T23:14:36Z | sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s… |
+| `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

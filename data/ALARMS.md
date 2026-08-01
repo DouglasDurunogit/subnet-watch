@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T21:07:04Z, block 8751826
+# ALARMS - generated 2026-08-01T22:10:28Z, block 8752143
 
-window: first_seen in [2026-08-01T19:52:37Z, 2026-08-01T21:07:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T20:56:05Z, 2026-08-01T22:11:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 | `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
 | `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | P1 | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-01T18:51:00Z`** - sn71 commit touches scoring: Refresh validator ancestry workflow manifest
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-01T20:24:52Z`** - sn71 commit touches scoring: Fix baseline replay and compact weight validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-01T20:30:47Z`** - sn111 commit touches scoring: Wire production Silver run metadata into validator
@@ -157,6 +154,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 | `sn124:scoring_commit:2026-08-01T12:57:13Z` | 124 | SCORING_COMMIT | 2026-08-01T14:06:15Z | sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs |
 | `sn111:scoring_commit:2026-08-01T16:22:29Z` | 111 | SCORING_COMMIT | 2026-08-01T16:29:18Z | sn111 commit touches scoring: Wire silver adjudication into validator scoring |
+| `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

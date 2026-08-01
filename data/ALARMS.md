@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T16:28:44Z, block 8750434
+# ALARMS - generated 2026-08-01T17:45:22Z, block 8750818
 
-window: first_seen in [2026-08-01T15:14:18Z, 2026-08-01T16:29:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T16:30:57Z, 2026-08-01T17:45:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn111:scoring_commit:2026-08-01T16:22:29Z` | 111 | SCORING_COMMIT | P1 | 2026-08-01T16:29:18Z | sn111 commit touches scoring: Wire silver adjudication into validator scoring |
+| `sn99:burn_drop:0.000` | 99 | BURN_DROP | P0 | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
 
 ### detail
 
-- **`sn111:scoring_commit:2026-08-01T16:22:29Z`** - sn111 commit touches scoring: Wire silver adjudication into validator scoring
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn99:burn_drop:0.000`** - sn99 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -149,6 +149,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:release:v2007` | 103 | RELEASE | 2026-08-01T12:13:22Z | sn103 released v2007 |
 | `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 | `sn124:scoring_commit:2026-08-01T12:57:13Z` | 124 | SCORING_COMMIT | 2026-08-01T14:06:15Z | sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs |
+| `sn111:scoring_commit:2026-08-01T16:22:29Z` | 111 | SCORING_COMMIT | 2026-08-01T16:29:18Z | sn111 commit touches scoring: Wire silver adjudication into validator scoring |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T18:44:51Z, block 8751115
+# ALARMS - generated 2026-08-01T20:00:32Z, block 8751493
 
-window: first_seen in [2026-08-01T17:30:15Z, 2026-08-01T18:45:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T18:46:00Z, 2026-08-01T20:01:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn99:burn_drop:0.000` | 99 | BURN_DROP | P0 | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 
 ### detail
 
-- **`sn99:burn_drop:0.000`** - sn99 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-08-01T18:51:00Z`** - sn71 commit touches scoring: Refresh validator ancestry workflow manifest
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,6 +39,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.926` | 7 | BURN_DROP | 2026-07-31T17:12:35Z | sn7 burn fell 0.995 -> 0.926 - miners can earn again |
 | `sn66:burn_drop:0.000` | 66 | BURN_DROP | 2026-07-31T17:12:35Z | sn66 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn102:burn_drop:0.254` | 102 | BURN_DROP | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
+| `sn99:burn_drop:0.000` | 99 | BURN_DROP | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |

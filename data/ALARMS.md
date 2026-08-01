@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T11:06:49Z, block 8748826
+# ALARMS - generated 2026-08-01T12:12:46Z, block 8749155
 
-window: first_seen in [2026-08-01T09:52:26Z, 2026-08-01T11:07:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T10:58:22Z, 2026-08-01T12:13:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,16 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
+| `sn103:release:v2007` | 103 | RELEASE | P1 | 2026-08-01T12:13:22Z | sn103 released v2007 |
+| `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | P1 | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 
 ### detail
 
 - **`sn71:scoring_commit:2026-08-01T08:57:49Z`** - sn71 commit touches scoring: Bind v8 artifact verification into protected manifest
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn103:release:v2007`** - sn103 released v2007
+  - published 2026-08-01T11:36:54Z (was v2006: validator: start signer balance gauge at the unknown sentinel)
+- **`sn103:scoring_commit:2026-08-01T11:36:54Z`** - sn103 commit touches scoring: validator: release v2007
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

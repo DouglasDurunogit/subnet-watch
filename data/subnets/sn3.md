@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-08-01T11:06:49Z  |  block: 8748826  |  row_status: ok
+snapshot_utc: 2026-08-01T12:12:46Z  |  block: 8749155  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.02984648 TAO (5.803648036 USD), open=True
+- registration cost: 0.050307854 TAO (9.77934373906 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
 - subnet age: 636.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2842.3852451197636** (uid 40) <- the only figure quotable as achievable
-- median_miner_usd_day: 2799.6183720077997
-- top_miner_usd_day: 2842.3852451197636 (uid 40, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2839.211437604425** (uid 40) <- the only figure quotable as achievable
+- median_miner_usd_day: 2796.4923179852444
+- top_miner_usd_day: 2839.211437604425 (uid 40, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-01T11:06:49Z  |  block: 8748826  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2791.3992 USD/day  |  payback on registration: 0.0 days
+- net margin: 2788.2731 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 31.6 (rank 45), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- score: 31.6 (rank 46), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
 - components: income 31.34 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 

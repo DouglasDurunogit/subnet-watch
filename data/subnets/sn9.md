@@ -1,25 +1,25 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-08-01T09:32:02Z  |  block: 8748352  |  row_status: ok
+snapshot_utc: 2026-08-01T11:06:49Z  |  block: 8748826  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.17141108168289065**
-- registration cost: 0.0005 TAO (0.09760500000000001 USD), open=True
+- miner_burn: **0.17466898448765278**
+- registration cost: 0.0005 TAO (0.09722499999999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 1008.1 days  |  registered at block 1489797
+- subnet age: 1008.2 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 15182.701733965097** (uid 21) <- the only figure quotable as achievable
-- median_miner_usd_day: 3470.005261096461
-- top_miner_usd_day: 15182.701733965097 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 15230.608167642182** (uid 21) <- the only figure quotable as achievable
+- median_miner_usd_day: 3547.0322512987786
+- top_miner_usd_day: 15230.608167642182 (uid 21, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.4475912898844856  |  top1_share: 0.7499885553843102  |  top10_share: 1.0
-- owner_incentive_share: 0.17140982405810812 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.4497377911383069  |  top1_share: 0.7499732958967239  |  top10_share: 1.0
+- owner_incentive_share: 0.17466009491401277 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-01T09:32:02Z  |  block: 8748352  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 8378.7338 USD/day  |  payback on registration: 0.0 days
+- net margin: 8372.365 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 

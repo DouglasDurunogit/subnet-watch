@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T09:32:02Z, block 8748352
+# ALARMS - generated 2026-08-01T11:06:49Z, block 8748826
 
-window: first_seen in [2026-08-01T08:17:34Z, 2026-08-01T09:32:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T09:52:26Z, 2026-08-01T11:07:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.8.2` | 61 | RELEASE | P1 | 2026-08-01T09:32:34Z | sn61 released 4.8.2 |
-| `sn61:scoring_commit:2026-08-01T09:26:58Z` | 61 | SCORING_COMMIT | P1 | 2026-08-01T09:32:34Z | sn61 commit touches scoring: fix: set default value for user_id in _compare_same_score_outputs meth |
-| `sn67:scoring_commit:2026-08-01T08:06:19Z` | 67 | SCORING_COMMIT | P1 | 2026-08-01T09:32:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0 |
-| `sn71:scoring_commit:2026-08-01T07:04:04Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T09:32:34Z | sn71 commit touches scoring: Validate concurrent restart state continuity |
-| `sn126:scoring_commit:2026-08-01T08:32:23Z` | 126 | SCORING_COMMIT | P1 | 2026-08-01T09:32:34Z | sn126 commit touches scoring: docs: introduce Poker44 evaluation network |
+| `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
 
 ### detail
 
-- **`sn61:release:4.8.2`** - sn61 released 4.8.2
-  - published 2026-08-01T09:30:58Z (was 4.8.1)
-- **`sn61:scoring_commit:2026-08-01T09:26:58Z`** - sn61 commit touches scoring: fix: set default value for user_id in _compare_same_score_outputs meth
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-01T08:06:19Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-01T07:04:04Z`** - sn71 commit touches scoring: Validate concurrent restart state continuity
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:scoring_commit:2026-08-01T08:32:23Z`** - sn126 commit touches scoring: docs: introduce Poker44 evaluation network
+- **`sn71:scoring_commit:2026-08-01T08:57:49Z`** - sn71 commit touches scoring: Bind v8 artifact verification into protected manifest
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -152,6 +140,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
 | `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
 | `sn76:scoring_commit:2026-08-01T05:18:26Z` | 76 | SCORING_COMMIT | 2026-08-01T07:17:44Z | sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it |
+| `sn61:release:4.8.2` | 61 | RELEASE | 2026-08-01T09:32:34Z | sn61 released 4.8.2 |
+| `sn61:scoring_commit:2026-08-01T09:26:58Z` | 61 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn61 commit touches scoring: fix: set default value for user_id in _compare_same_score_outputs meth |
+| `sn67:scoring_commit:2026-08-01T08:06:19Z` | 67 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0 |
+| `sn71:scoring_commit:2026-08-01T07:04:04Z` | 71 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn71 commit touches scoring: Validate concurrent restart state continuity |
+| `sn126:scoring_commit:2026-08-01T08:32:23Z` | 126 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn126 commit touches scoring: docs: introduce Poker44 evaluation network |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

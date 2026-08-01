@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T12:12:46Z, block 8749155
+# ALARMS - generated 2026-08-01T14:05:49Z, block 8749721
 
-window: first_seen in [2026-08-01T10:58:22Z, 2026-08-01T12:13:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-01T12:51:15Z, 2026-08-01T14:06:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
-| `sn103:release:v2007` | 103 | RELEASE | P1 | 2026-08-01T12:13:22Z | sn103 released v2007 |
-| `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | P1 | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
+| `sn124:scoring_commit:2026-08-01T12:57:13Z` | 124 | SCORING_COMMIT | P1 | 2026-08-01T14:06:15Z | sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-01T08:57:49Z`** - sn71 commit touches scoring: Bind v8 artifact verification into protected manifest
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn103:release:v2007`** - sn103 released v2007
-  - published 2026-08-01T11:36:54Z (was v2006: validator: start signer balance gauge at the unknown sentinel)
-- **`sn103:scoring_commit:2026-08-01T11:36:54Z`** - sn103 commit touches scoring: validator: release v2007
+- **`sn124:scoring_commit:2026-08-01T12:57:13Z`** - sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -151,6 +145,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-01T08:06:19Z` | 67 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0 |
 | `sn71:scoring_commit:2026-08-01T07:04:04Z` | 71 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn71 commit touches scoring: Validate concurrent restart state continuity |
 | `sn126:scoring_commit:2026-08-01T08:32:23Z` | 126 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn126 commit touches scoring: docs: introduce Poker44 evaluation network |
+| `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
+| `sn103:release:v2007` | 103 | RELEASE | 2026-08-01T12:13:22Z | sn103 released v2007 |
+| `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

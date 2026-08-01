@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-08-01T15:16:25Z  |  block: 8750073  |  row_status: ok
+snapshot_utc: 2026-08-01T16:28:44Z  |  block: 8750434  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.09653 USD), open=True
+- registration cost: 0.0005 TAO (0.09631 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 1019.3 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 7150.654632839686** (uid 7) <- the only figure quotable as achievable
-- median_miner_usd_day: 2996.3659049772027
-- top_miner_usd_day: 10053.566136757248 (uid 156, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 7125.607108103573** (uid 7) <- the only figure quotable as achievable
+- median_miner_usd_day: 2985.8701457807388
+- top_miner_usd_day: 10018.35020766733 (uid 156, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-01T15:16:25Z  |  block: 8750073  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3954.8553 USD/day  |  payback on registration: 0.0 days
+- net margin: 3940.9733 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 45.9 (rank 26), confidence 0.85 - hardware requirement unknown
-- components: income 32.72 / freshness 0.0 / resource 11.25 / registration 10.0
+- components: income 32.7 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T16:39:19Z, block 8757687
+# ALARMS - generated 2026-08-02T17:46:01Z, block 8758021
 
-window: first_seen in [2026-08-02T15:24:54Z, 2026-08-02T16:39:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T16:31:30Z, 2026-08-02T17:46:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,22 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn24:burn_drop:0.000` | 24 | BURN_DROP | P0 | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
-| `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
 | `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |
 | `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | P1 | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
+| `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
 
 ### detail
 
 - **`sn24:burn_drop:0.000`** - sn24 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-08-02T13:57:44Z`** - sn71 commit touches scoring: Bind verified auditor fallback workflow
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-08-02T14:22:11Z`** - sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-02T15:36:41Z`** - sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn76:scoring_commit:2026-08-02T15:40:23Z`** - sn76 commit touches scoring: Update scoring constants
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-02T17:35:09Z`** - sn71 commit touches scoring: Reconcile terminal settlement frontier rewards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -181,6 +178,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
 | `sn103:release:v2008` | 103 | RELEASE | 2026-08-02T12:34:55Z | sn103 released v2008 |
 | `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
+| `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
+| `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

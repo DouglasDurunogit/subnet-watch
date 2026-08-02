@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-02T16:39:19Z · block 8757687 · run_status **ok**_
+_snapshot 2026-08-02T17:46:01Z · block 8758021 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 96 | `miner_burn` < 0.99 |
 | Ranked | 96 | passed every gate |
 | **Positive margin** | **57** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 58 | `████████████████████████████` |
-| 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 4 | `██` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 8 | `████` |
 | 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 9 | `████` |
@@ -44,25 +44,25 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn23 Trishool | 85.1 | 572 | 572 = | cpu-small | 5 | 20% |
-| 2 | sn11 TrajectoryRL | 79.6 | 4,974 | 4,974 = | cpu-small | 1 | 100% |
-| 3 | sn107 Minos | 76.9 | 86.80 | 26,066 | cpu-small | 20 | 89% |
-| 4 | sn98 NeverPlayAlone | 76 | 1,703 | 1,703 = | cpu-small | 1 | 100% |
-| 5 | sn76 Phylax | 75.8 | 1,636 | 1,636 = | cpu-small | 1 | 100% |
-| 6 | sn67 Harnyx | 73.3 | 28.74 | 851 | cpu-small | 125 | 19% |
-| 7 | sn62 Ridges | 70.3 | 806 | 1,289 | rtx4090* | 6 | 57% |
-| 8 | sn56 Gradients | 69.6 | 653 | 1,214 | rtx4090* | 6 | 64% |
-| 9 | sn26 Perturb | 68.8 | 24.85 | 197 | rtx3060 | 11 | 50% |
-| 10 | sn85 Vidaio | 68.6 | 485 | 485 = | rtx4090* | 10 | 16% |
-| 11 | sn15 ORO | 68.2 | 10.89 | 18.58 | cpu-small | 93 | 91% |
-| 12 | sn74 Gittensor | 66.3 | 252 | 334 | rtx4090* | 7 | 21% |
-| 13 | sn124 Swarm | 65.9 | 228 | 679 | rtx4090* | 20 | 12% |
-| 14 | sn38 ChronoLLM | 63 | 104 | 1,506 | rtx4090* | 10 | 52% |
-| 15 | sn71 Leadpoet | 63 | 91.66 | 139 | rtx4090* | 9 | 70% |
-| 16 | sn53 engy | 63 | 91.52 | 2,302 | rtx4090 | 34 | 13% |
-| 17 | sn28 gm | 61.8 | 65.58 | 2,586 | rtx4090* | 14 | 56% |
-| 18 | sn61 RedTeam | 58.7 | 24.68 | 94.53 | rtx4090* | 93 | 3% |
-| 19 | sn9 iota | 55.8 | 10,938 | 10,938 = | rtx4090* | 3 | 55% |
-| 20 | sn102 ConnitoAI | 55.7 | 9.50 | 1,523 | rtx4090* | 9 | 39% |
+| 2 | sn11 TrajectoryRL | 79.6 | 4,988 | 4,988 = | cpu-small | 1 | 100% |
+| 3 | sn107 Minos | 77.4 | 96.28 | 26,402 | cpu-small | 20 | 90% |
+| 4 | sn98 NeverPlayAlone | 76 | 1,704 | 1,704 = | cpu-small | 1 | 100% |
+| 5 | sn76 Phylax | 75.9 | 1,652 | 1,652 = | cpu-small | 1 | 100% |
+| 6 | sn67 Harnyx | 73.3 | 28.73 | 851 | cpu-small | 125 | 19% |
+| 7 | sn62 Ridges | 70.3 | 801 | 1,281 | rtx4090* | 6 | 57% |
+| 8 | sn56 Gradients | 69.6 | 652 | 1,213 | rtx4090* | 6 | 64% |
+| 9 | sn85 Vidaio | 69.2 | 586 | 638 | rtx4090* | 10 | 21% |
+| 10 | sn26 Perturb | 68.8 | 24.61 | 197 | rtx3060 | 11 | 50% |
+| 11 | sn15 ORO | 68.4 | 10.81 | 18.73 | cpu-small | 94 | 91% |
+| 12 | sn74 Gittensor | 66.3 | 252 | 332 | rtx4090* | 7 | 21% |
+| 13 | sn124 Swarm | 66 | 229 | 682 | rtx4090* | 20 | 12% |
+| 14 | sn38 ChronoLLM | 63 | 104 | 1,508 | rtx4090* | 10 | 52% |
+| 15 | sn53 engy | 63 | 91.25 | 2,296 | rtx4090 | 34 | 13% |
+| 16 | sn71 Leadpoet | 63 | 90.39 | 137 | rtx4090* | 9 | 70% |
+| 17 | sn28 gm | 59 | 28.36 | 2,388 | rtx4090* | 15 | 57% |
+| 18 | sn61 RedTeam | 58.4 | 22.64 | 86.07 | rtx4090* | 99 | 3% |
+| 19 | sn102 ConnitoAI | 56.3 | 11.47 | 1,467 | rtx4090* | 8 | 38% |
+| 20 | sn9 iota | 55.8 | 10,953 | 10,953 = | rtx4090* | 3 | 55% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-02T17:46 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Reconcile terminal settlement frontier re |
 | 2026-08-02T16:39 | sn24 | BURN_DROP | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-02T16:39 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify candidate recovery against pre-sig |
 | 2026-08-02T16:39 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Update scoring constants |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-02T07:40 | sn16 | BURN_DROP | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-02T07:40 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-02T04:52 | sn61 | RELEASE | sn61 released 4.8.3 |
-| 2026-08-02T04:52 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: fix: set default user_id in _compare_same |
 
 ---
 

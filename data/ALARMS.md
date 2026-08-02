@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T15:36:49Z, block 8757375
+# ALARMS - generated 2026-08-02T16:39:19Z, block 8757687
 
-window: first_seen in [2026-08-02T14:22:21Z, 2026-08-02T15:37:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T15:24:54Z, 2026-08-02T16:39:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn24:burn_drop:0.000` | 24 | BURN_DROP | P0 | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
 | `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
+| `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |
+| `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | P1 | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
 
 ### detail
 
+- **`sn24:burn_drop:0.000`** - sn24 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-02T13:57:44Z`** - sn71 commit touches scoring: Bind verified auditor fallback workflow
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-02T14:22:11Z`** - sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-02T15:36:41Z`** - sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-08-02T15:40:23Z`** - sn76 commit touches scoring: Update scoring constants
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

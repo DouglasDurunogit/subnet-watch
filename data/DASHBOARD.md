@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-02T14:17:02Z · block 8756976 · run_status **ok**_
+_snapshot 2026-08-02T15:36:49Z · block 8757375 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 57 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 97 | `miner_burn` < 0.99 |
-| Ranked | 97 | passed every gate |
-| **Positive margin** | **57** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| Pays miners at all | 95 | `miner_burn` < 0.99 |
+| Ranked | 95 | passed every gate |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
+| 0 (none) | 57 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 6 | `███` |
-| 0.6–0.8 | 11 | `█████` |
-| 0.8–0.99 | 10 | `█████` |
-| ≥0.99 dead | 31 | `███████████████` |
+| 0.2–0.4 | 4 | `██` |
+| 0.4–0.6 | 8 | `████` |
+| 0.6–0.8 | 10 | `█████` |
+| 0.8–0.99 | 9 | `████` |
+| ≥0.99 dead | 33 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 77.1 | 88.89 | 26,492 | cpu-small | 20 | 89% |
-| 2 | sn98 NeverPlayAlone | 76 | 1,713 | 1,713 = | cpu-small | 1 | 100% |
-| 3 | sn76 Phylax | 75.8 | 1,637 | 1,637 = | cpu-small | 1 | 100% |
-| 4 | sn67 Harnyx | 73.3 | 29.05 | 860 | cpu-small | 125 | 19% |
+| 1 | sn107 Minos | 77 | 87.39 | 26,242 | cpu-small | 20 | 89% |
+| 2 | sn98 NeverPlayAlone | 76 | 1,714 | 1,714 = | cpu-small | 1 | 100% |
+| 3 | sn76 Phylax | 75.9 | 1,645 | 1,645 = | cpu-small | 1 | 100% |
+| 4 | sn67 Harnyx | 73.3 | 28.88 | 855 | cpu-small | 125 | 19% |
 | 5 | sn23 Trishool | 72.3 | 576 | 576 = | cpu-small | 5 | 20% |
-| 6 | sn62 Ridges | 71.2 | 1,047 | 4,822 | rtx4090* | 6 | 57% |
-| 7 | sn102 ConnitoAI | 69.9 | 715 | 1,438 | rtx4090* | 5 | 37% |
-| 8 | sn56 Gradients | 69.6 | 655 | 1,218 | rtx4090* | 6 | 64% |
-| 9 | sn26 Perturb | 68.9 | 25.51 | 195 | rtx3060 | 11 | 50% |
-| 10 | sn15 ORO | 68.7 | 11.37 | 10,239 | cpu-small | 92 | 91% |
-| 11 | sn85 Vidaio | 68.6 | 485 | 485 = | rtx4090* | 10 | 16% |
-| 12 | sn74 Gittensor | 66.4 | 253 | 333 | rtx4090* | 7 | 21% |
-| 13 | sn124 Swarm | 65.9 | 229 | 680 | rtx4090* | 20 | 12% |
-| 14 | sn38 ChronoLLM | 63.1 | 105 | 1,531 | rtx4090* | 10 | 52% |
-| 15 | sn71 Leadpoet | 63.1 | 92.75 | 140 | rtx4090* | 9 | 70% |
-| 16 | sn53 engy | 63 | 92.11 | 2,316 | rtx4090 | 34 | 13% |
-| 17 | sn28 gm | 62 | 69.31 | 2,412 | rtx4090* | 13 | 61% |
-| 18 | sn61 RedTeam | 58.4 | 22.14 | 91.57 | rtx4090* | 94 | 3% |
-| 19 | sn9 iota | 56.2 | 12,964 | 12,964 = | rtx4090* | 3 | 65% |
-| 20 | sn90 KubeTEE AI Facto | 52.8 | 3,061 | 3,061 = | rtx4090* | 2 | 76% |
+| 6 | sn62 Ridges | 71.1 | 1,036 | 4,771 | rtx4090* | 6 | 57% |
+| 7 | sn56 Gradients | 69.6 | 655 | 1,218 | rtx4090* | 6 | 64% |
+| 8 | sn26 Perturb | 68.9 | 24.94 | 198 | rtx3060 | 11 | 50% |
+| 9 | sn15 ORO | 68.8 | 11.35 | 10,286 | cpu-small | 93 | 91% |
+| 10 | sn85 Vidaio | 68.6 | 490 | 536 | rtx4090* | 10 | 18% |
+| 11 | sn74 Gittensor | 66.4 | 258 | 334 | rtx4090* | 7 | 21% |
+| 12 | sn124 Swarm | 65.9 | 229 | 681 | rtx4090* | 20 | 12% |
+| 13 | sn28 gm | 63.9 | 120 | 2,805 | rtx4090* | 12 | 55% |
+| 14 | sn38 ChronoLLM | 63.1 | 104 | 1,513 | rtx4090* | 10 | 52% |
+| 15 | sn53 engy | 63.1 | 92.92 | 2,335 | rtx4090 | 34 | 13% |
+| 16 | sn71 Leadpoet | 63 | 91.72 | 139 | rtx4090* | 9 | 70% |
+| 17 | sn61 RedTeam | 58.5 | 22.77 | 92.66 | rtx4090* | 93 | 3% |
+| 18 | sn102 ConnitoAI | 55.7 | 9.58 | 1,530 | rtx4090* | 9 | 39% |
+| 19 | sn9 iota | 55.1 | 8,011 | 8,011 = | rtx4090* | 3 | 56% |
+| 20 | sn51 lium.io | 53.3 | 10.32 | 7,876 | rtx4090* | 42 | 41% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 25 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 25 |
+| concentrated (30–60%) | 21 |
+| dominated (60–90%) | 21 |
 | captured (>90%) | 27 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-02T15:37 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind verified auditor fallback workflow |
+| 2026-08-02T15:37 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own r |
 | 2026-08-02T12:34 | sn98 | BURN_DROP | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-02T12:34 | sn103 | RELEASE | sn103 released v2008 |
 | 2026-08-02T12:34 | sn103 | SCORING_COMMIT | sn103 commit touches scoring: validator: release v2008 |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-02T04:52 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve scoring state across gateway res |
 | 2026-08-02T04:52 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Harden scoring inputs and screening |
 | 2026-08-02T04:52 | sn111 | README_TASK_DIFF | sn111 README task/scoring sections changed |
-| 2026-08-02T01:17 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Recycle scoring workers at baseline check |
-| 2026-08-02T01:17 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat: Added display overall score + margi |
 
 ---
 

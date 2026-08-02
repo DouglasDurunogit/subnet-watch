@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-02T14:17:02Z, block 8756976
+# ALARMS - generated 2026-08-02T15:36:49Z, block 8757375
 
-window: first_seen in [2026-08-02T13:02:27Z, 2026-08-02T14:17:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T14:22:21Z, 2026-08-02T15:37:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
+| `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | P1 | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-02T13:57:44Z`** - sn71 commit touches scoring: Bind verified auditor fallback workflow
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-02T14:22:11Z`** - sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

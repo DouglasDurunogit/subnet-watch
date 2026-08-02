@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-02T18:45:24Z · block 8758318 · run_status **ok**_
+_snapshot 2026-08-02T20:01:32Z · block 8758698 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 96 | `miner_burn` < 0.99 |
-| Ranked | 96 | passed every gate |
+| Pays miners at all | 95 | `miner_burn` < 0.99 |
+| Ranked | 95 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 0 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
+| 0 (none) | 57 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 8 | `████` |
 | 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 9 | `████` |
-| ≥0.99 dead | 32 | `███████████████` |
+| ≥0.99 dead | 33 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn23 Trishool | 85.1 | 574 | 574 = | cpu-small | 5 | 20% |
-| 2 | sn11 TrajectoryRL | 79.6 | 5,008 | 5,008 = | cpu-small | 1 | 100% |
-| 3 | sn107 Minos | 77.8 | 105 | 26,480 | cpu-small | 20 | 90% |
-| 4 | sn76 Phylax | 76 | 1,719 | 1,719 = | cpu-small | 1 | 100% |
-| 5 | sn98 NeverPlayAlone | 76 | 1,711 | 1,711 = | cpu-small | 1 | 100% |
-| 6 | sn67 Harnyx | 73.3 | 28.82 | 854 | cpu-small | 125 | 19% |
-| 7 | sn62 Ridges | 69.9 | 713 | 2,497 | rtx4090* | 7 | 40% |
-| 8 | sn56 Gradients | 69.6 | 655 | 1,217 | rtx4090* | 6 | 64% |
-| 9 | sn26 Perturb | 68.7 | 24.14 | 198 | rtx3060 | 11 | 50% |
-| 10 | sn85 Vidaio | 68.5 | 475 | 475 = | rtx4090* | 10 | 16% |
-| 11 | sn15 ORO | 68.2 | 10.86 | 18.82 | cpu-small | 94 | 91% |
-| 12 | sn74 Gittensor | 66.3 | 253 | 333 | rtx4090* | 7 | 21% |
-| 13 | sn124 Swarm | 65.9 | 228 | 679 | rtx4090* | 20 | 12% |
-| 14 | sn38 ChronoLLM | 63.1 | 104 | 1,515 | rtx4090* | 10 | 52% |
-| 15 | sn53 engy | 63.1 | 92.74 | 2,330 | rtx4090 | 34 | 13% |
-| 16 | sn71 Leadpoet | 63 | 91.03 | 138 | rtx4090* | 9 | 70% |
-| 17 | sn28 gm | 60.8 | 48.35 | 2,790 | rtx4090* | 14 | 52% |
-| 18 | sn61 RedTeam | 58.5 | 23.13 | 85.89 | rtx4090* | 99 | 3% |
-| 19 | sn102 ConnitoAI | 55.7 | 9.64 | 1,412 | rtx4090* | 9 | 37% |
-| 20 | sn9 iota | 55.6 | 9,982 | 9,982 = | rtx4090* | 3 | 50% |
+| 1 | sn23 Trishool | 85.1 | 573 | 573 = | cpu-small | 5 | 20% |
+| 2 | sn11 TrajectoryRL | 79.6 | 5,004 | 5,004 = | cpu-small | 1 | 100% |
+| 3 | sn107 Minos | 77.7 | 103 | 26,160 | cpu-small | 20 | 89% |
+| 4 | sn98 NeverPlayAlone | 76 | 1,707 | 1,707 = | cpu-small | 1 | 100% |
+| 5 | sn67 Harnyx | 73.3 | 28.76 | 852 | cpu-small | 125 | 19% |
+| 6 | sn62 Ridges | 69.8 | 705 | 2,545 | rtx4090* | 7 | 39% |
+| 7 | sn56 Gradients | 69.2 | 579 | 1,220 | rtx4090* | 6 | 64% |
+| 8 | sn85 Vidaio | 68.8 | 524 | 524 = | rtx4090* | 10 | 18% |
+| 9 | sn26 Perturb | 68.8 | 24.41 | 198 | rtx3060 | 11 | 50% |
+| 10 | sn15 ORO | 68.6 | 10.84 | 18.78 | cpu-small | 94 | 91% |
+| 11 | sn74 Gittensor | 66.3 | 252 | 332 | rtx4090* | 7 | 21% |
+| 12 | sn124 Swarm | 65.9 | 228 | 678 | rtx4090* | 20 | 12% |
+| 13 | sn28 gm | 63.8 | 116 | 3,024 | rtx4090* | 13 | 50% |
+| 14 | sn38 ChronoLLM | 63.1 | 104 | 1,512 | rtx4090* | 10 | 52% |
+| 15 | sn71 Leadpoet | 63.1 | 92.70 | 140 | rtx4090* | 9 | 70% |
+| 16 | sn53 engy | 63.1 | 92.64 | 2,328 | rtx4090 | 34 | 13% |
+| 17 | sn61 RedTeam | 58.4 | 22.47 | 84.65 | rtx4090* | 98 | 3% |
+| 18 | sn102 ConnitoAI | 55.7 | 9.61 | 1,410 | rtx4090* | 9 | 37% |
+| 19 | sn9 iota | 55.6 | 9,962 | 9,962 = | rtx4090* | 3 | 50% |
+| 20 | sn90 KubeTEE AI Facto | 53.2 | 3,659 | 3,659 = | rtx4090* | 2 | 71% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -88,7 +88,7 @@ single UID takes almost everything, so the headline income is not reachable.
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 22 |
 | dominated (60–90%) | 21 |
-| captured (>90%) | 27 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 

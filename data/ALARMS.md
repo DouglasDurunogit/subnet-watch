@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-02T18:45:24Z, block 8758318
+# ALARMS - generated 2026-08-02T20:01:32Z, block 8758698
 
-window: first_seen in [2026-08-02T17:30:55Z, 2026-08-02T18:45:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T18:47:04Z, 2026-08-02T20:02:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
-| `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-02T17:35:09Z`** - sn71 commit touches scoring: Reconcile terminal settlement frontier rewards
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-02T17:55:43Z`** - sn71 commit touches scoring: Preserve validator builds after failed deploys
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -177,6 +167,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
 | `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |
 | `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
+| `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
+| `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T11:08:13Z, block 8756032
+# ALARMS - generated 2026-08-02T12:34:32Z, block 8756463
 
-window: first_seen in [2026-08-02T09:53:46Z, 2026-08-02T11:08:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T11:19:55Z, 2026-08-02T12:34:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | P1 | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
-| `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
+| `sn98:burn_drop:0.000` | 98 | BURN_DROP | P0 | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn103:release:v2008` | 103 | RELEASE | P1 | 2026-08-02T12:34:55Z | sn103 released v2008 |
+| `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | P1 | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
 
 ### detail
 
-- **`sn11:scoring_commit:2026-08-02T10:05:07Z`** - sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-02T09:58:33Z`** - sn71 commit touches scoring: Delay candidate imports until verifier startup
+- **`sn98:burn_drop:0.000`** - sn98 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn103:release:v2008`** - sn103 released v2008
+  - published 2026-08-02T11:23:08Z (was v2007)
+- **`sn103:scoring_commit:2026-08-02T11:23:08Z`** - sn103 commit touches scoring: validator: release v2008
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -167,6 +170,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
 | `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
 | `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
+| `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
+| `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

@@ -1,26 +1,13 @@
-# ALARMS - generated 2026-08-02T12:34:32Z, block 8756463
+# ALARMS - generated 2026-08-02T14:17:02Z, block 8756976
 
-window: first_seen in [2026-08-02T11:19:55Z, 2026-08-02T12:34:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T13:02:27Z, 2026-08-02T14:17:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn98:burn_drop:0.000` | 98 | BURN_DROP | P0 | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn103:release:v2008` | 103 | RELEASE | P1 | 2026-08-02T12:34:55Z | sn103 released v2008 |
-| `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | P1 | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
-
-### detail
-
-- **`sn98:burn_drop:0.000`** - sn98 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn103:release:v2008`** - sn103 released v2008
-  - published 2026-08-02T11:23:08Z (was v2007)
-- **`sn103:scoring_commit:2026-08-02T11:23:08Z`** - sn103 commit touches scoring: validator: release v2008
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,6 +34,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:burn_drop:0.254` | 102 | BURN_DROP | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
 | `sn99:burn_drop:0.000` | 99 | BURN_DROP | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn16:burn_drop:0.000` | 16 | BURN_DROP | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn98:burn_drop:0.000` | 98 | BURN_DROP | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -172,6 +160,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
 | `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
 | `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
+| `sn103:release:v2008` | 103 | RELEASE | 2026-08-02T12:34:55Z | sn103 released v2008 |
+| `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

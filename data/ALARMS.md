@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T21:07:59Z, block 8759031
+# ALARMS - generated 2026-08-02T22:27:14Z, block 8759427
 
-window: first_seen in [2026-08-02T19:53:24Z, 2026-08-02T21:08:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T21:12:48Z, 2026-08-02T22:27:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |
+| `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-02T20:58:39Z`** - sn71 commit touches scoring: Reclaim stale validator builder mounts
+- **`sn71:scoring_commit:2026-08-02T21:54:54Z`** - sn71 commit touches scoring: Make validator storage cleanup dependency-closed
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -176,6 +176,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
 | `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
 | `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
+| `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

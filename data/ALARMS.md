@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T01:17:14Z, block 8753077
+# ALARMS - generated 2026-08-02T04:52:15Z, block 8754152
 
-window: first_seen in [2026-08-02T00:02:45Z, 2026-08-02T01:17:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T03:37:47Z, 2026-08-02T04:52:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
-| `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | P1 | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
+| `sn61:release:4.8.3` | 61 | RELEASE | P1 | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |
+| `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
+| `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |
+| `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
+| `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | P2 | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-02T00:47:38Z`** - sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints
+- **`sn61:release:4.8.3`** - sn61 released 4.8.3
+  - published 2026-08-02T02:02:21Z (was 4.8.2)
+- **`sn61:scoring_commit:2026-08-02T02:01:13Z`** - sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-07-31T11:22:32Z`** - sn97 commit touches scoring: feat: Added display overall score + margin on main page
+- **`sn71:scoring_commit:2026-08-02T03:44:52Z`** - sn71 commit touches scoring: Preserve scoring state across gateway restart
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-08-02T03:28:23Z`** - sn76 commit touches scoring: Harden scoring inputs and screening
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:39d25fdcdedf56c8`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -158,6 +167,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
 | `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |
 | `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |
+| `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
+| `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

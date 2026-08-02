@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T22:27:14Z, block 8759427
+# ALARMS - generated 2026-08-02T23:31:49Z, block 8759750
 
-window: first_seen in [2026-08-02T21:12:48Z, 2026-08-02T22:27:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T22:17:33Z, 2026-08-02T23:32:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |
+| `sn71:scoring_commit:2026-08-02T23:19:19Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T23:32:33Z | sn71 commit touches scoring: Bind validator Sentry instrumentation identity |
 
 ### detail
 
 - **`sn71:scoring_commit:2026-08-02T21:54:54Z`** - sn71 commit touches scoring: Make validator storage cleanup dependency-closed
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-02T23:19:19Z`** - sn71 commit touches scoring: Bind validator Sentry instrumentation identity
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

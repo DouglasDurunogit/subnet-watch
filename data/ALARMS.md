@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T04:52:15Z, block 8754152
+# ALARMS - generated 2026-08-02T07:39:36Z, block 8754989
 
-window: first_seen in [2026-08-02T03:37:47Z, 2026-08-02T04:52:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T06:25:06Z, 2026-08-02T07:40:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.8.3` | 61 | RELEASE | P1 | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |
-| `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
-| `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |
-| `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | P1 | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
-| `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | P2 | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
+| `sn16:burn_drop:0.000` | 16 | BURN_DROP | P0 | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
 
 ### detail
 
-- **`sn61:release:4.8.3`** - sn61 released 4.8.3
-  - published 2026-08-02T02:02:21Z (was 4.8.2)
-- **`sn61:scoring_commit:2026-08-02T02:01:13Z`** - sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method
+- **`sn16:burn_drop:0.000`** - sn16 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn67:scoring_commit:2026-08-02T05:04:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-02T03:44:52Z`** - sn71 commit touches scoring: Preserve scoring state across gateway restart
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-08-02T03:28:23Z`** - sn76 commit touches scoring: Harden scoring inputs and screening
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:39d25fdcdedf56c8`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -169,6 +160,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |
 | `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
 | `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
+| `sn61:release:4.8.3` | 61 | RELEASE | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |
+| `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
+| `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |
+| `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
@@ -180,6 +175,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
+| `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

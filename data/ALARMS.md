@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-02T20:01:32Z, block 8758698
+# ALARMS - generated 2026-08-02T21:07:59Z, block 8759031
 
-window: first_seen in [2026-08-02T18:47:04Z, 2026-08-02T20:02:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T19:53:24Z, 2026-08-02T21:08:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-02T20:58:39Z`** - sn71 commit touches scoring: Reclaim stale validator builder mounts
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

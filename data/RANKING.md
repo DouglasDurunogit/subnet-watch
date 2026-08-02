@@ -1,4 +1,4 @@
-# RANKING - generated 2026-08-02T20:01:32Z, block 8758698
+# RANKING - generated 2026-08-02T21:07:59Z, block 8759031
 
 Weights: income 40 / new-challenge freshness 35 / resource cost 15 / registration 10.
 Incentive structure is weight ZERO by explicit decision - it is reported per subnet
@@ -14,88 +14,88 @@ ceiling ranked winner-take-all subnets above genuinely open ones.
 
 | # | netuid | name | score | conf | net $/day (median) | ceiling $/day | machine | burn | earners | top1% | freshness |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 23 | Trishool | 85.1 | 1.0 | 573 | 573 | cpu-small | 0.000 | 5 | 20% | SCORING_COMMIT 4.2d ago |
-| 2 | 11 | TrajectoryRL | 79.6 | 0.85 | 5,004 | 5,004 | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 0.4d ago |
-| 3 | 107 | Minos | 77.7 | 1.0 | 103 | 26,159 | cpu-small | 0.000 | 20 | 89% | SCORING_COMMIT 3.5d ago |
-| 4 | 98 | NeverPlayAlone | 76.0 | 0.85 | 1,707 | 1,707 | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 3.2d ago |
-| 5 | 67 | Harnyx | 73.3 | 1.0 | 28.76 | 852 | cpu-small | 0.007 | 125 | 19% | SCORING_COMMIT 0.5d ago |
-| 6 | 62 | Ridges | 69.8 | 0.85 | 705 | 2,545 | rtx4090 | 0.015 | 7 | 39% | RELEASE 2.9d ago |
-| 7 | 56 | Gradients | 69.2 | 0.85 | 579 | 1,220 | rtx4090 | 0.645 | 6 | 64% | SCORING_COMMIT 4.9d ago |
-| 8 | 85 | Vidaio | 68.8 | 0.85 | 524 | 524 | rtx4090 | 0.000 | 10 | 18% | SCORING_COMMIT 5.5d ago |
-| 9 | 26 | Perturb | 68.8 | 1.0 | 24.41 | 198 | rtx3060 | 0.501 | 11 | 50% | README_TASK_DIFF 3.2d ago |
-| 10 | 15 | ORO | 68.6 | 1.0 | 10.84 | 18.78 | cpu-small | 0.000 | 94 | 91% | RELEASE 2.1d ago |
-| 11 | 74 | Gittensor | 66.3 | 0.85 | 252 | 332 | rtx4090 | 0.000 | 7 | 21% | RELEASE 1.9d ago |
-| 12 | 124 | Swarm | 65.9 | 0.85 | 228 | 678 | rtx4090 | 0.000 | 20 | 12% | SCORING_COMMIT 1.2d ago |
-| 13 | 28 | gm | 63.8 | 0.85 | 116 | 3,024 | rtx4090 | 0.496 | 13 | 50% | RELEASE 3.0d ago |
-| 14 | 38 | ChronoLLM | 63.1 | 0.85 | 104 | 1,512 | rtx4090 | 0.000 | 10 | 52% | SCORING_COMMIT 3.4d ago |
-| 15 | 71 | Leadpoet | 63.1 | 0.85 | 92.70 | 140 | rtx4090 | 0.700 | 9 | 70% | SCORING_COMMIT 0.1d ago |
-| 16 | 53 | engy | 63.1 | 0.85 | 92.64 | 2,328 | rtx4090 | 0.000 | 34 | 13% | SCORING_COMMIT 4.1d ago |
-| 17 | 61 | RedTeam | 58.4 | 0.85 | 22.47 | 84.65 | rtx4090 | 0.000 | 98 | 3% | RELEASE 0.6d ago |
-| 18 | 102 | ConnitoAI | 55.7 | 0.85 | 9.61 | 1,410 | rtx4090 | 0.251 | 9 | 37% | RELEASE 1.9d ago |
-| 19 | 9 | iota | 55.6 | 0.6 | 9,962 | 9,962 | rtx4090 | 0.460 | 3 | 50% | RELEASE 2.1d ago |
-| 20 | 90 | KubeTEE AI Factory | 53.2 | 0.6 | 3,659 | 3,659 | rtx4090 | 0.707 | 2 | 71% | subnet is 19 days old |
-| 21 | 51 | lium.io | 53.0 | 0.85 | 9.78 | 9,006 | rtx4090 | 0.000 | 42 | 39% | SCORING_COMMIT 3.2d ago |
-| 22 | 97 | Albedo | 52.8 | 0.6 | 3,078 | 3,078 | rtx4090 | 0.000 | 5 | 20% | SCORING_COMMIT 0.8d ago |
-| 23 | 101 | Tag101 | 50.0 | 1.0 | -0.03 | 0.96 | cpu-small | 0.893 | 241 | 90% | SCORING_COMMIT 2.1d ago |
-| 24 | 76 | Phylax | 50.0 | 1.0 | n/a | n/a | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 0.1d ago |
-| 25 | 99 | Thirty Spokes | 49.8 | 0.6 | 859 | 859 | rtx4090 | 0.000 | 4 | 25% | subnet is 26 days old |
+| 1 | 23 | Trishool | 85.1 | 1.0 | 575 | 575 | cpu-small | 0.000 | 5 | 20% | SCORING_COMMIT 4.3d ago |
+| 2 | 11 | TrajectoryRL | 79.6 | 0.85 | 5,017 | 5,017 | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 0.4d ago |
+| 3 | 107 | Minos | 77.2 | 1.0 | 94.22 | 26,501 | cpu-small | 0.000 | 20 | 89% | SCORING_COMMIT 3.6d ago |
+| 4 | 67 | Harnyx | 73.4 | 1.0 | 28.83 | 854 | cpu-small | 0.007 | 125 | 19% | SCORING_COMMIT 0.6d ago |
+| 5 | 102 | ConnitoAI | 70.3 | 0.85 | 808 | 1,171 | rtx4090 | 0.251 | 6 | 30% | RELEASE 1.9d ago |
+| 6 | 62 | Ridges | 69.8 | 0.85 | 707 | 2,552 | rtx4090 | 0.015 | 7 | 39% | RELEASE 2.9d ago |
+| 7 | 56 | Gradients | 69.2 | 0.85 | 581 | 1,223 | rtx4090 | 0.645 | 6 | 64% | SCORING_COMMIT 4.9d ago |
+| 8 | 26 | Perturb | 68.8 | 1.0 | 24.64 | 198 | rtx3060 | 0.501 | 11 | 50% | README_TASK_DIFF 3.2d ago |
+| 9 | 85 | Vidaio | 68.5 | 0.85 | 475 | 475 | rtx4090 | 0.000 | 10 | 16% | SCORING_COMMIT 5.6d ago |
+| 10 | 15 | ORO | 68.5 | 1.0 | 10.87 | 18.84 | cpu-small | 0.000 | 94 | 91% | RELEASE 2.2d ago |
+| 11 | 74 | Gittensor | 66.4 | 0.85 | 253 | 333 | rtx4090 | 0.000 | 7 | 21% | RELEASE 2.0d ago |
+| 12 | 124 | Swarm | 66.0 | 0.85 | 232 | 690 | rtx4090 | 0.000 | 20 | 12% | SCORING_COMMIT 1.3d ago |
+| 13 | 53 | engy | 63.9 | 0.85 | 118 | 2,924 | rtx4090 | 0.000 | 28 | 17% | SCORING_COMMIT 4.2d ago |
+| 14 | 38 | ChronoLLM | 63.1 | 0.85 | 104 | 1,514 | rtx4090 | 0.000 | 10 | 52% | SCORING_COMMIT 3.5d ago |
+| 15 | 71 | Leadpoet | 63.1 | 0.85 | 93.00 | 141 | rtx4090 | 0.700 | 9 | 70% | SCORING_COMMIT 0.0d ago |
+| 16 | 28 | gm | 60.7 | 0.85 | 46.91 | 2,543 | rtx4090 | 0.577 | 14 | 58% | RELEASE 3.1d ago |
+| 17 | 61 | RedTeam | 58.4 | 0.85 | 22.40 | 84.52 | rtx4090 | 0.000 | 98 | 3% | RELEASE 0.7d ago |
+| 18 | 9 | iota | 55.6 | 0.6 | 9,993 | 9,993 | rtx4090 | 0.461 | 3 | 50% | RELEASE 2.2d ago |
+| 19 | 51 | lium.io | 54.7 | 0.85 | 13.37 | 9,066 | rtx4090 | 0.000 | 42 | 39% | SCORING_COMMIT 3.3d ago |
+| 20 | 90 | KubeTEE AI Factory | 53.2 | 0.6 | 3,652 | 3,652 | rtx4090 | 0.707 | 2 | 71% | subnet is 20 days old |
+| 21 | 97 | Albedo | 52.8 | 0.6 | 3,088 | 3,088 | rtx4090 | 0.000 | 5 | 20% | SCORING_COMMIT 0.8d ago |
+| 22 | 101 | Tag101 | 50.0 | 1.0 | -0.07 | 1.05 | cpu-small | 0.893 | 241 | 90% | SCORING_COMMIT 2.2d ago |
+| 23 | 76 | Phylax | 50.0 | 1.0 | n/a | n/a | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 0.2d ago |
+| 24 | 98 | NeverPlayAlone | 50.0 | 1.0 | n/a | n/a | cpu-small | 0.000 | 1 | 100% | SCORING_COMMIT 3.2d ago |
+| 25 | 99 | Thirty Spokes | 49.8 | 0.6 | 864 | 864 | rtx4090 | 0.000 | 4 | 25% | subnet is 26 days old |
 
 ## BELOW COST (ranked, but the cheapest satisfying machine costs more than the
 competitive miner earns - listed so the information is not destroyed)
 
 | netuid | name | net $/day | machine | competitive $/day |
 |---|---|---|---|---|
-| 101 | Tag101 | -0.03 | cpu-small | 1.9508057097945426 |
-| 13 | Data Universe | -3.17 | rtx4090 | 6.6181482881432805 |
-| 103 | Djinn | -7.36 | rtx4090 | 0.9077852672287501 |
-| 8 | Vanta | -7.49 | rtx4090 | 2993.357507887094 |
-| 89 | InfiniteQuant | -8.15 | rtx4090 | 75.92496456591572 |
-| 54 | Yanez MIID | -3.80 | a4000 | 903.5477810207739 |
-| 32 | ItsAI | -0.04 | rtx4090 | 10.14924151746243 |
-| 104 | Masx.ai | -0.86 | rtx4090 | 8.811179715734983 |
-| 50 | Synth | -1.18 | rtx4090 | 48.51417932185775 |
-| 19 | blockmachine | -1.39 | rtx4090 | 86.64819882118823 |
-| 5 | Hone | -1.45 | rtx4090 | 7.008576096183439 |
-| 45 | AlphaRidge.ai | -3.95 | rtx4090 | 33.62282747567619 |
-| 18 | Zeus | -4.60 | rtx4090 | 1169.836011023272 |
-| 75 | Hippius | -5.20 | rtx4090 | 4.558967221087896 |
-| 123 | MANTIS | -5.91 | rtx4090 | 86.5291770513275 |
-| 88 | Investing | -6.29 | rtx4090 | 308.792310490941 |
-| 59 | Babelbit | -7.77 | rtx4090 | 988.8898489327186 |
-| 114 | SOMA | -8.13 | rtx4090 | 592.7818925873528 |
-| 46 | Zipcode | -8.14 | rtx4090 | 0.12333338125616396 |
-| 63 | Enigma | -8.15 | rtx4090 | 0.07082651563643401 |
+| 101 | Tag101 | -0.07 | cpu-small | 2.036140186704644 |
+| 13 | Data Universe | -3.11 | rtx4090 | 7.132441009573634 |
+| 103 | Djinn | -7.36 | rtx4090 | 0.8873244736104472 |
+| 8 | Vanta | -7.48 | rtx4090 | 3002.8997183647148 |
+| 89 | InfiniteQuant | -8.15 | rtx4090 | 75.85800454095066 |
+| 43 | Graphite | -0.43 | cpu-small | 13.831392369643897 |
+| 54 | Yanez MIID | -3.80 | a4000 | 904.947596115774 |
+| 22 | Desearch | -0.95 | rtx4090 | 67.40430251696236 |
+| 50 | Synth | -1.21 | rtx4090 | 47.746173730842536 |
+| 19 | blockmachine | -1.53 | rtx4090 | 77.84856023038998 |
+| 104 | Masx.ai | -1.86 | rtx4090 | 7.810807701285245 |
+| 5 | Hone | -2.89 | rtx4090 | 8.119926355497395 |
+| 18 | Zeus | -3.07 | rtx4090 | 1733.2146413463927 |
+| 45 | AlphaRidge.ai | -4.16 | rtx4090 | 34.57254727423771 |
+| 75 | Hippius | -5.20 | rtx4090 | 4.571635102049711 |
+| 123 | MANTIS | -5.90 | rtx4090 | 86.77837358513358 |
+| 88 | Investing | -6.29 | rtx4090 | 309.6220314928122 |
+| 59 | Babelbit | -7.77 | rtx4090 | 985.8666138525563 |
+| 114 | SOMA | -8.13 | rtx4090 | 594.6176009133017 |
+| 46 | Zipcode | -8.14 | rtx4090 | 0.12370671880074867 |
 
 ## GATED (excluded from the ranking)
 
-- **BLOCKED:burn** - 33 subnets: sn6, sn10, sn12, sn14, sn20, sn25, sn27, sn30, sn31, sn37, sn39, sn42, sn47, sn52, sn57, sn58, sn65, sn69, sn72, sn73, sn80, sn87, sn92, sn94, sn95, sn108, sn109, sn111, sn113, sn117, sn121, sn122, sn125
+- **BLOCKED:burn** - 32 subnets: sn6, sn10, sn12, sn14, sn20, sn25, sn27, sn30, sn31, sn37, sn39, sn42, sn47, sn52, sn57, sn58, sn65, sn69, sn72, sn73, sn80, sn87, sn92, sn94, sn95, sn108, sn109, sn111, sn113, sn121, sn122, sn125
 
 ## COMPONENT POINTS (for re-weighting without re-deriving)
 
 | netuid | income_pts | freshness_pts | resource_pts | registration_pts | confidence |
 |---|---|---|---|---|---|
-| 23 | 25.09 | 35.0 | 15.0 | 9.99 | 1.0 |
-| 11 | 33.65 | 35.0 | 15.0 | 10.0 | 0.85 |
-| 107 | 18.36 | 35.0 | 15.0 | 9.38 | 1.0 |
-| 98 | 29.4 | 35.0 | 15.0 | 10.0 | 0.85 |
-| 67 | 13.4 | 35.0 | 15.0 | 9.92 | 1.0 |
-| 62 | 25.91 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 56 | 25.13 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 85 | 24.74 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 26 | 12.78 | 35.0 | 11.25 | 9.74 | 1.0 |
-| 15 | 9.76 | 35.0 | 15.0 | 8.83 | 1.0 |
-| 74 | 21.85 | 35.0 | 11.25 | 9.93 | 0.85 |
-| 124 | 21.46 | 35.0 | 11.25 | 9.86 | 0.85 |
-| 28 | 18.82 | 35.0 | 11.25 | 9.94 | 0.85 |
-| 38 | 18.38 | 35.0 | 11.25 | 9.54 | 0.85 |
-| 71 | 17.93 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 53 | 17.93 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 61 | 12.47 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 102 | 9.33 | 35.0 | 11.25 | 10.0 | 0.85 |
-| 9 | 36.37 | 35.0 | 11.25 | 10.0 | 0.6 |
-| 90 | 32.41 | 35.0 | 11.25 | 10.0 | 0.6 |
-| 51 | 9.39 | 35.0 | 11.25 | 6.72 | 0.85 |
-| 97 | 31.73 | 35.0 | 11.25 | 9.98 | 0.6 |
+| 23 | 25.1 | 35.0 | 15.0 | 9.99 | 1.0 |
+| 11 | 33.66 | 35.0 | 15.0 | 10.0 | 0.85 |
+| 107 | 18.0 | 35.0 | 15.0 | 9.23 | 1.0 |
+| 67 | 13.41 | 35.0 | 15.0 | 9.96 | 1.0 |
+| 102 | 26.45 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 62 | 25.92 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 56 | 25.14 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 26 | 12.81 | 35.0 | 11.25 | 9.74 | 1.0 |
+| 85 | 24.36 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 15 | 9.77 | 35.0 | 15.0 | 8.77 | 1.0 |
+| 74 | 21.87 | 35.0 | 11.25 | 9.94 | 0.85 |
+| 124 | 21.53 | 35.0 | 11.25 | 9.86 | 0.85 |
+| 53 | 18.89 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 38 | 18.39 | 35.0 | 11.25 | 9.54 | 0.85 |
+| 71 | 17.95 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 28 | 15.28 | 35.0 | 11.25 | 9.86 | 0.85 |
+| 61 | 12.45 | 35.0 | 11.25 | 10.0 | 0.85 |
+| 9 | 36.38 | 35.0 | 11.25 | 10.0 | 0.6 |
+| 51 | 10.53 | 35.0 | 11.25 | 7.59 | 0.85 |
+| 90 | 32.4 | 35.0 | 11.25 | 10.0 | 0.6 |
+| 97 | 31.74 | 35.0 | 11.25 | 9.98 | 0.6 |
 | 101 | 0.0 | 35.0 | 15.0 | 0.0 | 1.0 |
 | 76 | 0.0 | 35.0 | 15.0 | 0.0 | 1.0 |
-| 99 | 26.69 | 35.0 | 11.25 | 10.0 | 0.6 |
+| 98 | 0.0 | 35.0 | 15.0 | 0.0 | 1.0 |
+| 99 | 26.71 | 35.0 | 11.25 | 10.0 | 0.6 |

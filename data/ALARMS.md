@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-01T23:28:25Z, block 8752533
+# ALARMS - generated 2026-08-02T01:17:14Z, block 8753077
 
-window: first_seen in [2026-08-01T22:13:58Z, 2026-08-01T23:28:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T00:02:45Z, 2026-08-02T01:17:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |
+| `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
+| `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | P1 | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-01T21:02:08Z`** - sn71 commit touches scoring: Protect validator settlement constants
+- **`sn71:scoring_commit:2026-08-02T00:47:38Z`** - sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-07-31T11:22:32Z`** - sn97 commit touches scoring: feat: Added display overall score + margin on main page
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -154,6 +157,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 | `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
 | `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |
+| `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

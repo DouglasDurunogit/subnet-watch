@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-02T07:39:36Z, block 8754989
+# ALARMS - generated 2026-08-02T09:45:40Z, block 8755619
 
-window: first_seen in [2026-08-02T06:25:06Z, 2026-08-02T07:40:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-02T08:31:10Z, 2026-08-02T09:46:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn16:burn_drop:0.000` | 16 | BURN_DROP | P0 | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
+| `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | P1 | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
 
 ### detail
 
-- **`sn16:burn_drop:0.000`** - sn16 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn67:scoring_commit:2026-08-02T05:04:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0
+- **`sn71:scoring_commit:2026-08-02T09:35:46Z`** - sn71 commit touches scoring: Validate compact finalized weight ancestry
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,6 +40,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:burn_drop:0.000` | 66 | BURN_DROP | 2026-07-31T17:12:35Z | sn66 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn102:burn_drop:0.254` | 102 | BURN_DROP | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
 | `sn99:burn_drop:0.000` | 99 | BURN_DROP | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn16:burn_drop:0.000` | 16 | BURN_DROP | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -164,6 +162,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
 | `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |
 | `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
+| `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

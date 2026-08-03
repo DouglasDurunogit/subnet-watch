@@ -1,32 +1,13 @@
-# ALARMS - generated 2026-08-03T05:01:28Z, block 8761398
+# ALARMS - generated 2026-08-03T08:40:40Z, block 8762494
 
-window: first_seen in [2026-08-03T03:47:01Z, 2026-08-03T05:02:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-03T07:26:04Z, 2026-08-03T08:41:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | P1 | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
-| `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | P1 | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
-| `sn71:scoring_commit:2026-08-03T03:14:29Z` | 71 | SCORING_COMMIT | P1 | 2026-08-03T05:02:01Z | sn71 commit touches scoring: Bind model scoring to measured catalog execution |
-| `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | P2 | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
-| `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | P2 | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
-
-### detail
-
-- **`sn41:scoring_commit:2026-07-24T20:08:42Z`** - sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-08-03T03:28:43Z`** - sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-03T03:14:29Z`** - sn71 commit touches scoring: Bind model scoring to measured catalog execution
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn41:readme_task_diff:fb51e503b4bd991f`** - sn41 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn66:readme_task_diff:77c2760695d8f219`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -192,6 +173,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |
 | `sn71:scoring_commit:2026-08-02T23:19:19Z` | 71 | SCORING_COMMIT | 2026-08-02T23:32:33Z | sn71 commit touches scoring: Bind validator Sentry instrumentation identity |
 | `sn71:scoring_commit:2026-08-02T23:42:46Z` | 71 | SCORING_COMMIT | 2026-08-03T01:17:55Z | sn71 commit touches scoring: Rebind validator telemetry recovery identity |
+| `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
+| `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
+| `sn71:scoring_commit:2026-08-03T03:14:29Z` | 71 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn71 commit touches scoring: Bind model scoring to measured catalog execution |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
@@ -204,6 +188,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
+| `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
+| `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

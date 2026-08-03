@@ -1,13 +1,32 @@
-# ALARMS - generated 2026-08-03T08:40:40Z, block 8762494
+# ALARMS - generated 2026-08-03T12:02:51Z, block 8763505
 
-window: first_seen in [2026-08-03T07:26:04Z, 2026-08-03T08:41:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-03T10:48:18Z, 2026-08-03T12:03:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn51:release:executor-v1.115` | 51 | RELEASE | P1 | 2026-08-03T12:03:18Z | sn51 released executor-v1.115 |
+| `sn51:scoring_commit:2026-08-03T09:00:56Z` | 51 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182) |
+| `sn60:scoring_commit:2026-08-03T11:51:06Z` | 60 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn60 commit touches scoring: changed scorer model to deepseek 3.2 |
+| `sn66:scoring_commit:2026-08-03T08:32:28Z` | 66 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing |
+| `sn71:scoring_commit:2026-08-03T08:54:54Z` | 71 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn71 commit touches scoring: Prepare isolated validator host Sentry runtime |
+
+### detail
+
+- **`sn51:release:executor-v1.115`** - sn51 released executor-v1.115
+  - published 2026-08-03T09:05:45Z (was miner-v1.003)
+- **`sn51:scoring_commit:2026-08-03T09:00:56Z`** - sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn60:scoring_commit:2026-08-03T11:51:06Z`** - sn60 commit touches scoring: changed scorer model to deepseek 3.2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-03T08:32:28Z`** - sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-03T08:54:54Z`** - sn71 commit touches scoring: Prepare isolated validator host Sentry runtime
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-03T21:51:51Z, block 8766446
+# ALARMS - generated 2026-08-03T23:16:31Z, block 8766869
 
-window: first_seen in [2026-08-03T20:37:20Z, 2026-08-03T21:52:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-03T22:02:05Z, 2026-08-03T23:17:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-03T19:58:12Z` | 89 | SCORING_COMMIT | P1 | 2026-08-03T20:39:27Z | sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB… |
+| `sn13:release:Release v1.18.69` | 13 | RELEASE | P1 | 2026-08-03T23:17:05Z | sn13 released Release v1.18.69 |
+| `sn54:scoring_commit:2026-07-22T23:19:48Z` | 54 | SCORING_COMMIT | P1 | 2026-08-03T23:17:05Z | sn54 commit touches scoring: Made miner process more Intuitive |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-03T19:58:12Z`** - sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB…
+- **`sn13:release:Release v1.18.69`** - sn13 released Release v1.18.69
+  - published 2026-08-03T22:28:56Z (was Decrease burn, update the OnDemand incentive)
+- **`sn54:scoring_commit:2026-07-22T23:19:48Z`** - sn54 commit touches scoring: Made miner process more Intuitive
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -200,6 +203,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-03T15:17:43Z` | 111 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn111 commit touches scoring: Add configurable PDF readers for claims miners |
 | `sn120:scoring_commit:2026-08-03T15:23:43Z` | 120 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn120 commit touches scoring: Refactor lora evaluation runtime (#603) |
 | `sn112:scoring_commit:2026-08-03T17:42:32Z` | 112 | SCORING_COMMIT | 2026-08-03T19:07:07Z | sn112 commit touches scoring: chore(weights): champion burn 25% -> 80% (miner fraction 0.75 -> 0.20… |
+| `sn89:scoring_commit:2026-08-03T19:58:12Z` | 89 | SCORING_COMMIT | 2026-08-03T20:39:27Z | sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-03T12:02:51Z, block 8763505
+# ALARMS - generated 2026-08-03T15:12:06Z, block 8764451
 
-window: first_seen in [2026-08-03T10:48:18Z, 2026-08-03T12:03:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-03T13:57:34Z, 2026-08-03T15:12:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:executor-v1.115` | 51 | RELEASE | P1 | 2026-08-03T12:03:18Z | sn51 released executor-v1.115 |
-| `sn51:scoring_commit:2026-08-03T09:00:56Z` | 51 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182) |
-| `sn60:scoring_commit:2026-08-03T11:51:06Z` | 60 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn60 commit touches scoring: changed scorer model to deepseek 3.2 |
-| `sn66:scoring_commit:2026-08-03T08:32:28Z` | 66 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing |
-| `sn71:scoring_commit:2026-08-03T08:54:54Z` | 71 | SCORING_COMMIT | P1 | 2026-08-03T12:03:18Z | sn71 commit touches scoring: Prepare isolated validator host Sentry runtime |
+| `sn78:burn_drop:0.000` | 78 | BURN_DROP | P0 | 2026-08-03T15:12:34Z | sn78 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn14:scoring_commit:2026-08-03T12:50:00Z` | 14 | SCORING_COMMIT | P1 | 2026-08-03T15:12:34Z | sn14 commit touches scoring: Merge pull request #74 from latent-to/codex/miner-reward-docs |
+| `sn21:scoring_commit:2026-08-03T12:15:33Z` | 21 | SCORING_COMMIT | P1 | 2026-08-03T15:12:34Z | sn21 commit touches scoring: fix(validator): resolve scoring to weekly (WR-) releases only |
+| `sn28:release:v0.3.16` | 28 | RELEASE | P1 | 2026-08-03T15:12:34Z | sn28 released v0.3.16 |
+| `sn50:release:v1.11.1` | 50 | RELEASE | P1 | 2026-08-03T15:12:34Z | sn50 released v1.11.1 |
+| `sn60:scoring_commit:2026-08-03T14:24:56Z` | 60 | SCORING_COMMIT | P1 | 2026-08-03T15:12:34Z | sn60 commit touches scoring: changed scoring model to kimi |
+| `sn66:scoring_commit:2026-08-03T15:03:25Z` | 66 | SCORING_COMMIT | P1 | 2026-08-03T15:12:34Z | sn66 commit touches scoring: Merge pull request #8 from conjectures-io/feat/verification_worker |
+| `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | P2 | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:release:executor-v1.115`** - sn51 released executor-v1.115
-  - published 2026-08-03T09:05:45Z (was miner-v1.003)
-- **`sn51:scoring_commit:2026-08-03T09:00:56Z`** - sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182)
+- **`sn78:burn_drop:0.000`** - sn78 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn14:scoring_commit:2026-08-03T12:50:00Z`** - sn14 commit touches scoring: Merge pull request #74 from latent-to/codex/miner-reward-docs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn60:scoring_commit:2026-08-03T11:51:06Z`** - sn60 commit touches scoring: changed scorer model to deepseek 3.2
+- **`sn21:scoring_commit:2026-08-03T12:15:33Z`** - sn21 commit touches scoring: fix(validator): resolve scoring to weekly (WR-) releases only
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-08-03T08:32:28Z`** - sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing
+- **`sn28:release:v0.3.16`** - sn28 released v0.3.16
+  - published 2026-08-03T12:52:16Z (was v0.3.15)
+- **`sn50:release:v1.11.1`** - sn50 released v1.11.1
+  - published 2026-08-03T14:43:07Z (was v1.11.0 migrate price feeds from Pyth to Binance + Hyperliquid, replace SPYX with SP500, remove miner burn)
+- **`sn60:scoring_commit:2026-08-03T14:24:56Z`** - sn60 commit touches scoring: changed scoring model to kimi
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-03T08:54:54Z`** - sn71 commit touches scoring: Prepare isolated validator host Sentry runtime
+- **`sn66:scoring_commit:2026-08-03T15:03:25Z`** - sn66 commit touches scoring: Merge pull request #8 from conjectures-io/feat/verification_worker
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:readme_task_diff:cc97f5e9efa9aabe`** - sn89 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -195,6 +204,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
 | `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
 | `sn71:scoring_commit:2026-08-03T03:14:29Z` | 71 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn71 commit touches scoring: Bind model scoring to measured catalog execution |
+| `sn51:release:executor-v1.115` | 51 | RELEASE | 2026-08-03T12:03:18Z | sn51 released executor-v1.115 |
+| `sn51:scoring_commit:2026-08-03T09:00:56Z` | 51 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182) |
+| `sn60:scoring_commit:2026-08-03T11:51:06Z` | 60 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn60 commit touches scoring: changed scorer model to deepseek 3.2 |
+| `sn66:scoring_commit:2026-08-03T08:32:28Z` | 66 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing |
+| `sn71:scoring_commit:2026-08-03T08:54:54Z` | 71 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn71 commit touches scoring: Prepare isolated validator host Sentry runtime |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

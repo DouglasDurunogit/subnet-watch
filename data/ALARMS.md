@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-03T19:06:41Z, block 8765624
+# ALARMS - generated 2026-08-03T20:38:55Z, block 8766081
 
-window: first_seen in [2026-08-03T17:52:07Z, 2026-08-03T19:07:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-03T19:24:27Z, 2026-08-03T20:39:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn80:burn_drop:0.950` | 80 | BURN_DROP | P0 | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
-| `sn112:scoring_commit:2026-08-03T17:42:32Z` | 112 | SCORING_COMMIT | P1 | 2026-08-03T19:07:07Z | sn112 commit touches scoring: chore(weights): champion burn 25% -> 80% (miner fraction 0.75 -> 0.20… |
+| `sn89:scoring_commit:2026-08-03T19:58:12Z` | 89 | SCORING_COMMIT | P1 | 2026-08-03T20:39:27Z | sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB… |
 
 ### detail
 
-- **`sn80:burn_drop:0.950`** - sn80 burn fell 1.000 -> 0.950 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn112:scoring_commit:2026-08-03T17:42:32Z`** - sn112 commit touches scoring: chore(weights): champion burn 25% -> 80% (miner fraction 0.75 -> 0.20…
+- **`sn89:scoring_commit:2026-08-03T19:58:12Z`** - sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -48,6 +45,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn24:burn_drop:0.000` | 24 | BURN_DROP | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn78:burn_drop:0.000` | 78 | BURN_DROP | 2026-08-03T15:12:34Z | sn78 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
+| `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
 | `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
 | `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
@@ -201,6 +199,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-08-03T15:03:25Z` | 66 | SCORING_COMMIT | 2026-08-03T15:12:34Z | sn66 commit touches scoring: Merge pull request #8 from conjectures-io/feat/verification_worker |
 | `sn111:scoring_commit:2026-08-03T15:17:43Z` | 111 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn111 commit touches scoring: Add configurable PDF readers for claims miners |
 | `sn120:scoring_commit:2026-08-03T15:23:43Z` | 120 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn120 commit touches scoring: Refactor lora evaluation runtime (#603) |
+| `sn112:scoring_commit:2026-08-03T17:42:32Z` | 112 | SCORING_COMMIT | 2026-08-03T19:07:07Z | sn112 commit touches scoring: chore(weights): champion burn 25% -> 80% (miner fraction 0.75 -> 0.20… |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |

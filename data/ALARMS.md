@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-04T07:16:33Z, block 8769267
+# ALARMS - generated 2026-08-04T10:08:34Z, block 8770128
 
-window: first_seen in [2026-08-04T06:02:01Z, 2026-08-04T07:17:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T08:54:01Z, 2026-08-04T10:09:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-08-04T07:10:47Z` | 51 | SCORING_COMMIT | P1 | 2026-08-04T07:17:01Z | sn51 commit touches scoring: DAH-2546, gate 8x flagship unrented incentive on NCU profiling or rea… |
-| `sn71:scoring_commit:2026-08-04T04:42:37Z` | 71 | SCORING_COMMIT | P1 | 2026-08-04T07:17:01Z | sn71 commit touches scoring: Bind scoring artifacts to exact commitments |
-| `sn104:scoring_commit:2026-08-04T06:17:28Z` | 104 | SCORING_COMMIT | P1 | 2026-08-04T07:17:01Z | sn104 commit touches scoring: fix the validator task resolution |
-| `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | P2 | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |
+| `sn66:scoring_commit:2026-08-04T08:30:10Z` | 66 | SCORING_COMMIT | P1 | 2026-08-04T10:09:01Z | sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode |
+| `sn89:scoring_commit:2026-08-04T08:36:48Z` | 89 | SCORING_COMMIT | P1 | 2026-08-04T10:09:01Z | sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed … |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-08-04T07:10:47Z`** - sn51 commit touches scoring: DAH-2546, gate 8x flagship unrented incentive on NCU profiling or rea…
+- **`sn66:scoring_commit:2026-08-04T08:30:10Z`** - sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-04T04:42:37Z`** - sn71 commit touches scoring: Bind scoring artifacts to exact commitments
+- **`sn89:scoring_commit:2026-08-04T08:36:48Z`** - sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn104:scoring_commit:2026-08-04T06:17:28Z`** - sn104 commit touches scoring: fix the validator task resolution
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn104:readme_task_diff:708acebd54cc33f2`** - sn104 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:burn_drop:0.965` | 104 | BURN_DROP | 2026-07-28T07:30:22Z | sn104 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.000` | 117 | BURN_DROP | 2026-07-28T10:44:07Z | sn117 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn55:burn_drop:0.020` | 55 | BURN_DROP | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
 | `sn76:burn_drop:0.000` | 76 | BURN_DROP | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -56,9 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
-| `sn76:scoring_commit:2026-07-28T06:56:11Z` | 76 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn76 commit touches scoring: Skip tracks with no task set instead of abandoning the whole round |
-| `sn85:scoring_commit:2026-07-28T07:19:51Z` | 85 | SCORING_COMMIT | 2026-07-28T07:30:22Z | sn85 commit touches scoring: defer scoring commit to DB (#180) |
-| `sn76:scoring_commit:2026-07-28T08:08:04Z` | 76 | SCORING_COMMIT | 2026-07-28T08:08:26Z | sn76 commit touches scoring: Read served ground truth so findings are scored, not just verdicts |
 | `sn67:scoring_commit:2026-07-28T09:37:00Z` | 67 | SCORING_COMMIT | 2026-07-28T10:44:07Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post5 |
 | `sn76:scoring_commit:2026-07-28T11:28:42Z` | 76 | SCORING_COMMIT | 2026-07-28T11:29:26Z | sn76 commit touches scoring: Poll for validator image updates every two minutes |
 | `sn71:scoring_commit:2026-07-28T12:00:19Z` | 71 | SCORING_COMMIT | 2026-07-28T12:10:04Z | sn71 commit touches scoring: Verify durable chain settlement readback |
@@ -217,6 +207,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:scoring_commit:2026-08-04T00:04:26Z` | 61 | SCORING_COMMIT | 2026-08-04T00:59:07Z | sn61 commit touches scoring: fix: handle miner hotkey changes in update_miner_infos method |
 | `sn66:scoring_commit:2026-08-04T02:48:27Z` | 66 | SCORING_COMMIT | 2026-08-04T04:26:43Z | sn66 commit touches scoring: Merge pull request #10 from conjectures-io/codex/audited-erdos-task-po |
 | `sn67:scoring_commit:2026-08-03T08:56:41Z` | 67 | SCORING_COMMIT | 2026-08-04T04:26:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260803.post0 |
+| `sn51:scoring_commit:2026-08-04T07:10:47Z` | 51 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn51 commit touches scoring: DAH-2546, gate 8x flagship unrented incentive on NCU profiling or rea… |
+| `sn71:scoring_commit:2026-08-04T04:42:37Z` | 71 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn71 commit touches scoring: Bind scoring artifacts to exact commitments |
+| `sn104:scoring_commit:2026-08-04T06:17:28Z` | 104 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn104 commit touches scoring: fix the validator task resolution |
 | `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
@@ -236,6 +229,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
+| `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,19 +1,25 @@
-# ALARMS - generated 2026-08-04T21:47:45Z, block 8773619
+# ALARMS - generated 2026-08-04T23:16:09Z, block 8774061
 
-window: first_seen in [2026-08-04T20:33:11Z, 2026-08-04T21:48:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T22:01:34Z, 2026-08-04T23:16:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | P1 | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
+
+### detail
+
+- **`sn62:scoring_commit:2026-08-04T22:06:13Z`** - sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn46:burn_drop:0.760` | 46 | BURN_DROP | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
 | `sn7:burn_drop:0.317` | 7 | BURN_DROP | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
 | `sn5:burn_drop:0.846` | 5 | BURN_DROP | 2026-07-30T07:10:45Z | sn5 burn fell 1.000 -> 0.846 - miners can earn again |
 | `sn100:burn_drop:0.579` | 100 | BURN_DROP | 2026-07-30T07:10:45Z | sn100 burn fell 1.000 -> 0.579 - miners can earn again |
@@ -37,9 +43,6 @@ _none_
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
-| `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
-| `sn74:release:release-20260728-214235` | 74 | RELEASE | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |
 | `sn7:release:release-20260728-234943` | 7 | RELEASE | 2026-07-29T01:13:34Z | sn7 released release-20260728-234943 |
 | `sn7:scoring_commit:2026-07-28T23:48:01Z` | 7 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn7 commit touches scoring: Verify TAO transfers by settlement rather than by the decoded call (#… |
 | `sn67:scoring_commit:2026-07-28T14:27:25Z` | 67 | SCORING_COMMIT | 2026-07-29T01:13:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post9 |

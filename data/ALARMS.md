@@ -1,38 +1,18 @@
-# ALARMS - generated 2026-08-04T18:47:19Z, block 8772717
+# ALARMS - generated 2026-08-04T20:15:14Z, block 8773157
 
-window: first_seen in [2026-08-04T17:32:46Z, 2026-08-04T18:47:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T19:00:41Z, 2026-08-04T20:15:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | P1 | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
-| `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | P1 | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
-| `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | P1 | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
-| `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | P1 | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
-| `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | P2 | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
-
-### detail
-
-- **`sn12:release:validator-staging-2026-08-04-30935079890`** - sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0
-  - published 2026-08-04T17:38:35Z (was validator-staging-2026-04-16-24500693721-624-1: fix: add missing prefix to dynamic config name (#848))
-- **`sn21:release:archive/per-cell-consensus-2026-06: feat`** - sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI
-  - published 2026-06-04T14:42:26Z (was pre-squash-backup-7: feat+docs: close 5 miner-onboarding gaps surfaced in code review)
-- **`sn21:scoring_commit:2026-08-04T18:03:00Z`** - sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:scoring_commit:2026-08-04T17:06:27Z`** - sn126 commit touches scoring: Release validator deployment gate 0.2.4
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:e74e71fca670eb67`** - sn21 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn62:burn_drop:0.038` | 62 | BURN_DROP | 2026-07-28T20:08:41Z | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
 | `sn46:burn_drop:0.760` | 46 | BURN_DROP | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
 | `sn7:burn_drop:0.317` | 7 | BURN_DROP | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
 | `sn5:burn_drop:0.846` | 5 | BURN_DROP | 2026-07-30T07:10:45Z | sn5 burn fell 1.000 -> 0.846 - miners can earn again |
@@ -57,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:scoring_commit:2026-07-28T19:11:33Z` | 15 | SCORING_COMMIT | 2026-07-28T20:08:41Z | sn15 commit touches scoring: feat(validator): warn on startup when host is under min spec (ORO-174… |
-| `sn76:scoring_commit:2026-07-28T18:43:46Z` | 76 | SCORING_COMMIT | 2026-07-28T20:08:41Z | sn76 commit touches scoring: Let the sandboxed agent write its workspace whatever uid the validato… |
 | `sn100:scoring_commit:2026-07-28T20:25:29Z` | 100 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight … |
 | `sn103:release:v2004: validator: default settle gate bu` | 103 | RELEASE | 2026-07-28T21:37:49Z | sn103 released v2004: validator: default settle gate budget to 1024 |
 | `sn103:scoring_commit:2026-07-28T20:35:46Z` | 103 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn103 commit touches scoring: validator: default settle gate budget to 1024 |
@@ -207,6 +185,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn114:scoring_commit:2026-08-04T11:22:01Z` | 114 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn114 commit touches scoring: Improve validation and sandbox dispatch performance |
 | `sn126:scoring_commit:2026-08-04T11:03:05Z` | 126 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default |
 | `sn62:release:v0.2.4` | 62 | RELEASE | 2026-08-04T17:01:16Z | sn62 released v0.2.4 |
+| `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
+| `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
+| `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
+| `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
@@ -227,6 +209,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |
 | `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
+| `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-04T17:00:48Z  |  block: 8772185  |  row_status: ok
+snapshot_utc: 2026-08-04T18:47:19Z  |  block: 8772717  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.2 TAO (38.258 USD), open=True
+- registration cost: 0.2 TAO (39.254000000000005 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 18  |  free: 0
-- subnet age: 771.1 days  |  registered at block 3219949
+- subnet age: 771.2 days  |  registered at block 3219949
 - weights_version: 2018  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1706.0090053143524
-- top_miner_usd_day: 1706.0090053143524 (uid 239, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1737.8222298006094
+- top_miner_usd_day: 1737.8222298006094 (uid 239, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

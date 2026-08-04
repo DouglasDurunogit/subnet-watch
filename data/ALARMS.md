@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-04T17:00:48Z, block 8772185
+# ALARMS - generated 2026-08-04T18:47:19Z, block 8772717
 
-window: first_seen in [2026-08-04T15:46:16Z, 2026-08-04T17:01:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T17:32:46Z, 2026-08-04T18:47:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:burn_drop:0.000` | 120 | BURN_DROP | P0 | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn62:release:v0.2.4` | 62 | RELEASE | P1 | 2026-08-04T17:01:16Z | sn62 released v0.2.4 |
+| `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | P1 | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
+| `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | P1 | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
+| `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | P1 | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
+| `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | P1 | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
+| `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | P2 | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn120:burn_drop:0.000`** - sn120 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn62:release:v0.2.4`** - sn62 released v0.2.4
-  - published 2026-08-04T16:27:36Z (was v0.2.3)
+- **`sn12:release:validator-staging-2026-08-04-30935079890`** - sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0
+  - published 2026-08-04T17:38:35Z (was validator-staging-2026-04-16-24500693721-624-1: fix: add missing prefix to dynamic config name (#848))
+- **`sn21:release:archive/per-cell-consensus-2026-06: feat`** - sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI
+  - published 2026-06-04T14:42:26Z (was pre-squash-backup-7: feat+docs: close 5 miner-onboarding gaps surfaced in code review)
+- **`sn21:scoring_commit:2026-08-04T18:03:00Z`** - sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:scoring_commit:2026-08-04T17:06:27Z`** - sn126 commit touches scoring: Release validator deployment gate 0.2.4
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:readme_task_diff:e74e71fca670eb67`** - sn21 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.000` | 76 | BURN_DROP | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn62:burn_drop:0.038` | 62 | BURN_DROP | 2026-07-28T20:08:41Z | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
 | `sn46:burn_drop:0.760` | 46 | BURN_DROP | 2026-07-28T22:44:37Z | sn46 burn fell 1.000 -> 0.760 - miners can earn again |
 | `sn7:burn_drop:0.317` | 7 | BURN_DROP | 2026-07-29T07:34:26Z | sn7 burn fell 1.000 -> 0.317 - miners can earn again |
@@ -48,9 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
-| `sn69:scoring_commit:2026-07-28T18:18:51Z` | 69 | SCORING_COMMIT | 2026-07-28T18:40:29Z | sn69 commit touches scoring: Add miner/validator operator guides + validator Docker fixes (#1) |
-| `sn76:scoring_commit:2026-07-28T17:57:20Z` | 76 | SCORING_COMMIT | 2026-07-28T18:40:29Z | sn76 commit touches scoring: Stop counting unrunnable tasks as wrong answers, and say why a repeti… |
-| `sn98:scoring_commit:2026-07-28T17:46:47Z` | 98 | SCORING_COMMIT | 2026-07-28T18:40:29Z | sn98 commit touches scoring: feat: auto-prune old validator round workspaces to bound disk use (#21 |
+| `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn15:scoring_commit:2026-07-28T19:11:33Z` | 15 | SCORING_COMMIT | 2026-07-28T20:08:41Z | sn15 commit touches scoring: feat(validator): warn on startup when host is under min spec (ORO-174… |
 | `sn76:scoring_commit:2026-07-28T18:43:46Z` | 76 | SCORING_COMMIT | 2026-07-28T20:08:41Z | sn76 commit touches scoring: Let the sandboxed agent write its workspace whatever uid the validato… |
 | `sn100:scoring_commit:2026-07-28T20:25:29Z` | 100 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight … |
@@ -200,6 +206,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-04T11:35:22Z` | 111 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn111 commit touches scoring: Improve agent validation and source grounding |
 | `sn114:scoring_commit:2026-08-04T11:22:01Z` | 114 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn114 commit touches scoring: Improve validation and sandbox dispatch performance |
 | `sn126:scoring_commit:2026-08-04T11:03:05Z` | 126 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default |
+| `sn62:release:v0.2.4` | 62 | RELEASE | 2026-08-04T17:01:16Z | sn62 released v0.2.4 |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |

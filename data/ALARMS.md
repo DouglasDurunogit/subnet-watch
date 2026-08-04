@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-04T10:08:34Z, block 8770128
+# ALARMS - generated 2026-08-04T12:25:10Z, block 8770807
 
-window: first_seen in [2026-08-04T08:54:01Z, 2026-08-04T10:09:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T11:10:39Z, 2026-08-04T12:25:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-08-04T08:30:10Z` | 66 | SCORING_COMMIT | P1 | 2026-08-04T10:09:01Z | sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode |
-| `sn89:scoring_commit:2026-08-04T08:36:48Z` | 89 | SCORING_COMMIT | P1 | 2026-08-04T10:09:01Z | sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed … |
+| `sn104:burn_drop:0.968` | 104 | BURN_DROP | P0 | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
+| `sn111:scoring_commit:2026-08-04T11:35:22Z` | 111 | SCORING_COMMIT | P1 | 2026-08-04T12:25:39Z | sn111 commit touches scoring: Improve agent validation and source grounding |
+| `sn114:scoring_commit:2026-08-04T11:22:01Z` | 114 | SCORING_COMMIT | P1 | 2026-08-04T12:25:39Z | sn114 commit touches scoring: Improve validation and sandbox dispatch performance |
+| `sn126:scoring_commit:2026-08-04T11:03:05Z` | 126 | SCORING_COMMIT | P1 | 2026-08-04T12:25:39Z | sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default |
+| `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | P2 | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-08-04T08:30:10Z`** - sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode
+- **`sn104:burn_drop:0.968`** - sn104 burn fell 1.000 -> 0.968 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn111:scoring_commit:2026-08-04T11:35:22Z`** - sn111 commit touches scoring: Improve agent validation and source grounding
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-08-04T08:36:48Z`** - sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed …
+- **`sn114:scoring_commit:2026-08-04T11:22:01Z`** - sn114 commit touches scoring: Improve validation and sandbox dispatch performance
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:scoring_commit:2026-08-04T11:03:05Z`** - sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:readme_task_diff:b1d8478cb914a832`** - sn126 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn117:burn_drop:0.000` | 117 | BURN_DROP | 2026-07-28T10:44:07Z | sn117 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn55:burn_drop:0.020` | 55 | BURN_DROP | 2026-07-28T16:58:29Z | sn55 burn fell 1.000 -> 0.020 - miners can earn again |
 | `sn76:burn_drop:0.000` | 76 | BURN_DROP | 2026-07-28T18:40:29Z | sn76 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn62:burn_drop:0.038` | 62 | BURN_DROP | 2026-07-28T20:08:41Z | sn62 burn fell 1.000 -> 0.038 - miners can earn again |
@@ -49,9 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
-| `sn67:scoring_commit:2026-07-28T09:37:00Z` | 67 | SCORING_COMMIT | 2026-07-28T10:44:07Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260728.post5 |
-| `sn76:scoring_commit:2026-07-28T11:28:42Z` | 76 | SCORING_COMMIT | 2026-07-28T11:29:26Z | sn76 commit touches scoring: Poll for validator image updates every two minutes |
-| `sn71:scoring_commit:2026-07-28T12:00:19Z` | 71 | SCORING_COMMIT | 2026-07-28T12:10:04Z | sn71 commit touches scoring: Verify durable chain settlement readback |
 | `sn89:scoring_commit:2026-07-28T12:59:01Z` | 89 | SCORING_COMMIT | 2026-07-28T12:59:29Z | sn89 commit touches scoring: hf scoreboard: publish n_submitters_3d |
 | `sn28:release:v0.3.12` | 28 | RELEASE | 2026-07-28T15:04:08Z | sn28 released v0.3.12 |
 | `sn56:scoring_commit:2026-07-28T14:55:22Z` | 56 | SCORING_COMMIT | 2026-07-28T15:04:08Z | sn56 commit touches scoring: feat(validator): auto-balance emission split from tournament particip… |
@@ -210,7 +215,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-08-04T07:10:47Z` | 51 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn51 commit touches scoring: DAH-2546, gate 8x flagship unrented incentive on NCU profiling or rea… |
 | `sn71:scoring_commit:2026-08-04T04:42:37Z` | 71 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn71 commit touches scoring: Bind scoring artifacts to exact commitments |
 | `sn104:scoring_commit:2026-08-04T06:17:28Z` | 104 | SCORING_COMMIT | 2026-08-04T07:17:01Z | sn104 commit touches scoring: fix the validator task resolution |
-| `sn67:readme_task_diff:b615b92c78ccda43` | 67 | README_TASK_DIFF | 2026-07-28T10:44:07Z | sn67 README task/scoring sections changed |
+| `sn66:scoring_commit:2026-08-04T08:30:10Z` | 66 | SCORING_COMMIT | 2026-08-04T10:09:01Z | sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode |
+| `sn89:scoring_commit:2026-08-04T08:36:48Z` | 89 | SCORING_COMMIT | 2026-08-04T10:09:01Z | sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed … |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |

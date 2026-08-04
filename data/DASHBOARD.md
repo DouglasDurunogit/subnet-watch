@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-04T10:08:34Z · block 8770128 · run_status **ok**_
+_snapshot 2026-08-04T12:25:10Z · block 8770807 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 92 | `miner_burn` < 0.99 |
-| Ranked | 92 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| Pays miners at all | 93 | `miner_burn` < 0.99 |
+| Ranked | 93 | passed every gate |
+| **Positive margin** | **53** | income beats machine cost |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 56 | `████████████████████████████` |
+| 0 (none) | 57 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 3 | `██` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 8 | `████` |
-| 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 11 | `██████` |
-| ≥0.99 dead | 36 | `██████████████████` |
+| 0.6–0.8 | 7 | `███` |
+| 0.8–0.99 | 11 | `█████` |
+| ≥0.99 dead | 35 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn23 Trishool | 84.8 | 539 | 539 = | cpu-small | 5 | 20% |
-| 2 | sn107 Minos | 78 | 109 | 27,868 | cpu-small | 20 | 90% |
-| 3 | sn76 Phylax | 77.2 | 77.51 | 156 | cpu-small | 7 | 67% |
-| 4 | sn98 NeverPlayAlone | 75.9 | 1,665 | 1,665 = | cpu-small | 1 | 100% |
-| 5 | sn67 Harnyx | 71.8 | 20.56 | 693 | cpu-small | 149 | 17% |
-| 6 | sn62 Ridges | 70 | 741 | 3,041 | rtx4090* | 7 | 39% |
-| 7 | sn102 ConnitoAI | 69.9 | 725 | 725 = | rtx4090* | 4 | 25% |
-| 8 | sn26 Perturb | 68.4 | 22.50 | 183 | rtx3060 | 11 | 50% |
-| 9 | sn56 Gradients | 66.8 | 286 | 934 | rtx4090* | 8 | 71% |
-| 10 | sn15 ORO | 66.2 | 7.88 | 10,433 | cpu-small | 70 | 94% |
-| 11 | sn124 Swarm | 66 | 235 | 687 | rtx4090* | 21 | 12% |
-| 12 | sn74 Gittensor | 66 | 224 | 357 | rtx4090* | 8 | 18% |
-| 13 | sn38 ChronoLLM | 65.4 | 197 | 3,319 | rtx4090* | 10 | 52% |
-| 14 | sn41 Almanac | 65.3 | 4.52 | 66.18 | cpu-small | 36 | 89% |
-| 15 | sn21 AdTAO | 65.2 | 4.40 | 20.54 | cpu-small | 142 | 45% |
-| 16 | sn53 engy | 64.2 | 130 | 3,040 | rtx4090 | 28 | 17% |
-| 17 | sn80 OpenRoboto | 62.1 | 68.89 | 154 | rtx4090* | 4 | 94% |
-| 18 | sn61 RedTeam | 58.3 | 21.61 | 76.33 | rtx4090* | 98 | 3% |
-| 19 | sn9 iota | 55.2 | 8,639 | 8,639 = | rtx4090* | 3 | 51% |
-| 20 | sn28 gm | 53.5 | 6.14 | 2,045 | rtx4090* | 17 | 63% |
+| 1 | sn23 Trishool | 84.9 | 542 | 542 = | cpu-small | 5 | 20% |
+| 2 | sn107 Minos | 77.4 | 95.44 | 28,363 | cpu-small | 20 | 90% |
+| 3 | sn76 Phylax | 77.3 | 78.03 | 157 | cpu-small | 7 | 67% |
+| 4 | sn67 Harnyx | 71.8 | 20.69 | 698 | cpu-small | 151 | 17% |
+| 5 | sn62 Ridges | 69.7 | 679 | 2,453 | rtx4090* | 7 | 39% |
+| 6 | sn102 ConnitoAI | 69 | 549 | 1,065 | rtx4090* | 5 | 36% |
+| 7 | sn26 Perturb | 68.5 | 22.88 | 189 | rtx3060 | 11 | 50% |
+| 8 | sn56 Gradients | 67.2 | 322 | 938 | rtx4090* | 7 | 71% |
+| 9 | sn15 ORO | 67.1 | 8.06 | 10,530 | cpu-small | 71 | 94% |
+| 10 | sn124 Swarm | 66.1 | 236 | 692 | rtx4090* | 21 | 12% |
+| 11 | sn74 Gittensor | 65.9 | 221 | 361 | rtx4090* | 8 | 18% |
+| 12 | sn38 ChronoLLM | 65.4 | 198 | 3,342 | rtx4090* | 10 | 52% |
+| 13 | sn41 Almanac | 65.4 | 4.55 | 66.56 | cpu-small | 36 | 89% |
+| 14 | sn21 AdTAO | 65.2 | 4.39 | 20.52 | cpu-small | 142 | 45% |
+| 15 | sn53 engy | 64.2 | 132 | 3,081 | rtx4090 | 28 | 17% |
+| 16 | sn80 OpenRoboto | 62.3 | 73.33 | 277 | rtx4090* | 4 | 91% |
+| 17 | sn61 RedTeam | 58.3 | 21.91 | 77.23 | rtx4090* | 96 | 3% |
+| 18 | sn28 gm | 56.6 | 14.27 | 2,691 | rtx4090* | 18 | 56% |
+| 19 | sn9 iota | 55.2 | 8,687 | 8,687 = | rtx4090* | 3 | 51% |
+| 20 | sn97 Albedo | 52.6 | 2,911 | 2,911 = | rtx4090* | 5 | 20% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 21 |
-| captured (>90%) | 25 |
+| wide (<30%) | 23 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,11 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-04T12:25 | sn104 | BURN_DROP | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
+| 2026-08-04T12:25 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Improve agent validation and source grou |
+| 2026-08-04T12:25 | sn114 | SCORING_COMMIT | sn114 commit touches scoring: Improve validation and sandbox dispatch  |
+| 2026-08-04T12:25 | sn126 | SCORING_COMMIT | sn126 commit touches scoring: Ensure validators adopt the 70 percent b |
+| 2026-08-04T12:25 | sn126 | README_TASK_DIFF | sn126 README task/scoring sections changed |
 | 2026-08-04T10:09 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #11 from conjectures-i |
 | 2026-08-04T10:09 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: closers 10% of total miner incentive (was |
 | 2026-08-04T07:17 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2546, gate 8x flagship unrented incen |
@@ -117,11 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-04T04:26 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
 | 2026-08-04T04:26 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-04T04:26 | sn107 | WEIGHTS_VERSION_BUMP | sn107 weights_version 13 -> 20 |
-| 2026-08-04T04:26 | sn107 | README_TASK_DIFF | sn107 README task/scoring sections changed |
-| 2026-08-04T00:59 | sn61 | RELEASE | sn61 released 4.8.4 |
-| 2026-08-04T00:59 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: fix: handle miner hotkey changes in updat |
-| 2026-08-03T23:17 | sn13 | RELEASE | sn13 released Release v1.18.69 |
-| 2026-08-03T23:17 | sn54 | SCORING_COMMIT | sn54 commit touches scoring: Made miner process more Intuitive |
 
 ---
 

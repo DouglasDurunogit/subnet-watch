@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-04T20:15:14Z  |  block: 8773157  |  row_status: ok
+snapshot_utc: 2026-08-04T21:47:45Z  |  block: 8773619  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.09992000000000001 USD), open=True
+- registration cost: 0.000606173 TAO (0.11906450065999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 50  |  free: 0
-- subnet age: 1013.3 days  |  registered at block 1477264
+- subnet age: 1013.4 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3052.0833873391716** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.7723534510347967
-- top_miner_usd_day: 10111.651380947558 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3002.4842294042305** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.7598019981621841
+- top_miner_usd_day: 9947.327759939311 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 35  |  gini: 0.8986704574690292  |  top1_share: 0.5994322517627667  |  top10_share: 0.9923384512072281
+- earners: 35  |  gini: 0.8986704574690292  |  top1_share: 0.5994322517627667  |  top10_share: 0.9923384512072282
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -28,7 +28,7 @@ snapshot_utc: 2026-08-04T20:15:14Z  |  block: 8773157  |  row_status: ok
 - status: **ok** 
 - README: 8976 bytes, sha a81f478162f7604d
 - latest release: (none) 
-- last commit: 2026-08-04T17:44:34Z
+- last commit: 2026-08-04T21:26:37Z
 - scoring-related commit: create subaccount elimination cache on entity miner (#861) 2026-07-30T22:26:28Z
 
 ## Resources
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-04T20:15:14Z  |  block: 8773157  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.4468 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.4594 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 42), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 41), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
 - freshness basis: SCORING_COMMIT 4.9d ago
 

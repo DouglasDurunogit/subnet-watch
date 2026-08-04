@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-04T20:15:14Z, block 8773157
+# ALARMS - generated 2026-08-04T21:47:45Z, block 8773619
 
-window: first_seen in [2026-08-04T19:00:41Z, 2026-08-04T20:15:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T20:33:11Z, 2026-08-04T21:48:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -37,9 +37,6 @@ _none_
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn100:scoring_commit:2026-07-28T20:25:29Z` | 100 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn100 commit touches scoring: feat(agent-challenge): NO_PHALA host pipeline with unattested weight … |
-| `sn103:release:v2004: validator: default settle gate bu` | 103 | RELEASE | 2026-07-28T21:37:49Z | sn103 released v2004: validator: default settle gate budget to 1024 |
-| `sn103:scoring_commit:2026-07-28T20:35:46Z` | 103 | SCORING_COMMIT | 2026-07-28T21:37:49Z | sn103 commit touches scoring: validator: default settle gate budget to 1024 |
 | `sn13:scoring_commit:2026-07-27T16:11:26Z` | 13 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn13 commit touches scoring: fix(od): treat scraper ERRORS as "no evidence", not as miner failures |
 | `sn56:scoring_commit:2026-07-28T22:18:44Z` | 56 | SCORING_COMMIT | 2026-07-28T22:44:37Z | sn56 commit touches scoring: fix(validator): read the dynamic emission split in performance endpoi… |
 | `sn74:release:release-20260728-214235` | 74 | RELEASE | 2026-07-28T22:44:37Z | sn74 released release-20260728-214235 |

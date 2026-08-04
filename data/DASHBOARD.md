@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-03T23:16:31Z · block 8766869 · run_status **ok**_
+_snapshot 2026-08-04T00:58:40Z · block 8767378 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,9 +15,9 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 94 | `miner_burn` < 0.99 |
-| Ranked | 94 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
+| Pays miners at all | 93 | `miner_burn` < 0.99 |
+| Ranked | 93 | passed every gate |
+| **Positive margin** | **53** | income beats machine cost |
 | New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 56 | `████████████████████████████` |
-| 0–0.2 | 7 | `████` |
-| 0.2–0.4 | 2 | `█` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 3 | `██` |
 | 0.4–0.6 | 7 | `████` |
-| 0.6–0.8 | 11 | `██████` |
+| 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 11 | `██████` |
-| ≥0.99 dead | 34 | `█████████████████` |
+| ≥0.99 dead | 35 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn23 Trishool | 84.8 | 537 | 537 = | cpu-small | 5 | 20% |
-| 2 | sn11 TrajectoryRL | 79.5 | 4,910 | 4,910 = | cpu-small | 1 | 100% |
-| 3 | sn107 Minos | 77.5 | 98.49 | 26,998 | cpu-small | 20 | 89% |
-| 4 | sn76 Phylax | 77.2 | 77.24 | 154 | cpu-small | 7 | 66% |
-| 5 | sn60 Bitsec.ai | 76.5 | 1,958 | 1,958 = | cpu-small | 2 | 90% |
-| 6 | sn67 Harnyx | 73.3 | 29.10 | 742 | cpu-small | 127 | 18% |
-| 7 | sn62 Ridges | 70 | 735 | 3,017 | rtx4090* | 7 | 39% |
-| 8 | sn26 Perturb | 68.4 | 22.49 | 188 | rtx3060 | 11 | 50% |
-| 9 | sn15 ORO | 67.2 | 8.16 | 16.99 | cpu-small | 86 | 93% |
-| 10 | sn85 Vidaio | 66.8 | 285 | 499 | rtx4090* | 10 | 18% |
-| 11 | sn74 Gittensor | 66.1 | 231 | 360 | rtx4090* | 8 | 18% |
-| 12 | sn124 Swarm | 66 | 232 | 681 | rtx4090* | 21 | 12% |
-| 13 | sn38 ChronoLLM | 65.3 | 191 | 3,223 | rtx4090* | 10 | 52% |
-| 14 | sn21 AdTAO | 65.3 | 4.45 | 20.76 | cpu-small | 142 | 45% |
-| 15 | sn53 engy | 64.2 | 129 | 3,018 | rtx4090 | 28 | 17% |
-| 16 | sn71 Leadpoet | 58.5 | 23.25 | 191 | rtx4090* | 16 | 70% |
-| 17 | sn41 Almanac | 58.4 | 1.30 | 66.25 | cpu-small | 34 | 93% |
-| 18 | sn61 RedTeam | 58.2 | 20.95 | 74.89 | rtx4090* | 98 | 3% |
-| 19 | sn9 iota | 55.2 | 8,681 | 8,681 = | rtx4090* | 3 | 50% |
-| 20 | sn28 gm | 54.9 | 8.90 | 2,488 | rtx4090* | 17 | 56% |
+| 1 | sn23 Trishool | 84.8 | 534 | 534 = | cpu-small | 5 | 20% |
+| 2 | sn76 Phylax | 77.2 | 76.58 | 154 | cpu-small | 7 | 66% |
+| 3 | sn107 Minos | 77.1 | 90.18 | 26,838 | cpu-small | 20 | 89% |
+| 4 | sn60 Bitsec.ai | 76.4 | 1,935 | 1,935 = | cpu-small | 2 | 90% |
+| 5 | sn98 NeverPlayAlone | 75.9 | 1,663 | 1,663 = | cpu-small | 1 | 100% |
+| 6 | sn67 Harnyx | 73.3 | 28.85 | 736 | cpu-small | 129 | 18% |
+| 7 | sn62 Ridges | 70 | 732 | 3,005 | rtx4090* | 7 | 39% |
+| 8 | sn26 Perturb | 68.5 | 22.59 | 184 | rtx3060 | 11 | 50% |
+| 9 | sn15 ORO | 67.4 | 8.23 | 17.12 | cpu-small | 86 | 93% |
+| 10 | sn85 Vidaio | 66.8 | 285 | 499 | rtx4090* | 10 | 17% |
+| 11 | sn124 Swarm | 66 | 232 | 678 | rtx4090* | 21 | 12% |
+| 12 | sn74 Gittensor | 66 | 229 | 349 | rtx4090* | 8 | 18% |
+| 13 | sn38 ChronoLLM | 65.4 | 197 | 3,315 | rtx4090* | 10 | 52% |
+| 14 | sn21 AdTAO | 65.2 | 4.42 | 20.63 | cpu-small | 142 | 45% |
+| 15 | sn53 engy | 64.1 | 126 | 2,957 | rtx4090 | 28 | 17% |
+| 16 | sn41 Almanac | 58.5 | 1.31 | 66.43 | cpu-small | 34 | 93% |
+| 17 | sn61 RedTeam | 58.2 | 21.24 | 75.24 | rtx4090* | 98 | 3% |
+| 18 | sn28 gm | 56.3 | 13.05 | 2,595 | rtx4090* | 16 | 57% |
+| 19 | sn9 iota | 55.2 | 8,653 | 8,653 = | rtx4090* | 3 | 50% |
+| 20 | sn97 Albedo | 52.6 | 2,880 | 2,880 = | rtx4090* | 5 | 20% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 21 |
-| concentrated (30–60%) | 23 |
-| dominated (60–90%) | 22 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 22 |
+| dominated (60–90%) | 21 |
 | captured (>90%) | 27 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-04T00:59 | sn61 | RELEASE | sn61 released 4.8.4 |
+| 2026-08-04T00:59 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: fix: handle miner hotkey changes in updat |
 | 2026-08-03T23:17 | sn13 | RELEASE | sn13 released Release v1.18.69 |
 | 2026-08-03T23:17 | sn54 | SCORING_COMMIT | sn54 commit touches scoring: Made miner process more Intuitive |
 | 2026-08-03T20:39 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: closers feed: per-key display-label overr |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-03T15:12 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Merge pull request #74 from latent-to/cod |
 | 2026-08-03T15:12 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(validator): resolve scoring to weekly |
 | 2026-08-03T15:12 | sn28 | RELEASE | sn28 released v0.3.16 |
-| 2026-08-03T15:12 | sn50 | RELEASE | sn50 released v1.11.1 |
-| 2026-08-03T15:12 | sn60 | SCORING_COMMIT | sn60 commit touches scoring: changed scoring model to kimi |
 
 ---
 

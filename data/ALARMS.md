@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T21:45:17Z, block 8780806
+# ALARMS - generated 2026-08-05T22:45:10Z, block 8781106
 
-window: first_seen in [2026-08-05T20:30:49Z, 2026-08-05T21:45:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T21:30:44Z, 2026-08-05T22:45:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,8 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | P1 | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
 | `sn62:release:v0.2.6` | 62 | RELEASE | P1 | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
+| `sn2:release:14.13.0` | 2 | RELEASE | P1 | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
+| `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | P1 | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | P2 | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 
 ### detail
@@ -19,6 +21,10 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn62:release:v0.2.6`** - sn62 released v0.2.6
   - published 2026-08-05T21:37:15Z (was v0.2.5)
+- **`sn2:release:14.13.0`** - sn2 released 14.13.0
+  - published 2026-08-05T22:30:37Z (was 14.12.21)
+- **`sn15:scoring_commit:2026-08-05T22:07:55Z`** - sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:readme_task_diff:2d2991d58d2b0594`** - sn21 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -49,8 +55,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn100:scoring_commit:2026-07-29T22:07:42Z` | 100 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w… |
-| `sn111:scoring_commit:2026-07-29T22:01:10Z` | 111 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn111 commit touches scoring: Add tests for agent v1 Silver scoring |
 | `sn15:release:v1.2.3` | 15 | RELEASE | 2026-07-30T07:10:45Z | sn15 released v1.2.3 |
 | `sn71:scoring_commit:2026-07-30T04:15:15Z` | 71 | SCORING_COMMIT | 2026-07-30T07:10:45Z | sn71 commit touches scoring: Parallelize safe validator restart preparation |
 | `sn76:scoring_commit:2026-07-30T05:52:31Z` | 76 | SCORING_COMMIT | 2026-07-30T07:10:45Z | sn76 commit touches scoring: Evaluate the smaller tracks before skills so a long skills pass canno… |

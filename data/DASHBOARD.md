@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-05T04:24:15Z · block 8775602 · run_status **ok**_
+_snapshot 2026-08-05T07:15:33Z · block 8776459 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn23 Trishool | 84.7 | 522 | 522 = | cpu-small | 5 | 20% |
-| 2 | sn11 TrajectoryRL | 79.7 | 5,180 | 5,180 = | cpu-small | 1 | 100% |
-| 3 | sn107 Minos | 77.8 | 106 | 28,214 | cpu-small | 20 | 90% |
-| 4 | sn76 Phylax | 77.4 | 80.17 | 161 | cpu-small | 7 | 67% |
-| 5 | sn60 Bitsec.ai | 76.8 | 2,191 | 2,191 = | cpu-small | 2 | 90% |
-| 6 | sn98 NeverPlayAlone | 76 | 1,707 | 1,707 = | cpu-small | 1 | 100% |
-| 7 | sn114 SOMA | 72.5 | 1,577 | 4,114 | rtx4090* | 3 | 65% |
-| 8 | sn67 Harnyx | 72 | 21.71 | 932 | cpu-small | 152 | 22% |
-| 9 | sn102 ConnitoAI | 71.7 | 1,231 | 1,599 | rtx4090* | 5 | 29% |
-| 10 | sn91 cascade | 69.7 | 681 | 2,749 | rtx4090* | 5 | 52% |
-| 11 | sn62 Ridges | 69.2 | 592 | 2,139 | rtx4090* | 7 | 35% |
-| 12 | sn26 Perturb | 68.9 | 25.46 | 202 | rtx3060 | 11 | 50% |
-| 13 | sn41 Almanac | 68.4 | 9.06 | 67.42 | cpu-small | 60 | 79% |
-| 14 | sn15 ORO | 67.4 | 8.58 | 18.49 | cpu-small | 77 | 93% |
-| 15 | sn124 Swarm | 65.9 | 227 | 614 | rtx4090* | 23 | 10% |
-| 16 | sn21 AdTAO | 65.3 | 4.56 | 21.21 | cpu-small | 142 | 45% |
-| 17 | sn74 Gittensor | 65.2 | 180 | 301 | rtx4090* | 9 | 18% |
-| 18 | sn53 engy | 64.1 | 127 | 2,738 | rtx4090 | 28 | 17% |
-| 19 | sn38 ChronoLLM | 63.9 | 132 | 1,568 | rtx4090* | 10 | 52% |
-| 20 | sn80 OpenRoboto | 62.3 | 73.01 | 276 | rtx4090* | 4 | 91% |
+| 1 | sn23 Trishool | 84.7 | 518 | 518 = | cpu-small | 5 | 20% |
+| 2 | sn11 TrajectoryRL | 79.7 | 5,167 | 5,167 = | cpu-small | 1 | 100% |
+| 3 | sn107 Minos | 77.8 | 104 | 28,414 | cpu-small | 20 | 90% |
+| 4 | sn76 Phylax | 77.4 | 81.82 | 165 | cpu-small | 7 | 67% |
+| 5 | sn60 Bitsec.ai | 76.8 | 2,180 | 2,180 = | cpu-small | 2 | 90% |
+| 6 | sn98 NeverPlayAlone | 76 | 1,700 | 1,700 = | cpu-small | 1 | 100% |
+| 7 | sn67 Harnyx | 72 | 21.75 | 933 | cpu-small | 154 | 22% |
+| 8 | sn91 cascade | 69.7 | 680 | 2,746 | rtx4090* | 5 | 52% |
+| 9 | sn62 Ridges | 69.2 | 584 | 2,113 | rtx4090* | 7 | 35% |
+| 10 | sn26 Perturb | 68.9 | 25.32 | 201 | rtx3060 | 11 | 50% |
+| 11 | sn41 Almanac | 68.4 | 9.05 | 66.60 | cpu-small | 60 | 78% |
+| 12 | sn15 ORO | 68.1 | 10.52 | 10,740 | cpu-small | 71 | 93% |
+| 13 | sn124 Swarm | 65.9 | 225 | 607 | rtx4090* | 23 | 10% |
+| 14 | sn21 AdTAO | 65.3 | 4.54 | 21.12 | cpu-small | 142 | 45% |
+| 15 | sn74 Gittensor | 65.2 | 180 | 300 | rtx4090* | 9 | 18% |
+| 16 | sn53 engy | 64.1 | 125 | 2,708 | rtx4090 | 28 | 17% |
+| 17 | sn38 ChronoLLM | 63.9 | 131 | 1,558 | rtx4090* | 10 | 52% |
+| 18 | sn80 OpenRoboto | 62.2 | 71.89 | 272 | rtx4090* | 4 | 91% |
+| 19 | sn28 gm | 60.8 | 49.03 | 1,047 | rtx4090* | 17 | 68% |
+| 20 | sn101 Tag101 | 59.7 | 0.11 | 0.86 | cpu-small | 240 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 24 |
 | concentrated (30–60%) | 18 |
-| dominated (60–90%) | 23 |
-| captured (>90%) | 26 |
+| dominated (60–90%) | 24 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-05T07:16 | sn15 | RELEASE | sn15 released v1.2.5 |
+| 2026-08-05T07:16 | sn62 | RELEASE | sn62 released v0.2.5 |
 | 2026-08-05T04:24 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(verifiability): daily scoring receip |
 | 2026-08-05T04:24 | sn91 | RELEASE | sn91 released worker-v0.5.0 |
 | 2026-08-05T00:53 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Improve silver alignment and scoring |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-04T17:01 | sn120 | BURN_DROP | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-04T12:25 | sn104 | BURN_DROP | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | 2026-08-04T12:25 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Improve agent validation and source grou |
-| 2026-08-04T12:25 | sn114 | SCORING_COMMIT | sn114 commit touches scoring: Improve validation and sandbox dispatch  |
-| 2026-08-04T12:25 | sn126 | SCORING_COMMIT | sn126 commit touches scoring: Ensure validators adopt the 70 percent b |
 
 ---
 

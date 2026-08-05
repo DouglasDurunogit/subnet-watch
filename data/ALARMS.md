@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T04:24:15Z, block 8775602
+# ALARMS - generated 2026-08-05T07:15:33Z, block 8776459
 
-window: first_seen in [2026-08-05T03:09:52Z, 2026-08-05T04:24:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T06:01:10Z, 2026-08-05T07:16:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | P1 | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
-| `sn91:release:worker-v0.5.0` | 91 | RELEASE | P1 | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |
+| `sn15:release:v1.2.5` | 15 | RELEASE | P1 | 2026-08-05T07:16:10Z | sn15 released v1.2.5 |
+| `sn62:release:v0.2.5` | 62 | RELEASE | P1 | 2026-08-05T07:16:10Z | sn62 released v0.2.5 |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-05T04:01:57Z`** - sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:release:worker-v0.5.0`** - sn91 released worker-v0.5.0
-  - published 2026-08-05T04:13:57Z (was worker-v0.4.0)
+- **`sn15:release:v1.2.5`** - sn15 released v1.2.5
+  - published 2026-08-05T05:10:37Z (was v1.2.4)
+- **`sn62:release:v0.2.5`** - sn62 released v0.2.5
+  - published 2026-08-05T04:50:59Z (was v0.2.4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -46,9 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn76:scoring_commit:2026-07-29T02:30:43Z` | 76 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn76 commit touches scoring: Create a writable state directory in the validator image |
-| `sn100:scoring_commit:2026-07-29T02:56:56Z` | 100 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn100 commit touches scoring: fix(master): allowlist public FE agent-challenge reads on proxy |
-| `sn101:scoring_commit:2026-07-29T03:26:19Z` | 101 | SCORING_COMMIT | 2026-07-29T04:44:34Z | sn101 commit touches scoring: Penalize incomplete tag submissions in miner score aggregation |
 | `sn61:release:4.8.1` | 61 | RELEASE | 2026-07-29T07:34:26Z | sn61 released 4.8.1 |
 | `sn71:scoring_commit:2026-07-29T07:01:02Z` | 71 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn71 commit touches scoring: Preserve live validator runtime during release prune |
 | `sn100:scoring_commit:2026-07-29T06:48:23Z` | 100 | SCORING_COMMIT | 2026-07-29T07:34:26Z | sn100 commit touches scoring: fix(agent-challenge): copy golden digest into docker build context |
@@ -190,6 +187,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
 | `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
 | `sn111:scoring_commit:2026-08-04T21:41:42Z` | 111 | SCORING_COMMIT | 2026-08-05T00:53:57Z | sn111 commit touches scoring: Improve silver alignment and scoring |
+| `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
+| `sn91:release:worker-v0.5.0` | 91 | RELEASE | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
 | `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |

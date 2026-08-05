@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T16:49:36Z, block 8779328
+# ALARMS - generated 2026-08-05T18:45:06Z, block 8779905
 
-window: first_seen in [2026-08-05T15:35:02Z, 2026-08-05T16:50:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T17:30:32Z, 2026-08-05T18:45:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-08-05T15:37:52Z` | 66 | SCORING_COMMIT | P1 | 2026-08-05T16:50:02Z | sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi… |
-| `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | P2 | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
+| `sn36:burn_drop:0.000` | 36 | BURN_DROP | P0 | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | P1 | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
+| `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | P1 | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-08-05T15:37:52Z`** - sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi…
+- **`sn36:burn_drop:0.000`** - sn36 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn96:release:v0.1.26 - Gleipnir Proof Protocol v3`** - sn96 released v0.1.26 - Gleipnir Proof Protocol v3
+  - published 2026-08-05T17:20:05Z (was v0.1.25 - Miner Diagnostics and Validation Hardening)
+- **`sn96:scoring_commit:2026-08-05T18:24:13Z`** - sn96 commit touches scoring: fix: serialize validator block dispatch
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:1048bc3f492a891d`** - sn21 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -184,6 +187,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-05T14:06:49Z` | 21 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn21 commit touches scoring: docs: resolve the first-basket date ambiguity and bring miner/validat… |
 | `sn66:scoring_commit:2026-08-05T14:48:04Z` | 66 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn66 commit touches scoring: Merge pull request #23 from conjectures-io/fix/verification-worker-in… |
 | `sn120:scoring_commit:2026-08-05T13:12:05Z` | 120 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn120 commit touches scoring: Disclose the serving stack so miners can pre-flight before burning a … |
+| `sn66:scoring_commit:2026-08-05T15:37:52Z` | 66 | SCORING_COMMIT | 2026-08-05T16:50:02Z | sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi… |
 | `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |
 | `sn66:readme_task_diff:93fd61d3541878a9` | 66 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn66 README task/scoring sections changed |
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
@@ -205,6 +209,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
+| `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T20:18:14Z, block 8780371
+# ALARMS - generated 2026-08-05T21:45:17Z, block 8780806
 
-window: first_seen in [2026-08-05T19:03:55Z, 2026-08-05T20:18:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T20:30:49Z, 2026-08-05T21:45:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:release:14.12.21` | 2 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn2 released 14.12.21 |
-| `sn13:release:Release v1.18.70` | 13 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn13 released Release v1.18.70 |
-| `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | P1 | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |
-| `sn71:scoring_commit:2026-08-05T18:51:09Z` | 71 | SCORING_COMMIT | P1 | 2026-08-05T20:18:55Z | sn71 commit touches scoring: Refresh protected validator authority manifest |
-| `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
-| `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | P2 | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | P1 | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
+| `sn62:release:v0.2.6` | 62 | RELEASE | P1 | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
+| `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | P2 | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:release:14.12.21`** - sn2 released 14.12.21
-  - published 2026-08-05T20:09:55Z (was 14.12.20)
-- **`sn13:release:Release v1.18.70`** - sn13 released Release v1.18.70
-  - published 2026-08-05T20:05:20Z (was Release v1.18.69)
-- **`sn13:scoring_commit:2026-08-05T19:45:21Z`** - sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas
+- **`sn21:scoring_commit:2026-08-05T20:21:36Z`** - sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-05T18:51:09Z`** - sn71 commit touches scoring: Refresh protected validator authority manifest
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:v0.1.27 - Validator Boundary Hotfix`** - sn96 released v0.1.27 - Validator Boundary Hotfix
-  - published 2026-08-05T19:16:15Z (was v0.1.26 - Gleipnir Proof Protocol v3)
-- **`sn88:readme_task_diff:afb1f6ac01d629e7`** - sn88 README task/scoring sections changed
+- **`sn62:release:v0.2.6`** - sn62 released v0.2.6
+  - published 2026-08-05T21:37:15Z (was v0.2.5)
+- **`sn21:readme_task_diff:2d2991d58d2b0594`** - sn21 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -193,6 +184,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-08-05T15:37:52Z` | 66 | SCORING_COMMIT | 2026-08-05T16:50:02Z | sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi… |
 | `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
 | `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
+| `sn2:release:14.12.21` | 2 | RELEASE | 2026-08-05T20:18:55Z | sn2 released 14.12.21 |
+| `sn13:release:Release v1.18.70` | 13 | RELEASE | 2026-08-05T20:18:55Z | sn13 released Release v1.18.70 |
+| `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |
+| `sn71:scoring_commit:2026-08-05T18:51:09Z` | 71 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn71 commit touches scoring: Refresh protected validator authority manifest |
+| `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
@@ -213,6 +209,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
+| `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

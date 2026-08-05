@@ -1,25 +1,25 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-05T22:45:10Z  |  block: 8781106  |  row_status: ok
+snapshot_utc: 2026-08-05T23:43:10Z  |  block: 8781396  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.8256161520257592**
-- registration cost: 0.0005 TAO (0.098535 USD), open=True
+- miner_burn: **0.8259754311293364**
+- registration cost: 0.0005 TAO (0.09875 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 20  |  free: 0
 - subnet age: 839.9 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 132.01172648481656** (uid 15) <- the only figure quotable as achievable
-- median_miner_usd_day: 12.090182871134193
-- top_miner_usd_day: 2209.971062248603 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 109.45841245807668** (uid 15) <- the only figure quotable as achievable
+- median_miner_usd_day: 30.57794843163174
+- top_miner_usd_day: 2215.7755670739307 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 13  |  gini: 0.8498528498528497  |  top1_share: 0.8257054344010866  |  top10_share: 0.9999084346910433
-- owner_incentive_share: 0.8257054344010866 (independent check on miner_burn; disagreement 0.0001)
+- earners: 13  |  gini: 0.8337991531899758  |  top1_share: 0.8260212723749065  |  top10_share: 0.9996490210739956
+- owner_incentive_share: 0.8260212723749065 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,7 +27,7 @@ snapshot_utc: 2026-08-05T22:45:10Z  |  block: 8781106  |  row_status: ok
 - resolved URL: `https://github.com/inference-labs-inc/subnet-2`
 - status: **ok** 
 - README: 11374 bytes, sha 27418dba6f5b6784
-- latest release: 14.13.0 2026-08-05T22:30:37Z
+- latest release: 14.13.0 2026-08-05T22:46:24Z
 - last commit: 2026-08-05T22:30:18Z
 - scoring-related commit: Migrate validator allocator to jemalloc resolving fragmentation reten… 2026-07-14T19:29:54Z
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-05T22:45:10Z  |  block: 8781106  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3.8506 USD/day  |  payback on registration: 0.03 days
+- net margin: 20.1074 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 53.1 (rank 23), confidence 0.85 - hardware requirement unknown
-- components: income 6.24 / freshness 35.0 / resource 11.25 / registration 9.99
+- score: 58.1 (rank 18), confidence 0.85 - hardware requirement unknown
+- components: income 12.05 / freshness 35.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 0.0d ago
 
 ## On-chain description

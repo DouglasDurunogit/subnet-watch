@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T22:45:10Z, block 8781106
+# ALARMS - generated 2026-08-05T23:43:10Z, block 8781396
 
-window: first_seen in [2026-08-05T21:30:44Z, 2026-08-05T22:45:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T22:28:43Z, 2026-08-05T23:43:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | P1 | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
-| `sn62:release:v0.2.6` | 62 | RELEASE | P1 | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn2:release:14.13.0` | 2 | RELEASE | P1 | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
 | `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | P1 | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
-| `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | P2 | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-05T20:21:36Z`** - sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.2.6`** - sn62 released v0.2.6
-  - published 2026-08-05T21:37:15Z (was v0.2.5)
 - **`sn2:release:14.13.0`** - sn2 released 14.13.0
   - published 2026-08-05T22:30:37Z (was 14.12.21)
 - **`sn15:scoring_commit:2026-08-05T22:07:55Z`** - sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:2d2991d58d2b0594`** - sn21 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -193,6 +184,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |
 | `sn71:scoring_commit:2026-08-05T18:51:09Z` | 71 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn71 commit touches scoring: Refresh protected validator authority manifest |
 | `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
+| `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
+| `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
@@ -214,6 +207,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
+| `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

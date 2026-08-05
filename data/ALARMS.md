@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T18:45:06Z, block 8779905
+# ALARMS - generated 2026-08-05T20:18:14Z, block 8780371
 
-window: first_seen in [2026-08-05T17:30:32Z, 2026-08-05T18:45:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T19:03:55Z, 2026-08-05T20:18:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn36:burn_drop:0.000` | 36 | BURN_DROP | P0 | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | P1 | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
-| `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | P1 | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
+| `sn2:release:14.12.21` | 2 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn2 released 14.12.21 |
+| `sn13:release:Release v1.18.70` | 13 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn13 released Release v1.18.70 |
+| `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | P1 | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |
+| `sn71:scoring_commit:2026-08-05T18:51:09Z` | 71 | SCORING_COMMIT | P1 | 2026-08-05T20:18:55Z | sn71 commit touches scoring: Refresh protected validator authority manifest |
+| `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | P1 | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
+| `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | P2 | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
 
 ### detail
 
-- **`sn36:burn_drop:0.000`** - sn36 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn96:release:v0.1.26 - Gleipnir Proof Protocol v3`** - sn96 released v0.1.26 - Gleipnir Proof Protocol v3
-  - published 2026-08-05T17:20:05Z (was v0.1.25 - Miner Diagnostics and Validation Hardening)
-- **`sn96:scoring_commit:2026-08-05T18:24:13Z`** - sn96 commit touches scoring: fix: serialize validator block dispatch
+- **`sn2:release:14.12.21`** - sn2 released 14.12.21
+  - published 2026-08-05T20:09:55Z (was 14.12.20)
+- **`sn13:release:Release v1.18.70`** - sn13 released Release v1.18.70
+  - published 2026-08-05T20:05:20Z (was Release v1.18.69)
+- **`sn13:scoring_commit:2026-08-05T19:45:21Z`** - sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-05T18:51:09Z`** - sn71 commit touches scoring: Refresh protected validator authority manifest
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:v0.1.27 - Validator Boundary Hotfix`** - sn96 released v0.1.27 - Validator Boundary Hotfix
+  - published 2026-08-05T19:16:15Z (was v0.1.26 - Gleipnir Proof Protocol v3)
+- **`sn88:readme_task_diff:afb1f6ac01d629e7`** - sn88 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,13 +57,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn7:release:release-20260729-181714` | 7 | RELEASE | 2026-07-29T19:39:57Z | sn7 released release-20260729-181714 |
-| `sn7:scoring_commit:2026-07-29T18:16:30Z` | 7 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn7 commit touches scoring: Add BURN_RATE with pools scaled to the miner share (#607) |
-| `sn66:scoring_commit:2026-07-29T18:25:12Z` | 66 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn66 commit touches scoring: Introduce tiered solver task pool |
-| `sn74:release:release-20260729-181654` | 74 | RELEASE | 2026-07-29T19:39:57Z | sn74 released release-20260729-181654 |
-| `sn100:scoring_commit:2026-07-29T19:04:37Z` | 100 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn100 commit touches scoring: fix(agent-challenge): supply LLM_MODEL to the evaluated agent |
-| `sn103:release:v2006: validator: start signer balance g` | 103 | RELEASE | 2026-07-29T19:39:57Z | sn103 released v2006: validator: start signer balance gauge at the unknown sentinel |
-| `sn103:scoring_commit:2026-07-29T19:27:15Z` | 103 | SCORING_COMMIT | 2026-07-29T19:39:57Z | sn103 commit touches scoring: validator: start signer balance gauge at the unknown sentinel |
+| `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:scoring_commit:2026-07-29T22:07:42Z` | 100 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn100 commit touches scoring: fix(agent-challenge): make Terminal-Bench failures visible and stop w… |
 | `sn111:scoring_commit:2026-07-29T22:01:10Z` | 111 | SCORING_COMMIT | 2026-07-29T22:43:24Z | sn111 commit touches scoring: Add tests for agent v1 Silver scoring |
 | `sn15:release:v1.2.3` | 15 | RELEASE | 2026-07-30T07:10:45Z | sn15 released v1.2.3 |
@@ -188,8 +191,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-08-05T14:48:04Z` | 66 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn66 commit touches scoring: Merge pull request #23 from conjectures-io/fix/verification-worker-in… |
 | `sn120:scoring_commit:2026-08-05T13:12:05Z` | 120 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn120 commit touches scoring: Disclose the serving stack so miners can pre-flight before burning a … |
 | `sn66:scoring_commit:2026-08-05T15:37:52Z` | 66 | SCORING_COMMIT | 2026-08-05T16:50:02Z | sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi… |
-| `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |
-| `sn66:readme_task_diff:93fd61d3541878a9` | 66 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn66 README task/scoring sections changed |
+| `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
+| `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |

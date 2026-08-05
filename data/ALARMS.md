@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-05T10:05:48Z, block 8777310
+# ALARMS - generated 2026-08-05T12:14:50Z, block 8777955
 
-window: first_seen in [2026-08-05T08:51:20Z, 2026-08-05T10:06:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T11:00:25Z, 2026-08-05T12:15:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-08-04T14:07:21Z` | 66 | SCORING_COMMIT | P1 | 2026-08-05T10:06:20Z | sn66 commit touches scoring: Make task slug id's permanent |
-| `sn71:scoring_commit:2026-08-05T07:40:50Z` | 71 | SCORING_COMMIT | P1 | 2026-08-05T10:06:20Z | sn71 commit touches scoring: Scope repeated validator weight evidence |
+| `sn12:release:miner-staging-2026-08-05-31002481795-421` | 12 | RELEASE | P1 | 2026-08-05T12:15:25Z | sn12 released miner-staging-2026-08-05-31002481795-421-1: fix: replace unmaintained watchtower with nicholas-fedor fork |
+| `sn21:scoring_commit:2026-08-05T10:23:09Z` | 21 | SCORING_COMMIT | P1 | 2026-08-05T12:15:25Z | sn21 commit touches scoring: feat(verifiability): W1+W3 — miners can now FETCH and rerun their scor |
+| `sn61:release:4.9.0` | 61 | RELEASE | P1 | 2026-08-05T12:15:25Z | sn61 released 4.9.0 |
+| `sn61:scoring_commit:2026-08-05T10:19:58Z` | 61 | SCORING_COMMIT | P1 | 2026-08-05T12:15:25Z | sn61 commit touches scoring: fix: uncomment validation for miner container image format |
+| `sn66:scoring_commit:2026-08-05T11:06:36Z` | 66 | SCORING_COMMIT | P1 | 2026-08-05T12:15:25Z | sn66 commit touches scoring: Merge pull request #17 from conjectures-io/codex/production-verificat… |
+| `sn67:scoring_commit:2026-08-05T10:53:54Z` | 67 | SCORING_COMMIT | P1 | 2026-08-05T12:15:25Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260805.post2 |
+| `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | P2 | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
+| `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | P2 | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-08-04T14:07:21Z`** - sn66 commit touches scoring: Make task slug id's permanent
+- **`sn12:release:miner-staging-2026-08-05-31002481795-421`** - sn12 released miner-staging-2026-08-05-31002481795-421-1: fix: replace unmaintained watchtower with nicholas-fedor fork
+  - published 2026-08-05T11:41:40Z (was validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0)
+- **`sn21:scoring_commit:2026-08-05T10:23:09Z`** - sn21 commit touches scoring: feat(verifiability): W1+W3 — miners can now FETCH and rerun their scor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-05T07:40:50Z`** - sn71 commit touches scoring: Scope repeated validator weight evidence
+- **`sn61:release:4.9.0`** - sn61 released 4.9.0
+  - published 2026-08-05T10:21:57Z (was 4.8.4)
+- **`sn61:scoring_commit:2026-08-05T10:19:58Z`** - sn61 commit touches scoring: fix: uncomment validation for miner container image format
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-05T11:06:36Z`** - sn66 commit touches scoring: Merge pull request #17 from conjectures-io/codex/production-verificat…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-05T10:53:54Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260805.post2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:readme_task_diff:4f50af431820cc6d`** - sn21 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn66:readme_task_diff:3b6ca4cc88e47a32`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,10 +63,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn8:scoring_commit:2026-07-29T09:27:07Z` | 8 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn8 commit touches scoring: Full miner payouts (#862) |
-| `sn51:scoring_commit:2026-07-29T08:36:45Z` | 51 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn51 commit touches scoring: DAH-2520, review fixes: guard the scoring cycle against a malformed s… |
-| `sn53:scoring_commit:2026-07-29T08:32:57Z` | 53 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn53 commit touches scoring: Merge pull request #29 from hanlinai/docs/readme-miner-section |
-| `sn100:scoring_commit:2026-07-29T10:11:17Z` | 100 | SCORING_COMMIT | 2026-07-29T10:20:57Z | sn100 commit touches scoring: fix(proxy+agent-challenge): unblock miner env routes and engage env g… |
 | `sn71:scoring_commit:2026-07-29T09:31:54Z` | 71 | SCORING_COMMIT | 2026-07-29T12:28:47Z | sn71 commit touches scoring: Cap champion lifetime rewards |
 | `sn93:scoring_commit:2026-07-29T10:29:48Z` | 93 | SCORING_COMMIT | 2026-07-29T12:28:47Z | sn93 commit touches scoring: feat: Double product placement reward payouts (#161) |
 | `sn23:scoring_commit:2026-07-27T09:03:23Z` | 23 | SCORING_COMMIT | 2026-07-29T15:00:19Z | sn23 commit touches scoring: Add universal template support for miners (tri-check + CLI). |
@@ -187,6 +201,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:release:worker-v0.5.0` | 91 | RELEASE | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |
 | `sn15:release:v1.2.5` | 15 | RELEASE | 2026-08-05T07:16:10Z | sn15 released v1.2.5 |
 | `sn62:release:v0.2.5` | 62 | RELEASE | 2026-08-05T07:16:10Z | sn62 released v0.2.5 |
+| `sn66:scoring_commit:2026-08-04T14:07:21Z` | 66 | SCORING_COMMIT | 2026-08-05T10:06:20Z | sn66 commit touches scoring: Make task slug id's permanent |
+| `sn71:scoring_commit:2026-08-05T07:40:50Z` | 71 | SCORING_COMMIT | 2026-08-05T10:06:20Z | sn71 commit touches scoring: Scope repeated validator weight evidence |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |
 | `sn6:readme_task_diff:b7a9d9192013aa91` | 6 | README_TASK_DIFF | 2026-07-29T19:39:57Z | sn6 README task/scoring sections changed |

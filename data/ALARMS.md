@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-04T23:16:09Z, block 8774061
+# ALARMS - generated 2026-08-05T00:53:27Z, block 8774548
 
-window: first_seen in [2026-08-04T22:01:34Z, 2026-08-04T23:16:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-04T23:38:57Z, 2026-08-05T00:53:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | P1 | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
+| `sn111:scoring_commit:2026-08-04T21:41:42Z` | 111 | SCORING_COMMIT | P1 | 2026-08-05T00:53:57Z | sn111 commit touches scoring: Improve silver alignment and scoring |
 
 ### detail
 
-- **`sn62:scoring_commit:2026-08-04T22:06:13Z`** - sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator
+- **`sn111:scoring_commit:2026-08-04T21:41:42Z`** - sn111 commit touches scoring: Improve silver alignment and scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -189,6 +189,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
 | `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
 | `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
+| `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
 | `sn67:readme_task_diff:2c3937a290a2972c` | 67 | README_TASK_DIFF | 2026-07-29T01:13:34Z | sn67 README task/scoring sections changed |
 | `sn23:readme_task_diff:f1596712006feba5` | 23 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn23 README task/scoring sections changed |
 | `sn67:readme_task_diff:214039ad4d05eaac` | 67 | README_TASK_DIFF | 2026-07-29T15:00:19Z | sn67 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-06T07:27:59Z, block 8783720
+# ALARMS - generated 2026-08-06T10:18:41Z, block 8784573
 
-window: first_seen in [2026-08-06T06:13:34Z, 2026-08-06T07:28:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T09:04:12Z, 2026-08-06T10:19:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
-| `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | P1 | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
-| `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | P1 | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
-| `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | P2 | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
+| `sn15:release:v1.2.6: docs(validator): correct stale w` | 15 | RELEASE | P1 | 2026-08-06T10:19:12Z | sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249) |
+| `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | P1 | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
+| `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | P1 | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
+| `sn100:scoring_commit:2026-08-06T09:38:47Z` | 100 | SCORING_COMMIT | P1 | 2026-08-06T10:19:12Z | sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-06T05:10:27Z`** - sn71 commit touches scoring: Repair Research Lab verifier drift
+- **`sn15:release:v1.2.6: docs(validator): correct stale w`** - sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249)
+  - published 2026-08-06T08:42:22Z (was v1.2.5)
+- **`sn15:scoring_commit:2026-08-06T08:42:22Z`** - sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.1 — prod validator trust-root roll`** - sn100 released v3.3.1 — prod validator trust-root roll
-  - published 2026-08-06T06:57:19Z (was BASE 3.2.0)
-- **`sn100:scoring_commit:2026-08-06T07:02:07Z`** - sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest
+- **`sn100:release:v3.3.1 — prod trust-root roll + prism ep`** - sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission
+  - published 2026-08-06T07:43:32Z (was v3.3.1 — prod validator trust-root roll)
+- **`sn100:scoring_commit:2026-08-06T09:38:47Z`** - sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:readme_task_diff:98275d6e78bda7a7`** - sn100 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn43:burn_drop:0.800` | 43 | BURN_DROP | 2026-07-30T09:58:45Z | sn43 burn fell 1.000 -> 0.800 - miners can earn again |
 | `sn92:burn_drop:0.000` | 92 | BURN_DROP | 2026-07-30T12:02:23Z | sn92 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
 | `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
@@ -50,10 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn28:release:v0.3.14` | 28 | RELEASE | 2026-07-30T09:58:45Z | sn28 released v0.3.14 |
-| `sn38:scoring_commit:2026-07-30T09:09:57Z` | 38 | SCORING_COMMIT | 2026-07-30T09:58:45Z | sn38 commit touches scoring: Add custom architecture registry for miners (#18) |
-| `sn51:scoring_commit:2026-07-30T09:35:22Z` | 51 | SCORING_COMMIT | 2026-07-30T09:58:45Z | sn51 commit touches scoring: DAH-2340, publish structured zero-incentive reasons on MACHINE_SPEC_C… |
-| `sn71:scoring_commit:2026-07-30T05:32:52Z` | 71 | SCORING_COMMIT | 2026-07-30T09:58:45Z | sn71 commit touches scoring: Keep validator epoch authority fresh during submission |
 | `sn67:scoring_commit:2026-07-30T08:55:17Z` | 67 | SCORING_COMMIT | 2026-07-30T12:02:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260730.post1 |
 | `sn97:scoring_commit:2026-07-29T19:09:30Z` | 97 | SCORING_COMMIT | 2026-07-30T12:02:23Z | sn97 commit touches scoring: update: Updated evaluator & judge prompts |
 | `sn51:scoring_commit:2026-07-30T14:18:11Z` | 51 | SCORING_COMMIT | 2026-07-30T14:28:38Z | sn51 commit touches scoring: feat: DAH-2251 — pay referral incentive from residual burn, split acr… |
@@ -193,6 +188,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |
 | `sn74:release:release-20260806-043739` | 74 | RELEASE | 2026-08-06T04:41:49Z | sn74 released release-20260806-043739 |
 | `sn74:scoring_commit:2026-08-06T04:37:15Z` | 74 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679) |
+| `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
+| `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
+| `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
@@ -213,6 +211,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
+| `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

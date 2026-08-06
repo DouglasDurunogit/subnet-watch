@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-06T04:41:15Z  |  block: 8782886  |  row_status: ok
+snapshot_utc: 2026-08-06T07:27:59Z  |  block: 8783720  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9054171058814973**
-- registration cost: 0.15 TAO (29.513999999999996 USD), open=True
+- miner_burn: **0.9054168479051441**
+- registration cost: 0.15 TAO (29.462999999999997 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 854.9 days  |  registered at block 2627691
+- subnet age: 855.0 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 183.7455655328825** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 971.4086714772445
-- top_miner_usd_day: 1759.0717774216062 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 183.82541171737032** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 971.8307947310542
+- top_miner_usd_day: 1759.8361777447378 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-06T04:41:15Z  |  block: 8782886  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 175.5264 USD/day  |  payback on registration: 0.17 days
+- net margin: 175.6062 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-06T04:41:15Z, block 8782886
+# ALARMS - generated 2026-08-06T07:27:59Z, block 8783720
 
-window: first_seen in [2026-08-06T03:26:49Z, 2026-08-06T04:41:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T06:13:34Z, 2026-08-06T07:28:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,34 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:release:14.13.1` | 2 | RELEASE | P1 | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
-| `sn66:scoring_commit:2026-08-06T03:41:33Z` | 66 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel… |
-| `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |
-| `sn74:release:release-20260806-043739` | 74 | RELEASE | P1 | 2026-08-06T04:41:49Z | sn74 released release-20260806-043739 |
-| `sn74:scoring_commit:2026-08-06T04:37:15Z` | 74 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679) |
-| `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | P2 | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
+| `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | P1 | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
+| `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | P1 | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
+| `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | P2 | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:release:14.13.1`** - sn2 released 14.13.1
-  - published 2026-08-06T04:20:56Z (was 14.13.0)
-- **`sn66:scoring_commit:2026-08-06T03:41:33Z`** - sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel…
+- **`sn71:scoring_commit:2026-08-06T05:10:27Z`** - sn71 commit touches scoring: Repair Research Lab verifier drift
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-06T03:51:32Z`** - sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves
+- **`sn100:release:v3.3.1 — prod validator trust-root roll`** - sn100 released v3.3.1 — prod validator trust-root roll
+  - published 2026-08-06T06:57:19Z (was BASE 3.2.0)
+- **`sn100:scoring_commit:2026-08-06T07:02:07Z`** - sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260806-043739`** - sn74 released release-20260806-043739
-  - published 2026-08-06T04:37:15Z (was release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675))
-- **`sn74:scoring_commit:2026-08-06T04:37:15Z`** - sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:96b14914dd39764d`** - sn66 README task/scoring sections changed
+- **`sn100:readme_task_diff:98275d6e78bda7a7`** - sn100 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn5:burn_drop:0.846` | 5 | BURN_DROP | 2026-07-30T07:10:45Z | sn5 burn fell 1.000 -> 0.846 - miners can earn again |
-| `sn100:burn_drop:0.579` | 100 | BURN_DROP | 2026-07-30T07:10:45Z | sn100 burn fell 1.000 -> 0.579 - miners can earn again |
 | `sn43:burn_drop:0.800` | 43 | BURN_DROP | 2026-07-30T09:58:45Z | sn43 burn fell 1.000 -> 0.800 - miners can earn again |
 | `sn92:burn_drop:0.000` | 92 | BURN_DROP | 2026-07-30T12:02:23Z | sn92 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
@@ -58,10 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v1.2.3` | 15 | RELEASE | 2026-07-30T07:10:45Z | sn15 released v1.2.3 |
-| `sn71:scoring_commit:2026-07-30T04:15:15Z` | 71 | SCORING_COMMIT | 2026-07-30T07:10:45Z | sn71 commit touches scoring: Parallelize safe validator restart preparation |
-| `sn76:scoring_commit:2026-07-30T05:52:31Z` | 76 | SCORING_COMMIT | 2026-07-30T07:10:45Z | sn76 commit touches scoring: Evaluate the smaller tracks before skills so a long skills pass canno… |
-| `sn107:scoring_commit:2026-07-30T06:35:32Z` | 107 | SCORING_COMMIT | 2026-07-30T07:10:45Z | sn107 commit touches scoring: Fix stale reward split: winner 90% / burn 0% / dust top-20 |
 | `sn28:release:v0.3.14` | 28 | RELEASE | 2026-07-30T09:58:45Z | sn28 released v0.3.14 |
 | `sn38:scoring_commit:2026-07-30T09:09:57Z` | 38 | SCORING_COMMIT | 2026-07-30T09:58:45Z | sn38 commit touches scoring: Add custom architecture registry for miners (#18) |
 | `sn51:scoring_commit:2026-07-30T09:35:22Z` | 51 | SCORING_COMMIT | 2026-07-30T09:58:45Z | sn51 commit touches scoring: DAH-2340, publish structured zero-incentive reasons on MACHINE_SPEC_C… |
@@ -200,8 +188,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
 | `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
-| `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
-| `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
+| `sn2:release:14.13.1` | 2 | RELEASE | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
+| `sn66:scoring_commit:2026-08-06T03:41:33Z` | 66 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel… |
+| `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |
+| `sn74:release:release-20260806-043739` | 74 | RELEASE | 2026-08-06T04:41:49Z | sn74 released release-20260806-043739 |
+| `sn74:scoring_commit:2026-08-06T04:37:15Z` | 74 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679) |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
@@ -221,6 +212,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
+| `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

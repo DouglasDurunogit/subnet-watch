@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-06T10:18:41Z, block 8784573
+# ALARMS - generated 2026-08-06T12:25:09Z, block 8785205
 
-window: first_seen in [2026-08-06T09:04:12Z, 2026-08-06T10:19:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T11:10:37Z, 2026-08-06T12:25:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v1.2.6: docs(validator): correct stale w` | 15 | RELEASE | P1 | 2026-08-06T10:19:12Z | sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249) |
-| `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | P1 | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
-| `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | P1 | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
-| `sn100:scoring_commit:2026-08-06T09:38:47Z` | 100 | SCORING_COMMIT | P1 | 2026-08-06T10:19:12Z | sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end |
+| `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | P1 | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
+| `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | P1 | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
+| `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | P1 | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |
 
 ### detail
 
-- **`sn15:release:v1.2.6: docs(validator): correct stale w`** - sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249)
-  - published 2026-08-06T08:42:22Z (was v1.2.5)
-- **`sn15:scoring_commit:2026-08-06T08:42:22Z`** - sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249)
+- **`sn67:scoring_commit:2026-08-06T11:52:39Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.1 — prod trust-root roll + prism ep`** - sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission
-  - published 2026-08-06T07:43:32Z (was v3.3.1 — prod validator trust-root roll)
-- **`sn100:scoring_commit:2026-08-06T09:38:47Z`** - sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end
+- **`sn100:release:v3.3.2 — miner HTML sandboxing + chain e`** - sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes
+  - published 2026-08-06T11:33:32Z (was v3.3.1 — prod trust-root roll + prism epoch-close emission)
+- **`sn120:scoring_commit:2026-08-06T12:01:22Z`** - sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn92:burn_drop:0.000` | 92 | BURN_DROP | 2026-07-30T12:02:23Z | sn92 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
 | `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
 | `sn121:burn_drop:0.826` | 121 | BURN_DROP | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
@@ -49,8 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-07-30T08:55:17Z` | 67 | SCORING_COMMIT | 2026-07-30T12:02:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260730.post1 |
-| `sn97:scoring_commit:2026-07-29T19:09:30Z` | 97 | SCORING_COMMIT | 2026-07-30T12:02:23Z | sn97 commit touches scoring: update: Updated evaluator & judge prompts |
 | `sn51:scoring_commit:2026-07-30T14:18:11Z` | 51 | SCORING_COMMIT | 2026-07-30T14:28:38Z | sn51 commit touches scoring: feat: DAH-2251 — pay referral incentive from residual burn, split acr… |
 | `sn74:release:release-20260730-140609` | 74 | RELEASE | 2026-07-30T14:28:38Z | sn74 released release-20260730-140609 |
 | `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
@@ -191,6 +185,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
 | `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
 | `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
+| `sn15:release:v1.2.6: docs(validator): correct stale w` | 15 | RELEASE | 2026-08-06T10:19:12Z | sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249) |
+| `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
+| `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
+| `sn100:scoring_commit:2026-08-06T09:38:47Z` | 100 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |

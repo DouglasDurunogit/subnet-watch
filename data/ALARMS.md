@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-06T12:25:09Z, block 8785205
+# ALARMS - generated 2026-08-06T14:54:40Z, block 8785953
 
-window: first_seen in [2026-08-06T11:10:37Z, 2026-08-06T12:25:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T13:40:04Z, 2026-08-06T14:55:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | P1 | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
-| `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | P1 | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
-| `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | P1 | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |
+| `sn26:scoring_commit:2026-08-06T13:58:43Z` | 26 | SCORING_COMMIT | P1 | 2026-08-06T14:55:04Z | sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup |
+| `sn126:scoring_commit:2026-08-06T14:12:18Z` | 126 | SCORING_COMMIT | P1 | 2026-08-06T14:55:04Z | sn126 commit touches scoring: Reduce validator burn default to 30 percent |
+| `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | P2 | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-06T11:52:39Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0
+- **`sn26:scoring_commit:2026-08-06T13:58:43Z`** - sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.2 — miner HTML sandboxing + chain e`** - sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes
-  - published 2026-08-06T11:33:32Z (was v3.3.1 — prod trust-root roll + prism epoch-close emission)
-- **`sn120:scoring_commit:2026-08-06T12:01:22Z`** - sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner …
+- **`sn126:scoring_commit:2026-08-06T14:12:18Z`** - sn126 commit touches scoring: Reduce validator burn default to 30 percent
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:readme_task_diff:7ca8ea1d7f25bb3b`** - sn126 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn100:burn_drop:0.503` | 100 | BURN_DROP | 2026-07-30T14:28:38Z | sn100 burn fell 1.000 -> 0.503 - miners can earn again |
 | `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
 | `sn121:burn_drop:0.826` | 121 | BURN_DROP | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn115:burn_drop:0.000` | 115 | BURN_DROP | 2026-07-30T23:33:07Z | sn115 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -45,8 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:scoring_commit:2026-07-30T14:18:11Z` | 51 | SCORING_COMMIT | 2026-07-30T14:28:38Z | sn51 commit touches scoring: feat: DAH-2251 — pay referral incentive from residual burn, split acr… |
-| `sn74:release:release-20260730-140609` | 74 | RELEASE | 2026-07-30T14:28:38Z | sn74 released release-20260730-140609 |
 | `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
 | `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
 | `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
@@ -189,6 +186,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
 | `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
 | `sn100:scoring_commit:2026-08-06T09:38:47Z` | 100 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end |
+| `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
+| `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
+| `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |

@@ -1,13 +1,35 @@
-# ALARMS - generated 2026-08-06T01:08:31Z, block 8781822
+# ALARMS - generated 2026-08-06T04:41:15Z, block 8782886
 
-window: first_seen in [2026-08-05T23:53:58Z, 2026-08-06T01:08:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T03:26:49Z, 2026-08-06T04:41:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn2:release:14.13.1` | 2 | RELEASE | P1 | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
+| `sn66:scoring_commit:2026-08-06T03:41:33Z` | 66 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel… |
+| `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |
+| `sn74:release:release-20260806-043739` | 74 | RELEASE | P1 | 2026-08-06T04:41:49Z | sn74 released release-20260806-043739 |
+| `sn74:scoring_commit:2026-08-06T04:37:15Z` | 74 | SCORING_COMMIT | P1 | 2026-08-06T04:41:49Z | sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679) |
+| `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | P2 | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
+
+### detail
+
+- **`sn2:release:14.13.1`** - sn2 released 14.13.1
+  - published 2026-08-06T04:20:56Z (was 14.13.0)
+- **`sn66:scoring_commit:2026-08-06T03:41:33Z`** - sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-06T03:51:32Z`** - sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260806-043739`** - sn74 released release-20260806-043739
+  - published 2026-08-06T04:37:15Z (was release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675))
+- **`sn74:scoring_commit:2026-08-06T04:37:15Z`** - sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:96b14914dd39764d`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -178,7 +200,6 @@ _none_
 | `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
 | `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
-| `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |
 | `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |

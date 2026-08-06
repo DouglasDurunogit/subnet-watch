@@ -1,25 +1,25 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-06T01:08:31Z  |  block: 8781822  |  row_status: ok
+snapshot_utc: 2026-08-06T04:41:15Z  |  block: 8782886  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.8257376253604889**
-- registration cost: 0.0005 TAO (0.09846500000000001 USD), open=True
+- miner_burn: **0.8259755321778357**
+- registration cost: 0.0005 TAO (0.09838 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 20  |  free: 0
-- subnet age: 840.0 days  |  registered at block 2734060
+- subnet age: 840.1 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 121.7824852849628** (uid 15) <- the only figure quotable as achievable
-- median_miner_usd_day: 17.92116840313834
-- top_miner_usd_day: 2204.059334016882 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 122.93886750258763** (uid 96) <- the only figure quotable as achievable
+- median_miner_usd_day: 15.464008490891521
+- top_miner_usd_day: 2202.807314768311 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 13  |  gini: 0.8446923229531924  |  top1_share: 0.8258275214796954  |  top10_share: 0.9999084346910433
-- owner_incentive_share: 0.8258275214796953 (independent check on miner_burn; disagreement 0.0001)
+- earners: 13  |  gini: 0.8461033678424987  |  top1_share: 0.8260716956369131  |  top10_share: 0.9999084346910434
+- owner_incentive_share: 0.826071695636913 (independent check on miner_burn; disagreement 0.0001)
 
 ## Repository
 
@@ -27,8 +27,8 @@ snapshot_utc: 2026-08-06T01:08:31Z  |  block: 8781822  |  row_status: ok
 - resolved URL: `https://github.com/inference-labs-inc/subnet-2`
 - status: **ok** 
 - README: 11374 bytes, sha 27418dba6f5b6784
-- latest release: 14.13.0 2026-08-05T22:46:24Z
-- last commit: 2026-08-05T22:30:18Z
+- latest release: 14.13.1 2026-08-06T04:20:56Z
+- last commit: 2026-08-06T04:00:07Z
 - scoring-related commit: Migrate validator allocator to jemalloc resolving fragmentation reten… 2026-07-14T19:29:54Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-06T01:08:31Z  |  block: 8781822  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 8.4597 USD/day  |  payback on registration: 0.01 days
+- net margin: 6.8175 USD/day  |  payback on registration: 0.01 days
 
 ## Score
 
 - gate: **OK** 
-- score: 55.4 (rank 24), confidence 0.85 - hardware requirement unknown
-- components: income 8.88 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 0.1d ago
+- score: 54.7 (rank 25), confidence 0.85 - hardware requirement unknown
+- components: income 8.12 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

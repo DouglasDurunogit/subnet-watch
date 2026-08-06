@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-05T23:43:10Z, block 8781396
+# ALARMS - generated 2026-08-06T01:08:31Z, block 8781822
 
-window: first_seen in [2026-08-05T22:28:43Z, 2026-08-05T23:43:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-05T23:53:58Z, 2026-08-06T01:08:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn2:release:14.13.0` | 2 | RELEASE | P1 | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
-| `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | P1 | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
-
-### detail
-
-- **`sn2:release:14.13.0`** - sn2 released 14.13.0
-  - published 2026-08-05T22:30:37Z (was 14.12.21)
-- **`sn15:scoring_commit:2026-08-05T22:07:55Z`** - sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -186,6 +176,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
 | `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
 | `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
+| `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
+| `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
 | `sn26:readme_task_diff:b7cabe77688b0c40` | 26 | README_TASK_DIFF | 2026-07-30T04:18:19Z | sn26 README task/scoring sections changed |
 | `sn80:readme_task_diff:524075fdda445069` | 80 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:ae5ae44af5a81eba` | 107 | README_TASK_DIFF | 2026-07-30T07:10:45Z | sn107 README task/scoring sections changed |

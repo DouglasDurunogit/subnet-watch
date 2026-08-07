@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T10:37:39Z, block 8791867
+# ALARMS - generated 2026-08-07T11:34:06Z, block 8792149
 
-window: first_seen in [2026-08-07T09:23:14Z, 2026-08-07T10:38:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T10:19:31Z, 2026-08-07T11:34:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn90:release:v1.0.1` | 90 | RELEASE | P1 | 2026-08-07T09:31:19Z | sn90 released v1.0.1 |
-| `sn90:scoring_commit:2026-08-07T09:14:19Z` | 90 | SCORING_COMMIT | P1 | 2026-08-07T09:31:19Z | sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe… |
-| `sn114:scoring_commit:2026-08-07T08:41:26Z` | 114 | SCORING_COMMIT | P1 | 2026-08-07T09:31:19Z | sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number |
 | `sn66:scoring_commit:2026-08-07T10:06:34Z` | 66 | SCORING_COMMIT | P1 | 2026-08-07T10:38:14Z | sn66 commit touches scoring: fix catalag endpoint pydantic type validation mismatch - list vs indi… |
 | `sn111:scoring_commit:2026-08-07T10:19:22Z` | 111 | SCORING_COMMIT | P1 | 2026-08-07T10:38:14Z | sn111 commit touches scoring: Document miner batch and PDF options |
+| `sn66:scoring_commit:2026-08-07T11:31:50Z` | 66 | SCORING_COMMIT | P1 | 2026-08-07T11:34:31Z | sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati… |
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | P2 | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn90:release:v1.0.1`** - sn90 released v1.0.1
-  - published 2026-08-07T09:14:37Z (was v1.0.0)
-- **`sn90:scoring_commit:2026-08-07T09:14:19Z`** - sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-08-07T08:41:26Z`** - sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn66:scoring_commit:2026-08-07T10:06:34Z`** - sn66 commit touches scoring: fix catalag endpoint pydantic type validation mismatch - list vs indi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-07T10:19:22Z`** - sn111 commit touches scoring: Document miner batch and PDF options
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-07T11:31:50Z`** - sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:readme_task_diff:ec7a7e78b8effd65`** - sn111 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -35,7 +29,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn8:burn_drop:0.000` | 8 | BURN_DROP | 2026-07-31T11:05:37Z | sn8 burn fell 0.998 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.926` | 7 | BURN_DROP | 2026-07-31T17:12:35Z | sn7 burn fell 0.995 -> 0.926 - miners can earn again |
 | `sn66:burn_drop:0.000` | 66 | BURN_DROP | 2026-07-31T17:12:35Z | sn66 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn102:burn_drop:0.254` | 102 | BURN_DROP | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
@@ -52,7 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
-| `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
 | `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
 | `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
 | `sn9:release:v4.9.2` | 9 | RELEASE | 2026-07-31T17:12:35Z | sn9 released v4.9.2 |
@@ -202,6 +194,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.3` | 100 | RELEASE | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
 | `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
 | `sn100:release:v3.3.4 — design screenshots-only viewer ` | 100 | RELEASE | 2026-08-07T06:49:22Z | sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal |
+| `sn90:release:v1.0.1` | 90 | RELEASE | 2026-08-07T09:31:19Z | sn90 released v1.0.1 |
+| `sn90:scoring_commit:2026-08-07T09:14:19Z` | 90 | SCORING_COMMIT | 2026-08-07T09:31:19Z | sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe… |
+| `sn114:scoring_commit:2026-08-07T08:41:26Z` | 114 | SCORING_COMMIT | 2026-08-07T09:31:19Z | sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

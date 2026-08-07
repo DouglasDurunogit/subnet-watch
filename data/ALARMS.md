@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T06:48:57Z, block 8790723
+# ALARMS - generated 2026-08-07T08:20:10Z, block 8791180
 
-window: first_seen in [2026-08-07T05:34:22Z, 2026-08-07T06:49:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T07:05:46Z, 2026-08-07T08:20:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | P1 | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
-| `sn100:release:v3.3.4 — design screenshots-only viewer ` | 100 | RELEASE | P1 | 2026-08-07T06:49:22Z | sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal |
+| `sn100:burn_drop:0.269` | 100 | BURN_DROP | P0 | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 
 ### detail
 
-- **`sn98:scoring_commit:2026-08-07T05:49:16Z`** - sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.4 — design screenshots-only viewer `** - sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal
-  - published 2026-08-07T06:16:31Z (was v3.3.3)
+- **`sn100:burn_drop:0.269`** - sn100 burn fell 1.000 -> 0.269 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
 | `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
 | `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
 | `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
@@ -188,6 +184,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-06T17:12:01Z` | 111 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn111 commit touches scoring: Update validator artifact hydration and batch post-pass |
 | `sn67:scoring_commit:2026-08-07T02:31:14Z` | 67 | SCORING_COMMIT | 2026-08-07T03:41:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0 |
 | `sn100:release:v3.3.3` | 100 | RELEASE | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
+| `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
+| `sn100:release:v3.3.4 — design screenshots-only viewer ` | 100 | RELEASE | 2026-08-07T06:49:22Z | sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T15:05:52Z, block 8793208
+# ALARMS - generated 2026-08-07T16:07:52Z, block 8793518
 
-window: first_seen in [2026-08-07T13:51:25Z, 2026-08-07T15:06:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T14:53:18Z, 2026-08-07T16:08:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,22 +9,25 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:release:v3.3.5` | 100 | RELEASE | P1 | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
 | `sn21:scoring_commit:2026-08-07T14:45:16Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T15:06:25Z | sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev… |
 | `sn100:release:v3.3.6 — Prism site window truthfulness` | 100 | RELEASE | P1 | 2026-08-07T15:06:25Z | sn100 released v3.3.6 — Prism site window truthfulness |
 | `sn126:scoring_commit:2026-08-07T14:37:59Z` | 126 | SCORING_COMMIT | P1 | 2026-08-07T15:06:25Z | sn126 commit touches scoring: Bump validator auto-update version |
+| `sn21:scoring_commit:2026-08-07T15:10:17Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T16:08:18Z | sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly |
+| `sn74:release:release-20260807-154750` | 74 | RELEASE | P1 | 2026-08-07T16:08:18Z | sn74 released release-20260807-154750 |
 | `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | P2 | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 
 ### detail
 
-- **`sn100:release:v3.3.5`** - sn100 released v3.3.5
-  - published 2026-08-07T13:46:53Z (was v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal)
 - **`sn21:scoring_commit:2026-08-07T14:45:16Z`** - sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.6 — Prism site window truthfulness`** - sn100 released v3.3.6 — Prism site window truthfulness
   - published 2026-08-07T14:39:13Z (was v3.3.5)
 - **`sn126:scoring_commit:2026-08-07T14:37:59Z`** - sn126 commit touches scoring: Bump validator auto-update version
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-07T15:10:17Z`** - sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260807-154750`** - sn74 released release-20260807-154750
+  - published 2026-08-07T15:47:30Z (was release-20260806-204130)
 - **`sn10:readme_task_diff:2aef81117c887b4e`** - sn10 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -49,7 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
-| `sn126:scoring_commit:2026-07-31T15:20:36Z` | 126 | SCORING_COMMIT | 2026-07-31T15:28:47Z | sn126 commit touches scoring: docs: align miner and validator release guides |
 | `sn9:release:v4.9.2` | 9 | RELEASE | 2026-07-31T17:12:35Z | sn9 released v4.9.2 |
 | `sn15:release:v1.2.4` | 15 | RELEASE | 2026-07-31T17:12:35Z | sn15 released v1.2.4 |
 | `sn101:scoring_commit:2026-07-31T16:39:07Z` | 101 | SCORING_COMMIT | 2026-07-31T17:12:35Z | sn101 commit touches scoring: Allocate 90% of validator weight to burn UID |
@@ -204,6 +206,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-07T10:19:22Z` | 111 | SCORING_COMMIT | 2026-08-07T10:38:14Z | sn111 commit touches scoring: Document miner batch and PDF options |
 | `sn66:scoring_commit:2026-08-07T11:31:50Z` | 66 | SCORING_COMMIT | 2026-08-07T11:34:31Z | sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati… |
 | `sn126:scoring_commit:2026-08-07T11:17:25Z` | 126 | SCORING_COMMIT | 2026-08-07T12:31:08Z | sn126 commit touches scoring: Gate validator rounds by launch status |
+| `sn100:release:v3.3.5` | 100 | RELEASE | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

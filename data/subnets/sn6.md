@@ -1,11 +1,11 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-07T18:10:13Z  |  block: 8794130  |  row_status: ok
+snapshot_utc: 2026-08-07T19:28:10Z  |  block: 8794520  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.2 TAO (38.264 USD), open=True
+- registration cost: 0.2 TAO (38.784 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 17  |  free: 0
 - subnet age: 774.2 days  |  registered at block 3219949
 - weights_version: 2018  |  mechanisms: 1
@@ -13,8 +13,8 @@ snapshot_utc: 2026-08-07T18:10:13Z  |  block: 8794130  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1663.0313707761886
-- top_miner_usd_day: 1663.0313707761886 (uid 239, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1685.6133116839553
+- top_miner_usd_day: 1685.6133116839553 (uid 239, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -28,7 +28,7 @@ snapshot_utc: 2026-08-07T18:10:13Z  |  block: 8794130  |  row_status: ok
 - status: **ok** 
 - README: 5473 bytes, sha 358a7cb13606d9bf
 - latest release: (none) 
-- last commit: 2026-08-07T14:42:59Z
+- last commit: 2026-08-07T18:38:17Z
 - scoring-related commit: Merge pull request #39 from koskotheim/lightning-rod-miner-guide 2026-06-26T14:29:38Z
 
 ## Resources

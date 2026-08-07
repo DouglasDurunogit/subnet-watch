@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T18:10:13Z, block 8794130
+# ALARMS - generated 2026-08-07T19:28:10Z, block 8794520
 
-window: first_seen in [2026-08-07T16:55:42Z, 2026-08-07T18:10:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T18:13:43Z, 2026-08-07T19:28:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn121:burn_drop:0.828` | 121 | BURN_DROP | P0 | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
-| `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | P1 | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
-| `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
+| `sn28:release:v0.4.0` | 28 | RELEASE | P1 | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
+| `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
+| `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
 
 ### detail
 
-- **`sn121:burn_drop:0.828`** - sn121 burn fell 1.000 -> 0.828 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:scoring_commit:2026-08-07T17:15:35Z`** - sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money
+- **`sn28:release:v0.4.0`** - sn28 released v0.4.0
+  - published 2026-08-07T19:03:14Z (was v0.3.16)
+- **`sn60:scoring_commit:2026-08-07T18:13:15Z`** - sn60 commit touches scoring: removed Chutes for miner submission
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn46:scoring_commit:2026-08-07T15:24:17Z`** - sn46 commit touches scoring: Add localnet miner validator and platform plumbing
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-08-07T17:32:20Z`** - sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two
+- **`sn71:scoring_commit:2026-08-07T18:44:33Z`** - sn71 commit touches scoring: Authorize isolated autoresearch validation skill
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -44,7 +41,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
-| `sn126:scoring_commit:2026-07-31T17:23:08Z` | 126 | SCORING_COMMIT | 2026-07-31T18:52:56Z | sn126 commit touches scoring: release: enable validator auto-update 0.2.1 |
+| `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn74:release:release-20260731-214128: chore(weights):` | 74 | RELEASE | 2026-07-31T21:50:00Z | sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675) |
 | `sn74:scoring_commit:2026-07-31T15:04:46Z` | 74 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673) |
 | `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
@@ -199,6 +196,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:scoring_commit:2026-08-07T14:37:59Z` | 126 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn126 commit touches scoring: Bump validator auto-update version |
 | `sn21:scoring_commit:2026-08-07T15:10:17Z` | 21 | SCORING_COMMIT | 2026-08-07T16:08:18Z | sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly |
 | `sn74:release:release-20260807-154750` | 74 | RELEASE | 2026-08-07T16:08:18Z | sn74 released release-20260807-154750 |
+| `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
+| `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
+| `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-07T03:40:44Z, block 8789782
+# ALARMS - generated 2026-08-07T05:25:24Z, block 8790306
 
-window: first_seen in [2026-08-07T02:26:13Z, 2026-08-07T03:41:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T04:10:49Z, 2026-08-07T05:25:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-07T02:31:14Z` | 67 | SCORING_COMMIT | P1 | 2026-08-07T03:41:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0 |
-| `sn100:release:v3.3.3` | 100 | RELEASE | P1 | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
-
-### detail
-
-- **`sn67:scoring_commit:2026-08-07T02:31:14Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.3`** - sn100 released v3.3.3
-  - published 2026-08-07T03:33:25Z (was v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -186,6 +176,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:v0.1.28 - Gleipnir Proof Runtime Hardeni` | 96 | RELEASE | 2026-08-07T00:33:55Z | sn96 released v0.1.28 - Gleipnir Proof Runtime Hardening |
 | `sn96:scoring_commit:2026-08-06T23:22:28Z` | 96 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn96 commit touches scoring: fix: refresh authenticated miner artifacts |
 | `sn111:scoring_commit:2026-08-06T17:12:01Z` | 111 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn111 commit touches scoring: Update validator artifact hydration and batch post-pass |
+| `sn67:scoring_commit:2026-08-07T02:31:14Z` | 67 | SCORING_COMMIT | 2026-08-07T03:41:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0 |
+| `sn100:release:v3.3.3` | 100 | RELEASE | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

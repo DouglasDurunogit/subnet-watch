@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T20:24:00Z, block 8794799
+# ALARMS - generated 2026-08-07T21:11:09Z, block 8795034
 
-window: first_seen in [2026-08-07T19:09:27Z, 2026-08-07T20:24:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T19:56:37Z, 2026-08-07T21:11:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.0` | 28 | RELEASE | P1 | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
-| `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
-| `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
 | `sn1:release:v4.2.21` | 1 | RELEASE | P1 | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
 | `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | P1 | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
+| `sn28:release:v0.4.1` | 28 | RELEASE | P1 | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 
 ### detail
 
-- **`sn28:release:v0.4.0`** - sn28 released v0.4.0
-  - published 2026-08-07T19:03:14Z (was v0.3.16)
-- **`sn60:scoring_commit:2026-08-07T18:13:15Z`** - sn60 commit touches scoring: removed Chutes for miner submission
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-07T18:44:33Z`** - sn71 commit touches scoring: Authorize isolated autoresearch validation skill
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn1:release:v4.2.21`** - sn1 released v4.2.21
   - published 2026-08-07T19:46:30Z (was v3.0.6)
 - **`sn51:scoring_commit:2026-08-07T20:07:04Z`** - sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.1`** - sn28 released v0.4.1
+  - published 2026-08-07T21:01:31Z (was v0.4.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -205,6 +199,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
 | `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
 | `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
+| `sn28:release:v0.4.0` | 28 | RELEASE | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
+| `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
+| `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

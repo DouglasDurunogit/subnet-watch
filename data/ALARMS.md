@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T08:20:10Z, block 8791180
+# ALARMS - generated 2026-08-07T09:30:55Z, block 8791533
 
-window: first_seen in [2026-08-07T07:05:46Z, 2026-08-07T08:20:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T08:16:19Z, 2026-08-07T09:31:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,20 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | P0 | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
+| `sn90:release:v1.0.1` | 90 | RELEASE | P1 | 2026-08-07T09:31:19Z | sn90 released v1.0.1 |
+| `sn90:scoring_commit:2026-08-07T09:14:19Z` | 90 | SCORING_COMMIT | P1 | 2026-08-07T09:31:19Z | sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe… |
+| `sn114:scoring_commit:2026-08-07T08:41:26Z` | 114 | SCORING_COMMIT | P1 | 2026-08-07T09:31:19Z | sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number |
 
 ### detail
 
 - **`sn100:burn_drop:0.269`** - sn100 burn fell 1.000 -> 0.269 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn90:release:v1.0.1`** - sn90 released v1.0.1
+  - published 2026-08-07T09:14:37Z (was v1.0.0)
+- **`sn90:scoring_commit:2026-08-07T09:14:19Z`** - sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-08-07T08:41:26Z`** - sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

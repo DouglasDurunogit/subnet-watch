@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T14:01:18Z, block 8792885
+# ALARMS - generated 2026-08-07T15:05:52Z, block 8793208
 
-window: first_seen in [2026-08-07T12:46:48Z, 2026-08-07T14:01:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T13:51:25Z, 2026-08-07T15:06:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,23 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn100:release:v3.3.5` | 100 | RELEASE | P1 | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
+| `sn21:scoring_commit:2026-08-07T14:45:16Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T15:06:25Z | sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev… |
+| `sn100:release:v3.3.6 — Prism site window truthfulness` | 100 | RELEASE | P1 | 2026-08-07T15:06:25Z | sn100 released v3.3.6 — Prism site window truthfulness |
+| `sn126:scoring_commit:2026-08-07T14:37:59Z` | 126 | SCORING_COMMIT | P1 | 2026-08-07T15:06:25Z | sn126 commit touches scoring: Bump validator auto-update version |
+| `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | P2 | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 
 ### detail
 
 - **`sn100:release:v3.3.5`** - sn100 released v3.3.5
   - published 2026-08-07T13:46:53Z (was v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal)
+- **`sn21:scoring_commit:2026-08-07T14:45:16Z`** - sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.6 — Prism site window truthfulness`** - sn100 released v3.3.6 — Prism site window truthfulness
+  - published 2026-08-07T14:39:13Z (was v3.3.5)
+- **`sn126:scoring_commit:2026-08-07T14:37:59Z`** - sn126 commit touches scoring: Bump validator auto-update version
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn10:readme_task_diff:2aef81117c887b4e`** - sn10 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T22:05:25Z, block 8795306
+# ALARMS - generated 2026-08-07T22:53:40Z, block 8795547
 
-window: first_seen in [2026-08-07T20:50:53Z, 2026-08-07T22:05:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T21:39:13Z, 2026-08-07T22:54:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.1` | 28 | RELEASE | P1 | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
+| `sn61:release:4.9.1` | 61 | RELEASE | P1 | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
+| `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | P1 | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
 
 ### detail
 
-- **`sn28:release:v0.4.1`** - sn28 released v0.4.1
-  - published 2026-08-07T21:01:31Z (was v0.4.0)
+- **`sn61:release:4.9.1`** - sn61 released 4.9.1
+  - published 2026-08-07T22:38:34Z (was 4.9.0)
+- **`sn61:scoring_commit:2026-08-07T22:36:31Z`** - sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -195,6 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
 | `sn1:release:v4.2.21` | 1 | RELEASE | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
 | `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
+| `sn28:release:v0.4.1` | 28 | RELEASE | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T22:53:40Z, block 8795547
+# ALARMS - generated 2026-08-07T23:44:46Z, block 8795803
 
-window: first_seen in [2026-08-07T21:39:13Z, 2026-08-07T22:54:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T22:30:13Z, 2026-08-07T23:45:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,12 +11,15 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn61:release:4.9.1` | 61 | RELEASE | P1 | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
 | `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | P1 | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
+| `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | P1 | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
 
 ### detail
 
 - **`sn61:release:4.9.1`** - sn61 released 4.9.1
   - published 2026-08-07T22:38:34Z (was 4.9.0)
 - **`sn61:scoring_commit:2026-08-07T22:36:31Z`** - sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:scoring_commit:2026-08-07T23:40:46Z`** - sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -39,8 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn102:release:v0.4.0` | 102 | RELEASE | 2026-07-31T23:14:36Z | sn102 released v0.4.0 |
-| `sn102:scoring_commit:2026-07-31T18:12:56Z` | 102 | SCORING_COMMIT | 2026-07-31T23:14:36Z | sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s… |
 | `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
 | `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
 | `sn76:scoring_commit:2026-08-01T05:18:26Z` | 76 | SCORING_COMMIT | 2026-08-01T07:17:44Z | sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it |

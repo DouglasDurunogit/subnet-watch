@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-06T14:54:40Z, block 8785953
+# ALARMS - generated 2026-08-07T00:33:22Z, block 8788846
 
-window: first_seen in [2026-08-06T13:40:04Z, 2026-08-06T14:55:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-06T23:18:55Z, 2026-08-07T00:33:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,50 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn26:scoring_commit:2026-08-06T13:58:43Z` | 26 | SCORING_COMMIT | P1 | 2026-08-06T14:55:04Z | sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup |
-| `sn126:scoring_commit:2026-08-06T14:12:18Z` | 126 | SCORING_COMMIT | P1 | 2026-08-06T14:55:04Z | sn126 commit touches scoring: Reduce validator burn default to 30 percent |
-| `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | P2 | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
+| `sn72:burn_drop:0.000` | 72 | BURN_DROP | P0 | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
+| `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
+| `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |
+| `sn41:scoring_commit:2026-08-06T17:42:32Z` | 41 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn41 commit touches scoring: Adding minimum and recommended specs for running a validator |
+| `sn66:scoring_commit:2026-08-06T17:23:11Z` | 66 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn66 commit touches scoring: update task pool and add review |
+| `sn74:release:release-20260806-204130` | 74 | RELEASE | P1 | 2026-08-07T00:33:55Z | sn74 released release-20260806-204130 |
+| `sn96:release:v0.1.28 - Gleipnir Proof Runtime Hardeni` | 96 | RELEASE | P1 | 2026-08-07T00:33:55Z | sn96 released v0.1.28 - Gleipnir Proof Runtime Hardening |
+| `sn96:scoring_commit:2026-08-06T23:22:28Z` | 96 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn96 commit touches scoring: fix: refresh authenticated miner artifacts |
+| `sn111:scoring_commit:2026-08-06T17:12:01Z` | 111 | SCORING_COMMIT | P1 | 2026-08-07T00:33:55Z | sn111 commit touches scoring: Update validator artifact hydration and batch post-pass |
+| `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | P2 | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
+| `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | P2 | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn26:scoring_commit:2026-08-06T13:58:43Z`** - sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup
+- **`sn72:burn_drop:0.000`** - sn72 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn10:scoring_commit:2026-08-06T20:28:19Z`** - sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:scoring_commit:2026-08-06T14:12:18Z`** - sn126 commit touches scoring: Reduce validator burn default to 30 percent
+- **`sn14:scoring_commit:2026-08-06T20:14:29Z`** - sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:readme_task_diff:7ca8ea1d7f25bb3b`** - sn126 README task/scoring sections changed
+- **`sn21:scoring_commit:2026-08-06T15:51:01Z`** - sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn41:scoring_commit:2026-08-06T17:42:32Z`** - sn41 commit touches scoring: Adding minimum and recommended specs for running a validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-06T17:23:11Z`** - sn66 commit touches scoring: update task pool and add review
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260806-204130`** - sn74 released release-20260806-204130
+  - published 2026-08-06T20:40:51Z (was release-20260806-043739)
+- **`sn96:release:v0.1.28 - Gleipnir Proof Runtime Hardeni`** - sn96 released v0.1.28 - Gleipnir Proof Runtime Hardening
+  - published 2026-08-06T22:39:34Z (was v0.1.27 - Validator Boundary Hotfix)
+- **`sn96:scoring_commit:2026-08-06T23:22:28Z`** - sn96 commit touches scoring: fix: refresh authenticated miner artifacts
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-06T17:12:01Z`** - sn111 commit touches scoring: Update validator artifact hydration and batch post-pass
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:a7859610dea4219a`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn111:readme_task_diff:e76e2ccadcee7567`** - sn111 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn55:burn_drop:0.022` | 55 | BURN_DROP | 2026-07-30T17:57:00Z | sn55 burn fell 1.000 -> 0.022 - miners can earn again |
-| `sn121:burn_drop:0.826` | 121 | BURN_DROP | 2026-07-30T17:57:00Z | sn121 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn115:burn_drop:0.000` | 115 | BURN_DROP | 2026-07-30T23:33:07Z | sn115 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn8:burn_drop:0.000` | 8 | BURN_DROP | 2026-07-31T11:05:37Z | sn8 burn fell 0.998 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.926` | 7 | BURN_DROP | 2026-07-31T17:12:35Z | sn7 burn fell 0.995 -> 0.926 - miners can earn again |
 | `sn66:burn_drop:0.000` | 66 | BURN_DROP | 2026-07-31T17:12:35Z | sn66 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -44,15 +68,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn49:scoring_commit:2026-07-30T15:52:08Z` | 49 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn49 commit touches scoring: Updated Discord link across documentation to new invite. |
-| `sn71:scoring_commit:2026-07-30T14:08:31Z` | 71 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn71 commit touches scoring: Verify no-burn fallback allocation inputs |
-| `sn98:scoring_commit:2026-07-30T15:31:29Z` | 98 | SCORING_COMMIT | 2026-07-30T16:17:33Z | sn98 commit touches scoring: fix(miner-cli): add log for hotkey ban (#22) |
-| `sn89:scoring_commit:2026-07-30T17:06:44Z` | 89 | SCORING_COMMIT | 2026-07-30T17:57:00Z | sn89 commit touches scoring: hf board: share of the MINER pool, not of the vector; plus LF-parity … |
-| `sn28:release:v0.3.15` | 28 | RELEASE | 2026-07-30T19:47:43Z | sn28 released v0.3.15 |
-| `sn14:scoring_commit:2026-07-27T16:11:45Z` | 14 | SCORING_COMMIT | 2026-07-30T22:16:59Z | sn14 commit touches scoring: Add object-store proposal transport and validator recovery |
-| `sn8:scoring_commit:2026-07-30T22:26:28Z` | 8 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn8 commit touches scoring: create subaccount elimination cache on entity miner (#861) |
-| `sn62:release:v0.2.3` | 62 | RELEASE | 2026-07-30T23:33:07Z | sn62 released v0.2.3 |
-| `sn124:scoring_commit:2026-07-30T21:28:44Z` | 124 | SCORING_COMMIT | 2026-07-30T23:33:07Z | sn124 commit touches scoring: Kill host workers when the validator process dies |
 | `sn80:scoring_commit:2026-07-31T05:39:39Z` | 80 | SCORING_COMMIT | 2026-07-31T08:08:30Z | sn80 commit touches scoring: docs: document public /api/v1/scan-rejections endpoint (miner self-se… |
 | `sn76:scoring_commit:2026-07-31T11:00:01Z` | 76 | SCORING_COMMIT | 2026-07-31T11:05:37Z | sn76 commit touches scoring: Evaluate two agents at a time within a track |
 | `sn76:scoring_commit:2026-07-31T12:40:54Z` | 76 | SCORING_COMMIT | 2026-07-31T13:05:28Z | sn76 commit touches scoring: Hold inference keys in the proxy, enforce per task budgets, and refus… |
@@ -189,7 +204,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
 | `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
 | `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |
-| `sn26:readme_task_diff:b5ae57c5d606b138` | 26 | README_TASK_DIFF | 2026-07-30T16:17:33Z | sn26 README task/scoring sections changed |
+| `sn26:scoring_commit:2026-08-06T13:58:43Z` | 26 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup |
+| `sn126:scoring_commit:2026-08-06T14:12:18Z` | 126 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn126 commit touches scoring: Reduce validator burn default to 30 percent |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
@@ -210,6 +226,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
 | `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
+| `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

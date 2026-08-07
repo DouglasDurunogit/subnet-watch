@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T19:28:10Z, block 8794520
+# ALARMS - generated 2026-08-07T20:24:00Z, block 8794799
 
-window: first_seen in [2026-08-07T18:13:43Z, 2026-08-07T19:28:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T19:09:27Z, 2026-08-07T20:24:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -12,6 +12,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.0` | 28 | RELEASE | P1 | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
 | `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
 | `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | P1 | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
+| `sn1:release:v4.2.21` | 1 | RELEASE | P1 | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
+| `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | P1 | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
 
 ### detail
 
@@ -20,6 +22,10 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn60:scoring_commit:2026-08-07T18:13:15Z`** - sn60 commit touches scoring: removed Chutes for miner submission
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-07T18:44:33Z`** - sn71 commit touches scoring: Authorize isolated autoresearch validation skill
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.2.21`** - sn1 released v4.2.21
+  - published 2026-08-07T19:46:30Z (was v3.0.6)
+- **`sn51:scoring_commit:2026-08-07T20:07:04Z`** - sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

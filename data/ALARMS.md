@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T21:11:09Z, block 8795034
+# ALARMS - generated 2026-08-07T22:05:25Z, block 8795306
 
-window: first_seen in [2026-08-07T19:56:37Z, 2026-08-07T21:11:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T20:50:53Z, 2026-08-07T22:05:53Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,16 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.2.21` | 1 | RELEASE | P1 | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
-| `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | P1 | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
 | `sn28:release:v0.4.1` | 28 | RELEASE | P1 | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 
 ### detail
 
-- **`sn1:release:v4.2.21`** - sn1 released v4.2.21
-  - published 2026-08-07T19:46:30Z (was v3.0.6)
-- **`sn51:scoring_commit:2026-08-07T20:07:04Z`** - sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn28:release:v0.4.1`** - sn28 released v0.4.1
   - published 2026-08-07T21:01:31Z (was v0.4.0)
 
@@ -42,9 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn74:release:release-20260731-214128: chore(weights):` | 74 | RELEASE | 2026-07-31T21:50:00Z | sn74 released release-20260731-214128: chore(weights): point all emissions at sparkinfer-k3 (#1675) |
-| `sn74:scoring_commit:2026-07-31T15:04:46Z` | 74 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn74 commit touches scoring: SparkDistill: 3x faster time-decay for merged-PR scores (#1673) |
-| `sn76:scoring_commit:2026-07-31T21:43:47Z` | 76 | SCORING_COMMIT | 2026-07-31T21:50:00Z | sn76 commit touches scoring: Merge pull request #16 from praxi-labs/validator-round-changes |
 | `sn102:release:v0.4.0` | 102 | RELEASE | 2026-07-31T23:14:36Z | sn102 released v0.4.0 |
 | `sn102:scoring_commit:2026-07-31T18:12:56Z` | 102 | SCORING_COMMIT | 2026-07-31T23:14:36Z | sn102 commit touches scoring: 📊 telemetry: restore round + per-miner telemetry on every recovery (s… |
 | `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
@@ -202,6 +193,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.0` | 28 | RELEASE | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
 | `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
 | `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
+| `sn1:release:v4.2.21` | 1 | RELEASE | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
+| `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

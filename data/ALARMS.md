@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-07T05:25:24Z, block 8790306
+# ALARMS - generated 2026-08-07T06:48:57Z, block 8790723
 
-window: first_seen in [2026-08-07T04:10:49Z, 2026-08-07T05:25:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T05:34:22Z, 2026-08-07T06:49:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | P1 | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
+| `sn100:release:v3.3.4 — design screenshots-only viewer ` | 100 | RELEASE | P1 | 2026-08-07T06:49:22Z | sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal |
+
+### detail
+
+- **`sn98:scoring_commit:2026-08-07T05:49:16Z`** - sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.4 — design screenshots-only viewer `** - sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal
+  - published 2026-08-07T06:16:31Z (was v3.3.3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

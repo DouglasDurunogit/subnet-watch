@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-07T17:22:06Z, block 8793889
+# ALARMS - generated 2026-08-07T18:10:13Z, block 8794130
 
-window: first_seen in [2026-08-07T16:07:41Z, 2026-08-07T17:22:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-07T16:55:42Z, 2026-08-07T18:10:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,22 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | P0 | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn21:scoring_commit:2026-08-07T15:10:17Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T16:08:18Z | sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly |
-| `sn74:release:release-20260807-154750` | 74 | RELEASE | P1 | 2026-08-07T16:08:18Z | sn74 released release-20260807-154750 |
 | `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
 | `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | P1 | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
+| `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | P1 | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
 
 ### detail
 
 - **`sn121:burn_drop:0.828`** - sn121 burn fell 1.000 -> 0.828 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:scoring_commit:2026-08-07T15:10:17Z`** - sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260807-154750`** - sn74 released release-20260807-154750
-  - published 2026-08-07T15:47:30Z (was release-20260806-204130)
 - **`sn21:scoring_commit:2026-08-07T17:15:35Z`** - sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn46:scoring_commit:2026-08-07T15:24:17Z`** - sn46 commit touches scoring: Add localnet miner validator and platform plumbing
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-07T17:32:20Z`** - sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -200,6 +197,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-07T14:45:16Z` | 21 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev… |
 | `sn100:release:v3.3.6 — Prism site window truthfulness` | 100 | RELEASE | 2026-08-07T15:06:25Z | sn100 released v3.3.6 — Prism site window truthfulness |
 | `sn126:scoring_commit:2026-08-07T14:37:59Z` | 126 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn126 commit touches scoring: Bump validator auto-update version |
+| `sn21:scoring_commit:2026-08-07T15:10:17Z` | 21 | SCORING_COMMIT | 2026-08-07T16:08:18Z | sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly |
+| `sn74:release:release-20260807-154750` | 74 | RELEASE | 2026-08-07T16:08:18Z | sn74 released release-20260807-154750 |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

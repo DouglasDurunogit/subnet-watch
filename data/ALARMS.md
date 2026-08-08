@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-08T10:47:13Z, block 8799115
+# ALARMS - generated 2026-08-08T11:15:56Z, block 8799258
 
-window: first_seen in [2026-08-08T09:32:38Z, 2026-08-08T10:47:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T10:01:30Z, 2026-08-08T11:16:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | P1 | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
-
-### detail
-
-- **`sn38:scoring_commit:2026-08-08T09:07:32Z`** - sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
 | `sn103:release:v2007` | 103 | RELEASE | 2026-08-01T12:13:22Z | sn103 released v2007 |
 | `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 | `sn124:scoring_commit:2026-08-01T12:57:13Z` | 124 | SCORING_COMMIT | 2026-08-01T14:06:15Z | sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs |
@@ -192,6 +184,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
 | `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
 | `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
+| `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

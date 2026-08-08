@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-08T22:42:57Z, block 8802693
+# ALARMS - generated 2026-08-08T23:11:51Z, block 8802838
 
-window: first_seen in [2026-08-08T21:28:21Z, 2026-08-08T22:43:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T21:57:25Z, 2026-08-08T23:12:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | P1 | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
-
-### detail
-
-- **`sn76:scoring_commit:2026-08-08T21:44:42Z`** - sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -197,6 +190,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-08T20:21:46Z` | 71 | SCORING_COMMIT | 2026-08-08T20:45:04Z | sn71 commit touches scoring: Retry signed transient company scoring failures |
 | `sn100:release:v3.3.13 — design screenshot egress proxy` | 100 | RELEASE | 2026-08-08T20:45:04Z | sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth |
 | `sn100:scoring_commit:2026-08-08T21:01:32Z` | 100 | SCORING_COMMIT | 2026-08-08T21:15:02Z | sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator… |
+| `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

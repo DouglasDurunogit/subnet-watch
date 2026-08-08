@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-08T17:42:31Z · block 8801191 · run_status **ok**_
+_snapshot 2026-08-08T18:14:35Z · block 8801352 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -33,8 +33,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0–0.2 | 5 | `███` |
 | 0.2–0.4 | 5 | `███` |
 | 0.4–0.6 | 11 | `██████` |
-| 0.6–0.8 | 7 | `████` |
-| 0.8–0.99 | 8 | `████` |
+| 0.6–0.8 | 6 | `███` |
+| 0.8–0.99 | 9 | `█████` |
 | ≥0.99 dead | 38 | `████████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 79.6 | 4,981 | 4,981 = | cpu-small | 1 | 100% |
-| 2 | sn107 Minos | 78.3 | 116 | 34,467 | cpu-small | 20 | 90% |
-| 3 | sn76 Phylax | 76.3 | 61.62 | 186 | cpu-small | 10 | 31% |
-| 4 | sn67 Harnyx | 71.3 | 17.15 | 745 | cpu-small | 142 | 19% |
-| 5 | sn91 cascade | 70.2 | 784 | 2,683 | rtx4090* | 5 | 48% |
-| 6 | sn100 BASE | 69.7 | 678 | 1,930 | rtx4090* | 3 | 59% |
-| 7 | sn1 Apex | 69.6 | 652 | 1,612 | rtx4090* | 4 | 44% |
-| 8 | sn62 Ridges | 69.1 | 559 | 2,022 | rtx4090* | 7 | 35% |
-| 9 | sn26 Perturb | 68.3 | 21.66 | 40.28 | rtx3060 | 11 | 50% |
-| 10 | sn41 Almanac | 68.3 | 8.84 | 27.11 | cpu-small | 69 | 76% |
-| 11 | sn96 Verathos | 67.9 | 19.57 | 247 | rtx4090 | 72 | 46% |
-| 12 | sn15 ORO | 67.3 | 9.01 | 19.18 | cpu-small | 69 | 94% |
-| 13 | sn21 AdTAO | 65.6 | 4.79 | 22.11 | cpu-small | 142 | 45% |
-| 14 | sn38 ChronoLLM | 65.5 | 206 | 3,467 | rtx4090* | 10 | 52% |
-| 15 | sn80 OpenRoboto | 63.4 | 103 | 382 | rtx4090* | 4 | 91% |
-| 16 | sn61 RedTeam | 62.1 | 69.56 | 197 | rtx4090* | 36 | 6% |
-| 17 | sn28 gm | 61 | 51.53 | 3,810 | rtx4090* | 19 | 41% |
-| 18 | sn51 lium.io | 59.1 | 35.71 | 2,634 | rtx4090* | 46 | 66% |
-| 19 | sn56 Gradients | 56.5 | 461 | 973 | rtx4090* | 7 | 70% |
-| 20 | sn85 Vidaio | 56.2 | 418 | 536 | rtx4090* | 10 | 19% |
+| 1 | sn11 TrajectoryRL | 79.6 | 4,980 | 4,980 = | cpu-small | 1 | 100% |
+| 2 | sn107 Minos | 78.3 | 116 | 34,236 | cpu-small | 20 | 89% |
+| 3 | sn76 Phylax | 76.3 | 61.60 | 186 | cpu-small | 10 | 31% |
+| 4 | sn67 Harnyx | 71.3 | 17.13 | 745 | cpu-small | 142 | 19% |
+| 5 | sn91 cascade | 70.2 | 783 | 2,680 | rtx4090* | 5 | 48% |
+| 6 | sn1 Apex | 69.6 | 649 | 1,606 | rtx4090* | 4 | 44% |
+| 7 | sn62 Ridges | 69.1 | 558 | 2,020 | rtx4090* | 7 | 35% |
+| 8 | sn26 Perturb | 68.3 | 21.65 | 40.26 | rtx3060 | 11 | 50% |
+| 9 | sn41 Almanac | 68.3 | 8.81 | 27.10 | cpu-small | 69 | 76% |
+| 10 | sn96 Verathos | 68.1 | 20.85 | 218 | rtx4090 | 65 | 45% |
+| 11 | sn15 ORO | 67.4 | 9.00 | 19.15 | cpu-small | 69 | 94% |
+| 12 | sn21 AdTAO | 65.6 | 4.79 | 22.13 | cpu-small | 142 | 45% |
+| 13 | sn38 ChronoLLM | 65.5 | 206 | 3,466 | rtx4090* | 10 | 52% |
+| 14 | sn80 OpenRoboto | 63.4 | 103 | 382 | rtx4090* | 4 | 91% |
+| 15 | sn61 RedTeam | 61.5 | 58.11 | 176 | rtx4090* | 43 | 6% |
+| 16 | sn28 gm | 61 | 51.39 | 3,801 | rtx4090* | 19 | 41% |
+| 17 | sn51 lium.io | 58.7 | 32.04 | 2,736 | rtx4090* | 47 | 65% |
+| 18 | sn56 Gradients | 56.5 | 461 | 972 | rtx4090* | 7 | 70% |
+| 19 | sn85 Vidaio | 55.9 | 385 | 561 | rtx4090* | 10 | 20% |
+| 20 | sn74 Gittensor | 55.2 | 10.46 | 236 | rtx4090* | 16 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 21 |
-| concentrated (30–60%) | 25 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 25 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 

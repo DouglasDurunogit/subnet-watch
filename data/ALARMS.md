@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-08T11:53:18Z, block 8799445
+# ALARMS - generated 2026-08-08T13:08:58Z, block 8799823
 
-window: first_seen in [2026-08-08T10:38:45Z, 2026-08-08T11:53:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T11:54:33Z, 2026-08-08T13:09:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn100:release:v3.3.11: Site arena UID + sealed weight ` | 100 | RELEASE | P1 | 2026-08-08T13:09:33Z | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |
+
+### detail
+
+- **`sn100:release:v3.3.11: Site arena UID + sealed weight `** - sn100 released v3.3.11: Site arena UID + sealed weight enrichment
+  - published 2026-08-08T12:22:39Z (was v3.3.10: Prism similarity precheck + stuck-sweep fix)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -28,8 +35,6 @@ _none_
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn103:release:v2007` | 103 | RELEASE | 2026-08-01T12:13:22Z | sn103 released v2007 |
-| `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
 | `sn124:scoring_commit:2026-08-01T12:57:13Z` | 124 | SCORING_COMMIT | 2026-08-01T14:06:15Z | sn124 commit touches scoring: Fly next-epoch seeds for pre-evaluation and switch to 14-day epochs |
 | `sn111:scoring_commit:2026-08-01T16:22:29Z` | 111 | SCORING_COMMIT | 2026-08-01T16:29:18Z | sn111 commit touches scoring: Wire silver adjudication into validator scoring |
 | `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |

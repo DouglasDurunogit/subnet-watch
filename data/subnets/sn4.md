@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-08-08T03:59:11Z  |  block: 8797075  |  row_status: ok
+snapshot_utc: 2026-08-08T05:07:38Z  |  block: 8797417  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.056153496727347374**
-- registration cost: 0.0005 TAO (0.098255 USD), open=True
+- registration cost: 0.0005 TAO (0.09754 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 1025.8 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 9393.82039865186** (uid 7) <- the only figure quotable as achievable
-- median_miner_usd_day: 2467.2129265760786
-- top_miner_usd_day: 15097.756282294558 (uid 156, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 9303.325615385551** (uid 7) <- the only figure quotable as achievable
+- median_miner_usd_day: 2443.445184636454
+- top_miner_usd_day: 14952.312988236064 (uid 156, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-08T03:59:11Z  |  block: 8797075  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 5995.0271 USD/day  |  payback on registration: 0.0 days
+- net margin: 5937.1952 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 33.4 (rank 50), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
-- components: income 34.36 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 33.3 (rank 49), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
+- components: income 34.32 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

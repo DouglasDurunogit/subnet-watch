@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T23:11:51Z, block 8802838
+# ALARMS - generated 2026-08-08T23:54:17Z, block 8803050
 
-window: first_seen in [2026-08-08T21:57:25Z, 2026-08-08T23:12:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T22:39:48Z, 2026-08-08T23:54:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -29,7 +29,6 @@ _none_
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
-| `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |
 | `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
 | `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
 | `sn61:release:4.8.3` | 61 | RELEASE | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |

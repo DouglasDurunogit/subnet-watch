@@ -1,129 +1,129 @@
 netuid,name,required_vram_gb,gpu_class_required,gpu_class_basis,machine_class_cheapest,machine_vram_gb,machine_bandwidth_mbps,machine_cost_usd_day,competitive_miner_usd_day,net_margin_usd_day,payback_days,gate_status
-1,Apex,,unknown,no evidence,rtx4090,24,1000,8.2192,1699.23,667.461,0,OK
-2,DSperse,,unknown,no evidence,rtx4090,24,1000,8.2192,119.107,5.3114,0.02,OK
-3,deprecated,,unknown,no evidence,rtx4090,24,1000,8.2192,3022.97,3014.75,0,OK
-4,Targon,,unknown,no evidence,rtx4090,24,1000,8.2192,14963.2,9302.89,0,OK
-5,Hone,,unknown,no evidence,rtx4090,24,1000,8.2192,20.766,11.5638,1.37,OK
+1,Apex,,unknown,no evidence,rtx4090,24,1000,8.2192,1679.34,809.161,0,OK
+2,DSperse,,unknown,no evidence,rtx4090,24,1000,8.2192,121.64,5.5991,0.02,OK
+3,deprecated,,unknown,no evidence,rtx4090,24,1000,8.2192,3087.52,3079.3,0,OK
+4,Targon,,unknown,no evidence,rtx4090,24,1000,8.2192,15258.9,9486.89,0,OK
+5,Hone,,unknown,no evidence,rtx4090,24,1000,8.2192,21.1481,11.9278,1.8,OK
 6,Numinous,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,,,,BLOCKED:burn
-7,Allways,,unknown,no evidence,rtx4090,24,1000,8.2192,184.006,175.787,0.17,OK
-8,Vanta,,unknown,no evidence,rtx4090,24,1000,8.2192,3386.33,-7.4179,,OK
+7,Allways,,unknown,no evidence,rtx4090,24,1000,8.2192,187.918,179.699,0.17,OK
+8,Vanta,,unknown,no evidence,rtx4090,24,1000,8.2192,3459.29,-7.4006,,OK
 9,iota,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 10,Pareton,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-11,TrajectoryRL,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,4912.62,4911.63,0,OK
-12,Compute Horde,,unknown,no evidence,rtx4090,24,1000,8.2192,13.7522,0.4264,0.23,BLOCKED:burn
-13,Data Universe,,unknown,no evidence,rtx4090,24,1000,8.2192,7.13298,-3.011,,OK
+11,TrajectoryRL,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,5015.12,5014.14,0,OK
+12,Compute Horde,,unknown,no evidence,rtx4090,24,1000,8.2192,14.0456,0.6108,0.17,BLOCKED:burn
+13,Data Universe,,unknown,no evidence,rtx4090,24,1000,8.2192,7.27638,-2.9063,,OK
 14,Cacheon,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-15,ORO,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,20.2882,9.1578,4.55,OK
+15,ORO,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,20.7129,9.3701,4.79,OK
 16,TC,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 17,404—GEN,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-18,Zeus,,unknown,no evidence,rtx4090,24,1000,8.2192,1393.21,-3.4106,,OK
-19,blockmachine,,unknown,no evidence,rtx4090,24,1000,8.2192,218.674,-1.0594,,OK
+18,Zeus,,unknown,no evidence,rtx4090,24,1000,8.2192,1422.85,-3.3084,,OK
+19,blockmachine,,unknown,no evidence,rtx4090,24,1000,8.2192,223.328,-0.907,,OK
 20,ChronoSeek,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-21,AdTAO,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,23.1578,4.8032,4.14,OK
-22,Desearch,,unknown,no evidence,rtx4090,24,1000,8.2192,64.1614,0.7245,0.14,OK
+21,AdTAO,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,23.6502,4.9262,4.12,OK
+22,Desearch,,unknown,no evidence,rtx4090,24,1000,8.2192,65.5262,0.9148,0.11,OK
 23,Trishool,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,,,,BLOCKED:burn
 24,Quasar,640,multi-GPU,README keywords (GUESS),8xh100,640,10000,437.26,,,,BLOCKED:burn
 25,Mainframe,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-26,Perturb,8,24GB consumer,README stated VRAM (explicit),rtx3060,12,1000,2.9589,43.4137,21.7281,0.91,OK
+26,Perturb,8,24GB consumer,README stated VRAM (explicit),rtx3060,12,1000,2.9589,44.3263,22.247,0.91,OK
 27,Orion,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-28,gm,,unknown,no evidence,rtx4090,24,1000,8.2192,4349.67,57.2343,0.35,OK
+28,gm,,unknown,no evidence,rtx4090,24,1000,8.2192,4398.55,57.9698,0.35,OK
 29,hoτfloaτ,80,80GB datacentre,README keywords (GUESS),a100-80,80,2000,29.589,,,,OK
 30,Endure Network,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 31,rec4ll,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-32,ItsAI,,unknown,no evidence,rtx4090,24,1000,8.2192,11.5685,0.3334,9.24,OK
-33,ReadyAI,,unknown,no evidence,rtx4090,24,1000,8.2192,19.2489,5.8899,1.85,OK
-34,BitMind,80,80GB datacentre,min_compute.yml (curated),a100-80,80,2000,29.589,289.601,-18.7208,,OK
-35,OxMarkets,,unknown,no evidence,rtx4090,24,1000,8.2192,1155.17,782.244,0.03,OK
+32,ItsAI,,unknown,no evidence,rtx4090,24,1000,8.2192,11.7987,0.5184,5.08,OK
+33,ReadyAI,,unknown,no evidence,rtx4090,24,1000,8.2192,19.5918,6.1413,1.92,OK
+34,BitMind,80,80GB datacentre,min_compute.yml (curated),a100-80,80,2000,29.589,295.4,-18.5032,,OK
+35,OxMarkets,,unknown,no evidence,rtx4090,24,1000,8.2192,1179.76,799.065,0.03,OK
 36,Leoma,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 37,Aurelius,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-38,ChronoLLM,,unknown,no evidence,rtx4090,24,1000,8.2192,3502.4,207.798,0.71,OK
+38,ChronoLLM,,unknown,no evidence,rtx4090,24,1000,8.2192,3605.55,214.16,0.7,OK
 39,deprecated,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 40,Ralph,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-41,Almanac,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,46.1272,8.739,2.27,OK
+41,Almanac,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,47.1086,8.9459,2.27,OK
 42,Unknown,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-43,Graphite,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,21.3694,0.3613,55.01,OK
+43,Graphite,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,21.8242,0.39,52.05,OK
 44,Score,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-45,AlphaRidge.ai,,unknown,no evidence,rtx4090,24,1000,8.2192,16.7319,-4.1665,,OK
+45,AlphaRidge.ai,,unknown,no evidence,rtx4090,24,1000,8.2192,17.0885,-4.0802,,OK
 46,Instant,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 47,wait (reproduce paper),,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 48,Quantum Compute,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-49,Nepher Robotics,,unknown,no evidence,rtx4090,24,1000,8.2192,43.236,34.4887,0,OK
-50,Synth,,unknown,no evidence,rtx4090,24,1000,8.2192,34.1863,0.7364,215.9,OK
-51,lium.io,,unknown,no evidence,rtx4090,24,1000,8.2192,2805.7,31.9186,3.11,OK
+49,Nepher Robotics,,unknown,no evidence,rtx4090,24,1000,8.2192,43.8826,35.1274,0,OK
+50,Synth,,unknown,no evidence,rtx4090,24,1000,8.2192,34.9136,0.9269,175.19,OK
+51,lium.io,,unknown,no evidence,rtx4090,24,1000,8.2192,2867.03,32.796,3.66,OK
 52,Dojo,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-53,engy,24,24GB consumer,README keywords (GUESS),rtx4090,24,1000,8.2192,1974.86,78.6414,0,OK
-54,Yanez MIID,16,24GB consumer,min_compute.yml (curated),a4000,16,1000,5.0959,1021.27,-3.8952,,OK
-55,NIOME,,unknown,no evidence,rtx4090,24,1000,8.2192,338.674,118.76,0,OK
-56,Gradients,,unknown,no evidence,rtx4090,24,1000,8.2192,982.477,462.067,0,OK
+53,engy,24,24GB consumer,README keywords (GUESS),rtx4090,24,1000,8.2192,2037.04,81.3764,0,OK
+54,Yanez MIID,16,24GB consumer,min_compute.yml (curated),a4000,16,1000,5.0959,1045.4,-3.8669,,OK
+55,NIOME,,unknown,no evidence,rtx4090,24,1000,8.2192,345.878,121.462,0,OK
+56,Gradients,,unknown,no evidence,rtx4090,24,1000,8.2192,1003.62,472.189,0,OK
 57,gaia,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 58,greevils,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 59,Babelbit,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-60,Bitsec.ai,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,1216.07,1215.09,0,OK
-61,RedTeam,,unknown,no evidence,rtx4090,24,1000,8.2192,211.727,70.7551,0,OK
-62,Ridges,,unknown,no evidence,rtx4090,24,1000,8.2192,2010.24,553.412,0,OK
-63,Enigma,,unknown,no evidence,rtx4090,24,1000,8.2192,0.0752723,-8.1439,,OK
-64,Chutes,80,80GB datacentre,README keywords (GUESS),a100-80,80,2000,29.589,4681.49,1601.12,0,OK
+60,Bitsec.ai,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,1249.63,1248.65,0,OK
+61,RedTeam,,unknown,no evidence,rtx4090,24,1000,8.2192,220.899,74.1767,0,OK
+62,Ridges,,unknown,no evidence,rtx4090,24,1000,8.2192,2052.74,565.284,0,OK
+63,Enigma,,unknown,no evidence,rtx4090,24,1000,8.2192,0.0768348,-8.1423,,OK
+64,Chutes,80,80GB datacentre,README keywords (GUESS),a100-80,80,2000,29.589,4772.02,1632.65,0,OK
 65,TAO Private Network,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 66,conjectures,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-67,Harnyx,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,858.394,15.1752,0.59,OK
-68,NOVA,,unknown,no evidence,rtx4090,24,1000,8.2192,8188.51,8180.29,0,OK
+67,Harnyx,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,876.47,15.5155,0.62,OK
+68,NOVA,,unknown,no evidence,rtx4090,24,1000,8.2192,8365.2,8356.98,0,OK
 69,Herald,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-70,NexisGen,,unknown,no evidence,rtx4090,24,1000,8.2192,445.554,103.146,1.73,OK
+70,NexisGen,,unknown,no evidence,rtx4090,24,1000,8.2192,453.987,105.254,1.74,OK
 71,Leadpoet,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 72,StreetVision by NATIX,4,24GB consumer,min_compute.yml (curated),rtx3060,12,1000,2.9589,,,,BLOCKED:burn
 73,Parked,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-74,Gittensor,,unknown,no evidence,rtx4090,24,1000,8.2192,243.692,10.7611,2.77,OK
-75,Hippius,,unknown,no evidence,rtx4090,24,1000,8.2192,5.29735,-4.66,,OK
-76,Phylax,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,198.191,65.4234,0,OK
-77,Liquidity,,unknown,no evidence,rtx4090,24,1000,8.2192,714.634,107.513,0,OK
+74,Gittensor,,unknown,no evidence,rtx4090,24,1000,8.2192,248.856,11.1633,2.73,OK
+75,Hippius,,unknown,no evidence,rtx4090,24,1000,8.2192,5.47092,-4.5434,,OK
+76,Phylax,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,202.409,66.8366,0,OK
+77,Liquidity,,unknown,no evidence,rtx4090,24,1000,8.2192,729.83,109.974,0,OK
 78,Vocence,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-79,MVTRX,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,430.961,5.4737,5.92,OK
-80,OpenRoboto,,unknown,no evidence,rtx4090,24,1000,8.2192,405.899,107.657,0,OK
-81,deprecated,,unknown,no evidence,rtx4090,24,1000,8.2192,482.09,25.6605,0,OK
+79,MVTRX,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,439.5,5.7742,4.8,OK
+80,OpenRoboto,,unknown,no evidence,rtx4090,24,1000,8.2192,412.415,109.518,0,OK
+81,deprecated,,unknown,no evidence,rtx4090,24,1000,8.2192,492.364,26.3825,0,OK
 82,Compelle,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-83,CliqueAI,,unknown,no evidence,rtx4090,24,1000,8.2192,40.8824,21.5394,1.09,OK
-84,ansuz,,unknown,no evidence,rtx4090,24,1000,8.2192,497.429,-8.1507,,OK
-85,Vidaio,,unknown,no evidence,rtx4090,24,1000,8.2192,535.592,527.373,0,OK
+83,CliqueAI,,unknown,no evidence,rtx4090,24,1000,8.2192,41.7442,22.1667,1.29,OK
+84,ansuz,,unknown,no evidence,rtx4090,24,1000,8.2192,507.92,-8.1492,,OK
+85,Vidaio,,unknown,no evidence,rtx4090,24,1000,8.2192,545.079,536.86,0,OK
 86,kaunan,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 87,Provenonce,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-88,Investing,,unknown,no evidence,rtx4090,24,1000,8.2192,381.138,-6.1869,,OK
-89,InfiniteQuant,,unknown,no evidence,rtx4090,24,1000,8.2192,128.281,-8.1861,,OK
-90,KubeTEE AI Factory,141,multi-GPU,README keywords (GUESS),h200-141,141,5000,78.9041,2233.15,2154.25,0,OK
-91,cascade,,unknown,no evidence,rtx4090,24,1000,8.2192,2705.44,787.565,0.03,OK
+88,Investing,,unknown,no evidence,rtx4090,24,1000,8.2192,392.723,-6.1251,,OK
+89,InfiniteQuant,,unknown,no evidence,rtx4090,24,1000,8.2192,131.006,-8.1854,,OK
+90,KubeTEE AI Factory,141,multi-GPU,README keywords (GUESS),h200-141,141,5000,78.9041,2290.21,2211.31,0,OK
+91,cascade,,unknown,no evidence,rtx4090,24,1000,8.2192,2763.63,804.681,0.03,OK
 92,Enclave,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-93,Bitcast,,unknown,no evidence,rtx4090,24,1000,8.2192,769.471,20.5977,0.05,OK
+93,Bitcast,,unknown,no evidence,rtx4090,24,1000,8.2192,786.084,21.2199,0.05,OK
 94,pending...,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 95,Actual,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-96,Verathos,24,24GB consumer,min_compute.yml (curated),rtx4090,24,1000,8.2192,182.124,24.431,0.81,OK
-97,Albedo,,unknown,no evidence,rtx4090,24,1000,8.2192,2975.64,2967.42,0.04,OK
-98,NeverPlayAlone,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,1746.45,1745.47,0.01,OK
-99,Thirty Spokes,,unknown,no evidence,rtx4090,24,1000,8.2192,664.213,647.243,0,OK
-100,BASE,,unknown,no evidence,rtx4090,24,1000,8.2192,1578.24,780.875,0,OK
-101,Tag101,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,1.55622,0.1493,1.9,OK
-102,ConnitoAI,,unknown,no evidence,rtx4090,24,1000,8.2192,1376.65,530.527,0,OK
+96,Verathos,24,24GB consumer,min_compute.yml (curated),rtx4090,24,1000,8.2192,185.788,25.0879,0.81,OK
+97,Albedo,,unknown,no evidence,rtx4090,24,1000,8.2192,3039.15,3030.93,0.04,OK
+98,NeverPlayAlone,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,1783.55,1782.57,0.01,OK
+99,Thirty Spokes,,unknown,no evidence,rtx4090,24,1000,8.2192,678.383,661.226,0,OK
+100,BASE,,unknown,no evidence,rtx4090,24,1000,8.2192,1629.33,806.422,0,OK
+101,Tag101,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,1.58908,0.1733,1.77,OK
+102,ConnitoAI,,unknown,no evidence,rtx4090,24,1000,8.2192,1405.5,541.818,0,OK
 103,ayp,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-104,Masx.ai,,unknown,no evidence,rtx4090,24,1000,8.2192,8.5454,-1.7706,,OK
-105,Beam,,unknown,no evidence,rtx4090,24,1000,8.2192,201.125,-3.9465,,OK
-106,Nodexo,,unknown,no evidence,rtx4090,24,1000,8.2192,247.008,37.3709,0,OK
-107,Minos,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,34538.6,116.893,1.68,OK
+104,Masx.ai,,unknown,no evidence,rtx4090,24,1000,8.2192,8.72684,-1.6336,,OK
+105,Beam,,unknown,no evidence,rtx4090,24,1000,8.2192,206.786,-3.8262,,OK
+106,Nodexo,,unknown,no evidence,rtx4090,24,1000,8.2192,251.889,38.2719,0,OK
+107,Minos,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,34947.6,118.289,1.7,OK
 108,TalkHead,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 109,Finsight,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 110,Green Compute,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 111,Claims,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-112,minotaur,,unknown,no evidence,rtx4090,24,1000,8.2192,302.176,293.957,0.67,OK
+112,minotaur,,unknown,no evidence,rtx4090,24,1000,8.2192,308.587,300.368,0.67,OK
 113,TensorUSD,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-114,SOMA,,unknown,no evidence,rtx4090,24,1000,8.2192,1767.43,1228.97,0.01,OK
+114,SOMA,,unknown,no evidence,rtx4090,24,1000,8.2192,1804.95,1255.24,0.01,OK
 115,HashiChain,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 116,Memo,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 117,glyph,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-118,Ditto,,unknown,no evidence,rtx4090,24,1000,8.2192,711.448,423.737,0,OK
+118,Ditto,,unknown,no evidence,rtx4090,24,1000,8.2192,727.01,433.185,0,OK
 119,Satori,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-120,Affine,,unknown,no evidence,rtx4090,24,1000,8.2192,6931.01,6922.79,0.04,OK
-121,sundae_bar,,unknown,no evidence,rtx4090,24,1000,8.2192,1037.88,1029.66,0,OK
+120,Affine,,unknown,no evidence,rtx4090,24,1000,8.2192,7108.66,7100.45,0.03,OK
+121,sundae_bar,,unknown,no evidence,rtx4090,24,1000,8.2192,1060.03,1051.81,0,OK
 122,CookingTAO,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-123,MANTIS,,unknown,no evidence,rtx4090,24,1000,8.2192,72.3172,-6.2915,,OK
-124,Swarm,,unknown,no evidence,rtx4090,24,1000,8.2192,650.893,210.981,0.47,OK
+123,MANTIS,,unknown,no evidence,rtx4090,24,1000,8.2192,73.8552,-6.2505,,OK
+124,Swarm,,unknown,no evidence,rtx4090,24,1000,8.2192,673.664,218.65,0.46,OK
 125,8 Ball,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 126,Poker44,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-127,Astrid,,unknown,no evidence,rtx4090,24,1000,8.2192,47.8168,39.5976,0,OK
+127,Astrid,,unknown,no evidence,rtx4090,24,1000,8.2192,49.1225,40.9033,0,OK
 128,ByteLeap,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK

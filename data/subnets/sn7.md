@@ -1,24 +1,24 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-08T19:53:02Z  |  block: 8801844  |  row_status: ok
+snapshot_utc: 2026-08-08T20:44:40Z  |  block: 8802102  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9053793589118868**
-- registration cost: 0.15 TAO (29.7315 USD), open=True
+- miner_burn: **0.9053793493658304**
+- registration cost: 0.15 TAO (29.7495 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 857.5 days  |  registered at block 2627691
+- subnet age: 857.6 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 183.50662956780414** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 969.832537265845
-- top_miner_usd_day: 1756.1584449638854 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 183.6016095462218** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 970.3345064517819
+- top_miner_usd_day: 1757.067403357342 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 2  |  gini: 0.4053926206244085  |  top1_share: 0.9053926206244086  |  top10_share: 1.0
+- earners: 2  |  gini: 0.40539262062440895  |  top1_share: 0.9053926206244087  |  top10_share: 1.0
 - owner_incentive_share: 0.9053926206244087 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-08T19:53:02Z  |  block: 8801844  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 175.2875 USD/day  |  payback on registration: 0.17 days
+- net margin: 175.3824 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 

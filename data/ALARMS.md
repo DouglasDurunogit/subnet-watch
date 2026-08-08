@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T19:53:02Z, block 8801844
+# ALARMS - generated 2026-08-08T20:44:40Z, block 8802102
 
-window: first_seen in [2026-08-08T18:38:36Z, 2026-08-08T19:53:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T19:30:04Z, 2026-08-08T20:45:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn55:burn_drop:0.021` | 55 | BURN_DROP | P0 | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn71:scoring_commit:2026-08-08T19:19:55Z` | 71 | SCORING_COMMIT | P1 | 2026-08-08T19:53:36Z | sn71 commit touches scoring: Fix evaluator test import isolation |
 | `sn100:release:v3.3.12` | 100 | RELEASE | P1 | 2026-08-08T19:53:36Z | sn100 released v3.3.12 |
 | `sn100:scoring_commit:2026-08-08T19:36:07Z` | 100 | SCORING_COMMIT | P1 | 2026-08-08T19:53:36Z | sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap |
+| `sn71:scoring_commit:2026-08-08T20:21:46Z` | 71 | SCORING_COMMIT | P1 | 2026-08-08T20:45:04Z | sn71 commit touches scoring: Retry signed transient company scoring failures |
+| `sn100:release:v3.3.13 — design screenshot egress proxy` | 100 | RELEASE | P1 | 2026-08-08T20:45:04Z | sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth |
 
 ### detail
 
+- **`sn55:burn_drop:0.021`** - sn55 burn fell 1.000 -> 0.021 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-08T19:19:55Z`** - sn71 commit touches scoring: Fix evaluator test import isolation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.12`** - sn100 released v3.3.12
   - published 2026-08-08T19:37:43Z (was v3.3.11: Site arena UID + sealed weight enrichment)
 - **`sn100:scoring_commit:2026-08-08T19:36:07Z`** - sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-08T20:21:46Z`** - sn71 commit touches scoring: Retry signed transient company scoring failures
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.13 — design screenshot egress proxy`** - sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth
+  - published 2026-08-08T20:03:52Z (was v3.3.12)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,7 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
-| `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 | `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
 | `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |
 | `sn71:scoring_commit:2026-08-01T21:02:08Z` | 71 | SCORING_COMMIT | 2026-08-01T23:28:58Z | sn71 commit touches scoring: Protect validator settlement constants |

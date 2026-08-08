@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T08:58:31Z, block 8798571
+# ALARMS - generated 2026-08-08T09:50:41Z, block 8798832
 
-window: first_seen in [2026-08-08T07:43:55Z, 2026-08-08T08:58:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T08:36:08Z, 2026-08-08T09:51:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | P1 | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
+| `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | P1 | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
 
 ### detail
 
-- **`sn100:release:v3.3.10: Prism similarity precheck + stu`** - sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix
-  - published 2026-08-08T07:18:26Z (was v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest)
+- **`sn38:scoring_commit:2026-08-08T09:07:32Z`** - sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,11 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn61:release:4.8.2` | 61 | RELEASE | 2026-08-01T09:32:34Z | sn61 released 4.8.2 |
-| `sn61:scoring_commit:2026-08-01T09:26:58Z` | 61 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn61 commit touches scoring: fix: set default value for user_id in _compare_same_score_outputs meth |
-| `sn67:scoring_commit:2026-08-01T08:06:19Z` | 67 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0 |
-| `sn71:scoring_commit:2026-08-01T07:04:04Z` | 71 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn71 commit touches scoring: Validate concurrent restart state continuity |
-| `sn126:scoring_commit:2026-08-01T08:32:23Z` | 126 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn126 commit touches scoring: docs: introduce Poker44 evaluation network |
 | `sn71:scoring_commit:2026-08-01T08:57:49Z` | 71 | SCORING_COMMIT | 2026-08-01T11:07:26Z | sn71 commit touches scoring: Bind v8 artifact verification into protected manifest |
 | `sn103:release:v2007` | 103 | RELEASE | 2026-08-01T12:13:22Z | sn103 released v2007 |
 | `sn103:scoring_commit:2026-08-01T11:36:54Z` | 103 | SCORING_COMMIT | 2026-08-01T12:13:22Z | sn103 commit touches scoring: validator: release v2007 |
@@ -196,6 +191,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
 | `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
 | `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
+| `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

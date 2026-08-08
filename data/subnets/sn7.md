@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-08T08:58:31Z  |  block: 8798571  |  row_status: ok
+snapshot_utc: 2026-08-08T09:50:41Z  |  block: 8798832  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.9053788115270436**
-- registration cost: 0.15 TAO (29.493 USD), open=True
+- registration cost: 0.15 TAO (29.4225 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 857.1 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 182.42318692554326** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 964.1065429014964
-- top_miner_usd_day: 1745.7898988774496 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 181.98712295516893** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 961.8019448180679
+- top_miner_usd_day: 1741.616766680967 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-08T08:58:31Z  |  block: 8798571  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 174.204 USD/day  |  payback on registration: 0.17 days
+- net margin: 173.7679 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 
 - gate: **OK** 
 - score: 37.6 (rank 42), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 20.41 / freshness 21.0 / resource 11.25 / registration 9.94
+- components: income 20.4 / freshness 21.0 / resource 11.25 / registration 9.94
 - freshness basis: RELEASE 10d ago
 
 ## On-chain description

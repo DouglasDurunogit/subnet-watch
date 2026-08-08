@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-08-08T16:12:15Z  |  block: 8800740  |  row_status: ok
+snapshot_utc: 2026-08-08T17:02:06Z  |  block: 8800989  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.00417999 TAO (0.8273454207 USD), open=True
+- registration cost: 0.002587893 TAO (0.51248045079 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
 - subnet age: 643.8 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3009.135416003329** (uid 43) <- the only figure quotable as achievable
-- median_miner_usd_day: 3009.135416003329
-- top_miner_usd_day: 3009.135416003329 (uid 43, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3010.9592136857304** (uid 43) <- the only figure quotable as achievable
+- median_miner_usd_day: 3010.9592136857304
+- top_miner_usd_day: 3010.9592136857304 (uid 43, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-08T16:12:15Z  |  block: 8800740  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3000.9162 USD/day  |  payback on registration: 0.0 days
+- net margin: 3002.74 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 31.7 (rank 50), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- score: 31.7 (rank 51), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
 - components: income 31.63 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 

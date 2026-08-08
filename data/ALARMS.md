@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-08T16:12:15Z, block 8800740
+# ALARMS - generated 2026-08-08T17:02:06Z, block 8800989
 
-window: first_seen in [2026-08-08T14:57:41Z, 2026-08-08T16:12:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T15:47:38Z, 2026-08-08T17:02:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn93:burn_drop:0.592` | 93 | BURN_DROP | P0 | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
-
-### detail
-
-- **`sn93:burn_drop:0.592`** - sn93 burn fell 0.993 -> 0.592 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +28,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn111:scoring_commit:2026-08-01T16:22:29Z` | 111 | SCORING_COMMIT | 2026-08-01T16:29:18Z | sn111 commit touches scoring: Wire silver adjudication into validator scoring |
+| `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn71:scoring_commit:2026-08-01T18:51:00Z` | 71 | SCORING_COMMIT | 2026-08-01T20:01:00Z | sn71 commit touches scoring: Refresh validator ancestry workflow manifest |
 | `sn71:scoring_commit:2026-08-01T20:24:52Z` | 71 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn71 commit touches scoring: Fix baseline replay and compact weight validation |
 | `sn111:scoring_commit:2026-08-01T20:30:47Z` | 111 | SCORING_COMMIT | 2026-08-01T21:07:37Z | sn111 commit touches scoring: Wire production Silver run metadata into validator |

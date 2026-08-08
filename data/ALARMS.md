@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T07:11:40Z, block 8798037
+# ALARMS - generated 2026-08-08T08:06:23Z, block 8798311
 
-window: first_seen in [2026-08-08T05:57:03Z, 2026-08-08T07:12:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T06:51:47Z, 2026-08-08T08:06:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,17 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | P1 | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
+| `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | P1 | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
 
 ### detail
 
 - **`sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10`** - sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest
   - published 2026-08-08T07:07:05Z (was v3.3.8 — Design one-prompt / one-attempt / admin reject)
+- **`sn100:release:v3.3.10: Prism similarity precheck + stu`** - sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix
+  - published 2026-08-08T07:18:26Z (was v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn102:burn_drop:0.254` | 102 | BURN_DROP | 2026-08-01T07:17:44Z | sn102 burn fell 1.000 -> 0.254 - miners can earn again |
 | `sn99:burn_drop:0.000` | 99 | BURN_DROP | 2026-08-01T17:45:57Z | sn99 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn16:burn_drop:0.000` | 16 | BURN_DROP | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn98:burn_drop:0.000` | 98 | BURN_DROP | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -36,7 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn76:scoring_commit:2026-08-01T05:18:26Z` | 76 | SCORING_COMMIT | 2026-08-01T07:17:44Z | sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it |
 | `sn61:release:4.8.2` | 61 | RELEASE | 2026-08-01T09:32:34Z | sn61 released 4.8.2 |
 | `sn61:scoring_commit:2026-08-01T09:26:58Z` | 61 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn61 commit touches scoring: fix: set default value for user_id in _compare_same_score_outputs meth |
 | `sn67:scoring_commit:2026-08-01T08:06:19Z` | 67 | SCORING_COMMIT | 2026-08-01T09:32:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260801.post0 |

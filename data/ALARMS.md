@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-08T18:14:35Z, block 8801352
+# ALARMS - generated 2026-08-08T19:07:28Z, block 8801616
 
-window: first_seen in [2026-08-08T17:00:05Z, 2026-08-08T18:15:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T17:52:54Z, 2026-08-08T19:07:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn96:release:v0.1.29 - Gleipnir Validator Reliability` | 96 | RELEASE | P1 | 2026-08-08T17:43:08Z | sn96 released v0.1.29 - Gleipnir Validator Reliability |
-| `sn96:scoring_commit:2026-08-08T15:09:26Z` | 96 | SCORING_COMMIT | P1 | 2026-08-08T17:43:08Z | sn96 commit touches scoring: fix: isolate validator epoch control work |
-
-### detail
-
-- **`sn96:release:v0.1.29 - Gleipnir Validator Reliability`** - sn96 released v0.1.29 - Gleipnir Validator Reliability
-  - published 2026-08-08T17:25:37Z (was v0.1.28 - Gleipnir Proof Runtime Hardening)
-- **`sn96:scoring_commit:2026-08-08T15:09:26Z`** - sn96 commit touches scoring: fix: isolate validator epoch control work
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -194,6 +184,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.11: Site arena UID + sealed weight ` | 100 | RELEASE | 2026-08-08T13:09:33Z | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |
 | `sn10:scoring_commit:2026-08-08T14:46:10Z` | 10 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62 |
 | `sn21:scoring_commit:2026-08-08T14:21:46Z` | 21 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn21 commit touches scoring: docs: separate weekly-era scoring from the daily stream, and require … |
+| `sn96:release:v0.1.29 - Gleipnir Validator Reliability` | 96 | RELEASE | 2026-08-08T17:43:08Z | sn96 released v0.1.29 - Gleipnir Validator Reliability |
+| `sn96:scoring_commit:2026-08-08T15:09:26Z` | 96 | SCORING_COMMIT | 2026-08-08T17:43:08Z | sn96 commit touches scoring: fix: isolate validator epoch control work |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

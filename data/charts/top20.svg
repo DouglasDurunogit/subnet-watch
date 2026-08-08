@@ -34,7 +34,7 @@
 <text class="ink2 t-lab" x="158" y="88" text-anchor="end">1. sn11 TrajectoryRL</text>
 <path class="accent" d="M168.0,74.0 H606.0 a4.0,4.0 0 0 1 4.0,4.0 V90.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="618.0" y="88">80</text>
-<text class="muted t-tick" x="740" y="88" text-anchor="end">$4,980/day</text>
+<text class="muted t-tick" x="740" y="88" text-anchor="end">$4,955/day</text>
 <text class="ink2 t-lab" x="158" y="115" text-anchor="end">2. sn107 Minos</text>
 <path class="accent" d="M168.0,101.0 H598.8 a4.0,4.0 0 0 1 4.0,4.0 V117.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="610.8" y="115">78</text>
@@ -42,23 +42,23 @@
 <text class="ink2 t-lab" x="158" y="142" text-anchor="end">3. sn76 Phylax</text>
 <path class="accent" d="M168.0,128.0 H587.7 a4.0,4.0 0 0 1 4.0,4.0 V144.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="599.7" y="142">76</text>
-<text class="muted t-tick" x="740" y="142" text-anchor="end">$62/day</text>
+<text class="muted t-tick" x="740" y="142" text-anchor="end">$61/day</text>
 <text class="ink2 t-lab" x="158" y="169" text-anchor="end">4. sn67 Harnyx</text>
-<path class="accent" d="M168.0,155.0 H559.9 a4.0,4.0 0 0 1 4.0,4.0 V171.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="571.9" y="169">71</text>
+<path class="accent" d="M168.0,155.0 H559.4 a4.0,4.0 0 0 1 4.0,4.0 V171.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="571.4" y="169">71</text>
 <text class="muted t-tick" x="740" y="169" text-anchor="end">$17/day</text>
 <text class="ink2 t-lab" x="158" y="196" text-anchor="end">5. sn91 cascade</text>
 <path class="accent" d="M168.0,182.0 H553.8 a4.0,4.0 0 0 1 4.0,4.0 V198.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="565.8" y="196">70</text>
-<text class="muted t-tick" x="740" y="196" text-anchor="end">$783/day</text>
+<text class="muted t-tick" x="740" y="196" text-anchor="end">$780/day</text>
 <text class="ink2 t-lab" x="158" y="223" text-anchor="end">6. sn1 Apex</text>
-<path class="accent" d="M168.0,209.0 H550.5 a4.0,4.0 0 0 1 4.0,4.0 V225.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="562.5" y="223">70</text>
-<text class="muted t-tick" x="740" y="223" text-anchor="end">$649/day</text>
+<path class="accent" d="M168.0,209.0 H549.9 a4.0,4.0 0 0 1 4.0,4.0 V225.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="561.9" y="223">70</text>
+<text class="muted t-tick" x="740" y="223" text-anchor="end">$645/day</text>
 <text class="ink2 t-lab" x="158" y="250" text-anchor="end">7. sn62 Ridges</text>
-<path class="accent" d="M168.0,236.0 H547.7 a4.0,4.0 0 0 1 4.0,4.0 V252.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="559.7" y="250">69</text>
-<text class="muted t-tick" x="740" y="250" text-anchor="end">$558/day</text>
+<path class="accent" d="M168.0,236.0 H547.1 a4.0,4.0 0 0 1 4.0,4.0 V252.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="559.1" y="250">69</text>
+<text class="muted t-tick" x="740" y="250" text-anchor="end">$555/day</text>
 <text class="ink2 t-lab" x="158" y="277" text-anchor="end">8. sn26 Perturb</text>
 <path class="accent" d="M168.0,263.0 H543.3 a4.0,4.0 0 0 1 4.0,4.0 V279.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="555.3" y="277">68</text>
@@ -72,29 +72,29 @@
 <text class="ink t-val" x="554.1" y="331">68</text>
 <text class="muted t-tick" x="740" y="331" text-anchor="end">$21/day</text>
 <text class="ink2 t-lab" x="158" y="358" text-anchor="end">11. sn15 ORO</text>
-<path class="accent" d="M168.0,344.0 H538.3 a4.0,4.0 0 0 1 4.0,4.0 V360.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="550.3" y="358">67</text>
+<path class="accent" d="M168.0,344.0 H536.6 a4.0,4.0 0 0 1 4.0,4.0 V360.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="548.6" y="358">67</text>
 <text class="muted t-tick" x="740" y="358" text-anchor="end">$9/day</text>
-<text class="ink2 t-lab" x="158" y="385" text-anchor="end">12. sn21 AdTAO</text>
-<path class="accent" d="M168.0,371.0 H528.3 a4.0,4.0 0 0 1 4.0,4.0 V387.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="540.3" y="385">66</text>
-<text class="muted t-tick" x="740" y="385" text-anchor="end">$5/day</text>
-<text class="ink2 t-lab" x="158" y="412" text-anchor="end">13. sn38 ChronoLLM</text>
+<text class="ink2 t-lab" x="158" y="385" text-anchor="end">12. sn38 ChronoLLM</text>
+<path class="accent" d="M168.0,371.0 H527.7 a4.0,4.0 0 0 1 4.0,4.0 V387.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="539.7" y="385">66</text>
+<text class="muted t-tick" x="740" y="385" text-anchor="end">$205/day</text>
+<text class="ink2 t-lab" x="158" y="412" text-anchor="end">13. sn21 AdTAO</text>
 <path class="accent" d="M168.0,398.0 H527.7 a4.0,4.0 0 0 1 4.0,4.0 V414.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="539.7" y="412">66</text>
-<text class="muted t-tick" x="740" y="412" text-anchor="end">$206/day</text>
+<text class="muted t-tick" x="740" y="412" text-anchor="end">$5/day</text>
 <text class="ink2 t-lab" x="158" y="439" text-anchor="end">14. sn80 OpenRoboto</text>
-<path class="accent" d="M168.0,425.0 H516.0 a4.0,4.0 0 0 1 4.0,4.0 V441.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="528.0" y="439">63</text>
-<text class="muted t-tick" x="740" y="439" text-anchor="end">$103/day</text>
+<path class="accent" d="M168.0,425.0 H515.5 a4.0,4.0 0 0 1 4.0,4.0 V441.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="527.5" y="439">63</text>
+<text class="muted t-tick" x="740" y="439" text-anchor="end">$101/day</text>
 <text class="ink2 t-lab" x="158" y="466" text-anchor="end">15. sn61 RedTeam</text>
 <path class="accent" d="M168.0,452.0 H505.5 a4.0,4.0 0 0 1 4.0,4.0 V468.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="517.5" y="466">62</text>
 <text class="muted t-tick" x="740" y="466" text-anchor="end">$58/day</text>
 <text class="ink2 t-lab" x="158" y="493" text-anchor="end">16. sn28 gm</text>
-<path class="accent" d="M168.0,479.0 H502.7 a4.0,4.0 0 0 1 4.0,4.0 V495.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="514.7" y="493">61</text>
-<text class="muted t-tick" x="740" y="493" text-anchor="end">$51/day</text>
+<path class="accent" d="M168.0,479.0 H498.3 a4.0,4.0 0 0 1 4.0,4.0 V495.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="510.3" y="493">60</text>
+<text class="muted t-tick" x="740" y="493" text-anchor="end">$40/day</text>
 <text class="ink2 t-lab" x="158" y="520" text-anchor="end">17. sn51 lium.io</text>
 <path class="accent" d="M168.0,506.0 H489.9 a4.0,4.0 0 0 1 4.0,4.0 V522.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="501.9" y="520">59</text>
@@ -102,11 +102,11 @@
 <text class="ink2 t-lab" x="158" y="547" text-anchor="end">18. sn56 Gradients</text>
 <path class="accent" d="M168.0,533.0 H477.7 a4.0,4.0 0 0 1 4.0,4.0 V549.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="489.7" y="547">56</text>
-<text class="muted t-tick" x="740" y="547" text-anchor="end">$461/day</text>
+<text class="muted t-tick" x="740" y="547" text-anchor="end">$460/day</text>
 <text class="ink2 t-lab" x="158" y="574" text-anchor="end">19. sn85 Vidaio</text>
 <path class="accent" d="M168.0,560.0 H474.4 a4.0,4.0 0 0 1 4.0,4.0 V576.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="486.4" y="574">56</text>
-<text class="muted t-tick" x="740" y="574" text-anchor="end">$385/day</text>
+<text class="muted t-tick" x="740" y="574" text-anchor="end">$382/day</text>
 <text class="ink2 t-lab" x="158" y="601" text-anchor="end">20. sn74 Gittensor</text>
 <path class="accent" d="M168.0,587.0 H470.5 a4.0,4.0 0 0 1 4.0,4.0 V603.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="482.5" y="601">55</text>

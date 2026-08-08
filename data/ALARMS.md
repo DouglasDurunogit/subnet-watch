@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-08T17:02:06Z, block 8800989
+# ALARMS - generated 2026-08-08T17:42:31Z, block 8801191
 
-window: first_seen in [2026-08-08T15:47:38Z, 2026-08-08T17:02:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T16:28:08Z, 2026-08-08T17:43:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn96:release:v0.1.29 - Gleipnir Validator Reliability` | 96 | RELEASE | P1 | 2026-08-08T17:43:08Z | sn96 released v0.1.29 - Gleipnir Validator Reliability |
+| `sn96:scoring_commit:2026-08-08T15:09:26Z` | 96 | SCORING_COMMIT | P1 | 2026-08-08T17:43:08Z | sn96 commit touches scoring: fix: isolate validator epoch control work |
+
+### detail
+
+- **`sn96:release:v0.1.29 - Gleipnir Validator Reliability`** - sn96 released v0.1.29 - Gleipnir Validator Reliability
+  - published 2026-08-08T17:25:37Z (was v0.1.28 - Gleipnir Proof Runtime Hardening)
+- **`sn96:scoring_commit:2026-08-08T15:09:26Z`** - sn96 commit touches scoring: fix: isolate validator epoch control work
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

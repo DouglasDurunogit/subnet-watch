@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T14:48:00Z, block 8800319
+# ALARMS - generated 2026-08-08T15:41:44Z, block 8800587
 
-window: first_seen in [2026-08-08T13:33:26Z, 2026-08-08T14:48:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T14:27:11Z, 2026-08-08T15:42:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn93:burn_drop:0.592` | 93 | BURN_DROP | P0 | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn10:scoring_commit:2026-08-08T14:46:10Z` | 10 | SCORING_COMMIT | P1 | 2026-08-08T14:48:26Z | sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62 |
 | `sn21:scoring_commit:2026-08-08T14:21:46Z` | 21 | SCORING_COMMIT | P1 | 2026-08-08T14:48:26Z | sn21 commit touches scoring: docs: separate weekly-era scoring from the daily stream, and require … |
 
 ### detail
 
+- **`sn93:burn_drop:0.592`** - sn93 burn fell 0.993 -> 0.592 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn10:scoring_commit:2026-08-08T14:46:10Z`** - sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:scoring_commit:2026-08-08T14:21:46Z`** - sn21 commit touches scoring: docs: separate weekly-era scoring from the daily stream, and require …

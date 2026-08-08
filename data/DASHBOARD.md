@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-08T09:50:41Z · block 8798832 · run_status **ok**_
+_snapshot 2026-08-08T10:47:13Z · block 8799115 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -32,8 +32,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 54 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 9 | `█████` |
-| 0.6–0.8 | 9 | `█████` |
+| 0.4–0.6 | 10 | `█████` |
+| 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 9 | `█████` |
 | ≥0.99 dead | 37 | `███████████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 79.1 | 140 | 33,850 | cpu-small | 20 | 89% |
-| 2 | sn76 Phylax | 76.2 | 59.96 | 186 | cpu-small | 10 | 31% |
-| 3 | sn67 Harnyx | 71.2 | 16.98 | 739 | cpu-small | 140 | 19% |
-| 4 | sn91 cascade | 70.1 | 773 | 2,646 | rtx4090* | 5 | 48% |
-| 5 | sn1 Apex | 69.7 | 671 | 1,549 | rtx4090* | 4 | 43% |
-| 6 | sn62 Ridges | 69.1 | 563 | 2,035 | rtx4090* | 7 | 35% |
-| 7 | sn26 Perturb | 68.3 | 21.55 | 40.29 | rtx3060 | 11 | 50% |
-| 8 | sn41 Almanac | 68.2 | 8.72 | 26.83 | cpu-small | 69 | 76% |
-| 9 | sn96 Verathos | 68 | 20.46 | 252 | rtx4090 | 70 | 42% |
-| 10 | sn15 ORO | 67.4 | 9.01 | 10,619 | cpu-small | 68 | 94% |
-| 11 | sn100 BASE | 67.1 | 315 | 1,933 | rtx4090* | 5 | 60% |
-| 12 | sn124 Swarm | 65.7 | 215 | 528 | rtx4090* | 23 | 9% |
-| 13 | sn38 ChronoLLM | 65.7 | 214 | 3,597 | rtx4090* | 10 | 52% |
-| 14 | sn21 AdTAO | 65.6 | 4.83 | 22.27 | cpu-small | 142 | 45% |
-| 15 | sn80 OpenRoboto | 63.5 | 105 | 390 | rtx4090* | 4 | 91% |
-| 16 | sn28 gm | 62.1 | 71.05 | 2,218 | rtx4090* | 19 | 25% |
-| 17 | sn61 RedTeam | 62.1 | 69.34 | 189 | rtx4090* | 36 | 6% |
-| 18 | sn51 lium.io | 57.8 | 26.08 | 2,829 | rtx4090* | 46 | 66% |
-| 19 | sn102 ConnitoAI | 57.3 | 577 | 1,429 | rtx4090* | 7 | 27% |
-| 20 | sn56 Gradients | 56.5 | 456 | 962 | rtx4090* | 7 | 70% |
+| 1 | sn107 Minos | 79 | 140 | 33,891 | cpu-small | 20 | 89% |
+| 2 | sn76 Phylax | 76.2 | 60.09 | 186 | cpu-small | 10 | 31% |
+| 3 | sn67 Harnyx | 71.2 | 17.02 | 740 | cpu-small | 140 | 19% |
+| 4 | sn91 cascade | 70.1 | 776 | 2,655 | rtx4090* | 5 | 48% |
+| 5 | sn1 Apex | 69.7 | 669 | 1,545 | rtx4090* | 4 | 43% |
+| 6 | sn62 Ridges | 69.1 | 559 | 2,020 | rtx4090* | 7 | 35% |
+| 7 | sn26 Perturb | 68.2 | 21.52 | 40.38 | rtx3060 | 11 | 50% |
+| 8 | sn41 Almanac | 68.2 | 8.74 | 26.89 | cpu-small | 69 | 76% |
+| 9 | sn96 Verathos | 68.1 | 20.51 | 252 | rtx4090 | 70 | 42% |
+| 10 | sn100 BASE | 67.2 | 322 | 1,971 | rtx4090* | 5 | 60% |
+| 11 | sn15 ORO | 67.2 | 9.03 | 10,643 | cpu-small | 68 | 94% |
+| 12 | sn38 ChronoLLM | 65.7 | 215 | 3,606 | rtx4090* | 10 | 52% |
+| 13 | sn124 Swarm | 65.7 | 211 | 643 | rtx4090* | 23 | 11% |
+| 14 | sn21 AdTAO | 65.3 | 4.84 | 22.32 | cpu-small | 142 | 45% |
+| 15 | sn80 OpenRoboto | 63.4 | 103 | 380 | rtx4090* | 4 | 91% |
+| 16 | sn61 RedTeam | 62.1 | 69.77 | 190 | rtx4090* | 36 | 6% |
+| 17 | sn28 gm | 61.6 | 61.03 | 2,209 | rtx4090* | 18 | 30% |
+| 18 | sn51 lium.io | 57.8 | 26.17 | 2,837 | rtx4090* | 46 | 66% |
+| 19 | sn102 ConnitoAI | 57.3 | 578 | 1,430 | rtx4090* | 7 | 27% |
+| 20 | sn56 Gradients | 56.5 | 457 | 964 | rtx4090* | 7 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 23 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 21 |
+| dominated (60–90%) | 22 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality

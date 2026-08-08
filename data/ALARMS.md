@@ -1,13 +1,26 @@
-# ALARMS - generated 2026-08-08T19:07:28Z, block 8801616
+# ALARMS - generated 2026-08-08T19:53:02Z, block 8801844
 
-window: first_seen in [2026-08-08T17:52:54Z, 2026-08-08T19:07:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T18:38:36Z, 2026-08-08T19:53:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-08T19:19:55Z` | 71 | SCORING_COMMIT | P1 | 2026-08-08T19:53:36Z | sn71 commit touches scoring: Fix evaluator test import isolation |
+| `sn100:release:v3.3.12` | 100 | RELEASE | P1 | 2026-08-08T19:53:36Z | sn100 released v3.3.12 |
+| `sn100:scoring_commit:2026-08-08T19:36:07Z` | 100 | SCORING_COMMIT | P1 | 2026-08-08T19:53:36Z | sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-08T19:19:55Z`** - sn71 commit touches scoring: Fix evaluator test import isolation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.12`** - sn100 released v3.3.12
+  - published 2026-08-08T19:37:43Z (was v3.3.11: Site arena UID + sealed weight enrichment)
+- **`sn100:scoring_commit:2026-08-08T19:36:07Z`** - sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

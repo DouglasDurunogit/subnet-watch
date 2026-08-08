@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T21:14:37Z, block 8802252
+# ALARMS - generated 2026-08-08T21:55:29Z, block 8802456
 
-window: first_seen in [2026-08-08T20:00:02Z, 2026-08-08T21:15:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T20:40:55Z, 2026-08-08T21:55:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-08T20:21:46Z` | 71 | SCORING_COMMIT | P1 | 2026-08-08T20:45:04Z | sn71 commit touches scoring: Retry signed transient company scoring failures |
 | `sn100:release:v3.3.13 — design screenshot egress proxy` | 100 | RELEASE | P1 | 2026-08-08T20:45:04Z | sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth |
 | `sn100:scoring_commit:2026-08-08T21:01:32Z` | 100 | SCORING_COMMIT | P1 | 2026-08-08T21:15:02Z | sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator… |
+| `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | P1 | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
 
 ### detail
 
@@ -23,6 +24,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn100:release:v3.3.13 — design screenshot egress proxy`** - sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth
   - published 2026-08-08T20:03:52Z (was v3.3.12)
 - **`sn100:scoring_commit:2026-08-08T21:01:32Z`** - sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-08-08T21:44:42Z`** - sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

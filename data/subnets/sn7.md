@@ -1,6 +1,6 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-08T11:15:56Z  |  block: 8799258  |  row_status: ok
+snapshot_utc: 2026-08-08T11:53:18Z  |  block: 8799445  |  row_status: ok
 
 ## Chain row
 
@@ -12,9 +12,9 @@ snapshot_utc: 2026-08-08T11:15:56Z  |  block: 8799258  |  row_status: ok
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 182.25109541681783** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 963.0417099698225
-- top_miner_usd_day: 1743.832324522827 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 182.25104055771672** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 963.0414200862285
+- top_miner_usd_day: 1743.83179961474 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

@@ -1,6 +1,6 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-08T11:15:56Z  |  block: 8799258  |  row_status: ok
+snapshot_utc: 2026-08-08T11:53:18Z  |  block: 8799445  |  row_status: ok
 
 ## Chain row
 
@@ -12,9 +12,9 @@ snapshot_utc: 2026-08-08T11:15:56Z  |  block: 8799258  |  row_status: ok
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 111.78405438758325** (uid 145) <- the only figure quotable as achievable
-- median_miner_usd_day: 11.027763485713551
-- top_miner_usd_day: 2090.9875605450698 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 111.78402878490003** (uid 145) <- the only figure quotable as achievable
+- median_miner_usd_day: 11.027760959947809
+- top_miner_usd_day: 2090.9870816315747 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

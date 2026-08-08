@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-08T08:06:23Z · block 8798311 · run_status **ok**_
+_snapshot 2026-08-08T08:58:31Z · block 8798571 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 80 | 173 | 32,883 | cpu-small | 19 | 87% |
-| 2 | sn76 Phylax | 76 | 56.05 | 273 | cpu-small | 10 | 28% |
-| 3 | sn67 Harnyx | 71.2 | 17.03 | 741 | cpu-small | 136 | 19% |
+| 1 | sn107 Minos | 78.3 | 118 | 33,964 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.2 | 59.34 | 196 | cpu-small | 10 | 30% |
+| 3 | sn67 Harnyx | 71.2 | 17.03 | 741 | cpu-small | 139 | 19% |
 | 4 | sn91 cascade | 70.2 | 777 | 2,661 | rtx4090* | 5 | 48% |
-| 5 | sn1 Apex | 69.7 | 680 | 1,568 | rtx4090* | 4 | 42% |
+| 5 | sn1 Apex | 69.7 | 676 | 1,559 | rtx4090* | 4 | 43% |
 | 6 | sn62 Ridges | 69.1 | 563 | 2,036 | rtx4090* | 7 | 35% |
-| 7 | sn26 Perturb | 68.2 | 21.04 | 40.40 | rtx3060 | 11 | 50% |
-| 8 | sn41 Almanac | 68.2 | 8.75 | 33.79 | cpu-small | 68 | 76% |
-| 9 | sn100 BASE | 67.5 | 352 | 1,859 | rtx4090* | 5 | 56% |
-| 10 | sn96 Verathos | 67.5 | 17.91 | 168 | rtx4090 | 74 | 42% |
-| 11 | sn15 ORO | 67.3 | 8.99 | 10,608 | cpu-small | 68 | 94% |
-| 12 | sn124 Swarm | 65.7 | 215 | 621 | rtx4090* | 23 | 11% |
+| 7 | sn26 Perturb | 68.3 | 21.61 | 40.39 | rtx3060 | 11 | 50% |
+| 8 | sn41 Almanac | 68.2 | 8.74 | 26.90 | cpu-small | 69 | 76% |
+| 9 | sn96 Verathos | 67.5 | 17.90 | 160 | rtx4090 | 74 | 41% |
+| 10 | sn15 ORO | 67.4 | 9.00 | 10,611 | cpu-small | 68 | 94% |
+| 11 | sn100 BASE | 67.2 | 317 | 1,935 | rtx4090* | 5 | 60% |
+| 12 | sn124 Swarm | 65.7 | 215 | 602 | rtx4090* | 23 | 10% |
 | 13 | sn21 AdTAO | 65.6 | 4.82 | 22.24 | cpu-small | 142 | 45% |
-| 14 | sn80 OpenRoboto | 63.4 | 103 | 382 | rtx4090* | 4 | 91% |
-| 15 | sn61 RedTeam | 62.1 | 70.23 | 189 | rtx4090* | 36 | 6% |
-| 16 | sn28 gm | 61.6 | 62.27 | 4,114 | rtx4090* | 18 | 46% |
-| 17 | sn51 lium.io | 58.1 | 28.09 | 2,865 | rtx4090* | 48 | 67% |
-| 18 | sn56 Gradients | 56.5 | 458 | 965 | rtx4090* | 7 | 70% |
-| 19 | sn74 Gittensor | 55.7 | 12.03 | 224 | rtx4090* | 16 | 64% |
-| 20 | sn120 Affine | 54.6 | 6,721 | 6,721 = | rtx4090* | 5 | 20% |
+| 14 | sn80 OpenRoboto | 63.5 | 105 | 389 | rtx4090* | 4 | 91% |
+| 15 | sn28 gm | 62.1 | 71.22 | 2,223 | rtx4090* | 19 | 25% |
+| 16 | sn61 RedTeam | 62.1 | 69.74 | 189 | rtx4090* | 36 | 6% |
+| 17 | sn51 lium.io | 57.4 | 23.89 | 2,835 | rtx4090* | 49 | 66% |
+| 18 | sn102 ConnitoAI | 57.3 | 578 | 1,432 | rtx4090* | 7 | 27% |
+| 19 | sn85 Vidaio | 56.5 | 459 | 584 | rtx4090* | 10 | 17% |
+| 20 | sn56 Gradients | 56.5 | 457 | 964 | rtx4090* | 7 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 22 |
-| concentrated (30–60%) | 23 |
+| wide (<30%) | 23 |
+| concentrated (30–60%) | 22 |
 | dominated (60–90%) | 20 |
 | captured (>90%) | 25 |
 

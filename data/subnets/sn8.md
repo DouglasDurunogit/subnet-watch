@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-08T08:06:23Z  |  block: 8798311  |  row_status: ok
+snapshot_utc: 2026-08-08T08:58:31Z  |  block: 8798571  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.09832500000000001 USD), open=True
+- registration cost: 0.000535883 TAO (0.10536531546000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 50  |  free: 0
 - subnet age: 1016.8 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3352.9612087154987** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.7932873522197553
-- top_miner_usd_day: 10591.708297720766 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3222.7203820822665** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.7932524734367246
+- top_miner_usd_day: 10805.420775663915 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 34  |  gini: 0.9086187361174209  |  top1_share: 0.6113587105833511  |  top10_share: 0.999267376904057
+- earners: 34  |  gini: 0.9101164045484496  |  top1_share: 0.6236836482402857  |  top10_share: 0.9992674216293764
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -41,7 +41,7 @@ snapshot_utc: 2026-08-08T08:06:23Z  |  block: 8798311  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 56), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 57), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: SCORING_COMMIT 8d ago
 

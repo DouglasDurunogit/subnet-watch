@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T08:06:23Z, block 8798311
+# ALARMS - generated 2026-08-08T08:58:31Z, block 8798571
 
-window: first_seen in [2026-08-08T06:51:47Z, 2026-08-08T08:06:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T07:43:55Z, 2026-08-08T08:58:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | P1 | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
 | `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | P1 | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
 
 ### detail
 
-- **`sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10`** - sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest
-  - published 2026-08-08T07:07:05Z (was v3.3.8 — Design one-prompt / one-attempt / admin reject)
 - **`sn100:release:v3.3.10: Prism similarity precheck + stu`** - sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix
   - published 2026-08-08T07:18:26Z (was v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest)
 
@@ -198,6 +195,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
 | `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
 | `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
+| `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-08T06:05:01Z, block 8797704
+# ALARMS - generated 2026-08-08T07:11:40Z, block 8798037
 
-window: first_seen in [2026-08-08T04:50:29Z, 2026-08-08T06:05:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T05:57:03Z, 2026-08-08T07:12:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | P1 | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
-| `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | P1 | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
+| `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | P1 | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
 
 ### detail
 
-- **`sn80:scoring_commit:2026-08-08T04:28:24Z`** - sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.8 — Design one-prompt / one-attempt`** - sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject
-  - published 2026-08-08T05:06:18Z (was v3.3.6 — Prism site window truthfulness)
+- **`sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10`** - sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest
+  - published 2026-08-08T07:07:05Z (was v3.3.8 — Design one-prompt / one-attempt / admin reject)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -198,6 +195,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:release:4.9.1` | 61 | RELEASE | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
 | `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
 | `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
+| `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
+| `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |

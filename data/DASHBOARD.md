@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-08T20:44:40Z · block 8802102 · run_status **ok**_
+_snapshot 2026-08-08T21:14:37Z · block 8802252 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 54 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 5 | `███` |
+| 0–0.2 | 7 | `████` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 9 | `█████` |
 | 0.6–0.8 | 9 | `█████` |
 | 0.8–0.99 | 8 | `████` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 79.6 | 4,951 | 4,951 = | cpu-small | 1 | 100% |
-| 2 | sn107 Minos | 78.3 | 117 | 34,767 | cpu-small | 20 | 90% |
-| 3 | sn76 Phylax | 76.6 | 65.17 | 196 | cpu-small | 10 | 33% |
-| 4 | sn60 Bitsec.ai | 74.9 | 1,222 | 1,222 = | cpu-small | 2 | 50% |
-| 5 | sn67 Harnyx | 71.2 | 17.04 | 741 | cpu-small | 142 | 19% |
-| 6 | sn91 cascade | 70.2 | 783 | 2,682 | rtx4090* | 5 | 48% |
-| 7 | sn96 Verathos | 69.7 | 30.67 | 239 | rtx4090 | 59 | 44% |
-| 8 | sn1 Apex | 69.5 | 640 | 1,587 | rtx4090* | 4 | 45% |
-| 9 | sn62 Ridges | 69 | 557 | 2,014 | rtx4090* | 7 | 35% |
-| 10 | sn26 Perturb | 68.3 | 21.64 | 40.60 | rtx3060 | 11 | 50% |
-| 11 | sn41 Almanac | 68.2 | 8.76 | 44.68 | cpu-small | 66 | 76% |
-| 12 | sn15 ORO | 67.2 | 9.14 | 19.26 | cpu-small | 70 | 94% |
-| 13 | sn21 AdTAO | 65.6 | 4.79 | 22.12 | cpu-small | 142 | 45% |
-| 14 | sn38 ChronoLLM | 65.5 | 207 | 3,485 | rtx4090* | 10 | 52% |
-| 15 | sn80 OpenRoboto | 63.3 | 100.00 | 371 | rtx4090* | 4 | 91% |
-| 16 | sn61 RedTeam | 61.6 | 60.16 | 182 | rtx4090* | 43 | 6% |
-| 17 | sn28 gm | 60.6 | 45.44 | 3,754 | rtx4090* | 22 | 41% |
-| 18 | sn51 lium.io | 59 | 34.43 | 3,194 | rtx4090* | 47 | 68% |
-| 19 | sn85 Vidaio | 57 | 526 | 535 | rtx4090* | 10 | 16% |
-| 20 | sn56 Gradients | 56.5 | 461 | 972 | rtx4090* | 7 | 70% |
+| 1 | sn11 TrajectoryRL | 79.6 | 4,959 | 4,959 = | cpu-small | 1 | 100% |
+| 2 | sn107 Minos | 78.3 | 117 | 34,808 | cpu-small | 20 | 90% |
+| 3 | sn76 Phylax | 76.6 | 65.30 | 197 | cpu-small | 10 | 33% |
+| 4 | sn60 Bitsec.ai | 74.9 | 1,223 | 1,223 = | cpu-small | 2 | 50% |
+| 5 | sn67 Harnyx | 71.3 | 17.08 | 743 | cpu-small | 142 | 19% |
+| 6 | sn91 cascade | 70.2 | 785 | 2,688 | rtx4090* | 5 | 48% |
+| 7 | sn96 Verathos | 69.7 | 30.75 | 239 | rtx4090 | 59 | 44% |
+| 8 | sn1 Apex | 69.5 | 639 | 1,586 | rtx4090* | 4 | 45% |
+| 9 | sn62 Ridges | 69.1 | 558 | 2,017 | rtx4090* | 7 | 35% |
+| 10 | sn26 Perturb | 68.3 | 21.69 | 40.69 | rtx3060 | 11 | 50% |
+| 11 | sn41 Almanac | 68.3 | 8.78 | 44.77 | cpu-small | 66 | 76% |
+| 12 | sn15 ORO | 67.3 | 9.16 | 19.30 | cpu-small | 70 | 94% |
+| 13 | sn21 AdTAO | 65.6 | 4.80 | 22.17 | cpu-small | 142 | 45% |
+| 14 | sn38 ChronoLLM | 65.5 | 208 | 3,492 | rtx4090* | 10 | 52% |
+| 15 | sn80 OpenRoboto | 63.5 | 105 | 387 | rtx4090* | 4 | 91% |
+| 16 | sn61 RedTeam | 61.7 | 60.65 | 183 | rtx4090* | 43 | 6% |
+| 17 | sn28 gm | 60.6 | 45.60 | 3,765 | rtx4090* | 22 | 41% |
+| 18 | sn51 lium.io | 59 | 34.51 | 3,200 | rtx4090* | 47 | 68% |
+| 19 | sn85 Vidaio | 57 | 527 | 537 | rtx4090* | 10 | 16% |
+| 20 | sn56 Gradients | 56.5 | 462 | 974 | rtx4090* | 7 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-08T21:15 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: Merge pull request #101 from BaseIntelli |
 | 2026-08-08T20:45 | sn55 | BURN_DROP | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | 2026-08-08T20:45 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Retry signed transient company scoring fa |
 | 2026-08-08T20:45 | sn100 | RELEASE | sn100 released v3.3.13 — design screenshot egress proxy + gateway admi |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-08T13:09 | sn100 | RELEASE | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |
 | 2026-08-08T09:51 | sn38 | SCORING_COMMIT | sn38 commit touches scoring: Add miner self-test endpoint and dynamic  |
 | 2026-08-08T08:06 | sn100 | RELEASE | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
-| 2026-08-08T07:12 | sn100 | RELEASE | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log |
 
 ---
 

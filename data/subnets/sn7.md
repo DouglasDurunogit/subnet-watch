@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-08T20:44:40Z  |  block: 8802102  |  row_status: ok
+snapshot_utc: 2026-08-08T21:14:37Z  |  block: 8802252  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.9053793493658304**
-- registration cost: 0.15 TAO (29.7495 USD), open=True
+- registration cost: 0.15 TAO (29.8065 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 857.6 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 183.6016095462218** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 970.3345064517819
-- top_miner_usd_day: 1757.067403357342 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 183.9533344755186** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 972.1933727031155
+- top_miner_usd_day: 1760.4334109307126 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-08T20:44:40Z  |  block: 8802102  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 175.3824 USD/day  |  payback on registration: 0.17 days
+- net margin: 175.7342 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 
 - gate: **OK** 
 - score: 37.6 (rank 44), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 20.43 / freshness 21.0 / resource 11.25 / registration 9.94
+- components: income 20.44 / freshness 21.0 / resource 11.25 / registration 9.94
 - freshness basis: RELEASE 10d ago
 
 ## On-chain description

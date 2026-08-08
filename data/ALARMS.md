@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-08T00:34:47Z, block 8796053
+# ALARMS - generated 2026-08-08T02:45:26Z, block 8796706
 
-window: first_seen in [2026-08-07T23:20:11Z, 2026-08-08T00:35:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-08T01:30:57Z, 2026-08-08T02:45:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | P1 | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
-
-### detail
-
-- **`sn90:scoring_commit:2026-08-07T23:40:46Z`** - sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,7 +29,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
-| `sn71:scoring_commit:2026-07-31T23:59:50Z` | 71 | SCORING_COMMIT | 2026-08-01T01:02:18Z | sn71 commit touches scoring: Bound receipt ancestry validation and persistence retries |
 | `sn71:scoring_commit:2026-08-01T03:43:59Z` | 71 | SCORING_COMMIT | 2026-08-01T04:31:25Z | sn71 commit touches scoring: Extend validator gateway alignment wait |
 | `sn76:scoring_commit:2026-08-01T05:18:26Z` | 76 | SCORING_COMMIT | 2026-08-01T07:17:44Z | sn76 commit touches scoring: Carry a track's standing forward when a pass does not evaluate it |
 | `sn61:release:4.8.2` | 61 | RELEASE | 2026-08-01T09:32:34Z | sn61 released 4.8.2 |
@@ -196,6 +188,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.1` | 28 | RELEASE | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 | `sn61:release:4.9.1` | 61 | RELEASE | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
 | `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
+| `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
 | `sn89:readme_task_diff:2ad9289f8c86f6ec` | 89 | README_TASK_DIFF | 2026-08-01T04:31:25Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |

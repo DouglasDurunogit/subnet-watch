@@ -1,25 +1,25 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-08T23:54:17Z  |  block: 8803050  |  row_status: ok
+snapshot_utc: 2026-08-09T02:25:03Z  |  block: 8803804  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.4260342114139348**
-- registration cost: 0.105746066 TAO (21.46433647668 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 251  |  free: 0
-- subnet age: 876.6 days  |  registered at block 2491604
+- miner_burn: **0.4261554260738194**
+- registration cost: 0.078636567 TAO (16.15430995881 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 252  |  free: 0
+- subnet age: 876.7 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 21.14811157914282** (uid 38) <- the only figure quotable as achievable
-- median_miner_usd_day: 20.147017539893458
-- top_miner_usd_day: 3493.818196980281 (uid 251, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 21.15418136493892** (uid 35) <- the only figure quotable as achievable
+- median_miner_usd_day: 20.26747915203729
+- top_miner_usd_day: 3537.688485988109 (uid 251, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 239  |  gini: 0.4513691697044444  |  top1_share: 0.4293204988236741  |  top10_share: 0.45266249442590684
-- owner_incentive_share: 0.4293204988236741 (independent check on miner_burn; disagreement 0.0033)
+- earners: 240  |  gini: 0.44498128303933737  |  top1_share: 0.4287578488416721  |  top10_share: 0.45183229193852953
+- owner_incentive_share: 0.4287578488416721 (independent check on miner_burn; disagreement 0.0026)
 
 ## Repository
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-08T23:54:17Z  |  block: 8803050  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 11.9278 USD/day  |  payback on registration: 1.8 days
+- net margin: 12.0483 USD/day  |  payback on registration: 1.34 days
 
 ## Score
 
 - gate: **OK** 
-- score: 26.1 (rank 61), confidence 0.85 - hardware requirement unknown
-- components: income 10.11 / freshness 0.0 / resource 11.25 / registration 9.4
+- score: 26.3 (rank 62), confidence 0.85 - hardware requirement unknown
+- components: income 10.15 / freshness 0.0 / resource 11.25 / registration 9.55
 - freshness basis: no challenge change on record
 
 ## On-chain description

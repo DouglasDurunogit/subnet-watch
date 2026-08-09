@@ -1,13 +1,29 @@
-# ALARMS - generated 2026-08-08T23:54:17Z, block 8803050
+# ALARMS - generated 2026-08-09T02:25:03Z, block 8803804
 
-window: first_seen in [2026-08-08T22:39:48Z, 2026-08-08T23:54:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T01:10:34Z, 2026-08-09T02:25:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn6:burn_drop:0.000` | 6 | BURN_DROP | P0 | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn61:release:4.9.2` | 61 | RELEASE | P1 | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |
+| `sn61:scoring_commit:2026-08-08T08:01:06Z` | 61 | SCORING_COMMIT | P1 | 2026-08-09T02:25:34Z | sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura… |
+| `sn92:scoring_commit:2026-08-08T22:46:16Z` | 92 | SCORING_COMMIT | P1 | 2026-08-09T02:25:34Z | sn92 commit touches scoring: Document the directive as the source of every scoring parameter |
+
+### detail
+
+- **`sn6:burn_drop:0.000`** - sn6 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn61:release:4.9.2`** - sn61 released 4.9.2
+  - published 2026-08-09T00:05:29Z (was 4.9.1)
+- **`sn61:scoring_commit:2026-08-08T08:01:06Z`** - sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-08T22:46:16Z`** - sn92 commit touches scoring: Document the directive as the source of every scoring parameter
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,8 +45,6 @@ _none_
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T00:47:38Z` | 71 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn71 commit touches scoring: Recycle scoring workers at baseline checkpoints |
-| `sn97:scoring_commit:2026-07-31T11:22:32Z` | 97 | SCORING_COMMIT | 2026-08-02T01:17:45Z | sn97 commit touches scoring: feat: Added display overall score + margin on main page |
 | `sn61:release:4.8.3` | 61 | RELEASE | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |
 | `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
 | `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |

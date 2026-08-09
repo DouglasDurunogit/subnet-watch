@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T18:17:32Z, block 8808566
+# ALARMS - generated 2026-08-09T19:10:59Z, block 8808834
 
-window: first_seen in [2026-08-09T17:03:04Z, 2026-08-09T18:18:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T17:56:37Z, 2026-08-09T19:11:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -38,7 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
 | `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |
 | `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |
 | `sn71:scoring_commit:2026-08-02T23:19:19Z` | 71 | SCORING_COMMIT | 2026-08-02T23:32:33Z | sn71 commit touches scoring: Bind validator Sentry instrumentation identity |

@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-09T17:45:21Z, block 8808406
+# ALARMS - generated 2026-08-09T18:17:32Z, block 8808566
 
-window: first_seen in [2026-08-09T16:30:52Z, 2026-08-09T17:45:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T17:03:04Z, 2026-08-09T18:18:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | P1 | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
+| `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | P1 | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
+
+### detail
+
+- **`sn90:release:v1.0.2 — proxy version header + owner mi`** - sn90 released v1.0.2 — proxy version header + owner miner UID hardcode
+  - published 2026-08-09T18:13:35Z (was v1.0.1)
+- **`sn90:scoring_commit:2026-08-09T18:13:35Z`** - sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -28,7 +38,6 @@ _none_
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
 | `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
 | `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |
 | `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |

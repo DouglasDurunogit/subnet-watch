@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T09:01:54Z, block 8805788
+# ALARMS - generated 2026-08-09T09:52:42Z, block 8806042
 
-window: first_seen in [2026-08-09T07:47:27Z, 2026-08-09T09:02:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T08:38:17Z, 2026-08-09T09:53:17Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:burn_drop:0.826` | 2 | BURN_DROP | P0 | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn71:scoring_commit:2026-08-09T07:50:56Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T09:02:27Z | sn71 commit touches scoring: Retry transient company homepage verification |
 | `sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision` | 96 | RELEASE | P1 | 2026-08-09T09:02:27Z | sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision |
+| `sn71:scoring_commit:2026-08-09T09:39:44Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T09:53:17Z | sn71 commit touches scoring: Use fresh identities for scorer retries |
 
 ### detail
 
-- **`sn2:burn_drop:0.826`** - sn2 burn fell 1.000 -> 0.826 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-09T07:50:56Z`** - sn71 commit touches scoring: Retry transient company homepage verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision`** - sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision
   - published 2026-08-09T08:51:16Z (was v0.1.29 - Gleipnir Validator Reliability)
+- **`sn71:scoring_commit:2026-08-09T09:39:44Z`** - sn71 commit touches scoring: Use fresh identities for scorer retries
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,7 +42,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
+| `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
 | `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
 | `sn103:release:v2008` | 103 | RELEASE | 2026-08-02T12:34:55Z | sn103 released v2008 |

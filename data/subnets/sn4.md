@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-08-09T20:48:53Z  |  block: 8809323  |  row_status: ok
+snapshot_utc: 2026-08-09T21:44:55Z  |  block: 8809603  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.10781031427904963**
-- registration cost: 0.0005 TAO (0.10298 USD), open=True
+- registration cost: 0.0005 TAO (0.10327 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 1027.5 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 14876.067799210421** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 3159.70648906964
-- top_miner_usd_day: 14876.067799210421 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 14946.453203449244** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 3174.6564893997684
+- top_miner_usd_day: 14946.453203449244 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-09T20:48:53Z  |  block: 8809323  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 9247.7063 USD/day  |  payback on registration: 0.0 days
+- net margin: 9291.5002 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 48.7 (rank 30), confidence 0.85 - hardware requirement unknown
-- components: income 36.07 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 48.7 (rank 29), confidence 0.85 - hardware requirement unknown
+- components: income 36.09 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

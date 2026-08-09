@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T22:14:14Z, block 8809750
+# ALARMS - generated 2026-08-09T22:59:09Z, block 8809974
 
-window: first_seen in [2026-08-09T20:59:48Z, 2026-08-09T22:14:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T21:44:35Z, 2026-08-09T22:59:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -35,7 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T21:54:54Z` | 71 | SCORING_COMMIT | 2026-08-02T22:27:48Z | sn71 commit touches scoring: Make validator storage cleanup dependency-closed |
 | `sn71:scoring_commit:2026-08-02T23:19:19Z` | 71 | SCORING_COMMIT | 2026-08-02T23:32:33Z | sn71 commit touches scoring: Bind validator Sentry instrumentation identity |
 | `sn71:scoring_commit:2026-08-02T23:42:46Z` | 71 | SCORING_COMMIT | 2026-08-03T01:17:55Z | sn71 commit touches scoring: Rebind validator telemetry recovery identity |
 | `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |

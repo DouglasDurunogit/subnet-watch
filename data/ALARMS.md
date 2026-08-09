@@ -1,19 +1,25 @@
-# ALARMS - generated 2026-08-09T07:15:16Z, block 8805255
+# ALARMS - generated 2026-08-09T08:07:23Z, block 8805516
 
-window: first_seen in [2026-08-09T06:00:43Z, 2026-08-09T07:15:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T06:52:46Z, 2026-08-09T08:07:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn2:burn_drop:0.826` | 2 | BURN_DROP | P0 | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
+
+### detail
+
+- **`sn2:burn_drop:0.826`** - sn2 burn fell 1.000 -> 0.826 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn16:burn_drop:0.000` | 16 | BURN_DROP | 2026-08-02T07:40:06Z | sn16 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn98:burn_drop:0.000` | 98 | BURN_DROP | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn24:burn_drop:0.000` | 24 | BURN_DROP | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn78:burn_drop:0.000` | 78 | BURN_DROP | 2026-08-03T15:12:34Z | sn78 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -30,7 +36,6 @@ _none_
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
 | `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
 | `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
 | `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |

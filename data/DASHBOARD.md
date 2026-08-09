@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-09T15:43:16Z · block 8807795 · run_status **ok**_
+_snapshot 2026-08-09T16:14:41Z · block 8807952 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 56 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| **Positive margin** | **56** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,11 +30,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 52 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 5 | `███` |
-| 0.4–0.6 | 9 | `█████` |
+| 0–0.2 | 7 | `████` |
+| 0.2–0.4 | 4 | `██` |
+| 0.4–0.6 | 10 | `█████` |
 | 0.6–0.8 | 9 | `█████` |
-| 0.8–0.99 | 8 | `████` |
+| 0.8–0.99 | 7 | `████` |
 | ≥0.99 dead | 39 | `█████████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,25 +43,25 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.3 | 117 | 35,608 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 75 | 44.15 | 210 | cpu-small | 10 | 33% |
-| 3 | sn96 Verathos | 71.1 | 43.42 | 178 | rtx4090 | 55 | 41% |
-| 4 | sn67 Harnyx | 70.8 | 15.33 | 875 | cpu-small | 155 | 22% |
-| 5 | sn91 cascade | 70.3 | 803 | 2,747 | rtx4090* | 5 | 48% |
-| 6 | sn1 Apex | 70.2 | 778 | 1,602 | rtx4090* | 4 | 48% |
-| 7 | sn41 Almanac | 69.5 | 11.92 | 35.36 | cpu-small | 66 | 72% |
-| 8 | sn26 Perturb | 68.4 | 22.52 | 42.97 | rtx3060 | 11 | 50% |
-| 9 | sn62 Ridges | 68.3 | 446 | 2,069 | rtx4090* | 7 | 35% |
+| 1 | sn107 Minos | 78.2 | 117 | 35,693 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 75 | 43.75 | 208 | cpu-small | 10 | 33% |
+| 3 | sn96 Verathos | 71.1 | 43.33 | 177 | rtx4090 | 55 | 41% |
+| 4 | sn67 Harnyx | 70.8 | 15.32 | 875 | cpu-small | 155 | 22% |
+| 5 | sn91 cascade | 70.3 | 802 | 2,747 | rtx4090* | 5 | 48% |
+| 6 | sn1 Apex | 70.2 | 775 | 1,597 | rtx4090* | 4 | 48% |
+| 7 | sn41 Almanac | 69.5 | 11.82 | 35.35 | cpu-small | 66 | 72% |
+| 8 | sn26 Perturb | 68.4 | 22.51 | 42.99 | rtx3060 | 11 | 50% |
+| 9 | sn62 Ridges | 68.3 | 446 | 2,068 | rtx4090* | 7 | 35% |
 | 10 | sn100 BASE | 68.1 | 418 | 1,698 | rtx4090* | 5 | 50% |
-| 11 | sn15 ORO | 67.9 | 10.25 | 19.57 | cpu-small | 74 | 94% |
-| 12 | sn38 ChronoLLM | 65.7 | 218 | 3,658 | rtx4090* | 10 | 52% |
-| 13 | sn21 AdTAO | 65.5 | 4.84 | 22.30 | cpu-small | 142 | 45% |
-| 14 | sn28 gm | 65.2 | 178 | 3,965 | rtx4090* | 25 | 40% |
-| 15 | sn80 OpenRoboto | 64.9 | 163 | 590 | rtx4090* | 4 | 91% |
-| 16 | sn61 RedTeam | 63.3 | 98.63 | 278 | rtx4090* | 42 | 6% |
-| 17 | sn51 lium.io | 60.1 | 46.32 | 3,144 | rtx4090* | 48 | 62% |
-| 18 | sn6 Numinous | 59.1 | 30.03 | 345 | cpu-small | 18 | 19% |
-| 19 | sn56 Gradients | 56.7 | 486 | 1,023 | rtx4090* | 7 | 71% |
+| 11 | sn15 ORO | 67.6 | 10.24 | 19.57 | cpu-small | 74 | 94% |
+| 12 | sn38 ChronoLLM | 65.7 | 218 | 3,657 | rtx4090* | 10 | 52% |
+| 13 | sn21 AdTAO | 65.5 | 4.83 | 22.30 | cpu-small | 142 | 45% |
+| 14 | sn28 gm | 65.4 | 189 | 4,179 | rtx4090* | 23 | 42% |
+| 15 | sn80 OpenRoboto | 64.8 | 156 | 567 | rtx4090* | 4 | 91% |
+| 16 | sn61 RedTeam | 63.2 | 97.51 | 275 | rtx4090* | 42 | 6% |
+| 17 | sn51 lium.io | 59.4 | 38.76 | 3,565 | rtx4090* | 49 | 61% |
+| 18 | sn6 Numinous | 59.1 | 30.02 | 344 | cpu-small | 18 | 19% |
+| 19 | sn56 Gradients | 56.7 | 485 | 1,023 | rtx4090* | 7 | 71% |
 | 20 | sn85 Vidaio | 56.7 | 482 | 550 | rtx4090* | 10 | 16% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 19 |
+| concentrated (30–60%) | 22 |
+| dominated (60–90%) | 18 |
 | captured (>90%) | 24 |
 
 ## Hardware evidence quality
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-09T16:15 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve handled scorer transport failure |
 | 2026-08-09T13:30 | sn96 | RELEASE | sn96 released v0.1.32 - Miner Hard-Proof Transport |
 | 2026-08-09T13:30 | sn96 | SCORING_COMMIT | sn96 commit touches scoring: fix: align miner proxy with hard proof de |
 | 2026-08-09T10:49 | sn61 | RELEASE | sn61 released 4.9.3 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-09T05:16 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Move inference cost off the validator and |
 | 2026-08-09T02:25 | sn6 | BURN_DROP | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-09T02:25 | sn61 | RELEASE | sn61 released 4.9.2 |
-| 2026-08-09T02:25 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: refactor: update minimum acceptable score |
 
 ---
 

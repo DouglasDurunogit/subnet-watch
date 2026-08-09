@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-09T15:43:16Z, block 8807795
+# ALARMS - generated 2026-08-09T16:14:41Z, block 8807952
 
-window: first_seen in [2026-08-09T14:28:41Z, 2026-08-09T15:43:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T15:00:15Z, 2026-08-09T16:15:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-09T15:45:11Z`** - sn71 commit touches scoring: Preserve handled scorer transport failures
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

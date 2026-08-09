@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-08-09T08:07:23Z  |  block: 8805516  |  row_status: ok
+snapshot_utc: 2026-08-09T09:01:54Z  |  block: 8805788  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.001380444 TAO (0.28508929488 USD), open=True
+- registration cost: 0.001297986 TAO (0.26772259236 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
-- subnet age: 644.4 days  |  registered at block 4165565
+- subnet age: 644.5 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3141.2748980454717** (uid 43) <- the only figure quotable as achievable
-- median_miner_usd_day: 3141.2748980454717
-- top_miner_usd_day: 3141.2748980454717 (uid 43, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3137.5973080564413** (uid 43) <- the only figure quotable as achievable
+- median_miner_usd_day: 3137.5973080564413
+- top_miner_usd_day: 3137.5973080564413 (uid 43, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-09T08:07:23Z  |  block: 8805516  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3133.0557 USD/day  |  payback on registration: 0.0 days
+- net margin: 3129.3781 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 31.8 (rank 53), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
-- components: income 31.8 / freshness 0.0 / resource 11.25 / registration 10.0
+- components: income 31.79 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

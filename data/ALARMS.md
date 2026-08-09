@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T08:07:23Z, block 8805516
+# ALARMS - generated 2026-08-09T09:01:54Z, block 8805788
 
-window: first_seen in [2026-08-09T06:52:46Z, 2026-08-09T08:07:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T07:47:27Z, 2026-08-09T09:02:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | P0 | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
+| `sn71:scoring_commit:2026-08-09T07:50:56Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T09:02:27Z | sn71 commit touches scoring: Retry transient company homepage verification |
+| `sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision` | 96 | RELEASE | P1 | 2026-08-09T09:02:27Z | sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision |
 
 ### detail
 
 - **`sn2:burn_drop:0.826`** - sn2 burn fell 1.000 -> 0.826 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-08-09T07:50:56Z`** - sn71 commit touches scoring: Retry transient company homepage verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision`** - sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision
+  - published 2026-08-09T08:51:16Z (was v0.1.29 - Gleipnir Validator Reliability)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T15:00:29Z, block 8807581
+# ALARMS - generated 2026-08-09T15:43:16Z, block 8807795
 
-window: first_seen in [2026-08-09T13:45:59Z, 2026-08-09T15:00:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T14:28:41Z, 2026-08-09T15:43:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -29,8 +29,6 @@ _none_
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
-| `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
 | `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |
 | `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
 | `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |

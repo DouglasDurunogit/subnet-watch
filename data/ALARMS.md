@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-09T14:20:42Z, block 8807382
+# ALARMS - generated 2026-08-09T15:00:29Z, block 8807581
 
-window: first_seen in [2026-08-09T13:06:06Z, 2026-08-09T14:21:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T13:45:59Z, 2026-08-09T15:00:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | P1 | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
-| `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | P1 | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
-
-### detail
-
-- **`sn96:release:v0.1.32 - Miner Hard-Proof Transport`** - sn96 released v0.1.32 - Miner Hard-Proof Transport
-  - published 2026-08-09T12:40:22Z (was v0.1.31 - Validator Auto-Update Drain)
-- **`sn96:scoring_commit:2026-08-09T12:20:34Z`** - sn96 commit touches scoring: fix: align miner proxy with hard proof deadline
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -200,6 +190,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-09T09:41:18Z` | 67 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260809.post0 |
 | `sn96:release:v0.1.31 - Validator Auto-Update Drain` | 96 | RELEASE | 2026-08-09T10:49:31Z | sn96 released v0.1.31 - Validator Auto-Update Drain |
 | `sn96:scoring_commit:2026-08-09T09:59:04Z` | 96 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn96 commit touches scoring: fix: drain validator work before auto-update |
+| `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
+| `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

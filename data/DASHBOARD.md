@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-09T03:59:37Z · block 8804277 · run_status **ok**_
+_snapshot 2026-08-09T05:15:34Z · block 8804657 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 59 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 88 | `miner_burn` < 0.99 |
 | Ranked | 88 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| **Positive margin** | **59** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 52 | `████████████████████████████` |
+| 0 (none) | 51 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 3 | `██` |
-| 0.4–0.6 | 11 | `██████` |
-| 0.6–0.8 | 8 | `████` |
+| 0.2–0.4 | 4 | `██` |
+| 0.4–0.6 | 10 | `█████` |
+| 0.6–0.8 | 9 | `█████` |
 | 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 40 | `██████████████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.6 | 126 | 35,442 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.7 | 68.27 | 206 | cpu-small | 10 | 33% |
-| 3 | sn98 NeverPlayAlone | 76.2 | 1,818 | 1,818 = | cpu-small | 1 | 100% |
-| 4 | sn60 Bitsec.ai | 75 | 1,264 | 1,264 = | cpu-small | 2 | 50% |
-| 5 | sn67 Harnyx | 70.8 | 15.30 | 874 | cpu-small | 151 | 22% |
-| 6 | sn100 BASE | 70.5 | 854 | 1,716 | rtx4090* | 3 | 50% |
-| 7 | sn1 Apex | 70.3 | 814 | 1,678 | rtx4090* | 4 | 43% |
-| 8 | sn91 cascade | 70.3 | 802 | 2,744 | rtx4090* | 5 | 48% |
-| 9 | sn41 Almanac | 69.3 | 11.36 | 46.46 | cpu-small | 67 | 72% |
-| 10 | sn96 Verathos | 68.9 | 25.23 | 262 | rtx4090 | 73 | 40% |
-| 11 | sn26 Perturb | 68.4 | 22.23 | 42.68 | rtx3060 | 11 | 50% |
-| 12 | sn62 Ridges | 68.3 | 449 | 2,084 | rtx4090* | 7 | 35% |
-| 13 | sn15 ORO | 68 | 9.89 | 20.57 | cpu-small | 71 | 94% |
-| 14 | sn28 gm | 67 | 301 | 3,903 | rtx4090* | 25 | 40% |
-| 15 | sn38 ChronoLLM | 65.7 | 218 | 3,664 | rtx4090* | 10 | 52% |
-| 16 | sn21 AdTAO | 65.7 | 5.05 | 23.16 | cpu-small | 142 | 45% |
-| 17 | sn80 OpenRoboto | 64.2 | 131 | 481 | rtx4090* | 4 | 91% |
-| 18 | sn61 RedTeam | 62.4 | 75.93 | 217 | rtx4090* | 42 | 6% |
-| 19 | sn51 lium.io | 60.7 | 54.12 | 3,048 | rtx4090* | 47 | 67% |
-| 20 | sn6 Numinous | 59.1 | 30.26 | 347 | cpu-small | 18 | 19% |
+| 1 | sn11 TrajectoryRL | 79.5 | 4,894 | 4,894 = | cpu-small | 1 | 100% |
+| 2 | sn107 Minos | 78.6 | 126 | 35,403 | cpu-small | 20 | 90% |
+| 3 | sn76 Phylax | 76.7 | 67.82 | 204 | cpu-small | 10 | 33% |
+| 4 | sn98 NeverPlayAlone | 76.2 | 1,807 | 1,807 = | cpu-small | 1 | 100% |
+| 5 | sn60 Bitsec.ai | 75 | 1,255 | 1,255 = | cpu-small | 2 | 50% |
+| 6 | sn67 Harnyx | 70.8 | 15.19 | 868 | cpu-small | 153 | 22% |
+| 7 | sn1 Apex | 70.3 | 804 | 1,657 | rtx4090* | 4 | 44% |
+| 8 | sn91 cascade | 70.2 | 785 | 2,687 | rtx4090* | 5 | 48% |
+| 9 | sn41 Almanac | 69.4 | 11.44 | 34.61 | cpu-small | 68 | 72% |
+| 10 | sn96 Verathos | 68.8 | 24.98 | 289 | rtx4090 | 74 | 41% |
+| 11 | sn62 Ridges | 68.3 | 445 | 2,064 | rtx4090* | 7 | 35% |
+| 12 | sn26 Perturb | 68.3 | 22.02 | 42.37 | rtx3060 | 11 | 50% |
+| 13 | sn15 ORO | 67.5 | 9.66 | 20.12 | cpu-small | 71 | 94% |
+| 14 | sn38 ChronoLLM | 65.7 | 217 | 3,642 | rtx4090* | 10 | 52% |
+| 15 | sn21 AdTAO | 65.7 | 5.01 | 23.01 | cpu-small | 142 | 45% |
+| 16 | sn80 OpenRoboto | 64 | 125 | 458 | rtx4090* | 4 | 91% |
+| 17 | sn28 gm | 62.9 | 88.95 | 3,650 | rtx4090* | 25 | 38% |
+| 18 | sn61 RedTeam | 62.4 | 75.59 | 216 | rtx4090* | 42 | 6% |
+| 19 | sn51 lium.io | 60.4 | 50.00 | 2,865 | rtx4090* | 48 | 72% |
+| 20 | sn6 Numinous | 59.1 | 30.06 | 345 | cpu-small | 18 | 19% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 20 |
+| concentrated (30–60%) | 21 |
+| dominated (60–90%) | 21 |
 | captured (>90%) | 21 |
 
 ## Hardware evidence quality
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-09T05:16 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Move inference cost off the validator and |
 | 2026-08-09T02:25 | sn6 | BURN_DROP | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-08-09T02:25 | sn61 | RELEASE | sn61 released 4.9.2 |
 | 2026-08-09T02:25 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: refactor: update minimum acceptable score |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-08T19:53 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(design): keep challenge-agentic unde |
 | 2026-08-08T17:43 | sn96 | RELEASE | sn96 released v0.1.29 - Gleipnir Validator Reliability |
 | 2026-08-08T17:43 | sn96 | SCORING_COMMIT | sn96 commit touches scoring: fix: isolate validator epoch control work |
-| 2026-08-08T15:42 | sn93 | BURN_DROP | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 
 ---
 

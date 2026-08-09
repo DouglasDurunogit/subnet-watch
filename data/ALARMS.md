@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-09T03:59:37Z, block 8804277
+# ALARMS - generated 2026-08-09T05:15:34Z, block 8804657
 
-window: first_seen in [2026-08-09T02:45:11Z, 2026-08-09T04:00:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T04:01:01Z, 2026-08-09T05:16:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn92:scoring_commit:2026-08-09T05:06:02Z` | 92 | SCORING_COMMIT | P1 | 2026-08-09T05:16:01Z | sn92 commit touches scoring: Move inference cost off the validator and onto the submission |
+
+### detail
+
+- **`sn92:scoring_commit:2026-08-09T05:06:02Z`** - sn92 commit touches scoring: Move inference cost off the validator and onto the submission
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -30,10 +37,6 @@ _none_
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn61:release:4.8.3` | 61 | RELEASE | 2026-08-02T04:52:47Z | sn61 released 4.8.3 |
-| `sn61:scoring_commit:2026-08-02T02:01:13Z` | 61 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn61 commit touches scoring: fix: set default user_id in _compare_same_score_outputs method |
-| `sn71:scoring_commit:2026-08-02T03:44:52Z` | 71 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn71 commit touches scoring: Preserve scoring state across gateway restart |
-| `sn76:scoring_commit:2026-08-02T03:28:23Z` | 76 | SCORING_COMMIT | 2026-08-02T04:52:47Z | sn76 commit touches scoring: Harden scoring inputs and screening |
 | `sn67:scoring_commit:2026-08-02T05:04:42Z` | 67 | SCORING_COMMIT | 2026-08-02T07:40:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260802.post0 |
 | `sn71:scoring_commit:2026-08-02T09:35:46Z` | 71 | SCORING_COMMIT | 2026-08-02T09:46:10Z | sn71 commit touches scoring: Validate compact finalized weight ancestry |
 | `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
@@ -192,7 +195,6 @@ _none_
 | `sn61:release:4.9.2` | 61 | RELEASE | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |
 | `sn61:scoring_commit:2026-08-08T08:01:06Z` | 61 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura… |
 | `sn92:scoring_commit:2026-08-08T22:46:16Z` | 92 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn92 commit touches scoring: Document the directive as the source of every scoring parameter |
-| `sn111:readme_task_diff:39d25fdcdedf56c8` | 111 | README_TASK_DIFF | 2026-08-02T04:52:47Z | sn111 README task/scoring sections changed |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

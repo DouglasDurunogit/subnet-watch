@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-09T22:59:09Z, block 8809974
+# ALARMS - generated 2026-08-09T23:42:26Z, block 8810191
 
-window: first_seen in [2026-08-09T21:44:35Z, 2026-08-09T22:59:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T22:27:59Z, 2026-08-09T23:42:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | P1 | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
-
-### detail
-
-- **`sn89:scoring_commit:2026-08-09T22:14:09Z`** - sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T23:19:19Z` | 71 | SCORING_COMMIT | 2026-08-02T23:32:33Z | sn71 commit touches scoring: Bind validator Sentry instrumentation identity |
 | `sn71:scoring_commit:2026-08-02T23:42:46Z` | 71 | SCORING_COMMIT | 2026-08-03T01:17:55Z | sn71 commit touches scoring: Rebind validator telemetry recovery identity |
 | `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
 | `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
@@ -195,6 +187,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
 | `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
 | `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
+| `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

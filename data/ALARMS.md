@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-09T17:04:23Z, block 8808201
+# ALARMS - generated 2026-08-09T17:45:21Z, block 8808406
 
-window: first_seen in [2026-08-09T15:49:54Z, 2026-08-09T17:04:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T16:30:52Z, 2026-08-09T17:45:52Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-09T15:45:11Z`** - sn71 commit touches scoring: Preserve handled scorer transport failures
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -194,6 +187,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:scoring_commit:2026-08-09T09:59:04Z` | 96 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn96 commit touches scoring: fix: drain validator work before auto-update |
 | `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
 | `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
+| `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

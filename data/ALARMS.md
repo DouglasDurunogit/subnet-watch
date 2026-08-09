@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T16:14:41Z, block 8807952
+# ALARMS - generated 2026-08-09T17:04:23Z, block 8808201
 
-window: first_seen in [2026-08-09T15:00:15Z, 2026-08-09T16:15:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T15:49:54Z, 2026-08-09T17:04:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -20,7 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn24:burn_drop:0.000` | 24 | BURN_DROP | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn78:burn_drop:0.000` | 78 | BURN_DROP | 2026-08-03T15:12:34Z | sn78 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
@@ -36,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |
-| `sn76:scoring_commit:2026-08-02T15:40:23Z` | 76 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn76 commit touches scoring: Update scoring constants |
 | `sn71:scoring_commit:2026-08-02T17:35:09Z` | 71 | SCORING_COMMIT | 2026-08-02T17:46:30Z | sn71 commit touches scoring: Reconcile terminal settlement frontier rewards |
 | `sn71:scoring_commit:2026-08-02T17:55:43Z` | 71 | SCORING_COMMIT | 2026-08-02T18:45:55Z | sn71 commit touches scoring: Preserve validator builds after failed deploys |
 | `sn71:scoring_commit:2026-08-02T20:58:39Z` | 71 | SCORING_COMMIT | 2026-08-02T21:08:24Z | sn71 commit touches scoring: Reclaim stale validator builder mounts |

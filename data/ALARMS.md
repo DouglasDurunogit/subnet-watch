@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T19:56:14Z, block 8809060
+# ALARMS - generated 2026-08-09T20:48:53Z, block 8809323
 
-window: first_seen in [2026-08-09T18:41:46Z, 2026-08-09T19:56:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T19:34:18Z, 2026-08-09T20:49:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | P1 | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
+| `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | P2 | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 
 ### detail
 
 - **`sn126:scoring_commit:2026-08-09T19:04:26Z`** - sn126 commit touches scoring: Document miner training benchmark
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-09T20:10:42Z`** - sn71 commit touches scoring: Close and verify dev snapshot request sets
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn126:readme_task_diff:99d35d8a81c2f921`** - sn126 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.

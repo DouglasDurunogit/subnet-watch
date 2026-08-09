@@ -1,19 +1,28 @@
-# ALARMS - generated 2026-08-09T12:16:48Z, block 8806763
+# ALARMS - generated 2026-08-09T13:29:54Z, block 8807128
 
-window: first_seen in [2026-08-09T11:02:15Z, 2026-08-09T12:17:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T12:15:27Z, 2026-08-09T13:30:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | P1 | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
+| `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | P1 | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
+
+### detail
+
+- **`sn96:release:v0.1.32 - Miner Hard-Proof Transport`** - sn96 released v0.1.32 - Miner Hard-Proof Transport
+  - published 2026-08-09T12:40:22Z (was v0.1.31 - Validator Auto-Update Drain)
+- **`sn96:scoring_commit:2026-08-09T12:20:34Z`** - sn96 commit touches scoring: fix: align miner proxy with hard proof deadline
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn98:burn_drop:0.000` | 98 | BURN_DROP | 2026-08-02T12:34:55Z | sn98 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn24:burn_drop:0.000` | 24 | BURN_DROP | 2026-08-02T16:39:54Z | sn24 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn78:burn_drop:0.000` | 78 | BURN_DROP | 2026-08-03T15:12:34Z | sn78 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
@@ -30,8 +39,6 @@ _none_
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn103:release:v2008` | 103 | RELEASE | 2026-08-02T12:34:55Z | sn103 released v2008 |
-| `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
 | `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
 | `sn89:scoring_commit:2026-08-02T14:22:11Z` | 89 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn89 commit touches scoring: hf scoreboard: publish each hotkeys own recent_calls |
 | `sn71:scoring_commit:2026-08-02T15:36:41Z` | 71 | SCORING_COMMIT | 2026-08-02T16:39:54Z | sn71 commit touches scoring: Verify candidate recovery against pre-signing receipt |

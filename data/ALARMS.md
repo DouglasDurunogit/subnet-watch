@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T21:44:55Z, block 8809603
+# ALARMS - generated 2026-08-09T22:14:14Z, block 8809750
 
-window: first_seen in [2026-08-09T20:30:20Z, 2026-08-09T21:45:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T20:59:48Z, 2026-08-09T22:14:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
+| `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | P1 | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-09T20:10:42Z`** - sn71 commit touches scoring: Close and verify dev snapshot request sets
+- **`sn89:scoring_commit:2026-08-09T22:14:09Z`** - sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -195,6 +195,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
 | `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
 | `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
+| `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

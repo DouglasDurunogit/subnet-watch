@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T10:48:57Z, block 8806323
+# ALARMS - generated 2026-08-09T11:40:03Z, block 8806579
 
-window: first_seen in [2026-08-09T09:34:31Z, 2026-08-09T10:49:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T10:25:38Z, 2026-08-09T11:40:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,7 +9,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-09T09:39:44Z` | 71 | SCORING_COMMIT | P1 | 2026-08-09T09:53:17Z | sn71 commit touches scoring: Use fresh identities for scorer retries |
 | `sn61:release:4.9.3` | 61 | RELEASE | P1 | 2026-08-09T10:49:31Z | sn61 released 4.9.3 |
 | `sn61:scoring_commit:2026-08-09T10:26:10Z` | 61 | SCORING_COMMIT | P1 | 2026-08-09T10:49:31Z | sn61 commit touches scoring: deps: update challenge image version for bot_virus_v1 to 1.0.3 |
 | `sn67:scoring_commit:2026-08-09T09:41:18Z` | 67 | SCORING_COMMIT | P1 | 2026-08-09T10:49:31Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260809.post0 |
@@ -18,8 +17,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-09T09:39:44Z`** - sn71 commit touches scoring: Use fresh identities for scorer retries
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn61:release:4.9.3`** - sn61 released 4.9.3
   - published 2026-08-09T10:27:24Z (was 4.9.2)
 - **`sn61:scoring_commit:2026-08-09T10:26:10Z`** - sn61 commit touches scoring: deps: update challenge image version for bot_virus_v1 to 1.0.3
@@ -52,8 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn11:scoring_commit:2026-08-02T10:05:07Z` | 11 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn11 commit touches scoring: docs(incentive): takeover bar decays to a -3% terminal handicap |
-| `sn71:scoring_commit:2026-08-02T09:58:33Z` | 71 | SCORING_COMMIT | 2026-08-02T11:08:46Z | sn71 commit touches scoring: Delay candidate imports until verifier startup |
 | `sn103:release:v2008` | 103 | RELEASE | 2026-08-02T12:34:55Z | sn103 released v2008 |
 | `sn103:scoring_commit:2026-08-02T11:23:08Z` | 103 | SCORING_COMMIT | 2026-08-02T12:34:55Z | sn103 commit touches scoring: validator: release v2008 |
 | `sn71:scoring_commit:2026-08-02T13:57:44Z` | 71 | SCORING_COMMIT | 2026-08-02T15:37:21Z | sn71 commit touches scoring: Bind verified auditor fallback workflow |
@@ -211,6 +206,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-09T05:06:02Z` | 92 | SCORING_COMMIT | 2026-08-09T05:16:01Z | sn92 commit touches scoring: Move inference cost off the validator and onto the submission |
 | `sn71:scoring_commit:2026-08-09T07:50:56Z` | 71 | SCORING_COMMIT | 2026-08-09T09:02:27Z | sn71 commit touches scoring: Retry transient company homepage verification |
 | `sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision` | 96 | RELEASE | 2026-08-09T09:02:27Z | sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision |
+| `sn71:scoring_commit:2026-08-09T09:39:44Z` | 71 | SCORING_COMMIT | 2026-08-09T09:53:17Z | sn71 commit touches scoring: Use fresh identities for scorer retries |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

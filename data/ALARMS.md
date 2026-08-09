@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-09T19:10:59Z, block 8808834
+# ALARMS - generated 2026-08-09T19:56:14Z, block 8809060
 
-window: first_seen in [2026-08-09T17:56:37Z, 2026-08-09T19:11:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-09T18:41:46Z, 2026-08-09T19:56:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | P1 | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
-| `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | P1 | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
+| `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | P1 | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
+| `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | P2 | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 
 ### detail
 
-- **`sn90:release:v1.0.2 — proxy version header + owner mi`** - sn90 released v1.0.2 — proxy version header + owner miner UID hardcode
-  - published 2026-08-09T18:13:35Z (was v1.0.1)
-- **`sn90:scoring_commit:2026-08-09T18:13:35Z`** - sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner…
+- **`sn126:scoring_commit:2026-08-09T19:04:26Z`** - sn126 commit touches scoring: Document miner training benchmark
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:readme_task_diff:99d35d8a81c2f921`** - sn126 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -196,6 +196,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
 | `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
 | `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |
+| `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
+| `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
 | `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
 | `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |

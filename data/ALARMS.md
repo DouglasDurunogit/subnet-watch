@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T17:24:29Z, block 8815501
+# ALARMS - generated 2026-08-10T18:24:02Z, block 8815799
 
-window: first_seen in [2026-08-10T16:10:08Z, 2026-08-10T17:25:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T17:09:36Z, 2026-08-10T18:24:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,16 +9,13 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:release:14.13.2` | 2 | RELEASE | P1 | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
-| `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | P1 | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
+| `sn103:burn_drop:0.000` | 103 | BURN_DROP | P0 | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:scoring_commit:2026-08-10T16:47:17Z` | 104 | SCORING_COMMIT | P1 | 2026-08-10T17:25:08Z | sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast… |
 
 ### detail
 
-- **`sn2:release:14.13.2`** - sn2 released 14.13.2
-  - published 2026-08-10T16:03:31Z (was 14.13.1)
-- **`sn120:scoring_commit:2026-08-10T15:52:21Z`** - sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn103:burn_drop:0.000`** - sn103 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn104:scoring_commit:2026-08-10T16:47:17Z`** - sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
@@ -200,6 +197,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-08-10T12:09:35Z` | 120 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn120 commit touches scoring: Raise duel max_model_len to 65k and stop burning miners on context-li… |
 | `sn124:scoring_commit:2026-08-10T13:51:15Z` | 124 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn124 commit touches scoring: Report seed scores under the epoch that leased them |
 | `sn66:scoring_commit:2026-08-10T14:15:27Z` | 66 | SCORING_COMMIT | 2026-08-10T15:13:27Z | sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks |
+| `sn2:release:14.13.2` | 2 | RELEASE | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
+| `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |

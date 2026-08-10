@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T22:55:21Z, block 8817155
+# ALARMS - generated 2026-08-10T23:47:18Z, block 8817415
 
-window: first_seen in [2026-08-10T21:40:47Z, 2026-08-10T22:55:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T22:32:46Z, 2026-08-10T23:47:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | P1 | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
+| `sn91:scoring_commit:2026-08-10T23:24:09Z` | 91 | SCORING_COMMIT | P1 | 2026-08-10T23:47:46Z | sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191) |
 
 ### detail
 
 - **`sn56:scoring_commit:2026-08-10T22:40:49Z`** - sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-08-10T23:24:09Z`** - sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -34,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn13:release:Release v1.18.69` | 13 | RELEASE | 2026-08-03T23:17:05Z | sn13 released Release v1.18.69 |
-| `sn54:scoring_commit:2026-07-22T23:19:48Z` | 54 | SCORING_COMMIT | 2026-08-03T23:17:05Z | sn54 commit touches scoring: Made miner process more Intuitive |
 | `sn61:release:4.8.4` | 61 | RELEASE | 2026-08-04T00:59:07Z | sn61 released 4.8.4 |
 | `sn61:scoring_commit:2026-08-04T00:04:26Z` | 61 | SCORING_COMMIT | 2026-08-04T00:59:07Z | sn61 commit touches scoring: fix: handle miner hotkey changes in update_miner_infos method |
 | `sn66:scoring_commit:2026-08-04T02:48:27Z` | 66 | SCORING_COMMIT | 2026-08-04T04:26:43Z | sn66 commit touches scoring: Merge pull request #10 from conjectures-io/codex/audited-erdos-task-po |

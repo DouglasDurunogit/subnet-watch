@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T16:22:23Z, block 8815191
+# ALARMS - generated 2026-08-10T17:24:29Z, block 8815501
 
-window: first_seen in [2026-08-10T15:07:50Z, 2026-08-10T16:22:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T16:10:08Z, 2026-08-10T17:25:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-08-10T14:15:27Z` | 66 | SCORING_COMMIT | P1 | 2026-08-10T15:13:27Z | sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks |
 | `sn2:release:14.13.2` | 2 | RELEASE | P1 | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
 | `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | P1 | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
-| `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | P2 | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
+| `sn104:scoring_commit:2026-08-10T16:47:17Z` | 104 | SCORING_COMMIT | P1 | 2026-08-10T17:25:08Z | sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast… |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-08-10T14:15:27Z`** - sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn2:release:14.13.2`** - sn2 released 14.13.2
   - published 2026-08-10T16:03:31Z (was 14.13.1)
 - **`sn120:scoring_commit:2026-08-10T15:52:21Z`** - sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn107:readme_task_diff:9628fd9429b582ad`** - sn107 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn104:scoring_commit:2026-08-10T16:47:17Z`** - sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.830` | 121 | BURN_DROP | 2026-08-03T17:24:55Z | sn121 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn80:burn_drop:0.950` | 80 | BURN_DROP | 2026-08-03T19:07:07Z | sn80 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn107:weights_version_bump:20` | 107 | WEIGHTS_VERSION_BUMP | 2026-08-04T04:26:43Z | sn107 weights_version 13 -> 20 |
 | `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
@@ -44,8 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn111:scoring_commit:2026-08-03T15:17:43Z` | 111 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn111 commit touches scoring: Add configurable PDF readers for claims miners |
-| `sn120:scoring_commit:2026-08-03T15:23:43Z` | 120 | SCORING_COMMIT | 2026-08-03T17:24:55Z | sn120 commit touches scoring: Refactor lora evaluation runtime (#603) |
 | `sn112:scoring_commit:2026-08-03T17:42:32Z` | 112 | SCORING_COMMIT | 2026-08-03T19:07:07Z | sn112 commit touches scoring: chore(weights): champion burn 25% -> 80% (miner fraction 0.75 -> 0.20… |
 | `sn89:scoring_commit:2026-08-03T19:58:12Z` | 89 | SCORING_COMMIT | 2026-08-03T20:39:27Z | sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB… |
 | `sn13:release:Release v1.18.69` | 13 | RELEASE | 2026-08-03T23:17:05Z | sn13 released Release v1.18.69 |
@@ -205,8 +199,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn75:scoring_commit:2026-08-10T13:09:53Z` | 75 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn75 commit touches scoring: Merge pull request #36 from thenervelab/feat/arion-miner-payments |
 | `sn120:scoring_commit:2026-08-10T12:09:35Z` | 120 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn120 commit touches scoring: Raise duel max_model_len to 65k and stop burning miners on context-li… |
 | `sn124:scoring_commit:2026-08-10T13:51:15Z` | 124 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn124 commit touches scoring: Report seed scores under the epoch that leased them |
-| `sn111:readme_task_diff:9de57787ec8f18f4` | 111 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn111 README task/scoring sections changed |
-| `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |
+| `sn66:scoring_commit:2026-08-10T14:15:27Z` | 66 | SCORING_COMMIT | 2026-08-10T15:13:27Z | sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |
@@ -226,6 +219,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |
 | `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
+| `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

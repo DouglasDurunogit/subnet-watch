@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T12:07:41Z, block 8813917
+# ALARMS - generated 2026-08-10T13:54:01Z, block 8814449
 
-window: first_seen in [2026-08-10T10:53:05Z, 2026-08-10T12:08:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T12:39:33Z, 2026-08-10T13:54:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-10T11:35:10Z` | 89 | SCORING_COMMIT | P1 | 2026-08-10T12:08:05Z | sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare … |
+| `sn51:release:executor-v1.116` | 51 | RELEASE | P1 | 2026-08-10T13:54:33Z | sn51 released executor-v1.116 |
+| `sn66:scoring_commit:2026-08-10T13:20:05Z` | 66 | SCORING_COMMIT | P1 | 2026-08-10T13:54:33Z | sn66 commit touches scoring: Merge pull request #35 from conjectures-io/feat/show-retired-tasks |
+| `sn67:scoring_commit:2026-08-10T12:29:01Z` | 67 | SCORING_COMMIT | P1 | 2026-08-10T13:54:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260810.post5 |
+| `sn75:scoring_commit:2026-08-10T13:09:53Z` | 75 | SCORING_COMMIT | P1 | 2026-08-10T13:54:33Z | sn75 commit touches scoring: Merge pull request #36 from thenervelab/feat/arion-miner-payments |
+| `sn120:scoring_commit:2026-08-10T12:09:35Z` | 120 | SCORING_COMMIT | P1 | 2026-08-10T13:54:33Z | sn120 commit touches scoring: Raise duel max_model_len to 65k and stop burning miners on context-li… |
+| `sn124:scoring_commit:2026-08-10T13:51:15Z` | 124 | SCORING_COMMIT | P1 | 2026-08-10T13:54:33Z | sn124 commit touches scoring: Report seed scores under the epoch that leased them |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-10T11:35:10Z`** - sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare …
+- **`sn51:release:executor-v1.116`** - sn51 released executor-v1.116
+  - published 2026-08-10T12:26:56Z (was executor-v1.115)
+- **`sn66:scoring_commit:2026-08-10T13:20:05Z`** - sn66 commit touches scoring: Merge pull request #35 from conjectures-io/feat/show-retired-tasks
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-10T12:29:01Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260810.post5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn75:scoring_commit:2026-08-10T13:09:53Z`** - sn75 commit touches scoring: Merge pull request #36 from thenervelab/feat/arion-miner-payments
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-08-10T12:09:35Z`** - sn120 commit touches scoring: Raise duel max_model_len to 65k and stop burning miners on context-li…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn124:scoring_commit:2026-08-10T13:51:15Z`** - sn124 commit touches scoring: Report seed scores under the epoch that leased them
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -196,6 +211,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
 | `sn96:scoring_commit:2026-08-10T06:32:26Z` | 96 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn96 commit touches scoring: fix: resume deferred miner updates at idle |
 | `sn56:scoring_commit:2026-08-10T08:27:12Z` | 56 | SCORING_COMMIT | 2026-08-10T09:57:17Z | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344) |
+| `sn89:scoring_commit:2026-08-10T11:35:10Z` | 89 | SCORING_COMMIT | 2026-08-10T12:08:05Z | sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare … |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:9de57787ec8f18f4` | 111 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn111 README task/scoring sections changed |
 | `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |

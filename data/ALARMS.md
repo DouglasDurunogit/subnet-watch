@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-10T09:56:46Z, block 8813262
+# ALARMS - generated 2026-08-10T11:18:39Z, block 8813672
 
-window: first_seen in [2026-08-10T08:42:17Z, 2026-08-10T09:57:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T10:04:07Z, 2026-08-10T11:19:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn56:scoring_commit:2026-08-10T08:27:12Z` | 56 | SCORING_COMMIT | P1 | 2026-08-10T09:57:17Z | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344) |
-
-### detail
-
-- **`sn56:scoring_commit:2026-08-10T08:27:12Z`** - sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -200,6 +193,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-10T07:15:30Z` | 71 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn71 commit touches scoring: Gate daily scoring and autoresearch readiness |
 | `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
 | `sn96:scoring_commit:2026-08-10T06:32:26Z` | 96 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn96 commit touches scoring: fix: resume deferred miner updates at idle |
+| `sn56:scoring_commit:2026-08-10T08:27:12Z` | 56 | SCORING_COMMIT | 2026-08-10T09:57:17Z | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344) |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:9de57787ec8f18f4` | 111 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn111 README task/scoring sections changed |
 | `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |

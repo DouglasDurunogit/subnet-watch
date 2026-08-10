@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T20:25:39Z, block 8816407
+# ALARMS - generated 2026-08-10T21:20:42Z, block 8816682
 
-window: first_seen in [2026-08-10T19:11:15Z, 2026-08-10T20:26:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T20:06:16Z, 2026-08-10T21:21:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn97:scoring_commit:2026-08-10T18:23:39Z` | 97 | SCORING_COMMIT | P1 | 2026-08-10T19:31:19Z | sn97 commit touches scoring: feat: add discarded questions to scoring artifact |
-| `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | P1 | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |
 | `sn2:release:14.13.3` | 2 | RELEASE | P1 | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
 | `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | P1 | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
 
 ### detail
 
-- **`sn97:scoring_commit:2026-08-10T18:23:39Z`** - sn97 commit touches scoring: feat: add discarded questions to scoring artifact
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.15 — seal epoch sync + Prism submit`** - sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA
-  - published 2026-08-10T19:12:09Z (was v3.3.13 — design screenshot egress proxy + gateway admin auth)
 - **`sn2:release:14.13.3`** - sn2 released 14.13.3
   - published 2026-08-10T20:04:54Z (was 14.13.2)
 - **`sn100:release:v3.3.16 — design emit cold-start + perma`** - sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests
@@ -43,7 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn89:scoring_commit:2026-08-03T19:58:12Z` | 89 | SCORING_COMMIT | 2026-08-03T20:39:27Z | sn89 commit touches scoring: closers feed: per-key display-label overrides (SN89_CLOSERS_MINER_LAB… |
 | `sn13:release:Release v1.18.69` | 13 | RELEASE | 2026-08-03T23:17:05Z | sn13 released Release v1.18.69 |
 | `sn54:scoring_commit:2026-07-22T23:19:48Z` | 54 | SCORING_COMMIT | 2026-08-03T23:17:05Z | sn54 commit touches scoring: Made miner process more Intuitive |
 | `sn61:release:4.8.4` | 61 | RELEASE | 2026-08-04T00:59:07Z | sn61 released 4.8.4 |
@@ -205,6 +198,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:release:14.13.2` | 2 | RELEASE | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
 | `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
 | `sn104:scoring_commit:2026-08-10T16:47:17Z` | 104 | SCORING_COMMIT | 2026-08-10T17:25:08Z | sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast… |
+| `sn97:scoring_commit:2026-08-10T18:23:39Z` | 97 | SCORING_COMMIT | 2026-08-10T19:31:19Z | sn97 commit touches scoring: feat: add discarded questions to scoring artifact |
+| `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |

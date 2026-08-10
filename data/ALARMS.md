@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-10T04:49:52Z, block 8811728
+# ALARMS - generated 2026-08-10T06:19:58Z, block 8812178
 
-window: first_seen in [2026-08-10T03:35:21Z, 2026-08-10T04:50:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T05:05:21Z, 2026-08-10T06:20:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn91:scoring_commit:2026-08-10T04:06:38Z` | 91 | SCORING_COMMIT | P1 | 2026-08-10T06:20:21Z | sn91 commit touches scoring: miner: `cascade duel` — full settled-round verdict from public receipt |
+| `sn96:release:v0.1.33 - Maximum-Concurrency Proof Serv` | 96 | RELEASE | P1 | 2026-08-10T06:20:21Z | sn96 released v0.1.33 - Maximum-Concurrency Proof Serving |
+
+### detail
+
+- **`sn91:scoring_commit:2026-08-10T04:06:38Z`** - sn91 commit touches scoring: miner: `cascade duel` — full settled-round verdict from public receipt
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:v0.1.33 - Maximum-Concurrency Proof Serv`** - sn96 released v0.1.33 - Maximum-Concurrency Proof Serving
+  - published 2026-08-10T05:42:51Z (was v0.1.32 - Miner Hard-Proof Transport)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,9 +39,6 @@ _none_
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
-| `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
-| `sn71:scoring_commit:2026-08-03T03:14:29Z` | 71 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn71 commit touches scoring: Bind model scoring to measured catalog execution |
 | `sn51:release:executor-v1.115` | 51 | RELEASE | 2026-08-03T12:03:18Z | sn51 released executor-v1.115 |
 | `sn51:scoring_commit:2026-08-03T09:00:56Z` | 51 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182) |
 | `sn60:scoring_commit:2026-08-03T11:51:06Z` | 60 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn60 commit touches scoring: changed scorer model to deepseek 3.2 |
@@ -190,8 +197,6 @@ _none_
 | `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
 | `sn89:scoring_commit:2026-08-10T02:26:54Z` | 89 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn89 commit touches scoring: Retire MINER_EMISSION_CAP, and make it replay-safe on the way out |
 | `sn92:scoring_commit:2026-08-10T00:47:03Z` | 92 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn92 commit touches scoring: Tell a validator when no directive exists rather than blaming its buil |
-| `sn41:readme_task_diff:fb51e503b4bd991f` | 41 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn41 README task/scoring sections changed |
-| `sn66:readme_task_diff:77c2760695d8f219` | 66 | README_TASK_DIFF | 2026-08-03T05:02:01Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:9de57787ec8f18f4` | 111 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn111 README task/scoring sections changed |
 | `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |

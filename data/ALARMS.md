@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T08:13:20Z, block 8812745
+# ALARMS - generated 2026-08-10T09:56:46Z, block 8813262
 
-window: first_seen in [2026-08-10T06:58:47Z, 2026-08-10T08:13:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T08:42:17Z, 2026-08-10T09:57:17Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.9.4` | 61 | RELEASE | P1 | 2026-08-10T08:13:47Z | sn61 released 4.9.4 |
-| `sn71:scoring_commit:2026-08-10T07:15:30Z` | 71 | SCORING_COMMIT | P1 | 2026-08-10T08:13:47Z | sn71 commit touches scoring: Gate daily scoring and autoresearch readiness |
-| `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | P1 | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
-| `sn96:scoring_commit:2026-08-10T06:32:26Z` | 96 | SCORING_COMMIT | P1 | 2026-08-10T08:13:47Z | sn96 commit touches scoring: fix: resume deferred miner updates at idle |
+| `sn56:scoring_commit:2026-08-10T08:27:12Z` | 56 | SCORING_COMMIT | P1 | 2026-08-10T09:57:17Z | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344) |
 
 ### detail
 
-- **`sn61:release:4.9.4`** - sn61 released 4.9.4
-  - published 2026-08-10T07:59:39Z (was 4.9.3)
-- **`sn71:scoring_commit:2026-08-10T07:15:30Z`** - sn71 commit touches scoring: Gate daily scoring and autoresearch readiness
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.34 — Reliable Miner Update`** - sn96 released Verathos v0.1.34 — Reliable Miner Updates
-  - published 2026-08-10T06:47:21Z (was v0.1.33 - Maximum-Concurrency Proof Serving)
-- **`sn96:scoring_commit:2026-08-10T06:32:26Z`** - sn96 commit touches scoring: fix: resume deferred miner updates at idle
+- **`sn56:scoring_commit:2026-08-10T08:27:12Z`** - sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -205,6 +196,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-10T00:47:03Z` | 92 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn92 commit touches scoring: Tell a validator when no directive exists rather than blaming its buil |
 | `sn91:scoring_commit:2026-08-10T04:06:38Z` | 91 | SCORING_COMMIT | 2026-08-10T06:20:21Z | sn91 commit touches scoring: miner: `cascade duel` — full settled-round verdict from public receipt |
 | `sn96:release:v0.1.33 - Maximum-Concurrency Proof Serv` | 96 | RELEASE | 2026-08-10T06:20:21Z | sn96 released v0.1.33 - Maximum-Concurrency Proof Serving |
+| `sn61:release:4.9.4` | 61 | RELEASE | 2026-08-10T08:13:47Z | sn61 released 4.9.4 |
+| `sn71:scoring_commit:2026-08-10T07:15:30Z` | 71 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn71 commit touches scoring: Gate daily scoring and autoresearch readiness |
+| `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
+| `sn96:scoring_commit:2026-08-10T06:32:26Z` | 96 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn96 commit touches scoring: fix: resume deferred miner updates at idle |
 | `sn89:readme_task_diff:cc97f5e9efa9aabe` | 89 | README_TASK_DIFF | 2026-08-03T15:12:34Z | sn89 README task/scoring sections changed |
 | `sn111:readme_task_diff:9de57787ec8f18f4` | 111 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn111 README task/scoring sections changed |
 | `sn120:readme_task_diff:27af16e9f62a251e` | 120 | README_TASK_DIFF | 2026-08-03T17:24:55Z | sn120 README task/scoring sections changed |

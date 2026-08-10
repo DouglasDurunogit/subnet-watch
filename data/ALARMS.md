@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-10T21:20:42Z, block 8816682
+# ALARMS - generated 2026-08-10T22:06:26Z, block 8816911
 
-window: first_seen in [2026-08-10T20:06:16Z, 2026-08-10T21:21:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T20:52:12Z, 2026-08-10T22:07:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn2:release:14.13.3` | 2 | RELEASE | P1 | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
-| `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | P1 | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
-
-### detail
-
-- **`sn2:release:14.13.3`** - sn2 released 14.13.3
-  - published 2026-08-10T20:04:54Z (was 14.13.2)
-- **`sn100:release:v3.3.16 — design emit cold-start + perma`** - sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests
-  - published 2026-08-10T19:36:46Z (was v3.3.15 — seal epoch sync + Prism submitter WTA)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -200,6 +190,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:scoring_commit:2026-08-10T16:47:17Z` | 104 | SCORING_COMMIT | 2026-08-10T17:25:08Z | sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast… |
 | `sn97:scoring_commit:2026-08-10T18:23:39Z` | 97 | SCORING_COMMIT | 2026-08-10T19:31:19Z | sn97 commit touches scoring: feat: add discarded questions to scoring artifact |
 | `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |
+| `sn2:release:14.13.3` | 2 | RELEASE | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
+| `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |

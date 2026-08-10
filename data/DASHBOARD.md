@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-10T11:18:39Z · block 8813672 · run_status **ok**_
+_snapshot 2026-08-10T12:07:41Z · block 8813917 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **55** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.3 | 118 | 32,662 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.8 | 68.67 | 207 | cpu-small | 10 | 33% |
-| 3 | sn67 Harnyx | 71.2 | 17.31 | 751 | cpu-small | 129 | 19% |
-| 4 | sn91 cascade | 70.3 | 802 | 2,747 | rtx4090* | 5 | 50% |
-| 5 | sn96 Verathos | 70.3 | 36.03 | 270 | rtx4090 | 51 | 44% |
-| 6 | sn1 Apex | 69.8 | 691 | 1,591 | rtx4090* | 4 | 52% |
-| 7 | sn41 Almanac | 69.2 | 11.08 | 34.78 | cpu-small | 69 | 70% |
-| 8 | sn62 Ridges | 69 | 548 | 1,984 | rtx4090* | 7 | 35% |
-| 9 | sn26 Perturb | 68.1 | 21.03 | 38.66 | rtx3060 | 11 | 50% |
-| 10 | sn11 TrajectoryRL | 67.4 | 4,538 | 4,538 = | cpu-small | 1 | 100% |
-| 11 | sn15 ORO | 67.4 | 10.12 | 20.45 | cpu-small | 79 | 93% |
-| 12 | sn38 ChronoLLM | 65.7 | 216 | 3,632 | rtx4090* | 10 | 52% |
-| 13 | sn21 AdTAO | 65.4 | 4.69 | 21.82 | cpu-small | 142 | 45% |
-| 14 | sn80 OpenRoboto | 64.7 | 152 | 553 | rtx4090* | 4 | 91% |
-| 15 | sn28 gm | 63.4 | 105 | 3,955 | rtx4090* | 26 | 40% |
-| 16 | sn100 BASE | 63.4 | 102 | 324 | rtx4090* | 8 | 50% |
-| 17 | sn61 RedTeam | 63.1 | 94.24 | 391 | rtx4090* | 45 | 8% |
-| 18 | sn51 lium.io | 58.7 | 32.20 | 3,206 | rtx4090* | 52 | 55% |
-| 19 | sn6 Numinous | 58 | 23.28 | 457 | cpu-small | 18 | 26% |
-| 20 | sn2 DSperse | 57 | 14.39 | 115 | rtx4090* | 11 | 83% |
+| 1 | sn107 Minos | 78 | 110 | 33,059 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.8 | 69.17 | 208 | cpu-small | 10 | 33% |
+| 3 | sn67 Harnyx | 71.3 | 17.44 | 756 | cpu-small | 129 | 19% |
+| 4 | sn91 cascade | 70.3 | 822 | 2,813 | rtx4090* | 5 | 50% |
+| 5 | sn96 Verathos | 70.1 | 33.99 | 341 | rtx4090 | 52 | 41% |
+| 6 | sn1 Apex | 69.8 | 694 | 1,598 | rtx4090* | 4 | 52% |
+| 7 | sn41 Almanac | 69.3 | 11.18 | 35.06 | cpu-small | 69 | 70% |
+| 8 | sn62 Ridges | 69 | 553 | 1,999 | rtx4090* | 7 | 35% |
+| 9 | sn26 Perturb | 68.2 | 21.10 | 38.78 | rtx3060 | 11 | 50% |
+| 10 | sn11 TrajectoryRL | 67.4 | 4,577 | 4,577 = | cpu-small | 1 | 100% |
+| 11 | sn15 ORO | 67.4 | 10.16 | 20.51 | cpu-small | 79 | 93% |
+| 12 | sn38 ChronoLLM | 65.7 | 218 | 3,658 | rtx4090* | 10 | 52% |
+| 13 | sn21 AdTAO | 65.5 | 4.75 | 22.09 | cpu-small | 142 | 45% |
+| 14 | sn80 OpenRoboto | 64.8 | 156 | 565 | rtx4090* | 4 | 91% |
+| 15 | sn28 gm | 63.4 | 104 | 3,921 | rtx4090* | 26 | 40% |
+| 16 | sn100 BASE | 63.4 | 102 | 323 | rtx4090* | 8 | 50% |
+| 17 | sn61 RedTeam | 63.1 | 93.17 | 387 | rtx4090* | 45 | 8% |
+| 18 | sn51 lium.io | 58.7 | 32.50 | 3,230 | rtx4090* | 52 | 55% |
+| 19 | sn6 Numinous | 58 | 23.41 | 459 | cpu-small | 18 | 26% |
+| 20 | sn2 DSperse | 57 | 14.57 | 116 | rtx4090* | 11 | 83% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-10T12:08 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: hf: import time — hf_scoring_config() rai |
 | 2026-08-10T09:57 | sn56 | SCORING_COMMIT | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO bos |
 | 2026-08-10T08:13 | sn61 | RELEASE | sn61 released 4.9.4 |
 | 2026-08-10T08:13 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Gate daily scoring and autoresearch readi |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-09T20:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Close and verify dev snapshot request set |
 | 2026-08-09T19:56 | sn126 | SCORING_COMMIT | sn126 commit touches scoring: Document miner training benchmark |
 | 2026-08-09T19:56 | sn126 | README_TASK_DIFF | sn126 README task/scoring sections changed |
-| 2026-08-09T18:18 | sn90 | RELEASE | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
 
 ---
 

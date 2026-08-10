@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-10T11:18:39Z, block 8813672
+# ALARMS - generated 2026-08-10T12:07:41Z, block 8813917
 
-window: first_seen in [2026-08-10T10:04:07Z, 2026-08-10T11:19:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T10:53:05Z, 2026-08-10T12:08:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn89:scoring_commit:2026-08-10T11:35:10Z` | 89 | SCORING_COMMIT | P1 | 2026-08-10T12:08:05Z | sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare … |
+
+### detail
+
+- **`sn89:scoring_commit:2026-08-10T11:35:10Z`** - sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,11 +36,6 @@ _none_
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:release:executor-v1.115` | 51 | RELEASE | 2026-08-03T12:03:18Z | sn51 released executor-v1.115 |
-| `sn51:scoring_commit:2026-08-03T09:00:56Z` | 51 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn51 commit touches scoring: DAH-2535: add xet challenge in verifyx (#1182) |
-| `sn60:scoring_commit:2026-08-03T11:51:06Z` | 60 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn60 commit touches scoring: changed scorer model to deepseek 3.2 |
-| `sn66:scoring_commit:2026-08-03T08:32:28Z` | 66 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn66 commit touches scoring: name scripts/pin_dependencies.sh when the task checkout is missing |
-| `sn71:scoring_commit:2026-08-03T08:54:54Z` | 71 | SCORING_COMMIT | 2026-08-03T12:03:18Z | sn71 commit touches scoring: Prepare isolated validator host Sentry runtime |
 | `sn14:scoring_commit:2026-08-03T12:50:00Z` | 14 | SCORING_COMMIT | 2026-08-03T15:12:34Z | sn14 commit touches scoring: Merge pull request #74 from latent-to/codex/miner-reward-docs |
 | `sn21:scoring_commit:2026-08-03T12:15:33Z` | 21 | SCORING_COMMIT | 2026-08-03T15:12:34Z | sn21 commit touches scoring: fix(validator): resolve scoring to weekly (WR-) releases only |
 | `sn28:release:v0.3.16` | 28 | RELEASE | 2026-08-03T15:12:34Z | sn28 released v0.3.16 |

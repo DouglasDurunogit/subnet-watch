@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-10T13:54:01Z · block 8814449 · run_status **ok**_
+_snapshot 2026-08-10T15:12:52Z · block 8814843 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.3 | 117 | 33,149 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.9 | 70.51 | 212 | cpu-small | 10 | 33% |
-| 3 | sn21 AdTAO | 76.4 | 64.51 | 261 | cpu-small | 16 | 30% |
-| 4 | sn67 Harnyx | 71.3 | 17.41 | 755 | cpu-small | 129 | 19% |
-| 5 | sn91 cascade | 70.3 | 816 | 2,793 | rtx4090* | 5 | 50% |
-| 6 | sn1 Apex | 69.7 | 682 | 1,574 | rtx4090* | 4 | 53% |
-| 7 | sn96 Verathos | 69.5 | 29.27 | 285 | rtx4090 | 57 | 41% |
-| 8 | sn41 Almanac | 69.2 | 11.08 | 34.78 | cpu-small | 69 | 70% |
-| 9 | sn62 Ridges | 69 | 548 | 1,984 | rtx4090* | 7 | 35% |
-| 10 | sn26 Perturb | 68.2 | 21.22 | 861 | rtx3060 | 11 | 51% |
-| 11 | sn11 TrajectoryRL | 67.4 | 4,567 | 4,567 = | cpu-small | 1 | 100% |
-| 12 | sn15 ORO | 67.4 | 9.77 | 19.96 | cpu-small | 80 | 93% |
-| 13 | sn124 Swarm | 65.8 | 221 | 677 | rtx4090* | 23 | 11% |
-| 14 | sn38 ChronoLLM | 65.7 | 218 | 3,657 | rtx4090* | 10 | 52% |
-| 15 | sn28 gm | 65 | 166 | 4,007 | rtx4090* | 25 | 40% |
-| 16 | sn80 OpenRoboto | 64.6 | 149 | 541 | rtx4090* | 4 | 91% |
-| 17 | sn100 BASE | 63.3 | 99.95 | 316 | rtx4090* | 8 | 50% |
-| 18 | sn61 RedTeam | 63.2 | 97.26 | 403 | rtx4090* | 45 | 8% |
-| 19 | sn51 lium.io | 58.8 | 32.97 | 3,212 | rtx4090* | 52 | 56% |
-| 20 | sn6 Numinous | 58 | 23.20 | 455 | cpu-small | 18 | 26% |
+| 1 | sn107 Minos | 78 | 109 | 32,746 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.8 | 69.15 | 208 | cpu-small | 10 | 33% |
+| 3 | sn21 AdTAO | 76.4 | 64.37 | 261 | cpu-small | 16 | 30% |
+| 4 | sn67 Harnyx | 71.2 | 17.42 | 755 | cpu-small | 129 | 19% |
+| 5 | sn91 cascade | 70.1 | 764 | 2,617 | rtx4090* | 5 | 50% |
+| 6 | sn96 Verathos | 69.4 | 28.47 | 304 | rtx4090 | 57 | 42% |
+| 7 | sn41 Almanac | 69.2 | 11.07 | 34.68 | cpu-small | 69 | 70% |
+| 8 | sn62 Ridges | 69 | 546 | 1,976 | rtx4090* | 7 | 35% |
+| 9 | sn26 Perturb | 68.2 | 21.16 | 859 | rtx3060 | 11 | 51% |
+| 10 | sn11 TrajectoryRL | 67.4 | 4,556 | 4,556 = | cpu-small | 1 | 100% |
+| 11 | sn15 ORO | 66.5 | 9.71 | 19.83 | cpu-small | 80 | 93% |
+| 12 | sn28 gm | 66.4 | 254 | 4,166 | rtx4090* | 25 | 42% |
+| 13 | sn124 Swarm | 65.8 | 220 | 673 | rtx4090* | 23 | 11% |
+| 14 | sn38 ChronoLLM | 65.7 | 215 | 3,609 | rtx4090* | 10 | 52% |
+| 15 | sn80 OpenRoboto | 64.4 | 138 | 505 | rtx4090* | 4 | 91% |
+| 16 | sn100 BASE | 63.3 | 101 | 318 | rtx4090* | 8 | 50% |
+| 17 | sn61 RedTeam | 63.3 | 99.18 | 412 | rtx4090* | 45 | 8% |
+| 18 | sn51 lium.io | 58.1 | 28.07 | 2,967 | rtx4090* | 50 | 58% |
+| 19 | sn6 Numinous | 58 | 23.13 | 454 | cpu-small | 18 | 26% |
+| 20 | sn85 Vidaio | 55.6 | 349 | 605 | rtx4090* | 10 | 19% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-10T15:13 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #36 from conjectures-i |
+| 2026-08-10T15:13 | sn107 | README_TASK_DIFF | sn107 README task/scoring sections changed |
 | 2026-08-10T13:54 | sn51 | RELEASE | sn51 released executor-v1.116 |
 | 2026-08-10T13:54 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #35 from conjectures-i |
 | 2026-08-10T13:54 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-10T08:13 | sn96 | RELEASE | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
 | 2026-08-10T08:13 | sn96 | SCORING_COMMIT | sn96 commit touches scoring: fix: resume deferred miner updates at idl |
 | 2026-08-10T06:20 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: miner: `cascade duel` — full settled-roun |
-| 2026-08-10T06:20 | sn96 | RELEASE | sn96 released v0.1.33 - Maximum-Concurrency Proof Serving |
-| 2026-08-10T03:01 | sn58 | BURN_DROP | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 
 ---
 

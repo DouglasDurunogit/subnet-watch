@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T15:12:52Z, block 8814843
+# ALARMS - generated 2026-08-10T16:22:23Z, block 8815191
 
-window: first_seen in [2026-08-10T13:58:27Z, 2026-08-10T15:13:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T15:07:50Z, 2026-08-10T16:22:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn66:scoring_commit:2026-08-10T14:15:27Z` | 66 | SCORING_COMMIT | P1 | 2026-08-10T15:13:27Z | sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks |
+| `sn2:release:14.13.2` | 2 | RELEASE | P1 | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
+| `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | P1 | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | P2 | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 
 ### detail
 
 - **`sn66:scoring_commit:2026-08-10T14:15:27Z`** - sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn2:release:14.13.2`** - sn2 released 14.13.2
+  - published 2026-08-10T16:03:31Z (was 14.13.1)
+- **`sn120:scoring_commit:2026-08-10T15:52:21Z`** - sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn107:readme_task_diff:9628fd9429b582ad`** - sn107 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.

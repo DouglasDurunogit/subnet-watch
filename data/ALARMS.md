@@ -1,13 +1,26 @@
-# ALARMS - generated 2026-08-10T00:37:04Z, block 8810464
+# ALARMS - generated 2026-08-10T03:01:07Z, block 8811184
 
-window: first_seen in [2026-08-09T23:22:31Z, 2026-08-10T00:37:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T01:46:40Z, 2026-08-10T03:01:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn58:burn_drop:0.000` | 58 | BURN_DROP | P0 | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn89:scoring_commit:2026-08-10T02:26:54Z` | 89 | SCORING_COMMIT | P1 | 2026-08-10T03:01:40Z | sn89 commit touches scoring: Retire MINER_EMISSION_CAP, and make it replay-safe on the way out |
+| `sn92:scoring_commit:2026-08-10T00:47:03Z` | 92 | SCORING_COMMIT | P1 | 2026-08-10T03:01:40Z | sn92 commit touches scoring: Tell a validator when no directive exists rather than blaming its buil |
+
+### detail
+
+- **`sn58:burn_drop:0.000`** - sn58 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn89:scoring_commit:2026-08-10T02:26:54Z`** - sn89 commit touches scoring: Retire MINER_EMISSION_CAP, and make it replay-safe on the way out
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-10T00:47:03Z`** - sn92 commit touches scoring: Tell a validator when no directive exists rather than blaming its buil
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -28,7 +41,6 @@ _none_
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
-| `sn71:scoring_commit:2026-08-02T23:42:46Z` | 71 | SCORING_COMMIT | 2026-08-03T01:17:55Z | sn71 commit touches scoring: Rebind validator telemetry recovery identity |
 | `sn41:scoring_commit:2026-07-24T20:08:42Z` | 41 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn41 commit touches scoring: Updating README to include the almanac market miner instructions in m… |
 | `sn66:scoring_commit:2026-08-03T03:28:43Z` | 66 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn66 commit touches scoring: Merge pull request #6 from conjectures-io/codex/external-task-checkout |
 | `sn71:scoring_commit:2026-08-03T03:14:29Z` | 71 | SCORING_COMMIT | 2026-08-03T05:02:01Z | sn71 commit touches scoring: Bind model scoring to measured catalog execution |

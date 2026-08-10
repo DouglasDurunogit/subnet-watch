@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-10T22:06:26Z, block 8816911
+# ALARMS - generated 2026-08-10T22:55:21Z, block 8817155
 
-window: first_seen in [2026-08-10T20:52:12Z, 2026-08-10T22:07:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T21:40:47Z, 2026-08-10T22:55:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | P1 | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
+
+### detail
+
+- **`sn56:scoring_commit:2026-08-10T22:40:49Z`** - sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T17:27:04Z, block 8822714
+# ALARMS - generated 2026-08-11T18:27:32Z, block 8823016
 
-window: first_seen in [2026-08-11T16:12:32Z, 2026-08-11T17:27:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T17:12:58Z, 2026-08-11T18:27:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,11 +11,11 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
-| `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | P1 | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
 | `sn28:release:v0.4.3-dev` | 28 | RELEASE | P1 | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
 | `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
 | `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |
+| `sn74:release:release-20260811-182518: chore(weights):` | 74 | RELEASE | P1 | 2026-08-11T18:27:58Z | sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687) |
+| `sn89:scoring_commit:2026-08-11T17:49:59Z` | 89 | SCORING_COMMIT | P1 | 2026-08-11T18:27:58Z | sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa… |
 
 ### detail
 
@@ -23,15 +23,15 @@ already reported in an earlier window and must not be re-alarmed.
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn121:burn_drop:0.635`** - sn121 burn fell 1.000 -> 0.635 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-08-11T15:51:27Z`** - sn71 commit touches scoring: Seed required miner in Git-tree rehearsal
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.18 — design tip-emit from latest sc`** - sn100 released v3.3.18 — design tip-emit from latest scored round only (#123)
-  - published 2026-08-11T15:54:57Z (was v3.3.16 — design emit cold-start + permanent seal-sync digests)
 - **`sn28:release:v0.4.3-dev`** - sn28 released v0.4.3-dev
   - published 2026-08-11T17:10:57Z (was v0.4.2-dev)
 - **`sn44:scoring_commit:2026-08-11T17:22:55Z`** - sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn75:scoring_commit:2026-08-11T08:48:47Z`** - sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260811-182518: chore(weights):`** - sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687)
+  - published 2026-08-11T18:24:21Z (was release-20260807-154750)
+- **`sn89:scoring_commit:2026-08-11T17:49:59Z`** - sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -216,6 +216,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.2-dev` | 28 | RELEASE | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
 | `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
 | `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
+| `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
+| `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T13:52:55Z, block 8821643
+# ALARMS - generated 2026-08-11T15:12:58Z, block 8822044
 
-window: first_seen in [2026-08-11T12:38:29Z, 2026-08-11T13:53:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T13:58:24Z, 2026-08-11T15:13:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn85:scoring_commit:2026-08-11T12:13:42Z` | 85 | SCORING_COMMIT | P1 | 2026-08-11T13:53:29Z | sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove… |
-| `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | P2 | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
+| `sn1:release:v4.2.22` | 1 | RELEASE | P1 | 2026-08-11T15:13:24Z | sn1 released v4.2.22 |
+| `sn28:release:v0.4.2-dev` | 28 | RELEASE | P1 | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
+| `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
+| `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
 
 ### detail
 
-- **`sn85:scoring_commit:2026-08-11T12:13:42Z`** - sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove…
+- **`sn1:release:v4.2.22`** - sn1 released v4.2.22
+  - published 2026-08-11T13:59:58Z (was v4.2.21)
+- **`sn28:release:v0.4.2-dev`** - sn28 released v0.4.2-dev
+  - published 2026-08-11T15:06:53Z (was v0.4.1)
+- **`sn111:scoring_commit:2026-08-11T14:44:28Z`** - sn111 commit touches scoring: Improve Silver adjudication and scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:d8d5d6469509a9b6`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn124:scoring_commit:2026-08-11T14:19:50Z`** - sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -198,6 +204,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
 | `sn21:scoring_commit:2026-08-11T12:05:14Z` | 21 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold … |
 | `sn66:scoring_commit:2026-08-11T11:34:05Z` | 66 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul |
+| `sn85:scoring_commit:2026-08-11T12:13:42Z` | 85 | SCORING_COMMIT | 2026-08-11T13:53:29Z | sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove… |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
@@ -216,6 +223,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
+| `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

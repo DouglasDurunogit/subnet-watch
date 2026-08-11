@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-10T23:47:18Z · block 8817415 · run_status **ok**_
+_snapshot 2026-08-11T00:39:37Z · block 8817677 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 52 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **52** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 56 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 9 | `████` |
-| 0.6–0.8 | 9 | `████` |
+| 0 (none) | 55 | `████████████████████████████` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 5 | `███` |
+| 0.4–0.6 | 9 | `█████` |
+| 0.6–0.8 | 9 | `█████` |
 | 0.8–0.99 | 7 | `████` |
-| ≥0.99 dead | 37 | `██████████████████` |
+| ≥0.99 dead | 37 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 77.9 | 109 | 32,265 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.7 | 67.93 | 205 | cpu-small | 10 | 33% |
-| 3 | sn67 Harnyx | 71.3 | 17.18 | 745 | cpu-small | 129 | 19% |
-| 4 | sn96 Verathos | 69.8 | 31.58 | 314 | rtx4090 | 48 | 41% |
-| 5 | sn91 cascade | 69.2 | 586 | 1,326 | rtx4090* | 5 | 50% |
-| 6 | sn41 Almanac | 69.2 | 10.99 | 33.74 | cpu-small | 69 | 69% |
-| 7 | sn62 Ridges | 68.9 | 535 | 1,938 | rtx4090* | 7 | 35% |
-| 8 | sn26 Perturb | 67.9 | 20.00 | 174 | rtx3060 | 11 | 50% |
-| 9 | sn15 ORO | 67.9 | 9.97 | 20.34 | cpu-small | 80 | 93% |
-| 10 | sn21 AdTAO | 66.1 | 5.44 | 25.60 | cpu-small | 118 | 45% |
-| 11 | sn124 Swarm | 65.7 | 213 | 652 | rtx4090* | 23 | 11% |
-| 12 | sn56 Gradients | 65.5 | 192 | 983 | rtx4090* | 11 | 72% |
-| 13 | sn100 BASE | 65 | 164 | 1,541 | rtx4090* | 7 | 43% |
-| 14 | sn38 ChronoLLM | 64.7 | 165 | 3,564 | rtx4090* | 10 | 52% |
-| 15 | sn80 OpenRoboto | 64.6 | 149 | 544 | rtx4090* | 4 | 91% |
-| 16 | sn61 RedTeam | 62.5 | 78.25 | 325 | rtx4090* | 47 | 6% |
-| 17 | sn28 gm | 61.1 | 53.37 | 4,115 | rtx4090* | 26 | 40% |
-| 18 | sn102 ConnitoAI | 60.1 | 1,336 | 1,342 | rtx4090* | 4 | 25% |
-| 19 | sn51 lium.io | 59.1 | 35.75 | 2,319 | rtx4090* | 50 | 66% |
-| 20 | sn6 Numinous | 58.1 | 23.89 | 468 | cpu-small | 18 | 26% |
+| 1 | sn107 Minos | 77.9 | 108 | 32,387 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.7 | 67.77 | 204 | cpu-small | 10 | 33% |
+| 3 | sn67 Harnyx | 71.3 | 17.20 | 746 | cpu-small | 129 | 19% |
+| 4 | sn96 Verathos | 70.3 | 36.11 | 302 | rtx4090 | 47 | 41% |
+| 5 | sn41 Almanac | 69.3 | 11.11 | 33.67 | cpu-small | 69 | 69% |
+| 6 | sn91 cascade | 69.2 | 582 | 1,315 | rtx4090* | 5 | 50% |
+| 7 | sn62 Ridges | 68.9 | 534 | 1,933 | rtx4090* | 7 | 35% |
+| 8 | sn15 ORO | 68 | 10.09 | 20.58 | cpu-small | 81 | 93% |
+| 9 | sn26 Perturb | 67.9 | 19.93 | 173 | rtx3060 | 11 | 50% |
+| 10 | sn21 AdTAO | 66.1 | 5.42 | 25.51 | cpu-small | 118 | 45% |
+| 11 | sn124 Swarm | 65.7 | 212 | 651 | rtx4090* | 23 | 11% |
+| 12 | sn38 ChronoLLM | 64.7 | 164 | 3,552 | rtx4090* | 10 | 52% |
+| 13 | sn80 OpenRoboto | 64.7 | 150 | 545 | rtx4090* | 4 | 91% |
+| 14 | sn100 BASE | 64.4 | 140 | 1,775 | rtx4090* | 7 | 50% |
+| 15 | sn28 gm | 62.8 | 86.87 | 4,721 | rtx4090* | 26 | 46% |
+| 16 | sn61 RedTeam | 62.5 | 77.79 | 326 | rtx4090* | 47 | 7% |
+| 17 | sn102 ConnitoAI | 59.7 | 1,182 | 1,395 | rtx4090* | 6 | 26% |
+| 18 | sn51 lium.io | 59.3 | 37.33 | 2,385 | rtx4090* | 50 | 67% |
+| 19 | sn2 DSperse | 59 | 26.62 | 118 | rtx4090* | 11 | 83% |
+| 20 | sn6 Numinous | 57.8 | 22.09 | 484 | cpu-small | 19 | 27% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 19 |
-| captured (>90%) | 25 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 17 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-11T00:40 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: merge: the canonical miner script and th |
+| 2026-08-11T00:40 | sn108 | README_TASK_DIFF | sn108 README task/scoring sections changed |
 | 2026-08-10T23:47 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion |
 | 2026-08-10T22:55 | sn56 | SCORING_COMMIT | sn56 commit touches scoring: Block tournament advancement when a group |
 | 2026-08-10T20:26 | sn2 | RELEASE | sn2 released 14.13.3 |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-10T15:13 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #36 from conjectures-i |
 | 2026-08-10T15:13 | sn107 | README_TASK_DIFF | sn107 README task/scoring sections changed |
 | 2026-08-10T13:54 | sn51 | RELEASE | sn51 released executor-v1.116 |
-| 2026-08-10T13:54 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #35 from conjectures-i |
-| 2026-08-10T13:54 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 
 ---
 

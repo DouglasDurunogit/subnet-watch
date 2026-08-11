@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-10T23:47:18Z, block 8817415
+# ALARMS - generated 2026-08-11T00:39:37Z, block 8817677
 
-window: first_seen in [2026-08-10T22:32:46Z, 2026-08-10T23:47:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-10T23:25:06Z, 2026-08-11T00:40:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | P1 | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
 | `sn91:scoring_commit:2026-08-10T23:24:09Z` | 91 | SCORING_COMMIT | P1 | 2026-08-10T23:47:46Z | sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191) |
+| `sn108:scoring_commit:2026-08-10T14:25:47Z` | 108 | SCORING_COMMIT | P1 | 2026-08-11T00:40:06Z | sn108 commit touches scoring: merge: the canonical miner script and the subnet-published image |
+| `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | P2 | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn56:scoring_commit:2026-08-10T22:40:49Z`** - sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn91:scoring_commit:2026-08-10T23:24:09Z`** - sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-10T14:25:47Z`** - sn108 commit touches scoring: merge: the canonical miner script and the subnet-published image
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:readme_task_diff:3f08d6dd9fd4b2c2`** - sn108 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -200,6 +203,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |
 | `sn2:release:14.13.3` | 2 | RELEASE | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
 | `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
+| `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
 | `sn66:readme_task_diff:590464a740b5fa2c` | 66 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn66 README task/scoring sections changed |
 | `sn107:readme_task_diff:661e720302e307e2` | 107 | README_TASK_DIFF | 2026-08-04T04:26:43Z | sn107 README task/scoring sections changed |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |

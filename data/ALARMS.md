@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T16:23:58Z, block 8822399
+# ALARMS - generated 2026-08-11T17:27:04Z, block 8822714
 
-window: first_seen in [2026-08-11T15:09:27Z, 2026-08-11T16:24:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T16:12:32Z, 2026-08-11T17:27:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.2.22` | 1 | RELEASE | P1 | 2026-08-11T15:13:24Z | sn1 released v4.2.22 |
-| `sn28:release:v0.4.2-dev` | 28 | RELEASE | P1 | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
-| `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
-| `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
+| `sn9:burn_drop:0.950` | 9 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
+| `sn121:burn_drop:0.635` | 121 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
 | `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | P1 | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
+| `sn28:release:v0.4.3-dev` | 28 | RELEASE | P1 | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
+| `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
+| `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |
 
 ### detail
 
-- **`sn1:release:v4.2.22`** - sn1 released v4.2.22
-  - published 2026-08-11T13:59:58Z (was v4.2.21)
-- **`sn28:release:v0.4.2-dev`** - sn28 released v0.4.2-dev
-  - published 2026-08-11T15:06:53Z (was v0.4.1)
-- **`sn111:scoring_commit:2026-08-11T14:44:28Z`** - sn111 commit touches scoring: Improve Silver adjudication and scoring
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-08-11T14:19:50Z`** - sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn9:burn_drop:0.950`** - sn9 burn fell 1.000 -> 0.950 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn121:burn_drop:0.635`** - sn121 burn fell 1.000 -> 0.635 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-11T15:51:27Z`** - sn71 commit touches scoring: Seed required miner in Git-tree rehearsal
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.18 — design tip-emit from latest sc`** - sn100 released v3.3.18 — design tip-emit from latest scored round only (#123)
   - published 2026-08-11T15:54:57Z (was v3.3.16 — design emit cold-start + permanent seal-sync digests)
+- **`sn28:release:v0.4.3-dev`** - sn28 released v0.4.3-dev
+  - published 2026-08-11T17:10:57Z (was v0.4.2-dev)
+- **`sn44:scoring_commit:2026-08-11T17:22:55Z`** - sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn75:scoring_commit:2026-08-11T08:48:47Z`** - sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
@@ -47,7 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn62:release:v0.2.4` | 62 | RELEASE | 2026-08-04T17:01:16Z | sn62 released v0.2.4 |
 | `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
 | `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
 | `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
@@ -211,6 +212,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-11T12:05:14Z` | 21 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold … |
 | `sn66:scoring_commit:2026-08-11T11:34:05Z` | 66 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul |
 | `sn85:scoring_commit:2026-08-11T12:13:42Z` | 85 | SCORING_COMMIT | 2026-08-11T13:53:29Z | sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove… |
+| `sn1:release:v4.2.22` | 1 | RELEASE | 2026-08-11T15:13:24Z | sn1 released v4.2.22 |
+| `sn28:release:v0.4.2-dev` | 28 | RELEASE | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
+| `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
+| `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |

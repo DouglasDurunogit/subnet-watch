@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T07:58:31Z, block 8819871
+# ALARMS - generated 2026-08-11T09:11:20Z, block 8820235
 
-window: first_seen in [2026-08-11T06:43:57Z, 2026-08-11T07:58:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T07:56:54Z, 2026-08-11T09:11:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,12 +10,21 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn61:release:4.9.6` | 61 | RELEASE | P1 | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
+| `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
+| `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | P1 | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
+| `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | P2 | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 
 ### detail
 
 - **`sn61:release:4.9.6`** - sn61 released 4.9.6
   - published 2026-08-11T07:35:27Z (was 4.9.5)
+- **`sn85:scoring_commit:2026-08-11T08:12:13Z`** - sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.1.35 — Concurrent Proof Serv`** - sn96 released Verathos v0.1.35 — Concurrent Proof Serving
+  - published 2026-08-11T08:15:31Z (was Verathos v0.1.34 — Reliable Miner Updates)
+- **`sn96:scoring_commit:2026-08-11T08:46:44Z`** - sn96 commit touches scoring: fix: recover shared-checkout miner updates
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn126:readme_task_diff:57aeaffcb3f2147f`** - sn126 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 

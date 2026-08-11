@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T18:27:32Z, block 8823016
+# ALARMS - generated 2026-08-11T19:49:26Z, block 8823426
 
-window: first_seen in [2026-08-11T17:12:58Z, 2026-08-11T18:27:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T18:35:00Z, 2026-08-11T19:50:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:burn_drop:0.950` | 9 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
-| `sn121:burn_drop:0.635` | 121 | BURN_DROP | P0 | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn28:release:v0.4.3-dev` | 28 | RELEASE | P1 | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
-| `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
-| `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | P1 | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |
-| `sn74:release:release-20260811-182518: chore(weights):` | 74 | RELEASE | P1 | 2026-08-11T18:27:58Z | sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687) |
-| `sn89:scoring_commit:2026-08-11T17:49:59Z` | 89 | SCORING_COMMIT | P1 | 2026-08-11T18:27:58Z | sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa… |
+| `sn71:scoring_commit:2026-08-11T18:25:04Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T19:50:00Z | sn71 commit touches scoring: Reuse bounded artifact verification sessions |
 
 ### detail
 
-- **`sn9:burn_drop:0.950`** - sn9 burn fell 1.000 -> 0.950 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.635`** - sn121 burn fell 1.000 -> 0.635 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn28:release:v0.4.3-dev`** - sn28 released v0.4.3-dev
-  - published 2026-08-11T17:10:57Z (was v0.4.2-dev)
-- **`sn44:scoring_commit:2026-08-11T17:22:55Z`** - sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn75:scoring_commit:2026-08-11T08:48:47Z`** - sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260811-182518: chore(weights):`** - sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687)
-  - published 2026-08-11T18:24:21Z (was release-20260807-154750)
-- **`sn89:scoring_commit:2026-08-11T17:49:59Z`** - sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa…
+- **`sn71:scoring_commit:2026-08-11T18:25:04Z`** - sn71 commit touches scoring: Reuse bounded artifact verification sessions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,10 +31,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
-| `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
-| `sn21:scoring_commit:2026-08-04T18:03:00Z` | 21 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn21 commit touches scoring: feat(validator): burn follows Rob's dated schedule; settle drops cens… |
-| `sn126:scoring_commit:2026-08-04T17:06:27Z` | 126 | SCORING_COMMIT | 2026-08-04T18:47:46Z | sn126 commit touches scoring: Release validator deployment gate 0.2.4 |
+| `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
+| `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
 | `sn111:scoring_commit:2026-08-04T21:41:42Z` | 111 | SCORING_COMMIT | 2026-08-05T00:53:57Z | sn111 commit touches scoring: Improve silver alignment and scoring |
 | `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
@@ -218,7 +198,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
 | `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
 | `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
-| `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
+| `sn28:release:v0.4.3-dev` | 28 | RELEASE | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
+| `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
+| `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |
+| `sn74:release:release-20260811-182518: chore(weights):` | 74 | RELEASE | 2026-08-11T18:27:58Z | sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687) |
+| `sn89:scoring_commit:2026-08-11T17:49:59Z` | 89 | SCORING_COMMIT | 2026-08-11T18:27:58Z | sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa… |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |

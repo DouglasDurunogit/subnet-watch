@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T22:57:58Z, block 8824369
+# ALARMS - generated 2026-08-11T23:53:52Z, block 8824648
 
-window: first_seen in [2026-08-11T21:43:25Z, 2026-08-11T22:58:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T22:39:20Z, 2026-08-11T23:54:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | P1 | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
+| `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
 
 ### detail
 
 - **`sn62:scoring_commit:2026-08-11T20:08:25Z`** - sn62 commit touches scoring: update validator api changes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-11T23:29:21Z`** - sn71 commit touches scoring: Reuse artifact verification transport pool
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn62:scoring_commit:2026-08-04T22:06:13Z` | 62 | SCORING_COMMIT | 2026-08-04T23:16:34Z | sn62 commit touches scoring: Merge pull request #473 from ridgesai/update/crucible-labs-validator |
 | `sn111:scoring_commit:2026-08-04T21:41:42Z` | 111 | SCORING_COMMIT | 2026-08-05T00:53:57Z | sn111 commit touches scoring: Improve silver alignment and scoring |
 | `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
 | `sn91:release:worker-v0.5.0` | 91 | RELEASE | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |

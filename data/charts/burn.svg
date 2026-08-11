@@ -35,20 +35,20 @@
 <path class="accent" d="M128.0,74.0 H666.0 a4.0,4.0 0 0 1 4.0,4.0 V94.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
 <text class="ink2 t-val" x="678.0" y="90">54</text>
 <text class="ink2 t-lab" x="118" y="122" text-anchor="end">0–0.2</text>
-<path class="accent" d="M128.0,106.0 H194.3 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="206.3" y="122">7</text>
+<path class="accent" d="M128.0,106.0 H184.2 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="196.2" y="122">6</text>
 <text class="ink2 t-lab" x="118" y="154" text-anchor="end">0.2–0.4</text>
-<path class="accent" d="M128.0,138.0 H174.2 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="186.2" y="154">5</text>
+<path class="accent" d="M128.0,138.0 H184.2 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="196.2" y="154">6</text>
 <text class="ink2 t-lab" x="118" y="186" text-anchor="end">0.4–0.6</text>
 <path class="accent" d="M128.0,170.0 H214.3 a4.0,4.0 0 0 1 4.0,4.0 V190.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
 <text class="ink2 t-val" x="226.3" y="186">9</text>
 <text class="ink2 t-lab" x="118" y="218" text-anchor="end">0.6–0.8</text>
-<path class="accent" d="M128.0,202.0 H204.3 a4.0,4.0 0 0 1 4.0,4.0 V222.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="216.3" y="218">8</text>
+<path class="accent" d="M128.0,202.0 H214.3 a4.0,4.0 0 0 1 4.0,4.0 V222.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="226.3" y="218">9</text>
 <text class="ink2 t-lab" x="118" y="250" text-anchor="end">0.8–0.99</text>
-<path class="accent" d="M128.0,234.0 H204.3 a4.0,4.0 0 0 1 4.0,4.0 V254.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="216.3" y="250">8</text>
+<path class="accent" d="M128.0,234.0 H194.3 a4.0,4.0 0 0 1 4.0,4.0 V254.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="206.3" y="250">7</text>
 <text class="ink2 t-lab" x="118" y="282" text-anchor="end">≥0.99 dead</text>
 <path class="critical" d="M128.0,266.0 H495.4 a4.0,4.0 0 0 1 4.0,4.0 V286.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
 <text class="ink t-val" x="507.4" y="282">37</text>

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-11T02:54:50Z · block 8818353 · run_status **ok**_
+_snapshot 2026-08-11T04:36:20Z · block 8818860 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **52** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,11 +30,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 54 | `████████████████████████████` |
-| 0–0.2 | 7 | `████` |
-| 0.2–0.4 | 5 | `███` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 6 | `███` |
 | 0.4–0.6 | 9 | `█████` |
-| 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 8 | `████` |
+| 0.6–0.8 | 9 | `█████` |
+| 0.8–0.99 | 7 | `████` |
 | ≥0.99 dead | 37 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.1 | 112 | 32,342 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.7 | 67.93 | 205 | cpu-small | 10 | 33% |
-| 3 | sn67 Harnyx | 70.4 | 14.21 | 818 | cpu-small | 129 | 22% |
-| 4 | sn91 cascade | 70.2 | 781 | 2,647 | rtx4090* | 5 | 50% |
-| 5 | sn41 Almanac | 69 | 10.37 | 33.75 | cpu-small | 66 | 72% |
-| 6 | sn62 Ridges | 68.9 | 534 | 1,933 | rtx4090* | 7 | 35% |
-| 7 | sn96 Verathos | 68.7 | 23.92 | 310 | rtx4090 | 56 | 41% |
-| 8 | sn15 ORO | 68 | 10.35 | 20.88 | cpu-small | 81 | 93% |
-| 9 | sn26 Perturb | 67.9 | 19.98 | 174 | rtx3060 | 11 | 50% |
-| 10 | sn21 AdTAO | 66.1 | 5.44 | 25.57 | cpu-small | 118 | 45% |
-| 11 | sn124 Swarm | 65.7 | 213 | 653 | rtx4090* | 23 | 11% |
-| 12 | sn80 OpenRoboto | 64.8 | 154 | 561 | rtx4090* | 4 | 91% |
-| 13 | sn38 ChronoLLM | 64.7 | 165 | 3,563 | rtx4090* | 10 | 52% |
-| 14 | sn100 BASE | 64.5 | 142 | 1,792 | rtx4090* | 7 | 50% |
-| 15 | sn28 gm | 63.6 | 110 | 4,414 | rtx4090* | 25 | 43% |
-| 16 | sn61 RedTeam | 62.6 | 81.03 | 332 | rtx4090* | 46 | 7% |
-| 17 | sn56 Gradients | 62 | 67.77 | 984 | rtx4090* | 13 | 72% |
-| 18 | sn51 lium.io | 60 | 44.15 | 2,918 | rtx4090* | 52 | 61% |
-| 19 | sn6 Numinous | 57.7 | 21.55 | 474 | cpu-small | 19 | 26% |
-| 20 | sn102 ConnitoAI | 56.9 | 511 | 1,653 | rtx4090* | 7 | 30% |
+| 1 | sn107 Minos | 77.9 | 108 | 32,192 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 75 | 43.23 | 172 | cpu-small | 10 | 33% |
+| 3 | sn67 Harnyx | 70.5 | 14.04 | 811 | cpu-small | 129 | 21% |
+| 4 | sn91 cascade | 70.2 | 786 | 2,663 | rtx4090* | 5 | 50% |
+| 5 | sn62 Ridges | 68.9 | 534 | 1,934 | rtx4090* | 7 | 35% |
+| 6 | sn96 Verathos | 68.9 | 25.35 | 304 | rtx4090 | 56 | 41% |
+| 7 | sn41 Almanac | 68.9 | 10.31 | 33.77 | cpu-small | 66 | 73% |
+| 8 | sn15 ORO | 68.1 | 10.39 | 20.95 | cpu-small | 81 | 93% |
+| 9 | sn26 Perturb | 67.9 | 19.98 | 173 | rtx3060 | 11 | 50% |
+| 10 | sn21 AdTAO | 66.1 | 5.34 | 25.19 | cpu-small | 118 | 45% |
+| 11 | sn124 Swarm | 65.6 | 208 | 653 | rtx4090* | 23 | 11% |
+| 12 | sn38 ChronoLLM | 64.7 | 162 | 3,535 | rtx4090* | 10 | 52% |
+| 13 | sn80 OpenRoboto | 64.7 | 153 | 557 | rtx4090* | 4 | 91% |
+| 14 | sn28 gm | 64.7 | 152 | 4,194 | rtx4090* | 25 | 41% |
+| 15 | sn100 BASE | 64.5 | 144 | 1,821 | rtx4090* | 7 | 50% |
+| 16 | sn61 RedTeam | 62.7 | 82.05 | 336 | rtx4090* | 46 | 7% |
+| 17 | sn56 Gradients | 62 | 67.75 | 983 | rtx4090* | 13 | 72% |
+| 18 | sn51 lium.io | 59.8 | 42.84 | 2,999 | rtx4090* | 51 | 61% |
+| 19 | sn6 Numinous | 57.8 | 21.90 | 482 | cpu-small | 19 | 26% |
+| 20 | sn120 Affine | 54.8 | 7,171 | 7,171 = | rtx4090* | 5 | 20% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-11T04:36 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: validator: record the decided challenger' |
 | 2026-08-11T02:55 | sn61 | RELEASE | sn61 released 4.9.5 |
 | 2026-08-11T02:55 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: refactor: update bot virus challenge envi |
 | 2026-08-11T00:40 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: merge: the canonical miner script and th |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-10T17:25 | sn104 | SCORING_COMMIT | sn104 commit touches scoring: fix validator weight-setting reliability |
 | 2026-08-10T16:22 | sn2 | RELEASE | sn2 released 14.13.2 |
 | 2026-08-10T16:22 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Reason v3: single-term scoring fork (wei |
-| 2026-08-10T15:13 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Merge pull request #36 from conjectures-i |
 
 ---
 

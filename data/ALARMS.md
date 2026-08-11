@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-11T11:20:06Z, block 8820879
+# ALARMS - generated 2026-08-11T12:08:10Z, block 8821120
 
-window: first_seen in [2026-08-11T10:05:32Z, 2026-08-11T11:20:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T10:53:46Z, 2026-08-11T12:08:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn21:scoring_commit:2026-08-11T12:05:14Z` | 21 | SCORING_COMMIT | P1 | 2026-08-11T12:08:46Z | sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold … |
+| `sn66:scoring_commit:2026-08-11T11:34:05Z` | 66 | SCORING_COMMIT | P1 | 2026-08-11T12:08:46Z | sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul |
+
+### detail
+
+- **`sn21:scoring_commit:2026-08-11T12:05:14Z`** - sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-11T11:34:05Z`** - sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

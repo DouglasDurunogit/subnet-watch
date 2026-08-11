@@ -1,20 +1,20 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-11T11:20:06Z  |  block: 8820879  |  row_status: ok
+snapshot_utc: 2026-08-11T12:08:10Z  |  block: 8821120  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.100625 USD), open=True
+- registration cost: 0.0005 TAO (0.100615 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 52  |  free: 0
-- subnet age: 1019.9 days  |  registered at block 1477264
+- subnet age: 1020.0 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3315.4171179218174** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.813665850275315
-- top_miner_usd_day: 11039.818256535476 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3315.423257778273** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.8136673571118145
+- top_miner_usd_day: 11039.838701293098 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -43,7 +43,7 @@ snapshot_utc: 2026-08-11T11:20:06Z  |  block: 8820879  |  row_status: ok
 - gate: **OK** 
 - score: 27.4 (rank 60), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 11d ago
+- freshness basis: SCORING_COMMIT 12d ago
 
 ## On-chain description
 

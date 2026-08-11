@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T09:11:20Z, block 8820235
+# ALARMS - generated 2026-08-11T10:24:00Z, block 8820599
 
-window: first_seen in [2026-08-11T07:56:54Z, 2026-08-11T09:11:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T09:09:26Z, 2026-08-11T10:24:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.9.6` | 61 | RELEASE | P1 | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
 | `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
 | `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | P1 | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
 | `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
-| `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | P2 | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 
 ### detail
 
-- **`sn61:release:4.9.6`** - sn61 released 4.9.6
-  - published 2026-08-11T07:35:27Z (was 4.9.5)
 - **`sn85:scoring_commit:2026-08-11T08:12:13Z`** - sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn96:release:Verathos v0.1.35 — Concurrent Proof Serv`** - sn96 released Verathos v0.1.35 — Concurrent Proof Serving
   - published 2026-08-11T08:15:31Z (was Verathos v0.1.34 — Reliable Miner Updates)
 - **`sn96:scoring_commit:2026-08-11T08:46:44Z`** - sn96 commit touches scoring: fix: recover shared-checkout miner updates
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:readme_task_diff:57aeaffcb3f2147f`** - sn126 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn66:scoring_commit:2026-08-04T08:30:10Z` | 66 | SCORING_COMMIT | 2026-08-04T10:09:01Z | sn66 commit touches scoring: Merge pull request #11 from conjectures-io/fix/missing-task-mode |
-| `sn89:scoring_commit:2026-08-04T08:36:48Z` | 89 | SCORING_COMMIT | 2026-08-04T10:09:01Z | sn89 commit touches scoring: closers 10% of total miner incentive (was 20%); LF/HF take the freed … |
 | `sn111:scoring_commit:2026-08-04T11:35:22Z` | 111 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn111 commit touches scoring: Improve agent validation and source grounding |
 | `sn114:scoring_commit:2026-08-04T11:22:01Z` | 114 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn114 commit touches scoring: Improve validation and sandbox dispatch performance |
 | `sn126:scoring_commit:2026-08-04T11:03:05Z` | 126 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default |
@@ -207,6 +199,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:release:4.9.5` | 61 | RELEASE | 2026-08-11T02:55:15Z | sn61 released 4.9.5 |
 | `sn61:scoring_commit:2026-08-11T00:14:46Z` | 61 | SCORING_COMMIT | 2026-08-11T02:55:15Z | sn61 commit touches scoring: refactor: update bot virus challenge environment variable for VM endp… |
 | `sn91:scoring_commit:2026-08-11T03:25:57Z` | 91 | SCORING_COMMIT | 2026-08-11T04:36:46Z | sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece… |
+| `sn61:release:4.9.6` | 61 | RELEASE | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
 | `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
@@ -225,6 +218,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
+| `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,26 +1,13 @@
-# ALARMS - generated 2026-08-11T10:24:00Z, block 8820599
+# ALARMS - generated 2026-08-11T11:20:06Z, block 8820879
 
-window: first_seen in [2026-08-11T09:09:26Z, 2026-08-11T10:24:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T10:05:32Z, 2026-08-11T11:20:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
-| `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | P1 | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
-| `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | P1 | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
-
-### detail
-
-- **`sn85:scoring_commit:2026-08-11T08:12:13Z`** - sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.35 — Concurrent Proof Serv`** - sn96 released Verathos v0.1.35 — Concurrent Proof Serving
-  - published 2026-08-11T08:15:31Z (was Verathos v0.1.34 — Reliable Miner Updates)
-- **`sn96:scoring_commit:2026-08-11T08:46:44Z`** - sn96 commit touches scoring: fix: recover shared-checkout miner updates
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -200,6 +187,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:scoring_commit:2026-08-11T00:14:46Z` | 61 | SCORING_COMMIT | 2026-08-11T02:55:15Z | sn61 commit touches scoring: refactor: update bot virus challenge environment variable for VM endp… |
 | `sn91:scoring_commit:2026-08-11T03:25:57Z` | 91 | SCORING_COMMIT | 2026-08-11T04:36:46Z | sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece… |
 | `sn61:release:4.9.6` | 61 | RELEASE | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
+| `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
+| `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
+| `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
 | `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |

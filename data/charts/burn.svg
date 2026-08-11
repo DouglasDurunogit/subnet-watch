@@ -35,11 +35,11 @@
 <path class="accent" d="M128.0,74.0 H666.0 a4.0,4.0 0 0 1 4.0,4.0 V94.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
 <text class="ink2 t-val" x="678.0" y="90">55</text>
 <text class="ink2 t-lab" x="118" y="122" text-anchor="end">0–0.2</text>
-<path class="accent" d="M128.0,106.0 H173.3 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="185.3" y="122">5</text>
+<path class="accent" d="M128.0,106.0 H183.1 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="195.1" y="122">6</text>
 <text class="ink2 t-lab" x="118" y="154" text-anchor="end">0.2–0.4</text>
-<path class="accent" d="M128.0,138.0 H202.8 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="214.8" y="154">8</text>
+<path class="accent" d="M128.0,138.0 H193.0 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="205.0" y="154">7</text>
 <text class="ink2 t-lab" x="118" y="186" text-anchor="end">0.4–0.6</text>
 <path class="accent" d="M128.0,170.0 H202.8 a4.0,4.0 0 0 1 4.0,4.0 V190.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
 <text class="ink2 t-val" x="214.8" y="186">8</text>

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T15:12:58Z, block 8822044
+# ALARMS - generated 2026-08-11T16:23:58Z, block 8822399
 
-window: first_seen in [2026-08-11T13:58:24Z, 2026-08-11T15:13:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T15:09:27Z, 2026-08-11T16:24:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.2-dev` | 28 | RELEASE | P1 | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
 | `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
 | `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | P1 | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
+| `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
+| `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | P1 | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
 
 ### detail
 
@@ -24,6 +26,10 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn124:scoring_commit:2026-08-11T14:19:50Z`** - sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-11T15:51:27Z`** - sn71 commit touches scoring: Seed required miner in Git-tree rehearsal
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.18 — design tip-emit from latest sc`** - sn100 released v3.3.18 — design tip-emit from latest scored round only (#123)
+  - published 2026-08-11T15:54:57Z (was v3.3.16 — design emit cold-start + permanent seal-sync digests)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

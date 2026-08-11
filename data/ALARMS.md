@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-11T22:00:13Z, block 8824080
+# ALARMS - generated 2026-08-11T22:57:58Z, block 8824369
 
-window: first_seen in [2026-08-11T20:45:41Z, 2026-08-11T22:00:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T21:43:25Z, 2026-08-11T22:58:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | P1 | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
+
+### detail
+
+- **`sn62:scoring_commit:2026-08-11T20:08:25Z`** - sn62 commit touches scoring: update validator api changes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-11T22:00:13Z · block 8824080 · run_status **ok**_
+_snapshot 2026-08-11T22:57:58Z · block 8824369 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 92 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
 | **Positive margin** | **55** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 77.9 | 107 | 31,726 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 76.5 | 64.97 | 196 | cpu-small | 10 | 34% |
-| 3 | sn100 BASE | 70.7 | 924 | 2,001 | rtx4090* | 3 | 52% |
-| 4 | sn67 Harnyx | 70.4 | 13.83 | 800 | cpu-small | 151 | 21% |
-| 5 | sn96 Verathos | 70.2 | 34.85 | 469 | rtx4090 | 48 | 41% |
-| 6 | sn91 cascade | 69.1 | 564 | 1,287 | rtx4090* | 5 | 50% |
-| 7 | sn41 Almanac | 69.1 | 10.62 | 22.77 | cpu-small | 68 | 72% |
-| 8 | sn85 Vidaio | 69 | 545 | 545 = | rtx4090* | 10 | 18% |
-| 9 | sn62 Ridges | 68.9 | 537 | 1,943 | rtx4090* | 7 | 35% |
-| 10 | sn26 Perturb | 68.8 | 24.42 | 176 | rtx3060 | 11 | 50% |
-| 11 | sn15 ORO | 68 | 10.53 | 22.25 | cpu-small | 89 | 92% |
-| 12 | sn21 AdTAO | 67.6 | 7.56 | 33.91 | cpu-small | 88 | 45% |
-| 13 | sn56 Gradients | 66.7 | 273 | 984 | rtx4090* | 8 | 72% |
-| 14 | sn124 Swarm | 65.8 | 219 | 663 | rtx4090* | 23 | 11% |
+| 1 | sn107 Minos | 78 | 110 | 31,713 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.5 | 64.28 | 194 | cpu-small | 10 | 34% |
+| 3 | sn100 BASE | 70.9 | 958 | 1,925 | rtx4090* | 3 | 50% |
+| 4 | sn67 Harnyx | 70.4 | 13.81 | 799 | cpu-small | 151 | 21% |
+| 5 | sn96 Verathos | 70.1 | 34.16 | 469 | rtx4090 | 48 | 41% |
+| 6 | sn91 cascade | 69.1 | 563 | 1,285 | rtx4090* | 5 | 50% |
+| 7 | sn41 Almanac | 69.1 | 10.61 | 22.75 | cpu-small | 68 | 72% |
+| 8 | sn62 Ridges | 68.9 | 536 | 1,940 | rtx4090* | 7 | 35% |
+| 9 | sn85 Vidaio | 68.7 | 502 | 502 = | rtx4090* | 10 | 16% |
+| 10 | sn26 Perturb | 68.7 | 24.37 | 176 | rtx3060 | 11 | 50% |
+| 11 | sn15 ORO | 68.1 | 10.58 | 22.35 | cpu-small | 89 | 92% |
+| 12 | sn21 AdTAO | 67.6 | 7.54 | 33.85 | cpu-small | 88 | 45% |
+| 13 | sn56 Gradients | 66.6 | 272 | 982 | rtx4090* | 8 | 72% |
+| 14 | sn124 Swarm | 65.8 | 218 | 662 | rtx4090* | 23 | 11% |
 | 15 | sn80 OpenRoboto | 64.6 | 148 | 540 | rtx4090* | 4 | 91% |
-| 16 | sn38 ChronoLLM | 63.2 | 108 | 1,571 | rtx4090* | 10 | 52% |
-| 17 | sn28 gm | 61.5 | 59.36 | 2,788 | rtx4090* | 25 | 28% |
-| 18 | sn51 lium.io | 59.4 | 38.04 | 2,585 | rtx4090* | 52 | 70% |
-| 19 | sn2 DSperse | 59.1 | 27.75 | 87.08 | rtx4090* | 13 | 83% |
-| 20 | sn61 RedTeam | 58.9 | 25.80 | 1,720 | rtx4090* | 53 | 35% |
+| 16 | sn38 ChronoLLM | 63.2 | 108 | 1,569 | rtx4090* | 10 | 52% |
+| 17 | sn28 gm | 61.5 | 59.21 | 2,782 | rtx4090* | 25 | 28% |
+| 18 | sn51 lium.io | 59.4 | 37.97 | 2,581 | rtx4090* | 52 | 70% |
+| 19 | sn2 DSperse | 59.1 | 27.69 | 86.93 | rtx4090* | 13 | 83% |
+| 20 | sn61 RedTeam | 58.8 | 25.39 | 1,699 | rtx4090* | 53 | 35% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-11T22:58 | sn62 | SCORING_COMMIT | sn62 commit touches scoring: update validator api changes |
 | 2026-08-11T19:50 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Reuse bounded artifact verification sessi |
 | 2026-08-11T18:27 | sn74 | RELEASE | sn74 released release-20260811-182518: chore(weights): drop the linked |
 | 2026-08-11T18:27 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: HF: one submission counter for both signe |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-11T15:13 | sn28 | RELEASE | sn28 released v0.4.2-dev |
 | 2026-08-11T15:13 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Improve Silver adjudication and scoring |
 | 2026-08-11T15:13 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Merge per-process validator session and  |
-| 2026-08-11T13:53 | sn28 | README_TASK_DIFF | sn28 README task/scoring sections changed |
 
 ---
 

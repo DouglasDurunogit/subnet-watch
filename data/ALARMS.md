@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-11T05:42:56Z, block 8819193
+# ALARMS - generated 2026-08-11T06:39:18Z, block 8819475
 
-window: first_seen in [2026-08-11T04:28:22Z, 2026-08-11T05:43:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T05:24:41Z, 2026-08-11T06:39:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn91:scoring_commit:2026-08-11T03:25:57Z` | 91 | SCORING_COMMIT | P1 | 2026-08-11T04:36:46Z | sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece… |
-
-### detail
-
-- **`sn91:scoring_commit:2026-08-11T03:25:57Z`** - sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -197,6 +190,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-10T14:25:47Z` | 108 | SCORING_COMMIT | 2026-08-11T00:40:06Z | sn108 commit touches scoring: merge: the canonical miner script and the subnet-published image |
 | `sn61:release:4.9.5` | 61 | RELEASE | 2026-08-11T02:55:15Z | sn61 released 4.9.5 |
 | `sn61:scoring_commit:2026-08-11T00:14:46Z` | 61 | SCORING_COMMIT | 2026-08-11T02:55:15Z | sn61 commit touches scoring: refactor: update bot virus challenge environment variable for VM endp… |
+| `sn91:scoring_commit:2026-08-11T03:25:57Z` | 91 | SCORING_COMMIT | 2026-08-11T04:36:46Z | sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece… |
 | `sn104:readme_task_diff:708acebd54cc33f2` | 104 | README_TASK_DIFF | 2026-08-04T07:17:01Z | sn104 README task/scoring sections changed |
 | `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |

@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-11T12:08:10Z  |  block: 8821120  |  row_status: ok
+snapshot_utc: 2026-08-11T13:52:55Z  |  block: 8821643  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9041743949055672**
-- registration cost: 0.15 TAO (30.184499999999996 USD), open=True
+- miner_burn: **0.9041740791872144**
+- registration cost: 0.15 TAO (30.295499999999997 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 860.2 days  |  registered at block 2627691
+- subnet age: 860.3 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1002.976519456367
-- top_miner_usd_day: 1813.7569402260513 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1006.7253651833612
+- top_miner_usd_day: 1820.5362564146874 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -41,7 +41,7 @@ snapshot_utc: 2026-08-11T12:08:10Z  |  block: 8821120  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 61), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 62), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: RELEASE 13d ago
 

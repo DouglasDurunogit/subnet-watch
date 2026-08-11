@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T12:08:10Z, block 8821120
+# ALARMS - generated 2026-08-11T13:52:55Z, block 8821643
 
-window: first_seen in [2026-08-11T10:53:46Z, 2026-08-11T12:08:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-11T12:38:29Z, 2026-08-11T13:53:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-11T12:05:14Z` | 21 | SCORING_COMMIT | P1 | 2026-08-11T12:08:46Z | sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold … |
-| `sn66:scoring_commit:2026-08-11T11:34:05Z` | 66 | SCORING_COMMIT | P1 | 2026-08-11T12:08:46Z | sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul |
+| `sn85:scoring_commit:2026-08-11T12:13:42Z` | 85 | SCORING_COMMIT | P1 | 2026-08-11T13:53:29Z | sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove… |
+| `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | P2 | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-11T12:05:14Z`** - sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold …
+- **`sn85:scoring_commit:2026-08-11T12:13:42Z`** - sn85 commit touches scoring: optimise validator competition dataset preparation pipeline to remove…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-08-11T11:34:05Z`** - sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:d8d5d6469509a9b6`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:burn_drop:0.968` | 104 | BURN_DROP | 2026-08-04T12:25:39Z | sn104 burn fell 1.000 -> 0.968 - miners can earn again |
 | `sn120:burn_drop:0.000` | 120 | BURN_DROP | 2026-08-04T17:01:16Z | sn120 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -36,9 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn111:scoring_commit:2026-08-04T11:35:22Z` | 111 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn111 commit touches scoring: Improve agent validation and source grounding |
-| `sn114:scoring_commit:2026-08-04T11:22:01Z` | 114 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn114 commit touches scoring: Improve validation and sandbox dispatch performance |
-| `sn126:scoring_commit:2026-08-04T11:03:05Z` | 126 | SCORING_COMMIT | 2026-08-04T12:25:39Z | sn126 commit touches scoring: Ensure validators adopt the 70 percent burn default |
 | `sn62:release:v0.2.4` | 62 | RELEASE | 2026-08-04T17:01:16Z | sn62 released v0.2.4 |
 | `sn12:release:validator-staging-2026-08-04-30935079890` | 12 | RELEASE | 2026-08-04T18:47:46Z | sn12 released validator-staging-2026-08-04-30935079890-625-1: chore: bump pylon to 2.3.1 and pylon client to 2.3.0 |
 | `sn21:release:archive/per-cell-consensus-2026-06: feat` | 21 | RELEASE | 2026-08-04T18:47:46Z | sn21 released archive/per-cell-consensus-2026-06: feat(consensus): epoch reporter + rolling persistence + out-of-band CLI |
@@ -200,7 +196,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
 | `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
 | `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
-| `sn126:readme_task_diff:b1d8478cb914a832` | 126 | README_TASK_DIFF | 2026-08-04T12:25:39Z | sn126 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-08-11T12:05:14Z` | 21 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn21 commit touches scoring: merge: daily model intake, multi-miner execution, and the alpha-hold … |
+| `sn66:scoring_commit:2026-08-11T11:34:05Z` | 66 | SCORING_COMMIT | 2026-08-11T12:08:46Z | sn66 commit touches scoring: Merge pull request #38 from conjectures-io/feat/api-retired-task-resul |
 | `sn21:readme_task_diff:e74e71fca670eb67` | 21 | README_TASK_DIFF | 2026-08-04T18:47:46Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |

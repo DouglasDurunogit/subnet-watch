@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-12T02:39:13Z, block 8825468
+# ALARMS - generated 2026-08-12T04:28:37Z, block 8826014
 
-window: first_seen in [2026-08-12T01:24:41Z, 2026-08-12T02:39:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T03:14:08Z, 2026-08-12T04:29:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | P1 | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-12T02:30:59Z`** - sn71 commit touches scoring: Isolate concurrent artifact verification transports
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,8 +26,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
-| `sn91:release:worker-v0.5.0` | 91 | RELEASE | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |
 | `sn15:release:v1.2.5` | 15 | RELEASE | 2026-08-05T07:16:10Z | sn15 released v1.2.5 |
 | `sn62:release:v0.2.5` | 62 | RELEASE | 2026-08-05T07:16:10Z | sn62 released v0.2.5 |
 | `sn66:scoring_commit:2026-08-04T14:07:21Z` | 66 | SCORING_COMMIT | 2026-08-05T10:06:20Z | sn66 commit touches scoring: Make task slug id's permanent |
@@ -204,6 +195,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-11T18:25:04Z` | 71 | SCORING_COMMIT | 2026-08-11T19:50:00Z | sn71 commit touches scoring: Reuse bounded artifact verification sessions |
 | `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
 | `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
+| `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |

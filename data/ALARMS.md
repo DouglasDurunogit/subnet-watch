@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-11T23:53:52Z, block 8824648
+# ALARMS - generated 2026-08-12T02:39:13Z, block 8825468
 
-window: first_seen in [2026-08-11T22:39:20Z, 2026-08-11T23:54:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T01:24:41Z, 2026-08-12T02:39:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | P1 | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
-| `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | P1 | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
+| `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | P1 | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
 
 ### detail
 
-- **`sn62:scoring_commit:2026-08-11T20:08:25Z`** - sn62 commit touches scoring: update validator api changes
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-11T23:29:21Z`** - sn71 commit touches scoring: Reuse artifact verification transport pool
+- **`sn71:scoring_commit:2026-08-12T02:30:59Z`** - sn71 commit touches scoring: Isolate concurrent artifact verification transports
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,7 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn111:scoring_commit:2026-08-04T21:41:42Z` | 111 | SCORING_COMMIT | 2026-08-05T00:53:57Z | sn111 commit touches scoring: Improve silver alignment and scoring |
 | `sn21:scoring_commit:2026-08-05T04:01:57Z` | 21 | SCORING_COMMIT | 2026-08-05T04:24:52Z | sn21 commit touches scoring: feat(verifiability): daily scoring receipt + verify_day — miners reru… |
 | `sn91:release:worker-v0.5.0` | 91 | RELEASE | 2026-08-05T04:24:52Z | sn91 released worker-v0.5.0 |
 | `sn15:release:v1.2.5` | 15 | RELEASE | 2026-08-05T07:16:10Z | sn15 released v1.2.5 |
@@ -206,6 +202,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn74:release:release-20260811-182518: chore(weights):` | 74 | RELEASE | 2026-08-11T18:27:58Z | sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687) |
 | `sn89:scoring_commit:2026-08-11T17:49:59Z` | 89 | SCORING_COMMIT | 2026-08-11T18:27:58Z | sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa… |
 | `sn71:scoring_commit:2026-08-11T18:25:04Z` | 71 | SCORING_COMMIT | 2026-08-11T19:50:00Z | sn71 commit touches scoring: Reuse bounded artifact verification sessions |
+| `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
+| `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |

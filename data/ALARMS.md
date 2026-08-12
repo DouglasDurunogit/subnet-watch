@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-12T21:58:09Z, block 8831262
+# ALARMS - generated 2026-08-12T22:56:42Z, block 8831554
 
-window: first_seen in [2026-08-12T20:43:44Z, 2026-08-12T21:58:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T21:42:11Z, 2026-08-12T22:57:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | P1 | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
+
+### detail
+
+- **`sn41:scoring_commit:2026-08-12T22:36:16Z`** - sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -25,8 +32,6 @@ _none_
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
-| `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
 | `sn2:release:14.13.1` | 2 | RELEASE | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
 | `sn66:scoring_commit:2026-08-06T03:41:33Z` | 66 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel… |
 | `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T10:34:25Z, block 8827843
+# ALARMS - generated 2026-08-12T11:33:33Z, block 8828138
 
-window: first_seen in [2026-08-12T09:19:51Z, 2026-08-12T10:34:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T10:18:57Z, 2026-08-12T11:33:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | P1 | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 | `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | P1 | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
 | `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | P1 | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
+| `sn51:release:executor-v1.117` | 51 | RELEASE | P1 | 2026-08-12T11:33:57Z | sn51 released executor-v1.117 |
 
 ### detail
 
-- **`sn96:release:Verathos v0.1.36 — Runtime and Capacity `** - sn96 released Verathos v0.1.36 — Runtime and Capacity Stability
-  - published 2026-08-12T09:14:30Z (was Verathos v0.1.35 — Concurrent Proof Serving)
 - **`sn85:scoring_commit:2026-08-12T09:34:50Z`** - sn85 commit touches scoring: add audio validation for competitions (#184)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej`** - sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129)
   - published 2026-08-12T10:07:18Z (was v3.3.19 — design auto-enqueue + migration 0019 fix)
+- **`sn51:release:executor-v1.117`** - sn51 released executor-v1.117
+  - published 2026-08-12T11:03:47Z (was executor-v1.116)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -208,6 +208,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
 | `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
 | `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
+| `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |

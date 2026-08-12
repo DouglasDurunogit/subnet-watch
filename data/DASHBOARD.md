@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-12T04:28:37Z · block 8826014 · run_status **ok**_
+_snapshot 2026-08-12T06:05:32Z · block 8826498 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 50 of 128
+# 51 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 91 | `miner_burn` < 0.99 |
-| Ranked | 91 | passed every gate |
-| **Positive margin** | **50** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| Pays miners at all | 92 | `miner_burn` < 0.99 |
+| Ranked | 92 | passed every gate |
+| **Positive margin** | **51** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 56 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
+| 0–0.2 | 7 | `████` |
 | 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 9 | `████` |
+| 0.4–0.6 | 10 | `█████` |
 | 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 7 | `████` |
-| ≥0.99 dead | 37 | `██████████████████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 36 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 79 | 137 | 31,724 | cpu-small | 20 | 87% |
-| 2 | sn76 Phylax | 76 | 56.14 | 169 | cpu-small | 10 | 34% |
-| 3 | sn67 Harnyx | 71.5 | 18.47 | 768 | cpu-small | 123 | 20% |
-| 4 | sn96 Verathos | 70.2 | 34.89 | 392 | rtx4090 | 52 | 43% |
-| 5 | sn91 cascade | 69.3 | 594 | 1,356 | rtx4090* | 5 | 50% |
-| 6 | sn41 Almanac | 69.1 | 10.68 | 22.91 | cpu-small | 69 | 72% |
-| 7 | sn62 Ridges | 69 | 555 | 2,006 | rtx4090* | 7 | 35% |
-| 8 | sn56 Gradients | 69 | 554 | 1,010 | rtx4090* | 7 | 64% |
-| 9 | sn26 Perturb | 67.8 | 19.21 | 176 | rtx3060 | 11 | 50% |
-| 10 | sn15 ORO | 67.7 | 10.85 | 23.12 | cpu-small | 89 | 92% |
-| 11 | sn21 AdTAO | 67.7 | 7.85 | 35.12 | cpu-small | 88 | 45% |
-| 12 | sn85 Vidaio | 67.4 | 341 | 596 | rtx4090* | 10 | 19% |
-| 13 | sn124 Swarm | 65.9 | 227 | 688 | rtx4090* | 23 | 11% |
-| 14 | sn80 OpenRoboto | 64.8 | 157 | 569 | rtx4090* | 4 | 91% |
-| 15 | sn28 gm | 64.5 | 145 | 2,334 | rtx4090* | 25 | 23% |
-| 16 | sn38 ChronoLLM | 63.3 | 112 | 1,615 | rtx4090* | 10 | 52% |
-| 17 | sn102 ConnitoAI | 60.6 | 1,582 | 1,589 | rtx4090* | 4 | 25% |
-| 18 | sn2 DSperse | 59.2 | 28.39 | 88.25 | rtx4090* | 13 | 83% |
-| 19 | sn61 RedTeam | 59 | 27.12 | 1,776 | rtx4090* | 53 | 35% |
-| 20 | sn74 Gittensor | 58.5 | 25.92 | 222 | rtx4090* | 13 | 63% |
+| 1 | sn107 Minos | 78 | 111 | 32,430 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 76.5 | 64.93 | 196 | cpu-small | 10 | 34% |
+| 3 | sn67 Harnyx | 71.5 | 18.16 | 757 | cpu-small | 126 | 20% |
+| 4 | sn96 Verathos | 70.5 | 37.55 | 418 | rtx4090 | 50 | 41% |
+| 5 | sn91 cascade | 69.2 | 588 | 1,343 | rtx4090* | 5 | 50% |
+| 6 | sn62 Ridges | 69 | 549 | 1,988 | rtx4090* | 7 | 35% |
+| 7 | sn56 Gradients | 69 | 548 | 1,001 | rtx4090* | 7 | 64% |
+| 8 | sn41 Almanac | 69 | 10.53 | 22.68 | cpu-small | 69 | 72% |
+| 9 | sn15 ORO | 68.1 | 10.75 | 22.92 | cpu-small | 89 | 92% |
+| 10 | sn26 Perturb | 67.8 | 19.50 | 36.00 | rtx3060 | 11 | 50% |
+| 11 | sn21 AdTAO | 67.7 | 7.78 | 34.82 | cpu-small | 88 | 45% |
+| 12 | sn85 Vidaio | 67.4 | 339 | 339 = | rtx4090* | 10 | 19% |
+| 13 | sn124 Swarm | 65.9 | 226 | 685 | rtx4090* | 23 | 11% |
+| 14 | sn80 OpenRoboto | 64.6 | 149 | 542 | rtx4090* | 4 | 91% |
+| 15 | sn38 ChronoLLM | 63.3 | 111 | 1,600 | rtx4090* | 10 | 52% |
+| 16 | sn28 gm | 62.3 | 76.00 | 3,310 | rtx4090* | 25 | 33% |
+| 17 | sn102 ConnitoAI | 60.3 | 1,434 | 3,274 | rtx4090* | 4 | 51% |
+| 18 | sn61 RedTeam | 59.1 | 28.07 | 1,820 | rtx4090* | 53 | 35% |
+| 19 | sn2 DSperse | 59.1 | 28.03 | 87.38 | rtx4090* | 13 | 83% |
+| 20 | sn51 lium.io | 58.6 | 31.75 | 2,115 | rtx4090* | 52 | 71% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 20 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 24 |
 | dominated (60–90%) | 18 |
-| captured (>90%) | 27 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-12T06:05 | sn100 | RELEASE | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
+| 2026-08-12T06:05 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: Merge pull request #120 from BaseIntelli |
 | 2026-08-12T02:39 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Isolate concurrent artifact verification  |
 | 2026-08-11T23:54 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Reuse artifact verification transport poo |
 | 2026-08-11T22:58 | sn62 | SCORING_COMMIT | sn62 commit touches scoring: update validator api changes |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-11T17:27 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | 2026-08-11T16:24 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
 | 2026-08-11T16:24 | sn100 | RELEASE | sn100 released v3.3.18 — design tip-emit from latest scored round only |
-| 2026-08-11T15:13 | sn1 | RELEASE | sn1 released v4.2.22 |
-| 2026-08-11T15:13 | sn28 | RELEASE | sn28 released v0.4.2-dev |
 
 ---
 

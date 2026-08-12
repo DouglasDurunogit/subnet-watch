@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-12T04:28:37Z, block 8826014
+# ALARMS - generated 2026-08-12T06:05:32Z, block 8826498
 
-window: first_seen in [2026-08-12T03:14:08Z, 2026-08-12T04:29:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T04:50:56Z, 2026-08-12T06:05:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | P1 | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
+| `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | P1 | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
+
+### detail
+
+- **`sn100:release:v3.3.19 — design auto-enqueue + migratio`** - sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix
+  - published 2026-08-12T05:17:24Z (was v3.3.18 — design tip-emit from latest scored round only (#123))
+- **`sn100:scoring_commit:2026-08-12T04:29:33Z`** - sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

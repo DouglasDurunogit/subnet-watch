@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T14:08:46Z, block 8828915
+# ALARMS - generated 2026-08-12T15:28:56Z, block 8829315
 
-window: first_seen in [2026-08-12T12:54:20Z, 2026-08-12T14:09:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T14:14:26Z, 2026-08-12T15:29:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.4` | 28 | RELEASE | P1 | 2026-08-12T14:09:20Z | sn28 released v0.4.4 |
-| `sn28:scoring_commit:2026-08-12T12:46:41Z` | 28 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn28 commit touches scoring: Release gm-miner v0.4.4 |
-| `sn56:scoring_commit:2026-08-12T13:16:40Z` | 56 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353) |
-| `sn96:release:Verathos v0.1.37 — Scoring Integrity and` | 96 | RELEASE | P1 | 2026-08-12T14:09:20Z | sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness |
-| `sn96:scoring_commit:2026-08-12T11:40:32Z` | 96 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn96 commit touches scoring: fix: correct validator scoring inputs |
-| `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
-| `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | P2 | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
+| `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | P1 | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
 
 ### detail
 
-- **`sn28:release:v0.4.4`** - sn28 released v0.4.4
-  - published 2026-08-12T12:58:50Z (was v0.4.4-dev)
-- **`sn28:scoring_commit:2026-08-12T12:46:41Z`** - sn28 commit touches scoring: Release gm-miner v0.4.4
+- **`sn111:scoring_commit:2026-08-12T14:50:47Z`** - sn111 commit touches scoring: Add validator cost profile
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-08-12T13:16:40Z`** - sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.37 — Scoring Integrity and`** - sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness
-  - published 2026-08-12T13:15:34Z (was Verathos v0.1.36 — Runtime and Capacity Stability)
-- **`sn96:scoring_commit:2026-08-12T11:40:32Z`** - sn96 commit touches scoring: fix: correct validator scoring inputs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-08-12T13:36:35Z`** - sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn126:readme_task_diff:8ff67deb6bfb1a47`** - sn126 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,10 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn21:release:SN21 training bundle` | 21 | RELEASE | 2026-08-05T14:53:57Z | sn21 released SN21 training bundle |
-| `sn21:scoring_commit:2026-08-05T14:06:49Z` | 21 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn21 commit touches scoring: docs: resolve the first-basket date ambiguity and bring miner/validat… |
-| `sn66:scoring_commit:2026-08-05T14:48:04Z` | 66 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn66 commit touches scoring: Merge pull request #23 from conjectures-io/fix/verification-worker-in… |
-| `sn120:scoring_commit:2026-08-05T13:12:05Z` | 120 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn120 commit touches scoring: Disclose the serving stack so miners can pre-flight before burning a … |
 | `sn66:scoring_commit:2026-08-05T15:37:52Z` | 66 | SCORING_COMMIT | 2026-08-05T16:50:02Z | sn66 commit touches scoring: Merge pull request #24 from conjectures-io/fix/verifier-initial-condi… |
 | `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
 | `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
@@ -222,7 +200,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-08-12T10:25:25Z` | 28 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn28 commit touches scoring: Document miner model sourcing options |
 | `sn67:scoring_commit:2026-08-12T11:45:36Z` | 67 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4 |
 | `sn120:scoring_commit:2026-08-12T12:26:03Z` | 120 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file |
-| `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
+| `sn28:release:v0.4.4` | 28 | RELEASE | 2026-08-12T14:09:20Z | sn28 released v0.4.4 |
+| `sn28:scoring_commit:2026-08-12T12:46:41Z` | 28 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn28 commit touches scoring: Release gm-miner v0.4.4 |
+| `sn56:scoring_commit:2026-08-12T13:16:40Z` | 56 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353) |
+| `sn96:release:Verathos v0.1.37 — Scoring Integrity and` | 96 | RELEASE | 2026-08-12T14:09:20Z | sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness |
+| `sn96:scoring_commit:2026-08-12T11:40:32Z` | 96 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn96 commit touches scoring: fix: correct validator scoring inputs |
+| `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
@@ -239,6 +222,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
+| `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

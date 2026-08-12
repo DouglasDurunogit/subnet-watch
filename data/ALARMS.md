@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T11:33:33Z, block 8828138
+# ALARMS - generated 2026-08-12T12:34:33Z, block 8828443
 
-window: first_seen in [2026-08-12T10:18:57Z, 2026-08-12T11:33:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T11:19:56Z, 2026-08-12T12:34:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | P1 | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
-| `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | P1 | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
 | `sn51:release:executor-v1.117` | 51 | RELEASE | P1 | 2026-08-12T11:33:57Z | sn51 released executor-v1.117 |
+| `sn28:release:v0.4.4-dev` | 28 | RELEASE | P1 | 2026-08-12T12:34:56Z | sn28 released v0.4.4-dev |
+| `sn28:scoring_commit:2026-08-12T10:25:25Z` | 28 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn28 commit touches scoring: Document miner model sourcing options |
+| `sn67:scoring_commit:2026-08-12T11:45:36Z` | 67 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4 |
+| `sn120:scoring_commit:2026-08-12T12:26:03Z` | 120 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file |
+| `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | P2 | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 
 ### detail
 
-- **`sn85:scoring_commit:2026-08-12T09:34:50Z`** - sn85 commit touches scoring: add audio validation for competitions (#184)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej`** - sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129)
-  - published 2026-08-12T10:07:18Z (was v3.3.19 — design auto-enqueue + migration 0019 fix)
 - **`sn51:release:executor-v1.117`** - sn51 released executor-v1.117
   - published 2026-08-12T11:03:47Z (was executor-v1.116)
+- **`sn28:release:v0.4.4-dev`** - sn28 released v0.4.4-dev
+  - published 2026-08-12T11:55:48Z (was v0.4.3-dev)
+- **`sn28:scoring_commit:2026-08-12T10:25:25Z`** - sn28 commit touches scoring: Document miner model sourcing options
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-12T11:45:36Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-08-12T12:26:03Z`** - sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:50edab7d2bab95b4`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,12 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn12:release:miner-staging-2026-08-05-31002481795-421` | 12 | RELEASE | 2026-08-05T12:15:25Z | sn12 released miner-staging-2026-08-05-31002481795-421-1: fix: replace unmaintained watchtower with nicholas-fedor fork |
-| `sn21:scoring_commit:2026-08-05T10:23:09Z` | 21 | SCORING_COMMIT | 2026-08-05T12:15:25Z | sn21 commit touches scoring: feat(verifiability): W1+W3 — miners can now FETCH and rerun their scor |
-| `sn61:release:4.9.0` | 61 | RELEASE | 2026-08-05T12:15:25Z | sn61 released 4.9.0 |
-| `sn61:scoring_commit:2026-08-05T10:19:58Z` | 61 | SCORING_COMMIT | 2026-08-05T12:15:25Z | sn61 commit touches scoring: fix: uncomment validation for miner container image format |
-| `sn66:scoring_commit:2026-08-05T11:06:36Z` | 66 | SCORING_COMMIT | 2026-08-05T12:15:25Z | sn66 commit touches scoring: Merge pull request #17 from conjectures-io/codex/production-verificat… |
-| `sn67:scoring_commit:2026-08-05T10:53:54Z` | 67 | SCORING_COMMIT | 2026-08-05T12:15:25Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260805.post2 |
 | `sn21:release:SN21 training bundle` | 21 | RELEASE | 2026-08-05T14:53:57Z | sn21 released SN21 training bundle |
 | `sn21:scoring_commit:2026-08-05T14:06:49Z` | 21 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn21 commit touches scoring: docs: resolve the first-basket date ambiguity and bring miner/validat… |
 | `sn66:scoring_commit:2026-08-05T14:48:04Z` | 66 | SCORING_COMMIT | 2026-08-05T14:53:57Z | sn66 commit touches scoring: Merge pull request #23 from conjectures-io/fix/verification-worker-in… |
@@ -209,8 +212,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
 | `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
 | `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
-| `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
-| `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
+| `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
+| `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |

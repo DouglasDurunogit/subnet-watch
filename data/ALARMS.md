@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T18:40:22Z, block 8830273
+# ALARMS - generated 2026-08-12T19:51:18Z, block 8830627
 
-window: first_seen in [2026-08-12T17:25:47Z, 2026-08-12T18:40:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T18:36:45Z, 2026-08-12T19:51:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -20,7 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn36:burn_drop:0.000` | 36 | BURN_DROP | 2026-08-05T18:45:32Z | sn36 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
@@ -33,8 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn96:release:v0.1.26 - Gleipnir Proof Protocol v3` | 96 | RELEASE | 2026-08-05T18:45:32Z | sn96 released v0.1.26 - Gleipnir Proof Protocol v3 |
-| `sn96:scoring_commit:2026-08-05T18:24:13Z` | 96 | SCORING_COMMIT | 2026-08-05T18:45:32Z | sn96 commit touches scoring: fix: serialize validator block dispatch |
 | `sn2:release:14.12.21` | 2 | RELEASE | 2026-08-05T20:18:55Z | sn2 released 14.12.21 |
 | `sn13:release:Release v1.18.70` | 13 | RELEASE | 2026-08-05T20:18:55Z | sn13 released Release v1.18.70 |
 | `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |

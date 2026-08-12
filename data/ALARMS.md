@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T20:59:09Z, block 8830967
+# ALARMS - generated 2026-08-12T21:58:09Z, block 8831262
 
-window: first_seen in [2026-08-12T19:44:35Z, 2026-08-12T20:59:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T20:43:44Z, 2026-08-12T21:58:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -25,8 +25,6 @@ _none_
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
-| `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
 | `sn15:scoring_commit:2026-08-05T22:07:55Z` | 15 | SCORING_COMMIT | 2026-08-05T22:45:44Z | sn15 commit touches scoring: feat(validator): epoch-pinned weights only, 22-min cadence, epoch-anc… |
 | `sn2:release:14.13.1` | 2 | RELEASE | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
@@ -192,7 +190,6 @@ _none_
 | `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
 | `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
 | `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
-| `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
 | `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |

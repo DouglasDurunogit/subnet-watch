@@ -1,20 +1,20 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-12T20:59:09Z  |  block: 8830967  |  row_status: ok
+snapshot_utc: 2026-08-12T21:58:09Z  |  block: 8831262  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.8265624423511326**
-- registration cost: 0.0005 TAO (0.0999 USD), open=True
+- registration cost: 0.0005 TAO (0.09961 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 24  |  free: 0
 - subnet age: 846.8 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 108.30693413927452** (uid 145) <- the only figure quotable as achievable
-- median_miner_usd_day: 29.672875864048383
-- top_miner_usd_day: 2030.7268980464598 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 107.9925037003282** (uid 145) <- the only figure quotable as achievable
+- median_miner_usd_day: 29.58673128376939
+- top_miner_usd_day: 2024.8314089440557 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-12T20:59:09Z  |  block: 8830967  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 9.0634 USD/day  |  payback on registration: 0.01 days
+- net margin: 9.0133 USD/day  |  payback on registration: 0.01 days
 
 ## Score
 
 - gate: **OK** 
-- score: 55.6 (rank 25), confidence 0.85 - hardware requirement unknown
-- components: income 9.12 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 2.0d ago
+- score: 55.5 (rank 24), confidence 0.85 - hardware requirement unknown
+- components: income 9.1 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 2.1d ago
 
 ## On-chain description
 

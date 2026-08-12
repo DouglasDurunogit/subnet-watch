@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-12T19:51:18Z, block 8830627
+# ALARMS - generated 2026-08-12T20:59:09Z, block 8830967
 
-window: first_seen in [2026-08-12T18:36:45Z, 2026-08-12T19:51:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T19:44:35Z, 2026-08-12T20:59:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | P1 | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
-
-### detail
-
-- **`sn54:scoring_commit:2026-08-12T17:46:40Z`** - sn54 commit touches scoring: update miner screen reply readme
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -32,11 +25,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn2:release:14.12.21` | 2 | RELEASE | 2026-08-05T20:18:55Z | sn2 released 14.12.21 |
-| `sn13:release:Release v1.18.70` | 13 | RELEASE | 2026-08-05T20:18:55Z | sn13 released Release v1.18.70 |
-| `sn13:scoring_commit:2026-08-05T19:45:21Z` | 13 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn13 commit touches scoring: Merge pull request #901 from macrocosm-os/feat/s3-quality-scoring-phas |
-| `sn71:scoring_commit:2026-08-05T18:51:09Z` | 71 | SCORING_COMMIT | 2026-08-05T20:18:55Z | sn71 commit touches scoring: Refresh protected validator authority manifest |
-| `sn96:release:v0.1.27 - Validator Boundary Hotfix` | 96 | RELEASE | 2026-08-05T20:18:55Z | sn96 released v0.1.27 - Validator Boundary Hotfix |
 | `sn21:scoring_commit:2026-08-05T20:21:36Z` | 21 | SCORING_COMMIT | 2026-08-05T21:45:49Z | sn21 commit touches scoring: Merge pull request #6 from ippcteam/docs/daily-miner-validator-docs |
 | `sn62:release:v0.2.6` | 62 | RELEASE | 2026-08-05T21:45:49Z | sn62 released v0.2.6 |
 | `sn2:release:14.13.0` | 2 | RELEASE | 2026-08-05T22:45:44Z | sn2 released 14.13.0 |
@@ -203,7 +191,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:scoring_commit:2026-08-12T11:40:32Z` | 96 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn96 commit touches scoring: fix: correct validator scoring inputs |
 | `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
 | `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
-| `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
+| `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
 | `sn21:readme_task_diff:2d2991d58d2b0594` | 21 | README_TASK_DIFF | 2026-08-05T21:45:49Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
 | `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |

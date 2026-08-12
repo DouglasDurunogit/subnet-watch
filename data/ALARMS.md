@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-12T17:44:34Z, block 8829994
+# ALARMS - generated 2026-08-12T18:40:22Z, block 8830273
 
-window: first_seen in [2026-08-12T16:29:57Z, 2026-08-12T17:44:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T17:25:47Z, 2026-08-12T18:40:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | P1 | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
+
+### detail
+
+- **`sn54:scoring_commit:2026-08-12T17:46:40Z`** - sn54 commit touches scoring: update miner screen reply readme
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

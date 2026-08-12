@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T22:56:42Z, block 8831554
+# ALARMS - generated 2026-08-12T23:54:36Z, block 8831844
 
-window: first_seen in [2026-08-12T21:42:11Z, 2026-08-12T22:57:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T22:40:02Z, 2026-08-12T23:55:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | P1 | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
+| `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | P2 | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 
 ### detail
 
 - **`sn41:scoring_commit:2026-08-12T22:36:16Z`** - sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:371ffea333df26ac`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

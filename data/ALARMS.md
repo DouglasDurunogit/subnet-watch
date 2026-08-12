@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T12:34:33Z, block 8828443
+# ALARMS - generated 2026-08-12T14:08:46Z, block 8828915
 
-window: first_seen in [2026-08-12T11:19:56Z, 2026-08-12T12:34:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T12:54:20Z, 2026-08-12T14:09:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:executor-v1.117` | 51 | RELEASE | P1 | 2026-08-12T11:33:57Z | sn51 released executor-v1.117 |
-| `sn28:release:v0.4.4-dev` | 28 | RELEASE | P1 | 2026-08-12T12:34:56Z | sn28 released v0.4.4-dev |
-| `sn28:scoring_commit:2026-08-12T10:25:25Z` | 28 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn28 commit touches scoring: Document miner model sourcing options |
-| `sn67:scoring_commit:2026-08-12T11:45:36Z` | 67 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4 |
-| `sn120:scoring_commit:2026-08-12T12:26:03Z` | 120 | SCORING_COMMIT | P1 | 2026-08-12T12:34:56Z | sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file |
-| `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | P2 | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
+| `sn28:release:v0.4.4` | 28 | RELEASE | P1 | 2026-08-12T14:09:20Z | sn28 released v0.4.4 |
+| `sn28:scoring_commit:2026-08-12T12:46:41Z` | 28 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn28 commit touches scoring: Release gm-miner v0.4.4 |
+| `sn56:scoring_commit:2026-08-12T13:16:40Z` | 56 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353) |
+| `sn96:release:Verathos v0.1.37 — Scoring Integrity and` | 96 | RELEASE | P1 | 2026-08-12T14:09:20Z | sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness |
+| `sn96:scoring_commit:2026-08-12T11:40:32Z` | 96 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn96 commit touches scoring: fix: correct validator scoring inputs |
+| `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | P1 | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
+| `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | P2 | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:release:executor-v1.117`** - sn51 released executor-v1.117
-  - published 2026-08-12T11:03:47Z (was executor-v1.116)
-- **`sn28:release:v0.4.4-dev`** - sn28 released v0.4.4-dev
-  - published 2026-08-12T11:55:48Z (was v0.4.3-dev)
-- **`sn28:scoring_commit:2026-08-12T10:25:25Z`** - sn28 commit touches scoring: Document miner model sourcing options
+- **`sn28:release:v0.4.4`** - sn28 released v0.4.4
+  - published 2026-08-12T12:58:50Z (was v0.4.4-dev)
+- **`sn28:scoring_commit:2026-08-12T12:46:41Z`** - sn28 commit touches scoring: Release gm-miner v0.4.4
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-12T11:45:36Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4
+- **`sn56:scoring_commit:2026-08-12T13:16:40Z`** - sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-08-12T12:26:03Z`** - sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file
+- **`sn96:release:Verathos v0.1.37 — Scoring Integrity and`** - sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness
+  - published 2026-08-12T13:15:34Z (was Verathos v0.1.36 — Runtime and Capacity Stability)
+- **`sn96:scoring_commit:2026-08-12T11:40:32Z`** - sn96 commit touches scoring: fix: correct validator scoring inputs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:50edab7d2bab95b4`** - sn28 README task/scoring sections changed
+- **`sn120:scoring_commit:2026-08-12T13:36:35Z`** - sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn126:readme_task_diff:8ff67deb6bfb1a47`** - sn126 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -214,6 +217,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 | `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
 | `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
+| `sn51:release:executor-v1.117` | 51 | RELEASE | 2026-08-12T11:33:57Z | sn51 released executor-v1.117 |
+| `sn28:release:v0.4.4-dev` | 28 | RELEASE | 2026-08-12T12:34:56Z | sn28 released v0.4.4-dev |
+| `sn28:scoring_commit:2026-08-12T10:25:25Z` | 28 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn28 commit touches scoring: Document miner model sourcing options |
+| `sn67:scoring_commit:2026-08-12T11:45:36Z` | 67 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4 |
+| `sn120:scoring_commit:2026-08-12T12:26:03Z` | 120 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |
 | `sn21:readme_task_diff:1048bc3f492a891d` | 21 | README_TASK_DIFF | 2026-08-05T16:50:02Z | sn21 README task/scoring sections changed |
 | `sn88:readme_task_diff:afb1f6ac01d629e7` | 88 | README_TASK_DIFF | 2026-08-05T20:18:55Z | sn88 README task/scoring sections changed |
@@ -230,6 +238,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
+| `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

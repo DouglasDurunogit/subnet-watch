@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T07:49:00Z, block 8827016
+# ALARMS - generated 2026-08-12T09:21:36Z, block 8827479
 
-window: first_seen in [2026-08-12T06:34:32Z, 2026-08-12T07:49:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T08:07:09Z, 2026-08-12T09:22:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | P1 | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
+| `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | P1 | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-12T07:37:36Z`** - sn71 commit touches scoring: Recover artifact verification from stale pools
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.1.36 — Runtime and Capacity `** - sn96 released Verathos v0.1.36 — Runtime and Capacity Stability
+  - published 2026-08-12T09:14:30Z (was Verathos v0.1.35 — Concurrent Proof Serving)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -203,6 +203,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
 | `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
 | `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
+| `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
 | `sn21:readme_task_diff:4f50af431820cc6d` | 21 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn21 README task/scoring sections changed |
 | `sn66:readme_task_diff:3b6ca4cc88e47a32` | 66 | README_TASK_DIFF | 2026-08-05T12:15:25Z | sn66 README task/scoring sections changed |
 | `sn21:readme_task_diff:dca6a31add16ab48` | 21 | README_TASK_DIFF | 2026-08-05T14:53:57Z | sn21 README task/scoring sections changed |

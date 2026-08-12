@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T09:21:36Z, block 8827479
+# ALARMS - generated 2026-08-12T10:34:25Z, block 8827843
 
-window: first_seen in [2026-08-12T08:07:09Z, 2026-08-12T09:22:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-12T09:19:51Z, 2026-08-12T10:34:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | P1 | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
+| `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | P1 | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
+| `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | P1 | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
 
 ### detail
 
 - **`sn96:release:Verathos v0.1.36 — Runtime and Capacity `** - sn96 released Verathos v0.1.36 — Runtime and Capacity Stability
   - published 2026-08-12T09:14:30Z (was Verathos v0.1.35 — Concurrent Proof Serving)
+- **`sn85:scoring_commit:2026-08-12T09:34:50Z`** - sn85 commit touches scoring: add audio validation for competitions (#184)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej`** - sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129)
+  - published 2026-08-12T10:07:18Z (was v3.3.19 — design auto-enqueue + migration 0019 fix)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn66:scoring_commit:2026-08-04T14:07:21Z` | 66 | SCORING_COMMIT | 2026-08-05T10:06:20Z | sn66 commit touches scoring: Make task slug id's permanent |
-| `sn71:scoring_commit:2026-08-05T07:40:50Z` | 71 | SCORING_COMMIT | 2026-08-05T10:06:20Z | sn71 commit touches scoring: Scope repeated validator weight evidence |
 | `sn12:release:miner-staging-2026-08-05-31002481795-421` | 12 | RELEASE | 2026-08-05T12:15:25Z | sn12 released miner-staging-2026-08-05-31002481795-421-1: fix: replace unmaintained watchtower with nicholas-fedor fork |
 | `sn21:scoring_commit:2026-08-05T10:23:09Z` | 21 | SCORING_COMMIT | 2026-08-05T12:15:25Z | sn21 commit touches scoring: feat(verifiability): W1+W3 — miners can now FETCH and rerun their scor |
 | `sn61:release:4.9.0` | 61 | RELEASE | 2026-08-05T12:15:25Z | sn61 released 4.9.0 |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T17:44:37Z, block 8837194
+# ALARMS - generated 2026-08-13T18:41:45Z, block 8837480
 
-window: first_seen in [2026-08-13T16:30:02Z, 2026-08-13T17:45:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T17:27:14Z, 2026-08-13T18:42:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | P0 | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | P0 | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn38:scoring_commit:2026-08-13T16:30:43Z` | 38 | SCORING_COMMIT | P1 | 2026-08-13T16:39:08Z | sn38 commit touches scoring: Update validator image to latest version in docker-compose files |
-| `sn90:release:v1.1.0 — Targon max $/card + raised GPU ` | 90 | RELEASE | P1 | 2026-08-13T16:39:08Z | sn90 released v1.1.0 — Targon max $/card + raised GPU card caps |
-| `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | P1 | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
-| `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | P2 | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 
 ### detail
 
-- **`sn6:weights_version_bump:3000`** - sn6 weights_version 2018 -> 3000
-  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
 - **`sn118:burn_drop:0.000`** - sn118 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn38:scoring_commit:2026-08-13T16:30:43Z`** - sn38 commit touches scoring: Update validator image to latest version in docker-compose files
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.1.0 — Targon max $/card + raised GPU `** - sn90 released v1.1.0 — Targon max $/card + raised GPU card caps
-  - published 2026-08-13T15:50:20Z (was v1.0.2 — proxy version header + owner miner UID hardcode)
-- **`sn90:scoring_commit:2026-08-13T15:50:20Z`** - sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn38:readme_task_diff:0929297366a7bf8b`** - sn38 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,6 +33,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
 | `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
 | `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |
@@ -206,6 +192,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.119` | 51 | RELEASE | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
 | `sn75:scoring_commit:2026-08-13T13:14:25Z` | 75 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn75 commit touches scoring: updated validator weights submitter |
 | `sn100:scoring_commit:2026-08-13T15:17:24Z` | 100 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142 |
+| `sn38:scoring_commit:2026-08-13T16:30:43Z` | 38 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn38 commit touches scoring: Update validator image to latest version in docker-compose files |
+| `sn90:release:v1.1.0 — Targon max $/card + raised GPU ` | 90 | RELEASE | 2026-08-13T16:39:08Z | sn90 released v1.1.0 — Targon max $/card + raised GPU card caps |
+| `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |
@@ -223,6 +212,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
+| `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

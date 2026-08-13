@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T09:22:15Z, block 8834682
+# ALARMS - generated 2026-08-13T10:35:15Z, block 8835047
 
-window: first_seen in [2026-08-13T08:07:53Z, 2026-08-13T09:22:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T09:20:49Z, 2026-08-13T10:35:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | P1 | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
+| `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | P1 | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
+| `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | P2 | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 
 ### detail
 
 - **`sn44:scoring_commit:2026-08-13T09:12:05Z`** - sn44 commit touches scoring: blacklist + min common challenges tiebreak
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-13T09:35:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:readme_task_diff:a54328c7fbaf2606`** - sn67 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,10 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v1.2.6: docs(validator): correct stale w` | 15 | RELEASE | 2026-08-06T10:19:12Z | sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249) |
-| `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
-| `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
-| `sn100:scoring_commit:2026-08-06T09:38:47Z` | 100 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn100 commit touches scoring: fix(design): sandbox miner HTML viewer end-to-end |
 | `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
 | `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
 | `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |

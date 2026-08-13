@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T10:35:15Z, block 8835047
+# ALARMS - generated 2026-08-13T11:33:44Z, block 8835339
 
-window: first_seen in [2026-08-13T09:20:49Z, 2026-08-13T10:35:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T10:19:22Z, 2026-08-13T11:34:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | P1 | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
 | `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | P1 | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | P2 | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 
 ### detail
 
-- **`sn44:scoring_commit:2026-08-13T09:12:05Z`** - sn44 commit touches scoring: blacklist + min common challenges tiebreak
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-13T09:35:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:readme_task_diff:a54328c7fbaf2606`** - sn67 README task/scoring sections changed
@@ -195,6 +192,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
 | `sn89:scoring_commit:2026-08-13T02:13:14Z` | 89 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a… |
 | `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
+| `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |

@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-13T07:51:50Z, block 8834230
+# ALARMS - generated 2026-08-13T09:22:15Z, block 8834682
 
-window: first_seen in [2026-08-13T06:37:23Z, 2026-08-13T07:52:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T08:07:53Z, 2026-08-13T09:22:53Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | P1 | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
+
+### detail
+
+- **`sn44:scoring_commit:2026-08-13T09:12:05Z`** - sn44 commit touches scoring: blacklist + min common challenges tiebreak
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

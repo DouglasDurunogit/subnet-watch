@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T18:41:45Z, block 8837480
+# ALARMS - generated 2026-08-13T19:46:15Z, block 8837802
 
-window: first_seen in [2026-08-13T17:27:14Z, 2026-08-13T18:42:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T18:31:45Z, 2026-08-13T19:46:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn118:burn_drop:0.000` | 118 | BURN_DROP | P0 | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn100:burn_drop:0.000` | 100 | BURN_DROP | P0 | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 
 ### detail
 
-- **`sn118:burn_drop:0.000`** - sn118 burn fell 1.000 -> 0.000 - miners can earn again
+- **`sn100:burn_drop:0.000`** - sn100 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -34,6 +34,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
+| `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
 | `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
 | `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |

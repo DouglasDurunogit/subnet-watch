@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-13T21:22:50Z, block 8838285
+# ALARMS - generated 2026-08-13T22:10:03Z, block 8838521
 
-window: first_seen in [2026-08-13T20:08:20Z, 2026-08-13T21:23:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T20:55:33Z, 2026-08-13T22:10:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn15:scoring_commit:2026-08-13T21:50:38Z` | 15 | SCORING_COMMIT | P1 | 2026-08-13T22:10:33Z | sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#… |
+| `sn91:scoring_commit:2026-08-13T21:52:49Z` | 91 | SCORING_COMMIT | P1 | 2026-08-13T22:10:33Z | sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin |
+
+### detail
+
+- **`sn15:scoring_commit:2026-08-13T21:50:38Z`** - sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-08-13T21:52:49Z`** - sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

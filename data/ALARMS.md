@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-13T04:31:55Z, block 8833230
+# ALARMS - generated 2026-08-13T06:07:11Z, block 8833707
 
-window: first_seen in [2026-08-13T03:17:20Z, 2026-08-13T04:32:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T04:52:40Z, 2026-08-13T06:07:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn70:burn_drop:0.000` | 70 | BURN_DROP | P0 | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | P1 | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
-
-### detail
-
-- **`sn70:burn_drop:0.000`** - sn70 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn89:scoring_commit:2026-08-13T03:41:31Z`** - sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,11 +25,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
-| `sn2:release:14.13.1` | 2 | RELEASE | 2026-08-06T04:41:49Z | sn2 released 14.13.1 |
-| `sn66:scoring_commit:2026-08-06T03:41:33Z` | 66 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn66 commit touches scoring: Merge pull request #28 from conjectures-io/codex/pin-retired-task-rel… |
-| `sn71:scoring_commit:2026-08-06T03:51:32Z` | 71 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn71 commit touches scoring: Honor scoring maintenance between rebenchmark waves |
-| `sn74:release:release-20260806-043739` | 74 | RELEASE | 2026-08-06T04:41:49Z | sn74 released release-20260806-043739 |
-| `sn74:scoring_commit:2026-08-06T04:37:15Z` | 74 | SCORING_COMMIT | 2026-08-06T04:41:49Z | sn74 commit touches scoring: sparkinfer-k3: 3x faster time-decay for merged-PR scores (#1679) |
+| `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
 | `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
 | `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
@@ -202,7 +188,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.118` | 51 | RELEASE | 2026-08-13T02:42:09Z | sn51 released executor-v1.118 |
 | `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
 | `sn89:scoring_commit:2026-08-13T02:13:14Z` | 89 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a… |
-| `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
+| `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
 | `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |

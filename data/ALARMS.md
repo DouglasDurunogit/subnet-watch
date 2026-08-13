@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T12:35:40Z, block 8835649
+# ALARMS - generated 2026-08-13T14:10:12Z, block 8836122
 
-window: first_seen in [2026-08-13T11:21:13Z, 2026-08-13T12:36:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T12:55:36Z, 2026-08-13T14:10:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | P2 | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
+| `sn1:release:v4.3.1` | 1 | RELEASE | P1 | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
 
 ### detail
 
-- **`sn90:readme_task_diff:8fca31852ef23b0f`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn1:release:v4.3.1`** - sn1 released v4.3.1
+  - published 2026-08-13T13:58:06Z (was v4.2.22)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -204,6 +204,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
+| `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T15:30:45Z, block 8836525
+# ALARMS - generated 2026-08-13T16:38:43Z, block 8836864
 
-window: first_seen in [2026-08-13T14:16:13Z, 2026-08-13T15:31:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T15:24:08Z, 2026-08-13T16:39:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | P0 | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn26:scoring_commit:2026-08-13T14:58:07Z` | 26 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification |
 | `sn51:release:executor-v1.119` | 51 | RELEASE | P1 | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
 | `sn75:scoring_commit:2026-08-13T13:14:25Z` | 75 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn75 commit touches scoring: updated validator weights submitter |
 | `sn100:scoring_commit:2026-08-13T15:17:24Z` | 100 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142 |
+| `sn38:scoring_commit:2026-08-13T16:30:43Z` | 38 | SCORING_COMMIT | P1 | 2026-08-13T16:39:08Z | sn38 commit touches scoring: Update validator image to latest version in docker-compose files |
+| `sn90:release:v1.1.0 — Targon max $/card + raised GPU ` | 90 | RELEASE | P1 | 2026-08-13T16:39:08Z | sn90 released v1.1.0 — Targon max $/card + raised GPU card caps |
+| `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | P1 | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | P2 | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
+| `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | P2 | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 
 ### detail
 
+- **`sn6:weights_version_bump:3000`** - sn6 weights_version 2018 -> 3000
+  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
 - **`sn26:scoring_commit:2026-08-13T14:58:07Z`** - sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn51:release:executor-v1.119`** - sn51 released executor-v1.119
@@ -25,7 +32,15 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:scoring_commit:2026-08-13T15:17:24Z`** - sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn38:scoring_commit:2026-08-13T16:30:43Z`** - sn38 commit touches scoring: Update validator image to latest version in docker-compose files
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:release:v1.1.0 — Targon max $/card + raised GPU `** - sn90 released v1.1.0 — Targon max $/card + raised GPU card caps
+  - published 2026-08-13T15:50:20Z (was v1.0.2 — proxy version header + owner miner UID hardcode)
+- **`sn90:scoring_commit:2026-08-13T15:50:20Z`** - sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn26:readme_task_diff:27b06992db454b8d`** - sn26 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn38:readme_task_diff:0929297366a7bf8b`** - sn38 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)

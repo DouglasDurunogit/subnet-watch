@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T11:33:44Z, block 8835339
+# ALARMS - generated 2026-08-13T12:35:40Z, block 8835649
 
-window: first_seen in [2026-08-13T10:19:22Z, 2026-08-13T11:34:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T11:21:13Z, 2026-08-13T12:36:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | P1 | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
-| `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | P2 | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
+| `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | P2 | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-13T09:35:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:readme_task_diff:a54328c7fbaf2606`** - sn67 README task/scoring sections changed
+- **`sn90:readme_task_diff:8fca31852ef23b0f`** - sn90 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,9 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-08-06T11:52:39Z` | 67 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260806.post0 |
-| `sn100:release:v3.3.2 — miner HTML sandboxing + chain e` | 100 | RELEASE | 2026-08-06T12:25:37Z | sn100 released v3.3.2 — miner HTML sandboxing + chain endpoint failover + ops fixes |
-| `sn120:scoring_commit:2026-08-06T12:01:22Z` | 120 | SCORING_COMMIT | 2026-08-06T12:25:37Z | sn120 commit touches scoring: Document the RT-6 incident: sampler + ref-cache bugs found via miner … |
 | `sn26:scoring_commit:2026-08-06T13:58:43Z` | 26 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup |
 | `sn126:scoring_commit:2026-08-06T14:12:18Z` | 126 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn126 commit touches scoring: Reduce validator burn default to 30 percent |
 | `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
@@ -193,6 +187,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-13T02:13:14Z` | 89 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a… |
 | `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
 | `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
+| `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
@@ -208,6 +203,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
+| `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

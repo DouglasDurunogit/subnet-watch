@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-13T20:25:16Z, block 8837997
+# ALARMS - generated 2026-08-13T21:22:50Z, block 8838285
 
-window: first_seen in [2026-08-13T19:10:54Z, 2026-08-13T20:25:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T20:08:20Z, 2026-08-13T21:23:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn100:burn_drop:0.000` | 100 | BURN_DROP | P0 | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
-
-### detail
-
-- **`sn100:burn_drop:0.000`** - sn100 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,6 +28,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
 | `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
 | `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |

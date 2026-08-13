@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-12T23:54:36Z, block 8831844
+# ALARMS - generated 2026-08-13T02:41:44Z, block 8832679
 
-window: first_seen in [2026-08-12T22:40:02Z, 2026-08-12T23:55:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T01:27:09Z, 2026-08-13T02:42:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | P1 | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
-| `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | P2 | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
+| `sn51:release:executor-v1.118` | 51 | RELEASE | P1 | 2026-08-13T02:42:09Z | sn51 released executor-v1.118 |
+| `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | P1 | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
+| `sn89:scoring_commit:2026-08-13T02:13:14Z` | 89 | SCORING_COMMIT | P1 | 2026-08-13T02:42:09Z | sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a… |
+| `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | P2 | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
+| `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | P2 | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
 
 ### detail
 
-- **`sn41:scoring_commit:2026-08-12T22:36:16Z`** - sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2
+- **`sn51:release:executor-v1.118`** - sn51 released executor-v1.118
+  - published 2026-08-13T02:07:24Z (was executor-v1.117)
+- **`sn66:scoring_commit:2026-08-13T00:05:35Z`** - sn66 commit touches scoring: Preserve production task retirements
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:371ffea333df26ac`** - sn66 README task/scoring sections changed
+- **`sn89:scoring_commit:2026-08-13T02:13:14Z`** - sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:59994c37a3ef19e9`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn89:readme_task_diff:32958de49be3add2`** - sn89 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -198,6 +207,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
 | `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
 | `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
+| `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
 | `sn66:readme_task_diff:96b14914dd39764d` | 66 | README_TASK_DIFF | 2026-08-06T04:41:49Z | sn66 README task/scoring sections changed |
 | `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
@@ -212,6 +222,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
+| `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

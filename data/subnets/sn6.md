@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-13T06:07:11Z  |  block: 8833707  |  row_status: ok
+snapshot_utc: 2026-08-13T07:51:50Z  |  block: 8834230  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (39.980000000000004 USD), open=True
+- registration cost: 0.2 TAO (39.952 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 34  |  free: 0
-- subnet age: 779.7 days  |  registered at block 3219949
+- subnet age: 779.8 days  |  registered at block 3219949
 - weights_version: 2018  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 523.266139095668** (uid 197) <- the only figure quotable as achievable
-- median_miner_usd_day: 15.059208936655843
-- top_miner_usd_day: 523.266139095668 (uid 197, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 520.1537477620169** (uid 197) <- the only figure quotable as achievable
+- median_miner_usd_day: 14.969636637047294
+- top_miner_usd_day: 520.1537477620169 (uid 197, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 19  |  gini: 0.7038845167125303  |  top1_share: 0.2895339254647011  |  top10_share: 0.9731709550407471
+- earners: 19  |  gini: 0.7038845167125305  |  top1_share: 0.289533925464701  |  top10_share: 0.9731709550407471
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-13T06:07:11Z  |  block: 8833707  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: 9.8806 USD/day  |  payback on registration: 4.05 days
+- net margin: 9.816 USD/day  |  payback on registration: 4.07 days
 
 ## Score
 
 - gate: **OK** 
-- score: 54.1 (rank 23), confidence 1.0 
-- components: income 9.43 / freshness 21.0 / resource 15.0 / registration 8.65
-- freshness basis: README_TASK_DIFF 14d ago
+- score: 54.0 (rank 25), confidence 1.0 
+- components: income 9.4 / freshness 21.0 / resource 15.0 / registration 8.64
+- freshness basis: README_TASK_DIFF 15d ago
 
 ## On-chain description
 

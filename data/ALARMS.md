@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T06:07:11Z, block 8833707
+# ALARMS - generated 2026-08-13T07:51:50Z, block 8834230
 
-window: first_seen in [2026-08-13T04:52:40Z, 2026-08-13T06:07:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T06:37:23Z, 2026-08-13T07:52:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -26,9 +26,6 @@ _none_
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-08-06T05:10:27Z` | 71 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn71 commit touches scoring: Repair Research Lab verifier drift |
-| `sn100:release:v3.3.1 — prod validator trust-root roll` | 100 | RELEASE | 2026-08-06T07:28:34Z | sn100 released v3.3.1 — prod validator trust-root roll |
-| `sn100:scoring_commit:2026-08-06T07:02:07Z` | 100 | SCORING_COMMIT | 2026-08-06T07:28:34Z | sn100 commit touches scoring: chore(pins): promote prod validator to v3.3.1 digest |
 | `sn15:release:v1.2.6: docs(validator): correct stale w` | 15 | RELEASE | 2026-08-06T10:19:12Z | sn15 released v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249) |
 | `sn15:scoring_commit:2026-08-06T08:42:22Z` | 15 | SCORING_COMMIT | 2026-08-06T10:19:12Z | sn15 commit touches scoring: docs(validator): correct stale weight-salt fallback docstrings (#249) |
 | `sn100:release:v3.3.1 — prod trust-root roll + prism ep` | 100 | RELEASE | 2026-08-06T10:19:12Z | sn100 released v3.3.1 — prod trust-root roll + prism epoch-close emission |
@@ -189,7 +186,6 @@ _none_
 | `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
 | `sn89:scoring_commit:2026-08-13T02:13:14Z` | 89 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn89 commit touches scoring: HF: submission-diversity gate — zero weight for one-sided miners on a… |
 | `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
-| `sn100:readme_task_diff:98275d6e78bda7a7` | 100 | README_TASK_DIFF | 2026-08-06T07:28:34Z | sn100 README task/scoring sections changed |
 | `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |

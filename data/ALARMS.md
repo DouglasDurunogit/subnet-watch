@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T14:10:12Z, block 8836122
+# ALARMS - generated 2026-08-13T15:30:45Z, block 8836525
 
-window: first_seen in [2026-08-13T12:55:36Z, 2026-08-13T14:10:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T14:16:13Z, 2026-08-13T15:31:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.3.1` | 1 | RELEASE | P1 | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
+| `sn26:scoring_commit:2026-08-13T14:58:07Z` | 26 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification |
+| `sn51:release:executor-v1.119` | 51 | RELEASE | P1 | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
+| `sn75:scoring_commit:2026-08-13T13:14:25Z` | 75 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn75 commit touches scoring: updated validator weights submitter |
+| `sn100:scoring_commit:2026-08-13T15:17:24Z` | 100 | SCORING_COMMIT | P1 | 2026-08-13T15:31:13Z | sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142 |
+| `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | P2 | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 
 ### detail
 
-- **`sn1:release:v4.3.1`** - sn1 released v4.3.1
-  - published 2026-08-13T13:58:06Z (was v4.2.22)
+- **`sn26:scoring_commit:2026-08-13T14:58:07Z`** - sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:release:executor-v1.119`** - sn51 released executor-v1.119
+  - published 2026-08-13T14:14:46Z (was executor-v1.118)
+- **`sn75:scoring_commit:2026-08-13T13:14:25Z`** - sn75 commit touches scoring: updated validator weights submitter
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-08-13T15:17:24Z`** - sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn26:readme_task_diff:27b06992db454b8d`** - sn26 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,8 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn26:scoring_commit:2026-08-06T13:58:43Z` | 26 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn26 commit touches scoring: Merge pull request #45 from 0xsigurd/feat/leaderboard-scoring-cleanup |
-| `sn126:scoring_commit:2026-08-06T14:12:18Z` | 126 | SCORING_COMMIT | 2026-08-06T14:55:04Z | sn126 commit touches scoring: Reduce validator burn default to 30 percent |
 | `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
 | `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
 | `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |
@@ -188,7 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
 | `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
 | `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
-| `sn126:readme_task_diff:7ca8ea1d7f25bb3b` | 126 | README_TASK_DIFF | 2026-08-06T14:55:04Z | sn126 README task/scoring sections changed |
+| `sn1:release:v4.3.1` | 1 | RELEASE | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |

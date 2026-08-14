@@ -1,13 +1,26 @@
-# ALARMS - generated 2026-08-14T04:30:30Z, block 8840423
+# ALARMS - generated 2026-08-14T06:05:48Z, block 8840900
 
-window: first_seen in [2026-08-14T03:15:56Z, 2026-08-14T04:30:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T04:51:21Z, 2026-08-14T06:06:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn90:release:v1.1.1` | 90 | RELEASE | P1 | 2026-08-14T06:06:21Z | sn90 released v1.1.1 |
+| `sn90:scoring_commit:2026-08-14T06:04:45Z` | 90 | SCORING_COMMIT | P1 | 2026-08-14T06:06:21Z | sn90 commit touches scoring: fix(validator): always apply the Targon supply-side clamp |
+| `sn100:scoring_commit:2026-08-14T04:35:53Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T06:06:21Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for seal TTL fix (#147 |
+
+### detail
+
+- **`sn90:release:v1.1.1`** - sn90 released v1.1.1
+  - published 2026-08-14T06:04:50Z (was v1.1.0 — Targon max $/card + raised GPU card caps)
+- **`sn90:scoring_commit:2026-08-14T06:04:45Z`** - sn90 commit touches scoring: fix(validator): always apply the Targon supply-side clamp
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-08-14T04:35:53Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for seal TTL fix (#147
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

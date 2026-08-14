@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T09:17:44Z, block 8841859
+# ALARMS - generated 2026-08-14T10:32:11Z, block 8842232
 
-window: first_seen in [2026-08-14T08:03:19Z, 2026-08-14T09:18:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T09:17:39Z, 2026-08-14T10:32:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -43,9 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn90:release:v1.0.1` | 90 | RELEASE | 2026-08-07T09:31:19Z | sn90 released v1.0.1 |
-| `sn90:scoring_commit:2026-08-07T09:14:19Z` | 90 | SCORING_COMMIT | 2026-08-07T09:31:19Z | sn90 commit touches scoring: fix(subnet): proxy rejects miners — only validators with validator_pe… |
-| `sn114:scoring_commit:2026-08-07T08:41:26Z` | 114 | SCORING_COMMIT | 2026-08-07T09:31:19Z | sn114 commit touches scoring: Merge pull request #218 from DendriteHQ/fix/scoring_magic_number |
 | `sn66:scoring_commit:2026-08-07T10:06:34Z` | 66 | SCORING_COMMIT | 2026-08-07T10:38:14Z | sn66 commit touches scoring: fix catalag endpoint pydantic type validation mismatch - list vs indi… |
 | `sn111:scoring_commit:2026-08-07T10:19:22Z` | 111 | SCORING_COMMIT | 2026-08-07T10:38:14Z | sn111 commit touches scoring: Document miner batch and PDF options |
 | `sn66:scoring_commit:2026-08-07T11:31:50Z` | 66 | SCORING_COMMIT | 2026-08-07T11:34:31Z | sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati… |

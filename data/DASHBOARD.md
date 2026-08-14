@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-14T18:23:54Z · block 8844589 · run_status **ok**_
+_snapshot 2026-08-14T19:29:02Z · block 8844915 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 77.8 | 105 | 31,136 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 74.5 | 38.37 | 184 | cpu-small | 10 | 34% |
-| 3 | sn60 Bitsec.ai | 73.1 | 722 | 1,012 | cpu-small | 3 | 50% |
-| 4 | sn67 Harnyx | 73.1 | 27.72 | 472 | cpu-small | 124 | 13% |
-| 5 | sn26 Perturb | 71 | 42.07 | 77.09 | rtx3060 | 10 | 70% |
-| 6 | sn1 Apex | 70 | 748 | 1,091 | rtx4090* | 4 | 58% |
-| 7 | sn91 cascade | 69.5 | 646 | 2,228 | rtx4090* | 5 | 50% |
-| 8 | sn41 Almanac | 69 | 10.45 | 25.87 | cpu-small | 68 | 72% |
-| 9 | sn56 Gradients | 68.8 | 513 | 958 | rtx4090* | 7 | 66% |
-| 10 | sn62 Ridges | 68.1 | 419 | 1,945 | rtx4090* | 7 | 35% |
-| 11 | sn38 ChronoLLM | 67.6 | 151 | 3,165 | cpu-small | 10 | 52% |
-| 12 | sn21 AdTAO | 67.6 | 7.47 | 33.55 | cpu-small | 88 | 45% |
-| 13 | sn15 ORO | 67.5 | 10.55 | 21.11 | cpu-small | 84 | 93% |
-| 14 | sn85 Vidaio | 66.9 | 291 | 586 | rtx4090* | 10 | 19% |
-| 15 | sn6 Numinous | 66.7 | 7.42 | 543 | cpu-small | 19 | 32% |
-| 16 | sn96 Verathos | 66.5 | 13.91 | 119 | rtx4090 | 84 | 41% |
-| 17 | sn124 Swarm | 65.8 | 221 | 712 | rtx4090* | 24 | 11% |
-| 18 | sn80 OpenRoboto | 65.1 | 170 | 615 | rtx4090* | 4 | 91% |
-| 19 | sn55 NIOME | 63.8 | 115 | 320 | rtx4090* | 11 | 20% |
-| 20 | sn51 lium.io | 60.2 | 46.34 | 1,365 | rtx4090* | 47 | 80% |
+| 1 | sn107 Minos | 77.9 | 108 | 31,080 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 74.6 | 39.53 | 189 | cpu-small | 10 | 34% |
+| 3 | sn121 sundae_bar | 74.4 | 1,062 | 1,062 = | cpu-small | 2 | 61% |
+| 4 | sn67 Harnyx | 73.1 | 27.67 | 472 | cpu-small | 124 | 13% |
+| 5 | sn26 Perturb | 70.9 | 42.00 | 76.97 | rtx3060 | 10 | 70% |
+| 6 | sn1 Apex | 70 | 743 | 1,085 | rtx4090* | 4 | 58% |
+| 7 | sn91 cascade | 69.5 | 643 | 2,219 | rtx4090* | 5 | 50% |
+| 8 | sn41 Almanac | 69 | 10.38 | 25.82 | cpu-small | 68 | 72% |
+| 9 | sn56 Gradients | 68.8 | 511 | 956 | rtx4090* | 7 | 66% |
+| 10 | sn62 Ridges | 68.1 | 418 | 1,941 | rtx4090* | 7 | 35% |
+| 11 | sn21 AdTAO | 67.6 | 7.45 | 33.49 | cpu-small | 88 | 45% |
+| 12 | sn15 ORO | 67.4 | 10.65 | 21.29 | cpu-small | 84 | 93% |
+| 13 | sn96 Verathos | 66.6 | 14.54 | 123 | rtx4090 | 84 | 42% |
+| 14 | sn6 Numinous | 66.6 | 7.41 | 542 | cpu-small | 19 | 32% |
+| 15 | sn85 Vidaio | 66.3 | 247 | 675 | rtx4090* | 10 | 22% |
+| 16 | sn38 ChronoLLM | 66.2 | 104 | 1,416 | cpu-small | 10 | 52% |
+| 17 | sn124 Swarm | 65.8 | 220 | 711 | rtx4090* | 24 | 11% |
+| 18 | sn80 OpenRoboto | 65.1 | 170 | 617 | rtx4090* | 4 | 91% |
+| 19 | sn55 NIOME | 63.7 | 113 | 316 | rtx4090* | 11 | 20% |
+| 20 | sn60 Bitsec.ai | 61.2 | 719 | 1,007 | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
-| concentrated (30–60%) | 22 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 21 |
 | dominated (60–90%) | 18 |
 | captured (>90%) | 26 |
 
@@ -97,8 +97,8 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 103 |
-| code-submission (validator runs it) | 9 |
+| no evidence | 102 |
+| code-submission (validator runs it) | 10 |
 | min_compute.yml (curated) | 9 |
 | README keywords (GUESS) | 6 |
 | README stated VRAM (explicit) | 1 |
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-14T19:29 | sn121 | README_TASK_DIFF | sn121 README task/scoring sections changed |
 | 2026-08-14T18:24 | sn55 | SCORING_COMMIT | sn55 commit touches scoring: print only valid scores |
 | 2026-08-14T18:24 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: chore(deploy): promote prod prism-challe |
 | 2026-08-14T17:08 | sn55 | SCORING_COMMIT | sn55 commit touches scoring: print only valid scores |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-14T11:32 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identi |
 | 2026-08-14T11:32 | sn96 | RELEASE | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |
 | 2026-08-14T11:32 | sn96 | SCORING_COMMIT | sn96 commit touches scoring: fix: retry validator updates after partia |
-| 2026-08-14T11:32 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat: win both evaluations; increase step |
 
 ---
 

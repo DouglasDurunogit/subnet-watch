@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T18:23:54Z, block 8844589
+# ALARMS - generated 2026-08-14T19:29:02Z, block 8844915
 
-window: first_seen in [2026-08-14T17:09:30Z, 2026-08-14T18:24:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T18:14:32Z, 2026-08-14T19:29:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
 | `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
+| `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | P2 | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 
 ### detail
 
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:scoring_commit:2026-08-14T17:13:42Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn121:readme_task_diff:4de589f5fb4cb70d`** - sn121 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -38,9 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn28:release:v0.4.0` | 28 | RELEASE | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
-| `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
-| `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
 | `sn1:release:v4.2.21` | 1 | RELEASE | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
 | `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
 | `sn28:release:v0.4.1` | 28 | RELEASE | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |

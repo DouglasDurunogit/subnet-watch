@@ -1,26 +1,18 @@
-# ALARMS - generated 2026-08-14T00:06:55Z, block 8839105
+# ALARMS - generated 2026-08-14T02:45:03Z, block 8839896
 
-window: first_seen in [2026-08-13T22:52:26Z, 2026-08-14T00:07:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T01:30:40Z, 2026-08-14T02:45:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn91:scoring_commit:2026-08-13T23:06:33Z` | 91 | SCORING_COMMIT | P1 | 2026-08-13T23:12:08Z | sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round… |
-
-### detail
-
-- **`sn91:scoring_commit:2026-08-13T23:06:33Z`** - sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn72:burn_drop:0.000` | 72 | BURN_DROP | 2026-08-07T00:33:55Z | sn72 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
@@ -36,15 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn10:scoring_commit:2026-08-06T20:28:19Z` | 10 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn10 commit touches scoring: feat: default miner --api-base to https://api.pareton.ai (#53) |
-| `sn14:scoring_commit:2026-08-06T20:14:29Z` | 14 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn14 commit touches scoring: Publish the tracked B300 pod evaluation adapter |
-| `sn21:scoring_commit:2026-08-06T15:51:01Z` | 21 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn21 commit touches scoring: feat(scoring): wire one-payer into the daily allocation, from the rec… |
-| `sn41:scoring_commit:2026-08-06T17:42:32Z` | 41 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn41 commit touches scoring: Adding minimum and recommended specs for running a validator |
-| `sn66:scoring_commit:2026-08-06T17:23:11Z` | 66 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn66 commit touches scoring: update task pool and add review |
-| `sn74:release:release-20260806-204130` | 74 | RELEASE | 2026-08-07T00:33:55Z | sn74 released release-20260806-204130 |
-| `sn96:release:v0.1.28 - Gleipnir Proof Runtime Hardeni` | 96 | RELEASE | 2026-08-07T00:33:55Z | sn96 released v0.1.28 - Gleipnir Proof Runtime Hardening |
-| `sn96:scoring_commit:2026-08-06T23:22:28Z` | 96 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn96 commit touches scoring: fix: refresh authenticated miner artifacts |
-| `sn111:scoring_commit:2026-08-06T17:12:01Z` | 111 | SCORING_COMMIT | 2026-08-07T00:33:55Z | sn111 commit touches scoring: Update validator artifact hydration and batch post-pass |
 | `sn67:scoring_commit:2026-08-07T02:31:14Z` | 67 | SCORING_COMMIT | 2026-08-07T03:41:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0 |
 | `sn100:release:v3.3.3` | 100 | RELEASE | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
 | `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
@@ -199,8 +182,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
 | `sn15:scoring_commit:2026-08-13T21:50:38Z` | 15 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#… |
 | `sn91:scoring_commit:2026-08-13T21:52:49Z` | 91 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin |
-| `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
-| `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
+| `sn91:scoring_commit:2026-08-13T23:06:33Z` | 91 | SCORING_COMMIT | 2026-08-13T23:12:08Z | sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round… |
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |
 | `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T23:02:31Z, block 8845982
+# ALARMS - generated 2026-08-14T23:32:42Z, block 8846133
 
-window: first_seen in [2026-08-14T21:48:02Z, 2026-08-14T23:03:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T22:18:14Z, 2026-08-14T23:33:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,10 +9,16 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn2:burn_drop:0.824` | 2 | BURN_DROP | P0 | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
+| `sn19:burn_drop:0.986` | 19 | BURN_DROP | P0 | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn62:release:v0.2.7` | 62 | RELEASE | P1 | 2026-08-14T22:36:36Z | sn62 released v0.2.7 |
 
 ### detail
 
+- **`sn2:burn_drop:0.824`** - sn2 burn fell 1.000 -> 0.824 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn19:burn_drop:0.986`** - sn19 burn fell 1.000 -> 0.986 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn62:release:v0.2.7`** - sn62 released v0.2.7
   - published 2026-08-14T22:35:39Z (was v0.2.6)
 

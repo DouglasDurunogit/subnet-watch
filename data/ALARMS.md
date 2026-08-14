@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T11:32:00Z, block 8842531
+# ALARMS - generated 2026-08-14T12:29:38Z, block 8842819
 
-window: first_seen in [2026-08-14T10:17:26Z, 2026-08-14T11:32:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T11:15:02Z, 2026-08-14T12:30:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -14,6 +14,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:Verathos v0.1.38 — Runtime and Proof Sta` | 96 | RELEASE | P1 | 2026-08-14T11:32:26Z | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |
 | `sn96:scoring_commit:2026-08-14T09:27:09Z` | 96 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn96 commit touches scoring: fix: retry validator updates after partial install |
 | `sn97:scoring_commit:2026-08-14T08:09:05Z` | 97 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb… |
+| `sn90:release:v1.1.2` | 90 | RELEASE | P1 | 2026-08-14T12:30:02Z | sn90 released v1.1.2 |
+| `sn90:scoring_commit:2026-08-14T12:09:55Z` | 90 | SCORING_COMMIT | P1 | 2026-08-14T12:30:02Z | sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint |
 
 ### detail
 
@@ -26,6 +28,10 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn96:scoring_commit:2026-08-14T09:27:09Z`** - sn96 commit touches scoring: fix: retry validator updates after partial install
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn97:scoring_commit:2026-08-14T08:09:05Z`** - sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:release:v1.1.2`** - sn90 released v1.1.2
+  - published 2026-08-14T12:10:01Z (was v1.1.1)
+- **`sn90:scoring_commit:2026-08-14T12:09:55Z`** - sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -47,7 +53,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
-| `sn66:scoring_commit:2026-08-07T11:31:50Z` | 66 | SCORING_COMMIT | 2026-08-07T11:34:31Z | sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati… |
 | `sn126:scoring_commit:2026-08-07T11:17:25Z` | 126 | SCORING_COMMIT | 2026-08-07T12:31:08Z | sn126 commit touches scoring: Gate validator rounds by launch status |
 | `sn100:release:v3.3.5` | 100 | RELEASE | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
 | `sn21:scoring_commit:2026-08-07T14:45:16Z` | 21 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev… |

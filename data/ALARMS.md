@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T02:45:03Z, block 8839896
+# ALARMS - generated 2026-08-14T04:30:30Z, block 8840423
 
-window: first_seen in [2026-08-14T01:30:40Z, 2026-08-14T02:45:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T03:15:56Z, 2026-08-14T04:30:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -28,8 +28,6 @@ _none_
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-08-07T02:31:14Z` | 67 | SCORING_COMMIT | 2026-08-07T03:41:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260807.post0 |
-| `sn100:release:v3.3.3` | 100 | RELEASE | 2026-08-07T03:41:13Z | sn100 released v3.3.3 |
 | `sn98:scoring_commit:2026-08-07T05:49:16Z` | 98 | SCORING_COMMIT | 2026-08-07T06:49:22Z | sn98 commit touches scoring: chore: set TASKS_PER_ROUND as 5 |
 | `sn100:release:v3.3.4 — design screenshots-only viewer ` | 100 | RELEASE | 2026-08-07T06:49:22Z | sn100 released v3.3.4 — design screenshots-only viewer + metagraph cache / real-seal |
 | `sn90:release:v1.0.1` | 90 | RELEASE | 2026-08-07T09:31:19Z | sn90 released v1.0.1 |

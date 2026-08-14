@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T17:07:39Z, block 8844209
+# ALARMS - generated 2026-08-14T18:23:54Z, block 8844589
 
-window: first_seen in [2026-08-14T15:53:05Z, 2026-08-14T17:08:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T17:09:30Z, 2026-08-14T18:24:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn126:scoring_commit:2026-08-14T15:41:49Z` | 126 | SCORING_COMMIT | P1 | 2026-08-14T16:03:52Z | sn126 commit touches scoring: docs: describe continuous miner training tables |
-| `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
+| `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
+| `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
 
 ### detail
 
-- **`sn126:scoring_commit:2026-08-14T15:41:49Z`** - sn126 commit touches scoring: docs: describe continuous miner training tables
+- **`sn55:scoring_commit:2026-08-14T17:58:40Z`** - sn55 commit touches scoring: print only valid scores
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn55:scoring_commit:2026-08-14T16:37:31Z`** - sn55 commit touches scoring: print only valid scores
+- **`sn100:scoring_commit:2026-08-14T17:13:42Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -39,9 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
-| `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
-| `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
 | `sn28:release:v0.4.0` | 28 | RELEASE | 2026-08-07T19:28:43Z | sn28 released v0.4.0 |
 | `sn60:scoring_commit:2026-08-07T18:13:15Z` | 60 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn60 commit touches scoring: removed Chutes for miner submission |
 | `sn71:scoring_commit:2026-08-07T18:44:33Z` | 71 | SCORING_COMMIT | 2026-08-07T19:28:43Z | sn71 commit touches scoring: Authorize isolated autoresearch validation skill |
@@ -191,6 +187,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:release:v1.1.2` | 90 | RELEASE | 2026-08-14T12:30:02Z | sn90 released v1.1.2 |
 | `sn90:scoring_commit:2026-08-14T12:09:55Z` | 90 | SCORING_COMMIT | 2026-08-14T12:30:02Z | sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint |
 | `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
+| `sn126:scoring_commit:2026-08-14T15:41:49Z` | 126 | SCORING_COMMIT | 2026-08-14T16:03:52Z | sn126 commit touches scoring: docs: describe continuous miner training tables |
+| `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

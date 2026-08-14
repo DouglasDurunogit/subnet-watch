@@ -1,50 +1,64 @@
-# sn3 - deprecated (γ)
+# sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-14T15:04:56Z  |  block: 8843595  |  row_status: ok
+snapshot_utc: 2026-08-14T16:03:25Z  |  block: 8843888  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.017504542 TAO (3.3930804212800005 USD), open=True
+- registration cost: 0.009976475 TAO (1.9542916877499998 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 649.7 days  |  registered at block 4165565
+- subnet age: 649.8 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2997.598085041793** (uid 83) <- the only figure quotable as achievable
-- median_miner_usd_day: 2997.598085041793
-- top_miner_usd_day: 2997.598085041793 (uid 83, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3105.2139233061566** (uid 83) <- the only figure quotable as achievable
+- median_miner_usd_day: 3105.2139233061566
+- top_miner_usd_day: 3105.2139233061566 (uid 83, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.0028199102755821492  |  top1_share: 0.20070497756889555  |  top10_share: 1.0
+- earners: 5  |  gini: 0.0030397826982651033  |  top1_share: 0.20075994567456623  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
-- on-chain URL: `https://github.com/username/repo`
-- resolved URL: `(none)`
-- status: **placeholder** - unmodified template placeholder: 'https://github.com/username/repo'
-- README: 0 bytes, sha (none)
+- on-chain URL: `https://github.com/unarbos/teutonic`
+- resolved URL: `https://github.com/unarbos/teutonic`
+- status: **ok** 
+- README: 441 bytes, sha d7d29fdb32fafaa4
 - latest release: (none) 
-- last commit: (unknown)
-- scoring-related commit: (none) 
+- last commit: 2026-08-13T14:45:04Z
+- scoring-related commit: Adjust default evaluation parameters 2026-08-13T14:45:04Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2989.3789 USD/day  |  payback on registration: 0.0 days
+- net margin: 3096.9947 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 31.7 (rank 52), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
-- components: income 31.61 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 45.1 (rank 32), confidence 0.85 - hardware requirement unknown
+- components: income 31.75 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description
 
-> deprecated
+> Coordinated Learning
+
+## README excerpt (evidence for the brief)
+
+```markdown
+# [Teutonic](https://teutonic.ai/)
+
+[Teutonic](https://teutonic.ai/) is a king-of-the-hill pretraining system for Bittensor subnet 3.
+
+Miners submit immutable model checkpoints. The validator verifies each
+submission and sends the challenger and current king to a remote GPU evaluator
+for paired cross-entropy scoring. A successful challenger becomes the new king,
+and the validator updates subnet weights and publishes the resulting state.
+
+```

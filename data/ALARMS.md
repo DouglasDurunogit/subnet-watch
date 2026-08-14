@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T22:36:11Z, block 8845851
+# ALARMS - generated 2026-08-14T23:02:31Z, block 8845982
 
-window: first_seen in [2026-08-14T21:21:36Z, 2026-08-14T22:36:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T21:48:02Z, 2026-08-14T23:03:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -35,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn61:release:4.9.1` | 61 | RELEASE | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
-| `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
 | `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
 | `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
 | `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |

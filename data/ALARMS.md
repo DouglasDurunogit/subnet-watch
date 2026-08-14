@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T16:03:25Z, block 8843888
+# ALARMS - generated 2026-08-14T17:07:39Z, block 8844209
 
-window: first_seen in [2026-08-14T14:48:52Z, 2026-08-14T16:03:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T15:53:05Z, 2026-08-14T17:08:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:burn_drop:0.000` | 20 | BURN_DROP | P0 | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn39:burn_drop:0.000` | 39 | BURN_DROP | P0 | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | P1 | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
 | `sn126:scoring_commit:2026-08-14T15:41:49Z` | 126 | SCORING_COMMIT | P1 | 2026-08-14T16:03:52Z | sn126 commit touches scoring: docs: describe continuous miner training tables |
+| `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
 
 ### detail
 
-- **`sn20:burn_drop:0.000`** - sn20 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn39:burn_drop:0.000`** - sn39 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta`** - sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability
-  - published 2026-08-14T14:41:15Z (was Verathos v0.1.38 — Runtime and Proof Stability)
 - **`sn126:scoring_commit:2026-08-14T15:41:49Z`** - sn126 commit touches scoring: docs: describe continuous miner training tables
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn55:scoring_commit:2026-08-14T16:37:31Z`** - sn55 commit touches scoring: print only valid scores
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,8 +37,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
-| `sn21:scoring_commit:2026-08-07T15:10:17Z` | 21 | SCORING_COMMIT | 2026-08-07T16:08:18Z | sn21 commit touches scoring: fix(scoring): bind the medoid closure explicitly |
-| `sn74:release:release-20260807-154750` | 74 | RELEASE | 2026-08-07T16:08:18Z | sn74 released release-20260807-154750 |
+| `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn21:scoring_commit:2026-08-07T17:15:35Z` | 21 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn21 commit touches scoring: feat(scoring): wire the anti-clone layers where they decide money |
 | `sn46:scoring_commit:2026-08-07T15:24:17Z` | 46 | SCORING_COMMIT | 2026-08-07T17:22:41Z | sn46 commit touches scoring: Add localnet miner validator and platform plumbing |
 | `sn21:scoring_commit:2026-08-07T17:32:20Z` | 21 | SCORING_COMMIT | 2026-08-07T18:10:42Z | sn21 commit touches scoring: refactor(scoring): one behavioural detector, not two |
@@ -196,6 +190,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-08-14T08:09:05Z` | 97 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb… |
 | `sn90:release:v1.1.2` | 90 | RELEASE | 2026-08-14T12:30:02Z | sn90 released v1.1.2 |
 | `sn90:scoring_commit:2026-08-14T12:09:55Z` | 90 | SCORING_COMMIT | 2026-08-14T12:30:02Z | sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint |
+| `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

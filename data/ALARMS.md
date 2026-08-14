@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T12:29:38Z, block 8842819
+# ALARMS - generated 2026-08-14T14:03:44Z, block 8843289
 
-window: first_seen in [2026-08-14T11:15:02Z, 2026-08-14T12:30:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T12:49:14Z, 2026-08-14T14:04:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-14T09:41:41Z` | 67 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1 |
-| `sn71:scoring_commit:2026-08-14T10:35:32Z` | 71 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity |
-| `sn96:release:Verathos v0.1.38 — Runtime and Proof Sta` | 96 | RELEASE | P1 | 2026-08-14T11:32:26Z | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |
-| `sn96:scoring_commit:2026-08-14T09:27:09Z` | 96 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn96 commit touches scoring: fix: retry validator updates after partial install |
-| `sn97:scoring_commit:2026-08-14T08:09:05Z` | 97 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb… |
-| `sn90:release:v1.1.2` | 90 | RELEASE | P1 | 2026-08-14T12:30:02Z | sn90 released v1.1.2 |
-| `sn90:scoring_commit:2026-08-14T12:09:55Z` | 90 | SCORING_COMMIT | P1 | 2026-08-14T12:30:02Z | sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint |
+| `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | P2 | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-14T09:41:41Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-14T10:35:32Z`** - sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.38 — Runtime and Proof Sta`** - sn96 released Verathos v0.1.38 — Runtime and Proof Stability
-  - published 2026-08-14T11:00:47Z (was Verathos v0.1.37 — Scoring Integrity and Fairness)
-- **`sn96:scoring_commit:2026-08-14T09:27:09Z`** - sn96 commit touches scoring: fix: retry validator updates after partial install
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-08-14T08:09:05Z`** - sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.1.2`** - sn90 released v1.1.2
-  - published 2026-08-14T12:10:01Z (was v1.1.1)
-- **`sn90:scoring_commit:2026-08-14T12:09:55Z`** - sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn55:readme_task_diff:d7f3a333f8affc99`** - sn55 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |
 | `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
@@ -53,8 +34,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
-| `sn126:scoring_commit:2026-08-07T11:17:25Z` | 126 | SCORING_COMMIT | 2026-08-07T12:31:08Z | sn126 commit touches scoring: Gate validator rounds by launch status |
-| `sn100:release:v3.3.5` | 100 | RELEASE | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
 | `sn21:scoring_commit:2026-08-07T14:45:16Z` | 21 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn21 commit touches scoring: fix(scoring): group copies by behaviour, because byte-equality was ev… |
 | `sn100:release:v3.3.6 — Prism site window truthfulness` | 100 | RELEASE | 2026-08-07T15:06:25Z | sn100 released v3.3.6 — Prism site window truthfulness |
 | `sn126:scoring_commit:2026-08-07T14:37:59Z` | 126 | SCORING_COMMIT | 2026-08-07T15:06:25Z | sn126 commit touches scoring: Bump validator auto-update version |
@@ -204,6 +183,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
 | `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
 | `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
+| `sn67:scoring_commit:2026-08-14T09:41:41Z` | 67 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1 |
+| `sn71:scoring_commit:2026-08-14T10:35:32Z` | 71 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity |
+| `sn96:release:Verathos v0.1.38 — Runtime and Proof Sta` | 96 | RELEASE | 2026-08-14T11:32:26Z | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |
+| `sn96:scoring_commit:2026-08-14T09:27:09Z` | 96 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn96 commit touches scoring: fix: retry validator updates after partial install |
+| `sn97:scoring_commit:2026-08-14T08:09:05Z` | 97 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb… |
+| `sn90:release:v1.1.2` | 90 | RELEASE | 2026-08-14T12:30:02Z | sn90 released v1.1.2 |
+| `sn90:scoring_commit:2026-08-14T12:09:55Z` | 90 | SCORING_COMMIT | 2026-08-14T12:30:02Z | sn90 commit touches scoring: fix(validator): set_weights on the configured subtensor endpoint |
 | `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |

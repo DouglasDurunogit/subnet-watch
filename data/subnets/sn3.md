@@ -1,20 +1,20 @@
 # sn3 - deprecated (γ)
 
-snapshot_utc: 2026-08-14T12:29:38Z  |  block: 8842819  |  row_status: ok
+snapshot_utc: 2026-08-14T14:03:44Z  |  block: 8843289  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.006149214 TAO (1.21902018336 USD), open=True
+- registration cost: 0.01254252 TAO (2.4845477868 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 9  |  free: 0
-- subnet age: 649.6 days  |  registered at block 4165565
+- subnet age: 649.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2921.9031480411154** (uid 83) <- the only figure quotable as achievable
-- median_miner_usd_day: 2921.9031480411154
-- top_miner_usd_day: 2921.9031480411154 (uid 83, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2920.135210328539** (uid 83) <- the only figure quotable as achievable
+- median_miner_usd_day: 2920.135210328539
+- top_miner_usd_day: 2920.135210328539 (uid 83, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-14T12:29:38Z  |  block: 8842819  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2913.684 USD/day  |  payback on registration: 0.0 days
+- net margin: 2911.916 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 31.7 (rank 51), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
+- score: 31.7 (rank 52), confidence 0.6 - hardware requirement unknown; no README readable; repo placeholder
 - components: income 31.51 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 

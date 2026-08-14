@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T10:32:11Z, block 8842232
+# ALARMS - generated 2026-08-14T11:32:00Z, block 8842531
 
-window: first_seen in [2026-08-14T09:17:39Z, 2026-08-14T10:32:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T10:17:26Z, 2026-08-14T11:32:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:burn_drop:0.822` | 2 | BURN_DROP | P0 | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
-| `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
-| `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
-| `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
+| `sn67:scoring_commit:2026-08-14T09:41:41Z` | 67 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1 |
+| `sn71:scoring_commit:2026-08-14T10:35:32Z` | 71 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity |
+| `sn96:release:Verathos v0.1.38 — Runtime and Proof Sta` | 96 | RELEASE | P1 | 2026-08-14T11:32:26Z | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |
+| `sn96:scoring_commit:2026-08-14T09:27:09Z` | 96 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn96 commit touches scoring: fix: retry validator updates after partial install |
+| `sn97:scoring_commit:2026-08-14T08:09:05Z` | 97 | SCORING_COMMIT | P1 | 2026-08-14T11:32:26Z | sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb… |
 
 ### detail
 
-- **`sn2:burn_drop:0.822`** - sn2 burn fell 1.000 -> 0.822 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn44:scoring_commit:2026-08-14T08:54:31Z`** - sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio
+- **`sn67:scoring_commit:2026-08-14T09:41:41Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-08-14T08:19:45Z`** - sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur…
+- **`sn71:scoring_commit:2026-08-14T10:35:32Z`** - sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-08-14T08:35:14Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f…
+- **`sn96:release:Verathos v0.1.38 — Runtime and Proof Sta`** - sn96 released Verathos v0.1.38 — Runtime and Proof Stability
+  - published 2026-08-14T11:00:47Z (was Verathos v0.1.37 — Scoring Integrity and Fairness)
+- **`sn96:scoring_commit:2026-08-14T09:27:09Z`** - sn96 commit touches scoring: fix: retry validator updates after partial install
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-08-14T08:09:05Z`** - sn97 commit touches scoring: feat: win both evaluations; increase step amount; question amount reb…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,8 +46,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn66:scoring_commit:2026-08-07T10:06:34Z` | 66 | SCORING_COMMIT | 2026-08-07T10:38:14Z | sn66 commit touches scoring: fix catalag endpoint pydantic type validation mismatch - list vs indi… |
-| `sn111:scoring_commit:2026-08-07T10:19:22Z` | 111 | SCORING_COMMIT | 2026-08-07T10:38:14Z | sn111 commit touches scoring: Document miner batch and PDF options |
+| `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn66:scoring_commit:2026-08-07T11:31:50Z` | 66 | SCORING_COMMIT | 2026-08-07T11:34:31Z | sn66 commit touches scoring: Merge pull request #30 from conjectures-io/feat/miner-side-verificati… |
 | `sn126:scoring_commit:2026-08-07T11:17:25Z` | 126 | SCORING_COMMIT | 2026-08-07T12:31:08Z | sn126 commit touches scoring: Gate validator rounds by launch status |
 | `sn100:release:v3.3.5` | 100 | RELEASE | 2026-08-07T14:01:48Z | sn100 released v3.3.5 |
@@ -194,7 +196,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:release:v1.1.1` | 90 | RELEASE | 2026-08-14T06:06:21Z | sn90 released v1.1.1 |
 | `sn90:scoring_commit:2026-08-14T06:04:45Z` | 90 | SCORING_COMMIT | 2026-08-14T06:06:21Z | sn90 commit touches scoring: fix(validator): always apply the Targon supply-side clamp |
 | `sn100:scoring_commit:2026-08-14T04:35:53Z` | 100 | SCORING_COMMIT | 2026-08-14T06:06:21Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for seal TTL fix (#147 |
-| `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |
+| `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
+| `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
+| `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
 | `sn10:readme_task_diff:2aef81117c887b4e` | 10 | README_TASK_DIFF | 2026-08-07T15:06:25Z | sn10 README task/scoring sections changed |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |

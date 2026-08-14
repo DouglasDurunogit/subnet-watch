@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-14T22:01:19Z, block 8845676
+# ALARMS - generated 2026-08-14T22:36:11Z, block 8845851
 
-window: first_seen in [2026-08-14T20:46:53Z, 2026-08-14T22:01:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T21:21:36Z, 2026-08-14T22:36:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn62:release:v0.2.7` | 62 | RELEASE | P1 | 2026-08-14T22:36:36Z | sn62 released v0.2.7 |
+
+### detail
+
+- **`sn62:release:v0.2.7`** - sn62 released v0.2.7
+  - published 2026-08-14T22:35:39Z (was v0.2.6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

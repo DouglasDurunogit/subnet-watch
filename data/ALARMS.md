@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-13T23:11:36Z, block 8838829
+# ALARMS - generated 2026-08-14T00:06:55Z, block 8839105
 
-window: first_seen in [2026-08-13T21:57:08Z, 2026-08-13T23:12:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-13T22:52:26Z, 2026-08-14T00:07:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,16 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-08-13T21:50:38Z` | 15 | SCORING_COMMIT | P1 | 2026-08-13T22:10:33Z | sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#… |
-| `sn91:scoring_commit:2026-08-13T21:52:49Z` | 91 | SCORING_COMMIT | P1 | 2026-08-13T22:10:33Z | sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin |
 | `sn91:scoring_commit:2026-08-13T23:06:33Z` | 91 | SCORING_COMMIT | P1 | 2026-08-13T23:12:08Z | sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round… |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-08-13T21:50:38Z`** - sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-08-13T21:52:49Z`** - sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn91:scoring_commit:2026-08-13T23:06:33Z`** - sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
@@ -203,6 +197,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn38:scoring_commit:2026-08-13T16:30:43Z` | 38 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn38 commit touches scoring: Update validator image to latest version in docker-compose files |
 | `sn90:release:v1.1.0 — Targon max $/card + raised GPU ` | 90 | RELEASE | 2026-08-13T16:39:08Z | sn90 released v1.1.0 — Targon max $/card + raised GPU card caps |
 | `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
+| `sn15:scoring_commit:2026-08-13T21:50:38Z` | 15 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#… |
+| `sn91:scoring_commit:2026-08-13T21:52:49Z` | 91 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin |
 | `sn66:readme_task_diff:a7859610dea4219a` | 66 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:e76e2ccadcee7567` | 111 | README_TASK_DIFF | 2026-08-07T00:33:55Z | sn111 README task/scoring sections changed |
 | `sn111:readme_task_diff:ec7a7e78b8effd65` | 111 | README_TASK_DIFF | 2026-08-07T10:38:14Z | sn111 README task/scoring sections changed |

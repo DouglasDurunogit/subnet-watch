@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T20:16:41Z, block 8845153
+# ALARMS - generated 2026-08-14T20:55:03Z, block 8845345
 
-window: first_seen in [2026-08-14T19:02:06Z, 2026-08-14T20:17:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T19:40:34Z, 2026-08-14T20:55:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,7 +11,6 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
 | `sn96:release:Verathos v0.1.40 — Capacity Audit Schedu` | 96 | RELEASE | P1 | 2026-08-14T20:17:06Z | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
-| `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | P2 | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 
 ### detail
 
@@ -19,8 +18,6 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn96:release:Verathos v0.1.40 — Capacity Audit Schedu`** - sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability
   - published 2026-08-14T19:58:28Z (was Verathos v0.1.39 — Hard-Proof Timing Stability)
-- **`sn121:readme_task_diff:4de589f5fb4cb70d`** - sn121 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,8 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn1:release:v4.2.21` | 1 | RELEASE | 2026-08-07T20:24:27Z | sn1 released v4.2.21 |
-| `sn51:scoring_commit:2026-08-07T20:07:04Z` | 51 | SCORING_COMMIT | 2026-08-07T20:24:27Z | sn51 commit touches scoring: Fix A10 GPU model normalization in validator (#1204) |
 | `sn28:release:v0.4.1` | 28 | RELEASE | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 | `sn61:release:4.9.1` | 61 | RELEASE | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
 | `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
@@ -206,6 +201,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
+| `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

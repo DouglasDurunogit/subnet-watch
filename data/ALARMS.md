@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-14T20:55:03Z, block 8845345
+# ALARMS - generated 2026-08-14T21:36:34Z, block 8845553
 
-window: first_seen in [2026-08-14T19:40:34Z, 2026-08-14T20:55:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T20:22:10Z, 2026-08-14T21:37:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
-| `sn96:release:Verathos v0.1.40 — Capacity Audit Schedu` | 96 | RELEASE | P1 | 2026-08-14T20:17:06Z | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
-
-### detail
-
-- **`sn55:scoring_commit:2026-08-14T20:02:57Z`** - sn55 commit touches scoring: commit weights after validation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.40 — Capacity Audit Schedu`** - sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability
-  - published 2026-08-14T19:58:28Z (was Verathos v0.1.39 — Hard-Proof Timing Stability)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -38,7 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn28:release:v0.4.1` | 28 | RELEASE | 2026-08-07T21:11:37Z | sn28 released v0.4.1 |
 | `sn61:release:4.9.1` | 61 | RELEASE | 2026-08-07T22:54:13Z | sn61 released 4.9.1 |
 | `sn61:scoring_commit:2026-08-07T22:36:31Z` | 61 | SCORING_COMMIT | 2026-08-07T22:54:13Z | sn61 commit touches scoring: deps: update bot virus challenge dependencies and image version to 1.0 |
 | `sn90:scoring_commit:2026-08-07T23:40:46Z` | 90 | SCORING_COMMIT | 2026-08-07T23:45:13Z | sn90 commit touches scoring: docs(validator): note proxy requires validator_permit (miners get 403) |
@@ -186,6 +175,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
 | `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
 | `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
+| `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
+| `sn96:release:Verathos v0.1.40 — Capacity Audit Schedu` | 96 | RELEASE | 2026-08-14T20:17:06Z | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

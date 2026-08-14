@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T14:03:44Z, block 8843289
+# ALARMS - generated 2026-08-14T15:04:56Z, block 8843595
 
-window: first_seen in [2026-08-14T12:49:14Z, 2026-08-14T14:04:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T13:50:31Z, 2026-08-14T15:05:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,10 +9,19 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn20:burn_drop:0.000` | 20 | BURN_DROP | P0 | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn39:burn_drop:0.000` | 39 | BURN_DROP | P0 | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | P1 | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | P2 | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 
 ### detail
 
+- **`sn20:burn_drop:0.000`** - sn20 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn39:burn_drop:0.000`** - sn39 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta`** - sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability
+  - published 2026-08-14T14:41:15Z (was Verathos v0.1.38 — Runtime and Proof Stability)
 - **`sn55:readme_task_diff:d7f3a333f8affc99`** - sn55 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 

@@ -1,19 +1,34 @@
-# ALARMS - generated 2026-08-14T07:48:03Z, block 8841411
+# ALARMS - generated 2026-08-14T09:17:44Z, block 8841859
 
-window: first_seen in [2026-08-14T06:33:36Z, 2026-08-14T07:48:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T08:03:19Z, 2026-08-14T09:18:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn2:burn_drop:0.822` | 2 | BURN_DROP | P0 | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
+| `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
+| `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
+| `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
+
+### detail
+
+- **`sn2:burn_drop:0.822`** - sn2 burn fell 1.000 -> 0.822 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn44:scoring_commit:2026-08-14T08:54:31Z`** - sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-08-14T08:19:45Z`** - sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-08-14T08:35:14Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn100:burn_drop:0.269` | 100 | BURN_DROP | 2026-08-07T08:20:46Z | sn100 burn fell 1.000 -> 0.269 - miners can earn again |
 | `sn28:burn_drop:0.471` | 28 | BURN_DROP | 2026-08-07T12:31:08Z | sn28 burn fell 0.998 -> 0.471 - miners can earn again |
 | `sn121:burn_drop:0.828` | 121 | BURN_DROP | 2026-08-07T17:22:41Z | sn121 burn fell 1.000 -> 0.828 - miners can earn again |
 | `sn93:burn_drop:0.592` | 93 | BURN_DROP | 2026-08-08T15:42:11Z | sn93 burn fell 0.993 -> 0.592 - miners can earn again |

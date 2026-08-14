@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-14T19:29:02Z, block 8844915
+# ALARMS - generated 2026-08-14T20:16:41Z, block 8845153
 
-window: first_seen in [2026-08-14T18:14:32Z, 2026-08-14T19:29:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-14T19:02:06Z, 2026-08-14T20:17:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,16 +9,16 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
-| `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | P1 | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
+| `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | P1 | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
+| `sn96:release:Verathos v0.1.40 — Capacity Audit Schedu` | 96 | RELEASE | P1 | 2026-08-14T20:17:06Z | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | P2 | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 
 ### detail
 
-- **`sn55:scoring_commit:2026-08-14T17:58:40Z`** - sn55 commit touches scoring: print only valid scores
+- **`sn55:scoring_commit:2026-08-14T20:02:57Z`** - sn55 commit touches scoring: commit weights after validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-08-14T17:13:42Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.1.40 — Capacity Audit Schedu`** - sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability
+  - published 2026-08-14T19:58:28Z (was Verathos v0.1.39 — Hard-Proof Timing Stability)
 - **`sn121:readme_task_diff:4de589f5fb4cb70d`** - sn121 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -189,6 +189,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
 | `sn126:scoring_commit:2026-08-14T15:41:49Z` | 126 | SCORING_COMMIT | 2026-08-14T16:03:52Z | sn126 commit touches scoring: docs: describe continuous miner training tables |
 | `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
+| `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
+| `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

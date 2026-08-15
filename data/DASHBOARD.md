@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-15T22:34:03Z · block 8853040 · run_status **ok**_
+_snapshot 2026-08-15T23:01:08Z · block 8853175 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **49** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -33,8 +33,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 2 | `█` |
 | 0.4–0.6 | 8 | `████` |
-| 0.6–0.8 | 5 | `██` |
-| 0.8–0.99 | 6 | `███` |
+| 0.6–0.8 | 4 | `██` |
+| 0.8–0.99 | 7 | `███` |
 | ≥0.99 dead | 39 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78 | 109 | 32,742 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 74 | 33.96 | 163 | cpu-small | 10 | 29% |
-| 3 | sn67 Harnyx | 72.6 | 23.33 | 376 | cpu-small | 123 | 10% |
-| 4 | sn26 Perturb | 70.9 | 41.31 | 75.93 | rtx3060 | 10 | 70% |
-| 5 | sn1 Apex | 70.5 | 863 | 1,032 | rtx4090* | 4 | 57% |
-| 6 | sn6 Numinous | 70.3 | 15.83 | 443 | cpu-small | 15 | 26% |
-| 7 | sn41 Almanac | 69.6 | 12.19 | 53.10 | cpu-small | 72 | 66% |
-| 8 | sn96 Verathos | 69 | 25.72 | 157 | rtx4090 | 68 | 41% |
-| 9 | sn56 Gradients | 68.8 | 511 | 966 | rtx4090* | 7 | 67% |
-| 10 | sn62 Ridges | 68.6 | 481 | 2,227 | rtx4090* | 6 | 40% |
-| 11 | sn91 cascade | 68.3 | 447 | 2,294 | rtx4090* | 5 | 51% |
-| 12 | sn15 ORO | 68.1 | 11.28 | 12,286 | cpu-small | 86 | 93% |
-| 13 | sn21 AdTAO | 67.6 | 7.62 | 34.15 | cpu-small | 88 | 45% |
-| 14 | sn85 Vidaio | 66.4 | 256 | 611 | rtx4090* | 10 | 20% |
-| 15 | sn38 ChronoLLM | 66 | 97.64 | 1,335 | cpu-small | 10 | 52% |
-| 16 | sn124 Swarm | 65.9 | 224 | 721 | rtx4090* | 24 | 11% |
-| 17 | sn55 NIOME | 61.4 | 56.83 | 477 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 60.6 | 46.06 | 2,116 | rtx4090* | 41 | 24% |
+| 1 | sn107 Minos | 78 | 109 | 32,519 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 74 | 33.87 | 163 | cpu-small | 10 | 29% |
+| 3 | sn67 Harnyx | 72.6 | 23.28 | 375 | cpu-small | 123 | 10% |
+| 4 | sn26 Perturb | 70.9 | 41.21 | 75.75 | rtx3060 | 10 | 70% |
+| 5 | sn1 Apex | 70.4 | 834 | 1,136 | rtx4090* | 4 | 55% |
+| 6 | sn6 Numinous | 70.3 | 15.79 | 442 | cpu-small | 15 | 26% |
+| 7 | sn41 Almanac | 69.6 | 12.16 | 52.97 | cpu-small | 72 | 66% |
+| 8 | sn85 Vidaio | 68.9 | 532 | 545 | rtx4090* | 10 | 18% |
+| 9 | sn56 Gradients | 68.8 | 510 | 964 | rtx4090* | 7 | 67% |
+| 10 | sn62 Ridges | 68.5 | 480 | 2,222 | rtx4090* | 6 | 40% |
+| 11 | sn96 Verathos | 68.5 | 22.82 | 143 | rtx4090 | 69 | 43% |
+| 12 | sn91 cascade | 68.3 | 446 | 2,289 | rtx4090* | 5 | 51% |
+| 13 | sn15 ORO | 68.1 | 11.25 | 12,255 | cpu-small | 86 | 93% |
+| 14 | sn21 AdTAO | 67.6 | 7.60 | 34.07 | cpu-small | 88 | 45% |
+| 15 | sn38 ChronoLLM | 66 | 97.43 | 1,332 | cpu-small | 10 | 52% |
+| 16 | sn124 Swarm | 65.9 | 224 | 719 | rtx4090* | 24 | 11% |
+| 17 | sn55 NIOME | 61.4 | 56.93 | 480 | rtx4090* | 11 | 29% |
+| 18 | sn28 gm | 60.6 | 45.95 | 2,112 | rtx4090* | 41 | 24% |
 | 19 | sn60 Bitsec.ai | 59.3 | 409 | 409 = | cpu-small | 3 | 50% |
-| 20 | sn74 Gittensor | 59 | 29.40 | 211 | rtx4090* | 15 | 63% |
+| 20 | sn74 Gittensor | 58.9 | 29.05 | 210 | rtx4090* | 15 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 18 |
-| dominated (60–90%) | 15 |
-| captured (>90%) | 27 |
+| wide (<30%) | 29 |
+| concentrated (30–60%) | 16 |
+| dominated (60–90%) | 16 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-15T23:01 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Raise tasks per round across all four tra |
 | 2026-08-15T20:35 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: docs(miner): drop the second artefact th |
 | 2026-08-15T17:59 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Add a local evaluation command |
 | 2026-08-15T13:39 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(prism): rename lattice_score to sati |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-14T23:33 | sn2 | BURN_DROP | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | 2026-08-14T23:33 | sn19 | BURN_DROP | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | 2026-08-14T22:36 | sn62 | RELEASE | sn62 released v0.2.7 |
-| 2026-08-14T20:17 | sn55 | SCORING_COMMIT | sn55 commit touches scoring: commit weights after validation |
 
 ---
 

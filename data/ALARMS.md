@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T09:37:42Z, block 8849158
+# ALARMS - generated 2026-08-15T10:01:53Z, block 8849279
 
-window: first_seen in [2026-08-15T08:23:09Z, 2026-08-15T09:38:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T08:47:26Z, 2026-08-15T10:02:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -40,7 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
 | `sn100:release:v3.3.11: Site arena UID + sealed weight ` | 100 | RELEASE | 2026-08-08T13:09:33Z | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |
 | `sn10:scoring_commit:2026-08-08T14:46:10Z` | 10 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62 |
 | `sn21:scoring_commit:2026-08-08T14:21:46Z` | 21 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn21 commit touches scoring: docs: separate weekly-era scoring from the daily stream, and require … |

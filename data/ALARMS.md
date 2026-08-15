@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T14:01:50Z, block 8850479
+# ALARMS - generated 2026-08-15T14:34:54Z, block 8850644
 
-window: first_seen in [2026-08-15T12:47:28Z, 2026-08-15T14:02:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T13:20:22Z, 2026-08-15T14:35:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 
 ### detail
 
-- **`sn100:scoring_commit:2026-08-15T12:26:39Z`** - sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:scoring_commit:2026-08-15T13:20:08Z`** - sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
@@ -187,6 +184,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-15T04:00:22Z` | 108 | SCORING_COMMIT | 2026-08-15T04:05:09Z | sn108 commit touches scoring: feat(registry): require every evaluated chute to live in the promethe… |
 | `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
 | `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
+| `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

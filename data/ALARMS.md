@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-15T05:50:21Z, block 8848022
+# ALARMS - generated 2026-08-15T06:54:46Z, block 8848344
 
-window: first_seen in [2026-08-15T04:35:56Z, 2026-08-15T05:50:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T05:40:23Z, 2026-08-15T06:55:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | P1 | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
-
-### detail
-
-- **`sn67:scoring_commit:2026-08-14T10:52:59Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -186,6 +179,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-15T02:46:25Z` | 100 | SCORING_COMMIT | 2026-08-15T03:25:28Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for G8 µP probe base … |
 | `sn71:scoring_commit:2026-08-15T03:59:05Z` | 71 | SCORING_COMMIT | 2026-08-15T04:05:09Z | sn71 commit touches scoring: Provision hotkey verification in gateway enclaves |
 | `sn108:scoring_commit:2026-08-15T04:00:22Z` | 108 | SCORING_COMMIT | 2026-08-15T04:05:09Z | sn108 commit touches scoring: feat(registry): require every evaluated chute to live in the promethe… |
+| `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

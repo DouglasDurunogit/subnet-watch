@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-15T10:35:11Z  |  block: 8849446  |  row_status: ok
+snapshot_utc: 2026-08-15T11:00:58Z  |  block: 8849575  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.070066248 TAO (13.814261455679999 USD), open=True
+- registration cost: 0.06188336 TAO (12.200304424 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 253  |  free: 0
-- subnet age: 883.0 days  |  registered at block 2491604
+- subnet age: 883.1 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 35.41310238042141** (uid 247) <- the only figure quotable as achievable
-- median_miner_usd_day: 32.66140861437514
-- top_miner_usd_day: 35.41310238042141 (uid 247, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 35.41258900453649** (uid 247) <- the only figure quotable as achievable
+- median_miner_usd_day: 32.660935129184
+- top_miner_usd_day: 35.41258900453649 (uid 247, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-15T10:35:11Z  |  block: 8849446  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 24.4422 USD/day  |  payback on registration: 0.57 days
+- net margin: 24.4418 USD/day  |  payback on registration: 0.5 days
 
 ## Score
 
 - gate: **OK** 
 - score: 28.8 (rank 54), confidence 0.85 - hardware requirement unknown
-- components: income 12.78 / freshness 0.0 / resource 11.25 / registration 9.81
+- components: income 12.78 / freshness 0.0 / resource 11.25 / registration 9.83
 - freshness basis: no challenge change on record
 
 ## On-chain description

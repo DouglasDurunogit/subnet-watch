@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T06:54:46Z, block 8848344
+# ALARMS - generated 2026-08-15T07:39:02Z, block 8848565
 
-window: first_seen in [2026-08-15T05:40:23Z, 2026-08-15T06:55:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T06:24:33Z, 2026-08-15T07:39:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -30,7 +30,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |
 | `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
 | `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
 | `sn100:release:v3.3.11: Site arena UID + sealed weight ` | 100 | RELEASE | 2026-08-08T13:09:33Z | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |

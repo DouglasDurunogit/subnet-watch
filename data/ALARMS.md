@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-15T11:59:14Z, block 8849866
+# ALARMS - generated 2026-08-15T12:56:02Z, block 8850150
 
-window: first_seen in [2026-08-15T10:44:49Z, 2026-08-15T11:59:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T11:41:35Z, 2026-08-15T12:56:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
+
+### detail
+
+- **`sn100:scoring_commit:2026-08-15T12:26:39Z`** - sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

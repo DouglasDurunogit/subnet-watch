@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T19:43:58Z, block 8852190
+# ALARMS - generated 2026-08-15T19:59:57Z, block 8852270
 
-window: first_seen in [2026-08-15T18:29:32Z, 2026-08-15T19:44:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T18:45:27Z, 2026-08-15T20:00:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -29,9 +29,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn71:scoring_commit:2026-08-08T19:19:55Z` | 71 | SCORING_COMMIT | 2026-08-08T19:53:36Z | sn71 commit touches scoring: Fix evaluator test import isolation |
-| `sn100:release:v3.3.12` | 100 | RELEASE | 2026-08-08T19:53:36Z | sn100 released v3.3.12 |
-| `sn100:scoring_commit:2026-08-08T19:36:07Z` | 100 | SCORING_COMMIT | 2026-08-08T19:53:36Z | sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap |
 | `sn71:scoring_commit:2026-08-08T20:21:46Z` | 71 | SCORING_COMMIT | 2026-08-08T20:45:04Z | sn71 commit touches scoring: Retry signed transient company scoring failures |
 | `sn100:release:v3.3.13 — design screenshot egress proxy` | 100 | RELEASE | 2026-08-08T20:45:04Z | sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth |
 | `sn100:scoring_commit:2026-08-08T21:01:32Z` | 100 | SCORING_COMMIT | 2026-08-08T21:15:02Z | sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator… |

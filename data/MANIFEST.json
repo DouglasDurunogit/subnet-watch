@@ -1,5 +1,5 @@
 {
-  "block": 8850364,
+  "block": 8850479,
   "config": {
     "_coupling": "If you change the ChatGPT Task schedule, change watch_interval_minutes in the SAME commit - the alarm window is computed from it.",
     "_schedule_note": "GitHub's scheduler is best-effort and drops runs under load. Measured 2026-07-28: a '7 * * * *' cron fired twice in five hours, at :43 and :58. The workflow therefore attempts every 20 min, and the staleness alarm is 180 min so that STALE FEED means a real outage rather than a skipped slot. An alarm that fires on normal behaviour gets ignored, which is the one thing this alarm cannot afford.",
@@ -7,7 +7,7 @@
     "watch_interval_minutes": 60,
     "window_overlap_minutes": 15
   },
-  "duration_seconds": 32.5,
+  "duration_seconds": 37.7,
   "events_new": 2,
   "events_still_open": 181,
   "failed_netuids": [],
@@ -24,12 +24,12 @@
   "gated": {
     "BLOCKED:burn": 39
   },
-  "generated_utc": "2026-08-15T13:38:46Z",
+  "generated_utc": "2026-08-15T14:01:50Z",
   "ranked": 89,
   "run_status": "ok",
   "subnets_failed": 0,
   "subnets_total": 128,
-  "tao_usd": 197.33,
-  "window_end": "2026-08-15T13:39:18Z",
-  "window_start": "2026-08-15T12:24:18Z"
+  "tao_usd": 197.1,
+  "window_end": "2026-08-15T14:02:28Z",
+  "window_start": "2026-08-15T12:47:28Z"
 }

@@ -1,20 +1,20 @@
 # sn1 - Apex (α)
 
-snapshot_utc: 2026-08-15T19:09:55Z  |  block: 8852019  |  row_status: ok
+snapshot_utc: 2026-08-15T19:43:58Z  |  block: 8852190  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.551649694563821**
-- registration cost: 0.0005 TAO (0.098725 USD), open=True
+- miner_burn: **0.5516496943309903**
+- registration cost: 0.0005 TAO (0.098675 USD), open=True
 - tempo: 99.0  |  max_uids: 256  |  active: 12  |  free: 0
 - subnet age: 1021.4 days  |  registered at block 1497824
 - weights_version: 21706  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1134.0687078604328** (uid 199) <- the only figure quotable as achievable
-- median_miner_usd_day: 994.4240863244967
-- top_miner_usd_day: 2536.900682295054 (uid 248, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1133.4943504355506** (uid 199) <- the only figure quotable as achievable
+- median_miner_usd_day: 993.9204529436414
+- top_miner_usd_day: 2535.6158503153288 (uid 248, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-15T19:09:55Z  |  block: 8852019  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 846.5603 USD/day  |  payback on registration: 0.0 days
+- net margin: 846.1274 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 70.4 (rank 6), confidence 0.85 - hardware requirement unknown
+- score: 70.4 (rank 5), confidence 0.85 - hardware requirement unknown
 - components: income 26.63 / freshness 35.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 2.2d ago
 

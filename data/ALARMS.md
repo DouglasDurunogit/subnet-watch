@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-15T19:09:55Z, block 8852019
+# ALARMS - generated 2026-08-15T19:43:58Z, block 8852190
 
-window: first_seen in [2026-08-15T17:55:30Z, 2026-08-15T19:10:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T18:29:32Z, 2026-08-15T19:44:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | P1 | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
-
-### detail
-
-- **`sn76:scoring_commit:2026-08-15T17:47:00Z`** - sn76 commit touches scoring: Add a local evaluation command
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -181,6 +174,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
+| `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

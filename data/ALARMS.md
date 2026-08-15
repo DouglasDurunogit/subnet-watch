@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T20:34:54Z, block 8852444
+# ALARMS - generated 2026-08-15T21:02:00Z, block 8852580
 
-window: first_seen in [2026-08-15T19:20:26Z, 2026-08-15T20:35:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T19:47:36Z, 2026-08-15T21:02:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -20,7 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn55:burn_drop:0.021` | 55 | BURN_DROP | 2026-08-08T20:45:04Z | sn55 burn fell 1.000 -> 0.021 - miners can earn again |
 | `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -36,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn71:scoring_commit:2026-08-08T20:21:46Z` | 71 | SCORING_COMMIT | 2026-08-08T20:45:04Z | sn71 commit touches scoring: Retry signed transient company scoring failures |
-| `sn100:release:v3.3.13 — design screenshot egress proxy` | 100 | RELEASE | 2026-08-08T20:45:04Z | sn100 released v3.3.13 — design screenshot egress proxy + gateway admin auth |
 | `sn100:scoring_commit:2026-08-08T21:01:32Z` | 100 | SCORING_COMMIT | 2026-08-08T21:15:02Z | sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator… |
 | `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
 | `sn61:release:4.9.2` | 61 | RELEASE | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |

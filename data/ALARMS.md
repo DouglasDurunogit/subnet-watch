@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T03:24:55Z, block 8847294
+# ALARMS - generated 2026-08-15T04:04:44Z, block 8847493
 
-window: first_seen in [2026-08-15T02:10:28Z, 2026-08-15T03:25:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T02:50:09Z, 2026-08-15T04:05:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,16 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn100:scoring_commit:2026-08-15T02:46:25Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T03:25:28Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for G8 µP probe base … |
+| `sn71:scoring_commit:2026-08-15T03:59:05Z` | 71 | SCORING_COMMIT | P1 | 2026-08-15T04:05:09Z | sn71 commit touches scoring: Provision hotkey verification in gateway enclaves |
+| `sn108:scoring_commit:2026-08-15T04:00:22Z` | 108 | SCORING_COMMIT | P1 | 2026-08-15T04:05:09Z | sn108 commit touches scoring: feat(registry): require every evaluated chute to live in the promethe… |
 
 ### detail
 
 - **`sn100:scoring_commit:2026-08-15T02:46:25Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for G8 µP probe base …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-15T03:59:05Z`** - sn71 commit touches scoring: Provision hotkey verification in gateway enclaves
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-15T04:00:22Z`** - sn108 commit touches scoring: feat(registry): require every evaluated chute to live in the promethe…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-15T14:34:54Z, block 8850644
+# ALARMS - generated 2026-08-15T15:00:59Z, block 8850775
 
-window: first_seen in [2026-08-15T13:20:22Z, 2026-08-15T14:35:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T13:46:25Z, 2026-08-15T15:01:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
-
-### detail
-
-- **`sn100:scoring_commit:2026-08-15T13:20:08Z`** - sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,8 +30,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn10:scoring_commit:2026-08-08T14:46:10Z` | 10 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62 |
-| `sn21:scoring_commit:2026-08-08T14:21:46Z` | 21 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn21 commit touches scoring: docs: separate weekly-era scoring from the daily stream, and require … |
 | `sn96:release:v0.1.29 - Gleipnir Validator Reliability` | 96 | RELEASE | 2026-08-08T17:43:08Z | sn96 released v0.1.29 - Gleipnir Validator Reliability |
 | `sn96:scoring_commit:2026-08-08T15:09:26Z` | 96 | SCORING_COMMIT | 2026-08-08T17:43:08Z | sn96 commit touches scoring: fix: isolate validator epoch control work |
 | `sn71:scoring_commit:2026-08-08T19:19:55Z` | 71 | SCORING_COMMIT | 2026-08-08T19:53:36Z | sn71 commit touches scoring: Fix evaluator test import isolation |
@@ -185,6 +176,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
 | `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
+| `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

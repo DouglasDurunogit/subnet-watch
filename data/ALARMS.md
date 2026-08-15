@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T21:02:00Z, block 8852580
+# ALARMS - generated 2026-08-15T21:31:48Z, block 8852729
 
-window: first_seen in [2026-08-15T19:47:36Z, 2026-08-15T21:02:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T20:17:20Z, 2026-08-15T21:32:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -35,7 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn100:scoring_commit:2026-08-08T21:01:32Z` | 100 | SCORING_COMMIT | 2026-08-08T21:15:02Z | sn100 commit touches scoring: Merge pull request #101 from BaseIntelligence/fix/master-no-validator… |
 | `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
 | `sn61:release:4.9.2` | 61 | RELEASE | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |
 | `sn61:scoring_commit:2026-08-08T08:01:06Z` | 61 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura… |

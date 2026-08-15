@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T08:02:18Z, block 8848681
+# ALARMS - generated 2026-08-15T08:41:40Z, block 8848878
 
-window: first_seen in [2026-08-15T06:47:49Z, 2026-08-15T08:02:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T07:27:12Z, 2026-08-15T08:42:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -30,7 +30,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn100:release:v3.3.10: Prism similarity precheck + stu` | 100 | RELEASE | 2026-08-08T08:06:47Z | sn100 released v3.3.10: Prism similarity precheck + stuck-sweep fix |
 | `sn38:scoring_commit:2026-08-08T09:07:32Z` | 38 | SCORING_COMMIT | 2026-08-08T09:51:08Z | sn38 commit touches scoring: Add miner self-test endpoint and dynamic quality prompts (#21) |
 | `sn100:release:v3.3.11: Site arena UID + sealed weight ` | 100 | RELEASE | 2026-08-08T13:09:33Z | sn100 released v3.3.11: Site arena UID + sealed weight enrichment |
 | `sn10:scoring_commit:2026-08-08T14:46:10Z` | 10 | SCORING_COMMIT | 2026-08-08T14:48:26Z | sn10 commit touches scoring: fix: unblock cross-build ccache hits, mount miner cache read-only (#62 |

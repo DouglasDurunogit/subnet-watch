@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-15T21:31:48Z, block 8852729
+# ALARMS - generated 2026-08-15T21:59:32Z, block 8852867
 
-window: first_seen in [2026-08-15T20:17:20Z, 2026-08-15T21:32:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T20:44:57Z, 2026-08-15T21:59:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn108:scoring_commit:2026-08-15T20:13:27Z` | 108 | SCORING_COMMIT | P1 | 2026-08-15T20:35:26Z | sn108 commit touches scoring: docs(miner): drop the second artefact that was never built |
-
-### detail
-
-- **`sn108:scoring_commit:2026-08-15T20:13:27Z`** - sn108 commit touches scoring: docs(miner): drop the second artefact that was never built
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn76:scoring_commit:2026-08-08T21:44:42Z` | 76 | SCORING_COMMIT | 2026-08-08T21:55:55Z | sn76 commit touches scoring: Document the real agent size limits and stop rejecting tasks with no … |
 | `sn61:release:4.9.2` | 61 | RELEASE | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |
 | `sn61:scoring_commit:2026-08-08T08:01:06Z` | 61 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura… |
 | `sn92:scoring_commit:2026-08-08T22:46:16Z` | 92 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn92 commit touches scoring: Document the directive as the source of every scoring parameter |
@@ -175,6 +167,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 | `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
+| `sn108:scoring_commit:2026-08-15T20:13:27Z` | 108 | SCORING_COMMIT | 2026-08-15T20:35:26Z | sn108 commit touches scoring: docs(miner): drop the second artefact that was never built |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

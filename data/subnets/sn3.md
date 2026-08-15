@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-15T11:00:58Z  |  block: 8849575  |  row_status: ok
+snapshot_utc: 2026-08-15T11:30:47Z  |  block: 8849724  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000718284 TAO (0.1416096906 USD), open=True
+- registration cost: 0.000679248 TAO (0.13400204544 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 650.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3670.3015360395157** (uid 143) <- the only figure quotable as achievable
-- median_miner_usd_day: 3670.3015360395157
-- top_miner_usd_day: 3670.3015360395157 (uid 143, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3667.3305225742824** (uid 143) <- the only figure quotable as achievable
+- median_miner_usd_day: 3667.3305225742824
+- top_miner_usd_day: 3667.3305225742824 (uid 143, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-15T11:00:58Z  |  block: 8849575  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3662.0824 USD/day  |  payback on registration: 0.0 days
+- net margin: 3659.1113 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 

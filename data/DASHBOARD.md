@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-15T17:32:21Z · block 8851532 · run_status **ok**_
+_snapshot 2026-08-15T17:59:29Z · block 8851667 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.1 | 113 | 32,525 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 74.7 | 40.58 | 194 | cpu-small | 10 | 35% |
+| 1 | sn107 Minos | 78.1 | 113 | 32,564 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 74.7 | 40.57 | 194 | cpu-small | 10 | 35% |
 | 3 | sn67 Harnyx | 72.5 | 23.37 | 376 | cpu-small | 123 | 10% |
 | 4 | sn26 Perturb | 70.9 | 41.33 | 75.77 | rtx3060 | 10 | 70% |
-| 5 | sn1 Apex | 70.5 | 852 | 1,133 | rtx4090* | 4 | 55% |
+| 5 | sn1 Apex | 70.5 | 851 | 1,132 | rtx4090* | 4 | 55% |
 | 6 | sn6 Numinous | 70.3 | 15.85 | 444 | cpu-small | 15 | 26% |
 | 7 | sn41 Almanac | 69.6 | 12.09 | 54.04 | cpu-small | 72 | 66% |
-| 8 | sn96 Verathos | 69.4 | 28.64 | 168 | rtx4090 | 59 | 41% |
+| 8 | sn96 Verathos | 69.4 | 28.71 | 168 | rtx4090 | 59 | 41% |
 | 9 | sn56 Gradients | 68.8 | 512 | 965 | rtx4090* | 7 | 67% |
-| 10 | sn85 Vidaio | 68.7 | 497 | 510 | rtx4090* | 10 | 17% |
-| 11 | sn62 Ridges | 68.6 | 483 | 2,235 | rtx4090* | 6 | 40% |
+| 10 | sn85 Vidaio | 68.7 | 501 | 514 | rtx4090* | 10 | 17% |
+| 11 | sn62 Ridges | 68.5 | 480 | 2,223 | rtx4090* | 6 | 40% |
 | 12 | sn91 cascade | 68.3 | 442 | 2,272 | rtx4090* | 5 | 51% |
-| 13 | sn15 ORO | 68 | 10.86 | 20.14 | cpu-small | 86 | 93% |
+| 13 | sn15 ORO | 67.7 | 10.86 | 20.14 | cpu-small | 86 | 93% |
 | 14 | sn21 AdTAO | 67.6 | 7.59 | 34.06 | cpu-small | 88 | 45% |
 | 15 | sn38 ChronoLLM | 66 | 97.27 | 1,330 | cpu-small | 10 | 52% |
-| 16 | sn124 Swarm | 65.9 | 224 | 718 | rtx4090* | 24 | 11% |
-| 17 | sn55 NIOME | 61.5 | 57.44 | 479 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 60.4 | 43.27 | 2,105 | rtx4090* | 34 | 27% |
+| 16 | sn124 Swarm | 65.9 | 224 | 719 | rtx4090* | 24 | 11% |
+| 17 | sn55 NIOME | 61.5 | 57.43 | 479 | rtx4090* | 11 | 29% |
+| 18 | sn28 gm | 60.4 | 43.07 | 2,096 | rtx4090* | 34 | 27% |
 | 19 | sn102 ConnitoAI | 59.9 | 1,259 | 1,512 | rtx4090* | 6 | 28% |
-| 20 | sn60 Bitsec.ai | 59.4 | 425 | 425 = | cpu-small | 3 | 50% |
+| 20 | sn60 Bitsec.ai | 59.2 | 403 | 403 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-15T17:59 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Add a local evaluation command |
 | 2026-08-15T13:39 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(prism): rename lattice_score to sati |
 | 2026-08-15T12:56 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmark |
 | 2026-08-15T09:06 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-14T22:36 | sn62 | RELEASE | sn62 released v0.2.7 |
 | 2026-08-14T20:17 | sn55 | SCORING_COMMIT | sn55 commit touches scoring: commit weights after validation |
 | 2026-08-14T20:17 | sn96 | RELEASE | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
-| 2026-08-14T19:29 | sn121 | README_TASK_DIFF | sn121 README task/scoring sections changed |
 
 ---
 

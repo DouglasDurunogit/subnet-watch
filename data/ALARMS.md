@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-15T17:32:21Z, block 8851532
+# ALARMS - generated 2026-08-15T17:59:29Z, block 8851667
 
-window: first_seen in [2026-08-15T16:17:54Z, 2026-08-15T17:32:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T16:44:54Z, 2026-08-15T17:59:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | P1 | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
+
+### detail
+
+- **`sn76:scoring_commit:2026-08-15T17:47:00Z`** - sn76 commit touches scoring: Add a local evaluation command
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,8 +36,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn96:release:v0.1.29 - Gleipnir Validator Reliability` | 96 | RELEASE | 2026-08-08T17:43:08Z | sn96 released v0.1.29 - Gleipnir Validator Reliability |
-| `sn96:scoring_commit:2026-08-08T15:09:26Z` | 96 | SCORING_COMMIT | 2026-08-08T17:43:08Z | sn96 commit touches scoring: fix: isolate validator epoch control work |
 | `sn71:scoring_commit:2026-08-08T19:19:55Z` | 71 | SCORING_COMMIT | 2026-08-08T19:53:36Z | sn71 commit touches scoring: Fix evaluator test import isolation |
 | `sn100:release:v3.3.12` | 100 | RELEASE | 2026-08-08T19:53:36Z | sn100 released v3.3.12 |
 | `sn100:scoring_commit:2026-08-08T19:36:07Z` | 100 | SCORING_COMMIT | 2026-08-08T19:53:36Z | sn100 commit touches scoring: fix(design): keep challenge-agentic under loc-cap |

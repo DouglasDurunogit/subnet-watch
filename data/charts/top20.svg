@@ -40,8 +40,8 @@
 <text class="ink t-val" x="595.9" y="115">74</text>
 <text class="muted t-tick" x="740" y="115" text-anchor="end">$33/day</text>
 <text class="ink2 t-lab" x="158" y="142" text-anchor="end">3. sn67 Harnyx</text>
-<path class="accent" d="M168.0,128.0 H575.9 a4.0,4.0 0 0 1 4.0,4.0 V144.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="587.9" y="142">73</text>
+<path class="accent" d="M168.0,128.0 H575.4 a4.0,4.0 0 0 1 4.0,4.0 V144.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="587.4" y="142">72</text>
 <text class="muted t-tick" x="740" y="142" text-anchor="end">$23/day</text>
 <text class="ink2 t-lab" x="158" y="169" text-anchor="end">4. sn26 Perturb</text>
 <path class="accent" d="M168.0,155.0 H566.3 a4.0,4.0 0 0 1 4.0,4.0 V171.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
@@ -50,7 +50,7 @@
 <text class="ink2 t-lab" x="158" y="196" text-anchor="end">5. sn1 Apex</text>
 <path class="accent" d="M168.0,182.0 H563.4 a4.0,4.0 0 0 1 4.0,4.0 V198.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="575.4" y="196">70</text>
-<text class="muted t-tick" x="740" y="196" text-anchor="end">$828/day</text>
+<text class="muted t-tick" x="740" y="196" text-anchor="end">$825/day</text>
 <text class="ink2 t-lab" x="158" y="223" text-anchor="end">6. sn6 Numinous</text>
 <path class="accent" d="M168.0,209.0 H562.9 a4.0,4.0 0 0 1 4.0,4.0 V225.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="574.9" y="223">70</text>
@@ -62,15 +62,15 @@
 <text class="ink2 t-lab" x="158" y="277" text-anchor="end">8. sn85 Vidaio</text>
 <path class="accent" d="M168.0,263.0 H554.9 a4.0,4.0 0 0 1 4.0,4.0 V279.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="566.9" y="277">69</text>
-<text class="muted t-tick" x="740" y="277" text-anchor="end">$533/day</text>
+<text class="muted t-tick" x="740" y="277" text-anchor="end">$531/day</text>
 <text class="ink2 t-lab" x="158" y="304" text-anchor="end">9. sn56 Gradients</text>
 <path class="accent" d="M168.0,290.0 H553.8 a4.0,4.0 0 0 1 4.0,4.0 V306.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="565.8" y="304">69</text>
-<text class="muted t-tick" x="740" y="304" text-anchor="end">$509/day</text>
+<text class="muted t-tick" x="740" y="304" text-anchor="end">$508/day</text>
 <text class="ink2 t-lab" x="158" y="331" text-anchor="end">10. sn62 Ridges</text>
 <path class="accent" d="M168.0,317.0 H552.7 a4.0,4.0 0 0 1 4.0,4.0 V333.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="564.7" y="331">68</text>
-<text class="muted t-tick" x="740" y="331" text-anchor="end">$476/day</text>
+<text class="muted t-tick" x="740" y="331" text-anchor="end">$475/day</text>
 <text class="ink2 t-lab" x="158" y="358" text-anchor="end">11. sn96 Verathos</text>
 <path class="accent" d="M168.0,344.0 H552.7 a4.0,4.0 0 0 1 4.0,4.0 V360.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="564.7" y="358">68</text>
@@ -78,7 +78,7 @@
 <text class="ink2 t-lab" x="158" y="385" text-anchor="end">12. sn91 cascade</text>
 <path class="accent" d="M168.0,371.0 H551.5 a4.0,4.0 0 0 1 4.0,4.0 V387.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="563.5" y="385">68</text>
-<text class="muted t-tick" x="740" y="385" text-anchor="end">$445/day</text>
+<text class="muted t-tick" x="740" y="385" text-anchor="end">$443/day</text>
 <text class="ink2 t-lab" x="158" y="412" text-anchor="end">13. sn15 ORO</text>
 <path class="accent" d="M168.0,398.0 H551.0 a4.0,4.0 0 0 1 4.0,4.0 V414.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="563.0" y="412">68</text>
@@ -94,7 +94,7 @@
 <text class="ink2 t-lab" x="158" y="493" text-anchor="end">16. sn124 Swarm</text>
 <path class="accent" d="M168.0,479.0 H537.9 a4.0,4.0 0 0 1 4.0,4.0 V495.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="549.9" y="493">66</text>
-<text class="muted t-tick" x="740" y="493" text-anchor="end">$224/day</text>
+<text class="muted t-tick" x="740" y="493" text-anchor="end">$223/day</text>
 <text class="ink2 t-lab" x="158" y="520" text-anchor="end">17. sn2 DSperse</text>
 <path class="accent" d="M168.0,506.0 H522.0 a4.0,4.0 0 0 1 4.0,4.0 V522.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="534.0" y="520">63</text>

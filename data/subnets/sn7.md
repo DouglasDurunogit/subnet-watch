@@ -1,11 +1,11 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-15T23:31:00Z  |  block: 8853325  |  row_status: ok
+snapshot_utc: 2026-08-15T23:59:04Z  |  block: 8853465  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.9037805951666087**
-- registration cost: 0.15 TAO (29.5785 USD), open=True
+- registration cost: 0.15 TAO (29.499 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 864.7 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
@@ -13,8 +13,8 @@ snapshot_utc: 2026-08-15T23:31:00Z  |  block: 8853325  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 988.0398337319754
-- top_miner_usd_day: 1785.9618308698134 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 985.3842167540457
+- top_miner_usd_day: 1781.1615886143186 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

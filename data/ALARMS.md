@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T02:40:56Z, block 8847074
+# ALARMS - generated 2026-08-15T03:24:55Z, block 8847294
 
-window: first_seen in [2026-08-15T01:26:25Z, 2026-08-15T02:41:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T02:10:28Z, 2026-08-15T03:25:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-15T00:32:31Z` | 71 | SCORING_COMMIT | P1 | 2026-08-15T01:47:28Z | sn71 commit touches scoring: Keep private ICP scores out of telemetry |
+| `sn100:scoring_commit:2026-08-15T02:46:25Z` | 100 | SCORING_COMMIT | P1 | 2026-08-15T03:25:28Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for G8 µP probe base … |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-15T00:32:31Z`** - sn71 commit touches scoring: Keep private ICP scores out of telemetry
+- **`sn100:scoring_commit:2026-08-15T02:46:25Z`** - sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for G8 µP probe base …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -184,6 +184,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
 | `sn96:release:Verathos v0.1.40 — Capacity Audit Schedu` | 96 | RELEASE | 2026-08-14T20:17:06Z | sn96 released Verathos v0.1.40 — Capacity Audit Scheduling Stability |
 | `sn62:release:v0.2.7` | 62 | RELEASE | 2026-08-14T22:36:36Z | sn62 released v0.2.7 |
+| `sn71:scoring_commit:2026-08-15T00:32:31Z` | 71 | SCORING_COMMIT | 2026-08-15T01:47:28Z | sn71 commit touches scoring: Keep private ICP scores out of telemetry |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

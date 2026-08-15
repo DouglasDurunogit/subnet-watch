@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T00:02:03Z, block 8846280
+# ALARMS - generated 2026-08-15T01:46:43Z, block 8846803
 
-window: first_seen in [2026-08-14T22:47:39Z, 2026-08-15T00:02:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T00:32:28Z, 2026-08-15T01:47:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:burn_drop:0.824` | 2 | BURN_DROP | P0 | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
-| `sn19:burn_drop:0.986` | 19 | BURN_DROP | P0 | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
+| `sn71:scoring_commit:2026-08-15T00:32:31Z` | 71 | SCORING_COMMIT | P1 | 2026-08-15T01:47:28Z | sn71 commit touches scoring: Keep private ICP scores out of telemetry |
 
 ### detail
 
-- **`sn2:burn_drop:0.824`** - sn2 burn fell 1.000 -> 0.824 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn19:burn_drop:0.986`** - sn19 burn fell 1.000 -> 0.986 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-08-15T00:32:31Z`** - sn71 commit touches scoring: Keep private ICP scores out of telemetry
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -38,6 +35,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
+| `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn80:scoring_commit:2026-08-08T04:28:24Z` | 80 | SCORING_COMMIT | 2026-08-08T05:08:08Z | sn80 commit touches scoring: protocol+docs: champion margin 0.01, unified status model, burn verif… |
 | `sn100:release:v3.3.8 — Design one-prompt / one-attempt` | 100 | RELEASE | 2026-08-08T05:08:08Z | sn100 released v3.3.8 — Design one-prompt / one-attempt / admin reject |
 | `sn100:release:v3.3.9: fix(prism): stuck-sweep grace 10` | 100 | RELEASE | 2026-08-08T07:12:03Z | sn100 released v3.3.9: fix(prism): stuck-sweep grace 10h + harness log harvest |

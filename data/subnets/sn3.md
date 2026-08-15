@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-15T08:41:40Z  |  block: 8848878  |  row_status: ok
+snapshot_utc: 2026-08-15T09:06:01Z  |  block: 8849000  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000865929 TAO (0.17080449525 USD), open=True
+- registration cost: 0.000862578 TAO (0.16983298242 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 650.5 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3723.533903781994** (uid 143) <- the only figure quotable as achievable
-- median_miner_usd_day: 3723.533903781994
-- top_miner_usd_day: 3723.533903781994 (uid 143, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3672.119305701997** (uid 143) <- the only figure quotable as achievable
+- median_miner_usd_day: 3672.119305701997
+- top_miner_usd_day: 3672.119305701997 (uid 143, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.0031373506477652136  |  top1_share: 0.20078433766194131  |  top10_share: 1.0
+- earners: 5  |  gini: 0.0031496062992126816  |  top1_share: 0.20078740157480315  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-15T08:41:40Z  |  block: 8848878  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3715.3147 USD/day  |  payback on registration: 0.0 days
+- net margin: 3663.9001 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.7 (rank 31), confidence 0.85 - hardware requirement unknown
-- components: income 32.47 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 45.6 (rank 30), confidence 0.85 - hardware requirement unknown
+- components: income 32.42 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

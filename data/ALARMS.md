@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-15T08:41:40Z, block 8848878
+# ALARMS - generated 2026-08-15T09:06:01Z, block 8849000
 
-window: first_seen in [2026-08-15T07:27:12Z, 2026-08-15T08:42:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-15T07:51:33Z, 2026-08-15T09:06:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | P1 | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
+| `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | P2 | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
+
+### detail
+
+- **`sn67:scoring_commit:2026-08-15T08:24:59Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:readme_task_diff:5a8da0f3ba283771`** - sn67 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

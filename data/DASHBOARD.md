@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-16T11:31:06Z · block 8856925 · run_status **ok**_
+_snapshot 2026-08-16T11:59:45Z · block 8857068 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **50** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,8 +31,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 61 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 3 | `█` |
-| 0.4–0.6 | 9 | `████` |
+| 0.2–0.4 | 4 | `██` |
+| 0.4–0.6 | 8 | `████` |
 | 0.6–0.8 | 4 | `██` |
 | 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 37 | `█████████████████` |
@@ -43,24 +43,24 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.1 | 112 | 32,617 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 73.8 | 31.67 | 178 | cpu-small | 10 | 28% |
-| 3 | sn67 Harnyx | 72.4 | 23.60 | 417 | cpu-small | 136 | 11% |
-| 4 | sn26 Perturb | 70.8 | 40.44 | 74.19 | rtx3060 | 10 | 70% |
-| 5 | sn96 Verathos | 70.4 | 36.75 | 201 | rtx4090 | 57 | 41% |
-| 6 | sn1 Apex | 70.2 | 777 | 1,070 | rtx4090* | 4 | 54% |
-| 7 | sn41 Almanac | 69.9 | 12.86 | 53.72 | cpu-small | 74 | 65% |
-| 8 | sn15 ORO | 69.2 | 12.79 | 12,730 | cpu-small | 61 | 95% |
-| 9 | sn56 Gradients | 68.7 | 504 | 958 | rtx4090* | 7 | 68% |
-| 10 | sn62 Ridges | 68.5 | 474 | 2,197 | rtx4090* | 6 | 40% |
-| 11 | sn91 cascade | 68.2 | 440 | 2,261 | rtx4090* | 5 | 51% |
-| 12 | sn85 Vidaio | 68 | 406 | 677 | rtx4090* | 10 | 22% |
-| 13 | sn21 AdTAO | 67.6 | 7.62 | 34.16 | cpu-small | 88 | 45% |
-| 14 | sn124 Swarm | 65.9 | 223 | 716 | rtx4090* | 24 | 11% |
-| 15 | sn38 ChronoLLM | 65.9 | 97.08 | 1,327 | cpu-small | 10 | 52% |
-| 16 | sn2 DSperse | 62.9 | 87.51 | 149 | rtx4090* | 5 | 82% |
-| 17 | sn55 NIOME | 61.4 | 56.53 | 477 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 60.3 | 42.35 | 2,701 | rtx4090* | 43 | 31% |
+| 1 | sn107 Minos | 78.1 | 113 | 32,698 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 73.8 | 31.68 | 178 | cpu-small | 10 | 28% |
+| 3 | sn67 Harnyx | 72.5 | 23.74 | 419 | cpu-small | 136 | 11% |
+| 4 | sn26 Perturb | 70.8 | 40.45 | 74.22 | rtx3060 | 10 | 70% |
+| 5 | sn96 Verathos | 70.4 | 36.76 | 201 | rtx4090 | 57 | 41% |
+| 6 | sn1 Apex | 70.1 | 774 | 1,067 | rtx4090* | 4 | 54% |
+| 7 | sn41 Almanac | 69.9 | 12.86 | 53.74 | cpu-small | 74 | 65% |
+| 8 | sn15 ORO | 69.2 | 12.79 | 12,735 | cpu-small | 61 | 95% |
+| 9 | sn56 Gradients | 68.7 | 505 | 958 | rtx4090* | 7 | 68% |
+| 10 | sn62 Ridges | 68.5 | 474 | 2,198 | rtx4090* | 6 | 40% |
+| 11 | sn91 cascade | 68.3 | 447 | 2,298 | rtx4090* | 5 | 51% |
+| 12 | sn85 Vidaio | 68 | 406 | 678 | rtx4090* | 10 | 22% |
+| 13 | sn21 AdTAO | 67.6 | 7.62 | 34.18 | cpu-small | 88 | 45% |
+| 14 | sn38 ChronoLLM | 66 | 96.83 | 1,324 | cpu-small | 10 | 52% |
+| 15 | sn124 Swarm | 65.9 | 223 | 716 | rtx4090* | 24 | 11% |
+| 16 | sn2 DSperse | 62.9 | 87.54 | 149 | rtx4090* | 5 | 82% |
+| 17 | sn55 NIOME | 61.4 | 56.58 | 478 | rtx4090* | 11 | 29% |
+| 18 | sn28 gm | 60.3 | 42.37 | 2,702 | rtx4090* | 43 | 31% |
 | 19 | sn60 Bitsec.ai | 59.3 | 411 | 411 = | cpu-small | 3 | 50% |
 | 20 | sn74 Gittensor | 58.3 | 26.05 | 208 | rtx4090* | 14 | 63% |
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-16T12:00 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Download only the tasks a validator drew |
 | 2026-08-16T08:44 | sn100 | RELEASE | sn100 released v3.3.22 |
 | 2026-08-16T07:41 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Match CWEs numerically, draw tasks per va |
 | 2026-08-16T06:04 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-15T12:56 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmark |
 | 2026-08-15T09:06 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-15T09:06 | sn67 | README_TASK_DIFF | sn67 README task/scoring sections changed |
-| 2026-08-15T04:45 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 
 ---
 

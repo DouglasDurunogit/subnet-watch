@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-16T11:31:06Z, block 8856925
+# ALARMS - generated 2026-08-16T11:59:45Z, block 8857068
 
-window: first_seen in [2026-08-16T10:16:30Z, 2026-08-16T11:31:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T10:45:10Z, 2026-08-16T12:00:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | P1 | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
+
+### detail
+
+- **`sn76:scoring_commit:2026-08-16T11:49:10Z`** - sn76 commit touches scoring: Download only the tasks a validator drew
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

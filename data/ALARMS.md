@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T19:43:19Z, block 8859386
+# ALARMS - generated 2026-08-16T19:58:53Z, block 8859464
 
-window: first_seen in [2026-08-16T18:28:51Z, 2026-08-16T19:43:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T18:44:17Z, 2026-08-16T19:59:17Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -26,7 +26,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
 | `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
 | `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
 | `sn89:scoring_commit:2026-08-10T02:26:54Z` | 89 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn89 commit touches scoring: Retire MINER_EMISSION_CAP, and make it replay-safe on the way out |
@@ -163,7 +162,6 @@ _none_
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn100:release:v3.3.24` | 100 | RELEASE | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
-| `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |

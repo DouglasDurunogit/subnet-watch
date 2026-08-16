@@ -1,11 +1,11 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-16T21:31:18Z  |  block: 8859926  |  row_status: ok
+snapshot_utc: 2026-08-16T21:58:49Z  |  block: 8860064  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9037810408044606**
-- registration cost: 0.15 TAO (29.4285 USD), open=True
+- miner_burn: **0.9037809434812516**
+- registration cost: 0.15 TAO (29.363999999999997 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 865.6 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
@@ -13,12 +13,12 @@ snapshot_utc: 2026-08-16T21:31:18Z  |  block: 8859926  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 978.4096671733171
-- top_miner_usd_day: 1768.5545267192113 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 976.2652349650592
+- top_miner_usd_day: 1764.6782922374798 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 2  |  gini: 0.40379039887691914  |  top1_share: 0.9037903988769189  |  top10_share: 1.0
+- earners: 2  |  gini: 0.4037903988769189  |  top1_share: 0.9037903988769189  |  top10_share: 1.0
 - owner_incentive_share: 0.9037903988769188 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository

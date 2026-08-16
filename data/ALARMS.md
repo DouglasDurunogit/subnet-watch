@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-16T05:00:20Z, block 8854971
+# ALARMS - generated 2026-08-16T05:38:10Z, block 8855161
 
-window: first_seen in [2026-08-16T03:45:52Z, 2026-08-16T05:00:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T04:23:47Z, 2026-08-16T05:38:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-16T03:33:59Z` | 71 | SCORING_COMMIT | P1 | 2026-08-16T04:08:02Z | sn71 commit touches scoring: Regenerate validator protected workflow manifest |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-16T03:33:59Z`** - sn71 commit touches scoring: Regenerate validator protected workflow manifest
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,7 +27,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn92:scoring_commit:2026-08-09T05:06:02Z` | 92 | SCORING_COMMIT | 2026-08-09T05:16:01Z | sn92 commit touches scoring: Move inference cost off the validator and onto the submission |
 | `sn71:scoring_commit:2026-08-09T07:50:56Z` | 71 | SCORING_COMMIT | 2026-08-09T09:02:27Z | sn71 commit touches scoring: Retry transient company homepage verification |
 | `sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision` | 96 | RELEASE | 2026-08-09T09:02:27Z | sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision |
 | `sn71:scoring_commit:2026-08-09T09:39:44Z` | 71 | SCORING_COMMIT | 2026-08-09T09:53:17Z | sn71 commit touches scoring: Use fresh identities for scorer retries |
@@ -174,6 +166,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-08-15T23:00:47Z` | 76 | SCORING_COMMIT | 2026-08-15T23:01:41Z | sn76 commit touches scoring: Raise tasks per round across all four tracks |
 | `sn71:scoring_commit:2026-08-15T21:01:49Z` | 71 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn71 commit touches scoring: Fix validator RPC boundary fixture |
 | `sn111:scoring_commit:2026-08-16T00:43:24Z` | 111 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn111 commit touches scoring: Implement resilient batch scoring and winner-takes-most payouts |
+| `sn71:scoring_commit:2026-08-16T03:33:59Z` | 71 | SCORING_COMMIT | 2026-08-16T04:08:02Z | sn71 commit touches scoring: Regenerate validator protected workflow manifest |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-16T11:01:55Z · block 8856779 · run_status **ok**_
+_snapshot 2026-08-16T11:31:06Z · block 8856925 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.1 | 111 | 32,181 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 73.8 | 31.60 | 177 | cpu-small | 10 | 28% |
-| 3 | sn67 Harnyx | 72.4 | 23.55 | 416 | cpu-small | 136 | 11% |
-| 4 | sn26 Perturb | 70.8 | 40.35 | 74.03 | rtx3060 | 10 | 70% |
-| 5 | sn96 Verathos | 70.4 | 36.66 | 200 | rtx4090 | 57 | 41% |
+| 1 | sn107 Minos | 78.1 | 112 | 32,617 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 73.8 | 31.67 | 178 | cpu-small | 10 | 28% |
+| 3 | sn67 Harnyx | 72.4 | 23.60 | 417 | cpu-small | 136 | 11% |
+| 4 | sn26 Perturb | 70.8 | 40.44 | 74.19 | rtx3060 | 10 | 70% |
+| 5 | sn96 Verathos | 70.4 | 36.75 | 201 | rtx4090 | 57 | 41% |
 | 6 | sn1 Apex | 70.2 | 777 | 1,070 | rtx4090* | 4 | 54% |
-| 7 | sn41 Almanac | 69.9 | 12.83 | 53.61 | cpu-small | 74 | 65% |
-| 8 | sn15 ORO | 69.2 | 12.90 | 12,838 | cpu-small | 61 | 95% |
-| 9 | sn56 Gradients | 68.7 | 503 | 956 | rtx4090* | 7 | 68% |
-| 10 | sn62 Ridges | 68.5 | 473 | 2,192 | rtx4090* | 6 | 40% |
-| 11 | sn91 cascade | 68.2 | 439 | 2,257 | rtx4090* | 5 | 51% |
-| 12 | sn85 Vidaio | 68 | 405 | 676 | rtx4090* | 10 | 22% |
-| 13 | sn21 AdTAO | 67.6 | 7.60 | 34.08 | cpu-small | 88 | 45% |
-| 14 | sn38 ChronoLLM | 66 | 96.93 | 1,325 | cpu-small | 10 | 52% |
-| 15 | sn124 Swarm | 65.8 | 222 | 714 | rtx4090* | 24 | 11% |
-| 16 | sn2 DSperse | 62.9 | 87.44 | 149 | rtx4090* | 5 | 82% |
-| 17 | sn55 NIOME | 61.4 | 56.80 | 479 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 59.9 | 37.18 | 2,385 | rtx4090* | 38 | 28% |
-| 19 | sn60 Bitsec.ai | 59.4 | 417 | 417 = | cpu-small | 3 | 50% |
-| 20 | sn74 Gittensor | 58.3 | 25.97 | 207 | rtx4090* | 14 | 63% |
+| 7 | sn41 Almanac | 69.9 | 12.86 | 53.72 | cpu-small | 74 | 65% |
+| 8 | sn15 ORO | 69.2 | 12.79 | 12,730 | cpu-small | 61 | 95% |
+| 9 | sn56 Gradients | 68.7 | 504 | 958 | rtx4090* | 7 | 68% |
+| 10 | sn62 Ridges | 68.5 | 474 | 2,197 | rtx4090* | 6 | 40% |
+| 11 | sn91 cascade | 68.2 | 440 | 2,261 | rtx4090* | 5 | 51% |
+| 12 | sn85 Vidaio | 68 | 406 | 677 | rtx4090* | 10 | 22% |
+| 13 | sn21 AdTAO | 67.6 | 7.62 | 34.16 | cpu-small | 88 | 45% |
+| 14 | sn124 Swarm | 65.9 | 223 | 716 | rtx4090* | 24 | 11% |
+| 15 | sn38 ChronoLLM | 65.9 | 97.08 | 1,327 | cpu-small | 10 | 52% |
+| 16 | sn2 DSperse | 62.9 | 87.51 | 149 | rtx4090* | 5 | 82% |
+| 17 | sn55 NIOME | 61.4 | 56.53 | 477 | rtx4090* | 11 | 29% |
+| 18 | sn28 gm | 60.3 | 42.35 | 2,701 | rtx4090* | 43 | 31% |
+| 19 | sn60 Bitsec.ai | 59.3 | 411 | 411 = | cpu-small | 3 | 50% |
+| 20 | sn74 Gittensor | 58.3 | 26.05 | 208 | rtx4090* | 14 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 28 |
-| concentrated (30–60%) | 18 |
+| wide (<30%) | 27 |
+| concentrated (30–60%) | 19 |
 | dominated (60–90%) | 17 |
 | captured (>90%) | 27 |
 

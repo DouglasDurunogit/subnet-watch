@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T06:56:37Z, block 8855553
+# ALARMS - generated 2026-08-16T07:41:03Z, block 8855775
 
-window: first_seen in [2026-08-16T05:42:03Z, 2026-08-16T06:57:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T06:26:32Z, 2026-08-16T07:41:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | P1 | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
-| `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | P1 | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
+| `sn76:scoring_commit:2026-08-16T07:37:40Z` | 76 | SCORING_COMMIT | P1 | 2026-08-16T07:41:32Z | sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin… |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-16T05:46:07Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-16T04:12:13Z`** - sn71 commit touches scoring: Preserve production clocks in parity validation
+- **`sn76:scoring_commit:2026-08-16T07:37:40Z`** - sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -177,6 +174,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-15T21:01:49Z` | 71 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn71 commit touches scoring: Fix validator RPC boundary fixture |
 | `sn111:scoring_commit:2026-08-16T00:43:24Z` | 111 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn111 commit touches scoring: Implement resilient batch scoring and winner-takes-most payouts |
 | `sn71:scoring_commit:2026-08-16T03:33:59Z` | 71 | SCORING_COMMIT | 2026-08-16T04:08:02Z | sn71 commit touches scoring: Regenerate validator protected workflow manifest |
+| `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
+| `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

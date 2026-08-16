@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-16T06:56:37Z · block 8855553 · run_status **ok**_
+_snapshot 2026-08-16T07:41:03Z · block 8855775 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 48 of 128
+# 50 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **48** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **50** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 77.9 | 107 | 31,658 | cpu-small | 20 | 90% |
-| 2 | sn76 Phylax | 73.9 | 32.50 | 157 | cpu-small | 10 | 29% |
-| 3 | sn67 Harnyx | 72.5 | 23.54 | 416 | cpu-small | 124 | 11% |
-| 4 | sn26 Perturb | 70.8 | 40.43 | 74.17 | rtx3060 | 10 | 70% |
-| 5 | sn1 Apex | 70.3 | 803 | 1,104 | rtx4090* | 4 | 54% |
-| 6 | sn96 Verathos | 70 | 32.79 | 271 | rtx4090 | 53 | 41% |
-| 7 | sn41 Almanac | 69.9 | 12.87 | 53.56 | cpu-small | 74 | 65% |
-| 8 | sn15 ORO | 69.3 | 13.45 | 12,827 | cpu-small | 58 | 94% |
+| 1 | sn107 Minos | 77.8 | 107 | 31,701 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 73.9 | 32.56 | 157 | cpu-small | 10 | 29% |
+| 3 | sn67 Harnyx | 72.5 | 23.61 | 417 | cpu-small | 127 | 11% |
+| 4 | sn26 Perturb | 70.8 | 40.46 | 74.22 | rtx3060 | 10 | 70% |
+| 5 | sn1 Apex | 70.2 | 792 | 1,089 | rtx4090* | 4 | 53% |
+| 6 | sn41 Almanac | 69.9 | 12.83 | 53.59 | cpu-small | 74 | 65% |
+| 7 | sn96 Verathos | 69.8 | 31.43 | 269 | rtx4090 | 57 | 41% |
+| 8 | sn15 ORO | 68.9 | 12.53 | 12,605 | cpu-small | 60 | 95% |
 | 9 | sn56 Gradients | 68.7 | 504 | 955 | rtx4090* | 7 | 67% |
-| 10 | sn85 Vidaio | 68.6 | 491 | 491 = | rtx4090* | 10 | 16% |
-| 11 | sn62 Ridges | 68.5 | 472 | 2,188 | rtx4090* | 6 | 40% |
-| 12 | sn91 cascade | 68.3 | 441 | 2,268 | rtx4090* | 5 | 51% |
-| 13 | sn21 AdTAO | 67.6 | 7.58 | 33.99 | cpu-small | 88 | 45% |
-| 14 | sn38 ChronoLLM | 65.9 | 96.16 | 1,315 | cpu-small | 10 | 52% |
+| 10 | sn62 Ridges | 68.5 | 473 | 2,189 | rtx4090* | 6 | 40% |
+| 11 | sn91 cascade | 68.3 | 442 | 2,270 | rtx4090* | 5 | 51% |
+| 12 | sn21 AdTAO | 67.6 | 7.58 | 34.02 | cpu-small | 88 | 45% |
+| 13 | sn85 Vidaio | 67.4 | 344 | 589 | rtx4090* | 10 | 19% |
+| 14 | sn38 ChronoLLM | 65.9 | 96.25 | 1,316 | cpu-small | 10 | 52% |
 | 15 | sn124 Swarm | 65.8 | 222 | 713 | rtx4090* | 24 | 11% |
-| 16 | sn2 DSperse | 63 | 90.07 | 143 | rtx4090* | 5 | 82% |
-| 17 | sn55 NIOME | 61.4 | 56.32 | 476 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 60.4 | 43.17 | 2,504 | rtx4090* | 43 | 29% |
-| 19 | sn60 Bitsec.ai | 59.4 | 420 | 420 = | cpu-small | 3 | 50% |
-| 20 | sn61 RedTeam | 57.5 | 16.86 | 432 | rtx4090* | 81 | 10% |
+| 16 | sn2 DSperse | 63 | 90.23 | 143 | rtx4090* | 5 | 82% |
+| 17 | sn55 NIOME | 61.4 | 56.84 | 469 | rtx4090* | 11 | 29% |
+| 18 | sn102 ConnitoAI | 60.1 | 1,330 | 1,330 = | rtx4090* | 4 | 25% |
+| 19 | sn60 Bitsec.ai | 59.4 | 418 | 418 = | cpu-small | 3 | 50% |
+| 20 | sn28 gm | 58.8 | 26.78 | 2,182 | rtx4090* | 40 | 25% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 17 |
-| captured (>90%) | 27 |
+| wide (<30%) | 28 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 16 |
+| captured (>90%) | 28 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-16T07:41 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Match CWEs numerically, draw tasks per va |
 | 2026-08-16T06:04 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-16T06:04 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve production clocks in parity vali |
 | 2026-08-16T04:08 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Regenerate validator protected workflow m |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-15T09:06 | sn67 | README_TASK_DIFF | sn67 README task/scoring sections changed |
 | 2026-08-15T04:45 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-15T04:05 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Provision hotkey verification in gateway  |
-| 2026-08-15T04:05 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: feat(registry): require every evaluated  |
 
 ---
 

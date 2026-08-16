@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T11:59:45Z, block 8857068
+# ALARMS - generated 2026-08-16T12:57:21Z, block 8857356
 
-window: first_seen in [2026-08-16T10:45:10Z, 2026-08-16T12:00:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T11:42:53Z, 2026-08-16T12:57:53Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.

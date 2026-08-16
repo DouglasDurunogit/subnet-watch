@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T08:02:20Z, block 8855881
+# ALARMS - generated 2026-08-16T08:43:49Z, block 8856089
 
-window: first_seen in [2026-08-16T06:47:45Z, 2026-08-16T08:02:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T07:29:18Z, 2026-08-16T08:44:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,17 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn76:scoring_commit:2026-08-16T07:37:40Z` | 76 | SCORING_COMMIT | P1 | 2026-08-16T07:41:32Z | sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin… |
+| `sn100:release:v3.3.22` | 100 | RELEASE | P1 | 2026-08-16T08:44:18Z | sn100 released v3.3.22 |
 
 ### detail
 
 - **`sn76:scoring_commit:2026-08-16T07:37:40Z`** - sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.22`** - sn100 released v3.3.22
+  - published 2026-08-16T08:43:10Z (was v3.3.21 — Prism Lium single-GPU hard-reject (#129))
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |

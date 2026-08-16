@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-16T08:02:20Z  |  block: 8855881  |  row_status: ok
+snapshot_utc: 2026-08-16T08:43:49Z  |  block: 8856089  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000796628 TAO (0.1562585822 USD), open=True
+- registration cost: 0.000847242 TAO (0.16644916332 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 651.4 days  |  registered at block 4165565
+- subnet age: 651.5 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3623.64368109432** (uid 110) <- the only figure quotable as achievable
-- median_miner_usd_day: 3623.64368109432
-- top_miner_usd_day: 3623.64368109432 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3637.646103520783** (uid 110) <- the only figure quotable as achievable
+- median_miner_usd_day: 3637.646103520783
+- top_miner_usd_day: 3637.646103520783 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-16T08:02:20Z  |  block: 8855881  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3615.4245 USD/day  |  payback on registration: 0.0 days
+- net margin: 3629.4269 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 32.2 (rank 50), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
-- components: income 32.36 / freshness 0.0 / resource 11.25 / registration 10.0
+- components: income 32.38 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

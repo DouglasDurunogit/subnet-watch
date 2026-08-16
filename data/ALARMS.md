@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T12:57:21Z, block 8857356
+# ALARMS - generated 2026-08-16T13:40:01Z, block 8857570
 
-window: first_seen in [2026-08-16T11:42:53Z, 2026-08-16T12:57:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T12:25:28Z, 2026-08-16T13:40:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | P1 | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
+| `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | P1 | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 
 ### detail
 
-- **`sn76:scoring_commit:2026-08-16T11:49:10Z`** - sn76 commit touches scoring: Download only the tasks a validator drew
+- **`sn68:scoring_commit:2026-08-16T13:01:09Z`** - sn68 commit touches scoring: discard individual validator processing failures before averaging scor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,8 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
-| `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
 | `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |
 | `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
 | `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
@@ -169,6 +167,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
 | `sn76:scoring_commit:2026-08-16T07:37:40Z` | 76 | SCORING_COMMIT | 2026-08-16T07:41:32Z | sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin… |
 | `sn100:release:v3.3.22` | 100 | RELEASE | 2026-08-16T08:44:18Z | sn100 released v3.3.22 |
+| `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

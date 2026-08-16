@@ -1,20 +1,20 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-16T16:38:05Z  |  block: 8858460  |  row_status: ok
+snapshot_utc: 2026-08-16T17:02:56Z  |  block: 8858584  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.822200880618766**
-- registration cost: 0.0005 TAO (0.09875 USD), open=True
+- registration cost: 0.0005 TAO (0.09849 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 850.6 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 203.386816109673** (uid 102) <- the only figure quotable as achievable
-- median_miner_usd_day: 172.73784441045655
-- top_miner_usd_day: 1615.878564674344 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 202.8508352341725** (uid 102) <- the only figure quotable as achievable
+- median_miner_usd_day: 172.28263210687612
+- top_miner_usd_day: 1611.6202748581075 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-16T16:38:05Z  |  block: 8858460  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 133.8697 USD/day  |  payback on registration: 0.0 days
+- net margin: 133.4953 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 64.3 (rank 17), confidence 0.85 - hardware requirement unknown
-- components: income 19.37 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 5.8d ago
+- components: income 19.36 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 5.9d ago
 
 ## On-chain description
 

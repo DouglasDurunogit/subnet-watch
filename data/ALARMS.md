@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T16:38:05Z, block 8858460
+# ALARMS - generated 2026-08-16T17:02:56Z, block 8858584
 
-window: first_seen in [2026-08-16T15:23:36Z, 2026-08-16T16:38:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T15:48:28Z, 2026-08-16T17:03:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,12 +11,15 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn100:release:v3.3.23` | 100 | RELEASE | P1 | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | P1 | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
+| `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | P1 | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 
 ### detail
 
 - **`sn100:release:v3.3.23`** - sn100 released v3.3.23
   - published 2026-08-16T15:40:39Z (was v3.3.22)
 - **`sn75:scoring_commit:2026-08-16T16:01:02Z`** - sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn85:scoring_commit:2026-08-16T16:50:58Z`** - sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-16T05:38:10Z, block 8855161
+# ALARMS - generated 2026-08-16T06:03:41Z, block 8855288
 
-window: first_seen in [2026-08-16T04:23:47Z, 2026-08-16T05:38:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T04:49:05Z, 2026-08-16T06:04:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | P1 | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
+| `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | P1 | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
+
+### detail
+
+- **`sn67:scoring_commit:2026-08-16T05:46:07Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-16T04:12:13Z`** - sn71 commit touches scoring: Preserve production clocks in parity validation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

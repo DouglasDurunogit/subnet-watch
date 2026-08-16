@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-15T23:59:04Z, block 8853465
+# ALARMS - generated 2026-08-16T01:54:44Z, block 8854044
 
-window: first_seen in [2026-08-15T22:44:27Z, 2026-08-15T23:59:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T00:40:21Z, 2026-08-16T01:55:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-08-15T23:00:47Z` | 76 | SCORING_COMMIT | P1 | 2026-08-15T23:01:41Z | sn76 commit touches scoring: Raise tasks per round across all four tracks |
+| `sn71:scoring_commit:2026-08-15T21:01:49Z` | 71 | SCORING_COMMIT | P1 | 2026-08-16T01:55:21Z | sn71 commit touches scoring: Fix validator RPC boundary fixture |
+| `sn111:scoring_commit:2026-08-16T00:43:24Z` | 111 | SCORING_COMMIT | P1 | 2026-08-16T01:55:21Z | sn111 commit touches scoring: Implement resilient batch scoring and winner-takes-most payouts |
 
 ### detail
 
-- **`sn76:scoring_commit:2026-08-15T23:00:47Z`** - sn76 commit touches scoring: Raise tasks per round across all four tracks
+- **`sn71:scoring_commit:2026-08-15T21:01:49Z`** - sn71 commit touches scoring: Fix validator RPC boundary fixture
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-16T00:43:24Z`** - sn111 commit touches scoring: Implement resilient batch scoring and winner-takes-most payouts
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -175,6 +178,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 | `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
 | `sn108:scoring_commit:2026-08-15T20:13:27Z` | 108 | SCORING_COMMIT | 2026-08-15T20:35:26Z | sn108 commit touches scoring: docs(miner): drop the second artefact that was never built |
+| `sn76:scoring_commit:2026-08-15T23:00:47Z` | 76 | SCORING_COMMIT | 2026-08-15T23:01:41Z | sn76 commit touches scoring: Raise tasks per round across all four tracks |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

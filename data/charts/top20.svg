@@ -47,14 +47,14 @@
 <path class="accent" d="M168.0,155.0 H565.2 a4.0,4.0 0 0 1 4.0,4.0 V171.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="577.2" y="169">71</text>
 <text class="muted t-tick" x="740" y="169" text-anchor="end">$40/day</text>
-<text class="ink2 t-lab" x="158" y="196" text-anchor="end">5. sn1 Apex</text>
-<path class="accent" d="M168.0,182.0 H561.2 a4.0,4.0 0 0 1 4.0,4.0 V198.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="573.2" y="196">70</text>
-<text class="muted t-tick" x="740" y="196" text-anchor="end">$767/day</text>
-<text class="ink2 t-lab" x="158" y="223" text-anchor="end">6. sn96 Verathos</text>
+<text class="ink2 t-lab" x="158" y="196" text-anchor="end">5. sn96 Verathos</text>
+<path class="accent" d="M168.0,182.0 H561.8 a4.0,4.0 0 0 1 4.0,4.0 V198.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="573.8" y="196">70</text>
+<text class="muted t-tick" x="740" y="196" text-anchor="end">$35/day</text>
+<text class="ink2 t-lab" x="158" y="223" text-anchor="end">6. sn1 Apex</text>
 <path class="accent" d="M168.0,209.0 H561.2 a4.0,4.0 0 0 1 4.0,4.0 V225.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="573.2" y="223">70</text>
-<text class="muted t-tick" x="740" y="223" text-anchor="end">$35/day</text>
+<text class="muted t-tick" x="740" y="223" text-anchor="end">$767/day</text>
 <text class="ink2 t-lab" x="158" y="250" text-anchor="end">7. sn41 Almanac</text>
 <path class="accent" d="M168.0,236.0 H560.1 a4.0,4.0 0 0 1 4.0,4.0 V252.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="572.1" y="250">70</text>
@@ -74,7 +74,7 @@
 <text class="ink2 t-lab" x="158" y="358" text-anchor="end">11. sn91 cascade</text>
 <path class="accent" d="M168.0,344.0 H551.0 a4.0,4.0 0 0 1 4.0,4.0 V360.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="563.0" y="358">68</text>
-<text class="muted t-tick" x="740" y="358" text-anchor="end">$444/day</text>
+<text class="muted t-tick" x="740" y="358" text-anchor="end">$447/day</text>
 <text class="ink2 t-lab" x="158" y="385" text-anchor="end">12. sn85 Vidaio</text>
 <path class="accent" d="M168.0,371.0 H548.8 a4.0,4.0 0 0 1 4.0,4.0 V387.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="560.8" y="385">68</text>
@@ -86,15 +86,15 @@
 <text class="ink2 t-lab" x="158" y="439" text-anchor="end">14. sn11 TrajectoryRL</text>
 <path class="accent" d="M168.0,425.0 H543.7 a4.0,4.0 0 0 1 4.0,4.0 V441.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="555.7" y="439">67</text>
-<text class="muted t-tick" x="740" y="439" text-anchor="end">$4,110/day</text>
-<text class="ink2 t-lab" x="158" y="466" text-anchor="end">15. sn124 Swarm</text>
-<path class="accent" d="M168.0,452.0 H537.4 a4.0,4.0 0 0 1 4.0,4.0 V468.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="549.4" y="466">66</text>
-<text class="muted t-tick" x="740" y="466" text-anchor="end">$223/day</text>
-<text class="ink2 t-lab" x="158" y="493" text-anchor="end">16. sn38 ChronoLLM</text>
+<text class="muted t-tick" x="740" y="439" text-anchor="end">$4,111/day</text>
+<text class="ink2 t-lab" x="158" y="466" text-anchor="end">15. sn38 ChronoLLM</text>
+<path class="accent" d="M168.0,452.0 H538.0 a4.0,4.0 0 0 1 4.0,4.0 V468.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="550.0" y="466">66</text>
+<text class="muted t-tick" x="740" y="466" text-anchor="end">$97/day</text>
+<text class="ink2 t-lab" x="158" y="493" text-anchor="end">16. sn124 Swarm</text>
 <path class="accent" d="M168.0,479.0 H537.4 a4.0,4.0 0 0 1 4.0,4.0 V495.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="549.4" y="493">66</text>
-<text class="muted t-tick" x="740" y="493" text-anchor="end">$97/day</text>
+<text class="muted t-tick" x="740" y="493" text-anchor="end">$223/day</text>
 <text class="ink2 t-lab" x="158" y="520" text-anchor="end">17. sn55 NIOME</text>
 <path class="accent" d="M168.0,506.0 H511.9 a4.0,4.0 0 0 1 4.0,4.0 V522.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.9" y="520">61</text>

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T17:58:32Z, block 8858863
+# ALARMS - generated 2026-08-16T18:43:31Z, block 8859087
 
-window: first_seen in [2026-08-16T16:44:04Z, 2026-08-16T17:59:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T17:29:07Z, 2026-08-16T18:44:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | P1 | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn100:release:v3.3.24` | 100 | RELEASE | P1 | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
 
 ### detail
 
-- **`sn85:scoring_commit:2026-08-16T16:50:58Z`** - sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.24`** - sn100 released v3.3.24
   - published 2026-08-16T17:20:53Z (was v3.3.23)
 
@@ -36,8 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn90:release:v1.0.2 — proxy version header + owner mi` | 90 | RELEASE | 2026-08-09T18:18:04Z | sn90 released v1.0.2 — proxy version header + owner miner UID hardcode |
-| `sn90:scoring_commit:2026-08-09T18:13:35Z` | 90 | SCORING_COMMIT | 2026-08-09T18:18:04Z | sn90 commit touches scoring: feat(validator): v1.0.2 — proxy version header + hardcode owner miner… |
 | `sn126:scoring_commit:2026-08-09T19:04:26Z` | 126 | SCORING_COMMIT | 2026-08-09T19:56:46Z | sn126 commit touches scoring: Document miner training benchmark |
 | `sn71:scoring_commit:2026-08-09T20:10:42Z` | 71 | SCORING_COMMIT | 2026-08-09T20:49:18Z | sn71 commit touches scoring: Close and verify dev snapshot request sets |
 | `sn89:scoring_commit:2026-08-09T22:14:09Z` | 89 | SCORING_COMMIT | 2026-08-09T22:14:48Z | sn89 commit touches scoring: Referrer: score recruiters across every competition, not LF only |
@@ -173,6 +168,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
+| `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

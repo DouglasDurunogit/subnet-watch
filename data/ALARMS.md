@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T10:35:29Z, block 8856647
+# ALARMS - generated 2026-08-16T11:01:55Z, block 8856779
 
-window: first_seen in [2026-08-16T09:21:01Z, 2026-08-16T10:36:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T09:47:27Z, 2026-08-16T11:02:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -26,11 +26,6 @@ _none_
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn61:release:4.9.3` | 61 | RELEASE | 2026-08-09T10:49:31Z | sn61 released 4.9.3 |
-| `sn61:scoring_commit:2026-08-09T10:26:10Z` | 61 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn61 commit touches scoring: deps: update challenge image version for bot_virus_v1 to 1.0.3 |
-| `sn67:scoring_commit:2026-08-09T09:41:18Z` | 67 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260809.post0 |
-| `sn96:release:v0.1.31 - Validator Auto-Update Drain` | 96 | RELEASE | 2026-08-09T10:49:31Z | sn96 released v0.1.31 - Validator Auto-Update Drain |
-| `sn96:scoring_commit:2026-08-09T09:59:04Z` | 96 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn96 commit touches scoring: fix: drain validator work before auto-update |
 | `sn96:release:v0.1.32 - Miner Hard-Proof Transport` | 96 | RELEASE | 2026-08-09T13:30:27Z | sn96 released v0.1.32 - Miner Hard-Proof Transport |
 | `sn96:scoring_commit:2026-08-09T12:20:34Z` | 96 | SCORING_COMMIT | 2026-08-09T13:30:27Z | sn96 commit touches scoring: fix: align miner proxy with hard proof deadline |
 | `sn71:scoring_commit:2026-08-09T15:45:11Z` | 71 | SCORING_COMMIT | 2026-08-09T16:15:15Z | sn71 commit touches scoring: Preserve handled scorer transport failures |

@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-16T09:51:06Z, block 8856425
+# ALARMS - generated 2026-08-16T10:35:29Z, block 8856647
 
-window: first_seen in [2026-08-16T08:36:38Z, 2026-08-16T09:51:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T09:21:01Z, 2026-08-16T10:36:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn100:release:v3.3.22` | 100 | RELEASE | P1 | 2026-08-16T08:44:18Z | sn100 released v3.3.22 |
-
-### detail
-
-- **`sn100:release:v3.3.22`** - sn100 released v3.3.22
-  - published 2026-08-16T08:43:10Z (was v3.3.21 — Prism Lium single-GPU hard-reject (#129))
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,7 +26,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn71:scoring_commit:2026-08-09T09:39:44Z` | 71 | SCORING_COMMIT | 2026-08-09T09:53:17Z | sn71 commit touches scoring: Use fresh identities for scorer retries |
 | `sn61:release:4.9.3` | 61 | RELEASE | 2026-08-09T10:49:31Z | sn61 released 4.9.3 |
 | `sn61:scoring_commit:2026-08-09T10:26:10Z` | 61 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn61 commit touches scoring: deps: update challenge image version for bot_virus_v1 to 1.0.3 |
 | `sn67:scoring_commit:2026-08-09T09:41:18Z` | 67 | SCORING_COMMIT | 2026-08-09T10:49:31Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260809.post0 |
@@ -174,6 +166,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
 | `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
 | `sn76:scoring_commit:2026-08-16T07:37:40Z` | 76 | SCORING_COMMIT | 2026-08-16T07:41:32Z | sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin… |
+| `sn100:release:v3.3.22` | 100 | RELEASE | 2026-08-16T08:44:18Z | sn100 released v3.3.22 |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

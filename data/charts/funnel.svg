@@ -30,7 +30,7 @@
 </style>
 <rect class="surface" width="760" height="268" rx="8"/>
 <text class="ink t-title" x="20" y="28">How many subnets survive each filter</text>
-<text class="muted t-sub" x="20" y="46">Of 128 subnets, 14 clear every gate with hardware evidence to back the margin.</text>
+<text class="muted t-sub" x="20" y="46">Of 128 subnets, 15 clear every gate with hardware evidence to back the margin.</text>
 <text class="ink2 t-lab" x="166" y="91" text-anchor="end">All subnets</text>
 <path class="deemph" d="M176.0,74.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V96.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
 <path class="accent" d="M176.0,74.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V96.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
@@ -49,7 +49,7 @@
 <text class="ink t-val" x="674" y="199">50</text>
 <text class="ink2 t-lab" x="166" y="235" text-anchor="end">+ hardware evidence</text>
 <path class="deemph" d="M176.0,218.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,218.0 H225.4 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="235">14</text>
+<path class="accent" d="M176.0,218.0 H229.2 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="235">15</text>
 <text class="muted t-tick" x="20" y="254">"Positive margin" already nets off the cheapest machine that meets the requirement.</text>
 </svg>

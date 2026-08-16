@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T01:54:44Z, block 8854044
+# ALARMS - generated 2026-08-16T03:09:34Z, block 8854418
 
-window: first_seen in [2026-08-16T00:40:21Z, 2026-08-16T01:55:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T01:55:08Z, 2026-08-16T03:10:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -23,7 +23,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn6:burn_drop:0.000` | 6 | BURN_DROP | 2026-08-09T02:25:34Z | sn6 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.826` | 2 | BURN_DROP | 2026-08-09T08:07:46Z | sn2 burn fell 1.000 -> 0.826 - miners can earn again |
 | `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -38,9 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn61:release:4.9.2` | 61 | RELEASE | 2026-08-09T02:25:34Z | sn61 released 4.9.2 |
-| `sn61:scoring_commit:2026-08-08T08:01:06Z` | 61 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn61 commit touches scoring: refactor: update minimum acceptable score for challenges in configura… |
-| `sn92:scoring_commit:2026-08-08T22:46:16Z` | 92 | SCORING_COMMIT | 2026-08-09T02:25:34Z | sn92 commit touches scoring: Document the directive as the source of every scoring parameter |
 | `sn92:scoring_commit:2026-08-09T05:06:02Z` | 92 | SCORING_COMMIT | 2026-08-09T05:16:01Z | sn92 commit touches scoring: Move inference cost off the validator and onto the submission |
 | `sn71:scoring_commit:2026-08-09T07:50:56Z` | 71 | SCORING_COMMIT | 2026-08-09T09:02:27Z | sn71 commit touches scoring: Retry transient company homepage verification |
 | `sn96:release:v0.1.30 - Gleipnir FP8 Runtime Precision` | 96 | RELEASE | 2026-08-09T09:02:27Z | sn96 released v0.1.30 - Gleipnir FP8 Runtime Precision |

@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-16T18:43:31Z, block 8859087
+# ALARMS - generated 2026-08-16T19:07:48Z, block 8859209
 
-window: first_seen in [2026-08-16T17:29:07Z, 2026-08-16T18:44:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T17:53:21Z, 2026-08-16T19:08:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn100:release:v3.3.24` | 100 | RELEASE | P1 | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
-
-### detail
-
-- **`sn100:release:v3.3.24`** - sn100 released v3.3.24
-  - published 2026-08-16T17:20:53Z (was v3.3.23)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -169,6 +162,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
+| `sn100:release:v3.3.24` | 100 | RELEASE | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

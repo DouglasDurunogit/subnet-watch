@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-16T17:31:21Z, block 8858727
+# ALARMS - generated 2026-08-16T17:58:32Z, block 8858863
 
-window: first_seen in [2026-08-16T16:16:56Z, 2026-08-16T17:31:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-16T16:44:04Z, 2026-08-16T17:59:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | P1 | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | P1 | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn100:release:v3.3.24` | 100 | RELEASE | P1 | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
 
 ### detail
 
-- **`sn75:scoring_commit:2026-08-16T16:01:02Z`** - sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn85:scoring_commit:2026-08-16T16:50:58Z`** - sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:release:v3.3.24`** - sn100 released v3.3.24
@@ -175,6 +172,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
 | `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
+| `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn126:readme_task_diff:99d35d8a81c2f921` | 126 | README_TASK_DIFF | 2026-08-09T19:56:46Z | sn126 README task/scoring sections changed |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |

@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-17T05:07:30Z, block 8862207
+# ALARMS - generated 2026-08-17T05:59:31Z, block 8862467
 
-window: first_seen in [2026-08-17T03:52:54Z, 2026-08-17T05:07:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T04:45:04Z, 2026-08-17T06:00:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn2:burn_drop:0.823` | 2 | BURN_DROP | P0 | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
+| `sn71:scoring_commit:2026-08-17T00:26:35Z` | 71 | SCORING_COMMIT | P1 | 2026-08-17T06:00:04Z | sn71 commit touches scoring: Refresh provider failures during recovery scoring |
+
+### detail
+
+- **`sn2:burn_drop:0.823`** - sn2 burn fell 1.000 -> 0.823 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-08-17T00:26:35Z`** - sn71 commit touches scoring: Refresh provider failures during recovery scoring
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

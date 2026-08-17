@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T10:45:28Z, block 8863897
+# ALARMS - generated 2026-08-17T11:11:36Z, block 8864028
 
-window: first_seen in [2026-08-17T09:31:02Z, 2026-08-17T10:46:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T09:57:02Z, 2026-08-17T11:12:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-08-17T09:07:35Z` | 10 | SCORING_COMMIT | P1 | 2026-08-17T09:54:33Z | sn10 commit touches scoring: feat(bench): score the full workload trace (PAR-65) (#81) |
 | `sn67:scoring_commit:2026-08-17T05:33:14Z` | 67 | SCORING_COMMIT | P1 | 2026-08-17T10:46:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260817.post0 |
 | `sn85:scoring_commit:2026-08-17T10:23:08Z` | 85 | SCORING_COMMIT | P1 | 2026-08-17T10:46:02Z | sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo… |
 | `sn114:scoring_commit:2026-08-17T09:54:21Z` | 114 | SCORING_COMMIT | P1 | 2026-08-17T10:46:02Z | sn114 commit touches scoring: perf(validator): reduce validator write contention |
+| `sn85:scoring_commit:2026-08-17T10:59:02Z` | 85 | SCORING_COMMIT | P1 | 2026-08-17T11:12:02Z | sn85 commit touches scoring: treat miner sandbox raised error as miner issue rather than validator… |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-08-17T09:07:35Z`** - sn10 commit touches scoring: feat(bench): score the full workload trace (PAR-65) (#81)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-17T05:33:14Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260817.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn85:scoring_commit:2026-08-17T10:23:08Z`** - sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn114:scoring_commit:2026-08-17T09:54:21Z`** - sn114 commit touches scoring: perf(validator): reduce validator write contention
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn85:scoring_commit:2026-08-17T10:59:02Z`** - sn85 commit touches scoring: treat miner sandbox raised error as miner issue rather than validator…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -172,6 +172,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.120` | 51 | RELEASE | 2026-08-17T08:07:06Z | sn51 released executor-v1.120 |
 | `sn75:scoring_commit:2026-08-16T20:57:11Z` | 75 | SCORING_COMMIT | 2026-08-17T08:07:06Z | sn75 commit touches scoring: feat(compute-scoring): root-settable dedicated key for vali submission |
 | `sn85:scoring_commit:2026-08-17T08:37:37Z` | 85 | SCORING_COMMIT | 2026-08-17T08:59:45Z | sn85 commit touches scoring: reinvite miners rejected with flag INVITATION_DECLINED in comp enroll… |
+| `sn10:scoring_commit:2026-08-17T09:07:35Z` | 10 | SCORING_COMMIT | 2026-08-17T09:54:33Z | sn10 commit touches scoring: feat(bench): score the full workload trace (PAR-65) (#81) |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |

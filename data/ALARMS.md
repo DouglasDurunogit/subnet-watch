@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-16T23:58:50Z, block 8860664
+# ALARMS - generated 2026-08-17T01:52:10Z, block 8861231
 
-window: first_seen in [2026-08-16T22:44:25Z, 2026-08-16T23:59:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T00:37:42Z, 2026-08-17T01:52:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-16T23:14:51Z` | 71 | SCORING_COMMIT | P1 | 2026-08-17T01:52:42Z | sn71 commit touches scoring: Bound validator worker startup verification |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-16T23:14:51Z`** - sn71 commit touches scoring: Bound validator worker startup verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

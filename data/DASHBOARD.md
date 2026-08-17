@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-17T14:39:11Z · block 8865066 · run_status **ok**_
+_snapshot 2026-08-17T15:08:11Z · block 8865211 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -29,10 +29,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 61 | `████████████████████████████` |
+| 0 (none) | 62 | `████████████████████████████` |
 | 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 3 | `█` |
-| 0.4–0.6 | 8 | `████` |
+| 0.4–0.6 | 7 | `███` |
 | 0.6–0.8 | 5 | `██` |
 | 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 38 | `█████████████████` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.4 | 120 | 33,792 | cpu-small | 20 | 90% |
-| 2 | sn26 Perturb | 72 | 54.66 | 1,610 | rtx3060 | 10 | 70% |
-| 3 | sn67 Harnyx | 71.9 | 20.47 | 384 | cpu-small | 129 | 11% |
-| 4 | sn91 cascade | 69.1 | 566 | 2,289 | rtx4090* | 5 | 51% |
-| 5 | sn41 Almanac | 68.7 | 9.68 | 53.18 | cpu-small | 75 | 69% |
-| 6 | sn62 Ridges | 68.4 | 466 | 2,158 | rtx4090* | 6 | 40% |
-| 7 | sn96 Verathos | 68.4 | 22.15 | 528 | rtx4090 | 69 | 41% |
-| 8 | sn15 ORO | 67.9 | 10.84 | 12,354 | cpu-small | 66 | 94% |
-| 9 | sn21 AdTAO | 67.6 | 7.59 | 34.06 | cpu-small | 88 | 45% |
-| 10 | sn85 Vidaio | 67.1 | 315 | 545 | rtx4090* | 10 | 17% |
-| 11 | sn38 ChronoLLM | 66.1 | 101 | 1,376 | cpu-small | 10 | 52% |
-| 12 | sn124 Swarm | 65.8 | 221 | 487 | rtx4090* | 24 | 11% |
-| 13 | sn2 DSperse | 62.2 | 72.37 | 158 | rtx4090* | 5 | 82% |
-| 14 | sn55 NIOME | 61.5 | 57.33 | 501 | rtx4090* | 11 | 30% |
-| 15 | sn60 Bitsec.ai | 59 | 369 | 369 = | cpu-small | 3 | 50% |
-| 16 | sn74 Gittensor | 58.2 | 23.26 | 207 | rtx4090* | 14 | 63% |
-| 17 | sn28 gm | 57.5 | 18.71 | 1,910 | rtx4090* | 41 | 40% |
-| 18 | sn51 lium.io | 57.3 | 22.98 | 2,548 | rtx4090* | 56 | 79% |
-| 19 | sn61 RedTeam | 57.1 | 15.05 | 409 | rtx4090* | 83 | 10% |
-| 20 | sn68 NOVA | 55 | 7,999 | 7,999 = | rtx4090* | 1 | 100% |
+| 1 | sn107 Minos | 78.4 | 120 | 33,873 | cpu-small | 20 | 90% |
+| 2 | sn76 Phylax | 78.4 | 105 | 202 | cpu-small | 10 | 20% |
+| 3 | sn26 Perturb | 72 | 54.87 | 1,617 | rtx3060 | 10 | 70% |
+| 4 | sn67 Harnyx | 72 | 20.56 | 385 | cpu-small | 129 | 11% |
+| 5 | sn91 cascade | 69.1 | 565 | 2,283 | rtx4090* | 5 | 51% |
+| 6 | sn41 Almanac | 68.7 | 9.73 | 53.41 | cpu-small | 75 | 69% |
+| 7 | sn62 Ridges | 68.5 | 466 | 2,160 | rtx4090* | 6 | 40% |
+| 8 | sn96 Verathos | 68.4 | 22.29 | 530 | rtx4090 | 69 | 41% |
+| 9 | sn85 Vidaio | 67.2 | 318 | 552 | rtx4090* | 10 | 17% |
+| 10 | sn15 ORO | 67 | 10.89 | 12,410 | cpu-small | 66 | 94% |
+| 11 | sn38 ChronoLLM | 66.1 | 101 | 1,382 | cpu-small | 10 | 52% |
+| 12 | sn124 Swarm | 65.8 | 222 | 489 | rtx4090* | 24 | 11% |
+| 13 | sn2 DSperse | 62.8 | 86.26 | 134 | rtx4090* | 5 | 82% |
+| 14 | sn55 NIOME | 61.5 | 58.00 | 506 | rtx4090* | 11 | 30% |
+| 15 | sn60 Bitsec.ai | 59 | 372 | 372 = | cpu-small | 3 | 50% |
+| 16 | sn74 Gittensor | 58.2 | 23.40 | 207 | rtx4090* | 14 | 63% |
+| 17 | sn102 ConnitoAI | 57.6 | 632 | 1,234 | rtx4090* | 7 | 25% |
+| 18 | sn51 lium.io | 57.3 | 23.11 | 2,558 | rtx4090* | 56 | 79% |
+| 19 | sn61 RedTeam | 57.1 | 15.15 | 411 | rtx4090* | 83 | 10% |
+| 20 | sn28 gm | 55.9 | 11.75 | 417 | rtx4090* | 39 | 83% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 19 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 27 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -98,9 +98,9 @@ margin assumes a default box. Treat those as indicative.
 | basis | subnets |
 |---|---:|
 | no evidence | 104 |
-| min_compute.yml (curated) | 9 |
-| code-submission (validator runs it) | 8 |
-| README keywords (GUESS) | 6 |
+| code-submission (validator runs it) | 10 |
+| min_compute.yml (curated) | 8 |
+| README keywords (GUESS) | 5 |
 | README stated VRAM (explicit) | 1 |
 
 ## Recent changes (last 7 days)

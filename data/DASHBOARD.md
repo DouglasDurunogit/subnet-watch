@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-17T15:48:40Z · block 8865413 · run_status **ok**_
+_snapshot 2026-08-17T16:41:13Z · block 8865676 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 51 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **51** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| **Positive margin** | **53** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,10 +31,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 62 | `████████████████████████████` |
 | 0–0.2 | 4 | `██` |
-| 0.2–0.4 | 4 | `██` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 7 | `███` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 7 | `███` |
+| 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 37 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn26 Perturb | 72 | 55.11 | 1,623 | rtx3060 | 10 | 70% |
-| 2 | sn67 Harnyx | 72 | 20.39 | 382 | cpu-small | 129 | 11% |
-| 3 | sn91 cascade | 69.1 | 564 | 2,282 | rtx4090* | 5 | 51% |
-| 4 | sn15 ORO | 67.9 | 10.94 | 12,459 | cpu-small | 66 | 94% |
-| 5 | sn96 Verathos | 67.8 | 19.20 | 508 | rtx4090 | 69 | 41% |
-| 6 | sn21 AdTAO | 67.7 | 7.67 | 34.36 | cpu-small | 88 | 45% |
-| 7 | sn38 ChronoLLM | 66.1 | 102 | 1,388 | cpu-small | 10 | 52% |
-| 8 | sn124 Swarm | 65.9 | 226 | 507 | rtx4090* | 24 | 11% |
-| 9 | sn107 Minos | 64.4 | 121 | 33,857 | cpu-small | 20 | 90% |
-| 10 | sn2 DSperse | 62.8 | 86.66 | 135 | rtx4090* | 5 | 82% |
-| 11 | sn55 NIOME | 61.6 | 58.93 | 495 | rtx4090* | 11 | 29% |
-| 12 | sn102 ConnitoAI | 57.6 | 635 | 1,239 | rtx4090* | 7 | 25% |
-| 13 | sn61 RedTeam | 57.4 | 16.34 | 400 | rtx4090* | 82 | 10% |
-| 14 | sn51 lium.io | 57.3 | 23.00 | 2,549 | rtx4090* | 56 | 79% |
-| 15 | sn28 gm | 55.9 | 11.83 | 419 | rtx4090* | 39 | 83% |
-| 16 | sn68 NOVA | 55.1 | 8,069 | 8,069 = | rtx4090* | 1 | 100% |
-| 17 | sn120 Affine | 54.6 | 6,606 | 6,606 = | rtx4090* | 5 | 20% |
-| 18 | sn93 Bitcast | 54.3 | 237 | 528 | rtx4090* | 4 | 84% |
-| 19 | sn80 OpenRoboto | 53.2 | 173 | 626 | rtx4090* | 4 | 91% |
-| 20 | sn97 Albedo | 52.6 | 2,824 | 2,824 = | rtx4090* | 5 | 20% |
+| 1 | sn76 Phylax | 78.4 | 105 | 203 | cpu-small | 10 | 20% |
+| 2 | sn121 sundae_bar | 74.3 | 1,031 | 1,031 = | cpu-small | 2 | 62% |
+| 3 | sn26 Perturb | 72 | 54.77 | 1,614 | rtx3060 | 10 | 70% |
+| 4 | sn67 Harnyx | 71.9 | 20.29 | 381 | cpu-small | 129 | 11% |
+| 5 | sn91 cascade | 68.9 | 534 | 2,161 | rtx4090* | 5 | 51% |
+| 6 | sn41 Almanac | 68.7 | 9.72 | 53.42 | cpu-small | 75 | 69% |
+| 7 | sn85 Vidaio | 68.5 | 469 | 518 | rtx4090* | 10 | 17% |
+| 8 | sn62 Ridges | 68.4 | 464 | 2,150 | rtx4090* | 6 | 40% |
+| 9 | sn15 ORO | 67.9 | 10.77 | 20.92 | cpu-small | 66 | 94% |
+| 10 | sn21 AdTAO | 67.7 | 7.71 | 34.54 | cpu-small | 88 | 45% |
+| 11 | sn96 Verathos | 67.6 | 18.29 | 491 | rtx4090 | 69 | 41% |
+| 12 | sn38 ChronoLLM | 66.2 | 102 | 1,395 | cpu-small | 10 | 52% |
+| 13 | sn124 Swarm | 65.9 | 226 | 506 | rtx4090* | 24 | 11% |
+| 14 | sn107 Minos | 64.4 | 121 | 33,961 | cpu-small | 20 | 90% |
+| 15 | sn2 DSperse | 62.3 | 73.31 | 160 | rtx4090* | 5 | 82% |
+| 16 | sn55 NIOME | 61.6 | 59.58 | 500 | rtx4090* | 11 | 29% |
+| 17 | sn28 gm | 59.4 | 32.25 | 1,871 | rtx4090* | 43 | 26% |
+| 18 | sn60 Bitsec.ai | 59 | 371 | 371 = | cpu-small | 3 | 50% |
+| 19 | sn74 Gittensor | 58.2 | 23.53 | 208 | rtx4090* | 14 | 63% |
+| 20 | sn102 ConnitoAI | 57.6 | 632 | 1,233 | rtx4090* | 7 | 25% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 18 |
+| wide (<30%) | 27 |
+| concentrated (30–60%) | 17 |
 | dominated (60–90%) | 20 |
 | captured (>90%) | 26 |
 
@@ -97,16 +97,17 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 113 |
-| code-submission (validator runs it) | 5 |
-| README keywords (GUESS) | 5 |
-| min_compute.yml (curated) | 4 |
+| no evidence | 102 |
+| code-submission (validator runs it) | 10 |
+| min_compute.yml (curated) | 9 |
+| README keywords (GUESS) | 6 |
 | README stated VRAM (explicit) | 1 |
 
 ## Recent changes (last 7 days)
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-17T16:41 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: feat: better miner commit patch logs (#83 |
 | 2026-08-17T15:52 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | 2026-08-17T13:03 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat: add adaptive miner selection and r |
 | 2026-08-17T13:03 | sn114 | SCORING_COMMIT | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage  |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-17T06:00 | sn2 | BURN_DROP | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | 2026-08-17T06:00 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Refresh provider failures during recovery |
 | 2026-08-17T01:52 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bound validator worker startup verificati |
-| 2026-08-16T17:31 | sn100 | RELEASE | sn100 released v3.3.24 |
 
 ---
 

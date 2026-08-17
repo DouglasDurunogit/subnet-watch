@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T15:48:40Z, block 8865413
+# ALARMS - generated 2026-08-17T16:41:13Z, block 8865676
 
-window: first_seen in [2026-08-17T14:37:42Z, 2026-08-17T15:52:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T15:26:40Z, 2026-08-17T16:41:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | P0 | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
+| `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | P1 | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
 
 ### detail
 
 - **`sn121:burn_drop:0.620`** - sn121 burn fell 1.000 -> 0.620 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn10:scoring_commit:2026-08-17T16:31:51Z`** - sn10 commit touches scoring: feat: better miner commit patch logs (#83)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,8 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
-| `sn2:release:14.13.2` | 2 | RELEASE | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
-| `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
 | `sn104:scoring_commit:2026-08-10T16:47:17Z` | 104 | SCORING_COMMIT | 2026-08-10T17:25:08Z | sn104 commit touches scoring: fix validator weight-setting reliability and harden miner/BT-Forecast… |
 | `sn97:scoring_commit:2026-08-10T18:23:39Z` | 97 | SCORING_COMMIT | 2026-08-10T19:31:19Z | sn97 commit touches scoring: feat: add discarded questions to scoring artifact |
 | `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |

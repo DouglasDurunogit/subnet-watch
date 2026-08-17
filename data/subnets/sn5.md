@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-17T22:36:34Z  |  block: 8867453  |  row_status: ok
+snapshot_utc: 2026-08-17T23:02:33Z  |  block: 8867582  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.139854322 TAO (27.33592577812 USD), open=True
+- registration cost: 0.123521097 TAO (24.142198408649996 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 252  |  free: 0
-- subnet age: 885.5 days  |  registered at block 2491604
+- subnet age: 885.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 33.473003183011976** (uid 236) <- the only figure quotable as achievable
-- median_miner_usd_day: 31.51079265159403
-- top_miner_usd_day: 33.473003183011976 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 33.47283998399763** (uid 236) <- the only figure quotable as achievable
+- median_miner_usd_day: 31.510639019418463
+- top_miner_usd_day: 33.47283998399763 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-17T22:36:34Z  |  block: 8867453  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 23.2916 USD/day  |  payback on registration: 1.17 days
+- net margin: 23.2915 USD/day  |  payback on registration: 1.04 days
 
 ## Score
 
 - gate: **OK** 
 - score: 20.1 (rank 71), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 12.6 / freshness 0.0 / resource 11.25 / registration 9.61
+- components: income 12.6 / freshness 0.0 / resource 11.25 / registration 9.65
 - freshness basis: no challenge change on record
 
 ## On-chain description

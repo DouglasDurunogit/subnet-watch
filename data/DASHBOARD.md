@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-17T20:38:56Z · block 8866864 · run_status **ok**_
+_snapshot 2026-08-17T21:08:50Z · block 8867014 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -45,23 +45,23 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn76 Phylax | 78.4 | 105 | 203 | cpu-small | 10 | 20% |
 | 2 | sn121 sundae_bar | 74.4 | 1,064 | 1,064 = | cpu-small | 2 | 61% |
-| 3 | sn26 Perturb | 72 | 54.85 | 1,616 | rtx3060 | 10 | 70% |
-| 4 | sn67 Harnyx | 71.9 | 20.28 | 380 | cpu-small | 129 | 11% |
+| 3 | sn67 Harnyx | 71.9 | 20.28 | 380 | cpu-small | 129 | 11% |
+| 4 | sn26 Perturb | 71.2 | 45.21 | 344 | rtx3060 | 10 | 70% |
 | 5 | sn91 cascade | 68.8 | 520 | 2,105 | rtx4090* | 5 | 51% |
-| 6 | sn41 Almanac | 68.7 | 9.71 | 53.48 | cpu-small | 75 | 69% |
-| 7 | sn62 Ridges | 68.4 | 464 | 2,152 | rtx4090* | 6 | 40% |
-| 8 | sn15 ORO | 67.9 | 10.81 | 20.99 | cpu-small | 66 | 94% |
-| 9 | sn21 AdTAO | 67.7 | 7.75 | 34.71 | cpu-small | 88 | 45% |
-| 10 | sn96 Verathos | 67.4 | 17.57 | 488 | rtx4090 | 69 | 41% |
-| 11 | sn38 ChronoLLM | 66.3 | 106 | 1,449 | cpu-small | 10 | 52% |
-| 12 | sn124 Swarm | 65.9 | 225 | 496 | rtx4090* | 24 | 11% |
-| 13 | sn107 Minos | 64.2 | 115 | 34,316 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 63.9 | 119 | 436 | rtx4090* | 13 | 14% |
-| 15 | sn55 NIOME | 61.6 | 60.27 | 505 | rtx4090* | 11 | 29% |
+| 6 | sn41 Almanac | 68.7 | 9.76 | 53.70 | cpu-small | 75 | 69% |
+| 7 | sn62 Ridges | 68.4 | 464 | 2,151 | rtx4090* | 6 | 40% |
+| 8 | sn15 ORO | 68 | 10.81 | 21.00 | cpu-small | 66 | 94% |
+| 9 | sn21 AdTAO | 67.9 | 8.15 | 36.32 | cpu-small | 88 | 45% |
+| 10 | sn96 Verathos | 67.4 | 17.56 | 488 | rtx4090 | 69 | 41% |
+| 11 | sn38 ChronoLLM | 66.3 | 106 | 1,446 | cpu-small | 10 | 52% |
+| 12 | sn124 Swarm | 65.9 | 226 | 496 | rtx4090* | 24 | 11% |
+| 13 | sn107 Minos | 64.2 | 116 | 34,472 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 63.9 | 118 | 435 | rtx4090* | 13 | 14% |
+| 15 | sn55 NIOME | 61.6 | 60.26 | 505 | rtx4090* | 11 | 29% |
 | 16 | sn60 Bitsec.ai | 59 | 375 | 375 = | cpu-small | 3 | 50% |
-| 17 | sn102 ConnitoAI | 58.7 | 888 | 1,994 | rtx4090* | 5 | 39% |
+| 17 | sn102 ConnitoAI | 58.7 | 888 | 1,993 | rtx4090* | 5 | 39% |
 | 18 | sn74 Gittensor | 58.1 | 23.07 | 204 | rtx4090* | 14 | 63% |
-| 19 | sn61 RedTeam | 57.6 | 17.59 | 353 | rtx4090* | 83 | 8% |
+| 19 | sn61 RedTeam | 57.5 | 17.03 | 345 | rtx4090* | 83 | 8% |
 | 20 | sn51 lium.io | 55.9 | 17.14 | 1,689 | rtx4090* | 56 | 81% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-17T21:09 | sn21 | RELEASE | sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08 |
 | 2026-08-17T19:36 | sn51 | RELEASE | sn51 released executor-v1.121 |
 | 2026-08-17T19:36 | sn65 | SCORING_COMMIT | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/val |
 | 2026-08-17T18:54 | sn21 | RELEASE | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-17T10:46 | sn114 | SCORING_COMMIT | sn114 commit touches scoring: perf(validator): reduce validator write  |
 | 2026-08-17T09:54 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: feat(bench): score the full workload trac |
 | 2026-08-17T08:59 | sn85 | SCORING_COMMIT | sn85 commit touches scoring: reinvite miners rejected with flag INVITA |
-| 2026-08-17T08:07 | sn51 | RELEASE | sn51 released executor-v1.120 |
 
 ---
 

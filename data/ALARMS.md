@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T20:38:56Z, block 8866864
+# ALARMS - generated 2026-08-17T21:08:50Z, block 8867014
 
-window: first_seen in [2026-08-17T19:24:29Z, 2026-08-17T20:39:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T19:54:19Z, 2026-08-17T21:09:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:executor-v1.121` | 51 | RELEASE | P1 | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
-| `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | P1 | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
+| `sn21:release:SN21 training bundle — 10,791 records, r` | 21 | RELEASE | P1 | 2026-08-17T21:09:19Z | sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08-17 |
 
 ### detail
 
-- **`sn51:release:executor-v1.121`** - sn51 released executor-v1.121
-  - published 2026-08-17T19:07:10Z (was executor-v1.120)
-- **`sn65:scoring_commit:2026-08-14T10:47:05Z`** - sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:release:SN21 training bundle — 10,791 records, r`** - sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08-17
+  - published 2026-08-17T21:07:49Z (was SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC))
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -160,6 +157,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
 | `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
 | `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
+| `sn51:release:executor-v1.121` | 51 | RELEASE | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
+| `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |

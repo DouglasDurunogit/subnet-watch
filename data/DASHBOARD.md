@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-17T16:41:13Z · block 8865676 · run_status **ok**_
+_snapshot 2026-08-17T17:12:02Z · block 8865830 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 53 of 128
+# 52 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **53** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **52** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -44,25 +44,25 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn76 Phylax | 78.4 | 105 | 203 | cpu-small | 10 | 20% |
-| 2 | sn121 sundae_bar | 74.3 | 1,031 | 1,031 = | cpu-small | 2 | 62% |
+| 2 | sn121 sundae_bar | 74.3 | 1,046 | 1,046 = | cpu-small | 2 | 61% |
 | 3 | sn26 Perturb | 72 | 54.77 | 1,614 | rtx3060 | 10 | 70% |
-| 4 | sn67 Harnyx | 71.9 | 20.29 | 381 | cpu-small | 129 | 11% |
-| 5 | sn91 cascade | 68.9 | 534 | 2,161 | rtx4090* | 5 | 51% |
-| 6 | sn41 Almanac | 68.7 | 9.72 | 53.42 | cpu-small | 75 | 69% |
-| 7 | sn85 Vidaio | 68.5 | 469 | 518 | rtx4090* | 10 | 17% |
+| 4 | sn67 Harnyx | 71.9 | 20.24 | 380 | cpu-small | 129 | 11% |
+| 5 | sn91 cascade | 68.8 | 521 | 2,109 | rtx4090* | 5 | 51% |
+| 6 | sn85 Vidaio | 68.7 | 508 | 508 | rtx4090* | 10 | 16% |
+| 7 | sn41 Almanac | 68.7 | 9.70 | 53.41 | cpu-small | 75 | 69% |
 | 8 | sn62 Ridges | 68.4 | 464 | 2,150 | rtx4090* | 6 | 40% |
-| 9 | sn15 ORO | 67.9 | 10.77 | 20.92 | cpu-small | 66 | 94% |
-| 10 | sn21 AdTAO | 67.7 | 7.71 | 34.54 | cpu-small | 88 | 45% |
-| 11 | sn96 Verathos | 67.6 | 18.29 | 491 | rtx4090 | 69 | 41% |
+| 9 | sn21 AdTAO | 67.7 | 7.74 | 34.66 | cpu-small | 88 | 45% |
+| 10 | sn15 ORO | 67.6 | 10.77 | 20.93 | cpu-small | 66 | 94% |
+| 11 | sn96 Verathos | 67.2 | 16.68 | 464 | rtx4090 | 72 | 41% |
 | 12 | sn38 ChronoLLM | 66.2 | 102 | 1,395 | cpu-small | 10 | 52% |
-| 13 | sn124 Swarm | 65.9 | 226 | 506 | rtx4090* | 24 | 11% |
-| 14 | sn107 Minos | 64.4 | 121 | 33,961 | cpu-small | 20 | 90% |
-| 15 | sn2 DSperse | 62.3 | 73.31 | 160 | rtx4090* | 5 | 82% |
-| 16 | sn55 NIOME | 61.6 | 59.58 | 500 | rtx4090* | 11 | 29% |
-| 17 | sn28 gm | 59.4 | 32.25 | 1,871 | rtx4090* | 43 | 26% |
-| 18 | sn60 Bitsec.ai | 59 | 371 | 371 = | cpu-small | 3 | 50% |
-| 19 | sn74 Gittensor | 58.2 | 23.53 | 208 | rtx4090* | 14 | 63% |
-| 20 | sn102 ConnitoAI | 57.6 | 632 | 1,233 | rtx4090* | 7 | 25% |
+| 13 | sn124 Swarm | 65.9 | 223 | 490 | rtx4090* | 24 | 11% |
+| 14 | sn107 Minos | 64.4 | 119 | 33,870 | cpu-small | 20 | 90% |
+| 15 | sn2 DSperse | 62.9 | 87.56 | 131 | rtx4090* | 5 | 82% |
+| 16 | sn55 NIOME | 61.6 | 59.46 | 500 | rtx4090* | 11 | 29% |
+| 17 | sn28 gm | 61.1 | 53.63 | 2,001 | rtx4090* | 43 | 22% |
+| 18 | sn60 Bitsec.ai | 59 | 374 | 374 = | cpu-small | 3 | 50% |
+| 19 | sn74 Gittensor | 58.2 | 23.36 | 207 | rtx4090* | 14 | 63% |
+| 20 | sn61 RedTeam | 57.5 | 16.94 | 410 | rtx4090* | 82 | 10% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 17 |
-| dominated (60–90%) | 20 |
-| captured (>90%) | 26 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 

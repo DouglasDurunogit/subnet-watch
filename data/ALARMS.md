@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T08:06:33Z, block 8863103
+# ALARMS - generated 2026-08-17T08:59:20Z, block 8863366
 
-window: first_seen in [2026-08-17T06:52:06Z, 2026-08-17T08:07:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T07:44:45Z, 2026-08-17T08:59:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,12 +11,15 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn51:release:executor-v1.120` | 51 | RELEASE | P1 | 2026-08-17T08:07:06Z | sn51 released executor-v1.120 |
 | `sn75:scoring_commit:2026-08-16T20:57:11Z` | 75 | SCORING_COMMIT | P1 | 2026-08-17T08:07:06Z | sn75 commit touches scoring: feat(compute-scoring): root-settable dedicated key for vali submission |
+| `sn85:scoring_commit:2026-08-17T08:37:37Z` | 85 | SCORING_COMMIT | P1 | 2026-08-17T08:59:45Z | sn85 commit touches scoring: reinvite miners rejected with flag INVITATION_DECLINED in comp enroll… |
 
 ### detail
 
 - **`sn51:release:executor-v1.120`** - sn51 released executor-v1.120
   - published 2026-08-17T07:36:57Z (was executor-v1.119)
 - **`sn75:scoring_commit:2026-08-16T20:57:11Z`** - sn75 commit touches scoring: feat(compute-scoring): root-settable dedicated key for vali submission
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn85:scoring_commit:2026-08-17T08:37:37Z`** - sn85 commit touches scoring: reinvite miners rejected with flag INVITATION_DECLINED in comp enroll…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,10 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
-| `sn61:release:4.9.4` | 61 | RELEASE | 2026-08-10T08:13:47Z | sn61 released 4.9.4 |
-| `sn71:scoring_commit:2026-08-10T07:15:30Z` | 71 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn71 commit touches scoring: Gate daily scoring and autoresearch readiness |
-| `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |
-| `sn96:scoring_commit:2026-08-10T06:32:26Z` | 96 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn96 commit touches scoring: fix: resume deferred miner updates at idle |
 | `sn56:scoring_commit:2026-08-10T08:27:12Z` | 56 | SCORING_COMMIT | 2026-08-10T09:57:17Z | sn56 commit touches scoring: Fix degenerate-dataset filter for DPO boss-round tasks (#1344) |
 | `sn89:scoring_commit:2026-08-10T11:35:10Z` | 89 | SCORING_COMMIT | 2026-08-10T12:08:05Z | sn89 commit touches scoring: hf: import time — hf_scoring_config() raised NameError on every bare … |
 | `sn51:release:executor-v1.116` | 51 | RELEASE | 2026-08-10T13:54:33Z | sn51 released executor-v1.116 |

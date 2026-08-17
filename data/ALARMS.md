@@ -1,26 +1,18 @@
-# ALARMS - generated 2026-08-17T01:52:10Z, block 8861231
+# ALARMS - generated 2026-08-17T03:09:55Z, block 8861619
 
-window: first_seen in [2026-08-17T00:37:42Z, 2026-08-17T01:52:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T01:55:20Z, 2026-08-17T03:10:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-16T23:14:51Z` | 71 | SCORING_COMMIT | P1 | 2026-08-17T01:52:42Z | sn71 commit touches scoring: Bound validator worker startup verification |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-16T23:14:51Z`** - sn71 commit touches scoring: Bound validator worker startup verification
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn58:burn_drop:0.000` | 58 | BURN_DROP | 2026-08-10T03:01:40Z | sn58 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
@@ -33,8 +25,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn89:scoring_commit:2026-08-10T02:26:54Z` | 89 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn89 commit touches scoring: Retire MINER_EMISSION_CAP, and make it replay-safe on the way out |
-| `sn92:scoring_commit:2026-08-10T00:47:03Z` | 92 | SCORING_COMMIT | 2026-08-10T03:01:40Z | sn92 commit touches scoring: Tell a validator when no directive exists rather than blaming its buil |
 | `sn91:scoring_commit:2026-08-10T04:06:38Z` | 91 | SCORING_COMMIT | 2026-08-10T06:20:21Z | sn91 commit touches scoring: miner: `cascade duel` — full settled-round verdict from public receipt |
 | `sn96:release:v0.1.33 - Maximum-Concurrency Proof Serv` | 96 | RELEASE | 2026-08-10T06:20:21Z | sn96 released v0.1.33 - Maximum-Concurrency Proof Serving |
 | `sn61:release:4.9.4` | 61 | RELEASE | 2026-08-10T08:13:47Z | sn61 released 4.9.4 |
@@ -167,6 +157,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn100:release:v3.3.24` | 100 | RELEASE | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
+| `sn71:scoring_commit:2026-08-16T23:14:51Z` | 71 | SCORING_COMMIT | 2026-08-17T01:52:42Z | sn71 commit touches scoring: Bound validator worker startup verification |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T05:59:31Z, block 8862467
+# ALARMS - generated 2026-08-17T07:12:40Z, block 8862833
 
-window: first_seen in [2026-08-17T04:45:04Z, 2026-08-17T06:00:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T05:58:13Z, 2026-08-17T07:13:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -35,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
-| `sn91:scoring_commit:2026-08-10T04:06:38Z` | 91 | SCORING_COMMIT | 2026-08-10T06:20:21Z | sn91 commit touches scoring: miner: `cascade duel` — full settled-round verdict from public receipt |
-| `sn96:release:v0.1.33 - Maximum-Concurrency Proof Serv` | 96 | RELEASE | 2026-08-10T06:20:21Z | sn96 released v0.1.33 - Maximum-Concurrency Proof Serving |
 | `sn61:release:4.9.4` | 61 | RELEASE | 2026-08-10T08:13:47Z | sn61 released 4.9.4 |
 | `sn71:scoring_commit:2026-08-10T07:15:30Z` | 71 | SCORING_COMMIT | 2026-08-10T08:13:47Z | sn71 commit touches scoring: Gate daily scoring and autoresearch readiness |
 | `sn96:release:Verathos v0.1.34 — Reliable Miner Update` | 96 | RELEASE | 2026-08-10T08:13:47Z | sn96 released Verathos v0.1.34 — Reliable Miner Updates |

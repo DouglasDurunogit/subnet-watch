@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T20:03:04Z, block 8866685
+# ALARMS - generated 2026-08-17T20:38:56Z, block 8866864
 
-window: first_seen in [2026-08-17T18:48:37Z, 2026-08-17T20:03:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T19:24:29Z, 2026-08-17T20:39:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | P1 | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
 | `sn51:release:executor-v1.121` | 51 | RELEASE | P1 | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
 | `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | P1 | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
 
 ### detail
 
-- **`sn21:release:SN21 training bundle (1977 records, refr`** - sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC)
-  - published 2026-08-17T18:05:51Z (was SN21 training bundle)
 - **`sn51:release:executor-v1.121`** - sn51 released executor-v1.121
   - published 2026-08-17T19:07:10Z (was executor-v1.120)
 - **`sn65:scoring_commit:2026-08-14T10:47:05Z`** - sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2
@@ -39,8 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
-| `sn2:release:14.13.3` | 2 | RELEASE | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
-| `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
 | `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
 | `sn91:scoring_commit:2026-08-10T23:24:09Z` | 91 | SCORING_COMMIT | 2026-08-10T23:47:46Z | sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191) |
 | `sn108:scoring_commit:2026-08-10T14:25:47Z` | 108 | SCORING_COMMIT | 2026-08-11T00:40:06Z | sn108 commit touches scoring: merge: the canonical miner script and the subnet-published image |
@@ -164,6 +159,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-17T11:55:09Z` | 111 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots |
 | `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
 | `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
+| `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |

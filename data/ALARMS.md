@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T17:54:58Z, block 8866045
+# ALARMS - generated 2026-08-17T18:54:15Z, block 8866341
 
-window: first_seen in [2026-08-17T16:40:33Z, 2026-08-17T17:55:33Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T17:39:41Z, 2026-08-17T18:54:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,13 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | P1 | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
+| `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | P1 | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | P2 | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-08-17T16:31:51Z`** - sn10 commit touches scoring: feat: better miner commit patch logs (#83)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:release:SN21 training bundle (1977 records, refr`** - sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC)
+  - published 2026-08-17T18:05:51Z (was SN21 training bundle)
 - **`sn123:readme_task_diff:6532d2da519e8960`** - sn123 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -23,7 +23,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn103:burn_drop:0.000` | 103 | BURN_DROP | 2026-08-10T18:24:36Z | sn103 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -163,6 +162,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:scoring_commit:2026-08-17T10:59:02Z` | 85 | SCORING_COMMIT | 2026-08-17T11:12:02Z | sn85 commit touches scoring: treat miner sandbox raised error as miner issue rather than validator… |
 | `sn111:scoring_commit:2026-08-17T11:55:09Z` | 111 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots |
 | `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
+| `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |

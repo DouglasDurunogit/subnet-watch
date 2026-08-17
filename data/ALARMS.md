@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T18:54:15Z, block 8866341
+# ALARMS - generated 2026-08-17T19:36:18Z, block 8866551
 
-window: first_seen in [2026-08-17T17:39:41Z, 2026-08-17T18:54:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T18:21:49Z, 2026-08-17T19:36:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,14 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | P1 | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
-| `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | P2 | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
+| `sn51:release:executor-v1.121` | 51 | RELEASE | P1 | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
+| `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | P1 | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
 
 ### detail
 
 - **`sn21:release:SN21 training bundle (1977 records, refr`** - sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC)
   - published 2026-08-17T18:05:51Z (was SN21 training bundle)
-- **`sn123:readme_task_diff:6532d2da519e8960`** - sn123 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn51:release:executor-v1.121`** - sn51 released executor-v1.121
+  - published 2026-08-17T19:07:10Z (was executor-v1.120)
+- **`sn65:scoring_commit:2026-08-14T10:47:05Z`** - sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
-| `sn97:scoring_commit:2026-08-10T18:23:39Z` | 97 | SCORING_COMMIT | 2026-08-10T19:31:19Z | sn97 commit touches scoring: feat: add discarded questions to scoring artifact |
-| `sn100:release:v3.3.15 — seal epoch sync + Prism submit` | 100 | RELEASE | 2026-08-10T19:31:19Z | sn100 released v3.3.15 — seal epoch sync + Prism submitter WTA |
 | `sn2:release:14.13.3` | 2 | RELEASE | 2026-08-10T20:26:15Z | sn2 released 14.13.3 |
 | `sn100:release:v3.3.16 — design emit cold-start + perma` | 100 | RELEASE | 2026-08-10T20:26:15Z | sn100 released v3.3.16 — design emit cold-start + permanent seal-sync digests |
 | `sn56:scoring_commit:2026-08-10T22:40:49Z` | 56 | SCORING_COMMIT | 2026-08-10T22:55:47Z | sn56 commit touches scoring: Block tournament advancement when a group has no valid scores (#1349) |
@@ -178,6 +179,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
+| `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

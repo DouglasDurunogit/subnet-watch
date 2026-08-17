@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-17T13:50:18Z, block 8864821
+# ALARMS - generated 2026-08-17T14:39:11Z, block 8865066
 
-window: first_seen in [2026-08-17T12:35:51Z, 2026-08-17T13:50:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T13:26:30Z, 2026-08-17T14:41:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn111:scoring_commit:2026-08-17T11:55:09Z` | 111 | SCORING_COMMIT | P1 | 2026-08-17T13:03:27Z | sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots |
-| `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | P1 | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
-
-### detail
-
-- **`sn111:scoring_commit:2026-08-17T11:55:09Z`** - sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-08-17T12:09:26Z`** - sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,12 +26,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
-| `sn51:release:executor-v1.116` | 51 | RELEASE | 2026-08-10T13:54:33Z | sn51 released executor-v1.116 |
-| `sn66:scoring_commit:2026-08-10T13:20:05Z` | 66 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn66 commit touches scoring: Merge pull request #35 from conjectures-io/feat/show-retired-tasks |
-| `sn67:scoring_commit:2026-08-10T12:29:01Z` | 67 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260810.post5 |
-| `sn75:scoring_commit:2026-08-10T13:09:53Z` | 75 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn75 commit touches scoring: Merge pull request #36 from thenervelab/feat/arion-miner-payments |
-| `sn120:scoring_commit:2026-08-10T12:09:35Z` | 120 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn120 commit touches scoring: Raise duel max_model_len to 65k and stop burning miners on context-li… |
-| `sn124:scoring_commit:2026-08-10T13:51:15Z` | 124 | SCORING_COMMIT | 2026-08-10T13:54:33Z | sn124 commit touches scoring: Report seed scores under the epoch that leased them |
 | `sn66:scoring_commit:2026-08-10T14:15:27Z` | 66 | SCORING_COMMIT | 2026-08-10T15:13:27Z | sn66 commit touches scoring: Merge pull request #36 from conjectures-io/feat/show-retired-tasks |
 | `sn2:release:14.13.2` | 2 | RELEASE | 2026-08-10T16:22:50Z | sn2 released 14.13.2 |
 | `sn120:scoring_commit:2026-08-10T15:52:21Z` | 120 | SCORING_COMMIT | 2026-08-10T16:22:50Z | sn120 commit touches scoring: Reason v3: single-term scoring fork (weight_version_key=3) |
@@ -170,6 +154,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:scoring_commit:2026-08-17T10:23:08Z` | 85 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo… |
 | `sn114:scoring_commit:2026-08-17T09:54:21Z` | 114 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn114 commit touches scoring: perf(validator): reduce validator write contention |
 | `sn85:scoring_commit:2026-08-17T10:59:02Z` | 85 | SCORING_COMMIT | 2026-08-17T11:12:02Z | sn85 commit touches scoring: treat miner sandbox raised error as miner issue rather than validator… |
+| `sn111:scoring_commit:2026-08-17T11:55:09Z` | 111 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots |
+| `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
 | `sn107:readme_task_diff:9628fd9429b582ad` | 107 | README_TASK_DIFF | 2026-08-10T15:13:27Z | sn107 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |

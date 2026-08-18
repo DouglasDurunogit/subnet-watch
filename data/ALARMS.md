@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T21:35:10Z, block 8874346
+# ALARMS - generated 2026-08-18T22:00:57Z, block 8874474
 
-window: first_seen in [2026-08-18T20:20:40Z, 2026-08-18T21:35:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T20:46:27Z, 2026-08-18T22:01:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:burn_drop:0.838` | 108 | BURN_DROP | P0 | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
-| `sn111:scoring_commit:2026-08-18T20:20:14Z` | 111 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support |
-| `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
 | `sn81:scoring_commit:2026-08-18T20:37:01Z` | 81 | SCORING_COMMIT | P1 | 2026-08-18T21:04:08Z | sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0 |
 | `sn71:scoring_commit:2026-08-18T21:09:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-18T21:35:40Z | sn71 commit touches scoring: Verify restored parity database contract |
 
 ### detail
 
-- **`sn108:burn_drop:0.838`** - sn108 burn fell 1.000 -> 0.838 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn111:scoring_commit:2026-08-18T20:20:14Z`** - sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-08-18T20:00:48Z`** - sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs.
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn81:scoring_commit:2026-08-18T20:37:01Z`** - sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-18T21:09:08Z`** - sn71 commit touches scoring: Verify restored parity database contract
@@ -44,6 +35,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
+| `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
 | `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
 | `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
@@ -180,6 +172,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-08-18T18:29:41Z` | 15 | SCORING_COMMIT | 2026-08-18T19:07:17Z | sn15 commit touches scoring: docs(miner-guide): note that find_product q matches values, not keys … |
 | `sn75:scoring_commit:2026-08-18T19:33:43Z` | 75 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners |
 | `sn108:scoring_commit:2026-08-18T19:13:55Z` | 108 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key |
+| `sn111:scoring_commit:2026-08-18T20:20:14Z` | 111 | SCORING_COMMIT | 2026-08-18T20:36:36Z | sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support |
+| `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

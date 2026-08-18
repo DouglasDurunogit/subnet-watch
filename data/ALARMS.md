@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T17:38:29Z, block 8873162
+# ALARMS - generated 2026-08-18T18:13:15Z, block 8873336
 
-window: first_seen in [2026-08-18T16:24:02Z, 2026-08-18T17:39:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T16:58:46Z, 2026-08-18T18:13:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-18T16:03:58Z` | 21 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s… |
-| `sn92:scoring_commit:2026-08-18T12:27:47Z` | 92 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn92 commit touches scoring: Correct the loopback sample output in the validator guide |
 | `sn21:scoring_commit:2026-08-18T17:28:33Z` | 21 | SCORING_COMMIT | P1 | 2026-08-18T17:39:02Z | sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss… |
 | `sn25:release:v2026.8.17-1021635350` | 25 | RELEASE | P1 | 2026-08-18T17:39:02Z | sn25 released v2026.8.17-1021635350 |
 | `sn25:scoring_commit:2026-08-04T21:03:12Z` | 25 | SCORING_COMMIT | P1 | 2026-08-18T17:39:02Z | sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u… |
-| `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | P2 | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
+| `sn62:scoring_commit:2026-08-18T17:56:49Z` | 62 | SCORING_COMMIT | P1 | 2026-08-18T18:13:46Z | sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator |
 | `sn25:readme_task_diff:1a67cd5991549ed6` | 25 | README_TASK_DIFF | P2 | 2026-08-18T17:39:02Z | sn25 README task/scoring sections changed |
 | `sn108:readme_task_diff:440d4dcceb14f6b4` | 108 | README_TASK_DIFF | P2 | 2026-08-18T17:39:02Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-18T16:03:58Z`** - sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-18T12:27:47Z`** - sn92 commit touches scoring: Correct the loopback sample output in the validator guide
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:scoring_commit:2026-08-18T17:28:33Z`** - sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:release:v2026.8.17-1021635350`** - sn25 released v2026.8.17-1021635350
   - published 2026-08-17T10:49:05Z (was Mainframe v3.0.0)
 - **`sn25:scoring_commit:2026-08-04T21:03:12Z`** - sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:readme_task_diff:c2e913dd2e41d4bb`** - sn92 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn62:scoring_commit:2026-08-18T17:56:49Z`** - sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:readme_task_diff:1a67cd5991549ed6`** - sn25 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 - **`sn108:readme_task_diff:440d4dcceb14f6b4`** - sn108 README task/scoring sections changed
@@ -183,6 +177,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-18T14:52:43Z` | 108 | SCORING_COMMIT | 2026-08-18T15:42:54Z | sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score |
 | `sn96:release:Verathos v0.1.41 - Bounded Replay and Ru` | 96 | RELEASE | 2026-08-18T16:12:17Z | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
 | `sn96:scoring_commit:2026-08-18T12:39:12Z` | 96 | SCORING_COMMIT | 2026-08-18T16:12:17Z | sn96 commit touches scoring: fix: prevent validator-created audit overlap |
+| `sn21:scoring_commit:2026-08-18T16:03:58Z` | 21 | SCORING_COMMIT | 2026-08-18T16:57:50Z | sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s… |
+| `sn92:scoring_commit:2026-08-18T12:27:47Z` | 92 | SCORING_COMMIT | 2026-08-18T16:57:50Z | sn92 commit touches scoring: Correct the loopback sample output in the validator guide |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
@@ -200,6 +196,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
 | `sn33:readme_task_diff:a91e45ad8067f8f2` | 33 | README_TASK_DIFF | 2026-08-18T14:48:11Z | sn33 README task/scoring sections changed |
+| `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

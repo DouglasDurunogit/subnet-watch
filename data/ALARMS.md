@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T19:39:50Z, block 8873769
+# ALARMS - generated 2026-08-18T20:00:41Z, block 8873873
 
-window: first_seen in [2026-08-18T18:25:34Z, 2026-08-18T19:40:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T18:46:25Z, 2026-08-18T20:01:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -41,7 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
-| `sn71:scoring_commit:2026-08-11T18:25:04Z` | 71 | SCORING_COMMIT | 2026-08-11T19:50:00Z | sn71 commit touches scoring: Reuse bounded artifact verification sessions |
 | `sn62:scoring_commit:2026-08-11T20:08:25Z` | 62 | SCORING_COMMIT | 2026-08-11T22:58:25Z | sn62 commit touches scoring: update validator api changes |
 | `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
 | `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |

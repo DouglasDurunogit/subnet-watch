@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T19:06:45Z, block 8873604
+# ALARMS - generated 2026-08-18T19:39:50Z, block 8873769
 
-window: first_seen in [2026-08-18T17:52:17Z, 2026-08-18T19:07:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T18:25:34Z, 2026-08-18T19:40:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:scoring_commit:2026-08-18T17:56:49Z` | 62 | SCORING_COMMIT | P1 | 2026-08-18T18:13:46Z | sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator |
 | `sn15:scoring_commit:2026-08-18T18:29:41Z` | 15 | SCORING_COMMIT | P1 | 2026-08-18T19:07:17Z | sn15 commit touches scoring: docs(miner-guide): note that find_product q matches values, not keys … |
+| `sn75:scoring_commit:2026-08-18T19:33:43Z` | 75 | SCORING_COMMIT | P1 | 2026-08-18T19:40:34Z | sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners |
+| `sn108:scoring_commit:2026-08-18T19:13:55Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T19:40:34Z | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key |
 | `sn108:readme_task_diff:fa8dc13fe8c76401` | 108 | README_TASK_DIFF | P2 | 2026-08-18T19:07:17Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn62:scoring_commit:2026-08-18T17:56:49Z`** - sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn15:scoring_commit:2026-08-18T18:29:41Z`** - sn15 commit touches scoring: docs(miner-guide): note that find_product q matches values, not keys …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn75:scoring_commit:2026-08-18T19:33:43Z`** - sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-18T19:13:55Z`** - sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:readme_task_diff:fa8dc13fe8c76401`** - sn108 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -171,6 +174,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-18T17:28:33Z` | 21 | SCORING_COMMIT | 2026-08-18T17:39:02Z | sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss… |
 | `sn25:release:v2026.8.17-1021635350` | 25 | RELEASE | 2026-08-18T17:39:02Z | sn25 released v2026.8.17-1021635350 |
 | `sn25:scoring_commit:2026-08-04T21:03:12Z` | 25 | SCORING_COMMIT | 2026-08-18T17:39:02Z | sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u… |
+| `sn62:scoring_commit:2026-08-18T17:56:49Z` | 62 | SCORING_COMMIT | 2026-08-18T18:13:46Z | sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

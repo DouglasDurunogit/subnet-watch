@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T05:01:56Z, block 8869379
+# ALARMS - generated 2026-08-18T05:41:02Z, block 8869575
 
-window: first_seen in [2026-08-18T03:47:26Z, 2026-08-18T05:02:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T04:26:33Z, 2026-08-18T05:41:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,16 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | P1 | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
-| `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | P1 | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | P2 | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 
 ### detail
 
-- **`sn91:release:pre-decay-wsd-contract`** - sn91 released pre-decay-wsd-contract
-  - published 2026-08-15T11:02:58Z (was worker-v0.5.0)
-- **`sn91:scoring_commit:2026-08-15T10:55:48Z`** - sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat`
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn91:readme_task_diff:465231d881190999`** - sn91 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -166,6 +160,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
 | `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
+| `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
+| `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-18T05:01:56Z · block 8869379 · run_status **ok**_
+_snapshot 2026-08-18T05:41:02Z · block 8869575 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **53** | income beats machine cost |
-| New events this window | 3 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 63 | `████████████████████████████` |
-| 0–0.2 | 4 | `██` |
-| 0.2–0.4 | 3 | `█` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 2 | `█` |
 | 0.4–0.6 | 8 | `████` |
 | 0.6–0.8 | 6 | `███` |
 | 0.8–0.99 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 78.2 | 98.68 | 191 | cpu-small | 10 | 20% |
-| 2 | sn67 Harnyx | 71.8 | 19.53 | 367 | cpu-small | 129 | 11% |
-| 3 | sn54 Yanez | 71 | 990 | 990 = | a4000 | 3 | 60% |
-| 4 | sn26 Perturb | 70.7 | 39.44 | 72.41 | rtx3060 | 10 | 70% |
-| 5 | sn1 Apex | 70.5 | 860 | 1,033 | rtx4090* | 4 | 53% |
-| 6 | sn41 Almanac | 69.1 | 10.73 | 46.95 | cpu-small | 74 | 67% |
-| 7 | sn91 cascade | 68.7 | 508 | 2,058 | rtx4090* | 5 | 51% |
-| 8 | sn62 Ridges | 68.4 | 454 | 2,104 | rtx4090* | 6 | 40% |
-| 9 | sn56 Gradients | 67.8 | 382 | 933 | rtx4090* | 8 | 68% |
-| 10 | sn21 AdTAO | 67.8 | 7.82 | 34.97 | cpu-small | 88 | 45% |
-| 11 | sn38 ChronoLLM | 67.6 | 149 | 3,164 | cpu-small | 10 | 52% |
-| 12 | sn15 ORO | 67.3 | 9.70 | 19.58 | cpu-small | 65 | 95% |
-| 13 | sn96 Verathos | 67.1 | 16.38 | 432 | rtx4090 | 77 | 41% |
-| 14 | sn11 TrajectoryRL | 67 | 4,088 | 4,088 = | cpu-small | 1 | 100% |
-| 15 | sn124 Swarm | 65.8 | 221 | 672 | rtx4090* | 24 | 11% |
-| 16 | sn85 Vidaio | 64.2 | 130 | 1,293 | rtx4090* | 13 | 42% |
-| 17 | sn107 Minos | 64.1 | 112 | 33,271 | cpu-small | 20 | 90% |
-| 18 | sn98 NeverPlayAlone | 64 | 1,655 | 1,655 = | cpu-small | 1 | 100% |
-| 19 | sn55 NIOME | 61.6 | 59.19 | 486 | rtx4090* | 11 | 29% |
-| 20 | sn28 gm | 59.5 | 33.00 | 2,129 | rtx4090* | 41 | 27% |
+| 1 | sn76 Phylax | 78.1 | 97.73 | 189 | cpu-small | 10 | 20% |
+| 2 | sn67 Harnyx | 71.7 | 19.33 | 363 | cpu-small | 129 | 11% |
+| 3 | sn54 Yanez | 71 | 985 | 985 = | a4000 | 3 | 60% |
+| 4 | sn26 Perturb | 70.7 | 39.22 | 72.02 | rtx3060 | 10 | 70% |
+| 5 | sn1 Apex | 70.5 | 854 | 1,025 | rtx4090* | 4 | 53% |
+| 6 | sn41 Almanac | 69.1 | 10.67 | 46.69 | cpu-small | 74 | 67% |
+| 7 | sn91 cascade | 68.7 | 506 | 2,048 | rtx4090* | 5 | 51% |
+| 8 | sn62 Ridges | 68.4 | 453 | 2,098 | rtx4090* | 6 | 40% |
+| 9 | sn56 Gradients | 67.8 | 380 | 929 | rtx4090* | 8 | 68% |
+| 10 | sn21 AdTAO | 67.8 | 7.77 | 34.80 | cpu-small | 88 | 45% |
+| 11 | sn15 ORO | 67.6 | 9.68 | 19.54 | cpu-small | 65 | 95% |
+| 12 | sn38 ChronoLLM | 67.5 | 149 | 3,154 | cpu-small | 10 | 52% |
+| 13 | sn96 Verathos | 67.1 | 16.27 | 430 | rtx4090 | 77 | 41% |
+| 14 | sn11 TrajectoryRL | 67 | 4,076 | 4,076 = | cpu-small | 1 | 100% |
+| 15 | sn124 Swarm | 65.8 | 220 | 669 | rtx4090* | 24 | 11% |
+| 16 | sn85 Vidaio | 64.2 | 130 | 1,300 | rtx4090* | 13 | 42% |
+| 17 | sn107 Minos | 64.1 | 111 | 33,132 | cpu-small | 20 | 90% |
+| 18 | sn98 NeverPlayAlone | 64 | 1,648 | 1,648 = | cpu-small | 1 | 100% |
+| 19 | sn55 NIOME | 61.6 | 59.20 | 486 | rtx4090* | 11 | 29% |
+| 20 | sn28 gm | 60.6 | 46.09 | 2,284 | rtx4090* | 41 | 24% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;

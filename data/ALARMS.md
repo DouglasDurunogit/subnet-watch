@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T13:54:58Z, block 8872045
+# ALARMS - generated 2026-08-18T14:47:45Z, block 8872308
 
-window: first_seen in [2026-08-18T12:40:30Z, 2026-08-18T13:55:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T13:33:11Z, 2026-08-18T14:48:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:burn_drop:0.825` | 2 | BURN_DROP | P0 | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn81:scoring_commit:2026-08-18T07:52:08Z` | 81 | SCORING_COMMIT | P1 | 2026-08-18T13:55:30Z | sn81 commit touches scoring: test: lock v4 canonical reward flow |
 | `sn108:scoring_commit:2026-08-18T13:35:17Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T13:55:30Z | sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500 |
+| `sn1:release:v4.3.3` | 1 | RELEASE | P1 | 2026-08-18T14:48:11Z | sn1 released v4.3.3 |
+| `sn23:scoring_commit:2026-08-18T14:09:05Z` | 23 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn23 commit touches scoring: Merge pull request #47 from TrishoolAI/feat/challenge-creation |
+| `sn28:release:v0.4.5` | 28 | RELEASE | P1 | 2026-08-18T14:48:11Z | sn28 released v0.4.5 |
+| `sn28:scoring_commit:2026-08-18T14:43:57Z` | 28 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn28 commit touches scoring: Release gm-miner v0.4.5 |
+| `sn33:scoring_commit:2026-08-18T14:35:53Z` | 33 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn33 commit touches scoring: Merge pull request #135 from afterpartyai/Feat-Add-Skills-Cov-task |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | P2 | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
+| `sn33:readme_task_diff:a91e45ad8067f8f2` | 33 | README_TASK_DIFF | P2 | 2026-08-18T14:48:11Z | sn33 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:burn_drop:0.825`** - sn2 burn fell 1.000 -> 0.825 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn81:scoring_commit:2026-08-18T07:52:08Z`** - sn81 commit touches scoring: test: lock v4 canonical reward flow
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-18T13:35:17Z`** - sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.3.3`** - sn1 released v4.3.3
+  - published 2026-08-18T14:06:51Z (was v4.3.1)
+- **`sn23:scoring_commit:2026-08-18T14:09:05Z`** - sn23 commit touches scoring: Merge pull request #47 from TrishoolAI/feat/challenge-creation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.5`** - sn28 released v0.4.5
+  - published 2026-08-18T14:47:47Z (was v0.4.4)
+- **`sn28:scoring_commit:2026-08-18T14:43:57Z`** - sn28 commit touches scoring: Release gm-miner v0.4.5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn33:scoring_commit:2026-08-18T14:35:53Z`** - sn33 commit touches scoring: Merge pull request #135 from afterpartyai/Feat-Add-Skills-Cov-task
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:readme_task_diff:19f7089d5cc9e961`** - sn108 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn33:readme_task_diff:a91e45ad8067f8f2`** - sn33 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -42,6 +57,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
+| `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn1:release:v4.2.22` | 1 | RELEASE | 2026-08-11T15:13:24Z | sn1 released v4.2.22 |
 | `sn28:release:v0.4.2-dev` | 28 | RELEASE | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
 | `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |

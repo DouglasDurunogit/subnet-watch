@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-18T23:02:59Z  |  block: 8874785  |  row_status: ok
+snapshot_utc: 2026-08-18T23:33:11Z  |  block: 8874936  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.09523999999999999 USD), open=True
+- registration cost: 0.0005 TAO (0.09533499999999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 65  |  free: 0
-- subnet age: 1027.4 days  |  registered at block 1477264
+- subnet age: 1027.5 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2682.0569894896553** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.24282996735986018
-- top_miner_usd_day: 10213.67125712308 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2685.628607293939** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.24308731058055202
+- top_miner_usd_day: 10223.036846465116 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 52  |  gini: 0.9428654207209606  |  top1_share: 0.6420252468975624  |  top10_share: 0.9989620380687803
+- earners: 52  |  gini: 0.9428495529502934  |  top1_share: 0.6419140654811875  |  top10_share: 0.998962069755018
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-18T23:02:59Z  |  block: 8874785  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.9763 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.9761 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

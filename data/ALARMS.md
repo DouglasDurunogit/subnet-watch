@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T04:20:34Z, block 8869173
+# ALARMS - generated 2026-08-18T05:01:56Z, block 8869379
 
-window: first_seen in [2026-08-18T03:06:04Z, 2026-08-18T04:21:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T03:47:26Z, 2026-08-18T05:02:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | P1 | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
 | `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | P1 | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
+| `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | P2 | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 
 ### detail
 
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
   - published 2026-08-15T11:02:58Z (was worker-v0.5.0)
 - **`sn91:scoring_commit:2026-08-15T10:55:48Z`** - sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat`
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:readme_task_diff:465231d881190999`** - sn91 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
-| `sn91:scoring_commit:2026-08-11T03:25:57Z` | 91 | SCORING_COMMIT | 2026-08-11T04:36:46Z | sn91 commit touches scoring: validator: record the decided challenger's scores LAST in cohort rece… |
 | `sn61:release:4.9.6` | 61 | RELEASE | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
 | `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
 | `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T14:47:45Z, block 8872308
+# ALARMS - generated 2026-08-18T15:42:24Z, block 8872582
 
-window: first_seen in [2026-08-18T13:33:11Z, 2026-08-18T14:48:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T14:27:54Z, 2026-08-18T15:42:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,22 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn81:scoring_commit:2026-08-18T07:52:08Z` | 81 | SCORING_COMMIT | P1 | 2026-08-18T13:55:30Z | sn81 commit touches scoring: test: lock v4 canonical reward flow |
-| `sn108:scoring_commit:2026-08-18T13:35:17Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T13:55:30Z | sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500 |
 | `sn1:release:v4.3.3` | 1 | RELEASE | P1 | 2026-08-18T14:48:11Z | sn1 released v4.3.3 |
 | `sn23:scoring_commit:2026-08-18T14:09:05Z` | 23 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn23 commit touches scoring: Merge pull request #47 from TrishoolAI/feat/challenge-creation |
 | `sn28:release:v0.4.5` | 28 | RELEASE | P1 | 2026-08-18T14:48:11Z | sn28 released v0.4.5 |
 | `sn28:scoring_commit:2026-08-18T14:43:57Z` | 28 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn28 commit touches scoring: Release gm-miner v0.4.5 |
 | `sn33:scoring_commit:2026-08-18T14:35:53Z` | 33 | SCORING_COMMIT | P1 | 2026-08-18T14:48:11Z | sn33 commit touches scoring: Merge pull request #135 from afterpartyai/Feat-Add-Skills-Cov-task |
-| `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | P2 | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
+| `sn53:scoring_commit:2026-08-18T15:05:58Z` | 53 | SCORING_COMMIT | P1 | 2026-08-18T15:42:54Z | sn53 commit touches scoring: miner: tee_miner, a pure gateway leg with provider-assigned identity … |
+| `sn108:scoring_commit:2026-08-18T14:52:43Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T15:42:54Z | sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score |
 | `sn33:readme_task_diff:a91e45ad8067f8f2` | 33 | README_TASK_DIFF | P2 | 2026-08-18T14:48:11Z | sn33 README task/scoring sections changed |
 
 ### detail
 
-- **`sn81:scoring_commit:2026-08-18T07:52:08Z`** - sn81 commit touches scoring: test: lock v4 canonical reward flow
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-18T13:35:17Z`** - sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn1:release:v4.3.3`** - sn1 released v4.3.3
   - published 2026-08-18T14:06:51Z (was v4.3.1)
 - **`sn23:scoring_commit:2026-08-18T14:09:05Z`** - sn23 commit touches scoring: Merge pull request #47 from TrishoolAI/feat/challenge-creation
@@ -35,8 +30,10 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn33:scoring_commit:2026-08-18T14:35:53Z`** - sn33 commit touches scoring: Merge pull request #135 from afterpartyai/Feat-Add-Skills-Cov-task
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:readme_task_diff:19f7089d5cc9e961`** - sn108 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn53:scoring_commit:2026-08-18T15:05:58Z`** - sn53 commit touches scoring: miner: tee_miner, a pure gateway leg with provider-assigned identity …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-18T14:52:43Z`** - sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn33:readme_task_diff:a91e45ad8067f8f2`** - sn33 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -58,10 +55,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
-| `sn1:release:v4.2.22` | 1 | RELEASE | 2026-08-11T15:13:24Z | sn1 released v4.2.22 |
-| `sn28:release:v0.4.2-dev` | 28 | RELEASE | 2026-08-11T15:13:24Z | sn28 released v0.4.2-dev |
-| `sn111:scoring_commit:2026-08-11T14:44:28Z` | 111 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn111 commit touches scoring: Improve Silver adjudication and scoring |
-| `sn124:scoring_commit:2026-08-11T14:19:50Z` | 124 | SCORING_COMMIT | 2026-08-11T15:13:24Z | sn124 commit touches scoring: Merge per-process validator session and version 5.1.1.1 |
 | `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
 | `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
 | `sn28:release:v0.4.3-dev` | 28 | RELEASE | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
@@ -186,6 +179,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
 | `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
 | `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
+| `sn81:scoring_commit:2026-08-18T07:52:08Z` | 81 | SCORING_COMMIT | 2026-08-18T13:55:30Z | sn81 commit touches scoring: test: lock v4 canonical reward flow |
+| `sn108:scoring_commit:2026-08-18T13:35:17Z` | 108 | SCORING_COMMIT | 2026-08-18T13:55:30Z | sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500 |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
@@ -201,6 +196,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
+| `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T06:16:06Z, block 8869750
+# ALARMS - generated 2026-08-18T07:13:48Z, block 8870039
 
-window: first_seen in [2026-08-18T05:01:33Z, 2026-08-18T06:16:33Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T05:59:18Z, 2026-08-18T07:14:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | P2 | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
+| `sn85:scoring_commit:2026-08-18T06:57:35Z` | 85 | SCORING_COMMIT | P1 | 2026-08-18T07:14:18Z | sn85 commit touches scoring: debug VBR scoring in compression competitions (#196) |
+| `sn89:scoring_commit:2026-08-18T07:04:57Z` | 89 | SCORING_COMMIT | P1 | 2026-08-18T07:14:18Z | sn89 commit touches scoring: hf board: keep a re-rolled miner's retired hotkey attributed to its o… |
 
 ### detail
 
-- **`sn91:readme_task_diff:465231d881190999`** - sn91 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn85:scoring_commit:2026-08-18T06:57:35Z`** - sn85 commit touches scoring: debug VBR scoring in compression competitions (#196)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-18T07:04:57Z`** - sn89 commit touches scoring: hf board: keep a re-rolled miner's retired hotkey attributed to its o…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -177,6 +180,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
+| `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

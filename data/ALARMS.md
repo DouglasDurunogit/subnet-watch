@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T10:13:08Z, block 8870935
+# ALARMS - generated 2026-08-18T10:55:30Z, block 8871147
 
-window: first_seen in [2026-08-18T08:58:44Z, 2026-08-18T10:13:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T09:40:56Z, 2026-08-18T10:55:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,16 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | P1 | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
+| `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
+| `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
 
 ### detail
 
 - **`sn67:scoring_commit:2026-08-18T06:10:26Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn65:scoring_commit:2026-08-18T10:41:48Z`** - sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-18T10:35:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

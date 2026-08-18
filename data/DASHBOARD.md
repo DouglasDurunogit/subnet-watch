@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-18T10:13:08Z · block 8870935 · run_status **ok**_
+_snapshot 2026-08-18T10:55:30Z · block 8871147 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **50** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 78.2 | 98.48 | 190 | cpu-small | 10 | 20% |
-| 2 | sn67 Harnyx | 71.8 | 19.99 | 426 | cpu-small | 124 | 13% |
-| 3 | sn26 Perturb | 70.7 | 39.57 | 72.64 | rtx3060 | 10 | 70% |
+| 1 | sn76 Phylax | 78.2 | 98.78 | 191 | cpu-small | 10 | 20% |
+| 2 | sn67 Harnyx | 71.9 | 20.10 | 428 | cpu-small | 124 | 13% |
+| 3 | sn26 Perturb | 70.7 | 39.69 | 72.87 | rtx3060 | 10 | 70% |
 | 4 | sn1 Apex | 70.4 | 840 | 1,095 | rtx4090* | 4 | 52% |
-| 5 | sn41 Almanac | 69.2 | 10.89 | 55.28 | cpu-small | 74 | 66% |
-| 6 | sn91 cascade | 68.8 | 514 | 2,083 | rtx4090* | 5 | 51% |
-| 7 | sn62 Ridges | 68.4 | 456 | 2,113 | rtx4090* | 6 | 40% |
-| 8 | sn56 Gradients | 67.8 | 382 | 935 | rtx4090* | 8 | 68% |
-| 9 | sn21 AdTAO | 67.8 | 7.86 | 35.14 | cpu-small | 88 | 45% |
-| 10 | sn15 ORO | 67.7 | 10.35 | 12,536 | cpu-small | 67 | 95% |
-| 11 | sn38 ChronoLLM | 67.6 | 150 | 3,180 | cpu-small | 10 | 52% |
-| 12 | sn96 Verathos | 67.5 | 17.93 | 381 | rtx4090 | 74 | 41% |
-| 13 | sn11 TrajectoryRL | 67.1 | 4,129 | 4,129 = | cpu-small | 1 | 100% |
-| 14 | sn124 Swarm | 66.2 | 249 | 755 | rtx4090* | 24 | 11% |
-| 15 | sn28 gm | 64.9 | 161 | 2,457 | rtx4090* | 41 | 26% |
-| 16 | sn107 Minos | 64.2 | 116 | 33,346 | cpu-small | 20 | 90% |
-| 17 | sn85 Vidaio | 63.9 | 121 | 372 | rtx4090* | 13 | 42% |
-| 18 | sn55 NIOME | 61.7 | 60.92 | 510 | rtx4090* | 11 | 30% |
+| 5 | sn41 Almanac | 69.2 | 10.92 | 55.43 | cpu-small | 74 | 66% |
+| 6 | sn91 cascade | 68.8 | 516 | 2,089 | rtx4090* | 5 | 51% |
+| 7 | sn62 Ridges | 68.4 | 457 | 2,119 | rtx4090* | 6 | 40% |
+| 8 | sn96 Verathos | 68 | 20.18 | 392 | rtx4090 | 66 | 41% |
+| 9 | sn56 Gradients | 67.8 | 383 | 938 | rtx4090* | 8 | 68% |
+| 10 | sn21 AdTAO | 67.8 | 7.89 | 35.26 | cpu-small | 88 | 45% |
+| 11 | sn38 ChronoLLM | 67.6 | 150 | 3,190 | cpu-small | 10 | 52% |
+| 12 | sn15 ORO | 67.6 | 10.39 | 12,578 | cpu-small | 67 | 95% |
+| 13 | sn11 TrajectoryRL | 67.1 | 4,162 | 4,162 = | cpu-small | 1 | 100% |
+| 14 | sn124 Swarm | 66.2 | 247 | 749 | rtx4090* | 24 | 11% |
+| 15 | sn28 gm | 64.9 | 161 | 2,452 | rtx4090* | 41 | 26% |
+| 16 | sn107 Minos | 64.1 | 112 | 33,302 | cpu-small | 20 | 90% |
+| 17 | sn85 Vidaio | 63.6 | 111 | 374 | rtx4090* | 13 | 42% |
+| 18 | sn55 NIOME | 61.7 | 61.09 | 512 | rtx4090* | 11 | 30% |
 | 19 | sn102 ConnitoAI | 59.1 | 994 | 1,686 | rtx4090* | 6 | 34% |
-| 20 | sn60 Bitsec.ai | 59 | 372 | 372 = | cpu-small | 3 | 50% |
+| 20 | sn60 Bitsec.ai | 59 | 371 | 371 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
+| wide (<30%) | 26 |
 | concentrated (30–60%) | 20 |
-| dominated (60–90%) | 17 |
+| dominated (60–90%) | 16 |
 | captured (>90%) | 27 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-18T10:55 | sn65 | SCORING_COMMIT | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/doc |
+| 2026-08-18T10:55 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-18T09:46 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-18T08:51 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2702: verify GPU persistence mode aft |
 | 2026-08-18T07:14 | sn85 | SCORING_COMMIT | sn85 commit touches scoring: debug VBR scoring in compression competit |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-17T23:02 | sn14 | RELEASE | sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of |
 | 2026-08-17T22:36 | sn54 | SCORING_COMMIT | sn54 commit touches scoring: updating miner info |
 | 2026-08-17T22:36 | sn62 | RELEASE | sn62 released v0.2.8 |
-| 2026-08-17T21:09 | sn21 | RELEASE | sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08 |
-| 2026-08-17T19:36 | sn51 | RELEASE | sn51 released executor-v1.121 |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T07:13:48Z, block 8870039
+# ALARMS - generated 2026-08-18T08:02:12Z, block 8870281
 
-window: first_seen in [2026-08-18T05:59:18Z, 2026-08-18T07:14:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T06:47:36Z, 2026-08-18T08:02:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -36,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
-| `sn61:release:4.9.6` | 61 | RELEASE | 2026-08-11T07:58:57Z | sn61 released 4.9.6 |
 | `sn85:scoring_commit:2026-08-11T08:12:13Z` | 85 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn85 commit touches scoring: isolate competition batches in separate miner Modal sandboxes (#182) |
 | `sn96:release:Verathos v0.1.35 — Concurrent Proof Serv` | 96 | RELEASE | 2026-08-11T09:11:54Z | sn96 released Verathos v0.1.35 — Concurrent Proof Serving |
 | `sn96:scoring_commit:2026-08-11T08:46:44Z` | 96 | SCORING_COMMIT | 2026-08-11T09:11:54Z | sn96 commit touches scoring: fix: recover shared-checkout miner updates |
@@ -165,7 +164,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
 | `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
 | `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
-| `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T16:57:18Z, block 8872956
+# ALARMS - generated 2026-08-18T17:38:29Z, block 8873162
 
-window: first_seen in [2026-08-18T15:42:50Z, 2026-08-18T16:57:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T16:24:02Z, 2026-08-18T17:39:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,37 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn53:scoring_commit:2026-08-18T15:05:58Z` | 53 | SCORING_COMMIT | P1 | 2026-08-18T15:42:54Z | sn53 commit touches scoring: miner: tee_miner, a pure gateway leg with provider-assigned identity … |
-| `sn108:scoring_commit:2026-08-18T14:52:43Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T15:42:54Z | sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score |
-| `sn96:release:Verathos v0.1.41 - Bounded Replay and Ru` | 96 | RELEASE | P1 | 2026-08-18T16:12:17Z | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
-| `sn96:scoring_commit:2026-08-18T12:39:12Z` | 96 | SCORING_COMMIT | P1 | 2026-08-18T16:12:17Z | sn96 commit touches scoring: fix: prevent validator-created audit overlap |
 | `sn21:scoring_commit:2026-08-18T16:03:58Z` | 21 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s… |
 | `sn92:scoring_commit:2026-08-18T12:27:47Z` | 92 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn92 commit touches scoring: Correct the loopback sample output in the validator guide |
+| `sn21:scoring_commit:2026-08-18T17:28:33Z` | 21 | SCORING_COMMIT | P1 | 2026-08-18T17:39:02Z | sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss… |
+| `sn25:release:v2026.8.17-1021635350` | 25 | RELEASE | P1 | 2026-08-18T17:39:02Z | sn25 released v2026.8.17-1021635350 |
+| `sn25:scoring_commit:2026-08-04T21:03:12Z` | 25 | SCORING_COMMIT | P1 | 2026-08-18T17:39:02Z | sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u… |
 | `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | P2 | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
+| `sn25:readme_task_diff:1a67cd5991549ed6` | 25 | README_TASK_DIFF | P2 | 2026-08-18T17:39:02Z | sn25 README task/scoring sections changed |
+| `sn108:readme_task_diff:440d4dcceb14f6b4` | 108 | README_TASK_DIFF | P2 | 2026-08-18T17:39:02Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn53:scoring_commit:2026-08-18T15:05:58Z`** - sn53 commit touches scoring: miner: tee_miner, a pure gateway leg with provider-assigned identity …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-18T14:52:43Z`** - sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.41 - Bounded Replay and Ru`** - sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability
-  - published 2026-08-18T15:56:35Z (was Verathos v0.1.40 — Capacity Audit Scheduling Stability)
-- **`sn96:scoring_commit:2026-08-18T12:39:12Z`** - sn96 commit touches scoring: fix: prevent validator-created audit overlap
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:scoring_commit:2026-08-18T16:03:58Z`** - sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-18T12:27:47Z`** - sn92 commit touches scoring: Correct the loopback sample output in the validator guide
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-18T17:28:33Z`** - sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.17-1021635350`** - sn25 released v2026.8.17-1021635350
+  - published 2026-08-17T10:49:05Z (was Mainframe v3.0.0)
+- **`sn25:scoring_commit:2026-08-04T21:03:12Z`** - sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:readme_task_diff:c2e913dd2e41d4bb`** - sn92 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn25:readme_task_diff:1a67cd5991549ed6`** - sn25 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn108:readme_task_diff:440d4dcceb14f6b4`** - sn108 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn9:burn_drop:0.950` | 9 | BURN_DROP | 2026-08-11T17:27:32Z | sn9 burn fell 1.000 -> 0.950 - miners can earn again |
-| `sn121:burn_drop:0.635` | 121 | BURN_DROP | 2026-08-11T17:27:32Z | sn121 burn fell 1.000 -> 0.635 - miners can earn again |
 | `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -52,9 +53,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
-| `sn28:release:v0.4.3-dev` | 28 | RELEASE | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
-| `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
-| `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |
 | `sn74:release:release-20260811-182518: chore(weights):` | 74 | RELEASE | 2026-08-11T18:27:58Z | sn74 released release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687) |
 | `sn89:scoring_commit:2026-08-11T17:49:59Z` | 89 | SCORING_COMMIT | 2026-08-11T18:27:58Z | sn89 commit touches scoring: HF: one submission counter for both signers — a hotkey's own miner wa… |
 | `sn71:scoring_commit:2026-08-11T18:25:04Z` | 71 | SCORING_COMMIT | 2026-08-11T19:50:00Z | sn71 commit touches scoring: Reuse bounded artifact verification sessions |
@@ -181,6 +179,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.5` | 28 | RELEASE | 2026-08-18T14:48:11Z | sn28 released v0.4.5 |
 | `sn28:scoring_commit:2026-08-18T14:43:57Z` | 28 | SCORING_COMMIT | 2026-08-18T14:48:11Z | sn28 commit touches scoring: Release gm-miner v0.4.5 |
 | `sn33:scoring_commit:2026-08-18T14:35:53Z` | 33 | SCORING_COMMIT | 2026-08-18T14:48:11Z | sn33 commit touches scoring: Merge pull request #135 from afterpartyai/Feat-Add-Skills-Cov-task |
+| `sn53:scoring_commit:2026-08-18T15:05:58Z` | 53 | SCORING_COMMIT | 2026-08-18T15:42:54Z | sn53 commit touches scoring: miner: tee_miner, a pure gateway leg with provider-assigned identity … |
+| `sn108:scoring_commit:2026-08-18T14:52:43Z` | 108 | SCORING_COMMIT | 2026-08-18T15:42:54Z | sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score |
+| `sn96:release:Verathos v0.1.41 - Bounded Replay and Ru` | 96 | RELEASE | 2026-08-18T16:12:17Z | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
+| `sn96:scoring_commit:2026-08-18T12:39:12Z` | 96 | SCORING_COMMIT | 2026-08-18T16:12:17Z | sn96 commit touches scoring: fix: prevent validator-created audit overlap |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-18T16:57:18Z  |  block: 8872956  |  row_status: ok
+snapshot_utc: 2026-08-18T17:38:29Z  |  block: 8873162  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.09597 USD), open=True
+- registration cost: 0.0005 TAO (0.09609999999999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 64  |  free: 0
 - subnet age: 1027.2 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2797.745824984944** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.25346492344491245
-- top_miner_usd_day: 10664.029724097805 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2803.7598403127827** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.25382580484453954
+- top_miner_usd_day: 10675.913351761332 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 51  |  gini: 0.9417846327712023  |  top1_share: 0.6421986140366944  |  top10_share: 0.9989773178251976
+- earners: 51  |  gini: 0.9417720715810638  |  top1_share: 0.6420099827515151  |  top10_share: 0.9989773022148277
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -28,7 +28,7 @@ snapshot_utc: 2026-08-18T16:57:18Z  |  block: 8872956  |  row_status: ok
 - status: **ok** 
 - README: 8976 bytes, sha a81f478162f7604d
 - latest release: (none) 
-- last commit: 2026-08-17T23:16:03Z
+- last commit: 2026-08-18T17:36:02Z
 - scoring-related commit: create subaccount elimination cache on entity miner (#861) 2026-07-30T22:26:28Z
 
 ## Resources
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-18T16:57:18Z  |  block: 8872956  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.9657 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.9654 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

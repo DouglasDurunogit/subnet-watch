@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T03:31:24Z, block 8868927
+# ALARMS - generated 2026-08-18T04:20:34Z, block 8869173
 
-window: first_seen in [2026-08-18T02:16:56Z, 2026-08-18T03:31:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T03:06:04Z, 2026-08-18T04:21:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v1.2.7` | 15 | RELEASE | P1 | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
+| `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | P1 | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
+| `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | P1 | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
 
 ### detail
 
-- **`sn15:release:v1.2.7`** - sn15 released v1.2.7
-  - published 2026-08-18T02:43:18Z (was v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249))
+- **`sn91:release:pre-decay-wsd-contract`** - sn91 released pre-decay-wsd-contract
+  - published 2026-08-15T11:02:58Z (was worker-v0.5.0)
+- **`sn91:scoring_commit:2026-08-15T10:55:48Z`** - sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat`
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -160,6 +163,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:release:v2-finite-debt-preextraction: Pre-extrac` | 14 | RELEASE | 2026-08-17T23:02:57Z | sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics. |
 | `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
+| `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |

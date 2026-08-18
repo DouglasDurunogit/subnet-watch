@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-18T22:36:50Z  |  block: 8874654  |  row_status: ok
+snapshot_utc: 2026-08-18T23:02:59Z  |  block: 8874785  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.111093373 TAO (21.23994198387 USD), open=True
+- registration cost: 0.097930309 TAO (18.653765258319996 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 251  |  free: 0
-- subnet age: 886.5 days  |  registered at block 2491604
+- subnet age: 886.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 33.16841987359848** (uid 236) <- the only figure quotable as achievable
-- median_miner_usd_day: 31.357175102343955
-- top_miner_usd_day: 33.16841987359848 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 33.01763304771474** (uid 236) <- the only figure quotable as achievable
+- median_miner_usd_day: 31.214622369341242
+- top_miner_usd_day: 33.01763304771474 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-18T22:36:50Z  |  block: 8874654  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 23.138 USD/day  |  payback on registration: 0.92 days
+- net margin: 22.9954 USD/day  |  payback on registration: 0.81 days
 
 ## Score
 
 - gate: **OK** 
-- score: 20.1 (rank 71), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 12.58 / freshness 0.0 / resource 11.25 / registration 9.69
+- score: 20.1 (rank 70), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
+- components: income 12.55 / freshness 0.0 / resource 11.25 / registration 9.73
 - freshness basis: no challenge change on record
 
 ## On-chain description

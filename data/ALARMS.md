@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T10:55:30Z, block 8871147
+# ALARMS - generated 2026-08-18T11:36:00Z, block 8871350
 
-window: first_seen in [2026-08-18T09:40:56Z, 2026-08-18T10:55:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T10:21:30Z, 2026-08-18T11:36:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | P1 | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
 | `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
 | `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-18T06:10:26Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn65:scoring_commit:2026-08-18T10:41:48Z`** - sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-18T10:35:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1
@@ -167,6 +164,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:scoring_commit:2026-08-18T06:57:35Z` | 85 | SCORING_COMMIT | 2026-08-18T07:14:18Z | sn85 commit touches scoring: debug VBR scoring in compression competitions (#196) |
 | `sn89:scoring_commit:2026-08-18T07:04:57Z` | 89 | SCORING_COMMIT | 2026-08-18T07:14:18Z | sn89 commit touches scoring: hf board: keep a re-rolled miner's retired hotkey attributed to its o… |
 | `sn51:scoring_commit:2026-08-18T08:26:35Z` | 51 | SCORING_COMMIT | 2026-08-18T08:51:13Z | sn51 commit touches scoring: DAH-2702: verify GPU persistence mode after -pm 1 in the power cap (#… |
+| `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |

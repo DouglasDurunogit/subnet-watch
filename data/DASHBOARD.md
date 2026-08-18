@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-18T20:00:41Z · block 8873873 · run_status **ok**_
+_snapshot 2026-08-18T20:35:53Z · block 8874049 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 91 | `miner_burn` < 0.99 |
-| Ranked | 91 | passed every gate |
+| Pays miners at all | 92 | `miner_burn` < 0.99 |
+| Ranked | 92 | passed every gate |
 | **Positive margin** | **49** | income beats machine cost |
-| New events this window | 4 | see ALARMS.md |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -34,8 +34,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0.2–0.4 | 3 | `█` |
 | 0.4–0.6 | 6 | `███` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 37 | `████████████████` |
+| 0.8–0.99 | 7 | `███` |
+| ≥0.99 dead | 36 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 78.1 | 97.76 | 189 | cpu-small | 10 | 20% |
-| 2 | sn67 Harnyx | 71.8 | 19.99 | 426 | cpu-small | 131 | 13% |
-| 3 | sn26 Perturb | 70.8 | 40.02 | 73.52 | rtx3060 | 10 | 69% |
-| 4 | sn1 Apex | 70.3 | 805 | 1,086 | rtx4090* | 4 | 53% |
-| 5 | sn56 Gradients | 69.4 | 623 | 926 | rtx4090* | 5 | 72% |
-| 6 | sn91 cascade | 69.2 | 580 | 2,346 | rtx4090* | 5 | 52% |
-| 7 | sn41 Almanac | 69 | 10.50 | 35.83 | cpu-small | 75 | 67% |
-| 8 | sn62 Ridges | 68.3 | 451 | 2,089 | rtx4090* | 6 | 40% |
-| 9 | sn15 ORO | 67.8 | 10.15 | 19.49 | cpu-small | 67 | 95% |
-| 10 | sn38 ChronoLLM | 67.4 | 142 | 3,018 | cpu-small | 10 | 52% |
-| 11 | sn96 Verathos | 66.9 | 15.57 | 411 | rtx4090 | 84 | 41% |
-| 12 | sn21 AdTAO | 65.2 | 4.41 | 575 | cpu-small | 15 | 42% |
-| 13 | sn107 Minos | 64.1 | 115 | 33,310 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 63.8 | 117 | 368 | rtx4090* | 13 | 42% |
-| 15 | sn81 Reliquary | 62.9 | 89.76 | 350 | rtx4090* | 34 | 12% |
-| 16 | sn53 engy | 62.9 | 87.67 | 2,068 | rtx4090 | 144 | 11% |
-| 17 | sn55 NIOME | 61.3 | 54.78 | 451 | rtx4090* | 11 | 29% |
-| 18 | sn28 gm | 60.9 | 50.32 | 1,683 | rtx4090* | 38 | 17% |
-| 19 | sn51 lium.io | 59.8 | 41.55 | 893 | rtx4090* | 55 | 81% |
-| 20 | sn102 ConnitoAI | 57.4 | 600 | 1,306 | rtx4090* | 7 | 26% |
+| 1 | sn76 Phylax | 78.1 | 97.66 | 189 | cpu-small | 10 | 20% |
+| 2 | sn67 Harnyx | 71.8 | 19.97 | 426 | cpu-small | 131 | 13% |
+| 3 | sn26 Perturb | 70.8 | 39.98 | 73.44 | rtx3060 | 10 | 69% |
+| 4 | sn1 Apex | 70.3 | 801 | 1,082 | rtx4090* | 4 | 53% |
+| 5 | sn56 Gradients | 69.4 | 623 | 925 | rtx4090* | 5 | 72% |
+| 6 | sn91 cascade | 69.2 | 579 | 2,342 | rtx4090* | 5 | 52% |
+| 7 | sn41 Almanac | 69 | 10.49 | 35.79 | cpu-small | 75 | 67% |
+| 8 | sn62 Ridges | 68.3 | 450 | 2,087 | rtx4090* | 6 | 40% |
+| 9 | sn15 ORO | 67.6 | 10.22 | 19.62 | cpu-small | 67 | 95% |
+| 10 | sn38 ChronoLLM | 67.4 | 142 | 3,016 | cpu-small | 10 | 52% |
+| 11 | sn96 Verathos | 66 | 12.55 | 380 | rtx4090 | 89 | 41% |
+| 12 | sn21 AdTAO | 65.2 | 4.40 | 575 | cpu-small | 15 | 42% |
+| 13 | sn107 Minos | 64.2 | 113 | 33,255 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 63.9 | 121 | 368 | rtx4090* | 13 | 42% |
+| 15 | sn53 engy | 62.9 | 87.45 | 2,064 | rtx4090 | 144 | 11% |
+| 16 | sn55 NIOME | 61.4 | 55.93 | 459 | rtx4090* | 11 | 29% |
+| 17 | sn81 Reliquary | 61 | 50.09 | 206 | rtx4090* | 34 | 47% |
+| 18 | sn28 gm | 60.9 | 49.46 | 1,658 | rtx4090* | 38 | 17% |
+| 19 | sn51 lium.io | 59.7 | 41.50 | 892 | rtx4090* | 55 | 81% |
+| 20 | sn68 NOVA | 55 | 7,696 | 7,696 = | rtx4090* | 1 | 100% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 17 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 28 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 17 |
+| captured (>90%) | 29 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-18T20:36 | sn108 | BURN_DROP | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
+| 2026-08-18T20:36 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(scoring): gate Silver coverage on e |
+| 2026-08-18T20:36 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contr |
 | 2026-08-18T19:40 | sn75 | SCORING_COMMIT | sn75 commit touches scoring: Merge pull request #51 from thenervelab/f |
 | 2026-08-18T19:40 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY  |
 | 2026-08-18T19:07 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: docs(miner-guide): note that find_product |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-18T17:39 | sn108 | README_TASK_DIFF | sn108 README task/scoring sections changed |
 | 2026-08-18T16:57 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: validator: daily-stream override was sile |
 | 2026-08-18T16:57 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Correct the loopback sample output in the |
-| 2026-08-18T16:57 | sn92 | README_TASK_DIFF | sn92 README task/scoring sections changed |
-| 2026-08-18T16:12 | sn96 | RELEASE | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
-| 2026-08-18T16:12 | sn96 | SCORING_COMMIT | sn96 commit touches scoring: fix: prevent validator-created audit over |
 
 ---
 

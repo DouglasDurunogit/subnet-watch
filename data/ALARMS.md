@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T20:35:53Z, block 8874049
+# ALARMS - generated 2026-08-18T21:03:24Z, block 8874187
 
-window: first_seen in [2026-08-18T19:21:36Z, 2026-08-18T20:36:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T19:49:08Z, 2026-08-18T21:04:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,22 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | P0 | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
-| `sn75:scoring_commit:2026-08-18T19:33:43Z` | 75 | SCORING_COMMIT | P1 | 2026-08-18T19:40:34Z | sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners |
-| `sn108:scoring_commit:2026-08-18T19:13:55Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T19:40:34Z | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key |
 | `sn111:scoring_commit:2026-08-18T20:20:14Z` | 111 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support |
 | `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
+| `sn81:scoring_commit:2026-08-18T20:37:01Z` | 81 | SCORING_COMMIT | P1 | 2026-08-18T21:04:08Z | sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0 |
 
 ### detail
 
 - **`sn108:burn_drop:0.838`** - sn108 burn fell 1.000 -> 0.838 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn75:scoring_commit:2026-08-18T19:33:43Z`** - sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-18T19:13:55Z`** - sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-18T20:20:14Z`** - sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn120:scoring_commit:2026-08-18T20:00:48Z`** - sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs.
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-08-18T20:37:01Z`** - sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -178,6 +175,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-08-04T21:03:12Z` | 25 | SCORING_COMMIT | 2026-08-18T17:39:02Z | sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u… |
 | `sn62:scoring_commit:2026-08-18T17:56:49Z` | 62 | SCORING_COMMIT | 2026-08-18T18:13:46Z | sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator |
 | `sn15:scoring_commit:2026-08-18T18:29:41Z` | 15 | SCORING_COMMIT | 2026-08-18T19:07:17Z | sn15 commit touches scoring: docs(miner-guide): note that find_product q matches values, not keys … |
+| `sn75:scoring_commit:2026-08-18T19:33:43Z` | 75 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners |
+| `sn108:scoring_commit:2026-08-18T19:13:55Z` | 108 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

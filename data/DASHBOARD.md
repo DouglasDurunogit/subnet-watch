@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-18T20:35:53Z · block 8874049 · run_status **ok**_
+_snapshot 2026-08-18T21:03:24Z · block 8874187 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 92 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
 | **Positive margin** | **49** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,9 +30,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 63 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 3 | `█` |
-| 0.4–0.6 | 6 | `███` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 7 | `███` |
 | ≥0.99 dead | 36 | `████████████████` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 78.1 | 97.66 | 189 | cpu-small | 10 | 20% |
-| 2 | sn67 Harnyx | 71.8 | 19.97 | 426 | cpu-small | 131 | 13% |
-| 3 | sn26 Perturb | 70.8 | 39.98 | 73.44 | rtx3060 | 10 | 69% |
-| 4 | sn1 Apex | 70.3 | 801 | 1,082 | rtx4090* | 4 | 53% |
-| 5 | sn56 Gradients | 69.4 | 623 | 925 | rtx4090* | 5 | 72% |
-| 6 | sn91 cascade | 69.2 | 579 | 2,342 | rtx4090* | 5 | 52% |
-| 7 | sn41 Almanac | 69 | 10.49 | 35.79 | cpu-small | 75 | 67% |
-| 8 | sn62 Ridges | 68.3 | 450 | 2,087 | rtx4090* | 6 | 40% |
-| 9 | sn15 ORO | 67.6 | 10.22 | 19.62 | cpu-small | 67 | 95% |
-| 10 | sn38 ChronoLLM | 67.4 | 142 | 3,016 | cpu-small | 10 | 52% |
-| 11 | sn96 Verathos | 66 | 12.55 | 380 | rtx4090 | 89 | 41% |
-| 12 | sn21 AdTAO | 65.2 | 4.40 | 575 | cpu-small | 15 | 42% |
-| 13 | sn107 Minos | 64.2 | 113 | 33,255 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 63.9 | 121 | 368 | rtx4090* | 13 | 42% |
-| 15 | sn53 engy | 62.9 | 87.45 | 2,064 | rtx4090 | 144 | 11% |
-| 16 | sn55 NIOME | 61.4 | 55.93 | 459 | rtx4090* | 11 | 29% |
-| 17 | sn81 Reliquary | 61 | 50.09 | 206 | rtx4090* | 34 | 47% |
-| 18 | sn28 gm | 60.9 | 49.46 | 1,658 | rtx4090* | 38 | 17% |
-| 19 | sn51 lium.io | 59.7 | 41.50 | 892 | rtx4090* | 55 | 81% |
-| 20 | sn68 NOVA | 55 | 7,696 | 7,696 = | rtx4090* | 1 | 100% |
+| 1 | sn76 Phylax | 78.1 | 97.41 | 188 | cpu-small | 10 | 20% |
+| 2 | sn67 Harnyx | 71.8 | 19.91 | 425 | cpu-small | 131 | 13% |
+| 3 | sn26 Perturb | 70.7 | 38.98 | 71.60 | rtx3060 | 10 | 70% |
+| 4 | sn1 Apex | 70.2 | 796 | 1,075 | rtx4090* | 4 | 53% |
+| 5 | sn56 Gradients | 69.4 | 619 | 923 | rtx4090* | 5 | 72% |
+| 6 | sn91 cascade | 69.2 | 577 | 2,334 | rtx4090* | 5 | 52% |
+| 7 | sn41 Almanac | 69 | 10.51 | 35.69 | cpu-small | 75 | 67% |
+| 8 | sn62 Ridges | 68.3 | 449 | 2,081 | rtx4090* | 6 | 40% |
+| 9 | sn15 ORO | 67.7 | 10.19 | 19.57 | cpu-small | 67 | 95% |
+| 10 | sn38 ChronoLLM | 67.4 | 142 | 3,008 | cpu-small | 10 | 52% |
+| 11 | sn96 Verathos | 66 | 12.50 | 379 | rtx4090 | 89 | 41% |
+| 12 | sn21 AdTAO | 64.1 | 3.46 | 713 | cpu-small | 16 | 37% |
+| 13 | sn107 Minos | 64 | 113 | 33,173 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 63.9 | 120 | 367 | rtx4090* | 13 | 42% |
+| 15 | sn53 engy | 62.8 | 87.05 | 2,055 | rtx4090 | 144 | 11% |
+| 16 | sn55 NIOME | 61.3 | 54.65 | 463 | rtx4090* | 11 | 29% |
+| 17 | sn81 Reliquary | 61 | 49.93 | 205 | rtx4090* | 34 | 47% |
+| 18 | sn51 lium.io | 60 | 43.95 | 867 | rtx4090* | 53 | 82% |
+| 19 | sn68 NOVA | 54.9 | 7,649 | 7,649 = | rtx4090* | 1 | 100% |
+| 20 | sn120 Affine | 54.5 | 6,425 | 6,425 = | rtx4090* | 5 | 21% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-18T21:04 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: fix(weights): burn to this validator's ow |
 | 2026-08-18T20:36 | sn108 | BURN_DROP | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | 2026-08-18T20:36 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(scoring): gate Silver coverage on e |
 | 2026-08-18T20:36 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contr |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-18T17:39 | sn25 | README_TASK_DIFF | sn25 README task/scoring sections changed |
 | 2026-08-18T17:39 | sn108 | README_TASK_DIFF | sn108 README task/scoring sections changed |
 | 2026-08-18T16:57 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: validator: daily-stream override was sile |
-| 2026-08-18T16:57 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Correct the loopback sample output in the |
 
 ---
 

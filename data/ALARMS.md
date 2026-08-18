@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T01:47:13Z, block 8868406
+# ALARMS - generated 2026-08-18T02:44:19Z, block 8868691
 
-window: first_seen in [2026-08-18T00:32:42Z, 2026-08-18T01:47:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T01:29:45Z, 2026-08-18T02:44:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | P1 | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
+| `sn15:release:v1.2.7` | 15 | RELEASE | P1 | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
 
 ### detail
 
 - **`sn71:scoring_commit:2026-08-18T01:01:27Z`** - sn71 commit touches scoring: Repair semantic gate verification fixtures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:release:v1.2.7`** - sn15 released v1.2.7
+  - published 2026-08-18T02:43:18Z (was v1.2.6: docs(validator): correct stale weight-salt fallback docstrings (#249))
 
 ## STILL OPEN (already reported - do not re-alarm)
 

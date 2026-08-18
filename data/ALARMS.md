@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T11:36:00Z, block 8871350
+# ALARMS - generated 2026-08-18T12:03:51Z, block 8871489
 
-window: first_seen in [2026-08-18T10:21:30Z, 2026-08-18T11:36:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T10:49:33Z, 2026-08-18T12:04:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
 | `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | P1 | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
+| `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | P2 | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 
 ### detail
 
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-18T10:35:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn10:readme_task_diff:126d4086680182f3`** - sn10 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

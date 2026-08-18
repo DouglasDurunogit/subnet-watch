@@ -1,20 +1,20 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-08-18T16:11:29Z  |  block: 8872727  |  row_status: ok
+snapshot_utc: 2026-08-18T16:57:18Z  |  block: 8872956  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.8232693255413324**
-- registration cost: 0.0005 TAO (0.09617 USD), open=True
+- registration cost: 0.0005 TAO (0.09597 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
 - subnet age: 852.6 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 109.81931675411869** (uid 102) <- the only figure quotable as achievable
-- median_miner_usd_day: 86.86013743271307
-- top_miner_usd_day: 1504.1817155415617 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 109.5908628315676** (uid 102) <- the only figure quotable as achievable
+- median_miner_usd_day: 86.67944482146454
+- top_miner_usd_day: 1501.052610177389 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-18T16:11:29Z  |  block: 8872727  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 58.2467 USD/day  |  payback on registration: 0.0 days
+- net margin: 58.1085 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 49.6 (rank 34), confidence 0.85 - hardware requirement unknown
-- components: income 16.12 / freshness 21.0 / resource 11.25 / registration 10.0
+- score: 49.6 (rank 35), confidence 0.85 - hardware requirement unknown
+- components: income 16.11 / freshness 21.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 8d ago
 
 ## On-chain description

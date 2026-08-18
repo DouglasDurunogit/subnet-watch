@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T16:11:29Z, block 8872727
+# ALARMS - generated 2026-08-18T16:57:18Z, block 8872956
 
-window: first_seen in [2026-08-18T14:57:17Z, 2026-08-18T16:12:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T15:42:50Z, 2026-08-18T16:57:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-18T14:52:43Z` | 108 | SCORING_COMMIT | P1 | 2026-08-18T15:42:54Z | sn108 commit touches scoring: Burn 60% of miner emission, split the other 40% by score |
 | `sn96:release:Verathos v0.1.41 - Bounded Replay and Ru` | 96 | RELEASE | P1 | 2026-08-18T16:12:17Z | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
 | `sn96:scoring_commit:2026-08-18T12:39:12Z` | 96 | SCORING_COMMIT | P1 | 2026-08-18T16:12:17Z | sn96 commit touches scoring: fix: prevent validator-created audit overlap |
+| `sn21:scoring_commit:2026-08-18T16:03:58Z` | 21 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s… |
+| `sn92:scoring_commit:2026-08-18T12:27:47Z` | 92 | SCORING_COMMIT | P1 | 2026-08-18T16:57:50Z | sn92 commit touches scoring: Correct the loopback sample output in the validator guide |
+| `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | P2 | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
 
 ### detail
 
@@ -24,6 +27,12 @@ already reported in an earlier window and must not be re-alarmed.
   - published 2026-08-18T15:56:35Z (was Verathos v0.1.40 — Capacity Audit Scheduling Stability)
 - **`sn96:scoring_commit:2026-08-18T12:39:12Z`** - sn96 commit touches scoring: fix: prevent validator-created audit overlap
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-18T16:03:58Z`** - sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-18T12:27:47Z`** - sn92 commit touches scoring: Correct the loopback sample output in the validator guide
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:readme_task_diff:c2e913dd2e41d4bb`** - sn92 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,8 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
-| `sn71:scoring_commit:2026-08-11T15:51:27Z` | 71 | SCORING_COMMIT | 2026-08-11T16:24:27Z | sn71 commit touches scoring: Seed required miner in Git-tree rehearsal |
-| `sn100:release:v3.3.18 — design tip-emit from latest sc` | 100 | RELEASE | 2026-08-11T16:24:27Z | sn100 released v3.3.18 — design tip-emit from latest scored round only (#123) |
 | `sn28:release:v0.4.3-dev` | 28 | RELEASE | 2026-08-11T17:27:32Z | sn28 released v0.4.3-dev |
 | `sn44:scoring_commit:2026-08-11T17:22:55Z` | 44 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn44 commit touches scoring: Merge pull request #51 from score-technologies/audit-export |
 | `sn75:scoring_commit:2026-08-11T08:48:47Z` | 75 | SCORING_COMMIT | 2026-08-11T17:27:32Z | sn75 commit touches scoring: fix: update max 24h miner payout test to 3500 alpha and fix comment |

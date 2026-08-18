@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-17T23:34:13Z, block 8867741
+# ALARMS - generated 2026-08-18T00:00:56Z, block 8867874
 
-window: first_seen in [2026-08-17T22:19:47Z, 2026-08-17T23:34:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-17T22:46:21Z, 2026-08-18T00:01:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn54:scoring_commit:2026-08-17T16:25:21Z` | 54 | SCORING_COMMIT | P1 | 2026-08-17T22:36:59Z | sn54 commit touches scoring: updating miner info |
-| `sn62:release:v0.2.8` | 62 | RELEASE | P1 | 2026-08-17T22:36:59Z | sn62 released v0.2.8 |
 | `sn14:release:v2-finite-debt-preextraction: Pre-extrac` | 14 | RELEASE | P1 | 2026-08-17T23:02:57Z | sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics. |
+| `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | P1 | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 
 ### detail
 
-- **`sn54:scoring_commit:2026-08-17T16:25:21Z`** - sn54 commit touches scoring: updating miner info
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.2.8`** - sn62 released v0.2.8
-  - published 2026-08-17T22:13:05Z (was v0.2.7)
 - **`sn14:release:v2-finite-debt-preextraction: Pre-extrac`** - sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics.
   - published 2026-08-17T22:44:53Z (was B300 subnet-307 FE v9 candidate archive)
+- **`sn56:scoring_commit:2026-08-17T23:44:09Z`** - sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
-| `sn91:scoring_commit:2026-08-10T23:24:09Z` | 91 | SCORING_COMMIT | 2026-08-10T23:47:46Z | sn91 commit touches scoring: DEC-CA-0012: Cascade warm-start promotion — propose-and-verify (#191) |
 | `sn108:scoring_commit:2026-08-10T14:25:47Z` | 108 | SCORING_COMMIT | 2026-08-11T00:40:06Z | sn108 commit touches scoring: merge: the canonical miner script and the subnet-published image |
 | `sn61:release:4.9.5` | 61 | RELEASE | 2026-08-11T02:55:15Z | sn61 released 4.9.5 |
 | `sn61:scoring_commit:2026-08-11T00:14:46Z` | 61 | SCORING_COMMIT | 2026-08-11T02:55:15Z | sn61 commit touches scoring: refactor: update bot virus challenge environment variable for VM endp… |
@@ -165,6 +161,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.121` | 51 | RELEASE | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
 | `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
 | `sn21:release:SN21 training bundle — 10,791 records, r` | 21 | RELEASE | 2026-08-17T21:09:19Z | sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08-17 |
+| `sn54:scoring_commit:2026-08-17T16:25:21Z` | 54 | SCORING_COMMIT | 2026-08-17T22:36:59Z | sn54 commit touches scoring: updating miner info |
+| `sn62:release:v0.2.8` | 62 | RELEASE | 2026-08-17T22:36:59Z | sn62 released v0.2.8 |
 | `sn108:readme_task_diff:3f08d6dd9fd4b2c2` | 108 | README_TASK_DIFF | 2026-08-11T00:40:06Z | sn108 README task/scoring sections changed |
 | `sn126:readme_task_diff:57aeaffcb3f2147f` | 126 | README_TASK_DIFF | 2026-08-11T07:58:57Z | sn126 README task/scoring sections changed |
 | `sn28:readme_task_diff:d8d5d6469509a9b6` | 28 | README_TASK_DIFF | 2026-08-11T13:53:29Z | sn28 README task/scoring sections changed |

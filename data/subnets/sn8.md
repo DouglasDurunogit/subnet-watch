@@ -1,20 +1,20 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-17T23:34:13Z  |  block: 8867741  |  row_status: ok
+snapshot_utc: 2026-08-18T00:00:56Z  |  block: 8867874  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000514639 TAO (0.100869244 USD), open=True
+- registration cost: 0.0005 TAO (0.09805 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 58  |  free: 0
 - subnet age: 1026.5 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2844.9081966649546** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.7725830171082524
-- top_miner_usd_day: 10832.901538219545 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2844.5102185681835** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.7724749394138274
+- top_miner_usd_day: 10831.386108814217 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

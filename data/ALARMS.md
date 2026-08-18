@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T21:03:24Z, block 8874187
+# ALARMS - generated 2026-08-18T21:35:10Z, block 8874346
 
-window: first_seen in [2026-08-18T19:49:08Z, 2026-08-18T21:04:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T20:20:40Z, 2026-08-18T21:35:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-18T20:20:14Z` | 111 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support |
 | `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | P1 | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
 | `sn81:scoring_commit:2026-08-18T20:37:01Z` | 81 | SCORING_COMMIT | P1 | 2026-08-18T21:04:08Z | sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0 |
+| `sn71:scoring_commit:2026-08-18T21:09:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-18T21:35:40Z | sn71 commit touches scoring: Verify restored parity database contract |
 
 ### detail
 
@@ -23,6 +24,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn120:scoring_commit:2026-08-18T20:00:48Z`** - sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn81:scoring_commit:2026-08-18T20:37:01Z`** - sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-18T21:09:08Z`** - sn71 commit touches scoring: Verify restored parity database contract
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

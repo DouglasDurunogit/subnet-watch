@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T19:34:57Z, block 8880944
+# ALARMS - generated 2026-08-19T20:02:23Z, block 8881082
 
-window: first_seen in [2026-08-19T18:20:24Z, 2026-08-19T19:35:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T18:47:56Z, 2026-08-19T20:02:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -12,8 +12,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | P0 | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
 | `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
+| `sn25:release:v2026.8.19-1023689220` | 25 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn25 released v2026.8.19-1023689220 |
+| `sn51:release:executor-v1.123` | 51 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn51 released executor-v1.123 |
+| `sn108:scoring_commit:2026-08-19T19:48:52Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T20:02:56Z | sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14) |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
+| `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | P2 | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
 
 ### detail
 
@@ -23,9 +27,17 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn46:scoring_commit:2026-08-19T19:00:28Z`** - sn46 commit touches scoring: Restore validator log visibility after the bittensor import
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.19-1023689220`** - sn25 released v2026.8.19-1023689220
+  - published 2026-08-19T19:52:01Z (was v2026.8.17-1021635350)
+- **`sn51:release:executor-v1.123`** - sn51 released executor-v1.123
+  - published 2026-08-19T19:38:26Z (was executor-v1.122)
+- **`sn108:scoring_commit:2026-08-19T19:48:52Z`** - sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn10:readme_task_diff:2e15c71289199f4e`** - sn10 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 - **`sn90:readme_task_diff:320a058a7749d0fe`** - sn90 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn66:readme_task_diff:6d03fe25d3e98c8c`** - sn66 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)

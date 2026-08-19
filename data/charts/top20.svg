@@ -46,7 +46,7 @@
 <text class="ink2 t-lab" x="158" y="169" text-anchor="end">4. sn1 Apex</text>
 <path class="accent" d="M168.0,155.0 H561.3 a4.0,4.0 0 0 1 4.0,4.0 V171.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="573.3" y="169">70</text>
-<text class="muted t-tick" x="740" y="169" text-anchor="end">$787/day</text>
+<text class="muted t-tick" x="740" y="169" text-anchor="end">$784/day</text>
 <text class="ink2 t-lab" x="158" y="196" text-anchor="end">5. sn56 Gradients</text>
 <path class="accent" d="M168.0,182.0 H556.8 a4.0,4.0 0 0 1 4.0,4.0 V198.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="568.8" y="196">69</text>
@@ -110,7 +110,7 @@
 <text class="ink2 t-lab" x="158" y="601" text-anchor="end">20. sn68 NOVA</text>
 <path class="accent" d="M168.0,587.0 H474.7 a4.0,4.0 0 0 1 4.0,4.0 V603.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="486.7" y="601">55</text>
-<text class="muted t-tick" x="740" y="601" text-anchor="end">$7,627/day</text>
+<text class="muted t-tick" x="740" y="601" text-anchor="end">$7,626/day</text>
 <line class="axis" x1="168" y1="68" x2="168" y2="609" stroke-width="1"/>
 <text class="muted t-tick" x="20" y="642">Income is the best NON-owner, NON-validator miner - not the headline top earner.</text>
 </svg>

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-18T23:33:11Z, block 8874936
+# ALARMS - generated 2026-08-19T00:01:04Z, block 8875075
 
-window: first_seen in [2026-08-18T22:18:38Z, 2026-08-18T23:33:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-18T22:46:39Z, 2026-08-19T00:01:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.6-dev` | 28 | RELEASE | P1 | 2026-08-18T22:37:17Z | sn28 released v0.4.6-dev |
-| `sn28:scoring_commit:2026-08-18T22:12:25Z` | 28 | SCORING_COMMIT | P1 | 2026-08-18T22:37:17Z | sn28 commit touches scoring: Release gm-miner v0.4.6-dev |
-| `sn62:scoring_commit:2026-08-18T20:59:53Z` | 62 | SCORING_COMMIT | P1 | 2026-08-18T22:37:17Z | sn62 commit touches scoring: pass pre_screening_policy_version and remove from validator |
 | `sn62:release:v0.2.9` | 62 | RELEASE | P1 | 2026-08-18T23:03:26Z | sn62 released v0.2.9 |
-| `sn28:readme_task_diff:bea04ee7e3aadb3b` | 28 | README_TASK_DIFF | P2 | 2026-08-18T22:37:17Z | sn28 README task/scoring sections changed |
+| `sn46:scoring_commit:2026-08-18T23:50:25Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T00:01:39Z | sn46 commit touches scoring: test: freeze validator report contract |
 
 ### detail
 
-- **`sn28:release:v0.4.6-dev`** - sn28 released v0.4.6-dev
-  - published 2026-08-18T22:24:03Z (was v0.4.5)
-- **`sn28:scoring_commit:2026-08-18T22:12:25Z`** - sn28 commit touches scoring: Release gm-miner v0.4.6-dev
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:scoring_commit:2026-08-18T20:59:53Z`** - sn62 commit touches scoring: pass pre_screening_policy_version and remove from validator
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn62:release:v0.2.9`** - sn62 released v0.2.9
   - published 2026-08-18T23:00:14Z (was v0.2.8)
-- **`sn28:readme_task_diff:bea04ee7e3aadb3b`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn46:scoring_commit:2026-08-18T23:50:25Z`** - sn46 commit touches scoring: test: freeze validator report contract
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
-| `sn71:scoring_commit:2026-08-11T23:29:21Z` | 71 | SCORING_COMMIT | 2026-08-11T23:54:20Z | sn71 commit touches scoring: Reuse artifact verification transport pool |
 | `sn71:scoring_commit:2026-08-12T02:30:59Z` | 71 | SCORING_COMMIT | 2026-08-12T02:39:41Z | sn71 commit touches scoring: Isolate concurrent artifact verification transports |
 | `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
 | `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
@@ -184,6 +174,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
 | `sn81:scoring_commit:2026-08-18T20:37:01Z` | 81 | SCORING_COMMIT | 2026-08-18T21:04:08Z | sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0 |
 | `sn71:scoring_commit:2026-08-18T21:09:08Z` | 71 | SCORING_COMMIT | 2026-08-18T21:35:40Z | sn71 commit touches scoring: Verify restored parity database contract |
+| `sn28:release:v0.4.6-dev` | 28 | RELEASE | 2026-08-18T22:37:17Z | sn28 released v0.4.6-dev |
+| `sn28:scoring_commit:2026-08-18T22:12:25Z` | 28 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn28 commit touches scoring: Release gm-miner v0.4.6-dev |
+| `sn62:scoring_commit:2026-08-18T20:59:53Z` | 62 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn62 commit touches scoring: pass pre_screening_policy_version and remove from validator |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
@@ -205,6 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:readme_task_diff:1a67cd5991549ed6` | 25 | README_TASK_DIFF | 2026-08-18T17:39:02Z | sn25 README task/scoring sections changed |
 | `sn108:readme_task_diff:440d4dcceb14f6b4` | 108 | README_TASK_DIFF | 2026-08-18T17:39:02Z | sn108 README task/scoring sections changed |
 | `sn108:readme_task_diff:fa8dc13fe8c76401` | 108 | README_TASK_DIFF | 2026-08-18T19:07:17Z | sn108 README task/scoring sections changed |
+| `sn28:readme_task_diff:bea04ee7e3aadb3b` | 28 | README_TASK_DIFF | 2026-08-18T22:37:17Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

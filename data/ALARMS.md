@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T04:06:53Z, block 8876304
+# ALARMS - generated 2026-08-19T04:50:30Z, block 8876522
 
-window: first_seen in [2026-08-19T02:52:26Z, 2026-08-19T04:07:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T03:36:04Z, 2026-08-19T04:51:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn121:burn_drop:0.607` | 121 | BURN_DROP | P0 | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
-| `sn46:scoring_commit:2026-08-19T02:41:53Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T03:08:34Z | sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl |
+| `sn108:burn_drop:0.839` | 108 | BURN_DROP | P0 | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 
 ### detail
 
-- **`sn121:burn_drop:0.607`** - sn121 burn fell 1.000 -> 0.607 - miners can earn again
+- **`sn108:burn_drop:0.839`** - sn108 burn fell 1.000 -> 0.839 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn46:scoring_commit:2026-08-19T02:41:53Z`** - sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,6 +34,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
+| `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
 | `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
 | `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
@@ -182,6 +180,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:scoring_commit:2026-08-19T01:46:55Z` | 46 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn46 commit touches scoring: Merge pull request #18 from instant-subnet/dan/p4-5-run-once-validator |
 | `sn71:scoring_commit:2026-08-18T23:59:05Z` | 71 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn71 commit touches scoring: Isolate parity scoring cache |
 | `sn111:scoring_commit:2026-08-19T00:57:56Z` | 111 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn111 commit touches scoring: fix validator batch reliability and provider resilience |
+| `sn46:scoring_commit:2026-08-19T02:41:53Z` | 46 | SCORING_COMMIT | 2026-08-19T03:08:34Z | sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-19T20:02:23Z · block 8881082 · run_status **ok**_
+_snapshot 2026-08-19T20:40:50Z · block 8881274 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 9 | see ALARMS.md |
+| **Positive margin** | **53** | income beats machine cost |
+| New events this window | 7 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.6 | 65.11 | 115 | cpu-small | 13 | 20% |
-| 2 | sn121 sundae_bar | 74.5 | 1,089 | 1,089 = | cpu-small | 2 | 60% |
-| 3 | sn62 Ridges | 72.5 | 1,563 | 4,139 | rtx4090* | 3 | 59% |
-| 4 | sn67 Harnyx | 72.3 | 22.51 | 301 | cpu-small | 147 | 9% |
-| 5 | sn23 Trishool | 71.9 | 507 | 507 = | cpu-small | 2 | 80% |
-| 6 | sn26 Perturb | 70.9 | 41.15 | 75.45 | rtx3060 | 10 | 70% |
-| 7 | sn15 ORO | 69.7 | 15.94 | 15,321 | cpu-small | 84 | 92% |
-| 8 | sn56 Gradients | 69.5 | 638 | 965 | rtx4090* | 5 | 72% |
-| 9 | sn91 cascade | 69.2 | 578 | 2,335 | rtx4090* | 5 | 52% |
-| 10 | sn38 ChronoLLM | 67.5 | 146 | 3,092 | cpu-small | 10 | 52% |
-| 11 | sn96 Verathos | 66.3 | 13.52 | 350 | rtx4090 | 89 | 41% |
-| 12 | sn41 Almanac | 65.9 | 5.14 | 31.41 | cpu-small | 74 | 82% |
-| 13 | sn85 Vidaio | 64 | 124 | 188 | rtx4090* | 13 | 42% |
-| 14 | sn107 Minos | 62.9 | 87.15 | 36,478 | cpu-small | 17 | 93% |
-| 15 | sn55 NIOME | 61.4 | 56.43 | 479 | rtx4090* | 11 | 29% |
-| 16 | sn51 lium.io | 61.2 | 60.20 | 1,008 | rtx4090* | 51 | 79% |
-| 17 | sn81 Reliquary | 61 | 50.20 | 199 | rtx4090* | 56 | 5% |
-| 18 | sn28 gm | 60.2 | 40.62 | 1,216 | rtx4090* | 50 | 27% |
-| 19 | sn53 engy | 59.8 | 34.70 | 12,076 | rtx4090 | 144 | 63% |
-| 20 | sn21 AdTAO | 58.4 | 1.34 | 373 | cpu-small | 16 | 37% |
+| 1 | sn76 Phylax | 76.6 | 65.95 | 117 | cpu-small | 13 | 20% |
+| 2 | sn121 sundae_bar | 74.5 | 1,103 | 1,103 = | cpu-small | 2 | 60% |
+| 3 | sn62 Ridges | 72.5 | 1,583 | 4,193 | rtx4090* | 3 | 59% |
+| 4 | sn67 Harnyx | 72.4 | 22.74 | 304 | cpu-small | 147 | 9% |
+| 5 | sn23 Trishool | 72 | 514 | 514 = | cpu-small | 2 | 80% |
+| 6 | sn26 Perturb | 70.9 | 41.58 | 76.23 | rtx3060 | 10 | 70% |
+| 7 | sn15 ORO | 69.6 | 16.02 | 15,398 | cpu-small | 84 | 92% |
+| 8 | sn56 Gradients | 69.5 | 646 | 977 | rtx4090* | 5 | 72% |
+| 9 | sn91 cascade | 69.1 | 572 | 2,314 | rtx4090* | 5 | 52% |
+| 10 | sn38 ChronoLLM | 67.5 | 148 | 3,132 | cpu-small | 10 | 52% |
+| 11 | sn96 Verathos | 66.4 | 13.66 | 344 | rtx4090 | 88 | 41% |
+| 12 | sn41 Almanac | 65.9 | 5.18 | 31.82 | cpu-small | 74 | 82% |
+| 13 | sn107 Minos | 64.4 | 120 | 35,542 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 64 | 124 | 218 | rtx4090* | 13 | 42% |
+| 15 | sn81 Reliquary | 61.5 | 58.69 | 198 | rtx4090* | 54 | 5% |
+| 16 | sn55 NIOME | 61.5 | 57.50 | 485 | rtx4090* | 11 | 29% |
+| 17 | sn51 lium.io | 61 | 58.32 | 1,064 | rtx4090* | 51 | 76% |
+| 18 | sn28 gm | 60.3 | 41.35 | 1,234 | rtx4090* | 50 | 27% |
+| 19 | sn53 engy | 59.9 | 35.12 | 12,194 | rtx4090 | 144 | 63% |
+| 20 | sn102 ConnitoAI | 59.6 | 1,144 | 1,907 | rtx4090* | 5 | 33% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-19T20:41 | sn1 | RELEASE | sn1 released v4.3.5 |
+| 2026-08-19T20:41 | sn89 | README_TASK_DIFF | sn89 README task/scoring sections changed |
 | 2026-08-19T20:02 | sn25 | RELEASE | sn25 released v2026.8.19-1023689220 |
 | 2026-08-19T20:02 | sn51 | RELEASE | sn51 released executor-v1.123 |
 | 2026-08-19T20:02 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-19T16:56 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Retry pinned validator yum installs safel |
 | 2026-08-19T16:12 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(scoring): bound eligible claims and |
 | 2026-08-19T15:42 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: feat(miner): refuse an architecture the  |
-| 2026-08-19T14:49 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: docs(miner): say which architectures the |
-| 2026-08-19T13:56 | sn14 | RELEASE | sn14 released v2.1.0 |
 
 ---
 

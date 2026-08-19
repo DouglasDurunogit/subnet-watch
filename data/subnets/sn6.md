@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-19T20:02:23Z  |  block: 8881082  |  row_status: ok
+snapshot_utc: 2026-08-19T20:40:50Z  |  block: 8881274  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (39.892 USD), open=True
+- registration cost: 0.2 TAO (40.404 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 121  |  free: 0
 - subnet age: 786.3 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 385.2802341947598** (uid 18) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.052734770626164766
-- top_miner_usd_day: 395.2471058431049 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 390.2247736197784** (uid 18) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.05341154853815745
+- top_miner_usd_day: 400.31955629349005 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,9 +26,9 @@ snapshot_utc: 2026-08-19T20:02:23Z  |  block: 8881082  |  row_status: ok
 - on-chain URL: `https://github.com/numinouslabs/numinous`
 - resolved URL: `https://github.com/numinouslabs/numinous`
 - status: **ok** 
-- README: 5473 bytes, sha 358a7cb13606d9bf
+- README: 5474 bytes, sha 496b16d6a611eff7
 - latest release: (none) 
-- last commit: 2026-08-18T16:03:50Z
+- last commit: 2026-08-19T20:21:05Z
 - scoring-related commit: (none) 
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-19T20:02:23Z  |  block: 8881082  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9336 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9329 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
 - score: 50.0 (rank 31), confidence 1.0 
 - components: income 0.0 / freshness 35.0 / resource 15.0 / registration 0.0
-- freshness basis: WEIGHTS_VERSION_BUMP 6.1d ago
+- freshness basis: WEIGHTS_VERSION_BUMP 6.2d ago
 
 ## On-chain description
 
@@ -58,7 +58,7 @@ snapshot_utc: 2026-08-19T20:02:23Z  |  block: 8881082  |  row_status: ok
 
 
 
-[Discord](https://discord.gg/qKPeYPc3) • [Dashboard](https://app.hex.tech/1644b22a-abe5-4113-9d5f-3ad05e4a8de7/app/Numinous-031erYRYSssIrH3W3KcyHg/latest) • [Website](https://numinouslabs.io/) • [Twitter](https://x.com/numinous_ai) •
+[Discord](https://discord.gg/BECnaD36E) • [Dashboard](https://app.hex.tech/1644b22a-abe5-4113-9d5f-3ad05e4a8de7/app/Numinous-031erYRYSssIrH3W3KcyHg/latest) • [Website](https://numinouslabs.io/) • [Twitter](https://x.com/numinous_ai) •
 [Network](https://taostats.io/subnets/6/chart)
 ---
 

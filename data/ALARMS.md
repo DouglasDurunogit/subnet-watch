@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T20:02:23Z, block 8881082
+# ALARMS - generated 2026-08-19T20:40:50Z, block 8881274
 
-window: first_seen in [2026-08-19T18:47:56Z, 2026-08-19T20:02:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T19:26:24Z, 2026-08-19T20:41:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,22 +9,16 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn103:burn_drop:0.845` | 103 | BURN_DROP | P0 | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
-| `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
 | `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
 | `sn25:release:v2026.8.19-1023689220` | 25 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn25 released v2026.8.19-1023689220 |
 | `sn51:release:executor-v1.123` | 51 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn51 released executor-v1.123 |
 | `sn108:scoring_commit:2026-08-19T19:48:52Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T20:02:56Z | sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14) |
-| `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
-| `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
+| `sn1:release:v4.3.5` | 1 | RELEASE | P1 | 2026-08-19T20:41:24Z | sn1 released v4.3.5 |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | P2 | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
+| `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | P2 | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
 
 ### detail
 
-- **`sn103:burn_drop:0.845`** - sn103 burn fell 1.000 -> 0.845 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn46:scoring_commit:2026-08-19T18:42:46Z`** - sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn46:scoring_commit:2026-08-19T19:00:28Z`** - sn46 commit touches scoring: Restore validator log visibility after the bittensor import
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:release:v2026.8.19-1023689220`** - sn25 released v2026.8.19-1023689220
@@ -33,11 +27,11 @@ already reported in an earlier window and must not be re-alarmed.
   - published 2026-08-19T19:38:26Z (was executor-v1.122)
 - **`sn108:scoring_commit:2026-08-19T19:48:52Z`** - sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn10:readme_task_diff:2e15c71289199f4e`** - sn10 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn90:readme_task_diff:320a058a7749d0fe`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn1:release:v4.3.5`** - sn1 released v4.3.5
+  - published 2026-08-19T20:32:20Z (was v4.3.4)
 - **`sn66:readme_task_diff:6d03fe25d3e98c8c`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn89:readme_task_diff:af753e3216a79781`** - sn89 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -62,6 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
+| `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
 | `sn51:release:executor-v1.118` | 51 | RELEASE | 2026-08-13T02:42:09Z | sn51 released executor-v1.118 |
 | `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
@@ -213,6 +208,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
 | `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
 | `sn1:release:v4.3.4` | 1 | RELEASE | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
+| `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
@@ -233,6 +229,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:readme_task_diff:440d4dcceb14f6b4` | 108 | README_TASK_DIFF | 2026-08-18T17:39:02Z | sn108 README task/scoring sections changed |
 | `sn108:readme_task_diff:fa8dc13fe8c76401` | 108 | README_TASK_DIFF | 2026-08-18T19:07:17Z | sn108 README task/scoring sections changed |
 | `sn28:readme_task_diff:bea04ee7e3aadb3b` | 28 | README_TASK_DIFF | 2026-08-18T22:37:17Z | sn28 README task/scoring sections changed |
+| `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
+| `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

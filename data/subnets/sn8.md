@@ -1,20 +1,20 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-19T16:12:18Z  |  block: 8879931  |  row_status: ok
+snapshot_utc: 2026-08-19T16:55:35Z  |  block: 8880148  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000564489 TAO (0.11119868811000001 USD), open=True
+- registration cost: 0.0005 TAO (0.09944499999999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 68  |  free: 0
-- subnet age: 1028.1 days  |  registered at block 1477264
+- subnet age: 1028.2 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2764.0774542368663** (uid 210) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.25109715245611064
-- top_miner_usd_day: 10579.225227280855 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2791.0598127231897** (uid 210) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.25354831147558043
+- top_miner_usd_day: 10682.497459089156 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -28,7 +28,7 @@ snapshot_utc: 2026-08-19T16:12:18Z  |  block: 8879931  |  row_status: ok
 - status: **ok** 
 - README: 8976 bytes, sha a81f478162f7604d
 - latest release: (none) 
-- last commit: 2026-08-18T17:36:02Z
+- last commit: 2026-08-19T16:41:26Z
 - scoring-related commit: create subaccount elimination cache on entity miner (#861) 2026-07-30T22:26:28Z
 
 ## Resources
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-19T16:12:18Z  |  block: 8879931  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.9681 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.9656 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

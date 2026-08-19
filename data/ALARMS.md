@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T16:12:18Z, block 8879931
+# ALARMS - generated 2026-08-19T16:55:35Z, block 8880148
 
-window: first_seen in [2026-08-19T14:57:42Z, 2026-08-19T16:12:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T15:41:08Z, 2026-08-19T16:56:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,12 +11,15 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
 | `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | P1 | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
+| `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
 
 ### detail
 
 - **`sn108:scoring_commit:2026-08-19T15:01:26Z`** - sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-19T15:56:47Z`** - sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-19T16:17:00Z`** - sn71 commit touches scoring: Retry pinned validator yum installs safely
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

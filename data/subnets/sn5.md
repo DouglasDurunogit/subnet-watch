@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-19T08:51:58Z  |  block: 8877730  |  row_status: ok
+snapshot_utc: 2026-08-19T09:45:47Z  |  block: 8877999  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.115993009 TAO (22.30661556079 USD), open=True
+- registration cost: 0.089528868 TAO (17.14119706728 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 255  |  free: 0
 - subnet age: 887.0 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 33.30372974524138** (uid 236) <- the only figure quotable as achievable
-- median_miner_usd_day: 31.136706234420878
-- top_miner_usd_day: 33.30372974524138 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 33.15911531374894** (uid 236) <- the only figure quotable as achievable
+- median_miner_usd_day: 31.001501646073496
+- top_miner_usd_day: 33.15911531374894 (uid 236, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-19T08:51:58Z  |  block: 8877730  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 22.9175 USD/day  |  payback on registration: 0.97 days
+- net margin: 22.7823 USD/day  |  payback on registration: 0.75 days
 
 ## Score
 
 - gate: **OK** 
 - score: 20.1 (rank 71), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 12.54 / freshness 0.0 / resource 11.25 / registration 9.68
+- components: income 12.52 / freshness 0.0 / resource 11.25 / registration 9.75
 - freshness basis: no challenge change on record
 
 ## On-chain description

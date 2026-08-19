@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T08:51:58Z, block 8877730
+# ALARMS - generated 2026-08-19T09:45:47Z, block 8877999
 
-window: first_seen in [2026-08-19T07:37:29Z, 2026-08-19T08:52:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T08:31:14Z, 2026-08-19T09:46:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:burn_drop:0.000` | 62 | BURN_DROP | P0 | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
 | `sn71:scoring_commit:2026-08-19T07:32:51Z` | 71 | SCORING_COMMIT | P1 | 2026-08-19T08:52:29Z | sn71 commit touches scoring: Use verified local rehearsal base |
 | `sn97:scoring_commit:2026-08-18T22:22:27Z` | 97 | SCORING_COMMIT | P1 | 2026-08-19T08:52:29Z | sn97 commit touches scoring: feat: score looped trajectories 0 without calling the judge |
+| `sn76:scoring_commit:2026-08-19T08:54:49Z` | 76 | SCORING_COMMIT | P1 | 2026-08-19T09:46:14Z | sn76 commit touches scoring: Report an abstained row when a track has no task set |
 
 ### detail
 
-- **`sn62:burn_drop:0.000`** - sn62 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn92:scoring_commit:2026-08-19T07:50:37Z`** - sn92 commit touches scoring: Declare pynacl for token verification
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-19T07:32:51Z`** - sn71 commit touches scoring: Use verified local rehearsal base
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn97:scoring_commit:2026-08-18T22:22:27Z`** - sn97 commit touches scoring: feat: score looped trajectories 0 without calling the judge
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-08-19T08:54:49Z`** - sn76 commit touches scoring: Report an abstained row when a track has no task set
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,7 +42,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
-| `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
+| `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
 | `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |
 | `sn51:release:executor-v1.117` | 51 | RELEASE | 2026-08-12T11:33:57Z | sn51 released executor-v1.117 |
@@ -190,6 +187,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:scoring_commit:2026-08-19T02:41:53Z` | 46 | SCORING_COMMIT | 2026-08-19T03:08:34Z | sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl |
 | `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 | `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
+| `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

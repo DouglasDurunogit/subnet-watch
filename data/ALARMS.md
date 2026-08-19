@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T17:36:48Z, block 8880354
+# ALARMS - generated 2026-08-19T18:02:04Z, block 8880480
 
-window: first_seen in [2026-08-19T16:22:21Z, 2026-08-19T17:37:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T16:47:34Z, 2026-08-19T18:02:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
+| `sn1:release:v4.3.4` | 1 | RELEASE | P1 | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
 
 ### detail
 
 - **`sn71:scoring_commit:2026-08-19T16:17:00Z`** - sn71 commit touches scoring: Retry pinned validator yum installs safely
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.3.4`** - sn1 released v4.3.4
+  - published 2026-08-19T17:38:43Z (was v4.3.3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

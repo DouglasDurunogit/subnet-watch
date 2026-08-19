@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T13:55:57Z, block 8879250
+# ALARMS - generated 2026-08-19T14:48:43Z, block 8879513
 
-window: first_seen in [2026-08-19T12:41:35Z, 2026-08-19T13:56:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T13:34:08Z, 2026-08-19T14:49:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -14,6 +14,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
 | `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
 | `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
+| `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
 
 ### detail
 
@@ -26,6 +27,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn81:scoring_commit:2026-08-19T13:11:10Z`** - sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-19T13:15:41Z`** - sn92 commit touches scoring: Cut the validator guide to specs and steps
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-19T14:31:17Z`** - sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -50,12 +53,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
-| `sn28:release:v0.4.4` | 28 | RELEASE | 2026-08-12T14:09:20Z | sn28 released v0.4.4 |
-| `sn28:scoring_commit:2026-08-12T12:46:41Z` | 28 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn28 commit touches scoring: Release gm-miner v0.4.4 |
-| `sn56:scoring_commit:2026-08-12T13:16:40Z` | 56 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353) |
-| `sn96:release:Verathos v0.1.37 — Scoring Integrity and` | 96 | RELEASE | 2026-08-12T14:09:20Z | sn96 released Verathos v0.1.37 — Scoring Integrity and Fairness |
-| `sn96:scoring_commit:2026-08-12T11:40:32Z` | 96 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn96 commit touches scoring: fix: correct validator scoring inputs |
-| `sn120:scoring_commit:2026-08-12T13:36:35Z` | 120 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn120 commit touches scoring: publish bench rollout records: per-task trajectories to hippius + api |
 | `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
 | `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
 | `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
@@ -199,7 +196,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.122` | 51 | RELEASE | 2026-08-19T11:36:23Z | sn51 released executor-v1.122 |
 | `sn71:scoring_commit:2026-08-19T10:57:23Z` | 71 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn71 commit touches scoring: Preserve validator app modes in restart rehearsal |
 | `sn108:scoring_commit:2026-08-19T10:55:26Z` | 108 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6) |
-| `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T18:50:22Z, block 8880722
+# ALARMS - generated 2026-08-19T19:34:57Z, block 8880944
 
-window: first_seen in [2026-08-19T17:35:48Z, 2026-08-19T18:50:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T18:20:24Z, 2026-08-19T19:35:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,8 +10,8 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | P0 | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
-| `sn1:release:v4.3.4` | 1 | RELEASE | P1 | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
 | `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
+| `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 
@@ -19,9 +19,9 @@ already reported in an earlier window and must not be re-alarmed.
 
 - **`sn103:burn_drop:0.845`** - sn103 burn fell 1.000 -> 0.845 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn1:release:v4.3.4`** - sn1 released v4.3.4
-  - published 2026-08-19T17:38:43Z (was v4.3.3)
 - **`sn46:scoring_commit:2026-08-19T18:42:46Z`** - sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn46:scoring_commit:2026-08-19T19:00:28Z`** - sn46 commit touches scoring: Restore validator log visibility after the bittensor import
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn10:readme_task_diff:2e15c71289199f4e`** - sn10 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -200,6 +200,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
 | `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
 | `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
+| `sn1:release:v4.3.4` | 1 | RELEASE | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

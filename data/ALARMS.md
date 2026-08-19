@@ -1,41 +1,13 @@
-# ALARMS - generated 2026-08-19T12:03:22Z, block 8878687
+# ALARMS - generated 2026-08-19T13:06:04Z, block 8879000
 
-window: first_seen in [2026-08-19T10:48:53Z, 2026-08-19T12:03:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T11:51:37Z, 2026-08-19T13:06:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn23:burn_drop:0.847` | 23 | BURN_DROP | P0 | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
-| `sn28:release:v0.4.8-dev` | 28 | RELEASE | P1 | 2026-08-19T10:54:46Z | sn28 released v0.4.8-dev |
-| `sn28:scoring_commit:2026-08-19T10:18:25Z` | 28 | SCORING_COMMIT | P1 | 2026-08-19T10:54:46Z | sn28 commit touches scoring: Expand verified NEAR model coverage |
-| `sn44:scoring_commit:2026-08-19T10:16:23Z` | 44 | SCORING_COMMIT | P1 | 2026-08-19T10:54:46Z | sn44 commit touches scoring: Merge pull request #53 from score-technologies/prv-hf-bfr-commit |
-| `sn51:scoring_commit:2026-08-19T10:32:10Z` | 51 | SCORING_COMMIT | P1 | 2026-08-19T10:54:46Z | sn51 commit touches scoring: DAH-2703: withhold unrented incentive when a host kills the filler at… |
-| `sn51:release:executor-v1.122` | 51 | RELEASE | P1 | 2026-08-19T11:36:23Z | sn51 released executor-v1.122 |
-| `sn71:scoring_commit:2026-08-19T10:57:23Z` | 71 | SCORING_COMMIT | P1 | 2026-08-19T11:36:23Z | sn71 commit touches scoring: Preserve validator app modes in restart rehearsal |
-| `sn108:scoring_commit:2026-08-19T10:55:26Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T11:36:23Z | sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6) |
-
-### detail
-
-- **`sn23:burn_drop:0.847`** - sn23 burn fell 1.000 -> 0.847 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn28:release:v0.4.8-dev`** - sn28 released v0.4.8-dev
-  - published 2026-08-19T10:54:04Z (was v0.4.6-dev)
-- **`sn28:scoring_commit:2026-08-19T10:18:25Z`** - sn28 commit touches scoring: Expand verified NEAR model coverage
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn44:scoring_commit:2026-08-19T10:16:23Z`** - sn44 commit touches scoring: Merge pull request #53 from score-technologies/prv-hf-bfr-commit
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-08-19T10:32:10Z`** - sn51 commit touches scoring: DAH-2703: withhold unrented incentive when a host kills the filler at…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.122`** - sn51 released executor-v1.122
-  - published 2026-08-19T11:02:29Z (was executor-v1.121)
-- **`sn71:scoring_commit:2026-08-19T10:57:23Z`** - sn71 commit touches scoring: Preserve validator app modes in restart rehearsal
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-19T10:55:26Z`** - sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -58,10 +30,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn28:release:v0.4.4-dev` | 28 | RELEASE | 2026-08-12T12:34:56Z | sn28 released v0.4.4-dev |
-| `sn28:scoring_commit:2026-08-12T10:25:25Z` | 28 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn28 commit touches scoring: Document miner model sourcing options |
-| `sn67:scoring_commit:2026-08-12T11:45:36Z` | 67 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260812.post4 |
-| `sn120:scoring_commit:2026-08-12T12:26:03Z` | 120 | SCORING_COMMIT | 2026-08-12T12:34:56Z | sn120 commit touches scoring: rollouts: recover 7k terminal_lego tasks by stubbing empty task_file |
+| `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn28:release:v0.4.4` | 28 | RELEASE | 2026-08-12T14:09:20Z | sn28 released v0.4.4 |
 | `sn28:scoring_commit:2026-08-12T12:46:41Z` | 28 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn28 commit touches scoring: Release gm-miner v0.4.4 |
 | `sn56:scoring_commit:2026-08-12T13:16:40Z` | 56 | SCORING_COMMIT | 2026-08-12T14:09:20Z | sn56 commit touches scoring: Oversample 2026+ models into one R1 and one boss-round task (#1353) |
@@ -204,7 +173,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-08-18T22:22:27Z` | 97 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn97 commit touches scoring: feat: score looped trajectories 0 without calling the judge |
 | `sn76:scoring_commit:2026-08-19T08:54:49Z` | 76 | SCORING_COMMIT | 2026-08-19T09:46:14Z | sn76 commit touches scoring: Report an abstained row when a track has no task set |
 | `sn14:scoring_commit:2026-08-19T07:56:03Z` | 14 | SCORING_COMMIT | 2026-08-19T10:13:41Z | sn14 commit touches scoring: Burn a departed claimant's share to the validator instead of holding … |
-| `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
+| `sn28:release:v0.4.8-dev` | 28 | RELEASE | 2026-08-19T10:54:46Z | sn28 released v0.4.8-dev |
+| `sn28:scoring_commit:2026-08-19T10:18:25Z` | 28 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn28 commit touches scoring: Expand verified NEAR model coverage |
+| `sn44:scoring_commit:2026-08-19T10:16:23Z` | 44 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn44 commit touches scoring: Merge pull request #53 from score-technologies/prv-hf-bfr-commit |
+| `sn51:scoring_commit:2026-08-19T10:32:10Z` | 51 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn51 commit touches scoring: DAH-2703: withhold unrented incentive when a host kills the filler at… |
+| `sn51:release:executor-v1.122` | 51 | RELEASE | 2026-08-19T11:36:23Z | sn51 released executor-v1.122 |
+| `sn71:scoring_commit:2026-08-19T10:57:23Z` | 71 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn71 commit touches scoring: Preserve validator app modes in restart rehearsal |
+| `sn108:scoring_commit:2026-08-19T10:55:26Z` | 108 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6) |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |

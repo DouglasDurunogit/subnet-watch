@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T07:14:38Z, block 8877243
+# ALARMS - generated 2026-08-19T08:02:06Z, block 8877480
 
-window: first_seen in [2026-08-19T06:00:10Z, 2026-08-19T07:15:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T06:47:31Z, 2026-08-19T08:02:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn62:burn_drop:0.000` | 62 | BURN_DROP | P0 | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | P1 | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
+| `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
 
 ### detail
 
+- **`sn62:burn_drop:0.000`** - sn62 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn100:release:v3.3.25: fix(prism): stop control-plane `** - sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts
   - published 2026-08-19T07:07:56Z (was v3.3.24)
+- **`sn92:scoring_commit:2026-08-19T07:50:37Z`** - sn92 commit touches scoring: Declare pynacl for token verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,7 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
-| `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
 | `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 | `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |
 | `sn100:release:v3.3.21 — Prism Lium single-GPU hard-rej` | 100 | RELEASE | 2026-08-12T10:34:51Z | sn100 released v3.3.21 — Prism Lium single-GPU hard-reject (#129) |

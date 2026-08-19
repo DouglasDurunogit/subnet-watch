@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T04:50:30Z, block 8876522
+# ALARMS - generated 2026-08-19T05:42:21Z, block 8876782
 
-window: first_seen in [2026-08-19T03:36:04Z, 2026-08-19T04:51:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T04:27:50Z, 2026-08-19T05:42:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | P0 | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
+| `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 
 ### detail
 
 - **`sn108:burn_drop:0.839`** - sn108 burn fell 1.000 -> 0.839 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn108:scoring_commit:2026-08-19T05:41:54Z`** - sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

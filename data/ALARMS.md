@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T14:48:43Z, block 8879513
+# ALARMS - generated 2026-08-19T15:42:17Z, block 8879781
 
-window: first_seen in [2026-08-19T13:34:08Z, 2026-08-19T14:49:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T14:27:46Z, 2026-08-19T15:42:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:v2.1.0` | 14 | RELEASE | P1 | 2026-08-19T13:56:35Z | sn14 released v2.1.0 |
-| `sn28:release:v0.4.8` | 28 | RELEASE | P1 | 2026-08-19T13:56:35Z | sn28 released v0.4.8 |
-| `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
-| `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
-| `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
 | `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
+| `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
 
 ### detail
 
-- **`sn14:release:v2.1.0`** - sn14 released v2.1.0
-  - published 2026-08-19T13:27:40Z (was v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics.)
-- **`sn28:release:v0.4.8`** - sn28 released v0.4.8
-  - published 2026-08-19T13:35:00Z (was v0.4.8-dev)
-- **`sn28:scoring_commit:2026-08-19T13:23:34Z`** - sn28 commit touches scoring: Release gm-miner v0.4.8
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-08-19T13:11:10Z`** - sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-19T13:15:41Z`** - sn92 commit touches scoring: Cut the validator guide to specs and steps
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-19T14:31:17Z`** - sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-19T15:01:26Z`** - sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -53,7 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
-| `sn111:scoring_commit:2026-08-12T14:50:47Z` | 111 | SCORING_COMMIT | 2026-08-12T15:29:26Z | sn111 commit touches scoring: Add validator cost profile |
 | `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
 | `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
 | `sn51:release:executor-v1.118` | 51 | RELEASE | 2026-08-13T02:42:09Z | sn51 released executor-v1.118 |
@@ -196,6 +183,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.122` | 51 | RELEASE | 2026-08-19T11:36:23Z | sn51 released executor-v1.122 |
 | `sn71:scoring_commit:2026-08-19T10:57:23Z` | 71 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn71 commit touches scoring: Preserve validator app modes in restart rehearsal |
 | `sn108:scoring_commit:2026-08-19T10:55:26Z` | 108 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6) |
+| `sn14:release:v2.1.0` | 14 | RELEASE | 2026-08-19T13:56:35Z | sn14 released v2.1.0 |
+| `sn28:release:v0.4.8` | 28 | RELEASE | 2026-08-19T13:56:35Z | sn28 released v0.4.8 |
+| `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
+| `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
+| `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

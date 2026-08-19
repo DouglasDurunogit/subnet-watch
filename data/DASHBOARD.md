@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-19T14:48:43Z · block 8879513 · run_status **ok**_
+_snapshot 2026-08-19T15:42:17Z · block 8879781 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 56 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 92 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| **Positive margin** | **56** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.3 | 61.24 | 114 | cpu-small | 13 | 20% |
-| 2 | sn121 sundae_bar | 74.4 | 1,059 | 1,059 = | cpu-small | 2 | 60% |
-| 3 | sn62 Ridges | 72.4 | 1,531 | 4,054 | rtx4090* | 3 | 60% |
-| 4 | sn26 Perturb | 72.3 | 58.99 | 1,598 | rtx3060 | 10 | 70% |
-| 5 | sn67 Harnyx | 72.1 | 21.77 | 292 | cpu-small | 147 | 9% |
-| 6 | sn23 Trishool | 71.9 | 501 | 501 = | cpu-small | 2 | 80% |
-| 7 | sn56 Gradients | 69.4 | 621 | 938 | rtx4090* | 5 | 72% |
-| 8 | sn91 cascade | 69.1 | 564 | 2,281 | rtx4090* | 5 | 52% |
-| 9 | sn15 ORO | 68.7 | 15.30 | 15,022 | cpu-small | 82 | 92% |
-| 10 | sn38 ChronoLLM | 67.4 | 142 | 3,021 | cpu-small | 10 | 52% |
-| 11 | sn11 TrajectoryRL | 67 | 4,108 | 4,108 = | cpu-small | 1 | 100% |
-| 12 | sn96 Verathos | 66.5 | 14.18 | 335 | rtx4090 | 84 | 41% |
-| 13 | sn41 Almanac | 65.9 | 5.10 | 34.81 | cpu-small | 75 | 82% |
-| 14 | sn21 AdTAO | 65.1 | 4.32 | 679 | cpu-small | 16 | 35% |
-| 15 | sn85 Vidaio | 63.9 | 119 | 182 | rtx4090* | 13 | 42% |
-| 16 | sn107 Minos | 63.9 | 114 | 33,679 | cpu-small | 20 | 90% |
-| 17 | sn81 Reliquary | 61.4 | 55.93 | 212 | rtx4090* | 50 | 6% |
-| 18 | sn55 NIOME | 61.3 | 55.27 | 461 | rtx4090* | 11 | 29% |
-| 19 | sn51 lium.io | 60 | 43.85 | 1,049 | rtx4090* | 55 | 79% |
-| 20 | sn53 engy | 59.8 | 34.07 | 11,899 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 76.4 | 62.72 | 117 | cpu-small | 13 | 20% |
+| 2 | sn121 sundae_bar | 74.5 | 1,084 | 1,084 = | cpu-small | 2 | 60% |
+| 3 | sn62 Ridges | 72.5 | 1,568 | 4,152 | rtx4090* | 3 | 60% |
+| 4 | sn26 Perturb | 72.4 | 60.47 | 1,637 | rtx3060 | 10 | 70% |
+| 5 | sn67 Harnyx | 72.3 | 22.26 | 298 | cpu-small | 147 | 9% |
+| 6 | sn23 Trishool | 71.9 | 511 | 511 = | cpu-small | 2 | 80% |
+| 7 | sn15 ORO | 69.7 | 15.60 | 15,293 | cpu-small | 82 | 92% |
+| 8 | sn56 Gradients | 69.5 | 636 | 960 | rtx4090* | 5 | 72% |
+| 9 | sn91 cascade | 69.2 | 579 | 2,341 | rtx4090* | 5 | 52% |
+| 10 | sn38 ChronoLLM | 67.5 | 145 | 3,087 | cpu-small | 10 | 52% |
+| 11 | sn11 TrajectoryRL | 67.1 | 4,218 | 4,218 = | cpu-small | 1 | 100% |
+| 12 | sn96 Verathos | 66.7 | 14.73 | 347 | rtx4090 | 89 | 41% |
+| 13 | sn41 Almanac | 66 | 5.25 | 35.65 | cpu-small | 75 | 82% |
+| 14 | sn107 Minos | 65.5 | 160 | 33,757 | cpu-small | 17 | 90% |
+| 15 | sn21 AdTAO | 65.2 | 4.44 | 696 | cpu-small | 16 | 35% |
+| 16 | sn85 Vidaio | 64 | 122 | 187 | rtx4090* | 13 | 42% |
+| 17 | sn81 Reliquary | 61.5 | 57.38 | 217 | rtx4090* | 50 | 6% |
+| 18 | sn55 NIOME | 61.4 | 56.67 | 471 | rtx4090* | 11 | 29% |
+| 19 | sn51 lium.io | 60.1 | 45.09 | 1,074 | rtx4090* | 55 | 79% |
+| 20 | sn53 engy | 59.9 | 35.10 | 12,189 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 18 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 19 |
 | dominated (60–90%) | 18 |
 | captured (>90%) | 29 |
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-19T15:42 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: feat(miner): refuse an architecture the  |
 | 2026-08-19T14:49 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: docs(miner): say which architectures the |
 | 2026-08-19T13:56 | sn14 | RELEASE | sn14 released v2.1.0 |
 | 2026-08-19T13:56 | sn28 | RELEASE | sn28 released v0.4.8 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-19T10:54 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: Expand verified NEAR model coverage |
 | 2026-08-19T10:54 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: Merge pull request #53 from score-technol |
 | 2026-08-19T10:54 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2703: withhold unrented incentive whe |
-| 2026-08-19T10:13 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Burn a departed claimant's share to the v |
 
 ---
 

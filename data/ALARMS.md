@@ -1,29 +1,13 @@
-# ALARMS - generated 2026-08-19T23:03:31Z, block 8881987
+# ALARMS - generated 2026-08-19T23:33:45Z, block 8882139
 
-window: first_seen in [2026-08-19T21:49:02Z, 2026-08-19T23:04:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T22:19:19Z, 2026-08-19T23:34:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn7:release:release-20260819-213008: Record the finn` | 7 | RELEASE | P1 | 2026-08-19T21:50:36Z | sn7 released release-20260819-213008: Record the finney TAO bond vault address (#696) |
-| `sn7:scoring_commit:2026-08-14T17:14:52Z` | 7 | SCORING_COMMIT | P1 | 2026-08-19T21:50:36Z | sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676) |
-| `sn81:scoring_commit:2026-08-19T18:29:14Z` | 81 | SCORING_COMMIT | P1 | 2026-08-19T21:50:36Z | sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of |
-| `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | P2 | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
-
-### detail
-
-- **`sn7:release:release-20260819-213008: Record the finn`** - sn7 released release-20260819-213008: Record the finney TAO bond vault address (#696)
-  - published 2026-08-19T20:16:01Z (was release-20260729-181714)
-- **`sn7:scoring_commit:2026-08-14T17:14:52Z`** - sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-08-19T18:29:14Z`** - sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn7:readme_task_diff:9594fdc9163bdf75`** - sn7 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -206,6 +190,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn1:release:v4.3.5` | 1 | RELEASE | 2026-08-19T20:41:24Z | sn1 released v4.3.5 |
 | `sn10:scoring_commit:2026-08-19T20:15:33Z` | 10 | SCORING_COMMIT | 2026-08-19T21:11:13Z | sn10 commit touches scoring: feat(bench): harness round mode with a single batched scorer |
 | `sn38:scoring_commit:2026-08-19T20:55:05Z` | 38 | SCORING_COMMIT | 2026-08-19T21:11:13Z | sn38 commit touches scoring: Add multi-layer dedup and weighted leak evaluation (#24) |
+| `sn7:release:release-20260819-213008: Record the finn` | 7 | RELEASE | 2026-08-19T21:50:36Z | sn7 released release-20260819-213008: Record the finney TAO bond vault address (#696) |
+| `sn7:scoring_commit:2026-08-14T17:14:52Z` | 7 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676) |
+| `sn81:scoring_commit:2026-08-19T18:29:14Z` | 81 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
@@ -230,6 +217,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
+| `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

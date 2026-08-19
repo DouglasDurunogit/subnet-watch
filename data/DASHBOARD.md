@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-19T13:06:04Z · block 8879000 · run_status **ok**_
+_snapshot 2026-08-19T13:55:57Z · block 8879250 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 91 | `miner_burn` < 0.99 |
-| Ranked | 91 | passed every gate |
+| Pays miners at all | 93 | `miner_burn` < 0.99 |
+| Ranked | 93 | passed every gate |
 | **Positive margin** | **54** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
-| 0–0.2 | 4 | `██` |
-| 0.2–0.4 | 6 | `███` |
+| 0 (none) | 63 | `████████████████████████████` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 6 | `███` |
+| 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 8 | `████` |
-| ≥0.99 dead | 37 | `█████████████████` |
+| ≥0.99 dead | 35 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.3 | 60.39 | 143 | cpu-small | 13 | 21% |
+| 1 | sn76 Phylax | 76.1 | 58.44 | 122 | cpu-small | 13 | 21% |
 | 2 | sn121 sundae_bar | 74.4 | 1,049 | 1,049 = | cpu-small | 2 | 60% |
-| 3 | sn67 Harnyx | 72.1 | 21.60 | 290 | cpu-small | 147 | 9% |
-| 4 | sn23 Trishool | 71.8 | 491 | 491 = | cpu-small | 2 | 80% |
-| 5 | sn26 Perturb | 70.7 | 39.62 | 1,587 | rtx3060 | 10 | 70% |
-| 6 | sn1 Apex | 70 | 743 | 1,009 | rtx4090* | 4 | 57% |
-| 7 | sn15 ORO | 69.8 | 15.26 | 15,118 | cpu-small | 81 | 92% |
-| 8 | sn56 Gradients | 69.4 | 617 | 931 | rtx4090* | 5 | 72% |
-| 9 | sn91 cascade | 69.2 | 592 | 2,391 | rtx4090* | 5 | 52% |
-| 10 | sn38 ChronoLLM | 67.3 | 141 | 2,987 | cpu-small | 10 | 52% |
-| 11 | sn11 TrajectoryRL | 67 | 4,081 | 4,081 = | cpu-small | 1 | 100% |
-| 12 | sn41 Almanac | 65.9 | 5.08 | 34.38 | cpu-small | 75 | 82% |
-| 13 | sn96 Verathos | 65.8 | 11.87 | 299 | rtx4090 | 93 | 41% |
-| 14 | sn85 Vidaio | 64.2 | 131 | 183 | rtx4090* | 13 | 42% |
-| 15 | sn21 AdTAO | 64.1 | 3.52 | 723 | cpu-small | 16 | 37% |
-| 16 | sn107 Minos | 63.7 | 111 | 34,227 | cpu-small | 20 | 90% |
-| 17 | sn81 Reliquary | 61.8 | 62.98 | 234 | rtx4090* | 51 | 6% |
-| 18 | sn55 NIOME | 61.3 | 55.39 | 465 | rtx4090* | 11 | 29% |
-| 19 | sn51 lium.io | 60.3 | 47.26 | 948 | rtx4090* | 54 | 80% |
-| 20 | sn53 engy | 59.7 | 33.39 | 11,687 | rtx4090 | 144 | 62% |
+| 3 | sn26 Perturb | 72.3 | 58.43 | 1,584 | rtx3060 | 10 | 70% |
+| 4 | sn67 Harnyx | 72.1 | 21.56 | 289 | cpu-small | 147 | 9% |
+| 5 | sn23 Trishool | 71.8 | 496 | 496 = | cpu-small | 2 | 80% |
+| 6 | sn1 Apex | 70 | 744 | 1,012 | rtx4090* | 4 | 56% |
+| 7 | sn56 Gradients | 69.4 | 616 | 929 | rtx4090* | 5 | 72% |
+| 8 | sn15 ORO | 69.4 | 15.14 | 15,002 | cpu-small | 81 | 92% |
+| 9 | sn91 cascade | 69 | 554 | 2,239 | rtx4090* | 5 | 52% |
+| 10 | sn38 ChronoLLM | 67.3 | 140 | 2,982 | cpu-small | 10 | 52% |
+| 11 | sn11 TrajectoryRL | 67 | 4,073 | 4,073 = | cpu-small | 1 | 100% |
+| 12 | sn96 Verathos | 66.5 | 13.99 | 332 | rtx4090 | 84 | 41% |
+| 13 | sn41 Almanac | 65.8 | 5.05 | 34.31 | cpu-small | 75 | 82% |
+| 14 | sn107 Minos | 64.7 | 127 | 33,661 | cpu-small | 19 | 90% |
+| 15 | sn21 AdTAO | 64.1 | 3.51 | 722 | cpu-small | 16 | 37% |
+| 16 | sn85 Vidaio | 63.9 | 118 | 182 | rtx4090* | 13 | 42% |
+| 17 | sn81 Reliquary | 61.4 | 55.93 | 214 | rtx4090* | 51 | 6% |
+| 18 | sn55 NIOME | 61.3 | 54.06 | 459 | rtx4090* | 11 | 29% |
+| 19 | sn51 lium.io | 60.3 | 47.25 | 899 | rtx4090* | 55 | 80% |
+| 20 | sn28 gm | 59.7 | 35.20 | 998 | rtx4090* | 49 | 16% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,7 +87,7 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 27 |
 | concentrated (30–60%) | 16 |
-| dominated (60–90%) | 17 |
+| dominated (60–90%) | 19 |
 | captured (>90%) | 30 |
 
 ## Hardware evidence quality
@@ -107,6 +107,11 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-19T13:56 | sn14 | RELEASE | sn14 released v2.1.0 |
+| 2026-08-19T13:56 | sn28 | RELEASE | sn28 released v0.4.8 |
+| 2026-08-19T13:56 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: Release gm-miner v0.4.8 |
+| 2026-08-19T13:56 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Merge pull request #184 from reliquadotai |
+| 2026-08-19T13:56 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Cut the validator guide to specs and step |
 | 2026-08-19T11:36 | sn23 | BURN_DROP | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | 2026-08-19T11:36 | sn51 | RELEASE | sn51 released executor-v1.122 |
 | 2026-08-19T11:36 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve validator app modes in restart r |
@@ -117,11 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-19T10:54 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2703: withhold unrented incentive whe |
 | 2026-08-19T10:13 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Burn a departed claimant's share to the v |
 | 2026-08-19T09:46 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Report an abstained row when a track has  |
-| 2026-08-19T08:52 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Use verified local rehearsal base |
-| 2026-08-19T08:52 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat: score looped trajectories 0 without |
-| 2026-08-19T08:02 | sn62 | BURN_DROP | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
-| 2026-08-19T08:02 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Declare pynacl for token verification |
-| 2026-08-19T07:15 | sn100 | RELEASE | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
 
 ---
 

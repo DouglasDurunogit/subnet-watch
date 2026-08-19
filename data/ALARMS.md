@@ -1,13 +1,32 @@
-# ALARMS - generated 2026-08-19T13:06:04Z, block 8879000
+# ALARMS - generated 2026-08-19T13:55:57Z, block 8879250
 
-window: first_seen in [2026-08-19T11:51:37Z, 2026-08-19T13:06:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T12:41:35Z, 2026-08-19T13:56:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn14:release:v2.1.0` | 14 | RELEASE | P1 | 2026-08-19T13:56:35Z | sn14 released v2.1.0 |
+| `sn28:release:v0.4.8` | 28 | RELEASE | P1 | 2026-08-19T13:56:35Z | sn28 released v0.4.8 |
+| `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
+| `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
+| `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | P1 | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
+
+### detail
+
+- **`sn14:release:v2.1.0`** - sn14 released v2.1.0
+  - published 2026-08-19T13:27:40Z (was v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics.)
+- **`sn28:release:v0.4.8`** - sn28 released v0.4.8
+  - published 2026-08-19T13:35:00Z (was v0.4.8-dev)
+- **`sn28:scoring_commit:2026-08-19T13:23:34Z`** - sn28 commit touches scoring: Release gm-miner v0.4.8
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-08-19T13:11:10Z`** - sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-19T13:15:41Z`** - sn92 commit touches scoring: Cut the validator guide to specs and steps
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

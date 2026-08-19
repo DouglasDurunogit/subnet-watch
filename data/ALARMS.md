@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T05:42:21Z, block 8876782
+# ALARMS - generated 2026-08-19T06:17:01Z, block 8876955
 
-window: first_seen in [2026-08-19T04:27:50Z, 2026-08-19T05:42:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T05:02:34Z, 2026-08-19T06:17:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:burn_drop:0.839` | 108 | BURN_DROP | P0 | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 
 ### detail
 
-- **`sn108:burn_drop:0.839`** - sn108 burn fell 1.000 -> 0.839 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn108:scoring_commit:2026-08-19T05:41:54Z`** - sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
@@ -38,8 +35,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
-| `sn100:release:v3.3.19 — design auto-enqueue + migratio` | 100 | RELEASE | 2026-08-12T06:05:56Z | sn100 released v3.3.19 — design auto-enqueue + migration 0019 fix |
-| `sn100:scoring_commit:2026-08-12T04:29:33Z` | 100 | SCORING_COMMIT | 2026-08-12T06:05:56Z | sn100 commit touches scoring: Merge pull request #120 from BaseIntelligence/feat/prism-miner-paid-li |
+| `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn71:scoring_commit:2026-08-12T07:37:36Z` | 71 | SCORING_COMMIT | 2026-08-12T07:49:32Z | sn71 commit touches scoring: Recover artifact verification from stale pools |
 | `sn96:release:Verathos v0.1.36 — Runtime and Capacity ` | 96 | RELEASE | 2026-08-12T09:22:09Z | sn96 released Verathos v0.1.36 — Runtime and Capacity Stability |
 | `sn85:scoring_commit:2026-08-12T09:34:50Z` | 85 | SCORING_COMMIT | 2026-08-12T10:34:51Z | sn85 commit touches scoring: add audio validation for competitions (#184) |

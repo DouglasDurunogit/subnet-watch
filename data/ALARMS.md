@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T15:42:17Z, block 8879781
+# ALARMS - generated 2026-08-19T16:12:18Z, block 8879931
 
-window: first_seen in [2026-08-19T14:27:46Z, 2026-08-19T15:42:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T14:57:42Z, 2026-08-19T16:12:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
 | `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
+| `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | P1 | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
 
 ### detail
 
-- **`sn108:scoring_commit:2026-08-19T14:31:17Z`** - sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-19T15:01:26Z`** - sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-19T15:56:47Z`** - sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -188,6 +188,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
 | `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
 | `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
+| `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

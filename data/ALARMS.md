@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T06:17:01Z, block 8876955
+# ALARMS - generated 2026-08-19T07:14:38Z, block 8877243
 
-window: first_seen in [2026-08-19T05:02:34Z, 2026-08-19T06:17:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T06:00:10Z, 2026-08-19T07:15:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
+| `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | P1 | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
 
 ### detail
 
-- **`sn108:scoring_commit:2026-08-19T05:41:54Z`** - sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.25: fix(prism): stop control-plane `** - sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts
+  - published 2026-08-19T07:07:56Z (was v3.3.24)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -180,6 +180,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-18T23:59:05Z` | 71 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn71 commit touches scoring: Isolate parity scoring cache |
 | `sn111:scoring_commit:2026-08-19T00:57:56Z` | 111 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn111 commit touches scoring: fix validator batch reliability and provider resilience |
 | `sn46:scoring_commit:2026-08-19T02:41:53Z` | 46 | SCORING_COMMIT | 2026-08-19T03:08:34Z | sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl |
+| `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 | `sn28:readme_task_diff:50edab7d2bab95b4` | 28 | README_TASK_DIFF | 2026-08-12T12:34:56Z | sn28 README task/scoring sections changed |
 | `sn126:readme_task_diff:8ff67deb6bfb1a47` | 126 | README_TASK_DIFF | 2026-08-12T14:09:20Z | sn126 README task/scoring sections changed |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |

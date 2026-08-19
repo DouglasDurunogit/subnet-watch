@@ -1,24 +1,24 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-19T10:54:14Z  |  block: 8878341  |  row_status: ok
+snapshot_utc: 2026-08-19T11:35:43Z  |  block: 8878548  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.90339001477696**
-- registration cost: 0.15 TAO (28.836 USD), open=True
+- miner_burn: **0.9033897256013006**
+- registration cost: 0.15 TAO (28.8525 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 868.1 days  |  registered at block 2627691
+- subnet age: 868.2 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 180.25679109800475** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 932.9449176920426
-- top_miner_usd_day: 1685.6330442860808 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 180.35976967862575** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 933.4778981297632
+- top_miner_usd_day: 1686.5960265809008 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 2  |  gini: 0.4033936582537312  |  top1_share: 0.903393658253731  |  top10_share: 1.0
+- earners: 2  |  gini: 0.40339365825373075  |  top1_share: 0.9033936582537309  |  top10_share: 1.0
 - owner_incentive_share: 0.9033936582537309 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-19T10:54:14Z  |  block: 8878341  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 172.0376 USD/day  |  payback on registration: 0.17 days
+- net margin: 172.1406 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 

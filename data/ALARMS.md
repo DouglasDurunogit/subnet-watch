@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T20:40:50Z, block 8881274
+# ALARMS - generated 2026-08-19T21:10:40Z, block 8881423
 
-window: first_seen in [2026-08-19T19:26:24Z, 2026-08-19T20:41:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T19:56:13Z, 2026-08-19T21:11:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
 | `sn25:release:v2026.8.19-1023689220` | 25 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn25 released v2026.8.19-1023689220 |
 | `sn51:release:executor-v1.123` | 51 | RELEASE | P1 | 2026-08-19T20:02:56Z | sn51 released executor-v1.123 |
 | `sn108:scoring_commit:2026-08-19T19:48:52Z` | 108 | SCORING_COMMIT | P1 | 2026-08-19T20:02:56Z | sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14) |
 | `sn1:release:v4.3.5` | 1 | RELEASE | P1 | 2026-08-19T20:41:24Z | sn1 released v4.3.5 |
+| `sn10:scoring_commit:2026-08-19T20:15:33Z` | 10 | SCORING_COMMIT | P1 | 2026-08-19T21:11:13Z | sn10 commit touches scoring: feat(bench): harness round mode with a single batched scorer |
+| `sn38:scoring_commit:2026-08-19T20:55:05Z` | 38 | SCORING_COMMIT | P1 | 2026-08-19T21:11:13Z | sn38 commit touches scoring: Add multi-layer dedup and weighted leak evaluation (#24) |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | P2 | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | P2 | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
 
 ### detail
 
-- **`sn46:scoring_commit:2026-08-19T19:00:28Z`** - sn46 commit touches scoring: Restore validator log visibility after the bittensor import
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:release:v2026.8.19-1023689220`** - sn25 released v2026.8.19-1023689220
   - published 2026-08-19T19:52:01Z (was v2026.8.17-1021635350)
 - **`sn51:release:executor-v1.123`** - sn51 released executor-v1.123
@@ -29,6 +28,10 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn1:release:v4.3.5`** - sn1 released v4.3.5
   - published 2026-08-19T20:32:20Z (was v4.3.4)
+- **`sn10:scoring_commit:2026-08-19T20:15:33Z`** - sn10 commit touches scoring: feat(bench): harness round mode with a single batched scorer
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn38:scoring_commit:2026-08-19T20:55:05Z`** - sn38 commit touches scoring: Add multi-layer dedup and weighted leak evaluation (#24)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn66:readme_task_diff:6d03fe25d3e98c8c`** - sn66 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 - **`sn89:readme_task_diff:af753e3216a79781`** - sn89 README task/scoring sections changed
@@ -209,6 +212,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
 | `sn1:release:v4.3.4` | 1 | RELEASE | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
 | `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
+| `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

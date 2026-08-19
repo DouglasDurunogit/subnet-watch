@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-19T21:50:04Z · block 8881620 · run_status **ok**_
+_snapshot 2026-08-19T22:37:02Z · block 8881855 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **53** | income beats machine cost |
-| New events this window | 8 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,8 +31,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
 | 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 5 | `██` |
+| 0.2–0.4 | 6 | `███` |
+| 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 8 | `████` |
 | ≥0.99 dead | 38 | `██████████████████` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.7 | 68.00 | 121 | cpu-small | 13 | 20% |
-| 2 | sn121 sundae_bar | 74.6 | 1,139 | 1,139 = | cpu-small | 2 | 60% |
-| 3 | sn62 Ridges | 72.7 | 1,634 | 4,325 | rtx4090* | 3 | 59% |
-| 4 | sn67 Harnyx | 72.5 | 23.38 | 312 | cpu-small | 147 | 9% |
-| 5 | sn23 Trishool | 72.1 | 530 | 530 = | cpu-small | 2 | 80% |
-| 6 | sn26 Perturb | 71 | 43.02 | 78.78 | rtx3060 | 10 | 70% |
-| 7 | sn15 ORO | 70.1 | 16.68 | 15,991 | cpu-small | 84 | 92% |
-| 8 | sn56 Gradients | 69.6 | 666 | 1,009 | rtx4090* | 5 | 72% |
-| 9 | sn91 cascade | 69.2 | 588 | 2,376 | rtx4090* | 5 | 52% |
-| 10 | sn38 ChronoLLM | 67.6 | 152 | 3,233 | cpu-small | 10 | 52% |
-| 11 | sn96 Verathos | 66.8 | 15.32 | 331 | rtx4090 | 88 | 41% |
-| 12 | sn41 Almanac | 66 | 5.37 | 32.88 | cpu-small | 74 | 82% |
-| 13 | sn107 Minos | 64.5 | 124 | 36,852 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 64.2 | 130 | 196 | rtx4090* | 13 | 42% |
-| 15 | sn81 Reliquary | 62 | 67.61 | 203 | rtx4090* | 52 | 5% |
-| 16 | sn55 NIOME | 61.6 | 59.95 | 498 | rtx4090* | 11 | 29% |
-| 17 | sn51 lium.io | 61 | 58.01 | 1,102 | rtx4090* | 50 | 79% |
-| 18 | sn53 engy | 59.8 | 35.00 | 12,159 | rtx4090 | 144 | 63% |
-| 19 | sn102 ConnitoAI | 59.6 | 1,169 | 1,948 | rtx4090* | 5 | 33% |
-| 20 | sn28 gm | 59.1 | 29.21 | 1,607 | rtx4090* | 50 | 42% |
+| 1 | sn76 Phylax | 76.7 | 66.83 | 118 | cpu-small | 13 | 20% |
+| 2 | sn121 sundae_bar | 74.6 | 1,120 | 1,120 = | cpu-small | 2 | 60% |
+| 3 | sn62 Ridges | 72.6 | 1,607 | 4,256 | rtx4090* | 3 | 59% |
+| 4 | sn67 Harnyx | 72.4 | 22.91 | 306 | cpu-small | 147 | 9% |
+| 5 | sn23 Trishool | 72 | 521 | 521 = | cpu-small | 2 | 80% |
+| 6 | sn26 Perturb | 71 | 42.24 | 77.39 | rtx3060 | 10 | 70% |
+| 7 | sn15 ORO | 70 | 16.37 | 15,714 | cpu-small | 84 | 92% |
+| 8 | sn56 Gradients | 69.6 | 655 | 992 | rtx4090* | 5 | 72% |
+| 9 | sn91 cascade | 69.2 | 577 | 2,333 | rtx4090* | 5 | 52% |
+| 10 | sn38 ChronoLLM | 67.5 | 150 | 3,174 | cpu-small | 10 | 52% |
+| 11 | sn96 Verathos | 66.7 | 14.88 | 325 | rtx4090 | 88 | 41% |
+| 12 | sn41 Almanac | 66 | 5.36 | 28.99 | cpu-small | 74 | 82% |
+| 13 | sn107 Minos | 64.5 | 122 | 36,188 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 64.1 | 128 | 192 | rtx4090* | 13 | 42% |
+| 15 | sn28 gm | 62.3 | 76.15 | 1,062 | rtx4090* | 49 | 25% |
+| 16 | sn81 Reliquary | 61.9 | 66.32 | 199 | rtx4090* | 52 | 5% |
+| 17 | sn55 NIOME | 61.5 | 58.77 | 489 | rtx4090* | 11 | 29% |
+| 18 | sn51 lium.io | 60.9 | 56.94 | 1,085 | rtx4090* | 50 | 79% |
+| 19 | sn53 engy | 59.8 | 34.32 | 11,968 | rtx4090 | 144 | 63% |
+| 20 | sn102 ConnitoAI | 59.6 | 1,145 | 1,908 | rtx4090* | 5 | 33% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-19T18:02:04Z, block 8880480
+# ALARMS - generated 2026-08-19T18:50:22Z, block 8880722
 
-window: first_seen in [2026-08-19T16:47:34Z, 2026-08-19T18:02:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T17:35:48Z, 2026-08-19T18:50:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | P1 | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
+| `sn103:burn_drop:0.845` | 103 | BURN_DROP | P0 | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn1:release:v4.3.4` | 1 | RELEASE | P1 | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
+| `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | P1 | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
+| `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
+| `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | P2 | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-19T16:17:00Z`** - sn71 commit touches scoring: Retry pinned validator yum installs safely
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn103:burn_drop:0.845`** - sn103 burn fell 1.000 -> 0.845 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn1:release:v4.3.4`** - sn1 released v4.3.4
   - published 2026-08-19T17:38:43Z (was v4.3.3)
+- **`sn46:scoring_commit:2026-08-19T18:42:46Z`** - sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn10:readme_task_diff:2e15c71289199f4e`** - sn10 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn90:readme_task_diff:320a058a7749d0fe`** - sn90 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,7 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
-| `sn54:scoring_commit:2026-08-12T17:46:40Z` | 54 | SCORING_COMMIT | 2026-08-12T18:40:47Z | sn54 commit touches scoring: update miner screen reply readme |
 | `sn41:scoring_commit:2026-08-12T22:36:16Z` | 41 | SCORING_COMMIT | 2026-08-12T22:57:11Z | sn41 commit touches scoring: Merge pull request #42 from corvxai/mkt_scoring_v2 |
 | `sn51:release:executor-v1.118` | 51 | RELEASE | 2026-08-13T02:42:09Z | sn51 released executor-v1.118 |
 | `sn66:scoring_commit:2026-08-13T00:05:35Z` | 66 | SCORING_COMMIT | 2026-08-13T02:42:09Z | sn66 commit touches scoring: Preserve production task retirements |
@@ -191,6 +199,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
 | `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
 | `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
+| `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
 | `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |

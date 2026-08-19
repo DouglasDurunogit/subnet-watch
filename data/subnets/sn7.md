@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-19T21:10:40Z  |  block: 8881423  |  row_status: ok
+snapshot_utc: 2026-08-19T21:50:04Z  |  block: 8881620  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.9033897966146469**
-- registration cost: 0.15 TAO (30.976499999999998 USD), open=True
+- registration cost: 0.15 TAO (31.2765 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 868.6 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 193.3865712235648** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 1000.8999809323249
-- top_miner_usd_day: 1808.4133906410848 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 196.38230824306635** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 1016.4048482389126
+- top_miner_usd_day: 1836.4273882347586 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,24 +26,24 @@ snapshot_utc: 2026-08-19T21:10:40Z  |  block: 8881423  |  row_status: ok
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 3314 bytes, sha 9ce1a41a5ac77071
-- latest release: release-20260729-181714 2026-07-29T18:16:30Z
-- last commit: 2026-07-29T18:16:30Z
-- scoring-related commit: Add BURN_RATE with pools scaled to the miner share (#607) 2026-07-29T18:16:30Z
+- README: 10642 bytes, sha 3459a8729098b6cc
+- latest release: release-20260819-213008: Record the finney TAO bond vault address (#696) 2026-08-19T20:16:01Z
+- last commit: 2026-08-19T20:16:01Z
+- scoring-related commit: Trim pre-window crown tails before the scoring-window wipe (#676) 2026-08-14T17:14:52Z
 
 ## Resources
 
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 185.1674 USD/day  |  payback on registration: 0.17 days
+- net margin: 188.1631 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 
 - gate: **OK** 
-- score: 37.7 (rank 49), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 20.65 / freshness 21.0 / resource 11.25 / registration 9.94
-- freshness basis: RELEASE 21d ago
+- score: 46.1 (rank 38), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 20.71 / freshness 35.0 / resource 11.25 / registration 9.94
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 
@@ -64,7 +64,18 @@ Native transactions across independent assets — no wrapped tokens, no bridges,
 
 Allways creates a verification layer above independent systems. Assets move natively. Miners complete transactions, validators independently verify the results, and a smart contract enforces outcomes through collateral and slashing.
 
-Currently live with BTC ↔ TAO. Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ CRO (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ ASTER (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ UNI (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
+Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, and QNT — plus SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ POL (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, SOL ↔ POL, and SOL ↔ USDC-on-Polygon (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
+Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ PAXG (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+
+## Miner Risk Disclaimer
+
+The miner in this repository is **reference software**. Review the code thoroughly and build it out with your own safety and optimization measures before running it. Running the base miner, or anything you build on top of it, is at your own risk.
+
 ## Getting Started
 
 ### Requirements
@@ -108,53 +119,48 @@ alw --help
 - **Smart Contract**: Manages collateral, swap lifecycle, and validator voting
 - **CLI**: User interface for posting pairs, managing collateral, and executing swaps
 
-## Validator Storage Layout
+## Miner Onboarding
 
-Validator state lives in `~/.allways/validator/state.db` (SQLite, WAL mode).
-Tables: `pending_confirms`, `rate_events`, `swap_outcomes`. Collateral /
-active / min_collateral state is held in memory and rebuilt from contract
-events each startup; only `swap_outcomes` (the all-time credibility ledger)
-needs to persist across restarts.
+Bond, then activate, then quote — in that order, for either backing. A quote is a promise that
+one specific bond answers for, so `set_quote` refuses a purse you are not already serving
+(`MinerNotActive`). Quoting before activation is rejected, not queued.
 
-## Miner Environment Variables
-
-- `BTC_MODE`, `BTC_PRIVATE_KEY`, `BTC_RPC_URL`, etc. — see `.env.example`.
-
-## Running a Local Subtensor Lite Node (Validators)
-
-Validators read miner rate commitments every ~3 minutes AND stream contract
-events every block via the same connection. Pointing at the public `finney`
-entrypoint works but adds latency and RPC pressure — every validator on the
-network should run its own lite node for this.
+**SOL-backed** (collateral held on Solana):
 
 ```bash
-# Minimal lite-node command (adjust --base-path for storage volume)
-subtensor \
-  --chain finney \
-  --base-path /var/lib/subtensor \
-  --rpc-external \
-  --ws-external \
-  --port 30333 \
-  --rpc-port 9933 \
-  --ws-port 9944 \
-  --pruning 1000
+alw collateral deposit <SOL>                   # fund the local purse (bind-hotkey needs it — see below)
+alw miner bind-hotkey                          # bind your hotkey to your Solana pubkey (once)
+alw miner activate                             # validators vote you active
+alw miner post sol <addr> btc <addr> <rate>    # quote
 ```
 
-Then point the validator at it via `.env`:
+**TAO-backed** (bond held in the Bittensor vault). Same order; the bond lives on another chain,
+so activation waits on validators mirroring it to Solana rather than on a local read:
 
-```env
-SUBTENSOR_NETWORK=ws://127.0.0.1:9944
+```bash
+alw collateral deposit 0.1                     # one-time identity deposit — see the note below
+alw miner bind-hotkey                          # the vault keys bonds by hotkey, joined via this binding
+alw vault post-collateral <TAO>                # bond into the vault (signed by the hotkey)
+alw vault lock                                 # enter service — only a LOCKED bond is attested
+                                               # wait a minute: validators mirror the bond to Solana
+alw miner activate --backing tao               # validators vote that purse active
+alw miner post sol <addr> tao <addr> <rate> --backing tao
 ```
 
-The dev environment in `alw-utils/dev-environment` provisions a local chain
-automatically — no manual lite-node step is required there.
+Purses activate one at a time, so `alw miner activate` lights one. It infers the backing when only
+one purse is funded and not yet serving — which is every step of the order above — and asks for
+`--backing` only when both are candidates at once. Activation is refused, not queued, while the
+bond has yet to be mirrored: retry rather than wait on the request.
 
-## License
+`alw miner status` shows the required bond and whether each purse is serving yet.
 
-MIT License
-
----
-
-<sub>Allways is permissionless, open-source, beta software. Swaps settle directly between counterparty wallets; the protocol never takes custody of user funds, and the protocol fee is charged against miner collateral rather than any user transfer. Validator operators, including those run by the project, verify swap outcomes but cannot redirect or receive any transferred amount. Use at your own risk. This software is provided "as is" without warranty of any kind. Nothing herein constitutes financial advice, and the creators assume no liability for losses arising from use of the protocol.</sub>
-
+**A TAO-only miner still posts a small SOL deposit — once.** `bind-hotkey` requires a live local
+collateral stake (`min_collateral`, currently 0.1 SOL) — which is why the deposit comes first in both
+recipes above — because binding a hotkey is what claims that identity on Solana and the deposit is the
+anti-squat cost of the claim. Since the vault keys bonds by
+hotkey and validators join them to your Solana pubkey through that binding, a TAO-backed miner needs
+the binding to set rates or be credited for its swaps — so it needs the deposit too. That is the whole
+of it: the SOL purse never has to be activated, it posts no quotes, a
 ```
+
+_(truncated at 6000 of 10642 chars - read the full file at https://github.com/entrius/allways)_

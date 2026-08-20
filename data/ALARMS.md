@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T14:10:06Z, block 8886520
+# ALARMS - generated 2026-08-20T15:04:16Z, block 8886790
 
-window: first_seen in [2026-08-20T12:55:38Z, 2026-08-20T14:10:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T13:49:49Z, 2026-08-20T15:04:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:release:Payment and IAM update` | 66 | RELEASE | P1 | 2026-08-20T13:27:01Z | sn66 released Payment and IAM update |
 | `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
 | `sn28:release:v0.4.9` | 28 | RELEASE | P1 | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
 | `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
 
 ### detail
 
-- **`sn66:release:Payment and IAM update`** - sn66 released Payment and IAM update
-  - published 2026-08-20T13:07:51Z (was Initial release)
 - **`sn10:scoring_commit:2026-08-20T12:49:41Z`** - sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn28:release:v0.4.9`** - sn28 released v0.4.9
@@ -228,6 +225,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-20T11:28:23Z` | 21 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types |
 | `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
 | `sn28:release:v0.4.9-dev` | 28 | RELEASE | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
+| `sn66:release:Payment and IAM update` | 66 | RELEASE | 2026-08-20T13:27:01Z | sn66 released Payment and IAM update |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |

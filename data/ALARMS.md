@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T03:07:08Z, block 8883205
+# ALARMS - generated 2026-08-20T03:57:57Z, block 8883459
 
-window: first_seen in [2026-08-20T01:52:36Z, 2026-08-20T03:07:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T02:43:21Z, 2026-08-20T03:58:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn26:scoring_commit:2026-08-19T18:10:08Z` | 26 | SCORING_COMMIT | P1 | 2026-08-20T01:53:55Z | sn26 commit touches scoring: Merge pull request #51 from 0xsigurd/feat/cross-validator-score-conse… |
-| `sn71:scoring_commit:2026-08-20T01:36:55Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T01:53:55Z | sn71 commit touches scoring: Preserve verifier literals in restart bootstrap |
-| `sn108:scoring_commit:2026-08-20T00:05:32Z` | 108 | SCORING_COMMIT | P1 | 2026-08-20T01:53:55Z | sn108 commit touches scoring: fix(cli): model verify printed fields the verdict no longer carries (… |
 | `sn71:scoring_commit:2026-08-20T02:22:02Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T03:07:36Z | sn71 commit touches scoring: test: rehearse miner maintenance first rollout |
 | `sn92:scoring_commit:2026-08-20T03:03:09Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T03:07:36Z | sn92 commit touches scoring: Show miners the cutoff and what their components earn |
-| `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | P2 | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
+| `sn21:release:SN21 rich training data v2` | 21 | RELEASE | P1 | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
+| `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
+| `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
 
 ### detail
 
-- **`sn26:scoring_commit:2026-08-19T18:10:08Z`** - sn26 commit touches scoring: Merge pull request #51 from 0xsigurd/feat/cross-validator-score-conse…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-20T01:36:55Z`** - sn71 commit touches scoring: Preserve verifier literals in restart bootstrap
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-20T00:05:32Z`** - sn108 commit touches scoring: fix(cli): model verify printed fields the verdict no longer carries (…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-20T02:22:02Z`** - sn71 commit touches scoring: test: rehearse miner maintenance first rollout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-20T03:03:09Z`** - sn92 commit touches scoring: Show miners the cutoff and what their components earn
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:readme_task_diff:138b96d6c81dee36`** - sn26 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn21:release:SN21 rich training data v2`** - sn21 released SN21 rich training data v2
+  - published 2026-08-20T03:37:08Z (was SN21 training bundle — 10,791 records, refreshed 2026-08-17)
+- **`sn23:scoring_commit:2026-08-20T03:45:52Z`** - sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-08-20T03:53:06Z`** - sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -213,6 +210,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:scoring_commit:2026-08-14T17:14:52Z` | 7 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676) |
 | `sn81:scoring_commit:2026-08-19T18:29:14Z` | 81 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of |
 | `sn7:release:release-20260819-235753: Activate: quoru` | 7 | RELEASE | 2026-08-20T00:02:25Z | sn7 released release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697) |
+| `sn26:scoring_commit:2026-08-19T18:10:08Z` | 26 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn26 commit touches scoring: Merge pull request #51 from 0xsigurd/feat/cross-validator-score-conse… |
+| `sn71:scoring_commit:2026-08-20T01:36:55Z` | 71 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn71 commit touches scoring: Preserve verifier literals in restart bootstrap |
+| `sn108:scoring_commit:2026-08-20T00:05:32Z` | 108 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn108 commit touches scoring: fix(cli): model verify printed fields the verdict no longer carries (… |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
@@ -235,6 +235,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
 | `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
+| `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

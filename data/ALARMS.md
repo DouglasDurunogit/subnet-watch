@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T21:12:31Z, block 8888631
+# ALARMS - generated 2026-08-20T21:52:47Z, block 8888833
 
-window: first_seen in [2026-08-20T19:58:04Z, 2026-08-20T21:13:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T20:38:19Z, 2026-08-20T21:53:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -14,6 +14,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn13:scoring_commit:2026-08-13T06:08:42Z` | 13 | SCORING_COMMIT | P1 | 2026-08-20T21:13:04Z | sn13 commit touches scoring: fix(s3): stop charging miners for passing validation and for growing |
 | `sn25:release:v2026.8.20-1024590520` | 25 | RELEASE | P1 | 2026-08-20T21:13:04Z | sn25 released v2026.8.20-1024590520 |
 | `sn25:scoring_commit:2026-08-20T20:47:44Z` | 25 | SCORING_COMMIT | P1 | 2026-08-20T21:13:04Z | sn25 commit touches scoring: Fix miner Windows arm64 cross-build |
+| `sn34:scoring_commit:2026-08-20T21:18:29Z` | 34 | SCORING_COMMIT | P1 | 2026-08-20T21:53:19Z | sn34 commit touches scoring: tune: double generator challenge frequency (#425) |
 
 ### detail
 
@@ -26,6 +27,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn25:release:v2026.8.20-1024590520`** - sn25 released v2026.8.20-1024590520
   - published 2026-08-20T20:54:11Z (was v2026.8.20-1024555910)
 - **`sn25:scoring_commit:2026-08-20T20:47:44Z`** - sn25 commit touches scoring: Fix miner Windows arm64 cross-build
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn34:scoring_commit:2026-08-20T21:18:29Z`** - sn34 commit touches scoring: tune: double generator challenge frequency (#425)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

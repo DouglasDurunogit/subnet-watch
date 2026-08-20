@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T05:41:58Z, block 8883980
+# ALARMS - generated 2026-08-20T06:17:59Z, block 8884160
 
-window: first_seen in [2026-08-20T04:27:25Z, 2026-08-20T05:42:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T05:03:23Z, 2026-08-20T06:18:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,15 +10,12 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | P0 | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
-| `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
 | `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | P2 | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 
 ### detail
 
 - **`sn80:burn_drop:0.908`** - sn80 burn fell 1.000 -> 0.908 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-08-20T03:58:52Z`** - sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:readme_task_diff:927a737990a07446`** - sn92 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
@@ -210,6 +207,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:release:SN21 rich training data v2` | 21 | RELEASE | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
 | `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
 | `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
+| `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |

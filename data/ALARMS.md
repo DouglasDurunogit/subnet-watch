@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-19T23:33:45Z, block 8882139
+# ALARMS - generated 2026-08-20T00:01:52Z, block 8882279
 
-window: first_seen in [2026-08-19T22:19:19Z, 2026-08-19T23:34:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-19T22:47:25Z, 2026-08-20T00:02:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn7:release:release-20260819-235753: Activate: quoru` | 7 | RELEASE | P1 | 2026-08-20T00:02:25Z | sn7 released release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697) |
+
+### detail
+
+- **`sn7:release:release-20260819-235753: Activate: quoru`** - sn7 released release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697)
+  - published 2026-08-19T23:57:15Z (was release-20260819-213008: Record the finney TAO bond vault address (#696))
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -193,7 +200,6 @@ _none_
 | `sn7:release:release-20260819-213008: Record the finn` | 7 | RELEASE | 2026-08-19T21:50:36Z | sn7 released release-20260819-213008: Record the finney TAO bond vault address (#696) |
 | `sn7:scoring_commit:2026-08-14T17:14:52Z` | 7 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676) |
 | `sn81:scoring_commit:2026-08-19T18:29:14Z` | 81 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of |
-| `sn66:readme_task_diff:371ffea333df26ac` | 66 | README_TASK_DIFF | 2026-08-12T23:55:02Z | sn66 README task/scoring sections changed |
 | `sn66:readme_task_diff:59994c37a3ef19e9` | 66 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:32958de49be3add2` | 89 | README_TASK_DIFF | 2026-08-13T02:42:09Z | sn89 README task/scoring sections changed |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |

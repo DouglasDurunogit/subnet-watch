@@ -37,12 +37,12 @@
 <text class="ink t-val" x="674" y="91">128</text>
 <text class="ink2 t-lab" x="166" y="127" text-anchor="end">Not 100% burned</text>
 <path class="deemph" d="M176.0,110.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,110.0 H515.1 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="127">90</text>
+<path class="accent" d="M176.0,110.0 H511.3 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="127">89</text>
 <text class="ink2 t-lab" x="166" y="163" text-anchor="end">Registration open</text>
 <path class="deemph" d="M176.0,146.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,146.0 H515.1 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="163">90</text>
+<path class="accent" d="M176.0,146.0 H511.3 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="163">89</text>
 <text class="ink2 t-lab" x="166" y="199" text-anchor="end">Positive margin</text>
 <path class="deemph" d="M176.0,182.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V204.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
 <path class="accent" d="M176.0,182.0 H370.2 a4.0,4.0 0 0 1 4.0,4.0 V204.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>

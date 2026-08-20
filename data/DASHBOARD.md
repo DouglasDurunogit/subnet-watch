@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-20T10:56:38Z · block 8885553 · run_status **ok**_
+_snapshot 2026-08-20T11:37:35Z · block 8885758 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 8 | see ALARMS.md |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0 (none) | 60 | `████████████████████████████` |
+| 0–0.2 | 4 | `██` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 8 | `████` |
-| ≥0.99 dead | 37 | `██████████████████` |
+| ≥0.99 dead | 37 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.8 | 70.27 | 125 | cpu-small | 13 | 20% |
+| 1 | sn76 Phylax | 76.7 | 70.21 | 124 | cpu-small | 13 | 20% |
 | 2 | sn23 Trishool | 72.1 | 539 | 539 = | cpu-small | 2 | 80% |
-| 3 | sn67 Harnyx | 72 | 21.10 | 373 | cpu-small | 166 | 10% |
-| 4 | sn15 ORO | 70.3 | 19.02 | 18,895 | cpu-small | 81 | 92% |
-| 5 | sn56 Gradients | 69.7 | 677 | 1,029 | rtx4090* | 5 | 72% |
-| 6 | sn91 cascade | 69.3 | 611 | 2,467 | rtx4090* | 5 | 52% |
-| 7 | sn38 ChronoLLM | 67.7 | 154 | 3,277 | cpu-small | 10 | 52% |
-| 8 | sn26 Perturb | 67.3 | 17.15 | 247 | rtx3060 | 10 | 70% |
-| 9 | sn1 Apex | 66.2 | 236 | 1,827 | rtx4090* | 4 | 53% |
-| 10 | sn96 Verathos | 65.9 | 12.27 | 293 | rtx4090 | 97 | 40% |
-| 11 | sn107 Minos | 64.6 | 130 | 38,624 | cpu-small | 20 | 90% |
+| 3 | sn67 Harnyx | 72.1 | 21.51 | 287 | cpu-small | 168 | 8% |
+| 4 | sn15 ORO | 70.2 | 18.98 | 18,861 | cpu-small | 81 | 92% |
+| 5 | sn56 Gradients | 69.7 | 676 | 1,028 | rtx4090* | 5 | 72% |
+| 6 | sn91 cascade | 69.3 | 597 | 2,412 | rtx4090* | 5 | 52% |
+| 7 | sn38 ChronoLLM | 67.6 | 154 | 3,266 | cpu-small | 10 | 52% |
+| 8 | sn26 Perturb | 67.3 | 17.13 | 247 | rtx3060 | 10 | 70% |
+| 9 | sn1 Apex | 66.2 | 235 | 1,821 | rtx4090* | 4 | 53% |
+| 10 | sn96 Verathos | 65.9 | 12.24 | 292 | rtx4090 | 97 | 40% |
+| 11 | sn107 Minos | 64.7 | 130 | 38,630 | cpu-small | 20 | 90% |
 | 12 | sn85 Vidaio | 64.5 | 143 | 406 | rtx4090* | 13 | 42% |
-| 13 | sn108 Prometheon | 63.9 | 119 | 175 | rtx4090* | 7 | 66% |
-| 14 | sn60 Bitsec.ai | 62.1 | 952 | 952 = | cpu-small | 3 | 50% |
-| 15 | sn28 gm | 62 | 69.56 | 2,454 | rtx4090* | 49 | 22% |
-| 16 | sn55 NIOME | 61.7 | 61.48 | 510 | rtx4090* | 11 | 29% |
-| 17 | sn51 lium.io | 61.3 | 63.31 | 1,225 | rtx4090* | 47 | 80% |
-| 18 | sn81 Reliquary | 61.3 | 54.81 | 227 | rtx4090* | 54 | 5% |
-| 19 | sn53 engy | 59.9 | 35.94 | 239 | rtx4090 | 144 | 63% |
-| 20 | sn41 Almanac | 55.4 | 11.67 | 24.56 | cpu-small | 76 | 72% |
+| 13 | sn108 Prometheon | 63.8 | 118 | 174 | rtx4090* | 7 | 66% |
+| 14 | sn28 gm | 63.1 | 96.55 | 941 | rtx4090* | 49 | 8% |
+| 15 | sn60 Bitsec.ai | 62.1 | 956 | 956 = | cpu-small | 3 | 50% |
+| 16 | sn51 lium.io | 61.7 | 70.85 | 1,173 | rtx4090* | 44 | 81% |
+| 17 | sn55 NIOME | 61.7 | 60.98 | 511 | rtx4090* | 11 | 29% |
+| 18 | sn81 Reliquary | 61.3 | 54.69 | 226 | rtx4090* | 54 | 5% |
+| 19 | sn53 engy | 59.9 | 35.57 | 237 | rtx4090 | 144 | 63% |
+| 20 | sn41 Almanac | 55.4 | 11.56 | 24.53 | cpu-small | 76 | 72% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-20T11:38 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs: point miners at rich training v2 an |
+| 2026-08-20T11:38 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the |
 | 2026-08-20T10:57 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a vali |
 | 2026-08-20T10:16 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: update min challenge private |
 | 2026-08-20T10:16 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Add the miner axon and document telemetry |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-20T08:54 | sn75 | SCORING_COMMIT | sn75 commit touches scoring: Merge pull request #53 from thenervelab/f |
 | 2026-08-20T08:54 | sn113 | BURN_DROP | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | 2026-08-20T08:05 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive |
-| 2026-08-20T07:23 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: fix(scoring): handle missing claim asses |
-| 2026-08-20T05:42 | sn80 | BURN_DROP | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T10:56:38Z, block 8885553
+# ALARMS - generated 2026-08-20T11:37:35Z, block 8885758
 
-window: first_seen in [2026-08-20T09:42:10Z, 2026-08-20T10:57:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T10:23:02Z, 2026-08-20T11:38:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-20T07:52:49Z` | 67 | SCORING_COMMIT | P1 | 2026-08-20T09:47:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260820.post5 |
-| `sn92:scoring_commit:2026-08-20T09:42:59Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T09:47:27Z | sn92 commit touches scoring: Take telemetry from miners and serve it back |
-| `sn100:release:v3.3.26: fix(validator): persist last se` | 100 | RELEASE | P1 | 2026-08-20T09:47:27Z | sn100 released v3.3.26: fix(validator): persist last sealed bundle across restarts |
-| `sn100:scoring_commit:2026-08-20T09:41:45Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T09:47:27Z | sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we… |
-| `sn44:scoring_commit:2026-08-20T09:49:53Z` | 44 | SCORING_COMMIT | P1 | 2026-08-20T10:16:11Z | sn44 commit touches scoring: update min challenge private |
-| `sn92:scoring_commit:2026-08-20T10:11:04Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T10:16:11Z | sn92 commit touches scoring: Add the miner axon and document telemetry |
 | `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
-| `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | P2 | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-08-20T11:28:23Z` | 21 | SCORING_COMMIT | P1 | 2026-08-20T11:38:02Z | sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types |
+| `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-20T07:52:49Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260820.post5
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-20T09:42:59Z`** - sn92 commit touches scoring: Take telemetry from miners and serve it back
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.26: fix(validator): persist last se`** - sn100 released v3.3.26: fix(validator): persist last sealed bundle across restarts
-  - published 2026-08-20T09:24:56Z (was v3.3.25: fix(prism): stop control-plane OOM restarts)
-- **`sn100:scoring_commit:2026-08-20T09:41:45Z`** - sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn44:scoring_commit:2026-08-20T09:49:53Z`** - sn44 commit touches scoring: update min challenge private
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-20T10:11:04Z`** - sn92 commit touches scoring: Add the miner axon and document telemetry
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-20T10:46:55Z`** - sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:readme_task_diff:f4fc3f2cce58d57d`** - sn67 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn21:scoring_commit:2026-08-20T11:28:23Z`** - sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-20T11:37:34Z`** - sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -231,6 +216,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-08-20T07:41:14Z` | 51 | SCORING_COMMIT | 2026-08-20T08:05:07Z | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot … |
 | `sn71:scoring_commit:2026-08-20T08:18:13Z` | 71 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn71 commit touches scoring: Keep validator CID diagnostics off JSON stdout |
 | `sn75:scoring_commit:2026-08-20T08:51:35Z` | 75 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn75 commit touches scoring: Merge pull request #53 from thenervelab/fix/payminers-from-arion |
+| `sn67:scoring_commit:2026-08-20T07:52:49Z` | 67 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260820.post5 |
+| `sn92:scoring_commit:2026-08-20T09:42:59Z` | 92 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn92 commit touches scoring: Take telemetry from miners and serve it back |
+| `sn100:release:v3.3.26: fix(validator): persist last se` | 100 | RELEASE | 2026-08-20T09:47:27Z | sn100 released v3.3.26: fix(validator): persist last sealed bundle across restarts |
+| `sn100:scoring_commit:2026-08-20T09:41:45Z` | 100 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we… |
+| `sn44:scoring_commit:2026-08-20T09:49:53Z` | 44 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn44 commit touches scoring: update min challenge private |
+| `sn92:scoring_commit:2026-08-20T10:11:04Z` | 92 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn92 commit touches scoring: Add the miner axon and document telemetry |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
@@ -254,6 +245,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
 | `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
 | `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
+| `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

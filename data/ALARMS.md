@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T17:00:45Z, block 8887372
+# ALARMS - generated 2026-08-20T17:40:42Z, block 8887572
 
-window: first_seen in [2026-08-20T15:46:22Z, 2026-08-20T17:01:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T16:26:16Z, 2026-08-20T17:41:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-08-20T15:19:13Z` | 10 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round |
-| `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
-| `sn100:release:v3.3.27` | 100 | RELEASE | P1 | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
-| `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
-| `sn21:scoring_commit:2026-08-20T15:58:11Z` | 21 | SCORING_COMMIT | P1 | 2026-08-20T16:17:45Z | sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper |
 | `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
+| `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
+| `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
+| `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | P2 | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-08-20T15:19:13Z`** - sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-08-20T15:30:56Z`** - sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:v3.3.27`** - sn100 released v3.3.27
-  - published 2026-08-20T15:39:33Z (was v3.3.26: fix(validator): persist last sealed bundle across restarts)
-- **`sn100:scoring_commit:2026-08-20T15:17:43Z`** - sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-08-20T15:58:11Z`** - sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-20T16:25:08Z`** - sn71 commit touches scoring: Bind local readiness verifier environment
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn33:scoring_commit:2026-08-20T17:21:26Z`** - sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-20T17:04:54Z`** - sn111 commit touches scoring: docs(validation): document resilient diagnostic batching
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:readme_task_diff:c457ae49d232190d`** - sn25 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -230,6 +224,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
 | `sn28:release:v0.4.9` | 28 | RELEASE | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
 | `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
+| `sn10:scoring_commit:2026-08-20T15:19:13Z` | 10 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round |
+| `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
+| `sn100:release:v3.3.27` | 100 | RELEASE | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
+| `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
+| `sn21:scoring_commit:2026-08-20T15:58:11Z` | 21 | SCORING_COMMIT | 2026-08-20T16:17:45Z | sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

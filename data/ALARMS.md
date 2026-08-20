@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T10:15:45Z, block 8885348
+# ALARMS - generated 2026-08-20T10:56:38Z, block 8885553
 
-window: first_seen in [2026-08-20T09:01:11Z, 2026-08-20T10:16:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T09:42:10Z, 2026-08-20T10:57:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -15,6 +15,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-20T09:41:45Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T09:47:27Z | sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we… |
 | `sn44:scoring_commit:2026-08-20T09:49:53Z` | 44 | SCORING_COMMIT | P1 | 2026-08-20T10:16:11Z | sn44 commit touches scoring: update min challenge private |
 | `sn92:scoring_commit:2026-08-20T10:11:04Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T10:16:11Z | sn92 commit touches scoring: Add the miner axon and document telemetry |
+| `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
 | `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | P2 | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
 
 ### detail
@@ -30,6 +31,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn44:scoring_commit:2026-08-20T09:49:53Z`** - sn44 commit touches scoring: update min challenge private
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-20T10:11:04Z`** - sn92 commit touches scoring: Add the miner axon and document telemetry
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-20T10:46:55Z`** - sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:readme_task_diff:f4fc3f2cce58d57d`** - sn67 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -59,7 +62,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
-| `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
 | `sn1:release:v4.3.1` | 1 | RELEASE | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
 | `sn26:scoring_commit:2026-08-13T14:58:07Z` | 26 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification |
 | `sn51:release:executor-v1.119` | 51 | RELEASE | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
@@ -229,7 +231,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-08-20T07:41:14Z` | 51 | SCORING_COMMIT | 2026-08-20T08:05:07Z | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot … |
 | `sn71:scoring_commit:2026-08-20T08:18:13Z` | 71 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn71 commit touches scoring: Keep validator CID diagnostics off JSON stdout |
 | `sn75:scoring_commit:2026-08-20T08:51:35Z` | 75 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn75 commit touches scoring: Merge pull request #53 from thenervelab/fix/payminers-from-arion |
-| `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |

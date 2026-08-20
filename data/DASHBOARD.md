@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-20T15:04:16Z · block 8886790 · run_status **ok**_
+_snapshot 2026-08-20T15:46:39Z · block 8887002 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 92 | `miner_burn` < 0.99 |
-| Ranked | 92 | passed every gate |
+| Pays miners at all | 91 | `miner_burn` < 0.99 |
+| Ranked | 91 | passed every gate |
 | **Positive margin** | **55** | income beats machine cost |
-| New events this window | 3 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 61 | `████████████████████████████` |
-| 0–0.2 | 4 | `██` |
-| 0.2–0.4 | 5 | `██` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 9 | `████` |
-| ≥0.99 dead | 36 | `█████████████████` |
+| 0.8–0.99 | 8 | `████` |
+| ≥0.99 dead | 37 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.7 | 69.20 | 123 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72 | 21.21 | 282 | cpu-small | 174 | 8% |
-| 3 | sn23 Trishool | 71.9 | 512 | 512 = | cpu-small | 2 | 80% |
-| 4 | sn15 ORO | 69.9 | 18.55 | 18,150 | cpu-small | 82 | 92% |
-| 5 | sn56 Gradients | 69.6 | 665 | 1,013 | rtx4090* | 5 | 72% |
-| 6 | sn1 Apex | 69.5 | 642 | 1,422 | rtx4090* | 4 | 52% |
-| 7 | sn91 cascade | 69.2 | 592 | 2,393 | rtx4090* | 5 | 52% |
-| 8 | sn38 ChronoLLM | 67.6 | 153 | 3,246 | cpu-small | 10 | 52% |
-| 9 | sn26 Perturb | 67.2 | 16.85 | 244 | rtx3060 | 10 | 70% |
-| 10 | sn96 Verathos | 66.1 | 13.02 | 366 | rtx4090 | 96 | 41% |
-| 11 | sn107 Minos | 64.7 | 129 | 38,281 | cpu-small | 20 | 90% |
-| 12 | sn85 Vidaio | 64.5 | 142 | 403 | rtx4090* | 13 | 42% |
-| 13 | sn108 Prometheon | 63.8 | 117 | 173 | rtx4090* | 7 | 66% |
-| 14 | sn28 gm | 63.5 | 108 | 1,360 | rtx4090* | 49 | 12% |
-| 15 | sn60 Bitsec.ai | 62.1 | 953 | 953 = | cpu-small | 3 | 50% |
-| 16 | sn81 Reliquary | 61.7 | 61.77 | 227 | rtx4090* | 53 | 6% |
-| 17 | sn55 NIOME | 61.6 | 59.90 | 500 | rtx4090* | 11 | 29% |
-| 18 | sn51 lium.io | 61.5 | 66.05 | 1,163 | rtx4090* | 45 | 82% |
-| 19 | sn53 engy | 59.9 | 35.25 | 235 | rtx4090 | 144 | 63% |
-| 20 | sn41 Almanac | 55.3 | 11.38 | 24.17 | cpu-small | 76 | 72% |
+| 1 | sn76 Phylax | 76.7 | 69.81 | 124 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.1 | 21.36 | 284 | cpu-small | 177 | 8% |
+| 3 | sn23 Trishool | 72 | 518 | 518 = | cpu-small | 2 | 80% |
+| 4 | sn15 ORO | 69.9 | 18.72 | 18,309 | cpu-small | 82 | 92% |
+| 5 | sn56 Gradients | 69.7 | 669 | 1,020 | rtx4090* | 5 | 72% |
+| 6 | sn1 Apex | 69.5 | 644 | 1,428 | rtx4090* | 4 | 52% |
+| 7 | sn91 cascade | 69.3 | 596 | 2,409 | rtx4090* | 5 | 52% |
+| 8 | sn38 ChronoLLM | 67.6 | 154 | 3,262 | cpu-small | 10 | 52% |
+| 9 | sn26 Perturb | 67.2 | 16.98 | 245 | rtx3060 | 10 | 70% |
+| 10 | sn96 Verathos | 66.2 | 13.24 | 358 | rtx4090 | 94 | 41% |
+| 11 | sn107 Minos | 64.6 | 127 | 38,664 | cpu-small | 20 | 90% |
+| 12 | sn85 Vidaio | 64.5 | 144 | 411 | rtx4090* | 13 | 42% |
+| 13 | sn108 Prometheon | 63.8 | 118 | 174 | rtx4090* | 7 | 66% |
+| 14 | sn28 gm | 63.6 | 110 | 1,387 | rtx4090* | 49 | 12% |
+| 15 | sn60 Bitsec.ai | 62.2 | 959 | 959 = | cpu-small | 3 | 50% |
+| 16 | sn55 NIOME | 61.6 | 60.38 | 503 | rtx4090* | 11 | 29% |
+| 17 | sn81 Reliquary | 61.6 | 60.23 | 225 | rtx4090* | 53 | 5% |
+| 18 | sn51 lium.io | 61.5 | 66.58 | 1,172 | rtx4090* | 45 | 82% |
+| 19 | sn102 ConnitoAI | 60.4 | 1,475 | 1,476 | rtx4090* | 4 | 25% |
+| 20 | sn53 engy | 59.9 | 35.52 | 237 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 19 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 18 |
 | captured (>90%) | 27 |
 
 ## Hardware evidence quality
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-20T15:47 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: fix(worker): pass leaders.last_score to r |
+| 2026-08-20T15:47 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame |
+| 2026-08-20T15:47 | sn100 | RELEASE | sn100 released v3.3.27 |
+| 2026-08-20T15:47 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(design-challenge): drop crate_name s |
 | 2026-08-20T14:10 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: feat(api): public read API for rounds, le |
 | 2026-08-20T14:10 | sn28 | RELEASE | sn28 released v0.4.9 |
 | 2026-08-20T14:10 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: README: a validator needs NO market-data  |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-20T10:16 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: update min challenge private |
 | 2026-08-20T10:16 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Add the miner axon and document telemetry |
 | 2026-08-20T09:47 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-08-20T09:47 | sn67 | README_TASK_DIFF | sn67 README task/scoring sections changed |
-| 2026-08-20T09:47 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Take telemetry from miners and serve it b |
-| 2026-08-20T09:47 | sn100 | RELEASE | sn100 released v3.3.26: fix(validator): persist last sealed bundle acr |
-| 2026-08-20T09:47 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: Merge pull request #183 from BaseIntelli |
 
 ---
 

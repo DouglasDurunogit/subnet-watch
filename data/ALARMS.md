@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T15:04:16Z, block 8886790
+# ALARMS - generated 2026-08-20T15:46:39Z, block 8887002
 
-window: first_seen in [2026-08-20T13:49:49Z, 2026-08-20T15:04:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T14:32:11Z, 2026-08-20T15:47:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
-| `sn28:release:v0.4.9` | 28 | RELEASE | P1 | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
-| `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
+| `sn10:scoring_commit:2026-08-20T15:19:13Z` | 10 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round |
+| `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
+| `sn100:release:v3.3.27` | 100 | RELEASE | P1 | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
+| `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-08-20T12:49:41Z`** - sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress
+- **`sn10:scoring_commit:2026-08-20T15:19:13Z`** - sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.9`** - sn28 released v0.4.9
-  - published 2026-08-20T13:42:45Z (was v0.4.9-dev)
-- **`sn89:scoring_commit:2026-08-20T13:41:37Z`** - sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos…
+- **`sn53:scoring_commit:2026-08-20T15:30:56Z`** - sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:release:v3.3.27`** - sn100 released v3.3.27
+  - published 2026-08-20T15:39:33Z (was v3.3.26: fix(validator): persist last sealed bundle across restarts)
+- **`sn100:scoring_commit:2026-08-20T15:17:43Z`** - sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -47,10 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
-| `sn26:scoring_commit:2026-08-13T14:58:07Z` | 26 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification |
-| `sn51:release:executor-v1.119` | 51 | RELEASE | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
-| `sn75:scoring_commit:2026-08-13T13:14:25Z` | 75 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn75 commit touches scoring: updated validator weights submitter |
-| `sn100:scoring_commit:2026-08-13T15:17:24Z` | 100 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn100 commit touches scoring: fix(site): attribute arena weight per challenge, not global burn (#142 |
 | `sn38:scoring_commit:2026-08-13T16:30:43Z` | 38 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn38 commit touches scoring: Update validator image to latest version in docker-compose files |
 | `sn90:release:v1.1.0 — Targon max $/card + raised GPU ` | 90 | RELEASE | 2026-08-13T16:39:08Z | sn90 released v1.1.0 — Targon max $/card + raised GPU card caps |
 | `sn90:scoring_commit:2026-08-13T15:50:20Z` | 90 | SCORING_COMMIT | 2026-08-13T16:39:08Z | sn90 commit touches scoring: chore(validator): bump version to 1.1.0 for Watchtower v1 track |
@@ -226,7 +225,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
 | `sn28:release:v0.4.9-dev` | 28 | RELEASE | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
 | `sn66:release:Payment and IAM update` | 66 | RELEASE | 2026-08-20T13:27:01Z | sn66 released Payment and IAM update |
-| `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
+| `sn28:release:v0.4.9` | 28 | RELEASE | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
+| `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |

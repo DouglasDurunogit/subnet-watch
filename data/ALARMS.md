@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T08:04:44Z, block 8884693
+# ALARMS - generated 2026-08-20T08:53:40Z, block 8884938
 
-window: first_seen in [2026-08-20T06:50:07Z, 2026-08-20T08:05:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T07:39:06Z, 2026-08-20T08:54:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn111:scoring_commit:2026-08-20T07:12:31Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T07:23:41Z | sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely |
+| `sn7:burn_drop:0.978` | 7 | BURN_DROP | P0 | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
+| `sn113:burn_drop:0.990` | 113 | BURN_DROP | P0 | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn51:scoring_commit:2026-08-20T07:41:14Z` | 51 | SCORING_COMMIT | P1 | 2026-08-20T08:05:07Z | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot … |
+| `sn71:scoring_commit:2026-08-20T08:18:13Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T08:54:06Z | sn71 commit touches scoring: Keep validator CID diagnostics off JSON stdout |
+| `sn75:scoring_commit:2026-08-20T08:51:35Z` | 75 | SCORING_COMMIT | P1 | 2026-08-20T08:54:06Z | sn75 commit touches scoring: Merge pull request #53 from thenervelab/fix/payminers-from-arion |
 
 ### detail
 
-- **`sn111:scoring_commit:2026-08-20T07:12:31Z`** - sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn7:burn_drop:0.978`** - sn7 burn fell 0.992 -> 0.978 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn113:burn_drop:0.990`** - sn113 burn fell 1.000 -> 0.990 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn51:scoring_commit:2026-08-20T07:41:14Z`** - sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-20T08:18:13Z`** - sn71 commit touches scoring: Keep validator CID diagnostics off JSON stdout
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn75:scoring_commit:2026-08-20T08:51:35Z`** - sn75 commit touches scoring: Merge pull request #53 from thenervelab/fix/payminers-from-arion
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -209,6 +218,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
 | `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
 | `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
+| `sn111:scoring_commit:2026-08-20T07:12:31Z` | 111 | SCORING_COMMIT | 2026-08-20T07:23:41Z | sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T11:37:35Z, block 8885758
+# ALARMS - generated 2026-08-20T12:15:25Z, block 8885947
 
-window: first_seen in [2026-08-20T10:23:02Z, 2026-08-20T11:38:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T11:00:50Z, 2026-08-20T12:15:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
 | `sn21:scoring_commit:2026-08-20T11:28:23Z` | 21 | SCORING_COMMIT | P1 | 2026-08-20T11:38:02Z | sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types |
 | `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
+| `sn28:release:v0.4.9-dev` | 28 | RELEASE | P1 | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-20T10:46:55Z`** - sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:scoring_commit:2026-08-20T11:28:23Z`** - sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-20T11:37:34Z`** - sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.9-dev`** - sn28 released v0.4.9-dev
+  - published 2026-08-20T12:07:41Z (was v0.4.8)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -222,6 +222,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-08-20T09:41:45Z` | 100 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we… |
 | `sn44:scoring_commit:2026-08-20T09:49:53Z` | 44 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn44 commit touches scoring: update min challenge private |
 | `sn92:scoring_commit:2026-08-20T10:11:04Z` | 92 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn92 commit touches scoring: Add the miner axon and document telemetry |
+| `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |

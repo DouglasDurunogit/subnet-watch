@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T19:10:08Z, block 8888019
+# ALARMS - generated 2026-08-20T19:54:55Z, block 8888243
 
-window: first_seen in [2026-08-20T17:55:38Z, 2026-08-20T19:10:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T18:40:22Z, 2026-08-20T19:55:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn121:burn_drop:0.611` | 121 | BURN_DROP | P0 | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
-| `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
+| `sn18:release:Release 2.1.2` | 18 | RELEASE | P1 | 2026-08-20T19:55:22Z | sn18 released Release 2.1.2 |
 
 ### detail
 
-- **`sn121:burn_drop:0.611`** - sn121 burn fell 1.000 -> 0.611 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-08-20T18:02:42Z`** - sn71 commit touches scoring: Repair release verifier test isolation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-08-20T18:09:55Z`** - sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn18:release:Release 2.1.2`** - sn18 released Release 2.1.2
+  - published 2026-08-20T19:28:17Z (was Release 2.1.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -45,6 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
+| `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn15:scoring_commit:2026-08-13T21:50:38Z` | 15 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn15 commit touches scoring: chore(deps): bump msgpack from 1.1.2 to 1.2.1 in /docker/validator (#… |
 | `sn91:scoring_commit:2026-08-13T21:52:49Z` | 91 | SCORING_COMMIT | 2026-08-13T22:10:33Z | sn91 commit touches scoring: miner dashboard: show warm-start init + next-round scheduled checkpoin |
 | `sn91:scoring_commit:2026-08-13T23:06:33Z` | 91 | SCORING_COMMIT | 2026-08-13T23:12:08Z | sn91 commit touches scoring: miner dashboard: label warm-start checkpoints with their origin round… |
@@ -228,6 +222,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
 | `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
 | `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
+| `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
+| `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T15:46:39Z, block 8887002
+# ALARMS - generated 2026-08-20T16:17:08Z, block 8887154
 
-window: first_seen in [2026-08-20T14:32:11Z, 2026-08-20T15:47:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T15:02:45Z, 2026-08-20T16:17:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
 | `sn100:release:v3.3.27` | 100 | RELEASE | P1 | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
 | `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
+| `sn21:scoring_commit:2026-08-20T15:58:11Z` | 21 | SCORING_COMMIT | P1 | 2026-08-20T16:17:45Z | sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper |
 
 ### detail
 
@@ -23,6 +24,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn100:release:v3.3.27`** - sn100 released v3.3.27
   - published 2026-08-20T15:39:33Z (was v3.3.26: fix(validator): persist last sealed bundle across restarts)
 - **`sn100:scoring_commit:2026-08-20T15:17:43Z`** - sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-20T15:58:11Z`** - sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

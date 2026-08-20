@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T13:26:28Z, block 8886302
+# ALARMS - generated 2026-08-20T14:10:06Z, block 8886520
 
-window: first_seen in [2026-08-20T12:12:01Z, 2026-08-20T13:27:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T12:55:38Z, 2026-08-20T14:10:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.9-dev` | 28 | RELEASE | P1 | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
 | `sn66:release:Payment and IAM update` | 66 | RELEASE | P1 | 2026-08-20T13:27:01Z | sn66 released Payment and IAM update |
+| `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
+| `sn28:release:v0.4.9` | 28 | RELEASE | P1 | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
+| `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
 
 ### detail
 
-- **`sn28:release:v0.4.9-dev`** - sn28 released v0.4.9-dev
-  - published 2026-08-20T12:07:41Z (was v0.4.8)
 - **`sn66:release:Payment and IAM update`** - sn66 released Payment and IAM update
   - published 2026-08-20T13:07:51Z (was Initial release)
+- **`sn10:scoring_commit:2026-08-20T12:49:41Z`** - sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.9`** - sn28 released v0.4.9
+  - published 2026-08-20T13:42:45Z (was v0.4.9-dev)
+- **`sn89:scoring_commit:2026-08-20T13:41:37Z`** - sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -44,7 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
-| `sn1:release:v4.3.1` | 1 | RELEASE | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
 | `sn26:scoring_commit:2026-08-13T14:58:07Z` | 26 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn26 commit touches scoring: Merge pull request #49 from 0xsigurd/feat/image-hash-verification |
 | `sn51:release:executor-v1.119` | 51 | RELEASE | 2026-08-13T15:31:13Z | sn51 released executor-v1.119 |
 | `sn75:scoring_commit:2026-08-13T13:14:25Z` | 75 | SCORING_COMMIT | 2026-08-13T15:31:13Z | sn75 commit touches scoring: updated validator weights submitter |
@@ -222,6 +227,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
 | `sn21:scoring_commit:2026-08-20T11:28:23Z` | 21 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types |
 | `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
+| `sn28:release:v0.4.9-dev` | 28 | RELEASE | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |
 | `sn38:readme_task_diff:0929297366a7bf8b` | 38 | README_TASK_DIFF | 2026-08-13T16:39:08Z | sn38 README task/scoring sections changed |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |

@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-08-20T00:01:52Z  |  block: 8882279  |  row_status: ok
+snapshot_utc: 2026-08-20T01:53:22Z  |  block: 8882837  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.10276 USD), open=True
+- registration cost: 0.0005 TAO (0.10368000000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 12  |  free: 0
-- subnet age: 1026.7 days  |  registered at block 1489797
+- subnet age: 1026.8 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 18527.249112280853
-- top_miner_usd_day: 18527.249112280853 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 18702.754811820418
+- top_miner_usd_day: 18702.754811820418 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -41,7 +41,7 @@ snapshot_utc: 2026-08-20T00:01:52Z  |  block: 8882279  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 66), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 65), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: RELEASE 19d ago
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T06:17:59Z, block 8884160
+# ALARMS - generated 2026-08-20T07:23:04Z, block 8884485
 
-window: first_seen in [2026-08-20T05:03:23Z, 2026-08-20T06:18:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T06:08:41Z, 2026-08-20T07:23:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn80:burn_drop:0.908` | 80 | BURN_DROP | P0 | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
-| `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | P2 | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
+| `sn111:scoring_commit:2026-08-20T07:12:31Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T07:23:41Z | sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely |
 
 ### detail
 
-- **`sn80:burn_drop:0.908`** - sn80 burn fell 1.000 -> 0.908 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn92:readme_task_diff:927a737990a07446`** - sn92 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn111:scoring_commit:2026-08-20T07:12:31Z`** - sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,6 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
+| `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
 | `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
 | `sn1:release:v4.3.1` | 1 | RELEASE | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
@@ -231,6 +229,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
 | `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
 | `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
+| `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

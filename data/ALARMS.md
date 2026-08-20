@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T20:41:08Z, block 8888474
+# ALARMS - generated 2026-08-20T21:12:31Z, block 8888631
 
-window: first_seen in [2026-08-20T19:26:45Z, 2026-08-20T20:41:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T19:58:04Z, 2026-08-20T21:13:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn18:release:Release 2.1.2` | 18 | RELEASE | P1 | 2026-08-20T19:55:22Z | sn18 released Release 2.1.2 |
 | `sn25:release:v2026.8.20-1024555910` | 25 | RELEASE | P1 | 2026-08-20T20:41:45Z | sn25 released v2026.8.20-1024555910 |
+| `sn13:release:Release v1.18.71` | 13 | RELEASE | P1 | 2026-08-20T21:13:04Z | sn13 released Release v1.18.71 |
+| `sn13:scoring_commit:2026-08-13T06:08:42Z` | 13 | SCORING_COMMIT | P1 | 2026-08-20T21:13:04Z | sn13 commit touches scoring: fix(s3): stop charging miners for passing validation and for growing |
+| `sn25:release:v2026.8.20-1024590520` | 25 | RELEASE | P1 | 2026-08-20T21:13:04Z | sn25 released v2026.8.20-1024590520 |
+| `sn25:scoring_commit:2026-08-20T20:47:44Z` | 25 | SCORING_COMMIT | P1 | 2026-08-20T21:13:04Z | sn25 commit touches scoring: Fix miner Windows arm64 cross-build |
 
 ### detail
 
-- **`sn18:release:Release 2.1.2`** - sn18 released Release 2.1.2
-  - published 2026-08-20T19:28:17Z (was Release 2.1.0)
 - **`sn25:release:v2026.8.20-1024555910`** - sn25 released v2026.8.20-1024555910
   - published 2026-08-20T19:56:32Z (was v2026.8.19-1023689220)
+- **`sn13:release:Release v1.18.71`** - sn13 released Release v1.18.71
+  - published 2026-08-20T20:51:28Z (was Release v1.18.70)
+- **`sn13:scoring_commit:2026-08-13T06:08:42Z`** - sn13 commit touches scoring: fix(s3): stop charging miners for passing validation and for growing
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.20-1024590520`** - sn25 released v2026.8.20-1024590520
+  - published 2026-08-20T20:54:11Z (was v2026.8.20-1024555910)
+- **`sn25:scoring_commit:2026-08-20T20:47:44Z`** - sn25 commit touches scoring: Fix miner Windows arm64 cross-build
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -227,6 +236,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
 | `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
 | `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
+| `sn18:release:Release 2.1.2` | 18 | RELEASE | 2026-08-20T19:55:22Z | sn18 released Release 2.1.2 |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

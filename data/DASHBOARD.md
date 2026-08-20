@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-20T18:14:34Z · block 8887742 · run_status **ok**_
+_snapshot 2026-08-20T19:10:08Z · block 8888019 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 57 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 92 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 7 | see ALARMS.md |
+| **Positive margin** | **57** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0 (none) | 61 | `████████████████████████████` |
+| 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 7 | `███` |
-| ≥0.99 dead | 36 | `████████████████` |
+| ≥0.99 dead | 36 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.7 | 69.87 | 124 | cpu-small | 13 | 20% |
-| 2 | sn121 sundae_bar | 74.5 | 1,108 | 1,108 = | cpu-small | 2 | 61% |
-| 3 | sn67 Harnyx | 72.1 | 21.21 | 282 | cpu-small | 178 | 8% |
-| 4 | sn23 Trishool | 72 | 517 | 517 = | cpu-small | 2 | 80% |
-| 5 | sn56 Gradients | 69.7 | 670 | 1,022 | rtx4090* | 5 | 72% |
-| 6 | sn15 ORO | 69.6 | 19.00 | 18,562 | cpu-small | 82 | 92% |
-| 7 | sn91 cascade | 69.3 | 604 | 2,441 | rtx4090* | 5 | 52% |
-| 8 | sn1 Apex | 68.3 | 450 | 1,050 | rtx4090* | 5 | 55% |
-| 9 | sn38 ChronoLLM | 67.7 | 156 | 3,305 | cpu-small | 10 | 52% |
-| 10 | sn11 TrajectoryRL | 67.3 | 4,437 | 4,437 = | cpu-small | 1 | 100% |
-| 11 | sn26 Perturb | 67.3 | 17.01 | 246 | rtx3060 | 10 | 70% |
-| 12 | sn96 Verathos | 67.1 | 16.41 | 381 | rtx4090 | 95 | 41% |
-| 13 | sn107 Minos | 65.4 | 151 | 38,002 | cpu-small | 20 | 89% |
-| 14 | sn85 Vidaio | 64.3 | 133 | 415 | rtx4090* | 13 | 42% |
+| 1 | sn76 Phylax | 76.8 | 70.30 | 125 | cpu-small | 13 | 20% |
+| 2 | sn121 sundae_bar | 74.5 | 1,106 | 1,106 = | cpu-small | 2 | 61% |
+| 3 | sn67 Harnyx | 72.1 | 21.18 | 282 | cpu-small | 178 | 8% |
+| 4 | sn23 Trishool | 72 | 516 | 516 = | cpu-small | 2 | 80% |
+| 5 | sn56 Gradients | 69.7 | 669 | 1,021 | rtx4090* | 5 | 72% |
+| 6 | sn91 cascade | 69.3 | 605 | 2,443 | rtx4090* | 5 | 52% |
+| 7 | sn15 ORO | 69.2 | 19.01 | 18,573 | cpu-small | 82 | 92% |
+| 8 | sn1 Apex | 68.2 | 430 | 1,198 | rtx4090* | 5 | 53% |
+| 9 | sn38 ChronoLLM | 67.7 | 155 | 3,283 | cpu-small | 10 | 52% |
+| 10 | sn11 TrajectoryRL | 67.3 | 4,432 | 4,432 = | cpu-small | 1 | 100% |
+| 11 | sn26 Perturb | 67.3 | 16.99 | 245 | rtx3060 | 10 | 70% |
+| 12 | sn96 Verathos | 67.1 | 16.24 | 378 | rtx4090 | 95 | 41% |
+| 13 | sn107 Minos | 65.4 | 151 | 38,028 | cpu-small | 20 | 89% |
+| 14 | sn85 Vidaio | 64.2 | 133 | 414 | rtx4090* | 13 | 42% |
 | 15 | sn108 Prometheon | 63.8 | 117 | 173 | rtx4090* | 7 | 66% |
-| 16 | sn28 gm | 63.3 | 101 | 917 | rtx4090* | 49 | 8% |
-| 17 | sn60 Bitsec.ai | 62.5 | 1,049 | 1,049 = | cpu-small | 3 | 50% |
-| 18 | sn81 Reliquary | 62.2 | 71.07 | 203 | rtx4090* | 51 | 5% |
+| 16 | sn28 gm | 63.4 | 106 | 1,267 | rtx4090* | 51 | 11% |
+| 17 | sn60 Bitsec.ai | 62.4 | 1,018 | 1,018 = | cpu-small | 3 | 50% |
+| 18 | sn81 Reliquary | 62.2 | 70.97 | 203 | rtx4090* | 51 | 5% |
 | 19 | sn51 lium.io | 62 | 75.76 | 1,157 | rtx4090* | 45 | 82% |
-| 20 | sn55 NIOME | 61.7 | 61.10 | 512 | rtx4090* | 11 | 29% |
+| 20 | sn55 NIOME | 61.7 | 61.02 | 511 | rtx4090* | 11 | 29% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;

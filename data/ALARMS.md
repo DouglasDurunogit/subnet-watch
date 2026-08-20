@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T18:14:34Z, block 8887742
+# ALARMS - generated 2026-08-20T19:10:08Z, block 8888019
 
-window: first_seen in [2026-08-20T17:00:10Z, 2026-08-20T18:15:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T17:55:38Z, 2026-08-20T19:10:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,29 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | P0 | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
-| `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
-| `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
 | `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
 | `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
-| `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | P2 | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 
 ### detail
 
 - **`sn121:burn_drop:0.611`** - sn121 burn fell 1.000 -> 0.611 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-08-20T16:25:08Z`** - sn71 commit touches scoring: Bind local readiness verifier environment
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn33:scoring_commit:2026-08-20T17:21:26Z`** - sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-20T17:04:54Z`** - sn111 commit touches scoring: docs(validation): document resilient diagnostic batching
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-20T18:02:42Z`** - sn71 commit touches scoring: Repair release verifier test isolation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-20T18:09:55Z`** - sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:readme_task_diff:c457ae49d232190d`** - sn25 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -237,6 +225,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:release:v3.3.27` | 100 | RELEASE | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
 | `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
 | `sn21:scoring_commit:2026-08-20T15:58:11Z` | 21 | SCORING_COMMIT | 2026-08-20T16:17:45Z | sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper |
+| `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
+| `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
+| `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
@@ -258,6 +249,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
 | `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 | `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
+| `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

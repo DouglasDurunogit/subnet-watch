@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T03:57:57Z, block 8883459
+# ALARMS - generated 2026-08-20T04:48:52Z, block 8883714
 
-window: first_seen in [2026-08-20T02:43:21Z, 2026-08-20T03:58:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T03:34:21Z, 2026-08-20T04:49:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-20T02:22:02Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T03:07:36Z | sn71 commit touches scoring: test: rehearse miner maintenance first rollout |
-| `sn92:scoring_commit:2026-08-20T03:03:09Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T03:07:36Z | sn92 commit touches scoring: Show miners the cutoff and what their components earn |
 | `sn21:release:SN21 rich training data v2` | 21 | RELEASE | P1 | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
 | `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
 | `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
+| `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-20T02:22:02Z`** - sn71 commit touches scoring: test: rehearse miner maintenance first rollout
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-20T03:03:09Z`** - sn92 commit touches scoring: Show miners the cutoff and what their components earn
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:release:SN21 rich training data v2`** - sn21 released SN21 rich training data v2
   - published 2026-08-20T03:37:08Z (was SN21 training bundle — 10,791 records, refreshed 2026-08-17)
 - **`sn23:scoring_commit:2026-08-20T03:45:52Z`** - sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn100:scoring_commit:2026-08-20T03:53:06Z`** - sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-20T03:58:52Z`** - sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn70:burn_drop:0.000` | 70 | BURN_DROP | 2026-08-13T04:32:20Z | sn70 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:3000` | 6 | WEIGHTS_VERSION_BUMP | 2026-08-13T16:39:08Z | sn6 weights_version 2018 -> 3000 |
 | `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -51,7 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
-| `sn89:scoring_commit:2026-08-13T03:41:31Z` | 89 | SCORING_COMMIT | 2026-08-13T04:32:20Z | sn89 commit touches scoring: HF: measure miner behaviour above the board filter, not below it |
 | `sn44:scoring_commit:2026-08-13T09:12:05Z` | 44 | SCORING_COMMIT | 2026-08-13T09:22:53Z | sn44 commit touches scoring: blacklist + min common challenges tiebreak |
 | `sn67:scoring_commit:2026-08-13T09:35:16Z` | 67 | SCORING_COMMIT | 2026-08-13T10:35:49Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260813.post3 |
 | `sn1:release:v4.3.1` | 1 | RELEASE | 2026-08-13T14:10:36Z | sn1 released v4.3.1 |
@@ -213,6 +208,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:scoring_commit:2026-08-19T18:10:08Z` | 26 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn26 commit touches scoring: Merge pull request #51 from 0xsigurd/feat/cross-validator-score-conse… |
 | `sn71:scoring_commit:2026-08-20T01:36:55Z` | 71 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn71 commit touches scoring: Preserve verifier literals in restart bootstrap |
 | `sn108:scoring_commit:2026-08-20T00:05:32Z` | 108 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn108 commit touches scoring: fix(cli): model verify printed fields the verdict no longer carries (… |
+| `sn71:scoring_commit:2026-08-20T02:22:02Z` | 71 | SCORING_COMMIT | 2026-08-20T03:07:36Z | sn71 commit touches scoring: test: rehearse miner maintenance first rollout |
+| `sn92:scoring_commit:2026-08-20T03:03:09Z` | 92 | SCORING_COMMIT | 2026-08-20T03:07:36Z | sn92 commit touches scoring: Show miners the cutoff and what their components earn |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |

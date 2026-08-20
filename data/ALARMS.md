@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T17:40:42Z, block 8887572
+# ALARMS - generated 2026-08-20T18:14:34Z, block 8887742
 
-window: first_seen in [2026-08-20T16:26:16Z, 2026-08-20T17:41:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T17:00:10Z, 2026-08-20T18:15:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
+| `sn121:burn_drop:0.611` | 121 | BURN_DROP | P0 | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
 | `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
 | `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
+| `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
+| `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | P1 | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
 | `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | P2 | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 
 ### detail
 
+- **`sn121:burn_drop:0.611`** - sn121 burn fell 1.000 -> 0.611 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-20T16:25:08Z`** - sn71 commit touches scoring: Bind local readiness verifier environment
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn33:scoring_commit:2026-08-20T17:21:26Z`** - sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-20T17:04:54Z`** - sn111 commit touches scoring: docs(validation): document resilient diagnostic batching
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-20T18:02:42Z`** - sn71 commit touches scoring: Repair release verifier test isolation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-20T18:09:55Z`** - sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:readme_task_diff:c457ae49d232190d`** - sn25 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -29,7 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn118:burn_drop:0.000` | 118 | BURN_DROP | 2026-08-13T17:45:02Z | sn118 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn100:burn_drop:0.000` | 100 | BURN_DROP | 2026-08-13T19:46:45Z | sn100 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |

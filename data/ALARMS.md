@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T04:48:52Z, block 8883714
+# ALARMS - generated 2026-08-20T05:41:58Z, block 8883980
 
-window: first_seen in [2026-08-20T03:34:21Z, 2026-08-20T04:49:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T04:27:25Z, 2026-08-20T05:42:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:release:SN21 rich training data v2` | 21 | RELEASE | P1 | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
-| `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
-| `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | P1 | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
+| `sn80:burn_drop:0.908` | 80 | BURN_DROP | P0 | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | P1 | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
+| `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | P2 | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:release:SN21 rich training data v2`** - sn21 released SN21 rich training data v2
-  - published 2026-08-20T03:37:08Z (was SN21 training bundle — 10,791 records, refreshed 2026-08-17)
-- **`sn23:scoring_commit:2026-08-20T03:45:52Z`** - sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-08-20T03:53:06Z`** - sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn80:burn_drop:0.908`** - sn80 burn fell 1.000 -> 0.908 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 - **`sn71:scoring_commit:2026-08-20T03:58:52Z`** - sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:readme_task_diff:927a737990a07446`** - sn92 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -210,6 +207,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-20T00:05:32Z` | 108 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn108 commit touches scoring: fix(cli): model verify printed fields the verdict no longer carries (… |
 | `sn71:scoring_commit:2026-08-20T02:22:02Z` | 71 | SCORING_COMMIT | 2026-08-20T03:07:36Z | sn71 commit touches scoring: test: rehearse miner maintenance first rollout |
 | `sn92:scoring_commit:2026-08-20T03:03:09Z` | 92 | SCORING_COMMIT | 2026-08-20T03:07:36Z | sn92 commit touches scoring: Show miners the cutoff and what their components earn |
+| `sn21:release:SN21 rich training data v2` | 21 | RELEASE | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
+| `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
+| `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
 | `sn67:readme_task_diff:a54328c7fbaf2606` | 67 | README_TASK_DIFF | 2026-08-13T10:35:49Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:8fca31852ef23b0f` | 90 | README_TASK_DIFF | 2026-08-13T12:36:13Z | sn90 README task/scoring sections changed |
 | `sn26:readme_task_diff:27b06992db454b8d` | 26 | README_TASK_DIFF | 2026-08-13T15:31:13Z | sn26 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T19:54:55Z, block 8888243
+# ALARMS - generated 2026-08-20T20:41:08Z, block 8888474
 
-window: first_seen in [2026-08-20T18:40:22Z, 2026-08-20T19:55:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T19:26:45Z, 2026-08-20T20:41:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn18:release:Release 2.1.2` | 18 | RELEASE | P1 | 2026-08-20T19:55:22Z | sn18 released Release 2.1.2 |
+| `sn25:release:v2026.8.20-1024555910` | 25 | RELEASE | P1 | 2026-08-20T20:41:45Z | sn25 released v2026.8.20-1024555910 |
 
 ### detail
 
 - **`sn18:release:Release 2.1.2`** - sn18 released Release 2.1.2
   - published 2026-08-20T19:28:17Z (was Release 2.1.0)
+- **`sn25:release:v2026.8.20-1024555910`** - sn25 released v2026.8.20-1024555910
+  - published 2026-08-20T19:56:32Z (was v2026.8.19-1023689220)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

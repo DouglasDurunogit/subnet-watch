@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-20T07:23:04Z  |  block: 8884485  |  row_status: ok
+snapshot_utc: 2026-08-20T08:04:44Z  |  block: 8884693  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.001178579 TAO (0.24152619446999998 USD), open=True
+- registration cost: 0.000994844 TAO (0.2032466292 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 655.4 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3397.873222677249** (uid 110) <- the only figure quotable as achievable
-- median_miner_usd_day: 3397.873222677249
-- top_miner_usd_day: 3397.873222677249 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3382.47684531371** (uid 110) <- the only figure quotable as achievable
+- median_miner_usd_day: 3382.47684531371
+- top_miner_usd_day: 3382.47684531371 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 2.220446049250313e-16  |  top1_share: 0.2  |  top10_share: 1.0
+- earners: 5  |  gini: 0.0  |  top1_share: 0.2  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-20T07:23:04Z  |  block: 8884485  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3389.654 USD/day  |  payback on registration: 0.0 days
+- net margin: 3374.2577 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.4 (rank 39), confidence 0.85 - hardware requirement unknown
-- components: income 32.11 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 45.3 (rank 39), confidence 0.85 - hardware requirement unknown
+- components: income 32.09 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

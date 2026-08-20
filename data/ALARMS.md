@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T07:23:04Z, block 8884485
+# ALARMS - generated 2026-08-20T08:04:44Z, block 8884693
 
-window: first_seen in [2026-08-20T06:08:41Z, 2026-08-20T07:23:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T06:50:07Z, 2026-08-20T08:05:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn111:scoring_commit:2026-08-20T07:12:31Z` | 111 | SCORING_COMMIT | P1 | 2026-08-20T07:23:41Z | sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely |
+| `sn51:scoring_commit:2026-08-20T07:41:14Z` | 51 | SCORING_COMMIT | P1 | 2026-08-20T08:05:07Z | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot … |
 
 ### detail
 
 - **`sn111:scoring_commit:2026-08-20T07:12:31Z`** - sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-08-20T07:41:14Z`** - sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

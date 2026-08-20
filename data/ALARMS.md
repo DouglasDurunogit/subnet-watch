@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-20T22:39:58Z, block 8889069
+# ALARMS - generated 2026-08-20T23:08:22Z, block 8889211
 
-window: first_seen in [2026-08-20T21:25:23Z, 2026-08-20T22:40:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-20T21:53:56Z, 2026-08-20T23:08:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn34:scoring_commit:2026-08-20T21:18:29Z` | 34 | SCORING_COMMIT | P1 | 2026-08-20T21:53:19Z | sn34 commit touches scoring: tune: double generator challenge frequency (#425) |
 | `sn92:scoring_commit:2026-08-20T21:18:03Z` | 92 | SCORING_COMMIT | P1 | 2026-08-20T22:40:23Z | sn92 commit touches scoring: Drop the task generator in favour of uploaded corpora |
+| `sn34:scoring_commit:2026-08-20T22:43:19Z` | 34 | SCORING_COMMIT | P1 | 2026-08-20T23:08:56Z | sn34 commit touches scoring: fix: restore validator config parsing (#427) |
+| `sn91:scoring_commit:2026-08-20T23:02:51Z` | 91 | SCORING_COMMIT | P1 | 2026-08-20T23:08:56Z | sn91 commit touches scoring: Merge pull request #203 from TensorLink-AI/claude/miner-dethrone-bar |
 
 ### detail
 
-- **`sn34:scoring_commit:2026-08-20T21:18:29Z`** - sn34 commit touches scoring: tune: double generator challenge frequency (#425)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-20T21:18:03Z`** - sn92 commit touches scoring: Drop the task generator in favour of uploaded corpora
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn34:scoring_commit:2026-08-20T22:43:19Z`** - sn34 commit touches scoring: fix: restore validator config parsing (#427)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-08-20T23:02:51Z`** - sn91 commit touches scoring: Merge pull request #203 from TensorLink-AI/claude/miner-dethrone-bar
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -231,6 +234,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn13:scoring_commit:2026-08-13T06:08:42Z` | 13 | SCORING_COMMIT | 2026-08-20T21:13:04Z | sn13 commit touches scoring: fix(s3): stop charging miners for passing validation and for growing |
 | `sn25:release:v2026.8.20-1024590520` | 25 | RELEASE | 2026-08-20T21:13:04Z | sn25 released v2026.8.20-1024590520 |
 | `sn25:scoring_commit:2026-08-20T20:47:44Z` | 25 | SCORING_COMMIT | 2026-08-20T21:13:04Z | sn25 commit touches scoring: Fix miner Windows arm64 cross-build |
+| `sn34:scoring_commit:2026-08-20T21:18:29Z` | 34 | SCORING_COMMIT | 2026-08-20T21:53:19Z | sn34 commit touches scoring: tune: double generator challenge frequency (#425) |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

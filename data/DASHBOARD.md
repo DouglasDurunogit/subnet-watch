@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-20T22:39:58Z · block 8889069 · run_status **ok**_
+_snapshot 2026-08-20T23:08:22Z · block 8889211 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 92 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0 (none) | 61 | `████████████████████████████` |
+| 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 8 | `████` |
-| ≥0.99 dead | 36 | `████████████████` |
+| 0.6–0.8 | 7 | `███` |
+| 0.8–0.99 | 9 | `████` |
+| ≥0.99 dead | 36 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77 | 75.11 | 126 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.1 | 21.49 | 286 | cpu-small | 175 | 8% |
-| 3 | sn23 Trishool | 72 | 521 | 521 = | cpu-small | 2 | 80% |
-| 4 | sn15 ORO | 70.1 | 19.26 | 18,809 | cpu-small | 82 | 92% |
-| 5 | sn56 Gradients | 69.7 | 677 | 1,034 | rtx4090* | 5 | 72% |
-| 6 | sn91 cascade | 69.3 | 608 | 2,457 | rtx4090* | 5 | 52% |
-| 7 | sn1 Apex | 68.1 | 426 | 1,208 | rtx4090* | 5 | 53% |
-| 8 | sn38 ChronoLLM | 67.7 | 155 | 3,286 | cpu-small | 10 | 52% |
-| 9 | sn96 Verathos | 67.4 | 17.66 | 379 | rtx4090 | 91 | 40% |
-| 10 | sn11 TrajectoryRL | 67.3 | 4,495 | 4,495 = | cpu-small | 1 | 100% |
-| 11 | sn26 Perturb | 67.3 | 17.24 | 248 | rtx3060 | 10 | 70% |
-| 12 | sn85 Vidaio | 65.1 | 173 | 1,477 | rtx4090* | 13 | 42% |
-| 13 | sn107 Minos | 64.7 | 131 | 37,289 | cpu-small | 20 | 90% |
-| 14 | sn108 Prometheon | 63.9 | 120 | 177 | rtx4090* | 7 | 66% |
-| 15 | sn28 gm | 62.5 | 79.22 | 1,325 | rtx4090* | 52 | 12% |
-| 16 | sn55 NIOME | 61.8 | 64.19 | 531 | rtx4090* | 11 | 29% |
-| 17 | sn51 lium.io | 61.7 | 69.25 | 1,227 | rtx4090* | 47 | 82% |
-| 18 | sn60 Bitsec.ai | 61.2 | 730 | 1,022 | cpu-small | 3 | 50% |
-| 19 | sn81 Reliquary | 60.8 | 47.21 | 195 | rtx4090* | 51 | 5% |
-| 20 | sn53 engy | 60.1 | 37.32 | 247 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 77 | 75.66 | 127 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.1 | 21.74 | 288 | cpu-small | 173 | 8% |
+| 3 | sn23 Trishool | 72 | 525 | 525 = | cpu-small | 2 | 80% |
+| 4 | sn15 ORO | 70.3 | 19.68 | 19,205 | cpu-small | 82 | 92% |
+| 5 | sn56 Gradients | 69.7 | 681 | 1,042 | rtx4090* | 5 | 72% |
+| 6 | sn91 cascade | 69.4 | 613 | 2,475 | rtx4090* | 5 | 52% |
+| 7 | sn1 Apex | 68.2 | 429 | 1,215 | rtx4090* | 5 | 53% |
+| 8 | sn38 ChronoLLM | 67.7 | 156 | 3,309 | cpu-small | 10 | 52% |
+| 9 | sn11 TrajectoryRL | 67.4 | 4,520 | 4,520 = | cpu-small | 1 | 100% |
+| 10 | sn96 Verathos | 67.4 | 17.68 | 368 | rtx4090 | 92 | 40% |
+| 11 | sn26 Perturb | 67.3 | 17.38 | 250 | rtx3060 | 10 | 70% |
+| 12 | sn107 Minos | 64.4 | 121 | 37,298 | cpu-small | 20 | 90% |
+| 13 | sn85 Vidaio | 64.3 | 134 | 1,487 | rtx4090* | 13 | 42% |
+| 14 | sn108 Prometheon | 63.9 | 121 | 178 | rtx4090* | 7 | 66% |
+| 15 | sn51 lium.io | 61.9 | 73.18 | 1,261 | rtx4090* | 46 | 82% |
+| 16 | sn55 NIOME | 61.9 | 64.44 | 537 | rtx4090* | 11 | 29% |
+| 17 | sn60 Bitsec.ai | 61.3 | 740 | 1,036 | cpu-small | 3 | 50% |
+| 18 | sn81 Reliquary | 60.8 | 46.97 | 192 | rtx4090* | 51 | 5% |
+| 19 | sn28 gm | 60.7 | 47.14 | 1,415 | rtx4090* | 52 | 13% |
+| 20 | sn53 engy | 60.1 | 37.88 | 250 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 24 |
 | concentrated (30–60%) | 20 |
-| dominated (60–90%) | 20 |
-| captured (>90%) | 26 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-20T23:08 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: fix: restore validator config parsing (#4 |
+| 2026-08-20T23:08 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Merge pull request #203 from TensorLink-A |
 | 2026-08-20T22:40 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Drop the task generator in favour of uplo |
 | 2026-08-20T21:53 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: tune: double generator challenge frequenc |
 | 2026-08-20T21:13 | sn13 | RELEASE | sn13 released Release v1.18.71 |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-20T18:15 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | 2026-08-20T17:41 | sn25 | README_TASK_DIFF | sn25 README task/scoring sections changed |
 | 2026-08-20T17:41 | sn33 | SCORING_COMMIT | sn33 commit touches scoring: Merge pull request #136 from afterpartyai |
-| 2026-08-20T17:41 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: docs(validation): document resilient dia |
-| 2026-08-20T17:01 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind local readiness verifier environment |
 
 ---
 

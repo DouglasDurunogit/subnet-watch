@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T14:49:40Z, block 8893917
+# ALARMS - generated 2026-08-21T15:45:16Z, block 8894195
 
-window: first_seen in [2026-08-21T13:35:15Z, 2026-08-21T14:50:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T14:30:49Z, 2026-08-21T15:45:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | P1 | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
 | `sn1:release:v4.3.6` | 1 | RELEASE | P1 | 2026-08-21T14:50:15Z | sn1 released v4.3.6 |
 | `sn25:release:v2026.8.21-1025223880` | 25 | RELEASE | P1 | 2026-08-21T14:50:15Z | sn25 released v2026.8.21-1025223880 |
 
 ### detail
 
-- **`sn108:scoring_commit:2026-08-21T13:19:16Z`** - sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn1:release:v4.3.6`** - sn1 released v4.3.6
   - published 2026-08-21T14:26:50Z (was v4.3.5)
 - **`sn25:release:v2026.8.21-1025223880`** - sn25 released v2026.8.21-1025223880
@@ -26,8 +23,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
 | `sn19:burn_drop:0.986` | 19 | BURN_DROP | 2026-08-14T23:33:14Z | sn19 burn fell 1.000 -> 0.986 - miners can earn again |
 | `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
@@ -44,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn96:release:Verathos v0.1.39 — Hard-Proof Timing Sta` | 96 | RELEASE | 2026-08-14T15:05:31Z | sn96 released Verathos v0.1.39 — Hard-Proof Timing Stability |
 | `sn126:scoring_commit:2026-08-14T15:41:49Z` | 126 | SCORING_COMMIT | 2026-08-14T16:03:52Z | sn126 commit touches scoring: docs: describe continuous miner training tables |
 | `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
 | `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
@@ -236,6 +230,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-08-21T12:10:41Z` | 81 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h… |
 | `sn92:scoring_commit:2026-08-21T11:56:26Z` | 92 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published |
 | `sn108:scoring_commit:2026-08-21T13:03:07Z` | 108 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist… |
+| `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |

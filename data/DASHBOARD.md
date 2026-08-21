@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-21T16:15:26Z · block 8894346 · run_status **ok**_
+_snapshot 2026-08-21T17:00:32Z · block 8894571 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **53** | income beats machine cost |
-| New events this window | 4 | see ALARMS.md |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.3 | 80.40 | 135 | cpu-small | 13 | 20% |
-| 2 | sn121 sundae_bar | 74.9 | 1,225 | 1,225 = | cpu-small | 2 | 60% |
-| 3 | sn23 Trishool | 72.4 | 586 | 586 = | cpu-small | 2 | 80% |
-| 4 | sn62 Ridges | 71.1 | 1,038 | 2,033 | rtx4090* | 5 | 36% |
-| 5 | sn15 ORO | 70.6 | 21.64 | 21,136 | cpu-small | 77 | 93% |
-| 6 | sn1 Apex | 70.2 | 778 | 1,272 | rtx4090* | 4 | 51% |
-| 7 | sn67 Harnyx | 70.2 | 13.41 | 923 | cpu-small | 160 | 23% |
-| 8 | sn56 Gradients | 69.9 | 721 | 1,109 | rtx4090* | 5 | 73% |
-| 9 | sn91 cascade | 69.5 | 641 | 2,590 | rtx4090* | 5 | 52% |
-| 10 | sn38 ChronoLLM | 67.9 | 164 | 3,487 | cpu-small | 10 | 52% |
-| 11 | sn26 Perturb | 67.6 | 18.63 | 266 | rtx3060 | 10 | 70% |
-| 12 | sn96 Verathos | 66 | 12.71 | 1,089 | rtx4090 | 90 | 40% |
-| 13 | sn107 Minos | 65.5 | 155 | 45,143 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 64.8 | 156 | 1,519 | rtx4090* | 13 | 42% |
-| 15 | sn81 Reliquary | 62.3 | 73.02 | 267 | rtx4090* | 52 | 6% |
-| 16 | sn55 NIOME | 62.1 | 68.73 | 569 | rtx4090* | 11 | 29% |
-| 17 | sn51 lium.io | 62 | 76.89 | 1,332 | rtx4090* | 46 | 82% |
-| 18 | sn60 Bitsec.ai | 61.4 | 769 | 1,076 | cpu-small | 3 | 50% |
-| 19 | sn108 Prometheon | 61.3 | 55.31 | 384 | rtx4090* | 8 | 66% |
-| 20 | sn28 gm | 60.7 | 47.00 | 1,639 | rtx4090* | 53 | 18% |
+| 1 | sn76 Phylax | 77.3 | 81.21 | 136 | cpu-small | 13 | 20% |
+| 2 | sn121 sundae_bar | 74.9 | 1,237 | 1,237 = | cpu-small | 2 | 60% |
+| 3 | sn23 Trishool | 72.4 | 590 | 590 = | cpu-small | 2 | 80% |
+| 4 | sn102 ConnitoAI | 72.3 | 1,488 | 1,647 | rtx4090* | 5 | 26% |
+| 5 | sn62 Ridges | 71.2 | 1,048 | 2,053 | rtx4090* | 5 | 36% |
+| 6 | sn15 ORO | 70.6 | 21.91 | 21,388 | cpu-small | 77 | 93% |
+| 7 | sn67 Harnyx | 70.3 | 13.54 | 932 | cpu-small | 160 | 23% |
+| 8 | sn1 Apex | 70.2 | 784 | 1,282 | rtx4090* | 4 | 52% |
+| 9 | sn56 Gradients | 69.9 | 727 | 1,120 | rtx4090* | 5 | 73% |
+| 10 | sn91 cascade | 69.5 | 640 | 2,585 | rtx4090* | 5 | 52% |
+| 11 | sn38 ChronoLLM | 67.9 | 165 | 3,501 | cpu-small | 10 | 52% |
+| 12 | sn26 Perturb | 67.6 | 18.85 | 268 | rtx3060 | 10 | 70% |
+| 13 | sn96 Verathos | 65.9 | 12.48 | 1,126 | rtx4090 | 89 | 40% |
+| 14 | sn107 Minos | 65.6 | 160 | 45,262 | cpu-small | 20 | 90% |
+| 15 | sn85 Vidaio | 65 | 168 | 1,530 | rtx4090* | 13 | 42% |
+| 16 | sn55 NIOME | 62.1 | 69.42 | 574 | rtx4090* | 11 | 29% |
+| 17 | sn81 Reliquary | 62.1 | 68.56 | 247 | rtx4090* | 53 | 5% |
+| 18 | sn51 lium.io | 62 | 77.73 | 1,345 | rtx4090* | 46 | 82% |
+| 19 | sn60 Bitsec.ai | 61.5 | 784 | 1,098 | cpu-small | 3 | 50% |
+| 20 | sn108 Prometheon | 61.5 | 59.08 | 407 | rtx4090* | 8 | 66% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 27 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-21T17:00 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Turn provenance off until the run store c |
 | 2026-08-21T16:15 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs: quickstart matches production — mir |
 | 2026-08-21T16:15 | sn21 | README_TASK_DIFF | sn21 README task/scoring sections changed |
 | 2026-08-21T16:15 | sn102 | RELEASE | sn102 released v0.5.0 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-21T11:52 | sn25 | RELEASE | sn25 released v2026.8.21-1025114260 |
 | 2026-08-21T11:11 | sn25 | RELEASE | sn25 released v2026.8.21-1025093570 |
 | 2026-08-21T10:43 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-08-21T09:49 | sn14 | RELEASE | sn14 released Fused-epilogue kernel submission archive (2026-08-21) |
 
 ---
 

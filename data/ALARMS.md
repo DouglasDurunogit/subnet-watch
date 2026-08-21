@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T16:15:26Z, block 8894346
+# ALARMS - generated 2026-08-21T17:00:32Z, block 8894571
 
-window: first_seen in [2026-08-21T15:00:59Z, 2026-08-21T16:15:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T15:45:58Z, 2026-08-21T17:00:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -12,6 +12,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-21T16:09:09Z` | 21 | SCORING_COMMIT | P1 | 2026-08-21T16:15:59Z | sn21 commit touches scoring: docs: quickstart matches production — mirror for daily verification, … |
 | `sn102:release:v0.5.0` | 102 | RELEASE | P1 | 2026-08-21T16:15:59Z | sn102 released v0.5.0 |
 | `sn102:scoring_commit:2026-08-20T22:32:03Z` | 102 | SCORING_COMMIT | P1 | 2026-08-21T16:15:59Z | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v |
+| `sn92:scoring_commit:2026-08-21T16:31:36Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T17:00:58Z | sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs |
 | `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | P2 | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 
 ### detail
@@ -21,6 +22,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn102:release:v0.5.0`** - sn102 released v0.5.0
   - published 2026-08-21T15:53:43Z (was v0.4.0)
 - **`sn102:scoring_commit:2026-08-20T22:32:03Z`** - sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-21T16:31:36Z`** - sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:readme_task_diff:24af354b63ad7d31`** - sn21 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.

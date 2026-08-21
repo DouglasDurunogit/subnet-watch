@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-21T21:35:53Z, block 8895948
+# ALARMS - generated 2026-08-21T22:02:07Z, block 8896079
 
-window: first_seen in [2026-08-21T20:21:15Z, 2026-08-21T21:36:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T20:47:40Z, 2026-08-21T22:02:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn90:release:v1.1.5` | 90 | RELEASE | P1 | 2026-08-21T22:02:40Z | sn90 released v1.1.5 |
+| `sn90:scoring_commit:2026-08-21T22:02:06Z` | 90 | SCORING_COMMIT | P1 | 2026-08-21T22:02:40Z | sn90 commit touches scoring: fix(validator): fall back to CoinGecko TAO/USD when Taostats 429s |
+
+### detail
+
+- **`sn90:release:v1.1.5`** - sn90 released v1.1.5
+  - published 2026-08-21T22:02:10Z (was v1.1.2)
+- **`sn90:scoring_commit:2026-08-21T22:02:06Z`** - sn90 commit touches scoring: fix(validator): fall back to CoinGecko TAO/USD when Taostats 429s
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-21T18:14:27Z  |  block: 8894941  |  row_status: ok
+snapshot_utc: 2026-08-21T19:06:16Z  |  block: 8895200  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (45.88 USD), open=True
+- registration cost: 0.2 TAO (44.86600000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 119  |  free: 0
 - subnet age: 788.2 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 386.37681824219464** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.060239603717211515
-- top_miner_usd_day: 456.49571696902893 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 377.66466045252673** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.05888130035118907
+- top_miner_usd_day: 446.20249406131074 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 105  |  gini: 0.9356972508320887  |  top1_share: 0.23170060539350582  |  top10_share: 0.9782302941356327
+- earners: 105  |  gini: 0.9356972508320884  |  top1_share: 0.2317006053935058  |  top10_share: 0.9782302941356327
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-21T18:14:27Z  |  block: 8894941  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9261 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9274 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T17:39:39Z, block 8894767
+# ALARMS - generated 2026-08-21T18:14:27Z, block 8894941
 
-window: first_seen in [2026-08-21T16:25:13Z, 2026-08-21T17:40:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T16:59:54Z, 2026-08-21T18:14:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn92:scoring_commit:2026-08-21T16:31:36Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T17:00:58Z | sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs |
+| `sn25:release:v2026.8.21-1025339670` | 25 | RELEASE | P1 | 2026-08-21T18:14:54Z | sn25 released v2026.8.21-1025339670 |
 
 ### detail
 
 - **`sn92:scoring_commit:2026-08-21T16:31:36Z`** - sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.21-1025339670`** - sn25 released v2026.8.21-1025339670
+  - published 2026-08-21T17:42:59Z (was v2026.8.21-1025223880)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

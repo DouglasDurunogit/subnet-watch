@@ -1,19 +1,25 @@
-# ALARMS - generated 2026-08-21T08:55:56Z, block 8892148
+# ALARMS - generated 2026-08-21T09:49:24Z, block 8892416
 
-window: first_seen in [2026-08-21T07:41:23Z, 2026-08-21T08:56:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T08:34:58Z, 2026-08-21T09:49:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn14:release:Fused-epilogue kernel submission archive` | 14 | RELEASE | P1 | 2026-08-21T09:49:58Z | sn14 released Fused-epilogue kernel submission archive (2026-08-21) |
+
+### detail
+
+- **`sn14:release:Fused-epilogue kernel submission archive`** - sn14 released Fused-epilogue kernel submission archive (2026-08-21)
+  - published 2026-08-21T09:07:04Z (was v2.1.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn2:burn_drop:0.822` | 2 | BURN_DROP | 2026-08-14T09:18:19Z | sn2 burn fell 1.000 -> 0.822 - miners can earn again |
 | `sn20:burn_drop:0.000` | 20 | BURN_DROP | 2026-08-14T15:05:31Z | sn20 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn39:burn_drop:0.000` | 39 | BURN_DROP | 2026-08-14T15:05:31Z | sn39 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn2:burn_drop:0.824` | 2 | BURN_DROP | 2026-08-14T23:33:14Z | sn2 burn fell 1.000 -> 0.824 - miners can earn again |
@@ -32,9 +38,6 @@ _none_
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
-| `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
-| `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
 | `sn67:scoring_commit:2026-08-14T09:41:41Z` | 67 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post1 |
 | `sn71:scoring_commit:2026-08-14T10:35:32Z` | 71 | SCORING_COMMIT | 2026-08-14T11:32:26Z | sn71 commit touches scoring: Refresh SOURCE_ADD reward ancestry identity |
 | `sn96:release:Verathos v0.1.38 — Runtime and Proof Sta` | 96 | RELEASE | 2026-08-14T11:32:26Z | sn96 released Verathos v0.1.38 — Runtime and Proof Stability |

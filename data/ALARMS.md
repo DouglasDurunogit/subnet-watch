@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T09:49:24Z, block 8892416
+# ALARMS - generated 2026-08-21T10:42:44Z, block 8892682
 
-window: first_seen in [2026-08-21T08:34:58Z, 2026-08-21T09:49:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T09:28:26Z, 2026-08-21T10:43:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn14:release:Fused-epilogue kernel submission archive` | 14 | RELEASE | P1 | 2026-08-21T09:49:58Z | sn14 released Fused-epilogue kernel submission archive (2026-08-21) |
+| `sn67:scoring_commit:2026-08-21T10:10:17Z` | 67 | SCORING_COMMIT | P1 | 2026-08-21T10:43:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post3 |
 
 ### detail
 
 - **`sn14:release:Fused-epilogue kernel submission archive`** - sn14 released Fused-epilogue kernel submission archive (2026-08-21)
   - published 2026-08-21T09:07:04Z (was v2.1.0)
+- **`sn67:scoring_commit:2026-08-21T10:10:17Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post3
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

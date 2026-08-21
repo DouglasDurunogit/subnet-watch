@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-21T05:46:04Z  |  block: 8891199  |  row_status: ok
+snapshot_utc: 2026-08-21T06:19:57Z  |  block: 8891368  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.9420787841081619**
-- registration cost: 0.15 TAO (32.736 USD), open=True
+- registration cost: 0.15 TAO (32.837999999999994 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 869.9 days  |  registered at block 2627691
+- subnet age: 870.0 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 121.89236342685352** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 1052.4498214513071
-- top_miner_usd_day: 1983.00727947576 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 122.27212259042469** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 1055.7287591358224
+- top_miner_usd_day: 1989.1853956812201 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-21T05:46:04Z  |  block: 8891199  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 113.6732 USD/day  |  payback on registration: 0.29 days
+- net margin: 114.0529 USD/day  |  payback on registration: 0.29 days
 
 ## Score
 
 - gate: **OK** 
 - score: 44.9 (rank 40), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 18.73 / freshness 35.0 / resource 11.25 / registration 9.9
-- freshness basis: RELEASE 1.2d ago
+- components: income 18.74 / freshness 35.0 / resource 11.25 / registration 9.9
+- freshness basis: RELEASE 1.3d ago
 
 ## On-chain description
 

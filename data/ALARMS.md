@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T05:46:04Z, block 8891199
+# ALARMS - generated 2026-08-21T06:19:57Z, block 8891368
 
-window: first_seen in [2026-08-21T04:31:36Z, 2026-08-21T05:46:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T05:05:35Z, 2026-08-21T06:20:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn53:scoring_commit:2026-08-21T04:53:19Z` | 53 | SCORING_COMMIT | P1 | 2026-08-21T05:04:00Z | sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes |
 | `sn67:scoring_commit:2026-08-21T03:07:16Z` | 67 | SCORING_COMMIT | P1 | 2026-08-21T05:46:36Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1 |
 
 ### detail
 
-- **`sn53:scoring_commit:2026-08-21T04:53:19Z`** - sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-21T03:07:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
@@ -42,9 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn90:release:v1.1.1` | 90 | RELEASE | 2026-08-14T06:06:21Z | sn90 released v1.1.1 |
-| `sn90:scoring_commit:2026-08-14T06:04:45Z` | 90 | SCORING_COMMIT | 2026-08-14T06:06:21Z | sn90 commit touches scoring: fix(validator): always apply the Targon supply-side clamp |
-| `sn100:scoring_commit:2026-08-14T04:35:53Z` | 100 | SCORING_COMMIT | 2026-08-14T06:06:21Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for seal TTL fix (#147 |
 | `sn44:scoring_commit:2026-08-14T08:54:31Z` | 44 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn44 commit touches scoring: Merge pull request #52 from score-technologies/tiebreak-enh-exploratio |
 | `sn51:scoring_commit:2026-08-14T08:19:45Z` | 51 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn51 commit touches scoring: DAH-2622: floor a live miner's weight at one u16 unit funded from bur… |
 | `sn100:scoring_commit:2026-08-14T08:35:14Z` | 100 | SCORING_COMMIT | 2026-08-14T09:18:19Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for METRICS harvest f… |
@@ -235,6 +229,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-08-20T22:43:19Z` | 34 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn34 commit touches scoring: fix: restore validator config parsing (#427) |
 | `sn91:scoring_commit:2026-08-20T23:02:51Z` | 91 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn91 commit touches scoring: Merge pull request #203 from TensorLink-AI/claude/miner-dethrone-bar |
 | `sn34:release:Release 4.9.8` | 34 | RELEASE | 2026-08-21T01:54:45Z | sn34 released Release 4.9.8 |
+| `sn53:scoring_commit:2026-08-21T04:53:19Z` | 53 | SCORING_COMMIT | 2026-08-21T05:04:00Z | sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

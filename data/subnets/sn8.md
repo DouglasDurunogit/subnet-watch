@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-21T01:54:17Z  |  block: 8890040  |  row_status: ok
+snapshot_utc: 2026-08-21T03:12:54Z  |  block: 8890433  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.10869 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 43  |  free: 0
+- registration cost: 0.0005 TAO (0.10803 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 45  |  free: 0
 - subnet age: 1029.6 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3088.709137375354** (uid 97) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.8224860120829098
-- top_miner_usd_day: 13785.96221052568 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3073.0823761988177** (uid 97) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.8177441128788763
+- top_miner_usd_day: 13704.301006366131 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 29  |  gini: 0.9444691870424589  |  top1_share: 0.7676712161460718  |  top10_share: 0.9992977313669811
+- earners: 31  |  gini: 0.9479881000279227  |  top1_share: 0.7675373647008534  |  top10_share: 0.9992672091354594
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-21T01:54:17Z  |  block: 8890040  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.3967 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.4014 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

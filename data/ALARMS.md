@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-21T01:54:17Z, block 8890040
+# ALARMS - generated 2026-08-21T03:12:54Z, block 8890433
 
-window: first_seen in [2026-08-21T00:39:45Z, 2026-08-21T01:54:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T01:58:22Z, 2026-08-21T03:13:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn34:release:Release 4.9.8` | 34 | RELEASE | P1 | 2026-08-21T01:54:45Z | sn34 released Release 4.9.8 |
-
-### detail
-
-- **`sn34:release:Release 4.9.8`** - sn34 released Release 4.9.8
-  - published 2026-08-20T23:57:40Z (was Release 4.9.4)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -231,6 +224,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-20T21:18:03Z` | 92 | SCORING_COMMIT | 2026-08-20T22:40:23Z | sn92 commit touches scoring: Drop the task generator in favour of uploaded corpora |
 | `sn34:scoring_commit:2026-08-20T22:43:19Z` | 34 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn34 commit touches scoring: fix: restore validator config parsing (#427) |
 | `sn91:scoring_commit:2026-08-20T23:02:51Z` | 91 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn91 commit touches scoring: Merge pull request #203 from TensorLink-AI/claude/miner-dethrone-bar |
+| `sn34:release:Release 4.9.8` | 34 | RELEASE | 2026-08-21T01:54:45Z | sn34 released Release 4.9.8 |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

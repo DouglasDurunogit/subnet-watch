@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T13:06:51Z, block 8893403
+# ALARMS - generated 2026-08-21T13:57:18Z, block 8893655
 
-window: first_seen in [2026-08-21T11:52:23Z, 2026-08-21T13:07:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T12:42:42Z, 2026-08-21T13:57:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-08-21T12:10:41Z` | 81 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h… |
 | `sn92:scoring_commit:2026-08-21T11:56:26Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published |
 | `sn108:scoring_commit:2026-08-21T13:03:07Z` | 108 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist… |
+| `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | P1 | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
 
 ### detail
 
@@ -23,6 +24,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn92:scoring_commit:2026-08-21T11:56:26Z`** - sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-21T13:03:07Z`** - sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-21T13:19:16Z`** - sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

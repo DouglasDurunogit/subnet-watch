@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T19:06:16Z, block 8895200
+# ALARMS - generated 2026-08-21T19:35:52Z, block 8895348
 
-window: first_seen in [2026-08-21T17:51:46Z, 2026-08-21T19:06:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T18:21:24Z, 2026-08-21T19:36:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,7 +9,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.21-1025339670` | 25 | RELEASE | P1 | 2026-08-21T18:14:54Z | sn25 released v2026.8.21-1025339670 |
 | `sn89:scoring_commit:2026-08-21T18:27:38Z` | 89 | SCORING_COMMIT | P1 | 2026-08-21T19:06:46Z | sn89 commit touches scoring: Scoring: build the qualified-win as-of window from RESOLVED outcomes |
 | `sn92:release:v0.1.0` | 92 | RELEASE | P1 | 2026-08-21T19:06:46Z | sn92 released v0.1.0 |
 | `sn92:scoring_commit:2026-08-21T18:54:26Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T19:06:46Z | sn92 commit touches scoring: Install the signer's keypair and verify the release the way a validat… |
@@ -17,8 +16,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 ### detail
 
-- **`sn25:release:v2026.8.21-1025339670`** - sn25 released v2026.8.21-1025339670
-  - published 2026-08-21T17:42:59Z (was v2026.8.21-1025223880)
 - **`sn89:scoring_commit:2026-08-21T18:27:38Z`** - sn89 commit touches scoring: Scoring: build the qualified-win as-of window from RESOLVED outcomes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:release:v0.1.0`** - sn92 released v0.1.0
@@ -242,7 +239,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.5.0` | 102 | RELEASE | 2026-08-21T16:15:59Z | sn102 released v0.5.0 |
 | `sn102:scoring_commit:2026-08-20T22:32:03Z` | 102 | SCORING_COMMIT | 2026-08-21T16:15:59Z | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v |
 | `sn92:scoring_commit:2026-08-21T16:31:36Z` | 92 | SCORING_COMMIT | 2026-08-21T17:00:58Z | sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs |
-| `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
+| `sn25:release:v2026.8.21-1025339670` | 25 | RELEASE | 2026-08-21T18:14:54Z | sn25 released v2026.8.21-1025339670 |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |

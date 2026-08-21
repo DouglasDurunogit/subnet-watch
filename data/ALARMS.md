@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T05:03:33Z, block 8890987
+# ALARMS - generated 2026-08-21T05:46:04Z, block 8891199
 
-window: first_seen in [2026-08-21T03:49:00Z, 2026-08-21T05:04:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T04:31:36Z, 2026-08-21T05:46:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn53:scoring_commit:2026-08-21T04:53:19Z` | 53 | SCORING_COMMIT | P1 | 2026-08-21T05:04:00Z | sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes |
+| `sn67:scoring_commit:2026-08-21T03:07:16Z` | 67 | SCORING_COMMIT | P1 | 2026-08-21T05:46:36Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1 |
 
 ### detail
 
 - **`sn53:scoring_commit:2026-08-21T04:53:19Z`** - sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-21T03:07:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

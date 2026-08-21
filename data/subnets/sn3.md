@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-20T23:49:36Z  |  block: 8889417  |  row_status: ok
+snapshot_utc: 2026-08-21T01:54:17Z  |  block: 8890040  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.001452253 TAO (0.3126700709 USD), open=True
+- registration cost: 0.001389493 TAO (0.30204798834 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 656.1 days  |  registered at block 4165565
+- subnet age: 656.2 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3558.021363907461** (uid 110) <- the only figure quotable as achievable
-- median_miner_usd_day: 3558.021363907461
-- top_miner_usd_day: 3558.021363907461 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3575.2597771333544** (uid 115) <- the only figure quotable as achievable
+- median_miner_usd_day: 3575.2597771333544
+- top_miner_usd_day: 3575.2597771333544 (uid 110, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-20T23:49:36Z  |  block: 8889417  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3549.8022 USD/day  |  payback on registration: 0.0 days
+- net margin: 3567.0406 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.5 (rank 42), confidence 0.85 - hardware requirement unknown
-- components: income 32.29 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 45.5 (rank 40), confidence 0.85 - hardware requirement unknown
+- components: income 32.31 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T10:42:44Z, block 8892682
+# ALARMS - generated 2026-08-21T11:10:45Z, block 8892822
 
-window: first_seen in [2026-08-21T09:28:26Z, 2026-08-21T10:43:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T09:56:10Z, 2026-08-21T11:11:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:Fused-epilogue kernel submission archive` | 14 | RELEASE | P1 | 2026-08-21T09:49:58Z | sn14 released Fused-epilogue kernel submission archive (2026-08-21) |
 | `sn67:scoring_commit:2026-08-21T10:10:17Z` | 67 | SCORING_COMMIT | P1 | 2026-08-21T10:43:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post3 |
+| `sn25:release:v2026.8.21-1025093570` | 25 | RELEASE | P1 | 2026-08-21T11:11:10Z | sn25 released v2026.8.21-1025093570 |
 
 ### detail
 
-- **`sn14:release:Fused-epilogue kernel submission archive`** - sn14 released Fused-epilogue kernel submission archive (2026-08-21)
-  - published 2026-08-21T09:07:04Z (was v2.1.0)
 - **`sn67:scoring_commit:2026-08-21T10:10:17Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.21-1025093570`** - sn25 released v2026.8.21-1025093570
+  - published 2026-08-21T10:52:33Z (was v2026.8.20-1024590520)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -232,6 +232,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-21T03:07:16Z` | 67 | SCORING_COMMIT | 2026-08-21T05:46:36Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1 |
 | `sn100:release:v3.3.28` | 100 | RELEASE | 2026-08-21T07:23:29Z | sn100 released v3.3.28 |
 | `sn100:scoring_commit:2026-08-21T06:46:39Z` | 100 | SCORING_COMMIT | 2026-08-21T07:23:29Z | sn100 commit touches scoring: feat(prism): miner Verda BYOK alongside Lium |
+| `sn14:release:Fused-epilogue kernel submission archive` | 14 | RELEASE | 2026-08-21T09:49:58Z | sn14 released Fused-epilogue kernel submission archive (2026-08-21) |
 | `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |

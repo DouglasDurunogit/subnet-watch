@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T17:00:32Z, block 8894571
+# ALARMS - generated 2026-08-21T17:39:39Z, block 8894767
 
-window: first_seen in [2026-08-21T15:45:58Z, 2026-08-21T17:00:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T16:25:13Z, 2026-08-21T17:40:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-21T16:09:09Z` | 21 | SCORING_COMMIT | P1 | 2026-08-21T16:15:59Z | sn21 commit touches scoring: docs: quickstart matches production — mirror for daily verification, … |
-| `sn102:release:v0.5.0` | 102 | RELEASE | P1 | 2026-08-21T16:15:59Z | sn102 released v0.5.0 |
-| `sn102:scoring_commit:2026-08-20T22:32:03Z` | 102 | SCORING_COMMIT | P1 | 2026-08-21T16:15:59Z | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v |
 | `sn92:scoring_commit:2026-08-21T16:31:36Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T17:00:58Z | sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs |
-| `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | P2 | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-21T16:09:09Z`** - sn21 commit touches scoring: docs: quickstart matches production — mirror for daily verification, …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.5.0`** - sn102 released v0.5.0
-  - published 2026-08-21T15:53:43Z (was v0.4.0)
-- **`sn102:scoring_commit:2026-08-20T22:32:03Z`** - sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-21T16:31:36Z`** - sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:24af354b63ad7d31`** - sn21 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,7 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn55:scoring_commit:2026-08-14T16:37:31Z` | 55 | SCORING_COMMIT | 2026-08-14T17:08:05Z | sn55 commit touches scoring: print only valid scores |
 | `sn55:scoring_commit:2026-08-14T17:58:40Z` | 55 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn55 commit touches scoring: print only valid scores |
 | `sn100:scoring_commit:2026-08-14T17:13:42Z` | 100 | SCORING_COMMIT | 2026-08-14T18:24:30Z | sn100 commit touches scoring: chore(deploy): promote prod prism-challenge pin for BYOK seal keep (#… |
 | `sn55:scoring_commit:2026-08-14T20:02:57Z` | 55 | SCORING_COMMIT | 2026-08-14T20:17:06Z | sn55 commit touches scoring: commit weights after validation |
@@ -241,6 +228,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
 | `sn1:release:v4.3.6` | 1 | RELEASE | 2026-08-21T14:50:15Z | sn1 released v4.3.6 |
 | `sn25:release:v2026.8.21-1025223880` | 25 | RELEASE | 2026-08-21T14:50:15Z | sn25 released v2026.8.21-1025223880 |
+| `sn21:scoring_commit:2026-08-21T16:09:09Z` | 21 | SCORING_COMMIT | 2026-08-21T16:15:59Z | sn21 commit touches scoring: docs: quickstart matches production — mirror for daily verification, … |
+| `sn102:release:v0.5.0` | 102 | RELEASE | 2026-08-21T16:15:59Z | sn102 released v0.5.0 |
+| `sn102:scoring_commit:2026-08-20T22:32:03Z` | 102 | SCORING_COMMIT | 2026-08-21T16:15:59Z | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
@@ -262,6 +252,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 | `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
 | `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
+| `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

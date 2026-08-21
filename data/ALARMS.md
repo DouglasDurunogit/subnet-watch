@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T13:57:18Z, block 8893655
+# ALARMS - generated 2026-08-21T14:49:40Z, block 8893917
 
-window: first_seen in [2026-08-21T12:42:42Z, 2026-08-21T13:57:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T13:35:15Z, 2026-08-21T14:50:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-21T12:29:40Z` | 21 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn21 commit touches scoring: feat(verify): mirror the daily verification feeds to the operator API… |
-| `sn81:scoring_commit:2026-08-21T12:10:41Z` | 81 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h… |
-| `sn92:scoring_commit:2026-08-21T11:56:26Z` | 92 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published |
-| `sn108:scoring_commit:2026-08-21T13:03:07Z` | 108 | SCORING_COMMIT | P1 | 2026-08-21T13:07:23Z | sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist… |
 | `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | P1 | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
+| `sn1:release:v4.3.6` | 1 | RELEASE | P1 | 2026-08-21T14:50:15Z | sn1 released v4.3.6 |
+| `sn25:release:v2026.8.21-1025223880` | 25 | RELEASE | P1 | 2026-08-21T14:50:15Z | sn25 released v2026.8.21-1025223880 |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-21T12:29:40Z`** - sn21 commit touches scoring: feat(verify): mirror the daily verification feeds to the operator API…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-08-21T12:10:41Z`** - sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-21T11:56:26Z`** - sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-21T13:03:07Z`** - sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-21T13:19:16Z`** - sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.3.6`** - sn1 released v4.3.6
+  - published 2026-08-21T14:26:50Z (was v4.3.5)
+- **`sn25:release:v2026.8.21-1025223880`** - sn25 released v2026.8.21-1025223880
+  - published 2026-08-21T14:29:40Z (was v2026.8.21-1025114260)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -238,7 +232,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-21T10:10:17Z` | 67 | SCORING_COMMIT | 2026-08-21T10:43:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post3 |
 | `sn25:release:v2026.8.21-1025093570` | 25 | RELEASE | 2026-08-21T11:11:10Z | sn25 released v2026.8.21-1025093570 |
 | `sn25:release:v2026.8.21-1025114260` | 25 | RELEASE | 2026-08-21T11:52:03Z | sn25 released v2026.8.21-1025114260 |
-| `sn55:readme_task_diff:d7f3a333f8affc99` | 55 | README_TASK_DIFF | 2026-08-14T14:04:14Z | sn55 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-08-21T12:29:40Z` | 21 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn21 commit touches scoring: feat(verify): mirror the daily verification feeds to the operator API… |
+| `sn81:scoring_commit:2026-08-21T12:10:41Z` | 81 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h… |
+| `sn92:scoring_commit:2026-08-21T11:56:26Z` | 92 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published |
+| `sn108:scoring_commit:2026-08-21T13:03:07Z` | 108 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist… |
 | `sn121:readme_task_diff:4de589f5fb4cb70d` | 121 | README_TASK_DIFF | 2026-08-14T19:29:32Z | sn121 README task/scoring sections changed |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |

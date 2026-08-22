@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-21T23:35:03Z, block 8896544
+# ALARMS - generated 2026-08-22T00:01:32Z, block 8896676
 
-window: first_seen in [2026-08-21T22:20:34Z, 2026-08-21T23:35:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-21T22:47:04Z, 2026-08-22T00:02:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn15:scoring_commit:2026-08-21T23:12:08Z` | 15 | SCORING_COMMIT | P1 | 2026-08-21T23:35:34Z | sn15 commit touches scoring: chore: remove dead BackendClient top-miner and race-history methods (… |
+| `sn97:scoring_commit:2026-08-21T17:21:07Z` | 97 | SCORING_COMMIT | P1 | 2026-08-22T00:02:04Z | sn97 commit touches scoring: feat: weighted reference-anchored scoring, split rubric, submit proto… |
 
 ### detail
 
 - **`sn15:scoring_commit:2026-08-21T23:12:08Z`** - sn15 commit touches scoring: chore: remove dead BackendClient top-miner and race-history methods (…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-08-21T17:21:07Z`** - sn97 commit touches scoring: feat: weighted reference-anchored scoring, split rubric, submit proto…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

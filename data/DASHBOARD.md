@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-21T23:35:03Z · block 8896544 · run_status **ok**_
+_snapshot 2026-08-22T00:01:32Z · block 8896676 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
 | **Positive margin** | **54** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.4 | 81.92 | 137 | cpu-small | 13 | 20% |
-| 2 | sn23 Trishool | 72.4 | 591 | 591 = | cpu-small | 2 | 80% |
-| 3 | sn62 Ridges | 71.3 | 1,096 | 2,065 | rtx4090* | 5 | 36% |
-| 4 | sn15 ORO | 70.5 | 22.36 | 21,806 | cpu-small | 77 | 93% |
-| 5 | sn67 Harnyx | 70.3 | 13.75 | 945 | cpu-small | 162 | 23% |
-| 6 | sn1 Apex | 70.2 | 791 | 1,252 | rtx4090* | 4 | 52% |
-| 7 | sn91 cascade | 70 | 733 | 2,956 | rtx4090* | 5 | 52% |
-| 8 | sn56 Gradients | 70 | 730 | 1,126 | rtx4090* | 5 | 73% |
-| 9 | sn26 Perturb | 68.1 | 21.12 | 402 | rtx3060 | 10 | 70% |
-| 10 | sn38 ChronoLLM | 66.5 | 115 | 1,569 | cpu-small | 10 | 52% |
-| 11 | sn96 Verathos | 66.2 | 13.43 | 600 | rtx4090 | 98 | 40% |
-| 12 | sn107 Minos | 65.5 | 158 | 45,506 | cpu-small | 20 | 90% |
-| 13 | sn85 Vidaio | 65 | 167 | 431 | rtx4090* | 13 | 42% |
-| 14 | sn121 sundae_bar | 63 | 1,249 | 1,249 = | cpu-small | 2 | 60% |
-| 15 | sn81 Reliquary | 62.5 | 78.65 | 237 | rtx4090* | 46 | 5% |
-| 16 | sn108 Prometheon | 61.5 | 59.14 | 408 | rtx4090* | 8 | 66% |
-| 17 | sn34 BitMind | 61.2 | 370 | 370 = | a100-80 | 3 | 48% |
-| 18 | sn51 lium.io | 60.3 | 49.54 | 1,658 | rtx4090* | 51 | 76% |
-| 19 | sn53 engy | 60.2 | 38.96 | 256 | rtx4090 | 144 | 63% |
-| 20 | sn60 Bitsec.ai | 59.8 | 469 | 469 = | cpu-small | 3 | 50% |
+| 1 | sn76 Phylax | 77.3 | 80.84 | 136 | cpu-small | 13 | 20% |
+| 2 | sn23 Trishool | 72.4 | 583 | 583 = | cpu-small | 2 | 80% |
+| 3 | sn62 Ridges | 71.3 | 1,085 | 2,044 | rtx4090* | 5 | 36% |
+| 4 | sn15 ORO | 70.5 | 22.05 | 21,524 | cpu-small | 77 | 93% |
+| 5 | sn1 Apex | 70.2 | 779 | 1,232 | rtx4090* | 4 | 53% |
+| 6 | sn67 Harnyx | 70.2 | 13.55 | 933 | cpu-small | 162 | 23% |
+| 7 | sn91 cascade | 69.9 | 723 | 2,916 | rtx4090* | 5 | 52% |
+| 8 | sn56 Gradients | 69.9 | 721 | 1,111 | rtx4090* | 5 | 73% |
+| 9 | sn26 Perturb | 68.1 | 20.80 | 396 | rtx3060 | 10 | 70% |
+| 10 | sn38 ChronoLLM | 66.5 | 114 | 1,555 | cpu-small | 10 | 52% |
+| 11 | sn96 Verathos | 66.1 | 13.15 | 592 | rtx4090 | 98 | 40% |
+| 12 | sn107 Minos | 65.5 | 156 | 44,974 | cpu-small | 20 | 90% |
+| 13 | sn85 Vidaio | 65 | 165 | 425 | rtx4090* | 13 | 42% |
+| 14 | sn121 sundae_bar | 63 | 1,232 | 1,232 = | cpu-small | 2 | 60% |
+| 15 | sn81 Reliquary | 62.5 | 77.50 | 234 | rtx4090* | 46 | 5% |
+| 16 | sn108 Prometheon | 61.5 | 58.25 | 402 | rtx4090* | 8 | 66% |
+| 17 | sn34 BitMind | 61.2 | 365 | 365 = | a100-80 | 3 | 48% |
+| 18 | sn51 lium.io | 60.3 | 48.78 | 1,637 | rtx4090* | 51 | 76% |
+| 19 | sn53 engy | 60.1 | 38.32 | 253 | rtx4090 | 144 | 63% |
+| 20 | sn60 Bitsec.ai | 59.7 | 464 | 464 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-22T00:02 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat: weighted reference-anchored scoring |
 | 2026-08-21T23:35 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore: remove dead BackendClient top-mine |
 | 2026-08-21T22:02 | sn90 | RELEASE | sn90 released v1.1.5 |
 | 2026-08-21T22:02 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: fix(validator): fall back to CoinGecko TA |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-21T16:15 | sn102 | RELEASE | sn102 released v0.5.0 |
 | 2026-08-21T16:15 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/ |
 | 2026-08-21T14:50 | sn1 | RELEASE | sn1 released v4.3.6 |
-| 2026-08-21T14:50 | sn25 | RELEASE | sn25 released v2026.8.21-1025223880 |
 
 ---
 

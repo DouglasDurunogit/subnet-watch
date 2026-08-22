@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T09:12:44Z · block 8899432 · run_status **ok**_
+_snapshot 2026-08-22T09:50:54Z · block 8899623 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 52 of 128
+# 51 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
-| **Positive margin** | **52** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **51** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.3 | 80.04 | 134 | cpu-small | 13 | 20% |
-| 2 | sn102 ConnitoAI | 72.8 | 1,704 | 1,706 | rtx4090* | 4 | 25% |
-| 3 | sn23 Trishool | 72.3 | 569 | 569 = | cpu-small | 2 | 80% |
-| 4 | sn67 Harnyx | 72.3 | 23.15 | 451 | cpu-small | 139 | 12% |
-| 5 | sn56 Gradients | 70 | 750 | 1,085 | rtx4090* | 5 | 73% |
-| 6 | sn91 cascade | 70 | 737 | 2,974 | rtx4090* | 5 | 52% |
-| 7 | sn15 ORO | 69.6 | 17.57 | 21,871 | cpu-small | 59 | 95% |
-| 8 | sn1 Apex | 68.6 | 491 | 1,157 | rtx4090* | 5 | 54% |
+| 1 | sn76 Phylax | 77.3 | 80.09 | 134 | cpu-small | 13 | 20% |
+| 2 | sn23 Trishool | 72.3 | 570 | 570 = | cpu-small | 2 | 80% |
+| 3 | sn67 Harnyx | 72.3 | 23.18 | 452 | cpu-small | 140 | 12% |
+| 4 | sn102 ConnitoAI | 71.9 | 1,287 | 2,439 | rtx4090* | 6 | 36% |
+| 5 | sn56 Gradients | 70 | 751 | 1,086 | rtx4090* | 5 | 73% |
+| 6 | sn91 cascade | 70 | 746 | 3,008 | rtx4090* | 5 | 52% |
+| 7 | sn15 ORO | 69.5 | 17.64 | 21,954 | cpu-small | 59 | 95% |
+| 8 | sn1 Apex | 68.6 | 492 | 1,159 | rtx4090* | 5 | 54% |
 | 9 | sn26 Perturb | 67.5 | 18.14 | 260 | rtx3060 | 10 | 70% |
-| 10 | sn96 Verathos | 66.7 | 14.95 | 454 | rtx4090 | 97 | 40% |
-| 11 | sn38 ChronoLLM | 66.6 | 117 | 1,595 | cpu-small | 10 | 52% |
-| 12 | sn107 Minos | 65.6 | 163 | 44,740 | cpu-small | 20 | 90% |
-| 13 | sn85 Vidaio | 64.2 | 132 | 411 | rtx4090* | 13 | 42% |
-| 14 | sn81 Reliquary | 63.3 | 98.92 | 223 | rtx4090* | 42 | 5% |
-| 15 | sn108 Prometheon | 61.4 | 57.28 | 396 | rtx4090* | 8 | 66% |
-| 16 | sn53 engy | 59.8 | 35.04 | 234 | rtx4090 | 144 | 63% |
+| 10 | sn96 Verathos | 67.1 | 16.40 | 447 | rtx4090 | 96 | 40% |
+| 11 | sn38 ChronoLLM | 66.6 | 117 | 1,597 | cpu-small | 10 | 52% |
+| 12 | sn107 Minos | 65.2 | 146 | 45,004 | cpu-small | 20 | 90% |
+| 13 | sn85 Vidaio | 64.4 | 137 | 412 | rtx4090* | 13 | 42% |
+| 14 | sn108 Prometheon | 63.9 | 121 | 130 | rtx4090* | 8 | 66% |
+| 15 | sn81 Reliquary | 63.3 | 101 | 223 | rtx4090* | 42 | 5% |
+| 16 | sn53 engy | 59.9 | 35.25 | 235 | rtx4090 | 144 | 63% |
 | 17 | sn60 Bitsec.ai | 59.7 | 462 | 462 = | cpu-small | 3 | 50% |
-| 18 | sn51 lium.io | 59.3 | 38.72 | 5,286 | rtx4090* | 53 | 67% |
-| 19 | sn28 gm | 59.3 | 31.52 | 1,413 | rtx4090* | 55 | 20% |
-| 20 | sn61 RedTeam | 58.1 | 20.42 | 280 | rtx4090* | 84 | 6% |
+| 18 | sn28 gm | 59.3 | 31.58 | 1,415 | rtx4090* | 55 | 20% |
+| 19 | sn51 lium.io | 58.9 | 34.72 | 5,354 | rtx4090* | 53 | 66% |
+| 20 | sn61 RedTeam | 58.1 | 20.45 | 283 | rtx4090* | 84 | 6% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 17 |
-| dominated (60–90%) | 20 |
-| captured (>90%) | 25 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 19 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 

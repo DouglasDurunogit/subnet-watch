@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T01:47:06Z · block 8897204 · run_status **ok**_
+_snapshot 2026-08-22T02:43:10Z · block 8897485 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 90 | `miner_burn` < 0.99 |
-| Ranked | 90 | passed every gate |
+| Pays miners at all | 89 | `miner_burn` < 0.99 |
+| Ranked | 89 | passed every gate |
 | **Positive margin** | **54** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 5 | `██` |
+| 0 (none) | 58 | `████████████████████████████` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 6 | `███` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 38 | `██████████████████` |
+| ≥0.99 dead | 39 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.3 | 81.13 | 136 | cpu-small | 13 | 20% |
-| 2 | sn23 Trishool | 72.4 | 583 | 583 = | cpu-small | 2 | 80% |
-| 3 | sn15 ORO | 70.3 | 20.92 | 38.93 | cpu-small | 78 | 93% |
-| 4 | sn67 Harnyx | 70.2 | 13.35 | 920 | cpu-small | 162 | 23% |
-| 5 | sn1 Apex | 70.1 | 772 | 1,220 | rtx4090* | 4 | 53% |
-| 6 | sn56 Gradients | 69.9 | 719 | 1,108 | rtx4090* | 5 | 73% |
-| 7 | sn91 cascade | 69.9 | 718 | 2,896 | rtx4090* | 5 | 52% |
-| 8 | sn26 Perturb | 68 | 20.75 | 395 | rtx3060 | 10 | 70% |
-| 9 | sn38 ChronoLLM | 66.5 | 114 | 1,553 | cpu-small | 10 | 52% |
-| 10 | sn96 Verathos | 66.1 | 13.15 | 569 | rtx4090 | 94 | 41% |
-| 11 | sn107 Minos | 65.6 | 161 | 44,764 | cpu-small | 20 | 90% |
-| 12 | sn98 NeverPlayAlone | 64.5 | 1,959 | 1,959 = | cpu-small | 1 | 100% |
-| 13 | sn85 Vidaio | 64.3 | 136 | 424 | rtx4090* | 13 | 42% |
-| 14 | sn81 Reliquary | 63.2 | 97.98 | 256 | rtx4090* | 45 | 6% |
-| 15 | sn121 sundae_bar | 63 | 1,230 | 1,230 = | cpu-small | 2 | 60% |
-| 16 | sn51 lium.io | 62.8 | 96.02 | 1,619 | rtx4090* | 51 | 71% |
-| 17 | sn108 Prometheon | 61.5 | 58.48 | 403 | rtx4090* | 8 | 66% |
-| 18 | sn53 engy | 59.9 | 35.76 | 238 | rtx4090 | 144 | 63% |
-| 19 | sn60 Bitsec.ai | 59.7 | 465 | 465 = | cpu-small | 3 | 50% |
-| 20 | sn28 gm | 58.5 | 25.20 | 1,799 | rtx4090* | 56 | 17% |
+| 1 | sn76 Phylax | 77.5 | 85.31 | 143 | cpu-small | 13 | 20% |
+| 2 | sn102 ConnitoAI | 73 | 1,832 | 1,834 | rtx4090* | 4 | 25% |
+| 3 | sn23 Trishool | 72.5 | 613 | 613 = | cpu-small | 2 | 80% |
+| 4 | sn15 ORO | 70.7 | 22.29 | 41.44 | cpu-small | 78 | 93% |
+| 5 | sn67 Harnyx | 70.4 | 14.09 | 967 | cpu-small | 162 | 23% |
+| 6 | sn1 Apex | 70.3 | 808 | 1,277 | rtx4090* | 4 | 53% |
+| 7 | sn56 Gradients | 70.1 | 756 | 1,164 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 70 | 750 | 3,026 | rtx4090* | 5 | 52% |
+| 9 | sn26 Perturb | 67.8 | 19.46 | 276 | rtx3060 | 10 | 70% |
+| 10 | sn96 Verathos | 67.1 | 16.60 | 609 | rtx4090 | 84 | 41% |
+| 11 | sn38 ChronoLLM | 66.6 | 118 | 1,613 | cpu-small | 10 | 52% |
+| 12 | sn107 Minos | 65.7 | 165 | 46,746 | cpu-small | 20 | 90% |
+| 13 | sn85 Vidaio | 65.1 | 174 | 446 | rtx4090* | 13 | 42% |
+| 14 | sn98 NeverPlayAlone | 64.7 | 2,058 | 2,058 = | cpu-small | 1 | 100% |
+| 15 | sn121 sundae_bar | 63.2 | 1,292 | 1,292 = | cpu-small | 2 | 60% |
+| 16 | sn81 Reliquary | 63.2 | 98.10 | 294 | rtx4090* | 45 | 6% |
+| 17 | sn51 lium.io | 62.7 | 92.48 | 4,255 | rtx4090* | 49 | 68% |
+| 18 | sn108 Prometheon | 61.7 | 62.20 | 426 | rtx4090* | 8 | 66% |
+| 19 | sn53 engy | 60.1 | 38.39 | 253 | rtx4090 | 144 | 63% |
+| 20 | sn60 Bitsec.ai | 59.9 | 490 | 490 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 18 |
-| dominated (60–90%) | 22 |
-| captured (>90%) | 24 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 17 |
+| dominated (60–90%) | 21 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-22T02:43 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: fix(validator): reuse one chain connectio |
+| 2026-08-22T02:43 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Sort the constants import in the validato |
 | 2026-08-22T01:47 | sn25 | RELEASE | sn25 released v2026.8.21-1025613560 |
 | 2026-08-22T00:02 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat: weighted reference-anchored scoring |
 | 2026-08-21T23:35 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore: remove dead BackendClient top-mine |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-21T17:00 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Turn provenance off until the run store c |
 | 2026-08-21T16:15 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs: quickstart matches production — mir |
 | 2026-08-21T16:15 | sn21 | README_TASK_DIFF | sn21 README task/scoring sections changed |
-| 2026-08-21T16:15 | sn102 | RELEASE | sn102 released v0.5.0 |
-| 2026-08-21T16:15 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/ |
 
 ---
 

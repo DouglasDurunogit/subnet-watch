@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T01:47:06Z, block 8897204
+# ALARMS - generated 2026-08-22T02:43:10Z, block 8897485
 
-window: first_seen in [2026-08-22T00:32:37Z, 2026-08-22T01:47:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T01:28:43Z, 2026-08-22T02:43:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn25:release:v2026.8.21-1025613560` | 25 | RELEASE | P1 | 2026-08-22T01:47:37Z | sn25 released v2026.8.21-1025613560 |
+| `sn53:scoring_commit:2026-08-22T01:50:29Z` | 53 | SCORING_COMMIT | P1 | 2026-08-22T02:43:43Z | sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per… |
+| `sn92:scoring_commit:2026-08-22T01:59:31Z` | 92 | SCORING_COMMIT | P1 | 2026-08-22T02:43:43Z | sn92 commit touches scoring: Sort the constants import in the validator context |
 
 ### detail
 
 - **`sn25:release:v2026.8.21-1025613560`** - sn25 released v2026.8.21-1025613560
   - published 2026-08-22T01:19:04Z (was v2026.8.21-1025339670)
+- **`sn53:scoring_commit:2026-08-22T01:50:29Z`** - sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-22T01:59:31Z`** - sn92 commit touches scoring: Sort the constants import in the validator context
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

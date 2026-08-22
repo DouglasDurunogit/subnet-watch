@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-22T01:47:06Z  |  block: 8897204  |  row_status: ok
+snapshot_utc: 2026-08-22T02:43:10Z  |  block: 8897485  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000765009 TAO (0.17557721559 USD), open=True
+- registration cost: 0.000706891 TAO (0.17043142009999998 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 657.2 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3695.261635271666** (uid 110) <- the only figure quotable as achievable
-- median_miner_usd_day: 3695.261635271666
-- top_miner_usd_day: 3695.261635271666 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3882.3413649681743** (uid 110) <- the only figure quotable as achievable
+- median_miner_usd_day: 3882.3413649681743
+- top_miner_usd_day: 3882.3413649681743 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-22T01:47:06Z  |  block: 8897204  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3687.0425 USD/day  |  payback on registration: 0.0 days
+- net margin: 3874.1222 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.6 (rank 39), confidence 0.85 - hardware requirement unknown
-- components: income 32.44 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 45.8 (rank 39), confidence 0.85 - hardware requirement unknown
+- components: income 32.64 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-22T11:31:39Z  |  block: 8900127  |  row_status: ok
+snapshot_utc: 2026-08-22T12:00:41Z  |  block: 8900272  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000729265 TAO (0.16186036674999998 USD), open=True
+- registration cost: 0.000875664 TAO (0.19541317823999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 657.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3562.9036578163764** (uid 110) <- the only figure quotable as achievable
-- median_miner_usd_day: 3562.9036578163764
-- top_miner_usd_day: 3562.9036578163764 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3581.957787756422** (uid 110) <- the only figure quotable as achievable
+- median_miner_usd_day: 3581.957787756422
+- top_miner_usd_day: 3581.957787756422 (uid 110, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-22T11:31:39Z  |  block: 8900127  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3554.6845 USD/day  |  payback on registration: 0.0 days
+- net margin: 3573.7386 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 45.5 (rank 37), confidence 0.85 - hardware requirement unknown
-- components: income 32.3 / freshness 0.0 / resource 11.25 / registration 10.0
+- components: income 32.32 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

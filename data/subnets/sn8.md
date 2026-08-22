@@ -1,20 +1,20 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-22T04:17:35Z  |  block: 8897957  |  row_status: ok
+snapshot_utc: 2026-08-22T04:59:17Z  |  block: 8898165  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.123825 USD), open=True
+- registration cost: 0.0005 TAO (0.12395 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 45  |  free: 0
 - subnet age: 1030.7 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1197.9675093396934** (uid 68) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.9305806649453859
-- top_miner_usd_day: 15594.670783154777 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1198.982089787162** (uid 68) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.9313687906166459
+- top_miner_usd_day: 15607.87819315375 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-22T04:17:35Z  |  block: 8897957  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.2886 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.2878 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T04:17:35Z, block 8897957
+# ALARMS - generated 2026-08-22T04:59:17Z, block 8898165
 
-window: first_seen in [2026-08-22T03:02:59Z, 2026-08-22T04:17:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T03:44:47Z, 2026-08-22T04:59:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -37,7 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
 | `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |

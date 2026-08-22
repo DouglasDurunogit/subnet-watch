@@ -1,11 +1,11 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-08-22T04:17:35Z  |  block: 8897957  |  row_status: ok
+snapshot_utc: 2026-08-22T04:59:17Z  |  block: 8898165  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.123825 USD), open=True
+- registration cost: 0.0005 TAO (0.12395 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 12  |  free: 0
 - subnet age: 1028.9 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
@@ -13,8 +13,8 @@ snapshot_utc: 2026-08-22T04:17:35Z  |  block: 8897957  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 22510.370919496585
-- top_miner_usd_day: 22510.370919496585 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 22533.40591286854
+- top_miner_usd_day: 22533.40591286854 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

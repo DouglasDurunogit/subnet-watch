@@ -1,13 +1,26 @@
-# ALARMS - generated 2026-08-22T07:40:52Z, block 8898973
+# ALARMS - generated 2026-08-22T08:03:13Z, block 8899085
 
-window: first_seen in [2026-08-22T06:26:23Z, 2026-08-22T07:41:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T06:48:45Z, 2026-08-22T08:03:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn61:release:4.9.7` | 61 | RELEASE | P1 | 2026-08-22T08:03:45Z | sn61 released 4.9.7 |
+| `sn61:scoring_commit:2026-08-22T02:19:35Z` | 61 | SCORING_COMMIT | P1 | 2026-08-22T08:03:45Z | sn61 commit touches scoring: deps: update abs_challenge submodule to version 6.0.4 |
+| `sn92:release:v0.1.2` | 92 | RELEASE | P1 | 2026-08-22T08:03:45Z | sn92 released v0.1.2 |
+
+### detail
+
+- **`sn61:release:4.9.7`** - sn61 released 4.9.7
+  - published 2026-08-22T07:42:19Z (was 4.9.6)
+- **`sn61:scoring_commit:2026-08-22T02:19:35Z`** - sn61 commit touches scoring: deps: update abs_challenge submodule to version 6.0.4
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v0.1.2`** - sn92 released v0.1.2
+  - published 2026-08-22T07:55:29Z (was v0.1.1)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

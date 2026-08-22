@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T03:27:39Z, block 8897707
+# ALARMS - generated 2026-08-22T04:17:35Z, block 8897957
 
-window: first_seen in [2026-08-22T02:13:04Z, 2026-08-22T03:28:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T03:02:59Z, 2026-08-22T04:17:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn53:scoring_commit:2026-08-22T01:50:29Z` | 53 | SCORING_COMMIT | P1 | 2026-08-22T02:43:43Z | sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per… |
-| `sn92:scoring_commit:2026-08-22T01:59:31Z` | 92 | SCORING_COMMIT | P1 | 2026-08-22T02:43:43Z | sn92 commit touches scoring: Sort the constants import in the validator context |
+| `sn53:release:v0.4.5: Merge pull request #42 from hanl` | 53 | RELEASE | P1 | 2026-08-22T04:17:59Z | sn53 released v0.4.5: Merge pull request #42 from hanlinai/release/0.4.5 |
+| `sn100:release:v3.3.29` | 100 | RELEASE | P1 | 2026-08-22T04:17:59Z | sn100 released v3.3.29 |
 
 ### detail
 
-- **`sn53:scoring_commit:2026-08-22T01:50:29Z`** - sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-22T01:59:31Z`** - sn92 commit touches scoring: Sort the constants import in the validator context
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn53:release:v0.4.5: Merge pull request #42 from hanl`** - sn53 released v0.4.5: Merge pull request #42 from hanlinai/release/0.4.5
+  - published 2026-08-22T04:00:05Z (was v0.4.4)
+- **`sn100:release:v3.3.29`** - sn100 released v3.3.29
+  - published 2026-08-22T04:04:45Z (was v3.3.28)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-15T03:59:05Z` | 71 | SCORING_COMMIT | 2026-08-15T04:05:09Z | sn71 commit touches scoring: Provision hotkey verification in gateway enclaves |
-| `sn108:scoring_commit:2026-08-15T04:00:22Z` | 108 | SCORING_COMMIT | 2026-08-15T04:05:09Z | sn108 commit touches scoring: feat(registry): require every evaluated chute to live in the promethe… |
 | `sn67:scoring_commit:2026-08-14T10:52:59Z` | 67 | SCORING_COMMIT | 2026-08-15T04:45:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260814.post2 |
 | `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
@@ -235,6 +233,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-08-21T23:12:08Z` | 15 | SCORING_COMMIT | 2026-08-21T23:35:34Z | sn15 commit touches scoring: chore: remove dead BackendClient top-miner and race-history methods (… |
 | `sn97:scoring_commit:2026-08-21T17:21:07Z` | 97 | SCORING_COMMIT | 2026-08-22T00:02:04Z | sn97 commit touches scoring: feat: weighted reference-anchored scoring, split rubric, submit proto… |
 | `sn25:release:v2026.8.21-1025613560` | 25 | RELEASE | 2026-08-22T01:47:37Z | sn25 released v2026.8.21-1025613560 |
+| `sn53:scoring_commit:2026-08-22T01:50:29Z` | 53 | SCORING_COMMIT | 2026-08-22T02:43:43Z | sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per… |
+| `sn92:scoring_commit:2026-08-22T01:59:31Z` | 92 | SCORING_COMMIT | 2026-08-22T02:43:43Z | sn92 commit touches scoring: Sort the constants import in the validator context |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |

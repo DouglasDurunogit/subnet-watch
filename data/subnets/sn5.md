@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-22T15:01:08Z  |  block: 8901174  |  row_status: ok
+snapshot_utc: 2026-08-22T15:32:21Z  |  block: 8901331  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.251163797 TAO (55.49212930918 USD), open=True
+- registration cost: 0.215931312 TAO (47.60421704352 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 254  |  free: 0
 - subnet age: 890.2 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 38.664512842846776** (uid 243) <- the only figure quotable as achievable
-- median_miner_usd_day: 34.77211222108368
-- top_miner_usd_day: 38.664512842846776 (uid 243, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 38.58240381868574** (uid 243) <- the only figure quotable as achievable
+- median_miner_usd_day: 34.69826920606637
+- top_miner_usd_day: 38.58240381868574 (uid 243, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-22T15:01:08Z  |  block: 8901174  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 26.5529 USD/day  |  payback on registration: 2.09 days
+- net margin: 26.4791 USD/day  |  payback on registration: 1.8 days
 
 ## Score
 
 - gate: **OK** 
 - score: 20.2 (rank 71), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 13.1 / freshness 0.0 / resource 11.25 / registration 9.3
+- components: income 13.09 / freshness 0.0 / resource 11.25 / registration 9.4
 - freshness basis: no challenge change on record
 
 ## On-chain description

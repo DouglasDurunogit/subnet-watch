@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T06:02:27Z · block 8898481 · run_status **ok**_
+_snapshot 2026-08-22T06:56:11Z · block 8898750 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **53** | income beats machine cost |
-| New events this window | 3 | see ALARMS.md |
+| New events this window | 0 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -32,9 +32,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 61 | `████████████████████████████` |
 | 0–0.2 | 4 | `██` |
 | 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 4 | `██` |
+| 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 7 | `███` |
+| 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 38 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.4 | 82.12 | 138 | cpu-small | 13 | 20% |
-| 2 | sn23 Trishool | 72.4 | 588 | 588 = | cpu-small | 2 | 80% |
-| 3 | sn67 Harnyx | 72.4 | 23.61 | 472 | cpu-small | 131 | 13% |
-| 4 | sn102 ConnitoAI | 71.6 | 1,198 | 2,811 | rtx4090* | 5 | 40% |
-| 5 | sn1 Apex | 70.1 | 766 | 1,210 | rtx4090* | 4 | 54% |
-| 6 | sn91 cascade | 70 | 748 | 3,017 | rtx4090* | 5 | 52% |
-| 7 | sn56 Gradients | 69.9 | 723 | 1,115 | rtx4090* | 5 | 73% |
-| 8 | sn15 ORO | 69.5 | 17.18 | 22,734 | cpu-small | 58 | 96% |
-| 9 | sn26 Perturb | 67.6 | 18.66 | 266 | rtx3060 | 10 | 70% |
-| 10 | sn96 Verathos | 67 | 16.04 | 536 | rtx4090 | 89 | 40% |
-| 11 | sn38 ChronoLLM | 66.5 | 114 | 1,554 | cpu-small | 10 | 52% |
-| 12 | sn107 Minos | 65.4 | 154 | 45,306 | cpu-small | 20 | 90% |
-| 13 | sn98 NeverPlayAlone | 64.6 | 1,982 | 1,982 = | cpu-small | 1 | 100% |
-| 14 | sn85 Vidaio | 63.8 | 116 | 417 | rtx4090* | 13 | 42% |
-| 15 | sn81 Reliquary | 63 | 90.15 | 253 | rtx4090* | 43 | 6% |
-| 16 | sn51 lium.io | 62.5 | 88.75 | 4,562 | rtx4090* | 49 | 69% |
-| 17 | sn108 Prometheon | 61.6 | 60.43 | 416 | rtx4090* | 8 | 66% |
-| 18 | sn60 Bitsec.ai | 59.8 | 476 | 476 = | cpu-small | 3 | 50% |
-| 19 | sn53 engy | 59.8 | 34.95 | 234 | rtx4090 | 144 | 63% |
-| 20 | sn28 gm | 57.3 | 17.61 | 1,413 | rtx4090* | 55 | 24% |
+| 1 | sn76 Phylax | 77.3 | 81.54 | 137 | cpu-small | 13 | 20% |
+| 2 | sn102 ConnitoAI | 73 | 1,812 | 1,814 | rtx4090* | 4 | 26% |
+| 3 | sn23 Trishool | 72.4 | 583 | 583 = | cpu-small | 2 | 80% |
+| 4 | sn67 Harnyx | 72.4 | 23.64 | 461 | cpu-small | 134 | 12% |
+| 5 | sn91 cascade | 70 | 743 | 2,997 | rtx4090* | 5 | 52% |
+| 6 | sn56 Gradients | 69.9 | 717 | 1,105 | rtx4090* | 5 | 73% |
+| 7 | sn15 ORO | 69.3 | 17.80 | 22,149 | cpu-small | 59 | 95% |
+| 8 | sn1 Apex | 68.7 | 504 | 1,198 | rtx4090* | 5 | 54% |
+| 9 | sn26 Perturb | 67.6 | 18.50 | 264 | rtx3060 | 10 | 70% |
+| 10 | sn96 Verathos | 66.8 | 15.28 | 513 | rtx4090 | 91 | 41% |
+| 11 | sn38 ChronoLLM | 66.5 | 113 | 1,537 | cpu-small | 10 | 52% |
+| 12 | sn107 Minos | 65.4 | 152 | 44,809 | cpu-small | 20 | 90% |
+| 13 | sn98 NeverPlayAlone | 64.6 | 1,968 | 1,968 = | cpu-small | 1 | 100% |
+| 14 | sn85 Vidaio | 64.6 | 146 | 415 | rtx4090* | 13 | 42% |
+| 15 | sn81 Reliquary | 62.9 | 87.91 | 215 | rtx4090* | 43 | 5% |
+| 16 | sn108 Prometheon | 61.6 | 59.95 | 413 | rtx4090* | 8 | 66% |
+| 17 | sn51 lium.io | 60.3 | 49.77 | 4,703 | rtx4090* | 52 | 70% |
+| 18 | sn53 engy | 59.9 | 35.11 | 235 | rtx4090 | 144 | 63% |
+| 19 | sn60 Bitsec.ai | 59.8 | 471 | 471 = | cpu-small | 3 | 50% |
+| 20 | sn28 gm | 57.9 | 21.31 | 1,498 | rtx4090* | 57 | 28% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
+| wide (<30%) | 25 |
 | concentrated (30–60%) | 18 |
-| dominated (60–90%) | 21 |
+| dominated (60–90%) | 20 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality

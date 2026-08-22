@@ -1,26 +1,13 @@
-# ALARMS - generated 2026-08-22T06:02:27Z, block 8898481
+# ALARMS - generated 2026-08-22T06:56:11Z, block 8898750
 
-window: first_seen in [2026-08-22T04:47:52Z, 2026-08-22T06:02:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T05:41:37Z, 2026-08-22T06:56:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn25:release:v2026.8.21-1025763520` | 25 | RELEASE | P1 | 2026-08-22T05:38:35Z | sn25 released v2026.8.21-1025763520 |
-| `sn92:release:v0.1.1` | 92 | RELEASE | P1 | 2026-08-22T05:38:35Z | sn92 released v0.1.1 |
-| `sn92:scoring_commit:2026-08-22T05:35:10Z` | 92 | SCORING_COMMIT | P1 | 2026-08-22T05:38:35Z | sn92 commit touches scoring: Package the version validators actually run |
-
-### detail
-
-- **`sn25:release:v2026.8.21-1025763520`** - sn25 released v2026.8.21-1025763520
-  - published 2026-08-22T05:29:04Z (was v2026.8.21-1025613560)
-- **`sn92:release:v0.1.1`** - sn92 released v0.1.1
-  - published 2026-08-22T05:36:42Z (was v0.1.0)
-- **`sn92:scoring_commit:2026-08-22T05:35:10Z`** - sn92 commit touches scoring: Package the version validators actually run
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -239,6 +226,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-22T01:59:31Z` | 92 | SCORING_COMMIT | 2026-08-22T02:43:43Z | sn92 commit touches scoring: Sort the constants import in the validator context |
 | `sn53:release:v0.4.5: Merge pull request #42 from hanl` | 53 | RELEASE | 2026-08-22T04:17:59Z | sn53 released v0.4.5: Merge pull request #42 from hanlinai/release/0.4.5 |
 | `sn100:release:v3.3.29` | 100 | RELEASE | 2026-08-22T04:17:59Z | sn100 released v3.3.29 |
+| `sn25:release:v2026.8.21-1025763520` | 25 | RELEASE | 2026-08-22T05:38:35Z | sn25 released v2026.8.21-1025763520 |
+| `sn92:release:v0.1.1` | 92 | RELEASE | 2026-08-22T05:38:35Z | sn92 released v0.1.1 |
+| `sn92:scoring_commit:2026-08-22T05:35:10Z` | 92 | SCORING_COMMIT | 2026-08-22T05:38:35Z | sn92 commit touches scoring: Package the version validators actually run |
 | `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T09:50:54Z, block 8899623
+# ALARMS - generated 2026-08-22T10:36:02Z, block 8899849
 
-window: first_seen in [2026-08-22T08:36:18Z, 2026-08-22T09:51:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T09:21:27Z, 2026-08-22T10:36:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn92:release:v0.1.3` | 92 | RELEASE | P1 | 2026-08-22T08:45:06Z | sn92 released v0.1.3 |
-| `sn92:release:v0.1.4` | 92 | RELEASE | P1 | 2026-08-22T09:13:18Z | sn92 released v0.1.4 |
+| `sn44:scoring_commit:2026-08-22T10:30:38Z` | 44 | SCORING_COMMIT | P1 | 2026-08-22T10:36:27Z | sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop |
+| `sn92:release:v0.1.6` | 92 | RELEASE | P1 | 2026-08-22T10:36:27Z | sn92 released v0.1.6 |
 
 ### detail
 
-- **`sn92:release:v0.1.3`** - sn92 released v0.1.3
-  - published 2026-08-22T08:22:01Z (was v0.1.2)
-- **`sn92:release:v0.1.4`** - sn92 released v0.1.4
-  - published 2026-08-22T08:55:05Z (was v0.1.3)
+- **`sn44:scoring_commit:2026-08-22T10:30:38Z`** - sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v0.1.6`** - sn92 released v0.1.6
+  - published 2026-08-22T10:22:51Z (was v0.1.4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -241,6 +241,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:release:4.9.7` | 61 | RELEASE | 2026-08-22T08:03:45Z | sn61 released 4.9.7 |
 | `sn61:scoring_commit:2026-08-22T02:19:35Z` | 61 | SCORING_COMMIT | 2026-08-22T08:03:45Z | sn61 commit touches scoring: deps: update abs_challenge submodule to version 6.0.4 |
 | `sn92:release:v0.1.2` | 92 | RELEASE | 2026-08-22T08:03:45Z | sn92 released v0.1.2 |
+| `sn92:release:v0.1.3` | 92 | RELEASE | 2026-08-22T08:45:06Z | sn92 released v0.1.3 |
+| `sn92:release:v0.1.4` | 92 | RELEASE | 2026-08-22T09:13:18Z | sn92 released v0.1.4 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

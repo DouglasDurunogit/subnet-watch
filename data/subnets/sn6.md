@@ -1,6 +1,6 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
+snapshot_utc: 2026-08-22T13:40:38Z  |  block: 8900772  |  row_status: ok
 
 ## Chain row
 
@@ -12,13 +12,13 @@ snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 336.948537186022** (uid 56) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.05732367083804389
-- top_miner_usd_day: 444.029154311488 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 336.9653000158502** (uid 56) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.05732652262944032
+- top_miner_usd_day: 444.05124428764475 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 103  |  gini: 0.9365144016111568  |  top1_share: 0.2368517612524462  |  top10_share: 0.9807057240704502
+- earners: 103  |  gini: 0.9365144016111566  |  top1_share: 0.2368517612524462  |  top10_share: 0.9807057240704501
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository

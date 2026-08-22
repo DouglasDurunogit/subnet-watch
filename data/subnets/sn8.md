@@ -1,6 +1,6 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
+snapshot_utc: 2026-08-22T13:40:38Z  |  block: 8900772  |  row_status: ok
 
 ## Chain row
 
@@ -12,13 +12,13 @@ snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1066.1251698626372** (uid 68) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.8366140490682477
-- top_miner_usd_day: 13864.368021159002 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1066.3165276525394** (uid 68) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.8367642121259791
+- top_miner_usd_day: 13866.577601947683 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 31  |  gini: 0.9474832523819985  |  top1_share: 0.7590460777428318  |  top10_share: 0.9992671531955174
+- earners: 31  |  gini: 0.9474829430749598  |  top1_share: 0.7590423988884987  |  top10_share: 0.9992671420065042
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.3826 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.3824 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 68), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 67), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: SCORING_COMMIT 23d ago
 

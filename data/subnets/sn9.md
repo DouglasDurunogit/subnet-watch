@@ -1,6 +1,6 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
+snapshot_utc: 2026-08-22T13:40:38Z  |  block: 8900772  |  row_status: ok
 
 ## Chain row
 
@@ -13,8 +13,8 @@ snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 20259.970357272265
-- top_miner_usd_day: 20259.970357272265 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 20263.14866659954
+- top_miner_usd_day: 20263.14866659954 (uid 210, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -41,7 +41,7 @@ snapshot_utc: 2026-08-22T12:57:05Z  |  block: 8900554  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 69), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 68), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: RELEASE 22d ago
 

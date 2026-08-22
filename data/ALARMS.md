@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T15:59:45Z, block 8901468
+# ALARMS - generated 2026-08-22T16:36:45Z, block 8901653
 
-window: first_seen in [2026-08-22T14:45:11Z, 2026-08-22T16:00:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T15:22:16Z, 2026-08-22T16:37:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn81:scoring_commit:2026-08-21T19:12:16Z` | 81 | SCORING_COMMIT | P1 | 2026-08-22T16:00:11Z | sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat … |
+| `sn92:scoring_commit:2026-08-22T16:30:46Z` | 92 | SCORING_COMMIT | P1 | 2026-08-22T16:37:16Z | sn92 commit touches scoring: Build the validator registry from the permitted set on chain |
 
 ### detail
 
 - **`sn81:scoring_commit:2026-08-21T19:12:16Z`** - sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-22T16:30:46Z`** - sn92 commit touches scoring: Build the validator registry from the permitted set on chain
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

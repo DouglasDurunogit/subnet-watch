@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T08:44:36Z, block 8899292
+# ALARMS - generated 2026-08-22T09:12:44Z, block 8899432
 
-window: first_seen in [2026-08-22T07:30:06Z, 2026-08-22T08:45:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T07:58:18Z, 2026-08-22T09:13:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -13,6 +13,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:scoring_commit:2026-08-22T02:19:35Z` | 61 | SCORING_COMMIT | P1 | 2026-08-22T08:03:45Z | sn61 commit touches scoring: deps: update abs_challenge submodule to version 6.0.4 |
 | `sn92:release:v0.1.2` | 92 | RELEASE | P1 | 2026-08-22T08:03:45Z | sn92 released v0.1.2 |
 | `sn92:release:v0.1.3` | 92 | RELEASE | P1 | 2026-08-22T08:45:06Z | sn92 released v0.1.3 |
+| `sn92:release:v0.1.4` | 92 | RELEASE | P1 | 2026-08-22T09:13:18Z | sn92 released v0.1.4 |
 
 ### detail
 
@@ -24,6 +25,8 @@ already reported in an earlier window and must not be re-alarmed.
   - published 2026-08-22T07:55:29Z (was v0.1.1)
 - **`sn92:release:v0.1.3`** - sn92 released v0.1.3
   - published 2026-08-22T08:22:01Z (was v0.1.2)
+- **`sn92:release:v0.1.4`** - sn92 released v0.1.4
+  - published 2026-08-22T08:55:05Z (was v0.1.3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,7 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn67:scoring_commit:2026-08-15T08:24:59Z` | 67 | SCORING_COMMIT | 2026-08-15T09:06:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260815.post1 |
 | `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 | `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
@@ -245,7 +247,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.21-1025763520` | 25 | RELEASE | 2026-08-22T05:38:35Z | sn25 released v2026.8.21-1025763520 |
 | `sn92:release:v0.1.1` | 92 | RELEASE | 2026-08-22T05:38:35Z | sn92 released v0.1.1 |
 | `sn92:scoring_commit:2026-08-22T05:35:10Z` | 92 | SCORING_COMMIT | 2026-08-22T05:38:35Z | sn92 commit touches scoring: Package the version validators actually run |
-| `sn67:readme_task_diff:5a8da0f3ba283771` | 67 | README_TASK_DIFF | 2026-08-15T09:06:33Z | sn67 README task/scoring sections changed |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

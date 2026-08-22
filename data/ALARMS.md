@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T12:00:41Z, block 8900272
+# ALARMS - generated 2026-08-22T12:57:05Z, block 8900554
 
-window: first_seen in [2026-08-22T10:46:08Z, 2026-08-22T12:01:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T11:42:33Z, 2026-08-22T12:57:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn92:release:v0.1.7` | 92 | RELEASE | P1 | 2026-08-22T11:32:10Z | sn92 released v0.1.7 |
 | `sn92:release:v0.1.9` | 92 | RELEASE | P1 | 2026-08-22T12:01:08Z | sn92 released v0.1.9 |
+| `sn92:release:v0.1.11` | 92 | RELEASE | P1 | 2026-08-22T12:57:33Z | sn92 released v0.1.11 |
+| `sn92:scoring_commit:2026-08-22T12:40:53Z` | 92 | SCORING_COMMIT | P1 | 2026-08-22T12:57:33Z | sn92 commit touches scoring: Make the validator guide match the code and explain the logs |
 
 ### detail
 
-- **`sn92:release:v0.1.7`** - sn92 released v0.1.7
-  - published 2026-08-22T11:06:55Z (was v0.1.6)
 - **`sn92:release:v0.1.9`** - sn92 released v0.1.9
   - published 2026-08-22T11:53:06Z (was v0.1.7)
+- **`sn92:release:v0.1.11`** - sn92 released v0.1.11
+  - published 2026-08-22T12:56:21Z (was v0.1.9)
+- **`sn92:scoring_commit:2026-08-22T12:40:53Z`** - sn92 commit touches scoring: Make the validator guide match the code and explain the logs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,7 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn100:scoring_commit:2026-08-15T12:26:39Z` | 100 | SCORING_COMMIT | 2026-08-15T12:56:35Z | sn100 commit touches scoring: feat(prism): live leaf from G2 benchmarks (scoring_version 4) (#160) |
 | `sn100:scoring_commit:2026-08-15T13:20:08Z` | 100 | SCORING_COMMIT | 2026-08-15T13:39:18Z | sn100 commit touches scoring: fix(prism): rename lattice_score to satisfy clippy similar_names |
 | `sn76:scoring_commit:2026-08-15T17:47:00Z` | 76 | SCORING_COMMIT | 2026-08-15T17:59:54Z | sn76 commit touches scoring: Add a local evaluation command |
 | `sn108:scoring_commit:2026-08-15T20:13:27Z` | 108 | SCORING_COMMIT | 2026-08-15T20:35:26Z | sn108 commit touches scoring: docs(miner): drop the second artefact that was never built |
@@ -245,6 +247,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:release:v0.1.4` | 92 | RELEASE | 2026-08-22T09:13:18Z | sn92 released v0.1.4 |
 | `sn44:scoring_commit:2026-08-22T10:30:38Z` | 44 | SCORING_COMMIT | 2026-08-22T10:36:27Z | sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop |
 | `sn92:release:v0.1.6` | 92 | RELEASE | 2026-08-22T10:36:27Z | sn92 released v0.1.6 |
+| `sn92:release:v0.1.7` | 92 | RELEASE | 2026-08-22T11:32:10Z | sn92 released v0.1.7 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

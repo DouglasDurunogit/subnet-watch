@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T23:01:23Z · block 8903576 · run_status **ok**_
+_snapshot 2026-08-22T23:32:04Z · block 8903729 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 0 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,9 +29,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
+| 0 (none) | 61 | `████████████████████████████` |
 | 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 4 | `██` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77 | 74.62 | 132 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.3 | 22.83 | 118 | cpu-small | 157 | 12% |
-| 3 | sn62 Ridges | 71.6 | 1,208 | 2,976 | rtx4090* | 6 | 39% |
-| 4 | sn102 ConnitoAI | 71.5 | 1,150 | 2,661 | rtx4090* | 6 | 38% |
-| 5 | sn15 ORO | 70.3 | 19.20 | 22,869 | cpu-small | 61 | 95% |
-| 6 | sn56 Gradients | 69.9 | 724 | 1,070 | rtx4090* | 5 | 73% |
-| 7 | sn91 cascade | 69.8 | 692 | 2,791 | rtx4090* | 5 | 52% |
-| 8 | sn1 Apex | 68.3 | 442 | 1,270 | rtx4090* | 5 | 53% |
-| 9 | sn96 Verathos | 67.6 | 18.79 | 446 | rtx4090 | 92 | 40% |
-| 10 | sn26 Perturb | 67.4 | 17.84 | 256 | rtx3060 | 10 | 70% |
-| 11 | sn38 ChronoLLM | 66.5 | 114 | 1,561 | cpu-small | 10 | 52% |
-| 12 | sn107 Minos | 65.2 | 145 | 42,852 | cpu-small | 20 | 90% |
-| 13 | sn98 NeverPlayAlone | 64.5 | 1,910 | 1,910 = | cpu-small | 1 | 100% |
-| 14 | sn85 Vidaio | 64.1 | 129 | 402 | rtx4090* | 13 | 42% |
-| 15 | sn108 Prometheon | 63.8 | 118 | 128 | rtx4090* | 8 | 66% |
-| 16 | sn81 Reliquary | 63.3 | 99.34 | 194 | rtx4090* | 44 | 5% |
-| 17 | sn51 lium.io | 62.3 | 83.24 | 4,731 | rtx4090* | 50 | 70% |
-| 18 | sn60 Bitsec.ai | 59.8 | 478 | 478 = | cpu-small | 3 | 50% |
-| 19 | sn53 engy | 59.7 | 33.63 | 226 | rtx4090 | 144 | 63% |
-| 20 | sn28 gm | 59.4 | 32.03 | 1,403 | rtx4090* | 55 | 13% |
+| 1 | sn76 Phylax | 77 | 74.29 | 131 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.3 | 22.72 | 118 | cpu-small | 157 | 12% |
+| 3 | sn62 Ridges | 71.6 | 1,203 | 2,963 | rtx4090* | 6 | 39% |
+| 4 | sn102 ConnitoAI | 71.5 | 1,145 | 2,650 | rtx4090* | 6 | 38% |
+| 5 | sn15 ORO | 70.4 | 19.11 | 22,772 | cpu-small | 61 | 95% |
+| 6 | sn56 Gradients | 69.9 | 721 | 1,065 | rtx4090* | 5 | 73% |
+| 7 | sn91 cascade | 69.7 | 689 | 2,779 | rtx4090* | 5 | 52% |
+| 8 | sn1 Apex | 68.6 | 493 | 1,234 | rtx4090* | 5 | 52% |
+| 9 | sn96 Verathos | 67.6 | 18.70 | 444 | rtx4090 | 92 | 40% |
+| 10 | sn26 Perturb | 67.4 | 17.75 | 255 | rtx3060 | 10 | 70% |
+| 11 | sn38 ChronoLLM | 66.5 | 113 | 1,547 | cpu-small | 10 | 52% |
+| 12 | sn107 Minos | 65.2 | 144 | 42,666 | cpu-small | 20 | 90% |
+| 13 | sn98 NeverPlayAlone | 64.4 | 1,901 | 1,901 = | cpu-small | 1 | 100% |
+| 14 | sn85 Vidaio | 64.1 | 128 | 401 | rtx4090* | 13 | 42% |
+| 15 | sn108 Prometheon | 63.8 | 117 | 127 | rtx4090* | 8 | 66% |
+| 16 | sn81 Reliquary | 63.3 | 98.89 | 193 | rtx4090* | 44 | 5% |
+| 17 | sn51 lium.io | 62.3 | 82.97 | 4,717 | rtx4090* | 50 | 70% |
+| 18 | sn60 Bitsec.ai | 59.8 | 471 | 471 = | cpu-small | 3 | 50% |
+| 19 | sn53 engy | 59.6 | 32.94 | 222 | rtx4090 | 144 | 63% |
+| 20 | sn28 gm | 59.1 | 29.42 | 1,633 | rtx4090* | 53 | 15% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;

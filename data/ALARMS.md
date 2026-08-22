@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-22T23:01:23Z, block 8903576
+# ALARMS - generated 2026-08-22T23:32:04Z, block 8903729
 
-window: first_seen in [2026-08-22T21:46:55Z, 2026-08-22T23:01:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T22:17:34Z, 2026-08-22T23:32:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn112:scoring_commit:2026-08-22T21:28:29Z` | 112 | SCORING_COMMIT | P1 | 2026-08-22T22:00:58Z | sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618) |
-
-### detail
-
-- **`sn112:scoring_commit:2026-08-22T21:28:29Z`** - sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -247,6 +240,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-22T16:30:46Z` | 92 | SCORING_COMMIT | 2026-08-22T16:37:16Z | sn92 commit touches scoring: Build the validator registry from the permitted set on chain |
 | `sn25:release:v2026.8.22-1026185650` | 25 | RELEASE | 2026-08-22T17:32:39Z | sn25 released v2026.8.22-1026185650 |
 | `sn81:scoring_commit:2026-08-22T17:44:49Z` | 81 | SCORING_COMMIT | 2026-08-22T18:00:49Z | sn81 commit touches scoring: fix: train-worker compose must override the validator entrypoint |
+| `sn112:scoring_commit:2026-08-22T21:28:29Z` | 112 | SCORING_COMMIT | 2026-08-22T22:00:58Z | sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618) |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T15:32:21Z, block 8901331
+# ALARMS - generated 2026-08-22T15:59:45Z, block 8901468
 
-window: first_seen in [2026-08-22T14:17:51Z, 2026-08-22T15:32:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T14:45:11Z, 2026-08-22T16:00:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn92:release:v0.1.14` | 92 | RELEASE | P1 | 2026-08-22T14:35:06Z | sn92 released v0.1.14 |
+| `sn81:scoring_commit:2026-08-21T19:12:16Z` | 81 | SCORING_COMMIT | P1 | 2026-08-22T16:00:11Z | sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat … |
 
 ### detail
 
-- **`sn92:release:v0.1.14`** - sn92 released v0.1.14
-  - published 2026-08-22T14:32:24Z (was v0.1.13)
+- **`sn81:scoring_commit:2026-08-21T19:12:16Z`** - sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -245,6 +245,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:release:v0.1.11` | 92 | RELEASE | 2026-08-22T12:57:33Z | sn92 released v0.1.11 |
 | `sn92:scoring_commit:2026-08-22T12:40:53Z` | 92 | SCORING_COMMIT | 2026-08-22T12:57:33Z | sn92 commit touches scoring: Make the validator guide match the code and explain the logs |
 | `sn92:release:v0.1.13` | 92 | RELEASE | 2026-08-22T13:41:10Z | sn92 released v0.1.13 |
+| `sn92:release:v0.1.14` | 92 | RELEASE | 2026-08-22T14:35:06Z | sn92 released v0.1.14 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

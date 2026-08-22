@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T11:01:55Z · block 8899978 · run_status **ok**_
+_snapshot 2026-08-22T11:31:39Z · block 8900127 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 51 of 128
+# 50 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
-| **Positive margin** | **51** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **50** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.2 | 79.12 | 133 | cpu-small | 13 | 20% |
-| 2 | sn23 Trishool | 72.3 | 563 | 563 = | cpu-small | 2 | 80% |
-| 3 | sn67 Harnyx | 72.3 | 22.85 | 446 | cpu-small | 141 | 12% |
-| 4 | sn102 ConnitoAI | 71.8 | 1,284 | 2,433 | rtx4090* | 6 | 36% |
-| 5 | sn62 Ridges | 71.6 | 1,208 | 2,974 | rtx4090* | 6 | 39% |
-| 6 | sn91 cascade | 70 | 742 | 2,992 | rtx4090* | 5 | 52% |
-| 7 | sn56 Gradients | 70 | 732 | 1,069 | rtx4090* | 5 | 73% |
-| 8 | sn15 ORO | 69.4 | 17.56 | 21,436 | cpu-small | 60 | 95% |
-| 9 | sn1 Apex | 68.6 | 482 | 1,135 | rtx4090* | 5 | 54% |
-| 10 | sn11 TrajectoryRL | 67.4 | 4,635 | 4,635 = | cpu-small | 1 | 100% |
-| 11 | sn26 Perturb | 67.4 | 17.85 | 256 | rtx3060 | 10 | 70% |
-| 12 | sn96 Verathos | 67.1 | 16.49 | 419 | rtx4090 | 95 | 41% |
-| 13 | sn38 ChronoLLM | 66.6 | 115 | 1,575 | cpu-small | 10 | 52% |
-| 14 | sn107 Minos | 65.6 | 159 | 43,984 | cpu-small | 20 | 90% |
-| 15 | sn85 Vidaio | 64.2 | 132 | 405 | rtx4090* | 13 | 42% |
-| 16 | sn108 Prometheon | 63.9 | 119 | 128 | rtx4090* | 8 | 66% |
-| 17 | sn81 Reliquary | 63.6 | 108 | 235 | rtx4090* | 42 | 6% |
-| 18 | sn51 lium.io | 62 | 76.05 | 5,370 | rtx4090* | 50 | 65% |
-| 19 | sn60 Bitsec.ai | 59.7 | 456 | 456 = | cpu-small | 3 | 50% |
-| 20 | sn53 engy | 59.7 | 33.75 | 227 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 77.2 | 78.51 | 132 | cpu-small | 13 | 20% |
+| 2 | sn23 Trishool | 72.2 | 558 | 558 = | cpu-small | 2 | 80% |
+| 3 | sn67 Harnyx | 72.2 | 22.67 | 442 | cpu-small | 141 | 12% |
+| 4 | sn102 ConnitoAI | 71.8 | 1,268 | 2,403 | rtx4090* | 6 | 36% |
+| 5 | sn62 Ridges | 71.6 | 1,199 | 2,952 | rtx4090* | 6 | 39% |
+| 6 | sn56 Gradients | 69.9 | 726 | 1,061 | rtx4090* | 5 | 73% |
+| 7 | sn91 cascade | 69.8 | 704 | 2,839 | rtx4090* | 5 | 52% |
+| 8 | sn15 ORO | 69.6 | 17.79 | 21,270 | cpu-small | 61 | 95% |
+| 9 | sn1 Apex | 68.5 | 477 | 1,123 | rtx4090* | 5 | 55% |
+| 10 | sn11 TrajectoryRL | 67.4 | 4,554 | 4,554 = | cpu-small | 1 | 100% |
+| 11 | sn26 Perturb | 67.4 | 17.69 | 254 | rtx3060 | 10 | 70% |
+| 12 | sn96 Verathos | 67.1 | 16.30 | 416 | rtx4090 | 95 | 41% |
+| 13 | sn38 ChronoLLM | 66.5 | 114 | 1,556 | cpu-small | 10 | 52% |
+| 14 | sn107 Minos | 65.5 | 157 | 43,516 | cpu-small | 20 | 90% |
+| 15 | sn85 Vidaio | 64.2 | 131 | 402 | rtx4090* | 13 | 42% |
+| 16 | sn108 Prometheon | 63.8 | 118 | 127 | rtx4090* | 8 | 66% |
+| 17 | sn81 Reliquary | 63.5 | 107 | 233 | rtx4090* | 42 | 6% |
+| 18 | sn51 lium.io | 62 | 75.40 | 5,329 | rtx4090* | 50 | 65% |
+| 19 | sn60 Bitsec.ai | 59.7 | 457 | 457 = | cpu-small | 3 | 50% |
+| 20 | sn53 engy | 59.7 | 33.72 | 227 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-22T11:32 | sn92 | RELEASE | sn92 released v0.1.7 |
 | 2026-08-22T10:36 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: Merge pull request #54 from score-technol |
 | 2026-08-22T10:36 | sn92 | RELEASE | sn92 released v0.1.6 |
 | 2026-08-22T09:13 | sn92 | RELEASE | sn92 released v0.1.4 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-22T04:17 | sn100 | RELEASE | sn100 released v3.3.29 |
 | 2026-08-22T02:43 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: fix(validator): reuse one chain connectio |
 | 2026-08-22T02:43 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Sort the constants import in the validato |
-| 2026-08-22T01:47 | sn25 | RELEASE | sn25 released v2026.8.21-1025613560 |
 
 ---
 

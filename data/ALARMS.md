@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-22T11:01:55Z, block 8899978
+# ALARMS - generated 2026-08-22T11:31:39Z, block 8900127
 
-window: first_seen in [2026-08-22T09:47:27Z, 2026-08-22T11:02:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T10:17:10Z, 2026-08-22T11:32:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn44:scoring_commit:2026-08-22T10:30:38Z` | 44 | SCORING_COMMIT | P1 | 2026-08-22T10:36:27Z | sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop |
 | `sn92:release:v0.1.6` | 92 | RELEASE | P1 | 2026-08-22T10:36:27Z | sn92 released v0.1.6 |
+| `sn92:release:v0.1.7` | 92 | RELEASE | P1 | 2026-08-22T11:32:10Z | sn92 released v0.1.7 |
 
 ### detail
 
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:release:v0.1.6`** - sn92 released v0.1.6
   - published 2026-08-22T10:22:51Z (was v0.1.4)
+- **`sn92:release:v0.1.7`** - sn92 released v0.1.7
+  - published 2026-08-22T11:06:55Z (was v0.1.6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 

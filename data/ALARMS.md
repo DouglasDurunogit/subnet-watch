@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-22T21:32:35Z, block 8903132
+# ALARMS - generated 2026-08-22T22:00:25Z, block 8903271
 
-window: first_seen in [2026-08-22T20:18:08Z, 2026-08-22T21:33:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T20:45:58Z, 2026-08-22T22:00:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn112:scoring_commit:2026-08-22T21:28:29Z` | 112 | SCORING_COMMIT | P1 | 2026-08-22T22:00:58Z | sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618) |
+
+### detail
+
+- **`sn112:scoring_commit:2026-08-22T21:28:29Z`** - sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

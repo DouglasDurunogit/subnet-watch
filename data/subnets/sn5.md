@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-22T22:34:31Z  |  block: 8903441  |  row_status: ok
+snapshot_utc: 2026-08-22T23:01:23Z  |  block: 8903576  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.285649971 TAO (63.82277302053 USD), open=True
+- registration cost: 0.250836631 TAO (56.05195356326 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 251  |  free: 0
-- subnet age: 890.5 days  |  registered at block 2491604
+- subnet age: 890.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 38.41818882906372** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 34.844403821708966
-- top_miner_usd_day: 38.41818882906372 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 38.424980068004665** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 34.85056331749261
+- top_miner_usd_day: 38.424980068004665 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-22T22:34:31Z  |  block: 8903441  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 26.6252 USD/day  |  payback on registration: 2.4 days
+- net margin: 26.6314 USD/day  |  payback on registration: 2.1 days
 
 ## Score
 
 - gate: **OK** 
-- score: 20.1 (rank 72), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 13.11 / freshness 0.0 / resource 11.25 / registration 9.2
+- score: 20.2 (rank 72), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
+- components: income 13.11 / freshness 0.0 / resource 11.25 / registration 9.3
 - freshness basis: no challenge change on record
 
 ## On-chain description

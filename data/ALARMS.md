@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-22T19:11:11Z, block 8902425
+# ALARMS - generated 2026-08-22T19:45:06Z, block 8902594
 
-window: first_seen in [2026-08-22T17:56:43Z, 2026-08-22T19:11:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-22T18:30:36Z, 2026-08-22T19:45:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn81:scoring_commit:2026-08-22T17:44:49Z` | 81 | SCORING_COMMIT | P1 | 2026-08-22T18:00:49Z | sn81 commit touches scoring: fix: train-worker compose must override the validator entrypoint |
-
-### detail
-
-- **`sn81:scoring_commit:2026-08-22T17:44:49Z`** - sn81 commit touches scoring: fix: train-worker compose must override the validator entrypoint
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -248,6 +241,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-08-21T19:12:16Z` | 81 | SCORING_COMMIT | 2026-08-22T16:00:11Z | sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat … |
 | `sn92:scoring_commit:2026-08-22T16:30:46Z` | 92 | SCORING_COMMIT | 2026-08-22T16:37:16Z | sn92 commit touches scoring: Build the validator registry from the permitted set on chain |
 | `sn25:release:v2026.8.22-1026185650` | 25 | RELEASE | 2026-08-22T17:32:39Z | sn25 released v2026.8.22-1026185650 |
+| `sn81:scoring_commit:2026-08-22T17:44:49Z` | 81 | SCORING_COMMIT | 2026-08-22T18:00:49Z | sn81 commit touches scoring: fix: train-worker compose must override the validator entrypoint |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

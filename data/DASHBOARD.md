@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-22T17:02:15Z · block 8901780 · run_status **ok**_
+_snapshot 2026-08-22T17:32:14Z · block 8901930 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -33,8 +33,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 5 | `██` |
+| 0.6–0.8 | 7 | `███` |
+| 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 39 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77 | 75.30 | 133 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.4 | 22.94 | 119 | cpu-small | 151 | 12% |
-| 3 | sn62 Ridges | 71.7 | 1,214 | 2,990 | rtx4090* | 6 | 39% |
-| 4 | sn56 Gradients | 70 | 731 | 1,076 | rtx4090* | 5 | 73% |
-| 5 | sn102 ConnitoAI | 69.8 | 698 | 2,202 | rtx4090* | 7 | 32% |
-| 6 | sn91 cascade | 69.7 | 682 | 2,754 | rtx4090* | 5 | 52% |
-| 7 | sn15 ORO | 69.7 | 18.33 | 21,885 | cpu-small | 61 | 95% |
-| 8 | sn1 Apex | 68.7 | 502 | 1,265 | rtx4090* | 5 | 51% |
-| 9 | sn26 Perturb | 67.5 | 17.94 | 257 | rtx3060 | 10 | 70% |
-| 10 | sn11 TrajectoryRL | 67.4 | 4,620 | 4,620 = | cpu-small | 1 | 100% |
-| 11 | sn96 Verathos | 67.2 | 16.70 | 457 | rtx4090 | 95 | 41% |
-| 12 | sn38 ChronoLLM | 66.5 | 115 | 1,567 | cpu-small | 10 | 52% |
-| 13 | sn107 Minos | 65.3 | 152 | 44,282 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 64.4 | 137 | 404 | rtx4090* | 13 | 42% |
-| 15 | sn108 Prometheon | 63.9 | 119 | 129 | rtx4090* | 8 | 66% |
-| 16 | sn81 Reliquary | 63.7 | 113 | 213 | rtx4090* | 39 | 5% |
-| 17 | sn51 lium.io | 60.6 | 52.63 | 4,581 | rtx4090* | 53 | 68% |
-| 18 | sn60 Bitsec.ai | 59.8 | 481 | 481 = | cpu-small | 3 | 50% |
-| 19 | sn28 gm | 59.8 | 36.20 | 1,646 | rtx4090* | 55 | 14% |
-| 20 | sn53 engy | 59.6 | 32.46 | 220 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 77 | 75.14 | 133 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.4 | 22.89 | 119 | cpu-small | 151 | 12% |
+| 3 | sn62 Ridges | 71.7 | 1,212 | 2,984 | rtx4090* | 6 | 39% |
+| 4 | sn56 Gradients | 70 | 730 | 1,073 | rtx4090* | 5 | 73% |
+| 5 | sn102 ConnitoAI | 69.8 | 696 | 2,198 | rtx4090* | 7 | 32% |
+| 6 | sn15 ORO | 69.8 | 18.45 | 22,022 | cpu-small | 61 | 95% |
+| 7 | sn91 cascade | 69.7 | 681 | 2,748 | rtx4090* | 5 | 52% |
+| 8 | sn1 Apex | 68.7 | 500 | 1,276 | rtx4090* | 5 | 51% |
+| 9 | sn11 TrajectoryRL | 67.4 | 4,617 | 4,617 = | cpu-small | 1 | 100% |
+| 10 | sn26 Perturb | 67.4 | 17.90 | 257 | rtx3060 | 10 | 70% |
+| 11 | sn96 Verathos | 67.1 | 16.65 | 456 | rtx4090 | 95 | 41% |
+| 12 | sn38 ChronoLLM | 66.5 | 115 | 1,564 | cpu-small | 10 | 52% |
+| 13 | sn107 Minos | 65.3 | 150 | 43,822 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 64.3 | 134 | 396 | rtx4090* | 13 | 42% |
+| 15 | sn108 Prometheon | 63.9 | 119 | 128 | rtx4090* | 8 | 66% |
+| 16 | sn81 Reliquary | 63.7 | 112 | 213 | rtx4090* | 39 | 5% |
+| 17 | sn51 lium.io | 60.6 | 52.39 | 4,564 | rtx4090* | 53 | 68% |
+| 18 | sn28 gm | 60.6 | 46.40 | 1,692 | rtx4090* | 55 | 15% |
+| 19 | sn60 Bitsec.ai | 59.9 | 484 | 484 = | cpu-small | 3 | 50% |
+| 20 | sn53 engy | 59.5 | 31.77 | 216 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-22T17:32 | sn25 | RELEASE | sn25 released v2026.8.22-1026185650 |
 | 2026-08-22T16:37 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Build the validator registry from the per |
 | 2026-08-22T16:00 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat: validator checkpoint intake — stage |
 | 2026-08-22T14:35 | sn92 | RELEASE | sn92 released v0.1.14 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-22T08:45 | sn92 | RELEASE | sn92 released v0.1.3 |
 | 2026-08-22T08:03 | sn61 | RELEASE | sn61 released 4.9.7 |
 | 2026-08-22T08:03 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: deps: update abs_challenge submodule to v |
-| 2026-08-22T08:03 | sn92 | RELEASE | sn92 released v0.1.2 |
 
 ---
 

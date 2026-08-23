@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T05:39:53Z · block 8905568 · run_status **ok**_
+_snapshot 2026-08-23T06:15:14Z · block 8905745 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -32,8 +32,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 61 | `████████████████████████████` |
 | 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 7 | `███` |
+| 0.4–0.6 | 4 | `██` |
+| 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 7 | `███` |
 | ≥0.99 dead | 38 | `█████████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.7 | 69.21 | 77.33 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.5 | 23.74 | 763 | cpu-small | 118 | 20% |
-| 3 | sn23 Trishool | 72.2 | 545 | 545 = | cpu-small | 2 | 80% |
-| 4 | sn62 Ridges | 71.6 | 1,180 | 2,906 | rtx4090* | 6 | 39% |
-| 5 | sn102 ConnitoAI | 71.2 | 1,047 | 2,871 | rtx4090* | 5 | 42% |
-| 6 | sn56 Gradients | 69.8 | 703 | 1,044 | rtx4090* | 5 | 73% |
-| 7 | sn15 ORO | 69.8 | 17.71 | 37.13 | cpu-small | 60 | 95% |
-| 8 | sn91 cascade | 69.7 | 676 | 2,729 | rtx4090* | 5 | 52% |
-| 9 | sn1 Apex | 68.5 | 479 | 1,176 | rtx4090* | 5 | 53% |
-| 10 | sn96 Verathos | 67.6 | 18.46 | 274 | rtx4090 | 92 | 40% |
-| 11 | sn26 Perturb | 67.3 | 17.34 | 250 | rtx3060 | 10 | 70% |
-| 12 | sn38 ChronoLLM | 66.4 | 110 | 1,502 | cpu-small | 10 | 52% |
-| 13 | sn98 NeverPlayAlone | 64.4 | 1,864 | 1,864 = | cpu-small | 1 | 100% |
-| 14 | sn85 Vidaio | 64.4 | 137 | 391 | rtx4090* | 13 | 42% |
-| 15 | sn107 Minos | 64.4 | 126 | 42,104 | cpu-small | 19 | 90% |
-| 16 | sn108 Prometheon | 63.8 | 116 | 125 | rtx4090* | 8 | 66% |
-| 17 | sn81 Reliquary | 63.1 | 93.56 | 232 | rtx4090* | 39 | 10% |
-| 18 | sn51 lium.io | 62.2 | 80.66 | 4,260 | rtx4090* | 50 | 71% |
-| 19 | sn28 gm | 60.7 | 47.42 | 1,479 | rtx4090* | 55 | 14% |
-| 20 | sn60 Bitsec.ai | 59.7 | 467 | 467 = | cpu-small | 3 | 50% |
+| 1 | sn76 Phylax | 76.7 | 68.72 | 76.75 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.5 | 23.36 | 751 | cpu-small | 120 | 20% |
+| 3 | sn23 Trishool | 72.1 | 542 | 542 = | cpu-small | 2 | 80% |
+| 4 | sn62 Ridges | 71.5 | 1,172 | 2,885 | rtx4090* | 6 | 39% |
+| 5 | sn102 ConnitoAI | 71.1 | 1,040 | 2,850 | rtx4090* | 5 | 42% |
+| 6 | sn15 ORO | 70 | 17.61 | 36.93 | cpu-small | 60 | 95% |
+| 7 | sn56 Gradients | 69.8 | 698 | 1,037 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69.7 | 672 | 2,713 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.5 | 476 | 1,168 | rtx4090* | 5 | 53% |
+| 10 | sn96 Verathos | 67.7 | 18.88 | 260 | rtx4090 | 92 | 40% |
+| 11 | sn26 Perturb | 67.3 | 17.22 | 248 | rtx3060 | 10 | 70% |
+| 12 | sn38 ChronoLLM | 66.4 | 109 | 1,493 | cpu-small | 10 | 52% |
+| 13 | sn107 Minos | 65.6 | 158 | 41,670 | cpu-small | 19 | 90% |
+| 14 | sn98 NeverPlayAlone | 64.4 | 1,852 | 1,852 = | cpu-small | 1 | 100% |
+| 15 | sn85 Vidaio | 64 | 124 | 389 | rtx4090* | 13 | 42% |
+| 16 | sn108 Prometheon | 63.8 | 115 | 125 | rtx4090* | 8 | 66% |
+| 17 | sn81 Reliquary | 63 | 90.23 | 230 | rtx4090* | 39 | 9% |
+| 18 | sn28 gm | 60.7 | 47.08 | 1,470 | rtx4090* | 55 | 14% |
+| 19 | sn51 lium.io | 60.1 | 45.83 | 4,232 | rtx4090* | 54 | 71% |
+| 20 | sn60 Bitsec.ai | 59.7 | 464 | 464 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 18 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 19 |
 | captured (>90%) | 26 |
 
 ## Hardware evidence quality

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T03:12:39Z, block 8904832
+# ALARMS - generated 2026-08-23T04:08:35Z, block 8905112
 
-window: first_seen in [2026-08-23T01:58:05Z, 2026-08-23T03:13:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T02:54:05Z, 2026-08-23T04:09:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn25:release:v2026.8.22-1026545240` | 25 | RELEASE | P1 | 2026-08-23T03:13:05Z | sn25 released v2026.8.22-1026545240 |
+| `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | P1 | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
 
 ### detail
 
 - **`sn25:release:v2026.8.22-1026545240`** - sn25 released v2026.8.22-1026545240
   - published 2026-08-23T03:12:05Z (was v2026.8.22-1026185650)
+- **`sn14:scoring_commit:2026-08-22T12:14:25Z`** - sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,7 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-16T03:33:59Z` | 71 | SCORING_COMMIT | 2026-08-16T04:08:02Z | sn71 commit touches scoring: Regenerate validator protected workflow manifest |
 | `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
 | `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |
 | `sn76:scoring_commit:2026-08-16T07:37:40Z` | 76 | SCORING_COMMIT | 2026-08-16T07:41:32Z | sn76 commit touches scoring: Match CWEs numerically, draw tasks per validator, break ties determin… |

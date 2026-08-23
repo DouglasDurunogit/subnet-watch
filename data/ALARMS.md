@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-23T17:32:09Z, block 8909130
+# ALARMS - generated 2026-08-23T17:59:32Z, block 8909266
 
-window: first_seen in [2026-08-23T16:17:39Z, 2026-08-23T17:32:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T16:45:03Z, 2026-08-23T18:00:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | P1 | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
-
-### detail
-
-- **`sn76:scoring_commit:2026-08-23T16:24:51Z`** - sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -244,6 +237,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-08-23T12:38:07Z` | 90 | SCORING_COMMIT | 2026-08-23T12:59:07Z | sn90 commit touches scoring: chore(validator): release v1.1.6 |
 | `sn124:scoring_commit:2026-08-23T12:20:55Z` | 124 | SCORING_COMMIT | 2026-08-23T12:59:07Z | sn124 commit touches scoring: Remove obsolete repo verify flag from docs |
 | `sn90:scoring_commit:2026-08-23T13:08:10Z` | 90 | SCORING_COMMIT | 2026-08-23T13:42:25Z | sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled |
+| `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T17:32:09Z · block 8909130 · run_status **ok**_
+_snapshot 2026-08-23T17:59:32Z · block 8909266 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **50** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 0 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.9 | 73.50 | 82.28 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.7 | 24.86 | 798 | cpu-small | 125 | 20% |
-| 3 | sn23 Trishool | 72.3 | 572 | 572 = | cpu-small | 2 | 80% |
-| 4 | sn102 ConnitoAI | 72 | 1,335 | 2,492 | rtx4090* | 5 | 36% |
-| 5 | sn62 Ridges | 71.8 | 1,256 | 3,092 | rtx4090* | 6 | 39% |
-| 6 | sn15 ORO | 71.1 | 25.29 | 43.26 | cpu-small | 80 | 93% |
-| 7 | sn56 Gradients | 69.8 | 708 | 1,111 | rtx4090* | 5 | 73% |
-| 8 | sn91 cascade | 69 | 545 | 1,467 | rtx4090* | 5 | 52% |
-| 9 | sn1 Apex | 68.8 | 523 | 1,187 | rtx4090* | 5 | 54% |
-| 10 | sn96 Verathos | 68.3 | 22.22 | 292 | rtx4090 | 89 | 40% |
-| 11 | sn26 Perturb | 67.6 | 18.67 | 267 | rtx3060 | 10 | 70% |
-| 12 | sn124 Swarm | 66.7 | 285 | 2,482 | rtx4090* | 21 | 30% |
-| 13 | sn38 ChronoLLM | 66.6 | 117 | 1,598 | cpu-small | 10 | 52% |
-| 14 | sn108 Prometheon | 65.4 | 186 | 205 | rtx4090* | 5 | 66% |
-| 15 | sn107 Minos | 65.4 | 153 | 43,586 | cpu-small | 20 | 89% |
-| 16 | sn85 Vidaio | 64.6 | 147 | 426 | rtx4090* | 13 | 42% |
-| 17 | sn81 Reliquary | 64.6 | 146 | 266 | rtx4090* | 36 | 6% |
-| 18 | sn51 lium.io | 61 | 58.70 | 2,040 | rtx4090* | 53 | 73% |
-| 19 | sn53 engy | 60.2 | 38.46 | 12,825 | rtx4090 | 144 | 63% |
-| 20 | sn60 Bitsec.ai | 60 | 507 | 507 = | cpu-small | 3 | 50% |
+| 1 | sn76 Phylax | 76.9 | 73.69 | 82.50 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.8 | 24.93 | 800 | cpu-small | 125 | 20% |
+| 3 | sn23 Trishool | 72.3 | 574 | 574 = | cpu-small | 2 | 80% |
+| 4 | sn102 ConnitoAI | 72 | 1,338 | 2,498 | rtx4090* | 5 | 36% |
+| 5 | sn62 Ridges | 71.8 | 1,259 | 3,100 | rtx4090* | 6 | 39% |
+| 6 | sn15 ORO | 71.5 | 25.42 | 43.50 | cpu-small | 80 | 93% |
+| 7 | sn56 Gradients | 69.9 | 710 | 1,114 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69 | 546 | 1,471 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.8 | 515 | 1,194 | rtx4090* | 5 | 54% |
+| 10 | sn96 Verathos | 68.3 | 22.30 | 293 | rtx4090 | 89 | 40% |
+| 11 | sn26 Perturb | 67.6 | 18.72 | 268 | rtx3060 | 10 | 70% |
+| 12 | sn124 Swarm | 66.7 | 287 | 2,494 | rtx4090* | 21 | 30% |
+| 13 | sn38 ChronoLLM | 66.6 | 117 | 1,602 | cpu-small | 10 | 52% |
+| 14 | sn108 Prometheon | 65.4 | 187 | 205 | rtx4090* | 5 | 66% |
+| 15 | sn107 Minos | 65.4 | 153 | 43,710 | cpu-small | 20 | 89% |
+| 16 | sn85 Vidaio | 64.6 | 148 | 427 | rtx4090* | 13 | 42% |
+| 17 | sn81 Reliquary | 64.6 | 147 | 267 | rtx4090* | 36 | 6% |
+| 18 | sn51 lium.io | 60.9 | 58.88 | 2,046 | rtx4090* | 53 | 73% |
+| 19 | sn53 engy | 60.2 | 38.67 | 12,884 | rtx4090 | 144 | 63% |
+| 20 | sn60 Bitsec.ai | 60 | 508 | 508 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;

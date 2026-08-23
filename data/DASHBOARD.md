@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T22:34:19Z · block 8910640 · run_status **ok**_
+_snapshot 2026-08-23T23:01:19Z · block 8910775 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.1 | 77.07 | 86.28 | cpu-small | 13 | 20% |
-| 2 | sn102 ConnitoAI | 73 | 1,823 | 1,823 = | rtx4090* | 4 | 25% |
-| 3 | sn67 Harnyx | 73 | 26.18 | 838 | cpu-small | 127 | 20% |
-| 4 | sn62 Ridges | 72.5 | 1,562 | 3,192 | rtx4090* | 6 | 39% |
-| 5 | sn23 Trishool | 72.5 | 601 | 601 = | cpu-small | 2 | 80% |
-| 6 | sn15 ORO | 72 | 27.58 | 47.13 | cpu-small | 80 | 93% |
-| 7 | sn56 Gradients | 70 | 741 | 1,166 | rtx4090* | 5 | 73% |
-| 8 | sn91 cascade | 70 | 734 | 2,962 | rtx4090* | 5 | 52% |
-| 9 | sn1 Apex | 69 | 542 | 1,221 | rtx4090* | 5 | 55% |
-| 10 | sn96 Verathos | 68.6 | 23.70 | 313 | rtx4090 | 90 | 40% |
-| 11 | sn26 Perturb | 67.8 | 19.75 | 281 | rtx3060 | 10 | 70% |
-| 12 | sn124 Swarm | 66.8 | 297 | 2,586 | rtx4090* | 21 | 30% |
-| 13 | sn38 ChronoLLM | 66.8 | 123 | 1,675 | cpu-small | 10 | 52% |
-| 14 | sn108 Prometheon | 65.5 | 194 | 199 | rtx4090* | 5 | 66% |
-| 15 | sn107 Minos | 65.5 | 158 | 44,586 | cpu-small | 20 | 90% |
-| 16 | sn81 Reliquary | 65.3 | 182 | 272 | rtx4090* | 30 | 6% |
-| 17 | sn85 Vidaio | 64.5 | 142 | 443 | rtx4090* | 13 | 42% |
-| 18 | sn60 Bitsec.ai | 61.5 | 792 | 1,113 | cpu-small | 3 | 55% |
-| 19 | sn51 lium.io | 60.7 | 55.65 | 2,074 | rtx4090* | 53 | 75% |
-| 20 | sn53 engy | 60.3 | 39.87 | 336 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 77.1 | 76.33 | 85.45 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.9 | 25.92 | 830 | cpu-small | 127 | 20% |
+| 3 | sn102 ConnitoAI | 72.7 | 1,672 | 2,514 | rtx4090* | 4 | 35% |
+| 4 | sn62 Ridges | 72.5 | 1,547 | 3,162 | rtx4090* | 6 | 39% |
+| 5 | sn23 Trishool | 72.5 | 598 | 598 = | cpu-small | 2 | 80% |
+| 6 | sn15 ORO | 72 | 27.32 | 46.68 | cpu-small | 80 | 93% |
+| 7 | sn56 Gradients | 70 | 734 | 1,155 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69.9 | 727 | 2,933 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.9 | 536 | 1,208 | rtx4090* | 5 | 55% |
+| 10 | sn96 Verathos | 68.7 | 24.31 | 303 | rtx4090 | 88 | 40% |
+| 11 | sn26 Perturb | 67.8 | 19.53 | 278 | rtx3060 | 10 | 70% |
+| 12 | sn124 Swarm | 66.8 | 294 | 2,561 | rtx4090* | 21 | 30% |
+| 13 | sn38 ChronoLLM | 66.7 | 122 | 1,659 | cpu-small | 10 | 52% |
+| 14 | sn108 Prometheon | 65.5 | 192 | 197 | rtx4090* | 5 | 66% |
+| 15 | sn107 Minos | 65.3 | 153 | 44,255 | cpu-small | 20 | 90% |
+| 16 | sn85 Vidaio | 64.4 | 141 | 439 | rtx4090* | 13 | 42% |
+| 17 | sn60 Bitsec.ai | 64.1 | 1,711 | 1,711 = | cpu-small | 2 | 52% |
+| 18 | sn81 Reliquary | 63.5 | 106 | 270 | rtx4090* | 38 | 6% |
+| 19 | sn51 lium.io | 60.7 | 55.32 | 2,063 | rtx4090* | 53 | 75% |
+| 20 | sn53 engy | 60.2 | 39.60 | 334 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 18 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 19 |
 | dominated (60–90%) | 19 |
 | captured (>90%) | 24 |
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-23T23:01 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: test: verify pinned model runtime in CI |
 | 2026-08-23T19:44 | sn102 | RELEASE | sn102 released v0.5.1 — release the finished round on swap |
 | 2026-08-23T19:44 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: 🩹 fix(validator): release the finished r |
 | 2026-08-23T18:45 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(setup): add public miner and valida |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-23T05:02 | sn25 | RELEASE | sn25 released v2026.8.22-1026600400 |
 | 2026-08-23T04:09 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
 | 2026-08-23T03:13 | sn25 | RELEASE | sn25 released v2026.8.22-1026545240 |
-| 2026-08-22T22:00 | sn112 | SCORING_COMMIT | sn112 commit touches scoring: fix(api): app creation accepted code it  |
 
 ---
 

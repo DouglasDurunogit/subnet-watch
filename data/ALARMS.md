@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-23T22:34:19Z, block 8910640
+# ALARMS - generated 2026-08-23T23:01:19Z, block 8910775
 
-window: first_seen in [2026-08-23T21:19:45Z, 2026-08-23T22:34:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T21:46:52Z, 2026-08-23T23:01:52Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn71:scoring_commit:2026-08-23T17:55:32Z` | 71 | SCORING_COMMIT | P1 | 2026-08-23T23:01:52Z | sn71 commit touches scoring: test: verify pinned model runtime in CI |
+
+### detail
+
+- **`sn71:scoring_commit:2026-08-23T17:55:32Z`** - sn71 commit touches scoring: test: verify pinned model runtime in CI
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

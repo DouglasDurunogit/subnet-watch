@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T12:00:32Z, block 8907471
+# ALARMS - generated 2026-08-23T12:58:33Z, block 8907762
 
-window: first_seen in [2026-08-23T10:45:59Z, 2026-08-23T12:00:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T11:44:07Z, 2026-08-23T12:59:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,20 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn14:release:msa-block-score-control-20260823: fix: o` | 14 | RELEASE | P1 | 2026-08-23T12:00:59Z | sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot |
+| `sn90:release:v1.1.6 — subtensor v445 / typed metagrap` | 90 | RELEASE | P1 | 2026-08-23T12:59:07Z | sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs |
+| `sn90:scoring_commit:2026-08-23T12:38:07Z` | 90 | SCORING_COMMIT | P1 | 2026-08-23T12:59:07Z | sn90 commit touches scoring: chore(validator): release v1.1.6 |
+| `sn124:scoring_commit:2026-08-23T12:20:55Z` | 124 | SCORING_COMMIT | P1 | 2026-08-23T12:59:07Z | sn124 commit touches scoring: Remove obsolete repo verify flag from docs |
 
 ### detail
 
 - **`sn14:release:msa-block-score-control-20260823: fix: o`** - sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot
   - published 2026-08-23T06:03:13Z (was MSA block-score mainnet control)
+- **`sn90:release:v1.1.6 — subtensor v445 / typed metagrap`** - sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs
+  - published 2026-08-23T12:38:07Z (was v1.1.5)
+- **`sn90:scoring_commit:2026-08-23T12:38:07Z`** - sn90 commit touches scoring: chore(validator): release v1.1.6
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn124:scoring_commit:2026-08-23T12:20:55Z`** - sn124 commit touches scoring: Remove obsolete repo verify flag from docs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

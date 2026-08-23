@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-23T16:00:59Z, block 8908674
+# ALARMS - generated 2026-08-23T16:38:22Z, block 8908861
 
-window: first_seen in [2026-08-23T14:46:33Z, 2026-08-23T16:01:33Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T15:23:55Z, 2026-08-23T16:38:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | P1 | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
+
+### detail
+
+- **`sn76:scoring_commit:2026-08-23T16:24:51Z`** - sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -27,7 +34,6 @@ _none_
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
 | `sn100:release:v3.3.24` | 100 | RELEASE | 2026-08-16T17:31:56Z | sn100 released v3.3.24 |
 | `sn71:scoring_commit:2026-08-16T23:14:51Z` | 71 | SCORING_COMMIT | 2026-08-17T01:52:42Z | sn71 commit touches scoring: Bound validator worker startup verification |

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T16:00:59Z · block 8908674 · run_status **ok**_
+_snapshot 2026-08-23T16:38:22Z · block 8908861 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **51** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.9 | 73.61 | 82.41 | cpu-small | 13 | 20% |
-| 2 | sn102 ConnitoAI | 72.9 | 1,747 | 1,748 | rtx4090* | 4 | 25% |
-| 3 | sn67 Harnyx | 72.7 | 24.86 | 797 | cpu-small | 125 | 20% |
-| 4 | sn23 Trishool | 72.3 | 572 | 572 = | cpu-small | 2 | 80% |
-| 5 | sn62 Ridges | 71.8 | 1,256 | 3,093 | rtx4090* | 6 | 39% |
-| 6 | sn15 ORO | 71.5 | 25.05 | 43.19 | cpu-small | 79 | 93% |
-| 7 | sn56 Gradients | 69.9 | 708 | 1,112 | rtx4090* | 5 | 73% |
-| 8 | sn91 cascade | 69 | 546 | 1,471 | rtx4090* | 5 | 52% |
-| 9 | sn1 Apex | 68.6 | 488 | 1,196 | rtx4090* | 5 | 55% |
-| 10 | sn96 Verathos | 68.4 | 22.52 | 302 | rtx4090 | 89 | 40% |
-| 11 | sn26 Perturb | 67.6 | 18.74 | 267 | rtx3060 | 10 | 70% |
-| 12 | sn124 Swarm | 66.7 | 285 | 2,481 | rtx4090* | 21 | 30% |
-| 13 | sn38 ChronoLLM | 66.6 | 117 | 1,597 | cpu-small | 10 | 52% |
-| 14 | sn108 Prometheon | 65.4 | 186 | 204 | rtx4090* | 5 | 66% |
-| 15 | sn107 Minos | 65.4 | 155 | 43,621 | cpu-small | 20 | 90% |
-| 16 | sn85 Vidaio | 64.3 | 136 | 425 | rtx4090* | 13 | 42% |
-| 17 | sn81 Reliquary | 64.2 | 132 | 300 | rtx4090* | 35 | 7% |
-| 18 | sn51 lium.io | 60.4 | 50.33 | 1,724 | rtx4090* | 53 | 80% |
-| 19 | sn53 engy | 60.2 | 38.67 | 12,884 | rtx4090 | 144 | 63% |
-| 20 | sn60 Bitsec.ai | 60 | 509 | 509 = | cpu-small | 3 | 50% |
+| 1 | sn76 Phylax | 76.9 | 74.04 | 82.89 | cpu-small | 13 | 20% |
+| 2 | sn102 ConnitoAI | 72.9 | 1,756 | 1,757 | rtx4090* | 4 | 25% |
+| 3 | sn67 Harnyx | 72.7 | 25.05 | 803 | cpu-small | 125 | 20% |
+| 4 | sn23 Trishool | 72.3 | 576 | 576 = | cpu-small | 2 | 80% |
+| 5 | sn62 Ridges | 71.8 | 1,266 | 3,116 | rtx4090* | 6 | 39% |
+| 6 | sn15 ORO | 70.4 | 25.11 | 43.30 | cpu-small | 79 | 93% |
+| 7 | sn56 Gradients | 69.9 | 714 | 1,120 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69 | 549 | 1,478 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.8 | 518 | 1,207 | rtx4090* | 5 | 54% |
+| 10 | sn96 Verathos | 68.4 | 22.75 | 305 | rtx4090 | 89 | 40% |
+| 11 | sn26 Perturb | 67.7 | 18.91 | 269 | rtx3060 | 10 | 70% |
+| 12 | sn124 Swarm | 66.7 | 287 | 2,498 | rtx4090* | 21 | 30% |
+| 13 | sn38 ChronoLLM | 66.6 | 118 | 1,609 | cpu-small | 10 | 52% |
+| 14 | sn107 Minos | 65.5 | 156 | 43,988 | cpu-small | 20 | 90% |
+| 15 | sn108 Prometheon | 65.4 | 188 | 206 | rtx4090* | 5 | 66% |
+| 16 | sn85 Vidaio | 64.4 | 137 | 429 | rtx4090* | 13 | 42% |
+| 17 | sn81 Reliquary | 64.2 | 133 | 302 | rtx4090* | 35 | 7% |
+| 18 | sn51 lium.io | 60.4 | 50.77 | 1,737 | rtx4090* | 53 | 80% |
+| 19 | sn53 engy | 60.2 | 38.91 | 12,948 | rtx4090 | 144 | 63% |
+| 20 | sn60 Bitsec.ai | 60.1 | 514 | 514 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-23T16:38 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: sandbox: authenticate with the sandbox to |
 | 2026-08-23T13:42 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: docs(sn28): announce recycler and how to  |
 | 2026-08-23T12:59 | sn90 | RELEASE | sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs |
 | 2026-08-23T12:59 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: chore(validator): release v1.1.6 |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-22T17:32 | sn25 | RELEASE | sn25 released v2026.8.22-1026185650 |
 | 2026-08-22T16:37 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Build the validator registry from the per |
 | 2026-08-22T16:00 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat: validator checkpoint intake — stage |
-| 2026-08-22T14:35 | sn92 | RELEASE | sn92 released v0.1.14 |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T19:10:14Z, block 8909620
+# ALARMS - generated 2026-08-23T19:44:34Z, block 8909792
 
-window: first_seen in [2026-08-23T17:55:44Z, 2026-08-23T19:10:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T18:29:59Z, 2026-08-23T19:44:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,17 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | P1 | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
+| `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | P1 | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
+| `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | P1 | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | P2 | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 
 ### detail
 
 - **`sn111:scoring_commit:2026-08-23T16:36:27Z`** - sn111 commit touches scoring: feat(setup): add public miner and validator installers
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn102:release:v0.5.1 — release the finished round on s`** - sn102 released v0.5.1 — release the finished round on swap
+  - published 2026-08-23T19:28:11Z (was v0.5.0)
+- **`sn102:scoring_commit:2026-08-23T18:41:50Z`** - sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:readme_task_diff:f9f4504d0df2befc`** - sn111 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.

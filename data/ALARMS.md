@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T06:15:14Z, block 8905745
+# ALARMS - generated 2026-08-23T07:10:26Z, block 8906021
 
-window: first_seen in [2026-08-23T05:00:46Z, 2026-08-23T06:15:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T05:55:49Z, 2026-08-23T07:10:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | P1 | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
+| `sn14:release:MSA block-score mainnet control` | 14 | RELEASE | P1 | 2026-08-23T07:10:49Z | sn14 released MSA block-score mainnet control |
 
 ### detail
 
-- **`sn25:release:v2026.8.22-1026600400`** - sn25 released v2026.8.22-1026600400
-  - published 2026-08-23T04:43:58Z (was v2026.8.22-1026545240)
+- **`sn14:release:MSA block-score mainnet control`** - sn14 released MSA block-score mainnet control
+  - published 2026-08-23T06:57:36Z (was Fused-epilogue kernel submission archive (2026-08-21))
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -245,6 +245,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:scoring_commit:2026-08-22T21:28:29Z` | 112 | SCORING_COMMIT | 2026-08-22T22:00:58Z | sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618) |
 | `sn25:release:v2026.8.22-1026545240` | 25 | RELEASE | 2026-08-23T03:13:05Z | sn25 released v2026.8.22-1026545240 |
 | `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
+| `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

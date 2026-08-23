@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T12:58:33Z, block 8907762
+# ALARMS - generated 2026-08-23T13:41:56Z, block 8907978
 
-window: first_seen in [2026-08-23T11:44:07Z, 2026-08-23T12:59:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T12:27:25Z, 2026-08-23T13:42:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:msa-block-score-control-20260823: fix: o` | 14 | RELEASE | P1 | 2026-08-23T12:00:59Z | sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot |
 | `sn90:release:v1.1.6 — subtensor v445 / typed metagrap` | 90 | RELEASE | P1 | 2026-08-23T12:59:07Z | sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs |
 | `sn90:scoring_commit:2026-08-23T12:38:07Z` | 90 | SCORING_COMMIT | P1 | 2026-08-23T12:59:07Z | sn90 commit touches scoring: chore(validator): release v1.1.6 |
 | `sn124:scoring_commit:2026-08-23T12:20:55Z` | 124 | SCORING_COMMIT | P1 | 2026-08-23T12:59:07Z | sn124 commit touches scoring: Remove obsolete repo verify flag from docs |
+| `sn90:scoring_commit:2026-08-23T13:08:10Z` | 90 | SCORING_COMMIT | P1 | 2026-08-23T13:42:25Z | sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled |
 
 ### detail
 
-- **`sn14:release:msa-block-score-control-20260823: fix: o`** - sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot
-  - published 2026-08-23T06:03:13Z (was MSA block-score mainnet control)
 - **`sn90:release:v1.1.6 — subtensor v445 / typed metagrap`** - sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs
   - published 2026-08-23T12:38:07Z (was v1.1.5)
 - **`sn90:scoring_commit:2026-08-23T12:38:07Z`** - sn90 commit touches scoring: chore(validator): release v1.1.6
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn124:scoring_commit:2026-08-23T12:20:55Z`** - sn124 commit touches scoring: Remove obsolete repo verify flag from docs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:scoring_commit:2026-08-23T13:08:10Z`** - sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,7 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |
 | `sn85:scoring_commit:2026-08-16T16:50:58Z` | 85 | SCORING_COMMIT | 2026-08-16T17:03:28Z | sn85 commit touches scoring: retry inviting rejected miner UIDs in competition enrollment due to l… |
@@ -253,6 +252,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
 | `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
 | `sn14:release:MSA block-score mainnet control` | 14 | RELEASE | 2026-08-23T07:10:49Z | sn14 released MSA block-score mainnet control |
+| `sn14:release:msa-block-score-control-20260823: fix: o` | 14 | RELEASE | 2026-08-23T12:00:59Z | sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

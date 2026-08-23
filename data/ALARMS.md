@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-23T11:32:11Z, block 8907330
+# ALARMS - generated 2026-08-23T12:00:32Z, block 8907471
 
-window: first_seen in [2026-08-23T10:17:46Z, 2026-08-23T11:32:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T10:45:59Z, 2026-08-23T12:00:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn14:release:msa-block-score-control-20260823: fix: o` | 14 | RELEASE | P1 | 2026-08-23T12:00:59Z | sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot |
+
+### detail
+
+- **`sn14:release:msa-block-score-control-20260823: fix: o`** - sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot
+  - published 2026-08-23T06:03:13Z (was MSA block-score mainnet control)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -27,7 +34,6 @@ _none_
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
 | `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
 | `sn75:scoring_commit:2026-08-16T16:01:02Z` | 75 | SCORING_COMMIT | 2026-08-16T16:38:36Z | sn75 commit touches scoring: Merge pull request #49 from thenervelab/feat/compute-scoring-runtime |

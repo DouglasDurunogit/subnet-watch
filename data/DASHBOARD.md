@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T11:32:11Z · block 8907330 · run_status **ok**_
+_snapshot 2026-08-23T12:00:32Z · block 8907471 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
 | **Positive margin** | **52** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 76.8 | 71.64 | 80.27 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.6 | 24.24 | 778 | cpu-small | 124 | 20% |
-| 3 | sn23 Trishool | 72.3 | 566 | 566 = | cpu-small | 2 | 80% |
-| 4 | sn102 ConnitoAI | 71.5 | 1,173 | 2,866 | rtx4090* | 5 | 41% |
-| 5 | sn15 ORO | 70.9 | 22.63 | 39.97 | cpu-small | 78 | 93% |
-| 6 | sn56 Gradients | 69.9 | 726 | 1,083 | rtx4090* | 5 | 73% |
-| 7 | sn91 cascade | 68.9 | 531 | 1,429 | rtx4090* | 5 | 52% |
-| 8 | sn1 Apex | 68.6 | 486 | 1,191 | rtx4090* | 5 | 54% |
-| 9 | sn96 Verathos | 68.1 | 21.22 | 280 | rtx4090 | 90 | 40% |
-| 10 | sn26 Perturb | 67.5 | 18.10 | 259 | rtx3060 | 10 | 70% |
-| 11 | sn38 ChronoLLM | 66.5 | 115 | 1,565 | cpu-small | 10 | 52% |
+| 1 | sn76 Phylax | 76.8 | 71.53 | 80.15 | cpu-small | 13 | 20% |
+| 2 | sn67 Harnyx | 72.6 | 24.20 | 777 | cpu-small | 124 | 20% |
+| 3 | sn23 Trishool | 72.3 | 565 | 565 = | cpu-small | 2 | 80% |
+| 4 | sn102 ConnitoAI | 71.4 | 1,123 | 2,743 | rtx4090* | 5 | 41% |
+| 5 | sn15 ORO | 71 | 22.64 | 39.98 | cpu-small | 78 | 93% |
+| 6 | sn56 Gradients | 69.9 | 725 | 1,081 | rtx4090* | 5 | 73% |
+| 7 | sn91 cascade | 68.8 | 524 | 1,412 | rtx4090* | 5 | 52% |
+| 8 | sn1 Apex | 68.6 | 483 | 1,184 | rtx4090* | 5 | 54% |
+| 9 | sn96 Verathos | 68.1 | 21.18 | 280 | rtx4090 | 90 | 40% |
+| 10 | sn26 Perturb | 67.5 | 18.07 | 259 | rtx3060 | 10 | 70% |
+| 11 | sn38 ChronoLLM | 66.5 | 114 | 1,557 | cpu-small | 10 | 52% |
 | 12 | sn108 Prometheon | 65.2 | 179 | 197 | rtx4090* | 5 | 66% |
-| 13 | sn107 Minos | 65 | 139 | 42,300 | cpu-small | 20 | 90% |
-| 14 | sn85 Vidaio | 64.5 | 143 | 418 | rtx4090* | 13 | 42% |
-| 15 | sn81 Reliquary | 63.2 | 97.31 | 254 | rtx4090* | 38 | 8% |
-| 16 | sn51 lium.io | 60.7 | 54.27 | 4,382 | rtx4090* | 53 | 71% |
-| 17 | sn60 Bitsec.ai | 60 | 499 | 499 = | cpu-small | 3 | 50% |
-| 18 | sn53 engy | 60 | 36.34 | 12,244 | rtx4090 | 144 | 63% |
-| 19 | sn28 gm | 58.1 | 22.47 | 1,219 | rtx4090* | 55 | 17% |
-| 20 | sn61 RedTeam | 57 | 14.54 | 307 | rtx4090* | 84 | 7% |
+| 13 | sn107 Minos | 65 | 140 | 42,546 | cpu-small | 20 | 90% |
+| 14 | sn85 Vidaio | 64.5 | 141 | 414 | rtx4090* | 13 | 42% |
+| 15 | sn81 Reliquary | 63.2 | 97.08 | 254 | rtx4090* | 38 | 8% |
+| 16 | sn51 lium.io | 60.7 | 54.18 | 4,375 | rtx4090* | 53 | 71% |
+| 17 | sn60 Bitsec.ai | 60 | 505 | 505 = | cpu-small | 3 | 50% |
+| 18 | sn53 engy | 60 | 36.54 | 12,299 | rtx4090 | 144 | 63% |
+| 19 | sn28 gm | 58.1 | 22.30 | 1,212 | rtx4090* | 55 | 17% |
+| 20 | sn61 RedTeam | 57 | 14.48 | 306 | rtx4090* | 84 | 7% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-23T12:00 | sn14 | RELEASE | sn14 released msa-block-score-control-20260823: fix: open paged MSA de |
 | 2026-08-23T07:10 | sn14 | RELEASE | sn14 released MSA block-score mainnet control |
 | 2026-08-23T05:02 | sn25 | RELEASE | sn25 released v2026.8.22-1026600400 |
 | 2026-08-23T04:09 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-22T12:57 | sn92 | RELEASE | sn92 released v0.1.11 |
 | 2026-08-22T12:57 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Make the validator guide match the code a |
 | 2026-08-22T12:01 | sn92 | RELEASE | sn92 released v0.1.9 |
-| 2026-08-22T11:32 | sn92 | RELEASE | sn92 released v0.1.7 |
 
 ---
 

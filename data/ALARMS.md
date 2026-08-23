@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T00:00:20Z, block 8903870
+# ALARMS - generated 2026-08-23T01:56:48Z, block 8904453
 
-window: first_seen in [2026-08-22T22:45:52Z, 2026-08-23T00:00:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T00:42:15Z, 2026-08-23T01:57:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -27,8 +27,6 @@ _none_
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-15T21:01:49Z` | 71 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn71 commit touches scoring: Fix validator RPC boundary fixture |
-| `sn111:scoring_commit:2026-08-16T00:43:24Z` | 111 | SCORING_COMMIT | 2026-08-16T01:55:21Z | sn111 commit touches scoring: Implement resilient batch scoring and winner-takes-most payouts |
 | `sn71:scoring_commit:2026-08-16T03:33:59Z` | 71 | SCORING_COMMIT | 2026-08-16T04:08:02Z | sn71 commit touches scoring: Regenerate validator protected workflow manifest |
 | `sn67:scoring_commit:2026-08-16T05:46:07Z` | 67 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260816.post0 |
 | `sn71:scoring_commit:2026-08-16T04:12:13Z` | 71 | SCORING_COMMIT | 2026-08-16T06:04:05Z | sn71 commit touches scoring: Preserve production clocks in parity validation |

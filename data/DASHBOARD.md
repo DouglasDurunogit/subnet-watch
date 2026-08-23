@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-23T00:00:20Z · block 8903870 · run_status **ok**_
+_snapshot 2026-08-23T01:56:48Z · block 8904453 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -29,8 +29,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 61 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0 (none) | 62 | `████████████████████████████` |
+| 0–0.2 | 4 | `██` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77 | 74.39 | 132 | cpu-small | 13 | 20% |
-| 2 | sn67 Harnyx | 72.4 | 22.76 | 118 | cpu-small | 157 | 12% |
-| 3 | sn62 Ridges | 71.6 | 1,205 | 2,966 | rtx4090* | 6 | 39% |
-| 4 | sn102 ConnitoAI | 71.5 | 1,150 | 2,662 | rtx4090* | 6 | 38% |
-| 5 | sn15 ORO | 70.5 | 19.14 | 22,799 | cpu-small | 61 | 95% |
-| 6 | sn56 Gradients | 69.9 | 722 | 1,067 | rtx4090* | 5 | 73% |
-| 7 | sn91 cascade | 69.8 | 690 | 2,783 | rtx4090* | 5 | 52% |
-| 8 | sn1 Apex | 68.6 | 493 | 1,234 | rtx4090* | 5 | 52% |
-| 9 | sn96 Verathos | 67.6 | 18.73 | 445 | rtx4090 | 92 | 40% |
-| 10 | sn26 Perturb | 67.4 | 17.78 | 255 | rtx3060 | 10 | 70% |
-| 11 | sn38 ChronoLLM | 66.5 | 113 | 1,549 | cpu-small | 10 | 52% |
-| 12 | sn107 Minos | 65.2 | 144 | 42,704 | cpu-small | 20 | 90% |
-| 13 | sn98 NeverPlayAlone | 64.5 | 1,904 | 1,904 = | cpu-small | 1 | 100% |
-| 14 | sn85 Vidaio | 64.1 | 128 | 401 | rtx4090* | 13 | 42% |
-| 15 | sn108 Prometheon | 63.8 | 118 | 127 | rtx4090* | 8 | 66% |
-| 16 | sn81 Reliquary | 63.3 | 99.03 | 193 | rtx4090* | 44 | 5% |
-| 17 | sn51 lium.io | 62.3 | 83.10 | 4,723 | rtx4090* | 50 | 70% |
-| 18 | sn60 Bitsec.ai | 59.8 | 471 | 471 = | cpu-small | 3 | 50% |
-| 19 | sn53 engy | 59.7 | 33.17 | 224 | rtx4090 | 144 | 63% |
-| 20 | sn28 gm | 59.1 | 29.47 | 1,635 | rtx4090* | 53 | 15% |
+| 1 | sn76 Phylax | 77 | 74.51 | 132 | cpu-small | 13 | 20% |
+| 2 | sn102 ConnitoAI | 72.8 | 1,727 | 1,727 = | rtx4090* | 4 | 25% |
+| 3 | sn67 Harnyx | 72.4 | 22.69 | 118 | cpu-small | 157 | 12% |
+| 4 | sn23 Trishool | 72.2 | 556 | 556 = | cpu-small | 2 | 80% |
+| 5 | sn62 Ridges | 71.6 | 1,201 | 2,958 | rtx4090* | 6 | 39% |
+| 6 | sn15 ORO | 70.3 | 18.64 | 38.63 | cpu-small | 61 | 95% |
+| 7 | sn56 Gradients | 69.9 | 718 | 1,064 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69.8 | 690 | 2,784 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.7 | 497 | 1,219 | rtx4090* | 5 | 52% |
+| 10 | sn26 Perturb | 67.4 | 17.73 | 255 | rtx3060 | 10 | 70% |
+| 11 | sn96 Verathos | 67.3 | 17.44 | 287 | rtx4090 | 90 | 40% |
+| 12 | sn38 ChronoLLM | 66.5 | 113 | 1,541 | cpu-small | 10 | 52% |
+| 13 | sn107 Minos | 65.1 | 143 | 42,451 | cpu-small | 20 | 90% |
+| 14 | sn98 NeverPlayAlone | 64.4 | 1,899 | 1,899 = | cpu-small | 1 | 100% |
+| 15 | sn85 Vidaio | 64.1 | 128 | 400 | rtx4090* | 13 | 42% |
+| 16 | sn108 Prometheon | 63.9 | 120 | 129 | rtx4090* | 8 | 66% |
+| 17 | sn81 Reliquary | 63.1 | 94.88 | 220 | rtx4090* | 42 | 6% |
+| 18 | sn51 lium.io | 62.3 | 82.17 | 4,590 | rtx4090* | 50 | 71% |
+| 19 | sn28 gm | 60.2 | 41.39 | 1,494 | rtx4090* | 53 | 14% |
+| 20 | sn60 Bitsec.ai | 59.8 | 469 | 469 = | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 20 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 19 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality

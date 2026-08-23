@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-23T17:59:32Z, block 8909266
+# ALARMS - generated 2026-08-23T18:44:52Z, block 8909493
 
-window: first_seen in [2026-08-23T16:45:03Z, 2026-08-23T18:00:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T17:30:21Z, 2026-08-23T18:45:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | P1 | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
+| `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | P2 | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
+
+### detail
+
+- **`sn111:scoring_commit:2026-08-23T16:36:27Z`** - sn111 commit touches scoring: feat(setup): add public miner and validator installers
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:f9f4504d0df2befc`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

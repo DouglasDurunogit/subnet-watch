@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-23T15:33:12Z  |  block: 8908535  |  row_status: ok
+snapshot_utc: 2026-08-23T16:00:59Z  |  block: 8908674  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.11586 USD), open=True
+- registration cost: 0.0005 TAO (0.116175 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 46  |  free: 0
 - subnet age: 1032.1 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3270.554587664328** (uid 97) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.8702140809749878
-- top_miner_usd_day: 14584.207854420141 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3278.740804537058** (uid 97) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.8726244156858741
+- top_miner_usd_day: 14625.185206895254 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 32  |  gini: 0.9496113490282294  |  top1_share: 0.767614772744622  |  top10_share: 0.9992518969755262
+- earners: 32  |  gini: 0.9496139195089925  |  top1_share: 0.7676570276955021  |  top10_share: 0.9992518855537573
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-23T15:33:12Z  |  block: 8908535  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.349 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.3466 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 67), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 68), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: SCORING_COMMIT 24d ago
 

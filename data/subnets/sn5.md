@@ -1,20 +1,20 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-08-23T19:44:34Z  |  block: 8909792  |  row_status: ok
+snapshot_utc: 2026-08-23T20:00:29Z  |  block: 8909871  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.323965709 TAO (77.51203553533999 USD), open=True
+- registration cost: 0.300240523 TAO (72.54711757249 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 247  |  free: 0
 - subnet age: 891.4 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 41.03092889621695** (uid 218) <- the only figure quotable as achievable
-- median_miner_usd_day: 38.01193078345182
-- top_miner_usd_day: 41.03092889621695 (uid 218, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 41.43837785410177** (uid 218) <- the only figure quotable as achievable
+- median_miner_usd_day: 38.389400219351806
+- top_miner_usd_day: 41.43837785410177 (uid 218, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-23T19:44:34Z  |  block: 8909792  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 29.7928 USD/day  |  payback on registration: 2.6 days
+- net margin: 30.1702 USD/day  |  payback on registration: 2.4 days
 
 ## Score
 
 - gate: **OK** 
 - score: 20.4 (rank 69), confidence 0.6 - hardware requirement unknown; no README readable; repo dead
-- components: income 13.54 / freshness 0.0 / resource 11.25 / registration 9.13
+- components: income 13.59 / freshness 0.0 / resource 11.25 / registration 9.2
 - freshness basis: no challenge change on record
 
 ## On-chain description

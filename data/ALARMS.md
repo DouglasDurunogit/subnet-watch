@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-23T19:44:34Z, block 8909792
+# ALARMS - generated 2026-08-23T20:00:29Z, block 8909871
 
-window: first_seen in [2026-08-23T18:29:59Z, 2026-08-23T19:44:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T18:46:10Z, 2026-08-23T20:01:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | P1 | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
 | `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | P1 | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
 | `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | P1 | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
-| `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | P2 | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn111:scoring_commit:2026-08-23T16:36:27Z`** - sn111 commit touches scoring: feat(setup): add public miner and validator installers
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn102:release:v0.5.1 — release the finished round on s`** - sn102 released v0.5.1 — release the finished round on swap
   - published 2026-08-23T19:28:11Z (was v0.5.0)
 - **`sn102:scoring_commit:2026-08-23T18:41:50Z`** - sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:f9f4504d0df2befc`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -254,6 +248,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-08-23T12:20:55Z` | 124 | SCORING_COMMIT | 2026-08-23T12:59:07Z | sn124 commit touches scoring: Remove obsolete repo verify flag from docs |
 | `sn90:scoring_commit:2026-08-23T13:08:10Z` | 90 | SCORING_COMMIT | 2026-08-23T13:42:25Z | sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled |
 | `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
+| `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
@@ -275,6 +270,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 | `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 | `sn90:readme_task_diff:1adff40174e46f0e` | 90 | README_TASK_DIFF | 2026-08-21T19:06:46Z | sn90 README task/scoring sections changed |
+| `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

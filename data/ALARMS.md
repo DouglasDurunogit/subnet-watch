@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-23T07:55:44Z, block 8906247
+# ALARMS - generated 2026-08-23T08:45:05Z, block 8906494
 
-window: first_seen in [2026-08-23T06:41:11Z, 2026-08-23T07:56:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T07:30:39Z, 2026-08-23T08:45:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn14:release:MSA block-score mainnet control` | 14 | RELEASE | P1 | 2026-08-23T07:10:49Z | sn14 released MSA block-score mainnet control |
-
-### detail
-
-- **`sn14:release:MSA block-score mainnet control`** - sn14 released MSA block-score mainnet control
-  - published 2026-08-23T06:57:36Z (was Fused-epilogue kernel submission archive (2026-08-21))
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,7 +27,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn100:release:v3.3.22` | 100 | RELEASE | 2026-08-16T08:44:18Z | sn100 released v3.3.22 |
 | `sn76:scoring_commit:2026-08-16T11:49:10Z` | 76 | SCORING_COMMIT | 2026-08-16T12:00:10Z | sn76 commit touches scoring: Download only the tasks a validator drew |
 | `sn68:scoring_commit:2026-08-16T13:01:09Z` | 68 | SCORING_COMMIT | 2026-08-16T13:40:28Z | sn68 commit touches scoring: discard individual validator processing failures before averaging scor |
 | `sn100:release:v3.3.23` | 100 | RELEASE | 2026-08-16T16:00:34Z | sn100 released v3.3.23 |
@@ -245,6 +237,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.22-1026545240` | 25 | RELEASE | 2026-08-23T03:13:05Z | sn25 released v2026.8.22-1026545240 |
 | `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
 | `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
+| `sn14:release:MSA block-score mainnet control` | 14 | RELEASE | 2026-08-23T07:10:49Z | sn14 released MSA block-score mainnet control |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-23T20:35:21Z, block 8910046
+# ALARMS - generated 2026-08-23T21:01:55Z, block 8910178
 
-window: first_seen in [2026-08-23T19:20:52Z, 2026-08-23T20:35:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-23T19:47:27Z, 2026-08-23T21:02:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | P1 | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
-| `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | P1 | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
-
-### detail
-
-- **`sn102:release:v0.5.1 — release the finished round on s`** - sn102 released v0.5.1 — release the finished round on swap
-  - published 2026-08-23T19:28:11Z (was v0.5.0)
-- **`sn102:scoring_commit:2026-08-23T18:41:50Z`** - sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -249,6 +239,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-08-23T13:08:10Z` | 90 | SCORING_COMMIT | 2026-08-23T13:42:25Z | sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled |
 | `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
 | `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
+| `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
+| `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T01:54:43Z, block 8911642
+# ALARMS - generated 2026-08-24T03:13:19Z, block 8912035
 
-window: first_seen in [2026-08-24T00:40:18Z, 2026-08-24T01:55:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T01:58:47Z, 2026-08-24T03:13:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn53:scoring_commit:2026-08-24T00:47:31Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T01:55:18Z | sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat |
+| `sn53:scoring_commit:2026-08-24T02:43:24Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T03:13:47Z | sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse… |
 
 ### detail
 
-- **`sn53:scoring_commit:2026-08-24T00:47:31Z`** - sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat
+- **`sn53:scoring_commit:2026-08-24T02:43:24Z`** - sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -248,6 +248,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
 | `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
 | `sn71:scoring_commit:2026-08-23T17:55:32Z` | 71 | SCORING_COMMIT | 2026-08-23T23:01:52Z | sn71 commit touches scoring: test: verify pinned model runtime in CI |
+| `sn53:scoring_commit:2026-08-24T00:47:31Z` | 53 | SCORING_COMMIT | 2026-08-24T01:55:18Z | sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

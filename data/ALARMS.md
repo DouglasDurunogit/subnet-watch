@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T15:24:13Z, block 8915690
+# ALARMS - generated 2026-08-24T16:04:46Z, block 8915893
 
-window: first_seen in [2026-08-24T14:09:47Z, 2026-08-24T15:24:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T14:50:12Z, 2026-08-24T16:05:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:release:v0.6.33` | 11 | RELEASE | P1 | 2026-08-24T14:27:54Z | sn11 released v0.6.33 |
 | `sn3:scoring_commit:2026-08-24T15:00:07Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T15:24:47Z | sn3 commit touches scoring: Show provisional LCB during evaluations |
 | `sn7:release:release-20260824-151246: Bump allways to` | 7 | RELEASE | P1 | 2026-08-24T15:24:47Z | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
 | `sn10:scoring_commit:2026-08-24T13:55:36Z` | 10 | SCORING_COMMIT | P1 | 2026-08-24T15:24:47Z | sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy |
+| `sn25:release:v2026.8.24-1027859650` | 25 | RELEASE | P1 | 2026-08-24T16:05:12Z | sn25 released v2026.8.24-1027859650 |
 
 ### detail
 
-- **`sn11:release:v0.6.33`** - sn11 released v0.6.33
-  - published 2026-08-24T13:31:19Z (was v0.6.32)
 - **`sn3:scoring_commit:2026-08-24T15:00:07Z`** - sn3 commit touches scoring: Show provisional LCB during evaluations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn7:release:release-20260824-151246: Bump allways to`** - sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705)
   - published 2026-08-24T14:36:35Z (was release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697))
 - **`sn10:scoring_commit:2026-08-24T13:55:36Z`** - sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.24-1027859650`** - sn25 released v2026.8.24-1027859650
+  - published 2026-08-24T15:43:00Z (was v2026.8.23-1027441210)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
@@ -260,6 +259,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-24T11:27:42Z` | 67 | SCORING_COMMIT | 2026-08-24T12:16:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4 |
 | `sn3:scoring_commit:2026-08-24T13:22:09Z` | 3 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn3 commit touches scoring: Enforce miner upload size limit |
 | `sn89:scoring_commit:2026-08-24T13:22:26Z` | 89 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn89 commit touches scoring: HF scoreboard: pick the tick dir by newest window, not by list order |
+| `sn11:release:v0.6.33` | 11 | RELEASE | 2026-08-24T14:27:54Z | sn11 released v0.6.33 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

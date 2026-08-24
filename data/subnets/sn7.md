@@ -1,11 +1,11 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-24T19:09:34Z  |  block: 8916817  |  row_status: ok
+snapshot_utc: 2026-08-24T19:54:12Z  |  block: 8917040  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (35.7645 USD), open=True
+- miner_burn: **0.9986881799995899**  <- 100% burn: miners earn NOTHING here
+- registration cost: 0.15 TAO (35.937 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
 - subnet age: 873.5 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
@@ -13,13 +13,13 @@ snapshot_utc: 2026-08-24T19:09:34Z  |  block: 8916817  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2284.0458360387947
-- top_miner_usd_day: 2284.0458360387947 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1147.5125733862096
+- top_miner_usd_day: 2292.048415038118 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 1  |  gini: 0.0  |  top1_share: 1.0  |  top10_share: 1.0
-- owner_incentive_share: 1.0 (independent check on miner_burn; disagreement 0.0)
+- earners: 2  |  gini: 0.49870296334726993  |  top1_share: 0.9987029633472702  |  top10_share: 1.0
+- owner_incentive_share: 0.9987029633472702 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -40,7 +40,7 @@ snapshot_utc: 2026-08-24T19:09:34Z  |  block: 8916817  |  row_status: ok
 
 ## Score
 
-- gate: **BLOCKED:burn** - miner_burn=1.000 - 100.0% of miner emission is withheld by owner-controlled hotkeys, so miners earn nothing here
+- gate: **BLOCKED:burn** - miner_burn=0.999 - 99.9% of miner emission is withheld by owner-controlled hotkeys, so miners earn nothing here
 - score: [UNKNOWN] (rank -), confidence [UNKNOWN] 
 - components: income [UNKNOWN] / freshness [UNKNOWN] / resource [UNKNOWN] / registration [UNKNOWN]
 - freshness basis: -

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T19:09:34Z, block 8916817
+# ALARMS - generated 2026-08-24T19:54:12Z, block 8917040
 
-window: first_seen in [2026-08-24T17:55:03Z, 2026-08-24T19:10:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T18:39:44Z, 2026-08-24T19:54:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn92:burn_drop:0.971` | 92 | BURN_DROP | P0 | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn21:scoring_commit:2026-08-24T17:50:10Z` | 21 | SCORING_COMMIT | P1 | 2026-08-24T18:16:08Z | sn21 commit touches scoring: docs(scoring): retire the no-zero-for-missing rule the absence penalt… |
-| `sn60:scoring_commit:2026-08-24T17:54:28Z` | 60 | SCORING_COMMIT | P1 | 2026-08-24T18:16:08Z | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries |
 | `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | P1 | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
+| `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | P2 | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 
 ### detail
 
-- **`sn92:burn_drop:0.971`** - sn92 burn fell 1.000 -> 0.971 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:scoring_commit:2026-08-24T17:50:10Z`** - sn21 commit touches scoring: docs(scoring): retire the no-zero-for-missing rule the absence penalt…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn60:scoring_commit:2026-08-24T17:54:28Z`** - sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-24T18:55:25Z`** - sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn3:scoring_commit:2026-08-24T19:11:02Z`** - sn3 commit touches scoring: Enforce ordered evaluations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn10:readme_task_diff:695b2540d142908e`** - sn10 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -44,8 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn51:release:executor-v1.121` | 51 | RELEASE | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
-| `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
+| `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn21:release:SN21 training bundle — 10,791 records, r` | 21 | RELEASE | 2026-08-17T21:09:19Z | sn21 released SN21 training bundle — 10,791 records, refreshed 2026-08-17 |
 | `sn54:scoring_commit:2026-08-17T16:25:21Z` | 54 | SCORING_COMMIT | 2026-08-17T22:36:59Z | sn54 commit touches scoring: updating miner info |
 | `sn62:release:v0.2.8` | 62 | RELEASE | 2026-08-17T22:36:59Z | sn62 released v0.2.8 |
@@ -268,6 +261,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:release:v0.6.34` | 11 | RELEASE | 2026-08-24T16:53:39Z | sn11 released v0.6.34 |
 | `sn21:scoring_commit:2026-08-24T16:06:33Z` | 21 | SCORING_COMMIT | 2026-08-24T16:53:39Z | sn21 commit touches scoring: docs(rewards): leaderboard vs chain timing, stated once |
 | `sn124:scoring_commit:2026-08-24T16:42:42Z` | 124 | SCORING_COMMIT | 2026-08-24T17:42:25Z | sn124 commit touches scoring: Rename the office challenge family to cf_interceptor_office |
+| `sn21:scoring_commit:2026-08-24T17:50:10Z` | 21 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn21 commit touches scoring: docs(scoring): retire the no-zero-for-missing rule the absence penalt… |
+| `sn60:scoring_commit:2026-08-24T17:54:28Z` | 60 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |

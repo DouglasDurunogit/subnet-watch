@@ -1,25 +1,25 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-08-23T23:59:44Z  |  block: 8911067  |  row_status: ok
+snapshot_utc: 2026-08-24T01:54:43Z  |  block: 8911642  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.28358050249516964**
-- registration cost: 0.0005 TAO (0.11900000000000001 USD), open=True
+- miner_burn: **0.29027363867498934**
+- registration cost: 0.0005 TAO (0.117005 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 1041.6 days  |  registered at block 1411451
+- subnet age: 1041.7 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 14844.63726649127** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 2283.7421532250314
-- top_miner_usd_day: 14844.63726649127 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 14461.011349031789** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 2224.723584754337
+- top_miner_usd_day: 14461.011349031789 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 7  |  gini: 0.5005319102554044  |  top1_share: 0.36154855643044614  |  top10_share: 1.0
-- owner_incentive_share: 0.2835866446926692 (independent check on miner_burn; disagreement 0.0)
+- earners: 7  |  gini: 0.5011869701415426  |  top1_share: 0.35817069262814155  |  top10_share: 1.0
+- owner_incentive_share: 0.2902812323562175 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-23T23:59:44Z  |  block: 8911067  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1323.8071 USD/day  |  payback on registration: 0.0 days
+- net margin: 1289.2795 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 42.2 (rank 37), confidence 0.85 - hardware requirement unknown
-- components: income 28.4 / freshness 0.0 / resource 11.25 / registration 10.0
+- score: 42.1 (rank 38), confidence 0.85 - hardware requirement unknown
+- components: income 28.29 / freshness 0.0 / resource 11.25 / registration 10.0
 - freshness basis: no challenge change on record
 
 ## On-chain description

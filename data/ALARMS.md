@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T21:14:32Z, block 8917441
+# ALARMS - generated 2026-08-24T21:52:59Z, block 8917634
 
-window: first_seen in [2026-08-24T20:00:06Z, 2026-08-24T21:15:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T20:38:25Z, 2026-08-24T21:53:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | P1 | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
+| `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | P1 | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 
 ### detail
 
 - **`sn92:scoring_commit:2026-08-24T20:51:06Z`** - sn92 commit touches scoring: Correct the validator setup path end to end
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-08-24T21:10:53Z`** - sn71 commit touches scoring: Allow bounded measured dev evaluation payloads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

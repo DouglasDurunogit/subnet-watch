@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T06:02:52Z, block 8912883
+# ALARMS - generated 2026-08-24T07:16:40Z, block 8913252
 
-window: first_seen in [2026-08-24T04:48:24Z, 2026-08-24T06:03:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T06:02:08Z, 2026-08-24T07:17:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,13 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn67:scoring_commit:2026-08-24T05:16:58Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T06:03:24Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0 |
+| `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | P1 | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
 
 ### detail
 
 - **`sn67:scoring_commit:2026-08-24T05:16:58Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-08-22T11:21:02Z`** - sn97 commit touches scoring: feat: weighted score breakdown on eval detail page
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-24T21:52:59Z · block 8917634 · run_status **ok**_
+_snapshot 2026-08-24T22:39:33Z · block 8917867 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **52** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 4 | `██` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 6 | `███` |
@@ -45,22 +45,22 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn11 TrajectoryRL | 79.7 | 5,082 | 5,082 = | cpu-small | 1 | 100% |
 | 2 | sn76 Phylax | 79.3 | 135 | 202 | cpu-small | 13 | 20% |
-| 3 | sn3 Teutonic | 76 | 4,419 | 4,419 = | rtx4090* | 5 | 20% |
-| 4 | sn60 Bitsec.ai | 76 | 1,706 | 1,706 = | cpu-small | 2 | 50% |
-| 5 | sn38 ChronoLLM | 72.6 | 631 | 3,700 | cpu-small | 6 | 53% |
+| 3 | sn60 Bitsec.ai | 76 | 1,715 | 1,715 = | cpu-small | 2 | 50% |
+| 4 | sn3 Teutonic | 75.9 | 4,272 | 4,484 | rtx4090* | 5 | 21% |
+| 5 | sn38 ChronoLLM | 72.6 | 628 | 3,684 | cpu-small | 6 | 53% |
 | 6 | sn62 Ridges | 72.4 | 1,525 | 3,117 | rtx4090* | 6 | 39% |
-| 7 | sn67 Harnyx | 71.8 | 19.32 | 166 | cpu-small | 179 | 4% |
-| 8 | sn15 ORO | 71.7 | 26.75 | 46.01 | cpu-small | 81 | 93% |
-| 9 | sn102 ConnitoAI | 69.4 | 627 | 2,836 | rtx4090* | 7 | 39% |
-| 10 | sn91 cascade | 68.9 | 538 | 1,450 | rtx4090* | 5 | 52% |
-| 11 | sn1 Apex | 68.9 | 531 | 1,298 | rtx4090* | 5 | 53% |
-| 12 | sn96 Verathos | 68.1 | 21.21 | 205 | rtx4090 | 93 | 40% |
+| 7 | sn15 ORO | 71.9 | 26.69 | 45.92 | cpu-small | 81 | 93% |
+| 8 | sn67 Harnyx | 71.8 | 19.32 | 166 | cpu-small | 179 | 4% |
+| 9 | sn102 ConnitoAI | 69.4 | 627 | 2,835 | rtx4090* | 7 | 39% |
+| 10 | sn91 cascade | 68.9 | 538 | 1,448 | rtx4090* | 5 | 52% |
+| 11 | sn1 Apex | 68.9 | 528 | 1,293 | rtx4090* | 5 | 53% |
+| 12 | sn96 Verathos | 68.1 | 21.19 | 204 | rtx4090 | 93 | 40% |
 | 13 | sn21 AdTAO | 67.9 | 8.38 | 1,001 | cpu-small | 16 | 37% |
 | 14 | sn26 Perturb | 67.7 | 19.39 | 275 | rtx3060 | 10 | 70% |
-| 15 | sn124 Swarm | 66.1 | 241 | 2,083 | rtx4090* | 24 | 24% |
-| 16 | sn107 Minos | 65.9 | 174 | 43,920 | cpu-small | 19 | 90% |
-| 17 | sn92 MicroTensor | 65.4 | 74.46 | 120 | cpu-small | 3 | 95% |
-| 18 | sn85 Vidaio | 64.6 | 147 | 439 | rtx4090* | 13 | 42% |
+| 15 | sn124 Swarm | 66.1 | 241 | 2,084 | rtx4090* | 24 | 24% |
+| 16 | sn107 Minos | 65.9 | 174 | 43,738 | cpu-small | 19 | 90% |
+| 17 | sn92 MicroTensor | 65.4 | 74.56 | 120 | cpu-small | 3 | 95% |
+| 18 | sn85 Vidaio | 64.6 | 147 | 438 | rtx4090* | 13 | 42% |
 | 19 | sn81 Reliquary | 63.7 | 114 | 298 | rtx4090* | 34 | 9% |
 | 20 | sn108 Prometheon | 63.4 | 105 | 122 | rtx4090* | 9 | 66% |
 
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
-| concentrated (30–60%) | 19 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 20 |
 | dominated (60–90%) | 18 |
 | captured (>90%) | 25 |
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-24T22:40 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
+| 2026-08-24T22:40 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: ♻️ refactor(validator): drop the redunda |
 | 2026-08-24T21:53 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Allow bounded measured dev evaluation pay |
 | 2026-08-24T21:15 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Correct the validator setup path end to e |
 | 2026-08-24T19:54 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Enforce ordered evaluations |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-24T16:53 | sn11 | RELEASE | sn11 released v0.6.34 |
 | 2026-08-24T16:53 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs(rewards): leaderboard vs chain timin |
 | 2026-08-24T16:05 | sn25 | RELEASE | sn25 released v2026.8.24-1027859650 |
-| 2026-08-24T15:24 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Show provisional LCB during evaluations |
-| 2026-08-24T15:24 | sn7 | RELEASE | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
 
 ---
 

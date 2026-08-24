@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T21:52:59Z, block 8917634
+# ALARMS - generated 2026-08-24T22:39:33Z, block 8917867
 
-window: first_seen in [2026-08-24T20:38:25Z, 2026-08-24T21:53:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T21:25:07Z, 2026-08-24T22:40:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | P1 | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
 | `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | P1 | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
+| `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
+| `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | P2 | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn92:scoring_commit:2026-08-24T20:51:06Z`** - sn92 commit touches scoring: Correct the validator setup path end to end
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn71:scoring_commit:2026-08-24T21:10:53Z`** - sn71 commit touches scoring: Allow bounded measured dev evaluation payloads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn102:scoring_commit:2026-08-24T16:15:02Z`** - sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:d897794f349f6fcf`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn54:scoring_commit:2026-08-17T16:25:21Z` | 54 | SCORING_COMMIT | 2026-08-17T22:36:59Z | sn54 commit touches scoring: updating miner info |
-| `sn62:release:v0.2.8` | 62 | RELEASE | 2026-08-17T22:36:59Z | sn62 released v0.2.8 |
 | `sn14:release:v2-finite-debt-preextraction: Pre-extrac` | 14 | RELEASE | 2026-08-17T23:02:57Z | sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics. |
 | `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
@@ -261,6 +262,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn60:scoring_commit:2026-08-24T17:54:28Z` | 60 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries |
 | `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
 | `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
+| `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |

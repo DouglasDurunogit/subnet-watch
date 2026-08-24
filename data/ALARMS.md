@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T16:04:46Z, block 8915893
+# ALARMS - generated 2026-08-24T16:53:11Z, block 8916135
 
-window: first_seen in [2026-08-24T14:50:12Z, 2026-08-24T16:05:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T15:38:39Z, 2026-08-24T16:53:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-08-24T15:00:07Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T15:24:47Z | sn3 commit touches scoring: Show provisional LCB during evaluations |
-| `sn7:release:release-20260824-151246: Bump allways to` | 7 | RELEASE | P1 | 2026-08-24T15:24:47Z | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
-| `sn10:scoring_commit:2026-08-24T13:55:36Z` | 10 | SCORING_COMMIT | P1 | 2026-08-24T15:24:47Z | sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy |
 | `sn25:release:v2026.8.24-1027859650` | 25 | RELEASE | P1 | 2026-08-24T16:05:12Z | sn25 released v2026.8.24-1027859650 |
+| `sn11:release:v0.6.34` | 11 | RELEASE | P1 | 2026-08-24T16:53:39Z | sn11 released v0.6.34 |
+| `sn21:scoring_commit:2026-08-24T16:06:33Z` | 21 | SCORING_COMMIT | P1 | 2026-08-24T16:53:39Z | sn21 commit touches scoring: docs(rewards): leaderboard vs chain timing, stated once |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-08-24T15:00:07Z`** - sn3 commit touches scoring: Show provisional LCB during evaluations
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn7:release:release-20260824-151246: Bump allways to`** - sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705)
-  - published 2026-08-24T14:36:35Z (was release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697))
-- **`sn10:scoring_commit:2026-08-24T13:55:36Z`** - sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn25:release:v2026.8.24-1027859650`** - sn25 released v2026.8.24-1027859650
   - published 2026-08-24T15:43:00Z (was v2026.8.23-1027441210)
+- **`sn11:release:v0.6.34`** - sn11 released v0.6.34
+  - published 2026-08-24T16:07:38Z (was v0.6.33)
+- **`sn21:scoring_commit:2026-08-24T16:06:33Z`** - sn21 commit touches scoring: docs(rewards): leaderboard vs chain timing, stated once
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,7 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn10:scoring_commit:2026-08-17T16:31:51Z` | 10 | SCORING_COMMIT | 2026-08-17T16:41:40Z | sn10 commit touches scoring: feat: better miner commit patch logs (#83) |
 | `sn21:release:SN21 training bundle (1977 records, refr` | 21 | RELEASE | 2026-08-17T18:54:41Z | sn21 released SN21 training bundle (1977 records, refreshed 2026-08-17 18:05 UTC) |
 | `sn51:release:executor-v1.121` | 51 | RELEASE | 2026-08-17T19:36:49Z | sn51 released executor-v1.121 |
 | `sn65:scoring_commit:2026-08-14T10:47:05Z` | 65 | SCORING_COMMIT | 2026-08-17T19:36:49Z | sn65 commit touches scoring: Merge pull request #3 from taofu-labs/validator-v2 |
@@ -260,6 +256,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn3:scoring_commit:2026-08-24T13:22:09Z` | 3 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn3 commit touches scoring: Enforce miner upload size limit |
 | `sn89:scoring_commit:2026-08-24T13:22:26Z` | 89 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn89 commit touches scoring: HF scoreboard: pick the tick dir by newest window, not by list order |
 | `sn11:release:v0.6.33` | 11 | RELEASE | 2026-08-24T14:27:54Z | sn11 released v0.6.33 |
+| `sn3:scoring_commit:2026-08-24T15:00:07Z` | 3 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn3 commit touches scoring: Show provisional LCB during evaluations |
+| `sn7:release:release-20260824-151246: Bump allways to` | 7 | RELEASE | 2026-08-24T15:24:47Z | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
+| `sn10:scoring_commit:2026-08-24T13:55:36Z` | 10 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

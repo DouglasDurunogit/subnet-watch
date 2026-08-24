@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T23:04:24Z, block 8917991
+# ALARMS - generated 2026-08-24T23:32:44Z, block 8918133
 
-window: first_seen in [2026-08-24T21:49:58Z, 2026-08-24T23:04:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T22:18:18Z, 2026-08-24T23:33:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | P1 | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 | `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
 | `sn66:scoring_commit:2026-08-24T22:51:29Z` | 66 | SCORING_COMMIT | P1 | 2026-08-24T23:04:58Z | sn66 commit touches scoring: Normalize verifier image source permissions |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | P2 | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-24T21:10:53Z`** - sn71 commit touches scoring: Allow bounded measured dev evaluation payloads
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn102:scoring_commit:2026-08-24T16:15:02Z`** - sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn66:scoring_commit:2026-08-24T22:51:29Z`** - sn66 commit touches scoring: Normalize verifier image source permissions
@@ -265,6 +262,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
 | `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
 | `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
+| `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |

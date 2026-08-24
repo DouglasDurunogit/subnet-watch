@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T22:39:33Z, block 8917867
+# ALARMS - generated 2026-08-24T23:04:24Z, block 8917991
 
-window: first_seen in [2026-08-24T21:25:07Z, 2026-08-24T22:40:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T21:49:58Z, 2026-08-24T23:04:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | P1 | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 | `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
+| `sn66:scoring_commit:2026-08-24T22:51:29Z` | 66 | SCORING_COMMIT | P1 | 2026-08-24T23:04:58Z | sn66 commit touches scoring: Normalize verifier image source permissions |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | P2 | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 
 ### detail
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn71:scoring_commit:2026-08-24T21:10:53Z`** - sn71 commit touches scoring: Allow bounded measured dev evaluation payloads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn102:scoring_commit:2026-08-24T16:15:02Z`** - sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-08-24T22:51:29Z`** - sn66 commit touches scoring: Normalize verifier image source permissions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn66:readme_task_diff:d897794f349f6fcf`** - sn66 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
@@ -39,7 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn14:release:v2-finite-debt-preextraction: Pre-extrac` | 14 | RELEASE | 2026-08-17T23:02:57Z | sn14 released v2-finite-debt-preextraction: Pre-extraction snapshot of the inactive V2 finite-debt economics. |
 | `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
 | `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T13:29:56Z, block 8915118
+# ALARMS - generated 2026-08-24T14:27:26Z, block 8915406
 
-window: first_seen in [2026-08-24T12:15:22Z, 2026-08-24T13:30:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T13:12:54Z, 2026-08-24T14:27:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-08-24T11:27:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T12:16:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4 |
 | `sn3:scoring_commit:2026-08-24T13:22:09Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T13:30:22Z | sn3 commit touches scoring: Enforce miner upload size limit |
 | `sn89:scoring_commit:2026-08-24T13:22:26Z` | 89 | SCORING_COMMIT | P1 | 2026-08-24T13:30:22Z | sn89 commit touches scoring: HF scoreboard: pick the tick dir by newest window, not by list order |
+| `sn11:release:v0.6.33` | 11 | RELEASE | P1 | 2026-08-24T14:27:54Z | sn11 released v0.6.33 |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-08-24T11:27:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn3:scoring_commit:2026-08-24T13:22:09Z`** - sn3 commit touches scoring: Enforce miner upload size limit
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn89:scoring_commit:2026-08-24T13:22:26Z`** - sn89 commit touches scoring: HF scoreboard: pick the tick dir by newest window, not by list order
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn11:release:v0.6.33`** - sn11 released v0.6.33
+  - published 2026-08-24T13:31:19Z (was v0.6.32)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -254,6 +254,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn3:scoring_commit:2026-08-24T07:53:43Z` | 3 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn3 commit touches scoring: Update evaluation dataset size to 2000 for finewebedu |
 | `sn53:scoring_commit:2026-08-24T10:56:25Z` | 53 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took … |
 | `sn67:scoring_commit:2026-08-24T09:35:52Z` | 67 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374) |
+| `sn67:scoring_commit:2026-08-24T11:27:42Z` | 67 | SCORING_COMMIT | 2026-08-24T12:16:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

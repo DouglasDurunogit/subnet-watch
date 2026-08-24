@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T08:10:44Z, block 8913523
+# ALARMS - generated 2026-08-24T09:13:00Z, block 8913834
 
-window: first_seen in [2026-08-24T06:56:18Z, 2026-08-24T08:11:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T07:58:31Z, 2026-08-24T09:13:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | P1 | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
+| `sn21:scoring_commit:2026-08-23T13:18:04Z` | 21 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad… |
+| `sn53:scoring_commit:2026-08-24T08:20:51Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra… |
+| `sn65:scoring_commit:2026-08-24T09:11:32Z` | 65 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn65 commit touches scoring: update leader default url to mainnet validator |
 
 ### detail
 
-- **`sn97:scoring_commit:2026-08-22T11:21:02Z`** - sn97 commit touches scoring: feat: weighted score breakdown on eval detail page
+- **`sn21:scoring_commit:2026-08-23T13:18:04Z`** - sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn53:scoring_commit:2026-08-24T08:20:51Z`** - sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn65:scoring_commit:2026-08-24T09:11:32Z`** - sn65 commit touches scoring: update leader default url to mainnet validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn85:scoring_commit:2026-08-17T08:37:37Z` | 85 | SCORING_COMMIT | 2026-08-17T08:59:45Z | sn85 commit touches scoring: reinvite miners rejected with flag INVITATION_DECLINED in comp enroll… |
 | `sn10:scoring_commit:2026-08-17T09:07:35Z` | 10 | SCORING_COMMIT | 2026-08-17T09:54:33Z | sn10 commit touches scoring: feat(bench): score the full workload trace (PAR-65) (#81) |
 | `sn67:scoring_commit:2026-08-17T05:33:14Z` | 67 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260817.post0 |
 | `sn85:scoring_commit:2026-08-17T10:23:08Z` | 85 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo… |
@@ -249,6 +254,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
 | `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
 | `sn67:scoring_commit:2026-08-24T05:16:58Z` | 67 | SCORING_COMMIT | 2026-08-24T06:03:24Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0 |
+| `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

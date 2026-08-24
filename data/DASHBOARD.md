@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-24T20:44:37Z · block 8917292 · run_status **ok**_
+_snapshot 2026-08-24T21:14:32Z · block 8917441 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 5 | `██` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 6 | `███` |
@@ -43,25 +43,25 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 79.7 | 5,097 | 5,097 = | cpu-small | 1 | 100% |
+| 1 | sn11 TrajectoryRL | 79.7 | 5,104 | 5,104 = | cpu-small | 1 | 100% |
 | 2 | sn76 Phylax | 79.4 | 136 | 203 | cpu-small | 13 | 20% |
-| 3 | sn3 Teutonic | 76 | 4,369 | 4,369 = | rtx4090* | 5 | 20% |
-| 4 | sn60 Bitsec.ai | 76 | 1,712 | 1,712 = | cpu-small | 2 | 50% |
-| 5 | sn38 ChronoLLM | 72.6 | 628 | 3,687 | cpu-small | 6 | 53% |
-| 6 | sn62 Ridges | 72.4 | 1,526 | 3,120 | rtx4090* | 6 | 39% |
-| 7 | sn15 ORO | 71.7 | 26.84 | 46.17 | cpu-small | 81 | 93% |
-| 8 | sn67 Harnyx | 71.7 | 19.34 | 166 | cpu-small | 179 | 4% |
-| 9 | sn102 ConnitoAI | 70.3 | 814 | 3,755 | rtx4090* | 5 | 52% |
-| 10 | sn91 cascade | 68.9 | 539 | 1,450 | rtx4090* | 5 | 52% |
-| 11 | sn1 Apex | 68.9 | 533 | 1,305 | rtx4090* | 5 | 52% |
-| 12 | sn96 Verathos | 68.3 | 21.90 | 193 | rtx4090 | 92 | 40% |
-| 13 | sn21 AdTAO | 67.9 | 8.39 | 1,002 | cpu-small | 16 | 37% |
-| 14 | sn26 Perturb | 67.7 | 19.41 | 275 | rtx3060 | 10 | 70% |
-| 15 | sn124 Swarm | 66 | 239 | 2,085 | rtx4090* | 22 | 24% |
-| 16 | sn92 MicroTensor | 65.4 | 72.88 | 118 | cpu-small | 3 | 95% |
-| 17 | sn107 Minos | 65.3 | 151 | 43,778 | cpu-small | 20 | 90% |
-| 18 | sn85 Vidaio | 64.7 | 153 | 436 | rtx4090* | 13 | 42% |
-| 19 | sn81 Reliquary | 64 | 121 | 340 | rtx4090* | 35 | 7% |
+| 3 | sn3 Teutonic | 76 | 4,433 | 4,433 = | rtx4090* | 5 | 20% |
+| 4 | sn60 Bitsec.ai | 76 | 1,718 | 1,718 = | cpu-small | 2 | 50% |
+| 5 | sn38 ChronoLLM | 72.6 | 631 | 3,700 | cpu-small | 6 | 53% |
+| 6 | sn62 Ridges | 72.4 | 1,535 | 3,136 | rtx4090* | 6 | 39% |
+| 7 | sn15 ORO | 71.8 | 26.95 | 46.36 | cpu-small | 81 | 93% |
+| 8 | sn67 Harnyx | 71.8 | 19.41 | 167 | cpu-small | 179 | 4% |
+| 9 | sn102 ConnitoAI | 70.3 | 819 | 3,780 | rtx4090* | 5 | 52% |
+| 10 | sn91 cascade | 68.9 | 541 | 1,456 | rtx4090* | 5 | 52% |
+| 11 | sn1 Apex | 68.9 | 534 | 1,308 | rtx4090* | 5 | 52% |
+| 12 | sn96 Verathos | 68.3 | 21.95 | 194 | rtx4090 | 92 | 40% |
+| 13 | sn21 AdTAO | 67.9 | 8.43 | 1,005 | cpu-small | 16 | 37% |
+| 14 | sn26 Perturb | 67.8 | 19.48 | 276 | rtx3060 | 10 | 70% |
+| 15 | sn124 Swarm | 66.1 | 241 | 2,102 | rtx4090* | 22 | 24% |
+| 16 | sn92 MicroTensor | 65.4 | 74.48 | 120 | cpu-small | 3 | 95% |
+| 17 | sn107 Minos | 65.2 | 151 | 43,946 | cpu-small | 20 | 90% |
+| 18 | sn85 Vidaio | 64.7 | 154 | 438 | rtx4090* | 13 | 42% |
+| 19 | sn81 Reliquary | 64 | 122 | 342 | rtx4090* | 35 | 7% |
 | 20 | sn108 Prometheon | 63.7 | 113 | 125 | rtx4090* | 9 | 66% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 19 |
-| dominated (60–90%) | 19 |
-| captured (>90%) | 24 |
+| dominated (60–90%) | 18 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-24T21:15 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Correct the validator setup path end to e |
 | 2026-08-24T19:54 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Enforce ordered evaluations |
 | 2026-08-24T19:10 | sn10 | README_TASK_DIFF | sn10 README task/scoring sections changed |
 | 2026-08-24T19:10 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: HF board: read the live tail, so a miner  |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-24T15:24 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Show provisional LCB during evaluations |
 | 2026-08-24T15:24 | sn7 | RELEASE | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
 | 2026-08-24T15:24 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: fix(miner): match fee-path test to the si |
-| 2026-08-24T14:27 | sn11 | RELEASE | sn11 released v0.6.33 |
 
 ---
 

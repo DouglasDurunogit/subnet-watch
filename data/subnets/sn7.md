@@ -1,11 +1,11 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-08-24T14:27:26Z  |  block: 8915406  |  row_status: ok
+snapshot_utc: 2026-08-24T15:24:13Z  |  block: 8915690  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9995443066582084**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (35.9415 USD), open=True
+- miner_burn: **0.9995443061925471**  <- 100% burn: miners earn NOTHING here
+- registration cost: 0.15 TAO (36.675 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
 - subnet age: 873.3 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
@@ -13,8 +13,8 @@ snapshot_utc: 2026-08-24T14:27:26Z  |  block: 8915406  |  row_status: ok
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1147.773325709662
-- top_miner_usd_day: 2294.5308298169316 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1170.6332174948493
+- top_miner_usd_day: 2340.230381542408 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,10 +26,10 @@ snapshot_utc: 2026-08-24T14:27:26Z  |  block: 8915406  |  row_status: ok
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 10642 bytes, sha 3459a8729098b6cc
-- latest release: release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697) 2026-08-19T23:57:15Z
-- last commit: 2026-08-19T23:57:15Z
-- scoring-related commit: (none) 
+- README: 9134 bytes, sha 7579607a23dc6d8d
+- latest release: release-20260824-151246: Bump allways to 3.3.0 (#705) 2026-08-24T14:36:35Z
+- last commit: 2026-08-24T14:36:35Z
+- scoring-related commit: fix(validator): non-earner trace reads live quotes, not dead last_kno… 2026-08-22T21:11:25Z
 
 ## Resources
 
@@ -64,13 +64,7 @@ Native transactions across independent assets — no wrapped tokens, no bridges,
 
 Allways creates a verification layer above independent systems. Assets move natively. Miners complete transactions, validators independently verify the results, and a smart contract enforces outcomes through collateral and slashing.
 
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ CRO (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ ASTER (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ UNI (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
-Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, and QNT — plus SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ POL (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, SOL ↔ POL, and SOL ↔ USDC-on-Polygon (hub-and-spoke: every pair has a SOL leg). Designed to scale to any verifiable asset.
-Currently live with SOL ↔ BTC, SOL ↔ TAO, SOL ↔ ETH, SOL ↔ USDC-on-Arbitrum, SOL ↔ HYPE, SOL ↔ BNB, SOL ↔ AVAX, SOL ↔ USDC-on-Base, SOL ↔ USDC-on-Ethereum, and SOL ↔ PAXG (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, CRO, ASTER, UNI, QNT, POL, USDC-on-Polygon, PAXG, and USDC-on-Solana — plus SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
 
 ## Miner Risk Disclaimer
 
@@ -160,7 +154,30 @@ recipes above — because binding a hotkey is what claims that identity on Solan
 anti-squat cost of the claim. Since the vault keys bonds by
 hotkey and validators join them to your Solana pubkey through that binding, a TAO-backed miner needs
 the binding to set rates or be credited for its swaps — so it needs the deposit too. That is the whole
-of it: the SOL purse never has to be activated, it posts no quotes, a
+of it: the SOL purse never has to be activated, it posts no quotes, and it backs nothing. Withdraw it
+by deactivating and waiting out the cooldown, the same as any SOL collateral.
+
+**What a TAO-backed quote guarantees.** If the miner fails to deliver, the user is reimbursed in
+TAO from the miner's bond, shortly after the timeout. That differs from a SOL-backed quote in
+timing only: a SOL refund is instant because the collateral sits beside the swap, while the TAO
+reimbursement waits for validators to carry the timeout verdict to the vault and reach quorum
+there. Either way the user is made whole out of the bond that backed the quote.
+
+**Leaving.** A locked bond is not withdrawable on demand. Deactivate the purse
+(`alw miner deactivate --backing tao`), let in-flight swaps and their timeout windows drain, and
+validators unlock the bond once nothing is owed on it — then `alw vault withdraw` succeeds.
+
+## Validator Storage Layout
+
+Validator state lives in `~/.allways/validator/state.db` (SQLite, WAL mode).
+Tables: `pending_confirms`, `rate_events`, `swap_outcomes`. Collateral /
+active / min_collateral state is held in memory and rebuilt from contract
+events each startup; only `swap_outcomes` (the all-time credibility ledger)
+needs to persist across restarts.
+
+## Miner Environment Variables
+
+- `BTC_PRIVATE_KEY`, `ETH_PRIVATE_KEY`, `ARB_PRIVATE_KEY`, `HYPE_PRIVATE_KEY`, `BNB_PRIVATE_KEY`, `AVAX_PRIVATE_KEY`, `BASE_PRIVATE_KEY`, `CRO_PRIVATE_KEY`, `{ETH,ARB,HYPE,BNB,AVAX,BASE,CRO}_RPC_URLS`, etc. — keyed by network, so assets sharing one share its config (ET
 ```
 
-_(truncated at 6000 of 10642 chars - read the full file at https://github.com/entrius/allways)_
+_(truncated at 6000 of 9134 chars - read the full file at https://github.com/entrius/allways)_

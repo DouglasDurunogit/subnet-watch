@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T09:13:00Z, block 8913834
+# ALARMS - generated 2026-08-24T10:09:59Z, block 8914119
 
-window: first_seen in [2026-08-24T07:58:31Z, 2026-08-24T09:13:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T08:55:25Z, 2026-08-24T10:10:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -39,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn10:scoring_commit:2026-08-17T09:07:35Z` | 10 | SCORING_COMMIT | 2026-08-17T09:54:33Z | sn10 commit touches scoring: feat(bench): score the full workload trace (PAR-65) (#81) |
 | `sn67:scoring_commit:2026-08-17T05:33:14Z` | 67 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260817.post0 |
 | `sn85:scoring_commit:2026-08-17T10:23:08Z` | 85 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo… |
 | `sn114:scoring_commit:2026-08-17T09:54:21Z` | 114 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn114 commit touches scoring: perf(validator): reduce validator write contention |

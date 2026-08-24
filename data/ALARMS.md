@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T10:09:59Z, block 8914119
+# ALARMS - generated 2026-08-24T11:01:11Z, block 8914375
 
-window: first_seen in [2026-08-24T08:55:25Z, 2026-08-24T10:10:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T09:46:40Z, 2026-08-24T11:01:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-23T13:18:04Z` | 21 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad… |
-| `sn53:scoring_commit:2026-08-24T08:20:51Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra… |
-| `sn65:scoring_commit:2026-08-24T09:11:32Z` | 65 | SCORING_COMMIT | P1 | 2026-08-24T09:13:31Z | sn65 commit touches scoring: update leader default url to mainnet validator |
+| `sn3:scoring_commit:2026-08-24T07:53:43Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn3 commit touches scoring: Update evaluation dataset size to 2000 for finewebedu |
+| `sn53:scoring_commit:2026-08-24T10:56:25Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took … |
+| `sn67:scoring_commit:2026-08-24T09:35:52Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374) |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-23T13:18:04Z`** - sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad…
+- **`sn3:scoring_commit:2026-08-24T07:53:43Z`** - sn3 commit touches scoring: Update evaluation dataset size to 2000 for finewebedu
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-08-24T08:20:51Z`** - sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra…
+- **`sn53:scoring_commit:2026-08-24T10:56:25Z`** - sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn65:scoring_commit:2026-08-24T09:11:32Z`** - sn65 commit touches scoring: update leader default url to mainnet validator
+- **`sn67:scoring_commit:2026-08-24T09:35:52Z`** - sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -39,9 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn67:scoring_commit:2026-08-17T05:33:14Z` | 67 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260817.post0 |
-| `sn85:scoring_commit:2026-08-17T10:23:08Z` | 85 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn85 commit touches scoring: ensure comp scoring worker can access Modal SDK for fetching Modal vo… |
-| `sn114:scoring_commit:2026-08-17T09:54:21Z` | 114 | SCORING_COMMIT | 2026-08-17T10:46:02Z | sn114 commit touches scoring: perf(validator): reduce validator write contention |
 | `sn85:scoring_commit:2026-08-17T10:59:02Z` | 85 | SCORING_COMMIT | 2026-08-17T11:12:02Z | sn85 commit touches scoring: treat miner sandbox raised error as miner issue rather than validator… |
 | `sn111:scoring_commit:2026-08-17T11:55:09Z` | 111 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn111 commit touches scoring: feat: add adaptive miner selection and run assignment snapshots |
 | `sn114:scoring_commit:2026-08-17T12:09:26Z` | 114 | SCORING_COMMIT | 2026-08-17T13:03:27Z | sn114 commit touches scoring: hotfix(scoring): exclude comp 112 stage 2 from final score |
@@ -254,6 +251,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
 | `sn67:scoring_commit:2026-08-24T05:16:58Z` | 67 | SCORING_COMMIT | 2026-08-24T06:03:24Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0 |
 | `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
+| `sn21:scoring_commit:2026-08-23T13:18:04Z` | 21 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad… |
+| `sn53:scoring_commit:2026-08-24T08:20:51Z` | 53 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra… |
+| `sn65:scoring_commit:2026-08-24T09:11:32Z` | 65 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn65 commit touches scoring: update leader default url to mainnet validator |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T19:54:12Z, block 8917040
+# ALARMS - generated 2026-08-24T20:44:37Z, block 8917292
 
-window: first_seen in [2026-08-24T18:39:44Z, 2026-08-24T19:54:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T19:30:05Z, 2026-08-24T20:45:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | P1 | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
 | `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
-| `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | P2 | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-24T18:55:25Z`** - sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn3:scoring_commit:2026-08-24T19:11:02Z`** - sn3 commit touches scoring: Enforce ordered evaluations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn10:readme_task_diff:695b2540d142908e`** - sn10 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -263,6 +257,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-08-24T16:42:42Z` | 124 | SCORING_COMMIT | 2026-08-24T17:42:25Z | sn124 commit touches scoring: Rename the office challenge family to cf_interceptor_office |
 | `sn21:scoring_commit:2026-08-24T17:50:10Z` | 21 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn21 commit touches scoring: docs(scoring): retire the no-zero-for-missing rule the absence penalt… |
 | `sn60:scoring_commit:2026-08-24T17:54:28Z` | 60 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries |
+| `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
@@ -285,6 +280,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:1adff40174e46f0e` | 90 | README_TASK_DIFF | 2026-08-21T19:06:46Z | sn90 README task/scoring sections changed |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
+| `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

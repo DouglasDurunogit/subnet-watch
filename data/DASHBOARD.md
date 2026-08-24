@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-24T05:10:50Z · block 8912623 · run_status **ok**_
+_snapshot 2026-08-24T06:02:52Z · block 8912883 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 89 | passed every gate |
 | **Positive margin** | **53** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,24 +43,24 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77 | 75.64 | 84.67 | cpu-small | 13 | 20% |
-| 2 | sn102 ConnitoAI | 72.9 | 1,733 | 1,734 | rtx4090* | 4 | 25% |
-| 3 | sn62 Ridges | 72.4 | 1,503 | 3,073 | rtx4090* | 6 | 39% |
+| 1 | sn76 Phylax | 77.1 | 76.30 | 85.42 | cpu-small | 13 | 20% |
+| 2 | sn102 ConnitoAI | 72.8 | 1,726 | 1,727 | rtx4090* | 4 | 25% |
+| 3 | sn62 Ridges | 72.4 | 1,503 | 3,071 | rtx4090* | 6 | 39% |
 | 4 | sn23 Trishool | 72.3 | 578 | 578 = | cpu-small | 2 | 80% |
-| 5 | sn15 ORO | 71.9 | 27.50 | 45.78 | cpu-small | 83 | 92% |
-| 6 | sn67 Harnyx | 71.5 | 18.86 | 167 | cpu-small | 160 | 12% |
-| 7 | sn56 Gradients | 69.9 | 710 | 1,121 | rtx4090* | 5 | 73% |
-| 8 | sn91 cascade | 69.8 | 706 | 2,848 | rtx4090* | 5 | 52% |
-| 9 | sn1 Apex | 68.8 | 513 | 1,141 | rtx4090* | 5 | 55% |
-| 10 | sn96 Verathos | 68 | 20.57 | 265 | rtx4090 | 97 | 41% |
-| 11 | sn26 Perturb | 67.6 | 18.86 | 269 | rtx3060 | 10 | 70% |
-| 12 | sn11 TrajectoryRL | 67.5 | 4,768 | 4,768 = | cpu-small | 1 | 100% |
-| 13 | sn124 Swarm | 66.9 | 301 | 2,620 | rtx4090* | 21 | 30% |
-| 14 | sn38 ChronoLLM | 66.6 | 119 | 1,618 | cpu-small | 10 | 52% |
-| 15 | sn108 Prometheon | 65.4 | 187 | 191 | rtx4090* | 5 | 66% |
-| 16 | sn107 Minos | 65.2 | 147 | 43,617 | cpu-small | 20 | 90% |
-| 17 | sn85 Vidaio | 64.6 | 150 | 426 | rtx4090* | 13 | 42% |
-| 18 | sn60 Bitsec.ai | 64.1 | 1,712 | 1,712 = | cpu-small | 2 | 50% |
+| 5 | sn15 ORO | 71.9 | 27.06 | 45.05 | cpu-small | 83 | 92% |
+| 6 | sn67 Harnyx | 71.5 | 18.72 | 166 | cpu-small | 160 | 12% |
+| 7 | sn56 Gradients | 69.9 | 710 | 1,120 | rtx4090* | 5 | 73% |
+| 8 | sn91 cascade | 69.8 | 705 | 2,846 | rtx4090* | 5 | 52% |
+| 9 | sn1 Apex | 68.8 | 511 | 1,135 | rtx4090* | 5 | 55% |
+| 10 | sn96 Verathos | 68 | 20.48 | 264 | rtx4090 | 97 | 41% |
+| 11 | sn26 Perturb | 67.6 | 18.84 | 268 | rtx3060 | 10 | 70% |
+| 12 | sn11 TrajectoryRL | 67.5 | 4,765 | 4,765 = | cpu-small | 1 | 100% |
+| 13 | sn124 Swarm | 66.9 | 303 | 2,631 | rtx4090* | 21 | 30% |
+| 14 | sn38 ChronoLLM | 66.6 | 118 | 1,615 | cpu-small | 10 | 52% |
+| 15 | sn108 Prometheon | 65.4 | 188 | 352 | rtx4090* | 6 | 66% |
+| 16 | sn107 Minos | 65.2 | 147 | 43,637 | cpu-small | 20 | 90% |
+| 17 | sn85 Vidaio | 64.6 | 149 | 425 | rtx4090* | 13 | 42% |
+| 18 | sn60 Bitsec.ai | 64.1 | 1,708 | 1,708 = | cpu-small | 2 | 50% |
 | 19 | sn81 Reliquary | 64 | 125 | 203 | rtx4090* | 38 | 5% |
 | 20 | sn51 lium.io | 61.1 | 59.92 | 2,166 | rtx4090* | 53 | 72% |
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-24T06:03 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-08-24T04:14 | sn25 | RELEASE | sn25 released v2026.8.23-1027441210 |
 | 2026-08-24T04:14 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2742: stop transient checks from clea |
 | 2026-08-24T03:13 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: tee_miner: withdraw on a health stall tha |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-23T12:59 | sn90 | RELEASE | sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs |
 | 2026-08-23T12:59 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: chore(validator): release v1.1.6 |
 | 2026-08-23T12:59 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Remove obsolete repo verify flag from do |
-| 2026-08-23T12:00 | sn14 | RELEASE | sn14 released msa-block-score-control-20260823: fix: open paged MSA de |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T05:10:50Z, block 8912623
+# ALARMS - generated 2026-08-24T06:02:52Z, block 8912883
 
-window: first_seen in [2026-08-24T03:56:24Z, 2026-08-24T05:11:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T04:48:24Z, 2026-08-24T06:03:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | P1 | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
-| `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | P1 | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
+| `sn67:scoring_commit:2026-08-24T05:16:58Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T06:03:24Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0 |
 
 ### detail
 
-- **`sn25:release:v2026.8.23-1027441210`** - sn25 released v2026.8.23-1027441210
-  - published 2026-08-24T04:05:40Z (was v2026.8.22-1026600400)
-- **`sn51:scoring_commit:2026-08-24T04:10:40Z`** - sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244
+- **`sn67:scoring_commit:2026-08-24T05:16:58Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn2:burn_drop:0.823` | 2 | BURN_DROP | 2026-08-17T06:00:04Z | sn2 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn121:burn_drop:0.620` | 121 | BURN_DROP | 2026-08-17T15:52:42Z | sn121 burn fell 1.000 -> 0.620 - miners can earn again |
 | `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
@@ -37,7 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
-| `sn71:scoring_commit:2026-08-17T00:26:35Z` | 71 | SCORING_COMMIT | 2026-08-17T06:00:04Z | sn71 commit touches scoring: Refresh provider failures during recovery scoring |
 | `sn51:release:executor-v1.120` | 51 | RELEASE | 2026-08-17T08:07:06Z | sn51 released executor-v1.120 |
 | `sn75:scoring_commit:2026-08-16T20:57:11Z` | 75 | SCORING_COMMIT | 2026-08-17T08:07:06Z | sn75 commit touches scoring: feat(compute-scoring): root-settable dedicated key for vali submission |
 | `sn85:scoring_commit:2026-08-17T08:37:37Z` | 85 | SCORING_COMMIT | 2026-08-17T08:59:45Z | sn85 commit touches scoring: reinvite miners rejected with flag INVITATION_DECLINED in comp enroll… |
@@ -253,6 +248,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-23T17:55:32Z` | 71 | SCORING_COMMIT | 2026-08-23T23:01:52Z | sn71 commit touches scoring: test: verify pinned model runtime in CI |
 | `sn53:scoring_commit:2026-08-24T00:47:31Z` | 53 | SCORING_COMMIT | 2026-08-24T01:55:18Z | sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat |
 | `sn53:scoring_commit:2026-08-24T02:43:24Z` | 53 | SCORING_COMMIT | 2026-08-24T03:13:47Z | sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse… |
+| `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
+| `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
 | `sn123:readme_task_diff:6532d2da519e8960` | 123 | README_TASK_DIFF | 2026-08-17T17:55:33Z | sn123 README task/scoring sections changed |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |

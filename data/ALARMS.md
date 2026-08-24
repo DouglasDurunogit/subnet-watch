@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T03:13:19Z, block 8912035
+# ALARMS - generated 2026-08-24T04:13:31Z, block 8912336
 
-window: first_seen in [2026-08-24T01:58:47Z, 2026-08-24T03:13:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T02:59:02Z, 2026-08-24T04:14:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,10 +10,16 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn53:scoring_commit:2026-08-24T02:43:24Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T03:13:47Z | sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse… |
+| `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | P1 | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
+| `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | P1 | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
 
 ### detail
 
 - **`sn53:scoring_commit:2026-08-24T02:43:24Z`** - sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.23-1027441210`** - sn25 released v2026.8.23-1027441210
+  - published 2026-08-24T04:05:40Z (was v2026.8.22-1026600400)
+- **`sn51:scoring_commit:2026-08-24T04:10:40Z`** - sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

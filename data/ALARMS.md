@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T11:39:23Z, block 8914566
+# ALARMS - generated 2026-08-24T12:15:59Z, block 8914749
 
-window: first_seen in [2026-08-24T10:24:51Z, 2026-08-24T11:39:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T11:01:34Z, 2026-08-24T12:16:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -12,6 +12,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn3:scoring_commit:2026-08-24T07:53:43Z` | 3 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn3 commit touches scoring: Update evaluation dataset size to 2000 for finewebedu |
 | `sn53:scoring_commit:2026-08-24T10:56:25Z` | 53 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took … |
 | `sn67:scoring_commit:2026-08-24T09:35:52Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T11:01:40Z | sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374) |
+| `sn67:scoring_commit:2026-08-24T11:27:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-24T12:16:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4 |
 
 ### detail
 
@@ -20,6 +21,8 @@ already reported in an earlier window and must not be re-alarmed.
 - **`sn53:scoring_commit:2026-08-24T10:56:25Z`** - sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn67:scoring_commit:2026-08-24T09:35:52Z`** - sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-24T11:27:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)

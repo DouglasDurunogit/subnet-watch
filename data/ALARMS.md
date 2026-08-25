@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T17:43:25Z, block 8923586
+# ALARMS - generated 2026-08-25T18:16:59Z, block 8923754
 
-window: first_seen in [2026-08-25T16:29:01Z, 2026-08-25T17:44:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T17:02:26Z, 2026-08-25T18:17:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,7 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn34:scoring_commit:2026-08-25T16:39:00Z` | 34 | SCORING_COMMIT | P1 | 2026-08-25T17:05:10Z | sn34 commit touches scoring: docs: align discriminator taxonomy and scoring (#430) |
 | `sn92:scoring_commit:2026-08-25T17:00:40Z` | 92 | SCORING_COMMIT | P1 | 2026-08-25T17:05:10Z | sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation |
+| `sn15:release:v1.2.8` | 15 | RELEASE | P1 | 2026-08-25T18:17:26Z | sn15 released v1.2.8 |
 
 ### detail
 
@@ -18,6 +19,8 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-25T17:00:40Z`** - sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:release:v1.2.8`** - sn15 released v1.2.8
+  - published 2026-08-25T17:59:44Z (was v1.2.7)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn62:scoring_commit:2026-08-18T17:56:49Z` | 62 | SCORING_COMMIT | 2026-08-18T18:13:46Z | sn62 commit touches scoring: Merge pull request #480 from ridgesai/update/add-testnet-validator |
 | `sn15:scoring_commit:2026-08-18T18:29:41Z` | 15 | SCORING_COMMIT | 2026-08-18T19:07:17Z | sn15 commit touches scoring: docs(miner-guide): note that find_product q matches values, not keys … |
 | `sn75:scoring_commit:2026-08-18T19:33:43Z` | 75 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn75 commit touches scoring: Merge pull request #51 from thenervelab/feat/pay-compute-miners |
 | `sn108:scoring_commit:2026-08-18T19:13:55Z` | 108 | SCORING_COMMIT | 2026-08-18T19:40:34Z | sn108 commit touches scoring: docs(validator): clarify CHUTES_API_KEY is the owner-issued shared key |

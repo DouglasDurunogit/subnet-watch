@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T19:55:03Z, block 8924244
+# ALARMS - generated 2026-08-25T20:41:19Z, block 8924475
 
-window: first_seen in [2026-08-25T18:40:29Z, 2026-08-25T19:55:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T19:26:44Z, 2026-08-25T20:41:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,17 +10,19 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn28:release:v0.4.10-dev` | 28 | RELEASE | P1 | 2026-08-25T19:55:29Z | sn28 released v0.4.10-dev |
+| `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 
 ### detail
 
 - **`sn28:release:v0.4.10-dev`** - sn28 released v0.4.10-dev
   - published 2026-08-25T19:40:15Z (was v0.4.9)
+- **`sn112:scoring_commit:2026-08-25T20:30:12Z`** - sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
@@ -33,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn111:scoring_commit:2026-08-18T20:20:14Z` | 111 | SCORING_COMMIT | 2026-08-18T20:36:36Z | sn111 commit touches scoring: feat(scoring): gate Silver coverage on evidence support |
-| `sn120:scoring_commit:2026-08-18T20:00:48Z` | 120 | SCORING_COMMIT | 2026-08-18T20:36:36Z | sn120 commit touches scoring: Sync Reason v4 (wvk=7) into score, contract, website, and docs. |
 | `sn81:scoring_commit:2026-08-18T20:37:01Z` | 81 | SCORING_COMMIT | 2026-08-18T21:04:08Z | sn81 commit touches scoring: fix(weights): burn to this validator's own uid, not a hardcoded 0 |
 | `sn71:scoring_commit:2026-08-18T21:09:08Z` | 71 | SCORING_COMMIT | 2026-08-18T21:35:40Z | sn71 commit touches scoring: Verify restored parity database contract |
 | `sn28:release:v0.4.6-dev` | 28 | RELEASE | 2026-08-18T22:37:17Z | sn28 released v0.4.6-dev |

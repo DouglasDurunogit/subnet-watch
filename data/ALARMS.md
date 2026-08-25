@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T16:07:50Z, block 8923108
+# ALARMS - generated 2026-08-25T17:04:35Z, block 8923392
 
-window: first_seen in [2026-08-25T14:53:24Z, 2026-08-25T16:08:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T15:50:10Z, 2026-08-25T17:05:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.25-1028682810` | 25 | RELEASE | P1 | 2026-08-25T15:14:33Z | sn25 released v2026.8.25-1028682810 |
-| `sn108:scoring_commit:2026-08-25T15:02:35Z` | 108 | SCORING_COMMIT | P1 | 2026-08-25T15:14:33Z | sn108 commit touches scoring: fix(evaluation): recover from out of memory instead of compounding it |
 | `sn23:scoring_commit:2026-08-25T15:33:12Z` | 23 | SCORING_COMMIT | P1 | 2026-08-25T16:08:24Z | sn23 commit touches scoring: Merge pull request #49 from TrishoolAI/feat/challenge-creation |
 | `sn92:scoring_commit:2026-08-25T15:53:19Z` | 92 | SCORING_COMMIT | P1 | 2026-08-25T16:08:24Z | sn92 commit touches scoring: Score entity extraction with dataset-level micro-F1 |
 | `sn108:scoring_commit:2026-08-25T15:20:19Z` | 108 | SCORING_COMMIT | P1 | 2026-08-25T16:08:24Z | sn108 commit touches scoring: docs(scoring): drop the note about asserted dataset counts |
+| `sn34:scoring_commit:2026-08-25T16:39:00Z` | 34 | SCORING_COMMIT | P1 | 2026-08-25T17:05:10Z | sn34 commit touches scoring: docs: align discriminator taxonomy and scoring (#430) |
+| `sn92:scoring_commit:2026-08-25T17:00:40Z` | 92 | SCORING_COMMIT | P1 | 2026-08-25T17:05:10Z | sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation |
 
 ### detail
 
-- **`sn25:release:v2026.8.25-1028682810`** - sn25 released v2026.8.25-1028682810
-  - published 2026-08-25T14:37:08Z (was v2026.8.24-1027859650)
-- **`sn108:scoring_commit:2026-08-25T15:02:35Z`** - sn108 commit touches scoring: fix(evaluation): recover from out of memory instead of compounding it
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn23:scoring_commit:2026-08-25T15:33:12Z`** - sn23 commit touches scoring: Merge pull request #49 from TrishoolAI/feat/challenge-creation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn92:scoring_commit:2026-08-25T15:53:19Z`** - sn92 commit touches scoring: Score entity extraction with dataset-level micro-F1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-25T15:20:19Z`** - sn108 commit touches scoring: docs(scoring): drop the note about asserted dataset counts
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn34:scoring_commit:2026-08-25T16:39:00Z`** - sn34 commit touches scoring: docs: align discriminator taxonomy and scoring (#430)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-25T17:00:40Z`** - sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,10 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn96:release:Verathos v0.1.41 - Bounded Replay and Ru` | 96 | RELEASE | 2026-08-18T16:12:17Z | sn96 released Verathos v0.1.41 - Bounded Replay and Runtime Stability |
-| `sn96:scoring_commit:2026-08-18T12:39:12Z` | 96 | SCORING_COMMIT | 2026-08-18T16:12:17Z | sn96 commit touches scoring: fix: prevent validator-created audit overlap |
-| `sn21:scoring_commit:2026-08-18T16:03:58Z` | 21 | SCORING_COMMIT | 2026-08-18T16:57:50Z | sn21 commit touches scoring: validator: daily-stream override was silently dropping every miner (s… |
-| `sn92:scoring_commit:2026-08-18T12:27:47Z` | 92 | SCORING_COMMIT | 2026-08-18T16:57:50Z | sn92 commit touches scoring: Correct the loopback sample output in the validator guide |
 | `sn21:scoring_commit:2026-08-18T17:28:33Z` | 21 | SCORING_COMMIT | 2026-08-18T17:39:02Z | sn21 commit touches scoring: validator: daily-stream API path crashed on unbound _vol after the ss… |
 | `sn25:release:v2026.8.17-1021635350` | 25 | RELEASE | 2026-08-18T17:39:02Z | sn25 released v2026.8.17-1021635350 |
 | `sn25:scoring_commit:2026-08-04T21:03:12Z` | 25 | SCORING_COMMIT | 2026-08-18T17:39:02Z | sn25 commit touches scoring: Merge pull request #3 from Ryanmello07/fix/windows-miner-exe-suffix-u… |
@@ -259,7 +255,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
 | `sn92:scoring_commit:2026-08-25T12:18:18Z` | 92 | SCORING_COMMIT | 2026-08-25T13:08:22Z | sn92 commit touches scoring: Note the operator-driven submission window in miner timing |
 | `sn102:release:v0.5.2 — background-eval resume + valida` | 102 | RELEASE | 2026-08-25T14:13:01Z | sn102 released v0.5.2 — background-eval resume + validator memory fixes |
-| `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
+| `sn25:release:v2026.8.25-1028682810` | 25 | RELEASE | 2026-08-25T15:14:33Z | sn25 released v2026.8.25-1028682810 |
+| `sn108:scoring_commit:2026-08-25T15:02:35Z` | 108 | SCORING_COMMIT | 2026-08-25T15:14:33Z | sn108 commit touches scoring: fix(evaluation): recover from out of memory instead of compounding it |
 | `sn25:readme_task_diff:1a67cd5991549ed6` | 25 | README_TASK_DIFF | 2026-08-18T17:39:02Z | sn25 README task/scoring sections changed |
 | `sn108:readme_task_diff:440d4dcceb14f6b4` | 108 | README_TASK_DIFF | 2026-08-18T17:39:02Z | sn108 README task/scoring sections changed |
 | `sn108:readme_task_diff:fa8dc13fe8c76401` | 108 | README_TASK_DIFF | 2026-08-18T19:07:17Z | sn108 README task/scoring sections changed |

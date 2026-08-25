@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T06:19:48Z, block 8920168
+# ALARMS - generated 2026-08-25T07:24:50Z, block 8920493
 
-window: first_seen in [2026-08-25T05:05:24Z, 2026-08-25T06:20:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T06:10:24Z, 2026-08-25T07:25:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -26,8 +26,6 @@ _none_
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn85:scoring_commit:2026-08-18T06:57:35Z` | 85 | SCORING_COMMIT | 2026-08-18T07:14:18Z | sn85 commit touches scoring: debug VBR scoring in compression competitions (#196) |
-| `sn89:scoring_commit:2026-08-18T07:04:57Z` | 89 | SCORING_COMMIT | 2026-08-18T07:14:18Z | sn89 commit touches scoring: hf board: keep a re-rolled miner's retired hotkey attributed to its o… |
 | `sn51:scoring_commit:2026-08-18T08:26:35Z` | 51 | SCORING_COMMIT | 2026-08-18T08:51:13Z | sn51 commit touches scoring: DAH-2702: verify GPU persistence mode after -pm 1 in the power cap (#… |
 | `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
 | `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |

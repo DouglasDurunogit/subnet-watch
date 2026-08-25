@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-25T06:19:48Z · block 8920168 · run_status **ok**_
+_snapshot 2026-08-25T07:24:50Z · block 8920493 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -30,10 +30,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 8 | `████` |
+| 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 40 | `███████████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 79.7 | 148 | 221 | cpu-small | 13 | 20% |
-| 2 | sn3 Teutonic | 76 | 4,416 | 4,416 = | rtx4090* | 5 | 20% |
-| 3 | sn62 Ridges | 72.5 | 1,537 | 3,141 | rtx4090* | 6 | 39% |
-| 4 | sn38 ChronoLLM | 72.5 | 610 | 3,579 | cpu-small | 6 | 53% |
-| 5 | sn102 ConnitoAI | 72.2 | 1,410 | 2,544 | rtx4090* | 6 | 34% |
-| 6 | sn23 Trishool | 72.2 | 558 | 558 = | cpu-small | 2 | 80% |
-| 7 | sn67 Harnyx | 71.9 | 20.48 | 469 | cpu-small | 134 | 12% |
-| 8 | sn15 ORO | 71.5 | 25.82 | 43.70 | cpu-small | 84 | 92% |
-| 9 | sn91 cascade | 68.9 | 540 | 1,455 | rtx4090* | 5 | 52% |
-| 10 | sn26 Perturb | 67.8 | 19.65 | 278 | rtx3060 | 10 | 70% |
-| 11 | sn96 Verathos | 67.6 | 18.73 | 200 | rtx4090 | 97 | 40% |
-| 12 | sn21 AdTAO | 66.8 | 6.57 | 604 | cpu-small | 16 | 45% |
-| 13 | sn1 Apex | 66.6 | 267 | 2,169 | rtx4090* | 4 | 52% |
-| 14 | sn124 Swarm | 66 | 233 | 2,038 | rtx4090* | 26 | 23% |
-| 15 | sn92 MicroTensor | 65.6 | 77.85 | 126 | cpu-small | 3 | 95% |
-| 16 | sn107 Minos | 65.2 | 150 | 43,299 | cpu-small | 20 | 90% |
-| 17 | sn85 Vidaio | 64.6 | 145 | 444 | rtx4090* | 13 | 42% |
-| 18 | sn81 Reliquary | 63.7 | 114 | 416 | rtx4090* | 33 | 9% |
-| 19 | sn108 Prometheon | 63.6 | 110 | 124 | rtx4090* | 9 | 66% |
-| 20 | sn51 lium.io | 60.5 | 52.64 | 2,806 | rtx4090* | 54 | 77% |
+| 1 | sn76 Phylax | 79.6 | 144 | 215 | cpu-small | 13 | 20% |
+| 2 | sn3 Teutonic | 75.9 | 4,285 | 4,285 = | rtx4090* | 5 | 20% |
+| 3 | sn62 Ridges | 72.4 | 1,515 | 3,097 | rtx4090* | 6 | 39% |
+| 4 | sn38 ChronoLLM | 72.4 | 599 | 3,517 | cpu-small | 6 | 53% |
+| 5 | sn23 Trishool | 72.2 | 549 | 549 = | cpu-small | 2 | 80% |
+| 6 | sn67 Harnyx | 71.8 | 19.76 | 472 | cpu-small | 136 | 12% |
+| 7 | sn15 ORO | 71.1 | 24.36 | 22,283 | cpu-small | 90 | 91% |
+| 8 | sn102 ConnitoAI | 70.1 | 761 | 2,059 | rtx4090* | 7 | 28% |
+| 9 | sn91 cascade | 68.9 | 533 | 1,434 | rtx4090* | 5 | 52% |
+| 10 | sn26 Perturb | 67.7 | 19.32 | 274 | rtx3060 | 10 | 70% |
+| 11 | sn96 Verathos | 67.5 | 18.47 | 194 | rtx4090 | 97 | 40% |
+| 12 | sn21 AdTAO | 66.7 | 6.46 | 595 | cpu-small | 16 | 45% |
+| 13 | sn1 Apex | 66.5 | 262 | 2,130 | rtx4090* | 4 | 52% |
+| 14 | sn124 Swarm | 65.9 | 232 | 2,022 | rtx4090* | 26 | 23% |
+| 15 | sn92 MicroTensor | 65.5 | 76.69 | 124 | cpu-small | 3 | 95% |
+| 16 | sn107 Minos | 65.3 | 160 | 42,372 | cpu-small | 19 | 90% |
+| 17 | sn81 Reliquary | 63.9 | 120 | 384 | rtx4090* | 34 | 8% |
+| 18 | sn108 Prometheon | 63.5 | 108 | 122 | rtx4090* | 9 | 66% |
+| 19 | sn51 lium.io | 60.5 | 51.78 | 2,767 | rtx4090* | 54 | 77% |
+| 20 | sn53 engy | 60.1 | 37.50 | 319 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 25 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 16 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 

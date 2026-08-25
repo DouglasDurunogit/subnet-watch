@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T01:48:51Z, block 8918813
+# ALARMS - generated 2026-08-25T03:09:17Z, block 8919215
 
-window: first_seen in [2026-08-25T00:34:22Z, 2026-08-25T01:49:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T01:54:56Z, 2026-08-25T03:09:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-08-25T00:12:11Z` | 15 | SCORING_COMMIT | P1 | 2026-08-25T01:49:22Z | sn15 commit touches scoring: revert: guarded title-corroboration was unsafe on legacy rewards (ORO… |
+| `sn71:scoring_commit:2026-08-25T02:00:09Z` | 71 | SCORING_COMMIT | P1 | 2026-08-25T03:09:56Z | sn71 commit touches scoring: Merge pull request #109 from leadpoet/codex/full-validator-indent-202… |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-08-25T00:12:11Z`** - sn15 commit touches scoring: revert: guarded title-corroboration was unsafe on legacy rewards (ORO…
+- **`sn71:scoring_commit:2026-08-25T02:00:09Z`** - sn71 commit touches scoring: Merge pull request #109 from leadpoet/codex/full-validator-indent-202…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,7 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
 | `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
 | `sn91:scoring_commit:2026-08-15T10:55:48Z` | 91 | SCORING_COMMIT | 2026-08-18T04:21:04Z | sn91 commit touches scoring: audit fixes + miner CLI: warm-start init visibility in `cascade heat` |
 | `sn85:scoring_commit:2026-08-18T06:57:35Z` | 85 | SCORING_COMMIT | 2026-08-18T07:14:18Z | sn85 commit touches scoring: debug VBR scoring in compression competitions (#196) |
@@ -257,6 +256,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 | `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
 | `sn66:scoring_commit:2026-08-24T22:51:29Z` | 66 | SCORING_COMMIT | 2026-08-24T23:04:58Z | sn66 commit touches scoring: Normalize verifier image source permissions |
+| `sn15:scoring_commit:2026-08-25T00:12:11Z` | 15 | SCORING_COMMIT | 2026-08-25T01:49:22Z | sn15 commit touches scoring: revert: guarded title-corroboration was unsafe on legacy rewards (ORO… |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T21:52:39Z, block 8924832
+# ALARMS - generated 2026-08-25T22:40:12Z, block 8925070
 
-window: first_seen in [2026-08-25T20:38:06Z, 2026-08-25T21:53:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T21:25:44Z, 2026-08-25T22:40:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,13 +9,10 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 | `sn28:release:v0.4.10` | 28 | RELEASE | P1 | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
 
 ### detail
 
-- **`sn112:scoring_commit:2026-08-25T20:30:12Z`** - sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn28:release:v0.4.10`** - sn28 released v0.4.10
   - published 2026-08-25T21:33:46Z (was v0.4.10-dev)
 
@@ -35,9 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn28:release:v0.4.6-dev` | 28 | RELEASE | 2026-08-18T22:37:17Z | sn28 released v0.4.6-dev |
-| `sn28:scoring_commit:2026-08-18T22:12:25Z` | 28 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn28 commit touches scoring: Release gm-miner v0.4.6-dev |
-| `sn62:scoring_commit:2026-08-18T20:59:53Z` | 62 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn62 commit touches scoring: pass pre_screening_policy_version and remove from validator |
 | `sn62:release:v0.2.9` | 62 | RELEASE | 2026-08-18T23:03:26Z | sn62 released v0.2.9 |
 | `sn46:scoring_commit:2026-08-18T23:50:25Z` | 46 | SCORING_COMMIT | 2026-08-19T00:01:39Z | sn46 commit touches scoring: test: freeze validator report contract |
 | `sn46:scoring_commit:2026-08-19T01:46:55Z` | 46 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn46 commit touches scoring: Merge pull request #18 from instant-subnet/dan/p4-5-run-once-validator |
@@ -243,7 +237,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-25T17:00:40Z` | 92 | SCORING_COMMIT | 2026-08-25T17:05:10Z | sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation |
 | `sn15:release:v1.2.8` | 15 | RELEASE | 2026-08-25T18:17:26Z | sn15 released v1.2.8 |
 | `sn28:release:v0.4.10-dev` | 28 | RELEASE | 2026-08-25T19:55:29Z | sn28 released v0.4.10-dev |
-| `sn28:readme_task_diff:bea04ee7e3aadb3b` | 28 | README_TASK_DIFF | 2026-08-18T22:37:17Z | sn28 README task/scoring sections changed |
+| `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

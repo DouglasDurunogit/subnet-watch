@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T10:45:59Z, block 8921499
+# ALARMS - generated 2026-08-25T11:13:40Z, block 8921637
 
-window: first_seen in [2026-08-25T09:31:33Z, 2026-08-25T10:46:33Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T09:59:15Z, 2026-08-25T11:14:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -11,6 +11,8 @@ already reported in an earlier window and must not be re-alarmed.
 |---|---|---|---|---|---|
 | `sn111:scoring_commit:2026-08-25T09:49:43Z` | 111 | SCORING_COMMIT | P1 | 2026-08-25T10:00:26Z | sn111 commit touches scoring: feat(setup): streamline public validator deployment |
 | `sn112:scoring_commit:2026-08-24T07:39:41Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T10:00:26Z | sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again… |
+| `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | P1 | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
+| `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | P2 | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
 
 ### detail
 
@@ -18,6 +20,10 @@ already reported in an earlier window and must not be re-alarmed.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn112:scoring_commit:2026-08-24T07:39:41Z`** - sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn10:scoring_commit:2026-08-25T10:50:13Z`** - sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:00bbd31d47cb0fe2`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,8 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
-| `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
 | `sn81:scoring_commit:2026-08-18T07:52:08Z` | 81 | SCORING_COMMIT | 2026-08-18T13:55:30Z | sn81 commit touches scoring: test: lock v4 canonical reward flow |
 | `sn108:scoring_commit:2026-08-18T13:35:17Z` | 108 | SCORING_COMMIT | 2026-08-18T13:55:30Z | sn108 commit touches scoring: Docs: the eligible-miner gate is 50 active members, not 500 |
 | `sn1:release:v4.3.3` | 1 | RELEASE | 2026-08-18T14:48:11Z | sn1 released v4.3.3 |

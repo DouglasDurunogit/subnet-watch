@@ -30,26 +30,26 @@
 </style>
 <rect class="surface" width="760" height="268" rx="8"/>
 <text class="ink t-title" x="20" y="28">How many subnets survive each filter</text>
-<text class="muted t-sub" x="20" y="46">Of 128 subnets, 17 clear every gate with hardware evidence to back the margin.</text>
+<text class="muted t-sub" x="20" y="46">Of 128 subnets, 18 clear every gate with hardware evidence to back the margin.</text>
 <text class="ink2 t-lab" x="166" y="91" text-anchor="end">All subnets</text>
 <path class="deemph" d="M176.0,74.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V96.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
 <path class="accent" d="M176.0,74.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V96.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
 <text class="ink t-val" x="674" y="91">128</text>
 <text class="ink2 t-lab" x="166" y="127" text-anchor="end">Not 100% burned</text>
 <path class="deemph" d="M176.0,110.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,110.0 H507.5 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="127">88</text>
+<path class="accent" d="M176.0,110.0 H511.3 a4.0,4.0 0 0 1 4.0,4.0 V132.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="127">89</text>
 <text class="ink2 t-lab" x="166" y="163" text-anchor="end">Registration open</text>
 <path class="deemph" d="M176.0,146.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,146.0 H507.5 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="163">88</text>
+<path class="accent" d="M176.0,146.0 H511.3 a4.0,4.0 0 0 1 4.0,4.0 V168.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="163">89</text>
 <text class="ink2 t-lab" x="166" y="199" text-anchor="end">Positive margin</text>
 <path class="deemph" d="M176.0,182.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V204.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,182.0 H370.2 a4.0,4.0 0 0 1 4.0,4.0 V204.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="199">52</text>
+<path class="accent" d="M176.0,182.0 H377.9 a4.0,4.0 0 0 1 4.0,4.0 V204.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="199">54</text>
 <text class="ink2 t-lab" x="166" y="235" text-anchor="end">+ hardware evidence</text>
 <path class="deemph" d="M176.0,218.0 H660.0 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<path class="accent" d="M176.0,218.0 H236.8 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
-<text class="ink t-val" x="674" y="235">17</text>
+<path class="accent" d="M176.0,218.0 H240.6 a4.0,4.0 0 0 1 4.0,4.0 V240.0 a4.0,4.0 0 0 1 -4.0,4.0 H176.0 Z"/>
+<text class="ink t-val" x="674" y="235">18</text>
 <text class="muted t-tick" x="20" y="254">"Positive margin" already nets off the cheapest machine that meets the requirement.</text>
 </svg>

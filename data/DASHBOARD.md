@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-25T00:01:28Z · block 8918276 · run_status **ok**_
+_snapshot 2026-08-25T01:48:51Z · block 8918813 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 51 of 128
+# 49 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,9 +15,9 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 89 | `miner_burn` < 0.99 |
-| Ranked | 89 | passed every gate |
-| **Positive margin** | **51** | income beats machine cost |
+| Pays miners at all | 87 | `miner_burn` < 0.99 |
+| Ranked | 87 | passed every gate |
+| **Positive margin** | **49** | income beats machine cost |
 | New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
+| 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 39 | `██████████████████` |
+| 0.4–0.6 | 4 | `██` |
+| 0.6–0.8 | 10 | `█████` |
+| 0.8–0.99 | 4 | `██` |
+| ≥0.99 dead | 41 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 79.6 | 5,067 | 5,067 = | cpu-small | 1 | 100% |
-| 2 | sn76 Phylax | 79.3 | 134 | 200 | cpu-small | 13 | 20% |
-| 3 | sn3 Teutonic | 76 | 4,400 | 4,400 = | rtx4090* | 5 | 20% |
-| 4 | sn38 ChronoLLM | 72.5 | 625 | 3,670 | cpu-small | 6 | 53% |
-| 5 | sn62 Ridges | 72.4 | 1,518 | 3,103 | rtx4090* | 6 | 39% |
-| 6 | sn15 ORO | 71.8 | 26.74 | 45.23 | cpu-small | 82 | 92% |
-| 7 | sn67 Harnyx | 71.7 | 19.19 | 165 | cpu-small | 178 | 4% |
-| 8 | sn102 ConnitoAI | 69.4 | 628 | 2,842 | rtx4090* | 7 | 39% |
-| 9 | sn91 cascade | 68.9 | 536 | 1,442 | rtx4090* | 5 | 52% |
-| 10 | sn96 Verathos | 68.1 | 21.01 | 213 | rtx4090 | 93 | 40% |
-| 11 | sn21 AdTAO | 67.8 | 8.31 | 993 | cpu-small | 16 | 37% |
-| 12 | sn26 Perturb | 67.7 | 19.28 | 274 | rtx3060 | 10 | 70% |
-| 13 | sn1 Apex | 66.3 | 243 | 2,178 | rtx4090* | 4 | 51% |
-| 14 | sn124 Swarm | 66.1 | 239 | 2,064 | rtx4090* | 26 | 24% |
-| 15 | sn107 Minos | 65.4 | 152 | 43,944 | cpu-small | 20 | 90% |
-| 16 | sn92 MicroTensor | 65.4 | 74.09 | 120 | cpu-small | 3 | 95% |
-| 17 | sn85 Vidaio | 64.7 | 153 | 436 | rtx4090* | 13 | 42% |
-| 18 | sn81 Reliquary | 63.9 | 119 | 358 | rtx4090* | 35 | 8% |
-| 19 | sn108 Prometheon | 63.4 | 104 | 120 | rtx4090* | 9 | 66% |
-| 20 | sn51 lium.io | 60.1 | 46.93 | 2,555 | rtx4090* | 53 | 77% |
+| 1 | sn76 Phylax | 79.3 | 134 | 199 | cpu-small | 13 | 20% |
+| 2 | sn3 Teutonic | 76 | 4,372 | 4,372 = | rtx4090* | 5 | 20% |
+| 3 | sn62 Ridges | 72.4 | 1,508 | 3,082 | rtx4090* | 6 | 39% |
+| 4 | sn38 ChronoLLM | 72.3 | 584 | 3,428 | cpu-small | 6 | 53% |
+| 5 | sn67 Harnyx | 71.7 | 19.18 | 165 | cpu-small | 175 | 4% |
+| 6 | sn15 ORO | 71.4 | 25.46 | 43.09 | cpu-small | 82 | 92% |
+| 7 | sn102 ConnitoAI | 69.4 | 627 | 2,709 | rtx4090* | 7 | 38% |
+| 8 | sn91 cascade | 68.9 | 532 | 1,433 | rtx4090* | 5 | 52% |
+| 9 | sn26 Perturb | 67.7 | 19.13 | 272 | rtx3060 | 10 | 70% |
+| 10 | sn96 Verathos | 67.6 | 18.56 | 203 | rtx4090 | 94 | 40% |
+| 11 | sn124 Swarm | 66 | 235 | 2,055 | rtx4090* | 26 | 24% |
+| 12 | sn107 Minos | 65.7 | 164 | 42,827 | cpu-small | 19 | 90% |
+| 13 | sn92 MicroTensor | 65.4 | 73.33 | 118 | cpu-small | 3 | 95% |
+| 14 | sn21 AdTAO | 65.3 | 5.15 | 492 | cpu-small | 16 | 37% |
+| 15 | sn85 Vidaio | 64.9 | 160 | 433 | rtx4090* | 13 | 42% |
+| 16 | sn81 Reliquary | 63.8 | 116 | 340 | rtx4090* | 34 | 7% |
+| 17 | sn108 Prometheon | 63.3 | 102 | 118 | rtx4090* | 9 | 66% |
+| 18 | sn51 lium.io | 60.1 | 46.59 | 2,730 | rtx4090* | 53 | 75% |
+| 19 | sn53 engy | 60 | 37.06 | 316 | rtx4090 | 144 | 63% |
+| 20 | sn28 gm | 57.5 | 19.14 | 2,562 | rtx4090* | 58 | 21% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 25 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 17 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-25T01:49 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: revert: guarded title-corroboration was u |
 | 2026-08-24T23:04 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Normalize verifier image source permissio |
 | 2026-08-24T22:40 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
 | 2026-08-24T22:40 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: ♻️ refactor(validator): drop the redunda |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-24T17:42 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Rename the office challenge family to cf |
 | 2026-08-24T17:42 | sn124 | README_TASK_DIFF | sn124 README task/scoring sections changed |
 | 2026-08-24T16:53 | sn11 | RELEASE | sn11 released v0.6.34 |
-| 2026-08-24T16:53 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs(rewards): leaderboard vs chain timin |
 
 ---
 

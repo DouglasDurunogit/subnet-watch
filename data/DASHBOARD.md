@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-25T04:07:58Z · block 8919509 · run_status **ok**_
+_snapshot 2026-08-25T05:04:13Z · block 8919790 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 51 of 128
+# 52 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,7 +17,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 88 | `miner_burn` < 0.99 |
 | Ranked | 88 | passed every gate |
-| **Positive margin** | **51** | income beats machine cost |
+| **Positive margin** | **52** | income beats machine cost |
 | New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 79.4 | 138 | 206 | cpu-small | 13 | 20% |
-| 2 | sn3 Teutonic | 76 | 4,405 | 4,405 = | rtx4090* | 5 | 20% |
-| 3 | sn62 Ridges | 72.4 | 1,511 | 3,089 | rtx4090* | 6 | 39% |
-| 4 | sn38 ChronoLLM | 72.4 | 594 | 3,490 | cpu-small | 6 | 53% |
-| 5 | sn23 Trishool | 72.2 | 548 | 548 = | cpu-small | 2 | 80% |
-| 6 | sn67 Harnyx | 71.7 | 19.41 | 167 | cpu-small | 173 | 4% |
-| 7 | sn15 ORO | 71.5 | 24.95 | 42.57 | cpu-small | 83 | 92% |
-| 8 | sn91 cascade | 68.9 | 532 | 1,433 | rtx4090* | 5 | 52% |
-| 9 | sn26 Perturb | 67.7 | 19.27 | 274 | rtx3060 | 10 | 70% |
-| 10 | sn96 Verathos | 67.4 | 17.66 | 189 | rtx4090 | 99 | 40% |
-| 11 | sn21 AdTAO | 66.7 | 6.50 | 599 | cpu-small | 16 | 45% |
-| 12 | sn1 Apex | 66.6 | 265 | 2,155 | rtx4090* | 4 | 51% |
-| 13 | sn124 Swarm | 66 | 231 | 2,019 | rtx4090* | 26 | 23% |
-| 14 | sn92 MicroTensor | 65.5 | 75.55 | 122 | cpu-small | 3 | 95% |
-| 15 | sn107 Minos | 65.3 | 152 | 42,902 | cpu-small | 20 | 90% |
-| 16 | sn85 Vidaio | 64.9 | 159 | 434 | rtx4090* | 13 | 42% |
-| 17 | sn81 Reliquary | 63.7 | 112 | 395 | rtx4090* | 33 | 9% |
-| 18 | sn108 Prometheon | 63.3 | 102 | 118 | rtx4090* | 9 | 66% |
-| 19 | sn51 lium.io | 60.1 | 47.42 | 3,051 | rtx4090* | 54 | 76% |
-| 20 | sn53 engy | 60 | 36.84 | 314 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 79.6 | 146 | 217 | cpu-small | 13 | 20% |
+| 2 | sn3 Teutonic | 76 | 4,435 | 4,435 = | rtx4090* | 5 | 20% |
+| 3 | sn62 Ridges | 72.4 | 1,525 | 3,117 | rtx4090* | 6 | 39% |
+| 4 | sn38 ChronoLLM | 72.4 | 602 | 3,535 | cpu-small | 6 | 53% |
+| 5 | sn23 Trishool | 72.2 | 555 | 555 = | cpu-small | 2 | 80% |
+| 6 | sn67 Harnyx | 71.8 | 20.30 | 465 | cpu-small | 131 | 12% |
+| 7 | sn15 ORO | 71 | 25.32 | 43.19 | cpu-small | 83 | 92% |
+| 8 | sn91 cascade | 68.9 | 537 | 1,445 | rtx4090* | 5 | 52% |
+| 9 | sn26 Perturb | 67.8 | 19.45 | 276 | rtx3060 | 10 | 70% |
+| 10 | sn96 Verathos | 67.7 | 19.02 | 203 | rtx4090 | 97 | 40% |
+| 11 | sn21 AdTAO | 66.7 | 6.53 | 601 | cpu-small | 16 | 45% |
+| 12 | sn1 Apex | 66.6 | 266 | 2,164 | rtx4090* | 4 | 52% |
+| 13 | sn124 Swarm | 66 | 236 | 2,063 | rtx4090* | 26 | 24% |
+| 14 | sn92 MicroTensor | 65.5 | 77.08 | 124 | cpu-small | 3 | 95% |
+| 15 | sn107 Minos | 65.3 | 151 | 43,306 | cpu-small | 20 | 90% |
+| 16 | sn85 Vidaio | 64.5 | 142 | 437 | rtx4090* | 13 | 42% |
+| 17 | sn81 Reliquary | 64 | 122 | 376 | rtx4090* | 33 | 8% |
+| 18 | sn108 Prometheon | 63.4 | 103 | 119 | rtx4090* | 9 | 66% |
+| 19 | sn51 lium.io | 60.8 | 55.81 | 2,589 | rtx4090* | 54 | 77% |
+| 20 | sn53 engy | 60.1 | 37.30 | 317 | rtx4090 | 144 | 63% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-25T05:04 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify parity bundle through exact empty  |
 | 2026-08-25T03:09 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #109 from leadpoet/cod |
 | 2026-08-25T01:49 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: revert: guarded title-corroboration was u |
 | 2026-08-24T23:04 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Normalize verifier image source permissio |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-24T18:16 | sn60 | SCORING_COMMIT | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/fea |
 | 2026-08-24T18:16 | sn92 | BURN_DROP | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | 2026-08-24T17:42 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Rename the office challenge family to cf |
-| 2026-08-24T17:42 | sn124 | README_TASK_DIFF | sn124 README task/scoring sections changed |
 
 ---
 

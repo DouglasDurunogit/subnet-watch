@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-25T05:45:14Z, block 8919995
+# ALARMS - generated 2026-08-25T06:19:48Z, block 8920168
 
-window: first_seen in [2026-08-25T04:30:44Z, 2026-08-25T05:45:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T05:05:24Z, 2026-08-25T06:20:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-25T04:09:03Z` | 71 | SCORING_COMMIT | P1 | 2026-08-25T05:04:42Z | sn71 commit touches scoring: Verify parity bundle through exact empty fetch |
-
-### detail
-
-- **`sn71:scoring_commit:2026-08-25T04:09:03Z`** - sn71 commit touches scoring: Verify parity bundle through exact empty fetch
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -256,6 +249,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-08-24T22:51:29Z` | 66 | SCORING_COMMIT | 2026-08-24T23:04:58Z | sn66 commit touches scoring: Normalize verifier image source permissions |
 | `sn15:scoring_commit:2026-08-25T00:12:11Z` | 15 | SCORING_COMMIT | 2026-08-25T01:49:22Z | sn15 commit touches scoring: revert: guarded title-corroboration was unsafe on legacy rewards (ORO… |
 | `sn71:scoring_commit:2026-08-25T02:00:09Z` | 71 | SCORING_COMMIT | 2026-08-25T03:09:56Z | sn71 commit touches scoring: Merge pull request #109 from leadpoet/codex/full-validator-indent-202… |
+| `sn71:scoring_commit:2026-08-25T04:09:03Z` | 71 | SCORING_COMMIT | 2026-08-25T05:04:42Z | sn71 commit touches scoring: Verify parity bundle through exact empty fetch |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
 | `sn33:readme_task_diff:a91e45ad8067f8f2` | 33 | README_TASK_DIFF | 2026-08-18T14:48:11Z | sn33 README task/scoring sections changed |

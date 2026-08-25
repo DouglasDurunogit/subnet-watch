@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T21:11:04Z, block 8924624
+# ALARMS - generated 2026-08-25T21:52:39Z, block 8924832
 
-window: first_seen in [2026-08-25T19:56:36Z, 2026-08-25T21:11:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T20:38:06Z, 2026-08-25T21:53:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,11 +10,14 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
+| `sn28:release:v0.4.10` | 28 | RELEASE | P1 | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
 
 ### detail
 
 - **`sn112:scoring_commit:2026-08-25T20:30:12Z`** - sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.10`** - sn28 released v0.4.10
+  - published 2026-08-25T21:33:46Z (was v0.4.10-dev)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -32,7 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn71:scoring_commit:2026-08-18T21:09:08Z` | 71 | SCORING_COMMIT | 2026-08-18T21:35:40Z | sn71 commit touches scoring: Verify restored parity database contract |
 | `sn28:release:v0.4.6-dev` | 28 | RELEASE | 2026-08-18T22:37:17Z | sn28 released v0.4.6-dev |
 | `sn28:scoring_commit:2026-08-18T22:12:25Z` | 28 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn28 commit touches scoring: Release gm-miner v0.4.6-dev |
 | `sn62:scoring_commit:2026-08-18T20:59:53Z` | 62 | SCORING_COMMIT | 2026-08-18T22:37:17Z | sn62 commit touches scoring: pass pre_screening_policy_version and remove from validator |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-24T23:32:44Z, block 8918133
+# ALARMS - generated 2026-08-25T00:01:28Z, block 8918276
 
-window: first_seen in [2026-08-24T22:18:18Z, 2026-08-24T23:33:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-24T22:46:56Z, 2026-08-25T00:01:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
 | `sn66:scoring_commit:2026-08-24T22:51:29Z` | 66 | SCORING_COMMIT | P1 | 2026-08-24T23:04:58Z | sn66 commit touches scoring: Normalize verifier image source permissions |
-| `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | P2 | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn102:scoring_commit:2026-08-24T16:15:02Z`** - sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn66:scoring_commit:2026-08-24T22:51:29Z`** - sn66 commit touches scoring: Normalize verifier image source permissions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:d897794f349f6fcf`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,7 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn56:scoring_commit:2026-08-17T23:44:09Z` | 56 | SCORING_COMMIT | 2026-08-18T00:01:21Z | sn56 commit touches scoring: Fix re-finalize crowning the re-evaluated miner instead of re-ranking… |
 | `sn71:scoring_commit:2026-08-18T01:01:27Z` | 71 | SCORING_COMMIT | 2026-08-18T01:47:42Z | sn71 commit touches scoring: Repair semantic gate verification fixtures |
 | `sn15:release:v1.2.7` | 15 | RELEASE | 2026-08-18T02:44:45Z | sn15 released v1.2.7 |
 | `sn91:release:pre-decay-wsd-contract` | 91 | RELEASE | 2026-08-18T04:21:04Z | sn91 released pre-decay-wsd-contract |
@@ -263,6 +256,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
 | `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
 | `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
+| `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
 | `sn91:readme_task_diff:465231d881190999` | 91 | README_TASK_DIFF | 2026-08-18T05:02:26Z | sn91 README task/scoring sections changed |
 | `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
@@ -286,6 +280,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
+| `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

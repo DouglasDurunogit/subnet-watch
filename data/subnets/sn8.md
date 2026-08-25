@@ -1,20 +1,20 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-08-24T23:32:44Z  |  block: 8918133  |  row_status: ok
+snapshot_utc: 2026-08-25T00:01:28Z  |  block: 8918276  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.12033 USD), open=True
+- registration cost: 0.0005 TAO (0.1203 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 39  |  free: 0
 - subnet age: 1033.5 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 498.5113135498699** (uid 68) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.6135523859075324
-- top_miner_usd_day: 19103.260311423972 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 497.98478259713136** (uid 68) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.6129043478118541
+- top_miner_usd_day: 19083.08332129598 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,9 +26,9 @@ snapshot_utc: 2026-08-24T23:32:44Z  |  block: 8918133  |  row_status: ok
 - on-chain URL: `https://github.com/taoshidev/vanta-network`
 - resolved URL: `https://github.com/taoshidev/vanta-network`
 - status: **ok** 
-- README: 9443 bytes, sha 166856fe195a5540
+- README: 9599 bytes, sha 0cdaa3e4ab744f7c
 - latest release: (none) 
-- last commit: 2026-08-24T19:27:41Z
+- last commit: 2026-08-24T23:35:18Z
 - scoring-related commit: (none) 
 
 ## Resources
@@ -36,7 +36,7 @@ snapshot_utc: 2026-08-24T23:32:44Z  |  block: 8918133  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.6056 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.6063 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
@@ -175,4 +175,4 @@ Miners who repeatedly copy another miner's trades will be eliminated. Our system
 Miners who exceed a 5% intraday drawdown (measured f
 ```
 
-_(truncated at 6000 of 9443 chars - read the full file at https://github.com/taoshidev/vanta-network)_
+_(truncated at 6000 of 9599 chars - read the full file at https://github.com/taoshidev/vanta-network)_

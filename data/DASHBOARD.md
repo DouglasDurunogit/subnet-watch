@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-25T13:07:48Z · block 8922208 · run_status **ok**_
+_snapshot 2026-08-25T14:12:34Z · block 8922532 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 88 | `miner_burn` < 0.99 |
-| Ranked | 88 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| Pays miners at all | 90 | `miner_burn` < 0.99 |
+| Ranked | 90 | passed every gate |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -32,10 +32,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 60 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 3 | `█` |
-| 0.4–0.6 | 4 | `██` |
+| 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 40 | `███████████████████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 38 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 79.5 | 142 | 212 | cpu-small | 13 | 20% |
-| 2 | sn60 Bitsec.ai | 76.1 | 1,764 | 1,764 = | cpu-small | 2 | 50% |
-| 3 | sn3 Teutonic | 75.8 | 4,124 | 4,124 = | rtx4090* | 5 | 20% |
-| 4 | sn102 ConnitoAI | 72.5 | 1,550 | 1,848 | rtx4090* | 5 | 27% |
-| 5 | sn62 Ridges | 72.3 | 1,477 | 3,019 | rtx4090* | 6 | 39% |
-| 6 | sn38 ChronoLLM | 72.3 | 580 | 3,405 | cpu-small | 6 | 53% |
-| 7 | sn23 Trishool | 72.1 | 540 | 540 = | cpu-small | 2 | 80% |
-| 8 | sn67 Harnyx | 71.6 | 19.30 | 461 | cpu-small | 140 | 12% |
-| 9 | sn15 ORO | 70.8 | 22.65 | 20,947 | cpu-small | 90 | 91% |
-| 10 | sn91 cascade | 68.9 | 529 | 1,426 | rtx4090* | 5 | 52% |
-| 11 | sn26 Perturb | 67.7 | 19.10 | 272 | rtx3060 | 10 | 70% |
-| 12 | sn96 Verathos | 67.5 | 18.08 | 193 | rtx4090 | 99 | 40% |
-| 13 | sn124 Swarm | 66.8 | 294 | 926 | rtx4090* | 25 | 11% |
-| 14 | sn21 AdTAO | 66.8 | 6.57 | 604 | cpu-small | 16 | 45% |
-| 15 | sn1 Apex | 66.4 | 252 | 2,050 | rtx4090* | 4 | 53% |
-| 16 | sn92 MicroTensor | 65.5 | 75.43 | 122 | cpu-small | 3 | 95% |
-| 17 | sn107 Minos | 65.1 | 142 | 41,505 | cpu-small | 20 | 90% |
-| 18 | sn81 Reliquary | 64.3 | 135 | 373 | rtx4090* | 35 | 8% |
-| 19 | sn108 Prometheon | 63.5 | 107 | 120 | rtx4090* | 9 | 66% |
-| 20 | sn53 engy | 60 | 36.98 | 315 | rtx4090 | 144 | 63% |
+| 1 | sn76 Phylax | 79.5 | 142 | 211 | cpu-small | 13 | 20% |
+| 2 | sn60 Bitsec.ai | 76.1 | 1,766 | 1,766 = | cpu-small | 2 | 50% |
+| 3 | sn3 Teutonic | 75.7 | 4,054 | 4,054 = | rtx4090* | 5 | 20% |
+| 4 | sn102 ConnitoAI | 72.8 | 1,705 | 1,706 | rtx4090* | 4 | 25% |
+| 5 | sn62 Ridges | 72.3 | 1,454 | 2,973 | rtx4090* | 6 | 39% |
+| 6 | sn23 Trishool | 72.1 | 534 | 534 = | cpu-small | 2 | 80% |
+| 7 | sn67 Harnyx | 71.6 | 19.12 | 457 | cpu-small | 141 | 12% |
+| 8 | sn38 ChronoLLM | 70.9 | 385 | 1,489 | cpu-small | 6 | 53% |
+| 9 | sn15 ORO | 70.8 | 22.85 | 21,122 | cpu-small | 90 | 91% |
+| 10 | sn91 cascade | 68.9 | 534 | 1,436 | rtx4090* | 5 | 52% |
+| 11 | sn21 AdTAO | 68.8 | 10.24 | 1,197 | cpu-small | 16 | 45% |
+| 12 | sn26 Perturb | 67.7 | 18.96 | 270 | rtx3060 | 10 | 70% |
+| 13 | sn96 Verathos | 67.5 | 18.39 | 193 | rtx4090 | 97 | 40% |
+| 14 | sn124 Swarm | 66.8 | 291 | 918 | rtx4090* | 25 | 11% |
+| 15 | sn1 Apex | 66.3 | 246 | 2,009 | rtx4090* | 4 | 54% |
+| 16 | sn92 MicroTensor | 65.4 | 74.73 | 121 | cpu-small | 3 | 95% |
+| 17 | sn107 Minos | 64.9 | 141 | 40,952 | cpu-small | 20 | 90% |
+| 18 | sn81 Reliquary | 63.8 | 114 | 334 | rtx4090* | 35 | 7% |
+| 19 | sn108 Prometheon | 63.6 | 109 | 122 | rtx4090* | 9 | 66% |
+| 20 | sn121 sundae_bar | 62.5 | 1,078 | 1,078 = | cpu-small | 2 | 66% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 26 |
-| concentrated (30–60%) | 17 |
-| dominated (60–90%) | 18 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 19 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-25T14:13 | sn102 | RELEASE | sn102 released v0.5.2 — background-eval resume + validator memory fixe |
+| 2026-08-25T14:13 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
 | 2026-08-25T13:08 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Note the operator-driven submission windo |
 | 2026-08-25T11:14 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: feat(chain): validator-side set_weights w |
 | 2026-08-25T11:14 | sn111 | README_TASK_DIFF | sn111 README task/scoring sections changed |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-24T22:40 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: ♻️ refactor(validator): drop the redunda |
 | 2026-08-24T21:53 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Allow bounded measured dev evaluation pay |
 | 2026-08-24T21:15 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Correct the validator setup path end to e |
-| 2026-08-24T19:54 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Enforce ordered evaluations |
-| 2026-08-24T19:10 | sn10 | README_TASK_DIFF | sn10 README task/scoring sections changed |
 
 ---
 

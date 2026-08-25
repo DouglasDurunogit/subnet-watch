@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-08-25T09:07:34Z, block 8921007
+# ALARMS - generated 2026-08-25T09:59:58Z, block 8921269
 
-window: first_seen in [2026-08-25T07:53:08Z, 2026-08-25T09:08:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T08:45:26Z, 2026-08-25T10:00:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn111:scoring_commit:2026-08-25T09:49:43Z` | 111 | SCORING_COMMIT | P1 | 2026-08-25T10:00:26Z | sn111 commit touches scoring: feat(setup): streamline public validator deployment |
+| `sn112:scoring_commit:2026-08-24T07:39:41Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T10:00:26Z | sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again… |
+
+### detail
+
+- **`sn111:scoring_commit:2026-08-25T09:49:43Z`** - sn111 commit touches scoring: feat(setup): streamline public validator deployment
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn112:scoring_commit:2026-08-24T07:39:41Z`** - sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -26,7 +36,6 @@ _none_
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
-| `sn67:scoring_commit:2026-08-18T06:10:26Z` | 67 | SCORING_COMMIT | 2026-08-18T09:46:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post0 |
 | `sn65:scoring_commit:2026-08-18T10:41:48Z` | 65 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn65 commit touches scoring: Merge pull request #4 from taofu-labs/docs/validator |
 | `sn67:scoring_commit:2026-08-18T10:35:47Z` | 67 | SCORING_COMMIT | 2026-08-18T10:55:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260818.post1 |
 | `sn81:scoring_commit:2026-08-18T07:52:08Z` | 81 | SCORING_COMMIT | 2026-08-18T13:55:30Z | sn81 commit touches scoring: test: lock v4 canonical reward flow |

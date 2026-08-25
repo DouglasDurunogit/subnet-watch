@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T11:53:50Z, block 8921838
+# ALARMS - generated 2026-08-25T13:07:48Z, block 8922208
 
-window: first_seen in [2026-08-25T10:39:16Z, 2026-08-25T11:54:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-25T11:53:22Z, 2026-08-25T13:08:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | P1 | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
-| `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | P2 | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
+| `sn92:scoring_commit:2026-08-25T12:18:18Z` | 92 | SCORING_COMMIT | P1 | 2026-08-25T13:08:22Z | sn92 commit touches scoring: Note the operator-driven submission window in miner timing |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-08-25T10:50:13Z`** - sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104)
+- **`sn92:scoring_commit:2026-08-25T12:18:18Z`** - sn92 commit touches scoring: Note the operator-driven submission window in miner timing
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:00bbd31d47cb0fe2`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn2:burn_drop:0.825` | 2 | BURN_DROP | 2026-08-18T13:05:31Z | sn2 burn fell 1.000 -> 0.825 - miners can earn again |
 | `sn108:burn_drop:0.838` | 108 | BURN_DROP | 2026-08-18T20:36:36Z | sn108 burn fell 1.000 -> 0.838 - miners can earn again |
 | `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
@@ -256,7 +252,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-25T04:09:03Z` | 71 | SCORING_COMMIT | 2026-08-25T05:04:42Z | sn71 commit touches scoring: Verify parity bundle through exact empty fetch |
 | `sn111:scoring_commit:2026-08-25T09:49:43Z` | 111 | SCORING_COMMIT | 2026-08-25T10:00:26Z | sn111 commit touches scoring: feat(setup): streamline public validator deployment |
 | `sn112:scoring_commit:2026-08-24T07:39:41Z` | 112 | SCORING_COMMIT | 2026-08-25T10:00:26Z | sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again… |
-| `sn10:readme_task_diff:126d4086680182f3` | 10 | README_TASK_DIFF | 2026-08-18T12:04:33Z | sn10 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
 | `sn108:readme_task_diff:19f7089d5cc9e961` | 108 | README_TASK_DIFF | 2026-08-18T13:55:30Z | sn108 README task/scoring sections changed |
 | `sn33:readme_task_diff:a91e45ad8067f8f2` | 33 | README_TASK_DIFF | 2026-08-18T14:48:11Z | sn33 README task/scoring sections changed |
 | `sn92:readme_task_diff:c2e913dd2e41d4bb` | 92 | README_TASK_DIFF | 2026-08-18T16:57:50Z | sn92 README task/scoring sections changed |
@@ -279,6 +275,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
+| `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

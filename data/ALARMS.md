@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T19:17:20Z, block 8931256
+# ALARMS - generated 2026-08-26T22:22:49Z, block 8932183
 
-window: first_seen in [2026-08-26T18:02:48Z, 2026-08-26T19:17:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T21:08:22Z, 2026-08-26T22:23:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn54:scoring_commit:2026-08-26T17:15:54Z` | 54 | SCORING_COMMIT | P1 | 2026-08-26T19:17:48Z | sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112) |
-| `sn108:scoring_commit:2026-08-26T19:00:11Z` | 108 | SCORING_COMMIT | P1 | 2026-08-26T19:17:48Z | sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score |
+| `sn7:burn_drop:0.910` | 7 | BURN_DROP | P0 | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
+| `sn28:release:v0.4.11` | 28 | RELEASE | P1 | 2026-08-26T22:23:22Z | sn28 released v0.4.11 |
+| `sn45:scoring_commit:2026-08-26T22:03:30Z` | 45 | SCORING_COMMIT | P1 | 2026-08-26T22:23:22Z | sn45 commit touches scoring: Submit one epoch of reward points to the API |
+| `sn76:scoring_commit:2026-08-26T20:35:03Z` | 76 | SCORING_COMMIT | P1 | 2026-08-26T22:23:22Z | sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8 |
+| `sn111:scoring_commit:2026-08-26T19:54:44Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T22:23:22Z | sn111 commit touches scoring: docs(validator): add mainnet profile and streamline setup |
+| `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | P2 | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 
 ### detail
 
-- **`sn54:scoring_commit:2026-08-26T17:15:54Z`** - sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112)
+- **`sn7:burn_drop:0.910`** - sn7 burn fell 1.000 -> 0.910 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn28:release:v0.4.11`** - sn28 released v0.4.11
+  - published 2026-08-26T21:29:04Z (was v0.4.11-dev)
+- **`sn45:scoring_commit:2026-08-26T22:03:30Z`** - sn45 commit touches scoring: Submit one epoch of reward points to the API
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-26T19:00:11Z`** - sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score
+- **`sn76:scoring_commit:2026-08-26T20:35:03Z`** - sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-26T19:54:44Z`** - sn111 commit touches scoring: docs(validator): add mainnet profile and streamline setup
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:readme_task_diff:e2a786d7f22f73bb`** - sn76 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,16 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
-| `sn25:release:v2026.8.19-1023689220` | 25 | RELEASE | 2026-08-19T20:02:56Z | sn25 released v2026.8.19-1023689220 |
-| `sn51:release:executor-v1.123` | 51 | RELEASE | 2026-08-19T20:02:56Z | sn51 released executor-v1.123 |
-| `sn108:scoring_commit:2026-08-19T19:48:52Z` | 108 | SCORING_COMMIT | 2026-08-19T20:02:56Z | sn108 commit touches scoring: feat!: validators run miners' models; remove Chutes entirely (#14) |
-| `sn1:release:v4.3.5` | 1 | RELEASE | 2026-08-19T20:41:24Z | sn1 released v4.3.5 |
-| `sn10:scoring_commit:2026-08-19T20:15:33Z` | 10 | SCORING_COMMIT | 2026-08-19T21:11:13Z | sn10 commit touches scoring: feat(bench): harness round mode with a single batched scorer |
-| `sn38:scoring_commit:2026-08-19T20:55:05Z` | 38 | SCORING_COMMIT | 2026-08-19T21:11:13Z | sn38 commit touches scoring: Add multi-layer dedup and weighted leak evaluation (#24) |
-| `sn7:release:release-20260819-213008: Record the finn` | 7 | RELEASE | 2026-08-19T21:50:36Z | sn7 released release-20260819-213008: Record the finney TAO bond vault address (#696) |
-| `sn7:scoring_commit:2026-08-14T17:14:52Z` | 7 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn7 commit touches scoring: Trim pre-window crown tails before the scoring-window wipe (#676) |
-| `sn81:scoring_commit:2026-08-19T18:29:14Z` | 81 | SCORING_COMMIT | 2026-08-19T21:50:36Z | sn81 commit touches scoring: feat(validator): pipelined window collection behind a flag (default of |
 | `sn7:release:release-20260819-235753: Activate: quoru` | 7 | RELEASE | 2026-08-20T00:02:25Z | sn7 released release-20260819-235753: Activate: quorum short-circuit + 30s default dendrite timeout (#697) |
 | `sn26:scoring_commit:2026-08-19T18:10:08Z` | 26 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn26 commit touches scoring: Merge pull request #51 from 0xsigurd/feat/cross-validator-score-conse… |
 | `sn71:scoring_commit:2026-08-20T01:36:55Z` | 71 | SCORING_COMMIT | 2026-08-20T01:53:55Z | sn71 commit touches scoring: Preserve verifier literals in restart bootstrap |
@@ -228,9 +230,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-08-26T13:27:13Z` | 108 | SCORING_COMMIT | 2026-08-26T13:33:28Z | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit another validator's published scor |
 | `sn44:scoring_commit:2026-08-26T14:00:07Z` | 44 | SCORING_COMMIT | 2026-08-26T14:29:56Z | sn44 commit touches scoring: Merge pull request #56 from score-technologies/security-enhancement |
 | `sn25:release:v2026.8.26-1029569170` | 25 | RELEASE | 2026-08-26T16:06:12Z | sn25 released v2026.8.26-1029569170 |
-| `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
-| `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
-| `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |
+| `sn54:scoring_commit:2026-08-26T17:15:54Z` | 54 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112) |
+| `sn108:scoring_commit:2026-08-26T19:00:11Z` | 108 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score |
 | `sn26:readme_task_diff:138b96d6c81dee36` | 26 | README_TASK_DIFF | 2026-08-20T01:53:55Z | sn26 README task/scoring sections changed |
 | `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
 | `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |

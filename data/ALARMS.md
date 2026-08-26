@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T09:53:48Z, block 8928438
+# ALARMS - generated 2026-08-26T10:48:37Z, block 8928712
 
-window: first_seen in [2026-08-26T08:39:13Z, 2026-08-26T09:54:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T09:34:02Z, 2026-08-26T10:49:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.26-1029312040` | 25 | RELEASE | P1 | 2026-08-26T08:58:49Z | sn25 released v2026.8.26-1029312040 |
-| `sn44:scoring_commit:2026-08-26T07:58:36Z` | 44 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin… |
-| `sn61:release:4.10.0` | 61 | RELEASE | P1 | 2026-08-26T08:58:49Z | sn61 released 4.10.0 |
-| `sn61:scoring_commit:2026-08-26T07:57:37Z` | 61 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4 |
-| `sn112:scoring_commit:2026-08-26T08:41:08Z` | 112 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and… |
 | `sn111:scoring_commit:2026-08-26T09:13:32Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T09:54:13Z | sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history |
 | `sn112:scoring_commit:2026-08-26T09:26:46Z` | 112 | SCORING_COMMIT | P1 | 2026-08-26T09:54:13Z | sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh… |
+| `sn21:scoring_commit:2026-08-26T10:23:53Z` | 21 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu… |
+| `sn111:scoring_commit:2026-08-26T10:46:32Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators |
 
 ### detail
 
-- **`sn25:release:v2026.8.26-1029312040`** - sn25 released v2026.8.26-1029312040
-  - published 2026-08-26T08:03:37Z (was v2026.8.25-1029146630)
-- **`sn44:scoring_commit:2026-08-26T07:58:36Z`** - sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.10.0`** - sn61 released 4.10.0
-  - published 2026-08-26T07:59:33Z (was 4.9.7)
-- **`sn61:scoring_commit:2026-08-26T07:57:37Z`** - sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn112:scoring_commit:2026-08-26T08:41:08Z`** - sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-26T09:13:32Z`** - sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn112:scoring_commit:2026-08-26T09:26:46Z`** - sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-26T10:23:53Z`** - sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-26T10:46:32Z`** - sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -46,7 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn14:scoring_commit:2026-08-19T07:56:03Z` | 14 | SCORING_COMMIT | 2026-08-19T10:13:41Z | sn14 commit touches scoring: Burn a departed claimant's share to the validator instead of holding … |
 | `sn28:release:v0.4.8-dev` | 28 | RELEASE | 2026-08-19T10:54:46Z | sn28 released v0.4.8-dev |
 | `sn28:scoring_commit:2026-08-19T10:18:25Z` | 28 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn28 commit touches scoring: Expand verified NEAR model coverage |
 | `sn44:scoring_commit:2026-08-19T10:16:23Z` | 44 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn44 commit touches scoring: Merge pull request #53 from score-technologies/prv-hf-bfr-commit |
@@ -248,6 +238,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
 | `sn82:scoring_commit:2026-08-25T21:38:56Z` | 82 | SCORING_COMMIT | 2026-08-26T05:48:23Z | sn82 commit touches scoring: fix: score title fights by complete topic pairs |
 | `sn111:scoring_commit:2026-08-26T07:22:40Z` | 111 | SCORING_COMMIT | 2026-08-26T07:56:58Z | sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive |
+| `sn25:release:v2026.8.26-1029312040` | 25 | RELEASE | 2026-08-26T08:58:49Z | sn25 released v2026.8.26-1029312040 |
+| `sn44:scoring_commit:2026-08-26T07:58:36Z` | 44 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin… |
+| `sn61:release:4.10.0` | 61 | RELEASE | 2026-08-26T08:58:49Z | sn61 released 4.10.0 |
+| `sn61:scoring_commit:2026-08-26T07:57:37Z` | 61 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4 |
+| `sn112:scoring_commit:2026-08-26T08:41:08Z` | 112 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and… |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

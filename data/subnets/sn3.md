@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-26T09:53:48Z  |  block: 8928438  |  row_status: ok
+snapshot_utc: 2026-08-26T10:48:37Z  |  block: 8928712  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.00068206 TAO (0.1583129466 USD), open=True
+- registration cost: 0.000638799 TAO (0.15060325223999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
 - subnet age: 661.5 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3859.001025265727** (uid 22) <- the only figure quotable as achievable
-- median_miner_usd_day: 3859.001025265727
-- top_miner_usd_day: 3859.001025265727 (uid 22, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3941.1973665842725** (uid 22) <- the only figure quotable as achievable
+- median_miner_usd_day: 3941.1973665842725
+- top_miner_usd_day: 3941.1973665842725 (uid 22, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-08-26T09:53:48Z  |  block: 8928438  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3850.7818 USD/day  |  payback on registration: 0.0 days
+- net margin: 3932.9782 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 75.5 (rank 4), confidence 0.85 - hardware requirement unknown
-- components: income 32.61 / freshness 35.0 / resource 11.25 / registration 10.0
+- score: 75.6 (rank 3), confidence 0.85 - hardware requirement unknown
+- components: income 32.7 / freshness 35.0 / resource 11.25 / registration 10.0
 - freshness basis: SCORING_COMMIT 1.6d ago
 
 ## On-chain description

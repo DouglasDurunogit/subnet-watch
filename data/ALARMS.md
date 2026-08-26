@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-25T23:48:18Z, block 8925410
+# ALARMS - generated 2026-08-26T01:54:59Z, block 8926044
 
-window: first_seen in [2026-08-25T22:33:43Z, 2026-08-25T23:48:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T00:40:31Z, 2026-08-26T01:55:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn56:scoring_commit:2026-08-25T22:56:00Z` | 56 | SCORING_COMMIT | P1 | 2026-08-25T23:10:04Z | sn56 commit touches scoring: Add unit tests for get_base_contestant to validate dataset propagatio… |
-| `sn112:scoring_commit:2026-08-25T22:56:41Z` | 112 | SCORING_COMMIT | P1 | 2026-08-25T23:10:04Z | sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat… |
+| `sn25:release:v2026.8.25-1029027010` | 25 | RELEASE | P1 | 2026-08-26T01:55:31Z | sn25 released v2026.8.25-1029027010 |
+| `sn81:scoring_commit:2026-08-26T00:35:18Z` | 81 | SCORING_COMMIT | P1 | 2026-08-26T01:55:31Z | sn81 commit touches scoring: fix(validator): close submission ingress races |
 
 ### detail
 
-- **`sn56:scoring_commit:2026-08-25T22:56:00Z`** - sn56 commit touches scoring: Add unit tests for get_base_contestant to validate dataset propagatio…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn112:scoring_commit:2026-08-25T22:56:41Z`** - sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat…
+- **`sn25:release:v2026.8.25-1029027010`** - sn25 released v2026.8.25-1029027010
+  - published 2026-08-26T00:08:36Z (was v2026.8.25-1028682810)
+- **`sn81:scoring_commit:2026-08-26T00:35:18Z`** - sn81 commit touches scoring: fix(validator): close submission ingress races
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn14:burn_drop:0.298` | 14 | BURN_DROP | 2026-08-19T01:50:06Z | sn14 burn fell 1.000 -> 0.298 - miners can earn again |
 | `sn121:burn_drop:0.607` | 121 | BURN_DROP | 2026-08-19T03:08:34Z | sn121 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -35,10 +34,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn46:scoring_commit:2026-08-18T23:50:25Z` | 46 | SCORING_COMMIT | 2026-08-19T00:01:39Z | sn46 commit touches scoring: test: freeze validator report contract |
-| `sn46:scoring_commit:2026-08-19T01:46:55Z` | 46 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn46 commit touches scoring: Merge pull request #18 from instant-subnet/dan/p4-5-run-once-validator |
-| `sn71:scoring_commit:2026-08-18T23:59:05Z` | 71 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn71 commit touches scoring: Isolate parity scoring cache |
-| `sn111:scoring_commit:2026-08-19T00:57:56Z` | 111 | SCORING_COMMIT | 2026-08-19T01:50:06Z | sn111 commit touches scoring: fix validator batch reliability and provider resilience |
 | `sn46:scoring_commit:2026-08-19T02:41:53Z` | 46 | SCORING_COMMIT | 2026-08-19T03:08:34Z | sn46 commit touches scoring: Merge pull request #20 from instant-subnet/dan/p4-final-validator-depl |
 | `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 | `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
@@ -241,6 +236,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.10-dev` | 28 | RELEASE | 2026-08-25T19:55:29Z | sn28 released v0.4.10-dev |
 | `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 | `sn28:release:v0.4.10` | 28 | RELEASE | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
+| `sn56:scoring_commit:2026-08-25T22:56:00Z` | 56 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn56 commit touches scoring: Add unit tests for get_base_contestant to validate dataset propagatio… |
+| `sn112:scoring_commit:2026-08-25T22:56:41Z` | 112 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat… |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

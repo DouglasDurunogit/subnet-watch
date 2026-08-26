@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T16:57:39Z, block 8930557
+# ALARMS - generated 2026-08-26T19:17:20Z, block 8931256
 
-window: first_seen in [2026-08-26T15:43:11Z, 2026-08-26T16:58:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T18:02:48Z, 2026-08-26T19:17:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.26-1029569170` | 25 | RELEASE | P1 | 2026-08-26T16:06:12Z | sn25 released v2026.8.26-1029569170 |
+| `sn54:scoring_commit:2026-08-26T17:15:54Z` | 54 | SCORING_COMMIT | P1 | 2026-08-26T19:17:48Z | sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112) |
+| `sn108:scoring_commit:2026-08-26T19:00:11Z` | 108 | SCORING_COMMIT | P1 | 2026-08-26T19:17:48Z | sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score |
 
 ### detail
 
-- **`sn25:release:v2026.8.26-1029569170`** - sn25 released v2026.8.26-1029569170
-  - published 2026-08-26T15:12:06Z (was v2026.8.26-1029312040)
+- **`sn54:scoring_commit:2026-08-26T17:15:54Z`** - sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-26T19:00:11Z`** - sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
 | `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn1:release:v4.3.4` | 1 | RELEASE | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
-| `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
 | `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |
 | `sn25:release:v2026.8.19-1023689220` | 25 | RELEASE | 2026-08-19T20:02:56Z | sn25 released v2026.8.19-1023689220 |
 | `sn51:release:executor-v1.123` | 51 | RELEASE | 2026-08-19T20:02:56Z | sn51 released executor-v1.123 |
@@ -227,8 +227,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-08-26T13:09:50Z` | 81 | SCORING_COMMIT | 2026-08-26T13:33:28Z | sn81 commit touches scoring: fix(proof): release a finished plan's miner payloads |
 | `sn108:scoring_commit:2026-08-26T13:27:13Z` | 108 | SCORING_COMMIT | 2026-08-26T13:33:28Z | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit another validator's published scor |
 | `sn44:scoring_commit:2026-08-26T14:00:07Z` | 44 | SCORING_COMMIT | 2026-08-26T14:29:56Z | sn44 commit touches scoring: Merge pull request #56 from score-technologies/security-enhancement |
-| `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
-| `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
+| `sn25:release:v2026.8.26-1029569170` | 25 | RELEASE | 2026-08-26T16:06:12Z | sn25 released v2026.8.26-1029569170 |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |
 | `sn89:readme_task_diff:af753e3216a79781` | 89 | README_TASK_DIFF | 2026-08-19T20:41:24Z | sn89 README task/scoring sections changed |
 | `sn7:readme_task_diff:9594fdc9163bdf75` | 7 | README_TASK_DIFF | 2026-08-19T21:50:36Z | sn7 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T05:04:57Z, block 8926994
+# ALARMS - generated 2026-08-26T05:47:46Z, block 8927208
 
-window: first_seen in [2026-08-26T03:50:25Z, 2026-08-26T05:05:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T04:33:23Z, 2026-08-26T05:48:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | P1 | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
+| `sn82:scoring_commit:2026-08-25T21:38:56Z` | 82 | SCORING_COMMIT | P1 | 2026-08-26T05:48:23Z | sn82 commit touches scoring: fix: score title fights by complete topic pairs |
 
 ### detail
 
-- **`sn25:release:v2026.8.25-1029146630`** - sn25 released v2026.8.25-1029146630
-  - published 2026-08-26T03:27:54Z (was v2026.8.25-1029027010)
+- **`sn82:scoring_commit:2026-08-25T21:38:56Z`** - sn82 commit touches scoring: fix: score title fights by complete topic pairs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,7 +29,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn108:scoring_commit:2026-08-19T05:41:54Z` | 108 | SCORING_COMMIT | 2026-08-19T05:42:50Z | sn108 commit touches scoring: docs(validator): tell operators to re-post weights between cycles (#4) |
 | `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
 | `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
 | `sn71:scoring_commit:2026-08-19T07:32:51Z` | 71 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn71 commit touches scoring: Use verified local rehearsal base |
@@ -234,6 +233,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:scoring_commit:2026-08-25T22:56:41Z` | 112 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat… |
 | `sn25:release:v2026.8.25-1029027010` | 25 | RELEASE | 2026-08-26T01:55:31Z | sn25 released v2026.8.25-1029027010 |
 | `sn81:scoring_commit:2026-08-26T00:35:18Z` | 81 | SCORING_COMMIT | 2026-08-26T01:55:31Z | sn81 commit touches scoring: fix(validator): close submission ingress races |
+| `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T04:09:24Z, block 8926716
+# ALARMS - generated 2026-08-26T05:04:57Z, block 8926994
 
-window: first_seen in [2026-08-26T02:54:47Z, 2026-08-26T04:09:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T03:50:25Z, 2026-08-26T05:05:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -20,7 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn108:burn_drop:0.839` | 108 | BURN_DROP | 2026-08-19T04:51:04Z | sn108 burn fell 1.000 -> 0.839 - miners can earn again |
 | `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |

@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-08-26T07:04:41Z, block 8927592
+# ALARMS - generated 2026-08-26T07:56:33Z, block 8927851
 
-window: first_seen in [2026-08-26T05:50:07Z, 2026-08-26T07:05:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T06:41:58Z, 2026-08-26T07:56:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn111:scoring_commit:2026-08-26T07:22:40Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T07:56:58Z | sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive |
+
+### detail
+
+- **`sn111:scoring_commit:2026-08-26T07:22:40Z`** - sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -22,7 +29,6 @@ _none_
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn100:release:v3.3.25: fix(prism): stop control-plane ` | 100 | RELEASE | 2026-08-19T07:15:10Z | sn100 released v3.3.25: fix(prism): stop control-plane OOM restarts |
 | `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
 | `sn71:scoring_commit:2026-08-19T07:32:51Z` | 71 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn71 commit touches scoring: Use verified local rehearsal base |
 | `sn97:scoring_commit:2026-08-18T22:22:27Z` | 97 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn97 commit touches scoring: feat: score looped trajectories 0 without calling the judge |

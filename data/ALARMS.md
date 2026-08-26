@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T07:56:33Z, block 8927851
+# ALARMS - generated 2026-08-26T08:58:20Z, block 8928160
 
-window: first_seen in [2026-08-26T06:41:58Z, 2026-08-26T07:56:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T07:43:49Z, 2026-08-26T08:58:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -10,17 +10,31 @@ already reported in an earlier window and must not be re-alarmed.
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
 | `sn111:scoring_commit:2026-08-26T07:22:40Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T07:56:58Z | sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive |
+| `sn25:release:v2026.8.26-1029312040` | 25 | RELEASE | P1 | 2026-08-26T08:58:49Z | sn25 released v2026.8.26-1029312040 |
+| `sn44:scoring_commit:2026-08-26T07:58:36Z` | 44 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin… |
+| `sn61:release:4.10.0` | 61 | RELEASE | P1 | 2026-08-26T08:58:49Z | sn61 released 4.10.0 |
+| `sn61:scoring_commit:2026-08-26T07:57:37Z` | 61 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4 |
+| `sn112:scoring_commit:2026-08-26T08:41:08Z` | 112 | SCORING_COMMIT | P1 | 2026-08-26T08:58:49Z | sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and… |
 
 ### detail
 
 - **`sn111:scoring_commit:2026-08-26T07:22:40Z`** - sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.26-1029312040`** - sn25 released v2026.8.26-1029312040
+  - published 2026-08-26T08:03:37Z (was v2026.8.25-1029146630)
+- **`sn44:scoring_commit:2026-08-26T07:58:36Z`** - sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn61:release:4.10.0`** - sn61 released 4.10.0
+  - published 2026-08-26T07:59:33Z (was 4.9.7)
+- **`sn61:scoring_commit:2026-08-26T07:57:37Z`** - sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn112:scoring_commit:2026-08-26T08:41:08Z`** - sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn62:burn_drop:0.000` | 62 | BURN_DROP | 2026-08-19T08:02:31Z | sn62 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
@@ -29,9 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn92:scoring_commit:2026-08-19T07:50:37Z` | 92 | SCORING_COMMIT | 2026-08-19T08:02:31Z | sn92 commit touches scoring: Declare pynacl for token verification |
-| `sn71:scoring_commit:2026-08-19T07:32:51Z` | 71 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn71 commit touches scoring: Use verified local rehearsal base |
-| `sn97:scoring_commit:2026-08-18T22:22:27Z` | 97 | SCORING_COMMIT | 2026-08-19T08:52:29Z | sn97 commit touches scoring: feat: score looped trajectories 0 without calling the judge |
 | `sn76:scoring_commit:2026-08-19T08:54:49Z` | 76 | SCORING_COMMIT | 2026-08-19T09:46:14Z | sn76 commit touches scoring: Report an abstained row when a track has no task set |
 | `sn14:scoring_commit:2026-08-19T07:56:03Z` | 14 | SCORING_COMMIT | 2026-08-19T10:13:41Z | sn14 commit touches scoring: Burn a departed claimant's share to the validator instead of holding … |
 | `sn28:release:v0.4.8-dev` | 28 | RELEASE | 2026-08-19T10:54:46Z | sn28 released v0.4.8-dev |

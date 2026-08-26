@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T10:48:37Z, block 8928712
+# ALARMS - generated 2026-08-26T11:39:58Z, block 8928969
 
-window: first_seen in [2026-08-26T09:34:02Z, 2026-08-26T10:49:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T10:25:35Z, 2026-08-26T11:40:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn111:scoring_commit:2026-08-26T09:13:32Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T09:54:13Z | sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history |
-| `sn112:scoring_commit:2026-08-26T09:26:46Z` | 112 | SCORING_COMMIT | P1 | 2026-08-26T09:54:13Z | sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh… |
 | `sn21:scoring_commit:2026-08-26T10:23:53Z` | 21 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu… |
 | `sn111:scoring_commit:2026-08-26T10:46:32Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators |
+| `sn51:scoring_commit:2026-08-26T10:57:03Z` | 51 | SCORING_COMMIT | P1 | 2026-08-26T11:40:35Z | sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153) |
 
 ### detail
 
-- **`sn111:scoring_commit:2026-08-26T09:13:32Z`** - sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn112:scoring_commit:2026-08-26T09:26:46Z`** - sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn21:scoring_commit:2026-08-26T10:23:53Z`** - sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn111:scoring_commit:2026-08-26T10:46:32Z`** - sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-08-26T10:57:03Z`** - sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn23:burn_drop:0.847` | 23 | BURN_DROP | 2026-08-19T11:36:23Z | sn23 burn fell 1.000 -> 0.847 - miners can earn again |
 | `sn103:burn_drop:0.845` | 103 | BURN_DROP | 2026-08-19T18:50:48Z | sn103 burn fell 1.000 -> 0.845 - miners can earn again |
 | `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
 | `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
@@ -37,13 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn28:release:v0.4.8-dev` | 28 | RELEASE | 2026-08-19T10:54:46Z | sn28 released v0.4.8-dev |
-| `sn28:scoring_commit:2026-08-19T10:18:25Z` | 28 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn28 commit touches scoring: Expand verified NEAR model coverage |
-| `sn44:scoring_commit:2026-08-19T10:16:23Z` | 44 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn44 commit touches scoring: Merge pull request #53 from score-technologies/prv-hf-bfr-commit |
-| `sn51:scoring_commit:2026-08-19T10:32:10Z` | 51 | SCORING_COMMIT | 2026-08-19T10:54:46Z | sn51 commit touches scoring: DAH-2703: withhold unrented incentive when a host kills the filler at… |
-| `sn51:release:executor-v1.122` | 51 | RELEASE | 2026-08-19T11:36:23Z | sn51 released executor-v1.122 |
-| `sn71:scoring_commit:2026-08-19T10:57:23Z` | 71 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn71 commit touches scoring: Preserve validator app modes in restart rehearsal |
-| `sn108:scoring_commit:2026-08-19T10:55:26Z` | 108 | SCORING_COMMIT | 2026-08-19T11:36:23Z | sn108 commit touches scoring: feat(scoring): burn 40%, pay 40% for data and 20% for models (#6) |
 | `sn14:release:v2.1.0` | 14 | RELEASE | 2026-08-19T13:56:35Z | sn14 released v2.1.0 |
 | `sn28:release:v0.4.8` | 28 | RELEASE | 2026-08-19T13:56:35Z | sn28 released v0.4.8 |
 | `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
@@ -243,6 +232,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:release:4.10.0` | 61 | RELEASE | 2026-08-26T08:58:49Z | sn61 released 4.10.0 |
 | `sn61:scoring_commit:2026-08-26T07:57:37Z` | 61 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn61 commit touches scoring: deps: update bot virus challenge image version to 1.0.4 |
 | `sn112:scoring_commit:2026-08-26T08:41:08Z` | 112 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and… |
+| `sn111:scoring_commit:2026-08-26T09:13:32Z` | 111 | SCORING_COMMIT | 2026-08-26T09:54:13Z | sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history |
+| `sn112:scoring_commit:2026-08-26T09:26:46Z` | 112 | SCORING_COMMIT | 2026-08-26T09:54:13Z | sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh… |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

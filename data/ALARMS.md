@@ -1,20 +1,13 @@
-# ALARMS - generated 2026-08-26T05:47:46Z, block 8927208
+# ALARMS - generated 2026-08-26T07:04:41Z, block 8927592
 
-window: first_seen in [2026-08-26T04:33:23Z, 2026-08-26T05:48:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T05:50:07Z, 2026-08-26T07:05:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn82:scoring_commit:2026-08-25T21:38:56Z` | 82 | SCORING_COMMIT | P1 | 2026-08-26T05:48:23Z | sn82 commit touches scoring: fix: score title fights by complete topic pairs |
-
-### detail
-
-- **`sn82:scoring_commit:2026-08-25T21:38:56Z`** - sn82 commit touches scoring: fix: score title fights by complete topic pairs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -234,6 +227,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.25-1029027010` | 25 | RELEASE | 2026-08-26T01:55:31Z | sn25 released v2026.8.25-1029027010 |
 | `sn81:scoring_commit:2026-08-26T00:35:18Z` | 81 | SCORING_COMMIT | 2026-08-26T01:55:31Z | sn81 commit touches scoring: fix(validator): close submission ingress races |
 | `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
+| `sn82:scoring_commit:2026-08-25T21:38:56Z` | 82 | SCORING_COMMIT | 2026-08-26T05:48:23Z | sn82 commit touches scoring: fix: score title fights by complete topic pairs |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

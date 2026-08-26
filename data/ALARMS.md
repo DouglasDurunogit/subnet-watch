@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T13:32:58Z, block 8929534
+# ALARMS - generated 2026-08-26T14:29:28Z, block 8929816
 
-window: first_seen in [2026-08-26T12:18:28Z, 2026-08-26T13:33:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T13:14:56Z, 2026-08-26T14:29:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-26T11:55:13Z` | 21 | SCORING_COMMIT | P1 | 2026-08-26T12:18:39Z | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess |
-| `sn28:release:v0.4.11-dev` | 28 | RELEASE | P1 | 2026-08-26T12:18:39Z | sn28 released v0.4.11-dev |
 | `sn81:scoring_commit:2026-08-26T13:09:50Z` | 81 | SCORING_COMMIT | P1 | 2026-08-26T13:33:28Z | sn81 commit touches scoring: fix(proof): release a finished plan's miner payloads |
 | `sn108:scoring_commit:2026-08-26T13:27:13Z` | 108 | SCORING_COMMIT | P1 | 2026-08-26T13:33:28Z | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit another validator's published scor |
+| `sn44:scoring_commit:2026-08-26T14:00:07Z` | 44 | SCORING_COMMIT | P1 | 2026-08-26T14:29:56Z | sn44 commit touches scoring: Merge pull request #56 from score-technologies/security-enhancement |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-26T11:55:13Z`** - sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.11-dev`** - sn28 released v0.4.11-dev
-  - published 2026-08-26T12:05:57Z (was v0.4.10)
 - **`sn81:scoring_commit:2026-08-26T13:09:50Z`** - sn81 commit touches scoring: fix(proof): release a finished plan's miner payloads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn108:scoring_commit:2026-08-26T13:27:13Z`** - sn108 commit touches scoring: Merge feat/mirrored-scoring: submit another validator's published scor
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn44:scoring_commit:2026-08-26T14:00:07Z`** - sn44 commit touches scoring: Merge pull request #56 from score-technologies/security-enhancement
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,11 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn14:release:v2.1.0` | 14 | RELEASE | 2026-08-19T13:56:35Z | sn14 released v2.1.0 |
-| `sn28:release:v0.4.8` | 28 | RELEASE | 2026-08-19T13:56:35Z | sn28 released v0.4.8 |
-| `sn28:scoring_commit:2026-08-19T13:23:34Z` | 28 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn28 commit touches scoring: Release gm-miner v0.4.8 |
-| `sn81:scoring_commit:2026-08-19T13:11:10Z` | 81 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn81 commit touches scoring: Merge pull request #184 from reliquadotai/perf/pi-old-from-verify-log… |
-| `sn92:scoring_commit:2026-08-19T13:15:41Z` | 92 | SCORING_COMMIT | 2026-08-19T13:56:35Z | sn92 commit touches scoring: Cut the validator guide to specs and steps |
 | `sn108:scoring_commit:2026-08-19T14:31:17Z` | 108 | SCORING_COMMIT | 2026-08-19T14:49:08Z | sn108 commit touches scoring: docs(miner): say which architectures the image can actually load (#8) |
 | `sn108:scoring_commit:2026-08-19T15:01:26Z` | 108 | SCORING_COMMIT | 2026-08-19T15:42:46Z | sn108 commit touches scoring: feat(miner): refuse an architecture the image cannot load, at render … |
 | `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
@@ -240,6 +232,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-26T10:23:53Z` | 21 | SCORING_COMMIT | 2026-08-26T10:49:02Z | sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu… |
 | `sn111:scoring_commit:2026-08-26T10:46:32Z` | 111 | SCORING_COMMIT | 2026-08-26T10:49:02Z | sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators |
 | `sn51:scoring_commit:2026-08-26T10:57:03Z` | 51 | SCORING_COMMIT | 2026-08-26T11:40:35Z | sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153) |
+| `sn21:scoring_commit:2026-08-26T11:55:13Z` | 21 | SCORING_COMMIT | 2026-08-26T12:18:39Z | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess |
+| `sn28:release:v0.4.11-dev` | 28 | RELEASE | 2026-08-26T12:18:39Z | sn28 released v0.4.11-dev |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

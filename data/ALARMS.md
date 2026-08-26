@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T16:05:48Z, block 8930298
+# ALARMS - generated 2026-08-26T16:57:39Z, block 8930557
 
-window: first_seen in [2026-08-26T14:51:12Z, 2026-08-26T16:06:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T15:43:11Z, 2026-08-26T16:58:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -27,8 +27,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
-| `sn111:scoring_commit:2026-08-19T15:56:47Z` | 111 | SCORING_COMMIT | 2026-08-19T16:12:42Z | sn111 commit touches scoring: feat(scoring): bound eligible claims and adjudication cases |
-| `sn71:scoring_commit:2026-08-19T16:17:00Z` | 71 | SCORING_COMMIT | 2026-08-19T16:56:08Z | sn71 commit touches scoring: Retry pinned validator yum installs safely |
 | `sn1:release:v4.3.4` | 1 | RELEASE | 2026-08-19T18:02:34Z | sn1 released v4.3.4 |
 | `sn46:scoring_commit:2026-08-19T18:42:46Z` | 46 | SCORING_COMMIT | 2026-08-19T18:50:48Z | sn46 commit touches scoring: Merge pull request #21 from instant-subnet/niki/fix-finney-validator-… |
 | `sn46:scoring_commit:2026-08-19T19:00:28Z` | 46 | SCORING_COMMIT | 2026-08-19T19:35:24Z | sn46 commit touches scoring: Restore validator log visibility after the bittensor import |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-26T11:39:58Z, block 8928969
+# ALARMS - generated 2026-08-26T12:17:58Z, block 8929159
 
-window: first_seen in [2026-08-26T10:25:35Z, 2026-08-26T11:40:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-26T11:03:39Z, 2026-08-26T12:18:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-26T10:23:53Z` | 21 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu… |
-| `sn111:scoring_commit:2026-08-26T10:46:32Z` | 111 | SCORING_COMMIT | P1 | 2026-08-26T10:49:02Z | sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators |
 | `sn51:scoring_commit:2026-08-26T10:57:03Z` | 51 | SCORING_COMMIT | P1 | 2026-08-26T11:40:35Z | sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153) |
+| `sn21:scoring_commit:2026-08-26T11:55:13Z` | 21 | SCORING_COMMIT | P1 | 2026-08-26T12:18:39Z | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess |
+| `sn28:release:v0.4.11-dev` | 28 | RELEASE | P1 | 2026-08-26T12:18:39Z | sn28 released v0.4.11-dev |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-26T10:23:53Z`** - sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-26T10:46:32Z`** - sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 - **`sn51:scoring_commit:2026-08-26T10:57:03Z`** - sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-26T11:55:13Z`** - sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.11-dev`** - sn28 released v0.4.11-dev
+  - published 2026-08-26T12:05:57Z (was v0.4.10)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -234,6 +234,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:scoring_commit:2026-08-26T08:41:08Z` | 112 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn112 commit touches scoring: fix(964): optimizeYield can be scored — four defects between plan and… |
 | `sn111:scoring_commit:2026-08-26T09:13:32Z` | 111 | SCORING_COMMIT | 2026-08-26T09:54:13Z | sn111 commit touches scoring: fix(selection): retain serving miners and record evaluation history |
 | `sn112:scoring_commit:2026-08-26T09:26:46Z` | 112 | SCORING_COMMIT | 2026-08-26T09:54:13Z | sn112 commit touches scoring: feat(scoring): give the JS sandbox the App's own verdict, not just wh… |
+| `sn21:scoring_commit:2026-08-26T10:23:53Z` | 21 | SCORING_COMMIT | 2026-08-26T10:49:02Z | sn21 commit touches scoring: feat(rewards): publish the allocation audit with the daily vector; qu… |
+| `sn111:scoring_commit:2026-08-26T10:46:32Z` | 111 | SCORING_COMMIT | 2026-08-26T10:49:02Z | sn111 commit touches scoring: feat(batch): reuse canonical miner artifacts across validators |
 | `sn10:readme_task_diff:2e15c71289199f4e` | 10 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn10 README task/scoring sections changed |
 | `sn90:readme_task_diff:320a058a7749d0fe` | 90 | README_TASK_DIFF | 2026-08-19T18:50:48Z | sn90 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d03fe25d3e98c8c` | 66 | README_TASK_DIFF | 2026-08-19T20:02:56Z | sn66 README task/scoring sections changed |

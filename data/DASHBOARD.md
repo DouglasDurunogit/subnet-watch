@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-26T22:22:49Z · block 8932183 · run_status **ok**_
+_snapshot 2026-08-27T03:26:25Z · block 8933701 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 56 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 90 | `miner_burn` < 0.99 |
-| Ranked | 90 | passed every gate |
-| **Positive margin** | **56** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| Pays miners at all | 88 | `miner_burn` < 0.99 |
+| Ranked | 88 | passed every gate |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 6 | `███` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 7 | `███` |
-| 0.6–0.8 | 6 | `███` |
-| 0.8–0.99 | 7 | `███` |
-| ≥0.99 dead | 38 | `██████████████████` |
+| 0 (none) | 60 | `████████████████████████████` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 3 | `█` |
+| 0.4–0.6 | 9 | `████` |
+| 0.6–0.8 | 5 | `██` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 40 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn76 Phylax | 77.1 | 77.21 | 387 | cpu-small | 20 | 20% |
-| 2 | sn60 Bitsec.ai | 76.1 | 1,787 | 1,787 = | cpu-small | 2 | 50% |
-| 3 | sn3 Teutonic | 75.4 | 3,732 | 3,732 = | rtx4090* | 5 | 20% |
-| 4 | sn23 Trishool | 72.1 | 535 | 535 = | cpu-small | 2 | 80% |
-| 5 | sn102 ConnitoAI | 71.4 | 1,112 | 2,232 | rtx4090* | 6 | 35% |
-| 6 | sn15 ORO | 70.9 | 22.62 | 43.16 | cpu-small | 96 | 92% |
-| 7 | sn67 Harnyx | 70.5 | 14.35 | 255 | cpu-small | 138 | 7% |
-| 8 | sn1 Apex | 70 | 742 | 1,273 | rtx4090* | 4 | 57% |
-| 9 | sn91 cascade | 69.8 | 695 | 2,803 | rtx4090* | 5 | 52% |
-| 10 | sn56 Gradients | 69.6 | 650 | 1,073 | rtx4090* | 6 | 74% |
-| 11 | sn26 Perturb | 68.5 | 23.42 | 440 | rtx3060 | 10 | 70% |
-| 12 | sn124 Swarm | 66.7 | 285 | 857 | rtx4090* | 25 | 10% |
-| 13 | sn61 RedTeam | 65.1 | 171 | 241 | rtx4090* | 32 | 4% |
-| 14 | sn107 Minos | 64.8 | 133 | 39,782 | cpu-small | 20 | 90% |
-| 15 | sn28 gm | 64.6 | 150 | 1,631 | rtx4090* | 40 | 29% |
-| 16 | sn121 sundae_bar | 63 | 1,223 | 1,223 = | cpu-small | 2 | 61% |
-| 17 | sn81 Reliquary | 62.9 | 89.64 | 332 | rtx4090* | 43 | 8% |
-| 18 | sn54 Yanez | 62.2 | 3.54 | 1,127 | a4000 | 135 | 35% |
-| 19 | sn38 ChronoLLM | 59.3 | 419 | 1,619 | cpu-small | 6 | 53% |
-| 20 | sn108 Prometheon | 59.1 | 28.91 | 132 | rtx4090* | 9 | 29% |
+| 1 | sn60 Bitsec.ai | 76.3 | 1,877 | 1,877 = | cpu-small | 2 | 50% |
+| 2 | sn3 Teutonic | 75.5 | 3,812 | 3,812 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 75.5 | 52.00 | 498 | cpu-small | 20 | 25% |
+| 4 | sn23 Trishool | 72.2 | 555 | 555 = | cpu-small | 2 | 80% |
+| 5 | sn102 ConnitoAI | 71.9 | 1,290 | 2,389 | rtx4090* | 5 | 35% |
+| 6 | sn15 ORO | 70.9 | 23.24 | 44.32 | cpu-small | 96 | 92% |
+| 7 | sn67 Harnyx | 70.6 | 14.76 | 262 | cpu-small | 138 | 7% |
+| 8 | sn1 Apex | 70 | 751 | 1,289 | rtx4090* | 4 | 58% |
+| 9 | sn91 cascade | 68.9 | 547 | 1,472 | rtx4090* | 5 | 52% |
+| 10 | sn56 Gradients | 68.5 | 468 | 1,113 | rtx4090* | 7 | 70% |
+| 11 | sn124 Swarm | 66.8 | 295 | 886 | rtx4090* | 25 | 10% |
+| 12 | sn61 RedTeam | 65.3 | 181 | 254 | rtx4090* | 32 | 5% |
+| 13 | sn28 gm | 65 | 167 | 976 | rtx4090* | 37 | 44% |
+| 14 | sn107 Minos | 64.8 | 135 | 40,619 | cpu-small | 20 | 90% |
+| 15 | sn98 NeverPlayAlone | 64.7 | 2,044 | 2,044 = | cpu-small | 1 | 100% |
+| 16 | sn121 sundae_bar | 63.1 | 1,280 | 1,280 = | cpu-small | 2 | 60% |
+| 17 | sn81 Reliquary | 63.1 | 94.14 | 322 | rtx4090* | 42 | 7% |
+| 18 | sn54 Yanez | 60.7 | 2.08 | 1,141 | a4000 | 94 | 44% |
+| 19 | sn108 Prometheon | 60.5 | 44.26 | 136 | rtx4090* | 9 | 29% |
+| 20 | sn51 lium.io | 60.3 | 49.12 | 2,785 | rtx4090* | 57 | 72% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 14 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 21 |
+| dominated (60–90%) | 13 |
 | captured (>90%) | 27 |
 
 ## Hardware evidence quality
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-27T03:26 | sn25 | RELEASE | sn25 released v2026.8.26-1029908500 |
 | 2026-08-26T22:23 | sn7 | BURN_DROP | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
 | 2026-08-26T22:23 | sn28 | RELEASE | sn28 released v0.4.11 |
 | 2026-08-26T22:23 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: Submit one epoch of reward points to the  |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-26T13:33 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit anot |
 | 2026-08-26T12:18 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerpri |
 | 2026-08-26T12:18 | sn28 | RELEASE | sn28 released v0.4.11-dev |
-| 2026-08-26T11:40 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2467, mixed scoring for partially ren |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-27T03:26:25Z, block 8933701
+# ALARMS - generated 2026-08-27T14:32:40Z, block 8937032
 
-window: first_seen in [2026-08-27T02:11:56Z, 2026-08-27T03:26:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-27T13:18:13Z, 2026-08-27T14:33:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,46 +9,60 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.26-1029908500` | 25 | RELEASE | P1 | 2026-08-27T03:26:56Z | sn25 released v2026.8.26-1029908500 |
+| `sn65:burn_drop:0.762` | 65 | BURN_DROP | P0 | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
+| `sn92:burn_drop:0.952` | 92 | BURN_DROP | P0 | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
+| `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
+| `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
+| `sn25:release:v2026.8.27-1030161880` | 25 | RELEASE | P1 | 2026-08-27T14:33:13Z | sn25 released v2026.8.27-1030161880 |
+| `sn55:scoring_commit:2026-08-27T11:33:48Z` | 55 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn55 commit touches scoring: update validation block number |
+| `sn61:release:4.10.1` | 61 | RELEASE | P1 | 2026-08-27T14:33:13Z | sn61 released 4.10.1 |
+| `sn61:scoring_commit:2026-08-27T11:47:29Z` | 61 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen… |
+| `sn67:scoring_commit:2026-08-27T07:34:23Z` | 67 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2 |
+| `sn76:scoring_commit:2026-08-27T09:02:45Z` | 76 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn76 commit touches scoring: validator: attest rejected runs so miners can see why |
+| `sn92:scoring_commit:2026-08-27T09:29:56Z` | 92 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote |
+| `sn108:scoring_commit:2026-08-27T13:01:50Z` | 108 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30 |
+| `sn112:scoring_commit:2026-08-27T08:40:42Z` | 112 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one … |
+| `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | P2 | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.8.26-1029908500`** - sn25 released v2026.8.26-1029908500
-  - published 2026-08-27T00:41:41Z (was v2026.8.26-1029569170)
+- **`sn65:burn_drop:0.762`** - sn65 burn fell 1.000 -> 0.762 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn92:burn_drop:0.952`** - sn92 burn fell 1.000 -> 0.952 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn3:scoring_commit:2026-08-27T11:15:32Z`** - sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:scoring_commit:2026-08-27T12:19:47Z`** - sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.8.27-1030161880`** - sn25 released v2026.8.27-1030161880
+  - published 2026-08-27T07:40:15Z (was v2026.8.26-1029908500)
+- **`sn55:scoring_commit:2026-08-27T11:33:48Z`** - sn55 commit touches scoring: update validation block number
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn61:release:4.10.1`** - sn61 released 4.10.1
+  - published 2026-08-27T11:48:32Z (was 4.10.0)
+- **`sn61:scoring_commit:2026-08-27T11:47:29Z`** - sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-27T07:34:23Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-08-27T09:02:45Z`** - sn76 commit touches scoring: validator: attest rejected runs so miners can see why
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-27T09:29:56Z`** - sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-08-27T13:01:50Z`** - sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn112:scoring_commit:2026-08-27T08:40:42Z`** - sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:4ac99c0122295794`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn80:burn_drop:0.908` | 80 | BURN_DROP | 2026-08-20T05:42:25Z | sn80 burn fell 1.000 -> 0.908 - miners can earn again |
-| `sn7:burn_drop:0.978` | 7 | BURN_DROP | 2026-08-20T08:54:06Z | sn7 burn fell 0.992 -> 0.978 - miners can earn again |
-| `sn113:burn_drop:0.990` | 113 | BURN_DROP | 2026-08-20T08:54:06Z | sn113 burn fell 1.000 -> 0.990 - miners can earn again |
 | `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
 | `sn7:burn_drop:0.910` | 7 | BURN_DROP | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
-| `sn21:release:SN21 rich training data v2` | 21 | RELEASE | 2026-08-20T03:58:21Z | sn21 released SN21 rich training data v2 |
-| `sn23:scoring_commit:2026-08-20T03:45:52Z` | 23 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn23 commit touches scoring: Merge pull request #48 from TrishoolAI/feat/challenge-creation |
-| `sn100:scoring_commit:2026-08-20T03:53:06Z` | 100 | SCORING_COMMIT | 2026-08-20T03:58:21Z | sn100 commit touches scoring: Merge pull request #166 from BaseIntelligence/prism-v2.1-scoring |
-| `sn71:scoring_commit:2026-08-20T03:58:52Z` | 71 | SCORING_COMMIT | 2026-08-20T04:49:21Z | sn71 commit touches scoring: Preserve restart timing across miner bootstrap handoff |
-| `sn111:scoring_commit:2026-08-20T07:12:31Z` | 111 | SCORING_COMMIT | 2026-08-20T07:23:41Z | sn111 commit touches scoring: fix(scoring): handle missing claim assessments safely |
-| `sn51:scoring_commit:2026-08-20T07:41:14Z` | 51 | SCORING_COMMIT | 2026-08-20T08:05:07Z | sn51 commit touches scoring: DAH-2715: withhold the unrented incentive from executors that cannot … |
-| `sn71:scoring_commit:2026-08-20T08:18:13Z` | 71 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn71 commit touches scoring: Keep validator CID diagnostics off JSON stdout |
-| `sn75:scoring_commit:2026-08-20T08:51:35Z` | 75 | SCORING_COMMIT | 2026-08-20T08:54:06Z | sn75 commit touches scoring: Merge pull request #53 from thenervelab/fix/payminers-from-arion |
-| `sn67:scoring_commit:2026-08-20T07:52:49Z` | 67 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260820.post5 |
-| `sn92:scoring_commit:2026-08-20T09:42:59Z` | 92 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn92 commit touches scoring: Take telemetry from miners and serve it back |
-| `sn100:release:v3.3.26: fix(validator): persist last se` | 100 | RELEASE | 2026-08-20T09:47:27Z | sn100 released v3.3.26: fix(validator): persist last sealed bundle across restarts |
-| `sn100:scoring_commit:2026-08-20T09:41:45Z` | 100 | SCORING_COMMIT | 2026-08-20T09:47:27Z | sn100 commit touches scoring: Merge pull request #183 from BaseIntelligence/fix/validator-public-we… |
-| `sn44:scoring_commit:2026-08-20T09:49:53Z` | 44 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn44 commit touches scoring: update min challenge private |
-| `sn92:scoring_commit:2026-08-20T10:11:04Z` | 92 | SCORING_COMMIT | 2026-08-20T10:16:11Z | sn92 commit touches scoring: Add the miner axon and document telemetry |
-| `sn89:scoring_commit:2026-08-20T10:46:55Z` | 89 | SCORING_COMMIT | 2026-08-20T10:57:10Z | sn89 commit touches scoring: scripts/import_checkpoint.py: seed a validator journal from the publi… |
-| `sn21:scoring_commit:2026-08-20T11:28:23Z` | 21 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn21 commit touches scoring: docs: point miners at rich training v2 and the expanded change types |
-| `sn89:scoring_commit:2026-08-20T11:37:34Z` | 89 | SCORING_COMMIT | 2026-08-20T11:38:02Z | sn89 commit touches scoring: build_hf_scoreboard: HF status speaks the LF vocabulary |
-| `sn28:release:v0.4.9-dev` | 28 | RELEASE | 2026-08-20T12:15:50Z | sn28 released v0.4.9-dev |
-| `sn66:release:Payment and IAM update` | 66 | RELEASE | 2026-08-20T13:27:01Z | sn66 released Payment and IAM update |
-| `sn10:scoring_commit:2026-08-20T12:49:41Z` | 10 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn10 commit touches scoring: feat(api): public read API for rounds, leader, and score progress |
-| `sn28:release:v0.4.9` | 28 | RELEASE | 2026-08-20T14:10:38Z | sn28 released v0.4.9 |
-| `sn89:scoring_commit:2026-08-20T13:41:37Z` | 89 | SCORING_COMMIT | 2026-08-20T14:10:38Z | sn89 commit touches scoring: README: a validator needs NO market-data key, and never needed a Taos… |
 | `sn10:scoring_commit:2026-08-20T15:19:13Z` | 10 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round |
 | `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
 | `sn100:release:v3.3.27` | 100 | RELEASE | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
@@ -216,8 +230,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn45:scoring_commit:2026-08-26T22:03:30Z` | 45 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn45 commit touches scoring: Submit one epoch of reward points to the API |
 | `sn76:scoring_commit:2026-08-26T20:35:03Z` | 76 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8 |
 | `sn111:scoring_commit:2026-08-26T19:54:44Z` | 111 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn111 commit touches scoring: docs(validator): add mainnet profile and streamline setup |
-| `sn92:readme_task_diff:927a737990a07446` | 92 | README_TASK_DIFF | 2026-08-20T05:42:25Z | sn92 README task/scoring sections changed |
-| `sn67:readme_task_diff:f4fc3f2cce58d57d` | 67 | README_TASK_DIFF | 2026-08-20T09:47:27Z | sn67 README task/scoring sections changed |
+| `sn25:release:v2026.8.26-1029908500` | 25 | RELEASE | 2026-08-27T03:26:56Z | sn25 released v2026.8.26-1029908500 |
 | `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
 | `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 | `sn90:readme_task_diff:1adff40174e46f0e` | 90 | README_TASK_DIFF | 2026-08-21T19:06:46Z | sn90 README task/scoring sections changed |

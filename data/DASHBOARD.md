@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-27T03:26:25Z · block 8933701 · run_status **ok**_
+_snapshot 2026-08-27T14:32:40Z · block 8937032 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 57 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 88 | `miner_burn` < 0.99 |
-| Ranked | 88 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| Pays miners at all | 91 | `miner_burn` < 0.99 |
+| Ranked | 91 | passed every gate |
+| **Positive margin** | **57** | income beats machine cost |
+| New events this window | 14 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 60 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 3 | `█` |
-| 0.4–0.6 | 9 | `████` |
-| 0.6–0.8 | 5 | `██` |
-| 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 40 | `███████████████████` |
+| 0–0.2 | 6 | `███` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 6 | `███` |
+| 0.8–0.99 | 7 | `███` |
+| ≥0.99 dead | 37 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn60 Bitsec.ai | 76.3 | 1,877 | 1,877 = | cpu-small | 2 | 50% |
-| 2 | sn3 Teutonic | 75.5 | 3,812 | 3,812 = | rtx4090* | 5 | 20% |
-| 3 | sn76 Phylax | 75.5 | 52.00 | 498 | cpu-small | 20 | 25% |
-| 4 | sn23 Trishool | 72.2 | 555 | 555 = | cpu-small | 2 | 80% |
-| 5 | sn102 ConnitoAI | 71.9 | 1,290 | 2,389 | rtx4090* | 5 | 35% |
-| 6 | sn15 ORO | 70.9 | 23.24 | 44.32 | cpu-small | 96 | 92% |
-| 7 | sn67 Harnyx | 70.6 | 14.76 | 262 | cpu-small | 138 | 7% |
-| 8 | sn1 Apex | 70 | 751 | 1,289 | rtx4090* | 4 | 58% |
-| 9 | sn91 cascade | 68.9 | 547 | 1,472 | rtx4090* | 5 | 52% |
-| 10 | sn56 Gradients | 68.5 | 468 | 1,113 | rtx4090* | 7 | 70% |
-| 11 | sn124 Swarm | 66.8 | 295 | 886 | rtx4090* | 25 | 10% |
-| 12 | sn61 RedTeam | 65.3 | 181 | 254 | rtx4090* | 32 | 5% |
-| 13 | sn28 gm | 65 | 167 | 976 | rtx4090* | 37 | 44% |
-| 14 | sn107 Minos | 64.8 | 135 | 40,619 | cpu-small | 20 | 90% |
-| 15 | sn98 NeverPlayAlone | 64.7 | 2,044 | 2,044 = | cpu-small | 1 | 100% |
-| 16 | sn121 sundae_bar | 63.1 | 1,280 | 1,280 = | cpu-small | 2 | 60% |
-| 17 | sn81 Reliquary | 63.1 | 94.14 | 322 | rtx4090* | 42 | 7% |
-| 18 | sn54 Yanez | 60.7 | 2.08 | 1,141 | a4000 | 94 | 44% |
-| 19 | sn108 Prometheon | 60.5 | 44.26 | 136 | rtx4090* | 9 | 29% |
-| 20 | sn51 lium.io | 60.3 | 49.12 | 2,785 | rtx4090* | 57 | 72% |
+| 1 | sn60 Bitsec.ai | 76.6 | 2,042 | 2,042 = | cpu-small | 2 | 50% |
+| 2 | sn3 Teutonic | 75.8 | 4,185 | 4,185 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 75.4 | 50.47 | 204 | cpu-small | 21 | 20% |
+| 4 | sn67 Harnyx | 74.1 | 35.92 | 245 | cpu-small | 104 | 7% |
+| 5 | sn23 Trishool | 72.4 | 584 | 584 = | cpu-small | 2 | 80% |
+| 6 | sn1 Apex | 70.5 | 851 | 1,406 | rtx4090* | 4 | 57% |
+| 7 | sn15 ORO | 70.4 | 22.24 | 42.70 | cpu-small | 92 | 92% |
+| 8 | sn102 ConnitoAI | 69.7 | 684 | 2,033 | rtx4090* | 7 | 29% |
+| 9 | sn91 cascade | 69 | 556 | 1,498 | rtx4090* | 5 | 52% |
+| 10 | sn56 Gradients | 68.7 | 497 | 1,194 | rtx4090* | 7 | 70% |
+| 11 | sn92 MicroTensor | 67.1 | 121 | 195 | cpu-small | 3 | 95% |
+| 12 | sn124 Swarm | 67 | 314 | 943 | rtx4090* | 25 | 10% |
+| 13 | sn61 RedTeam | 65.6 | 198 | 283 | rtx4090* | 32 | 5% |
+| 14 | sn107 Minos | 64.9 | 138 | 40,820 | cpu-small | 20 | 90% |
+| 15 | sn54 Yanez | 64.6 | 7.20 | 1,202 | a4000 | 100 | 35% |
+| 16 | sn81 Reliquary | 63.4 | 103 | 246 | rtx4090* | 44 | 5% |
+| 17 | sn28 gm | 63.3 | 101 | 3,129 | rtx4090* | 44 | 36% |
+| 18 | sn65 True Performance | 63 | 101 | 210 | rtx4090* | 6 | 76% |
+| 19 | sn55 NIOME | 62.4 | 76.48 | 627 | rtx4090* | 11 | 29% |
+| 20 | sn51 lium.io | 61 | 60.49 | 2,727 | rtx4090* | 56 | 73% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
+| wide (<30%) | 26 |
 | concentrated (30–60%) | 21 |
-| dominated (60–90%) | 13 |
-| captured (>90%) | 27 |
+| dominated (60–90%) | 14 |
+| captured (>90%) | 28 |
 
 ## Hardware evidence quality
 
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-27T14:33 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Refactor evaluation section in index.html  |
+| 2026-08-27T14:33 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: perf(rewards): per-day fingerprint index  |
+| 2026-08-27T14:33 | sn25 | RELEASE | sn25 released v2026.8.27-1030161880 |
+| 2026-08-27T14:33 | sn55 | SCORING_COMMIT | sn55 commit touches scoring: update validation block number |
+| 2026-08-27T14:33 | sn61 | RELEASE | sn61 released 4.10.1 |
+| 2026-08-27T14:33 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: chore: update scoring criteria and clarif |
+| 2026-08-27T14:33 | sn65 | BURN_DROP | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
+| 2026-08-27T14:33 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
+| 2026-08-27T14:33 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: validator: attest rejected runs so miners |
+| 2026-08-27T14:33 | sn92 | BURN_DROP | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
+| 2026-08-27T14:33 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Let a miner restore a pointer a reveal ov |
+| 2026-08-27T14:33 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: docs(validator): re-post every 30 minute |
+| 2026-08-27T14:33 | sn111 | README_TASK_DIFF | sn111 README task/scoring sections changed |
+| 2026-08-27T14:33 | sn112 | SCORING_COMMIT | sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for  |
 | 2026-08-27T03:26 | sn25 | RELEASE | sn25 released v2026.8.26-1029908500 |
-| 2026-08-26T22:23 | sn7 | BURN_DROP | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
-| 2026-08-26T22:23 | sn28 | RELEASE | sn28 released v0.4.11 |
-| 2026-08-26T22:23 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: Submit one epoch of reward points to the  |
-| 2026-08-26T22:23 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: rewards: top five per track, split 40/25/ |
-| 2026-08-26T22:23 | sn76 | README_TASK_DIFF | sn76 README task/scoring sections changed |
-| 2026-08-26T22:23 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: docs(validator): add mainnet profile and |
-| 2026-08-26T19:17 | sn54 | SCORING_COMMIT | sn54 commit touches scoring: updating UAV all miners not just the quer |
-| 2026-08-26T19:17 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: feat: verify the submitter violating cla |
-| 2026-08-26T16:06 | sn25 | RELEASE | sn25 released v2026.8.26-1029569170 |
-| 2026-08-26T14:29 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: Merge pull request #56 from score-technol |
-| 2026-08-26T13:33 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: fix(proof): release a finished plan's min |
-| 2026-08-26T13:33 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit anot |
-| 2026-08-26T12:18 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerpri |
-| 2026-08-26T12:18 | sn28 | RELEASE | sn28 released v0.4.11-dev |
 
 ---
 

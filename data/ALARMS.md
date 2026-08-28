@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-27T14:32:40Z, block 8937032
+# ALARMS - generated 2026-08-28T00:03:08Z, block 8939882
 
-window: first_seen in [2026-08-27T13:18:13Z, 2026-08-27T14:33:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-27T22:48:30Z, 2026-08-28T00:03:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,80 +9,40 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn65:burn_drop:0.762` | 65 | BURN_DROP | P0 | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
-| `sn92:burn_drop:0.952` | 92 | BURN_DROP | P0 | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
-| `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
-| `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
-| `sn25:release:v2026.8.27-1030161880` | 25 | RELEASE | P1 | 2026-08-27T14:33:13Z | sn25 released v2026.8.27-1030161880 |
-| `sn55:scoring_commit:2026-08-27T11:33:48Z` | 55 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn55 commit touches scoring: update validation block number |
-| `sn61:release:4.10.1` | 61 | RELEASE | P1 | 2026-08-27T14:33:13Z | sn61 released 4.10.1 |
-| `sn61:scoring_commit:2026-08-27T11:47:29Z` | 61 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen… |
-| `sn67:scoring_commit:2026-08-27T07:34:23Z` | 67 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2 |
-| `sn76:scoring_commit:2026-08-27T09:02:45Z` | 76 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn76 commit touches scoring: validator: attest rejected runs so miners can see why |
-| `sn92:scoring_commit:2026-08-27T09:29:56Z` | 92 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote |
-| `sn108:scoring_commit:2026-08-27T13:01:50Z` | 108 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30 |
-| `sn112:scoring_commit:2026-08-27T08:40:42Z` | 112 | SCORING_COMMIT | P1 | 2026-08-27T14:33:13Z | sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one … |
-| `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | P2 | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
+| `sn59:burn_drop:0.000` | 59 | BURN_DROP | P0 | 2026-08-28T00:03:30Z | sn59 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn3:scoring_commit:2026-08-27T14:44:03Z` | 3 | SCORING_COMMIT | P1 | 2026-08-28T00:03:30Z | sn3 commit touches scoring: Add evaluation history metrics presentation and update dashboard rend… |
+| `sn25:release:v2026.8.27-1030474020` | 25 | RELEASE | P1 | 2026-08-28T00:03:30Z | sn25 released v2026.8.27-1030474020 |
+| `sn91:release:worker-v0.7.0` | 91 | RELEASE | P1 | 2026-08-28T00:03:30Z | sn91 released worker-v0.7.0 |
+| `sn92:scoring_commit:2026-08-27T15:01:23Z` | 92 | SCORING_COMMIT | P1 | 2026-08-28T00:03:30Z | sn92 commit touches scoring: Attach hidden tests as gold on scored tasks |
+| `sn108:scoring_commit:2026-08-27T17:17:43Z` | 108 | SCORING_COMMIT | P1 | 2026-08-28T00:03:30Z | sn108 commit touches scoring: fix(validator): a rate-limited mirror cycle killed the scheduler and … |
+| `sn112:scoring_commit:2026-08-27T18:37:53Z` | 112 | SCORING_COMMIT | P1 | 2026-08-28T00:03:30Z | sn112 commit touches scoring: fix(964): a plan's interactions did not compose, so 964 scored by dif… |
 
 ### detail
 
-- **`sn65:burn_drop:0.762`** - sn65 burn fell 1.000 -> 0.762 - miners can earn again
+- **`sn59:burn_drop:0.000`** - sn59 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn92:burn_drop:0.952`** - sn92 burn fell 1.000 -> 0.952 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn3:scoring_commit:2026-08-27T11:15:32Z`** - sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure
+- **`sn3:scoring_commit:2026-08-27T14:44:03Z`** - sn3 commit touches scoring: Add evaluation history metrics presentation and update dashboard rend…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-08-27T12:19:47Z`** - sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops …
+- **`sn25:release:v2026.8.27-1030474020`** - sn25 released v2026.8.27-1030474020
+  - published 2026-08-27T16:20:16Z (was v2026.8.27-1030161880)
+- **`sn91:release:worker-v0.7.0`** - sn91 released worker-v0.7.0
+  - published 2026-08-27T23:57:57Z (was pre-decay-wsd-contract)
+- **`sn92:scoring_commit:2026-08-27T15:01:23Z`** - sn92 commit touches scoring: Attach hidden tests as gold on scored tasks
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.8.27-1030161880`** - sn25 released v2026.8.27-1030161880
-  - published 2026-08-27T07:40:15Z (was v2026.8.26-1029908500)
-- **`sn55:scoring_commit:2026-08-27T11:33:48Z`** - sn55 commit touches scoring: update validation block number
+- **`sn108:scoring_commit:2026-08-27T17:17:43Z`** - sn108 commit touches scoring: fix(validator): a rate-limited mirror cycle killed the scheduler and …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.10.1`** - sn61 released 4.10.1
-  - published 2026-08-27T11:48:32Z (was 4.10.0)
-- **`sn61:scoring_commit:2026-08-27T11:47:29Z`** - sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen…
+- **`sn112:scoring_commit:2026-08-27T18:37:53Z`** - sn112 commit touches scoring: fix(964): a plan's interactions did not compose, so 964 scored by dif…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-27T07:34:23Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-08-27T09:02:45Z`** - sn76 commit touches scoring: validator: attest rejected runs so miners can see why
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-27T09:29:56Z`** - sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-27T13:01:50Z`** - sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn112:scoring_commit:2026-08-27T08:40:42Z`** - sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:4ac99c0122295794`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.611` | 121 | BURN_DROP | 2026-08-20T18:15:10Z | sn121 burn fell 1.000 -> 0.611 - miners can earn again |
 | `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
 | `sn7:burn_drop:0.910` | 7 | BURN_DROP | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
-| `sn10:scoring_commit:2026-08-20T15:19:13Z` | 10 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn10 commit touches scoring: fix(worker): pass leaders.last_score to rank_round |
-| `sn53:scoring_commit:2026-08-20T15:30:56Z` | 53 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn53 commit touches scoring: tee_miner: lift the 1 MiB websocket frame cap that 504s long-context … |
-| `sn100:release:v3.3.27` | 100 | RELEASE | 2026-08-20T15:47:11Z | sn100 released v3.3.27 |
-| `sn100:scoring_commit:2026-08-20T15:17:43Z` | 100 | SCORING_COMMIT | 2026-08-20T15:47:11Z | sn100 commit touches scoring: fix(design-challenge): drop crate_name so loc-cap is under 1500 |
-| `sn21:scoring_commit:2026-08-20T15:58:11Z` | 21 | SCORING_COMMIT | 2026-08-20T16:17:45Z | sn21 commit touches scoring: docs: rich-era corrections in scoring architecture + whitepaper |
-| `sn71:scoring_commit:2026-08-20T16:25:08Z` | 71 | SCORING_COMMIT | 2026-08-20T17:01:22Z | sn71 commit touches scoring: Bind local readiness verifier environment |
-| `sn33:scoring_commit:2026-08-20T17:21:26Z` | 33 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn33 commit touches scoring: Merge pull request #136 from afterpartyai/Fix-Validator-timeout |
-| `sn111:scoring_commit:2026-08-20T17:04:54Z` | 111 | SCORING_COMMIT | 2026-08-20T17:41:16Z | sn111 commit touches scoring: docs(validation): document resilient diagnostic batching |
-| `sn71:scoring_commit:2026-08-20T18:02:42Z` | 71 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn71 commit touches scoring: Repair release verifier test isolation |
-| `sn89:scoring_commit:2026-08-20T18:09:55Z` | 89 | SCORING_COMMIT | 2026-08-20T18:15:10Z | sn89 commit touches scoring: HF: apply owner-hosted miner integrity verdicts alongside the in-repo… |
-| `sn18:release:Release 2.1.2` | 18 | RELEASE | 2026-08-20T19:55:22Z | sn18 released Release 2.1.2 |
-| `sn25:release:v2026.8.20-1024555910` | 25 | RELEASE | 2026-08-20T20:41:45Z | sn25 released v2026.8.20-1024555910 |
-| `sn13:release:Release v1.18.71` | 13 | RELEASE | 2026-08-20T21:13:04Z | sn13 released Release v1.18.71 |
-| `sn13:scoring_commit:2026-08-13T06:08:42Z` | 13 | SCORING_COMMIT | 2026-08-20T21:13:04Z | sn13 commit touches scoring: fix(s3): stop charging miners for passing validation and for growing |
-| `sn25:release:v2026.8.20-1024590520` | 25 | RELEASE | 2026-08-20T21:13:04Z | sn25 released v2026.8.20-1024590520 |
-| `sn25:scoring_commit:2026-08-20T20:47:44Z` | 25 | SCORING_COMMIT | 2026-08-20T21:13:04Z | sn25 commit touches scoring: Fix miner Windows arm64 cross-build |
-| `sn34:scoring_commit:2026-08-20T21:18:29Z` | 34 | SCORING_COMMIT | 2026-08-20T21:53:19Z | sn34 commit touches scoring: tune: double generator challenge frequency (#425) |
-| `sn92:scoring_commit:2026-08-20T21:18:03Z` | 92 | SCORING_COMMIT | 2026-08-20T22:40:23Z | sn92 commit touches scoring: Drop the task generator in favour of uploaded corpora |
-| `sn34:scoring_commit:2026-08-20T22:43:19Z` | 34 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn34 commit touches scoring: fix: restore validator config parsing (#427) |
-| `sn91:scoring_commit:2026-08-20T23:02:51Z` | 91 | SCORING_COMMIT | 2026-08-20T23:08:56Z | sn91 commit touches scoring: Merge pull request #203 from TensorLink-AI/claude/miner-dethrone-bar |
+| `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
+| `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn34:release:Release 4.9.8` | 34 | RELEASE | 2026-08-21T01:54:45Z | sn34 released Release 4.9.8 |
 | `sn53:scoring_commit:2026-08-21T04:53:19Z` | 53 | SCORING_COMMIT | 2026-08-21T05:04:00Z | sn53 commit touches scoring: tee_miner: absorb the reference miner's newer fixes |
 | `sn67:scoring_commit:2026-08-21T03:07:16Z` | 67 | SCORING_COMMIT | 2026-08-21T05:46:36Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260821.post1 |
@@ -231,7 +191,17 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-08-26T20:35:03Z` | 76 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8 |
 | `sn111:scoring_commit:2026-08-26T19:54:44Z` | 111 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn111 commit touches scoring: docs(validator): add mainnet profile and streamline setup |
 | `sn25:release:v2026.8.26-1029908500` | 25 | RELEASE | 2026-08-27T03:26:56Z | sn25 released v2026.8.26-1029908500 |
-| `sn25:readme_task_diff:c457ae49d232190d` | 25 | README_TASK_DIFF | 2026-08-20T17:41:16Z | sn25 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
+| `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
+| `sn25:release:v2026.8.27-1030161880` | 25 | RELEASE | 2026-08-27T14:33:13Z | sn25 released v2026.8.27-1030161880 |
+| `sn55:scoring_commit:2026-08-27T11:33:48Z` | 55 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn55 commit touches scoring: update validation block number |
+| `sn61:release:4.10.1` | 61 | RELEASE | 2026-08-27T14:33:13Z | sn61 released 4.10.1 |
+| `sn61:scoring_commit:2026-08-27T11:47:29Z` | 61 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen… |
+| `sn67:scoring_commit:2026-08-27T07:34:23Z` | 67 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2 |
+| `sn76:scoring_commit:2026-08-27T09:02:45Z` | 76 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn76 commit touches scoring: validator: attest rejected runs so miners can see why |
+| `sn92:scoring_commit:2026-08-27T09:29:56Z` | 92 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote |
+| `sn108:scoring_commit:2026-08-27T13:01:50Z` | 108 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30 |
+| `sn112:scoring_commit:2026-08-27T08:40:42Z` | 112 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one … |
 | `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
 | `sn90:readme_task_diff:1adff40174e46f0e` | 90 | README_TASK_DIFF | 2026-08-21T19:06:46Z | sn90 README task/scoring sections changed |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
@@ -240,6 +210,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
+| `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-28T11:17:53Z  |  block: 8943256  |  row_status: ok
+snapshot_utc: 2026-08-28T21:28:31Z  |  block: 8946309  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (48.94800000000001 USD), open=True
+- registration cost: 0.2 TAO (47.028 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 130  |  free: 0
-- subnet age: 794.9 days  |  registered at block 3219949
+- subnet age: 795.3 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 163.97200721121663** (uid 18) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.03198829637362791
-- top_miner_usd_day: 435.0408306813395 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 158.23316169331548** (uid 18) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.030868740088434543
+- top_miner_usd_day: 419.8148652027098 (uid 67, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 116  |  gini: 0.9266554813027312  |  top1_share: 0.20789385184505793  |  top10_share: 0.8906875783423521
+- earners: 116  |  gini: 0.9266554813027312  |  top1_share: 0.20789385184505793  |  top10_share: 0.8906875783423522
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-08-28T11:17:53Z  |  block: 8943256  |  row_status: ok
 - on-chain URL: `https://github.com/numinouslabs/numinous`
 - resolved URL: `https://github.com/numinouslabs/numinous`
 - status: **ok** 
-- README: 5474 bytes, sha 496b16d6a611eff7
+- README: 5473 bytes, sha 358a7cb13606d9bf
 - latest release: (none) 
-- last commit: 2026-08-19T20:21:05Z
+- last commit: 2026-08-28T17:07:07Z
 - scoring-related commit: (none) 
 
 ## Resources
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-28T11:17:53Z  |  block: 8943256  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9543 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9554 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 36.0 (rank 52), confidence 1.0 
+- score: 36.0 (rank 55), confidence 1.0 
 - components: income 0.0 / freshness 21.0 / resource 15.0 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 15d ago
 
@@ -58,7 +58,7 @@ snapshot_utc: 2026-08-28T11:17:53Z  |  block: 8943256  |  row_status: ok
 
 
 
-[Discord](https://discord.gg/BECnaD36E) • [Dashboard](https://app.hex.tech/1644b22a-abe5-4113-9d5f-3ad05e4a8de7/app/Numinous-031erYRYSssIrH3W3KcyHg/latest) • [Website](https://numinouslabs.io/) • [Twitter](https://x.com/numinous_ai) •
+[Discord](https://discord.gg/qKPeYPc3) • [Dashboard](https://app.hex.tech/1644b22a-abe5-4113-9d5f-3ad05e4a8de7/app/Numinous-031erYRYSssIrH3W3KcyHg/latest) • [Website](https://numinouslabs.io/) • [Twitter](https://x.com/numinous_ai) •
 [Network](https://taostats.io/subnets/6/chart)
 ---
 

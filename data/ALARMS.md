@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-28T11:17:53Z, block 8943256
+# ALARMS - generated 2026-08-28T21:28:31Z, block 8946309
 
-window: first_seen in [2026-08-28T10:03:26Z, 2026-08-28T11:18:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-28T20:13:55Z, 2026-08-28T21:28:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,62 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:burn_drop:0.000` | 14 | BURN_DROP | P0 | 2026-08-28T11:18:26Z | sn14 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn3:scoring_commit:2026-08-28T08:56:33Z` | 3 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn3 commit touches scoring: Add source scores handling and presentation to dashboard |
-| `sn25:release:v2026.8.28-1031115710` | 25 | RELEASE | P1 | 2026-08-28T11:18:26Z | sn25 released v2026.8.28-1031115710 |
-| `sn61:release:4.10.2` | 61 | RELEASE | P1 | 2026-08-28T11:18:26Z | sn61 released 4.10.2 |
-| `sn61:scoring_commit:2026-08-28T05:45:39Z` | 61 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn61 commit touches scoring: chore: update challenge navigation and fix ADA-3 headless detection s… |
-| `sn67:scoring_commit:2026-08-28T06:40:58Z` | 67 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260828.post6 |
-| `sn80:scoring_commit:2026-08-28T05:16:34Z` | 80 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn80 commit touches scoring: docs: point miners to the openroboto CLI and the real-robot track |
-| `sn92:scoring_commit:2026-08-28T08:31:19Z` | 92 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn92 commit touches scoring: Carry the miner's published source through to the control plane |
-| `sn96:release:Verathos v0.1.42 – Verified MoE, Account` | 96 | RELEASE | P1 | 2026-08-28T11:18:26Z | sn96 released Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability |
-| `sn96:scoring_commit:2026-08-26T14:47:41Z` | 96 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn96 commit touches scoring: fix: decay endpoint-gated scores at epoch close |
-| `sn108:scoring_commit:2026-08-28T04:54:03Z` | 108 | SCORING_COMMIT | P1 | 2026-08-28T11:18:26Z | sn108 commit touches scoring: docs(validator): the unanimity abort needs two independent sources |
-| `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | P2 | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
+| `sn104:burn_drop:0.003` | 104 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
+| `sn111:burn_drop:0.000` | 111 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn121:burn_drop:0.606` | 121 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
+| `sn15:release:v1.2.9` | 15 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn15 released v1.2.9 |
+| `sn15:scoring_commit:2026-08-28T18:31:26Z` | 15 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265) |
+| `sn21:scoring_commit:2026-08-28T17:07:56Z` | 21 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted … |
+| `sn25:release:v2026.8.28-1031286130` | 25 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn25 released v2026.8.28-1031286130 |
+| `sn28:release:v0.4.12` | 28 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn28 released v0.4.12 |
+| `sn35:release:1.2.0` | 35 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn35 released 1.2.0 |
+| `sn35:scoring_commit:2026-08-28T16:38:20Z` | 35 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn35 commit touches scoring: feat: send all miner emissions to scored miners |
+| `sn92:scoring_commit:2026-08-28T14:15:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit |
+| `sn102:release:v0.5.3` | 102 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn102 released v0.5.3 |
+| `sn102:scoring_commit:2026-08-28T13:33:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash |
+| `sn108:scoring_commit:2026-08-28T12:10:59Z` | 108 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members |
+| `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
+| `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
+| `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
+| `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn14:burn_drop:0.000`** - sn14 burn fell 1.000 -> 0.000 - miners can earn again
+- **`sn104:burn_drop:0.003`** - sn104 burn fell 1.000 -> 0.003 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn3:scoring_commit:2026-08-28T08:56:33Z`** - sn3 commit touches scoring: Add source scores handling and presentation to dashboard
+- **`sn111:burn_drop:0.000`** - sn111 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn121:burn_drop:0.606`** - sn121 burn fell 1.000 -> 0.606 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v1.2.9`** - sn15 released v1.2.9
+  - published 2026-08-28T18:34:10Z (was v1.2.8)
+- **`sn15:scoring_commit:2026-08-28T18:31:26Z`** - sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.8.28-1031115710`** - sn25 released v2026.8.28-1031115710
-  - published 2026-08-28T10:09:38Z (was v2026.8.27-1030474020)
-- **`sn61:release:4.10.2`** - sn61 released 4.10.2
-  - published 2026-08-28T05:46:48Z (was 4.10.1)
-- **`sn61:scoring_commit:2026-08-28T05:45:39Z`** - sn61 commit touches scoring: chore: update challenge navigation and fix ADA-3 headless detection s…
+- **`sn21:scoring_commit:2026-08-28T17:07:56Z`** - sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-28T06:40:58Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260828.post6
+- **`sn25:release:v2026.8.28-1031286130`** - sn25 released v2026.8.28-1031286130
+  - published 2026-08-28T14:53:52Z (was v2026.8.28-1031115710)
+- **`sn28:release:v0.4.12`** - sn28 released v0.4.12
+  - published 2026-08-28T16:22:22Z (was v0.4.11)
+- **`sn35:release:1.2.0`** - sn35 released 1.2.0
+  - published 2026-08-28T17:14:25Z (was 1.1.6)
+- **`sn35:scoring_commit:2026-08-28T16:38:20Z`** - sn35 commit touches scoring: feat: send all miner emissions to scored miners
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn80:scoring_commit:2026-08-28T05:16:34Z`** - sn80 commit touches scoring: docs: point miners to the openroboto CLI and the real-robot track
+- **`sn92:scoring_commit:2026-08-28T14:15:37Z`** - sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-28T08:31:19Z`** - sn92 commit touches scoring: Carry the miner's published source through to the control plane
+- **`sn102:release:v0.5.3`** - sn102 released v0.5.3
+  - published 2026-08-28T20:13:24Z (was v0.5.2 — background-eval resume + validator memory fixes)
+- **`sn102:scoring_commit:2026-08-28T13:33:02Z`** - sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.1.42 – Verified MoE, Account`** - sn96 released Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability
-  - published 2026-08-28T10:52:48Z (was Verathos v0.1.41 - Bounded Replay and Runtime Stability)
-- **`sn96:scoring_commit:2026-08-26T14:47:41Z`** - sn96 commit touches scoring: fix: decay endpoint-gated scores at epoch close
+- **`sn108:scoring_commit:2026-08-28T12:10:59Z`** - sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-28T04:54:03Z`** - sn108 commit touches scoring: docs(validator): the unanimity abort needs two independent sources
+- **`sn111:scoring_commit:2026-08-28T12:51:57Z`** - sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn80:readme_task_diff:a1414d5d9c1406ba`** - sn80 README task/scoring sections changed
+- **`sn47:readme_task_diff:3e3cbf15b25c3611`** - sn47 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn79:readme_task_diff:cd5eac2da72f58d2`** - sn79 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn108:readme_task_diff:e13470c52cc9c2e6`** - sn108 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -59,22 +77,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
 | `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn59:burn_drop:0.000` | 59 | BURN_DROP | 2026-08-28T00:03:30Z | sn59 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.8.21-1025114260` | 25 | RELEASE | 2026-08-21T11:52:03Z | sn25 released v2026.8.21-1025114260 |
-| `sn21:scoring_commit:2026-08-21T12:29:40Z` | 21 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn21 commit touches scoring: feat(verify): mirror the daily verification feeds to the operator API… |
-| `sn81:scoring_commit:2026-08-21T12:10:41Z` | 81 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn81 commit touches scoring: verify short (<CHALLENGE_K) completions at full coverage instead of h… |
-| `sn92:scoring_commit:2026-08-21T11:56:26Z` | 92 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn92 commit touches scoring: Verify the gguf pin inline, since tests are not published |
-| `sn108:scoring_commit:2026-08-21T13:03:07Z` | 108 | SCORING_COMMIT | 2026-08-21T13:07:23Z | sn108 commit touches scoring: docs(miner): eligibility now requires active members, not just regist… |
-| `sn108:scoring_commit:2026-08-21T13:19:16Z` | 108 | SCORING_COMMIT | 2026-08-21T13:57:42Z | sn108 commit touches scoring: fix(evaluation): reuse the prefix cache the pinned transformers return |
-| `sn1:release:v4.3.6` | 1 | RELEASE | 2026-08-21T14:50:15Z | sn1 released v4.3.6 |
-| `sn25:release:v2026.8.21-1025223880` | 25 | RELEASE | 2026-08-21T14:50:15Z | sn25 released v2026.8.21-1025223880 |
-| `sn21:scoring_commit:2026-08-21T16:09:09Z` | 21 | SCORING_COMMIT | 2026-08-21T16:15:59Z | sn21 commit touches scoring: docs: quickstart matches production — mirror for daily verification, … |
-| `sn102:release:v0.5.0` | 102 | RELEASE | 2026-08-21T16:15:59Z | sn102 released v0.5.0 |
-| `sn102:scoring_commit:2026-08-20T22:32:03Z` | 102 | SCORING_COMMIT | 2026-08-21T16:15:59Z | sn102 commit touches scoring: Merge pull request #223 from Connito-AI/feat/validator-observer-mode-v |
-| `sn92:scoring_commit:2026-08-21T16:31:36Z` | 92 | SCORING_COMMIT | 2026-08-21T17:00:58Z | sn92 commit touches scoring: Turn provenance off until the run store can accept miner runs |
-| `sn25:release:v2026.8.21-1025339670` | 25 | RELEASE | 2026-08-21T18:14:54Z | sn25 released v2026.8.21-1025339670 |
-| `sn89:scoring_commit:2026-08-21T18:27:38Z` | 89 | SCORING_COMMIT | 2026-08-21T19:06:46Z | sn89 commit touches scoring: Scoring: build the qualified-win as-of window from RESOLVED outcomes |
-| `sn92:release:v0.1.0` | 92 | RELEASE | 2026-08-21T19:06:46Z | sn92 released v0.1.0 |
-| `sn92:scoring_commit:2026-08-21T18:54:26Z` | 92 | SCORING_COMMIT | 2026-08-21T19:06:46Z | sn92 commit touches scoring: Install the signer's keypair and verify the release the way a validat… |
+| `sn14:burn_drop:0.000` | 14 | BURN_DROP | 2026-08-28T11:18:26Z | sn14 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn90:release:v1.1.5` | 90 | RELEASE | 2026-08-21T22:02:40Z | sn90 released v1.1.5 |
 | `sn90:scoring_commit:2026-08-21T22:02:06Z` | 90 | SCORING_COMMIT | 2026-08-21T22:02:40Z | sn90 commit touches scoring: fix(validator): fall back to CoinGecko TAO/USD when Taostats 429s |
 | `sn15:scoring_commit:2026-08-21T23:12:08Z` | 15 | SCORING_COMMIT | 2026-08-21T23:35:34Z | sn15 commit touches scoring: chore: remove dead BackendClient top-miner and race-history methods (… |
@@ -216,8 +219,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-27T15:01:23Z` | 92 | SCORING_COMMIT | 2026-08-28T00:03:30Z | sn92 commit touches scoring: Attach hidden tests as gold on scored tasks |
 | `sn108:scoring_commit:2026-08-27T17:17:43Z` | 108 | SCORING_COMMIT | 2026-08-28T00:03:30Z | sn108 commit touches scoring: fix(validator): a rate-limited mirror cycle killed the scheduler and … |
 | `sn112:scoring_commit:2026-08-27T18:37:53Z` | 112 | SCORING_COMMIT | 2026-08-28T00:03:30Z | sn112 commit touches scoring: fix(964): a plan's interactions did not compose, so 964 scored by dif… |
-| `sn21:readme_task_diff:24af354b63ad7d31` | 21 | README_TASK_DIFF | 2026-08-21T16:15:59Z | sn21 README task/scoring sections changed |
-| `sn90:readme_task_diff:1adff40174e46f0e` | 90 | README_TASK_DIFF | 2026-08-21T19:06:46Z | sn90 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-08-28T08:56:33Z` | 3 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn3 commit touches scoring: Add source scores handling and presentation to dashboard |
+| `sn25:release:v2026.8.28-1031115710` | 25 | RELEASE | 2026-08-28T11:18:26Z | sn25 released v2026.8.28-1031115710 |
+| `sn61:release:4.10.2` | 61 | RELEASE | 2026-08-28T11:18:26Z | sn61 released 4.10.2 |
+| `sn61:scoring_commit:2026-08-28T05:45:39Z` | 61 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn61 commit touches scoring: chore: update challenge navigation and fix ADA-3 headless detection s… |
+| `sn67:scoring_commit:2026-08-28T06:40:58Z` | 67 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260828.post6 |
+| `sn80:scoring_commit:2026-08-28T05:16:34Z` | 80 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn80 commit touches scoring: docs: point miners to the openroboto CLI and the real-robot track |
+| `sn92:scoring_commit:2026-08-28T08:31:19Z` | 92 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn92 commit touches scoring: Carry the miner's published source through to the control plane |
+| `sn96:release:Verathos v0.1.42 – Verified MoE, Account` | 96 | RELEASE | 2026-08-28T11:18:26Z | sn96 released Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability |
+| `sn96:scoring_commit:2026-08-26T14:47:41Z` | 96 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn96 commit touches scoring: fix: decay endpoint-gated scores at epoch close |
+| `sn108:scoring_commit:2026-08-28T04:54:03Z` | 108 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn108 commit touches scoring: docs(validator): the unanimity abort needs two independent sources |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
@@ -225,6 +236,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
+| `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-29T10:19:03Z, block 8950162
+# ALARMS - generated 2026-08-29T15:09:57Z, block 8951617
 
-window: first_seen in [2026-08-29T09:04:28Z, 2026-08-29T10:19:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-29T13:55:23Z, 2026-08-29T15:10:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | P1 | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
-| `sn47:scoring_commit:2026-08-29T06:50:23Z` | 47 | SCORING_COMMIT | P1 | 2026-08-29T10:19:28Z | sn47 commit touches scoring: rollout verification rules |
-| `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |
-| `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | P2 | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
-| `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | P2 | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
+| `sn49:burn_drop:0.000` | 49 | BURN_DROP | P0 | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
+| `sn21:scoring_commit:2026-08-29T14:49:37Z` | 21 | SCORING_COMMIT | P1 | 2026-08-29T15:10:23Z | sn21 commit touches scoring: feat(scoring): honour the reference exemption on the lineage path |
+| `sn111:scoring_commit:2026-08-29T11:10:12Z` | 111 | SCORING_COMMIT | P1 | 2026-08-29T15:10:23Z | sn111 commit touches scoring: chore(config): shorten validator query interval |
 
 ### detail
 
-- **`sn25:release:v2026.8.28-1031763440`** - sn25 released v2026.8.28-1031763440
-  - published 2026-08-29T04:09:07Z (was v2026.8.28-1031618120)
-- **`sn47:scoring_commit:2026-08-29T06:50:23Z`** - sn47 commit touches scoring: rollout verification rules
+- **`sn49:burn_drop:0.000`** - sn49 burn fell 0.990 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn21:scoring_commit:2026-08-29T14:49:37Z`** - sn21 commit touches scoring: feat(scoring): honour the reference exemption on the lineage path
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-29T06:48:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0
+- **`sn111:scoring_commit:2026-08-29T11:10:12Z`** - sn111 commit touches scoring: chore(config): shorten validator query interval
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn47:readme_task_diff:40b567f5acce9030`** - sn47 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn100:readme_task_diff:86ff6dff152413ad`** - sn100 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,14 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
-| `sn44:scoring_commit:2026-08-22T10:30:38Z` | 44 | SCORING_COMMIT | 2026-08-22T10:36:27Z | sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop |
-| `sn92:release:v0.1.6` | 92 | RELEASE | 2026-08-22T10:36:27Z | sn92 released v0.1.6 |
-| `sn92:release:v0.1.7` | 92 | RELEASE | 2026-08-22T11:32:10Z | sn92 released v0.1.7 |
-| `sn92:release:v0.1.9` | 92 | RELEASE | 2026-08-22T12:01:08Z | sn92 released v0.1.9 |
-| `sn92:release:v0.1.11` | 92 | RELEASE | 2026-08-22T12:57:33Z | sn92 released v0.1.11 |
-| `sn92:scoring_commit:2026-08-22T12:40:53Z` | 92 | SCORING_COMMIT | 2026-08-22T12:57:33Z | sn92 commit touches scoring: Make the validator guide match the code and explain the logs |
-| `sn92:release:v0.1.13` | 92 | RELEASE | 2026-08-22T13:41:10Z | sn92 released v0.1.13 |
-| `sn92:release:v0.1.14` | 92 | RELEASE | 2026-08-22T14:35:06Z | sn92 released v0.1.14 |
 | `sn81:scoring_commit:2026-08-21T19:12:16Z` | 81 | SCORING_COMMIT | 2026-08-22T16:00:11Z | sn81 commit touches scoring: feat: validator checkpoint intake — staged R2 download + serial-beat … |
 | `sn92:scoring_commit:2026-08-22T16:30:46Z` | 92 | SCORING_COMMIT | 2026-08-22T16:37:16Z | sn92 commit touches scoring: Build the validator registry from the permitted set on chain |
 | `sn25:release:v2026.8.22-1026185650` | 25 | RELEASE | 2026-08-22T17:32:39Z | sn25 released v2026.8.22-1026185650 |
@@ -190,6 +176,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
 | `sn15:release:v1.2.10` | 15 | RELEASE | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
 | `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
+| `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
+| `sn47:scoring_commit:2026-08-29T06:50:23Z` | 47 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn47 commit touches scoring: rollout verification rules |
+| `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
@@ -201,6 +190,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
 | `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
+| `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
+| `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

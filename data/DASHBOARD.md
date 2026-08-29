@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-29T10:19:03Z · block 8950162 · run_status **ok**_
+_snapshot 2026-08-29T15:09:57Z · block 8951617 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 62 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 94 | `miner_burn` < 0.99 |
+| Pays miners at all | 95 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
-| **Positive margin** | **62** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
+| 0 (none) | 64 | `████████████████████████████` |
 | 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 11 | `█████` |
-| 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 34 | `███████████████` |
+| 0.6–0.8 | 10 | `████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 33 | `██████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 79.8 | 5,322 | 5,322 = | cpu-small | 1 | 100% |
-| 2 | sn92 MicroTensor | 76.8 | 72.07 | 1,312 | cpu-small | 9 | 67% |
-| 3 | sn3 Teutonic | 75.6 | 3,942 | 3,942 = | rtx4090* | 5 | 20% |
-| 4 | sn76 Phylax | 74.9 | 44.54 | 180 | cpu-small | 21 | 20% |
-| 5 | sn67 Harnyx | 72.9 | 25.69 | 484 | cpu-small | 115 | 13% |
-| 6 | sn15 ORO | 70.6 | 21.67 | 22,497 | cpu-small | 68 | 94% |
-| 7 | sn102 ConnitoAI | 70 | 732 | 2,821 | rtx4090* | 6 | 46% |
-| 8 | sn91 cascade | 68.6 | 487 | 2,634 | rtx4090* | 5 | 52% |
-| 9 | sn96 Verathos | 68.4 | 22.36 | 146 | rtx4090 | 81 | 40% |
-| 10 | sn56 Gradients | 68.3 | 443 | 1,054 | rtx4090* | 7 | 70% |
-| 11 | sn80 OpenRoboto | 67.8 | 385 | 1,742 | rtx4090* | 5 | 71% |
-| 12 | sn111 Claims | 67.5 | 367 | 3,275 | rtx4090* | 5 | 70% |
-| 13 | sn124 Swarm | 66.6 | 275 | 848 | rtx4090* | 25 | 11% |
-| 14 | sn79 MVTRX | 65.8 | 4.93 | 451 | cpu-small | 218 | 10% |
-| 15 | sn61 RedTeam | 64.9 | 160 | 243 | rtx4090* | 40 | 4% |
-| 16 | sn107 Minos | 64.4 | 124 | 36,700 | cpu-small | 20 | 90% |
-| 17 | sn81 Reliquary | 64.2 | 130 | 290 | rtx4090* | 34 | 7% |
-| 18 | sn54 Yanez | 63.8 | 5.85 | 1,025 | a4000 | 102 | 35% |
-| 19 | sn121 sundae_bar | 63 | 1,221 | 1,221 = | cpu-small | 2 | 60% |
-| 20 | sn65 True Performance | 62.6 | 89.57 | 187 | rtx4090* | 6 | 75% |
+| 1 | sn92 MicroTensor | 76.3 | 62.80 | 1,146 | cpu-small | 9 | 67% |
+| 2 | sn3 Teutonic | 75.7 | 4,051 | 4,051 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 75.2 | 47.75 | 193 | cpu-small | 21 | 20% |
+| 4 | sn67 Harnyx | 73 | 26.70 | 502 | cpu-small | 116 | 13% |
+| 5 | sn102 ConnitoAI | 71 | 1,011 | 2,369 | rtx4090* | 6 | 38% |
+| 6 | sn15 ORO | 70.7 | 22.25 | 23,201 | cpu-small | 70 | 94% |
+| 7 | sn96 Verathos | 68.7 | 24.14 | 134 | rtx4090 | 79 | 41% |
+| 8 | sn56 Gradients | 68.4 | 453 | 1,078 | rtx4090* | 7 | 70% |
+| 9 | sn80 OpenRoboto | 67.9 | 400 | 1,805 | rtx4090* | 5 | 71% |
+| 10 | sn111 Claims | 67.6 | 381 | 3,400 | rtx4090* | 5 | 70% |
+| 11 | sn91 cascade | 67.3 | 328 | 665 | rtx4090* | 5 | 52% |
+| 12 | sn124 Swarm | 66.7 | 284 | 874 | rtx4090* | 25 | 11% |
+| 13 | sn79 MVTRX | 66.2 | 4.43 | 462 | cpu-small | 227 | 10% |
+| 14 | sn61 RedTeam | 65 | 165 | 252 | rtx4090* | 39 | 4% |
+| 15 | sn107 Minos | 64.5 | 126 | 37,306 | cpu-small | 20 | 90% |
+| 16 | sn81 Reliquary | 64 | 123 | 232 | rtx4090* | 37 | 5% |
+| 17 | sn54 Yanez | 64 | 6.19 | 1,061 | a4000 | 102 | 35% |
+| 18 | sn121 sundae_bar | 62.9 | 1,214 | 1,214 = | cpu-small | 2 | 61% |
+| 19 | sn65 True Performance | 62.8 | 94.41 | 197 | rtx4090* | 6 | 75% |
+| 20 | sn55 NIOME | 62.3 | 73.65 | 606 | rtx4090* | 11 | 29% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -88,7 +88,7 @@ single UID takes almost everything, so the headline income is not reachable.
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 18 |
 | dominated (60–90%) | 20 |
-| captured (>90%) | 28 |
+| captured (>90%) | 29 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-29T15:10 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(scoring): honour the reference exemp |
+| 2026-08-29T15:10 | sn49 | BURN_DROP | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
+| 2026-08-29T15:10 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: chore(config): shorten validator query i |
 | 2026-08-29T10:19 | sn25 | RELEASE | sn25 released v2026.8.28-1031763440 |
 | 2026-08-29T10:19 | sn47 | SCORING_COMMIT | sn47 commit touches scoring: rollout verification rules |
 | 2026-08-29T10:19 | sn47 | README_TASK_DIFF | sn47 README task/scoring sections changed |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-28T21:28 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(reporting): each miner's row carries |
 | 2026-08-28T21:28 | sn25 | RELEASE | sn25 released v2026.8.28-1031286130 |
 | 2026-08-28T21:28 | sn28 | RELEASE | sn28 released v0.4.12 |
-| 2026-08-28T21:28 | sn35 | RELEASE | sn35 released 1.2.0 |
-| 2026-08-28T21:28 | sn35 | SCORING_COMMIT | sn35 commit touches scoring: feat: send all miner emissions to scored  |
-| 2026-08-28T21:28 | sn47 | README_TASK_DIFF | sn47 README task/scoring sections changed |
 
 ---
 

@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-08-29T10:19:03Z  |  block: 8950162  |  row_status: ok
+snapshot_utc: 2026-08-29T15:09:57Z  |  block: 8951617  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (46.676 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 120  |  free: 0
-- subnet age: 795.9 days  |  registered at block 3219949
+- registration cost: 0.2 TAO (47.672000000000004 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 121  |  free: 0
+- subnet age: 796.1 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 216.15908427543437** (uid 130) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.062016664546100796
-- top_miner_usd_day: 458.0860926697736 (uid 119, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 214.44109619649126** (uid 130) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.06295056397959525
+- top_miner_usd_day: 465.4879453471171 (uid 119, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 106  |  gini: 0.9318239705225275  |  top1_share: 0.22584886334102827  |  top10_share: 0.9396126033847518
+- earners: 107  |  gini: 0.9312717624416513  |  top1_share: 0.2260969270753707  |  top10_share: 0.9357896346124446
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-08-29T10:19:03Z  |  block: 8950162  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9243 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9234 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 36.0 (rank 57), confidence 1.0 
+- score: 36.0 (rank 55), confidence 1.0 
 - components: income 0.0 / freshness 21.0 / resource 15.0 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 16d ago
 

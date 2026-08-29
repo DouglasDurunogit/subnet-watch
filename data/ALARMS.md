@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-28T21:28:31Z, block 8946309
+# ALARMS - generated 2026-08-29T03:23:23Z, block 8948084
 
-window: first_seen in [2026-08-28T20:13:55Z, 2026-08-28T21:28:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-29T02:08:48Z, 2026-08-29T03:23:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,63 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn104:burn_drop:0.003` | 104 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
-| `sn111:burn_drop:0.000` | 111 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn121:burn_drop:0.606` | 121 | BURN_DROP | P0 | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
-| `sn15:release:v1.2.9` | 15 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn15 released v1.2.9 |
-| `sn15:scoring_commit:2026-08-28T18:31:26Z` | 15 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265) |
-| `sn21:scoring_commit:2026-08-28T17:07:56Z` | 21 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted … |
-| `sn25:release:v2026.8.28-1031286130` | 25 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn25 released v2026.8.28-1031286130 |
-| `sn28:release:v0.4.12` | 28 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn28 released v0.4.12 |
-| `sn35:release:1.2.0` | 35 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn35 released 1.2.0 |
-| `sn35:scoring_commit:2026-08-28T16:38:20Z` | 35 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn35 commit touches scoring: feat: send all miner emissions to scored miners |
-| `sn92:scoring_commit:2026-08-28T14:15:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit |
-| `sn102:release:v0.5.3` | 102 | RELEASE | P1 | 2026-08-28T21:28:55Z | sn102 released v0.5.3 |
-| `sn102:scoring_commit:2026-08-28T13:33:02Z` | 102 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash |
-| `sn108:scoring_commit:2026-08-28T12:10:59Z` | 108 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members |
-| `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | P1 | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
-| `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
-| `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
-| `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | P2 | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
+| `sn15:release:v1.2.10` | 15 | RELEASE | P1 | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
+| `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | P1 | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
 
 ### detail
 
-- **`sn104:burn_drop:0.003`** - sn104 burn fell 1.000 -> 0.003 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn111:burn_drop:0.000`** - sn111 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.606`** - sn121 burn fell 1.000 -> 0.606 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v1.2.9`** - sn15 released v1.2.9
-  - published 2026-08-28T18:34:10Z (was v1.2.8)
-- **`sn15:scoring_commit:2026-08-28T18:31:26Z`** - sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-08-28T17:07:56Z`** - sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.8.28-1031286130`** - sn25 released v2026.8.28-1031286130
-  - published 2026-08-28T14:53:52Z (was v2026.8.28-1031115710)
-- **`sn28:release:v0.4.12`** - sn28 released v0.4.12
-  - published 2026-08-28T16:22:22Z (was v0.4.11)
-- **`sn35:release:1.2.0`** - sn35 released 1.2.0
-  - published 2026-08-28T17:14:25Z (was 1.1.6)
-- **`sn35:scoring_commit:2026-08-28T16:38:20Z`** - sn35 commit touches scoring: feat: send all miner emissions to scored miners
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-28T14:15:37Z`** - sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.5.3`** - sn102 released v0.5.3
-  - published 2026-08-28T20:13:24Z (was v0.5.2 — background-eval resume + validator memory fixes)
-- **`sn102:scoring_commit:2026-08-28T13:33:02Z`** - sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-08-28T12:10:59Z`** - sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-28T12:51:57Z`** - sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn47:readme_task_diff:3e3cbf15b25c3611`** - sn47 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn79:readme_task_diff:cd5eac2da72f58d2`** - sn79 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn108:readme_task_diff:e13470c52cc9c2e6`** - sn108 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn15:release:v1.2.10`** - sn15 released v1.2.10
+  - published 2026-08-29T00:00:15Z (was v1.2.9)
+- **`sn25:release:v2026.8.28-1031618120`** - sn25 released v2026.8.28-1031618120
+  - published 2026-08-29T00:06:47Z (was v2026.8.28-1031286130)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -78,13 +30,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn59:burn_drop:0.000` | 59 | BURN_DROP | 2026-08-28T00:03:30Z | sn59 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn14:burn_drop:0.000` | 14 | BURN_DROP | 2026-08-28T11:18:26Z | sn14 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn90:release:v1.1.5` | 90 | RELEASE | 2026-08-21T22:02:40Z | sn90 released v1.1.5 |
-| `sn90:scoring_commit:2026-08-21T22:02:06Z` | 90 | SCORING_COMMIT | 2026-08-21T22:02:40Z | sn90 commit touches scoring: fix(validator): fall back to CoinGecko TAO/USD when Taostats 429s |
-| `sn15:scoring_commit:2026-08-21T23:12:08Z` | 15 | SCORING_COMMIT | 2026-08-21T23:35:34Z | sn15 commit touches scoring: chore: remove dead BackendClient top-miner and race-history methods (… |
-| `sn97:scoring_commit:2026-08-21T17:21:07Z` | 97 | SCORING_COMMIT | 2026-08-22T00:02:04Z | sn97 commit touches scoring: feat: weighted reference-anchored scoring, split rubric, submit proto… |
-| `sn25:release:v2026.8.21-1025613560` | 25 | RELEASE | 2026-08-22T01:47:37Z | sn25 released v2026.8.21-1025613560 |
-| `sn53:scoring_commit:2026-08-22T01:50:29Z` | 53 | SCORING_COMMIT | 2026-08-22T02:43:43Z | sn53 commit touches scoring: fix(validator): reuse one chain connection instead of leaking one per… |
-| `sn92:scoring_commit:2026-08-22T01:59:31Z` | 92 | SCORING_COMMIT | 2026-08-22T02:43:43Z | sn92 commit touches scoring: Sort the constants import in the validator context |
+| `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
+| `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn53:release:v0.4.5: Merge pull request #42 from hanl` | 53 | RELEASE | 2026-08-22T04:17:59Z | sn53 released v0.4.5: Merge pull request #42 from hanlinai/release/0.4.5 |
 | `sn100:release:v3.3.29` | 100 | RELEASE | 2026-08-22T04:17:59Z | sn100 released v3.3.29 |
 | `sn25:release:v2026.8.21-1025763520` | 25 | RELEASE | 2026-08-22T05:38:35Z | sn25 released v2026.8.21-1025763520 |
@@ -229,6 +177,18 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn96:release:Verathos v0.1.42 – Verified MoE, Account` | 96 | RELEASE | 2026-08-28T11:18:26Z | sn96 released Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability |
 | `sn96:scoring_commit:2026-08-26T14:47:41Z` | 96 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn96 commit touches scoring: fix: decay endpoint-gated scores at epoch close |
 | `sn108:scoring_commit:2026-08-28T04:54:03Z` | 108 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn108 commit touches scoring: docs(validator): the unanimity abort needs two independent sources |
+| `sn15:release:v1.2.9` | 15 | RELEASE | 2026-08-28T21:28:55Z | sn15 released v1.2.9 |
+| `sn15:scoring_commit:2026-08-28T18:31:26Z` | 15 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265) |
+| `sn21:scoring_commit:2026-08-28T17:07:56Z` | 21 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted … |
+| `sn25:release:v2026.8.28-1031286130` | 25 | RELEASE | 2026-08-28T21:28:55Z | sn25 released v2026.8.28-1031286130 |
+| `sn28:release:v0.4.12` | 28 | RELEASE | 2026-08-28T21:28:55Z | sn28 released v0.4.12 |
+| `sn35:release:1.2.0` | 35 | RELEASE | 2026-08-28T21:28:55Z | sn35 released 1.2.0 |
+| `sn35:scoring_commit:2026-08-28T16:38:20Z` | 35 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn35 commit touches scoring: feat: send all miner emissions to scored miners |
+| `sn92:scoring_commit:2026-08-28T14:15:37Z` | 92 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit |
+| `sn102:release:v0.5.3` | 102 | RELEASE | 2026-08-28T21:28:55Z | sn102 released v0.5.3 |
+| `sn102:scoring_commit:2026-08-28T13:33:02Z` | 102 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash |
+| `sn108:scoring_commit:2026-08-28T12:10:59Z` | 108 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members |
+| `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
@@ -237,6 +197,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
+| `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
+| `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
+| `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

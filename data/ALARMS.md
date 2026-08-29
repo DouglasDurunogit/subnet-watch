@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-29T03:23:23Z, block 8948084
+# ALARMS - generated 2026-08-29T10:19:03Z, block 8950162
 
-window: first_seen in [2026-08-29T02:08:48Z, 2026-08-29T03:23:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-29T09:04:28Z, 2026-08-29T10:19:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v1.2.10` | 15 | RELEASE | P1 | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
-| `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | P1 | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
+| `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | P1 | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
+| `sn47:scoring_commit:2026-08-29T06:50:23Z` | 47 | SCORING_COMMIT | P1 | 2026-08-29T10:19:28Z | sn47 commit touches scoring: rollout verification rules |
+| `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | P1 | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |
+| `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | P2 | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
+| `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | P2 | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v1.2.10`** - sn15 released v1.2.10
-  - published 2026-08-29T00:00:15Z (was v1.2.9)
-- **`sn25:release:v2026.8.28-1031618120`** - sn25 released v2026.8.28-1031618120
-  - published 2026-08-29T00:06:47Z (was v2026.8.28-1031286130)
+- **`sn25:release:v2026.8.28-1031763440`** - sn25 released v2026.8.28-1031763440
+  - published 2026-08-29T04:09:07Z (was v2026.8.28-1031618120)
+- **`sn47:scoring_commit:2026-08-29T06:50:23Z`** - sn47 commit touches scoring: rollout verification rules
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-29T06:48:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn47:readme_task_diff:40b567f5acce9030`** - sn47 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn100:readme_task_diff:86ff6dff152413ad`** - sn100 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,16 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
-| `sn53:release:v0.4.5: Merge pull request #42 from hanl` | 53 | RELEASE | 2026-08-22T04:17:59Z | sn53 released v0.4.5: Merge pull request #42 from hanlinai/release/0.4.5 |
-| `sn100:release:v3.3.29` | 100 | RELEASE | 2026-08-22T04:17:59Z | sn100 released v3.3.29 |
-| `sn25:release:v2026.8.21-1025763520` | 25 | RELEASE | 2026-08-22T05:38:35Z | sn25 released v2026.8.21-1025763520 |
-| `sn92:release:v0.1.1` | 92 | RELEASE | 2026-08-22T05:38:35Z | sn92 released v0.1.1 |
-| `sn92:scoring_commit:2026-08-22T05:35:10Z` | 92 | SCORING_COMMIT | 2026-08-22T05:38:35Z | sn92 commit touches scoring: Package the version validators actually run |
-| `sn61:release:4.9.7` | 61 | RELEASE | 2026-08-22T08:03:45Z | sn61 released 4.9.7 |
-| `sn61:scoring_commit:2026-08-22T02:19:35Z` | 61 | SCORING_COMMIT | 2026-08-22T08:03:45Z | sn61 commit touches scoring: deps: update abs_challenge submodule to version 6.0.4 |
-| `sn92:release:v0.1.2` | 92 | RELEASE | 2026-08-22T08:03:45Z | sn92 released v0.1.2 |
-| `sn92:release:v0.1.3` | 92 | RELEASE | 2026-08-22T08:45:06Z | sn92 released v0.1.3 |
-| `sn92:release:v0.1.4` | 92 | RELEASE | 2026-08-22T09:13:18Z | sn92 released v0.1.4 |
 | `sn44:scoring_commit:2026-08-22T10:30:38Z` | 44 | SCORING_COMMIT | 2026-08-22T10:36:27Z | sn44 commit touches scoring: Merge pull request #54 from score-technologies/hardening-latency-loop |
 | `sn92:release:v0.1.6` | 92 | RELEASE | 2026-08-22T10:36:27Z | sn92 released v0.1.6 |
 | `sn92:release:v0.1.7` | 92 | RELEASE | 2026-08-22T11:32:10Z | sn92 released v0.1.7 |
@@ -189,6 +188,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:scoring_commit:2026-08-28T13:33:02Z` | 102 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash |
 | `sn108:scoring_commit:2026-08-28T12:10:59Z` | 108 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members |
 | `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
+| `sn15:release:v1.2.10` | 15 | RELEASE | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
+| `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-29T21:20:03Z, block 8953467
+# ALARMS - generated 2026-08-29T23:29:24Z, block 8954114
 
-window: first_seen in [2026-08-29T20:05:31Z, 2026-08-29T21:20:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-29T22:14:51Z, 2026-08-29T23:29:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | P1 | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
+| `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | P1 | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-29T20:55:10Z`** - sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire
+- **`sn89:scoring_commit:2026-08-29T22:05:27Z`** - sn89 commit touches scoring: scoring: the points gate is per competition, not per chain
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -31,7 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn112:scoring_commit:2026-08-22T21:28:29Z` | 112 | SCORING_COMMIT | 2026-08-22T22:00:58Z | sn112 commit touches scoring: fix(api): app creation accepted code it could not validate (#1618) |
 | `sn25:release:v2026.8.22-1026545240` | 25 | RELEASE | 2026-08-23T03:13:05Z | sn25 released v2026.8.22-1026545240 |
 | `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
 | `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
@@ -176,6 +175,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-08-29T16:01:20Z` | 71 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn71 commit touches scoring: Measure admitted model verifier latency |
 | `sn89:scoring_commit:2026-08-29T16:20:07Z` | 89 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn89 commit touches scoring: HF: grade the band the miner declared, not the board's |
 | `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
+| `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |

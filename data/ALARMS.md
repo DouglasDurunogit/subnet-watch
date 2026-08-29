@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-29T18:44:32Z, block 8952689
+# ALARMS - generated 2026-08-29T21:20:03Z, block 8953467
 
-window: first_seen in [2026-08-29T17:29:56Z, 2026-08-29T18:44:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-29T20:05:31Z, 2026-08-29T21:20:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-08-29T15:29:29Z` | 21 | SCORING_COMMIT | P1 | 2026-08-29T18:44:56Z | sn21 commit touches scoring: fix(reporting): a published tier must mean the miner is being paid |
-| `sn71:scoring_commit:2026-08-29T16:01:20Z` | 71 | SCORING_COMMIT | P1 | 2026-08-29T18:44:56Z | sn71 commit touches scoring: Measure admitted model verifier latency |
-| `sn89:scoring_commit:2026-08-29T16:20:07Z` | 89 | SCORING_COMMIT | P1 | 2026-08-29T18:44:56Z | sn89 commit touches scoring: HF: grade the band the miner declared, not the board's |
-| `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | P1 | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
+| `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | P1 | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-08-29T15:29:29Z`** - sn21 commit touches scoring: fix(reporting): a published tier must mean the miner is being paid
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-08-29T16:01:20Z`** - sn71 commit touches scoring: Measure admitted model verifier latency
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-08-29T16:20:07Z`** - sn89 commit touches scoring: HF: grade the band the miner declared, not the board's
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-29T17:27:58Z`** - sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown
+- **`sn89:scoring_commit:2026-08-29T20:55:10Z`** - sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -181,6 +172,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |
 | `sn21:scoring_commit:2026-08-29T14:49:37Z` | 21 | SCORING_COMMIT | 2026-08-29T15:10:23Z | sn21 commit touches scoring: feat(scoring): honour the reference exemption on the lineage path |
 | `sn111:scoring_commit:2026-08-29T11:10:12Z` | 111 | SCORING_COMMIT | 2026-08-29T15:10:23Z | sn111 commit touches scoring: chore(config): shorten validator query interval |
+| `sn21:scoring_commit:2026-08-29T15:29:29Z` | 21 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn21 commit touches scoring: fix(reporting): a published tier must mean the miner is being paid |
+| `sn71:scoring_commit:2026-08-29T16:01:20Z` | 71 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn71 commit touches scoring: Measure admitted model verifier latency |
+| `sn89:scoring_commit:2026-08-29T16:20:07Z` | 89 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn89 commit touches scoring: HF: grade the band the miner declared, not the board's |
+| `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |

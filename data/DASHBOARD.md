@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-08-30T13:20:09Z · block 8958268 · run_status **ok**_
+_snapshot 2026-08-30T17:39:42Z · block 8959565 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 61 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 93 | `miner_burn` < 0.99 |
 | Ranked | 93 | passed every gate |
-| **Positive margin** | **61** | income beats machine cost |
-| New events this window | 3 | see ALARMS.md |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
-| 0.2–0.4 | 7 | `███` |
+| 0 (none) | 64 | `████████████████████████████` |
+| 0–0.2 | 7 | `███` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 6 | `███` |
 | 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 35 | `████████████████` |
+| ≥0.99 dead | 35 | `███████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 80 | 5,576 | 5,576 = | cpu-small | 1 | 100% |
-| 2 | sn92 MicroTensor | 79.5 | 141 | 1,379 | cpu-small | 10 | 42% |
-| 3 | sn3 Teutonic | 75.7 | 4,086 | 4,086 = | rtx4090* | 5 | 20% |
-| 4 | sn76 Phylax | 75.6 | 52.82 | 213 | cpu-small | 21 | 20% |
-| 5 | sn23 Trishool | 72.2 | 561 | 561 = | cpu-small | 2 | 80% |
-| 6 | sn102 ConnitoAI | 72.1 | 1,399 | 1,704 | rtx4090* | 5 | 28% |
-| 7 | sn67 Harnyx | 71.9 | 20.09 | 873 | cpu-small | 128 | 23% |
-| 8 | sn15 ORO | 70.8 | 21.83 | 23,017 | cpu-small | 73 | 93% |
-| 9 | sn21 AdTAO | 70.2 | 14.35 | 1,226 | cpu-small | 14 | 45% |
-| 10 | sn111 Claims | 69.3 | 612 | 3,371 | rtx4090* | 4 | 70% |
-| 11 | sn96 Verathos | 68.9 | 25.71 | 197 | rtx4090 | 72 | 42% |
-| 12 | sn56 Gradients | 67.4 | 340 | 670 | rtx4090* | 7 | 70% |
-| 13 | sn91 cascade | 67.1 | 318 | 643 | rtx4090* | 5 | 52% |
-| 14 | sn124 Swarm | 66.8 | 295 | 956 | rtx4090* | 25 | 11% |
-| 15 | sn79 MVTRX | 66.6 | 4.92 | 470 | cpu-small | 214 | 10% |
-| 16 | sn108 Prometheon | 65.4 | 187 | 495 | rtx4090* | 9 | 26% |
-| 17 | sn61 RedTeam | 65.1 | 169 | 251 | rtx4090* | 38 | 4% |
-| 18 | sn80 OpenRoboto | 64.9 | 163 | 591 | rtx4090* | 5 | 71% |
-| 19 | sn81 Reliquary | 64.9 | 162 | 271 | rtx4090* | 29 | 6% |
-| 20 | sn107 Minos | 64.7 | 132 | 39,141 | cpu-small | 20 | 91% |
+| 1 | sn11 TrajectoryRL | 80 | 5,558 | 5,558 = | cpu-small | 1 | 100% |
+| 2 | sn92 MicroTensor | 79.4 | 136 | 1,328 | cpu-small | 10 | 42% |
+| 3 | sn3 Teutonic | 75.7 | 4,102 | 4,102 = | rtx4090* | 5 | 20% |
+| 4 | sn76 Phylax | 75.3 | 49.11 | 186 | cpu-small | 21 | 20% |
+| 5 | sn23 Trishool | 72.3 | 571 | 571 = | cpu-small | 2 | 80% |
+| 6 | sn67 Harnyx | 72 | 19.95 | 868 | cpu-small | 132 | 23% |
+| 7 | sn111 Claims | 70.8 | 966 | 3,401 | rtx4090* | 3 | 70% |
+| 8 | sn15 ORO | 70.7 | 21.70 | 43.24 | cpu-small | 73 | 93% |
+| 9 | sn96 Verathos | 69.1 | 26.59 | 202 | rtx4090 | 72 | 41% |
+| 10 | sn21 AdTAO | 69 | 10.66 | 248 | cpu-small | 14 | 45% |
+| 11 | sn56 Gradients | 67.4 | 342 | 673 | rtx4090* | 7 | 70% |
+| 12 | sn91 cascade | 67.2 | 324 | 656 | rtx4090* | 5 | 52% |
+| 13 | sn124 Swarm | 66.8 | 295 | 957 | rtx4090* | 25 | 11% |
+| 14 | sn79 MVTRX | 66.5 | 4.91 | 480 | cpu-small | 214 | 10% |
+| 15 | sn108 Prometheon | 65.4 | 187 | 497 | rtx4090* | 9 | 26% |
+| 16 | sn80 OpenRoboto | 65.1 | 170 | 615 | rtx4090* | 5 | 71% |
+| 17 | sn61 RedTeam | 64.6 | 149 | 222 | rtx4090* | 42 | 3% |
+| 18 | sn107 Minos | 64.6 | 130 | 39,468 | cpu-small | 20 | 91% |
+| 19 | sn81 Reliquary | 64.5 | 142 | 285 | rtx4090* | 31 | 6% |
+| 20 | sn54 Yanez | 64.5 | 7.12 | 1,078 | a4000 | 99 | 35% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 20 |
-| dominated (60–90%) | 17 |
-| captured (>90%) | 28 |
+| dominated (60–90%) | 18 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-08-30T17:40 | sn15 | RELEASE | sn15 released v1.2.11 |
+| 2026-08-30T17:40 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(reporting): tenure rows state how man |
 | 2026-08-30T13:20 | sn9 | RELEASE | sn9 released v4.12.10 |
 | 2026-08-30T13:20 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs(validator): stop implying a second v |
 | 2026-08-30T13:20 | sn91 | README_TASK_DIFF | sn91 README task/scoring sections changed |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-08-30T01:45 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: Validate commitments at discovery, guard  |
 | 2026-08-29T23:29 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: scoring: the points gate is per competiti |
 | 2026-08-29T21:20 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: limit-watcher: a miner-drawn band survive |
-| 2026-08-29T18:44 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(reporting): a published tier must mea |
-| 2026-08-29T18:44 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Measure admitted model verifier latency |
 
 ---
 

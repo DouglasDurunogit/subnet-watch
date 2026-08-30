@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-30T13:20:09Z, block 8958268
+# ALARMS - generated 2026-08-30T17:39:42Z, block 8959565
 
-window: first_seen in [2026-08-30T12:05:41Z, 2026-08-30T13:20:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-30T16:25:07Z, 2026-08-30T17:40:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.12.10` | 9 | RELEASE | P1 | 2026-08-30T13:20:41Z | sn9 released v4.12.10 |
-| `sn21:scoring_commit:2026-08-30T11:29:22Z` | 21 | SCORING_COMMIT | P1 | 2026-08-30T13:20:41Z | sn21 commit touches scoring: docs(validator): stop implying a second validator can run the scorer |
-| `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | P2 | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
+| `sn15:release:v1.2.11` | 15 | RELEASE | P1 | 2026-08-30T17:40:07Z | sn15 released v1.2.11 |
+| `sn21:scoring_commit:2026-08-30T13:48:48Z` | 21 | SCORING_COMMIT | P1 | 2026-08-30T17:40:07Z | sn21 commit touches scoring: fix(reporting): tenure rows state how many days the miner actually has |
 
 ### detail
 
-- **`sn9:release:v4.12.10`** - sn9 released v4.12.10
-  - published 2026-08-30T08:30:36Z (was v4.9.2)
-- **`sn21:scoring_commit:2026-08-30T11:29:22Z`** - sn21 commit touches scoring: docs(validator): stop implying a second validator can run the scorer
+- **`sn15:release:v1.2.11`** - sn15 released v1.2.11
+  - published 2026-08-30T16:46:52Z (was v1.2.10)
+- **`sn21:scoring_commit:2026-08-30T13:48:48Z`** - sn21 commit touches scoring: fix(reporting): tenure rows state how many days the miner actually has
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:readme_task_diff:becad0b5e25c9292`** - sn91 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,8 +34,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn90:scoring_commit:2026-08-23T13:08:10Z` | 90 | SCORING_COMMIT | 2026-08-23T13:42:25Z | sn90 commit touches scoring: docs(sn28): announce recycler and how to verify AlphaRecycled |
-| `sn76:scoring_commit:2026-08-23T16:24:51Z` | 76 | SCORING_COMMIT | 2026-08-23T16:38:55Z | sn76 commit touches scoring: sandbox: authenticate with the sandbox token, not a validator signatur |
 | `sn111:scoring_commit:2026-08-23T16:36:27Z` | 111 | SCORING_COMMIT | 2026-08-23T18:45:21Z | sn111 commit touches scoring: feat(setup): add public miner and validator installers |
 | `sn102:release:v0.5.1 — release the finished round on s` | 102 | RELEASE | 2026-08-23T19:44:59Z | sn102 released v0.5.1 — release the finished round on swap |
 | `sn102:scoring_commit:2026-08-23T18:41:50Z` | 102 | SCORING_COMMIT | 2026-08-23T19:44:59Z | sn102 commit touches scoring: 🩹 fix(validator): release the finished round on swap |
@@ -181,6 +176,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-30T05:20:42Z` | 21 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn21 commit touches scoring: fix(validator-api): serve the daily feeds without a weekly release |
 | `sn67:scoring_commit:2026-08-29T08:12:36Z` | 67 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post1 |
 | `sn92:scoring_commit:2026-08-30T03:19:44Z` | 92 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn92 commit touches scoring: Satisfy strict typing across the validator, scoring, and engine paths |
+| `sn9:release:v4.12.10` | 9 | RELEASE | 2026-08-30T13:20:41Z | sn9 released v4.12.10 |
+| `sn21:scoring_commit:2026-08-30T11:29:22Z` | 21 | SCORING_COMMIT | 2026-08-30T13:20:41Z | sn21 commit touches scoring: docs(validator): stop implying a second validator can run the scorer |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
@@ -196,6 +193,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
+| `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

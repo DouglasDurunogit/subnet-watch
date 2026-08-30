@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-30T01:45:18Z, block 8954793
+# ALARMS - generated 2026-08-30T07:31:41Z, block 8956525
 
-window: first_seen in [2026-08-30T00:30:42Z, 2026-08-30T01:45:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-30T06:17:13Z, 2026-08-30T07:32:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-08-30T00:13:57Z` | 71 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153) |
-| `sn89:scoring_commit:2026-08-30T01:06:31Z` | 89 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l… |
-| `sn92:scoring_commit:2026-08-30T01:18:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli… |
-| `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | P2 | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-08-30T05:20:42Z` | 21 | SCORING_COMMIT | P1 | 2026-08-30T07:32:13Z | sn21 commit touches scoring: fix(validator-api): serve the daily feeds without a weekly release |
+| `sn67:scoring_commit:2026-08-29T08:12:36Z` | 67 | SCORING_COMMIT | P1 | 2026-08-30T07:32:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post1 |
+| `sn92:scoring_commit:2026-08-30T03:19:44Z` | 92 | SCORING_COMMIT | P1 | 2026-08-30T07:32:13Z | sn92 commit touches scoring: Satisfy strict typing across the validator, scoring, and engine paths |
+| `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | P2 | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-08-30T00:13:57Z`** - sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153)
+- **`sn21:scoring_commit:2026-08-30T05:20:42Z`** - sn21 commit touches scoring: fix(validator-api): serve the daily feeds without a weekly release
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-08-30T01:06:31Z`** - sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l…
+- **`sn67:scoring_commit:2026-08-29T08:12:36Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-30T01:18:37Z`** - sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli…
+- **`sn92:scoring_commit:2026-08-30T03:19:44Z`** - sn92 commit touches scoring: Satisfy strict typing across the validator, scoring, and engine paths
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:5ecd38a51a4692a8`** - sn71 README task/scoring sections changed
+- **`sn45:readme_task_diff:8c971dd579660a1e`** - sn45 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,10 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.8.22-1026545240` | 25 | RELEASE | 2026-08-23T03:13:05Z | sn25 released v2026.8.22-1026545240 |
-| `sn14:scoring_commit:2026-08-22T12:14:25Z` | 14 | SCORING_COMMIT | 2026-08-23T04:09:05Z | sn14 commit touches scoring: fix: replace MSA prefill score-sheet ABI |
-| `sn25:release:v2026.8.22-1026600400` | 25 | RELEASE | 2026-08-23T05:02:13Z | sn25 released v2026.8.22-1026600400 |
-| `sn14:release:MSA block-score mainnet control` | 14 | RELEASE | 2026-08-23T07:10:49Z | sn14 released MSA block-score mainnet control |
 | `sn14:release:msa-block-score-control-20260823: fix: o` | 14 | RELEASE | 2026-08-23T12:00:59Z | sn14 released msa-block-score-control-20260823: fix: open paged MSA decode score slot |
 | `sn90:release:v1.1.6 — subtensor v445 / typed metagrap` | 90 | RELEASE | 2026-08-23T12:59:07Z | sn90 released v1.1.6 — subtensor v445 / typed metagraph APIs |
 | `sn90:scoring_commit:2026-08-23T12:38:07Z` | 90 | SCORING_COMMIT | 2026-08-23T12:59:07Z | sn90 commit touches scoring: chore(validator): release v1.1.6 |
@@ -186,6 +182,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
 | `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
 | `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
+| `sn71:scoring_commit:2026-08-30T00:13:57Z` | 71 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153) |
+| `sn89:scoring_commit:2026-08-30T01:06:31Z` | 89 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l… |
+| `sn92:scoring_commit:2026-08-30T01:18:37Z` | 92 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli… |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
@@ -199,6 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
 | `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
 | `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
+| `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-29T23:29:24Z, block 8954114
+# ALARMS - generated 2026-08-30T01:45:18Z, block 8954793
 
-window: first_seen in [2026-08-29T22:14:51Z, 2026-08-29T23:29:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-30T00:30:42Z, 2026-08-30T01:45:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | P1 | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
+| `sn71:scoring_commit:2026-08-30T00:13:57Z` | 71 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153) |
+| `sn89:scoring_commit:2026-08-30T01:06:31Z` | 89 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l… |
+| `sn92:scoring_commit:2026-08-30T01:18:37Z` | 92 | SCORING_COMMIT | P1 | 2026-08-30T01:45:42Z | sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli… |
+| `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | P2 | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn89:scoring_commit:2026-08-29T22:05:27Z`** - sn89 commit touches scoring: scoring: the points gate is per competition, not per chain
+- **`sn71:scoring_commit:2026-08-30T00:13:57Z`** - sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-08-30T01:06:31Z`** - sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-30T01:18:37Z`** - sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:5ecd38a51a4692a8`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -176,6 +185,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-08-29T16:20:07Z` | 89 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn89 commit touches scoring: HF: grade the band the miner declared, not the board's |
 | `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
 | `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
+| `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
 | `sn111:readme_task_diff:f9f4504d0df2befc` | 111 | README_TASK_DIFF | 2026-08-23T18:45:21Z | sn111 README task/scoring sections changed |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |

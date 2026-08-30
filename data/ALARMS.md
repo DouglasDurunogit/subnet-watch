@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-30T20:04:58Z, block 8960292
+# ALARMS - generated 2026-08-30T22:42:41Z, block 8961080
 
-window: first_seen in [2026-08-30T18:50:23Z, 2026-08-30T20:05:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-30T21:28:10Z, 2026-08-30T22:43:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.8.30-1033129380` | 25 | RELEASE | P1 | 2026-08-30T20:05:23Z | sn25 released v2026.8.30-1033129380 |
+| `sn92:scoring_commit:2026-08-30T20:40:28Z` | 92 | SCORING_COMMIT | P1 | 2026-08-30T22:43:10Z | sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set |
+| `sn111:scoring_commit:2026-08-30T21:57:12Z` | 111 | SCORING_COMMIT | P1 | 2026-08-30T22:43:10Z | sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance |
 
 ### detail
 
-- **`sn25:release:v2026.8.30-1033129380`** - sn25 released v2026.8.30-1033129380
-  - published 2026-08-30T18:07:46Z (was v2026.8.28-1031763440)
+- **`sn92:scoring_commit:2026-08-30T20:40:28Z`** - sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-30T21:57:12Z`** - sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -174,6 +177,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-08-30T11:29:22Z` | 21 | SCORING_COMMIT | 2026-08-30T13:20:41Z | sn21 commit touches scoring: docs(validator): stop implying a second validator can run the scorer |
 | `sn15:release:v1.2.11` | 15 | RELEASE | 2026-08-30T17:40:07Z | sn15 released v1.2.11 |
 | `sn21:scoring_commit:2026-08-30T13:48:48Z` | 21 | SCORING_COMMIT | 2026-08-30T17:40:07Z | sn21 commit touches scoring: fix(reporting): tenure rows state how many days the miner actually has |
+| `sn25:release:v2026.8.30-1033129380` | 25 | RELEASE | 2026-08-30T20:05:23Z | sn25 released v2026.8.30-1033129380 |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |

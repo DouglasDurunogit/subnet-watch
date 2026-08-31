@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-08-30T22:42:41Z  |  block: 8961080  |  row_status: ok
+snapshot_utc: 2026-08-31T00:54:02Z  |  block: 8961737  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000689554 TAO (0.16169351746 USD), open=True
+- registration cost: 0.00077839 TAO (0.17795552180000002 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 666.0 days  |  registered at block 4165565
+- subnet age: 666.1 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3971.0159363324783** (uid 92) <- the only figure quotable as achievable
-- median_miner_usd_day: 3971.0159363324783
-- top_miner_usd_day: 3971.0159363324783 (uid 92, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3865.5318330905643** (uid 92) <- the only figure quotable as achievable
+- median_miner_usd_day: 3865.5318330905643
+- top_miner_usd_day: 3865.5318330905643 (uid 92, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-08-30T22:42:41Z  |  block: 8961080  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3962.7968 USD/day  |  payback on registration: 0.0 days
+- net margin: 3857.3127 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 75.6 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 32.73 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: SCORING_COMMIT 2.5d ago
+- score: 75.5 (rank 2), confidence 0.85 - hardware requirement unknown
+- components: income 32.62 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: SCORING_COMMIT 2.6d ago
 
 ## On-chain description
 

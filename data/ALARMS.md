@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-08-30T22:42:41Z, block 8961080
+# ALARMS - generated 2026-08-31T00:54:02Z, block 8961737
 
-window: first_seen in [2026-08-30T21:28:10Z, 2026-08-30T22:43:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-30T23:39:34Z, 2026-08-31T00:54:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn92:scoring_commit:2026-08-30T20:40:28Z` | 92 | SCORING_COMMIT | P1 | 2026-08-30T22:43:10Z | sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set |
-| `sn111:scoring_commit:2026-08-30T21:57:12Z` | 111 | SCORING_COMMIT | P1 | 2026-08-30T22:43:10Z | sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance |
-
-### detail
-
-- **`sn92:scoring_commit:2026-08-30T20:40:28Z`** - sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-30T21:57:12Z`** - sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,7 +24,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-08-23T17:55:32Z` | 71 | SCORING_COMMIT | 2026-08-23T23:01:52Z | sn71 commit touches scoring: test: verify pinned model runtime in CI |
 | `sn53:scoring_commit:2026-08-24T00:47:31Z` | 53 | SCORING_COMMIT | 2026-08-24T01:55:18Z | sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat |
 | `sn53:scoring_commit:2026-08-24T02:43:24Z` | 53 | SCORING_COMMIT | 2026-08-24T03:13:47Z | sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse… |
 | `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
@@ -178,6 +167,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:release:v1.2.11` | 15 | RELEASE | 2026-08-30T17:40:07Z | sn15 released v1.2.11 |
 | `sn21:scoring_commit:2026-08-30T13:48:48Z` | 21 | SCORING_COMMIT | 2026-08-30T17:40:07Z | sn21 commit touches scoring: fix(reporting): tenure rows state how many days the miner actually has |
 | `sn25:release:v2026.8.30-1033129380` | 25 | RELEASE | 2026-08-30T20:05:23Z | sn25 released v2026.8.30-1033129380 |
+| `sn92:scoring_commit:2026-08-30T20:40:28Z` | 92 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set |
+| `sn111:scoring_commit:2026-08-30T21:57:12Z` | 111 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |

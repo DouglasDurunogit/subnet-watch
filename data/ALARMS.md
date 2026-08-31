@@ -1,13 +1,29 @@
-# ALARMS - generated 2026-08-31T00:54:02Z, block 8961737
+# ALARMS - generated 2026-08-31T06:59:49Z, block 8963566
 
-window: first_seen in [2026-08-30T23:39:34Z, 2026-08-31T00:54:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-31T05:45:21Z, 2026-08-31T07:00:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn91:scoring_commit:2026-08-31T05:05:09Z` | 91 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s… |
+| `sn92:scoring_commit:2026-08-31T06:03:36Z` | 92 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro… |
+| `sn101:scoring_commit:2026-08-31T03:21:03Z` | 101 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring |
+| `sn111:scoring_commit:2026-08-31T02:59:02Z` | 111 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable |
+
+### detail
+
+- **`sn91:scoring_commit:2026-08-31T05:05:09Z`** - sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-31T06:03:36Z`** - sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn101:scoring_commit:2026-08-31T03:21:03Z`** - sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-08-31T02:59:02Z`** - sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -24,11 +40,6 @@ _none_
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn53:scoring_commit:2026-08-24T00:47:31Z` | 53 | SCORING_COMMIT | 2026-08-24T01:55:18Z | sn53 commit touches scoring: tee_miner: report live KV-cache pressure in the heartbeat |
-| `sn53:scoring_commit:2026-08-24T02:43:24Z` | 53 | SCORING_COMMIT | 2026-08-24T03:13:47Z | sn53 commit touches scoring: tee_miner: withdraw on a health stall that PERSISTS, not on one misse… |
-| `sn25:release:v2026.8.23-1027441210` | 25 | RELEASE | 2026-08-24T04:14:02Z | sn25 released v2026.8.23-1027441210 |
-| `sn51:scoring_commit:2026-08-24T04:10:40Z` | 51 | SCORING_COMMIT | 2026-08-24T04:14:02Z | sn51 commit touches scoring: DAH-2742: stop transient checks from clearing verified job info (#1244 |
-| `sn67:scoring_commit:2026-08-24T05:16:58Z` | 67 | SCORING_COMMIT | 2026-08-24T06:03:24Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post0 |
 | `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
 | `sn21:scoring_commit:2026-08-23T13:18:04Z` | 21 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad… |
 | `sn53:scoring_commit:2026-08-24T08:20:51Z` | 53 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra… |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-31T15:02:30Z, block 8965979
+# ALARMS - generated 2026-08-31T20:47:50Z, block 8967706
 
-window: first_seen in [2026-08-31T13:48:06Z, 2026-08-31T15:03:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-31T19:33:23Z, 2026-08-31T20:48:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-08-31T08:14:55Z` | 3 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling |
-| `sn50:scoring_commit:2026-08-31T13:14:24Z` | 50 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320) |
-| `sn51:scoring_commit:2026-08-31T12:25:43Z` | 51 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254) |
-| `sn56:scoring_commit:2026-08-31T13:13:56Z` | 56 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#… |
-| `sn67:scoring_commit:2026-08-31T06:48:15Z` | 67 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1 |
-| `sn92:scoring_commit:2026-08-31T13:00:04Z` | 92 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share |
-| `sn97:scoring_commit:2026-08-29T21:22:36Z` | 97 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn97 commit touches scoring: fix: skip hidden files from validation |
+| `sn15:release:v1.2.12` | 15 | RELEASE | P1 | 2026-08-31T20:48:23Z | sn15 released v1.2.12 |
+| `sn15:scoring_commit:2026-08-31T16:04:15Z` | 15 | SCORING_COMMIT | P1 | 2026-08-31T20:48:23Z | sn15 commit touches scoring: fix(validator): don't fail runs on incomplete reasoning-judge coverag… |
+| `sn38:scoring_commit:2026-08-31T17:33:12Z` | 38 | SCORING_COMMIT | P1 | 2026-08-31T20:48:23Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
+| `sn50:release:v1.12.0` | 50 | RELEASE | P1 | 2026-08-31T20:48:23Z | sn50 released v1.12.0 |
+| `sn92:release:v0.3.0` | 92 | RELEASE | P1 | 2026-08-31T20:48:23Z | sn92 released v0.3.0 |
+| `sn92:scoring_commit:2026-08-31T20:39:51Z` | 92 | SCORING_COMMIT | P1 | 2026-08-31T20:48:23Z | sn92 commit touches scoring: Grant the validator container the capability the network jail needs |
+| `sn111:scoring_commit:2026-08-31T20:40:04Z` | 111 | SCORING_COMMIT | P1 | 2026-08-31T20:48:23Z | sn111 commit touches scoring: feat(selection): diversify adaptive miner draws |
+| `sn124:scoring_commit:2026-08-31T19:33:52Z` | 124 | SCORING_COMMIT | P1 | 2026-08-31T20:48:23Z | sn124 commit touches scoring: Merge pull request #118 from swarm-subnet/feature/ali/miner-folder-mi… |
+| `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | P2 | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-08-31T08:14:55Z`** - sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling
+- **`sn15:release:v1.2.12`** - sn15 released v1.2.12
+  - published 2026-08-31T17:21:38Z (was v1.2.11)
+- **`sn15:scoring_commit:2026-08-31T16:04:15Z`** - sn15 commit touches scoring: fix(validator): don't fail runs on incomplete reasoning-judge coverag…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:scoring_commit:2026-08-31T13:14:24Z`** - sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320)
+- **`sn38:scoring_commit:2026-08-31T17:33:12Z`** - sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-08-31T12:25:43Z`** - sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254)
+- **`sn50:release:v1.12.0`** - sn50 released v1.12.0
+  - published 2026-08-31T15:32:04Z (was v1.11.1)
+- **`sn92:release:v0.3.0`** - sn92 released v0.3.0
+  - published 2026-08-31T17:00:04Z (was v0.1.14)
+- **`sn92:scoring_commit:2026-08-31T20:39:51Z`** - sn92 commit touches scoring: Grant the validator container the capability the network jail needs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-08-31T13:13:56Z`** - sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#…
+- **`sn111:scoring_commit:2026-08-31T20:40:04Z`** - sn111 commit touches scoring: feat(selection): diversify adaptive miner draws
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-08-31T06:48:15Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1
+- **`sn124:scoring_commit:2026-08-31T19:33:52Z`** - sn124 commit touches scoring: Merge pull request #118 from swarm-subnet/feature/ali/miner-folder-mi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-31T13:00:04Z`** - sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-08-29T21:22:36Z`** - sn97 commit touches scoring: fix: skip hidden files from validation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn38:readme_task_diff:6d6f3dfd29d211ce`** - sn38 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn92:burn_drop:0.971` | 92 | BURN_DROP | 2026-08-24T18:16:08Z | sn92 burn fell 1.000 -> 0.971 - miners can earn again |
 | `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
 | `sn7:burn_drop:0.910` | 7 | BURN_DROP | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
 | `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
@@ -49,17 +54,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn3:scoring_commit:2026-08-24T15:00:07Z` | 3 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn3 commit touches scoring: Show provisional LCB during evaluations |
-| `sn7:release:release-20260824-151246: Bump allways to` | 7 | RELEASE | 2026-08-24T15:24:47Z | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
-| `sn10:scoring_commit:2026-08-24T13:55:36Z` | 10 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy |
-| `sn25:release:v2026.8.24-1027859650` | 25 | RELEASE | 2026-08-24T16:05:12Z | sn25 released v2026.8.24-1027859650 |
-| `sn11:release:v0.6.34` | 11 | RELEASE | 2026-08-24T16:53:39Z | sn11 released v0.6.34 |
-| `sn21:scoring_commit:2026-08-24T16:06:33Z` | 21 | SCORING_COMMIT | 2026-08-24T16:53:39Z | sn21 commit touches scoring: docs(rewards): leaderboard vs chain timing, stated once |
-| `sn124:scoring_commit:2026-08-24T16:42:42Z` | 124 | SCORING_COMMIT | 2026-08-24T17:42:25Z | sn124 commit touches scoring: Rename the office challenge family to cf_interceptor_office |
-| `sn21:scoring_commit:2026-08-24T17:50:10Z` | 21 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn21 commit touches scoring: docs(scoring): retire the no-zero-for-missing rule the absence penalt… |
-| `sn60:scoring_commit:2026-08-24T17:54:28Z` | 60 | SCORING_COMMIT | 2026-08-24T18:16:08Z | sn60 commit touches scoring: Merge pull request #44 from Bitsec-AI/feat/scorer-retries |
-| `sn89:scoring_commit:2026-08-24T18:55:25Z` | 89 | SCORING_COMMIT | 2026-08-24T19:10:03Z | sn89 commit touches scoring: HF board: read the live tail, so a miner sees their own call in second |
-| `sn3:scoring_commit:2026-08-24T19:11:02Z` | 3 | SCORING_COMMIT | 2026-08-24T19:54:44Z | sn3 commit touches scoring: Enforce ordered evaluations |
 | `sn92:scoring_commit:2026-08-24T20:51:06Z` | 92 | SCORING_COMMIT | 2026-08-24T21:15:06Z | sn92 commit touches scoring: Correct the validator setup path end to end |
 | `sn71:scoring_commit:2026-08-24T21:10:53Z` | 71 | SCORING_COMMIT | 2026-08-24T21:53:25Z | sn71 commit touches scoring: Allow bounded measured dev evaluation payloads |
 | `sn102:scoring_commit:2026-08-24T16:15:02Z` | 102 | SCORING_COMMIT | 2026-08-24T22:40:07Z | sn102 commit touches scoring: ♻️ refactor(validator): drop the redundant merge hashes |
@@ -182,8 +176,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-08-31T06:03:36Z` | 92 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro… |
 | `sn101:scoring_commit:2026-08-31T03:21:03Z` | 101 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring |
 | `sn111:scoring_commit:2026-08-31T02:59:02Z` | 111 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable |
-| `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
-| `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-08-31T08:14:55Z` | 3 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling |
+| `sn50:scoring_commit:2026-08-31T13:14:24Z` | 50 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320) |
+| `sn51:scoring_commit:2026-08-31T12:25:43Z` | 51 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254) |
+| `sn56:scoring_commit:2026-08-31T13:13:56Z` | 56 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#… |
+| `sn67:scoring_commit:2026-08-31T06:48:15Z` | 67 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1 |
+| `sn92:scoring_commit:2026-08-31T13:00:04Z` | 92 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share |
+| `sn97:scoring_commit:2026-08-29T21:22:36Z` | 97 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn97 commit touches scoring: fix: skip hidden files from validation |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |
 | `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |

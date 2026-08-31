@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-08-31T06:59:49Z, block 8963566
+# ALARMS - generated 2026-08-31T15:02:30Z, block 8965979
 
-window: first_seen in [2026-08-31T05:45:21Z, 2026-08-31T07:00:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-08-31T13:48:06Z, 2026-08-31T15:03:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn91:scoring_commit:2026-08-31T05:05:09Z` | 91 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s… |
-| `sn92:scoring_commit:2026-08-31T06:03:36Z` | 92 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro… |
-| `sn101:scoring_commit:2026-08-31T03:21:03Z` | 101 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring |
-| `sn111:scoring_commit:2026-08-31T02:59:02Z` | 111 | SCORING_COMMIT | P1 | 2026-08-31T07:00:21Z | sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable |
+| `sn3:scoring_commit:2026-08-31T08:14:55Z` | 3 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling |
+| `sn50:scoring_commit:2026-08-31T13:14:24Z` | 50 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320) |
+| `sn51:scoring_commit:2026-08-31T12:25:43Z` | 51 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254) |
+| `sn56:scoring_commit:2026-08-31T13:13:56Z` | 56 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#… |
+| `sn67:scoring_commit:2026-08-31T06:48:15Z` | 67 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1 |
+| `sn92:scoring_commit:2026-08-31T13:00:04Z` | 92 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share |
+| `sn97:scoring_commit:2026-08-29T21:22:36Z` | 97 | SCORING_COMMIT | P1 | 2026-08-31T15:03:06Z | sn97 commit touches scoring: fix: skip hidden files from validation |
 
 ### detail
 
-- **`sn91:scoring_commit:2026-08-31T05:05:09Z`** - sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s…
+- **`sn3:scoring_commit:2026-08-31T08:14:55Z`** - sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-08-31T06:03:36Z`** - sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro…
+- **`sn50:scoring_commit:2026-08-31T13:14:24Z`** - sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn101:scoring_commit:2026-08-31T03:21:03Z`** - sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring
+- **`sn51:scoring_commit:2026-08-31T12:25:43Z`** - sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-08-31T02:59:02Z`** - sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable
+- **`sn56:scoring_commit:2026-08-31T13:13:56Z`** - sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-08-31T06:48:15Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-08-31T13:00:04Z`** - sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-08-29T21:22:36Z`** - sn97 commit touches scoring: fix: skip hidden files from validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,17 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn97:scoring_commit:2026-08-22T11:21:02Z` | 97 | SCORING_COMMIT | 2026-08-24T07:17:08Z | sn97 commit touches scoring: feat: weighted score breakdown on eval detail page |
-| `sn21:scoring_commit:2026-08-23T13:18:04Z` | 21 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn21 commit touches scoring: docs(quickstart): troubleshooting row for no_scoreable_predictions ad… |
-| `sn53:scoring_commit:2026-08-24T08:20:51Z` | 53 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn53 commit touches scoring: Merge pull request #43 from hanlinai/fix/tee-miner-load-broadcast-dra… |
-| `sn65:scoring_commit:2026-08-24T09:11:32Z` | 65 | SCORING_COMMIT | 2026-08-24T09:13:31Z | sn65 commit touches scoring: update leader default url to mainnet validator |
-| `sn3:scoring_commit:2026-08-24T07:53:43Z` | 3 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn3 commit touches scoring: Update evaluation dataset size to 2000 for finewebedu |
-| `sn53:scoring_commit:2026-08-24T10:56:25Z` | 53 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn53 commit touches scoring: tee_miner: log the WebSocket close code, and what the dying leg took … |
-| `sn67:scoring_commit:2026-08-24T09:35:52Z` | 67 | SCORING_COMMIT | 2026-08-24T11:01:40Z | sn67 commit touches scoring: fix(miner): accept monitoring task metadata in local eval (#1374) |
-| `sn67:scoring_commit:2026-08-24T11:27:42Z` | 67 | SCORING_COMMIT | 2026-08-24T12:16:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260824.post4 |
-| `sn3:scoring_commit:2026-08-24T13:22:09Z` | 3 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn3 commit touches scoring: Enforce miner upload size limit |
-| `sn89:scoring_commit:2026-08-24T13:22:26Z` | 89 | SCORING_COMMIT | 2026-08-24T13:30:22Z | sn89 commit touches scoring: HF scoreboard: pick the tick dir by newest window, not by list order |
-| `sn11:release:v0.6.33` | 11 | RELEASE | 2026-08-24T14:27:54Z | sn11 released v0.6.33 |
 | `sn3:scoring_commit:2026-08-24T15:00:07Z` | 3 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn3 commit touches scoring: Show provisional LCB during evaluations |
 | `sn7:release:release-20260824-151246: Bump allways to` | 7 | RELEASE | 2026-08-24T15:24:47Z | sn7 released release-20260824-151246: Bump allways to 3.3.0 (#705) |
 | `sn10:scoring_commit:2026-08-24T13:55:36Z` | 10 | SCORING_COMMIT | 2026-08-24T15:24:47Z | sn10 commit touches scoring: fix(miner): match fee-path test to the single-prompt CLI copy |
@@ -180,6 +178,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.8.30-1033129380` | 25 | RELEASE | 2026-08-30T20:05:23Z | sn25 released v2026.8.30-1033129380 |
 | `sn92:scoring_commit:2026-08-30T20:40:28Z` | 92 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set |
 | `sn111:scoring_commit:2026-08-30T21:57:12Z` | 111 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance |
+| `sn91:scoring_commit:2026-08-31T05:05:09Z` | 91 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s… |
+| `sn92:scoring_commit:2026-08-31T06:03:36Z` | 92 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro… |
+| `sn101:scoring_commit:2026-08-31T03:21:03Z` | 101 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring |
+| `sn111:scoring_commit:2026-08-31T02:59:02Z` | 111 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable |
 | `sn124:readme_task_diff:b21cedcc4483b717` | 124 | README_TASK_DIFF | 2026-08-24T17:42:25Z | sn124 README task/scoring sections changed |
 | `sn10:readme_task_diff:695b2540d142908e` | 10 | README_TASK_DIFF | 2026-08-24T19:10:03Z | sn10 README task/scoring sections changed |
 | `sn66:readme_task_diff:d897794f349f6fcf` | 66 | README_TASK_DIFF | 2026-08-24T22:40:07Z | sn66 README task/scoring sections changed |

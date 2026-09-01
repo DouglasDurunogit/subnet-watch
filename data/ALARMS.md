@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-01T05:44:13Z, block 8970388
+# ALARMS - generated 2026-09-01T10:31:24Z, block 8971824
 
-window: first_seen in [2026-09-01T04:29:42Z, 2026-09-01T05:44:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-01T09:16:56Z, 2026-09-01T10:31:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | P2 | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
+| `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
+| `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
+| `sn111:scoring_commit:2026-09-01T08:48:59Z` | 111 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn111 commit touches scoring: feat(selection): harden adaptive miner selection |
 
 ### detail
 
-- **`sn80:readme_task_diff:c3d88acb03906c81`** - sn80 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn25:scoring_commit:2026-09-01T10:14:28Z`** - sn25 commit touches scoring: Verify carried conviction under its source policy
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn63:scoring_commit:2026-09-01T06:34:11Z`** - sn63 commit touches scoring: Support multiple validations on single validator and update cli ux
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-09-01T06:46:40Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-01T08:48:59Z`** - sn111 commit touches scoring: feat(selection): harden adaptive miner selection
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -30,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn111:scoring_commit:2026-08-25T09:49:43Z` | 111 | SCORING_COMMIT | 2026-08-25T10:00:26Z | sn111 commit touches scoring: feat(setup): streamline public validator deployment |
-| `sn112:scoring_commit:2026-08-24T07:39:41Z` | 112 | SCORING_COMMIT | 2026-08-25T10:00:26Z | sn112 commit touches scoring: fix(dedup): a waitlisted miner could never resubmit that solver again… |
 | `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
 | `sn92:scoring_commit:2026-08-25T12:18:18Z` | 92 | SCORING_COMMIT | 2026-08-25T13:08:22Z | sn92 commit touches scoring: Note the operator-driven submission window in miner timing |
 | `sn102:release:v0.5.2 — background-eval resume + valida` | 102 | RELEASE | 2026-08-25T14:13:01Z | sn102 released v0.5.2 — background-eval resume + validator memory fixes |
@@ -175,6 +182,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
+| `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

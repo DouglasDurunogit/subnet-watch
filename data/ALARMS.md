@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-01T21:24:56Z, block 8975090
+# ALARMS - generated 2026-09-01T23:29:01Z, block 8975711
 
-window: first_seen in [2026-09-01T20:10:28Z, 2026-09-01T21:25:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-01T22:14:32Z, 2026-09-01T23:29:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.1-1034943860` | 25 | RELEASE | P1 | 2026-09-01T21:25:28Z | sn25 released v2026.9.1-1034943860 |
-| `sn92:scoring_commit:2026-09-01T21:01:49Z` | 92 | SCORING_COMMIT | P1 | 2026-09-01T21:25:28Z | sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir… |
+| `sn104:scoring_commit:2026-08-30T09:59:38Z` | 104 | SCORING_COMMIT | P1 | 2026-09-01T23:29:32Z | sn104 commit touches scoring: multiple llm key and improve the scoring mechanism |
+| `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | P2 | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.9.1-1034943860`** - sn25 released v2026.9.1-1034943860
-  - published 2026-09-01T20:31:56Z (was v2026.9.1-1034848790)
-- **`sn92:scoring_commit:2026-09-01T21:01:49Z`** - sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir…
+- **`sn104:scoring_commit:2026-08-30T09:59:38Z`** - sn104 commit touches scoring: multiple llm key and improve the scoring mechanism
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn104:readme_task_diff:92a67d7788885fe7`** - sn104 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,9 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn28:release:v0.4.10` | 28 | RELEASE | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
-| `sn56:scoring_commit:2026-08-25T22:56:00Z` | 56 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn56 commit touches scoring: Add unit tests for get_base_contestant to validate dataset propagatio… |
-| `sn112:scoring_commit:2026-08-25T22:56:41Z` | 112 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat… |
 | `sn25:release:v2026.8.25-1029027010` | 25 | RELEASE | 2026-08-26T01:55:31Z | sn25 released v2026.8.25-1029027010 |
 | `sn81:scoring_commit:2026-08-26T00:35:18Z` | 81 | SCORING_COMMIT | 2026-08-26T01:55:31Z | sn81 commit touches scoring: fix(validator): close submission ingress races |
 | `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
@@ -167,6 +164,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-01T17:30:15Z` | 25 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn25 commit touches scoring: sim-testnet: verify direct Connect ingress |
 | `sn34:scoring_commit:2026-09-01T17:35:17Z` | 34 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432) |
 | `sn124:scoring_commit:2026-09-01T17:53:33Z` | 124 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde… |
+| `sn25:release:v2026.9.1-1034943860` | 25 | RELEASE | 2026-09-01T21:25:28Z | sn25 released v2026.9.1-1034943860 |
+| `sn92:scoring_commit:2026-09-01T21:01:49Z` | 92 | SCORING_COMMIT | 2026-09-01T21:25:28Z | sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir… |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |

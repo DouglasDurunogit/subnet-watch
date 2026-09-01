@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-01T18:42:19Z, block 8974277
+# ALARMS - generated 2026-09-01T21:24:56Z, block 8975090
 
-window: first_seen in [2026-09-01T17:27:47Z, 2026-09-01T18:42:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-01T20:10:28Z, 2026-09-01T21:25:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20260901-182140: Set miner burn ` | 7 | RELEASE | P1 | 2026-09-01T18:42:47Z | sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) |
-| `sn7:scoring_commit:2026-09-01T18:14:46Z` | 7 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710) |
-| `sn21:scoring_commit:2026-09-01T17:16:02Z` | 21 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners |
-| `sn25:release:v2026.9.1-1034848790` | 25 | RELEASE | P1 | 2026-09-01T18:42:47Z | sn25 released v2026.9.1-1034848790 |
-| `sn25:scoring_commit:2026-09-01T17:30:15Z` | 25 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn25 commit touches scoring: sim-testnet: verify direct Connect ingress |
-| `sn34:scoring_commit:2026-09-01T17:35:17Z` | 34 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432) |
-| `sn124:scoring_commit:2026-09-01T17:53:33Z` | 124 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde… |
-| `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | P2 | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
+| `sn25:release:v2026.9.1-1034943860` | 25 | RELEASE | P1 | 2026-09-01T21:25:28Z | sn25 released v2026.9.1-1034943860 |
+| `sn92:scoring_commit:2026-09-01T21:01:49Z` | 92 | SCORING_COMMIT | P1 | 2026-09-01T21:25:28Z | sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir… |
 
 ### detail
 
-- **`sn7:release:release-20260901-182140: Set miner burn `** - sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710)
-  - published 2026-09-01T18:14:46Z (was release-20260824-151246: Bump allways to 3.3.0 (#705))
-- **`sn7:scoring_commit:2026-09-01T18:14:46Z`** - sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710)
+- **`sn25:release:v2026.9.1-1034943860`** - sn25 released v2026.9.1-1034943860
+  - published 2026-09-01T20:31:56Z (was v2026.9.1-1034848790)
+- **`sn92:scoring_commit:2026-09-01T21:01:49Z`** - sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-09-01T17:16:02Z`** - sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.1-1034848790`** - sn25 released v2026.9.1-1034848790
-  - published 2026-09-01T17:55:08Z (was v2026.8.31-1034210530)
-- **`sn25:scoring_commit:2026-09-01T17:30:15Z`** - sn25 commit touches scoring: sim-testnet: verify direct Connect ingress
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-09-01T17:35:17Z`** - sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-09-01T17:53:33Z`** - sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn7:readme_task_diff:0ed4024c562bd06a`** - sn7 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,8 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn28:release:v0.4.10-dev` | 28 | RELEASE | 2026-08-25T19:55:29Z | sn28 released v0.4.10-dev |
-| `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 | `sn28:release:v0.4.10` | 28 | RELEASE | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
 | `sn56:scoring_commit:2026-08-25T22:56:00Z` | 56 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn56 commit touches scoring: Add unit tests for get_base_contestant to validate dataset propagatio… |
 | `sn112:scoring_commit:2026-08-25T22:56:41Z` | 112 | SCORING_COMMIT | 2026-08-25T23:10:04Z | sn112 commit touches scoring: fix(scoring): plan.metadata is not always a dict, and the scoring pat… |
@@ -180,6 +160,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:scoring_commit:2026-09-01T14:01:27Z` | 107 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes |
 | `sn108:scoring_commit:2026-09-01T13:01:55Z` | 108 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool |
 | `sn111:scoring_commit:2026-09-01T11:09:58Z` | 111 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent |
+| `sn7:release:release-20260901-182140: Set miner burn ` | 7 | RELEASE | 2026-09-01T18:42:47Z | sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) |
+| `sn7:scoring_commit:2026-09-01T18:14:46Z` | 7 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710) |
+| `sn21:scoring_commit:2026-09-01T17:16:02Z` | 21 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners |
+| `sn25:release:v2026.9.1-1034848790` | 25 | RELEASE | 2026-09-01T18:42:47Z | sn25 released v2026.9.1-1034848790 |
+| `sn25:scoring_commit:2026-09-01T17:30:15Z` | 25 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn25 commit touches scoring: sim-testnet: verify direct Connect ingress |
+| `sn34:scoring_commit:2026-09-01T17:35:17Z` | 34 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432) |
+| `sn124:scoring_commit:2026-09-01T17:53:33Z` | 124 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde… |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
@@ -194,6 +181,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
+| `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

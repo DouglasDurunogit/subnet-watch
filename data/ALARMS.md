@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-01T10:31:24Z, block 8971824
+# ALARMS - generated 2026-09-01T15:13:52Z, block 8973235
 
-window: first_seen in [2026-09-01T09:16:56Z, 2026-09-01T10:31:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-01T13:59:15Z, 2026-09-01T15:14:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
-| `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
-| `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
-| `sn111:scoring_commit:2026-09-01T08:48:59Z` | 111 | SCORING_COMMIT | P1 | 2026-09-01T10:31:56Z | sn111 commit touches scoring: feat(selection): harden adaptive miner selection |
+| `sn10:burn_drop:0.922` | 10 | BURN_DROP | P0 | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
+| `sn23:scoring_commit:2026-09-01T13:59:39Z` | 23 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update |
+| `sn92:release:v0.3.2` | 92 | RELEASE | P1 | 2026-09-01T15:14:15Z | sn92 released v0.3.2 |
+| `sn97:scoring_commit:2026-09-01T07:58:22Z` | 97 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive |
+| `sn107:scoring_commit:2026-09-01T14:01:27Z` | 107 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes |
+| `sn108:scoring_commit:2026-09-01T13:01:55Z` | 108 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool |
+| `sn111:scoring_commit:2026-09-01T11:09:58Z` | 111 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent |
+| `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | P2 | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-01T10:14:28Z`** - sn25 commit touches scoring: Verify carried conviction under its source policy
+- **`sn10:burn_drop:0.922`** - sn10 burn fell 1.000 -> 0.922 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn23:scoring_commit:2026-09-01T13:59:39Z`** - sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn63:scoring_commit:2026-09-01T06:34:11Z`** - sn63 commit touches scoring: Support multiple validations on single validator and update cli ux
+- **`sn92:release:v0.3.2`** - sn92 released v0.3.2
+  - published 2026-09-01T13:10:38Z (was v0.3.0)
+- **`sn97:scoring_commit:2026-09-01T07:58:22Z`** - sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-01T06:46:40Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1
+- **`sn107:scoring_commit:2026-09-01T14:01:27Z`** - sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-01T08:48:59Z`** - sn111 commit touches scoring: feat(selection): harden adaptive miner selection
+- **`sn108:scoring_commit:2026-09-01T13:01:55Z`** - sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-01T11:09:58Z`** - sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn107:readme_task_diff:5f8353ef47bb6eec`** - sn107 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.657` | 121 | BURN_DROP | 2026-08-25T14:13:01Z | sn121 burn fell 1.000 -> 0.657 - miners can earn again |
 | `sn7:burn_drop:0.910` | 7 | BURN_DROP | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
 | `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
 | `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
@@ -39,9 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn10:scoring_commit:2026-08-25T10:50:13Z` | 10 | SCORING_COMMIT | 2026-08-25T11:14:15Z | sn10 commit touches scoring: feat(chain): validator-side set_weights with permit check (PAR-104) |
-| `sn92:scoring_commit:2026-08-25T12:18:18Z` | 92 | SCORING_COMMIT | 2026-08-25T13:08:22Z | sn92 commit touches scoring: Note the operator-driven submission window in miner timing |
-| `sn102:release:v0.5.2 — background-eval resume + valida` | 102 | RELEASE | 2026-08-25T14:13:01Z | sn102 released v0.5.2 — background-eval resume + validator memory fixes |
 | `sn25:release:v2026.8.25-1028682810` | 25 | RELEASE | 2026-08-25T15:14:33Z | sn25 released v2026.8.25-1028682810 |
 | `sn108:scoring_commit:2026-08-25T15:02:35Z` | 108 | SCORING_COMMIT | 2026-08-25T15:14:33Z | sn108 commit touches scoring: fix(evaluation): recover from out of memory instead of compounding it |
 | `sn23:scoring_commit:2026-08-25T15:33:12Z` | 23 | SCORING_COMMIT | 2026-08-25T16:08:24Z | sn23 commit touches scoring: Merge pull request #49 from TrishoolAI/feat/challenge-creation |
@@ -169,7 +177,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-08-31T19:33:52Z` | 124 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn124 commit touches scoring: Merge pull request #118 from swarm-subnet/feature/ali/miner-folder-mi… |
 | `sn25:release:v2026.8.31-1034210530` | 25 | RELEASE | 2026-09-01T00:34:46Z | sn25 released v2026.8.31-1034210530 |
 | `sn25:scoring_commit:2026-09-01T00:06:51Z` | 25 | SCORING_COMMIT | 2026-09-01T00:34:46Z | sn25 commit touches scoring: Batch carried fleet refresh verification |
-| `sn111:readme_task_diff:00bbd31d47cb0fe2` | 111 | README_TASK_DIFF | 2026-08-25T11:14:15Z | sn111 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
+| `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
+| `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
+| `sn111:scoring_commit:2026-09-01T08:48:59Z` | 111 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn111 commit touches scoring: feat(selection): harden adaptive miner selection |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |

@@ -1,35 +1,35 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-01T15:13:52Z  |  block: 8973235  |  row_status: ok
+snapshot_utc: 2026-09-01T18:42:19Z  |  block: 8974277  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9129189939703792**
-- registration cost: 0.15 TAO (33.650999999999996 USD), open=True
+- miner_burn: **0.9129151683300734**
+- registration cost: 0.15 TAO (33.012 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 881.3 days  |  registered at block 2627691
+- subnet age: 881.5 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1063.8880855251352
-- top_miner_usd_day: 1942.5121732474072 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1048.537287700421
+- top_miner_usd_day: 1914.451744476244 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 2  |  gini: 0.4129306924649798  |  top1_share: 0.9129306924649799  |  top10_share: 1.0
-- owner_incentive_share: 0.9129306924649799 (independent check on miner_burn; disagreement 0.0)
+- earners: 2  |  gini: 0.41291543321024204  |  top1_share: 0.912915433210242  |  top10_share: 1.0
+- owner_incentive_share: 0.9129154332102419 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 9134 bytes, sha 7579607a23dc6d8d
-- latest release: release-20260824-151246: Bump allways to 3.3.0 (#705) 2026-08-24T14:36:35Z
-- last commit: 2026-08-24T14:36:35Z
-- scoring-related commit: fix(validator): non-earner trace reads live quotes, not dead last_kno… 2026-08-22T21:11:25Z
+- README: 10900 bytes, sha c66d7c6c103d5f7c
+- latest release: release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) 2026-09-01T18:14:46Z
+- last commit: 2026-09-01T18:14:46Z
+- scoring-related commit: Set miner burn to 0% (v3.3.1) (#710) 2026-09-01T18:14:46Z
 
 ## Resources
 
@@ -41,9 +41,9 @@ snapshot_utc: 2026-09-01T15:13:52Z  |  block: 8973235  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 75), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 8d ago
+- score: 39.3 (rank 51), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 
@@ -54,17 +54,42 @@ snapshot_utc: 2026-09-01T15:13:52Z  |  block: 8973235  |  row_status: ok
 ```markdown
 # Allways
 
-**Universal Transaction Layer**
+**Settlement layer for agents and applications**
 
-Native transactions across independent assets — no wrapped tokens, no bridges, no custodian. Bittensor Subnet 7 (SN7).
+Native cross-chain transactions for programs that hold one asset and need to pay in another — no wrapped tokens, no bridges, no custodian. Bittensor Subnet 7 (SN7).
 
 [![Twitter](https://img.shields.io/twitter/follow/allways_io?style=social)](https://x.com/allways_io)
 
 ## Overview
 
-Allways creates a verification layer above independent systems. Assets move natively. Miners complete transactions, validators independently verify the results, and a smart contract enforces outcomes through collateral and slashing.
+Allways is a settlement layer built to be driven by software. An agent or application that holds SOL, TAO, BTC, or any supported asset submits a single swap and receives the destination asset natively in its own wallet — no account, no custodian, no bridge in the path. Allways creates a verification layer above independent systems: miners complete transactions, validators independently verify both legs on-chain, and a smart contract enforces outcomes through collateral and slashing.
 
 Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, CRO, ASTER, UNI, QNT, POL, USDC-on-Polygon, PAXG, and USDC-on-Solana — plus SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+
+## For agents
+
+Allways is designed to be operated by software, not clicked through by people. Every step of a swap — quote discovery, reservation, deposit, and settlement — is a CLI command (`alw swap now`) or a public API call (`api.all-ways.io`) with structured output, so an autonomous agent can clear a payment in another native asset as a single tool call, with no human in the loop, no exchange account, and no custodian holding its keys. This is how the network is used in practice: agents operated by the team and by users originate swaps today, and the miner and validator neurons in this repo are themselves unattended programs that quote, fulfill, and verify around the clock.
+
+**Why agents need a settlement layer.** An agent's wallet is a single-chain identity, but the things it pays for are not. An LLM agent earning TAO may need to buy inference from a provider that bills in USDC; a trading agent holding SOL may need to settle an obligation in BTC; a multi-agent pipeline may split revenue across operators who each want a different native asset. Bridges and centralized exchanges break the autonomy model — they require accounts, KYC, custody, and a human to unblock them. Allways lets the agent stay self-custodial: it sends the source asset from its own wallet and receives the destination asset in its own wallet, and the protocol verifies the outcome on-chain.
+
+**Swap lifecycle as tool calls.**
+
+- **Discover**: `GET` live quotes per pair from the API and select a rate, liquidity, and miner.
+- **Reserve**: lock that miner's quote and collateral for the swap window.
+- **Deposit**: send the source asset natively from the agent's wallet; validators attest the deposit on-chain.
+- **Settle**: the miner delivers the destination asset to the agent's wallet; validators verify the delivery or slash the miner's collateral to reimburse the agent.
+
+Each call returns machine-readable state (swap id, reservation window, deadlines, attestation status), so an agent can plan, retry, and reason over the full lifecycle without parsing prose.
+
+**Use cases in production and in reach.**
+
+- **Agent-to-agent payments**: an orchestrator pays sub-agents or tool providers in whatever asset they accept, funded from a single treasury.
+- **Inference and compute procurement**: convert earned TAO or SOL into the stablecoin or native token a GPU or model provider bills in.
+- **Treasury automation**: an agent rebalances a multi-chain treasury on a schedule or on a signal, without moving funds through a custodian.
+- **Autonomous market-making**: the reference miner is itself an agent — it posts quotes, manages collateral, and fulfills swaps programmatically; operators extend it with their own pricing and risk logic.
+- **Bittensor-native economics**: agents earning alpha or TAO on other subnets settle into the asset they actually spend, with SOL and TAO as hubs.
+
+See the Swap guide at [docs.all-ways.io](https://docs.all-ways.io/) for the full lifecycle and API reference.
 
 ## Miner Risk Disclaimer
 
@@ -129,55 +154,7 @@ alw miner post sol <addr> btc <addr> <rate>    # quote
 ```
 
 **TAO-backed** (bond held in the Bittensor vault). Same order; the bond lives on another chain,
-so activation waits on validators mirroring it to Solana rather than on a local read:
-
-```bash
-alw collateral deposit 0.1                     # one-time identity deposit — see the note below
-alw miner bind-hotkey                          # the vault keys bonds by hotkey, joined via this binding
-alw vault post-collateral <TAO>                # bond into the vault (signed by the hotkey)
-alw vault lock                                 # enter service — only a LOCKED bond is attested
-                                               # wait a minute: validators mirror the bond to Solana
-alw miner activate --backing tao               # validators vote that purse active
-alw miner post sol <addr> tao <addr> <rate> --backing tao
+so activ
 ```
 
-Purses activate one at a time, so `alw miner activate` lights one. It infers the backing when only
-one purse is funded and not yet serving — which is every step of the order above — and asks for
-`--backing` only when both are candidates at once. Activation is refused, not queued, while the
-bond has yet to be mirrored: retry rather than wait on the request.
-
-`alw miner status` shows the required bond and whether each purse is serving yet.
-
-**A TAO-only miner still posts a small SOL deposit — once.** `bind-hotkey` requires a live local
-collateral stake (`min_collateral`, currently 0.1 SOL) — which is why the deposit comes first in both
-recipes above — because binding a hotkey is what claims that identity on Solana and the deposit is the
-anti-squat cost of the claim. Since the vault keys bonds by
-hotkey and validators join them to your Solana pubkey through that binding, a TAO-backed miner needs
-the binding to set rates or be credited for its swaps — so it needs the deposit too. That is the whole
-of it: the SOL purse never has to be activated, it posts no quotes, and it backs nothing. Withdraw it
-by deactivating and waiting out the cooldown, the same as any SOL collateral.
-
-**What a TAO-backed quote guarantees.** If the miner fails to deliver, the user is reimbursed in
-TAO from the miner's bond, shortly after the timeout. That differs from a SOL-backed quote in
-timing only: a SOL refund is instant because the collateral sits beside the swap, while the TAO
-reimbursement waits for validators to carry the timeout verdict to the vault and reach quorum
-there. Either way the user is made whole out of the bond that backed the quote.
-
-**Leaving.** A locked bond is not withdrawable on demand. Deactivate the purse
-(`alw miner deactivate --backing tao`), let in-flight swaps and their timeout windows drain, and
-validators unlock the bond once nothing is owed on it — then `alw vault withdraw` succeeds.
-
-## Validator Storage Layout
-
-Validator state lives in `~/.allways/validator/state.db` (SQLite, WAL mode).
-Tables: `pending_confirms`, `rate_events`, `swap_outcomes`. Collateral /
-active / min_collateral state is held in memory and rebuilt from contract
-events each startup; only `swap_outcomes` (the all-time credibility ledger)
-needs to persist across restarts.
-
-## Miner Environment Variables
-
-- `BTC_PRIVATE_KEY`, `ETH_PRIVATE_KEY`, `ARB_PRIVATE_KEY`, `HYPE_PRIVATE_KEY`, `BNB_PRIVATE_KEY`, `AVAX_PRIVATE_KEY`, `BASE_PRIVATE_KEY`, `CRO_PRIVATE_KEY`, `{ETH,ARB,HYPE,BNB,AVAX,BASE,CRO}_RPC_URLS`, etc. — keyed by network, so assets sharing one share its config (ET
-```
-
-_(truncated at 6000 of 9134 chars - read the full file at https://github.com/entrius/allways)_
+_(truncated at 6000 of 10900 chars - read the full file at https://github.com/entrius/allways)_

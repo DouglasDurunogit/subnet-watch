@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-01T15:13:52Z, block 8973235
+# ALARMS - generated 2026-09-01T18:42:19Z, block 8974277
 
-window: first_seen in [2026-09-01T13:59:15Z, 2026-09-01T15:14:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-01T17:27:47Z, 2026-09-01T18:42:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.922` | 10 | BURN_DROP | P0 | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn23:scoring_commit:2026-09-01T13:59:39Z` | 23 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update |
-| `sn92:release:v0.3.2` | 92 | RELEASE | P1 | 2026-09-01T15:14:15Z | sn92 released v0.3.2 |
-| `sn97:scoring_commit:2026-09-01T07:58:22Z` | 97 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive |
-| `sn107:scoring_commit:2026-09-01T14:01:27Z` | 107 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes |
-| `sn108:scoring_commit:2026-09-01T13:01:55Z` | 108 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool |
-| `sn111:scoring_commit:2026-09-01T11:09:58Z` | 111 | SCORING_COMMIT | P1 | 2026-09-01T15:14:15Z | sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent |
-| `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | P2 | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
+| `sn7:release:release-20260901-182140: Set miner burn ` | 7 | RELEASE | P1 | 2026-09-01T18:42:47Z | sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) |
+| `sn7:scoring_commit:2026-09-01T18:14:46Z` | 7 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710) |
+| `sn21:scoring_commit:2026-09-01T17:16:02Z` | 21 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners |
+| `sn25:release:v2026.9.1-1034848790` | 25 | RELEASE | P1 | 2026-09-01T18:42:47Z | sn25 released v2026.9.1-1034848790 |
+| `sn25:scoring_commit:2026-09-01T17:30:15Z` | 25 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn25 commit touches scoring: sim-testnet: verify direct Connect ingress |
+| `sn34:scoring_commit:2026-09-01T17:35:17Z` | 34 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432) |
+| `sn124:scoring_commit:2026-09-01T17:53:33Z` | 124 | SCORING_COMMIT | P1 | 2026-09-01T18:42:47Z | sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde… |
+| `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | P2 | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:burn_drop:0.922`** - sn10 burn fell 1.000 -> 0.922 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn23:scoring_commit:2026-09-01T13:59:39Z`** - sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update
+- **`sn7:release:release-20260901-182140: Set miner burn `** - sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710)
+  - published 2026-09-01T18:14:46Z (was release-20260824-151246: Bump allways to 3.3.0 (#705))
+- **`sn7:scoring_commit:2026-09-01T18:14:46Z`** - sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v0.3.2`** - sn92 released v0.3.2
-  - published 2026-09-01T13:10:38Z (was v0.3.0)
-- **`sn97:scoring_commit:2026-09-01T07:58:22Z`** - sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive
+- **`sn21:scoring_commit:2026-09-01T17:16:02Z`** - sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn107:scoring_commit:2026-09-01T14:01:27Z`** - sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes
+- **`sn25:release:v2026.9.1-1034848790`** - sn25 released v2026.9.1-1034848790
+  - published 2026-09-01T17:55:08Z (was v2026.8.31-1034210530)
+- **`sn25:scoring_commit:2026-09-01T17:30:15Z`** - sn25 commit touches scoring: sim-testnet: verify direct Connect ingress
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-09-01T13:01:55Z`** - sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool
+- **`sn34:scoring_commit:2026-09-01T17:35:17Z`** - sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-01T11:09:58Z`** - sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent
+- **`sn124:scoring_commit:2026-09-01T17:53:33Z`** - sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn107:readme_task_diff:5f8353ef47bb6eec`** - sn107 README task/scoring sections changed
+- **`sn7:readme_task_diff:0ed4024c562bd06a`** - sn7 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -50,14 +50,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.8.25-1028682810` | 25 | RELEASE | 2026-08-25T15:14:33Z | sn25 released v2026.8.25-1028682810 |
-| `sn108:scoring_commit:2026-08-25T15:02:35Z` | 108 | SCORING_COMMIT | 2026-08-25T15:14:33Z | sn108 commit touches scoring: fix(evaluation): recover from out of memory instead of compounding it |
-| `sn23:scoring_commit:2026-08-25T15:33:12Z` | 23 | SCORING_COMMIT | 2026-08-25T16:08:24Z | sn23 commit touches scoring: Merge pull request #49 from TrishoolAI/feat/challenge-creation |
-| `sn92:scoring_commit:2026-08-25T15:53:19Z` | 92 | SCORING_COMMIT | 2026-08-25T16:08:24Z | sn92 commit touches scoring: Score entity extraction with dataset-level micro-F1 |
-| `sn108:scoring_commit:2026-08-25T15:20:19Z` | 108 | SCORING_COMMIT | 2026-08-25T16:08:24Z | sn108 commit touches scoring: docs(scoring): drop the note about asserted dataset counts |
-| `sn34:scoring_commit:2026-08-25T16:39:00Z` | 34 | SCORING_COMMIT | 2026-08-25T17:05:10Z | sn34 commit touches scoring: docs: align discriminator taxonomy and scoring (#430) |
-| `sn92:scoring_commit:2026-08-25T17:00:40Z` | 92 | SCORING_COMMIT | 2026-08-25T17:05:10Z | sn92 commit touches scoring: Unwrap fenced JSON before strict entity validation |
-| `sn15:release:v1.2.8` | 15 | RELEASE | 2026-08-25T18:17:26Z | sn15 released v1.2.8 |
+| `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
 | `sn28:release:v0.4.10-dev` | 28 | RELEASE | 2026-08-25T19:55:29Z | sn28 released v0.4.10-dev |
 | `sn112:scoring_commit:2026-08-25T20:30:12Z` | 112 | SCORING_COMMIT | 2026-08-25T20:41:44Z | sn112 commit touches scoring: fix(anchor): a validator with no archive for a chain could not pin it… |
 | `sn28:release:v0.4.10` | 28 | RELEASE | 2026-08-25T21:53:06Z | sn28 released v0.4.10 |
@@ -181,6 +174,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
 | `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
 | `sn111:scoring_commit:2026-09-01T08:48:59Z` | 111 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn111 commit touches scoring: feat(selection): harden adaptive miner selection |
+| `sn23:scoring_commit:2026-09-01T13:59:39Z` | 23 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update |
+| `sn92:release:v0.3.2` | 92 | RELEASE | 2026-09-01T15:14:15Z | sn92 released v0.3.2 |
+| `sn97:scoring_commit:2026-09-01T07:58:22Z` | 97 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive |
+| `sn107:scoring_commit:2026-09-01T14:01:27Z` | 107 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes |
+| `sn108:scoring_commit:2026-09-01T13:01:55Z` | 108 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool |
+| `sn111:scoring_commit:2026-09-01T11:09:58Z` | 111 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
@@ -194,6 +193,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
+| `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

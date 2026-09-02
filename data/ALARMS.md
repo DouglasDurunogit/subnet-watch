@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-02T18:50:48Z, block 8981519
+# ALARMS - generated 2026-09-02T21:46:33Z, block 8982397
 
-window: first_seen in [2026-09-02T17:36:15Z, 2026-09-02T18:51:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-02T20:32:07Z, 2026-09-02T21:47:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn13:release:Release v1.18.72` | 13 | RELEASE | P1 | 2026-09-02T18:51:15Z | sn13 released Release v1.18.72 |
-| `sn13:scoring_commit:2026-08-24T09:13:23Z` | 13 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn13 commit touches scoring: docs(miner): warn that Reddit.json needs auth, add data-collection ve… |
-| `sn21:scoring_commit:2026-09-02T18:39:13Z` | 21 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn21 commit touches scoring: fix(scoring): absence charges require a fair chance to run |
-| `sn28:release:v0.4.14` | 28 | RELEASE | P1 | 2026-09-02T18:51:15Z | sn28 released v0.4.14 |
-| `sn71:scoring_commit:2026-09-02T16:59:04Z` | 71 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn71 commit touches scoring: Bind automatic SOURCE_ADD reward workflow |
-| `sn74:release:release-20260902-172331` | 74 | RELEASE | P1 | 2026-09-02T18:51:15Z | sn74 released release-20260902-172331 |
-| `sn74:scoring_commit:2026-09-02T02:34:28Z` | 74 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn74 commit touches scoring: serving: compose miner takes host ports and runtime/attest URLs from … |
-| `sn89:scoring_commit:2026-09-02T16:19:10Z` | 89 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn89 commit touches scoring: weights: the validator was setting them on the pre-causal rule |
-| `sn111:scoring_commit:2026-09-02T17:43:43Z` | 111 | SCORING_COMMIT | P1 | 2026-09-02T18:51:15Z | sn111 commit touches scoring: Enforce mainnet Silver validator requirements |
-| `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | P2 | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |
-| `sn80:readme_task_diff:cdbca72968cc4124` | 80 | README_TASK_DIFF | P2 | 2026-09-02T18:51:15Z | sn80 README task/scoring sections changed |
+| `sn2:release:14.14.1` | 2 | RELEASE | P1 | 2026-09-02T21:47:07Z | sn2 released 14.14.1 |
+| `sn2:scoring_commit:2026-09-02T17:50:35Z` | 2 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620) |
+| `sn21:scoring_commit:2026-09-02T19:01:27Z` | 21 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn21 commit touches scoring: feat(validator): reference partner validator loop |
+| `sn25:scoring_commit:2026-09-02T21:30:53Z` | 25 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn25 commit touches scoring: Revalidate topology for each release plan |
 
 ### detail
 
-- **`sn13:release:Release v1.18.72`** - sn13 released Release v1.18.72
-  - published 2026-09-02T15:43:30Z (was Release v1.18.71)
-- **`sn13:scoring_commit:2026-08-24T09:13:23Z`** - sn13 commit touches scoring: docs(miner): warn that Reddit.json needs auth, add data-collection ve…
+- **`sn2:release:14.14.1`** - sn2 released 14.14.1
+  - published 2026-09-02T19:46:05Z (was 14.13.3)
+- **`sn2:scoring_commit:2026-09-02T17:50:35Z`** - sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-09-02T18:39:13Z`** - sn21 commit touches scoring: fix(scoring): absence charges require a fair chance to run
+- **`sn21:scoring_commit:2026-09-02T19:01:27Z`** - sn21 commit touches scoring: feat(validator): reference partner validator loop
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.14`** - sn28 released v0.4.14
-  - published 2026-09-02T17:42:54Z (was v0.4.13-dev)
-- **`sn71:scoring_commit:2026-09-02T16:59:04Z`** - sn71 commit touches scoring: Bind automatic SOURCE_ADD reward workflow
+- **`sn25:scoring_commit:2026-09-02T21:30:53Z`** - sn25 commit touches scoring: Revalidate topology for each release plan
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260902-172331`** - sn74 released release-20260902-172331
-  - published 2026-09-02T04:02:47Z (was release-20260811-182518: chore(weights): drop the linked-issue bonus for sparkinfer (#1687))
-- **`sn74:scoring_commit:2026-09-02T02:34:28Z`** - sn74 commit touches scoring: serving: compose miner takes host ports and runtime/attest URLs from …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-09-02T16:19:10Z`** - sn89 commit touches scoring: weights: the validator was setting them on the pre-causal rule
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-02T17:43:43Z`** - sn111 commit touches scoring: Enforce mainnet Silver validator requirements
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:readme_task_diff:4bce422bd3ab6229`** - sn74 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn80:readme_task_diff:cdbca72968cc4124`** - sn80 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -60,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn54:scoring_commit:2026-08-26T17:15:54Z` | 54 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112) |
-| `sn108:scoring_commit:2026-08-26T19:00:11Z` | 108 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score |
 | `sn28:release:v0.4.11` | 28 | RELEASE | 2026-08-26T22:23:22Z | sn28 released v0.4.11 |
 | `sn45:scoring_commit:2026-08-26T22:03:30Z` | 45 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn45 commit touches scoring: Submit one epoch of reward points to the API |
 | `sn76:scoring_commit:2026-08-26T20:35:03Z` | 76 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8 |
@@ -188,6 +165,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-09-02T11:42:41Z` | 51 | SCORING_COMMIT | 2026-09-02T15:21:36Z | sn51 commit touches scoring: DAH-2828, feat(validator): quote path for customer pods on CVM nodes … |
 | `sn102:release:v0.5.4 — restore validator_baseline_loss` | 102 | RELEASE | 2026-09-02T15:21:36Z | sn102 released v0.5.4 — restore validator_baseline_loss telemetry |
 | `sn102:scoring_commit:2026-09-02T14:07:33Z` | 102 | SCORING_COMMIT | 2026-09-02T15:21:36Z | sn102 commit touches scoring: 📊 telemetry: restore validator_baseline_loss from the background path |
+| `sn13:release:Release v1.18.72` | 13 | RELEASE | 2026-09-02T18:51:15Z | sn13 released Release v1.18.72 |
+| `sn13:scoring_commit:2026-08-24T09:13:23Z` | 13 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn13 commit touches scoring: docs(miner): warn that Reddit.json needs auth, add data-collection ve… |
+| `sn21:scoring_commit:2026-09-02T18:39:13Z` | 21 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn21 commit touches scoring: fix(scoring): absence charges require a fair chance to run |
+| `sn28:release:v0.4.14` | 28 | RELEASE | 2026-09-02T18:51:15Z | sn28 released v0.4.14 |
+| `sn71:scoring_commit:2026-09-02T16:59:04Z` | 71 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn71 commit touches scoring: Bind automatic SOURCE_ADD reward workflow |
+| `sn74:release:release-20260902-172331` | 74 | RELEASE | 2026-09-02T18:51:15Z | sn74 released release-20260902-172331 |
+| `sn74:scoring_commit:2026-09-02T02:34:28Z` | 74 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn74 commit touches scoring: serving: compose miner takes host ports and runtime/attest URLs from … |
+| `sn89:scoring_commit:2026-09-02T16:19:10Z` | 89 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn89 commit touches scoring: weights: the validator was setting them on the pre-causal rule |
+| `sn111:scoring_commit:2026-09-02T17:43:43Z` | 111 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn111 commit touches scoring: Enforce mainnet Silver validator requirements |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
@@ -206,6 +192,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
+| `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |
+| `sn80:readme_task_diff:cdbca72968cc4124` | 80 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn80 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

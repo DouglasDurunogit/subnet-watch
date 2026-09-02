@@ -30,28 +30,28 @@
 </style>
 <rect class="surface" width="760" height="300" rx="8"/>
 <text class="ink t-title" x="20" y="28">Where miner emission actually goes</text>
-<text class="muted t-sub" x="20" y="46">128 subnets. The two ends are what matter: 66 burn nothing, 33 burn everything.</text>
+<text class="muted t-sub" x="20" y="46">128 subnets. The two ends are what matter: 64 burn nothing, 33 burn everything.</text>
 <text class="ink2 t-lab" x="118" y="90" text-anchor="end">0 (none)</text>
 <path class="accent" d="M128.0,74.0 H666.0 a4.0,4.0 0 0 1 4.0,4.0 V94.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="678.0" y="90">66</text>
+<text class="ink2 t-val" x="678.0" y="90">64</text>
 <text class="ink2 t-lab" x="118" y="122" text-anchor="end">0–0.2</text>
-<path class="accent" d="M128.0,106.0 H189.7 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="201.7" y="122">8</text>
+<path class="accent" d="M128.0,106.0 H191.8 a4.0,4.0 0 0 1 4.0,4.0 V126.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="203.8" y="122">8</text>
 <text class="ink2 t-lab" x="118" y="154" text-anchor="end">0.2–0.4</text>
-<path class="accent" d="M128.0,138.0 H156.8 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="168.8" y="154">4</text>
+<path class="accent" d="M128.0,138.0 H166.3 a4.0,4.0 0 0 1 4.0,4.0 V158.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="178.3" y="154">5</text>
 <text class="ink2 t-lab" x="118" y="186" text-anchor="end">0.4–0.6</text>
-<path class="accent" d="M128.0,170.0 H148.6 a4.0,4.0 0 0 1 4.0,4.0 V190.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="160.6" y="186">3</text>
+<path class="accent" d="M128.0,170.0 H149.4 a4.0,4.0 0 0 1 4.0,4.0 V190.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="161.4" y="186">3</text>
 <text class="ink2 t-lab" x="118" y="218" text-anchor="end">0.6–0.8</text>
-<path class="accent" d="M128.0,202.0 H197.9 a4.0,4.0 0 0 1 4.0,4.0 V222.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="209.9" y="218">9</text>
+<path class="accent" d="M128.0,202.0 H208.7 a4.0,4.0 0 0 1 4.0,4.0 V222.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="220.7" y="218">10</text>
 <text class="ink2 t-lab" x="118" y="250" text-anchor="end">0.8–0.99</text>
-<path class="accent" d="M128.0,234.0 H165.1 a4.0,4.0 0 0 1 4.0,4.0 V254.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink2 t-val" x="177.1" y="250">5</text>
+<path class="accent" d="M128.0,234.0 H166.3 a4.0,4.0 0 0 1 4.0,4.0 V254.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink2 t-val" x="178.3" y="250">5</text>
 <text class="ink2 t-lab" x="118" y="282" text-anchor="end">≥0.99 dead</text>
-<path class="critical" d="M128.0,266.0 H395.0 a4.0,4.0 0 0 1 4.0,4.0 V286.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
-<text class="ink t-val" x="407.0" y="282">33</text>
+<path class="critical" d="M128.0,266.0 H403.5 a4.0,4.0 0 0 1 4.0,4.0 V286.0 a4.0,4.0 0 0 1 -4.0,4.0 H128.0 Z"/>
+<text class="ink t-val" x="415.5" y="282">33</text>
 <line class="axis" x1="128" y1="68" x2="128" y2="292" stroke-width="1"/>
 <text class="muted t-tick" x="20" y="286">A subnet at ≥0.99 pays miners nothing, whatever its headline income says.</text>
 </svg>

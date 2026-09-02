@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-02T01:27:20Z, block 8976302
+# ALARMS - generated 2026-09-02T06:27:30Z, block 8977803
 
-window: first_seen in [2026-09-02T00:12:43Z, 2026-09-02T01:27:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-02T05:13:05Z, 2026-09-02T06:28:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.1-1035082030` | 25 | RELEASE | P1 | 2026-09-02T01:27:43Z | sn25 released v2026.9.1-1035082030 |
-| `sn67:scoring_commit:2026-09-01T09:54:56Z` | 67 | SCORING_COMMIT | P1 | 2026-09-02T01:27:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post2 |
+| `sn25:scoring_commit:2026-09-02T00:23:30Z` | 25 | SCORING_COMMIT | P1 | 2026-09-02T06:28:05Z | sn25 commit touches scoring: Join miner and validator lifecycle ownership |
+| `sn51:scoring_commit:2026-09-02T05:43:12Z` | 51 | SCORING_COMMIT | P1 | 2026-09-02T06:28:05Z | sn51 commit touches scoring: DAH-2701: withhold incentive from executors running an outdated image… |
+| `sn71:scoring_commit:2026-09-01T23:59:43Z` | 71 | SCORING_COMMIT | P1 | 2026-09-02T06:28:05Z | sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantization |
 
 ### detail
 
-- **`sn25:release:v2026.9.1-1035082030`** - sn25 released v2026.9.1-1035082030
-  - published 2026-09-02T00:22:06Z (was v2026.9.1-1034943860)
-- **`sn67:scoring_commit:2026-09-01T09:54:56Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post2
+- **`sn25:scoring_commit:2026-09-02T00:23:30Z`** - sn25 commit touches scoring: Join miner and validator lifecycle ownership
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-09-02T05:43:12Z`** - sn51 commit touches scoring: DAH-2701: withhold incentive from executors running an outdated image…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-01T23:59:43Z`** - sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantization
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,10 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn25:release:v2026.8.25-1029027010` | 25 | RELEASE | 2026-08-26T01:55:31Z | sn25 released v2026.8.25-1029027010 |
-| `sn81:scoring_commit:2026-08-26T00:35:18Z` | 81 | SCORING_COMMIT | 2026-08-26T01:55:31Z | sn81 commit touches scoring: fix(validator): close submission ingress races |
-| `sn25:release:v2026.8.25-1029146630` | 25 | RELEASE | 2026-08-26T04:09:47Z | sn25 released v2026.8.25-1029146630 |
-| `sn82:scoring_commit:2026-08-25T21:38:56Z` | 82 | SCORING_COMMIT | 2026-08-26T05:48:23Z | sn82 commit touches scoring: fix: score title fights by complete topic pairs |
 | `sn111:scoring_commit:2026-08-26T07:22:40Z` | 111 | SCORING_COMMIT | 2026-08-26T07:56:58Z | sn111 commit touches scoring: fix(validation): make claim assessments sparse and non-punitive |
 | `sn25:release:v2026.8.26-1029312040` | 25 | RELEASE | 2026-08-26T08:58:49Z | sn25 released v2026.8.26-1029312040 |
 | `sn44:scoring_commit:2026-08-26T07:58:36Z` | 44 | SCORING_COMMIT | 2026-08-26T08:58:49Z | sn44 commit touches scoring: Merge pull request #55 from score-technologies/hardeing-latency-refin… |
@@ -167,6 +166,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.1-1034943860` | 25 | RELEASE | 2026-09-01T21:25:28Z | sn25 released v2026.9.1-1034943860 |
 | `sn92:scoring_commit:2026-09-01T21:01:49Z` | 92 | SCORING_COMMIT | 2026-09-01T21:25:28Z | sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir… |
 | `sn104:scoring_commit:2026-08-30T09:59:38Z` | 104 | SCORING_COMMIT | 2026-09-01T23:29:32Z | sn104 commit touches scoring: multiple llm key and improve the scoring mechanism |
+| `sn25:release:v2026.9.1-1035082030` | 25 | RELEASE | 2026-09-02T01:27:43Z | sn25 released v2026.9.1-1035082030 |
+| `sn67:scoring_commit:2026-09-01T09:54:56Z` | 67 | SCORING_COMMIT | 2026-09-02T01:27:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post2 |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |

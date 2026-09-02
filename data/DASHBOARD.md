@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-02T01:27:20Z · block 8976302 · run_status **ok**_
+_snapshot 2026-09-02T06:27:30Z · block 8977803 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 59 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 95 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
-| **Positive margin** | **59** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 66 | `████████████████████████████` |
-| 0–0.2 | 8 | `███` |
-| 0.2–0.4 | 4 | `██` |
+| 0 (none) | 64 | `████████████████████████████` |
+| 0–0.2 | 8 | `████` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 9 | `████` |
+| 0.6–0.8 | 10 | `████` |
 | 0.8–0.99 | 5 | `██` |
 | ≥0.99 dead | 33 | `██████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 78.4 | 106 | 1,929 | cpu-small | 9 | 60% |
-| 2 | sn107 Minos | 78.1 | 114 | 35,984 | cpu-small | 19 | 91% |
-| 3 | sn3 Teutonic | 75.2 | 3,538 | 3,538 = | rtx4090* | 5 | 20% |
-| 4 | sn76 Phylax | 74.7 | 42.38 | 89.35 | cpu-small | 21 | 20% |
-| 5 | sn67 Harnyx | 72.4 | 22.30 | 1,145 | cpu-small | 125 | 32% |
-| 6 | sn15 ORO | 71.6 | 25.97 | 42.07 | cpu-small | 66 | 93% |
-| 7 | sn91 cascade | 70.4 | 844 | 3,400 | rtx4090* | 5 | 52% |
-| 8 | sn96 Verathos | 68.7 | 24.42 | 175 | rtx4090 | 83 | 41% |
-| 9 | sn11 TrajectoryRL | 67.8 | 5,138 | 5,138 = | cpu-small | 1 | 100% |
-| 10 | sn56 Gradients | 67.6 | 362 | 1,009 | rtx4090* | 7 | 72% |
-| 11 | sn111 Claims | 67.1 | 323 | 2,891 | rtx4090* | 5 | 70% |
-| 12 | sn124 Swarm | 66.3 | 258 | 793 | rtx4090* | 25 | 11% |
-| 13 | sn61 RedTeam | 64.7 | 152 | 221 | rtx4090* | 47 | 3% |
-| 14 | sn98 NeverPlayAlone | 64.4 | 1,847 | 1,847 = | cpu-small | 1 | 100% |
-| 15 | sn21 AdTAO | 64.3 | 3.81 | 512 | cpu-small | 16 | 45% |
-| 16 | sn81 Reliquary | 64.2 | 132 | 246 | rtx4090* | 33 | 6% |
-| 17 | sn79 MVTRX | 63.9 | 3.86 | 408 | cpu-small | 229 | 10% |
-| 18 | sn121 sundae_bar | 62.9 | 1,192 | 1,192 = | cpu-small | 2 | 60% |
-| 19 | sn54 Yanez | 62.8 | 4.29 | 893 | a4000 | 96 | 35% |
-| 20 | sn55 NIOME | 62.3 | 74.04 | 609 | rtx4090* | 11 | 29% |
+| 1 | sn92 MicroTensor | 78.1 | 97.83 | 1,776 | cpu-small | 9 | 60% |
+| 2 | sn3 Teutonic | 75.3 | 3,577 | 3,577 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 74.8 | 43.04 | 90.74 | cpu-small | 21 | 20% |
+| 4 | sn67 Harnyx | 72.3 | 22.27 | 1,144 | cpu-small | 125 | 32% |
+| 5 | sn102 ConnitoAI | 71.6 | 1,187 | 2,040 | rtx4090* | 4 | 37% |
+| 6 | sn15 ORO | 71.4 | 26.13 | 41.78 | cpu-small | 70 | 93% |
+| 7 | sn91 cascade | 70.4 | 830 | 3,344 | rtx4090* | 5 | 52% |
+| 8 | sn96 Verathos | 68.7 | 24.12 | 160 | rtx4090 | 87 | 41% |
+| 9 | sn56 Gradients | 67.6 | 365 | 1,020 | rtx4090* | 7 | 72% |
+| 10 | sn111 Claims | 67.1 | 327 | 2,922 | rtx4090* | 5 | 70% |
+| 11 | sn124 Swarm | 66.4 | 262 | 805 | rtx4090* | 25 | 11% |
+| 12 | sn61 RedTeam | 64.8 | 157 | 224 | rtx4090* | 46 | 3% |
+| 13 | sn98 NeverPlayAlone | 64.4 | 1,866 | 1,866 = | cpu-small | 1 | 100% |
+| 14 | sn21 AdTAO | 64.4 | 3.89 | 521 | cpu-small | 16 | 45% |
+| 15 | sn81 Reliquary | 64.3 | 134 | 264 | rtx4090* | 34 | 6% |
+| 16 | sn79 MVTRX | 64.3 | 3.96 | 408 | cpu-small | 227 | 10% |
+| 17 | sn54 Yanez | 63 | 4.47 | 908 | a4000 | 95 | 35% |
+| 18 | sn121 sundae_bar | 62.9 | 1,203 | 1,203 = | cpu-small | 2 | 60% |
+| 19 | sn55 NIOME | 62.3 | 74.66 | 613 | rtx4090* | 11 | 29% |
+| 20 | sn101 Tag101 | 62.2 | 0.84 | 0.93 | cpu-small | 244 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 18 |
-| dominated (60–90%) | 20 |
-| captured (>90%) | 29 |
+| dominated (60–90%) | 22 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-02T06:28 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Join miner and validator lifecycle owners |
+| 2026-09-02T06:28 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-2701: withhold incentive from executo |
+| 2026-09-02T06:28 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantizati |
 | 2026-09-02T01:27 | sn25 | RELEASE | sn25 released v2026.9.1-1035082030 |
 | 2026-09-02T01:27 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-09-01T23:29 | sn104 | SCORING_COMMIT | sn104 commit touches scoring: multiple llm key and improve the scoring |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-01T18:42 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(scoring): focus column shows per-typ |
 | 2026-09-01T18:42 | sn25 | RELEASE | sn25 released v2026.9.1-1034848790 |
 | 2026-09-01T18:42 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: sim-testnet: verify direct Connect ingres |
-| 2026-09-01T18:42 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: fix: show scoring-aligned augmented metri |
-| 2026-09-01T18:42 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Merge pull request #120 from swarm-subne |
-| 2026-09-01T15:14 | sn10 | BURN_DROP | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
 
 ---
 

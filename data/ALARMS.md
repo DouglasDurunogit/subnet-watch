@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-02T11:39:32Z, block 8979363
+# ALARMS - generated 2026-09-02T15:21:03Z, block 8980471
 
-window: first_seen in [2026-09-02T10:24:58Z, 2026-09-02T11:39:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-02T14:06:36Z, 2026-09-02T15:21:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-09-02T10:23:18Z` | 3 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn3 commit touches scoring: Update evaluation parameters |
-| `sn25:scoring_commit:2026-09-02T10:31:33Z` | 25 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn25 commit touches scoring: Rate-limit validator verification attempts |
-| `sn65:scoring_commit:2026-08-27T13:32:41Z` | 65 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn65 commit touches scoring: validator improvements + database threading fixes |
-| `sn67:scoring_commit:2026-09-02T09:27:57Z` | 67 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260902.post0 |
-| `sn71:scoring_commit:2026-09-02T11:01:44Z` | 71 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn71 commit touches scoring: Repair validator supersession test driver |
-| `sn111:scoring_commit:2026-09-01T22:03:12Z` | 111 | SCORING_COMMIT | P1 | 2026-09-02T11:39:58Z | sn111 commit touches scoring: docs(validator): update bucket policy and production setup |
+| `sn28:release:v0.4.13-dev` | 28 | RELEASE | P1 | 2026-09-02T15:21:36Z | sn28 released v0.4.13-dev |
+| `sn51:scoring_commit:2026-09-02T11:42:41Z` | 51 | SCORING_COMMIT | P1 | 2026-09-02T15:21:36Z | sn51 commit touches scoring: DAH-2828, feat(validator): quote path for customer pods on CVM nodes … |
+| `sn102:release:v0.5.4 — restore validator_baseline_loss` | 102 | RELEASE | P1 | 2026-09-02T15:21:36Z | sn102 released v0.5.4 — restore validator_baseline_loss telemetry |
+| `sn102:scoring_commit:2026-09-02T14:07:33Z` | 102 | SCORING_COMMIT | P1 | 2026-09-02T15:21:36Z | sn102 commit touches scoring: 📊 telemetry: restore validator_baseline_loss from the background path |
+| `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | P2 | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
+| `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | P2 | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-09-02T10:23:18Z`** - sn3 commit touches scoring: Update evaluation parameters
+- **`sn28:release:v0.4.13-dev`** - sn28 released v0.4.13-dev
+  - published 2026-09-02T14:07:44Z (was v0.4.12)
+- **`sn51:scoring_commit:2026-09-02T11:42:41Z`** - sn51 commit touches scoring: DAH-2828, feat(validator): quote path for customer pods on CVM nodes …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-02T10:31:33Z`** - sn25 commit touches scoring: Rate-limit validator verification attempts
+- **`sn102:release:v0.5.4 — restore validator_baseline_loss`** - sn102 released v0.5.4 — restore validator_baseline_loss telemetry
+  - published 2026-09-02T15:20:17Z (was v0.5.3)
+- **`sn102:scoring_commit:2026-09-02T14:07:33Z`** - sn102 commit touches scoring: 📊 telemetry: restore validator_baseline_loss from the background path
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn65:scoring_commit:2026-08-27T13:32:41Z`** - sn65 commit touches scoring: validator improvements + database threading fixes
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-02T09:27:57Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260902.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-02T11:01:44Z`** - sn71 commit touches scoring: Repair validator supersession test driver
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-01T22:03:12Z`** - sn111 commit touches scoring: docs(validator): update bucket policy and production setup
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:1f9bcf8a76a45b27`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn80:readme_task_diff:7b0ea93609afb2d8`** - sn80 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,12 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn51:scoring_commit:2026-08-26T10:57:03Z` | 51 | SCORING_COMMIT | 2026-08-26T11:40:35Z | sn51 commit touches scoring: DAH-2467, mixed scoring for partially rented GPU-split nodes (#1153) |
-| `sn21:scoring_commit:2026-08-26T11:55:13Z` | 21 | SCORING_COMMIT | 2026-08-26T12:18:39Z | sn21 commit touches scoring: fix(rewards): one-payer receipt fingerprinting runs in a subprocess |
-| `sn28:release:v0.4.11-dev` | 28 | RELEASE | 2026-08-26T12:18:39Z | sn28 released v0.4.11-dev |
-| `sn81:scoring_commit:2026-08-26T13:09:50Z` | 81 | SCORING_COMMIT | 2026-08-26T13:33:28Z | sn81 commit touches scoring: fix(proof): release a finished plan's miner payloads |
-| `sn108:scoring_commit:2026-08-26T13:27:13Z` | 108 | SCORING_COMMIT | 2026-08-26T13:33:28Z | sn108 commit touches scoring: Merge feat/mirrored-scoring: submit another validator's published scor |
-| `sn44:scoring_commit:2026-08-26T14:00:07Z` | 44 | SCORING_COMMIT | 2026-08-26T14:29:56Z | sn44 commit touches scoring: Merge pull request #56 from score-technologies/security-enhancement |
 | `sn25:release:v2026.8.26-1029569170` | 25 | RELEASE | 2026-08-26T16:06:12Z | sn25 released v2026.8.26-1029569170 |
 | `sn54:scoring_commit:2026-08-26T17:15:54Z` | 54 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn54 commit touches scoring: updating UAV all miners not just the queriable miners (#112) |
 | `sn108:scoring_commit:2026-08-26T19:00:11Z` | 108 | SCORING_COMMIT | 2026-08-26T19:17:48Z | sn108 commit touches scoring: feat: verify the submitter violating claim; balance the dataset score |
@@ -170,6 +164,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-02T00:23:30Z` | 25 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn25 commit touches scoring: Join miner and validator lifecycle ownership |
 | `sn51:scoring_commit:2026-09-02T05:43:12Z` | 51 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn51 commit touches scoring: DAH-2701: withhold incentive from executors running an outdated image… |
 | `sn71:scoring_commit:2026-09-01T23:59:43Z` | 71 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantization |
+| `sn3:scoring_commit:2026-09-02T10:23:18Z` | 3 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn3 commit touches scoring: Update evaluation parameters |
+| `sn25:scoring_commit:2026-09-02T10:31:33Z` | 25 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn25 commit touches scoring: Rate-limit validator verification attempts |
+| `sn65:scoring_commit:2026-08-27T13:32:41Z` | 65 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn65 commit touches scoring: validator improvements + database threading fixes |
+| `sn67:scoring_commit:2026-09-02T09:27:57Z` | 67 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260902.post0 |
+| `sn71:scoring_commit:2026-09-02T11:01:44Z` | 71 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn71 commit touches scoring: Repair validator supersession test driver |
+| `sn111:scoring_commit:2026-09-01T22:03:12Z` | 111 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn111 commit touches scoring: docs(validator): update bucket policy and production setup |
 | `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |

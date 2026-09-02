@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-01T23:29:01Z · block 8975711 · run_status **ok**_
+_snapshot 2026-09-02T01:27:20Z · block 8976302 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 59 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,7 +17,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 95 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
+| **Positive margin** | **59** | income beats machine cost |
 | New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 78.8 | 133 | 37,053 | cpu-small | 20 | 90% |
-| 2 | sn3 Teutonic | 75.3 | 3,566 | 3,566 = | rtx4090* | 5 | 20% |
-| 3 | sn76 Phylax | 74.7 | 42.14 | 88.87 | cpu-small | 21 | 20% |
-| 4 | sn67 Harnyx | 72.4 | 22.55 | 1,157 | cpu-small | 125 | 32% |
-| 5 | sn15 ORO | 71.6 | 25.85 | 41.68 | cpu-small | 66 | 93% |
-| 6 | sn102 ConnitoAI | 71 | 996 | 1,800 | rtx4090* | 6 | 32% |
-| 7 | sn92 MicroTensor | 70.7 | 15.77 | 358 | cpu-small | 9 | 60% |
-| 8 | sn91 cascade | 70.3 | 822 | 3,312 | rtx4090* | 5 | 52% |
-| 9 | sn96 Verathos | 68.2 | 21.66 | 184 | rtx4090 | 84 | 41% |
-| 10 | sn11 TrajectoryRL | 67.7 | 5,027 | 5,027 = | cpu-small | 1 | 100% |
-| 11 | sn56 Gradients | 67.6 | 362 | 1,006 | rtx4090* | 7 | 72% |
-| 12 | sn111 Claims | 67.1 | 325 | 2,904 | rtx4090* | 5 | 70% |
-| 13 | sn124 Swarm | 66.5 | 267 | 703 | rtx4090* | 25 | 9% |
-| 14 | sn61 RedTeam | 64.7 | 153 | 222 | rtx4090* | 47 | 3% |
-| 15 | sn21 AdTAO | 64.3 | 3.83 | 514 | cpu-small | 16 | 45% |
-| 16 | sn81 Reliquary | 64.1 | 127 | 248 | rtx4090* | 33 | 6% |
-| 17 | sn79 MVTRX | 64.1 | 3.95 | 409 | cpu-small | 227 | 10% |
-| 18 | sn54 Yanez | 63.1 | 4.70 | 897 | a4000 | 95 | 35% |
-| 19 | sn121 sundae_bar | 62.8 | 1,172 | 1,172 = | cpu-small | 2 | 61% |
-| 20 | sn55 NIOME | 62.3 | 74.96 | 616 | rtx4090* | 11 | 29% |
+| 1 | sn92 MicroTensor | 78.4 | 106 | 1,929 | cpu-small | 9 | 60% |
+| 2 | sn107 Minos | 78.1 | 114 | 35,984 | cpu-small | 19 | 91% |
+| 3 | sn3 Teutonic | 75.2 | 3,538 | 3,538 = | rtx4090* | 5 | 20% |
+| 4 | sn76 Phylax | 74.7 | 42.38 | 89.35 | cpu-small | 21 | 20% |
+| 5 | sn67 Harnyx | 72.4 | 22.30 | 1,145 | cpu-small | 125 | 32% |
+| 6 | sn15 ORO | 71.6 | 25.97 | 42.07 | cpu-small | 66 | 93% |
+| 7 | sn91 cascade | 70.4 | 844 | 3,400 | rtx4090* | 5 | 52% |
+| 8 | sn96 Verathos | 68.7 | 24.42 | 175 | rtx4090 | 83 | 41% |
+| 9 | sn11 TrajectoryRL | 67.8 | 5,138 | 5,138 = | cpu-small | 1 | 100% |
+| 10 | sn56 Gradients | 67.6 | 362 | 1,009 | rtx4090* | 7 | 72% |
+| 11 | sn111 Claims | 67.1 | 323 | 2,891 | rtx4090* | 5 | 70% |
+| 12 | sn124 Swarm | 66.3 | 258 | 793 | rtx4090* | 25 | 11% |
+| 13 | sn61 RedTeam | 64.7 | 152 | 221 | rtx4090* | 47 | 3% |
+| 14 | sn98 NeverPlayAlone | 64.4 | 1,847 | 1,847 = | cpu-small | 1 | 100% |
+| 15 | sn21 AdTAO | 64.3 | 3.81 | 512 | cpu-small | 16 | 45% |
+| 16 | sn81 Reliquary | 64.2 | 132 | 246 | rtx4090* | 33 | 6% |
+| 17 | sn79 MVTRX | 63.9 | 3.86 | 408 | cpu-small | 229 | 10% |
+| 18 | sn121 sundae_bar | 62.9 | 1,192 | 1,192 = | cpu-small | 2 | 60% |
+| 19 | sn54 Yanez | 62.8 | 4.29 | 893 | a4000 | 96 | 35% |
+| 20 | sn55 NIOME | 62.3 | 74.04 | 609 | rtx4090* | 11 | 29% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 22 |
-| captured (>90%) | 27 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 18 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 29 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-02T01:27 | sn25 | RELEASE | sn25 released v2026.9.1-1035082030 |
+| 2026-09-02T01:27 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-09-01T23:29 | sn104 | SCORING_COMMIT | sn104 commit touches scoring: multiple llm key and improve the scoring |
 | 2026-09-01T23:29 | sn104 | README_TASK_DIFF | sn104 README task/scoring sections changed |
 | 2026-09-01T21:25 | sn25 | RELEASE | sn25 released v2026.9.1-1034943860 |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-01T18:42 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: fix: show scoring-aligned augmented metri |
 | 2026-09-01T18:42 | sn124 | SCORING_COMMIT | sn124 commit touches scoring: Merge pull request #120 from swarm-subne |
 | 2026-09-01T15:14 | sn10 | BURN_DROP | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| 2026-09-01T15:14 | sn23 | SCORING_COMMIT | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q- |
-| 2026-09-01T15:14 | sn92 | RELEASE | sn92 released v0.3.2 |
 
 ---
 

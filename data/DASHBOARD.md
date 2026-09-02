@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-02T21:46:33Z · block 8982397 · run_status **ok**_
+_snapshot 2026-09-02T23:36:43Z · block 8982948 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 57 of 128
+# 58 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 94 | `miner_burn` < 0.99 |
-| Ranked | 94 | passed every gate |
-| **Positive margin** | **57** | income beats machine cost |
-| New events this window | 4 | see ALARMS.md |
+| Pays miners at all | 93 | `miner_burn` < 0.99 |
+| Ranked | 93 | passed every gate |
+| **Positive margin** | **58** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 61 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
-| 0.2–0.4 | 5 | `██` |
+| 0 (none) | 62 | `████████████████████████████` |
+| 0–0.2 | 10 | `█████` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 4 | `██` |
-| 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 34 | `████████████████` |
+| 0.6–0.8 | 8 | `████` |
+| 0.8–0.99 | 5 | `██` |
+| ≥0.99 dead | 35 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 75.3 | 3,615 | 3,615 = | rtx4090* | 5 | 20% |
-| 2 | sn76 Phylax | 74.1 | 36.76 | 78.34 | cpu-small | 21 | 20% |
-| 3 | sn23 Trishool | 71.9 | 510 | 510 = | cpu-small | 2 | 80% |
-| 4 | sn102 ConnitoAI | 71.6 | 1,179 | 1,621 | rtx4090* | 5 | 30% |
-| 5 | sn67 Harnyx | 71.5 | 18.00 | 1,213 | cpu-small | 131 | 35% |
-| 6 | sn91 cascade | 70.1 | 758 | 3,057 | rtx4090* | 5 | 52% |
-| 7 | sn15 ORO | 69.9 | 19.22 | 41.82 | cpu-small | 80 | 92% |
-| 8 | sn92 MicroTensor | 69.8 | 12.77 | 1,636 | cpu-small | 9 | 60% |
-| 9 | sn96 Verathos | 69.2 | 27.04 | 163 | rtx4090 | 77 | 41% |
-| 10 | sn56 Gradients | 68.8 | 523 | 1,318 | rtx4090* | 5 | 74% |
-| 11 | sn111 Claims | 66.9 | 308 | 2,756 | rtx4090* | 5 | 70% |
-| 12 | sn124 Swarm | 66.3 | 251 | 774 | rtx4090* | 25 | 11% |
-| 13 | sn79 MVTRX | 65.5 | 4.59 | 393 | cpu-small | 209 | 9% |
-| 14 | sn61 RedTeam | 64.7 | 151 | 220 | rtx4090* | 47 | 3% |
-| 15 | sn121 sundae_bar | 62.7 | 1,140 | 1,140 = | cpu-small | 2 | 60% |
-| 16 | sn65 True Performance | 62.4 | 84.70 | 178 | rtx4090* | 6 | 75% |
-| 17 | sn55 NIOME | 62.4 | 75.70 | 621 | rtx4090* | 11 | 29% |
-| 18 | sn101 Tag101 | 61.9 | 0.66 | 0.88 | cpu-small | 232 | 90% |
-| 19 | sn74 Gittensor | 60.3 | 43.58 | 151 | rtx4090 | 11 | 65% |
-| 20 | sn2 DSperse | 59.6 | 32.55 | 39.15 | rtx4090* | 13 | 82% |
+| 1 | sn92 MicroTensor | 87 | 933 | 1,144 | cpu-small | 4 | 42% |
+| 2 | sn3 Teutonic | 75.3 | 3,606 | 3,606 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 74.1 | 36.59 | 78.23 | cpu-small | 21 | 20% |
+| 4 | sn23 Trishool | 71.9 | 509 | 509 = | cpu-small | 2 | 80% |
+| 5 | sn102 ConnitoAI | 71.5 | 1,173 | 1,611 | rtx4090* | 5 | 30% |
+| 6 | sn67 Harnyx | 71.5 | 17.82 | 1,201 | cpu-small | 131 | 35% |
+| 7 | sn91 cascade | 70 | 751 | 3,029 | rtx4090* | 5 | 52% |
+| 8 | sn15 ORO | 69.7 | 19.32 | 41.68 | cpu-small | 81 | 92% |
+| 9 | sn96 Verathos | 68.9 | 25.48 | 165 | rtx4090 | 81 | 41% |
+| 10 | sn56 Gradients | 68.8 | 520 | 1,312 | rtx4090* | 5 | 74% |
+| 11 | sn111 Claims | 66.9 | 307 | 2,749 | rtx4090* | 5 | 70% |
+| 12 | sn124 Swarm | 66.2 | 250 | 768 | rtx4090* | 25 | 11% |
+| 13 | sn79 MVTRX | 65.3 | 4.92 | 393 | cpu-small | 206 | 9% |
+| 14 | sn61 RedTeam | 64.6 | 149 | 217 | rtx4090* | 47 | 3% |
+| 15 | sn60 Bitsec.ai | 64 | 1,640 | 1,640 = | cpu-small | 2 | 50% |
+| 16 | sn121 sundae_bar | 62.7 | 1,136 | 1,136 = | cpu-small | 2 | 60% |
+| 17 | sn65 True Performance | 62.4 | 85.48 | 179 | rtx4090* | 6 | 75% |
+| 18 | sn55 NIOME | 62.4 | 76.37 | 626 | rtx4090* | 11 | 29% |
+| 19 | sn101 Tag101 | 61.8 | 0.65 | 0.87 | cpu-small | 227 | 90% |
+| 20 | sn74 Gittensor | 61.1 | 54.13 | 360 | rtx4090 | 11 | 64% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,8 +86,8 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 25 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 21 |
+| concentrated (30–60%) | 22 |
+| dominated (60–90%) | 18 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-02T23:37 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewar |
 | 2026-09-02T21:47 | sn2 | RELEASE | sn2 released 14.14.1 |
 | 2026-09-02T21:47 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Resolve slow validator recovery after exte |
 | 2026-09-02T21:47 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(validator): reference partner valida |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-02T18:51 | sn74 | README_TASK_DIFF | sn74 README task/scoring sections changed |
 | 2026-09-02T18:51 | sn80 | README_TASK_DIFF | sn80 README task/scoring sections changed |
 | 2026-09-02T18:51 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: weights: the validator was setting them o |
-| 2026-09-02T18:51 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Enforce mainnet Silver validator require |
 
 ---
 

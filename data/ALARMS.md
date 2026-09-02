@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-02T21:46:33Z, block 8982397
+# ALARMS - generated 2026-09-02T23:36:43Z, block 8982948
 
-window: first_seen in [2026-09-02T20:32:07Z, 2026-09-02T21:47:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-02T22:22:16Z, 2026-09-02T23:37:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:release:14.14.1` | 2 | RELEASE | P1 | 2026-09-02T21:47:07Z | sn2 released 14.14.1 |
-| `sn2:scoring_commit:2026-09-02T17:50:35Z` | 2 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620) |
-| `sn21:scoring_commit:2026-09-02T19:01:27Z` | 21 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn21 commit touches scoring: feat(validator): reference partner validator loop |
-| `sn25:scoring_commit:2026-09-02T21:30:53Z` | 25 | SCORING_COMMIT | P1 | 2026-09-02T21:47:07Z | sn25 commit touches scoring: Revalidate topology for each release plan |
+| `sn71:scoring_commit:2026-09-02T21:52:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-02T23:37:16Z | sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewards |
 
 ### detail
 
-- **`sn2:release:14.14.1`** - sn2 released 14.14.1
-  - published 2026-09-02T19:46:05Z (was 14.13.3)
-- **`sn2:scoring_commit:2026-09-02T17:50:35Z`** - sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-09-02T19:01:27Z`** - sn21 commit touches scoring: feat(validator): reference partner validator loop
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-02T21:30:53Z`** - sn25 commit touches scoring: Revalidate topology for each release plan
+- **`sn71:scoring_commit:2026-09-02T21:52:48Z`** - sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn7:burn_drop:0.910` | 7 | BURN_DROP | 2026-08-26T22:23:22Z | sn7 burn fell 1.000 -> 0.910 - miners can earn again |
 | `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
 | `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn59:burn_drop:0.000` | 59 | BURN_DROP | 2026-08-28T00:03:30Z | sn59 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -39,10 +29,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn28:release:v0.4.11` | 28 | RELEASE | 2026-08-26T22:23:22Z | sn28 released v0.4.11 |
-| `sn45:scoring_commit:2026-08-26T22:03:30Z` | 45 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn45 commit touches scoring: Submit one epoch of reward points to the API |
-| `sn76:scoring_commit:2026-08-26T20:35:03Z` | 76 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn76 commit touches scoring: rewards: top five per track, split 40/25/15/12/8 |
-| `sn111:scoring_commit:2026-08-26T19:54:44Z` | 111 | SCORING_COMMIT | 2026-08-26T22:23:22Z | sn111 commit touches scoring: docs(validator): add mainnet profile and streamline setup |
 | `sn25:release:v2026.8.26-1029908500` | 25 | RELEASE | 2026-08-27T03:26:56Z | sn25 released v2026.8.26-1029908500 |
 | `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
 | `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
@@ -174,7 +160,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn74:scoring_commit:2026-09-02T02:34:28Z` | 74 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn74 commit touches scoring: serving: compose miner takes host ports and runtime/attest URLs from … |
 | `sn89:scoring_commit:2026-09-02T16:19:10Z` | 89 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn89 commit touches scoring: weights: the validator was setting them on the pre-causal rule |
 | `sn111:scoring_commit:2026-09-02T17:43:43Z` | 111 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn111 commit touches scoring: Enforce mainnet Silver validator requirements |
-| `sn76:readme_task_diff:e2a786d7f22f73bb` | 76 | README_TASK_DIFF | 2026-08-26T22:23:22Z | sn76 README task/scoring sections changed |
+| `sn2:release:14.14.1` | 2 | RELEASE | 2026-09-02T21:47:07Z | sn2 released 14.14.1 |
+| `sn2:scoring_commit:2026-09-02T17:50:35Z` | 2 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620) |
+| `sn21:scoring_commit:2026-09-02T19:01:27Z` | 21 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn21 commit touches scoring: feat(validator): reference partner validator loop |
+| `sn25:scoring_commit:2026-09-02T21:30:53Z` | 25 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn25 commit touches scoring: Revalidate topology for each release plan |
 | `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |

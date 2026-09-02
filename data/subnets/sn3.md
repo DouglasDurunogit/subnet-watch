@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-09-02T06:27:30Z  |  block: 8977803  |  row_status: ok
+snapshot_utc: 2026-09-02T11:39:32Z  |  block: 8979363  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.1101 USD), open=True
+- registration cost: 0.0005 TAO (0.108345 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 668.4 days  |  registered at block 4165565
+- subnet age: 668.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3585.6954097560356** (uid 92) <- the only figure quotable as achievable
-- median_miner_usd_day: 3585.6954097560356
-- top_miner_usd_day: 3585.6954097560356 (uid 92, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3556.789614963927** (uid 92) <- the only figure quotable as achievable
+- median_miner_usd_day: 3556.789614963927
+- top_miner_usd_day: 3556.789614963927 (uid 92, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.0  |  top1_share: 0.2  |  top10_share: 1.0
+- earners: 5  |  gini: 2.220446049250313e-16  |  top1_share: 0.2  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -28,22 +28,22 @@ snapshot_utc: 2026-09-02T06:27:30Z  |  block: 8977803  |  row_status: ok
 - status: **ok** 
 - README: 3817 bytes, sha d4e0c8138a2767eb
 - latest release: (none) 
-- last commit: 2026-08-31T14:05:25Z
-- scoring-related commit: Implement evaluation reuse limit handling and cleanup scheduling 2026-08-31T08:14:55Z
+- last commit: 2026-09-02T11:01:49Z
+- scoring-related commit: Update evaluation parameters 2026-09-02T10:23:18Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3577.4762 USD/day  |  payback on registration: 0.0 days
+- net margin: 3548.5704 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 75.3 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 32.32 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: SCORING_COMMIT 1.6d ago
+- components: income 32.29 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 

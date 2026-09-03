@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-03T15:14:48Z, block 8987639
+# ALARMS - generated 2026-09-03T18:49:06Z, block 8988710
 
-window: first_seen in [2026-09-03T14:00:26Z, 2026-09-03T15:15:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-03T17:34:37Z, 2026-09-03T18:49:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.1` | 1 | RELEASE | P1 | 2026-09-03T15:15:26Z | sn1 released v4.4.1 |
-| `sn2:release:14.14.2` | 2 | RELEASE | P1 | 2026-09-03T15:15:26Z | sn2 released 14.14.2 |
+| `sn121:burn_drop:0.601` | 121 | BURN_DROP | P0 | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
+| `sn53:scoring_commit:2026-09-03T05:50:55Z` | 53 | SCORING_COMMIT | P1 | 2026-09-03T18:49:37Z | sn53 commit touches scoring: tee_miner: stop dropping the thinking-token count on the way out |
+| `sn69:scoring_commit:2026-09-03T16:15:44Z` | 69 | SCORING_COMMIT | P1 | 2026-09-03T18:49:37Z | sn69 commit touches scoring: Point CLI miners at the console to download a brief document (#5) |
+| `sn71:scoring_commit:2026-09-03T18:42:37Z` | 71 | SCORING_COMMIT | P1 | 2026-09-03T18:49:37Z | sn71 commit touches scoring: Preserve strict identity boundaries in scoring integration |
+| `sn74:release:release-20260903-183804` | 74 | RELEASE | P1 | 2026-09-03T18:49:37Z | sn74 released release-20260903-183804 |
+| `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | P2 | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn1:release:v4.4.1`** - sn1 released v4.4.1
-  - published 2026-09-03T12:09:25Z (was v4.4.0)
-- **`sn2:release:14.14.2`** - sn2 released 14.14.2
-  - published 2026-09-03T15:04:10Z (was 14.14.1)
+- **`sn121:burn_drop:0.601`** - sn121 burn fell 1.000 -> 0.601 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn53:scoring_commit:2026-09-03T05:50:55Z`** - sn53 commit touches scoring: tee_miner: stop dropping the thinking-token count on the way out
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn69:scoring_commit:2026-09-03T16:15:44Z`** - sn69 commit touches scoring: Point CLI miners at the console to download a brief document (#5)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-03T18:42:37Z`** - sn71 commit touches scoring: Preserve strict identity boundaries in scoring integration
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260903-183804`** - sn74 released release-20260903-183804
+  - published 2026-09-03T17:53:10Z (was release-20260902-172331)
+- **`sn71:readme_task_diff:ebf6898a52202570`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -162,6 +174,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn1:release:v4.4.0` | 1 | RELEASE | 2026-09-03T11:45:17Z | sn1 released v4.4.0 |
 | `sn50:scoring_commit:2026-09-03T09:01:36Z` | 50 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn50 commit touches scoring: base miner: gzip-compress axon responses (#319) |
 | `sn100:scoring_commit:2026-09-03T08:25:50Z` | 100 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205) |
+| `sn1:release:v4.4.1` | 1 | RELEASE | 2026-09-03T15:15:26Z | sn1 released v4.4.1 |
+| `sn2:release:14.14.2` | 2 | RELEASE | 2026-09-03T15:15:26Z | sn2 released 14.14.2 |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |

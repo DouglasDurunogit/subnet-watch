@@ -1,25 +1,25 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-09-03T15:14:48Z  |  block: 8987639  |  row_status: ok
+snapshot_utc: 2026-09-03T18:49:06Z  |  block: 8988710  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.8212809676770121**
-- registration cost: 0.0005 TAO (0.112985 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 868.6 days  |  registered at block 2734060
+- miner_burn: **0.821022927062586**
+- registration cost: 0.0005 TAO (0.11461 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
+- subnet age: 868.7 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 156.96583979786323** (uid 196) <- the only figure quotable as achievable
-- median_miner_usd_day: 58.17126052754923
-- top_miner_usd_day: 1792.15431260089 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 155.19729129088125** (uid 196) <- the only figure quotable as achievable
+- median_miner_usd_day: 57.199530079466136
+- top_miner_usd_day: 1838.4831038982527 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 7  |  gini: 0.7303001896623138  |  top1_share: 0.8213337402716313  |  top10_share: 1.0
-- owner_incentive_share: 0.8213337402716313 (independent check on miner_burn; disagreement 0.0001)
+- earners: 9  |  gini: 0.7844904616814092  |  top1_share: 0.8210617875509301  |  top10_share: 1.0
+- owner_incentive_share: 0.8210617875509301 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,7 +27,7 @@ snapshot_utc: 2026-09-03T15:14:48Z  |  block: 8987639  |  row_status: ok
 - resolved URL: `https://github.com/inference-labs-inc/subnet-2`
 - status: **ok** 
 - README: 11374 bytes, sha 27418dba6f5b6784
-- latest release: 14.14.2 2026-09-03T15:04:10Z
+- latest release: 14.14.2 2026-09-03T15:23:42Z
 - last commit: 2026-09-03T15:04:03Z
 - scoring-related commit: Resolve slow validator recovery after external address rotation (#620) 2026-09-02T17:50:35Z
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-03T15:14:48Z  |  block: 8987639  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 49.3194 USD/day  |  payback on registration: 0.0 days
+- net margin: 47.7673 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 61.0 (rank 18), confidence 0.85 - hardware requirement unknown
-- components: income 15.48 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 0.0d ago
+- score: 60.9 (rank 19), confidence 0.85 - hardware requirement unknown
+- components: income 15.35 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 0.1d ago
 
 ## On-chain description
 

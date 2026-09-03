@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-03T15:14:48Z · block 8987639 · run_status **ok**_
+_snapshot 2026-09-03T18:49:06Z · block 8988710 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -16,9 +16,9 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 94 | `miner_burn` < 0.99 |
-| Ranked | 94 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| Ranked | 95 | passed every gate |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 6 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 12 | `██████` |
-| 0.2–0.4 | 4 | `██` |
+| 0–0.2 | 13 | `██████` |
+| 0.2–0.4 | 3 | `█` |
 | 0.4–0.6 | 3 | `█` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 80.9 | 199 | 545 | cpu-small | 9 | 26% |
-| 2 | sn3 Teutonic | 75.5 | 3,771 | 3,771 = | rtx4090* | 5 | 20% |
-| 3 | sn76 Phylax | 73.7 | 33.17 | 87.63 | cpu-small | 21 | 20% |
-| 4 | sn23 Trishool | 72.1 | 531 | 531 = | cpu-small | 2 | 80% |
-| 5 | sn91 cascade | 70.3 | 813 | 3,278 | rtx4090* | 5 | 52% |
-| 6 | sn15 ORO | 69.7 | 21.54 | 42.99 | cpu-small | 74 | 93% |
-| 7 | sn96 Verathos | 69.5 | 29.62 | 165 | rtx4090 | 77 | 41% |
-| 8 | sn56 Gradients | 68.9 | 540 | 1,354 | rtx4090* | 5 | 74% |
-| 9 | sn67 Harnyx | 68.9 | 9.32 | 9.32 = | cpu-small | 221 | 32% |
-| 10 | sn111 Claims | 67.1 | 330 | 2,950 | rtx4090* | 5 | 70% |
-| 11 | sn124 Swarm | 66.5 | 267 | 823 | rtx4090* | 25 | 11% |
-| 12 | sn61 RedTeam | 65.2 | 175 | 248 | rtx4090* | 44 | 3% |
-| 13 | sn79 MVTRX | 64.6 | 4.32 | 408 | cpu-small | 221 | 9% |
-| 14 | sn60 Bitsec.ai | 63.9 | 1,601 | 1,601 = | cpu-small | 2 | 50% |
-| 15 | sn65 True Performance | 62.1 | 78.97 | 166 | rtx4090* | 6 | 78% |
-| 16 | sn74 Gittensor | 62 | 69.94 | 383 | rtx4090 | 11 | 64% |
-| 17 | sn101 Tag101 | 61.5 | 0.55 | 0.68 | cpu-small | 244 | 90% |
-| 18 | sn2 DSperse | 61 | 49.32 | 149 | rtx4090* | 7 | 82% |
-| 19 | sn28 SayGM | 59.6 | 34.01 | 5,244 | rtx4090* | 40 | 38% |
-| 20 | sn41 Almanac | 59.3 | 29.79 | 77.26 | cpu-small | 88 | 19% |
+| 1 | sn92 MicroTensor | 81 | 204 | 558 | cpu-small | 9 | 26% |
+| 2 | sn3 Teutonic | 75.5 | 3,819 | 3,819 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 73.8 | 34.26 | 90.44 | cpu-small | 21 | 20% |
+| 4 | sn23 Trishool | 72.1 | 539 | 539 = | cpu-small | 2 | 80% |
+| 5 | sn91 cascade | 70.4 | 834 | 3,360 | rtx4090* | 5 | 52% |
+| 6 | sn15 ORO | 70.4 | 22.23 | 21,879 | cpu-small | 74 | 93% |
+| 7 | sn96 Verathos | 69.7 | 31.10 | 170 | rtx4090 | 80 | 41% |
+| 8 | sn56 Gradients | 69 | 548 | 1,372 | rtx4090* | 5 | 74% |
+| 9 | sn67 Harnyx | 69 | 9.40 | 9.40 = | cpu-small | 221 | 33% |
+| 10 | sn111 Claims | 68.9 | 553 | 2,447 | rtx4090* | 5 | 57% |
+| 11 | sn124 Swarm | 66.5 | 271 | 836 | rtx4090* | 25 | 11% |
+| 12 | sn61 RedTeam | 65.2 | 178 | 249 | rtx4090* | 45 | 3% |
+| 13 | sn79 MVTRX | 64.8 | 4.53 | 421 | cpu-small | 220 | 10% |
+| 14 | sn60 Bitsec.ai | 64 | 1,661 | 1,661 = | cpu-small | 2 | 50% |
+| 15 | sn121 sundae_bar | 62.9 | 1,211 | 1,211 = | cpu-small | 2 | 60% |
+| 16 | sn101 Tag101 | 61.9 | 0.67 | 0.82 | cpu-small | 243 | 90% |
+| 17 | sn65 True Performance | 61.6 | 68.62 | 145 | rtx4090* | 6 | 80% |
+| 18 | sn74 Gittensor | 61.4 | 63.78 | 369 | rtx4090 | 11 | 64% |
+| 19 | sn2 DSperse | 60.9 | 47.77 | 147 | rtx4090* | 9 | 82% |
+| 20 | sn28 SayGM | 60.5 | 44.98 | 903 | rtx4090* | 41 | 43% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 26 |
-| concentrated (30–60%) | 19 |
-| dominated (60–90%) | 19 |
-| captured (>90%) | 27 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 21 |
+| captured (>90%) | 24 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,12 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-03T18:49 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: tee_miner: stop dropping the thinking-tok |
+| 2026-09-03T18:49 | sn69 | SCORING_COMMIT | sn69 commit touches scoring: Point CLI miners at the console to downlo |
+| 2026-09-03T18:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve strict identity boundaries in sc |
+| 2026-09-03T18:49 | sn71 | README_TASK_DIFF | sn71 README task/scoring sections changed |
+| 2026-09-03T18:49 | sn74 | RELEASE | sn74 released release-20260903-183804 |
+| 2026-09-03T18:49 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | 2026-09-03T15:15 | sn1 | RELEASE | sn1 released v4.4.1 |
 | 2026-09-03T15:15 | sn2 | RELEASE | sn2 released 14.14.2 |
 | 2026-09-03T11:45 | sn1 | RELEASE | sn1 released v4.4.0 |
@@ -116,12 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-03T06:32 | sn71 | BURN_DROP | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
 | 2026-09-03T06:32 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: ci: run the non-scoring tests on every pu |
 | 2026-09-03T06:32 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: scoring: block-scheduled fresh-king margi |
-| 2026-09-03T06:32 | sn91 | README_TASK_DIFF | sn91 README task/scoring sections changed |
-| 2026-09-03T01:31 | sn105 | BURN_DROP | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
-| 2026-09-02T23:37 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewar |
-| 2026-09-02T21:47 | sn2 | RELEASE | sn2 released 14.14.1 |
-| 2026-09-02T21:47 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Resolve slow validator recovery after exte |
-| 2026-09-02T21:47 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: feat(validator): reference partner valida |
 
 ---
 

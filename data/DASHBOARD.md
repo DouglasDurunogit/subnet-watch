@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-03T18:49:06Z · block 8988710 · run_status **ok**_
+_snapshot 2026-09-03T21:40:43Z · block 8989568 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 60 of 128
+# 59 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 94 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
-| **Positive margin** | **60** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| **Positive margin** | **59** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 13 | `██████` |
-| 0.2–0.4 | 3 | `█` |
+| 0–0.2 | 11 | `█████` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 3 | `█` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 81 | 204 | 558 | cpu-small | 9 | 26% |
-| 2 | sn3 Teutonic | 75.5 | 3,819 | 3,819 = | rtx4090* | 5 | 20% |
-| 3 | sn76 Phylax | 73.8 | 34.26 | 90.44 | cpu-small | 21 | 20% |
-| 4 | sn23 Trishool | 72.1 | 539 | 539 = | cpu-small | 2 | 80% |
-| 5 | sn91 cascade | 70.4 | 834 | 3,360 | rtx4090* | 5 | 52% |
-| 6 | sn15 ORO | 70.4 | 22.23 | 21,879 | cpu-small | 74 | 93% |
-| 7 | sn96 Verathos | 69.7 | 31.10 | 170 | rtx4090 | 80 | 41% |
-| 8 | sn56 Gradients | 69 | 548 | 1,372 | rtx4090* | 5 | 74% |
-| 9 | sn67 Harnyx | 69 | 9.40 | 9.40 = | cpu-small | 221 | 33% |
-| 10 | sn111 Claims | 68.9 | 553 | 2,447 | rtx4090* | 5 | 57% |
-| 11 | sn124 Swarm | 66.5 | 271 | 836 | rtx4090* | 25 | 11% |
-| 12 | sn61 RedTeam | 65.2 | 178 | 249 | rtx4090* | 45 | 3% |
-| 13 | sn79 MVTRX | 64.8 | 4.53 | 421 | cpu-small | 220 | 10% |
-| 14 | sn60 Bitsec.ai | 64 | 1,661 | 1,661 = | cpu-small | 2 | 50% |
-| 15 | sn121 sundae_bar | 62.9 | 1,211 | 1,211 = | cpu-small | 2 | 60% |
-| 16 | sn101 Tag101 | 61.9 | 0.67 | 0.82 | cpu-small | 243 | 90% |
-| 17 | sn65 True Performance | 61.6 | 68.62 | 145 | rtx4090* | 6 | 80% |
-| 18 | sn74 Gittensor | 61.4 | 63.78 | 369 | rtx4090 | 11 | 64% |
-| 19 | sn2 DSperse | 60.9 | 47.77 | 147 | rtx4090* | 9 | 82% |
-| 20 | sn28 SayGM | 60.5 | 44.98 | 903 | rtx4090* | 41 | 43% |
+| 1 | sn92 MicroTensor | 81 | 206 | 562 | cpu-small | 9 | 26% |
+| 2 | sn3 Teutonic | 75.5 | 3,848 | 3,848 = | rtx4090* | 5 | 20% |
+| 3 | sn76 Phylax | 73.9 | 34.53 | 91.16 | cpu-small | 21 | 20% |
+| 4 | sn23 Trishool | 72.1 | 542 | 542 = | cpu-small | 2 | 80% |
+| 5 | sn102 ConnitoAI | 71.6 | 1,193 | 1,548 | rtx4090* | 6 | 28% |
+| 6 | sn15 ORO | 70.5 | 22.32 | 21,960 | cpu-small | 74 | 93% |
+| 7 | sn91 cascade | 70.3 | 820 | 3,305 | rtx4090* | 5 | 52% |
+| 8 | sn96 Verathos | 69.6 | 30.11 | 163 | rtx4090 | 80 | 41% |
+| 9 | sn56 Gradients | 69 | 551 | 1,378 | rtx4090* | 5 | 74% |
+| 10 | sn67 Harnyx | 69 | 9.40 | 9.40 = | cpu-small | 220 | 33% |
+| 11 | sn124 Swarm | 66.5 | 268 | 826 | rtx4090* | 25 | 11% |
+| 12 | sn111 Claims | 66.4 | 271 | 3,256 | rtx4090* | 5 | 76% |
+| 13 | sn80 OpenRoboto | 65.3 | 184 | 607 | rtx4090* | 5 | 72% |
+| 14 | sn61 RedTeam | 65.2 | 176 | 246 | rtx4090* | 45 | 3% |
+| 15 | sn79 MVTRX | 65.2 | 4.85 | 424 | cpu-small | 215 | 10% |
+| 16 | sn121 sundae_bar | 63.1 | 1,257 | 1,257 = | cpu-small | 2 | 60% |
+| 17 | sn65 True Performance | 61.3 | 63.29 | 135 | rtx4090* | 6 | 82% |
+| 18 | sn74 Gittensor | 61.2 | 57.47 | 372 | rtx4090 | 11 | 64% |
+| 19 | sn101 Tag101 | 60.7 | 0.33 | 0.83 | cpu-small | 245 | 90% |
+| 20 | sn2 DSperse | 60.5 | 43.22 | 160 | rtx4090* | 9 | 82% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 26 |
-| concentrated (30–60%) | 20 |
+| concentrated (30–60%) | 19 |
 | dominated (60–90%) | 21 |
-| captured (>90%) | 24 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-03T21:41 | sn25 | RELEASE | sn25 released v2026.9.3-1036684010 |
+| 2026-09-03T21:41 | sn49 | BURN_DROP | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
+| 2026-09-03T21:41 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind updated scoring protected workflows |
 | 2026-09-03T18:49 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: tee_miner: stop dropping the thinking-tok |
 | 2026-09-03T18:49 | sn69 | SCORING_COMMIT | sn69 commit touches scoring: Point CLI miners at the console to downlo |
 | 2026-09-03T18:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve strict identity boundaries in sc |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-03T11:45 | sn50 | SCORING_COMMIT | sn50 commit touches scoring: base miner: gzip-compress axon responses  |
 | 2026-09-03T11:45 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring ev |
 | 2026-09-03T06:32 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-09-03T06:32 | sn71 | BURN_DROP | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
-| 2026-09-03T06:32 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: ci: run the non-scoring tests on every pu |
-| 2026-09-03T06:32 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: scoring: block-scheduled fresh-king margi |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-03T01:31:00Z, block 8983520
+# ALARMS - generated 2026-09-03T06:32:10Z, block 8985026
 
-window: first_seen in [2026-09-03T00:16:27Z, 2026-09-03T01:31:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-03T05:17:43Z, 2026-09-03T06:32:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn105:burn_drop:0.000` | 105 | BURN_DROP | P0 | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn71:burn_drop:0.974` | 71 | BURN_DROP | P0 | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
+| `sn67:scoring_commit:2026-09-03T01:49:07Z` | 67 | SCORING_COMMIT | P1 | 2026-09-03T06:32:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0 |
+| `sn76:scoring_commit:2026-09-03T05:42:35Z` | 76 | SCORING_COMMIT | P1 | 2026-09-03T06:32:43Z | sn76 commit touches scoring: ci: run the non-scoring tests on every push |
+| `sn91:scoring_commit:2026-09-03T02:30:30Z` | 91 | SCORING_COMMIT | P1 | 2026-09-03T06:32:43Z | sn91 commit touches scoring: scoring: block-scheduled fresh-king margin (2% → 1% at 8992800), reso… |
+| `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | P2 | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 
 ### detail
 
-- **`sn105:burn_drop:0.000`** - sn105 burn fell 1.000 -> 0.000 - miners can earn again
+- **`sn71:burn_drop:0.974`** - sn71 burn fell 1.000 -> 0.974 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn67:scoring_commit:2026-09-03T01:49:07Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-09-03T05:42:35Z`** - sn76 commit touches scoring: ci: run the non-scoring tests on every push
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-09-03T02:30:30Z`** - sn91 commit touches scoring: scoring: block-scheduled fresh-king margin (2% → 1% at 8992800), reso…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:readme_task_diff:2d41cdb0f4f83294`** - sn91 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -29,7 +41,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
-| `sn25:release:v2026.8.26-1029908500` | 25 | RELEASE | 2026-08-27T03:26:56Z | sn25 released v2026.8.26-1029908500 |
+| `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
 | `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
 | `sn25:release:v2026.8.27-1030161880` | 25 | RELEASE | 2026-08-27T14:33:13Z | sn25 released v2026.8.27-1030161880 |

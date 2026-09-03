@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-03T21:40:43Z, block 8989568
+# ALARMS - generated 2026-09-03T23:33:13Z, block 8990130
 
-window: first_seen in [2026-09-03T20:26:08Z, 2026-09-03T21:41:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-03T22:18:40Z, 2026-09-03T23:33:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn49:burn_drop:0.990` | 49 | BURN_DROP | P0 | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
-| `sn25:release:v2026.9.3-1036684010` | 25 | RELEASE | P1 | 2026-09-03T21:41:08Z | sn25 released v2026.9.3-1036684010 |
-| `sn71:scoring_commit:2026-09-03T18:50:08Z` | 71 | SCORING_COMMIT | P1 | 2026-09-03T21:41:08Z | sn71 commit touches scoring: Bind updated scoring protected workflows |
+| `sn71:scoring_commit:2026-09-03T22:37:18Z` | 71 | SCORING_COMMIT | P1 | 2026-09-03T23:33:40Z | sn71 commit touches scoring: Tell a rate-limited miner which submission cap it hit |
 
 ### detail
 
-- **`sn49:burn_drop:0.990`** - sn49 burn fell 0.990 -> 0.990 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.9.3-1036684010`** - sn25 released v2026.9.3-1036684010
-  - published 2026-09-03T20:52:40Z (was v2026.9.1-1035082030)
-- **`sn71:scoring_commit:2026-09-03T18:50:08Z`** - sn71 commit touches scoring: Bind updated scoring protected workflows
+- **`sn71:scoring_commit:2026-09-03T22:37:18Z`** - sn71 commit touches scoring: Tell a rate-limited miner which submission cap it hit
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,6 +30,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.974` | 71 | BURN_DROP | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
+| `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn3:scoring_commit:2026-08-27T14:44:03Z` | 3 | SCORING_COMMIT | 2026-08-28T00:03:30Z | sn3 commit touches scoring: Add evaluation history metrics presentation and update dashboard rend… |
 | `sn25:release:v2026.8.27-1030474020` | 25 | RELEASE | 2026-08-28T00:03:30Z | sn25 released v2026.8.27-1030474020 |
 | `sn91:release:worker-v0.7.0` | 91 | RELEASE | 2026-08-28T00:03:30Z | sn91 released worker-v0.7.0 |
@@ -172,6 +167,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn69:scoring_commit:2026-09-03T16:15:44Z` | 69 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn69 commit touches scoring: Point CLI miners at the console to download a brief document (#5) |
 | `sn71:scoring_commit:2026-09-03T18:42:37Z` | 71 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn71 commit touches scoring: Preserve strict identity boundaries in scoring integration |
 | `sn74:release:release-20260903-183804` | 74 | RELEASE | 2026-09-03T18:49:37Z | sn74 released release-20260903-183804 |
+| `sn25:release:v2026.9.3-1036684010` | 25 | RELEASE | 2026-09-03T21:41:08Z | sn25 released v2026.9.3-1036684010 |
+| `sn71:scoring_commit:2026-09-03T18:50:08Z` | 71 | SCORING_COMMIT | 2026-09-03T21:41:08Z | sn71 commit touches scoring: Bind updated scoring protected workflows |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |

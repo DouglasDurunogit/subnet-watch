@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-03T11:44:52Z, block 8986589
+# ALARMS - generated 2026-09-03T15:14:48Z, block 8987639
 
-window: first_seen in [2026-09-03T10:30:17Z, 2026-09-03T11:45:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-03T14:00:26Z, 2026-09-03T15:15:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,25 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.0` | 1 | RELEASE | P1 | 2026-09-03T11:45:17Z | sn1 released v4.4.0 |
-| `sn50:scoring_commit:2026-09-03T09:01:36Z` | 50 | SCORING_COMMIT | P1 | 2026-09-03T11:45:17Z | sn50 commit touches scoring: base miner: gzip-compress axon responses (#319) |
-| `sn100:scoring_commit:2026-09-03T08:25:50Z` | 100 | SCORING_COMMIT | P1 | 2026-09-03T11:45:17Z | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205) |
+| `sn1:release:v4.4.1` | 1 | RELEASE | P1 | 2026-09-03T15:15:26Z | sn1 released v4.4.1 |
+| `sn2:release:14.14.2` | 2 | RELEASE | P1 | 2026-09-03T15:15:26Z | sn2 released 14.14.2 |
 
 ### detail
 
-- **`sn1:release:v4.4.0`** - sn1 released v4.4.0
-  - published 2026-09-03T11:39:12Z (was v4.3.6)
-- **`sn50:scoring_commit:2026-09-03T09:01:36Z`** - sn50 commit touches scoring: base miner: gzip-compress axon responses (#319)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-03T08:25:50Z`** - sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.4.1`** - sn1 released v4.4.1
+  - published 2026-09-03T12:09:25Z (was v4.4.0)
+- **`sn2:release:14.14.2`** - sn2 released 14.14.2
+  - published 2026-09-03T15:04:10Z (was 14.14.1)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn65:burn_drop:0.762` | 65 | BURN_DROP | 2026-08-27T14:33:13Z | sn65 burn fell 1.000 -> 0.762 - miners can earn again |
-| `sn92:burn_drop:0.952` | 92 | BURN_DROP | 2026-08-27T14:33:13Z | sn92 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn59:burn_drop:0.000` | 59 | BURN_DROP | 2026-08-28T00:03:30Z | sn59 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn14:burn_drop:0.000` | 14 | BURN_DROP | 2026-08-28T11:18:26Z | sn14 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
@@ -37,17 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
 | `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.974` | 71 | BURN_DROP | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
-| `sn3:scoring_commit:2026-08-27T11:15:32Z` | 3 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn3 commit touches scoring: Refactor evaluation section in index.html for improved structure |
-| `sn21:scoring_commit:2026-08-27T12:19:47Z` | 21 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn21 commit touches scoring: perf(rewards): per-day fingerprint index — the one-payer check stops … |
-| `sn25:release:v2026.8.27-1030161880` | 25 | RELEASE | 2026-08-27T14:33:13Z | sn25 released v2026.8.27-1030161880 |
-| `sn55:scoring_commit:2026-08-27T11:33:48Z` | 55 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn55 commit touches scoring: update validation block number |
-| `sn61:release:4.10.1` | 61 | RELEASE | 2026-08-27T14:33:13Z | sn61 released 4.10.1 |
-| `sn61:scoring_commit:2026-08-27T11:47:29Z` | 61 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn61 commit touches scoring: chore: update scoring criteria and clarify human detection requiremen… |
-| `sn67:scoring_commit:2026-08-27T07:34:23Z` | 67 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260827.post2 |
-| `sn76:scoring_commit:2026-08-27T09:02:45Z` | 76 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn76 commit touches scoring: validator: attest rejected runs so miners can see why |
-| `sn92:scoring_commit:2026-08-27T09:29:56Z` | 92 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn92 commit touches scoring: Let a miner restore a pointer a reveal overwrote |
-| `sn108:scoring_commit:2026-08-27T13:01:50Z` | 108 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn108 commit touches scoring: docs(validator): re-post every 30 minutes, and say why 30 |
-| `sn112:scoring_commit:2026-08-27T08:40:42Z` | 112 | SCORING_COMMIT | 2026-08-27T14:33:13Z | sn112 commit touches scoring: fix(sandbox): scoring JS had no RPC for chain 964, and the wrong one … |
 | `sn3:scoring_commit:2026-08-27T14:44:03Z` | 3 | SCORING_COMMIT | 2026-08-28T00:03:30Z | sn3 commit touches scoring: Add evaluation history metrics presentation and update dashboard rend… |
 | `sn25:release:v2026.8.27-1030474020` | 25 | RELEASE | 2026-08-28T00:03:30Z | sn25 released v2026.8.27-1030474020 |
 | `sn91:release:worker-v0.7.0` | 91 | RELEASE | 2026-08-28T00:03:30Z | sn91 released worker-v0.7.0 |
@@ -175,7 +159,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-09-03T01:49:07Z` | 67 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0 |
 | `sn76:scoring_commit:2026-09-03T05:42:35Z` | 76 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn76 commit touches scoring: ci: run the non-scoring tests on every push |
 | `sn91:scoring_commit:2026-09-03T02:30:30Z` | 91 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn91 commit touches scoring: scoring: block-scheduled fresh-king margin (2% → 1% at 8992800), reso… |
-| `sn111:readme_task_diff:4ac99c0122295794` | 111 | README_TASK_DIFF | 2026-08-27T14:33:13Z | sn111 README task/scoring sections changed |
+| `sn1:release:v4.4.0` | 1 | RELEASE | 2026-09-03T11:45:17Z | sn1 released v4.4.0 |
+| `sn50:scoring_commit:2026-09-03T09:01:36Z` | 50 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn50 commit touches scoring: base miner: gzip-compress axon responses (#319) |
+| `sn100:scoring_commit:2026-09-03T08:25:50Z` | 100 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205) |
 | `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |

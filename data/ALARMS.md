@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-04T21:04:07Z, block 8996584
+# ALARMS - generated 2026-09-04T23:01:35Z, block 8997169
 
-window: first_seen in [2026-09-04T19:49:38Z, 2026-09-04T21:04:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-04T21:47:03Z, 2026-09-04T23:02:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn85:burn_drop:0.360` | 85 | BURN_DROP | P0 | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn21:scoring_commit:2026-09-04T20:27:20Z` | 21 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date |
-| `sn25:release:v2026.9.4-1037517570` | 25 | RELEASE | P1 | 2026-09-04T21:04:38Z | sn25 released v2026.9.4-1037517570 |
-| `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
-| `sn47:scoring_commit:2026-09-04T19:22:55Z` | 47 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn47 commit touches scoring: fix extraction and verifier |
-| `sn92:scoring_commit:2026-09-04T20:10:42Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import … |
-| `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
-| `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
-| `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
+| `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | P1 | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
+| `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | P1 | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
+| `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
 
 ### detail
 
-- **`sn85:burn_drop:0.360`** - sn85 burn fell 1.000 -> 0.360 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:scoring_commit:2026-09-04T20:27:20Z`** - sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date
+- **`sn7:release:release-20260904-214340: Bump version to`** - sn7 released release-20260904-214340: Bump version to 3.3.2 (#722)
+  - published 2026-09-04T21:43:18Z (was release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719))
+- **`sn25:release:v2026.9.4-1037600680`** - sn25 released v2026.9.4-1037600680
+  - published 2026-09-04T22:21:39Z (was v2026.9.4-1037517570)
+- **`sn92:scoring_commit:2026-09-04T21:42:58Z`** - sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.4-1037517570`** - sn25 released v2026.9.4-1037517570
-  - published 2026-09-04T20:02:09Z (was v2026.9.4-1037416540)
-- **`sn34:scoring_commit:2026-09-04T18:44:10Z`** - sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn47:scoring_commit:2026-09-04T19:22:55Z`** - sn47 commit touches scoring: fix extraction and verifier
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-09-04T20:10:42Z`** - sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn47:readme_task_diff:8b345756fdb99755`** - sn47 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn63:readme_task_diff:9f841de80403238f`** - sn63 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn71:readme_task_diff:7ba0f5e901269ab4`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
-| `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
 | `sn49:burn_drop:0.000` | 49 | BURN_DROP | 2026-08-29T15:10:23Z | sn49 burn fell 0.990 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
 | `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -54,18 +33,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
-| `sn15:release:v1.2.9` | 15 | RELEASE | 2026-08-28T21:28:55Z | sn15 released v1.2.9 |
-| `sn15:scoring_commit:2026-08-28T18:31:26Z` | 15 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265) |
-| `sn21:scoring_commit:2026-08-28T17:07:56Z` | 21 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted … |
-| `sn25:release:v2026.8.28-1031286130` | 25 | RELEASE | 2026-08-28T21:28:55Z | sn25 released v2026.8.28-1031286130 |
-| `sn28:release:v0.4.12` | 28 | RELEASE | 2026-08-28T21:28:55Z | sn28 released v0.4.12 |
-| `sn35:release:1.2.0` | 35 | RELEASE | 2026-08-28T21:28:55Z | sn35 released 1.2.0 |
-| `sn35:scoring_commit:2026-08-28T16:38:20Z` | 35 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn35 commit touches scoring: feat: send all miner emissions to scored miners |
-| `sn92:scoring_commit:2026-08-28T14:15:37Z` | 92 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn92 commit touches scoring: Accept operator-named hotkeys ahead of their validator permit |
-| `sn102:release:v0.5.3` | 102 | RELEASE | 2026-08-28T21:28:55Z | sn102 released v0.5.3 |
-| `sn102:scoring_commit:2026-08-28T13:33:02Z` | 102 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn102 commit touches scoring: ⏪ fix(shared): stop collapsing miner commits to one model hash |
-| `sn108:scoring_commit:2026-08-28T12:10:59Z` | 108 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn108 commit touches scoring: docs(readme): miner gate is 50 registered AND 25 active members |
-| `sn111:scoring_commit:2026-08-28T12:51:57Z` | 111 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn111 commit touches scoring: docs(validator): enable paper reuse in launch profiles |
+| `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn15:release:v1.2.10` | 15 | RELEASE | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
 | `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
 | `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
@@ -206,9 +174,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-09-04T17:45:13Z` | 100 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn100 commit touches scoring: docs(miner): Proof + Bounty A→Z at 2000/8000 (#219) |
 | `sn102:release:v0.5.5 — publish the round podium to a H` | 102 | RELEASE | 2026-09-04T18:32:09Z | sn102 released v0.5.5 — publish the round podium to a HuggingFace archive repo |
 | `sn102:scoring_commit:2026-09-03T21:10:17Z` | 102 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn102 commit touches scoring: 🏷️ refactor(validator): name podium folders by cycle, not round id |
-| `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
-| `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
-| `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-09-04T20:27:20Z` | 21 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date |
+| `sn25:release:v2026.9.4-1037517570` | 25 | RELEASE | 2026-09-04T21:04:38Z | sn25 released v2026.9.4-1037517570 |
+| `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
+| `sn47:scoring_commit:2026-09-04T19:22:55Z` | 47 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn47 commit touches scoring: fix extraction and verifier |
+| `sn92:scoring_commit:2026-09-04T20:10:42Z` | 92 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import … |
 | `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
 | `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
@@ -229,6 +199,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 | `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
 | `sn96:readme_task_diff:9b448a83b77e12c9` | 96 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn96 README task/scoring sections changed |
+| `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
+| `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
+| `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

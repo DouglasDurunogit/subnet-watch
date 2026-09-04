@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-04T06:21:31Z, block 8992171
+# ALARMS - generated 2026-09-04T11:33:24Z, block 8993731
 
-window: first_seen in [2026-09-04T05:06:54Z, 2026-09-04T06:21:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-04T10:18:57Z, 2026-09-04T11:33:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-09-04T04:09:32Z` | 21 | SCORING_COMMIT | P1 | 2026-09-04T06:21:54Z | sn21 commit touches scoring: test(validator): prove burn composition matches the committer branch … |
-| `sn71:scoring_commit:2026-09-04T05:24:15Z` | 71 | SCORING_COMMIT | P1 | 2026-09-04T06:21:54Z | sn71 commit touches scoring: Bind protected Arena reward compatibility adapter |
-| `sn100:scoring_commit:2026-09-04T04:15:06Z` | 100 | SCORING_COMMIT | P1 | 2026-09-04T06:21:54Z | sn100 commit touches scoring: feat(proof): Proof challenge + dynamic topics + RLM judge digest pin … |
-| `sn107:release:v0.3.0: Minos 🧬 — Difficulty-weighted sc` | 107 | RELEASE | P1 | 2026-09-04T06:21:54Z | sn107 released v0.3.0: Minos 🧬 — Difficulty-weighted scoring (v2), round verification,  config commitments |
+| `sn25:scoring_commit:2026-09-04T11:22:34Z` | 25 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn25 commit touches scoring: Record semantic verifier parallel qualification |
+| `sn66:scoring_commit:2026-09-03T14:19:04Z` | 66 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version |
+| `sn67:scoring_commit:2026-09-04T06:27:51Z` | 67 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1 |
+| `sn78:scoring_commit:2026-09-03T21:48:59Z` | 78 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn78 commit touches scoring: Expose replay-verified public miner solutions |
+| `sn92:scoring_commit:2026-09-04T10:56:43Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn92 commit touches scoring: Smooth the miner CLI and quiet the archive |
+| `sn97:scoring_commit:2026-09-03T16:13:11Z` | 97 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub… |
+| `sn100:scoring_commit:2026-09-04T07:41:55Z` | 100 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy |
+| `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | P2 | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-09-04T04:09:32Z`** - sn21 commit touches scoring: test(validator): prove burn composition matches the committer branch …
+- **`sn25:scoring_commit:2026-09-04T11:22:34Z`** - sn25 commit touches scoring: Record semantic verifier parallel qualification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-04T05:24:15Z`** - sn71 commit touches scoring: Bind protected Arena reward compatibility adapter
+- **`sn66:scoring_commit:2026-09-03T14:19:04Z`** - sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-04T04:15:06Z`** - sn100 commit touches scoring: feat(proof): Proof challenge + dynamic topics + RLM judge digest pin …
+- **`sn67:scoring_commit:2026-09-04T06:27:51Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn107:release:v0.3.0: Minos 🧬 — Difficulty-weighted sc`** - sn107 released v0.3.0: Minos 🧬 — Difficulty-weighted scoring (v2), round verification,  config commitments
-  - published 2026-09-04T04:57:38Z (was v0.2.0: Minos 🧬 — Miner onboarding (demo/practice), AI assistant, round-only scoring)
+- **`sn78:scoring_commit:2026-09-03T21:48:59Z`** - sn78 commit touches scoring: Expose replay-verified public miner solutions
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-09-04T10:56:43Z`** - sn92 commit touches scoring: Smooth the miner CLI and quiet the archive
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-09-03T16:13:11Z`** - sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-04T07:41:55Z`** - sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:readme_task_diff:8a170d798d34334c`** - sn114 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn14:burn_drop:0.000` | 14 | BURN_DROP | 2026-08-28T11:18:26Z | sn14 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:burn_drop:0.003` | 104 | BURN_DROP | 2026-08-28T21:28:55Z | sn104 burn fell 1.000 -> 0.003 - miners can earn again |
 | `sn111:burn_drop:0.000` | 111 | BURN_DROP | 2026-08-28T21:28:55Z | sn111 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.606` | 121 | BURN_DROP | 2026-08-28T21:28:55Z | sn121 burn fell 1.000 -> 0.606 - miners can earn again |
@@ -40,16 +51,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
-| `sn3:scoring_commit:2026-08-28T08:56:33Z` | 3 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn3 commit touches scoring: Add source scores handling and presentation to dashboard |
-| `sn25:release:v2026.8.28-1031115710` | 25 | RELEASE | 2026-08-28T11:18:26Z | sn25 released v2026.8.28-1031115710 |
-| `sn61:release:4.10.2` | 61 | RELEASE | 2026-08-28T11:18:26Z | sn61 released 4.10.2 |
-| `sn61:scoring_commit:2026-08-28T05:45:39Z` | 61 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn61 commit touches scoring: chore: update challenge navigation and fix ADA-3 headless detection s… |
-| `sn67:scoring_commit:2026-08-28T06:40:58Z` | 67 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260828.post6 |
-| `sn80:scoring_commit:2026-08-28T05:16:34Z` | 80 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn80 commit touches scoring: docs: point miners to the openroboto CLI and the real-robot track |
-| `sn92:scoring_commit:2026-08-28T08:31:19Z` | 92 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn92 commit touches scoring: Carry the miner's published source through to the control plane |
-| `sn96:release:Verathos v0.1.42 – Verified MoE, Account` | 96 | RELEASE | 2026-08-28T11:18:26Z | sn96 released Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability |
-| `sn96:scoring_commit:2026-08-26T14:47:41Z` | 96 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn96 commit touches scoring: fix: decay endpoint-gated scores at epoch close |
-| `sn108:scoring_commit:2026-08-28T04:54:03Z` | 108 | SCORING_COMMIT | 2026-08-28T11:18:26Z | sn108 commit touches scoring: docs(validator): the unanimity abort needs two independent sources |
 | `sn15:release:v1.2.9` | 15 | RELEASE | 2026-08-28T21:28:55Z | sn15 released v1.2.9 |
 | `sn15:scoring_commit:2026-08-28T18:31:26Z` | 15 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn15 commit touches scoring: fix(validator): use revealed top as weight fallback (#265) |
 | `sn21:scoring_commit:2026-08-28T17:07:56Z` | 21 | SCORING_COMMIT | 2026-08-28T21:28:55Z | sn21 commit touches scoring: feat(reporting): each miner's row carries the reason a control acted … |
@@ -178,7 +179,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-03T19:36:15Z` | 25 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn25 commit touches scoring: fix semantic reward consensus fixture |
 | `sn71:scoring_commit:2026-09-04T00:27:39Z` | 71 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn71 commit touches scoring: Prevent source add reward queue starvation |
 | `sn107:scoring_commit:2026-09-04T00:16:20Z` | 107 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn107 commit touches scoring: Merge pull request #39 from minos-protocol/feat/round-verification |
-| `sn80:readme_task_diff:a1414d5d9c1406ba` | 80 | README_TASK_DIFF | 2026-08-28T11:18:26Z | sn80 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-09-04T04:09:32Z` | 21 | SCORING_COMMIT | 2026-09-04T06:21:54Z | sn21 commit touches scoring: test(validator): prove burn composition matches the committer branch … |
+| `sn71:scoring_commit:2026-09-04T05:24:15Z` | 71 | SCORING_COMMIT | 2026-09-04T06:21:54Z | sn71 commit touches scoring: Bind protected Arena reward compatibility adapter |
+| `sn100:scoring_commit:2026-09-04T04:15:06Z` | 100 | SCORING_COMMIT | 2026-09-04T06:21:54Z | sn100 commit touches scoring: feat(proof): Proof challenge + dynamic topics + RLM judge digest pin … |
+| `sn107:release:v0.3.0: Minos 🧬 — Difficulty-weighted sc` | 107 | RELEASE | 2026-09-04T06:21:54Z | sn107 released v0.3.0: Minos 🧬 — Difficulty-weighted scoring (v2), round verification,  config commitments |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
 | `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |

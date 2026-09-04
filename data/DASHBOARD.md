@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-04T01:24:49Z · block 8990688 · run_status **ok**_
+_snapshot 2026-09-04T06:21:31Z · block 8992171 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 94 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
 | **Positive margin** | **60** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,9 +29,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 59 | `████████████████████████████` |
+| 0 (none) | 60 | `████████████████████████████` |
 | 0–0.2 | 11 | `█████` |
-| 0.2–0.4 | 5 | `██` |
+| 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 3 | `█` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 81 | 207 | 565 | cpu-small | 9 | 26% |
-| 2 | sn107 Minos | 76.8 | 86.20 | 5,557 | cpu-small | 21 | 81% |
-| 3 | sn3 Teutonic | 75.5 | 3,760 | 3,760 = | rtx4090* | 5 | 20% |
-| 4 | sn76 Phylax | 73.5 | 31.29 | 82.75 | cpu-small | 21 | 20% |
-| 5 | sn23 Trishool | 72.1 | 532 | 532 = | cpu-small | 2 | 80% |
-| 6 | sn102 ConnitoAI | 71.4 | 1,116 | 1,865 | rtx4090* | 5 | 33% |
-| 7 | sn15 ORO | 70.6 | 21.95 | 21,614 | cpu-small | 74 | 93% |
-| 8 | sn96 Verathos | 69.4 | 28.93 | 152 | rtx4090 | 79 | 44% |
-| 9 | sn91 cascade | 69.3 | 610 | 3,291 | rtx4090* | 5 | 52% |
-| 10 | sn56 Gradients | 68.9 | 539 | 1,349 | rtx4090* | 5 | 74% |
-| 11 | sn67 Harnyx | 68.8 | 9.15 | 9.15 = | cpu-small | 220 | 32% |
-| 12 | sn111 Claims | 66.4 | 269 | 3,228 | rtx4090* | 5 | 76% |
-| 13 | sn124 Swarm | 66.4 | 263 | 812 | rtx4090* | 25 | 11% |
-| 14 | sn79 MVTRX | 65.5 | 4.94 | 406 | cpu-small | 214 | 9% |
-| 15 | sn80 OpenRoboto | 65.2 | 176 | 636 | rtx4090* | 5 | 71% |
-| 16 | sn61 RedTeam | 65.1 | 174 | 243 | rtx4090* | 45 | 3% |
-| 17 | sn98 NeverPlayAlone | 64.4 | 1,857 | 1,857 = | cpu-small | 1 | 100% |
-| 18 | sn121 sundae_bar | 62.9 | 1,193 | 1,193 = | cpu-small | 2 | 60% |
-| 19 | sn74 Gittensor | 61.2 | 56.56 | 368 | rtx4090 | 11 | 64% |
-| 20 | sn65 True Performance | 60.5 | 51.51 | 111 | rtx4090* | 6 | 85% |
+| 1 | sn92 MicroTensor | 80.6 | 184 | 369 | cpu-small | 9 | 26% |
+| 2 | sn107 Minos | 76.8 | 87.97 | 5,589 | cpu-small | 21 | 81% |
+| 3 | sn76 Phylax | 73 | 27.79 | 73.66 | cpu-small | 21 | 20% |
+| 4 | sn102 ConnitoAI | 71.3 | 1,082 | 3,057 | rtx4090* | 4 | 54% |
+| 5 | sn15 ORO | 70.2 | 21.80 | 21,472 | cpu-small | 74 | 93% |
+| 6 | sn91 cascade | 69.4 | 623 | 3,359 | rtx4090* | 5 | 52% |
+| 7 | sn96 Verathos | 69.2 | 27.64 | 147 | rtx4090 | 76 | 45% |
+| 8 | sn56 Gradients | 69 | 541 | 1,352 | rtx4090* | 5 | 74% |
+| 9 | sn67 Harnyx | 68.7 | 9.12 | 9.12 = | cpu-small | 210 | 33% |
+| 10 | sn11 TrajectoryRL | 67.8 | 5,228 | 5,228 = | cpu-small | 1 | 100% |
+| 11 | sn124 Swarm | 66.5 | 266 | 821 | rtx4090* | 25 | 11% |
+| 12 | sn111 Claims | 66.3 | 265 | 2,386 | rtx4090* | 5 | 56% |
+| 13 | sn61 RedTeam | 65.2 | 178 | 253 | rtx4090* | 45 | 3% |
+| 14 | sn80 OpenRoboto | 65.2 | 177 | 642 | rtx4090* | 5 | 71% |
+| 15 | sn79 MVTRX | 64.6 | 4.42 | 421 | cpu-small | 229 | 10% |
+| 16 | sn98 NeverPlayAlone | 64.4 | 1,868 | 1,868 = | cpu-small | 1 | 100% |
+| 17 | sn121 sundae_bar | 62.9 | 1,200 | 1,200 = | cpu-small | 2 | 61% |
+| 18 | sn74 Gittensor | 61.3 | 56.60 | 369 | rtx4090 | 11 | 65% |
+| 19 | sn65 True Performance | 59.8 | 43.07 | 94.42 | rtx4090* | 6 | 87% |
+| 20 | sn101 Tag101 | 59.6 | 0.41 | 0.77 | cpu-small | 242 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 21 |
-| captured (>90%) | 25 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 24 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-04T06:21 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: test(validator): prove burn composition m |
+| 2026-09-04T06:21 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind protected Arena reward compatibility |
+| 2026-09-04T06:21 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(proof): Proof challenge + dynamic t |
+| 2026-09-04T06:21 | sn107 | RELEASE | sn107 released v0.3.0: Minos 🧬 — Difficulty-weighted scoring (v2), rou |
 | 2026-09-04T01:25 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(validator): commit the daily vector d |
 | 2026-09-04T01:25 | sn25 | RELEASE | sn25 released v2026.9.3-1036806790 |
 | 2026-09-04T01:25 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: fix semantic reward consensus fixture |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-03T21:41 | sn49 | BURN_DROP | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | 2026-09-03T21:41 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind updated scoring protected workflows |
 | 2026-09-03T18:49 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: tee_miner: stop dropping the thinking-tok |
-| 2026-09-03T18:49 | sn69 | SCORING_COMMIT | sn69 commit touches scoring: Point CLI miners at the console to downlo |
-| 2026-09-03T18:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve strict identity boundaries in sc |
-| 2026-09-03T18:49 | sn71 | README_TASK_DIFF | sn71 README task/scoring sections changed |
-| 2026-09-03T18:49 | sn74 | RELEASE | sn74 released release-20260903-183804 |
 
 ---
 

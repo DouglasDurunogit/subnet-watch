@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-04T18:31:41Z, block 8995822
+# ALARMS - generated 2026-09-04T21:04:07Z, block 8996584
 
-window: first_seen in [2026-09-04T17:17:09Z, 2026-09-04T18:32:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-04T19:49:38Z, 2026-09-04T21:04:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,41 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20260904-155448: Add min_from_am` | 7 | RELEASE | P1 | 2026-09-04T18:32:09Z | sn7 released release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719) |
-| `sn7:scoring_commit:2026-09-02T22:52:26Z` | 7 | SCORING_COMMIT | P1 | 2026-09-04T18:32:09Z | sn7 commit touches scoring: CLI: --send verifies source-address control BEFORE the bid (#716) |
-| `sn25:release:v2026.9.4-1037416540` | 25 | RELEASE | P1 | 2026-09-04T18:32:09Z | sn25 released v2026.9.4-1037416540 |
-| `sn78:scoring_commit:2026-09-04T18:06:44Z` | 78 | SCORING_COMMIT | P1 | 2026-09-04T18:32:09Z | sn78 commit touches scoring: Install FFmpeg for macOS miner tests |
-| `sn96:release:Verathos v0.2.0 – Sleipnir: Verifiable M` | 96 | RELEASE | P1 | 2026-09-04T18:32:09Z | sn96 released Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving |
-| `sn96:scoring_commit:2026-09-04T07:31:31Z` | 96 | SCORING_COMMIT | P1 | 2026-09-04T18:32:09Z | sn96 commit touches scoring: fix: qualify mesh scoring on protocol v3 |
-| `sn100:scoring_commit:2026-09-04T17:45:13Z` | 100 | SCORING_COMMIT | P1 | 2026-09-04T18:32:09Z | sn100 commit touches scoring: docs(miner): Proof + Bounty A→Z at 2000/8000 (#219) |
-| `sn102:release:v0.5.5 — publish the round podium to a H` | 102 | RELEASE | P1 | 2026-09-04T18:32:09Z | sn102 released v0.5.5 — publish the round podium to a HuggingFace archive repo |
-| `sn102:scoring_commit:2026-09-03T21:10:17Z` | 102 | SCORING_COMMIT | P1 | 2026-09-04T18:32:09Z | sn102 commit touches scoring: 🏷️ refactor(validator): name podium folders by cycle, not round id |
-| `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | P2 | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
-| `sn96:readme_task_diff:9b448a83b77e12c9` | 96 | README_TASK_DIFF | P2 | 2026-09-04T18:32:09Z | sn96 README task/scoring sections changed |
+| `sn85:burn_drop:0.360` | 85 | BURN_DROP | P0 | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
+| `sn21:scoring_commit:2026-09-04T20:27:20Z` | 21 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date |
+| `sn25:release:v2026.9.4-1037517570` | 25 | RELEASE | P1 | 2026-09-04T21:04:38Z | sn25 released v2026.9.4-1037517570 |
+| `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
+| `sn47:scoring_commit:2026-09-04T19:22:55Z` | 47 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn47 commit touches scoring: fix extraction and verifier |
+| `sn92:scoring_commit:2026-09-04T20:10:42Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T21:04:38Z | sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import … |
+| `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
+| `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
+| `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | P2 | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn7:release:release-20260904-155448: Add min_from_am`** - sn7 released release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719)
-  - published 2026-09-04T15:54:10Z (was release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710))
-- **`sn7:scoring_commit:2026-09-02T22:52:26Z`** - sn7 commit touches scoring: CLI: --send verifies source-address control BEFORE the bid (#716)
+- **`sn85:burn_drop:0.360`** - sn85 burn fell 1.000 -> 0.360 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn21:scoring_commit:2026-09-04T20:27:20Z`** - sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.4-1037416540`** - sn25 released v2026.9.4-1037416540
-  - published 2026-09-04T17:13:43Z (was v2026.9.4-1037327320)
-- **`sn78:scoring_commit:2026-09-04T18:06:44Z`** - sn78 commit touches scoring: Install FFmpeg for macOS miner tests
+- **`sn25:release:v2026.9.4-1037517570`** - sn25 released v2026.9.4-1037517570
+  - published 2026-09-04T20:02:09Z (was v2026.9.4-1037416540)
+- **`sn34:scoring_commit:2026-09-04T18:44:10Z`** - sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.2.0 – Sleipnir: Verifiable M`** - sn96 released Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving
-  - published 2026-09-04T15:40:54Z (was Verathos v0.1.42 – Verified MoE, Account Billing, and Runtime Stability)
-- **`sn96:scoring_commit:2026-09-04T07:31:31Z`** - sn96 commit touches scoring: fix: qualify mesh scoring on protocol v3
+- **`sn47:scoring_commit:2026-09-04T19:22:55Z`** - sn47 commit touches scoring: fix extraction and verifier
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-04T17:45:13Z`** - sn100 commit touches scoring: docs(miner): Proof + Bounty A→Z at 2000/8000 (#219)
+- **`sn92:scoring_commit:2026-09-04T20:10:42Z`** - sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.5.5 — publish the round podium to a H`** - sn102 released v0.5.5 — publish the round podium to a HuggingFace archive repo
-  - published 2026-09-04T16:12:19Z (was v0.5.4 — restore validator_baseline_loss telemetry)
-- **`sn102:scoring_commit:2026-09-03T21:10:17Z`** - sn102 commit touches scoring: 🏷️ refactor(validator): name podium folders by cycle, not round id
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn7:readme_task_diff:edbfe0beb3207f5d`** - sn7 README task/scoring sections changed
+- **`sn47:readme_task_diff:8b345756fdb99755`** - sn47 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn96:readme_task_diff:9b448a83b77e12c9`** - sn96 README task/scoring sections changed
+- **`sn63:readme_task_diff:9f841de80403238f`** - sn63 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn71:readme_task_diff:7ba0f5e901269ab4`** - sn71 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -203,6 +197,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-09-04T14:12:08Z` | 21 | SCORING_COMMIT | 2026-09-04T15:09:26Z | sn21 commit touches scoring: fix(validator): reference loop uses bt.Wallet |
 | `sn25:release:v2026.9.4-1037327320` | 25 | RELEASE | 2026-09-04T15:09:26Z | sn25 released v2026.9.4-1037327320 |
 | `sn47:scoring_commit:2026-09-04T14:48:52Z` | 47 | SCORING_COMMIT | 2026-09-04T15:09:26Z | sn47 commit touches scoring: new datasets list and verifier |
+| `sn7:release:release-20260904-155448: Add min_from_am` | 7 | RELEASE | 2026-09-04T18:32:09Z | sn7 released release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719) |
+| `sn7:scoring_commit:2026-09-02T22:52:26Z` | 7 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn7 commit touches scoring: CLI: --send verifies source-address control BEFORE the bid (#716) |
+| `sn25:release:v2026.9.4-1037416540` | 25 | RELEASE | 2026-09-04T18:32:09Z | sn25 released v2026.9.4-1037416540 |
+| `sn78:scoring_commit:2026-09-04T18:06:44Z` | 78 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn78 commit touches scoring: Install FFmpeg for macOS miner tests |
+| `sn96:release:Verathos v0.2.0 – Sleipnir: Verifiable M` | 96 | RELEASE | 2026-09-04T18:32:09Z | sn96 released Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving |
+| `sn96:scoring_commit:2026-09-04T07:31:31Z` | 96 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn96 commit touches scoring: fix: qualify mesh scoring on protocol v3 |
+| `sn100:scoring_commit:2026-09-04T17:45:13Z` | 100 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn100 commit touches scoring: docs(miner): Proof + Bounty A→Z at 2000/8000 (#219) |
+| `sn102:release:v0.5.5 — publish the round podium to a H` | 102 | RELEASE | 2026-09-04T18:32:09Z | sn102 released v0.5.5 — publish the round podium to a HuggingFace archive repo |
+| `sn102:scoring_commit:2026-09-03T21:10:17Z` | 102 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn102 commit touches scoring: 🏷️ refactor(validator): name podium folders by cycle, not round id |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
 | `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
@@ -224,6 +227,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
+| `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
+| `sn96:readme_task_diff:9b448a83b77e12c9` | 96 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn96 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

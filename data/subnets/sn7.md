@@ -1,49 +1,49 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-04T15:08:52Z  |  block: 8994808  |  row_status: ok
+snapshot_utc: 2026-09-04T18:31:41Z  |  block: 8995822  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.03722864901646972**
-- registration cost: 0.15 TAO (33.3765 USD), open=True
+- miner_burn: **0.052070027217268944**
+- registration cost: 0.15 TAO (33.4035 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 884.3 days  |  registered at block 2627691
+- subnet age: 884.5 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1310.3986966024606** (uid 45) <- the only figure quotable as achievable
-- median_miner_usd_day: 668.5925275690089
-- top_miner_usd_day: 1310.3986966024606 (uid 45, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1093.633781716332** (uid 45) <- the only figure quotable as achievable
+- median_miner_usd_day: 876.7720929900185
+- top_miner_usd_day: 1093.633781716332 (uid 45, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.40019532144110603  |  top1_share: 0.6375108723849053  |  top10_share: 1.0
-- owner_incentive_share: 0.0372178902232463 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.3160443338979342  |  top1_share: 0.5261318724917218  |  top10_share: 1.0
+- owner_incentive_share: 0.05206537164482017 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 10900 bytes, sha c66d7c6c103d5f7c
-- latest release: release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) 2026-09-01T18:14:46Z
-- last commit: 2026-09-01T18:14:46Z
-- scoring-related commit: Set miner burn to 0% (v3.3.1) (#710) 2026-09-01T18:14:46Z
+- README: 10900 bytes, sha dfc91260798a797c
+- latest release: release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719) 2026-09-04T15:54:10Z
+- last commit: 2026-09-04T15:54:10Z
+- scoring-related commit: CLI: --send verifies source-address control BEFORE the bid (#716) 2026-09-02T22:52:26Z
 
 ## Resources
 
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1302.1795 USD/day  |  payback on registration: 0.03 days
+- net margin: 1085.4146 USD/day  |  payback on registration: 0.03 days
 
 ## Score
 
 - gate: **OK** 
-- score: 50.7 (rank 34), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 28.33 / freshness 35.0 / resource 11.25 / registration 9.99
-- freshness basis: RELEASE 2.9d ago
+- score: 50.3 (rank 29), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 27.61 / freshness 35.0 / resource 11.25 / registration 9.99
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-04T11:33:24Z, block 8993731
+# ALARMS - generated 2026-09-04T15:08:52Z, block 8994808
 
-window: first_seen in [2026-09-04T10:18:57Z, 2026-09-04T11:33:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-04T13:54:26Z, 2026-09-04T15:09:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-04T11:22:34Z` | 25 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn25 commit touches scoring: Record semantic verifier parallel qualification |
-| `sn66:scoring_commit:2026-09-03T14:19:04Z` | 66 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version |
-| `sn67:scoring_commit:2026-09-04T06:27:51Z` | 67 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1 |
-| `sn78:scoring_commit:2026-09-03T21:48:59Z` | 78 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn78 commit touches scoring: Expose replay-verified public miner solutions |
-| `sn92:scoring_commit:2026-09-04T10:56:43Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn92 commit touches scoring: Smooth the miner CLI and quiet the archive |
-| `sn97:scoring_commit:2026-09-03T16:13:11Z` | 97 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub… |
-| `sn100:scoring_commit:2026-09-04T07:41:55Z` | 100 | SCORING_COMMIT | P1 | 2026-09-04T11:33:57Z | sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy |
-| `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | P2 | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-09-04T13:38:17Z` | 3 | SCORING_COMMIT | P1 | 2026-09-04T15:09:26Z | sn3 commit touches scoring: Show model digests for queued and active evaluations |
+| `sn21:scoring_commit:2026-09-04T14:12:08Z` | 21 | SCORING_COMMIT | P1 | 2026-09-04T15:09:26Z | sn21 commit touches scoring: fix(validator): reference loop uses bt.Wallet |
+| `sn25:release:v2026.9.4-1037327320` | 25 | RELEASE | P1 | 2026-09-04T15:09:26Z | sn25 released v2026.9.4-1037327320 |
+| `sn47:scoring_commit:2026-09-04T14:48:52Z` | 47 | SCORING_COMMIT | P1 | 2026-09-04T15:09:26Z | sn47 commit touches scoring: new datasets list and verifier |
+| `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | P2 | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-04T11:22:34Z`** - sn25 commit touches scoring: Record semantic verifier parallel qualification
+- **`sn3:scoring_commit:2026-09-04T13:38:17Z`** - sn3 commit touches scoring: Show model digests for queued and active evaluations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-03T14:19:04Z`** - sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version
+- **`sn21:scoring_commit:2026-09-04T14:12:08Z`** - sn21 commit touches scoring: fix(validator): reference loop uses bt.Wallet
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-04T06:27:51Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1
+- **`sn25:release:v2026.9.4-1037327320`** - sn25 released v2026.9.4-1037327320
+  - published 2026-09-04T14:45:32Z (was v2026.9.3-1036806790)
+- **`sn47:scoring_commit:2026-09-04T14:48:52Z`** - sn47 commit touches scoring: new datasets list and verifier
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-03T21:48:59Z`** - sn78 commit touches scoring: Expose replay-verified public miner solutions
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-09-04T10:56:43Z`** - sn92 commit touches scoring: Smooth the miner CLI and quiet the archive
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-09-03T16:13:11Z`** - sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-04T07:41:55Z`** - sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:readme_task_diff:8a170d798d34334c`** - sn114 README task/scoring sections changed
+- **`sn47:readme_task_diff:ee01fd805919dfa1`** - sn47 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -183,6 +174,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-04T05:24:15Z` | 71 | SCORING_COMMIT | 2026-09-04T06:21:54Z | sn71 commit touches scoring: Bind protected Arena reward compatibility adapter |
 | `sn100:scoring_commit:2026-09-04T04:15:06Z` | 100 | SCORING_COMMIT | 2026-09-04T06:21:54Z | sn100 commit touches scoring: feat(proof): Proof challenge + dynamic topics + RLM judge digest pin … |
 | `sn107:release:v0.3.0: Minos 🧬 — Difficulty-weighted sc` | 107 | RELEASE | 2026-09-04T06:21:54Z | sn107 released v0.3.0: Minos 🧬 — Difficulty-weighted scoring (v2), round verification,  config commitments |
+| `sn25:scoring_commit:2026-09-04T11:22:34Z` | 25 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn25 commit touches scoring: Record semantic verifier parallel qualification |
+| `sn66:scoring_commit:2026-09-03T14:19:04Z` | 66 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version |
+| `sn67:scoring_commit:2026-09-04T06:27:51Z` | 67 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1 |
+| `sn78:scoring_commit:2026-09-03T21:48:59Z` | 78 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn78 commit touches scoring: Expose replay-verified public miner solutions |
+| `sn92:scoring_commit:2026-09-04T10:56:43Z` | 92 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn92 commit touches scoring: Smooth the miner CLI and quiet the archive |
+| `sn97:scoring_commit:2026-09-03T16:13:11Z` | 97 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub… |
+| `sn100:scoring_commit:2026-09-04T07:41:55Z` | 100 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy |
 | `sn47:readme_task_diff:3e3cbf15b25c3611` | 47 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn47 README task/scoring sections changed |
 | `sn79:readme_task_diff:cd5eac2da72f58d2` | 79 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn79 README task/scoring sections changed |
 | `sn108:readme_task_diff:e13470c52cc9c2e6` | 108 | README_TASK_DIFF | 2026-08-28T21:28:55Z | sn108 README task/scoring sections changed |
@@ -202,6 +200,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:readme_task_diff:cdbca72968cc4124` | 80 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn80 README task/scoring sections changed |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
+| `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-05T05:40:12Z, block 8999159
+# ALARMS - generated 2026-09-05T09:27:03Z, block 9000292
 
-window: first_seen in [2026-09-05T04:25:43Z, 2026-09-05T05:40:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T08:12:28Z, 2026-09-05T09:27:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-09-05T04:29:37Z` | 21 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05 |
-| `sn62:release:v0.3.0` | 62 | RELEASE | P1 | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
-| `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
-| `sn71:scoring_commit:2026-09-05T05:37:23Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout |
+| `sn47:scoring_commit:2026-09-05T08:47:30Z` | 47 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn47 commit touches scoring: refine evaluation system |
+| `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
+| `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
+| `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | P2 | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-09-05T04:29:37Z`** - sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05
+- **`sn47:scoring_commit:2026-09-05T08:47:30Z`** - sn47 commit touches scoring: refine evaluation system
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.0`** - sn62 released v0.3.0
-  - published 2026-09-05T01:37:41Z (was v0.2.9)
-- **`sn62:scoring_commit:2026-09-04T10:45:00Z`** - sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint
+- **`sn71:scoring_commit:2026-09-05T08:30:32Z`** - sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-05T05:37:23Z`** - sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout
+- **`sn100:scoring_commit:2026-09-05T08:03:23Z`** - sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn47:readme_task_diff:478b669831ea7848`** - sn47 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -183,6 +183,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
 | `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
 | `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
+| `sn21:scoring_commit:2026-09-05T04:29:37Z` | 21 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05 |
+| `sn62:release:v0.3.0` | 62 | RELEASE | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
+| `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
+| `sn71:scoring_commit:2026-09-05T05:37:23Z` | 71 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout |
 | `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
 | `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |

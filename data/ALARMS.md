@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-05T09:27:03Z, block 9000292
+# ALARMS - generated 2026-09-05T12:59:24Z, block 9001354
 
-window: first_seen in [2026-09-05T08:12:28Z, 2026-09-05T09:27:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T11:44:57Z, 2026-09-05T12:59:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn47:scoring_commit:2026-09-05T08:47:30Z` | 47 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn47 commit touches scoring: refine evaluation system |
-| `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
-| `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
-| `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | P2 | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-05T12:58:42Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T12:59:57Z | sn71 commit touches scoring: Merge pull request #177 from leadpoet/codex/validator-missing-object-… |
+| `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | P2 | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 
 ### detail
 
-- **`sn47:scoring_commit:2026-09-05T08:47:30Z`** - sn47 commit touches scoring: refine evaluation system
+- **`sn71:scoring_commit:2026-09-05T12:58:42Z`** - sn71 commit touches scoring: Merge pull request #177 from leadpoet/codex/validator-missing-object-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-05T08:30:32Z`** - sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-05T08:03:23Z`** - sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn47:readme_task_diff:478b669831ea7848`** - sn47 README task/scoring sections changed
+- **`sn80:readme_task_diff:91c32064037eaf29`** - sn80 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -37,9 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
-| `sn47:scoring_commit:2026-08-29T06:50:23Z` | 47 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn47 commit touches scoring: rollout verification rules |
-| `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |
 | `sn21:scoring_commit:2026-08-29T14:49:37Z` | 21 | SCORING_COMMIT | 2026-08-29T15:10:23Z | sn21 commit touches scoring: feat(scoring): honour the reference exemption on the lineage path |
 | `sn111:scoring_commit:2026-08-29T11:10:12Z` | 111 | SCORING_COMMIT | 2026-08-29T15:10:23Z | sn111 commit touches scoring: chore(config): shorten validator query interval |
 | `sn21:scoring_commit:2026-08-29T15:29:29Z` | 21 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn21 commit touches scoring: fix(reporting): a published tier must mean the miner is being paid |
@@ -187,8 +178,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.3.0` | 62 | RELEASE | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
 | `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
 | `sn71:scoring_commit:2026-09-05T05:37:23Z` | 71 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout |
-| `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
-| `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
+| `sn47:scoring_commit:2026-09-05T08:47:30Z` | 47 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn47 commit touches scoring: refine evaluation system |
+| `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
+| `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
@@ -210,6 +202,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
 | `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
 | `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
+| `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

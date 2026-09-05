@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-05T18:12:48Z, block 9002917
+# ALARMS - generated 2026-09-05T20:33:52Z, block 9003619
 
-window: first_seen in [2026-09-05T16:58:16Z, 2026-09-05T18:13:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T19:19:23Z, 2026-09-05T20:34:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-09-05T16:25:15Z` | 21 | SCORING_COMMIT | P1 | 2026-09-05T18:13:16Z | sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit… |
-| `sn71:scoring_commit:2026-09-05T16:23:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T18:13:16Z | sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes |
+| `sn25:scoring_commit:2026-09-05T19:18:14Z` | 25 | SCORING_COMMIT | P1 | 2026-09-05T20:34:23Z | sn25 commit touches scoring: Protect validator seed custody and qualify producer gate coverage |
+| `sn71:scoring_commit:2026-09-05T20:23:45Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T20:34:23Z | sn71 commit touches scoring: Bind validator workflow to archive retry policy |
+| `sn78:scoring_commit:2026-09-05T14:56:55Z` | 78 | SCORING_COMMIT | P1 | 2026-09-05T20:34:23Z | sn78 commit touches scoring: Add external miner pilot launch handoffs |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-09-05T16:25:15Z`** - sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit…
+- **`sn25:scoring_commit:2026-09-05T19:18:14Z`** - sn25 commit touches scoring: Protect validator seed custody and qualify producer gate coverage
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-05T16:23:27Z`** - sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes
+- **`sn71:scoring_commit:2026-09-05T20:23:45Z`** - sn71 commit touches scoring: Bind validator workflow to archive retry policy
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-05T14:56:55Z`** - sn78 commit touches scoring: Add external miner pilot launch handoffs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -30,10 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn21:scoring_commit:2026-08-29T15:29:29Z` | 21 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn21 commit touches scoring: fix(reporting): a published tier must mean the miner is being paid |
-| `sn71:scoring_commit:2026-08-29T16:01:20Z` | 71 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn71 commit touches scoring: Measure admitted model verifier latency |
-| `sn89:scoring_commit:2026-08-29T16:20:07Z` | 89 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn89 commit touches scoring: HF: grade the band the miner declared, not the board's |
-| `sn111:scoring_commit:2026-08-29T17:27:58Z` | 111 | SCORING_COMMIT | 2026-08-29T18:44:56Z | sn111 commit touches scoring: fix(validator): preserve completed run status during shutdown |
 | `sn89:scoring_commit:2026-08-29T20:55:10Z` | 89 | SCORING_COMMIT | 2026-08-29T21:20:31Z | sn89 commit touches scoring: limit-watcher: a miner-drawn band survives to fire |
 | `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
 | `sn71:scoring_commit:2026-08-30T00:13:57Z` | 71 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153) |
@@ -182,6 +181,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-05T13:48:07Z` | 25 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn25 commit touches scoring: validator: add private bounded attempt record store |
 | `sn56:scoring_commit:2026-09-05T15:35:59Z` | 56 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre… |
 | `sn71:scoring_commit:2026-09-05T13:10:16Z` | 71 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn71 commit touches scoring: Merge pull request #178 from leadpoet/codex/validator-recovery-author… |
+| `sn21:scoring_commit:2026-09-05T16:25:15Z` | 21 | SCORING_COMMIT | 2026-09-05T18:13:16Z | sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit… |
+| `sn71:scoring_commit:2026-09-05T16:23:27Z` | 71 | SCORING_COMMIT | 2026-09-05T18:13:16Z | sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |

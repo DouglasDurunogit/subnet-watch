@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-05T16:00:23Z, block 9002257
+# ALARMS - generated 2026-09-05T18:12:48Z, block 9002917
 
-window: first_seen in [2026-09-05T14:45:56Z, 2026-09-05T16:00:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T16:58:16Z, 2026-09-05T18:13:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-05T13:48:07Z` | 25 | SCORING_COMMIT | P1 | 2026-09-05T16:00:56Z | sn25 commit touches scoring: validator: add private bounded attempt record store |
-| `sn56:scoring_commit:2026-09-05T15:35:59Z` | 56 | SCORING_COMMIT | P1 | 2026-09-05T16:00:56Z | sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre… |
-| `sn71:scoring_commit:2026-09-05T13:10:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T16:00:56Z | sn71 commit touches scoring: Merge pull request #178 from leadpoet/codex/validator-recovery-author… |
+| `sn21:scoring_commit:2026-09-05T16:25:15Z` | 21 | SCORING_COMMIT | P1 | 2026-09-05T18:13:16Z | sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit… |
+| `sn71:scoring_commit:2026-09-05T16:23:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T18:13:16Z | sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-05T13:48:07Z`** - sn25 commit touches scoring: validator: add private bounded attempt record store
+- **`sn21:scoring_commit:2026-09-05T16:25:15Z`** - sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-09-05T15:35:59Z`** - sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-05T13:10:16Z`** - sn71 commit touches scoring: Merge pull request #178 from leadpoet/codex/validator-recovery-author…
+- **`sn71:scoring_commit:2026-09-05T16:23:27Z`** - sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -182,6 +179,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
 | `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
 | `sn71:scoring_commit:2026-09-05T12:58:42Z` | 71 | SCORING_COMMIT | 2026-09-05T12:59:57Z | sn71 commit touches scoring: Merge pull request #177 from leadpoet/codex/validator-missing-object-… |
+| `sn25:scoring_commit:2026-09-05T13:48:07Z` | 25 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn25 commit touches scoring: validator: add private bounded attempt record store |
+| `sn56:scoring_commit:2026-09-05T15:35:59Z` | 56 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre… |
+| `sn71:scoring_commit:2026-09-05T13:10:16Z` | 71 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn71 commit touches scoring: Merge pull request #178 from leadpoet/codex/validator-recovery-author… |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |

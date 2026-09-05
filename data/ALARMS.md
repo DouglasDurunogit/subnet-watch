@@ -1,26 +1,13 @@
-# ALARMS - generated 2026-09-04T23:01:35Z, block 8997169
+# ALARMS - generated 2026-09-05T00:53:10Z, block 8997726
 
-window: first_seen in [2026-09-04T21:47:03Z, 2026-09-04T23:02:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-04T23:38:38Z, 2026-09-05T00:53:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | P1 | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
-| `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | P1 | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
-| `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | P1 | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
-
-### detail
-
-- **`sn7:release:release-20260904-214340: Bump version to`** - sn7 released release-20260904-214340: Bump version to 3.3.2 (#722)
-  - published 2026-09-04T21:43:18Z (was release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719))
-- **`sn25:release:v2026.9.4-1037600680`** - sn25 released v2026.9.4-1037600680
-  - published 2026-09-04T22:21:39Z (was v2026.9.4-1037517570)
-- **`sn92:scoring_commit:2026-09-04T21:42:58Z`** - sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -179,6 +166,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
 | `sn47:scoring_commit:2026-09-04T19:22:55Z` | 47 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn47 commit touches scoring: fix extraction and verifier |
 | `sn92:scoring_commit:2026-09-04T20:10:42Z` | 92 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import … |
+| `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
+| `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
+| `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
 | `sn47:readme_task_diff:40b567f5acce9030` | 47 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn47 README task/scoring sections changed |
 | `sn100:readme_task_diff:86ff6dff152413ad` | 100 | README_TASK_DIFF | 2026-08-29T10:19:28Z | sn100 README task/scoring sections changed |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |

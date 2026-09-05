@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-05T20:33:52Z  |  block: 9003619  |  row_status: ok
+snapshot_utc: 2026-09-05T22:21:10Z  |  block: 9004152  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.047470313496887684**
-- registration cost: 0.15 TAO (34.9035 USD), open=True
+- miner_burn: **0.04246746748685837**
+- registration cost: 0.15 TAO (35.4525 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 885.5 days  |  registered at block 2627691
+- subnet age: 885.6 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1512.7919032992893** (uid 45) <- the only figure quotable as achievable
-- median_miner_usd_day: 526.4896087755922
-- top_miner_usd_day: 1512.7919032992893 (uid 45, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1406.699367139369** (uid 45) <- the only figure quotable as achievable
+- median_miner_usd_day: 677.4928267397551
+- top_miner_usd_day: 1406.699367139369 (uid 45, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.4394427235133447  |  top1_share: 0.706621091663742  |  top10_share: 1.0
-- owner_incentive_share: 0.0474570063937253 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.40253913998840307  |  top1_share: 0.6462752159184545  |  top10_share: 1.0
+- owner_incentive_share: 0.042466505935850093 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,8 +27,8 @@ snapshot_utc: 2026-09-05T20:33:52Z  |  block: 9003619  |  row_status: ok
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
 - README: 10900 bytes, sha dfc91260798a797c
-- latest release: release-20260904-214340: Bump version to 3.3.2 (#722) 2026-09-04T21:43:18Z
-- last commit: 2026-09-04T21:43:18Z
+- latest release: release-20260905-204833 2026-09-05T19:10:08Z
+- last commit: 2026-09-05T19:10:08Z
 - scoring-related commit: CLI: --send verifies source-address control BEFORE the bid (#716) 2026-09-02T22:52:26Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-05T20:33:52Z  |  block: 9003619  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1504.5727 USD/day  |  payback on registration: 0.02 days
+- net margin: 1398.4802 USD/day  |  payback on registration: 0.03 days
 
 ## Score
 
 - gate: **OK** 
-- score: 51.1 (rank 31), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 28.9 / freshness 35.0 / resource 11.25 / registration 9.99
-- freshness basis: RELEASE 0.9d ago
+- score: 50.9 (rank 30), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 28.61 / freshness 35.0 / resource 11.25 / registration 9.99
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

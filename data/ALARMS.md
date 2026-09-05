@@ -1,13 +1,29 @@
-# ALARMS - generated 2026-09-05T00:53:10Z, block 8997726
+# ALARMS - generated 2026-09-05T05:40:12Z, block 8999159
 
-window: first_seen in [2026-09-04T23:38:38Z, 2026-09-05T00:53:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T04:25:43Z, 2026-09-05T05:40:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn21:scoring_commit:2026-09-05T04:29:37Z` | 21 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05 |
+| `sn62:release:v0.3.0` | 62 | RELEASE | P1 | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
+| `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
+| `sn71:scoring_commit:2026-09-05T05:37:23Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T05:40:43Z | sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout |
+
+### detail
+
+- **`sn21:scoring_commit:2026-09-05T04:29:37Z`** - sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn62:release:v0.3.0`** - sn62 released v0.3.0
+  - published 2026-09-05T01:37:41Z (was v0.2.9)
+- **`sn62:scoring_commit:2026-09-04T10:45:00Z`** - sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-05T05:37:23Z`** - sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -21,8 +37,6 @@ _none_
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn15:release:v1.2.10` | 15 | RELEASE | 2026-08-29T03:23:48Z | sn15 released v1.2.10 |
-| `sn25:release:v2026.8.28-1031618120` | 25 | RELEASE | 2026-08-29T03:23:48Z | sn25 released v2026.8.28-1031618120 |
 | `sn25:release:v2026.8.28-1031763440` | 25 | RELEASE | 2026-08-29T10:19:28Z | sn25 released v2026.8.28-1031763440 |
 | `sn47:scoring_commit:2026-08-29T06:50:23Z` | 47 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn47 commit touches scoring: rollout verification rules |
 | `sn67:scoring_commit:2026-08-29T06:48:42Z` | 67 | SCORING_COMMIT | 2026-08-29T10:19:28Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post0 |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-05T22:21:10Z, block 9004152
+# ALARMS - generated 2026-09-06T00:05:57Z, block 9004675
 
-window: first_seen in [2026-09-05T21:06:43Z, 2026-09-05T22:21:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-05T22:51:30Z, 2026-09-06T00:06:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20260905-204833` | 7 | RELEASE | P1 | 2026-09-05T22:21:43Z | sn7 released release-20260905-204833 |
-| `sn71:scoring_commit:2026-09-05T21:34:19Z` | 71 | SCORING_COMMIT | P1 | 2026-09-05T22:21:43Z | sn71 commit touches scoring: chore(validator): bind existing recovery workflow identity |
+| `sn74:release:release-20260905-223823` | 74 | RELEASE | P1 | 2026-09-06T00:06:30Z | sn74 released release-20260905-223823 |
+| `sn74:scoring_commit:2026-09-05T20:51:26Z` | 74 | SCORING_COMMIT | P1 | 2026-09-06T00:06:30Z | sn74 commit touches scoring: serving miner: an attestation waits for prefill and holds admissions,… |
 
 ### detail
 
-- **`sn7:release:release-20260905-204833`** - sn7 released release-20260905-204833
-  - published 2026-09-05T19:10:08Z (was release-20260904-214340: Bump version to 3.3.2 (#722))
-- **`sn71:scoring_commit:2026-09-05T21:34:19Z`** - sn71 commit touches scoring: chore(validator): bind existing recovery workflow identity
+- **`sn74:release:release-20260905-223823`** - sn74 released release-20260905-223823
+  - published 2026-09-05T22:36:03Z (was release-20260903-183804)
+- **`sn74:scoring_commit:2026-09-05T20:51:26Z`** - sn74 commit touches scoring: serving miner: an attestation waits for prefill and holds admissions,…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -30,7 +30,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn89:scoring_commit:2026-08-29T22:05:27Z` | 89 | SCORING_COMMIT | 2026-08-29T23:29:51Z | sn89 commit touches scoring: scoring: the points gate is per competition, not per chain |
 | `sn71:scoring_commit:2026-08-30T00:13:57Z` | 71 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn71 commit touches scoring: Document miner SOURCE_ADD inputs (#153) |
 | `sn89:scoring_commit:2026-08-30T01:06:31Z` | 89 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn89 commit touches scoring: scoring: the points qualify gate, and the variance that made it too l… |
 | `sn92:scoring_commit:2026-08-30T01:18:37Z` | 92 | SCORING_COMMIT | 2026-08-30T01:45:42Z | sn92 commit touches scoring: Validate commitments at discovery, guard partial settles, count dupli… |
@@ -182,6 +181,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-05T19:18:14Z` | 25 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn25 commit touches scoring: Protect validator seed custody and qualify producer gate coverage |
 | `sn71:scoring_commit:2026-09-05T20:23:45Z` | 71 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn71 commit touches scoring: Bind validator workflow to archive retry policy |
 | `sn78:scoring_commit:2026-09-05T14:56:55Z` | 78 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn78 commit touches scoring: Add external miner pilot launch handoffs |
+| `sn7:release:release-20260905-204833` | 7 | RELEASE | 2026-09-05T22:21:43Z | sn7 released release-20260905-204833 |
+| `sn71:scoring_commit:2026-09-05T21:34:19Z` | 71 | SCORING_COMMIT | 2026-09-05T22:21:43Z | sn71 commit touches scoring: chore(validator): bind existing recovery workflow identity |
 | `sn71:readme_task_diff:5ecd38a51a4692a8` | 71 | README_TASK_DIFF | 2026-08-30T01:45:42Z | sn71 README task/scoring sections changed |
 | `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |

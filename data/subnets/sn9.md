@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-09-05T22:21:10Z  |  block: 9004152  |  row_status: ok
+snapshot_utc: 2026-09-06T00:05:57Z  |  block: 9004675  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.25499624805524945**
-- registration cost: 0.0005 TAO (0.118175 USD), open=True
+- miner_burn: **0.2549962478224188**
+- registration cost: 0.0005 TAO (0.118075 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
 - subnet age: 1043.7 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 15252.401333291114** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 10236.475318762674
-- top_miner_usd_day: 15252.401333291114 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 15240.255558045723** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 10228.323820135678
+- top_miner_usd_day: 15240.255558045723 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-09-05T22:21:10Z  |  block: 9004152  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 15244.1822 USD/day  |  payback on registration: 0.0 days
+- net margin: 15232.0364 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 56.6 (rank 21), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 38.05 / freshness 35.0 / resource 11.25 / registration 10.0
+- score: 56.6 (rank 22), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 38.04 / freshness 35.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 6.4d ago
 
 ## On-chain description

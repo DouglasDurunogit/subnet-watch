@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-06T18:30:25Z · block 9010180 · run_status **ok**_
+_snapshot 2026-09-06T20:52:12Z · block 9010888 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 61 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 95 | `miner_burn` < 0.99 |
-| Ranked | 95 | passed every gate |
-| **Positive margin** | **61** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| Pays miners at all | 93 | `miner_burn` < 0.99 |
+| Ranked | 94 | passed every gate |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 1 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 59 | `████████████████████████████` |
-| 0–0.2 | 11 | `█████` |
+| 0 (none) | 60 | `████████████████████████████` |
+| 0–0.2 | 10 | `█████` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 11 | `█████` |
-| 0.8–0.99 | 7 | `███` |
-| ≥0.99 dead | 33 | `████████████████` |
+| 0.6–0.8 | 10 | `█████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 35 | `████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 81.5 | 233 | 519 | cpu-small | 9 | 26% |
-| 2 | sn107 Minos | 77.1 | 93.84 | 5,742 | cpu-small | 21 | 81% |
-| 3 | sn3 Teutonic | 76 | 4,400 | 4,400 = | rtx4090* | 5 | 20% |
-| 4 | sn114 SOMA | 74.2 | 1,004 | 1,004 = | cpu-small | 3 | 80% |
-| 5 | sn67 Harnyx | 72.4 | 23.18 | 1,195 | cpu-small | 108 | 31% |
-| 6 | sn14 Cacheon | 71.5 | 1,162 | 2,205 | rtx4090* | 6 | 30% |
-| 7 | sn91 cascade | 70.8 | 950 | 3,824 | rtx4090* | 5 | 52% |
-| 8 | sn96 Verathos | 70.3 | 36.31 | 618 | rtx4090 | 81 | 40% |
-| 9 | sn15 ORO | 69.9 | 23.75 | 46.58 | cpu-small | 82 | 92% |
-| 10 | sn102 ConnitoAI | 69.4 | 620 | 1,695 | rtx4090* | 7 | 29% |
-| 11 | sn11 TrajectoryRL | 68.9 | 7,063 | 7,063 = | cpu-small | 1 | 100% |
-| 12 | sn111 Claims | 68.6 | 504 | 2,233 | rtx4090* | 5 | 47% |
-| 13 | sn62 Ridges | 68.4 | 455 | 2,298 | rtx4090* | 13 | 26% |
-| 14 | sn56 Gradients | 67.9 | 392 | 3,676 | rtx4090* | 7 | 49% |
-| 15 | sn124 Swarm | 66.9 | 304 | 936 | rtx4090* | 25 | 11% |
-| 16 | sn80 OpenRoboto | 65.7 | 205 | 738 | rtx4090* | 5 | 71% |
-| 17 | sn121 sundae_bar | 63.4 | 1,396 | 1,396 = | cpu-small | 2 | 60% |
-| 18 | sn108 Prometheon | 63.2 | 97.18 | 372 | rtx4090* | 10 | 33% |
-| 19 | sn65 True Performance | 62.8 | 95.72 | 200 | rtx4090* | 6 | 75% |
-| 20 | sn101 Tag101 | 62.4 | 0.86 | 0.86 = | cpu-small | 243 | 90% |
+| 1 | sn92 MicroTensor | 81.5 | 235 | 523 | cpu-small | 9 | 26% |
+| 2 | sn107 Minos | 77.4 | 100 | 6,000 | cpu-small | 21 | 81% |
+| 3 | sn3 Teutonic | 76.1 | 4,586 | 4,586 = | rtx4090* | 5 | 20% |
+| 4 | sn114 SOMA | 74.3 | 1,039 | 1,039 = | cpu-small | 3 | 80% |
+| 5 | sn67 Harnyx | 72.6 | 24.09 | 1,240 | cpu-small | 108 | 31% |
+| 6 | sn102 ConnitoAI | 72 | 1,329 | 1,552 | rtx4090* | 6 | 26% |
+| 7 | sn14 Cacheon | 71.6 | 1,205 | 2,287 | rtx4090* | 6 | 30% |
+| 8 | sn91 cascade | 70.9 | 971 | 3,909 | rtx4090* | 5 | 52% |
+| 9 | sn96 Verathos | 70.5 | 38.55 | 662 | rtx4090 | 78 | 40% |
+| 10 | sn15 ORO | 70.5 | 24.64 | 48.29 | cpu-small | 82 | 92% |
+| 11 | sn11 TrajectoryRL | 69.1 | 7,496 | 7,496 = | cpu-small | 1 | 100% |
+| 12 | sn111 Claims | 68.7 | 522 | 2,311 | rtx4090* | 5 | 47% |
+| 13 | sn62 Ridges | 68.4 | 458 | 1,361 | rtx4090* | 13 | 26% |
+| 14 | sn56 Gradients | 68 | 405 | 3,792 | rtx4090* | 7 | 49% |
+| 15 | sn124 Swarm | 67 | 317 | 975 | rtx4090* | 25 | 11% |
+| 16 | sn80 OpenRoboto | 65.8 | 209 | 753 | rtx4090* | 5 | 71% |
+| 17 | sn108 Prometheon | 63.3 | 102 | 391 | rtx4090* | 10 | 33% |
+| 18 | sn65 True Performance | 62.9 | 98.95 | 206 | rtx4090* | 6 | 75% |
+| 19 | sn101 Tag101 | 62.5 | 0.93 | 0.93 = | cpu-small | 243 | 90% |
+| 20 | sn41 Almanac | 60.4 | 39.39 | 110 | cpu-small | 86 | 14% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 21 |
-| dominated (60–90%) | 24 |
-| captured (>90%) | 22 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 21 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,7 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-06T20:52 | sn93 | SCORING_COMMIT | sn93 commit touches scoring: chore: scope validator deploy to code/con |
 | 2026-09-06T18:30 | sn14 | RELEASE | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2 |
 | 2026-09-06T18:30 | sn93 | README_TASK_DIFF | sn93 README task/scoring sections changed |
 | 2026-09-06T16:12 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Integrate qualified Solidity validator ac |
@@ -121,7 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-05T20:34 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Protect validator seed custody and qualif |
 | 2026-09-05T20:34 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind validator workflow to archive retry  |
 | 2026-09-05T20:34 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Add external miner pilot launch handoffs |
-| 2026-09-05T18:13 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(reporting): rows shown with their acc |
 
 ---
 

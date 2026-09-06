@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-06T18:30:25Z, block 9010180
+# ALARMS - generated 2026-09-06T20:52:12Z, block 9010888
 
-window: first_seen in [2026-09-06T17:15:56Z, 2026-09-06T18:30:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-06T19:37:43Z, 2026-09-06T20:52:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | P1 | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
-| `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | P2 | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
+| `sn93:scoring_commit:2026-09-06T20:14:30Z` | 93 | SCORING_COMMIT | P1 | 2026-09-06T20:52:43Z | sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171) |
 
 ### detail
 
-- **`sn14:release:GLM-5.3 mock mainnet submissions (valida`** - sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06)
-  - published 2026-09-06T16:41:56Z (was msa-block-score-control-20260823: fix: open paged MSA decode score slot)
-- **`sn93:readme_task_diff:6bd0c74883d58dde`** - sn93 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn93:scoring_commit:2026-09-06T20:14:30Z`** - sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -31,7 +28,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn25:release:v2026.8.30-1033129380` | 25 | RELEASE | 2026-08-30T20:05:23Z | sn25 released v2026.8.30-1033129380 |
 | `sn92:scoring_commit:2026-08-30T20:40:28Z` | 92 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn92 commit touches scoring: Lock the evaluation environment to the fleet's resolved set |
 | `sn111:scoring_commit:2026-08-30T21:57:12Z` | 111 | SCORING_COMMIT | 2026-08-30T22:43:10Z | sn111 commit touches scoring: feat(selection): expand miner pool with provisional performance |
 | `sn91:scoring_commit:2026-08-31T05:05:09Z` | 91 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s… |
@@ -180,6 +176,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-06T02:58:05Z` | 78 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn78 commit touches scoring: Add public registered-miner endpoint pilot |
 | `sn25:scoring_commit:2026-09-06T12:28:31Z` | 25 | SCORING_COMMIT | 2026-09-06T12:51:56Z | sn25 commit touches scoring: Checkpoint held repair sources and validation handoff |
 | `sn25:scoring_commit:2026-09-06T15:00:42Z` | 25 | SCORING_COMMIT | 2026-09-06T16:12:33Z | sn25 commit touches scoring: Integrate qualified Solidity validator activation verification |
+| `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
@@ -200,6 +197,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
 | `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
+| `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,13 +1,20 @@
-# ALARMS - generated 2026-09-06T08:57:43Z, block 9007326
+# ALARMS - generated 2026-09-06T12:51:24Z, block 9008492
 
-window: first_seen in [2026-09-06T07:43:06Z, 2026-09-06T08:58:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-06T11:36:56Z, 2026-09-06T12:51:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn25:scoring_commit:2026-09-06T12:28:31Z` | 25 | SCORING_COMMIT | P1 | 2026-09-06T12:51:56Z | sn25 commit touches scoring: Checkpoint held repair sources and validation handoff |
+
+### detail
+
+- **`sn25:scoring_commit:2026-09-06T12:28:31Z`** - sn25 commit touches scoring: Checkpoint held repair sources and validation handoff
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

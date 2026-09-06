@@ -1,23 +1,13 @@
-# ALARMS - generated 2026-09-06T04:34:04Z, block 9006012
+# ALARMS - generated 2026-09-06T08:57:43Z, block 9007326
 
-window: first_seen in [2026-09-06T03:19:35Z, 2026-09-06T04:34:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-06T07:43:06Z, 2026-09-06T08:58:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-06T00:50:36Z` | 71 | SCORING_COMMIT | P1 | 2026-09-06T04:34:35Z | sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin… |
-| `sn78:scoring_commit:2026-09-06T02:58:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-06T04:34:35Z | sn78 commit touches scoring: Add public registered-miner endpoint pilot |
-
-### detail
-
-- **`sn71:scoring_commit:2026-09-06T00:50:36Z`** - sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-06T02:58:05Z`** - sn78 commit touches scoring: Add public registered-miner endpoint pilot
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -30,9 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
-| `sn21:scoring_commit:2026-08-30T05:20:42Z` | 21 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn21 commit touches scoring: fix(validator-api): serve the daily feeds without a weekly release |
-| `sn67:scoring_commit:2026-08-29T08:12:36Z` | 67 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260829.post1 |
-| `sn92:scoring_commit:2026-08-30T03:19:44Z` | 92 | SCORING_COMMIT | 2026-08-30T07:32:13Z | sn92 commit touches scoring: Satisfy strict typing across the validator, scoring, and engine paths |
 | `sn9:release:v4.12.10` | 9 | RELEASE | 2026-08-30T13:20:41Z | sn9 released v4.12.10 |
 | `sn21:scoring_commit:2026-08-30T11:29:22Z` | 21 | SCORING_COMMIT | 2026-08-30T13:20:41Z | sn21 commit touches scoring: docs(validator): stop implying a second validator can run the scorer |
 | `sn15:release:v1.2.11` | 15 | RELEASE | 2026-08-30T17:40:07Z | sn15 released v1.2.11 |
@@ -182,7 +169,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-05T21:34:19Z` | 71 | SCORING_COMMIT | 2026-09-05T22:21:43Z | sn71 commit touches scoring: chore(validator): bind existing recovery workflow identity |
 | `sn74:release:release-20260905-223823` | 74 | RELEASE | 2026-09-06T00:06:30Z | sn74 released release-20260905-223823 |
 | `sn74:scoring_commit:2026-09-05T20:51:26Z` | 74 | SCORING_COMMIT | 2026-09-06T00:06:30Z | sn74 commit touches scoring: serving miner: an attestation waits for prefill and holds admissions,… |
-| `sn45:readme_task_diff:8c971dd579660a1e` | 45 | README_TASK_DIFF | 2026-08-30T07:32:13Z | sn45 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-06T00:50:36Z` | 71 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin… |
+| `sn78:scoring_commit:2026-09-06T02:58:05Z` | 78 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn78 commit touches scoring: Add public registered-miner endpoint pilot |
 | `sn91:readme_task_diff:becad0b5e25c9292` | 91 | README_TASK_DIFF | 2026-08-30T13:20:41Z | sn91 README task/scoring sections changed |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |

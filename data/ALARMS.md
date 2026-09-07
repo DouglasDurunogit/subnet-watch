@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T06:01:03Z, block 9013628
+# ALARMS - generated 2026-09-07T12:21:35Z, block 9015524
 
-window: first_seen in [2026-09-07T04:46:32Z, 2026-09-07T06:01:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-07T11:07:04Z, 2026-09-07T12:22:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,39 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.6-1039587510` | 25 | RELEASE | P1 | 2026-09-07T06:01:32Z | sn25 released v2026.9.6-1039587510 |
-| `sn71:scoring_commit:2026-09-07T04:13:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T06:01:32Z | sn71 commit touches scoring: fix: verify active provider cache persistence |
+| `sn18:release:Release 2.1.4` | 18 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn18 released Release 2.1.4 |
+| `sn18:scoring_commit:2026-09-07T08:25:21Z` | 18 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn18 commit touches scoring: Stop emissions for non-participating miners (#88) |
+| `sn25:release:v2026.9.7-1039747440` | 25 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn25 released v2026.9.7-1039747440 |
+| `sn51:scoring_commit:2026-09-07T11:34:42Z` | 51 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289) |
+| `sn66:release:v.1.0.3: Web submissions, payouts, contr` | 66 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn66 released v.1.0.3: Web submissions, payouts, contributions... |
+| `sn67:scoring_commit:2026-09-07T07:03:25Z` | 67 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2 |
+| `sn71:scoring_commit:2026-09-07T06:56:29Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn71 commit touches scoring: chore: bind verified controller upgrade recovery |
+| `sn78:scoring_commit:2026-09-07T06:42:21Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn78 commit touches scoring: Harden macOS validator audit origin |
+| `sn92:scoring_commit:2026-09-07T08:17:20Z` | 92 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard… |
+| `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | P2 | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.9.6-1039587510`** - sn25 released v2026.9.6-1039587510
-  - published 2026-09-07T05:32:46Z (was v2026.9.4-1037600680)
-- **`sn71:scoring_commit:2026-09-07T04:13:16Z`** - sn71 commit touches scoring: fix: verify active provider cache persistence
+- **`sn18:release:Release 2.1.4`** - sn18 released Release 2.1.4
+  - published 2026-09-07T09:26:26Z (was Release 2.1.2)
+- **`sn18:scoring_commit:2026-09-07T08:25:21Z`** - sn18 commit touches scoring: Stop emissions for non-participating miners (#88)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.9.7-1039747440`** - sn25 released v2026.9.7-1039747440
+  - published 2026-09-07T09:56:03Z (was v2026.9.6-1039587510)
+- **`sn51:scoring_commit:2026-09-07T11:34:42Z`** - sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:release:v.1.0.3: Web submissions, payouts, contr`** - sn66 released v.1.0.3: Web submissions, payouts, contributions...
+  - published 2026-09-07T08:48:24Z (was Payment and IAM update)
+- **`sn67:scoring_commit:2026-09-07T07:03:25Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-07T06:56:29Z`** - sn71 commit touches scoring: chore: bind verified controller upgrade recovery
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-07T06:42:21Z`** - sn78 commit touches scoring: Harden macOS validator audit origin
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-09-07T08:17:20Z`** - sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn80:readme_task_diff:9cd93d83a14b7502`** - sn80 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -31,10 +55,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn91:scoring_commit:2026-08-31T05:05:09Z` | 91 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn91 commit touches scoring: validator: multi-horizon calibration telemetry — groundwork for the s… |
-| `sn92:scoring_commit:2026-08-31T06:03:36Z` | 92 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn92 commit touches scoring: Score module-shaped tasks in miner simulation under the pinned enviro… |
-| `sn101:scoring_commit:2026-08-31T03:21:03Z` | 101 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn101 commit touches scoring: Harden tag normalization and duplicate-set matching in scoring |
-| `sn111:scoring_commit:2026-08-31T02:59:02Z` | 111 | SCORING_COMMIT | 2026-08-31T07:00:21Z | sn111 commit touches scoring: feat(selection): make adaptive miner sample size configurable |
 | `sn3:scoring_commit:2026-08-31T08:14:55Z` | 3 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling |
 | `sn50:scoring_commit:2026-08-31T13:14:24Z` | 50 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320) |
 | `sn51:scoring_commit:2026-08-31T12:25:43Z` | 51 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254) |
@@ -182,6 +202,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
 | `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
 | `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
+| `sn25:release:v2026.9.6-1039587510` | 25 | RELEASE | 2026-09-07T06:01:32Z | sn25 released v2026.9.6-1039587510 |
+| `sn71:scoring_commit:2026-09-07T04:13:16Z` | 71 | SCORING_COMMIT | 2026-09-07T06:01:32Z | sn71 commit touches scoring: fix: verify active provider cache persistence |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |

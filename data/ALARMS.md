@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T21:27:56Z, block 9018251
+# ALARMS - generated 2026-09-07T23:47:52Z, block 9018950
 
-window: first_seen in [2026-09-07T20:13:22Z, 2026-09-07T21:28:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-07T22:33:23Z, 2026-09-07T23:48:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-09-07T19:27:24Z` | 10 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits |
-| `sn71:scoring_commit:2026-09-07T19:51:59Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion… |
-| `sn78:scoring_commit:2026-09-07T20:51:50Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn78 commit touches scoring: Open miner pilot enrollment |
-| `sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine` | 96 | RELEASE | P1 | 2026-09-07T21:28:22Z | sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving |
-| `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
+| `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | P1 | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
+| `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-09-07T19:27:24Z`** - sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits
+- **`sn25:scoring_commit:2026-09-07T16:54:02Z`** - sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-07T19:51:59Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-07T20:51:50Z`** - sn78 commit touches scoring: Open miner pilot enrollment
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine`** - sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving
-  - published 2026-09-07T20:36:31Z (was Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving)
-- **`sn104:scoring_commit:2026-09-07T18:34:43Z`** - sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements
+- **`sn78:scoring_commit:2026-09-07T23:46:59Z`** - sn78 commit touches scoring: Fix pilot deployment validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -188,6 +179,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-09-07T16:11:18Z` | 34 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation |
 | `sn38:scoring_commit:2026-09-07T12:36:00Z` | 38 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
 | `sn66:scoring_commit:2026-09-07T15:27:35Z` | 66 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl… |
+| `sn10:scoring_commit:2026-09-07T19:27:24Z` | 10 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits |
+| `sn71:scoring_commit:2026-09-07T19:51:59Z` | 71 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion… |
+| `sn78:scoring_commit:2026-09-07T20:51:50Z` | 78 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn78 commit touches scoring: Open miner pilot enrollment |
+| `sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine` | 96 | RELEASE | 2026-09-07T21:28:22Z | sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving |
+| `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |

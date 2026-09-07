@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-07T21:27:56Z · block 9018251 · run_status **ok**_
+_snapshot 2026-09-07T23:47:52Z · block 9018950 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 56 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 90 | `miner_burn` < 0.99 |
 | Ranked | 91 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **56** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,9 +29,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
-| 0–0.2 | 12 | `██████` |
-| 0.2–0.4 | 4 | `██` |
+| 0 (none) | 59 | `████████████████████████████` |
+| 0–0.2 | 10 | `█████` |
+| 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 3 | `█` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 4 | `██` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn114 SOMA | 87.3 | 1,004 | 8,041 | cpu-small | 4 | 80% |
-| 2 | sn92 MicroTensor | 79 | 125 | 377 | cpu-small | 9 | 50% |
-| 3 | sn107 Minos | 77 | 93.16 | 5,980 | cpu-small | 21 | 80% |
-| 4 | sn3 Teutonic | 76.1 | 4,590 | 4,590 = | rtx4090* | 5 | 20% |
-| 5 | sn67 Harnyx | 72.8 | 25.17 | 423 | cpu-small | 129 | 11% |
-| 6 | sn102 ConnitoAI | 71.5 | 1,167 | 1,637 | rtx4090* | 6 | 29% |
-| 7 | sn96 Verathos | 71 | 43.56 | 492 | rtx4090 | 77 | 30% |
-| 8 | sn91 cascade | 70.5 | 868 | 3,497 | rtx4090* | 5 | 52% |
-| 9 | sn80 OpenRoboto | 70.3 | 807 | 5,124 | rtx4090* | 5 | 43% |
-| 10 | sn11 TrajectoryRL | 68.8 | 7,038 | 7,038 = | cpu-small | 1 | 100% |
-| 11 | sn62 Ridges | 68.2 | 430 | 1,276 | rtx4090* | 13 | 26% |
-| 12 | sn124 Swarm | 66.9 | 302 | 931 | rtx4090* | 25 | 11% |
-| 13 | sn111 Claims | 66.6 | 292 | 2,620 | rtx4090* | 5 | 55% |
-| 14 | sn14 Cacheon | 64.4 | 139 | 2,521 | rtx4090* | 9 | 35% |
-| 15 | sn65 True Performance | 62.7 | 93.67 | 196 | rtx4090* | 6 | 75% |
-| 16 | sn21 AdTAO | 62.4 | 2.94 | 252 | cpu-small | 16 | 45% |
-| 17 | sn28 SayGM | 61.3 | 56.99 | 11,407 | rtx4090* | 46 | 70% |
-| 18 | sn108 Prometheon | 60.7 | 46.56 | 138 | rtx4090* | 10 | 33% |
-| 19 | sn41 Almanac | 60.6 | 41.94 | 106 | cpu-small | 85 | 6% |
-| 20 | sn51 lium.io | 58.2 | 30.60 | 3,100 | rtx4090* | 63 | 76% |
+| 1 | sn114 SOMA | 87.2 | 994 | 7,957 | cpu-small | 4 | 80% |
+| 2 | sn92 MicroTensor | 79 | 124 | 375 | cpu-small | 9 | 50% |
+| 3 | sn107 Minos | 77.5 | 102 | 6,292 | cpu-small | 21 | 81% |
+| 4 | sn3 Teutonic | 76.1 | 4,603 | 4,603 = | rtx4090* | 5 | 20% |
+| 5 | sn67 Harnyx | 72.8 | 25.04 | 421 | cpu-small | 129 | 11% |
+| 6 | sn96 Verathos | 71 | 43.49 | 468 | rtx4090 | 75 | 30% |
+| 7 | sn102 ConnitoAI | 70.7 | 918 | 2,305 | rtx4090* | 5 | 41% |
+| 8 | sn91 cascade | 70.5 | 859 | 3,462 | rtx4090* | 5 | 52% |
+| 9 | sn80 OpenRoboto | 70.2 | 777 | 4,935 | rtx4090* | 5 | 43% |
+| 10 | sn11 TrajectoryRL | 68.8 | 7,002 | 7,002 = | cpu-small | 1 | 100% |
+| 11 | sn62 Ridges | 68.2 | 427 | 1,269 | rtx4090* | 13 | 26% |
+| 12 | sn38 ChronoLLM | 67.2 | 138 | 2,925 | cpu-small | 10 | 52% |
+| 13 | sn124 Swarm | 66.8 | 299 | 925 | rtx4090* | 25 | 11% |
+| 14 | sn111 Claims | 66.6 | 290 | 2,604 | rtx4090* | 5 | 55% |
+| 15 | sn14 Cacheon | 63.8 | 115 | 2,595 | rtx4090* | 10 | 36% |
+| 16 | sn65 True Performance | 62.7 | 93.00 | 194 | rtx4090* | 6 | 75% |
+| 17 | sn21 AdTAO | 62.4 | 2.91 | 250 | cpu-small | 16 | 45% |
+| 18 | sn28 SayGM | 60.9 | 49.89 | 11,364 | rtx4090* | 59 | 71% |
+| 19 | sn108 Prometheon | 60.7 | 46.26 | 137 | rtx4090* | 10 | 33% |
+| 20 | sn41 Almanac | 60.5 | 41.17 | 104 | cpu-small | 85 | 7% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
-| concentrated (30–60%) | 21 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 24 |
 | dominated (60–90%) | 18 |
-| captured (>90%) | 21 |
+| captured (>90%) | 20 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-07T23:48 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Checkpoint historical validator schedule  |
+| 2026-09-07T23:48 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Fix pilot deployment validation |
 | 2026-09-07T21:28 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/a |
 | 2026-09-07T21:28 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main |
 | 2026-09-07T21:28 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Open miner pilot enrollment |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-07T12:22 | sn18 | RELEASE | sn18 released Release 2.1.4 |
 | 2026-09-07T12:22 | sn18 | SCORING_COMMIT | sn18 commit touches scoring: Stop emissions for non-participating mine |
 | 2026-09-07T12:22 | sn25 | RELEASE | sn25 released v2026.9.7-1039747440 |
-| 2026-09-07T12:22 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: [P1] feat: run the miners tests and ruff  |
-| 2026-09-07T12:22 | sn66 | RELEASE | sn66 released v.1.0.3: Web submissions, payouts, contributions... |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T12:21:35Z, block 9015524
+# ALARMS - generated 2026-09-07T17:49:20Z, block 9017159
 
-window: first_seen in [2026-09-07T11:07:04Z, 2026-09-07T12:22:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-07T16:34:43Z, 2026-09-07T17:49:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn18:release:Release 2.1.4` | 18 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn18 released Release 2.1.4 |
-| `sn18:scoring_commit:2026-09-07T08:25:21Z` | 18 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn18 commit touches scoring: Stop emissions for non-participating miners (#88) |
-| `sn25:release:v2026.9.7-1039747440` | 25 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn25 released v2026.9.7-1039747440 |
-| `sn51:scoring_commit:2026-09-07T11:34:42Z` | 51 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289) |
-| `sn66:release:v.1.0.3: Web submissions, payouts, contr` | 66 | RELEASE | P1 | 2026-09-07T12:22:04Z | sn66 released v.1.0.3: Web submissions, payouts, contributions... |
-| `sn67:scoring_commit:2026-09-07T07:03:25Z` | 67 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2 |
-| `sn71:scoring_commit:2026-09-07T06:56:29Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn71 commit touches scoring: chore: bind verified controller upgrade recovery |
-| `sn78:scoring_commit:2026-09-07T06:42:21Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn78 commit touches scoring: Harden macOS validator audit origin |
-| `sn92:scoring_commit:2026-09-07T08:17:20Z` | 92 | SCORING_COMMIT | P1 | 2026-09-07T12:22:04Z | sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard… |
-| `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | P2 | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
+| `sn1:release:v4.4.2` | 1 | RELEASE | P1 | 2026-09-07T17:49:43Z | sn1 released v4.4.2 |
+| `sn25:release:v2026.9.7-1039843330` | 25 | RELEASE | P1 | 2026-09-07T17:49:43Z | sn25 released v2026.9.7-1039843330 |
+| `sn34:scoring_commit:2026-09-07T16:11:18Z` | 34 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation |
+| `sn38:scoring_commit:2026-09-07T12:36:00Z` | 38 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
+| `sn66:scoring_commit:2026-09-07T15:27:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl… |
 
 ### detail
 
-- **`sn18:release:Release 2.1.4`** - sn18 released Release 2.1.4
-  - published 2026-09-07T09:26:26Z (was Release 2.1.2)
-- **`sn18:scoring_commit:2026-09-07T08:25:21Z`** - sn18 commit touches scoring: Stop emissions for non-participating miners (#88)
+- **`sn1:release:v4.4.2`** - sn1 released v4.4.2
+  - published 2026-09-07T13:20:55Z (was v4.4.1)
+- **`sn25:release:v2026.9.7-1039843330`** - sn25 released v2026.9.7-1039843330
+  - published 2026-09-07T12:36:46Z (was v2026.9.7-1039747440)
+- **`sn34:scoring_commit:2026-09-07T16:11:18Z`** - sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.7-1039747440`** - sn25 released v2026.9.7-1039747440
-  - published 2026-09-07T09:56:03Z (was v2026.9.6-1039587510)
-- **`sn51:scoring_commit:2026-09-07T11:34:42Z`** - sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289)
+- **`sn38:scoring_commit:2026-09-07T12:36:00Z`** - sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v.1.0.3: Web submissions, payouts, contr`** - sn66 released v.1.0.3: Web submissions, payouts, contributions...
-  - published 2026-09-07T08:48:24Z (was Payment and IAM update)
-- **`sn67:scoring_commit:2026-09-07T07:03:25Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2
+- **`sn66:scoring_commit:2026-09-07T15:27:35Z`** - sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-07T06:56:29Z`** - sn71 commit touches scoring: chore: bind verified controller upgrade recovery
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-07T06:42:21Z`** - sn78 commit touches scoring: Harden macOS validator audit origin
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-09-07T08:17:20Z`** - sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn80:readme_task_diff:9cd93d83a14b7502`** - sn80 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -55,13 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn3:scoring_commit:2026-08-31T08:14:55Z` | 3 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn3 commit touches scoring: Implement evaluation reuse limit handling and cleanup scheduling |
-| `sn50:scoring_commit:2026-08-31T13:14:24Z` | 50 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn50 commit touches scoring: feat(validator): blend VHFT (Synth Ultra) as a 4th competition (#320) |
-| `sn51:scoring_commit:2026-08-31T12:25:43Z` | 51 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn51 commit touches scoring: DAH-2090, validate one executor on request from the backend (#1254) |
-| `sn56:scoring_commit:2026-08-31T13:13:56Z` | 56 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn56 commit touches scoring: Preserve replacement-task invariants across prep-failure reroutes. (#… |
-| `sn67:scoring_commit:2026-08-31T06:48:15Z` | 67 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260831.post1 |
-| `sn92:scoring_commit:2026-08-31T13:00:04Z` | 92 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn92 commit touches scoring: Add the novel partition and blend it into the score at its task share |
-| `sn97:scoring_commit:2026-08-29T21:22:36Z` | 97 | SCORING_COMMIT | 2026-08-31T15:03:06Z | sn97 commit touches scoring: fix: skip hidden files from validation |
 | `sn15:release:v1.2.12` | 15 | RELEASE | 2026-08-31T20:48:23Z | sn15 released v1.2.12 |
 | `sn15:scoring_commit:2026-08-31T16:04:15Z` | 15 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn15 commit touches scoring: fix(validator): don't fail runs on incomplete reasoning-judge coverag… |
 | `sn38:scoring_commit:2026-08-31T17:33:12Z` | 38 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
@@ -204,6 +182,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
 | `sn25:release:v2026.9.6-1039587510` | 25 | RELEASE | 2026-09-07T06:01:32Z | sn25 released v2026.9.6-1039587510 |
 | `sn71:scoring_commit:2026-09-07T04:13:16Z` | 71 | SCORING_COMMIT | 2026-09-07T06:01:32Z | sn71 commit touches scoring: fix: verify active provider cache persistence |
+| `sn18:release:Release 2.1.4` | 18 | RELEASE | 2026-09-07T12:22:04Z | sn18 released Release 2.1.4 |
+| `sn18:scoring_commit:2026-09-07T08:25:21Z` | 18 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn18 commit touches scoring: Stop emissions for non-participating miners (#88) |
+| `sn25:release:v2026.9.7-1039747440` | 25 | RELEASE | 2026-09-07T12:22:04Z | sn25 released v2026.9.7-1039747440 |
+| `sn51:scoring_commit:2026-09-07T11:34:42Z` | 51 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289) |
+| `sn66:release:v.1.0.3: Web submissions, payouts, contr` | 66 | RELEASE | 2026-09-07T12:22:04Z | sn66 released v.1.0.3: Web submissions, payouts, contributions... |
+| `sn67:scoring_commit:2026-09-07T07:03:25Z` | 67 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2 |
+| `sn71:scoring_commit:2026-09-07T06:56:29Z` | 71 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn71 commit touches scoring: chore: bind verified controller upgrade recovery |
+| `sn78:scoring_commit:2026-09-07T06:42:21Z` | 78 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn78 commit touches scoring: Harden macOS validator audit origin |
+| `sn92:scoring_commit:2026-09-07T08:17:20Z` | 92 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard… |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
@@ -226,6 +213,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
+| `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

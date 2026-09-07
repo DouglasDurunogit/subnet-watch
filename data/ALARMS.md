@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T00:56:49Z, block 9012108
+# ALARMS - generated 2026-09-07T06:01:03Z, block 9013628
 
-window: first_seen in [2026-09-06T23:42:22Z, 2026-09-07T00:57:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-07T04:46:32Z, 2026-09-07T06:01:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | P1 | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
-| `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | P1 | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
+| `sn25:release:v2026.9.6-1039587510` | 25 | RELEASE | P1 | 2026-09-07T06:01:32Z | sn25 released v2026.9.6-1039587510 |
+| `sn71:scoring_commit:2026-09-07T04:13:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T06:01:32Z | sn71 commit touches scoring: fix: verify active provider cache persistence |
 
 ### detail
 
-- **`sn34:release:5.0.0 — King of the Hill`** - sn34 released 5.0.0 — King of the Hill
-  - published 2026-09-06T23:19:30Z (was Release 4.9.8)
-- **`sn91:scoring_commit:2026-09-04T21:55:54Z`** - sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats)
+- **`sn25:release:v2026.9.6-1039587510`** - sn25 released v2026.9.6-1039587510
+  - published 2026-09-07T05:32:46Z (was v2026.9.4-1037600680)
+- **`sn71:scoring_commit:2026-09-07T04:13:16Z`** - sn71 commit touches scoring: fix: verify active provider cache persistence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -180,6 +180,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
 | `sn93:scoring_commit:2026-09-06T20:14:30Z` | 93 | SCORING_COMMIT | 2026-09-06T20:52:43Z | sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171) |
 | `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
+| `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
+| `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |

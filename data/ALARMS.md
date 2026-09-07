@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T17:49:20Z, block 9017159
+# ALARMS - generated 2026-09-07T21:27:56Z, block 9018251
 
-window: first_seen in [2026-09-07T16:34:43Z, 2026-09-07T17:49:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-07T20:13:22Z, 2026-09-07T21:28:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.2` | 1 | RELEASE | P1 | 2026-09-07T17:49:43Z | sn1 released v4.4.2 |
-| `sn25:release:v2026.9.7-1039843330` | 25 | RELEASE | P1 | 2026-09-07T17:49:43Z | sn25 released v2026.9.7-1039843330 |
-| `sn34:scoring_commit:2026-09-07T16:11:18Z` | 34 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation |
-| `sn38:scoring_commit:2026-09-07T12:36:00Z` | 38 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
-| `sn66:scoring_commit:2026-09-07T15:27:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-07T17:49:43Z | sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl… |
+| `sn10:scoring_commit:2026-09-07T19:27:24Z` | 10 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits |
+| `sn71:scoring_commit:2026-09-07T19:51:59Z` | 71 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion… |
+| `sn78:scoring_commit:2026-09-07T20:51:50Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn78 commit touches scoring: Open miner pilot enrollment |
+| `sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine` | 96 | RELEASE | P1 | 2026-09-07T21:28:22Z | sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving |
+| `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | P1 | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
 
 ### detail
 
-- **`sn1:release:v4.4.2`** - sn1 released v4.4.2
-  - published 2026-09-07T13:20:55Z (was v4.4.1)
-- **`sn25:release:v2026.9.7-1039843330`** - sn25 released v2026.9.7-1039843330
-  - published 2026-09-07T12:36:46Z (was v2026.9.7-1039747440)
-- **`sn34:scoring_commit:2026-09-07T16:11:18Z`** - sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation
+- **`sn10:scoring_commit:2026-09-07T19:27:24Z`** - sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn38:scoring_commit:2026-09-07T12:36:00Z`** - sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida…
+- **`sn71:scoring_commit:2026-09-07T19:51:59Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-07T15:27:35Z`** - sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl…
+- **`sn78:scoring_commit:2026-09-07T20:51:50Z`** - sn78 commit touches scoring: Open miner pilot enrollment
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine`** - sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving
+  - published 2026-09-07T20:36:31Z (was Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving)
+- **`sn104:scoring_commit:2026-09-07T18:34:43Z`** - sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,14 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn15:release:v1.2.12` | 15 | RELEASE | 2026-08-31T20:48:23Z | sn15 released v1.2.12 |
-| `sn15:scoring_commit:2026-08-31T16:04:15Z` | 15 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn15 commit touches scoring: fix(validator): don't fail runs on incomplete reasoning-judge coverag… |
-| `sn38:scoring_commit:2026-08-31T17:33:12Z` | 38 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
-| `sn50:release:v1.12.0` | 50 | RELEASE | 2026-08-31T20:48:23Z | sn50 released v1.12.0 |
-| `sn92:release:v0.3.0` | 92 | RELEASE | 2026-08-31T20:48:23Z | sn92 released v0.3.0 |
-| `sn92:scoring_commit:2026-08-31T20:39:51Z` | 92 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn92 commit touches scoring: Grant the validator container the capability the network jail needs |
-| `sn111:scoring_commit:2026-08-31T20:40:04Z` | 111 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn111 commit touches scoring: feat(selection): diversify adaptive miner draws |
-| `sn124:scoring_commit:2026-08-31T19:33:52Z` | 124 | SCORING_COMMIT | 2026-08-31T20:48:23Z | sn124 commit touches scoring: Merge pull request #118 from swarm-subnet/feature/ali/miner-folder-mi… |
 | `sn25:release:v2026.8.31-1034210530` | 25 | RELEASE | 2026-09-01T00:34:46Z | sn25 released v2026.8.31-1034210530 |
 | `sn25:scoring_commit:2026-09-01T00:06:51Z` | 25 | SCORING_COMMIT | 2026-09-01T00:34:46Z | sn25 commit touches scoring: Batch carried fleet refresh verification |
 | `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
@@ -191,7 +183,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-07T06:56:29Z` | 71 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn71 commit touches scoring: chore: bind verified controller upgrade recovery |
 | `sn78:scoring_commit:2026-09-07T06:42:21Z` | 78 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn78 commit touches scoring: Harden macOS validator audit origin |
 | `sn92:scoring_commit:2026-09-07T08:17:20Z` | 92 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard… |
-| `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
+| `sn1:release:v4.4.2` | 1 | RELEASE | 2026-09-07T17:49:43Z | sn1 released v4.4.2 |
+| `sn25:release:v2026.9.7-1039843330` | 25 | RELEASE | 2026-09-07T17:49:43Z | sn25 released v2026.9.7-1039843330 |
+| `sn34:scoring_commit:2026-09-07T16:11:18Z` | 34 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation |
+| `sn38:scoring_commit:2026-09-07T12:36:00Z` | 38 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
+| `sn66:scoring_commit:2026-09-07T15:27:35Z` | 66 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn66 commit touches scoring: Merge pull request #76 from conjectures-io/fix/verifier-cache-readabl… |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |

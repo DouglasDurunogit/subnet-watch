@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-06T22:52:27Z, block 9011488
+# ALARMS - generated 2026-09-07T00:56:49Z, block 9012108
 
-window: first_seen in [2026-09-06T21:37:57Z, 2026-09-06T22:52:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-06T23:42:22Z, 2026-09-07T00:57:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | P1 | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
-| `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | P2 | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
+| `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | P1 | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
+| `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | P1 | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-06T21:52:49Z`** - sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation
+- **`sn34:release:5.0.0 — King of the Hill`** - sn34 released 5.0.0 — King of the Hill
+  - published 2026-09-06T23:19:30Z (was Release 4.9.8)
+- **`sn91:scoring_commit:2026-09-04T21:55:54Z`** - sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:readme_task_diff:535b78cbd7d6207d`** - sn34 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -179,6 +179,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-06T15:00:42Z` | 25 | SCORING_COMMIT | 2026-09-06T16:12:33Z | sn25 commit touches scoring: Integrate qualified Solidity validator activation verification |
 | `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
 | `sn93:scoring_commit:2026-09-06T20:14:30Z` | 93 | SCORING_COMMIT | 2026-09-06T20:52:43Z | sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171) |
+| `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
 | `sn38:readme_task_diff:6d6f3dfd29d211ce` | 38 | README_TASK_DIFF | 2026-08-31T20:48:23Z | sn38 README task/scoring sections changed |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
@@ -200,6 +201,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
+| `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

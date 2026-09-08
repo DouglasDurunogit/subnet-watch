@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-09-08T04:27:26Z  |  block: 9020347  |  row_status: ok
+snapshot_utc: 2026-09-08T09:01:29Z  |  block: 9021717  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (51.18000000000001 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 121  |  free: 0
-- subnet age: 805.6 days  |  registered at block 3219949
+- registration cost: 0.2 TAO (50.596000000000004 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 116  |  free: 0
+- subnet age: 805.8 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 306.120480148394** (uid 117) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.06368885470683325
-- top_miner_usd_day: 468.14492652257786 (uid 119, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 316.3543615838517** (uid 117) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.06318241693306403
+- top_miner_usd_day: 485.0514147951326 (uid 119, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 108  |  gini: 0.9363294289764879  |  top1_share: 0.22473095267212917  |  top10_share: 0.9566925522807874
+- earners: 103  |  gini: 0.9350764243784364  |  top1_share: 0.23474551653492742  |  top10_share: 0.9513966395034171
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-08T04:27:26Z  |  block: 9020347  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9226 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9231 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 36.0 (rank 57), confidence 1.0 
+- score: 36.0 (rank 56), confidence 1.0 
 - components: income 0.0 / freshness 21.0 / resource 15.0 / registration 0.0
-- freshness basis: WEIGHTS_VERSION_BUMP 25d ago
+- freshness basis: WEIGHTS_VERSION_BUMP 26d ago
 
 ## On-chain description
 

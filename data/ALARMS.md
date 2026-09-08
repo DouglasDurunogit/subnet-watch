@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-08T04:27:26Z, block 9020347
+# ALARMS - generated 2026-09-08T09:01:29Z, block 9021717
 
-window: first_seen in [2026-09-08T03:12:58Z, 2026-09-08T04:27:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T07:47:01Z, 2026-09-08T09:02:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
-| `sn71:scoring_commit:2026-09-08T03:48:46Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation |
-| `sn74:release:release-20260908-031700` | 74 | RELEASE | P1 | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
-| `sn92:scoring_commit:2026-09-08T00:30:17Z` | 92 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn92 commit touches scoring: cost is total task latency for every system; empty profile responses … |
-| `sn100:scoring_commit:2026-09-08T02:08:11Z` | 100 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234) |
-| `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | P2 | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
+| `sn66:scoring_commit:2026-09-08T04:45:40Z` | 66 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies |
+| `sn71:scoring_commit:2026-09-08T06:56:07Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff |
+| `sn80:scoring_commit:2026-09-08T07:33:08Z` | 80 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn80 commit touches scoring: docs: link shared real-robot task catalog and training data |
+| `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | P2 | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
+| `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | P2 | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
 
 ### detail
 
-- **`sn67:scoring_commit:2026-09-07T09:39:54Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3
+- **`sn66:scoring_commit:2026-09-08T04:45:40Z`** - sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-08T03:48:46Z`** - sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation
+- **`sn71:scoring_commit:2026-09-08T06:56:07Z`** - sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260908-031700`** - sn74 released release-20260908-031700
-  - published 2026-09-08T02:01:58Z (was release-20260905-223823)
-- **`sn92:scoring_commit:2026-09-08T00:30:17Z`** - sn92 commit touches scoring: cost is total task latency for every system; empty profile responses …
+- **`sn80:scoring_commit:2026-09-08T07:33:08Z`** - sn80 commit touches scoring: docs: link shared real-robot task catalog and training data
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-08T02:08:11Z`** - sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:readme_task_diff:02d3c62272b1d7dd`** - sn67 README task/scoring sections changed
+- **`sn66:readme_task_diff:1677dd0cb94b82d3`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn80:readme_task_diff:ef9838874bfda548`** - sn80 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -196,7 +193,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
 | `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
 | `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
-| `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
+| `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
+| `sn71:scoring_commit:2026-09-08T03:48:46Z` | 71 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation |
+| `sn74:release:release-20260908-031700` | 74 | RELEASE | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
+| `sn92:scoring_commit:2026-09-08T00:30:17Z` | 92 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn92 commit touches scoring: cost is total task latency for every system; empty profile responses … |
+| `sn100:scoring_commit:2026-09-08T02:08:11Z` | 100 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234) |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
 | `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
@@ -218,6 +219,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
+| `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

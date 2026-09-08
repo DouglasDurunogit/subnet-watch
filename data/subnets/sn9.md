@@ -1,25 +1,25 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-09-08T09:01:29Z  |  block: 9021717  |  row_status: ok
+snapshot_utc: 2026-09-08T13:32:23Z  |  block: 9023072  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.24874715646728873**
-- registration cost: 0.0005 TAO (0.12649 USD), open=True
+- miner_burn: **0.25063625583425164**
+- registration cost: 0.0005 TAO (0.12619 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 1046.1 days  |  registered at block 1489797
+- subnet age: 1046.3 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 14507.369578360041** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 5382.724803041996
-- top_miner_usd_day: 14507.369578360041 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 14646.597202992505** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 5396.7373098044245
+- top_miner_usd_day: 14646.597202992505 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.3930437082589435  |  top1_share: 0.6704103276211985  |  top10_share: 1.0
-- owner_incentive_share: 0.24874490714601805 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.40737123732210234  |  top1_share: 0.6802117984557634  |  top10_share: 1.0
+- owner_incentive_share: 0.2506332590716269 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,7 +27,7 @@ snapshot_utc: 2026-09-08T09:01:29Z  |  block: 9021717  |  row_status: ok
 - resolved URL: `https://github.com/macrocosm-os/iota`
 - status: **ok** 
 - README: 3272 bytes, sha 345999280406c0a7
-- latest release: v4.12.10 2026-08-30T08:30:36Z
+- latest release: v4.12.14 2026-09-08T11:50:47Z
 - last commit: 2026-08-30T08:30:33Z
 - scoring-related commit: (none) 
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-08T09:01:29Z  |  block: 9021717  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 14499.1504 USD/day  |  payback on registration: 0.0 days
+- net margin: 14638.378 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 48.1 (rank 37), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 37.85 / freshness 21.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 9d ago
+- score: 56.5 (rank 22), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 37.89 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-08T09:01:29Z, block 9021717
+# ALARMS - generated 2026-09-08T13:32:23Z, block 9023072
 
-window: first_seen in [2026-09-08T07:47:01Z, 2026-09-08T09:02:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T12:17:58Z, 2026-09-08T13:32:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-09-08T04:45:40Z` | 66 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies |
-| `sn71:scoring_commit:2026-09-08T06:56:07Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff |
-| `sn80:scoring_commit:2026-09-08T07:33:08Z` | 80 | SCORING_COMMIT | P1 | 2026-09-08T09:02:01Z | sn80 commit touches scoring: docs: link shared real-robot task catalog and training data |
-| `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | P2 | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
-| `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | P2 | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
+| `sn9:release:v4.12.14` | 9 | RELEASE | P1 | 2026-09-08T13:32:58Z | sn9 released v4.12.14 |
+| `sn10:scoring_commit:2026-09-08T09:22:29Z` | 10 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans… |
+| `sn34:scoring_commit:2026-09-08T03:06:21Z` | 34 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate. |
+| `sn71:scoring_commit:2026-09-08T13:29:02Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn71 commit touches scoring: Verify approved prior testnet release boots |
+| `sn100:scoring_commit:2026-09-08T09:44:43Z` | 100 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239) |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-09-08T04:45:40Z`** - sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies
+- **`sn9:release:v4.12.14`** - sn9 released v4.12.14
+  - published 2026-09-08T11:50:47Z (was v4.12.10)
+- **`sn10:scoring_commit:2026-09-08T09:22:29Z`** - sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-08T06:56:07Z`** - sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff
+- **`sn34:scoring_commit:2026-09-08T03:06:21Z`** - sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn80:scoring_commit:2026-09-08T07:33:08Z`** - sn80 commit touches scoring: docs: link shared real-robot task catalog and training data
+- **`sn71:scoring_commit:2026-09-08T13:29:02Z`** - sn71 commit touches scoring: Verify approved prior testnet release boots
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:1677dd0cb94b82d3`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn80:readme_task_diff:ef9838874bfda548`** - sn80 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn100:scoring_commit:2026-09-08T09:44:43Z`** - sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -40,10 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
-| `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
-| `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
-| `sn111:scoring_commit:2026-09-01T08:48:59Z` | 111 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn111 commit touches scoring: feat(selection): harden adaptive miner selection |
 | `sn23:scoring_commit:2026-09-01T13:59:39Z` | 23 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update |
 | `sn92:release:v0.3.2` | 92 | RELEASE | 2026-09-01T15:14:15Z | sn92 released v0.3.2 |
 | `sn97:scoring_commit:2026-09-01T07:58:22Z` | 97 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive |
@@ -198,6 +194,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn74:release:release-20260908-031700` | 74 | RELEASE | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
 | `sn92:scoring_commit:2026-09-08T00:30:17Z` | 92 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn92 commit touches scoring: cost is total task latency for every system; empty profile responses … |
 | `sn100:scoring_commit:2026-09-08T02:08:11Z` | 100 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234) |
+| `sn66:scoring_commit:2026-09-08T04:45:40Z` | 66 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies |
+| `sn71:scoring_commit:2026-09-08T06:56:07Z` | 71 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff |
+| `sn80:scoring_commit:2026-09-08T07:33:08Z` | 80 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn80 commit touches scoring: docs: link shared real-robot task catalog and training data |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
 | `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
@@ -220,6 +219,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
+| `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
+| `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

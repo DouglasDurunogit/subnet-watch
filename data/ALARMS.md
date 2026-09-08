@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-08T17:33:49Z, block 9024277
+# ALARMS - generated 2026-09-08T20:19:25Z, block 9025105
 
-window: first_seen in [2026-09-08T16:19:23Z, 2026-09-08T17:34:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T19:04:51Z, 2026-09-08T20:19:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn34:burn_drop:0.799` | 34 | BURN_DROP | P0 | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
-| `sn121:burn_drop:0.610` | 121 | BURN_DROP | P0 | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
-| `sn25:release:v2026.9.8-1040779940` | 25 | RELEASE | P1 | 2026-09-08T17:34:23Z | sn25 released v2026.9.8-1040779940 |
-| `sn71:scoring_commit:2026-09-08T15:54:53Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-… |
-| `sn74:release:release-20260908-144557` | 74 | RELEASE | P1 | 2026-09-08T17:34:23Z | sn74 released release-20260908-144557 |
-| `sn92:scoring_commit:2026-09-08T14:53:18Z` | 92 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor |
-| `sn120:scoring_commit:2026-09-08T14:27:39Z` | 120 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w… |
+| `sn2:release:14.14.3` | 2 | RELEASE | P1 | 2026-09-08T20:19:51Z | sn2 released 14.14.3 |
+| `sn2:scoring_commit:2026-09-08T19:26:11Z` | 2 | SCORING_COMMIT | P1 | 2026-09-08T20:19:51Z | sn2 commit touches scoring: Introduce weight commit guard for epochs with zero miner scores (#627) |
+| `sn71:scoring_commit:2026-09-08T20:17:47Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T20:19:51Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
+| `sn78:scoring_commit:2026-09-08T17:55:55Z` | 78 | SCORING_COMMIT | P1 | 2026-09-08T20:19:51Z | sn78 commit touches scoring: Fix bootstrap image revision validation |
+| `sn96:release:Verathos v0.2.2 – Consistent Validator D` | 96 | RELEASE | P1 | 2026-09-08T20:19:51Z | sn96 released Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support |
 
 ### detail
 
-- **`sn34:burn_drop:0.799`** - sn34 burn fell 1.000 -> 0.799 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.610`** - sn121 burn fell 1.000 -> 0.610 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.9.8-1040779940`** - sn25 released v2026.9.8-1040779940
-  - published 2026-09-08T14:40:43Z (was v2026.9.7-1039843330)
-- **`sn71:scoring_commit:2026-09-08T15:54:53Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-…
+- **`sn2:release:14.14.3`** - sn2 released 14.14.3
+  - published 2026-09-08T19:57:51Z (was 14.14.2)
+- **`sn2:scoring_commit:2026-09-08T19:26:11Z`** - sn2 commit touches scoring: Introduce weight commit guard for epochs with zero miner scores (#627)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260908-144557`** - sn74 released release-20260908-144557
-  - published 2026-09-08T14:31:37Z (was release-20260908-031700)
-- **`sn92:scoring_commit:2026-09-08T14:53:18Z`** - sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor
+- **`sn71:scoring_commit:2026-09-08T20:17:47Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-08T14:27:39Z`** - sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w…
+- **`sn78:scoring_commit:2026-09-08T17:55:55Z`** - sn78 commit touches scoring: Fix bootstrap image revision validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.2.2 – Consistent Validator D`** - sn96 released Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support
+  - published 2026-09-08T18:18:53Z (was Verathos v0.2.1 – Sleipnir Cross-Machine Serving)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,13 +39,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn7:release:release-20260901-182140: Set miner burn ` | 7 | RELEASE | 2026-09-01T18:42:47Z | sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) |
-| `sn7:scoring_commit:2026-09-01T18:14:46Z` | 7 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710) |
-| `sn21:scoring_commit:2026-09-01T17:16:02Z` | 21 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners |
-| `sn25:release:v2026.9.1-1034848790` | 25 | RELEASE | 2026-09-01T18:42:47Z | sn25 released v2026.9.1-1034848790 |
-| `sn25:scoring_commit:2026-09-01T17:30:15Z` | 25 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn25 commit touches scoring: sim-testnet: verify direct Connect ingress |
-| `sn34:scoring_commit:2026-09-01T17:35:17Z` | 34 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn34 commit touches scoring: fix: show scoring-aligned augmented metrics (#432) |
-| `sn124:scoring_commit:2026-09-01T17:53:33Z` | 124 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn124 commit touches scoring: Merge pull request #120 from swarm-subnet/feature/ali/validator-folde… |
+| `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
+| `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn25:release:v2026.9.1-1034943860` | 25 | RELEASE | 2026-09-01T21:25:28Z | sn25 released v2026.9.1-1034943860 |
 | `sn92:scoring_commit:2026-09-01T21:01:49Z` | 92 | SCORING_COMMIT | 2026-09-01T21:25:28Z | sn92 commit touches scoring: Run the validator image on the pinned interpreter and build its envir… |
 | `sn104:scoring_commit:2026-08-30T09:59:38Z` | 104 | SCORING_COMMIT | 2026-09-01T23:29:32Z | sn104 commit touches scoring: multiple llm key and improve the scoring mechanism |
@@ -201,7 +190,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-09-08T03:06:21Z` | 34 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate. |
 | `sn71:scoring_commit:2026-09-08T13:29:02Z` | 71 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn71 commit touches scoring: Verify approved prior testnet release boots |
 | `sn100:scoring_commit:2026-09-08T09:44:43Z` | 100 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239) |
-| `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
+| `sn25:release:v2026.9.8-1040779940` | 25 | RELEASE | 2026-09-08T17:34:23Z | sn25 released v2026.9.8-1040779940 |
+| `sn71:scoring_commit:2026-09-08T15:54:53Z` | 71 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-… |
+| `sn74:release:release-20260908-144557` | 74 | RELEASE | 2026-09-08T17:34:23Z | sn74 released release-20260908-144557 |
+| `sn92:scoring_commit:2026-09-08T14:53:18Z` | 92 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor |
+| `sn120:scoring_commit:2026-09-08T14:27:39Z` | 120 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w… |
 | `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |

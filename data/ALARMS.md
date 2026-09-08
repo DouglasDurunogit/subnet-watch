@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-07T23:47:52Z, block 9018950
+# ALARMS - generated 2026-09-08T04:27:26Z, block 9020347
 
-window: first_seen in [2026-09-07T22:33:23Z, 2026-09-07T23:48:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T03:12:58Z, 2026-09-08T04:27:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | P1 | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
-| `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | P1 | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
+| `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
+| `sn71:scoring_commit:2026-09-08T03:48:46Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation |
+| `sn74:release:release-20260908-031700` | 74 | RELEASE | P1 | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
+| `sn92:scoring_commit:2026-09-08T00:30:17Z` | 92 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn92 commit touches scoring: cost is total task latency for every system; empty profile responses … |
+| `sn100:scoring_commit:2026-09-08T02:08:11Z` | 100 | SCORING_COMMIT | P1 | 2026-09-08T04:27:58Z | sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234) |
+| `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | P2 | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-07T16:54:02Z`** - sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress
+- **`sn67:scoring_commit:2026-09-07T09:39:54Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-07T23:46:59Z`** - sn78 commit touches scoring: Fix pilot deployment validation
+- **`sn71:scoring_commit:2026-09-08T03:48:46Z`** - sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260908-031700`** - sn74 released release-20260908-031700
+  - published 2026-09-08T02:01:58Z (was release-20260905-223823)
+- **`sn92:scoring_commit:2026-09-08T00:30:17Z`** - sn92 commit touches scoring: cost is total task latency for every system; empty profile responses …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-08T02:08:11Z`** - sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:readme_task_diff:02d3c62272b1d7dd`** - sn67 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -31,8 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn25:release:v2026.8.31-1034210530` | 25 | RELEASE | 2026-09-01T00:34:46Z | sn25 released v2026.8.31-1034210530 |
-| `sn25:scoring_commit:2026-09-01T00:06:51Z` | 25 | SCORING_COMMIT | 2026-09-01T00:34:46Z | sn25 commit touches scoring: Batch carried fleet refresh verification |
 | `sn25:scoring_commit:2026-09-01T10:14:28Z` | 25 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn25 commit touches scoring: Verify carried conviction under its source policy |
 | `sn63:scoring_commit:2026-09-01T06:34:11Z` | 63 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn63 commit touches scoring: Support multiple validations on single validator and update cli ux |
 | `sn67:scoring_commit:2026-09-01T06:46:40Z` | 67 | SCORING_COMMIT | 2026-09-01T10:31:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post1 |
@@ -184,6 +194,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-07T20:51:50Z` | 78 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn78 commit touches scoring: Open miner pilot enrollment |
 | `sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine` | 96 | RELEASE | 2026-09-07T21:28:22Z | sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving |
 | `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
+| `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
+| `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
 | `sn80:readme_task_diff:c3d88acb03906c81` | 80 | README_TASK_DIFF | 2026-09-01T05:44:42Z | sn80 README task/scoring sections changed |
 | `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-08T13:32:23Z, block 9023072
+# ALARMS - generated 2026-09-08T17:33:49Z, block 9024277
 
-window: first_seen in [2026-09-08T12:17:58Z, 2026-09-08T13:32:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T16:19:23Z, 2026-09-08T17:34:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.12.14` | 9 | RELEASE | P1 | 2026-09-08T13:32:58Z | sn9 released v4.12.14 |
-| `sn10:scoring_commit:2026-09-08T09:22:29Z` | 10 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans… |
-| `sn34:scoring_commit:2026-09-08T03:06:21Z` | 34 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate. |
-| `sn71:scoring_commit:2026-09-08T13:29:02Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn71 commit touches scoring: Verify approved prior testnet release boots |
-| `sn100:scoring_commit:2026-09-08T09:44:43Z` | 100 | SCORING_COMMIT | P1 | 2026-09-08T13:32:58Z | sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239) |
+| `sn34:burn_drop:0.799` | 34 | BURN_DROP | P0 | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
+| `sn121:burn_drop:0.610` | 121 | BURN_DROP | P0 | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
+| `sn25:release:v2026.9.8-1040779940` | 25 | RELEASE | P1 | 2026-09-08T17:34:23Z | sn25 released v2026.9.8-1040779940 |
+| `sn71:scoring_commit:2026-09-08T15:54:53Z` | 71 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-… |
+| `sn74:release:release-20260908-144557` | 74 | RELEASE | P1 | 2026-09-08T17:34:23Z | sn74 released release-20260908-144557 |
+| `sn92:scoring_commit:2026-09-08T14:53:18Z` | 92 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor |
+| `sn120:scoring_commit:2026-09-08T14:27:39Z` | 120 | SCORING_COMMIT | P1 | 2026-09-08T17:34:23Z | sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w… |
 
 ### detail
 
-- **`sn9:release:v4.12.14`** - sn9 released v4.12.14
-  - published 2026-09-08T11:50:47Z (was v4.12.10)
-- **`sn10:scoring_commit:2026-09-08T09:22:29Z`** - sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans…
+- **`sn34:burn_drop:0.799`** - sn34 burn fell 1.000 -> 0.799 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn121:burn_drop:0.610`** - sn121 burn fell 1.000 -> 0.610 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.9.8-1040779940`** - sn25 released v2026.9.8-1040779940
+  - published 2026-09-08T14:40:43Z (was v2026.9.7-1039843330)
+- **`sn71:scoring_commit:2026-09-08T15:54:53Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-09-08T03:06:21Z`** - sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate.
+- **`sn74:release:release-20260908-144557`** - sn74 released release-20260908-144557
+  - published 2026-09-08T14:31:37Z (was release-20260908-031700)
+- **`sn92:scoring_commit:2026-09-08T14:53:18Z`** - sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-08T13:29:02Z`** - sn71 commit touches scoring: Verify approved prior testnet release boots
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-08T09:44:43Z`** - sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239)
+- **`sn120:scoring_commit:2026-09-08T14:27:39Z`** - sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.922` | 10 | BURN_DROP | 2026-09-01T15:14:15Z | sn10 burn fell 1.000 -> 0.922 - miners can earn again |
 | `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.974` | 71 | BURN_DROP | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
@@ -40,12 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
-| `sn23:scoring_commit:2026-09-01T13:59:39Z` | 23 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn23 commit touches scoring: Merge pull request #51 from TrishoolAI/q-3-006-challenge-update |
-| `sn92:release:v0.3.2` | 92 | RELEASE | 2026-09-01T15:14:15Z | sn92 released v0.3.2 |
-| `sn97:scoring_commit:2026-09-01T07:58:22Z` | 97 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn97 commit touches scoring: fix: Fixed private hotkey_already_validated false positive |
-| `sn107:scoring_commit:2026-09-01T14:01:27Z` | 107 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn107 commit touches scoring: Merge pull request #37 from minos-protocol/feat/v2-scoring-and-fixes |
-| `sn108:scoring_commit:2026-09-01T13:01:55Z` | 108 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn108 commit touches scoring: docs(scoring): the split section still described the two-to-one pool |
-| `sn111:scoring_commit:2026-09-01T11:09:58Z` | 111 | SCORING_COMMIT | 2026-09-01T15:14:15Z | sn111 commit touches scoring: feat(scoring): cap minor-tier coverage at five percent |
 | `sn7:release:release-20260901-182140: Set miner burn ` | 7 | RELEASE | 2026-09-01T18:42:47Z | sn7 released release-20260901-182140: Set miner burn to 0% (v3.3.1) (#710) |
 | `sn7:scoring_commit:2026-09-01T18:14:46Z` | 7 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn7 commit touches scoring: Set miner burn to 0% (v3.3.1) (#710) |
 | `sn21:scoring_commit:2026-09-01T17:16:02Z` | 21 | SCORING_COMMIT | 2026-09-01T18:42:47Z | sn21 commit touches scoring: feat(scoring): focus column shows per-type rank among qualified miners |
@@ -197,7 +196,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-09-08T04:45:40Z` | 66 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies |
 | `sn71:scoring_commit:2026-09-08T06:56:07Z` | 71 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff |
 | `sn80:scoring_commit:2026-09-08T07:33:08Z` | 80 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn80 commit touches scoring: docs: link shared real-robot task catalog and training data |
-| `sn107:readme_task_diff:5f8353ef47bb6eec` | 107 | README_TASK_DIFF | 2026-09-01T15:14:15Z | sn107 README task/scoring sections changed |
+| `sn9:release:v4.12.14` | 9 | RELEASE | 2026-09-08T13:32:58Z | sn9 released v4.12.14 |
+| `sn10:scoring_commit:2026-09-08T09:22:29Z` | 10 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans… |
+| `sn34:scoring_commit:2026-09-08T03:06:21Z` | 34 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate. |
+| `sn71:scoring_commit:2026-09-08T13:29:02Z` | 71 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn71 commit touches scoring: Verify approved prior testnet release boots |
+| `sn100:scoring_commit:2026-09-08T09:44:43Z` | 100 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239) |
 | `sn7:readme_task_diff:0ed4024c562bd06a` | 7 | README_TASK_DIFF | 2026-09-01T18:42:47Z | sn7 README task/scoring sections changed |
 | `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |

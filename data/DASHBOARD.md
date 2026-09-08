@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-08T20:19:25Z · block 9025105 · run_status **ok**_
+_snapshot 2026-09-08T22:52:16Z · block 9025868 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 91 | `miner_burn` < 0.99 |
 | Ranked | 92 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| New events this window | 7 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -33,8 +33,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0–0.2 | 8 | `████` |
 | 0.2–0.4 | 6 | `███` |
 | 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 10 | `█████` |
-| 0.8–0.99 | 4 | `██` |
+| 0.6–0.8 | 9 | `████` |
+| 0.8–0.99 | 5 | `██` |
 | ≥0.99 dead | 37 | `█████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn114 SOMA | 87.3 | 1,007 | 8,066 | cpu-small | 4 | 80% |
-| 2 | sn107 Minos | 83.8 | 430 | 34,888 | cpu-small | 20 | 80% |
-| 3 | sn92 MicroTensor | 79.1 | 127 | 384 | cpu-small | 9 | 50% |
-| 4 | sn3 Teutonic | 76 | 4,486 | 4,486 = | rtx4090* | 5 | 20% |
-| 5 | sn102 ConnitoAI | 71.8 | 1,262 | 1,663 | rtx4090* | 5 | 29% |
-| 6 | sn67 Harnyx | 70.8 | 15.32 | 1,352 | cpu-small | 124 | 37% |
-| 7 | sn96 Verathos | 70.2 | 35.47 | 550 | rtx4090 | 81 | 33% |
-| 8 | sn91 cascade | 70.1 | 767 | 3,092 | rtx4090* | 5 | 52% |
+| 1 | sn114 SOMA | 87.3 | 1,000 | 8,008 | cpu-small | 4 | 80% |
+| 2 | sn107 Minos | 83.7 | 428 | 34,872 | cpu-small | 20 | 79% |
+| 3 | sn92 MicroTensor | 79 | 125 | 377 | cpu-small | 9 | 50% |
+| 4 | sn3 Teutonic | 76 | 4,482 | 4,482 = | rtx4090* | 5 | 20% |
+| 5 | sn15 ORO | 71.1 | 24.94 | 52.57 | cpu-small | 76 | 93% |
+| 6 | sn67 Harnyx | 70.8 | 15.31 | 1,351 | cpu-small | 124 | 37% |
+| 7 | sn91 cascade | 70.2 | 782 | 3,151 | rtx4090* | 5 | 52% |
+| 8 | sn96 Verathos | 70.1 | 34.23 | 471 | rtx4090 | 83 | 33% |
 | 9 | sn14 Cacheon | 69.7 | 685 | 1,268 | rtx4090* | 12 | 18% |
-| 10 | sn11 TrajectoryRL | 68.7 | 6,768 | 6,768 = | cpu-small | 1 | 100% |
-| 11 | sn62 Ridges | 68.2 | 427 | 1,268 | rtx4090* | 13 | 26% |
-| 12 | sn56 Gradients | 67.8 | 384 | 5,955 | rtx4090* | 9 | 47% |
-| 13 | sn80 OpenRoboto | 67.7 | 372 | 1,322 | rtx4090* | 5 | 43% |
-| 14 | sn38 ChronoLLM | 65.9 | 99.08 | 1,354 | cpu-small | 10 | 52% |
-| 15 | sn111 Claims | 65.8 | 233 | 3,508 | rtx4090* | 5 | 80% |
-| 16 | sn121 sundae_bar | 63.3 | 1,345 | 1,345 = | cpu-small | 2 | 60% |
-| 17 | sn28 SayGM | 62.8 | 86.79 | 5,920 | rtx4090* | 45 | 36% |
-| 18 | sn65 True Performance | 62.7 | 92.94 | 194 | rtx4090* | 6 | 75% |
-| 19 | sn41 Almanac | 60.7 | 42.67 | 118 | cpu-small | 84 | 3% |
-| 20 | sn51 lium.io | 57.6 | 26.64 | 2,752 | rtx4090* | 65 | 80% |
+| 10 | sn11 TrajectoryRL | 68.7 | 6,815 | 6,815 = | cpu-small | 1 | 100% |
+| 11 | sn62 Ridges | 68.2 | 427 | 1,269 | rtx4090* | 13 | 26% |
+| 12 | sn56 Gradients | 67.8 | 384 | 5,946 | rtx4090* | 9 | 47% |
+| 13 | sn80 OpenRoboto | 67.5 | 346 | 1,231 | rtx4090* | 5 | 43% |
+| 14 | sn111 Claims | 65.8 | 232 | 3,500 | rtx4090* | 5 | 80% |
+| 15 | sn38 ChronoLLM | 65.8 | 97.22 | 1,329 | cpu-small | 10 | 52% |
+| 16 | sn121 sundae_bar | 63.3 | 1,342 | 1,342 = | cpu-small | 2 | 60% |
+| 17 | sn28 SayGM | 62.9 | 91.09 | 6,494 | rtx4090* | 42 | 38% |
+| 18 | sn65 True Performance | 62.6 | 91.46 | 191 | rtx4090* | 6 | 75% |
+| 19 | sn41 Almanac | 60.7 | 42.89 | 119 | cpu-small | 85 | 3% |
+| 20 | sn51 lium.io | 57.8 | 28.10 | 2,815 | rtx4090* | 65 | 79% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 26 |
 | concentrated (30–60%) | 21 |
-| dominated (60–90%) | 21 |
-| captured (>90%) | 19 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 20 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,13 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-08T22:52 | sn15 | RELEASE | sn15 released v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to th |
+| 2026-09-08T22:52 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: compose: forward SUBTENSOR_CHAIN_ENDPOINT |
+| 2026-09-08T22:52 | sn25 | RELEASE | sn25 released v2026.9.8-1040985530 |
+| 2026-09-08T22:52 | sn28 | RELEASE | sn28 released v0.4.15 |
+| 2026-09-08T22:52 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: fix(miner): render node secret last and p |
+| 2026-09-08T22:52 | sn28 | README_TASK_DIFF | sn28 README task/scoring sections changed |
+| 2026-09-08T22:52 | sn78 | WEIGHTS_VERSION_BUMP | sn78 weights_version 0 -> 1 |
 | 2026-09-08T20:19 | sn2 | RELEASE | sn2 released 14.14.3 |
 | 2026-09-08T20:19 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Introduce weight commit guard for epochs w |
 | 2026-09-08T20:19 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main |
@@ -115,13 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-08T17:34 | sn25 | RELEASE | sn25 released v2026.9.8-1040779940 |
 | 2026-09-08T17:34 | sn34 | BURN_DROP | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | 2026-09-08T17:34 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main |
-| 2026-09-08T17:34 | sn74 | RELEASE | sn74 released release-20260908-144557 |
-| 2026-09-08T17:34 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: tracks: support is the one live track; ca |
-| 2026-09-08T17:34 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Sync validator + eval design (2026-09-07 |
-| 2026-09-08T17:34 | sn121 | BURN_DROP | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
-| 2026-09-08T13:32 | sn9 | RELEASE | sn9 released v4.12.14 |
-| 2026-09-08T13:32 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/b |
-| 2026-09-08T13:32 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: Bump version to 5.0.2 so validators autou |
 
 ---
 

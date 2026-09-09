@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T15:19:48Z, block 9030801
+# ALARMS - generated 2026-09-09T18:45:51Z, block 9031830
 
-window: first_seen in [2026-09-09T14:05:16Z, 2026-09-09T15:20:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T17:31:23Z, 2026-09-09T18:46:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.5` | 1 | RELEASE | P1 | 2026-09-09T15:20:16Z | sn1 released v4.4.5 |
-| `sn28:release:v0.4.16-dev` | 28 | RELEASE | P1 | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
-| `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | P1 | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
-| `sn71:scoring_commit:2026-09-09T11:49:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T15:20:16Z | sn71 commit touches scoring: Bind dead preflight verifier removal |
-| `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | P2 | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
-| `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | P2 | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
+| `sn28:release:v0.4.17-dev` | 28 | RELEASE | P1 | 2026-09-09T18:46:23Z | sn28 released v0.4.17-dev |
+| `sn62:release:v0.3.1` | 62 | RELEASE | P1 | 2026-09-09T18:46:23Z | sn62 released v0.3.1 |
+| `sn62:scoring_commit:2026-09-07T11:02:04Z` | 62 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati |
+| `sn71:scoring_commit:2026-09-09T18:13:57Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
+| `sn78:scoring_commit:2026-09-09T17:44:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn78 commit touches scoring: Publish verified bootstrap service state |
+| `sn111:scoring_commit:2026-09-09T17:55:55Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches |
+| `sn124:scoring_commit:2026-09-08T18:12:27Z` | 124 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn124 commit touches scoring: Keep leased seeds through a validator restart |
+| `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | P2 | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
+| `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | P2 | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
 
 ### detail
 
-- **`sn1:release:v4.4.5`** - sn1 released v4.4.5
-  - published 2026-09-09T13:54:37Z (was v4.4.2)
-- **`sn28:release:v0.4.16-dev`** - sn28 released v0.4.16-dev
-  - published 2026-09-09T14:02:08Z (was v0.4.15)
-- **`sn28:scoring_commit:2026-09-09T11:24:08Z`** - sn28 commit touches scoring: Anchor deployment staleness to the last successful verification
+- **`sn28:release:v0.4.17-dev`** - sn28 released v0.4.17-dev
+  - published 2026-09-09T17:02:30Z (was v0.4.16-dev)
+- **`sn62:release:v0.3.1`** - sn62 released v0.3.1
+  - published 2026-09-09T16:30:21Z (was v0.3.0)
+- **`sn62:scoring_commit:2026-09-07T11:02:04Z`** - sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-09T11:49:48Z`** - sn71 commit touches scoring: Bind dead preflight verifier removal
+- **`sn71:scoring_commit:2026-09-09T18:13:57Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:459971cadb11194f`** - sn28 README task/scoring sections changed
+- **`sn78:scoring_commit:2026-09-09T17:44:05Z`** - sn78 commit touches scoring: Publish verified bootstrap service state
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-09T17:55:55Z`** - sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn124:scoring_commit:2026-09-08T18:12:27Z`** - sn124 commit touches scoring: Keep leased seeds through a validator restart
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:aab5d8d239c04847`** - sn28 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn45:readme_task_diff:15dfa7fb69a79bef`** - sn45 README task/scoring sections changed
+- **`sn108:readme_task_diff:3f2d87f2c0a1e7e0`** - sn108 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,10 +54,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn28:release:v0.4.13-dev` | 28 | RELEASE | 2026-09-02T15:21:36Z | sn28 released v0.4.13-dev |
-| `sn51:scoring_commit:2026-09-02T11:42:41Z` | 51 | SCORING_COMMIT | 2026-09-02T15:21:36Z | sn51 commit touches scoring: DAH-2828, feat(validator): quote path for customer pods on CVM nodes … |
-| `sn102:release:v0.5.4 — restore validator_baseline_loss` | 102 | RELEASE | 2026-09-02T15:21:36Z | sn102 released v0.5.4 — restore validator_baseline_loss telemetry |
-| `sn102:scoring_commit:2026-09-02T14:07:33Z` | 102 | SCORING_COMMIT | 2026-09-02T15:21:36Z | sn102 commit touches scoring: 📊 telemetry: restore validator_baseline_loss from the background path |
 | `sn13:release:Release v1.18.72` | 13 | RELEASE | 2026-09-02T18:51:15Z | sn13 released Release v1.18.72 |
 | `sn13:scoring_commit:2026-08-24T09:13:23Z` | 13 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn13 commit touches scoring: docs(miner): warn that Reddit.json needs auth, add data-collection ve… |
 | `sn21:scoring_commit:2026-09-02T18:39:13Z` | 21 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn21 commit touches scoring: fix(scoring): absence charges require a fair chance to run |
@@ -211,8 +216,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-09-08T12:09:46Z` | 97 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn97 commit touches scoring: fix: show all task results for benchmark runs |
 | `sn111:scoring_commit:2026-09-09T10:40:55Z` | 111 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn111 commit touches scoring: docs: clarify Ubuntu validator env setup |
 | `sn114:scoring_commit:2026-09-09T08:57:02Z` | 114 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn114 commit touches scoring: Cap automatic run restarts per miner task |
-| `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
-| `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
+| `sn1:release:v4.4.5` | 1 | RELEASE | 2026-09-09T15:20:16Z | sn1 released v4.4.5 |
+| `sn28:release:v0.4.16-dev` | 28 | RELEASE | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
+| `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
+| `sn71:scoring_commit:2026-09-09T11:49:48Z` | 71 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn71 commit touches scoring: Bind dead preflight verifier removal |
 | `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |
 | `sn80:readme_task_diff:cdbca72968cc4124` | 80 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn80 README task/scoring sections changed |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
@@ -233,6 +240,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
 | `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
+| `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
+| `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

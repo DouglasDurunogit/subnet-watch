@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T11:40:47Z, block 9029710
+# ALARMS - generated 2026-09-09T15:19:48Z, block 9030801
 
-window: first_seen in [2026-09-09T10:26:14Z, 2026-09-09T11:41:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T14:05:16Z, 2026-09-09T15:20:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.10.3` | 61 | RELEASE | P1 | 2026-09-09T11:41:14Z | sn61 released 4.10.3 |
-| `sn66:scoring_commit:2026-09-09T08:24:00Z` | 66 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys |
-| `sn71:scoring_commit:2026-09-09T09:18:44Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn71 commit touches scoring: Preserve terminal company scores across judge retries |
-| `sn78:scoring_commit:2026-09-09T07:12:10Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn78 commit touches scoring: Add legacy validator transition hold |
-| `sn89:scoring_commit:2026-09-09T08:32:52Z` | 89 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,… |
-| `sn97:scoring_commit:2026-09-08T12:09:46Z` | 97 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn97 commit touches scoring: fix: show all task results for benchmark runs |
-| `sn111:scoring_commit:2026-09-09T10:40:55Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn111 commit touches scoring: docs: clarify Ubuntu validator env setup |
-| `sn114:scoring_commit:2026-09-09T08:57:02Z` | 114 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn114 commit touches scoring: Cap automatic run restarts per miner task |
+| `sn1:release:v4.4.5` | 1 | RELEASE | P1 | 2026-09-09T15:20:16Z | sn1 released v4.4.5 |
+| `sn28:release:v0.4.16-dev` | 28 | RELEASE | P1 | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
+| `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | P1 | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
+| `sn71:scoring_commit:2026-09-09T11:49:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T15:20:16Z | sn71 commit touches scoring: Bind dead preflight verifier removal |
+| `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | P2 | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
+| `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | P2 | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 
 ### detail
 
-- **`sn61:release:4.10.3`** - sn61 released 4.10.3
-  - published 2026-09-09T10:37:11Z (was 4.10.2)
-- **`sn66:scoring_commit:2026-09-09T08:24:00Z`** - sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys
+- **`sn1:release:v4.4.5`** - sn1 released v4.4.5
+  - published 2026-09-09T13:54:37Z (was v4.4.2)
+- **`sn28:release:v0.4.16-dev`** - sn28 released v0.4.16-dev
+  - published 2026-09-09T14:02:08Z (was v0.4.15)
+- **`sn28:scoring_commit:2026-09-09T11:24:08Z`** - sn28 commit touches scoring: Anchor deployment staleness to the last successful verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-09T09:18:44Z`** - sn71 commit touches scoring: Preserve terminal company scores across judge retries
+- **`sn71:scoring_commit:2026-09-09T11:49:48Z`** - sn71 commit touches scoring: Bind dead preflight verifier removal
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-09T07:12:10Z`** - sn78 commit touches scoring: Add legacy validator transition hold
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-09-09T08:32:52Z`** - sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-09-08T12:09:46Z`** - sn97 commit touches scoring: fix: show all task results for benchmark runs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-09T10:40:55Z`** - sn111 commit touches scoring: docs: clarify Ubuntu validator env setup
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-09-09T08:57:02Z`** - sn114 commit touches scoring: Cap automatic run restarts per miner task
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:459971cadb11194f`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn45:readme_task_diff:15dfa7fb69a79bef`** - sn45 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -209,6 +203,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-09-09T01:28:41Z` | 100 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (… |
 | `sn111:scoring_commit:2026-09-09T03:15:32Z` | 111 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication |
 | `sn120:scoring_commit:2026-09-09T03:59:55Z` | 120 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close … |
+| `sn61:release:4.10.3` | 61 | RELEASE | 2026-09-09T11:41:14Z | sn61 released 4.10.3 |
+| `sn66:scoring_commit:2026-09-09T08:24:00Z` | 66 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys |
+| `sn71:scoring_commit:2026-09-09T09:18:44Z` | 71 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn71 commit touches scoring: Preserve terminal company scores across judge retries |
+| `sn78:scoring_commit:2026-09-09T07:12:10Z` | 78 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn78 commit touches scoring: Add legacy validator transition hold |
+| `sn89:scoring_commit:2026-09-09T08:32:52Z` | 89 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,… |
+| `sn97:scoring_commit:2026-09-08T12:09:46Z` | 97 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn97 commit touches scoring: fix: show all task results for benchmark runs |
+| `sn111:scoring_commit:2026-09-09T10:40:55Z` | 111 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn111 commit touches scoring: docs: clarify Ubuntu validator env setup |
+| `sn114:scoring_commit:2026-09-09T08:57:02Z` | 114 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn114 commit touches scoring: Cap automatic run restarts per miner task |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
 | `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |

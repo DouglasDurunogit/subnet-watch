@@ -1,20 +1,20 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-09-09T11:40:47Z  |  block: 9029710  |  row_status: ok
+snapshot_utc: 2026-09-09T15:19:48Z  |  block: 9030801  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.13256 USD), open=True
+- registration cost: 0.0005 TAO (0.129615 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 6  |  free: 0
-- subnet age: 874.4 days  |  registered at block 2734060
+- subnet age: 874.5 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2548.5420973186306
-- top_miner_usd_day: 2548.5420973186306 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2505.853415774603
+- top_miner_usd_day: 2505.853415774603 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

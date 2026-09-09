@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T01:12:58Z, block 9026571
+# ALARMS - generated 2026-09-09T06:19:26Z, block 9028103
 
-window: first_seen in [2026-09-08T23:58:27Z, 2026-09-09T01:13:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T05:04:59Z, 2026-09-09T06:19:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
-| `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
+| `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
+| `sn67:scoring_commit:2026-09-09T04:45:43Z` | 67 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0 |
+| `sn71:scoring_commit:2026-09-09T02:00:25Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure |
+| `sn100:scoring_commit:2026-09-09T01:28:41Z` | 100 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (… |
+| `sn111:scoring_commit:2026-09-09T03:15:32Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication |
+| `sn120:scoring_commit:2026-09-09T03:59:55Z` | 120 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close … |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-08T22:52:04Z`** - sn71 commit touches scoring: build: refresh protected scoring source metadata
+- **`sn51:scoring_commit:2026-09-09T06:11:27Z`** - sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-09T00:59:16Z`** - sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles
+- **`sn67:scoring_commit:2026-09-09T04:45:43Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-09T02:00:25Z`** - sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-09T01:28:41Z`** - sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-09T03:15:32Z`** - sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-09-09T03:59:55Z`** - sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,8 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn25:release:v2026.9.1-1035082030` | 25 | RELEASE | 2026-09-02T01:27:43Z | sn25 released v2026.9.1-1035082030 |
-| `sn67:scoring_commit:2026-09-01T09:54:56Z` | 67 | SCORING_COMMIT | 2026-09-02T01:27:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post2 |
 | `sn25:scoring_commit:2026-09-02T00:23:30Z` | 25 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn25 commit touches scoring: Join miner and validator lifecycle ownership |
 | `sn51:scoring_commit:2026-09-02T05:43:12Z` | 51 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn51 commit touches scoring: DAH-2701: withhold incentive from executors running an outdated image… |
 | `sn71:scoring_commit:2026-09-01T23:59:43Z` | 71 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantization |
@@ -194,6 +204,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.8-1040985530` | 25 | RELEASE | 2026-09-08T22:52:47Z | sn25 released v2026.9.8-1040985530 |
 | `sn28:release:v0.4.15` | 28 | RELEASE | 2026-09-08T22:52:47Z | sn28 released v0.4.15 |
 | `sn28:scoring_commit:2026-09-08T21:50:27Z` | 28 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn28 commit touches scoring: fix(miner): render node secret last and pin C locale |
+| `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
+| `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
 | `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |

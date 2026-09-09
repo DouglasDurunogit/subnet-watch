@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T06:19:26Z, block 9028103
+# ALARMS - generated 2026-09-09T11:40:47Z, block 9029710
 
-window: first_seen in [2026-09-09T05:04:59Z, 2026-09-09T06:19:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T10:26:14Z, 2026-09-09T11:41:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
-| `sn67:scoring_commit:2026-09-09T04:45:43Z` | 67 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0 |
-| `sn71:scoring_commit:2026-09-09T02:00:25Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure |
-| `sn100:scoring_commit:2026-09-09T01:28:41Z` | 100 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (… |
-| `sn111:scoring_commit:2026-09-09T03:15:32Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication |
-| `sn120:scoring_commit:2026-09-09T03:59:55Z` | 120 | SCORING_COMMIT | P1 | 2026-09-09T06:19:59Z | sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close … |
+| `sn61:release:4.10.3` | 61 | RELEASE | P1 | 2026-09-09T11:41:14Z | sn61 released 4.10.3 |
+| `sn66:scoring_commit:2026-09-09T08:24:00Z` | 66 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys |
+| `sn71:scoring_commit:2026-09-09T09:18:44Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn71 commit touches scoring: Preserve terminal company scores across judge retries |
+| `sn78:scoring_commit:2026-09-09T07:12:10Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn78 commit touches scoring: Add legacy validator transition hold |
+| `sn89:scoring_commit:2026-09-09T08:32:52Z` | 89 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,… |
+| `sn97:scoring_commit:2026-09-08T12:09:46Z` | 97 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn97 commit touches scoring: fix: show all task results for benchmark runs |
+| `sn111:scoring_commit:2026-09-09T10:40:55Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn111 commit touches scoring: docs: clarify Ubuntu validator env setup |
+| `sn114:scoring_commit:2026-09-09T08:57:02Z` | 114 | SCORING_COMMIT | P1 | 2026-09-09T11:41:14Z | sn114 commit touches scoring: Cap automatic run restarts per miner task |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-09-09T06:11:27Z`** - sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (…
+- **`sn61:release:4.10.3`** - sn61 released 4.10.3
+  - published 2026-09-09T10:37:11Z (was 4.10.2)
+- **`sn66:scoring_commit:2026-09-09T08:24:00Z`** - sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-09T04:45:43Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0
+- **`sn71:scoring_commit:2026-09-09T09:18:44Z`** - sn71 commit touches scoring: Preserve terminal company scores across judge retries
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-09T02:00:25Z`** - sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure
+- **`sn78:scoring_commit:2026-09-09T07:12:10Z`** - sn78 commit touches scoring: Add legacy validator transition hold
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-09T01:28:41Z`** - sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (…
+- **`sn89:scoring_commit:2026-09-09T08:32:52Z`** - sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-09T03:15:32Z`** - sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication
+- **`sn97:scoring_commit:2026-09-08T12:09:46Z`** - sn97 commit touches scoring: fix: show all task results for benchmark runs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-09T03:59:55Z`** - sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close …
+- **`sn111:scoring_commit:2026-09-09T10:40:55Z`** - sn111 commit touches scoring: docs: clarify Ubuntu validator env setup
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-09-09T08:57:02Z`** - sn114 commit touches scoring: Cap automatic run restarts per miner task
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,15 +51,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn25:scoring_commit:2026-09-02T00:23:30Z` | 25 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn25 commit touches scoring: Join miner and validator lifecycle ownership |
-| `sn51:scoring_commit:2026-09-02T05:43:12Z` | 51 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn51 commit touches scoring: DAH-2701: withhold incentive from executors running an outdated image… |
-| `sn71:scoring_commit:2026-09-01T23:59:43Z` | 71 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn71 commit touches scoring: Handle SOURCE_ADD chain reward quantization |
-| `sn3:scoring_commit:2026-09-02T10:23:18Z` | 3 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn3 commit touches scoring: Update evaluation parameters |
-| `sn25:scoring_commit:2026-09-02T10:31:33Z` | 25 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn25 commit touches scoring: Rate-limit validator verification attempts |
-| `sn65:scoring_commit:2026-08-27T13:32:41Z` | 65 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn65 commit touches scoring: validator improvements + database threading fixes |
-| `sn67:scoring_commit:2026-09-02T09:27:57Z` | 67 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260902.post0 |
-| `sn71:scoring_commit:2026-09-02T11:01:44Z` | 71 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn71 commit touches scoring: Repair validator supersession test driver |
-| `sn111:scoring_commit:2026-09-01T22:03:12Z` | 111 | SCORING_COMMIT | 2026-09-02T11:39:58Z | sn111 commit touches scoring: docs(validator): update bucket policy and production setup |
 | `sn28:release:v0.4.13-dev` | 28 | RELEASE | 2026-09-02T15:21:36Z | sn28 released v0.4.13-dev |
 | `sn51:scoring_commit:2026-09-02T11:42:41Z` | 51 | SCORING_COMMIT | 2026-09-02T15:21:36Z | sn51 commit touches scoring: DAH-2828, feat(validator): quote path for customer pods on CVM nodes … |
 | `sn102:release:v0.5.4 — restore validator_baseline_loss` | 102 | RELEASE | 2026-09-02T15:21:36Z | sn102 released v0.5.4 — restore validator_baseline_loss telemetry |
@@ -206,6 +203,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-09-08T21:50:27Z` | 28 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn28 commit touches scoring: fix(miner): render node secret last and pin C locale |
 | `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
 | `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
+| `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
+| `sn67:scoring_commit:2026-09-09T04:45:43Z` | 67 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0 |
+| `sn71:scoring_commit:2026-09-09T02:00:25Z` | 71 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure |
+| `sn100:scoring_commit:2026-09-09T01:28:41Z` | 100 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (… |
+| `sn111:scoring_commit:2026-09-09T03:15:32Z` | 111 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication |
+| `sn120:scoring_commit:2026-09-09T03:59:55Z` | 120 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close … |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
 | `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |

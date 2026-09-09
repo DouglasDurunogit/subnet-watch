@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-08T22:52:16Z, block 9025868
+# ALARMS - generated 2026-09-09T01:12:58Z, block 9026571
 
-window: first_seen in [2026-09-08T21:37:47Z, 2026-09-08T22:52:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-08T23:58:27Z, 2026-09-09T01:13:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | P0 | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn15:release:v1.2.13: compose: forward SUBTENSOR_CHAI` | 15 | RELEASE | P1 | 2026-09-08T22:52:47Z | sn15 released v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
-| `sn15:scoring_commit:2026-09-08T20:21:13Z` | 15 | SCORING_COMMIT | P1 | 2026-09-08T22:52:47Z | sn15 commit touches scoring: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
-| `sn25:release:v2026.9.8-1040985530` | 25 | RELEASE | P1 | 2026-09-08T22:52:47Z | sn25 released v2026.9.8-1040985530 |
-| `sn28:release:v0.4.15` | 28 | RELEASE | P1 | 2026-09-08T22:52:47Z | sn28 released v0.4.15 |
-| `sn28:scoring_commit:2026-09-08T21:50:27Z` | 28 | SCORING_COMMIT | P1 | 2026-09-08T22:52:47Z | sn28 commit touches scoring: fix(miner): render node secret last and pin C locale |
-| `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | P2 | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
+| `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
 
 ### detail
 
-- **`sn78:weights_version_bump:1`** - sn78 weights_version 0 -> 1
-  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
-- **`sn15:release:v1.2.13: compose: forward SUBTENSOR_CHAI`** - sn15 released v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274)
-  - published 2026-09-08T20:21:13Z (was v1.2.12)
-- **`sn15:scoring_commit:2026-09-08T20:21:13Z`** - sn15 commit touches scoring: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274)
+- **`sn71:scoring_commit:2026-09-08T22:52:04Z`** - sn71 commit touches scoring: build: refresh protected scoring source metadata
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.8-1040985530`** - sn25 released v2026.9.8-1040985530
-  - published 2026-09-08T20:19:51Z (was v2026.9.8-1040779940)
-- **`sn28:release:v0.4.15`** - sn28 released v0.4.15
-  - published 2026-09-08T22:41:00Z (was v0.4.14)
-- **`sn28:scoring_commit:2026-09-08T21:50:27Z`** - sn28 commit touches scoring: fix(miner): render node secret last and pin C locale
+- **`sn111:scoring_commit:2026-09-09T00:59:16Z`** - sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:150862184557e02b`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,7 +32,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
-| `sn104:scoring_commit:2026-08-30T09:59:38Z` | 104 | SCORING_COMMIT | 2026-09-01T23:29:32Z | sn104 commit touches scoring: multiple llm key and improve the scoring mechanism |
+| `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn25:release:v2026.9.1-1035082030` | 25 | RELEASE | 2026-09-02T01:27:43Z | sn25 released v2026.9.1-1035082030 |
 | `sn67:scoring_commit:2026-09-01T09:54:56Z` | 67 | SCORING_COMMIT | 2026-09-02T01:27:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260901.post2 |
 | `sn25:scoring_commit:2026-09-02T00:23:30Z` | 25 | SCORING_COMMIT | 2026-09-02T06:28:05Z | sn25 commit touches scoring: Join miner and validator lifecycle ownership |
@@ -204,7 +189,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-08T20:17:47Z` | 71 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
 | `sn78:scoring_commit:2026-09-08T17:55:55Z` | 78 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn78 commit touches scoring: Fix bootstrap image revision validation |
 | `sn96:release:Verathos v0.2.2 – Consistent Validator D` | 96 | RELEASE | 2026-09-08T20:19:51Z | sn96 released Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support |
-| `sn104:readme_task_diff:92a67d7788885fe7` | 104 | README_TASK_DIFF | 2026-09-01T23:29:32Z | sn104 README task/scoring sections changed |
+| `sn15:release:v1.2.13: compose: forward SUBTENSOR_CHAI` | 15 | RELEASE | 2026-09-08T22:52:47Z | sn15 released v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
+| `sn15:scoring_commit:2026-09-08T20:21:13Z` | 15 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn15 commit touches scoring: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
+| `sn25:release:v2026.9.8-1040985530` | 25 | RELEASE | 2026-09-08T22:52:47Z | sn25 released v2026.9.8-1040985530 |
+| `sn28:release:v0.4.15` | 28 | RELEASE | 2026-09-08T22:52:47Z | sn28 released v0.4.15 |
+| `sn28:scoring_commit:2026-09-08T21:50:27Z` | 28 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn28 commit touches scoring: fix(miner): render node secret last and pin C locale |
 | `sn66:readme_task_diff:1f9bcf8a76a45b27` | 66 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:7b0ea93609afb2d8` | 80 | README_TASK_DIFF | 2026-09-02T15:21:36Z | sn80 README task/scoring sections changed |
 | `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |
@@ -226,6 +215,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
+| `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

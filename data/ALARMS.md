@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T21:16:36Z, block 9032582
+# ALARMS - generated 2026-09-09T23:25:13Z, block 9033224
 
-window: first_seen in [2026-09-09T20:02:06Z, 2026-09-09T21:17:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T22:10:39Z, 2026-09-09T23:25:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | P0 | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
-| `sn104:burn_drop:0.988` | 104 | BURN_DROP | P0 | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn20:scoring_commit:2026-09-08T12:07:25Z` | 20 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn20 commit touches scoring: Document model-independent miner extension workflow |
-| `sn36:scoring_commit:2026-09-09T19:30:44Z` | 36 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks |
-| `sn62:release:v0.3.2` | 62 | RELEASE | P1 | 2026-09-09T21:17:06Z | sn62 released v0.3.2 |
-| `sn71:scoring_commit:2026-09-09T21:09:24Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
-| `sn78:scoring_commit:2026-09-09T19:48:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn78 commit touches scoring: Add prerequisite-gated validator supervisor |
-| `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | P2 | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
+| `sn25:release:v2026.9.9-1041947070` | 25 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn25 released v2026.9.9-1041947070 |
+| `sn28:release:v0.4.17` | 28 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn28 released v0.4.17 |
+| `sn61:release:4.10.4` | 61 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn61 released 4.10.4 |
+| `sn62:scoring_commit:2026-09-09T18:55:06Z` | 62 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker |
+| `sn71:scoring_commit:2026-09-09T22:53:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes |
+| `sn78:scoring_commit:2026-09-09T22:13:48Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn78 commit touches scoring: Fix OCI archive annotation verification |
+| `sn100:release:ctx CLI v3.3.30` | 100 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn100 released ctx CLI v3.3.30 |
+| `sn100:scoring_commit:2026-09-09T22:40:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25 |
 
 ### detail
 
-- **`sn78:weights_version_bump:4294967296`** - sn78 weights_version 1 -> 4294967296
-  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
-- **`sn104:burn_drop:0.988`** - sn104 burn fell 1.000 -> 0.988 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn20:scoring_commit:2026-09-08T12:07:25Z`** - sn20 commit touches scoring: Document model-independent miner extension workflow
+- **`sn25:release:v2026.9.9-1041947070`** - sn25 released v2026.9.9-1041947070
+  - published 2026-09-09T23:12:56Z (was v2026.9.8-1040985530)
+- **`sn28:release:v0.4.17`** - sn28 released v0.4.17
+  - published 2026-09-09T23:14:40Z (was v0.4.17-dev)
+- **`sn61:release:4.10.4`** - sn61 released 4.10.4
+  - published 2026-09-09T22:07:48Z (was 4.10.3)
+- **`sn62:scoring_commit:2026-09-09T18:55:06Z`** - sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn36:scoring_commit:2026-09-09T19:30:44Z`** - sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks
+- **`sn71:scoring_commit:2026-09-09T22:53:48Z`** - sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.2`** - sn62 released v0.3.2
-  - published 2026-09-09T19:31:06Z (was v0.3.1)
-- **`sn71:scoring_commit:2026-09-09T21:09:24Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep…
+- **`sn78:scoring_commit:2026-09-09T22:13:48Z`** - sn78 commit touches scoring: Fix OCI archive annotation verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-09T19:48:05Z`** - sn78 commit touches scoring: Add prerequisite-gated validator supervisor
+- **`sn100:release:ctx CLI v3.3.30`** - sn100 released ctx CLI v3.3.30
+  - published 2026-09-09T23:19:27Z (was v3.3.29)
+- **`sn100:scoring_commit:2026-09-09T22:40:23Z`** - sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn20:readme_task_diff:4594489462f379e3`** - sn20 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,10 +51,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn2:release:14.14.1` | 2 | RELEASE | 2026-09-02T21:47:07Z | sn2 released 14.14.1 |
-| `sn2:scoring_commit:2026-09-02T17:50:35Z` | 2 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620) |
-| `sn21:scoring_commit:2026-09-02T19:01:27Z` | 21 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn21 commit touches scoring: feat(validator): reference partner validator loop |
-| `sn25:scoring_commit:2026-09-02T21:30:53Z` | 25 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn25 commit touches scoring: Revalidate topology for each release plan |
+| `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
+| `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn71:scoring_commit:2026-09-02T21:52:48Z` | 71 | SCORING_COMMIT | 2026-09-02T23:37:16Z | sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewards |
 | `sn67:scoring_commit:2026-09-03T01:49:07Z` | 67 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0 |
 | `sn76:scoring_commit:2026-09-03T05:42:35Z` | 76 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn76 commit touches scoring: ci: run the non-scoring tests on every push |
@@ -215,6 +213,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-09T17:44:05Z` | 78 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn78 commit touches scoring: Publish verified bootstrap service state |
 | `sn111:scoring_commit:2026-09-09T17:55:55Z` | 111 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches |
 | `sn124:scoring_commit:2026-09-08T18:12:27Z` | 124 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn124 commit touches scoring: Keep leased seeds through a validator restart |
+| `sn20:scoring_commit:2026-09-08T12:07:25Z` | 20 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn20 commit touches scoring: Document model-independent miner extension workflow |
+| `sn36:scoring_commit:2026-09-09T19:30:44Z` | 36 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks |
+| `sn62:release:v0.3.2` | 62 | RELEASE | 2026-09-09T21:17:06Z | sn62 released v0.3.2 |
+| `sn71:scoring_commit:2026-09-09T21:09:24Z` | 71 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
+| `sn78:scoring_commit:2026-09-09T19:48:05Z` | 78 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn78 commit touches scoring: Add prerequisite-gated validator supervisor |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
@@ -237,6 +240,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
+| `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

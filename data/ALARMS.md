@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T18:45:51Z, block 9031830
+# ALARMS - generated 2026-09-09T21:16:36Z, block 9032582
 
-window: first_seen in [2026-09-09T17:31:23Z, 2026-09-09T18:46:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-09T20:02:06Z, 2026-09-09T21:17:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,35 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.17-dev` | 28 | RELEASE | P1 | 2026-09-09T18:46:23Z | sn28 released v0.4.17-dev |
-| `sn62:release:v0.3.1` | 62 | RELEASE | P1 | 2026-09-09T18:46:23Z | sn62 released v0.3.1 |
-| `sn62:scoring_commit:2026-09-07T11:02:04Z` | 62 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati |
-| `sn71:scoring_commit:2026-09-09T18:13:57Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
-| `sn78:scoring_commit:2026-09-09T17:44:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn78 commit touches scoring: Publish verified bootstrap service state |
-| `sn111:scoring_commit:2026-09-09T17:55:55Z` | 111 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches |
-| `sn124:scoring_commit:2026-09-08T18:12:27Z` | 124 | SCORING_COMMIT | P1 | 2026-09-09T18:46:23Z | sn124 commit touches scoring: Keep leased seeds through a validator restart |
-| `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | P2 | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
-| `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | P2 | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
+| `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | P0 | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
+| `sn104:burn_drop:0.988` | 104 | BURN_DROP | P0 | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
+| `sn20:scoring_commit:2026-09-08T12:07:25Z` | 20 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn20 commit touches scoring: Document model-independent miner extension workflow |
+| `sn36:scoring_commit:2026-09-09T19:30:44Z` | 36 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks |
+| `sn62:release:v0.3.2` | 62 | RELEASE | P1 | 2026-09-09T21:17:06Z | sn62 released v0.3.2 |
+| `sn71:scoring_commit:2026-09-09T21:09:24Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
+| `sn78:scoring_commit:2026-09-09T19:48:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T21:17:06Z | sn78 commit touches scoring: Add prerequisite-gated validator supervisor |
+| `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | P2 | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
 
 ### detail
 
-- **`sn28:release:v0.4.17-dev`** - sn28 released v0.4.17-dev
-  - published 2026-09-09T17:02:30Z (was v0.4.16-dev)
-- **`sn62:release:v0.3.1`** - sn62 released v0.3.1
-  - published 2026-09-09T16:30:21Z (was v0.3.0)
-- **`sn62:scoring_commit:2026-09-07T11:02:04Z`** - sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati
+- **`sn78:weights_version_bump:4294967296`** - sn78 weights_version 1 -> 4294967296
+  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
+- **`sn104:burn_drop:0.988`** - sn104 burn fell 1.000 -> 0.988 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn20:scoring_commit:2026-09-08T12:07:25Z`** - sn20 commit touches scoring: Document model-independent miner extension workflow
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-09T18:13:57Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep…
+- **`sn36:scoring_commit:2026-09-09T19:30:44Z`** - sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-09T17:44:05Z`** - sn78 commit touches scoring: Publish verified bootstrap service state
+- **`sn62:release:v0.3.2`** - sn62 released v0.3.2
+  - published 2026-09-09T19:31:06Z (was v0.3.1)
+- **`sn71:scoring_commit:2026-09-09T21:09:24Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-09T17:55:55Z`** - sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches
+- **`sn78:scoring_commit:2026-09-09T19:48:05Z`** - sn78 commit touches scoring: Add prerequisite-gated validator supervisor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-09-08T18:12:27Z`** - sn124 commit touches scoring: Keep leased seeds through a validator restart
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:aab5d8d239c04847`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn108:readme_task_diff:3f2d87f2c0a1e7e0`** - sn108 README task/scoring sections changed
+- **`sn20:readme_task_diff:4594489462f379e3`** - sn20 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -54,15 +51,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
-| `sn13:release:Release v1.18.72` | 13 | RELEASE | 2026-09-02T18:51:15Z | sn13 released Release v1.18.72 |
-| `sn13:scoring_commit:2026-08-24T09:13:23Z` | 13 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn13 commit touches scoring: docs(miner): warn that Reddit.json needs auth, add data-collection ve… |
-| `sn21:scoring_commit:2026-09-02T18:39:13Z` | 21 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn21 commit touches scoring: fix(scoring): absence charges require a fair chance to run |
-| `sn28:release:v0.4.14` | 28 | RELEASE | 2026-09-02T18:51:15Z | sn28 released v0.4.14 |
-| `sn71:scoring_commit:2026-09-02T16:59:04Z` | 71 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn71 commit touches scoring: Bind automatic SOURCE_ADD reward workflow |
-| `sn74:release:release-20260902-172331` | 74 | RELEASE | 2026-09-02T18:51:15Z | sn74 released release-20260902-172331 |
-| `sn74:scoring_commit:2026-09-02T02:34:28Z` | 74 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn74 commit touches scoring: serving: compose miner takes host ports and runtime/attest URLs from … |
-| `sn89:scoring_commit:2026-09-02T16:19:10Z` | 89 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn89 commit touches scoring: weights: the validator was setting them on the pre-causal rule |
-| `sn111:scoring_commit:2026-09-02T17:43:43Z` | 111 | SCORING_COMMIT | 2026-09-02T18:51:15Z | sn111 commit touches scoring: Enforce mainnet Silver validator requirements |
 | `sn2:release:14.14.1` | 2 | RELEASE | 2026-09-02T21:47:07Z | sn2 released 14.14.1 |
 | `sn2:scoring_commit:2026-09-02T17:50:35Z` | 2 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn2 commit touches scoring: Resolve slow validator recovery after external address rotation (#620) |
 | `sn21:scoring_commit:2026-09-02T19:01:27Z` | 21 | SCORING_COMMIT | 2026-09-02T21:47:07Z | sn21 commit touches scoring: feat(validator): reference partner validator loop |
@@ -220,8 +208,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.16-dev` | 28 | RELEASE | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
 | `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
 | `sn71:scoring_commit:2026-09-09T11:49:48Z` | 71 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn71 commit touches scoring: Bind dead preflight verifier removal |
-| `sn74:readme_task_diff:4bce422bd3ab6229` | 74 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn74 README task/scoring sections changed |
-| `sn80:readme_task_diff:cdbca72968cc4124` | 80 | README_TASK_DIFF | 2026-09-02T18:51:15Z | sn80 README task/scoring sections changed |
+| `sn28:release:v0.4.17-dev` | 28 | RELEASE | 2026-09-09T18:46:23Z | sn28 released v0.4.17-dev |
+| `sn62:release:v0.3.1` | 62 | RELEASE | 2026-09-09T18:46:23Z | sn62 released v0.3.1 |
+| `sn62:scoring_commit:2026-09-07T11:02:04Z` | 62 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati |
+| `sn71:scoring_commit:2026-09-09T18:13:57Z` | 71 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
+| `sn78:scoring_commit:2026-09-09T17:44:05Z` | 78 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn78 commit touches scoring: Publish verified bootstrap service state |
+| `sn111:scoring_commit:2026-09-09T17:55:55Z` | 111 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches |
+| `sn124:scoring_commit:2026-09-08T18:12:27Z` | 124 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn124 commit touches scoring: Keep leased seeds through a validator restart |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
@@ -242,6 +235,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
+| `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
+| `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

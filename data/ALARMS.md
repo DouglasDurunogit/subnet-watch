@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T06:18:35Z, block 9035288
+# ALARMS - generated 2026-09-10T11:38:39Z, block 9036886
 
-window: first_seen in [2026-09-10T05:04:09Z, 2026-09-10T06:19:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T10:24:13Z, 2026-09-10T11:39:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:shoppingbench-final` | 15 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn15 released shoppingbench-final |
-| `sn25:release:v2026.9.9-1042199790` | 25 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn25 released v2026.9.9-1042199790 |
-| `sn51:release:executor-v1.124` | 51 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn51 released executor-v1.124 |
-| `sn51:scoring_commit:2026-09-10T02:42:59Z` | 51 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin… |
-| `sn71:scoring_commit:2026-09-10T05:18:12Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn71 commit touches scoring: Preserve validated page final URLs |
-| `sn81:scoring_commit:2026-09-10T05:24:18Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme |
-| `sn91:scoring_commit:2026-09-10T05:27:44Z` | 91 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start |
-| `sn100:scoring_commit:2026-09-10T06:07:01Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261) |
-| `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | P2 | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
+| `sn15:release:v2.0.0` | 15 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn15 released v2.0.0 |
+| `sn15:scoring_commit:2026-09-10T07:45:35Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn15 commit touches scoring: Verify scope-bound environment deliveries (#276) |
+| `sn25:release:v2026.9.10-1042298530` | 25 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn25 released v2026.9.10-1042298530 |
+| `sn25:scoring_commit:2026-09-10T09:40:39Z` | 25 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn25 commit touches scoring: crv4: accept reviewed runtime 455 validator stake layout |
+| `sn51:release:executor-v1.125` | 51 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn51 released executor-v1.125 |
+| `sn62:release:v0.3.3` | 62 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn62 released v0.3.3 |
+| `sn67:scoring_commit:2026-09-10T07:28:03Z` | 67 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post3 |
+| `sn71:scoring_commit:2026-09-10T06:18:11Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn71 commit touches scoring: docs: state midnight continuous evaluation timing |
+| `sn91:scoring_commit:2026-09-10T11:31:44Z` | 91 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, … |
+| `sn100:scoring_commit:2026-09-10T11:36:06Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267) |
 
 ### detail
 
-- **`sn15:release:shoppingbench-final`** - sn15 released shoppingbench-final
-  - published 2026-09-10T05:53:33Z (was v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274))
-- **`sn25:release:v2026.9.9-1042199790`** - sn25 released v2026.9.9-1042199790
-  - published 2026-09-10T06:03:49Z (was v2026.9.9-1042000000)
-- **`sn51:release:executor-v1.124`** - sn51 released executor-v1.124
-  - published 2026-09-10T03:05:33Z (was executor-v1.123)
-- **`sn51:scoring_commit:2026-09-10T02:42:59Z`** - sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin…
+- **`sn15:release:v2.0.0`** - sn15 released v2.0.0
+  - published 2026-09-10T07:45:35Z (was shoppingbench-final)
+- **`sn15:scoring_commit:2026-09-10T07:45:35Z`** - sn15 commit touches scoring: Verify scope-bound environment deliveries (#276)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-10T05:18:12Z`** - sn71 commit touches scoring: Preserve validated page final URLs
+- **`sn25:release:v2026.9.10-1042298530`** - sn25 released v2026.9.10-1042298530
+  - published 2026-09-10T08:48:20Z (was v2026.9.9-1042199790)
+- **`sn25:scoring_commit:2026-09-10T09:40:39Z`** - sn25 commit touches scoring: crv4: accept reviewed runtime 455 validator stake layout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-10T05:24:18Z`** - sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme
+- **`sn51:release:executor-v1.125`** - sn51 released executor-v1.125
+  - published 2026-09-10T09:15:06Z (was executor-v1.124)
+- **`sn62:release:v0.3.3`** - sn62 released v0.3.3
+  - published 2026-09-10T06:56:58Z (was v0.3.2)
+- **`sn67:scoring_commit:2026-09-10T07:28:03Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-10T05:27:44Z`** - sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start
+- **`sn71:scoring_commit:2026-09-10T06:18:11Z`** - sn71 commit touches scoring: docs: state midnight continuous evaluation timing
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-10T06:07:01Z`** - sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261)
+- **`sn91:scoring_commit:2026-09-10T11:31:44Z`** - sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:17e287861e782246`** - sn15 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn100:scoring_commit:2026-09-10T11:36:06Z`** - sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn71:burn_drop:0.974` | 71 | BURN_DROP | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
@@ -55,9 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn67:scoring_commit:2026-09-03T01:49:07Z` | 67 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0 |
-| `sn76:scoring_commit:2026-09-03T05:42:35Z` | 76 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn76 commit touches scoring: ci: run the non-scoring tests on every push |
-| `sn91:scoring_commit:2026-09-03T02:30:30Z` | 91 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn91 commit touches scoring: scoring: block-scheduled fresh-king margin (2% → 1% at 8992800), reso… |
 | `sn1:release:v4.4.0` | 1 | RELEASE | 2026-09-03T11:45:17Z | sn1 released v4.4.0 |
 | `sn50:scoring_commit:2026-09-03T09:01:36Z` | 50 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn50 commit touches scoring: base miner: gzip-compress axon responses (#319) |
 | `sn100:scoring_commit:2026-09-03T08:25:50Z` | 100 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205) |
@@ -231,7 +230,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-09-10T00:47:41Z` | 81 | SCORING_COMMIT | 2026-09-10T01:20:26Z | sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary |
 | `sn100:release:ctx CLI v3.3.31` | 100 | RELEASE | 2026-09-10T01:20:26Z | sn100 released ctx CLI v3.3.31 |
 | `sn100:scoring_commit:2026-09-10T00:49:52Z` | 100 | SCORING_COMMIT | 2026-09-10T01:20:26Z | sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259) |
-| `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
+| `sn15:release:shoppingbench-final` | 15 | RELEASE | 2026-09-10T06:19:09Z | sn15 released shoppingbench-final |
+| `sn25:release:v2026.9.9-1042199790` | 25 | RELEASE | 2026-09-10T06:19:09Z | sn25 released v2026.9.9-1042199790 |
+| `sn51:release:executor-v1.124` | 51 | RELEASE | 2026-09-10T06:19:09Z | sn51 released executor-v1.124 |
+| `sn51:scoring_commit:2026-09-10T02:42:59Z` | 51 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin… |
+| `sn71:scoring_commit:2026-09-10T05:18:12Z` | 71 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn71 commit touches scoring: Preserve validated page final URLs |
+| `sn81:scoring_commit:2026-09-10T05:24:18Z` | 81 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme |
+| `sn91:scoring_commit:2026-09-10T05:27:44Z` | 91 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start |
+| `sn100:scoring_commit:2026-09-10T06:07:01Z` | 100 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261) |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
@@ -255,6 +261,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
 | `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
+| `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

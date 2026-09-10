@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T11:38:39Z, block 9036886
+# ALARMS - generated 2026-09-10T15:12:51Z, block 9037953
 
-window: first_seen in [2026-09-10T10:24:13Z, 2026-09-10T11:39:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T13:58:20Z, 2026-09-10T15:13:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.0` | 15 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn15 released v2.0.0 |
-| `sn15:scoring_commit:2026-09-10T07:45:35Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn15 commit touches scoring: Verify scope-bound environment deliveries (#276) |
-| `sn25:release:v2026.9.10-1042298530` | 25 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn25 released v2026.9.10-1042298530 |
-| `sn25:scoring_commit:2026-09-10T09:40:39Z` | 25 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn25 commit touches scoring: crv4: accept reviewed runtime 455 validator stake layout |
-| `sn51:release:executor-v1.125` | 51 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn51 released executor-v1.125 |
-| `sn62:release:v0.3.3` | 62 | RELEASE | P1 | 2026-09-10T11:39:13Z | sn62 released v0.3.3 |
-| `sn67:scoring_commit:2026-09-10T07:28:03Z` | 67 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post3 |
-| `sn71:scoring_commit:2026-09-10T06:18:11Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn71 commit touches scoring: docs: state midnight continuous evaluation timing |
-| `sn91:scoring_commit:2026-09-10T11:31:44Z` | 91 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, … |
-| `sn100:scoring_commit:2026-09-10T11:36:06Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T11:39:13Z | sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267) |
+| `sn9:release:v4.12.16` | 9 | RELEASE | P1 | 2026-09-10T15:13:20Z | sn9 released v4.12.16 |
+| `sn51:scoring_commit:2026-09-10T12:28:28Z` | 51 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn51 commit touches scoring: DAH-2748, hide a node the validator cannot reach on one availability … |
+| `sn63:scoring_commit:2026-09-10T15:05:19Z` | 63 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn63 commit touches scoring: Fix issue with migrated validator db |
+| `sn81:scoring_commit:2026-09-10T12:25:01Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn81 commit touches scoring: Document V6 miner submission allowance |
+| `sn108:scoring_commit:2026-09-10T11:47:33Z` | 108 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc… |
+| `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | P2 | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.0`** - sn15 released v2.0.0
-  - published 2026-09-10T07:45:35Z (was shoppingbench-final)
-- **`sn15:scoring_commit:2026-09-10T07:45:35Z`** - sn15 commit touches scoring: Verify scope-bound environment deliveries (#276)
+- **`sn9:release:v4.12.16`** - sn9 released v4.12.16
+  - published 2026-09-10T14:10:04Z (was v4.12.14)
+- **`sn51:scoring_commit:2026-09-10T12:28:28Z`** - sn51 commit touches scoring: DAH-2748, hide a node the validator cannot reach on one availability …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.10-1042298530`** - sn25 released v2026.9.10-1042298530
-  - published 2026-09-10T08:48:20Z (was v2026.9.9-1042199790)
-- **`sn25:scoring_commit:2026-09-10T09:40:39Z`** - sn25 commit touches scoring: crv4: accept reviewed runtime 455 validator stake layout
+- **`sn63:scoring_commit:2026-09-10T15:05:19Z`** - sn63 commit touches scoring: Fix issue with migrated validator db
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.125`** - sn51 released executor-v1.125
-  - published 2026-09-10T09:15:06Z (was executor-v1.124)
-- **`sn62:release:v0.3.3`** - sn62 released v0.3.3
-  - published 2026-09-10T06:56:58Z (was v0.3.2)
-- **`sn67:scoring_commit:2026-09-10T07:28:03Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post3
+- **`sn81:scoring_commit:2026-09-10T12:25:01Z`** - sn81 commit touches scoring: Document V6 miner submission allowance
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-10T06:18:11Z`** - sn71 commit touches scoring: docs: state midnight continuous evaluation timing
+- **`sn108:scoring_commit:2026-09-10T11:47:33Z`** - sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-10T11:31:44Z`** - sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-10T11:36:06Z`** - sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:e9a9de7a5084c0f6`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -57,9 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn1:release:v4.4.0` | 1 | RELEASE | 2026-09-03T11:45:17Z | sn1 released v4.4.0 |
-| `sn50:scoring_commit:2026-09-03T09:01:36Z` | 50 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn50 commit touches scoring: base miner: gzip-compress axon responses (#319) |
-| `sn100:scoring_commit:2026-09-03T08:25:50Z` | 100 | SCORING_COMMIT | 2026-09-03T11:45:17Z | sn100 commit touches scoring: fix(relearn): pin proven CUDA scoring eval image digest (#205) |
 | `sn1:release:v4.4.1` | 1 | RELEASE | 2026-09-03T15:15:26Z | sn1 released v4.4.1 |
 | `sn2:release:14.14.2` | 2 | RELEASE | 2026-09-03T15:15:26Z | sn2 released 14.14.2 |
 | `sn53:scoring_commit:2026-09-03T05:50:55Z` | 53 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn53 commit touches scoring: tee_miner: stop dropping the thinking-token count on the way out |
@@ -238,6 +223,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-09-10T05:24:18Z` | 81 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme |
 | `sn91:scoring_commit:2026-09-10T05:27:44Z` | 91 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start |
 | `sn100:scoring_commit:2026-09-10T06:07:01Z` | 100 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261) |
+| `sn15:release:v2.0.0` | 15 | RELEASE | 2026-09-10T11:39:13Z | sn15 released v2.0.0 |
+| `sn15:scoring_commit:2026-09-10T07:45:35Z` | 15 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn15 commit touches scoring: Verify scope-bound environment deliveries (#276) |
+| `sn25:release:v2026.9.10-1042298530` | 25 | RELEASE | 2026-09-10T11:39:13Z | sn25 released v2026.9.10-1042298530 |
+| `sn25:scoring_commit:2026-09-10T09:40:39Z` | 25 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn25 commit touches scoring: crv4: accept reviewed runtime 455 validator stake layout |
+| `sn51:release:executor-v1.125` | 51 | RELEASE | 2026-09-10T11:39:13Z | sn51 released executor-v1.125 |
+| `sn62:release:v0.3.3` | 62 | RELEASE | 2026-09-10T11:39:13Z | sn62 released v0.3.3 |
+| `sn67:scoring_commit:2026-09-10T07:28:03Z` | 67 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post3 |
+| `sn71:scoring_commit:2026-09-10T06:18:11Z` | 71 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn71 commit touches scoring: docs: state midnight continuous evaluation timing |
+| `sn91:scoring_commit:2026-09-10T11:31:44Z` | 91 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, … |
+| `sn100:scoring_commit:2026-09-10T11:36:06Z` | 100 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267) |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T01:20:01Z, block 9033797
+# ALARMS - generated 2026-09-10T06:18:35Z, block 9035288
 
-window: first_seen in [2026-09-10T00:05:26Z, 2026-09-10T01:20:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T05:04:09Z, 2026-09-10T06:19:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.9-1042000000` | 25 | RELEASE | P1 | 2026-09-10T01:20:26Z | sn25 released v2026.9.9-1042000000 |
-| `sn81:scoring_commit:2026-09-10T00:47:41Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T01:20:26Z | sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary |
-| `sn100:release:ctx CLI v3.3.31` | 100 | RELEASE | P1 | 2026-09-10T01:20:26Z | sn100 released ctx CLI v3.3.31 |
-| `sn100:scoring_commit:2026-09-10T00:49:52Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T01:20:26Z | sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259) |
-| `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | P2 | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
+| `sn15:release:shoppingbench-final` | 15 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn15 released shoppingbench-final |
+| `sn25:release:v2026.9.9-1042199790` | 25 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn25 released v2026.9.9-1042199790 |
+| `sn51:release:executor-v1.124` | 51 | RELEASE | P1 | 2026-09-10T06:19:09Z | sn51 released executor-v1.124 |
+| `sn51:scoring_commit:2026-09-10T02:42:59Z` | 51 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin… |
+| `sn71:scoring_commit:2026-09-10T05:18:12Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn71 commit touches scoring: Preserve validated page final URLs |
+| `sn81:scoring_commit:2026-09-10T05:24:18Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme |
+| `sn91:scoring_commit:2026-09-10T05:27:44Z` | 91 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start |
+| `sn100:scoring_commit:2026-09-10T06:07:01Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T06:19:09Z | sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261) |
+| `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | P2 | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.9.9-1042000000`** - sn25 released v2026.9.9-1042000000
-  - published 2026-09-10T00:30:52Z (was v2026.9.9-1041947070)
-- **`sn81:scoring_commit:2026-09-10T00:47:41Z`** - sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary
+- **`sn15:release:shoppingbench-final`** - sn15 released shoppingbench-final
+  - published 2026-09-10T05:53:33Z (was v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274))
+- **`sn25:release:v2026.9.9-1042199790`** - sn25 released v2026.9.9-1042199790
+  - published 2026-09-10T06:03:49Z (was v2026.9.9-1042000000)
+- **`sn51:release:executor-v1.124`** - sn51 released executor-v1.124
+  - published 2026-09-10T03:05:33Z (was executor-v1.123)
+- **`sn51:scoring_commit:2026-09-10T02:42:59Z`** - sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:ctx CLI v3.3.31`** - sn100 released ctx CLI v3.3.31
-  - published 2026-09-10T00:55:44Z (was ctx CLI v3.3.30)
-- **`sn100:scoring_commit:2026-09-10T00:49:52Z`** - sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259)
+- **`sn71:scoring_commit:2026-09-10T05:18:12Z`** - sn71 commit touches scoring: Preserve validated page final URLs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:b64ef6137b1c6577`** - sn71 README task/scoring sections changed
+- **`sn81:scoring_commit:2026-09-10T05:24:18Z`** - sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-09-10T05:27:44Z`** - sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-10T06:07:01Z`** - sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:readme_task_diff:17e287861e782246`** - sn15 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn105:burn_drop:0.000` | 105 | BURN_DROP | 2026-09-03T01:31:27Z | sn105 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.974` | 71 | BURN_DROP | 2026-09-03T06:32:43Z | sn71 burn fell 1.000 -> 0.974 - miners can earn again |
 | `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
@@ -216,6 +227,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-09T22:13:48Z` | 78 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn78 commit touches scoring: Fix OCI archive annotation verification |
 | `sn100:release:ctx CLI v3.3.30` | 100 | RELEASE | 2026-09-09T23:25:39Z | sn100 released ctx CLI v3.3.30 |
 | `sn100:scoring_commit:2026-09-09T22:40:23Z` | 100 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25 |
+| `sn25:release:v2026.9.9-1042000000` | 25 | RELEASE | 2026-09-10T01:20:26Z | sn25 released v2026.9.9-1042000000 |
+| `sn81:scoring_commit:2026-09-10T00:47:41Z` | 81 | SCORING_COMMIT | 2026-09-10T01:20:26Z | sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary |
+| `sn100:release:ctx CLI v3.3.31` | 100 | RELEASE | 2026-09-10T01:20:26Z | sn100 released ctx CLI v3.3.31 |
+| `sn100:scoring_commit:2026-09-10T00:49:52Z` | 100 | SCORING_COMMIT | 2026-09-10T01:20:26Z | sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259) |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
@@ -239,6 +254,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
 | `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
+| `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

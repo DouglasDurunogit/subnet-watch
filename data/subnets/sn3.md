@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-09-10T01:20:01Z  |  block: 9033797  |  row_status: ok
+snapshot_utc: 2026-09-10T06:18:35Z  |  block: 9035288  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.006780372 TAO (1.7128575746399999 USD), open=True
+- registration cost: 0.004880817 TAO (1.23709187682 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 676.1 days  |  registered at block 4165565
+- subnet age: 676.4 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4405.7819859219135** (uid 193) <- the only figure quotable as achievable
-- median_miner_usd_day: 4405.7819859219135
-- top_miner_usd_day: 4405.7819859219135 (uid 193, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 4413.504601218455** (uid 198) <- the only figure quotable as achievable
+- median_miner_usd_day: 4413.504601218455
+- top_miner_usd_day: 4413.504601218455 (uid 198, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.004663299406405974  |  top1_share: 0.20116582485160148  |  top10_share: 1.0
+- earners: 5  |  gini: 0.004675578343404929  |  top1_share: 0.20116889458585122  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-10T01:20:01Z  |  block: 9033797  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 4397.5628 USD/day  |  payback on registration: 0.0 days
+- net margin: 4405.2854 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 76.0 (rank 4), confidence 0.85 - hardware requirement unknown
 - components: income 33.14 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: SCORING_COMMIT 5.4d ago
+- freshness basis: SCORING_COMMIT 5.6d ago
 
 ## On-chain description
 

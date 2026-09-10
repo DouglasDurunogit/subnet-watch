@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T21:14:00Z, block 9039755
+# ALARMS - generated 2026-09-10T23:18:52Z, block 9040379
 
-window: first_seen in [2026-09-10T19:59:36Z, 2026-09-10T21:14:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T22:04:16Z, 2026-09-10T23:19:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.2: Record search retries in validat` | 15 | RELEASE | P1 | 2026-09-10T21:14:36Z | sn15 released v2.0.2: Record search retries in validator traces (#280) |
-| `sn15:scoring_commit:2026-09-10T20:02:22Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn15 commit touches scoring: Record search retries in validator traces (#280) |
-| `sn20:scoring_commit:2026-09-10T20:17:09Z` | 20 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn20 commit touches scoring: Clarify full burn when every miner has zero current reward |
-| `sn81:scoring_commit:2026-09-10T19:13:46Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification |
-| `sn100:scoring_commit:2026-09-10T20:16:11Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#… |
-| `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | P2 | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
-| `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | P2 | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |
+| `sn15:release:v2.0.3` | 15 | RELEASE | P1 | 2026-09-10T23:19:16Z | sn15 released v2.0.3 |
+| `sn15:scoring_commit:2026-09-10T22:57:44Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error … |
+| `sn20:scoring_commit:2026-09-10T21:24:32Z` | 20 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn20 commit touches scoring: Smooth mainnet rewards over configurable round history |
+| `sn62:release:v0.3.4` | 62 | RELEASE | P1 | 2026-09-10T23:19:16Z | sn62 released v0.3.4 |
+| `sn78:scoring_commit:2026-09-10T21:24:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor |
+| `sn100:scoring_commit:2026-09-10T21:47:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275) |
 
 ### detail
 
-- **`sn15:release:v2.0.2: Record search retries in validat`** - sn15 released v2.0.2: Record search retries in validator traces (#280)
-  - published 2026-09-10T20:02:22Z (was v2.0.1)
-- **`sn15:scoring_commit:2026-09-10T20:02:22Z`** - sn15 commit touches scoring: Record search retries in validator traces (#280)
+- **`sn15:release:v2.0.3`** - sn15 released v2.0.3
+  - published 2026-09-10T22:57:44Z (was v2.0.2: Record search retries in validator traces (#280))
+- **`sn15:scoring_commit:2026-09-10T22:57:44Z`** - sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn20:scoring_commit:2026-09-10T20:17:09Z`** - sn20 commit touches scoring: Clarify full burn when every miner has zero current reward
+- **`sn20:scoring_commit:2026-09-10T21:24:32Z`** - sn20 commit touches scoring: Smooth mainnet rewards over configurable round history
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-10T19:13:46Z`** - sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification
+- **`sn62:release:v0.3.4`** - sn62 released v0.3.4
+  - published 2026-09-10T21:15:23Z (was v0.3.3)
+- **`sn78:scoring_commit:2026-09-10T21:24:05Z`** - sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-10T20:16:11Z`** - sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#…
+- **`sn100:scoring_commit:2026-09-10T21:47:23Z`** - sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:853d4079fee0eccb`** - sn15 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn20:readme_task_diff:b54d839bca570978`** - sn20 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
@@ -47,8 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn25:release:v2026.9.3-1036684010` | 25 | RELEASE | 2026-09-03T21:41:08Z | sn25 released v2026.9.3-1036684010 |
-| `sn71:scoring_commit:2026-09-03T18:50:08Z` | 71 | SCORING_COMMIT | 2026-09-03T21:41:08Z | sn71 commit touches scoring: Bind updated scoring protected workflows |
 | `sn71:scoring_commit:2026-09-03T22:37:18Z` | 71 | SCORING_COMMIT | 2026-09-03T23:33:40Z | sn71 commit touches scoring: Tell a rate-limited miner which submission cap it hit |
 | `sn21:scoring_commit:2026-09-04T00:49:42Z` | 21 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn21 commit touches scoring: fix(validator): commit the daily vector directly when the weekly stre… |
 | `sn25:release:v2026.9.3-1036806790` | 25 | RELEASE | 2026-09-04T01:25:22Z | sn25 released v2026.9.3-1036806790 |
@@ -241,6 +235,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.10-1042581110` | 25 | RELEASE | 2026-09-10T18:37:00Z | sn25 released v2026.9.10-1042581110 |
 | `sn71:scoring_commit:2026-09-10T18:20:39Z` | 71 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn71 commit touches scoring: Validate deployed legacy coordinator command |
 | `sn78:scoring_commit:2026-09-10T18:02:00Z` | 78 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn78 commit touches scoring: Expose Linux validator setup |
+| `sn15:release:v2.0.2: Record search retries in validat` | 15 | RELEASE | 2026-09-10T21:14:36Z | sn15 released v2.0.2: Record search retries in validator traces (#280) |
+| `sn15:scoring_commit:2026-09-10T20:02:22Z` | 15 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn15 commit touches scoring: Record search retries in validator traces (#280) |
+| `sn20:scoring_commit:2026-09-10T20:17:09Z` | 20 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn20 commit touches scoring: Clarify full burn when every miner has zero current reward |
+| `sn81:scoring_commit:2026-09-10T19:13:46Z` | 81 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification |
+| `sn100:scoring_commit:2026-09-10T20:16:11Z` | 100 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#… |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 | `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
@@ -265,6 +264,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 | `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
 | `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
+| `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
+| `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

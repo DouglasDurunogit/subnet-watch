@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T18:36:27Z, block 9038969
+# ALARMS - generated 2026-09-10T21:14:00Z, block 9039755
 
-window: first_seen in [2026-09-10T17:22:00Z, 2026-09-10T18:37:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T19:59:36Z, 2026-09-10T21:14:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.12.17` | 9 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn9 released v4.12.17 |
-| `sn15:release:v2.0.1` | 15 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn15 released v2.0.1 |
-| `sn15:scoring_commit:2026-09-10T15:34:08Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn15 commit touches scoring: Select validator evaluator from claimed pack binding |
-| `sn21:scoring_commit:2026-09-10T16:56:54Z` | 21 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex… |
-| `sn25:release:v2026.9.10-1042581110` | 25 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn25 released v2026.9.10-1042581110 |
-| `sn71:scoring_commit:2026-09-10T18:20:39Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn71 commit touches scoring: Validate deployed legacy coordinator command |
-| `sn78:scoring_commit:2026-09-10T18:02:00Z` | 78 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn78 commit touches scoring: Expose Linux validator setup |
+| `sn15:release:v2.0.2: Record search retries in validat` | 15 | RELEASE | P1 | 2026-09-10T21:14:36Z | sn15 released v2.0.2: Record search retries in validator traces (#280) |
+| `sn15:scoring_commit:2026-09-10T20:02:22Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn15 commit touches scoring: Record search retries in validator traces (#280) |
+| `sn20:scoring_commit:2026-09-10T20:17:09Z` | 20 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn20 commit touches scoring: Clarify full burn when every miner has zero current reward |
+| `sn81:scoring_commit:2026-09-10T19:13:46Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification |
+| `sn100:scoring_commit:2026-09-10T20:16:11Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T21:14:36Z | sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#… |
+| `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | P2 | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
+| `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | P2 | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |
 
 ### detail
 
-- **`sn9:release:v4.12.17`** - sn9 released v4.12.17
-  - published 2026-09-10T15:17:56Z (was v4.12.16)
-- **`sn15:release:v2.0.1`** - sn15 released v2.0.1
-  - published 2026-09-10T15:34:08Z (was v2.0.0)
-- **`sn15:scoring_commit:2026-09-10T15:34:08Z`** - sn15 commit touches scoring: Select validator evaluator from claimed pack binding
+- **`sn15:release:v2.0.2: Record search retries in validat`** - sn15 released v2.0.2: Record search retries in validator traces (#280)
+  - published 2026-09-10T20:02:22Z (was v2.0.1)
+- **`sn15:scoring_commit:2026-09-10T20:02:22Z`** - sn15 commit touches scoring: Record search retries in validator traces (#280)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-09-10T16:56:54Z`** - sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex…
+- **`sn20:scoring_commit:2026-09-10T20:17:09Z`** - sn20 commit touches scoring: Clarify full burn when every miner has zero current reward
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.10-1042581110`** - sn25 released v2026.9.10-1042581110
-  - published 2026-09-10T16:40:29Z (was v2026.9.10-1042298530)
-- **`sn71:scoring_commit:2026-09-10T18:20:39Z`** - sn71 commit touches scoring: Validate deployed legacy coordinator command
+- **`sn81:scoring_commit:2026-09-10T19:13:46Z`** - sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-10T18:02:00Z`** - sn78 commit touches scoring: Expose Linux validator setup
+- **`sn100:scoring_commit:2026-09-10T20:16:11Z`** - sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:readme_task_diff:853d4079fee0eccb`** - sn15 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn20:readme_task_diff:b54d839bca570978`** - sn20 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.601` | 121 | BURN_DROP | 2026-09-03T18:49:37Z | sn121 burn fell 1.000 -> 0.601 - miners can earn again |
 | `sn49:burn_drop:0.990` | 49 | BURN_DROP | 2026-09-03T21:41:08Z | sn49 burn fell 0.990 -> 0.990 - miners can earn again |
 | `sn107:burn_drop:0.812` | 107 | BURN_DROP | 2026-09-04T01:25:22Z | sn107 burn fell 1.000 -> 0.812 - miners can earn again |
 | `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
@@ -48,10 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn53:scoring_commit:2026-09-03T05:50:55Z` | 53 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn53 commit touches scoring: tee_miner: stop dropping the thinking-token count on the way out |
-| `sn69:scoring_commit:2026-09-03T16:15:44Z` | 69 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn69 commit touches scoring: Point CLI miners at the console to download a brief document (#5) |
-| `sn71:scoring_commit:2026-09-03T18:42:37Z` | 71 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn71 commit touches scoring: Preserve strict identity boundaries in scoring integration |
-| `sn74:release:release-20260903-183804` | 74 | RELEASE | 2026-09-03T18:49:37Z | sn74 released release-20260903-183804 |
 | `sn25:release:v2026.9.3-1036684010` | 25 | RELEASE | 2026-09-03T21:41:08Z | sn25 released v2026.9.3-1036684010 |
 | `sn71:scoring_commit:2026-09-03T18:50:08Z` | 71 | SCORING_COMMIT | 2026-09-03T21:41:08Z | sn71 commit touches scoring: Bind updated scoring protected workflows |
 | `sn71:scoring_commit:2026-09-03T22:37:18Z` | 71 | SCORING_COMMIT | 2026-09-03T23:33:40Z | sn71 commit touches scoring: Tell a rate-limited miner which submission cap it hit |
@@ -239,7 +234,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn63:scoring_commit:2026-09-10T15:05:19Z` | 63 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn63 commit touches scoring: Fix issue with migrated validator db |
 | `sn81:scoring_commit:2026-09-10T12:25:01Z` | 81 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn81 commit touches scoring: Document V6 miner submission allowance |
 | `sn108:scoring_commit:2026-09-10T11:47:33Z` | 108 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc… |
-| `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
+| `sn9:release:v4.12.17` | 9 | RELEASE | 2026-09-10T18:37:00Z | sn9 released v4.12.17 |
+| `sn15:release:v2.0.1` | 15 | RELEASE | 2026-09-10T18:37:00Z | sn15 released v2.0.1 |
+| `sn15:scoring_commit:2026-09-10T15:34:08Z` | 15 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn15 commit touches scoring: Select validator evaluator from claimed pack binding |
+| `sn21:scoring_commit:2026-09-10T16:56:54Z` | 21 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex… |
+| `sn25:release:v2026.9.10-1042581110` | 25 | RELEASE | 2026-09-10T18:37:00Z | sn25 released v2026.9.10-1042581110 |
+| `sn71:scoring_commit:2026-09-10T18:20:39Z` | 71 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn71 commit touches scoring: Validate deployed legacy coordinator command |
+| `sn78:scoring_commit:2026-09-10T18:02:00Z` | 78 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn78 commit touches scoring: Expose Linux validator setup |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 | `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |

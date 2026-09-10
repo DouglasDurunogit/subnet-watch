@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-09T23:25:13Z, block 9033224
+# ALARMS - generated 2026-09-10T01:20:01Z, block 9033797
 
-window: first_seen in [2026-09-09T22:10:39Z, 2026-09-09T23:25:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T00:05:26Z, 2026-09-10T01:20:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.9-1041947070` | 25 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn25 released v2026.9.9-1041947070 |
-| `sn28:release:v0.4.17` | 28 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn28 released v0.4.17 |
-| `sn61:release:4.10.4` | 61 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn61 released 4.10.4 |
-| `sn62:scoring_commit:2026-09-09T18:55:06Z` | 62 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker |
-| `sn71:scoring_commit:2026-09-09T22:53:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes |
-| `sn78:scoring_commit:2026-09-09T22:13:48Z` | 78 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn78 commit touches scoring: Fix OCI archive annotation verification |
-| `sn100:release:ctx CLI v3.3.30` | 100 | RELEASE | P1 | 2026-09-09T23:25:39Z | sn100 released ctx CLI v3.3.30 |
-| `sn100:scoring_commit:2026-09-09T22:40:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-09T23:25:39Z | sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25 |
+| `sn25:release:v2026.9.9-1042000000` | 25 | RELEASE | P1 | 2026-09-10T01:20:26Z | sn25 released v2026.9.9-1042000000 |
+| `sn81:scoring_commit:2026-09-10T00:47:41Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T01:20:26Z | sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary |
+| `sn100:release:ctx CLI v3.3.31` | 100 | RELEASE | P1 | 2026-09-10T01:20:26Z | sn100 released ctx CLI v3.3.31 |
+| `sn100:scoring_commit:2026-09-10T00:49:52Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T01:20:26Z | sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259) |
+| `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | P2 | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.9.9-1041947070`** - sn25 released v2026.9.9-1041947070
-  - published 2026-09-09T23:12:56Z (was v2026.9.8-1040985530)
-- **`sn28:release:v0.4.17`** - sn28 released v0.4.17
-  - published 2026-09-09T23:14:40Z (was v0.4.17-dev)
-- **`sn61:release:4.10.4`** - sn61 released 4.10.4
-  - published 2026-09-09T22:07:48Z (was 4.10.3)
-- **`sn62:scoring_commit:2026-09-09T18:55:06Z`** - sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker
+- **`sn25:release:v2026.9.9-1042000000`** - sn25 released v2026.9.9-1042000000
+  - published 2026-09-10T00:30:52Z (was v2026.9.9-1041947070)
+- **`sn81:scoring_commit:2026-09-10T00:47:41Z`** - sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-09T22:53:48Z`** - sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes
+- **`sn100:release:ctx CLI v3.3.31`** - sn100 released ctx CLI v3.3.31
+  - published 2026-09-10T00:55:44Z (was ctx CLI v3.3.30)
+- **`sn100:scoring_commit:2026-09-10T00:49:52Z`** - sn100 commit touches scoring: feat(proof): require miner hotkey signature on submit (#259)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-09T22:13:48Z`** - sn78 commit touches scoring: Fix OCI archive annotation verification
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:release:ctx CLI v3.3.30`** - sn100 released ctx CLI v3.3.30
-  - published 2026-09-09T23:19:27Z (was v3.3.29)
-- **`sn100:scoring_commit:2026-09-09T22:40:23Z`** - sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:b64ef6137b1c6577`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -53,7 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn71:scoring_commit:2026-09-02T21:52:48Z` | 71 | SCORING_COMMIT | 2026-09-02T23:37:16Z | sn71 commit touches scoring: Repair SOURCE_ADD provenance origin rewards |
 | `sn67:scoring_commit:2026-09-03T01:49:07Z` | 67 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260903.post0 |
 | `sn76:scoring_commit:2026-09-03T05:42:35Z` | 76 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn76 commit touches scoring: ci: run the non-scoring tests on every push |
 | `sn91:scoring_commit:2026-09-03T02:30:30Z` | 91 | SCORING_COMMIT | 2026-09-03T06:32:43Z | sn91 commit touches scoring: scoring: block-scheduled fresh-king margin (2% → 1% at 8992800), reso… |
@@ -218,6 +208,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.3.2` | 62 | RELEASE | 2026-09-09T21:17:06Z | sn62 released v0.3.2 |
 | `sn71:scoring_commit:2026-09-09T21:09:24Z` | 71 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
 | `sn78:scoring_commit:2026-09-09T19:48:05Z` | 78 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn78 commit touches scoring: Add prerequisite-gated validator supervisor |
+| `sn25:release:v2026.9.9-1041947070` | 25 | RELEASE | 2026-09-09T23:25:39Z | sn25 released v2026.9.9-1041947070 |
+| `sn28:release:v0.4.17` | 28 | RELEASE | 2026-09-09T23:25:39Z | sn28 released v0.4.17 |
+| `sn61:release:4.10.4` | 61 | RELEASE | 2026-09-09T23:25:39Z | sn61 released 4.10.4 |
+| `sn62:scoring_commit:2026-09-09T18:55:06Z` | 62 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker |
+| `sn71:scoring_commit:2026-09-09T22:53:48Z` | 71 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes |
+| `sn78:scoring_commit:2026-09-09T22:13:48Z` | 78 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn78 commit touches scoring: Fix OCI archive annotation verification |
+| `sn100:release:ctx CLI v3.3.30` | 100 | RELEASE | 2026-09-09T23:25:39Z | sn100 released ctx CLI v3.3.30 |
+| `sn100:scoring_commit:2026-09-09T22:40:23Z` | 100 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25 |
 | `sn91:readme_task_diff:2d41cdb0f4f83294` | 91 | README_TASK_DIFF | 2026-09-03T06:32:43Z | sn91 README task/scoring sections changed |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T15:12:51Z, block 9037953
+# ALARMS - generated 2026-09-10T18:36:27Z, block 9038969
 
-window: first_seen in [2026-09-10T13:58:20Z, 2026-09-10T15:13:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-10T17:22:00Z, 2026-09-10T18:37:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.12.16` | 9 | RELEASE | P1 | 2026-09-10T15:13:20Z | sn9 released v4.12.16 |
-| `sn51:scoring_commit:2026-09-10T12:28:28Z` | 51 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn51 commit touches scoring: DAH-2748, hide a node the validator cannot reach on one availability … |
-| `sn63:scoring_commit:2026-09-10T15:05:19Z` | 63 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn63 commit touches scoring: Fix issue with migrated validator db |
-| `sn81:scoring_commit:2026-09-10T12:25:01Z` | 81 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn81 commit touches scoring: Document V6 miner submission allowance |
-| `sn108:scoring_commit:2026-09-10T11:47:33Z` | 108 | SCORING_COMMIT | P1 | 2026-09-10T15:13:20Z | sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc… |
-| `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | P2 | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
+| `sn9:release:v4.12.17` | 9 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn9 released v4.12.17 |
+| `sn15:release:v2.0.1` | 15 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn15 released v2.0.1 |
+| `sn15:scoring_commit:2026-09-10T15:34:08Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn15 commit touches scoring: Select validator evaluator from claimed pack binding |
+| `sn21:scoring_commit:2026-09-10T16:56:54Z` | 21 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex… |
+| `sn25:release:v2026.9.10-1042581110` | 25 | RELEASE | P1 | 2026-09-10T18:37:00Z | sn25 released v2026.9.10-1042581110 |
+| `sn71:scoring_commit:2026-09-10T18:20:39Z` | 71 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn71 commit touches scoring: Validate deployed legacy coordinator command |
+| `sn78:scoring_commit:2026-09-10T18:02:00Z` | 78 | SCORING_COMMIT | P1 | 2026-09-10T18:37:00Z | sn78 commit touches scoring: Expose Linux validator setup |
 
 ### detail
 
-- **`sn9:release:v4.12.16`** - sn9 released v4.12.16
-  - published 2026-09-10T14:10:04Z (was v4.12.14)
-- **`sn51:scoring_commit:2026-09-10T12:28:28Z`** - sn51 commit touches scoring: DAH-2748, hide a node the validator cannot reach on one availability …
+- **`sn9:release:v4.12.17`** - sn9 released v4.12.17
+  - published 2026-09-10T15:17:56Z (was v4.12.16)
+- **`sn15:release:v2.0.1`** - sn15 released v2.0.1
+  - published 2026-09-10T15:34:08Z (was v2.0.0)
+- **`sn15:scoring_commit:2026-09-10T15:34:08Z`** - sn15 commit touches scoring: Select validator evaluator from claimed pack binding
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn63:scoring_commit:2026-09-10T15:05:19Z`** - sn63 commit touches scoring: Fix issue with migrated validator db
+- **`sn21:scoring_commit:2026-09-10T16:56:54Z`** - sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-10T12:25:01Z`** - sn81 commit touches scoring: Document V6 miner submission allowance
+- **`sn25:release:v2026.9.10-1042581110`** - sn25 released v2026.9.10-1042581110
+  - published 2026-09-10T16:40:29Z (was v2026.9.10-1042298530)
+- **`sn71:scoring_commit:2026-09-10T18:20:39Z`** - sn71 commit touches scoring: Validate deployed legacy coordinator command
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-09-10T11:47:33Z`** - sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc…
+- **`sn78:scoring_commit:2026-09-10T18:02:00Z`** - sn78 commit touches scoring: Expose Linux validator setup
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:e9a9de7a5084c0f6`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,8 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn1:release:v4.4.1` | 1 | RELEASE | 2026-09-03T15:15:26Z | sn1 released v4.4.1 |
-| `sn2:release:14.14.2` | 2 | RELEASE | 2026-09-03T15:15:26Z | sn2 released 14.14.2 |
 | `sn53:scoring_commit:2026-09-03T05:50:55Z` | 53 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn53 commit touches scoring: tee_miner: stop dropping the thinking-token count on the way out |
 | `sn69:scoring_commit:2026-09-03T16:15:44Z` | 69 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn69 commit touches scoring: Point CLI miners at the console to download a brief document (#5) |
 | `sn71:scoring_commit:2026-09-03T18:42:37Z` | 71 | SCORING_COMMIT | 2026-09-03T18:49:37Z | sn71 commit touches scoring: Preserve strict identity boundaries in scoring integration |
@@ -233,6 +234,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-10T06:18:11Z` | 71 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn71 commit touches scoring: docs: state midnight continuous evaluation timing |
 | `sn91:scoring_commit:2026-09-10T11:31:44Z` | 91 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn91 commit touches scoring: docs: concise miner quickstart for funded legs, private submissions, … |
 | `sn100:scoring_commit:2026-09-10T11:36:06Z` | 100 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn100 commit touches scoring: fix(proof): fail closed on incomplete harbor evaluate (#267) |
+| `sn9:release:v4.12.16` | 9 | RELEASE | 2026-09-10T15:13:20Z | sn9 released v4.12.16 |
+| `sn51:scoring_commit:2026-09-10T12:28:28Z` | 51 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn51 commit touches scoring: DAH-2748, hide a node the validator cannot reach on one availability … |
+| `sn63:scoring_commit:2026-09-10T15:05:19Z` | 63 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn63 commit touches scoring: Fix issue with migrated validator db |
+| `sn81:scoring_commit:2026-09-10T12:25:01Z` | 81 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn81 commit touches scoring: Document V6 miner submission allowance |
+| `sn108:scoring_commit:2026-09-10T11:47:33Z` | 108 | SCORING_COMMIT | 2026-09-10T15:13:20Z | sn108 commit touches scoring: feat(evaluation): optionally discard a checkpoint once it has been sc… |
 | `sn71:readme_task_diff:ebf6898a52202570` | 71 | README_TASK_DIFF | 2026-09-03T18:49:37Z | sn71 README task/scoring sections changed |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
@@ -257,6 +263,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 | `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
+| `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

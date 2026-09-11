@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-11T06:21:57Z, block 9042489
+# ALARMS - generated 2026-09-11T11:39:53Z, block 9044076
 
-window: first_seen in [2026-09-11T05:07:30Z, 2026-09-11T06:22:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-11T10:25:27Z, 2026-09-11T11:40:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20260911-013831` | 7 | RELEASE | P1 | 2026-09-11T06:22:30Z | sn7 released release-20260911-013831 |
-| `sn7:scoring_commit:2026-09-11T01:08:48Z` | 7 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn7 commit touches scoring: Miner wizard: funding step, one shared EVM key, container check after… |
-| `sn15:release:v2.0.4` | 15 | RELEASE | P1 | 2026-09-11T06:22:30Z | sn15 released v2.0.4 |
-| `sn25:scoring_commit:2026-09-11T06:17:33Z` | 25 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn25 commit touches scoring: Honor transition limits for typed validator evidence |
-| `sn51:scoring_commit:2026-09-11T06:10:30Z` | 51 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn51 commit touches scoring: DAH-3019 - [P1] validator reports verification start once per miner (… |
-| `sn53:scoring_commit:2026-09-11T03:07:35Z` | 53 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn53 commit touches scoring: Merge pull request #47 from hanlinai/fix/engy-miner-length-finish-reas |
-| `sn67:scoring_commit:2026-09-10T08:37:01Z` | 67 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post4 |
-| `sn71:scoring_commit:2026-09-11T05:58:19Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn71 commit touches scoring: Fix normal validator dependency and distribution packaging |
-| `sn78:scoring_commit:2026-09-11T05:47:10Z` | 78 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn78 commit touches scoring: Harden validator supervisor container startup |
-| `sn100:scoring_commit:2026-09-11T04:22:33Z` | 100 | SCORING_COMMIT | P1 | 2026-09-11T06:22:30Z | sn100 commit touches scoring: fix(proof): retain failed experiment vms for rca + log evaluate refus… |
-| `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | P2 | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
-| `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | P2 | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-09-10T11:52:15Z` | 10 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn10 commit touches scoring: fix(ops): verify staged units against the live filesystem, record vec… |
+| `sn20:scoring_commit:2026-09-11T09:44:50Z` | 20 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn20 commit touches scoring: Add scorer v1.1.0 and signed round feedback |
+| `sn25:scoring_commit:2026-09-11T11:24:07Z` | 25 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn25 commit touches scoring: Resume provisional validators from completed local recovery and publi… |
+| `sn51:release:miner-v1.004` | 51 | RELEASE | P1 | 2026-09-11T11:40:27Z | sn51 released miner-v1.004 |
+| `sn51:scoring_commit:2026-09-11T10:27:24Z` | 51 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn51 commit touches scoring: DAH-3206 - [P2] miner accepts a validator sign-in only when it names … |
+| `sn67:scoring_commit:2026-09-11T06:52:54Z` | 67 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260911.post0 |
+| `sn71:scoring_commit:2026-09-11T08:20:53Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn71 commit touches scoring: Remove unused validator V2 release metadata and archives |
+| `sn78:scoring_commit:2026-09-11T10:40:20Z` | 78 | SCORING_COMMIT | P1 | 2026-09-11T11:40:27Z | sn78 commit touches scoring: Make main installer select signed validator release |
+| `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | P2 | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
 
 ### detail
 
-- **`sn7:release:release-20260911-013831`** - sn7 released release-20260911-013831
-  - published 2026-09-11T01:08:48Z (was release-20260905-204833)
-- **`sn7:scoring_commit:2026-09-11T01:08:48Z`** - sn7 commit touches scoring: Miner wizard: funding step, one shared EVM key, container check after…
+- **`sn10:scoring_commit:2026-09-10T11:52:15Z`** - sn10 commit touches scoring: fix(ops): verify staged units against the live filesystem, record vec…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:release:v2.0.4`** - sn15 released v2.0.4
-  - published 2026-09-11T02:25:30Z (was v2.0.3)
-- **`sn25:scoring_commit:2026-09-11T06:17:33Z`** - sn25 commit touches scoring: Honor transition limits for typed validator evidence
+- **`sn20:scoring_commit:2026-09-11T09:44:50Z`** - sn20 commit touches scoring: Add scorer v1.1.0 and signed round feedback
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-11T06:10:30Z`** - sn51 commit touches scoring: DAH-3019 - [P1] validator reports verification start once per miner (…
+- **`sn25:scoring_commit:2026-09-11T11:24:07Z`** - sn25 commit touches scoring: Resume provisional validators from completed local recovery and publi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-09-11T03:07:35Z`** - sn53 commit touches scoring: Merge pull request #47 from hanlinai/fix/engy-miner-length-finish-reas
+- **`sn51:release:miner-v1.004`** - sn51 released miner-v1.004
+  - published 2026-09-11T08:05:35Z (was executor-v1.125)
+- **`sn51:scoring_commit:2026-09-11T10:27:24Z`** - sn51 commit touches scoring: DAH-3206 - [P2] miner accepts a validator sign-in only when it names …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-10T08:37:01Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post4
+- **`sn67:scoring_commit:2026-09-11T06:52:54Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260911.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-11T05:58:19Z`** - sn71 commit touches scoring: Fix normal validator dependency and distribution packaging
+- **`sn71:scoring_commit:2026-09-11T08:20:53Z`** - sn71 commit touches scoring: Remove unused validator V2 release metadata and archives
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-11T05:47:10Z`** - sn78 commit touches scoring: Harden validator supervisor container startup
+- **`sn78:scoring_commit:2026-09-11T10:40:20Z`** - sn78 commit touches scoring: Make main installer select signed validator release
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-11T04:22:33Z`** - sn100 commit touches scoring: fix(proof): retain failed experiment vms for rca + log evaluate refus…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn7:readme_task_diff:dc7b2a4e628af18f`** - sn7 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn71:readme_task_diff:f4854b87ceea3027`** - sn71 README task/scoring sections changed
+- **`sn20:readme_task_diff:8d48fc82515ff603`** - sn20 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -61,13 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn25:scoring_commit:2026-09-04T11:22:34Z` | 25 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn25 commit touches scoring: Record semantic verifier parallel qualification |
-| `sn66:scoring_commit:2026-09-03T14:19:04Z` | 66 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn66 commit touches scoring: Derive the verifier image tag, not only its digest and version |
-| `sn67:scoring_commit:2026-09-04T06:27:51Z` | 67 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260904.post1 |
-| `sn78:scoring_commit:2026-09-03T21:48:59Z` | 78 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn78 commit touches scoring: Expose replay-verified public miner solutions |
-| `sn92:scoring_commit:2026-09-04T10:56:43Z` | 92 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn92 commit touches scoring: Smooth the miner CLI and quiet the archive |
-| `sn97:scoring_commit:2026-09-03T16:13:11Z` | 97 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn97 commit touches scoring: fix: re-key a registration when the miner re-activates with a new sub… |
-| `sn100:scoring_commit:2026-09-04T07:41:55Z` | 100 | SCORING_COMMIT | 2026-09-04T11:33:57Z | sn100 commit touches scoring: fix(validator): extract submit outcome helper for clippy |
 | `sn3:scoring_commit:2026-09-04T13:38:17Z` | 3 | SCORING_COMMIT | 2026-09-04T15:09:26Z | sn3 commit touches scoring: Show model digests for queued and active evaluations |
 | `sn21:scoring_commit:2026-09-04T14:12:08Z` | 21 | SCORING_COMMIT | 2026-09-04T15:09:26Z | sn21 commit touches scoring: fix(validator): reference loop uses bt.Wallet |
 | `sn25:release:v2026.9.4-1037327320` | 25 | RELEASE | 2026-09-04T15:09:26Z | sn25 released v2026.9.4-1037327320 |
@@ -257,7 +241,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn36:scoring_commit:2026-09-10T20:24:55Z` | 36 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn36 commit touches scoring: Fix the private-upload commands in the miner guide and CLI hints |
 | `sn71:scoring_commit:2026-09-11T01:07:36Z` | 71 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn71 commit touches scoring: Keep testnet Arena setup aligned with validator authorization |
 | `sn100:scoring_commit:2026-09-11T00:30:47Z` | 100 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn100 commit touches scoring: fix(proof): harvest scored runs when vsock drops done (#278) |
-| `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
+| `sn7:release:release-20260911-013831` | 7 | RELEASE | 2026-09-11T06:22:30Z | sn7 released release-20260911-013831 |
+| `sn7:scoring_commit:2026-09-11T01:08:48Z` | 7 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn7 commit touches scoring: Miner wizard: funding step, one shared EVM key, container check after… |
+| `sn15:release:v2.0.4` | 15 | RELEASE | 2026-09-11T06:22:30Z | sn15 released v2.0.4 |
+| `sn25:scoring_commit:2026-09-11T06:17:33Z` | 25 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn25 commit touches scoring: Honor transition limits for typed validator evidence |
+| `sn51:scoring_commit:2026-09-11T06:10:30Z` | 51 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn51 commit touches scoring: DAH-3019 - [P1] validator reports verification start once per miner (… |
+| `sn53:scoring_commit:2026-09-11T03:07:35Z` | 53 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn53 commit touches scoring: Merge pull request #47 from hanlinai/fix/engy-miner-length-finish-reas |
+| `sn67:scoring_commit:2026-09-10T08:37:01Z` | 67 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post4 |
+| `sn71:scoring_commit:2026-09-11T05:58:19Z` | 71 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn71 commit touches scoring: Fix normal validator dependency and distribution packaging |
+| `sn78:scoring_commit:2026-09-11T05:47:10Z` | 78 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn78 commit touches scoring: Harden validator supervisor container startup |
+| `sn100:scoring_commit:2026-09-11T04:22:33Z` | 100 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn100 commit touches scoring: fix(proof): retain failed experiment vms for rca + log evaluate refus… |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 | `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
 | `sn96:readme_task_diff:9b448a83b77e12c9` | 96 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn96 README task/scoring sections changed |
@@ -283,6 +276,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
 | `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
 | `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |
+| `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
+| `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

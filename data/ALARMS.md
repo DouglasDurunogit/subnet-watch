@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-10T23:18:52Z, block 9040379
+# ALARMS - generated 2026-09-11T01:19:02Z, block 9040980
 
-window: first_seen in [2026-09-10T22:04:16Z, 2026-09-10T23:19:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-11T00:04:31Z, 2026-09-11T01:19:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.3` | 15 | RELEASE | P1 | 2026-09-10T23:19:16Z | sn15 released v2.0.3 |
-| `sn15:scoring_commit:2026-09-10T22:57:44Z` | 15 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error … |
-| `sn20:scoring_commit:2026-09-10T21:24:32Z` | 20 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn20 commit touches scoring: Smooth mainnet rewards over configurable round history |
-| `sn62:release:v0.3.4` | 62 | RELEASE | P1 | 2026-09-10T23:19:16Z | sn62 released v0.3.4 |
-| `sn78:scoring_commit:2026-09-10T21:24:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor |
-| `sn100:scoring_commit:2026-09-10T21:47:23Z` | 100 | SCORING_COMMIT | P1 | 2026-09-10T23:19:16Z | sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275) |
+| `sn20:burn_drop:0.770` | 20 | BURN_DROP | P0 | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
+| `sn36:scoring_commit:2026-09-10T20:24:55Z` | 36 | SCORING_COMMIT | P1 | 2026-09-11T01:19:31Z | sn36 commit touches scoring: Fix the private-upload commands in the miner guide and CLI hints |
+| `sn71:scoring_commit:2026-09-11T01:07:36Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T01:19:31Z | sn71 commit touches scoring: Keep testnet Arena setup aligned with validator authorization |
+| `sn100:scoring_commit:2026-09-11T00:30:47Z` | 100 | SCORING_COMMIT | P1 | 2026-09-11T01:19:31Z | sn100 commit touches scoring: fix(proof): harvest scored runs when vsock drops done (#278) |
 
 ### detail
 
-- **`sn15:release:v2.0.3`** - sn15 released v2.0.3
-  - published 2026-09-10T22:57:44Z (was v2.0.2: Record search retries in validator traces (#280))
-- **`sn15:scoring_commit:2026-09-10T22:57:44Z`** - sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error …
+- **`sn20:burn_drop:0.770`** - sn20 burn fell 1.000 -> 0.770 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn36:scoring_commit:2026-09-10T20:24:55Z`** - sn36 commit touches scoring: Fix the private-upload commands in the miner guide and CLI hints
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn20:scoring_commit:2026-09-10T21:24:32Z`** - sn20 commit touches scoring: Smooth mainnet rewards over configurable round history
+- **`sn71:scoring_commit:2026-09-11T01:07:36Z`** - sn71 commit touches scoring: Keep testnet Arena setup aligned with validator authorization
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.4`** - sn62 released v0.3.4
-  - published 2026-09-10T21:15:23Z (was v0.3.3)
-- **`sn78:scoring_commit:2026-09-10T21:24:05Z`** - sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-10T21:47:23Z`** - sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275)
+- **`sn100:scoring_commit:2026-09-11T00:30:47Z`** - sn100 commit touches scoring: fix(proof): harvest scored runs when vsock drops done (#278)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,7 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn71:scoring_commit:2026-09-03T22:37:18Z` | 71 | SCORING_COMMIT | 2026-09-03T23:33:40Z | sn71 commit touches scoring: Tell a rate-limited miner which submission cap it hit |
 | `sn21:scoring_commit:2026-09-04T00:49:42Z` | 21 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn21 commit touches scoring: fix(validator): commit the daily vector directly when the weekly stre… |
 | `sn25:release:v2026.9.3-1036806790` | 25 | RELEASE | 2026-09-04T01:25:22Z | sn25 released v2026.9.3-1036806790 |
 | `sn25:scoring_commit:2026-09-03T19:36:15Z` | 25 | SCORING_COMMIT | 2026-09-04T01:25:22Z | sn25 commit touches scoring: fix semantic reward consensus fixture |
@@ -240,6 +233,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:scoring_commit:2026-09-10T20:17:09Z` | 20 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn20 commit touches scoring: Clarify full burn when every miner has zero current reward |
 | `sn81:scoring_commit:2026-09-10T19:13:46Z` | 81 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn81 commit touches scoring: perf(validator): time the phases of one expensive proof verification |
 | `sn100:scoring_commit:2026-09-10T20:16:11Z` | 100 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn100 commit touches scoring: fix(proof): tbench agent network, custom Python harness, <1h tasks (#… |
+| `sn15:release:v2.0.3` | 15 | RELEASE | 2026-09-10T23:19:16Z | sn15 released v2.0.3 |
+| `sn15:scoring_commit:2026-09-10T22:57:44Z` | 15 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error … |
+| `sn20:scoring_commit:2026-09-10T21:24:32Z` | 20 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn20 commit touches scoring: Smooth mainnet rewards over configurable round history |
+| `sn62:release:v0.3.4` | 62 | RELEASE | 2026-09-10T23:19:16Z | sn62 released v0.3.4 |
+| `sn78:scoring_commit:2026-09-10T21:24:05Z` | 78 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor |
+| `sn100:scoring_commit:2026-09-10T21:47:23Z` | 100 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275) |
 | `sn114:readme_task_diff:8a170d798d34334c` | 114 | README_TASK_DIFF | 2026-09-04T11:33:57Z | sn114 README task/scoring sections changed |
 | `sn47:readme_task_diff:ee01fd805919dfa1` | 47 | README_TASK_DIFF | 2026-09-04T15:09:26Z | sn47 README task/scoring sections changed |
 | `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |

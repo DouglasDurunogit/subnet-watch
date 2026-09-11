@@ -1,29 +1,13 @@
-# ALARMS - generated 2026-09-11T21:21:19Z, block 9046977
+# ALARMS - generated 2026-09-11T23:26:46Z, block 9047602
 
-window: first_seen in [2026-09-11T20:06:44Z, 2026-09-11T21:21:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-11T22:12:13Z, 2026-09-11T23:27:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn20:scoring_commit:2026-09-11T19:18:55Z` | 20 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds |
-| `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | P1 | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
-| `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
-| `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
-
-### detail
-
-- **`sn20:scoring_commit:2026-09-11T19:18:55Z`** - sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.11-1043550030`** - sn25 released v2026.9.11-1043550030
-  - published 2026-09-11T19:35:09Z (was v2026.9.10-1042581110)
-- **`sn71:scoring_commit:2026-09-11T20:33:14Z`** - sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-11T19:56:05Z`** - sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,9 +20,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
-| `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
-| `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
 | `sn21:scoring_commit:2026-09-05T04:29:37Z` | 21 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05 |
 | `sn62:release:v0.3.0` | 62 | RELEASE | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
 | `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
@@ -236,6 +217,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-11T18:12:07Z` | 15 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (… |
 | `sn25:scoring_commit:2026-09-11T17:13:28Z` | 25 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state |
 | `sn71:scoring_commit:2026-09-11T18:01:43Z` | 71 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn71 commit touches scoring: Accept Harvest plural current positions in contact verification |
+| `sn20:scoring_commit:2026-09-11T19:18:55Z` | 20 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds |
+| `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
+| `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
+| `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
 | `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |

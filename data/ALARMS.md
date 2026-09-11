@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-11T15:15:02Z, block 9045150
+# ALARMS - generated 2026-09-11T18:41:34Z, block 9046183
 
-window: first_seen in [2026-09-11T14:00:26Z, 2026-09-11T15:15:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-11T17:27:05Z, 2026-09-11T18:42:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.12.18` | 9 | RELEASE | P1 | 2026-09-11T15:15:26Z | sn9 released v4.12.18 |
-| `sn55:scoring_commit:2026-09-11T13:39:56Z` | 55 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn55 commit touches scoring: upload all miners submissions |
-| `sn66:scoring_commit:2026-09-11T14:50:25Z` | 66 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn66 commit touches scoring: Merge pull request #90 from conjectures-io/fix/optional-discord-and-p… |
-| `sn71:scoring_commit:2026-09-11T14:34:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn71 commit touches scoring: Fix normal validator startup defaults and local RPC selection |
-| `sn78:scoring_commit:2026-09-11T14:41:35Z` | 78 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn78 commit touches scoring: Clarify miner keepalive requirements during bootstrap |
-| `sn100:scoring_commit:2026-09-11T14:04:31Z` | 100 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn100 commit touches scoring: fix(proof): bind keyword-only miner setup |
-| `sn108:scoring_commit:2026-09-11T14:24:07Z` | 108 | SCORING_COMMIT | P1 | 2026-09-11T15:15:26Z | sn108 commit touches scoring: feat(validator): a mirror that fell behind catches up on its next re-… |
+| `sn15:release:v2.0.6` | 15 | RELEASE | P1 | 2026-09-11T18:42:05Z | sn15 released v2.0.6 |
+| `sn15:scoring_commit:2026-09-11T18:12:07Z` | 15 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (… |
+| `sn25:scoring_commit:2026-09-11T17:13:28Z` | 25 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state |
+| `sn71:scoring_commit:2026-09-11T18:01:43Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn71 commit touches scoring: Accept Harvest plural current positions in contact verification |
+| `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | P2 | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn9:release:v4.12.18`** - sn9 released v4.12.18
-  - published 2026-09-11T11:45:17Z (was v4.12.17)
-- **`sn55:scoring_commit:2026-09-11T13:39:56Z`** - sn55 commit touches scoring: upload all miners submissions
+- **`sn15:release:v2.0.6`** - sn15 released v2.0.6
+  - published 2026-09-11T18:13:27Z (was v2.0.4)
+- **`sn15:scoring_commit:2026-09-11T18:12:07Z`** - sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-11T14:50:25Z`** - sn66 commit touches scoring: Merge pull request #90 from conjectures-io/fix/optional-discord-and-p…
+- **`sn25:scoring_commit:2026-09-11T17:13:28Z`** - sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-11T14:34:48Z`** - sn71 commit touches scoring: Fix normal validator startup defaults and local RPC selection
+- **`sn71:scoring_commit:2026-09-11T18:01:43Z`** - sn71 commit touches scoring: Accept Harvest plural current positions in contact verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-11T14:41:35Z`** - sn78 commit touches scoring: Clarify miner keepalive requirements during bootstrap
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-11T14:04:31Z`** - sn100 commit touches scoring: fix(proof): bind keyword-only miner setup
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-09-11T14:24:07Z`** - sn108 commit touches scoring: feat(validator): a mirror that fell behind catches up on its next re-…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:858d6e3350fdacde`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -46,15 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn7:release:release-20260904-155448: Add min_from_am` | 7 | RELEASE | 2026-09-04T18:32:09Z | sn7 released release-20260904-155448: Add min_from_amount and candidates to the seam rate quote (#719) |
-| `sn7:scoring_commit:2026-09-02T22:52:26Z` | 7 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn7 commit touches scoring: CLI: --send verifies source-address control BEFORE the bid (#716) |
-| `sn25:release:v2026.9.4-1037416540` | 25 | RELEASE | 2026-09-04T18:32:09Z | sn25 released v2026.9.4-1037416540 |
-| `sn78:scoring_commit:2026-09-04T18:06:44Z` | 78 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn78 commit touches scoring: Install FFmpeg for macOS miner tests |
-| `sn96:release:Verathos v0.2.0 – Sleipnir: Verifiable M` | 96 | RELEASE | 2026-09-04T18:32:09Z | sn96 released Verathos v0.2.0 – Sleipnir: Verifiable Multi-Node Model Serving |
-| `sn96:scoring_commit:2026-09-04T07:31:31Z` | 96 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn96 commit touches scoring: fix: qualify mesh scoring on protocol v3 |
-| `sn100:scoring_commit:2026-09-04T17:45:13Z` | 100 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn100 commit touches scoring: docs(miner): Proof + Bounty A→Z at 2000/8000 (#219) |
-| `sn102:release:v0.5.5 — publish the round podium to a H` | 102 | RELEASE | 2026-09-04T18:32:09Z | sn102 released v0.5.5 — publish the round podium to a HuggingFace archive repo |
-| `sn102:scoring_commit:2026-09-03T21:10:17Z` | 102 | SCORING_COMMIT | 2026-09-04T18:32:09Z | sn102 commit touches scoring: 🏷️ refactor(validator): name podium folders by cycle, not round id |
 | `sn21:scoring_commit:2026-09-04T20:27:20Z` | 21 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date |
 | `sn25:release:v2026.9.4-1037517570` | 25 | RELEASE | 2026-09-04T21:04:38Z | sn25 released v2026.9.4-1037517570 |
 | `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
@@ -249,8 +234,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-09-11T06:52:54Z` | 67 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260911.post0 |
 | `sn71:scoring_commit:2026-09-11T08:20:53Z` | 71 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn71 commit touches scoring: Remove unused validator V2 release metadata and archives |
 | `sn78:scoring_commit:2026-09-11T10:40:20Z` | 78 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn78 commit touches scoring: Make main installer select signed validator release |
-| `sn7:readme_task_diff:edbfe0beb3207f5d` | 7 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn7 README task/scoring sections changed |
-| `sn96:readme_task_diff:9b448a83b77e12c9` | 96 | README_TASK_DIFF | 2026-09-04T18:32:09Z | sn96 README task/scoring sections changed |
+| `sn9:release:v4.12.18` | 9 | RELEASE | 2026-09-11T15:15:26Z | sn9 released v4.12.18 |
+| `sn55:scoring_commit:2026-09-11T13:39:56Z` | 55 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn55 commit touches scoring: upload all miners submissions |
+| `sn66:scoring_commit:2026-09-11T14:50:25Z` | 66 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn66 commit touches scoring: Merge pull request #90 from conjectures-io/fix/optional-discord-and-p… |
+| `sn71:scoring_commit:2026-09-11T14:34:48Z` | 71 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn71 commit touches scoring: Fix normal validator startup defaults and local RPC selection |
+| `sn78:scoring_commit:2026-09-11T14:41:35Z` | 78 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn78 commit touches scoring: Clarify miner keepalive requirements during bootstrap |
+| `sn100:scoring_commit:2026-09-11T14:04:31Z` | 100 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn100 commit touches scoring: fix(proof): bind keyword-only miner setup |
+| `sn108:scoring_commit:2026-09-11T14:24:07Z` | 108 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn108 commit touches scoring: feat(validator): a mirror that fell behind catches up on its next re-… |
 | `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
 | `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
 | `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |

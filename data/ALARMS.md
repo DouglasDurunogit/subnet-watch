@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-11T18:41:34Z, block 9046183
+# ALARMS - generated 2026-09-11T21:21:19Z, block 9046977
 
-window: first_seen in [2026-09-11T17:27:05Z, 2026-09-11T18:42:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-11T20:06:44Z, 2026-09-11T21:21:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.6` | 15 | RELEASE | P1 | 2026-09-11T18:42:05Z | sn15 released v2.0.6 |
-| `sn15:scoring_commit:2026-09-11T18:12:07Z` | 15 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (… |
-| `sn25:scoring_commit:2026-09-11T17:13:28Z` | 25 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state |
-| `sn71:scoring_commit:2026-09-11T18:01:43Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T18:42:05Z | sn71 commit touches scoring: Accept Harvest plural current positions in contact verification |
-| `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | P2 | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
+| `sn20:scoring_commit:2026-09-11T19:18:55Z` | 20 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds |
+| `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | P1 | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
+| `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
+| `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | P1 | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
 
 ### detail
 
-- **`sn15:release:v2.0.6`** - sn15 released v2.0.6
-  - published 2026-09-11T18:13:27Z (was v2.0.4)
-- **`sn15:scoring_commit:2026-09-11T18:12:07Z`** - sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (…
+- **`sn20:scoring_commit:2026-09-11T19:18:55Z`** - sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-11T17:13:28Z`** - sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state
+- **`sn25:release:v2026.9.11-1043550030`** - sn25 released v2026.9.11-1043550030
+  - published 2026-09-11T19:35:09Z (was v2026.9.10-1042581110)
+- **`sn71:scoring_commit:2026-09-11T20:33:14Z`** - sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-11T18:01:43Z`** - sn71 commit touches scoring: Accept Harvest plural current positions in contact verification
+- **`sn100:scoring_commit:2026-09-11T19:56:05Z`** - sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:858d6e3350fdacde`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn85:burn_drop:0.360` | 85 | BURN_DROP | 2026-09-04T21:04:38Z | sn85 burn fell 1.000 -> 0.360 - miners can earn again |
 | `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
@@ -40,11 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn21:scoring_commit:2026-09-04T20:27:20Z` | 21 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn21 commit touches scoring: feat(scoring): measurement resolution applied from a published date |
-| `sn25:release:v2026.9.4-1037517570` | 25 | RELEASE | 2026-09-04T21:04:38Z | sn25 released v2026.9.4-1037517570 |
-| `sn34:scoring_commit:2026-09-04T18:44:10Z` | 34 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn34 commit touches scoring: burn discriminator incentive until KoTH ships (#436) |
-| `sn47:scoring_commit:2026-09-04T19:22:55Z` | 47 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn47 commit touches scoring: fix extraction and verifier |
-| `sn92:scoring_commit:2026-09-04T20:10:42Z` | 92 | SCORING_COMMIT | 2026-09-04T21:04:38Z | sn92 commit touches scoring: scoring: refuse sockets with a class so ssl and asyncio still import … |
 | `sn7:release:release-20260904-214340: Bump version to` | 7 | RELEASE | 2026-09-04T23:02:03Z | sn7 released release-20260904-214340: Bump version to 3.3.2 (#722) |
 | `sn25:release:v2026.9.4-1037600680` | 25 | RELEASE | 2026-09-04T23:02:03Z | sn25 released v2026.9.4-1037600680 |
 | `sn92:scoring_commit:2026-09-04T21:42:58Z` | 92 | SCORING_COMMIT | 2026-09-04T23:02:03Z | sn92 commit touches scoring: ci: classify bundle for the hidden-tests check; label tasks need one … |
@@ -241,9 +232,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-11T14:41:35Z` | 78 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn78 commit touches scoring: Clarify miner keepalive requirements during bootstrap |
 | `sn100:scoring_commit:2026-09-11T14:04:31Z` | 100 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn100 commit touches scoring: fix(proof): bind keyword-only miner setup |
 | `sn108:scoring_commit:2026-09-11T14:24:07Z` | 108 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn108 commit touches scoring: feat(validator): a mirror that fell behind catches up on its next re-… |
-| `sn47:readme_task_diff:8b345756fdb99755` | 47 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn47 README task/scoring sections changed |
-| `sn63:readme_task_diff:9f841de80403238f` | 63 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn63 README task/scoring sections changed |
-| `sn71:readme_task_diff:7ba0f5e901269ab4` | 71 | README_TASK_DIFF | 2026-09-04T21:04:38Z | sn71 README task/scoring sections changed |
+| `sn15:release:v2.0.6` | 15 | RELEASE | 2026-09-11T18:42:05Z | sn15 released v2.0.6 |
+| `sn15:scoring_commit:2026-09-11T18:12:07Z` | 15 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (… |
+| `sn25:scoring_commit:2026-09-11T17:13:28Z` | 25 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state |
+| `sn71:scoring_commit:2026-09-11T18:01:43Z` | 71 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn71 commit touches scoring: Accept Harvest plural current positions in contact verification |
 | `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
@@ -266,6 +258,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
 | `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
+| `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

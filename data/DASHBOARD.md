@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-11T18:41:34Z · block 9046183 · run_status **ok**_
+_snapshot 2026-09-11T21:21:19Z · block 9046977 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 57 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 89 | `miner_burn` < 0.99 |
 | Ranked | 90 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **57** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
+| 0 (none) | 59 | `████████████████████████████` |
 | 0–0.2 | 9 | `████` |
 | 0.2–0.4 | 7 | `███` |
-| 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 9 | `████` |
+| 0.4–0.6 | 4 | `██` |
+| 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 3 | `█` |
 | ≥0.99 dead | 39 | `███████████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 80.1 | 165 | 496 | cpu-small | 9 | 24% |
-| 2 | sn21 AdTAO | 75.7 | 53.63 | 132 | cpu-small | 21 | 34% |
-| 3 | sn91 cascade | 71.4 | 1,143 | 3,060 | rtx4090* | 5 | 52% |
-| 4 | sn67 Harnyx | 70.3 | 13.40 | 1,080 | cpu-small | 126 | 33% |
-| 5 | sn96 Verathos | 69.6 | 30.49 | 179 | rtx4090 | 75 | 30% |
-| 6 | sn14 Cacheon | 69.4 | 615 | 1,140 | rtx4090* | 12 | 18% |
-| 7 | sn107 Minos | 69 | 358 | 30,372 | cpu-small | 20 | 80% |
-| 8 | sn11 TrajectoryRL | 68.4 | 6,091 | 6,091 = | cpu-small | 1 | 100% |
-| 9 | sn56 Gradients | 68 | 409 | 5,310 | rtx4090* | 9 | 48% |
-| 10 | sn80 OpenRoboto | 67.5 | 352 | 1,253 | rtx4090* | 5 | 43% |
-| 11 | sn124 Swarm | 66.5 | 271 | 878 | rtx4090* | 25 | 11% |
-| 12 | sn38 ChronoLLM | 66.1 | 103 | 1,406 | cpu-small | 10 | 52% |
-| 13 | sn61 RedTeam | 65.5 | 195 | 290 | rtx4090* | 59 | 3% |
-| 14 | sn111 Claims | 64.9 | 179 | 3,190 | rtx4090* | 5 | 82% |
-| 15 | sn3 Teutonic | 63.8 | 4,092 | 4,092 = | rtx4090* | 5 | 20% |
-| 16 | sn55 NIOME | 62.4 | 75.92 | 623 | rtx4090* | 11 | 29% |
-| 17 | sn28 SayGM | 61.6 | 61.87 | 3,082 | rtx4090* | 42 | 21% |
-| 18 | sn41 Almanac | 60.5 | 39.82 | 115 | cpu-small | 81 | 3% |
-| 19 | sn23 Trishool | 60.3 | 545 | 545 = | cpu-small | 2 | 80% |
-| 20 | sn62 Ridges | 59.5 | 32.96 | 110 | rtx4090* | 16 | 52% |
+| 1 | sn92 MicroTensor | 80.1 | 165 | 497 | cpu-small | 9 | 24% |
+| 2 | sn21 AdTAO | 75.7 | 53.96 | 133 | cpu-small | 21 | 34% |
+| 3 | sn91 cascade | 71.5 | 1,155 | 3,094 | rtx4090* | 5 | 52% |
+| 4 | sn67 Harnyx | 70.3 | 13.45 | 1,084 | cpu-small | 126 | 33% |
+| 5 | sn96 Verathos | 70.2 | 34.83 | 235 | rtx4090 | 68 | 31% |
+| 6 | sn14 Cacheon | 69.4 | 619 | 1,146 | rtx4090* | 12 | 18% |
+| 7 | sn107 Minos | 69 | 358 | 30,356 | cpu-small | 20 | 80% |
+| 8 | sn11 TrajectoryRL | 68.4 | 6,132 | 6,132 = | cpu-small | 1 | 100% |
+| 9 | sn56 Gradients | 68 | 411 | 5,342 | rtx4090* | 9 | 48% |
+| 10 | sn80 OpenRoboto | 67.5 | 347 | 1,235 | rtx4090* | 5 | 43% |
+| 11 | sn124 Swarm | 66.5 | 272 | 879 | rtx4090* | 25 | 11% |
+| 12 | sn38 ChronoLLM | 66.1 | 104 | 1,415 | cpu-small | 10 | 52% |
+| 13 | sn61 RedTeam | 65.4 | 192 | 287 | rtx4090* | 59 | 3% |
+| 14 | sn111 Claims | 64.9 | 180 | 3,203 | rtx4090* | 5 | 82% |
+| 15 | sn3 Teutonic | 63.8 | 4,121 | 4,121 = | rtx4090* | 5 | 20% |
+| 16 | sn55 NIOME | 62.4 | 76.72 | 629 | rtx4090* | 11 | 29% |
+| 17 | sn28 SayGM | 61.5 | 60.48 | 2,976 | rtx4090* | 43 | 21% |
+| 18 | sn41 Almanac | 60.4 | 39.42 | 119 | cpu-small | 82 | 4% |
+| 19 | sn23 Trishool | 60.2 | 544 | 544 = | cpu-small | 2 | 80% |
+| 20 | sn102 ConnitoAI | 59.6 | 1,151 | 1,427 | rtx4090* | 6 | 28% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
+| wide (<30%) | 27 |
 | concentrated (30–60%) | 24 |
-| dominated (60–90%) | 18 |
+| dominated (60–90%) | 15 |
 | captured (>90%) | 19 |
 
 ## Hardware evidence quality
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-11T21:21 | sn20 | SCORING_COMMIT | sn20 commit touches scoring: Add grounded video scoring and hybrid mai |
+| 2026-09-11T21:21 | sn25 | RELEASE | sn25 released v2026.9.11-1043550030 |
+| 2026-09-11T21:21 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify in-flight Arena leases survive par |
+| 2026-09-11T21:21 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(proof): fail-closed harbor partial s |
 | 2026-09-11T18:42 | sn15 | RELEASE | sn15 released v2.0.6 |
 | 2026-09-11T18:42 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2 |
 | 2026-09-11T18:42 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Observe provisional validator intents fro |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-11T15:15 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Fix normal validator startup defaults and |
 | 2026-09-11T15:15 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Clarify miner keepalive requirements duri |
 | 2026-09-11T15:15 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(proof): bind keyword-only miner setu |
-| 2026-09-11T15:15 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: feat(validator): a mirror that fell behi |
-| 2026-09-11T11:40 | sn10 | SCORING_COMMIT | sn10 commit touches scoring: fix(ops): verify staged units against the |
-| 2026-09-11T11:40 | sn20 | SCORING_COMMIT | sn20 commit touches scoring: Add scorer v1.1.0 and signed round feedba |
-| 2026-09-11T11:40 | sn20 | README_TASK_DIFF | sn20 README task/scoring sections changed |
 
 ---
 

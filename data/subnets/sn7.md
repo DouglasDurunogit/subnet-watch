@@ -1,49 +1,49 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-11T01:19:02Z  |  block: 9040980  |  row_status: ok
+snapshot_utc: 2026-09-11T06:21:57Z  |  block: 9042489  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.0440106550231576**
-- registration cost: 0.15 TAO (35.4 USD), open=True
+- miner_burn: **0.2879205357749015**
+- registration cost: 0.15 TAO (35.601 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 890.7 days  |  registered at block 2627691
+- subnet age: 890.9 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 958.3526499737231** (uid 179) <- the only figure quotable as achievable
-- median_miner_usd_day: 526.2853933782749
-- top_miner_usd_day: 1069.3301155254783 (uid 121, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 713.8846377230088** (uid 179) <- the only figure quotable as achievable
+- median_miner_usd_day: 666.4454288007904
+- top_miner_usd_day: 802.4968806683144 (uid 121, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.46883297219763787  |  top1_share: 0.49946592608417006  |  top10_share: 1.0
-- owner_incentive_share: 0.044007690664387956 (independent check on miner_burn; disagreement 0.0)
+- earners: 4  |  gini: 0.28591375206006253  |  top1_share: 0.3732680217298419  |  top10_share: 1.0
+- owner_incentive_share: 0.2879204052981749 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 10900 bytes, sha dfc91260798a797c
-- latest release: release-20260905-204833 2026-09-05T19:10:08Z
-- last commit: 2026-09-05T19:10:08Z
-- scoring-related commit: CLI: --send verifies source-address control BEFORE the bid (#716) 2026-09-02T22:52:26Z
+- README: 11274 bytes, sha 57eb0ab5ed815fe3
+- latest release: release-20260911-013831 2026-09-11T01:08:48Z
+- last commit: 2026-09-11T01:08:48Z
+- scoring-related commit: Miner wizard: funding step, one shared EVM key, container check after… 2026-09-11T01:08:48Z
 
 ## Resources
 
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 950.1335 USD/day  |  payback on registration: 0.04 days
+- net margin: 705.6655 USD/day  |  payback on registration: 0.05 days
 
 ## Score
 
 - gate: **OK** 
-- score: 50.0 (rank 37), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 27.09 / freshness 35.0 / resource 11.25 / registration 9.99
-- freshness basis: RELEASE 5.1d ago
+- score: 49.3 (rank 38), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 25.91 / freshness 35.0 / resource 11.25 / registration 9.98
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 
@@ -140,21 +140,22 @@ alw --help
 
 ## Miner Onboarding
 
-Bond, then activate, then quote — in that order, for either backing. A quote is a promise that
+The fast path is the wizard — it creates or picks the wallet, generates the signing keys, writes
+`.env`, runs a preflight, then walks the on-chain sequence in order and resumes on re-run:
+
+```bash
+alw miner init          # step by step; every prompt has a flag, -y runs it unattended
+alw doctor              # the preflight on its own
+```
+
+The manual sequence it automates: bond, then activate, then quote — in that order, for either backing. A quote is a promise that
 one specific bond answers for, so `set_quote` refuses a purse you are not already serving
 (`MinerNotActive`). Quoting before activation is rejected, not queued.
 
 **SOL-backed** (collateral held on Solana):
 
 ```bash
-alw collateral deposit <SOL>                   # fund the local purse (bind-hotkey needs it — see below)
-alw miner bind-hotkey                          # bind your hotkey to your Solana pubkey (once)
-alw miner activate                             # validators vote you active
-alw miner post sol <addr> btc <addr> <rate>    # quote
+alw collateral deposit --amount <SOL>          # fund the local pu
 ```
 
-**TAO-backed** (bond held in the Bittensor vault). Same order; the bond lives on another chain,
-so activ
-```
-
-_(truncated at 6000 of 10900 chars - read the full file at https://github.com/entrius/allways)_
+_(truncated at 6000 of 11274 chars - read the full file at https://github.com/entrius/allways)_

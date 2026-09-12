@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-12T21:31:56Z · block 9054211 · run_status **ok**_
+_snapshot 2026-09-12T23:26:52Z · block 9054784 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 88 | `miner_burn` < 0.99 |
 | Ranked | 88 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,12 +29,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 58 | `████████████████████████████` |
+| 0 (none) | 59 | `████████████████████████████` |
 | 0–0.2 | 8 | `████` |
-| 0.2–0.4 | 8 | `████` |
+| 0.2–0.4 | 6 | `███` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 6 | `███` |
-| 0.8–0.99 | 3 | `█` |
+| 0.8–0.99 | 4 | `██` |
 | ≥0.99 dead | 40 | `███████████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 79.6 | 145 | 438 | cpu-small | 9 | 24% |
-| 2 | sn21 AdTAO | 74.7 | 42.17 | 102 | cpu-small | 21 | 34% |
-| 3 | sn91 cascade | 71.3 | 1,081 | 2,896 | rtx4090* | 5 | 52% |
-| 4 | sn96 Verathos | 69.1 | 27.14 | 222 | rtx4090 | 80 | 30% |
-| 5 | sn107 Minos | 68.9 | 347 | 29,461 | cpu-small | 20 | 80% |
-| 6 | sn14 Cacheon | 68.7 | 495 | 1,123 | rtx4090* | 12 | 18% |
-| 7 | sn67 Harnyx | 68.7 | 8.88 | 1,040 | cpu-small | 127 | 33% |
-| 8 | sn11 TrajectoryRL | 68.3 | 6,025 | 6,025 = | cpu-small | 1 | 100% |
-| 9 | sn80 OpenRoboto | 68.2 | 429 | 1,521 | rtx4090* | 5 | 51% |
-| 10 | sn38 ChronoLLM | 66.5 | 114 | 1,552 | cpu-small | 10 | 52% |
-| 11 | sn124 Swarm | 66.4 | 265 | 861 | rtx4090* | 25 | 11% |
-| 12 | sn111 Claims | 65.3 | 203 | 2,789 | rtx4090* | 5 | 78% |
-| 13 | sn61 RedTeam | 64.7 | 154 | 238 | rtx4090* | 70 | 2% |
-| 14 | sn3 Teutonic | 63.9 | 4,148 | 4,148 = | rtx4090* | 5 | 20% |
-| 15 | sn78 Umi | 62.5 | 81.33 | 81.33 = | rtx4090* | 45 | 3% |
-| 16 | sn55 NIOME | 62 | 66.94 | 555 | rtx4090* | 11 | 29% |
-| 17 | sn28 SayGM | 61.7 | 63.35 | 3,311 | rtx4090* | 37 | 23% |
-| 18 | sn62 Ridges | 59.9 | 36.17 | 3,941 | rtx4090* | 16 | 52% |
-| 19 | sn51 lium.io | 58.7 | 33.37 | 2,272 | rtx4090* | 63 | 82% |
-| 20 | sn102 ConnitoAI | 58.2 | 767 | 2,059 | rtx4090* | 5 | 42% |
+| 1 | sn92 MicroTensor | 79.6 | 144 | 435 | cpu-small | 9 | 24% |
+| 2 | sn21 AdTAO | 74.7 | 42.14 | 102 | cpu-small | 21 | 34% |
+| 3 | sn91 cascade | 71.2 | 1,073 | 2,874 | rtx4090* | 5 | 52% |
+| 4 | sn96 Verathos | 69.1 | 26.69 | 218 | rtx4090 | 80 | 30% |
+| 5 | sn14 Cacheon | 68.7 | 495 | 1,123 | rtx4090* | 12 | 18% |
+| 6 | sn67 Harnyx | 68.7 | 8.88 | 1,040 | cpu-small | 127 | 33% |
+| 7 | sn107 Minos | 68.6 | 351 | 29,724 | cpu-small | 20 | 80% |
+| 8 | sn11 TrajectoryRL | 68.3 | 5,991 | 5,991 = | cpu-small | 1 | 100% |
+| 9 | sn80 OpenRoboto | 67.6 | 360 | 1,282 | rtx4090* | 5 | 43% |
+| 10 | sn38 ChronoLLM | 66.5 | 113 | 1,550 | cpu-small | 10 | 52% |
+| 11 | sn124 Swarm | 66.4 | 263 | 857 | rtx4090* | 25 | 11% |
+| 12 | sn111 Claims | 65.4 | 201 | 2,774 | rtx4090* | 5 | 78% |
+| 13 | sn61 RedTeam | 64.8 | 159 | 245 | rtx4090* | 70 | 2% |
+| 14 | sn3 Teutonic | 63.9 | 4,185 | 4,185 = | rtx4090* | 5 | 20% |
+| 15 | sn28 SayGM | 62.8 | 86.98 | 3,440 | rtx4090* | 41 | 24% |
+| 16 | sn78 Umi | 62.1 | 72.87 | 72.87 = | rtx4090* | 64 | 2% |
+| 17 | sn55 NIOME | 62 | 67.41 | 559 | rtx4090* | 11 | 29% |
+| 18 | sn62 Ridges | 59.9 | 36.22 | 3,945 | rtx4090* | 16 | 52% |
+| 19 | sn51 lium.io | 58 | 28.64 | 2,145 | rtx4090* | 63 | 83% |
+| 20 | sn81 Reliquary | 57.9 | 19.05 | 163 | rtx4090* | 89 | 4% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 26 |
-| concentrated (30–60%) | 24 |
+| concentrated (30–60%) | 23 |
 | dominated (60–90%) | 15 |
-| captured (>90%) | 20 |
+| captured (>90%) | 21 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-12T23:27 | sn15 | RELEASE | sn15 released v2.0.7 |
+| 2026-09-12T23:27 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2 |
+| 2026-09-12T23:27 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Bind historical reward batch RPCs to capt |
+| 2026-09-12T23:27 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Point new validator installations at the  |
 | 2026-09-12T21:32 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Record sim-testnet validator and contract |
 | 2026-09-12T21:32 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify participation with shared-owner Ar |
 | 2026-09-12T21:32 | sn71 | README_TASK_DIFF | sn71 README task/scoring sections changed |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-12T19:19 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: tracks: guard is the one live track on mt |
 | 2026-09-12T17:07 | sn36 | SCORING_COMMIT | sn36 commit touches scoring: Run calibration once a day on 200 tasks,  |
 | 2026-09-12T17:07 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Set daily Arena admission to twenty chall |
-| 2026-09-12T17:07 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: tracks: the hallucination detection track |
-| 2026-09-12T14:06 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify original provider statuses in paid |
-| 2026-09-12T14:06 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent |
-| 2026-09-12T11:06 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: gather responses before scoring |
 
 ---
 

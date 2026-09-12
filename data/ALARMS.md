@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T21:31:56Z, block 9054211
+# ALARMS - generated 2026-09-12T23:26:52Z, block 9054784
 
-window: first_seen in [2026-09-12T20:17:22Z, 2026-09-12T21:32:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T22:12:19Z, 2026-09-12T23:27:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-12T19:54:30Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T21:32:22Z | sn25 commit touches scoring: Record sim-testnet validator and contract generation results |
-| `sn71:scoring_commit:2026-09-12T17:00:23Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T21:32:22Z | sn71 commit touches scoring: Verify participation with shared-owner Arena admissions |
-| `sn78:scoring_commit:2026-09-12T20:29:58Z` | 78 | SCORING_COMMIT | P1 | 2026-09-12T21:32:22Z | sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence |
-| `sn81:scoring_commit:2026-09-12T21:14:17Z` | 81 | SCORING_COMMIT | P1 | 2026-09-12T21:32:22Z | sn81 commit touches scoring: fix(validator): qualify proof lanes and partial rotations |
-| `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | P2 | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
+| `sn15:release:v2.0.7` | 15 | RELEASE | P1 | 2026-09-12T23:27:19Z | sn15 released v2.0.7 |
+| `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
+| `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
+| `sn78:scoring_commit:2026-09-12T22:27:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn78 commit touches scoring: Point new validator installations at the IP-cap host release |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-12T19:54:30Z`** - sn25 commit touches scoring: Record sim-testnet validator and contract generation results
+- **`sn15:release:v2.0.7`** - sn15 released v2.0.7
+  - published 2026-09-12T22:35:15Z (was v2.0.6)
+- **`sn15:scoring_commit:2026-09-12T22:23:01Z`** - sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-12T17:00:23Z`** - sn71 commit touches scoring: Verify participation with shared-owner Arena admissions
+- **`sn25:scoring_commit:2026-09-12T22:03:18Z`** - sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-12T20:29:58Z`** - sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence
+- **`sn78:scoring_commit:2026-09-12T22:27:05Z`** - sn78 commit touches scoring: Point new validator installations at the IP-cap host release
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-12T21:14:17Z`** - sn81 commit touches scoring: fix(validator): qualify proof lanes and partial rotations
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:d368671e8866d097`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -40,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn7:release:release-20260905-204833` | 7 | RELEASE | 2026-09-05T22:21:43Z | sn7 released release-20260905-204833 |
-| `sn71:scoring_commit:2026-09-05T21:34:19Z` | 71 | SCORING_COMMIT | 2026-09-05T22:21:43Z | sn71 commit touches scoring: chore(validator): bind existing recovery workflow identity |
 | `sn74:release:release-20260905-223823` | 74 | RELEASE | 2026-09-06T00:06:30Z | sn74 released release-20260905-223823 |
 | `sn74:scoring_commit:2026-09-05T20:51:26Z` | 74 | SCORING_COMMIT | 2026-09-06T00:06:30Z | sn74 commit touches scoring: serving miner: an attestation waits for prefill and holds admissions,… |
 | `sn71:scoring_commit:2026-09-06T00:50:36Z` | 71 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin… |
@@ -244,6 +239,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-12T18:46:12Z` | 78 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn78 commit touches scoring: Add time-bounded live-miner bridge with equal coldkey group weights |
 | `sn81:scoring_commit:2026-09-12T18:27:08Z` | 81 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn81 commit touches scoring: fix(validator): bound no-reveal debt per window |
 | `sn92:scoring_commit:2026-09-12T17:50:00Z` | 92 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn92 commit touches scoring: tracks: guard is the one live track on mt-4g; the span scorer reads g… |
+| `sn25:scoring_commit:2026-09-12T19:54:30Z` | 25 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn25 commit touches scoring: Record sim-testnet validator and contract generation results |
+| `sn71:scoring_commit:2026-09-12T17:00:23Z` | 71 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn71 commit touches scoring: Verify participation with shared-owner Arena admissions |
+| `sn78:scoring_commit:2026-09-12T20:29:58Z` | 78 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence |
+| `sn81:scoring_commit:2026-09-12T21:14:17Z` | 81 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn81 commit touches scoring: fix(validator): qualify proof lanes and partial rotations |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
@@ -266,6 +265,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
+| `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

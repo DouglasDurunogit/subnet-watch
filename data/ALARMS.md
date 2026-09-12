@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T06:23:52Z, block 9049685
+# ALARMS - generated 2026-09-12T11:06:14Z, block 9051093
 
-window: first_seen in [2026-09-12T05:09:23Z, 2026-09-12T06:24:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T09:51:47Z, 2026-09-12T11:06:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:burn_drop:0.742` | 20 | BURN_DROP | P0 | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
-| `sn51:scoring_commit:2026-09-12T01:49:58Z` | 51 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not … |
-| `sn71:scoring_commit:2026-09-12T04:57:15Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn71 commit touches scoring: Use current billing schema in normal validator transition test |
-| `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | P2 | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
+| `sn44:scoring_commit:2026-09-12T08:31:49Z` | 44 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn44 commit touches scoring: gather responses before scoring |
+| `sn71:scoring_commit:2026-09-12T07:05:12Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn71 commit touches scoring: Remove the OpenRouter paid-validation budget restriction |
+| `sn81:scoring_commit:2026-09-12T08:37:18Z` | 81 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn81 commit touches scoring: fix(validator): separate reveal accounting from admission failures (#… |
+| `sn91:scoring_commit:2026-09-12T10:18:52Z` | 91 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn91 commit touches scoring: trainer: king rent retries lemon pods and releases the challenger wai… |
+| `sn92:scoring_commit:2026-09-12T10:49:32Z` | 92 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports … |
 
 ### detail
 
-- **`sn20:burn_drop:0.742`** - sn20 burn fell 1.000 -> 0.742 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:scoring_commit:2026-09-12T02:44:47Z`** - sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio
+- **`sn44:scoring_commit:2026-09-12T08:31:49Z`** - sn44 commit touches scoring: gather responses before scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-12T01:49:58Z`** - sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not …
+- **`sn71:scoring_commit:2026-09-12T07:05:12Z`** - sn71 commit touches scoring: Remove the OpenRouter paid-validation budget restriction
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-12T04:57:15Z`** - sn71 commit touches scoring: Use current billing schema in normal validator transition test
+- **`sn81:scoring_commit:2026-09-12T08:37:18Z`** - sn81 commit touches scoring: fix(validator): separate reveal accounting from admission failures (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:691868bd635e63bb`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn91:scoring_commit:2026-09-12T10:18:52Z`** - sn91 commit touches scoring: trainer: king rent retries lemon pods and releases the challenger wai…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-09-12T10:49:32Z`** - sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,9 +39,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn47:scoring_commit:2026-09-05T08:47:30Z` | 47 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn47 commit touches scoring: refine evaluation system |
-| `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
-| `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
+| `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
 | `sn71:scoring_commit:2026-09-05T12:58:42Z` | 71 | SCORING_COMMIT | 2026-09-05T12:59:57Z | sn71 commit touches scoring: Merge pull request #177 from leadpoet/codex/validator-missing-object-… |
 | `sn25:scoring_commit:2026-09-05T13:48:07Z` | 25 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn25 commit touches scoring: validator: add private bounded attempt record store |
 | `sn56:scoring_commit:2026-09-05T15:35:59Z` | 56 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre… |
@@ -238,7 +236,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
 | `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
 | `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
-| `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
+| `sn51:scoring_commit:2026-09-12T01:49:58Z` | 51 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not … |
+| `sn71:scoring_commit:2026-09-12T04:57:15Z` | 71 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn71 commit touches scoring: Use current billing schema in normal validator transition test |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
@@ -261,6 +261,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
+| `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

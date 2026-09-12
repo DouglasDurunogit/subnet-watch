@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-12T11:06:14Z · block 9051093 · run_status **ok**_
+_snapshot 2026-09-12T14:05:47Z · block 9051987 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -16,9 +16,9 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 88 | `miner_burn` < 0.99 |
-| Ranked | 89 | passed every gate |
+| Ranked | 88 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 79.9 | 153 | 462 | cpu-small | 9 | 24% |
-| 2 | sn21 AdTAO | 75.6 | 53.13 | 131 | cpu-small | 21 | 34% |
-| 3 | sn91 cascade | 71.4 | 1,127 | 3,019 | rtx4090* | 5 | 52% |
-| 4 | sn96 Verathos | 70.3 | 35.63 | 311 | rtx4090 | 73 | 30% |
-| 5 | sn14 Cacheon | 69.4 | 614 | 1,139 | rtx4090* | 12 | 18% |
-| 6 | sn107 Minos | 68.9 | 349 | 29,642 | cpu-small | 20 | 80% |
-| 7 | sn67 Harnyx | 68.7 | 9.05 | 1,058 | cpu-small | 125 | 33% |
-| 8 | sn56 Gradients | 68 | 409 | 5,310 | rtx4090* | 9 | 48% |
-| 9 | sn80 OpenRoboto | 67.5 | 354 | 1,254 | rtx4090* | 5 | 43% |
-| 10 | sn124 Swarm | 66.5 | 269 | 871 | rtx4090* | 25 | 11% |
-| 11 | sn38 ChronoLLM | 66 | 99.71 | 1,363 | cpu-small | 10 | 52% |
-| 12 | sn111 Claims | 65.9 | 235 | 3,004 | rtx4090* | 5 | 77% |
-| 13 | sn61 RedTeam | 65.7 | 207 | 307 | rtx4090* | 56 | 3% |
-| 14 | sn28 SayGM | 62.5 | 80.16 | 2,567 | rtx4090* | 47 | 18% |
-| 15 | sn55 NIOME | 62.2 | 72.71 | 599 | rtx4090* | 11 | 29% |
-| 16 | sn23 Trishool | 60.3 | 552 | 552 = | cpu-small | 2 | 80% |
-| 17 | sn62 Ridges | 60 | 37.04 | 4,018 | rtx4090* | 16 | 52% |
-| 18 | sn74 Gittensor | 57.8 | 21.40 | 330 | rtx4090 | 12 | 64% |
-| 19 | sn81 Reliquary | 56.6 | 12.55 | 190 | rtx4090* | 88 | 7% |
-| 20 | sn9 iota | 56.4 | 13,916 | 13,916 = | rtx4090* | 3 | 74% |
+| 1 | sn92 MicroTensor | 79.8 | 152 | 458 | cpu-small | 9 | 24% |
+| 2 | sn21 AdTAO | 75.6 | 52.41 | 129 | cpu-small | 21 | 34% |
+| 3 | sn91 cascade | 71.3 | 1,103 | 2,955 | rtx4090* | 5 | 52% |
+| 4 | sn96 Verathos | 69.5 | 29.93 | 227 | rtx4090 | 74 | 33% |
+| 5 | sn14 Cacheon | 69.4 | 612 | 1,134 | rtx4090* | 12 | 18% |
+| 6 | sn107 Minos | 69 | 355 | 29,568 | cpu-small | 20 | 80% |
+| 7 | sn67 Harnyx | 68.7 | 8.99 | 1,052 | cpu-small | 125 | 33% |
+| 8 | sn11 TrajectoryRL | 68.3 | 6,058 | 6,058 = | cpu-small | 1 | 100% |
+| 9 | sn80 OpenRoboto | 68.3 | 443 | 1,571 | rtx4090* | 5 | 51% |
+| 10 | sn56 Gradients | 67.9 | 392 | 5,284 | rtx4090* | 9 | 48% |
+| 11 | sn124 Swarm | 66.5 | 269 | 870 | rtx4090* | 25 | 11% |
+| 12 | sn38 ChronoLLM | 66 | 100 | 1,367 | cpu-small | 10 | 52% |
+| 13 | sn61 RedTeam | 65.8 | 212 | 314 | rtx4090* | 55 | 3% |
+| 14 | sn111 Claims | 65.7 | 221 | 2,833 | rtx4090* | 5 | 77% |
+| 15 | sn28 SayGM | 62.6 | 82.43 | 2,714 | rtx4090* | 47 | 19% |
+| 16 | sn55 NIOME | 62.1 | 69.14 | 572 | rtx4090* | 11 | 29% |
+| 17 | sn23 Trishool | 60.3 | 552 | 552 = | cpu-small | 2 | 80% |
+| 18 | sn62 Ridges | 59.9 | 36.16 | 3,940 | rtx4090* | 16 | 52% |
+| 19 | sn74 Gittensor | 57.5 | 19.87 | 329 | rtx4090 | 12 | 64% |
+| 20 | sn81 Reliquary | 56.8 | 13.61 | 180 | rtx4090* | 90 | 5% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 16 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 24 |
+| dominated (60–90%) | 15 |
 | captured (>90%) | 19 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-12T14:06 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify original provider statuses in paid |
+| 2026-09-12T14:06 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent |
 | 2026-09-12T11:06 | sn44 | SCORING_COMMIT | sn44 commit touches scoring: gather responses before scoring |
 | 2026-09-12T11:06 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Remove the OpenRouter paid-validation bud |
 | 2026-09-12T11:06 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: fix(validator): separate reveal accountin |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-12T01:27 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Sync disposable replay scratch once after |
 | 2026-09-12T01:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve Arena miner credential failure e |
 | 2026-09-11T21:21 | sn20 | SCORING_COMMIT | sn20 commit touches scoring: Add grounded video scoring and hybrid mai |
-| 2026-09-11T21:21 | sn25 | RELEASE | sn25 released v2026.9.11-1043550030 |
-| 2026-09-11T21:21 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify in-flight Arena leases survive par |
 
 ---
 

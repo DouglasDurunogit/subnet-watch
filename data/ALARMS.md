@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T11:06:14Z, block 9051093
+# ALARMS - generated 2026-09-12T14:05:47Z, block 9051987
 
-window: first_seen in [2026-09-12T09:51:47Z, 2026-09-12T11:06:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T12:51:12Z, 2026-09-12T14:06:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn44:scoring_commit:2026-09-12T08:31:49Z` | 44 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn44 commit touches scoring: gather responses before scoring |
-| `sn71:scoring_commit:2026-09-12T07:05:12Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn71 commit touches scoring: Remove the OpenRouter paid-validation budget restriction |
-| `sn81:scoring_commit:2026-09-12T08:37:18Z` | 81 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn81 commit touches scoring: fix(validator): separate reveal accounting from admission failures (#… |
-| `sn91:scoring_commit:2026-09-12T10:18:52Z` | 91 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn91 commit touches scoring: trainer: king rent retries lemon pods and releases the challenger wai… |
-| `sn92:scoring_commit:2026-09-12T10:49:32Z` | 92 | SCORING_COMMIT | P1 | 2026-09-12T11:06:47Z | sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports … |
+| `sn71:scoring_commit:2026-09-12T11:34:03Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T14:06:12Z | sn71 commit touches scoring: Verify original provider statuses in paid fallback ledger receipts |
+| `sn100:scoring_commit:2026-09-12T09:01:01Z` | 100 | SCORING_COMMIT | P1 | 2026-09-12T14:06:12Z | sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent-exception rows need no rewar… |
 
 ### detail
 
-- **`sn44:scoring_commit:2026-09-12T08:31:49Z`** - sn44 commit touches scoring: gather responses before scoring
+- **`sn71:scoring_commit:2026-09-12T11:34:03Z`** - sn71 commit touches scoring: Verify original provider statuses in paid fallback ledger receipts
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-12T07:05:12Z`** - sn71 commit touches scoring: Remove the OpenRouter paid-validation budget restriction
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-12T08:37:18Z`** - sn81 commit touches scoring: fix(validator): separate reveal accounting from admission failures (#…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-12T10:18:52Z`** - sn91 commit touches scoring: trainer: king rent retries lemon pods and releases the challenger wai…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-09-12T10:49:32Z`** - sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports …
+- **`sn100:scoring_commit:2026-09-12T09:01:01Z`** - sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent-exception rows need no rewar…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,7 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn71:scoring_commit:2026-09-05T12:58:42Z` | 71 | SCORING_COMMIT | 2026-09-05T12:59:57Z | sn71 commit touches scoring: Merge pull request #177 from leadpoet/codex/validator-missing-object-… |
 | `sn25:scoring_commit:2026-09-05T13:48:07Z` | 25 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn25 commit touches scoring: validator: add private bounded attempt record store |
 | `sn56:scoring_commit:2026-09-05T15:35:59Z` | 56 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn56 commit touches scoring: Make the auditor loop continuously, matching validator weight-set fre… |
 | `sn71:scoring_commit:2026-09-05T13:10:16Z` | 71 | SCORING_COMMIT | 2026-09-05T16:00:56Z | sn71 commit touches scoring: Merge pull request #178 from leadpoet/codex/validator-recovery-author… |
@@ -239,7 +229,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
 | `sn51:scoring_commit:2026-09-12T01:49:58Z` | 51 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not … |
 | `sn71:scoring_commit:2026-09-12T04:57:15Z` | 71 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn71 commit touches scoring: Use current billing schema in normal validator transition test |
-| `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
+| `sn44:scoring_commit:2026-09-12T08:31:49Z` | 44 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn44 commit touches scoring: gather responses before scoring |
+| `sn71:scoring_commit:2026-09-12T07:05:12Z` | 71 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn71 commit touches scoring: Remove the OpenRouter paid-validation budget restriction |
+| `sn81:scoring_commit:2026-09-12T08:37:18Z` | 81 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn81 commit touches scoring: fix(validator): separate reveal accounting from admission failures (#… |
+| `sn91:scoring_commit:2026-09-12T10:18:52Z` | 91 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn91 commit touches scoring: trainer: king rent retries lemon pods and releases the challenger wai… |
+| `sn92:scoring_commit:2026-09-12T10:49:32Z` | 92 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports … |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |

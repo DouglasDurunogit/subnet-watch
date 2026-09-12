@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-09-11T23:26:46Z, block 9047602
+# ALARMS - generated 2026-09-12T01:27:14Z, block 9048204
 
-window: first_seen in [2026-09-11T22:12:13Z, 2026-09-11T23:27:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T00:12:39Z, 2026-09-12T01:27:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
+| `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
+
+### detail
+
+- **`sn25:scoring_commit:2026-09-12T00:45:57Z`** - sn25 commit touches scoring: Sync disposable replay scratch once after complete verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-12T01:00:20Z`** - sn71 commit touches scoring: Preserve Arena miner credential failure evidence
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 

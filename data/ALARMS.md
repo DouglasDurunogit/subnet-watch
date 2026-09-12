@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T01:27:14Z, block 9048204
+# ALARMS - generated 2026-09-12T06:23:52Z, block 9049685
 
-window: first_seen in [2026-09-12T00:12:39Z, 2026-09-12T01:27:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T05:09:23Z, 2026-09-12T06:24:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
-| `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
+| `sn20:burn_drop:0.742` | 20 | BURN_DROP | P0 | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
+| `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
+| `sn51:scoring_commit:2026-09-12T01:49:58Z` | 51 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not … |
+| `sn71:scoring_commit:2026-09-12T04:57:15Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T06:24:23Z | sn71 commit touches scoring: Use current billing schema in normal validator transition test |
+| `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | P2 | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-12T00:45:57Z`** - sn25 commit touches scoring: Sync disposable replay scratch once after complete verification
+- **`sn20:burn_drop:0.742`** - sn20 burn fell 1.000 -> 0.742 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:scoring_commit:2026-09-12T02:44:47Z`** - sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-12T01:00:20Z`** - sn71 commit touches scoring: Preserve Arena miner credential failure evidence
+- **`sn51:scoring_commit:2026-09-12T01:49:58Z`** - sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-12T04:57:15Z`** - sn71 commit touches scoring: Use current billing schema in normal validator transition test
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:691868bd635e63bb`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -30,10 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
-| `sn21:scoring_commit:2026-09-05T04:29:37Z` | 21 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn21 commit touches scoring: docs(scoring): standing and resolution amendments effective 2026-09-05 |
-| `sn62:release:v0.3.0` | 62 | RELEASE | 2026-09-05T05:40:43Z | sn62 released v0.3.0 |
-| `sn62:scoring_commit:2026-09-04T10:45:00Z` | 62 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn62 commit touches scoring: test: :white_check_mark: Add tests validating the new endpoint |
-| `sn71:scoring_commit:2026-09-05T05:37:23Z` | 71 | SCORING_COMMIT | 2026-09-05T05:40:43Z | sn71 commit touches scoring: fix: validate retained gateway archives by their supported role layout |
 | `sn47:scoring_commit:2026-09-05T08:47:30Z` | 47 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn47 commit touches scoring: refine evaluation system |
 | `sn71:scoring_commit:2026-09-05T08:30:32Z` | 71 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn71 commit touches scoring: fix: exclude stale validator build path from gateway runtime env |
 | `sn100:scoring_commit:2026-09-05T08:03:23Z` | 100 | SCORING_COMMIT | 2026-09-05T09:27:28Z | sn100 commit touches scoring: fix(challenges): boot when sk/session placeholders are empty (#226) |
@@ -231,6 +236,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
 | `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
 | `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
+| `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
+| `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
 | `sn47:readme_task_diff:478b669831ea7848` | 47 | README_TASK_DIFF | 2026-09-05T09:27:28Z | sn47 README task/scoring sections changed |
 | `sn80:readme_task_diff:91c32064037eaf29` | 80 | README_TASK_DIFF | 2026-09-05T12:59:57Z | sn80 README task/scoring sections changed |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |

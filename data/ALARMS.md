@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T17:07:11Z, block 9052890
+# ALARMS - generated 2026-09-12T19:19:23Z, block 9053550
 
-window: first_seen in [2026-09-12T15:52:44Z, 2026-09-12T17:07:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-12T18:04:47Z, 2026-09-12T19:19:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn36:scoring_commit:2026-09-11T11:52:07Z` | 36 | SCORING_COMMIT | P1 | 2026-09-12T17:07:44Z | sn36 commit touches scoring: Run calibration once a day on 200 tasks, in the background |
-| `sn71:scoring_commit:2026-09-12T16:43:22Z` | 71 | SCORING_COMMIT | P1 | 2026-09-12T17:07:44Z | sn71 commit touches scoring: Set daily Arena admission to twenty challengers |
-| `sn92:scoring_commit:2026-09-12T14:25:40Z` | 92 | SCORING_COMMIT | P1 | 2026-09-12T17:07:44Z | sn92 commit touches scoring: tracks: the hallucination detection track is guard on mt-4g, scored b… |
+| `sn25:scoring_commit:2026-09-12T18:01:31Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T19:19:47Z | sn25 commit touches scoring: Record strict restart verification and canonical repair fee evidence |
+| `sn78:scoring_commit:2026-09-12T18:46:12Z` | 78 | SCORING_COMMIT | P1 | 2026-09-12T19:19:47Z | sn78 commit touches scoring: Add time-bounded live-miner bridge with equal coldkey group weights |
+| `sn81:scoring_commit:2026-09-12T18:27:08Z` | 81 | SCORING_COMMIT | P1 | 2026-09-12T19:19:47Z | sn81 commit touches scoring: fix(validator): bound no-reveal debt per window |
+| `sn92:scoring_commit:2026-09-12T17:50:00Z` | 92 | SCORING_COMMIT | P1 | 2026-09-12T19:19:47Z | sn92 commit touches scoring: tracks: guard is the one live track on mt-4g; the span scorer reads g… |
 
 ### detail
 
-- **`sn36:scoring_commit:2026-09-11T11:52:07Z`** - sn36 commit touches scoring: Run calibration once a day on 200 tasks, in the background
+- **`sn25:scoring_commit:2026-09-12T18:01:31Z`** - sn25 commit touches scoring: Record strict restart verification and canonical repair fee evidence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-12T16:43:22Z`** - sn71 commit touches scoring: Set daily Arena admission to twenty challengers
+- **`sn78:scoring_commit:2026-09-12T18:46:12Z`** - sn78 commit touches scoring: Add time-bounded live-miner bridge with equal coldkey group weights
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-09-12T14:25:40Z`** - sn92 commit touches scoring: tracks: the hallucination detection track is guard on mt-4g, scored b…
+- **`sn81:scoring_commit:2026-09-12T18:27:08Z`** - sn81 commit touches scoring: fix(validator): bound no-reveal debt per window
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-09-12T17:50:00Z`** - sn92 commit touches scoring: tracks: guard is the one live track on mt-4g; the span scorer reads g…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -34,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn21:scoring_commit:2026-09-05T16:25:15Z` | 21 | SCORING_COMMIT | 2026-09-05T18:13:16Z | sn21 commit touches scoring: fix(reporting): rows shown with their accuracy are scored rows; audit… |
-| `sn71:scoring_commit:2026-09-05T16:23:27Z` | 71 | SCORING_COMMIT | 2026-09-05T18:13:16Z | sn71 commit touches scoring: build: refresh reviewed gateway verifier workflow hashes |
 | `sn25:scoring_commit:2026-09-05T19:18:14Z` | 25 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn25 commit touches scoring: Protect validator seed custody and qualify producer gate coverage |
 | `sn71:scoring_commit:2026-09-05T20:23:45Z` | 71 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn71 commit touches scoring: Bind validator workflow to archive retry policy |
 | `sn78:scoring_commit:2026-09-05T14:56:55Z` | 78 | SCORING_COMMIT | 2026-09-05T20:34:23Z | sn78 commit touches scoring: Add external miner pilot launch handoffs |
@@ -236,6 +237,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-09-12T10:49:32Z` | 92 | SCORING_COMMIT | 2026-09-12T11:06:47Z | sn92 commit touches scoring: fees: a per submission commitment fee; mt miner fee pays and reports … |
 | `sn71:scoring_commit:2026-09-12T11:34:03Z` | 71 | SCORING_COMMIT | 2026-09-12T14:06:12Z | sn71 commit touches scoring: Verify original provider statuses in paid fallback ledger receipts |
 | `sn100:scoring_commit:2026-09-12T09:01:01Z` | 100 | SCORING_COMMIT | 2026-09-12T14:06:12Z | sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent-exception rows need no rewar… |
+| `sn36:scoring_commit:2026-09-11T11:52:07Z` | 36 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn36 commit touches scoring: Run calibration once a day on 200 tasks, in the background |
+| `sn71:scoring_commit:2026-09-12T16:43:22Z` | 71 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn71 commit touches scoring: Set daily Arena admission to twenty challengers |
+| `sn92:scoring_commit:2026-09-12T14:25:40Z` | 92 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn92 commit touches scoring: tracks: the hallucination detection track is guard on mt-4g, scored b… |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-13T01:21:38Z, block 9055356
+# ALARMS - generated 2026-09-13T06:30:22Z, block 9056897
 
-window: first_seen in [2026-09-13T00:07:07Z, 2026-09-13T01:22:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-13T05:15:50Z, 2026-09-13T06:30:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn91:scoring_commit:2026-09-12T23:55:31Z` | 91 | SCORING_COMMIT | P1 | 2026-09-13T01:22:07Z | sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before … |
-| `sn100:scoring_commit:2026-09-13T00:05:10Z` | 100 | SCORING_COMMIT | P1 | 2026-09-13T01:22:07Z | sn100 commit touches scoring: fix(proof): align results_path validation across hosts |
+| `sn15:release:v2.0.8` | 15 | RELEASE | P1 | 2026-09-13T06:30:50Z | sn15 released v2.0.8 |
+| `sn15:scoring_commit:2026-09-13T04:37:49Z` | 15 | SCORING_COMMIT | P1 | 2026-09-13T06:30:50Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.14 (claim tool-schema vocab… |
+| `sn53:scoring_commit:2026-09-13T04:12:59Z` | 53 | SCORING_COMMIT | P1 | 2026-09-13T06:30:50Z | sn53 commit touches scoring: Merge pull request #45 from hanlinai/fix/tee-miner-kv-pool-retry |
+| `sn78:scoring_commit:2026-09-13T02:33:24Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T06:30:50Z | sn78 commit touches scoring: Record finalized funding-cap rollout on both validators |
+| `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | P2 | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn91:scoring_commit:2026-09-12T23:55:31Z`** - sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before …
+- **`sn15:release:v2.0.8`** - sn15 released v2.0.8
+  - published 2026-09-13T04:38:16Z (was v2.0.7)
+- **`sn15:scoring_commit:2026-09-13T04:37:49Z`** - sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.14 (claim tool-schema vocab…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-13T00:05:10Z`** - sn100 commit touches scoring: fix(proof): align results_path validation across hosts
+- **`sn53:scoring_commit:2026-09-13T04:12:59Z`** - sn53 commit touches scoring: Merge pull request #45 from hanlinai/fix/tee-miner-kv-pool-retry
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-13T02:33:24Z`** - sn78 commit touches scoring: Record finalized funding-cap rollout on both validators
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:2b78fd54843d3b86`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -31,8 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn71:scoring_commit:2026-09-06T00:50:36Z` | 71 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin… |
-| `sn78:scoring_commit:2026-09-06T02:58:05Z` | 78 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn78 commit touches scoring: Add public registered-miner endpoint pilot |
 | `sn25:scoring_commit:2026-09-06T12:28:31Z` | 25 | SCORING_COMMIT | 2026-09-06T12:51:56Z | sn25 commit touches scoring: Checkpoint held repair sources and validation handoff |
 | `sn25:scoring_commit:2026-09-06T15:00:42Z` | 25 | SCORING_COMMIT | 2026-09-06T16:12:33Z | sn25 commit touches scoring: Integrate qualified Solidity validator activation verification |
 | `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
@@ -239,6 +246,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
 | `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
 | `sn78:scoring_commit:2026-09-12T22:27:05Z` | 78 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn78 commit touches scoring: Point new validator installations at the IP-cap host release |
+| `sn91:scoring_commit:2026-09-12T23:55:31Z` | 91 | SCORING_COMMIT | 2026-09-13T01:22:07Z | sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before … |
+| `sn100:scoring_commit:2026-09-13T00:05:10Z` | 100 | SCORING_COMMIT | 2026-09-13T01:22:07Z | sn100 commit touches scoring: fix(proof): align results_path validation across hosts |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |

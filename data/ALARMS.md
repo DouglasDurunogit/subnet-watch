@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-13T12:19:34Z, block 9058642
+# ALARMS - generated 2026-09-13T16:32:38Z, block 9059904
 
-window: first_seen in [2026-09-13T11:05:01Z, 2026-09-13T12:20:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-13T15:18:13Z, 2026-09-13T16:33:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.9` | 15 | RELEASE | P1 | 2026-09-13T12:20:01Z | sn15 released v2.0.9 |
-| `sn61:release:4.10.5` | 61 | RELEASE | P1 | 2026-09-13T12:20:01Z | sn61 released 4.10.5 |
-| `sn61:scoring_commit:2026-09-13T07:47:58Z` | 61 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.3 |
-| `sn71:scoring_commit:2026-09-13T09:49:04Z` | 71 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn71 commit touches scoring: Bind recovered Arena future stages to the corrected scorer |
-| `sn78:scoring_commit:2026-09-13T06:02:29Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn78 commit touches scoring: Accept the verified stopped successor during interrupted publication … |
-| `sn81:scoring_commit:2026-09-13T09:02:00Z` | 81 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn81 commit touches scoring: fix: bound validator startup memory (#255) |
-| `sn91:scoring_commit:2026-09-13T10:23:14Z` | 91 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn91 commit touches scoring: pool: publish packs mv_channels iff effective_block >= [scoring] mv_s… |
-| `sn100:scoring_commit:2026-09-13T09:53:24Z` | 100 | SCORING_COMMIT | P1 | 2026-09-13T12:20:01Z | sn100 commit touches scoring: docs(proof): keep miner tbench rebake pin after skew-hint copy |
+| `sn78:scoring_commit:2026-09-13T15:50:06Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T16:33:13Z | sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913 |
 
 ### detail
 
-- **`sn15:release:v2.0.9`** - sn15 released v2.0.9
-  - published 2026-09-13T06:56:02Z (was v2.0.8)
-- **`sn61:release:4.10.5`** - sn61 released 4.10.5
-  - published 2026-09-13T07:49:04Z (was 4.10.4)
-- **`sn61:scoring_commit:2026-09-13T07:47:58Z`** - sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.3
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-13T09:49:04Z`** - sn71 commit touches scoring: Bind recovered Arena future stages to the corrected scorer
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-13T06:02:29Z`** - sn78 commit touches scoring: Accept the verified stopped successor during interrupted publication …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-13T09:02:00Z`** - sn81 commit touches scoring: fix: bound validator startup memory (#255)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-13T10:23:14Z`** - sn91 commit touches scoring: pool: publish packs mv_channels iff effective_block >= [scoring] mv_s…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-13T09:53:24Z`** - sn100 commit touches scoring: docs(proof): keep miner tbench rebake pin after skew-hint copy
+- **`sn78:scoring_commit:2026-09-13T15:50:06Z`** - sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn47:burn_drop:0.942` | 47 | BURN_DROP | 2026-09-06T16:12:33Z | sn47 burn fell 1.000 -> 0.942 - miners can earn again |
 | `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
@@ -49,8 +27,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn25:scoring_commit:2026-09-06T12:28:31Z` | 25 | SCORING_COMMIT | 2026-09-06T12:51:56Z | sn25 commit touches scoring: Checkpoint held repair sources and validation handoff |
-| `sn25:scoring_commit:2026-09-06T15:00:42Z` | 25 | SCORING_COMMIT | 2026-09-06T16:12:33Z | sn25 commit touches scoring: Integrate qualified Solidity validator activation verification |
 | `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
 | `sn93:scoring_commit:2026-09-06T20:14:30Z` | 93 | SCORING_COMMIT | 2026-09-06T20:52:43Z | sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171) |
 | `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
@@ -261,6 +237,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-13T04:37:49Z` | 15 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.14 (claim tool-schema vocab… |
 | `sn53:scoring_commit:2026-09-13T04:12:59Z` | 53 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn53 commit touches scoring: Merge pull request #45 from hanlinai/fix/tee-miner-kv-pool-retry |
 | `sn78:scoring_commit:2026-09-13T02:33:24Z` | 78 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn78 commit touches scoring: Record finalized funding-cap rollout on both validators |
+| `sn15:release:v2.0.9` | 15 | RELEASE | 2026-09-13T12:20:01Z | sn15 released v2.0.9 |
+| `sn61:release:4.10.5` | 61 | RELEASE | 2026-09-13T12:20:01Z | sn61 released 4.10.5 |
+| `sn61:scoring_commit:2026-09-13T07:47:58Z` | 61 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.3 |
+| `sn71:scoring_commit:2026-09-13T09:49:04Z` | 71 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn71 commit touches scoring: Bind recovered Arena future stages to the corrected scorer |
+| `sn78:scoring_commit:2026-09-13T06:02:29Z` | 78 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn78 commit touches scoring: Accept the verified stopped successor during interrupted publication … |
+| `sn81:scoring_commit:2026-09-13T09:02:00Z` | 81 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn81 commit touches scoring: fix: bound validator startup memory (#255) |
+| `sn91:scoring_commit:2026-09-13T10:23:14Z` | 91 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn91 commit touches scoring: pool: publish packs mv_channels iff effective_block >= [scoring] mv_s… |
+| `sn100:scoring_commit:2026-09-13T09:53:24Z` | 100 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn100 commit touches scoring: docs(proof): keep miner tbench rebake pin after skew-hint copy |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |

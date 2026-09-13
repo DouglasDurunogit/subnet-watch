@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-09-13T18:59:33Z  |  block: 9060638  |  row_status: ok
+snapshot_utc: 2026-09-13T21:24:31Z  |  block: 9061360  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.11837 USD), open=True
+- registration cost: 0.0005 TAO (0.118365 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 39  |  free: 0
-- subnet age: 1053.2 days  |  registered at block 1477264
+- subnet age: 1053.3 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 733.5487850353311** (uid 68) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.5849671332020184
-- top_miner_usd_day: 18198.03503034819 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 733.4365749271783** (uid 68) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.5851109492837481
+- top_miner_usd_day: 18203.094187692044 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 25  |  gini: 0.954341323311487  |  top1_share: 0.9505324105901584  |  top10_share: 0.9995875154681699
+- earners: 25  |  gini: 0.9543426319166488  |  top1_share: 0.9505484432766048  |  top10_share: 0.9995875217696842
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-09-13T18:59:33Z  |  block: 9060638  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.6342 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.6341 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

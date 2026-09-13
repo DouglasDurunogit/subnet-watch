@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-12T23:26:52Z, block 9054784
+# ALARMS - generated 2026-09-13T01:21:38Z, block 9055356
 
-window: first_seen in [2026-09-12T22:12:19Z, 2026-09-12T23:27:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-13T00:07:07Z, 2026-09-13T01:22:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.7` | 15 | RELEASE | P1 | 2026-09-12T23:27:19Z | sn15 released v2.0.7 |
-| `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
-| `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
-| `sn78:scoring_commit:2026-09-12T22:27:05Z` | 78 | SCORING_COMMIT | P1 | 2026-09-12T23:27:19Z | sn78 commit touches scoring: Point new validator installations at the IP-cap host release |
+| `sn91:scoring_commit:2026-09-12T23:55:31Z` | 91 | SCORING_COMMIT | P1 | 2026-09-13T01:22:07Z | sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before … |
+| `sn100:scoring_commit:2026-09-13T00:05:10Z` | 100 | SCORING_COMMIT | P1 | 2026-09-13T01:22:07Z | sn100 commit touches scoring: fix(proof): align results_path validation across hosts |
 
 ### detail
 
-- **`sn15:release:v2.0.7`** - sn15 released v2.0.7
-  - published 2026-09-12T22:35:15Z (was v2.0.6)
-- **`sn15:scoring_commit:2026-09-12T22:23:01Z`** - sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover…
+- **`sn91:scoring_commit:2026-09-12T23:55:31Z`** - sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-12T22:03:18Z`** - sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-12T22:27:05Z`** - sn78 commit touches scoring: Point new validator installations at the IP-cap host release
+- **`sn100:scoring_commit:2026-09-13T00:05:10Z`** - sn100 commit touches scoring: fix(proof): align results_path validation across hosts
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -37,8 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn74:release:release-20260905-223823` | 74 | RELEASE | 2026-09-06T00:06:30Z | sn74 released release-20260905-223823 |
-| `sn74:scoring_commit:2026-09-05T20:51:26Z` | 74 | SCORING_COMMIT | 2026-09-06T00:06:30Z | sn74 commit touches scoring: serving miner: an attestation waits for prefill and holds admissions,… |
 | `sn71:scoring_commit:2026-09-06T00:50:36Z` | 71 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn71 commit touches scoring: Isolate Arena failure regressions and verify prior publication contin… |
 | `sn78:scoring_commit:2026-09-06T02:58:05Z` | 78 | SCORING_COMMIT | 2026-09-06T04:34:35Z | sn78 commit touches scoring: Add public registered-miner endpoint pilot |
 | `sn25:scoring_commit:2026-09-06T12:28:31Z` | 25 | SCORING_COMMIT | 2026-09-06T12:51:56Z | sn25 commit touches scoring: Checkpoint held repair sources and validation handoff |
@@ -243,6 +235,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-12T17:00:23Z` | 71 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn71 commit touches scoring: Verify participation with shared-owner Arena admissions |
 | `sn78:scoring_commit:2026-09-12T20:29:58Z` | 78 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence |
 | `sn81:scoring_commit:2026-09-12T21:14:17Z` | 81 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn81 commit touches scoring: fix(validator): qualify proof lanes and partial rotations |
+| `sn15:release:v2.0.7` | 15 | RELEASE | 2026-09-12T23:27:19Z | sn15 released v2.0.7 |
+| `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
+| `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
+| `sn78:scoring_commit:2026-09-12T22:27:05Z` | 78 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn78 commit touches scoring: Point new validator installations at the IP-cap host release |
 | `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |

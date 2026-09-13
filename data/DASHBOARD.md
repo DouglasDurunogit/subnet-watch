@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-13T16:32:38Z · block 9059904 · run_status **ok**_
+_snapshot 2026-09-13T18:59:33Z · block 9060638 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 88 | `miner_burn` < 0.99 |
-| Ranked | 89 | passed every gate |
+| Pays miners at all | 89 | `miner_burn` < 0.99 |
+| Ranked | 90 | passed every gate |
 | **Positive margin** | **55** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 60 | `████████████████████████████` |
+| 0 (none) | 61 | `████████████████████████████` |
 | 0–0.2 | 8 | `████` |
 | 0.2–0.4 | 7 | `███` |
-| 0.4–0.6 | 2 | `█` |
-| 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 3 | `█` |
-| ≥0.99 dead | 40 | `███████████████████` |
+| 0.4–0.6 | 3 | `█` |
+| 0.6–0.8 | 6 | `███` |
+| 0.8–0.99 | 4 | `██` |
+| ≥0.99 dead | 39 | `██████████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn92 MicroTensor | 80.6 | 186 | 559 | cpu-small | 8 | 30% |
-| 2 | sn91 cascade | 72.1 | 1,393 | 2,794 | rtx4090* | 5 | 52% |
-| 3 | sn21 AdTAO | 71.4 | 18.70 | 103 | cpu-small | 21 | 34% |
-| 4 | sn67 Harnyx | 69.5 | 10.89 | 1,195 | cpu-small | 111 | 38% |
-| 5 | sn107 Minos | 68.9 | 351 | 29,790 | cpu-small | 20 | 80% |
-| 6 | sn14 Cacheon | 68.7 | 498 | 1,128 | rtx4090* | 12 | 18% |
-| 7 | sn111 Claims | 68.4 | 484 | 2,144 | rtx4090* | 5 | 60% |
-| 8 | sn96 Verathos | 68.4 | 22.50 | 247 | rtx4090 | 74 | 31% |
-| 9 | sn11 TrajectoryRL | 68.3 | 5,901 | 5,901 = | cpu-small | 1 | 100% |
-| 10 | sn38 ChronoLLM | 68 | 173 | 3,669 | cpu-small | 10 | 52% |
-| 11 | sn80 OpenRoboto | 67.8 | 379 | 1,347 | rtx4090* | 5 | 43% |
-| 12 | sn124 Swarm | 66.4 | 263 | 854 | rtx4090* | 25 | 11% |
-| 13 | sn61 RedTeam | 64.7 | 153 | 247 | rtx4090* | 83 | 2% |
-| 14 | sn28 SayGM | 62.3 | 76.46 | 3,736 | rtx4090* | 42 | 25% |
-| 15 | sn55 NIOME | 62 | 66.96 | 556 | rtx4090* | 11 | 29% |
-| 16 | sn78 Umi | 60.3 | 43.31 | 43.31 = | rtx4090* | 110 | 2% |
-| 17 | sn62 Ridges | 59.6 | 32.26 | 108 | rtx4090* | 16 | 52% |
-| 18 | sn81 Reliquary | 58.4 | 22.42 | 195 | rtx4090* | 85 | 5% |
-| 19 | sn51 lium.io | 58.2 | 30.05 | 2,164 | rtx4090* | 61 | 79% |
-| 20 | sn102 ConnitoAI | 57.4 | 598 | 1,181 | rtx4090* | 7 | 25% |
+| 1 | sn92 MicroTensor | 80.6 | 186 | 560 | cpu-small | 8 | 30% |
+| 2 | sn21 AdTAO | 72.1 | 22.38 | 106 | cpu-small | 21 | 35% |
+| 3 | sn91 cascade | 71.1 | 1,040 | 2,788 | rtx4090* | 5 | 52% |
+| 4 | sn67 Harnyx | 69.5 | 11.02 | 1,207 | cpu-small | 111 | 38% |
+| 5 | sn107 Minos | 69 | 359 | 30,437 | cpu-small | 20 | 80% |
+| 6 | sn96 Verathos | 69 | 26.25 | 227 | rtx4090 | 70 | 31% |
+| 7 | sn111 Claims | 68.5 | 485 | 2,148 | rtx4090* | 5 | 60% |
+| 8 | sn80 OpenRoboto | 67.8 | 379 | 1,346 | rtx4090* | 5 | 43% |
+| 9 | sn38 ChronoLLM | 66.8 | 123 | 1,685 | cpu-small | 10 | 52% |
+| 10 | sn124 Swarm | 66.5 | 267 | 866 | rtx4090* | 25 | 11% |
+| 11 | sn61 RedTeam | 64.6 | 152 | 235 | rtx4090* | 83 | 2% |
+| 12 | sn55 NIOME | 62 | 67.35 | 559 | rtx4090* | 11 | 29% |
+| 13 | sn78 Umi | 59.9 | 38.02 | 38.02 = | rtx4090* | 117 | 1% |
+| 14 | sn28 SayGM | 59.6 | 34.86 | 4,860 | rtx4090* | 39 | 33% |
+| 15 | sn62 Ridges | 59.6 | 32.76 | 109 | rtx4090* | 16 | 52% |
+| 16 | sn81 Reliquary | 59.2 | 29.09 | 207 | rtx4090* | 85 | 5% |
+| 17 | sn51 lium.io | 58.2 | 29.79 | 2,197 | rtx4090* | 63 | 80% |
+| 18 | sn102 ConnitoAI | 57.3 | 591 | 1,238 | rtx4090* | 7 | 26% |
+| 19 | sn14 Cacheon | 56.8 | 503 | 1,141 | rtx4090* | 12 | 18% |
+| 20 | sn74 Gittensor | 56.7 | 16.01 | 183 | rtx4090 | 11 | 64% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 16 |
-| captured (>90%) | 20 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 24 |
+| dominated (60–90%) | 15 |
+| captured (>90%) | 21 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-13T19:00 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind stage two recovery to tested scorer  |
+| 2026-09-13T19:00 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #64 from Umi-BitSign/c |
+| 2026-09-13T19:00 | sn125 | BURN_DROP | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
 | 2026-09-13T16:33 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/c |
 | 2026-09-13T12:20 | sn15 | RELEASE | sn15 released v2.0.9 |
 | 2026-09-13T12:20 | sn61 | RELEASE | sn61 released 4.10.5 |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-13T06:30 | sn15 | RELEASE | sn15 released v2.0.8 |
 | 2026-09-13T06:30 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2 |
 | 2026-09-13T06:30 | sn53 | SCORING_COMMIT | sn53 commit touches scoring: Merge pull request #45 from hanlinai/fix/ |
-| 2026-09-13T06:30 | sn71 | README_TASK_DIFF | sn71 README task/scoring sections changed |
-| 2026-09-13T06:30 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Record finalized funding-cap rollout on b |
-| 2026-09-13T01:22 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: provision: pin the Lium pull by digest an |
 
 ---
 

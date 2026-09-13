@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-13T16:32:38Z, block 9059904
+# ALARMS - generated 2026-09-13T18:59:33Z, block 9060638
 
-window: first_seen in [2026-09-13T15:18:13Z, 2026-09-13T16:33:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-13T17:45:00Z, 2026-09-13T19:00:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn78:scoring_commit:2026-09-13T15:50:06Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T16:33:13Z | sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913 |
+| `sn125:burn_drop:0.000` | 125 | BURN_DROP | P0 | 2026-09-13T19:00:00Z | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn71:scoring_commit:2026-09-13T16:53:24Z` | 71 | SCORING_COMMIT | P1 | 2026-09-13T19:00:00Z | sn71 commit touches scoring: Bind stage two recovery to tested scorer image |
+| `sn78:scoring_commit:2026-09-13T18:55:26Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T19:00:00Z | sn78 commit touches scoring: Merge pull request #64 from Umi-BitSign/codex/endpoint-paired-evaluat… |
 
 ### detail
 
-- **`sn78:scoring_commit:2026-09-13T15:50:06Z`** - sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913
+- **`sn125:burn_drop:0.000`** - sn125 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-09-13T16:53:24Z`** - sn71 commit touches scoring: Bind stage two recovery to tested scorer image
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-13T18:55:26Z`** - sn78 commit touches scoring: Merge pull request #64 from Umi-BitSign/codex/endpoint-paired-evaluat…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -27,7 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
-| `sn14:release:GLM-5.3 mock mainnet submissions (valida` | 14 | RELEASE | 2026-09-06T18:30:56Z | sn14 released GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06) |
 | `sn93:scoring_commit:2026-09-06T20:14:30Z` | 93 | SCORING_COMMIT | 2026-09-06T20:52:43Z | sn93 commit touches scoring: chore: scope validator deploy to code/config paths (#171) |
 | `sn25:scoring_commit:2026-09-06T21:52:49Z` | 25 | SCORING_COMMIT | 2026-09-06T22:52:57Z | sn25 commit touches scoring: Record recovery checkpoints and post-pull monitoring validation |
 | `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
@@ -245,7 +250,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-09-13T09:02:00Z` | 81 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn81 commit touches scoring: fix: bound validator startup memory (#255) |
 | `sn91:scoring_commit:2026-09-13T10:23:14Z` | 91 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn91 commit touches scoring: pool: publish packs mv_channels iff effective_block >= [scoring] mv_s… |
 | `sn100:scoring_commit:2026-09-13T09:53:24Z` | 100 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn100 commit touches scoring: docs(proof): keep miner tbench rebake pin after skew-hint copy |
-| `sn93:readme_task_diff:6bd0c74883d58dde` | 93 | README_TASK_DIFF | 2026-09-06T18:30:56Z | sn93 README task/scoring sections changed |
+| `sn78:scoring_commit:2026-09-13T15:50:06Z` | 78 | SCORING_COMMIT | 2026-09-13T16:33:13Z | sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913 |
 | `sn34:readme_task_diff:535b78cbd7d6207d` | 34 | README_TASK_DIFF | 2026-09-06T22:52:57Z | sn34 README task/scoring sections changed |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |

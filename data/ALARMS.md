@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-14T18:48:23Z, block 9067765
+# ALARMS - generated 2026-09-14T22:26:29Z, block 9068849
 
-window: first_seen in [2026-09-14T17:33:49Z, 2026-09-14T18:48:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-14T21:12:00Z, 2026-09-14T22:27:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,45 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.6` | 1 | RELEASE | P1 | 2026-09-14T18:48:49Z | sn1 released v4.4.6 |
-| `sn21:scoring_commit:2026-09-14T14:13:22Z` | 21 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn21 commit touches scoring: scoring: the settle schedule is 10 / 17 / 31 days after the basket; p… |
-| `sn25:release:v2026.9.14-1046068620` | 25 | RELEASE | P1 | 2026-09-14T18:48:49Z | sn25 released v2026.9.14-1046068620 |
-| `sn45:scoring_commit:2026-09-14T17:14:32Z` | 45 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn45 commit touches scoring: Ignore per-validator runtime state and secrets |
-| `sn50:scoring_commit:2026-09-14T16:02:59Z` | 50 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn50 commit touches scoring: feat(validator): add a volatility CRPS term to the crypto-1h score (#… |
-| `sn51:scoring_commit:2026-09-14T14:51:23Z` | 51 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn51 commit touches scoring: DAH-3457 - [P1] validator: a UUID listed twice in the scrape is one c… |
-| `sn71:scoring_commit:2026-09-14T18:33:42Z` | 71 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn71 commit touches scoring: Verify retained weight reveals on runtime profile 458 |
-| `sn76:scoring_commit:2026-09-14T14:48:21Z` | 76 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn76 commit touches scoring: Merge pull request #1 from heroncovelabs/fix/validator-clone-error |
-| `sn78:scoring_commit:2026-09-14T13:12:56Z` | 78 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn78 commit touches scoring: Retire verified redundant successor materializations |
-| `sn90:scoring_commit:2026-09-14T14:40:13Z` | 90 | SCORING_COMMIT | P1 | 2026-09-14T18:48:49Z | sn90 commit touches scoring: docs: BTLABS (UID 97) live — first production miner on KubeTEE |
-| `sn40:readme_task_diff:e5e91c3bf216a40b` | 40 | README_TASK_DIFF | P2 | 2026-09-14T18:48:49Z | sn40 README task/scoring sections changed |
-| `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | P2 | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
+| `sn62:scoring_commit:2026-09-14T18:42:44Z` | 62 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn62 commit touches scoring: add PublicEvaluationRun model |
+| `sn71:scoring_commit:2026-09-14T22:21:33Z` | 71 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn71 commit touches scoring: Refresh protected source for verified paragraph coverage |
+| `sn76:scoring_commit:2026-09-14T22:08:23Z` | 76 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba… |
+| `sn78:scoring_commit:2026-09-14T21:24:12Z` | 78 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests |
+| `sn111:release:v0.2.0` | 111 | RELEASE | P1 | 2026-09-14T22:27:00Z | sn111 released v0.2.0 |
 
 ### detail
 
-- **`sn1:release:v4.4.6`** - sn1 released v4.4.6
-  - published 2026-09-14T18:08:30Z (was v4.4.5)
-- **`sn21:scoring_commit:2026-09-14T14:13:22Z`** - sn21 commit touches scoring: scoring: the settle schedule is 10 / 17 / 31 days after the basket; p…
+- **`sn62:scoring_commit:2026-09-14T18:42:44Z`** - sn62 commit touches scoring: add PublicEvaluationRun model
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.14-1046068620`** - sn25 released v2026.9.14-1046068620
-  - published 2026-09-14T17:33:57Z (was v2026.9.14-1045806490)
-- **`sn45:scoring_commit:2026-09-14T17:14:32Z`** - sn45 commit touches scoring: Ignore per-validator runtime state and secrets
+- **`sn71:scoring_commit:2026-09-14T22:21:33Z`** - sn71 commit touches scoring: Refresh protected source for verified paragraph coverage
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:scoring_commit:2026-09-14T16:02:59Z`** - sn50 commit touches scoring: feat(validator): add a volatility CRPS term to the crypto-1h score (#…
+- **`sn76:scoring_commit:2026-09-14T22:08:23Z`** - sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-14T14:51:23Z`** - sn51 commit touches scoring: DAH-3457 - [P1] validator: a UUID listed twice in the scrape is one c…
+- **`sn78:scoring_commit:2026-09-14T21:24:12Z`** - sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-14T18:33:42Z`** - sn71 commit touches scoring: Verify retained weight reveals on runtime profile 458
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-09-14T14:48:21Z`** - sn76 commit touches scoring: Merge pull request #1 from heroncovelabs/fix/validator-clone-error
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-14T13:12:56Z`** - sn78 commit touches scoring: Retire verified redundant successor materializations
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:scoring_commit:2026-09-14T14:40:13Z`** - sn90 commit touches scoring: docs: BTLABS (UID 97) live — first production miner on KubeTEE
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn40:readme_task_diff:e5e91c3bf216a40b`** - sn40 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn90:readme_task_diff:e7ec7e8de55efc5a`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn111:release:v0.2.0`** - sn111 released v0.2.0
+  - published 2026-09-14T20:49:35Z (was v0.1.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -64,11 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn10:scoring_commit:2026-09-07T19:27:24Z` | 10 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn10 commit touches scoring: Merge pull request #146 from Pareton-ai/arpan/reveal-miner-commits |
-| `sn71:scoring_commit:2026-09-07T19:51:59Z` | 71 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/miner-promotion… |
-| `sn78:scoring_commit:2026-09-07T20:51:50Z` | 78 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn78 commit touches scoring: Open miner pilot enrollment |
-| `sn96:release:Verathos v0.2.1 – Sleipnir Cross-Machine` | 96 | RELEASE | 2026-09-07T21:28:22Z | sn96 released Verathos v0.2.1 – Sleipnir Cross-Machine Serving |
-| `sn104:scoring_commit:2026-09-07T18:34:43Z` | 104 | SCORING_COMMIT | 2026-09-07T21:28:22Z | sn104 commit touches scoring: Merge pull request #10 from taostatus/feat/discord-key-announcements |
 | `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
 | `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
 | `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
@@ -294,6 +268,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-09-14T11:24:34Z` | 91 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn91 commit touches scoring: Merge pull request #278 from TensorLink-AI/docs/miner-docs-simplify |
 | `sn111:scoring_commit:2026-09-14T12:16:34Z` | 111 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn111 commit touches scoring: fix(validator): attribute dendrite failures to miner UIDs |
 | `sn114:scoring_commit:2026-09-14T10:40:48Z` | 114 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn114 commit touches scoring: add default config value for validator |
+| `sn1:release:v4.4.6` | 1 | RELEASE | 2026-09-14T18:48:49Z | sn1 released v4.4.6 |
+| `sn21:scoring_commit:2026-09-14T14:13:22Z` | 21 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn21 commit touches scoring: scoring: the settle schedule is 10 / 17 / 31 days after the basket; p… |
+| `sn25:release:v2026.9.14-1046068620` | 25 | RELEASE | 2026-09-14T18:48:49Z | sn25 released v2026.9.14-1046068620 |
+| `sn45:scoring_commit:2026-09-14T17:14:32Z` | 45 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn45 commit touches scoring: Ignore per-validator runtime state and secrets |
+| `sn50:scoring_commit:2026-09-14T16:02:59Z` | 50 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn50 commit touches scoring: feat(validator): add a volatility CRPS term to the crypto-1h score (#… |
+| `sn51:scoring_commit:2026-09-14T14:51:23Z` | 51 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn51 commit touches scoring: DAH-3457 - [P1] validator: a UUID listed twice in the scrape is one c… |
+| `sn71:scoring_commit:2026-09-14T18:33:42Z` | 71 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn71 commit touches scoring: Verify retained weight reveals on runtime profile 458 |
+| `sn76:scoring_commit:2026-09-14T14:48:21Z` | 76 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn76 commit touches scoring: Merge pull request #1 from heroncovelabs/fix/validator-clone-error |
+| `sn78:scoring_commit:2026-09-14T13:12:56Z` | 78 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn78 commit touches scoring: Retire verified redundant successor materializations |
+| `sn90:scoring_commit:2026-09-14T14:40:13Z` | 90 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn90 commit touches scoring: docs: BTLABS (UID 97) live — first production miner on KubeTEE |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
@@ -319,6 +303,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |
 | `sn91:readme_task_diff:9c8c6d309a9f02a7` | 91 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn91 README task/scoring sections changed |
+| `sn40:readme_task_diff:e5e91c3bf216a40b` | 40 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn40 README task/scoring sections changed |
+| `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

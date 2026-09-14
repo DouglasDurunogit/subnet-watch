@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-13T23:21:22Z, block 9061944
+# ALARMS - generated 2026-09-14T01:20:35Z, block 9062540
 
-window: first_seen in [2026-09-13T22:06:49Z, 2026-09-13T23:21:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-14T00:06:09Z, 2026-09-14T01:21:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.11: fix: preserve episode inference` | 15 | RELEASE | P1 | 2026-09-13T23:21:49Z | sn15 released v2.0.11: fix: preserve episode inference telemetry without sidecar (#300) |
-| `sn71:scoring_commit:2026-09-13T22:16:51Z` | 71 | SCORING_COMMIT | P1 | 2026-09-13T23:21:49Z | sn71 commit touches scoring: Match verified US contact state aliases |
-| `sn78:scoring_commit:2026-09-13T21:56:31Z` | 78 | SCORING_COMMIT | P1 | 2026-09-13T23:21:49Z | sn78 commit touches scoring: Connect independent work signing and automatic evaluator order deliver |
+| `sn15:release:v2.0.12` | 15 | RELEASE | P1 | 2026-09-14T01:21:09Z | sn15 released v2.0.12 |
+| `sn15:scoring_commit:2026-09-13T23:48:08Z` | 15 | SCORING_COMMIT | P1 | 2026-09-14T01:21:09Z | sn15 commit touches scoring: fix: make validator startup logs formatting-safe (#302) |
+| `sn20:scoring_commit:2026-09-13T20:16:47Z` | 20 | SCORING_COMMIT | P1 | 2026-09-14T01:21:09Z | sn20 commit touches scoring: Resolve the validator signing key before timed network dispatch |
+| `sn81:scoring_commit:2026-09-14T00:28:08Z` | 81 | SCORING_COMMIT | P1 | 2026-09-14T01:21:09Z | sn81 commit touches scoring: fix(weight-only): retain only reward fields from archives (#259) |
 
 ### detail
 
-- **`sn15:release:v2.0.11: fix: preserve episode inference`** - sn15 released v2.0.11: fix: preserve episode inference telemetry without sidecar (#300)
-  - published 2026-09-13T21:56:49Z (was v2.0.10: Capture complete episode resource telemetry (#298))
-- **`sn71:scoring_commit:2026-09-13T22:16:51Z`** - sn71 commit touches scoring: Match verified US contact state aliases
+- **`sn15:release:v2.0.12`** - sn15 released v2.0.12
+  - published 2026-09-13T23:48:08Z (was v2.0.11: fix: preserve episode inference telemetry without sidecar (#300))
+- **`sn15:scoring_commit:2026-09-13T23:48:08Z`** - sn15 commit touches scoring: fix: make validator startup logs formatting-safe (#302)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-13T21:56:31Z`** - sn78 commit touches scoring: Connect independent work signing and automatic evaluator order deliver
+- **`sn20:scoring_commit:2026-09-13T20:16:47Z`** - sn20 commit touches scoring: Resolve the validator signing key before timed network dispatch
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-09-14T00:28:08Z`** - sn81 commit touches scoring: fix(weight-only): retain only reward fields from archives (#259)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn125:burn_drop:0.000` | 125 | BURN_DROP | 2026-09-13T19:00:00Z | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
-| `sn34:release:5.0.0 — King of the Hill` | 34 | RELEASE | 2026-09-07T00:57:22Z | sn34 released 5.0.0 — King of the Hill |
-| `sn91:scoring_commit:2026-09-04T21:55:54Z` | 91 | SCORING_COMMIT | 2026-09-07T00:57:22Z | sn91 commit touches scoring: receipt: publish every duelled challenger's diagnostics (cohort_stats) |
 | `sn25:release:v2026.9.6-1039587510` | 25 | RELEASE | 2026-09-07T06:01:32Z | sn25 released v2026.9.6-1039587510 |
 | `sn71:scoring_commit:2026-09-07T04:13:16Z` | 71 | SCORING_COMMIT | 2026-09-07T06:01:32Z | sn71 commit touches scoring: fix: verify active provider cache persistence |
 | `sn18:release:Release 2.1.4` | 18 | RELEASE | 2026-09-07T12:22:04Z | sn18 released Release 2.1.4 |
@@ -258,6 +259,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-13T21:09:59Z` | 15 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn15 commit touches scoring: Use SDK transient status classification for validator retries (#299) |
 | `sn78:scoring_commit:2026-09-13T21:00:59Z` | 78 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn78 commit touches scoring: Merge pull request #65 from Umi-BitSign/codex/competition-evaluator-l… |
 | `sn81:scoring_commit:2026-09-13T21:01:46Z` | 81 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn81 commit touches scoring: feat(validator): explain V1 selection verdicts |
+| `sn15:release:v2.0.11: fix: preserve episode inference` | 15 | RELEASE | 2026-09-13T23:21:49Z | sn15 released v2.0.11: fix: preserve episode inference telemetry without sidecar (#300) |
+| `sn71:scoring_commit:2026-09-13T22:16:51Z` | 71 | SCORING_COMMIT | 2026-09-13T23:21:49Z | sn71 commit touches scoring: Match verified US contact state aliases |
+| `sn78:scoring_commit:2026-09-13T21:56:31Z` | 78 | SCORING_COMMIT | 2026-09-13T23:21:49Z | sn78 commit touches scoring: Connect independent work signing and automatic evaluator order deliver |
 | `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-14T06:41:32Z, block 9064140
+# ALARMS - generated 2026-09-14T13:23:21Z, block 9066146
 
-window: first_seen in [2026-09-14T05:27:05Z, 2026-09-14T06:42:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-14T12:08:56Z, 2026-09-14T13:23:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,60 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.14: feat: capture per-episode wall ` | 15 | RELEASE | P1 | 2026-09-14T06:42:05Z | sn15 released v2.0.14: feat: capture per-episode wall time (#304) |
-| `sn15:scoring_commit:2026-09-14T04:01:53Z` | 15 | SCORING_COMMIT | P1 | 2026-09-14T06:42:05Z | sn15 commit touches scoring: fix: reject any generated evaluation infrastructure error (#303) |
-| `sn25:release:v2026.9.13-1045655440` | 25 | RELEASE | P1 | 2026-09-14T06:42:05Z | sn25 released v2026.9.13-1045655440 |
-| `sn71:scoring_commit:2026-09-14T05:15:09Z` | 71 | SCORING_COMMIT | P1 | 2026-09-14T06:42:05Z | sn71 commit touches scoring: Retain native provider billing receipts and align scoring timeouts |
-| `sn78:scoring_commit:2026-09-14T05:26:34Z` | 78 | SCORING_COMMIT | P1 | 2026-09-14T06:42:05Z | sn78 commit touches scoring: docs: use private holdout for automatic competition evaluation |
-| `sn81:scoring_commit:2026-09-14T04:57:45Z` | 81 | SCORING_COMMIT | P1 | 2026-09-14T06:42:05Z | sn81 commit touches scoring: Warn miners about Transformers runtime differences |
-| `sn91:scoring_commit:2026-09-14T02:21:06Z` | 91 | SCORING_COMMIT | P1 | 2026-09-14T06:42:05Z | sn91 commit touches scoring: feat(funding): miner-chosen submission label (`cascade fund --label`) |
+| `sn69:burn_drop:0.000` | 69 | BURN_DROP | P0 | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn15:scoring_commit:2026-09-14T07:58:25Z` | 15 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn15 commit touches scoring: chore(validator): bump oro-env-runtime 0.2.14 -> 0.2.18 for new-gener… |
+| `sn25:release:v2026.9.14-1045806490` | 25 | RELEASE | P1 | 2026-09-14T13:23:56Z | sn25 released v2026.9.14-1045806490 |
+| `sn25:scoring_commit:2026-09-14T08:31:58Z` | 25 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn25 commit touches scoring: Validate capture ownership against growing source census |
+| `sn28:scoring_commit:2026-09-14T11:05:56Z` | 28 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn28 commit touches scoring: refactor(near): fold the path check into request validation |
+| `sn38:scoring_commit:2026-09-14T12:58:13Z` | 38 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
+| `sn51:release:executor-v1.128` | 51 | RELEASE | P1 | 2026-09-14T13:23:56Z | sn51 released executor-v1.128 |
+| `sn51:scoring_commit:2026-09-14T13:17:55Z` | 51 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn51 commit touches scoring: DAH-3247 - [P1] lium_protocol: the validator↔backend wire as one vers… |
+| `sn67:scoring_commit:2026-09-14T10:53:38Z` | 67 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260914.post5 |
+| `sn78:scoring_commit:2026-09-14T11:54:17Z` | 78 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn78 commit touches scoring: Prioritize pending evaluator evidence over retained upload audits |
+| `sn91:scoring_commit:2026-09-14T11:24:34Z` | 91 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn91 commit touches scoring: Merge pull request #278 from TensorLink-AI/docs/miner-docs-simplify |
+| `sn111:scoring_commit:2026-09-14T12:16:34Z` | 111 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn111 commit touches scoring: fix(validator): attribute dendrite failures to miner UIDs |
+| `sn114:scoring_commit:2026-09-14T10:40:48Z` | 114 | SCORING_COMMIT | P1 | 2026-09-14T13:23:56Z | sn114 commit touches scoring: add default config value for validator |
+| `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | P2 | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
+| `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | P2 | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
+| `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | P2 | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |
+| `sn91:readme_task_diff:9c8c6d309a9f02a7` | 91 | README_TASK_DIFF | P2 | 2026-09-14T13:23:56Z | sn91 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.14: feat: capture per-episode wall `** - sn15 released v2.0.14: feat: capture per-episode wall time (#304)
-  - published 2026-09-14T04:22:12Z (was v2.0.12)
-- **`sn15:scoring_commit:2026-09-14T04:01:53Z`** - sn15 commit touches scoring: fix: reject any generated evaluation infrastructure error (#303)
+- **`sn69:burn_drop:0.000`** - sn69 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:scoring_commit:2026-09-14T07:58:25Z`** - sn15 commit touches scoring: chore(validator): bump oro-env-runtime 0.2.14 -> 0.2.18 for new-gener…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.13-1045655440`** - sn25 released v2026.9.13-1045655440
-  - published 2026-09-14T06:04:07Z (was v2026.9.11-1043550030)
-- **`sn71:scoring_commit:2026-09-14T05:15:09Z`** - sn71 commit touches scoring: Retain native provider billing receipts and align scoring timeouts
+- **`sn25:release:v2026.9.14-1045806490`** - sn25 released v2026.9.14-1045806490
+  - published 2026-09-14T10:19:59Z (was v2026.9.13-1045655440)
+- **`sn25:scoring_commit:2026-09-14T08:31:58Z`** - sn25 commit touches scoring: Validate capture ownership against growing source census
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-14T05:26:34Z`** - sn78 commit touches scoring: docs: use private holdout for automatic competition evaluation
+- **`sn28:scoring_commit:2026-09-14T11:05:56Z`** - sn28 commit touches scoring: refactor(near): fold the path check into request validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-14T04:57:45Z`** - sn81 commit touches scoring: Warn miners about Transformers runtime differences
+- **`sn38:scoring_commit:2026-09-14T12:58:13Z`** - sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-14T02:21:06Z`** - sn91 commit touches scoring: feat(funding): miner-chosen submission label (`cascade fund --label`)
+- **`sn51:release:executor-v1.128`** - sn51 released executor-v1.128
+  - published 2026-09-14T13:02:06Z (was miner-v1.004)
+- **`sn51:scoring_commit:2026-09-14T13:17:55Z`** - sn51 commit touches scoring: DAH-3247 - [P1] lium_protocol: the validator↔backend wire as one vers…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-09-14T10:53:38Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260914.post5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-14T11:54:17Z`** - sn78 commit touches scoring: Prioritize pending evaluator evidence over retained upload audits
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-09-14T11:24:34Z`** - sn91 commit touches scoring: Merge pull request #278 from TensorLink-AI/docs/miner-docs-simplify
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-14T12:16:34Z`** - sn111 commit touches scoring: fix(validator): attribute dendrite failures to miner UIDs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-09-14T10:40:48Z`** - sn114 commit touches scoring: add default config value for validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn40:readme_task_diff:03959b1ab90af5c4`** - sn40 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn66:readme_task_diff:e6d3eecf74563f7e`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn67:readme_task_diff:9c525b1cc53f9b59`** - sn67 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn91:readme_task_diff:9c8c6d309a9f02a7`** - sn91 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,15 +78,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn125:burn_drop:0.000` | 125 | BURN_DROP | 2026-09-13T19:00:00Z | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
-| `sn18:release:Release 2.1.4` | 18 | RELEASE | 2026-09-07T12:22:04Z | sn18 released Release 2.1.4 |
-| `sn18:scoring_commit:2026-09-07T08:25:21Z` | 18 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn18 commit touches scoring: Stop emissions for non-participating miners (#88) |
-| `sn25:release:v2026.9.7-1039747440` | 25 | RELEASE | 2026-09-07T12:22:04Z | sn25 released v2026.9.7-1039747440 |
-| `sn51:scoring_commit:2026-09-07T11:34:42Z` | 51 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn51 commit touches scoring: [P1] feat: run the miners tests and ruff format on every PR (#1289) |
-| `sn66:release:v.1.0.3: Web submissions, payouts, contr` | 66 | RELEASE | 2026-09-07T12:22:04Z | sn66 released v.1.0.3: Web submissions, payouts, contributions... |
-| `sn67:scoring_commit:2026-09-07T07:03:25Z` | 67 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post2 |
-| `sn71:scoring_commit:2026-09-07T06:56:29Z` | 71 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn71 commit touches scoring: chore: bind verified controller upgrade recovery |
-| `sn78:scoring_commit:2026-09-07T06:42:21Z` | 78 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn78 commit touches scoring: Harden macOS validator audit origin |
-| `sn92:scoring_commit:2026-09-07T08:17:20Z` | 92 | SCORING_COMMIT | 2026-09-07T12:22:04Z | sn92 commit touches scoring: archive: a rewarded system is archived whatever state the leaderboard… |
 | `sn1:release:v4.4.2` | 1 | RELEASE | 2026-09-07T17:49:43Z | sn1 released v4.4.2 |
 | `sn25:release:v2026.9.7-1039843330` | 25 | RELEASE | 2026-09-07T17:49:43Z | sn25 released v2026.9.7-1039843330 |
 | `sn34:scoring_commit:2026-09-07T16:11:18Z` | 34 | SCORING_COMMIT | 2026-09-07T17:49:43Z | sn34 commit touches scoring: Set explicit 100% burn and bypass reward calculation |
@@ -273,7 +294,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-13T23:48:08Z` | 15 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn15 commit touches scoring: fix: make validator startup logs formatting-safe (#302) |
 | `sn20:scoring_commit:2026-09-13T20:16:47Z` | 20 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn20 commit touches scoring: Resolve the validator signing key before timed network dispatch |
 | `sn81:scoring_commit:2026-09-14T00:28:08Z` | 81 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn81 commit touches scoring: fix(weight-only): retain only reward fields from archives (#259) |
-| `sn80:readme_task_diff:9cd93d83a14b7502` | 80 | README_TASK_DIFF | 2026-09-07T12:22:04Z | sn80 README task/scoring sections changed |
+| `sn15:release:v2.0.14: feat: capture per-episode wall ` | 15 | RELEASE | 2026-09-14T06:42:05Z | sn15 released v2.0.14: feat: capture per-episode wall time (#304) |
+| `sn15:scoring_commit:2026-09-14T04:01:53Z` | 15 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn15 commit touches scoring: fix: reject any generated evaluation infrastructure error (#303) |
+| `sn25:release:v2026.9.13-1045655440` | 25 | RELEASE | 2026-09-14T06:42:05Z | sn25 released v2026.9.13-1045655440 |
+| `sn71:scoring_commit:2026-09-14T05:15:09Z` | 71 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn71 commit touches scoring: Retain native provider billing receipts and align scoring timeouts |
+| `sn78:scoring_commit:2026-09-14T05:26:34Z` | 78 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn78 commit touches scoring: docs: use private holdout for automatic competition evaluation |
+| `sn81:scoring_commit:2026-09-14T04:57:45Z` | 81 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn81 commit touches scoring: Warn miners about Transformers runtime differences |
+| `sn91:scoring_commit:2026-09-14T02:21:06Z` | 91 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn91 commit touches scoring: feat(funding): miner-chosen submission label (`cascade fund --label`) |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |

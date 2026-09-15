@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-15T00:50:57Z, block 9069569
+# ALARMS - generated 2026-09-15T06:07:40Z, block 9071146
 
-window: first_seen in [2026-09-14T23:36:26Z, 2026-09-15T00:51:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-15T04:53:06Z, 2026-09-15T06:08:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-14T23:58:08Z` | 71 | SCORING_COMMIT | P1 | 2026-09-15T00:51:26Z | sn71 commit touches scoring: Refresh reviewed scorer workflow protections |
-| `sn81:scoring_commit:2026-09-15T00:01:23Z` | 81 | SCORING_COMMIT | P1 | 2026-09-15T00:51:26Z | sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission… |
+| `sn20:burn_drop:0.793` | 20 | BURN_DROP | P0 | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
+| `sn71:scoring_commit:2026-09-15T04:46:46Z` | 71 | SCORING_COMMIT | P1 | 2026-09-15T06:08:06Z | sn71 commit touches scoring: Preserve declared homepage encodings during company verification |
+| `sn76:scoring_commit:2026-09-15T03:56:34Z` | 76 | SCORING_COMMIT | P1 | 2026-09-15T06:08:06Z | sn76 commit touches scoring: docs(protocol): production runs one operator-run validator and cross-… |
+| `sn78:scoring_commit:2026-09-15T02:49:36Z` | 78 | SCORING_COMMIT | P1 | 2026-09-15T06:08:06Z | sn78 commit touches scoring: Merge pull request #97 from Umi-BitSign/codex/uid0-single-evaluator-l… |
+| `sn104:scoring_commit:2026-09-10T11:48:51Z` | 104 | SCORING_COMMIT | P1 | 2026-09-15T06:08:06Z | sn104 commit touches scoring: fix: burn the full allocation when no miner has earned a score |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-14T23:58:08Z`** - sn71 commit touches scoring: Refresh reviewed scorer workflow protections
+- **`sn20:burn_drop:0.793`** - sn20 burn fell 1.000 -> 0.793 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-09-15T04:46:46Z`** - sn71 commit touches scoring: Preserve declared homepage encodings during company verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-15T00:01:23Z`** - sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission…
+- **`sn76:scoring_commit:2026-09-15T03:56:34Z`** - sn76 commit touches scoring: docs(protocol): production runs one operator-run validator and cross-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-15T02:49:36Z`** - sn78 commit touches scoring: Merge pull request #97 from Umi-BitSign/codex/uid0-single-evaluator-l…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn104:scoring_commit:2026-09-10T11:48:51Z`** - sn104 commit touches scoring: fix: burn the full allocation when no miner has earned a score
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -34,11 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
-| `sn71:scoring_commit:2026-09-08T03:48:46Z` | 71 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation |
-| `sn74:release:release-20260908-031700` | 74 | RELEASE | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
-| `sn92:scoring_commit:2026-09-08T00:30:17Z` | 92 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn92 commit touches scoring: cost is total task latency for every system; empty profile responses … |
-| `sn100:scoring_commit:2026-09-08T02:08:11Z` | 100 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn100 commit touches scoring: fix(proof): stage proxy model + holdout for live score (#234) |
 | `sn66:scoring_commit:2026-09-08T04:45:40Z` | 66 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn66 commit touches scoring: Release 259 reviewed targets with immutable 10 MiB task policies |
 | `sn71:scoring_commit:2026-09-08T06:56:07Z` | 71 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn71 commit touches scoring: Parse Arena drain quiescence in validator handoff |
 | `sn80:scoring_commit:2026-09-08T07:33:08Z` | 80 | SCORING_COMMIT | 2026-09-08T09:02:01Z | sn80 commit touches scoring: docs: link shared real-robot task catalog and training data |
@@ -272,7 +276,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-09-14T22:08:23Z` | 76 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba… |
 | `sn78:scoring_commit:2026-09-14T21:24:12Z` | 78 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests |
 | `sn111:release:v0.2.0` | 111 | RELEASE | 2026-09-14T22:27:00Z | sn111 released v0.2.0 |
-| `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-14T23:58:08Z` | 71 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn71 commit touches scoring: Refresh reviewed scorer workflow protections |
+| `sn81:scoring_commit:2026-09-15T00:01:23Z` | 81 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission… |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |
 | `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |

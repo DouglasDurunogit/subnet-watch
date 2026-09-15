@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-15T16:52:36Z, block 9074357
+# ALARMS - generated 2026-09-15T20:12:02Z, block 9075349
 
-window: first_seen in [2026-09-15T15:38:10Z, 2026-09-15T16:53:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-15T18:57:28Z, 2026-09-15T20:12:28Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,28 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-09-15T13:11:21Z` | 10 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159) |
-| `sn66:scoring_commit:2026-09-15T16:49:50Z` | 66 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn66 commit touches scoring: Raise proof token limit to one million for local verifiers |
-| `sn90:release:v1.2.0` | 90 | RELEASE | P1 | 2026-09-15T16:53:10Z | sn90 released v1.2.0 |
-| `sn90:scoring_commit:2026-09-15T15:53:37Z` | 90 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined… |
+| `sn15:release:v2.0.17` | 15 | RELEASE | P1 | 2026-09-15T20:12:28Z | sn15 released v2.0.17 |
+| `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
+| `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |
+| `sn78:scoring_commit:2026-09-15T18:26:35Z` | 78 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609 |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-09-15T13:11:21Z`** - sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159)
+- **`sn15:release:v2.0.17`** - sn15 released v2.0.17
+  - published 2026-09-15T19:12:03Z (was v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs)
+- **`sn34:scoring_commit:2026-09-15T17:50:38Z`** - sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-15T16:49:50Z`** - sn66 commit touches scoring: Raise proof token limit to one million for local verifiers
+- **`sn76:scoring_commit:2026-09-15T18:26:04Z`** - sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.2.0`** - sn90 released v1.2.0
-  - published 2026-09-15T15:54:08Z (was v1.1.6 — subtensor v445 / typed metagraph APIs)
-- **`sn90:scoring_commit:2026-09-15T15:53:37Z`** - sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined…
+- **`sn78:scoring_commit:2026-09-15T18:26:35Z`** - sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn34:burn_drop:0.799` | 34 | BURN_DROP | 2026-09-08T17:34:23Z | sn34 burn fell 1.000 -> 0.799 - miners can earn again |
-| `sn121:burn_drop:0.610` | 121 | BURN_DROP | 2026-09-08T17:34:23Z | sn121 burn fell 1.000 -> 0.610 - miners can earn again |
 | `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
@@ -41,11 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn25:release:v2026.9.8-1040779940` | 25 | RELEASE | 2026-09-08T17:34:23Z | sn25 released v2026.9.8-1040779940 |
-| `sn71:scoring_commit:2026-09-08T15:54:53Z` | 71 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-… |
-| `sn74:release:release-20260908-144557` | 74 | RELEASE | 2026-09-08T17:34:23Z | sn74 released release-20260908-144557 |
-| `sn92:scoring_commit:2026-09-08T14:53:18Z` | 92 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn92 commit touches scoring: tracks: support is the one live track; call shaped tests load and scor |
-| `sn120:scoring_commit:2026-09-08T14:27:39Z` | 120 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn120 commit touches scoring: Sync validator + eval design (2026-09-07/08): eval throughput work, w… |
 | `sn2:release:14.14.3` | 2 | RELEASE | 2026-09-08T20:19:51Z | sn2 released 14.14.3 |
 | `sn2:scoring_commit:2026-09-08T19:26:11Z` | 2 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn2 commit touches scoring: Introduce weight commit guard for epochs with zero miner scores (#627) |
 | `sn71:scoring_commit:2026-09-08T20:17:47Z` | 71 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
@@ -283,6 +276,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-15T06:08:40Z` | 78 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn78 commit touches scoring: Stop miner HTTP service after terminal background failure (#101) |
 | `sn90:scoring_commit:2026-09-15T09:13:04Z` | 90 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn90 commit touches scoring: docs(roadmap): move scoring-expansion item to Phase 2 |
 | `sn91:scoring_commit:2026-09-15T09:37:30Z` | 91 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn91 commit touches scoring: fix: king rents first — challengers yield the marketplace while the J… |
+| `sn10:scoring_commit:2026-09-15T13:11:21Z` | 10 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159) |
+| `sn66:scoring_commit:2026-09-15T16:49:50Z` | 66 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn66 commit touches scoring: Raise proof token limit to one million for local verifiers |
+| `sn90:release:v1.2.0` | 90 | RELEASE | 2026-09-15T16:53:10Z | sn90 released v1.2.0 |
+| `sn90:scoring_commit:2026-09-15T15:53:37Z` | 90 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined… |
 | `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |

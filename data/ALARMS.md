@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-14T22:26:29Z, block 9068849
+# ALARMS - generated 2026-09-15T00:50:57Z, block 9069569
 
-window: first_seen in [2026-09-14T21:12:00Z, 2026-09-14T22:27:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-14T23:36:26Z, 2026-09-15T00:51:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:scoring_commit:2026-09-14T18:42:44Z` | 62 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn62 commit touches scoring: add PublicEvaluationRun model |
-| `sn71:scoring_commit:2026-09-14T22:21:33Z` | 71 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn71 commit touches scoring: Refresh protected source for verified paragraph coverage |
-| `sn76:scoring_commit:2026-09-14T22:08:23Z` | 76 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba… |
-| `sn78:scoring_commit:2026-09-14T21:24:12Z` | 78 | SCORING_COMMIT | P1 | 2026-09-14T22:27:00Z | sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests |
-| `sn111:release:v0.2.0` | 111 | RELEASE | P1 | 2026-09-14T22:27:00Z | sn111 released v0.2.0 |
+| `sn71:scoring_commit:2026-09-14T23:58:08Z` | 71 | SCORING_COMMIT | P1 | 2026-09-15T00:51:26Z | sn71 commit touches scoring: Refresh reviewed scorer workflow protections |
+| `sn81:scoring_commit:2026-09-15T00:01:23Z` | 81 | SCORING_COMMIT | P1 | 2026-09-15T00:51:26Z | sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission… |
 
 ### detail
 
-- **`sn62:scoring_commit:2026-09-14T18:42:44Z`** - sn62 commit touches scoring: add PublicEvaluationRun model
+- **`sn71:scoring_commit:2026-09-14T23:58:08Z`** - sn71 commit touches scoring: Refresh reviewed scorer workflow protections
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-14T22:21:33Z`** - sn71 commit touches scoring: Refresh protected source for verified paragraph coverage
+- **`sn81:scoring_commit:2026-09-15T00:01:23Z`** - sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-09-14T22:08:23Z`** - sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-14T21:24:12Z`** - sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:release:v0.2.0`** - sn111 released v0.2.0
-  - published 2026-09-14T20:49:35Z (was v0.1.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,8 +34,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:scoring_commit:2026-09-07T16:54:02Z` | 25 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn25 commit touches scoring: Checkpoint historical validator schedule and finalization progress |
-| `sn78:scoring_commit:2026-09-07T23:46:59Z` | 78 | SCORING_COMMIT | 2026-09-07T23:48:23Z | sn78 commit touches scoring: Fix pilot deployment validation |
 | `sn67:scoring_commit:2026-09-07T09:39:54Z` | 67 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260907.post3 |
 | `sn71:scoring_commit:2026-09-08T03:48:46Z` | 71 | SCORING_COMMIT | 2026-09-08T04:27:58Z | sn71 commit touches scoring: Verify staging SOURCE_ADD restart isolation |
 | `sn74:release:release-20260908-031700` | 74 | RELEASE | 2026-09-08T04:27:58Z | sn74 released release-20260908-031700 |
@@ -278,6 +267,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-09-14T14:48:21Z` | 76 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn76 commit touches scoring: Merge pull request #1 from heroncovelabs/fix/validator-clone-error |
 | `sn78:scoring_commit:2026-09-14T13:12:56Z` | 78 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn78 commit touches scoring: Retire verified redundant successor materializations |
 | `sn90:scoring_commit:2026-09-14T14:40:13Z` | 90 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn90 commit touches scoring: docs: BTLABS (UID 97) live — first production miner on KubeTEE |
+| `sn62:scoring_commit:2026-09-14T18:42:44Z` | 62 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn62 commit touches scoring: add PublicEvaluationRun model |
+| `sn71:scoring_commit:2026-09-14T22:21:33Z` | 71 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn71 commit touches scoring: Refresh protected source for verified paragraph coverage |
+| `sn76:scoring_commit:2026-09-14T22:08:23Z` | 76 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba… |
+| `sn78:scoring_commit:2026-09-14T21:24:12Z` | 78 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests |
+| `sn111:release:v0.2.0` | 111 | RELEASE | 2026-09-14T22:27:00Z | sn111 released v0.2.0 |
 | `sn67:readme_task_diff:02d3c62272b1d7dd` | 67 | README_TASK_DIFF | 2026-09-08T04:27:58Z | sn67 README task/scoring sections changed |
 | `sn66:readme_task_diff:1677dd0cb94b82d3` | 66 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn66 README task/scoring sections changed |
 | `sn80:readme_task_diff:ef9838874bfda548` | 80 | README_TASK_DIFF | 2026-09-08T09:02:01Z | sn80 README task/scoring sections changed |

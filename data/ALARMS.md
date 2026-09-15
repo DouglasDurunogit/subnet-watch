@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-15T11:58:18Z, block 9072892
+# ALARMS - generated 2026-09-15T16:52:36Z, block 9074357
 
-window: first_seen in [2026-09-15T10:43:52Z, 2026-09-15T11:58:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-15T15:38:10Z, 2026-09-15T16:53:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,45 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-09-15T10:10:42Z` | 10 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn10 commit touches scoring: feat: add campaign context coverage and reliability scoring for SGLan… |
-| `sn11:scoring_commit:2026-09-15T11:10:55Z` | 11 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn11 commit touches scoring: Merge pull request #321 from trajectoryRL/agent/coding/disable-miner-… |
-| `sn15:release:v2.0.15: chore(validator): pin runtime 1` | 15 | RELEASE | P1 | 2026-09-15T11:58:52Z | sn15 released v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs |
-| `sn15:scoring_commit:2026-09-15T10:19:23Z` | 15 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn15 commit touches scoring: chore(validator): pin runtime 1.0.6 for generated packs |
-| `sn20:scoring_commit:2026-09-15T10:27:48Z` | 20 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn20 commit touches scoring: Derive semantic verdicts from validated field decisions |
-| `sn51:scoring_commit:2026-09-15T10:31:03Z` | 51 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn51 commit touches scoring: DAH-2834 - [P0] validator consumes the executor's one-call /verify an… |
-| `sn67:scoring_commit:2026-09-15T10:10:49Z` | 67 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260915.post4 |
-| `sn71:scoring_commit:2026-09-15T09:56:04Z` | 71 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn71 commit touches scoring: test: prove normal scoring collision rolls back exact Sep15 rerun |
-| `sn78:scoring_commit:2026-09-15T06:08:40Z` | 78 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn78 commit touches scoring: Stop miner HTTP service after terminal background failure (#101) |
-| `sn90:scoring_commit:2026-09-15T09:13:04Z` | 90 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn90 commit touches scoring: docs(roadmap): move scoring-expansion item to Phase 2 |
-| `sn91:scoring_commit:2026-09-15T09:37:30Z` | 91 | SCORING_COMMIT | P1 | 2026-09-15T11:58:52Z | sn91 commit touches scoring: fix: king rents first — challengers yield the marketplace while the J… |
-| `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | P2 | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-09-15T13:11:21Z` | 10 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159) |
+| `sn66:scoring_commit:2026-09-15T16:49:50Z` | 66 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn66 commit touches scoring: Raise proof token limit to one million for local verifiers |
+| `sn90:release:v1.2.0` | 90 | RELEASE | P1 | 2026-09-15T16:53:10Z | sn90 released v1.2.0 |
+| `sn90:scoring_commit:2026-09-15T15:53:37Z` | 90 | SCORING_COMMIT | P1 | 2026-09-15T16:53:10Z | sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined… |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-09-15T10:10:42Z`** - sn10 commit touches scoring: feat: add campaign context coverage and reliability scoring for SGLan…
+- **`sn10:scoring_commit:2026-09-15T13:11:21Z`** - sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn11:scoring_commit:2026-09-15T11:10:55Z`** - sn11 commit touches scoring: Merge pull request #321 from trajectoryRL/agent/coding/disable-miner-…
+- **`sn66:scoring_commit:2026-09-15T16:49:50Z`** - sn66 commit touches scoring: Raise proof token limit to one million for local verifiers
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:release:v2.0.15: chore(validator): pin runtime 1`** - sn15 released v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs
-  - published 2026-09-15T10:19:23Z (was v2.0.14: feat: capture per-episode wall time (#304))
-- **`sn15:scoring_commit:2026-09-15T10:19:23Z`** - sn15 commit touches scoring: chore(validator): pin runtime 1.0.6 for generated packs
+- **`sn90:release:v1.2.0`** - sn90 released v1.2.0
+  - published 2026-09-15T15:54:08Z (was v1.1.6 — subtensor v445 / typed metagraph APIs)
+- **`sn90:scoring_commit:2026-09-15T15:53:37Z`** - sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn20:scoring_commit:2026-09-15T10:27:48Z`** - sn20 commit touches scoring: Derive semantic verdicts from validated field decisions
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-15T10:31:03Z`** - sn51 commit touches scoring: DAH-2834 - [P0] validator consumes the executor's one-call /verify an…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-15T10:10:49Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260915.post4
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-15T09:56:04Z`** - sn71 commit touches scoring: test: prove normal scoring collision rolls back exact Sep15 rerun
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-15T06:08:40Z`** - sn78 commit touches scoring: Stop miner HTTP service after terminal background failure (#101)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:scoring_commit:2026-09-15T09:13:04Z`** - sn90 commit touches scoring: docs(roadmap): move scoring-expansion item to Phase 2
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-15T09:37:30Z`** - sn91 commit touches scoring: fix: king rents first — challengers yield the marketplace while the J…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:readme_task_diff:ffaaddc742488086`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -65,11 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn9:release:v4.12.14` | 9 | RELEASE | 2026-09-08T13:32:58Z | sn9 released v4.12.14 |
-| `sn10:scoring_commit:2026-09-08T09:22:29Z` | 10 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn10 commit touches scoring: Merge pull request #145 from Pareton-ai/bohdan/feat/miner-score-trans… |
-| `sn34:scoring_commit:2026-09-08T03:06:21Z` | 34 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn34 commit touches scoring: Bump version to 5.0.2 so validators autoupdate. |
-| `sn71:scoring_commit:2026-09-08T13:29:02Z` | 71 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn71 commit touches scoring: Verify approved prior testnet release boots |
-| `sn100:scoring_commit:2026-09-08T09:44:43Z` | 100 | SCORING_COMMIT | 2026-09-08T13:32:58Z | sn100 commit touches scoring: fix(eval): install host cc for triton jit on scoring image (#239) |
 | `sn25:release:v2026.9.8-1040779940` | 25 | RELEASE | 2026-09-08T17:34:23Z | sn25 released v2026.9.8-1040779940 |
 | `sn71:scoring_commit:2026-09-08T15:54:53Z` | 71 | SCORING_COMMIT | 2026-09-08T17:34:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/validator-test-… |
 | `sn74:release:release-20260908-144557` | 74 | RELEASE | 2026-09-08T17:34:23Z | sn74 released release-20260908-144557 |
@@ -301,6 +272,17 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-09-15T03:56:34Z` | 76 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn76 commit touches scoring: docs(protocol): production runs one operator-run validator and cross-… |
 | `sn78:scoring_commit:2026-09-15T02:49:36Z` | 78 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn78 commit touches scoring: Merge pull request #97 from Umi-BitSign/codex/uid0-single-evaluator-l… |
 | `sn104:scoring_commit:2026-09-10T11:48:51Z` | 104 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn104 commit touches scoring: fix: burn the full allocation when no miner has earned a score |
+| `sn10:scoring_commit:2026-09-15T10:10:42Z` | 10 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn10 commit touches scoring: feat: add campaign context coverage and reliability scoring for SGLan… |
+| `sn11:scoring_commit:2026-09-15T11:10:55Z` | 11 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn11 commit touches scoring: Merge pull request #321 from trajectoryRL/agent/coding/disable-miner-… |
+| `sn15:release:v2.0.15: chore(validator): pin runtime 1` | 15 | RELEASE | 2026-09-15T11:58:52Z | sn15 released v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs |
+| `sn15:scoring_commit:2026-09-15T10:19:23Z` | 15 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn15 commit touches scoring: chore(validator): pin runtime 1.0.6 for generated packs |
+| `sn20:scoring_commit:2026-09-15T10:27:48Z` | 20 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn20 commit touches scoring: Derive semantic verdicts from validated field decisions |
+| `sn51:scoring_commit:2026-09-15T10:31:03Z` | 51 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn51 commit touches scoring: DAH-2834 - [P0] validator consumes the executor's one-call /verify an… |
+| `sn67:scoring_commit:2026-09-15T10:10:49Z` | 67 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260915.post4 |
+| `sn71:scoring_commit:2026-09-15T09:56:04Z` | 71 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn71 commit touches scoring: test: prove normal scoring collision rolls back exact Sep15 rerun |
+| `sn78:scoring_commit:2026-09-15T06:08:40Z` | 78 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn78 commit touches scoring: Stop miner HTTP service after terminal background failure (#101) |
+| `sn90:scoring_commit:2026-09-15T09:13:04Z` | 90 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn90 commit touches scoring: docs(roadmap): move scoring-expansion item to Phase 2 |
+| `sn91:scoring_commit:2026-09-15T09:37:30Z` | 91 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn91 commit touches scoring: fix: king rents first — challengers yield the marketplace while the J… |
 | `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
@@ -325,6 +307,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:readme_task_diff:9c8c6d309a9f02a7` | 91 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn91 README task/scoring sections changed |
 | `sn40:readme_task_diff:e5e91c3bf216a40b` | 40 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn40 README task/scoring sections changed |
 | `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
+| `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

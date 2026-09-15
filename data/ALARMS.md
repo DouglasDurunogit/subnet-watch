@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-15T20:12:02Z, block 9075349
+# ALARMS - generated 2026-09-15T23:01:26Z, block 9076193
 
-window: first_seen in [2026-09-15T18:57:28Z, 2026-09-15T20:12:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-15T21:46:57Z, 2026-09-15T23:01:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.17` | 15 | RELEASE | P1 | 2026-09-15T20:12:28Z | sn15 released v2.0.17 |
-| `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
-| `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |
-| `sn78:scoring_commit:2026-09-15T18:26:35Z` | 78 | SCORING_COMMIT | P1 | 2026-09-15T20:12:28Z | sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609 |
+| `sn15:release:v2.0.18: search-server sync-worker fix +` | 15 | RELEASE | P1 | 2026-09-15T23:01:57Z | sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244) |
+| `sn62:scoring_commit:2026-09-15T21:51:17Z` | 62 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o… |
+| `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
+| `sn102:release:v0.6.0 — scheduled task switching` | 102 | RELEASE | P1 | 2026-09-15T23:01:57Z | sn102 released v0.6.0 — scheduled task switching |
+| `sn102:scoring_commit:2026-09-15T20:14:58Z` | 102 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha… |
 
 ### detail
 
-- **`sn15:release:v2.0.17`** - sn15 released v2.0.17
-  - published 2026-09-15T19:12:03Z (was v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs)
-- **`sn34:scoring_commit:2026-09-15T17:50:38Z`** - sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449)
+- **`sn15:release:v2.0.18: search-server sync-worker fix +`** - sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244)
+  - published 2026-09-15T21:25:46Z (was v2.0.17)
+- **`sn62:scoring_commit:2026-09-15T21:51:17Z`** - sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-09-15T18:26:04Z`** - sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I…
+- **`sn76:scoring_commit:2026-09-15T20:44:58Z`** - sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-15T18:26:35Z`** - sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609
+- **`sn102:release:v0.6.0 — scheduled task switching`** - sn102 released v0.6.0 — scheduled task switching
+  - published 2026-09-15T21:39:05Z (was v0.5.5 — publish the round podium to a HuggingFace archive repo)
+- **`sn102:scoring_commit:2026-09-15T20:14:58Z`** - sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn78:weights_version_bump:1` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-08T22:52:47Z | sn78 weights_version 0 -> 1 |
 | `sn78:weights_version_bump:4294967296` | 78 | WEIGHTS_VERSION_BUMP | 2026-09-09T21:17:06Z | sn78 weights_version 1 -> 4294967296 |
 | `sn104:burn_drop:0.988` | 104 | BURN_DROP | 2026-09-09T21:17:06Z | sn104 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
@@ -39,16 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn2:release:14.14.3` | 2 | RELEASE | 2026-09-08T20:19:51Z | sn2 released 14.14.3 |
-| `sn2:scoring_commit:2026-09-08T19:26:11Z` | 2 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn2 commit touches scoring: Introduce weight commit guard for epochs with zero miner scores (#627) |
-| `sn71:scoring_commit:2026-09-08T20:17:47Z` | 71 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
-| `sn78:scoring_commit:2026-09-08T17:55:55Z` | 78 | SCORING_COMMIT | 2026-09-08T20:19:51Z | sn78 commit touches scoring: Fix bootstrap image revision validation |
-| `sn96:release:Verathos v0.2.2 – Consistent Validator D` | 96 | RELEASE | 2026-09-08T20:19:51Z | sn96 released Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support |
-| `sn15:release:v1.2.13: compose: forward SUBTENSOR_CHAI` | 15 | RELEASE | 2026-09-08T22:52:47Z | sn15 released v1.2.13: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
-| `sn15:scoring_commit:2026-09-08T20:21:13Z` | 15 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn15 commit touches scoring: compose: forward SUBTENSOR_CHAIN_ENDPOINT to the validator (#274) |
-| `sn25:release:v2026.9.8-1040985530` | 25 | RELEASE | 2026-09-08T22:52:47Z | sn25 released v2026.9.8-1040985530 |
-| `sn28:release:v0.4.15` | 28 | RELEASE | 2026-09-08T22:52:47Z | sn28 released v0.4.15 |
-| `sn28:scoring_commit:2026-09-08T21:50:27Z` | 28 | SCORING_COMMIT | 2026-09-08T22:52:47Z | sn28 commit touches scoring: fix(miner): render node secret last and pin C locale |
 | `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
 | `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
 | `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
@@ -280,7 +272,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:scoring_commit:2026-09-15T16:49:50Z` | 66 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn66 commit touches scoring: Raise proof token limit to one million for local verifiers |
 | `sn90:release:v1.2.0` | 90 | RELEASE | 2026-09-15T16:53:10Z | sn90 released v1.2.0 |
 | `sn90:scoring_commit:2026-09-15T15:53:37Z` | 90 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined… |
-| `sn28:readme_task_diff:150862184557e02b` | 28 | README_TASK_DIFF | 2026-09-08T22:52:47Z | sn28 README task/scoring sections changed |
+| `sn15:release:v2.0.17` | 15 | RELEASE | 2026-09-15T20:12:28Z | sn15 released v2.0.17 |
+| `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
+| `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |
+| `sn78:scoring_commit:2026-09-15T18:26:35Z` | 78 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609 |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |

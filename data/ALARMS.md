@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-16T06:23:02Z, block 9078389
+# ALARMS - generated 2026-09-16T11:55:24Z, block 9080045
 
-window: first_seen in [2026-09-16T05:08:31Z, 2026-09-16T06:23:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T10:40:55Z, 2026-09-16T11:55:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn36:burn_drop:0.951` | 36 | BURN_DROP | P0 | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
-| `sn15:release:v2.0.19` | 15 | RELEASE | P1 | 2026-09-16T06:23:31Z | sn15 released v2.0.19 |
-| `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
-| `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
-| `sn78:scoring_commit:2026-09-16T01:47:17Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp |
-| `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | P2 | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-09-16T08:26:18Z` | 10 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163) |
+| `sn25:scoring_commit:2026-09-16T10:32:54Z` | 25 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route |
+| `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
+| `sn78:scoring_commit:2026-09-16T08:59:20Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis… |
+| `sn114:scoring_commit:2026-09-16T07:55:05Z` | 114 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn114 commit touches scoring: docs: describe complexity incentive layers |
 
 ### detail
 
-- **`sn36:burn_drop:0.951`** - sn36 burn fell 1.000 -> 0.951 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v2.0.19`** - sn15 released v2.0.19
-  - published 2026-09-16T03:18:15Z (was v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244))
-- **`sn25:scoring_commit:2026-09-16T03:56:01Z`** - sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions
+- **`sn10:scoring_commit:2026-09-16T08:26:18Z`** - sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-16T06:18:33Z`** - sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U…
+- **`sn25:scoring_commit:2026-09-16T10:32:54Z`** - sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-16T01:47:17Z`** - sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp
+- **`sn51:scoring_commit:2026-09-16T08:11:18Z`** - sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:553c134e9ff5c4e1`** - sn15 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn78:scoring_commit:2026-09-16T08:59:20Z`** - sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-09-16T07:55:05Z`** - sn114 commit touches scoring: docs: describe complexity incentive layers
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -44,14 +41,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn61:release:4.10.3` | 61 | RELEASE | 2026-09-09T11:41:14Z | sn61 released 4.10.3 |
-| `sn66:scoring_commit:2026-09-09T08:24:00Z` | 66 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys |
-| `sn71:scoring_commit:2026-09-09T09:18:44Z` | 71 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn71 commit touches scoring: Preserve terminal company scores across judge retries |
-| `sn78:scoring_commit:2026-09-09T07:12:10Z` | 78 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn78 commit touches scoring: Add legacy validator transition hold |
-| `sn89:scoring_commit:2026-09-09T08:32:52Z` | 89 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn89 commit touches scoring: scoring: points-path earning gate is the points test as-of each call,… |
-| `sn97:scoring_commit:2026-09-08T12:09:46Z` | 97 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn97 commit touches scoring: fix: show all task results for benchmark runs |
-| `sn111:scoring_commit:2026-09-09T10:40:55Z` | 111 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn111 commit touches scoring: docs: clarify Ubuntu validator env setup |
-| `sn114:scoring_commit:2026-09-09T08:57:02Z` | 114 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn114 commit touches scoring: Cap automatic run restarts per miner task |
+| `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn1:release:v4.4.5` | 1 | RELEASE | 2026-09-09T15:20:16Z | sn1 released v4.4.5 |
 | `sn28:release:v0.4.16-dev` | 28 | RELEASE | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
 | `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
@@ -279,6 +269,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
 | `sn62:release:v0.3.5` | 62 | RELEASE | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
 | `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
+| `sn15:release:v2.0.19` | 15 | RELEASE | 2026-09-16T06:23:31Z | sn15 released v2.0.19 |
+| `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
+| `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
+| `sn78:scoring_commit:2026-09-16T01:47:17Z` | 78 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
@@ -303,6 +297,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn40:readme_task_diff:e5e91c3bf216a40b` | 40 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn40 README task/scoring sections changed |
 | `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
+| `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

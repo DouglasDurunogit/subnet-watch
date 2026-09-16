@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-16T16:47:05Z, block 9081495
+# ALARMS - generated 2026-09-16T19:45:53Z, block 9082386
 
-window: first_seen in [2026-09-16T15:32:34Z, 2026-09-16T16:47:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T18:31:19Z, 2026-09-16T19:46:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:burn_drop:0.754` | 20 | BURN_DROP | P0 | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
-| `sn9:release:v4.13.0` | 9 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn9 released v4.13.0 |
-| `sn51:release:executor-v1.129` | 51 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn51 released executor-v1.129 |
-| `sn66:release:v1.0.4` | 66 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn66 released v1.0.4 |
-| `sn76:scoring_commit:2026-09-16T14:56:09Z` | 76 | SCORING_COMMIT | P1 | 2026-09-16T16:47:34Z | sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr… |
-| `sn92:release:v0.4.4` | 92 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn92 released v0.4.4 |
-| `sn92:scoring_commit:2026-09-16T16:42:38Z` | 92 | SCORING_COMMIT | P1 | 2026-09-16T16:47:34Z | sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid… |
+| `sn34:scoring_commit:2026-09-16T18:39:36Z` | 34 | SCORING_COMMIT | P1 | 2026-09-16T19:46:19Z | sn34 commit touches scoring: Exclude no_answer rows before the reward-stats row cap. |
+| `sn71:scoring_commit:2026-09-16T17:06:43Z` | 71 | SCORING_COMMIT | P1 | 2026-09-16T19:46:19Z | sn71 commit touches scoring: Fix Sep16 benchmark bank verification |
+| `sn78:scoring_commit:2026-09-16T18:11:28Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T19:46:19Z | sn78 commit touches scoring: fix: keep valid bridge miners eligible during registration churn |
+| `sn92:release:v0.4.6` | 92 | RELEASE | P1 | 2026-09-16T19:46:19Z | sn92 released v0.4.6 |
+| `sn92:scoring_commit:2026-09-16T17:47:30Z` | 92 | SCORING_COMMIT | P1 | 2026-09-16T19:46:19Z | sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the arenas validators enforce (#77 |
 
 ### detail
 
-- **`sn20:burn_drop:0.754`** - sn20 burn fell 1.000 -> 0.754 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn9:release:v4.13.0`** - sn9 released v4.13.0
-  - published 2026-09-16T12:56:57Z (was v4.12.18)
-- **`sn51:release:executor-v1.129`** - sn51 released executor-v1.129
-  - published 2026-09-16T13:55:01Z (was executor-v1.128)
-- **`sn66:release:v1.0.4`** - sn66 released v1.0.4
-  - published 2026-09-16T12:48:22Z (was v.1.0.3: Web submissions, payouts, contributions...)
-- **`sn76:scoring_commit:2026-09-16T14:56:09Z`** - sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr…
+- **`sn34:scoring_commit:2026-09-16T18:39:36Z`** - sn34 commit touches scoring: Exclude no_answer rows before the reward-stats row cap.
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v0.4.4`** - sn92 released v0.4.4
-  - published 2026-09-16T16:44:13Z (was v0.3.2)
-- **`sn92:scoring_commit:2026-09-16T16:42:38Z`** - sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid…
+- **`sn71:scoring_commit:2026-09-16T17:06:43Z`** - sn71 commit touches scoring: Fix Sep16 benchmark bank verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-16T18:11:28Z`** - sn78 commit touches scoring: fix: keep valid bridge miners eligible during registration churn
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v0.4.6`** - sn92 released v0.4.6
+  - published 2026-09-16T17:48:53Z (was v0.4.4)
+- **`sn92:scoring_commit:2026-09-16T17:47:30Z`** - sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the arenas validators enforce (#77
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -48,13 +42,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
-| `sn28:release:v0.4.17-dev` | 28 | RELEASE | 2026-09-09T18:46:23Z | sn28 released v0.4.17-dev |
-| `sn62:release:v0.3.1` | 62 | RELEASE | 2026-09-09T18:46:23Z | sn62 released v0.3.1 |
-| `sn62:scoring_commit:2026-09-07T11:02:04Z` | 62 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati |
-| `sn71:scoring_commit:2026-09-09T18:13:57Z` | 71 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/arena-miner-rep… |
-| `sn78:scoring_commit:2026-09-09T17:44:05Z` | 78 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn78 commit touches scoring: Publish verified bootstrap service state |
-| `sn111:scoring_commit:2026-09-09T17:55:55Z` | 111 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn111 commit touches scoring: fix(validator): recover failed Silver adjudication batches |
-| `sn124:scoring_commit:2026-09-08T18:12:27Z` | 124 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn124 commit touches scoring: Keep leased seeds through a validator restart |
+| `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn20:scoring_commit:2026-09-08T12:07:25Z` | 20 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn20 commit touches scoring: Document model-independent miner extension workflow |
 | `sn36:scoring_commit:2026-09-09T19:30:44Z` | 36 | SCORING_COMMIT | 2026-09-09T21:17:06Z | sn36 commit touches scoring: Merge pull request #5 from EpagoFoundation/fix/sealed-release-tasks |
 | `sn62:release:v0.3.2` | 62 | RELEASE | 2026-09-09T21:17:06Z | sn62 released v0.3.2 |
@@ -280,8 +268,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
 | `sn78:scoring_commit:2026-09-16T08:59:20Z` | 78 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis… |
 | `sn114:scoring_commit:2026-09-16T07:55:05Z` | 114 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn114 commit touches scoring: docs: describe complexity incentive layers |
-| `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
-| `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
+| `sn9:release:v4.13.0` | 9 | RELEASE | 2026-09-16T16:47:34Z | sn9 released v4.13.0 |
+| `sn51:release:executor-v1.129` | 51 | RELEASE | 2026-09-16T16:47:34Z | sn51 released executor-v1.129 |
+| `sn66:release:v1.0.4` | 66 | RELEASE | 2026-09-16T16:47:34Z | sn66 released v1.0.4 |
+| `sn76:scoring_commit:2026-09-16T14:56:09Z` | 76 | SCORING_COMMIT | 2026-09-16T16:47:34Z | sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr… |
+| `sn92:release:v0.4.4` | 92 | RELEASE | 2026-09-16T16:47:34Z | sn92 released v0.4.4 |
+| `sn92:scoring_commit:2026-09-16T16:42:38Z` | 92 | SCORING_COMMIT | 2026-09-16T16:47:34Z | sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid… |
 | `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 | `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |

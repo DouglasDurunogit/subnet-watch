@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-16T11:55:24Z, block 9080045
+# ALARMS - generated 2026-09-16T16:47:05Z, block 9081495
 
-window: first_seen in [2026-09-16T10:40:55Z, 2026-09-16T11:55:55Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T15:32:34Z, 2026-09-16T16:47:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-09-16T08:26:18Z` | 10 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163) |
-| `sn25:scoring_commit:2026-09-16T10:32:54Z` | 25 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route |
-| `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
-| `sn78:scoring_commit:2026-09-16T08:59:20Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis… |
-| `sn114:scoring_commit:2026-09-16T07:55:05Z` | 114 | SCORING_COMMIT | P1 | 2026-09-16T11:55:55Z | sn114 commit touches scoring: docs: describe complexity incentive layers |
+| `sn20:burn_drop:0.754` | 20 | BURN_DROP | P0 | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
+| `sn9:release:v4.13.0` | 9 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn9 released v4.13.0 |
+| `sn51:release:executor-v1.129` | 51 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn51 released executor-v1.129 |
+| `sn66:release:v1.0.4` | 66 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn66 released v1.0.4 |
+| `sn76:scoring_commit:2026-09-16T14:56:09Z` | 76 | SCORING_COMMIT | P1 | 2026-09-16T16:47:34Z | sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr… |
+| `sn92:release:v0.4.4` | 92 | RELEASE | P1 | 2026-09-16T16:47:34Z | sn92 released v0.4.4 |
+| `sn92:scoring_commit:2026-09-16T16:42:38Z` | 92 | SCORING_COMMIT | P1 | 2026-09-16T16:47:34Z | sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid… |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-09-16T08:26:18Z`** - sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163)
+- **`sn20:burn_drop:0.754`** - sn20 burn fell 1.000 -> 0.754 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn9:release:v4.13.0`** - sn9 released v4.13.0
+  - published 2026-09-16T12:56:57Z (was v4.12.18)
+- **`sn51:release:executor-v1.129`** - sn51 released executor-v1.129
+  - published 2026-09-16T13:55:01Z (was executor-v1.128)
+- **`sn66:release:v1.0.4`** - sn66 released v1.0.4
+  - published 2026-09-16T12:48:22Z (was v.1.0.3: Web submissions, payouts, contributions...)
+- **`sn76:scoring_commit:2026-09-16T14:56:09Z`** - sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-16T10:32:54Z`** - sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-16T08:11:18Z`** - sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-16T08:59:20Z`** - sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-09-16T07:55:05Z`** - sn114 commit touches scoring: docs: describe complexity incentive layers
+- **`sn92:release:v0.4.4`** - sn92 released v0.4.4
+  - published 2026-09-16T16:44:13Z (was v0.3.2)
+- **`sn92:scoring_commit:2026-09-16T16:42:38Z`** - sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -42,10 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
-| `sn1:release:v4.4.5` | 1 | RELEASE | 2026-09-09T15:20:16Z | sn1 released v4.4.5 |
-| `sn28:release:v0.4.16-dev` | 28 | RELEASE | 2026-09-09T15:20:16Z | sn28 released v0.4.16-dev |
-| `sn28:scoring_commit:2026-09-09T11:24:08Z` | 28 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn28 commit touches scoring: Anchor deployment staleness to the last successful verification |
-| `sn71:scoring_commit:2026-09-09T11:49:48Z` | 71 | SCORING_COMMIT | 2026-09-09T15:20:16Z | sn71 commit touches scoring: Bind dead preflight verifier removal |
 | `sn28:release:v0.4.17-dev` | 28 | RELEASE | 2026-09-09T18:46:23Z | sn28 released v0.4.17-dev |
 | `sn62:release:v0.3.1` | 62 | RELEASE | 2026-09-09T18:46:23Z | sn62 released v0.3.1 |
 | `sn62:scoring_commit:2026-09-07T11:02:04Z` | 62 | SCORING_COMMIT | 2026-09-09T18:46:23Z | sn62 commit touches scoring: feat: prevent cluster-autoscaler from draining a screener mid-evaluati |
@@ -273,8 +275,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
 | `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
 | `sn78:scoring_commit:2026-09-16T01:47:17Z` | 78 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp |
-| `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
-| `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
+| `sn10:scoring_commit:2026-09-16T08:26:18Z` | 10 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163) |
+| `sn25:scoring_commit:2026-09-16T10:32:54Z` | 25 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route |
+| `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
+| `sn78:scoring_commit:2026-09-16T08:59:20Z` | 78 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis… |
+| `sn114:scoring_commit:2026-09-16T07:55:05Z` | 114 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn114 commit touches scoring: docs: describe complexity incentive layers |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |
 | `sn108:readme_task_diff:3f2d87f2c0a1e7e0` | 108 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn108 README task/scoring sections changed |
 | `sn20:readme_task_diff:4594489462f379e3` | 20 | README_TASK_DIFF | 2026-09-09T21:17:06Z | sn20 README task/scoring sections changed |

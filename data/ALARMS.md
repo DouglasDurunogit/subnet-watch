@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-16T01:22:32Z, block 9076895
+# ALARMS - generated 2026-09-16T06:23:02Z, block 9078389
 
-window: first_seen in [2026-09-16T00:08:06Z, 2026-09-16T01:23:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T05:08:31Z, 2026-09-16T06:23:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | P1 | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
-| `sn62:release:v0.3.5` | 62 | RELEASE | P1 | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
-| `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
+| `sn36:burn_drop:0.951` | 36 | BURN_DROP | P0 | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
+| `sn15:release:v2.0.19` | 15 | RELEASE | P1 | 2026-09-16T06:23:31Z | sn15 released v2.0.19 |
+| `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
+| `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
+| `sn78:scoring_commit:2026-09-16T01:47:17Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T06:23:31Z | sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp |
+| `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | P2 | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 
 ### detail
 
-- **`sn34:release:5.0.5 — Generator Qualification & Paid R`** - sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions
-  - published 2026-09-16T00:00:11Z (was 5.0.0 — King of the Hill)
-- **`sn62:release:v0.3.5`** - sn62 released v0.3.5
-  - published 2026-09-15T23:26:50Z (was v0.3.4)
-- **`sn78:scoring_commit:2026-09-15T23:51:06Z`** - sn78 commit touches scoring: Verify current installer against signed frozen operator bundle
+- **`sn36:burn_drop:0.951`** - sn36 burn fell 1.000 -> 0.951 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v2.0.19`** - sn15 released v2.0.19
+  - published 2026-09-16T03:18:15Z (was v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244))
+- **`sn25:scoring_commit:2026-09-16T03:56:01Z`** - sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-09-16T06:18:33Z`** - sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-16T01:47:17Z`** - sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:readme_task_diff:553c134e9ff5c4e1`** - sn15 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,12 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
-| `sn67:scoring_commit:2026-09-09T04:45:43Z` | 67 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0 |
-| `sn71:scoring_commit:2026-09-09T02:00:25Z` | 71 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure |
-| `sn100:scoring_commit:2026-09-09T01:28:41Z` | 100 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn100 commit touches scoring: feat(proof): name the topic_id / custom_id hyphen-underscore mix-up (… |
-| `sn111:scoring_commit:2026-09-09T03:15:32Z` | 111 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn111 commit touches scoring: fix(validator): normalize provider routing for DSPy adjudication |
-| `sn120:scoring_commit:2026-09-09T03:59:55Z` | 120 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn120 commit touches scoring: AGENTS.md: first wvk-13 verdicts verified (probe reject, think-close … |
 | `sn61:release:4.10.3` | 61 | RELEASE | 2026-09-09T11:41:14Z | sn61 released 4.10.3 |
 | `sn66:scoring_commit:2026-09-09T08:24:00Z` | 66 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn66 commit touches scoring: Merge pull request #80 from conjectures-io/feat/retire-miner-hotkeys |
 | `sn71:scoring_commit:2026-09-09T09:18:44Z` | 71 | SCORING_COMMIT | 2026-09-09T11:41:14Z | sn71 commit touches scoring: Preserve terminal company scores across judge retries |
@@ -273,6 +276,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
 | `sn102:release:v0.6.0 — scheduled task switching` | 102 | RELEASE | 2026-09-15T23:01:57Z | sn102 released v0.6.0 — scheduled task switching |
 | `sn102:scoring_commit:2026-09-15T20:14:58Z` | 102 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha… |
+| `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
+| `sn62:release:v0.3.5` | 62 | RELEASE | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
+| `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |

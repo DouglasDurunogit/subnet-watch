@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-15T23:01:26Z, block 9076193
+# ALARMS - generated 2026-09-16T01:22:32Z, block 9076895
 
-window: first_seen in [2026-09-15T21:46:57Z, 2026-09-15T23:01:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T00:08:06Z, 2026-09-16T01:23:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.18: search-server sync-worker fix +` | 15 | RELEASE | P1 | 2026-09-15T23:01:57Z | sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244) |
-| `sn62:scoring_commit:2026-09-15T21:51:17Z` | 62 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o… |
-| `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
-| `sn102:release:v0.6.0 — scheduled task switching` | 102 | RELEASE | P1 | 2026-09-15T23:01:57Z | sn102 released v0.6.0 — scheduled task switching |
-| `sn102:scoring_commit:2026-09-15T20:14:58Z` | 102 | SCORING_COMMIT | P1 | 2026-09-15T23:01:57Z | sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha… |
+| `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | P1 | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
+| `sn62:release:v0.3.5` | 62 | RELEASE | P1 | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
+| `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
 
 ### detail
 
-- **`sn15:release:v2.0.18: search-server sync-worker fix +`** - sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244)
-  - published 2026-09-15T21:25:46Z (was v2.0.17)
-- **`sn62:scoring_commit:2026-09-15T21:51:17Z`** - sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-09-15T20:44:58Z`** - sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.6.0 — scheduled task switching`** - sn102 released v0.6.0 — scheduled task switching
-  - published 2026-09-15T21:39:05Z (was v0.5.5 — publish the round podium to a HuggingFace archive repo)
-- **`sn102:scoring_commit:2026-09-15T20:14:58Z`** - sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha…
+- **`sn34:release:5.0.5 — Generator Qualification & Paid R`** - sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions
+  - published 2026-09-16T00:00:11Z (was 5.0.0 — King of the Hill)
+- **`sn62:release:v0.3.5`** - sn62 released v0.3.5
+  - published 2026-09-15T23:26:50Z (was v0.3.4)
+- **`sn78:scoring_commit:2026-09-15T23:51:06Z`** - sn78 commit touches scoring: Verify current installer against signed frozen operator bundle
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -41,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
-| `sn71:scoring_commit:2026-09-08T22:52:04Z` | 71 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn71 commit touches scoring: build: refresh protected scoring source metadata |
-| `sn111:scoring_commit:2026-09-09T00:59:16Z` | 111 | SCORING_COMMIT | 2026-09-09T01:13:27Z | sn111 commit touches scoring: fix(validator): enable rigor validation in mainnet profiles |
 | `sn51:scoring_commit:2026-09-09T06:11:27Z` | 51 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn51 commit touches scoring: DAH-2962: delete the dead hashcat scoring path and the GPT-2 sample (… |
 | `sn67:scoring_commit:2026-09-09T04:45:43Z` | 67 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260909.post0 |
 | `sn71:scoring_commit:2026-09-09T02:00:25Z` | 71 | SCORING_COMMIT | 2026-09-09T06:19:59Z | sn71 commit touches scoring: Stop Arena scoring after exhausted judge failure |
@@ -276,6 +268,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
 | `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |
 | `sn78:scoring_commit:2026-09-15T18:26:35Z` | 78 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609 |
+| `sn15:release:v2.0.18: search-server sync-worker fix +` | 15 | RELEASE | 2026-09-15T23:01:57Z | sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244) |
+| `sn62:scoring_commit:2026-09-15T21:51:17Z` | 62 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o… |
+| `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
+| `sn102:release:v0.6.0 — scheduled task switching` | 102 | RELEASE | 2026-09-15T23:01:57Z | sn102 released v0.6.0 — scheduled task switching |
+| `sn102:scoring_commit:2026-09-15T20:14:58Z` | 102 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha… |
 | `sn28:readme_task_diff:459971cadb11194f` | 28 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn28 README task/scoring sections changed |
 | `sn45:readme_task_diff:15dfa7fb69a79bef` | 45 | README_TASK_DIFF | 2026-09-09T15:20:16Z | sn45 README task/scoring sections changed |
 | `sn28:readme_task_diff:aab5d8d239c04847` | 28 | README_TASK_DIFF | 2026-09-09T18:46:23Z | sn28 README task/scoring sections changed |

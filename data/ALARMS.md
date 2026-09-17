@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-17T15:40:38Z, block 9088331
+# ALARMS - generated 2026-09-17T19:19:25Z, block 9089422
 
-window: first_seen in [2026-09-17T14:26:12Z, 2026-09-17T15:41:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-17T18:04:51Z, 2026-09-17T19:19:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:scoring_commit:2026-09-17T10:11:18Z` | 10 | SCORING_COMMIT | P1 | 2026-09-17T15:41:12Z | sn10 commit touches scoring: fix: refresh campaign fees before payment and verify inclusion |
-| `sn56:scoring_commit:2026-09-17T15:30:38Z` | 56 | SCORING_COMMIT | P1 | 2026-09-17T15:41:12Z | sn56 commit touches scoring: Update autoupdate_validator_steps.sh to ensure proper package managem… |
-| `sn92:release:v0.4.11` | 92 | RELEASE | P1 | 2026-09-17T15:41:12Z | sn92 released v0.4.11 |
-| `sn92:scoring_commit:2026-09-17T12:16:02Z` | 92 | SCORING_COMMIT | P1 | 2026-09-17T15:41:12Z | sn92 commit touches scoring: validator: rig verification needs substrate-interface, and is skipped… |
-| `sn124:scoring_commit:2026-09-17T11:43:08Z` | 124 | SCORING_COMMIT | P1 | 2026-09-17T15:41:12Z | sn124 commit touches scoring: Pin numpy and repair a drifted validator at startup |
-| `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | P2 | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
-| `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | P2 | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
+| `sn25:release:v2026.9.17-1048676710` | 25 | RELEASE | P1 | 2026-09-17T19:19:51Z | sn25 released v2026.9.17-1048676710 |
+| `sn74:release:release-20260917-174533` | 74 | RELEASE | P1 | 2026-09-17T19:19:51Z | sn74 released release-20260917-174533 |
+| `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | P2 | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:scoring_commit:2026-09-17T10:11:18Z`** - sn10 commit touches scoring: fix: refresh campaign fees before payment and verify inclusion
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-09-17T15:30:38Z`** - sn56 commit touches scoring: Update autoupdate_validator_steps.sh to ensure proper package managem…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v0.4.11`** - sn92 released v0.4.11
-  - published 2026-09-17T12:17:16Z (was v0.4.9)
-- **`sn92:scoring_commit:2026-09-17T12:16:02Z`** - sn92 commit touches scoring: validator: rig verification needs substrate-interface, and is skipped…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-09-17T11:43:08Z`** - sn124 commit touches scoring: Pin numpy and repair a drifted validator at startup
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:readme_task_diff:ef6f6fe132bb0121`** - sn56 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn124:readme_task_diff:5c048f406be8cfd7`** - sn124 README task/scoring sections changed
+- **`sn25:release:v2026.9.17-1048676710`** - sn25 released v2026.9.17-1048676710
+  - published 2026-09-17T18:11:08Z (was v2026.9.14-1046068620)
+- **`sn74:release:release-20260917-174533`** - sn74 released release-20260917-174533
+  - published 2026-09-17T17:45:08Z (was release-20260908-144557)
+- **`sn74:readme_task_diff:60b1b8229a2e5bd0`** - sn74 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,13 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
-| `sn9:release:v4.12.17` | 9 | RELEASE | 2026-09-10T18:37:00Z | sn9 released v4.12.17 |
-| `sn15:release:v2.0.1` | 15 | RELEASE | 2026-09-10T18:37:00Z | sn15 released v2.0.1 |
-| `sn15:scoring_commit:2026-09-10T15:34:08Z` | 15 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn15 commit touches scoring: Select validator evaluator from claimed pack binding |
-| `sn21:scoring_commit:2026-09-10T16:56:54Z` | 21 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn21 commit touches scoring: docs(rewards): restate the curve with an 80% tail, a twenty-earner ex… |
-| `sn25:release:v2026.9.10-1042581110` | 25 | RELEASE | 2026-09-10T18:37:00Z | sn25 released v2026.9.10-1042581110 |
-| `sn71:scoring_commit:2026-09-10T18:20:39Z` | 71 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn71 commit touches scoring: Validate deployed legacy coordinator command |
-| `sn78:scoring_commit:2026-09-10T18:02:00Z` | 78 | SCORING_COMMIT | 2026-09-10T18:37:00Z | sn78 commit touches scoring: Expose Linux validator setup |
 | `sn15:release:v2.0.2: Record search retries in validat` | 15 | RELEASE | 2026-09-10T21:14:36Z | sn15 released v2.0.2: Record search retries in validator traces (#280) |
 | `sn15:scoring_commit:2026-09-10T20:02:22Z` | 15 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn15 commit touches scoring: Record search retries in validator traces (#280) |
 | `sn20:scoring_commit:2026-09-10T20:17:09Z` | 20 | SCORING_COMMIT | 2026-09-10T21:14:36Z | sn20 commit touches scoring: Clarify full burn when every miner has zero current reward |
@@ -262,6 +243,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-17T08:39:07Z` | 78 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn78 commit touches scoring: Merge pull request #153 from Umi-BitSign/codex/evaluator-idle-finalit… |
 | `sn92:release:v0.4.9` | 92 | RELEASE | 2026-09-17T11:36:55Z | sn92 released v0.4.9 |
 | `sn97:scoring_commit:2026-09-16T15:02:19Z` | 97 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn97 commit touches scoring: feat: add extra attempts, so miners which got FPs can resubmit with p… |
+| `sn10:scoring_commit:2026-09-17T10:11:18Z` | 10 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn10 commit touches scoring: fix: refresh campaign fees before payment and verify inclusion |
+| `sn56:scoring_commit:2026-09-17T15:30:38Z` | 56 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn56 commit touches scoring: Update autoupdate_validator_steps.sh to ensure proper package managem… |
+| `sn92:release:v0.4.11` | 92 | RELEASE | 2026-09-17T15:41:12Z | sn92 released v0.4.11 |
+| `sn92:scoring_commit:2026-09-17T12:16:02Z` | 92 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn92 commit touches scoring: validator: rig verification needs substrate-interface, and is skipped… |
+| `sn124:scoring_commit:2026-09-17T11:43:08Z` | 124 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn124 commit touches scoring: Pin numpy and repair a drifted validator at startup |
 | `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
 | `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |
 | `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
@@ -281,6 +267,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
+| `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
+| `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

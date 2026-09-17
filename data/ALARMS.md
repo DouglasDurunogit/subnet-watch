@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-17T06:05:45Z, block 9085473
+# ALARMS - generated 2026-09-17T11:36:28Z, block 9087118
 
-window: first_seen in [2026-09-17T04:51:18Z, 2026-09-17T06:06:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-17T10:21:55Z, 2026-09-17T11:36:55Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.811` | 10 | BURN_DROP | P0 | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
-| `sn15:release:v2.0.20` | 15 | RELEASE | P1 | 2026-09-17T06:06:18Z | sn15 released v2.0.20 |
-| `sn15:scoring_commit:2026-09-17T05:30:31Z` | 15 | SCORING_COMMIT | P1 | 2026-09-17T06:06:18Z | sn15 commit touches scoring: Stop generated runs when miner inference budget is exhausted (#317) |
-| `sn51:scoring_commit:2026-09-17T05:33:07Z` | 51 | SCORING_COMMIT | P1 | 2026-09-17T06:06:18Z | sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU benchmark that could not alloca… |
-| `sn78:scoring_commit:2026-09-17T00:15:39Z` | 78 | SCORING_COMMIT | P1 | 2026-09-17T06:06:18Z | sn78 commit touches scoring: Verify retained clip objects before retrying an upload |
-| `sn92:release:v0.4.7` | 92 | RELEASE | P1 | 2026-09-17T06:06:18Z | sn92 released v0.4.7 |
+| `sn15:burn_drop:0.000` | 15 | BURN_DROP | P0 | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
+| `sn51:release:executor-v1.130` | 51 | RELEASE | P1 | 2026-09-17T11:36:55Z | sn51 released executor-v1.130 |
+| `sn51:scoring_commit:2026-09-17T07:44:39Z` | 51 | SCORING_COMMIT | P1 | 2026-09-17T11:36:55Z | sn51 commit touches scoring: DAH-3519 - [P2] validator: a node whose scrape lists fewer GPUs than … |
+| `sn78:scoring_commit:2026-09-17T08:39:07Z` | 78 | SCORING_COMMIT | P1 | 2026-09-17T11:36:55Z | sn78 commit touches scoring: Merge pull request #153 from Umi-BitSign/codex/evaluator-idle-finalit… |
+| `sn92:release:v0.4.9` | 92 | RELEASE | P1 | 2026-09-17T11:36:55Z | sn92 released v0.4.9 |
+| `sn97:scoring_commit:2026-09-16T15:02:19Z` | 97 | SCORING_COMMIT | P1 | 2026-09-17T11:36:55Z | sn97 commit touches scoring: feat: add extra attempts, so miners which got FPs can resubmit with p… |
 
 ### detail
 
-- **`sn10:burn_drop:0.811`** - sn10 burn fell 1.000 -> 0.811 - miners can earn again
+- **`sn15:burn_drop:0.000`** - sn15 burn fell 0.997 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v2.0.20`** - sn15 released v2.0.20
-  - published 2026-09-17T05:42:00Z (was v2.0.19)
-- **`sn15:scoring_commit:2026-09-17T05:30:31Z`** - sn15 commit touches scoring: Stop generated runs when miner inference budget is exhausted (#317)
+- **`sn51:release:executor-v1.130`** - sn51 released executor-v1.130
+  - published 2026-09-17T06:16:50Z (was executor-v1.129)
+- **`sn51:scoring_commit:2026-09-17T07:44:39Z`** - sn51 commit touches scoring: DAH-3519 - [P2] validator: a node whose scrape lists fewer GPUs than …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-17T05:33:07Z`** - sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU benchmark that could not alloca…
+- **`sn78:scoring_commit:2026-09-17T08:39:07Z`** - sn78 commit touches scoring: Merge pull request #153 from Umi-BitSign/codex/evaluator-idle-finalit…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-17T00:15:39Z`** - sn78 commit touches scoring: Verify retained clip objects before retrying an upload
+- **`sn92:release:v0.4.9`** - sn92 released v0.4.9
+  - published 2026-09-17T10:28:01Z (was v0.4.7)
+- **`sn97:scoring_commit:2026-09-16T15:02:19Z`** - sn97 commit touches scoring: feat: add extra attempts, so miners which got FPs can resubmit with p…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v0.4.7`** - sn92 released v0.4.7
-  - published 2026-09-17T05:28:47Z (was v0.4.6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -44,14 +44,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
-| `sn15:release:shoppingbench-final` | 15 | RELEASE | 2026-09-10T06:19:09Z | sn15 released shoppingbench-final |
-| `sn25:release:v2026.9.9-1042199790` | 25 | RELEASE | 2026-09-10T06:19:09Z | sn25 released v2026.9.9-1042199790 |
-| `sn51:release:executor-v1.124` | 51 | RELEASE | 2026-09-10T06:19:09Z | sn51 released executor-v1.124 |
-| `sn51:scoring_commit:2026-09-10T02:42:59Z` | 51 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn51 commit touches scoring: DAH-3006 - [P1] validator stops serialising every Redis command behin… |
-| `sn71:scoring_commit:2026-09-10T05:18:12Z` | 71 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn71 commit touches scoring: Preserve validated page final URLs |
-| `sn81:scoring_commit:2026-09-10T05:24:18Z` | 81 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn81 commit touches scoring: Merge pull request #236 from reliquadotai/codex/v1-miner-readme |
-| `sn91:scoring_commit:2026-09-10T05:27:44Z` | 91 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn91 commit touches scoring: Merge pull request #251 from TensorLink-AI/claude/score-warm-start |
-| `sn100:scoring_commit:2026-09-10T06:07:01Z` | 100 | SCORING_COMMIT | 2026-09-10T06:19:09Z | sn100 commit touches scoring: docs(proof): add miner guide for the tbench topic (#261) |
+| `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:release:v2.0.0` | 15 | RELEASE | 2026-09-10T11:39:13Z | sn15 released v2.0.0 |
 | `sn15:scoring_commit:2026-09-10T07:45:35Z` | 15 | SCORING_COMMIT | 2026-09-10T11:39:13Z | sn15 commit touches scoring: Verify scope-bound environment deliveries (#276) |
 | `sn25:release:v2026.9.10-1042298530` | 25 | RELEASE | 2026-09-10T11:39:13Z | sn25 released v2026.9.10-1042298530 |
@@ -270,7 +263,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:scoring_commit:2026-09-16T20:16:29Z` | 102 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn102 commit touches scoring: Merge pull request #274 from Connito-AI/feat/switch-task-release-then… |
 | `sn40:scoring_commit:2026-09-16T00:55:22Z` | 40 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, auditor weights |
 | `sn78:scoring_commit:2026-09-16T22:31:06Z` | 78 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/codex/evaluator-finality-wai… |
-| `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
+| `sn15:release:v2.0.20` | 15 | RELEASE | 2026-09-17T06:06:18Z | sn15 released v2.0.20 |
+| `sn15:scoring_commit:2026-09-17T05:30:31Z` | 15 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn15 commit touches scoring: Stop generated runs when miner inference budget is exhausted (#317) |
+| `sn51:scoring_commit:2026-09-17T05:33:07Z` | 51 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU benchmark that could not alloca… |
+| `sn78:scoring_commit:2026-09-17T00:15:39Z` | 78 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn78 commit touches scoring: Verify retained clip objects before retrying an upload |
+| `sn92:release:v0.4.7` | 92 | RELEASE | 2026-09-17T06:06:18Z | sn92 released v0.4.7 |
 | `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
 | `sn15:readme_task_diff:853d4079fee0eccb` | 15 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn15 README task/scoring sections changed |
 | `sn20:readme_task_diff:b54d839bca570978` | 20 | README_TASK_DIFF | 2026-09-10T21:14:36Z | sn20 README task/scoring sections changed |

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-17T00:47:29Z · block 9083886 · run_status **ok**_
+_snapshot 2026-09-17T06:05:45Z · block 9085473 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 0 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 93 | `miner_burn` < 0.99 |
-| Ranked | 93 | passed every gate |
-| **Positive margin** | **0** | income beats machine cost |
-| New events this window | 3 | see ALARMS.md |
+| Pays miners at all | 94 | `miner_burn` < 0.99 |
+| Ranked | 94 | passed every gate |
+| **Positive margin** | **53** | income beats machine cost |
+| New events this window | 6 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 64 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
+| 0–0.2 | 8 | `████` |
 | 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 4 | `██` |
-| 0.6–0.8 | 5 | `██` |
-| 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 35 | `███████████████` |
+| 0.6–0.8 | 6 | `███` |
+| 0.8–0.99 | 5 | `██` |
+| ≥0.99 dead | 34 | `███████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 50 | n/a | n/a | cpu-small | 1 | 100% |
-| 2 | sn67 Harnyx | 50 | n/a | n/a | cpu-small | 117 | 33% |
-| 3 | sn92 MicroTensor | 50 | n/a | n/a | cpu-small | 8 | 43% |
-| 4 | sn21 AdTAO | 50 | n/a | n/a | cpu-small | 20 | 40% |
-| 5 | sn114 SOMA | 50 | n/a | n/a | cpu-small | 40 | 80% |
-| 6 | sn91 cascade | 42.5 | n/a | n/a | cpu-small | 5 | 52% |
-| 7 | sn38 ChronoLLM | 42.5 | n/a | n/a | cpu-small | 10 | 52% |
-| 8 | sn53 engy | 39.3 | n/a | n/a | rtx4090 | 67 | 44% |
-| 9 | sn81 Reliquary | 39.3 | n/a | n/a | rtx4090* | 45 | 36% |
-| 10 | sn63 Enigma | 39.3 | n/a | n/a | rtx4090* | 12 | 100% |
-| 11 | sn1 Apex | 39.3 | n/a | n/a | rtx4090* | 3 | 51% |
-| 12 | sn9 iota | 39.3 | n/a | n/a | rtx4090* | 3 | 68% |
-| 13 | sn66 conjectures | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
-| 14 | sn76 Ormas | 39.3 | n/a | n/a | rtx4090* | 1 | n/a |
-| 15 | sn62 Ridges | 39.3 | n/a | n/a | rtx4090* | 19 | 26% |
-| 16 | sn55 NIOME | 39.3 | n/a | n/a | rtx4090* | 11 | 29% |
-| 17 | sn45 AlphaRidge.ai | 39.3 | n/a | n/a | rtx4090* | 239 | 54% |
-| 18 | sn44 Score | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
-| 19 | sn102 ConnitoAI | 39.3 | n/a | n/a | rtx4090* | 4 | 25% |
-| 20 | sn28 SayGM | 39.3 | n/a | n/a | rtx4090* | 47 | 20% |
+| 1 | sn11 TrajectoryRL | 80 | 5,699 | 5,699 = | cpu-small | 1 | 100% |
+| 2 | sn92 MicroTensor | 79 | 124 | 280 | cpu-small | 8 | 43% |
+| 3 | sn91 cascade | 72.5 | 602 | 2,409 | cpu-small | 5 | 52% |
+| 4 | sn107 Minos | 68.7 | 334 | 26,604 | cpu-small | 20 | 79% |
+| 5 | sn67 Harnyx | 68.3 | 8.28 | 801 | cpu-small | 134 | 28% |
+| 6 | sn38 ChronoLLM | 65.5 | 88.08 | 780 | cpu-small | 10 | 52% |
+| 7 | sn111 Claims | 64.9 | 174 | 2,541 | rtx4090* | 5 | 79% |
+| 8 | sn28 SayGM | 63.3 | 102 | 1,891 | rtx4090* | 50 | 13% |
+| 9 | sn61 RedTeam | 62.6 | 83.20 | 128 | rtx4090* | 112 | 1% |
+| 10 | sn55 NIOME | 61.8 | 63.38 | 529 | rtx4090* | 11 | 29% |
+| 11 | sn81 Reliquary | 61.3 | 54.86 | 102 | rtx4090* | 40 | 41% |
+| 12 | sn62 Ridges | 60.8 | 47.47 | 1,674 | rtx4090* | 19 | 26% |
+| 13 | sn23 Trishool | 60.5 | 585 | 585 = | cpu-small | 2 | 80% |
+| 14 | sn51 lium.io | 57.8 | 26.80 | 2,084 | rtx4090* | 68 | 81% |
+| 15 | sn80 OpenRoboto | 56.5 | 456 | 1,616 | rtx4090* | 5 | 43% |
+| 16 | sn9 iota | 56 | 12,184 | 12,184 = | rtx4090* | 3 | 68% |
+| 17 | sn56 Gradients | 55.9 | 388 | 4,822 | rtx4090* | 11 | 46% |
+| 18 | sn102 ConnitoAI | 55.7 | 10.97 | 1,677 | rtx4090* | 9 | 37% |
+| 19 | sn96 Verathos | 54.5 | 23.00 | 155 | rtx4090 | 79 | 31% |
+| 20 | sn124 Swarm | 54.3 | 249 | 807 | rtx4090* | 25 | 11% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,7 +87,7 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 24 |
-| dominated (60–90%) | 17 |
+| dominated (60–90%) | 19 |
 | captured (>90%) | 23 |
 
 ## Hardware evidence quality
@@ -107,6 +107,12 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-17T06:06 | sn10 | BURN_DROP | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
+| 2026-09-17T06:06 | sn15 | RELEASE | sn15 released v2.0.20 |
+| 2026-09-17T06:06 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: Stop generated runs when miner inference  |
+| 2026-09-17T06:06 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU ben |
+| 2026-09-17T06:06 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Verify retained clip objects before retry |
+| 2026-09-17T06:06 | sn92 | RELEASE | sn92 released v0.4.7 |
 | 2026-09-17T00:48 | sn40 | SCORING_COMMIT | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, audi |
 | 2026-09-17T00:48 | sn40 | README_TASK_DIFF | sn40 README task/scoring sections changed |
 | 2026-09-17T00:48 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/ |
@@ -116,12 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-16T22:24 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: release: pin fresh validator installs to  |
 | 2026-09-16T22:24 | sn102 | RELEASE | sn102 released v0.6.1 |
 | 2026-09-16T22:24 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: Merge pull request #274 from Connito-AI/ |
-| 2026-09-16T19:46 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: Exclude no_answer rows before the reward- |
-| 2026-09-16T19:46 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Fix Sep16 benchmark bank verification |
-| 2026-09-16T19:46 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: fix: keep valid bridge miners eligible du |
-| 2026-09-16T19:46 | sn92 | RELEASE | sn92 released v0.4.6 |
-| 2026-09-16T19:46 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the a |
-| 2026-09-16T16:47 | sn9 | RELEASE | sn9 released v4.13.0 |
 
 ---
 

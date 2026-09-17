@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-17T00:47:29Z  |  block: 9083886  |  row_status: ok
+snapshot_utc: 2026-09-17T06:05:45Z  |  block: 9085473  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.10143602732568979**
-- registration cost: 0.15 TAO ([UNKNOWN] USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 896.7 days  |  registered at block 2627691
+- miner_burn: **0.186058662366122**
+- registration cost: 0.15 TAO (33.5985 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
+- subnet age: 896.9 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: [UNKNOWN]** (uid 46) <- the only figure quotable as achievable
-- median_miner_usd_day: [UNKNOWN]
-- top_miner_usd_day: [UNKNOWN] (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
+- median_miner_usd_day: 316.56417344023646
+- top_miner_usd_day: 1384.1536765865103 (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.5617971098530512  |  top1_share: 0.7255428562708864  |  top10_share: 1.0
-- owner_incentive_share: 0.10142981398684632 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.5420780370195171  |  top1_share: 0.8135290616941083  |  top10_share: 1.0
+- owner_incentive_share: 0.1860589321410587 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -41,9 +41,9 @@ snapshot_utc: 2026-09-17T00:47:29Z  |  block: 9083886  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 22), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 52), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 5.8d ago
+- freshness basis: RELEASE 6.0d ago
 
 ## On-chain description
 

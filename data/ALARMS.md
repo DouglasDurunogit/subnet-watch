@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-16T22:24:24Z, block 9083175
+# ALARMS - generated 2026-09-17T00:47:29Z, block 9083886
 
-window: first_seen in [2026-09-16T21:09:56Z, 2026-09-16T22:24:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-16T23:33:02Z, 2026-09-17T00:48:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.18` | 28 | RELEASE | P1 | 2026-09-16T22:24:56Z | sn28 released v0.4.18 |
-| `sn45:scoring_commit:2026-09-16T17:29:43Z` | 45 | SCORING_COMMIT | P1 | 2026-09-16T22:24:56Z | sn45 commit touches scoring: Allow a per-model scale on audit scores |
-| `sn78:scoring_commit:2026-09-16T20:06:28Z` | 78 | SCORING_COMMIT | P1 | 2026-09-16T22:24:56Z | sn78 commit touches scoring: release: pin fresh validator installs to registration churn fix |
-| `sn102:release:v0.6.1` | 102 | RELEASE | P1 | 2026-09-16T22:24:56Z | sn102 released v0.6.1 |
-| `sn102:scoring_commit:2026-09-16T20:16:29Z` | 102 | SCORING_COMMIT | P1 | 2026-09-16T22:24:56Z | sn102 commit touches scoring: Merge pull request #274 from Connito-AI/feat/switch-task-release-then… |
-| `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | P2 | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
+| `sn40:scoring_commit:2026-09-16T00:55:22Z` | 40 | SCORING_COMMIT | P1 | 2026-09-17T00:48:02Z | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, auditor weights |
+| `sn78:scoring_commit:2026-09-16T22:31:06Z` | 78 | SCORING_COMMIT | P1 | 2026-09-17T00:48:02Z | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/codex/evaluator-finality-wai… |
+| `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | P2 | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 
 ### detail
 
-- **`sn28:release:v0.4.18`** - sn28 released v0.4.18
-  - published 2026-09-16T22:22:17Z (was v0.4.17)
-- **`sn45:scoring_commit:2026-09-16T17:29:43Z`** - sn45 commit touches scoring: Allow a per-model scale on audit scores
+- **`sn40:scoring_commit:2026-09-16T00:55:22Z`** - sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, auditor weights
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-16T20:06:28Z`** - sn78 commit touches scoring: release: pin fresh validator installs to registration churn fix
+- **`sn78:scoring_commit:2026-09-16T22:31:06Z`** - sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/codex/evaluator-finality-wai…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.6.1`** - sn102 released v0.6.1
-  - published 2026-09-16T20:35:01Z (was v0.6.0 — scheduled task switching)
-- **`sn102:scoring_commit:2026-09-16T20:16:29Z`** - sn102 commit touches scoring: Merge pull request #274 from Connito-AI/feat/switch-task-release-then…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:dbf1289fea38b78e`** - sn28 README task/scoring sections changed
+- **`sn40:readme_task_diff:b6863d625c3e10b3`** - sn40 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -44,14 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
-| `sn25:release:v2026.9.9-1041947070` | 25 | RELEASE | 2026-09-09T23:25:39Z | sn25 released v2026.9.9-1041947070 |
-| `sn28:release:v0.4.17` | 28 | RELEASE | 2026-09-09T23:25:39Z | sn28 released v0.4.17 |
-| `sn61:release:4.10.4` | 61 | RELEASE | 2026-09-09T23:25:39Z | sn61 released 4.10.4 |
-| `sn62:scoring_commit:2026-09-09T18:55:06Z` | 62 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn62 commit touches scoring: Merge pull request #498 from ridgesai/feat/update-validator-docker |
-| `sn71:scoring_commit:2026-09-09T22:53:48Z` | 71 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn71 commit touches scoring: Cover encoded miner-key echoes through provider routes |
-| `sn78:scoring_commit:2026-09-09T22:13:48Z` | 78 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn78 commit touches scoring: Fix OCI archive annotation verification |
-| `sn100:release:ctx CLI v3.3.30` | 100 | RELEASE | 2026-09-09T23:25:39Z | sn100 released ctx CLI v3.3.30 |
-| `sn100:scoring_commit:2026-09-09T22:40:23Z` | 100 | SCORING_COMMIT | 2026-09-09T23:25:39Z | sn100 commit touches scoring: feat(proof): continuous leaf emitter with ChallengeInternal cover (#25 |
 | `sn25:release:v2026.9.9-1042000000` | 25 | RELEASE | 2026-09-10T01:20:26Z | sn25 released v2026.9.9-1042000000 |
 | `sn81:scoring_commit:2026-09-10T00:47:41Z` | 81 | SCORING_COMMIT | 2026-09-10T01:20:26Z | sn81 commit touches scoring: fix: validate sampled entropy coverage at the proof boundary |
 | `sn100:release:ctx CLI v3.3.31` | 100 | RELEASE | 2026-09-10T01:20:26Z | sn100 released ctx CLI v3.3.31 |
@@ -275,6 +258,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-16T18:11:28Z` | 78 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn78 commit touches scoring: fix: keep valid bridge miners eligible during registration churn |
 | `sn92:release:v0.4.6` | 92 | RELEASE | 2026-09-16T19:46:19Z | sn92 released v0.4.6 |
 | `sn92:scoring_commit:2026-09-16T17:47:30Z` | 92 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the arenas validators enforce (#77 |
+| `sn28:release:v0.4.18` | 28 | RELEASE | 2026-09-16T22:24:56Z | sn28 released v0.4.18 |
+| `sn45:scoring_commit:2026-09-16T17:29:43Z` | 45 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn45 commit touches scoring: Allow a per-model scale on audit scores |
+| `sn78:scoring_commit:2026-09-16T20:06:28Z` | 78 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn78 commit touches scoring: release: pin fresh validator installs to registration churn fix |
+| `sn102:release:v0.6.1` | 102 | RELEASE | 2026-09-16T22:24:56Z | sn102 released v0.6.1 |
+| `sn102:scoring_commit:2026-09-16T20:16:29Z` | 102 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn102 commit touches scoring: Merge pull request #274 from Connito-AI/feat/switch-task-release-then… |
 | `sn71:readme_task_diff:b64ef6137b1c6577` | 71 | README_TASK_DIFF | 2026-09-10T01:20:26Z | sn71 README task/scoring sections changed |
 | `sn15:readme_task_diff:17e287861e782246` | 15 | README_TASK_DIFF | 2026-09-10T06:19:09Z | sn15 README task/scoring sections changed |
 | `sn66:readme_task_diff:e9a9de7a5084c0f6` | 66 | README_TASK_DIFF | 2026-09-10T15:13:20Z | sn66 README task/scoring sections changed |
@@ -295,6 +283,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
+| `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

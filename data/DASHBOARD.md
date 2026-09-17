@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-16T22:24:24Z · block 9083175 · run_status **ok**_
+_snapshot 2026-09-17T00:47:29Z · block 9083886 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 56 of 128
+# 0 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 93 | `miner_burn` < 0.99 |
 | Ranked | 93 | passed every gate |
-| **Positive margin** | **56** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| **Positive margin** | **0** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
-| 0–0.2 | 10 | `████` |
+| 0 (none) | 64 | `████████████████████████████` |
+| 0–0.2 | 9 | `████` |
 | 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 5 | `██` |
 | 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 35 | `████████████████` |
+| ≥0.99 dead | 35 | `███████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn11 TrajectoryRL | 80 | 5,622 | 5,622 = | cpu-small | 1 | 100% |
-| 2 | sn92 MicroTensor | 79 | 123 | 276 | cpu-small | 8 | 43% |
-| 3 | sn91 cascade | 72.4 | 594 | 2,378 | cpu-small | 5 | 52% |
-| 4 | sn1 Apex | 69 | 552 | 905 | rtx4090* | 4 | 58% |
-| 5 | sn67 Harnyx | 68.8 | 8.44 | 930 | cpu-small | 117 | 33% |
-| 6 | sn107 Minos | 68.7 | 329 | 26,641 | cpu-small | 20 | 79% |
-| 7 | sn38 ChronoLLM | 66.4 | 111 | 1,511 | cpu-small | 10 | 52% |
-| 8 | sn28 SayGM | 65 | 167 | 1,776 | rtx4090* | 37 | 13% |
-| 9 | sn111 Claims | 64.8 | 171 | 2,492 | rtx4090* | 5 | 79% |
-| 10 | sn61 RedTeam | 62.5 | 79.95 | 122 | rtx4090* | 112 | 1% |
-| 11 | sn81 Reliquary | 61.7 | 62.47 | 103 | rtx4090* | 42 | 33% |
-| 12 | sn55 NIOME | 61.7 | 62.46 | 522 | rtx4090* | 11 | 29% |
-| 13 | sn62 Ridges | 60.7 | 46.38 | 1,641 | rtx4090* | 19 | 26% |
-| 14 | sn23 Trishool | 60.3 | 561 | 561 = | cpu-small | 2 | 80% |
-| 15 | sn51 lium.io | 56.8 | 21.54 | 1,973 | rtx4090* | 69 | 81% |
-| 16 | sn80 OpenRoboto | 56.6 | 472 | 1,672 | rtx4090* | 5 | 43% |
-| 17 | sn9 iota | 56 | 11,926 | 11,926 = | rtx4090* | 3 | 68% |
-| 18 | sn56 Gradients | 54.9 | 286 | 4,724 | rtx4090* | 13 | 46% |
-| 19 | sn124 Swarm | 54.3 | 244 | 789 | rtx4090* | 25 | 11% |
-| 20 | sn102 ConnitoAI | 53.9 | 6.94 | 1,255 | rtx4090* | 9 | 29% |
+| 1 | sn11 TrajectoryRL | 50 | n/a | n/a | cpu-small | 1 | 100% |
+| 2 | sn67 Harnyx | 50 | n/a | n/a | cpu-small | 117 | 33% |
+| 3 | sn92 MicroTensor | 50 | n/a | n/a | cpu-small | 8 | 43% |
+| 4 | sn21 AdTAO | 50 | n/a | n/a | cpu-small | 20 | 40% |
+| 5 | sn114 SOMA | 50 | n/a | n/a | cpu-small | 40 | 80% |
+| 6 | sn91 cascade | 42.5 | n/a | n/a | cpu-small | 5 | 52% |
+| 7 | sn38 ChronoLLM | 42.5 | n/a | n/a | cpu-small | 10 | 52% |
+| 8 | sn53 engy | 39.3 | n/a | n/a | rtx4090 | 67 | 44% |
+| 9 | sn81 Reliquary | 39.3 | n/a | n/a | rtx4090* | 45 | 36% |
+| 10 | sn63 Enigma | 39.3 | n/a | n/a | rtx4090* | 12 | 100% |
+| 11 | sn1 Apex | 39.3 | n/a | n/a | rtx4090* | 3 | 51% |
+| 12 | sn9 iota | 39.3 | n/a | n/a | rtx4090* | 3 | 68% |
+| 13 | sn66 conjectures | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
+| 14 | sn76 Ormas | 39.3 | n/a | n/a | rtx4090* | 1 | n/a |
+| 15 | sn62 Ridges | 39.3 | n/a | n/a | rtx4090* | 19 | 26% |
+| 16 | sn55 NIOME | 39.3 | n/a | n/a | rtx4090* | 11 | 29% |
+| 17 | sn45 AlphaRidge.ai | 39.3 | n/a | n/a | rtx4090* | 239 | 54% |
+| 18 | sn44 Score | 39.3 | n/a | n/a | rtx4090* | 1 | 100% |
+| 19 | sn102 ConnitoAI | 39.3 | n/a | n/a | rtx4090* | 4 | 25% |
+| 20 | sn28 SayGM | 39.3 | n/a | n/a | rtx4090* | 47 | 20% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 26 |
-| dominated (60–90%) | 16 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 24 |
+| dominated (60–90%) | 17 |
 | captured (>90%) | 23 |
 
 ## Hardware evidence quality
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-17T00:48 | sn40 | SCORING_COMMIT | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, audi |
+| 2026-09-17T00:48 | sn40 | README_TASK_DIFF | sn40 README task/scoring sections changed |
+| 2026-09-17T00:48 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/ |
 | 2026-09-16T22:24 | sn28 | RELEASE | sn28 released v0.4.18 |
 | 2026-09-16T22:24 | sn28 | README_TASK_DIFF | sn28 README task/scoring sections changed |
 | 2026-09-16T22:24 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: Allow a per-model scale on audit scores |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-16T19:46 | sn92 | RELEASE | sn92 released v0.4.6 |
 | 2026-09-16T19:46 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the a |
 | 2026-09-16T16:47 | sn9 | RELEASE | sn9 released v4.13.0 |
-| 2026-09-16T16:47 | sn20 | BURN_DROP | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
-| 2026-09-16T16:47 | sn51 | RELEASE | sn51 released executor-v1.129 |
-| 2026-09-16T16:47 | sn66 | RELEASE | sn66 released v1.0.4 |
 
 ---
 

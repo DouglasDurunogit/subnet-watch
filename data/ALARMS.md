@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T17:49:37Z, block 9096127
+# ALARMS - generated 2026-09-18T20:51:04Z, block 9097026
 
-window: first_seen in [2026-09-18T16:35:06Z, 2026-09-18T17:50:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-18T19:36:36Z, 2026-09-18T20:51:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,38 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:validator-staging-2026-09-18-35368036673` | 12 | RELEASE | P1 | 2026-09-18T17:50:06Z | sn12 released validator-staging-2026-09-18-35368036673-626-1: fix: evict old neurons in allowance evict_old_data task |
-| `sn12:scoring_commit:2026-09-18T16:19:52Z` | 12 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn12 commit touches scoring: fix: evict old neurons in allowance evict_old_data task |
-| `sn15:scoring_commit:2026-09-18T17:44:07Z` | 15 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn15 commit touches scoring: validator: hard-fail generated runs at >=30% harness-failure rate (#32 |
-| `sn25:release:v2026.9.18-1049469180` | 25 | RELEASE | P1 | 2026-09-18T17:50:06Z | sn25 released v2026.9.18-1049469180 |
-| `sn28:release:v0.4.19` | 28 | RELEASE | P1 | 2026-09-18T17:50:06Z | sn28 released v0.4.19 |
-| `sn71:scoring_commit:2026-09-18T17:43:00Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn71 commit touches scoring: Clarify validator credentials and required scoring proxy setup |
-| `sn74:release:release-20260918-164355` | 74 | RELEASE | P1 | 2026-09-18T17:50:06Z | sn74 released release-20260918-164355 |
-| `sn90:scoring_commit:2026-09-18T17:37:57Z` | 90 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn90 commit touches scoring: docs: client-facing attestation of inference — API + verification gui… |
-| `sn97:scoring_commit:2026-09-18T14:33:15Z` | 97 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn97 commit touches scoring: feat: Added scored_output the judge-facing text of a rollout |
-| `sn111:scoring_commit:2026-09-18T15:54:53Z` | 111 | SCORING_COMMIT | P1 | 2026-09-18T17:50:06Z | sn111 commit touches scoring: docs: document funding-lineage miner selection |
+| `sn15:release:v2.0.26: fix(proxy): fail over user-simu` | 15 | RELEASE | P1 | 2026-09-18T20:51:36Z | sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429 |
+| `sn15:scoring_commit:2026-09-18T18:17:14Z` | 15 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend … |
+| `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
+| `sn71:scoring_commit:2026-09-18T19:06:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores |
+| `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
 
 ### detail
 
-- **`sn12:release:validator-staging-2026-09-18-35368036673`** - sn12 released validator-staging-2026-09-18-35368036673-626-1: fix: evict old neurons in allowance evict_old_data task
-  - published 2026-09-18T16:19:52Z (was miner-staging-2026-08-05-31002481795-421-1: fix: replace unmaintained watchtower with nicholas-fedor fork)
-- **`sn12:scoring_commit:2026-09-18T16:19:52Z`** - sn12 commit touches scoring: fix: evict old neurons in allowance evict_old_data task
+- **`sn15:release:v2.0.26: fix(proxy): fail over user-simu`** - sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429
+  - published 2026-09-18T18:33:03Z (was v2.0.23)
+- **`sn15:scoring_commit:2026-09-18T18:17:14Z`** - sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:scoring_commit:2026-09-18T17:44:07Z`** - sn15 commit touches scoring: validator: hard-fail generated runs at >=30% harness-failure rate (#32
+- **`sn45:scoring_commit:2026-09-18T17:10:04Z`** - sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.18-1049469180`** - sn25 released v2026.9.18-1049469180
-  - published 2026-09-18T16:00:39Z (was v2026.9.17-1049083750)
-- **`sn28:release:v0.4.19`** - sn28 released v0.4.19
-  - published 2026-09-18T16:06:36Z (was v0.4.19-dev)
-- **`sn71:scoring_commit:2026-09-18T17:43:00Z`** - sn71 commit touches scoring: Clarify validator credentials and required scoring proxy setup
+- **`sn71:scoring_commit:2026-09-18T19:06:48Z`** - sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260918-164355`** - sn74 released release-20260918-164355
-  - published 2026-09-18T16:43:37Z (was release-20260917-234413)
-- **`sn90:scoring_commit:2026-09-18T17:37:57Z`** - sn90 commit touches scoring: docs: client-facing attestation of inference — API + verification gui…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-09-18T14:33:15Z`** - sn97 commit touches scoring: feat: Added scored_output the judge-facing text of a rollout
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-18T15:54:53Z`** - sn111 commit touches scoring: docs: document funding-lineage miner selection
+- **`sn78:scoring_commit:2026-09-18T20:19:20Z`** - sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -58,10 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
-| `sn15:release:v2.0.6` | 15 | RELEASE | 2026-09-11T18:42:05Z | sn15 released v2.0.6 |
-| `sn15:scoring_commit:2026-09-11T18:12:07Z` | 15 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.12 (strip agent rulebook) (… |
-| `sn25:scoring_commit:2026-09-11T17:13:28Z` | 25 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn25 commit touches scoring: Observe provisional validator intents from the retained V2 state |
-| `sn71:scoring_commit:2026-09-11T18:01:43Z` | 71 | SCORING_COMMIT | 2026-09-11T18:42:05Z | sn71 commit touches scoring: Accept Harvest plural current positions in contact verification |
 | `sn20:scoring_commit:2026-09-11T19:18:55Z` | 20 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds |
 | `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
 | `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
@@ -263,7 +244,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:release:v4.13.1` | 9 | RELEASE | 2026-09-18T14:27:07Z | sn9 released v4.13.1 |
 | `sn71:scoring_commit:2026-09-18T10:07:01Z` | 71 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn71 commit touches scoring: Reuse exact retained miner scores for Sep18 rerun295 |
 | `sn104:scoring_commit:2026-09-18T10:58:29Z` | 104 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn104 commit touches scoring: Merge pull request #13 from taostatus/feat/scoring-mech |
-| `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
+| `sn12:release:validator-staging-2026-09-18-35368036673` | 12 | RELEASE | 2026-09-18T17:50:06Z | sn12 released validator-staging-2026-09-18-35368036673-626-1: fix: evict old neurons in allowance evict_old_data task |
+| `sn12:scoring_commit:2026-09-18T16:19:52Z` | 12 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn12 commit touches scoring: fix: evict old neurons in allowance evict_old_data task |
+| `sn15:scoring_commit:2026-09-18T17:44:07Z` | 15 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn15 commit touches scoring: validator: hard-fail generated runs at >=30% harness-failure rate (#32 |
+| `sn25:release:v2026.9.18-1049469180` | 25 | RELEASE | 2026-09-18T17:50:06Z | sn25 released v2026.9.18-1049469180 |
+| `sn28:release:v0.4.19` | 28 | RELEASE | 2026-09-18T17:50:06Z | sn28 released v0.4.19 |
+| `sn71:scoring_commit:2026-09-18T17:43:00Z` | 71 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn71 commit touches scoring: Clarify validator credentials and required scoring proxy setup |
+| `sn74:release:release-20260918-164355` | 74 | RELEASE | 2026-09-18T17:50:06Z | sn74 released release-20260918-164355 |
+| `sn90:scoring_commit:2026-09-18T17:37:57Z` | 90 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn90 commit touches scoring: docs: client-facing attestation of inference — API + verification gui… |
+| `sn97:scoring_commit:2026-09-18T14:33:15Z` | 97 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn97 commit touches scoring: feat: Added scored_output the judge-facing text of a rollout |
+| `sn111:scoring_commit:2026-09-18T15:54:53Z` | 111 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn111 commit touches scoring: docs: document funding-lineage miner selection |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T00:35:39Z, block 9090997
+# ALARMS - generated 2026-09-18T05:16:32Z, block 9092391
 
-window: first_seen in [2026-09-17T23:21:11Z, 2026-09-18T00:36:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-18T04:01:57Z, 2026-09-18T05:16:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn127:burn_drop:0.714` | 127 | BURN_DROP | P0 | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
-| `sn15:release:v2.0.22` | 15 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn15 released v2.0.22 |
-| `sn15:scoring_commit:2026-09-18T00:19:14Z` | 15 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320) |
-| `sn25:release:v2026.9.17-1048903120` | 25 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn25 released v2026.9.17-1048903120 |
-| `sn34:scoring_commit:2026-09-17T22:39:06Z` | 34 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati |
-| `sn71:scoring_commit:2026-09-17T23:22:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity |
-| `sn74:release:release-20260917-234413` | 74 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn74 released release-20260917-234413 |
+| `sn15:release:v2.0.23` | 15 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn15 released v2.0.23 |
+| `sn25:release:v2026.9.17-1048981210` | 25 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn25 released v2026.9.17-1048981210 |
+| `sn49:scoring_commit:2026-09-18T01:53:42Z` | 49 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with… |
+| `sn71:scoring_commit:2026-09-18T04:15:55Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn71 commit touches scoring: Preserve verified historical local release archives |
+| `sn78:scoring_commit:2026-09-18T04:12:28Z` | 78 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159) |
+| `sn92:release:v0.4.12` | 92 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn92 released v0.4.12 |
+| `sn92:scoring_commit:2026-09-18T02:43:45Z` | 92 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag… |
 
 ### detail
 
-- **`sn127:burn_drop:0.714`** - sn127 burn fell 1.000 -> 0.714 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v2.0.22`** - sn15 released v2.0.22
-  - published 2026-09-18T00:19:36Z (was v2.0.20)
-- **`sn15:scoring_commit:2026-09-18T00:19:14Z`** - sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320)
+- **`sn15:release:v2.0.23`** - sn15 released v2.0.23
+  - published 2026-09-18T03:54:47Z (was v2.0.22)
+- **`sn25:release:v2026.9.17-1048981210`** - sn25 released v2026.9.17-1048981210
+  - published 2026-09-18T02:27:33Z (was v2026.9.17-1048903120)
+- **`sn49:scoring_commit:2026-09-18T01:53:42Z`** - sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.17-1048903120`** - sn25 released v2026.9.17-1048903120
-  - published 2026-09-18T00:17:20Z (was v2026.9.17-1048832810)
-- **`sn34:scoring_commit:2026-09-17T22:39:06Z`** - sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati
+- **`sn71:scoring_commit:2026-09-18T04:15:55Z`** - sn71 commit touches scoring: Preserve verified historical local release archives
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-17T23:22:48Z`** - sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity
+- **`sn78:scoring_commit:2026-09-18T04:12:28Z`** - sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260917-234413`** - sn74 released release-20260917-234413
-  - published 2026-09-17T23:43:40Z (was release-20260917-220301)
+- **`sn92:release:v0.4.12`** - sn92 released v0.4.12
+  - published 2026-09-18T02:45:06Z (was v0.4.11)
+- **`sn92:scoring_commit:2026-09-18T02:43:45Z`** - sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn20:burn_drop:0.770` | 20 | BURN_DROP | 2026-09-11T01:19:31Z | sn20 burn fell 1.000 -> 0.770 - miners can earn again |
 | `sn20:burn_drop:0.742` | 20 | BURN_DROP | 2026-09-12T06:24:23Z | sn20 burn fell 1.000 -> 0.742 - miners can earn again |
 | `sn125:burn_drop:0.000` | 125 | BURN_DROP | 2026-09-13T19:00:00Z | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -49,9 +48,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
-| `sn36:scoring_commit:2026-09-10T20:24:55Z` | 36 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn36 commit touches scoring: Fix the private-upload commands in the miner guide and CLI hints |
-| `sn71:scoring_commit:2026-09-11T01:07:36Z` | 71 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn71 commit touches scoring: Keep testnet Arena setup aligned with validator authorization |
-| `sn100:scoring_commit:2026-09-11T00:30:47Z` | 100 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn100 commit touches scoring: fix(proof): harvest scored runs when vsock drops done (#278) |
+| `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn7:release:release-20260911-013831` | 7 | RELEASE | 2026-09-11T06:22:30Z | sn7 released release-20260911-013831 |
 | `sn7:scoring_commit:2026-09-11T01:08:48Z` | 7 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn7 commit touches scoring: Miner wizard: funding step, one shared EVM key, container check after… |
 | `sn15:release:v2.0.4` | 15 | RELEASE | 2026-09-11T06:22:30Z | sn15 released v2.0.4 |
@@ -260,6 +257,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn93:scoring_commit:2026-09-17T21:13:10Z` | 93 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn93 commit touches scoring: docs: replace CLAUDE.md with AGENTS.md + on-chain liveness verificati… |
 | `sn102:release:v0.6.2` | 102 | RELEASE | 2026-09-17T22:20:24Z | sn102 released v0.6.2 |
 | `sn102:scoring_commit:2026-09-17T17:58:30Z` | 102 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn102 commit touches scoring: 🐛 fix(validator): drop evaluations that finish after their round is f… |
+| `sn15:release:v2.0.22` | 15 | RELEASE | 2026-09-18T00:36:11Z | sn15 released v2.0.22 |
+| `sn15:scoring_commit:2026-09-18T00:19:14Z` | 15 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320) |
+| `sn25:release:v2026.9.17-1048903120` | 25 | RELEASE | 2026-09-18T00:36:11Z | sn25 released v2026.9.17-1048903120 |
+| `sn34:scoring_commit:2026-09-17T22:39:06Z` | 34 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati |
+| `sn71:scoring_commit:2026-09-17T23:22:48Z` | 71 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity |
+| `sn74:release:release-20260917-234413` | 74 | RELEASE | 2026-09-18T00:36:11Z | sn74 released release-20260917-234413 |
 | `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
 | `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |

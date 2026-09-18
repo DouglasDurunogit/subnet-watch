@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T09:57:47Z, block 9093790
+# ALARMS - generated 2026-09-18T14:26:39Z, block 9095122
 
-window: first_seen in [2026-09-18T08:43:19Z, 2026-09-18T09:58:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-18T13:12:07Z, 2026-09-18T14:27:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.17-1049083750` | 25 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn25 released v2026.9.17-1049083750 |
-| `sn28:release:v0.4.19-dev` | 28 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn28 released v0.4.19-dev |
-| `sn28:scoring_commit:2026-09-18T09:53:30Z` | 28 | SCORING_COMMIT | P1 | 2026-09-18T09:58:19Z | sn28 commit touches scoring: chore(release): bump miner to 0.4.19 |
-| `sn51:release:watchtower-v1.1.0` | 51 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn51 released watchtower-v1.1.0 |
-| `sn71:scoring_commit:2026-09-18T07:44:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T09:58:19Z | sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent |
+| `sn3:scoring_commit:2026-09-18T13:31:22Z` | 3 | SCORING_COMMIT | P1 | 2026-09-18T14:27:07Z | sn3 commit touches scoring: Add category-stratified evaluation sampling and per-sample loss tracki |
+| `sn9:release:v4.13.1` | 9 | RELEASE | P1 | 2026-09-18T14:27:07Z | sn9 released v4.13.1 |
+| `sn71:scoring_commit:2026-09-18T10:07:01Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T14:27:07Z | sn71 commit touches scoring: Reuse exact retained miner scores for Sep18 rerun295 |
+| `sn104:scoring_commit:2026-09-18T10:58:29Z` | 104 | SCORING_COMMIT | P1 | 2026-09-18T14:27:07Z | sn104 commit touches scoring: Merge pull request #13 from taostatus/feat/scoring-mech |
 
 ### detail
 
-- **`sn25:release:v2026.9.17-1049083750`** - sn25 released v2026.9.17-1049083750
-  - published 2026-09-18T05:17:59Z (was v2026.9.17-1048981210)
-- **`sn28:release:v0.4.19-dev`** - sn28 released v0.4.19-dev
-  - published 2026-09-18T09:53:53Z (was v0.4.18)
-- **`sn28:scoring_commit:2026-09-18T09:53:30Z`** - sn28 commit touches scoring: chore(release): bump miner to 0.4.19
+- **`sn3:scoring_commit:2026-09-18T13:31:22Z`** - sn3 commit touches scoring: Add category-stratified evaluation sampling and per-sample loss tracki
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:watchtower-v1.1.0`** - sn51 released watchtower-v1.1.0
-  - published 2026-09-18T06:30:39Z (was executor-v1.130)
-- **`sn71:scoring_commit:2026-09-18T07:44:16Z`** - sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent
+- **`sn9:release:v4.13.1`** - sn9 released v4.13.1
+  - published 2026-09-18T12:36:04Z (was v4.13.0)
+- **`sn71:scoring_commit:2026-09-18T10:07:01Z`** - sn71 commit touches scoring: Reuse exact retained miner scores for Sep18 rerun295
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn104:scoring_commit:2026-09-18T10:58:29Z`** - sn104 commit touches scoring: Merge pull request #13 from taostatus/feat/scoring-mech
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,14 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
-| `sn10:scoring_commit:2026-09-10T11:52:15Z` | 10 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn10 commit touches scoring: fix(ops): verify staged units against the live filesystem, record vec… |
-| `sn20:scoring_commit:2026-09-11T09:44:50Z` | 20 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn20 commit touches scoring: Add scorer v1.1.0 and signed round feedback |
-| `sn25:scoring_commit:2026-09-11T11:24:07Z` | 25 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn25 commit touches scoring: Resume provisional validators from completed local recovery and publi… |
-| `sn51:release:miner-v1.004` | 51 | RELEASE | 2026-09-11T11:40:27Z | sn51 released miner-v1.004 |
-| `sn51:scoring_commit:2026-09-11T10:27:24Z` | 51 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn51 commit touches scoring: DAH-3206 - [P2] miner accepts a validator sign-in only when it names … |
-| `sn67:scoring_commit:2026-09-11T06:52:54Z` | 67 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260911.post0 |
-| `sn71:scoring_commit:2026-09-11T08:20:53Z` | 71 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn71 commit touches scoring: Remove unused validator V2 release metadata and archives |
-| `sn78:scoring_commit:2026-09-11T10:40:20Z` | 78 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn78 commit touches scoring: Make main installer select signed validator release |
 | `sn9:release:v4.12.18` | 9 | RELEASE | 2026-09-11T15:15:26Z | sn9 released v4.12.18 |
 | `sn55:scoring_commit:2026-09-11T13:39:56Z` | 55 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn55 commit touches scoring: upload all miners submissions |
 | `sn66:scoring_commit:2026-09-11T14:50:25Z` | 66 | SCORING_COMMIT | 2026-09-11T15:15:26Z | sn66 commit touches scoring: Merge pull request #90 from conjectures-io/fix/optional-discord-and-p… |
@@ -254,7 +243,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-18T04:12:28Z` | 78 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159) |
 | `sn92:release:v0.4.12` | 92 | RELEASE | 2026-09-18T05:16:57Z | sn92 released v0.4.12 |
 | `sn92:scoring_commit:2026-09-18T02:43:45Z` | 92 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag… |
-| `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
+| `sn25:release:v2026.9.17-1049083750` | 25 | RELEASE | 2026-09-18T09:58:19Z | sn25 released v2026.9.17-1049083750 |
+| `sn28:release:v0.4.19-dev` | 28 | RELEASE | 2026-09-18T09:58:19Z | sn28 released v0.4.19-dev |
+| `sn28:scoring_commit:2026-09-18T09:53:30Z` | 28 | SCORING_COMMIT | 2026-09-18T09:58:19Z | sn28 commit touches scoring: chore(release): bump miner to 0.4.19 |
+| `sn51:release:watchtower-v1.1.0` | 51 | RELEASE | 2026-09-18T09:58:19Z | sn51 released watchtower-v1.1.0 |
+| `sn71:scoring_commit:2026-09-18T07:44:16Z` | 71 | SCORING_COMMIT | 2026-09-18T09:58:19Z | sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent |
 | `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |

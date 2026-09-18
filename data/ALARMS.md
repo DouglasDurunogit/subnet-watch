@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T05:16:32Z, block 9092391
+# ALARMS - generated 2026-09-18T09:57:47Z, block 9093790
 
-window: first_seen in [2026-09-18T04:01:57Z, 2026-09-18T05:16:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-18T08:43:19Z, 2026-09-18T09:58:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.23` | 15 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn15 released v2.0.23 |
-| `sn25:release:v2026.9.17-1048981210` | 25 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn25 released v2026.9.17-1048981210 |
-| `sn49:scoring_commit:2026-09-18T01:53:42Z` | 49 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with… |
-| `sn71:scoring_commit:2026-09-18T04:15:55Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn71 commit touches scoring: Preserve verified historical local release archives |
-| `sn78:scoring_commit:2026-09-18T04:12:28Z` | 78 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159) |
-| `sn92:release:v0.4.12` | 92 | RELEASE | P1 | 2026-09-18T05:16:57Z | sn92 released v0.4.12 |
-| `sn92:scoring_commit:2026-09-18T02:43:45Z` | 92 | SCORING_COMMIT | P1 | 2026-09-18T05:16:57Z | sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag… |
+| `sn25:release:v2026.9.17-1049083750` | 25 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn25 released v2026.9.17-1049083750 |
+| `sn28:release:v0.4.19-dev` | 28 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn28 released v0.4.19-dev |
+| `sn28:scoring_commit:2026-09-18T09:53:30Z` | 28 | SCORING_COMMIT | P1 | 2026-09-18T09:58:19Z | sn28 commit touches scoring: chore(release): bump miner to 0.4.19 |
+| `sn51:release:watchtower-v1.1.0` | 51 | RELEASE | P1 | 2026-09-18T09:58:19Z | sn51 released watchtower-v1.1.0 |
+| `sn71:scoring_commit:2026-09-18T07:44:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T09:58:19Z | sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent |
 
 ### detail
 
-- **`sn15:release:v2.0.23`** - sn15 released v2.0.23
-  - published 2026-09-18T03:54:47Z (was v2.0.22)
-- **`sn25:release:v2026.9.17-1048981210`** - sn25 released v2026.9.17-1048981210
-  - published 2026-09-18T02:27:33Z (was v2026.9.17-1048903120)
-- **`sn49:scoring_commit:2026-09-18T01:53:42Z`** - sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with…
+- **`sn25:release:v2026.9.17-1049083750`** - sn25 released v2026.9.17-1049083750
+  - published 2026-09-18T05:17:59Z (was v2026.9.17-1048981210)
+- **`sn28:release:v0.4.19-dev`** - sn28 released v0.4.19-dev
+  - published 2026-09-18T09:53:53Z (was v0.4.18)
+- **`sn28:scoring_commit:2026-09-18T09:53:30Z`** - sn28 commit touches scoring: chore(release): bump miner to 0.4.19
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-18T04:15:55Z`** - sn71 commit touches scoring: Preserve verified historical local release archives
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-18T04:12:28Z`** - sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v0.4.12`** - sn92 released v0.4.12
-  - published 2026-09-18T02:45:06Z (was v0.4.11)
-- **`sn92:scoring_commit:2026-09-18T02:43:45Z`** - sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag…
+- **`sn51:release:watchtower-v1.1.0`** - sn51 released watchtower-v1.1.0
+  - published 2026-09-18T06:30:39Z (was executor-v1.130)
+- **`sn71:scoring_commit:2026-09-18T07:44:16Z`** - sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,16 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
-| `sn7:release:release-20260911-013831` | 7 | RELEASE | 2026-09-11T06:22:30Z | sn7 released release-20260911-013831 |
-| `sn7:scoring_commit:2026-09-11T01:08:48Z` | 7 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn7 commit touches scoring: Miner wizard: funding step, one shared EVM key, container check after… |
-| `sn15:release:v2.0.4` | 15 | RELEASE | 2026-09-11T06:22:30Z | sn15 released v2.0.4 |
-| `sn25:scoring_commit:2026-09-11T06:17:33Z` | 25 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn25 commit touches scoring: Honor transition limits for typed validator evidence |
-| `sn51:scoring_commit:2026-09-11T06:10:30Z` | 51 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn51 commit touches scoring: DAH-3019 - [P1] validator reports verification start once per miner (… |
-| `sn53:scoring_commit:2026-09-11T03:07:35Z` | 53 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn53 commit touches scoring: Merge pull request #47 from hanlinai/fix/engy-miner-length-finish-reas |
-| `sn67:scoring_commit:2026-09-10T08:37:01Z` | 67 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260910.post4 |
-| `sn71:scoring_commit:2026-09-11T05:58:19Z` | 71 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn71 commit touches scoring: Fix normal validator dependency and distribution packaging |
-| `sn78:scoring_commit:2026-09-11T05:47:10Z` | 78 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn78 commit touches scoring: Harden validator supervisor container startup |
-| `sn100:scoring_commit:2026-09-11T04:22:33Z` | 100 | SCORING_COMMIT | 2026-09-11T06:22:30Z | sn100 commit touches scoring: fix(proof): retain failed experiment vms for rca + log evaluate refus… |
 | `sn10:scoring_commit:2026-09-10T11:52:15Z` | 10 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn10 commit touches scoring: fix(ops): verify staged units against the live filesystem, record vec… |
 | `sn20:scoring_commit:2026-09-11T09:44:50Z` | 20 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn20 commit touches scoring: Add scorer v1.1.0 and signed round feedback |
 | `sn25:scoring_commit:2026-09-11T11:24:07Z` | 25 | SCORING_COMMIT | 2026-09-11T11:40:27Z | sn25 commit touches scoring: Resume provisional validators from completed local recovery and publi… |
@@ -263,8 +247,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-09-17T22:39:06Z` | 34 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati |
 | `sn71:scoring_commit:2026-09-17T23:22:48Z` | 71 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity |
 | `sn74:release:release-20260917-234413` | 74 | RELEASE | 2026-09-18T00:36:11Z | sn74 released release-20260917-234413 |
-| `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
-| `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
+| `sn15:release:v2.0.23` | 15 | RELEASE | 2026-09-18T05:16:57Z | sn15 released v2.0.23 |
+| `sn25:release:v2026.9.17-1048981210` | 25 | RELEASE | 2026-09-18T05:16:57Z | sn25 released v2026.9.17-1048981210 |
+| `sn49:scoring_commit:2026-09-18T01:53:42Z` | 49 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with… |
+| `sn71:scoring_commit:2026-09-18T04:15:55Z` | 71 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn71 commit touches scoring: Preserve verified historical local release archives |
+| `sn78:scoring_commit:2026-09-18T04:12:28Z` | 78 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159) |
+| `sn92:release:v0.4.12` | 92 | RELEASE | 2026-09-18T05:16:57Z | sn92 released v0.4.12 |
+| `sn92:scoring_commit:2026-09-18T02:43:45Z` | 92 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag… |
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |
 | `sn71:readme_task_diff:858d6e3350fdacde` | 71 | README_TASK_DIFF | 2026-09-11T18:42:05Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |

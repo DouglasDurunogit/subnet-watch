@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T20:51:04Z, block 9097026
+# ALARMS - generated 2026-09-18T23:14:54Z, block 9097738
 
-window: first_seen in [2026-09-18T19:36:36Z, 2026-09-18T20:51:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-18T22:00:17Z, 2026-09-18T23:15:17Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.26: fix(proxy): fail over user-simu` | 15 | RELEASE | P1 | 2026-09-18T20:51:36Z | sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429 |
-| `sn15:scoring_commit:2026-09-18T18:17:14Z` | 15 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend … |
-| `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
-| `sn71:scoring_commit:2026-09-18T19:06:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores |
-| `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | P1 | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
+| `sn10:burn_drop:0.814` | 10 | BURN_DROP | P0 | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
+| `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | P1 | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
+| `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
+| `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | P2 | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.26: fix(proxy): fail over user-simu`** - sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429
-  - published 2026-09-18T18:33:03Z (was v2.0.23)
-- **`sn15:scoring_commit:2026-09-18T18:17:14Z`** - sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend …
+- **`sn10:burn_drop:0.814`** - sn10 burn fell 1.000 -> 0.814 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.9.18-1049702080`** - sn25 released v2026.9.18-1049702080
+  - published 2026-09-18T22:28:44Z (was v2026.9.18-1049469180)
+- **`sn71:scoring_commit:2026-09-18T22:13:21Z`** - sn71 commit touches scoring: Refresh protected verifier integrity manifest
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-09-18T17:10:04Z`** - sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-18T19:06:48Z`** - sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-18T20:19:20Z`** - sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:d96d81f0465762fa`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,10 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
-| `sn20:scoring_commit:2026-09-11T19:18:55Z` | 20 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn20 commit touches scoring: Add grounded video scoring and hybrid mainnet rounds |
-| `sn25:release:v2026.9.11-1043550030` | 25 | RELEASE | 2026-09-11T21:21:44Z | sn25 released v2026.9.11-1043550030 |
-| `sn71:scoring_commit:2026-09-11T20:33:14Z` | 71 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn71 commit touches scoring: Verify in-flight Arena leases survive participation migration |
-| `sn100:scoring_commit:2026-09-11T19:56:05Z` | 100 | SCORING_COMMIT | 2026-09-11T21:21:44Z | sn100 commit touches scoring: fix(proof): fail-closed harbor partial scores and forged rewards |
 | `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
 | `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
 | `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
@@ -254,6 +247,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-09-18T17:37:57Z` | 90 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn90 commit touches scoring: docs: client-facing attestation of inference — API + verification gui… |
 | `sn97:scoring_commit:2026-09-18T14:33:15Z` | 97 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn97 commit touches scoring: feat: Added scored_output the judge-facing text of a rollout |
 | `sn111:scoring_commit:2026-09-18T15:54:53Z` | 111 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn111 commit touches scoring: docs: document funding-lineage miner selection |
+| `sn15:release:v2.0.26: fix(proxy): fail over user-simu` | 15 | RELEASE | 2026-09-18T20:51:36Z | sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429 |
+| `sn15:scoring_commit:2026-09-18T18:17:14Z` | 15 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend … |
+| `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
+| `sn71:scoring_commit:2026-09-18T19:06:48Z` | 71 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores |
+| `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |

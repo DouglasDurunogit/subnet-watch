@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-17T22:19:51Z, block 9090321
+# ALARMS - generated 2026-09-18T00:35:39Z, block 9090997
 
-window: first_seen in [2026-09-17T21:05:24Z, 2026-09-17T22:20:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-17T23:21:11Z, 2026-09-18T00:36:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn4:release:v2.0.1` | 4 | RELEASE | P1 | 2026-09-17T22:20:24Z | sn4 released v2.0.1 |
-| `sn15:scoring_commit:2026-09-17T21:02:27Z` | 15 | SCORING_COMMIT | P1 | 2026-09-17T22:20:24Z | sn15 commit touches scoring: fix(validator): delete orphaned retry_queue.add_progress on logs_s3_k… |
-| `sn25:release:v2026.9.17-1048832810` | 25 | RELEASE | P1 | 2026-09-17T22:20:24Z | sn25 released v2026.9.17-1048832810 |
-| `sn69:scoring_commit:2026-09-17T19:29:06Z` | 69 | SCORING_COMMIT | P1 | 2026-09-17T22:20:24Z | sn69 commit touches scoring: Re-submit the latest miner weights on a block cadence |
-| `sn74:release:release-20260917-220301` | 74 | RELEASE | P1 | 2026-09-17T22:20:24Z | sn74 released release-20260917-220301 |
-| `sn90:scoring_commit:2026-09-17T21:14:03Z` | 90 | SCORING_COMMIT | P1 | 2026-09-17T22:20:24Z | sn90 commit touches scoring: feat(validator): raise minimum node spec to 72 cores / 1024 GiB / 5 n… |
-| `sn93:scoring_commit:2026-09-17T21:13:10Z` | 93 | SCORING_COMMIT | P1 | 2026-09-17T22:20:24Z | sn93 commit touches scoring: docs: replace CLAUDE.md with AGENTS.md + on-chain liveness verificati… |
-| `sn102:release:v0.6.2` | 102 | RELEASE | P1 | 2026-09-17T22:20:24Z | sn102 released v0.6.2 |
-| `sn102:scoring_commit:2026-09-17T17:58:30Z` | 102 | SCORING_COMMIT | P1 | 2026-09-17T22:20:24Z | sn102 commit touches scoring: 🐛 fix(validator): drop evaluations that finish after their round is f… |
+| `sn127:burn_drop:0.714` | 127 | BURN_DROP | P0 | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
+| `sn15:release:v2.0.22` | 15 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn15 released v2.0.22 |
+| `sn15:scoring_commit:2026-09-18T00:19:14Z` | 15 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320) |
+| `sn25:release:v2026.9.17-1048903120` | 25 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn25 released v2026.9.17-1048903120 |
+| `sn34:scoring_commit:2026-09-17T22:39:06Z` | 34 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati |
+| `sn71:scoring_commit:2026-09-17T23:22:48Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T00:36:11Z | sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity |
+| `sn74:release:release-20260917-234413` | 74 | RELEASE | P1 | 2026-09-18T00:36:11Z | sn74 released release-20260917-234413 |
 
 ### detail
 
-- **`sn4:release:v2.0.1`** - sn4 released v2.0.1
-  - published 2026-09-17T18:38:37Z (was v2.0.0)
-- **`sn15:scoring_commit:2026-09-17T21:02:27Z`** - sn15 commit touches scoring: fix(validator): delete orphaned retry_queue.add_progress on logs_s3_k…
+- **`sn127:burn_drop:0.714`** - sn127 burn fell 1.000 -> 0.714 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v2.0.22`** - sn15 released v2.0.22
+  - published 2026-09-18T00:19:36Z (was v2.0.20)
+- **`sn15:scoring_commit:2026-09-18T00:19:14Z`** - sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.17-1048832810`** - sn25 released v2026.9.17-1048832810
-  - published 2026-09-17T22:19:53Z (was v2026.9.17-1048676710)
-- **`sn69:scoring_commit:2026-09-17T19:29:06Z`** - sn69 commit touches scoring: Re-submit the latest miner weights on a block cadence
+- **`sn25:release:v2026.9.17-1048903120`** - sn25 released v2026.9.17-1048903120
+  - published 2026-09-18T00:17:20Z (was v2026.9.17-1048832810)
+- **`sn34:scoring_commit:2026-09-17T22:39:06Z`** - sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260917-220301`** - sn74 released release-20260917-220301
-  - published 2026-09-17T22:01:55Z (was release-20260917-174533)
-- **`sn90:scoring_commit:2026-09-17T21:14:03Z`** - sn90 commit touches scoring: feat(validator): raise minimum node spec to 72 cores / 1024 GiB / 5 n…
+- **`sn71:scoring_commit:2026-09-17T23:22:48Z`** - sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn93:scoring_commit:2026-09-17T21:13:10Z`** - sn93 commit touches scoring: docs: replace CLAUDE.md with AGENTS.md + on-chain liveness verificati…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.6.2`** - sn102 released v0.6.2
-  - published 2026-09-17T21:00:03Z (was v0.6.1)
-- **`sn102:scoring_commit:2026-09-17T17:58:30Z`** - sn102 commit touches scoring: 🐛 fix(validator): drop evaluations that finish after their round is f…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260917-234413`** - sn74 released release-20260917-234413
+  - published 2026-09-17T23:43:40Z (was release-20260917-220301)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -55,12 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.3` | 15 | RELEASE | 2026-09-10T23:19:16Z | sn15 released v2.0.3 |
-| `sn15:scoring_commit:2026-09-10T22:57:44Z` | 15 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn15 commit touches scoring: fix(validator): retry SimulatorCompletion inference before env_error … |
-| `sn20:scoring_commit:2026-09-10T21:24:32Z` | 20 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn20 commit touches scoring: Smooth mainnet rewards over configurable round history |
-| `sn62:release:v0.3.4` | 62 | RELEASE | 2026-09-10T23:19:16Z | sn62 released v0.3.4 |
-| `sn78:scoring_commit:2026-09-10T21:24:05Z` | 78 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn78 commit touches scoring: Ship shared SN78 validator bootstrap supervisor |
-| `sn100:scoring_commit:2026-09-10T21:47:23Z` | 100 | SCORING_COMMIT | 2026-09-10T23:19:16Z | sn100 commit touches scoring: docs(miner): minimal tbench Agent constructor+run example (#275) |
 | `sn36:scoring_commit:2026-09-10T20:24:55Z` | 36 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn36 commit touches scoring: Fix the private-upload commands in the miner guide and CLI hints |
 | `sn71:scoring_commit:2026-09-11T01:07:36Z` | 71 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn71 commit touches scoring: Keep testnet Arena setup aligned with validator authorization |
 | `sn100:scoring_commit:2026-09-11T00:30:47Z` | 100 | SCORING_COMMIT | 2026-09-11T01:19:31Z | sn100 commit touches scoring: fix(proof): harvest scored runs when vsock drops done (#278) |
@@ -263,6 +251,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:scoring_commit:2026-09-17T11:43:08Z` | 124 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn124 commit touches scoring: Pin numpy and repair a drifted validator at startup |
 | `sn25:release:v2026.9.17-1048676710` | 25 | RELEASE | 2026-09-17T19:19:51Z | sn25 released v2026.9.17-1048676710 |
 | `sn74:release:release-20260917-174533` | 74 | RELEASE | 2026-09-17T19:19:51Z | sn74 released release-20260917-174533 |
+| `sn4:release:v2.0.1` | 4 | RELEASE | 2026-09-17T22:20:24Z | sn4 released v2.0.1 |
+| `sn15:scoring_commit:2026-09-17T21:02:27Z` | 15 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn15 commit touches scoring: fix(validator): delete orphaned retry_queue.add_progress on logs_s3_k… |
+| `sn25:release:v2026.9.17-1048832810` | 25 | RELEASE | 2026-09-17T22:20:24Z | sn25 released v2026.9.17-1048832810 |
+| `sn69:scoring_commit:2026-09-17T19:29:06Z` | 69 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn69 commit touches scoring: Re-submit the latest miner weights on a block cadence |
+| `sn74:release:release-20260917-220301` | 74 | RELEASE | 2026-09-17T22:20:24Z | sn74 released release-20260917-220301 |
+| `sn90:scoring_commit:2026-09-17T21:14:03Z` | 90 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn90 commit touches scoring: feat(validator): raise minimum node spec to 72 cores / 1024 GiB / 5 n… |
+| `sn93:scoring_commit:2026-09-17T21:13:10Z` | 93 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn93 commit touches scoring: docs: replace CLAUDE.md with AGENTS.md + on-chain liveness verificati… |
+| `sn102:release:v0.6.2` | 102 | RELEASE | 2026-09-17T22:20:24Z | sn102 released v0.6.2 |
+| `sn102:scoring_commit:2026-09-17T17:58:30Z` | 102 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn102 commit touches scoring: 🐛 fix(validator): drop evaluations that finish after their round is f… |
 | `sn7:readme_task_diff:dc7b2a4e628af18f` | 7 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn7 README task/scoring sections changed |
 | `sn71:readme_task_diff:f4854b87ceea3027` | 71 | README_TASK_DIFF | 2026-09-11T06:22:30Z | sn71 README task/scoring sections changed |
 | `sn20:readme_task_diff:8d48fc82515ff603` | 20 | README_TASK_DIFF | 2026-09-11T11:40:27Z | sn20 README task/scoring sections changed |

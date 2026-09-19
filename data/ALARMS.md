@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-19T17:28:39Z, block 9103138
+# ALARMS - generated 2026-09-19T19:36:52Z, block 9103772
 
-window: first_seen in [2026-09-19T16:14:09Z, 2026-09-19T17:29:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T18:22:26Z, 2026-09-19T19:37:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:scoring_commit:2026-09-19T15:53:33Z` | 11 | SCORING_COMMIT | P1 | 2026-09-19T17:29:09Z | sn11 commit touches scoring: docs: Season 2 pass over the public docs (README rewritten, MINER_GUI… |
-| `sn34:scoring_commit:2026-09-19T17:11:58Z` | 34 | SCORING_COMMIT | P1 | 2026-09-19T17:29:09Z | sn34 commit touches scoring: Merge testnet into reward fix; retain release version 5.0.8 |
-| `sn71:scoring_commit:2026-09-19T15:00:49Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T17:29:09Z | sn71 commit touches scoring: Route Luna across verified Azure regions |
-| `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | P2 | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-09-19T19:29:32Z` | 25 | SCORING_COMMIT | P1 | 2026-09-19T19:37:26Z | sn25 commit touches scoring: Read retained validator runtime through reviewed history |
+| `sn78:scoring_commit:2026-09-19T18:07:54Z` | 78 | SCORING_COMMIT | P1 | 2026-09-19T19:37:26Z | sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain |
 
 ### detail
 
-- **`sn11:scoring_commit:2026-09-19T15:53:33Z`** - sn11 commit touches scoring: docs: Season 2 pass over the public docs (README rewritten, MINER_GUI…
+- **`sn25:scoring_commit:2026-09-19T19:29:32Z`** - sn25 commit touches scoring: Read retained validator runtime through reviewed history
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-09-19T17:11:58Z`** - sn34 commit touches scoring: Merge testnet into reward fix; retain release version 5.0.8
+- **`sn78:scoring_commit:2026-09-19T18:07:54Z`** - sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-19T15:00:49Z`** - sn71 commit touches scoring: Route Luna across verified Azure regions
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn11:readme_task_diff:9c29fc16d2b625fa`** - sn11 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,10 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn25:scoring_commit:2026-09-12T18:01:31Z` | 25 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn25 commit touches scoring: Record strict restart verification and canonical repair fee evidence |
-| `sn78:scoring_commit:2026-09-12T18:46:12Z` | 78 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn78 commit touches scoring: Add time-bounded live-miner bridge with equal coldkey group weights |
-| `sn81:scoring_commit:2026-09-12T18:27:08Z` | 81 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn81 commit touches scoring: fix(validator): bound no-reveal debt per window |
-| `sn92:scoring_commit:2026-09-12T17:50:00Z` | 92 | SCORING_COMMIT | 2026-09-12T19:19:47Z | sn92 commit touches scoring: tracks: guard is the one live track on mt-4g; the span scorer reads g… |
 | `sn25:scoring_commit:2026-09-12T19:54:30Z` | 25 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn25 commit touches scoring: Record sim-testnet validator and contract generation results |
 | `sn71:scoring_commit:2026-09-12T17:00:23Z` | 71 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn71 commit touches scoring: Verify participation with shared-owner Arena admissions |
 | `sn78:scoring_commit:2026-09-12T20:29:58Z` | 78 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence |
@@ -254,6 +244,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-09-18T22:15:30Z` | 81 | SCORING_COMMIT | 2026-09-19T11:19:32Z | sn81 commit touches scoring: fix(price): publish the target miners are actually held to |
 | `sn11:scoring_commit:2026-09-19T12:33:44Z` | 11 | SCORING_COMMIT | 2026-09-19T14:37:19Z | sn11 commit touches scoring: docs(roadmap): the protocol (objective = environment + verifier, fit … |
 | `sn71:scoring_commit:2026-09-19T11:23:50Z` | 71 | SCORING_COMMIT | 2026-09-19T14:37:19Z | sn71 commit touches scoring: Bind rerun316 to fixed scorer image |
+| `sn11:scoring_commit:2026-09-19T15:53:33Z` | 11 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn11 commit touches scoring: docs: Season 2 pass over the public docs (README rewritten, MINER_GUI… |
+| `sn34:scoring_commit:2026-09-19T17:11:58Z` | 34 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn34 commit touches scoring: Merge testnet into reward fix; retain release version 5.0.8 |
+| `sn71:scoring_commit:2026-09-19T15:00:49Z` | 71 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn71 commit touches scoring: Route Luna across verified Azure regions |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
@@ -270,6 +263,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
+| `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

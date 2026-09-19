@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-19T01:24:58Z, block 9098383
+# ALARMS - generated 2026-09-19T06:16:11Z, block 9099823
 
-window: first_seen in [2026-09-19T00:10:22Z, 2026-09-19T01:25:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T05:01:37Z, 2026-09-19T06:16:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn61:release:4.10.6` | 61 | RELEASE | P1 | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
-| `sn61:scoring_commit:2026-09-19T01:16:23Z` | 61 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4 |
-| `sn71:scoring_commit:2026-09-19T00:42:55Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn71 commit touches scoring: Keep baseline source update independent of miner progress |
-| `sn100:scoring_commit:2026-09-19T01:21:57Z` | 100 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator |
+| `sn15:release:v2.0.27` | 15 | RELEASE | P1 | 2026-09-19T06:16:37Z | sn15 released v2.0.27 |
+| `sn25:release:v2026.9.18-1049819730` | 25 | RELEASE | P1 | 2026-09-19T06:16:37Z | sn25 released v2026.9.18-1049819730 |
 
 ### detail
 
-- **`sn61:release:4.10.6`** - sn61 released 4.10.6
-  - published 2026-09-19T01:17:48Z (was 4.10.5)
-- **`sn61:scoring_commit:2026-09-19T01:16:23Z`** - sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-19T00:42:55Z`** - sn71 commit touches scoring: Keep baseline source update independent of miner progress
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-19T01:21:57Z`** - sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:release:v2.0.27`** - sn15 released v2.0.27
+  - published 2026-09-19T02:40:44Z (was v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429)
+- **`sn25:release:v2026.9.18-1049819730`** - sn25 released v2026.9.18-1049819730
+  - published 2026-09-19T01:44:48Z (was v2026.9.18-1049702080)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
-| `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
-| `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
 | `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
 | `sn51:scoring_commit:2026-09-12T01:49:58Z` | 51 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn51 commit touches scoring: DAH-3439 - [P0] validator: outdated executor image is a warning, not … |
 | `sn71:scoring_commit:2026-09-12T04:57:15Z` | 71 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn71 commit touches scoring: Use current billing schema in normal validator transition test |
@@ -255,6 +247,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
 | `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
 | `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
+| `sn61:release:4.10.6` | 61 | RELEASE | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
+| `sn61:scoring_commit:2026-09-19T01:16:23Z` | 61 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4 |
+| `sn71:scoring_commit:2026-09-19T00:42:55Z` | 71 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn71 commit touches scoring: Keep baseline source update independent of miner progress |
+| `sn100:scoring_commit:2026-09-19T01:21:57Z` | 100 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-18T23:14:54Z, block 9097738
+# ALARMS - generated 2026-09-19T01:24:58Z, block 9098383
 
-window: first_seen in [2026-09-18T22:00:17Z, 2026-09-18T23:15:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T00:10:22Z, 2026-09-19T01:25:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.814` | 10 | BURN_DROP | P0 | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
-| `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | P1 | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
-| `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | P1 | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
-| `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | P2 | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
+| `sn61:release:4.10.6` | 61 | RELEASE | P1 | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
+| `sn61:scoring_commit:2026-09-19T01:16:23Z` | 61 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4 |
+| `sn71:scoring_commit:2026-09-19T00:42:55Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn71 commit touches scoring: Keep baseline source update independent of miner progress |
+| `sn100:scoring_commit:2026-09-19T01:21:57Z` | 100 | SCORING_COMMIT | P1 | 2026-09-19T01:25:22Z | sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator |
 
 ### detail
 
-- **`sn10:burn_drop:0.814`** - sn10 burn fell 1.000 -> 0.814 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.9.18-1049702080`** - sn25 released v2026.9.18-1049702080
-  - published 2026-09-18T22:28:44Z (was v2026.9.18-1049469180)
-- **`sn71:scoring_commit:2026-09-18T22:13:21Z`** - sn71 commit touches scoring: Refresh protected verifier integrity manifest
+- **`sn61:release:4.10.6`** - sn61 released 4.10.6
+  - published 2026-09-19T01:17:48Z (was 4.10.5)
+- **`sn61:scoring_commit:2026-09-19T01:16:23Z`** - sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:d96d81f0465762fa`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn71:scoring_commit:2026-09-19T00:42:55Z`** - sn71 commit touches scoring: Keep baseline source update independent of miner progress
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-19T01:21:57Z`** - sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -40,6 +40,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
+| `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn25:scoring_commit:2026-09-12T00:45:57Z` | 25 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn25 commit touches scoring: Sync disposable replay scratch once after complete verification |
 | `sn71:scoring_commit:2026-09-12T01:00:20Z` | 71 | SCORING_COMMIT | 2026-09-12T01:27:39Z | sn71 commit touches scoring: Preserve Arena miner credential failure evidence |
 | `sn25:scoring_commit:2026-09-12T02:44:47Z` | 25 | SCORING_COMMIT | 2026-09-12T06:24:23Z | sn25 commit touches scoring: Reuse verified historical deployment completion in corrective admissio |
@@ -252,6 +253,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
 | `sn71:scoring_commit:2026-09-18T19:06:48Z` | 71 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores |
 | `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
+| `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
+| `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
 | `sn71:readme_task_diff:691868bd635e63bb` | 71 | README_TASK_DIFF | 2026-09-12T06:24:23Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
@@ -268,6 +271,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |
+| `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

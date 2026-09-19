@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-19T11:19:08Z, block 9101316
+# ALARMS - generated 2026-09-19T14:36:54Z, block 9102292
 
-window: first_seen in [2026-09-19T10:04:32Z, 2026-09-19T11:19:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T13:22:19Z, 2026-09-19T14:37:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.830` | 10 | BURN_DROP | P0 | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
-| `sn112:burn_drop:0.867` | 112 | BURN_DROP | P0 | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn11:release:v0.7.0` | 11 | RELEASE | P1 | 2026-09-19T11:19:32Z | sn11 released v0.7.0 |
-| `sn11:scoring_commit:2026-09-19T10:49:24Z` | 11 | SCORING_COMMIT | P1 | 2026-09-19T11:19:32Z | sn11 commit touches scoring: Season 2 (transition): routing-policy evaluation, policy sidecar + me… |
-| `sn25:release:v2026.9.19-1050096260` | 25 | RELEASE | P1 | 2026-09-19T11:19:32Z | sn25 released v2026.9.19-1050096260 |
-| `sn71:scoring_commit:2026-09-19T08:27:40Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T11:19:32Z | sn71 commit touches scoring: Pass saved stage evidence to Arena verifier |
-| `sn81:scoring_commit:2026-09-18T22:15:30Z` | 81 | SCORING_COMMIT | P1 | 2026-09-19T11:19:32Z | sn81 commit touches scoring: fix(price): publish the target miners are actually held to |
+| `sn11:scoring_commit:2026-09-19T12:33:44Z` | 11 | SCORING_COMMIT | P1 | 2026-09-19T14:37:19Z | sn11 commit touches scoring: docs(roadmap): the protocol (objective = environment + verifier, fit … |
+| `sn71:scoring_commit:2026-09-19T11:23:50Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T14:37:19Z | sn71 commit touches scoring: Bind rerun316 to fixed scorer image |
 
 ### detail
 
-- **`sn10:burn_drop:0.830`** - sn10 burn fell 1.000 -> 0.830 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn112:burn_drop:0.867`** - sn112 burn fell 1.000 -> 0.867 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn11:release:v0.7.0`** - sn11 released v0.7.0
-  - published 2026-09-19T11:00:33Z (was v0.6.34)
-- **`sn11:scoring_commit:2026-09-19T10:49:24Z`** - sn11 commit touches scoring: Season 2 (transition): routing-policy evaluation, policy sidecar + me…
+- **`sn11:scoring_commit:2026-09-19T12:33:44Z`** - sn11 commit touches scoring: docs(roadmap): the protocol (objective = environment + verifier, fit …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.19-1050096260`** - sn25 released v2026.9.19-1050096260
-  - published 2026-09-19T09:25:44Z (was v2026.9.18-1049819730)
-- **`sn71:scoring_commit:2026-09-19T08:27:40Z`** - sn71 commit touches scoring: Pass saved stage evidence to Arena verifier
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-18T22:15:30Z`** - sn81 commit touches scoring: fix(price): publish the target miners are actually held to
+- **`sn71:scoring_commit:2026-09-19T11:23:50Z`** - sn71 commit touches scoring: Bind rerun316 to fixed scorer image
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,8 +34,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
-| `sn71:scoring_commit:2026-09-12T11:34:03Z` | 71 | SCORING_COMMIT | 2026-09-12T14:06:12Z | sn71 commit touches scoring: Verify original provider statuses in paid fallback ledger receipts |
-| `sn100:scoring_commit:2026-09-12T09:01:01Z` | 100 | SCORING_COMMIT | 2026-09-12T14:06:12Z | sn100 commit touches scoring: fix(proof-fc-harvest): zero-scored agent-exception rows need no rewar… |
+| `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
+| `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
 | `sn36:scoring_commit:2026-09-11T11:52:07Z` | 36 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn36 commit touches scoring: Run calibration once a day on 200 tasks, in the background |
 | `sn71:scoring_commit:2026-09-12T16:43:22Z` | 71 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn71 commit touches scoring: Set daily Arena admission to twenty challengers |
 | `sn92:scoring_commit:2026-09-12T14:25:40Z` | 92 | SCORING_COMMIT | 2026-09-12T17:07:44Z | sn92 commit touches scoring: tracks: the hallucination detection track is guard on mt-4g, scored b… |
@@ -259,6 +244,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-09-19T01:21:57Z` | 100 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator |
 | `sn15:release:v2.0.27` | 15 | RELEASE | 2026-09-19T06:16:37Z | sn15 released v2.0.27 |
 | `sn25:release:v2026.9.18-1049819730` | 25 | RELEASE | 2026-09-19T06:16:37Z | sn25 released v2026.9.18-1049819730 |
+| `sn11:release:v0.7.0` | 11 | RELEASE | 2026-09-19T11:19:32Z | sn11 released v0.7.0 |
+| `sn11:scoring_commit:2026-09-19T10:49:24Z` | 11 | SCORING_COMMIT | 2026-09-19T11:19:32Z | sn11 commit touches scoring: Season 2 (transition): routing-policy evaluation, policy sidecar + me… |
+| `sn25:release:v2026.9.19-1050096260` | 25 | RELEASE | 2026-09-19T11:19:32Z | sn25 released v2026.9.19-1050096260 |
+| `sn71:scoring_commit:2026-09-19T08:27:40Z` | 71 | SCORING_COMMIT | 2026-09-19T11:19:32Z | sn71 commit touches scoring: Pass saved stage evidence to Arena verifier |
+| `sn81:scoring_commit:2026-09-18T22:15:30Z` | 81 | SCORING_COMMIT | 2026-09-19T11:19:32Z | sn81 commit touches scoring: fix(price): publish the target miners are actually held to |
 | `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |

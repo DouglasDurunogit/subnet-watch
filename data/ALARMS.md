@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-19T19:36:52Z, block 9103772
+# ALARMS - generated 2026-09-19T21:47:42Z, block 9104420
 
-window: first_seen in [2026-09-19T18:22:26Z, 2026-09-19T19:37:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T20:33:06Z, 2026-09-19T21:48:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-19T19:29:32Z` | 25 | SCORING_COMMIT | P1 | 2026-09-19T19:37:26Z | sn25 commit touches scoring: Read retained validator runtime through reviewed history |
-| `sn78:scoring_commit:2026-09-19T18:07:54Z` | 78 | SCORING_COMMIT | P1 | 2026-09-19T19:37:26Z | sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain |
+| `sn11:scoring_commit:2026-09-19T20:43:16Z` | 11 | SCORING_COMMIT | P1 | 2026-09-19T21:48:06Z | sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-… |
+| `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-19T19:29:32Z`** - sn25 commit touches scoring: Read retained validator runtime through reviewed history
+- **`sn11:scoring_commit:2026-09-19T20:43:16Z`** - sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-19T18:07:54Z`** - sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain
+- **`sn71:scoring_commit:2026-09-19T21:06:10Z`** - sn71 commit touches scoring: Retry proved miner-funded Responses throttles
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,10 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn25:scoring_commit:2026-09-12T19:54:30Z` | 25 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn25 commit touches scoring: Record sim-testnet validator and contract generation results |
-| `sn71:scoring_commit:2026-09-12T17:00:23Z` | 71 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn71 commit touches scoring: Verify participation with shared-owner Arena admissions |
-| `sn78:scoring_commit:2026-09-12T20:29:58Z` | 78 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn78 commit touches scoring: Document live-miner bridge activation and finalized reward evidence |
-| `sn81:scoring_commit:2026-09-12T21:14:17Z` | 81 | SCORING_COMMIT | 2026-09-12T21:32:22Z | sn81 commit touches scoring: fix(validator): qualify proof lanes and partial rotations |
 | `sn15:release:v2.0.7` | 15 | RELEASE | 2026-09-12T23:27:19Z | sn15 released v2.0.7 |
 | `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
 | `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
@@ -247,7 +243,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:scoring_commit:2026-09-19T15:53:33Z` | 11 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn11 commit touches scoring: docs: Season 2 pass over the public docs (README rewritten, MINER_GUI… |
 | `sn34:scoring_commit:2026-09-19T17:11:58Z` | 34 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn34 commit touches scoring: Merge testnet into reward fix; retain release version 5.0.8 |
 | `sn71:scoring_commit:2026-09-19T15:00:49Z` | 71 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn71 commit touches scoring: Route Luna across verified Azure regions |
-| `sn71:readme_task_diff:d368671e8866d097` | 71 | README_TASK_DIFF | 2026-09-12T21:32:22Z | sn71 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-09-19T19:29:32Z` | 25 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn25 commit touches scoring: Read retained validator runtime through reviewed history |
+| `sn78:scoring_commit:2026-09-19T18:07:54Z` | 78 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |

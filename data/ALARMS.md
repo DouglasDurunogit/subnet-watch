@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-20T17:02:45Z, block 9110116
+# ALARMS - generated 2026-09-20T19:24:37Z, block 9110818
 
-window: first_seen in [2026-09-20T15:48:14Z, 2026-09-20T17:03:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-20T18:10:08Z, 2026-09-20T19:25:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-20T16:53:41Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T17:03:14Z | sn71 commit touches scoring: Expose public scoring validator attribution |
+| `sn71:scoring_commit:2026-09-20T18:33:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T19:25:08Z | sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes |
+| `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | P1 | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-20T16:53:41Z`** - sn71 commit touches scoring: Expose public scoring validator attribution
+- **`sn71:scoring_commit:2026-09-20T18:33:27Z`** - sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:release:Open competition miner bundle v1 (feed c`** - sn78 released Open competition miner bundle v1 (feed config + pinned artifacts)
+  - published 2026-09-20T17:08:55Z (was SN78 direct bootstrap cutover v1 inputs)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn125:burn_drop:0.000` | 125 | BURN_DROP | 2026-09-13T19:00:00Z | sn125 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -35,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
-| `sn71:scoring_commit:2026-09-13T16:53:24Z` | 71 | SCORING_COMMIT | 2026-09-13T19:00:00Z | sn71 commit touches scoring: Bind stage two recovery to tested scorer image |
-| `sn78:scoring_commit:2026-09-13T18:55:26Z` | 78 | SCORING_COMMIT | 2026-09-13T19:00:00Z | sn78 commit touches scoring: Merge pull request #64 from Umi-BitSign/codex/endpoint-paired-evaluat… |
 | `sn15:release:v2.0.10: Capture complete episode resour` | 15 | RELEASE | 2026-09-13T21:25:03Z | sn15 released v2.0.10: Capture complete episode resource telemetry (#298) |
 | `sn15:scoring_commit:2026-09-13T21:09:59Z` | 15 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn15 commit touches scoring: Use SDK transient status classification for validator retries (#299) |
 | `sn78:scoring_commit:2026-09-13T21:00:59Z` | 78 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn78 commit touches scoring: Merge pull request #65 from Umi-BitSign/codex/competition-evaluator-l… |
@@ -236,6 +236,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:release:v0.7.1` | 11 | RELEASE | 2026-09-20T13:45:04Z | sn11 released v0.7.1 |
 | `sn21:scoring_commit:2026-09-20T12:01:04Z` | 21 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num… |
 | `sn71:scoring_commit:2026-09-20T13:21:27Z` | 71 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn71 commit touches scoring: test(arena): reject unrelated score failures |
+| `sn71:scoring_commit:2026-09-20T16:53:41Z` | 71 | SCORING_COMMIT | 2026-09-20T17:03:14Z | sn71 commit touches scoring: Expose public scoring validator attribution |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |

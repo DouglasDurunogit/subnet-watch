@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-20T19:24:37Z, block 9110818
+# ALARMS - generated 2026-09-20T21:44:55Z, block 9111519
 
-window: first_seen in [2026-09-20T18:10:08Z, 2026-09-20T19:25:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-20T20:30:24Z, 2026-09-20T21:45:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,22 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-20T18:33:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T19:25:08Z | sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes |
-| `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | P1 | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
+| `sn108:burn_drop:0.000` | 108 | BURN_DROP | P0 | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn25:scoring_commit:2026-09-20T20:10:20Z` | 25 | SCORING_COMMIT | P1 | 2026-09-20T21:45:24Z | sn25 commit touches scoring: validator: admit reviewed successor on provisional recovery |
+| `sn71:scoring_commit:2026-09-20T20:50:07Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T21:45:24Z | sn71 commit touches scoring: Fix normal validator scoring preflight and Webshare setup |
+| `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | P2 | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-20T18:33:27Z`** - sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes
+- **`sn108:burn_drop:0.000`** - sn108 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:scoring_commit:2026-09-20T20:10:20Z`** - sn25 commit touches scoring: validator: admit reviewed successor on provisional recovery
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:release:Open competition miner bundle v1 (feed c`** - sn78 released Open competition miner bundle v1 (feed config + pinned artifacts)
-  - published 2026-09-20T17:08:55Z (was SN78 direct bootstrap cutover v1 inputs)
+- **`sn71:scoring_commit:2026-09-20T20:50:07Z`** - sn71 commit touches scoring: Fix normal validator scoring preflight and Webshare setup
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:2291f503cdbc7816`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn47:burn_drop:0.000` | 47 | BURN_DROP | 2026-09-13T21:25:03Z | sn47 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn99:burn_drop:0.150` | 99 | BURN_DROP | 2026-09-13T21:25:03Z | sn99 burn fell 1.000 -> 0.150 - miners can earn again |
 | `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
@@ -37,10 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
-| `sn15:release:v2.0.10: Capture complete episode resour` | 15 | RELEASE | 2026-09-13T21:25:03Z | sn15 released v2.0.10: Capture complete episode resource telemetry (#298) |
-| `sn15:scoring_commit:2026-09-13T21:09:59Z` | 15 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn15 commit touches scoring: Use SDK transient status classification for validator retries (#299) |
-| `sn78:scoring_commit:2026-09-13T21:00:59Z` | 78 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn78 commit touches scoring: Merge pull request #65 from Umi-BitSign/codex/competition-evaluator-l… |
-| `sn81:scoring_commit:2026-09-13T21:01:46Z` | 81 | SCORING_COMMIT | 2026-09-13T21:25:03Z | sn81 commit touches scoring: feat(validator): explain V1 selection verdicts |
 | `sn15:release:v2.0.11: fix: preserve episode inference` | 15 | RELEASE | 2026-09-13T23:21:49Z | sn15 released v2.0.11: fix: preserve episode inference telemetry without sidecar (#300) |
 | `sn71:scoring_commit:2026-09-13T22:16:51Z` | 71 | SCORING_COMMIT | 2026-09-13T23:21:49Z | sn71 commit touches scoring: Match verified US contact state aliases |
 | `sn78:scoring_commit:2026-09-13T21:56:31Z` | 78 | SCORING_COMMIT | 2026-09-13T23:21:49Z | sn78 commit touches scoring: Connect independent work signing and automatic evaluator order deliver |
@@ -237,6 +237,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:scoring_commit:2026-09-20T12:01:04Z` | 21 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num… |
 | `sn71:scoring_commit:2026-09-20T13:21:27Z` | 71 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn71 commit touches scoring: test(arena): reject unrelated score failures |
 | `sn71:scoring_commit:2026-09-20T16:53:41Z` | 71 | SCORING_COMMIT | 2026-09-20T17:03:14Z | sn71 commit touches scoring: Expose public scoring validator attribution |
+| `sn71:scoring_commit:2026-09-20T18:33:27Z` | 71 | SCORING_COMMIT | 2026-09-20T19:25:08Z | sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes |
+| `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |

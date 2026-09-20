@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-20T04:51:57Z, block 9106517
+# ALARMS - generated 2026-09-20T09:45:10Z, block 9107962
 
-window: first_seen in [2026-09-20T03:37:31Z, 2026-09-20T04:52:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-20T08:30:43Z, 2026-09-20T09:45:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-20T04:44:07Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T04:52:31Z | sn71 commit touches scoring: Seal September 20 verifier and runtime recovery |
+| `sn11:burn_drop:0.000` | 11 | BURN_DROP | P0 | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn71:scoring_commit:2026-09-20T09:37:09Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay |
+| `sn78:scoring_commit:2026-09-20T06:21:53Z` | 78 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn78 commit touches scoring: Reuse validated reserved publications across a signing round |
+| `sn91:scoring_commit:2026-09-20T07:38:07Z` | 91 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on … |
+| `sn100:scoring_commit:2026-09-20T08:42:49Z` | 100 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-20T04:44:07Z`** - sn71 commit touches scoring: Seal September 20 verifier and runtime recovery
+- **`sn11:burn_drop:0.000`** - sn11 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-09-20T09:37:09Z`** - sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-09-20T06:21:53Z`** - sn78 commit touches scoring: Reuse validated reserved publications across a signing round
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-09-20T07:38:07Z`** - sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-09-20T08:42:49Z`** - sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -33,10 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn15:release:v2.0.8` | 15 | RELEASE | 2026-09-13T06:30:50Z | sn15 released v2.0.8 |
-| `sn15:scoring_commit:2026-09-13T04:37:49Z` | 15 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.14 (claim tool-schema vocab… |
-| `sn53:scoring_commit:2026-09-13T04:12:59Z` | 53 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn53 commit touches scoring: Merge pull request #45 from hanlinai/fix/tee-miner-kv-pool-retry |
-| `sn78:scoring_commit:2026-09-13T02:33:24Z` | 78 | SCORING_COMMIT | 2026-09-13T06:30:50Z | sn78 commit touches scoring: Record finalized funding-cap rollout on both validators |
 | `sn15:release:v2.0.9` | 15 | RELEASE | 2026-09-13T12:20:01Z | sn15 released v2.0.9 |
 | `sn61:release:4.10.5` | 61 | RELEASE | 2026-09-13T12:20:01Z | sn61 released 4.10.5 |
 | `sn61:scoring_commit:2026-09-13T07:47:58Z` | 61 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.3 |
@@ -239,7 +247,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:scoring_commit:2026-09-19T20:43:16Z` | 11 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-… |
 | `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
 | `sn74:release:release-20260919-231145` | 74 | RELEASE | 2026-09-20T00:07:19Z | sn74 released release-20260919-231145 |
-| `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-20T04:44:07Z` | 71 | SCORING_COMMIT | 2026-09-20T04:52:31Z | sn71 commit touches scoring: Seal September 20 verifier and runtime recovery |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |

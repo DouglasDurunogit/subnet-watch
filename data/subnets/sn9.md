@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-09-20T09:45:10Z  |  block: 9107962  |  row_status: ok
+snapshot_utc: 2026-09-20T13:44:37Z  |  block: 9109135  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.44000100693665445**
-- registration cost: 0.0005 TAO (0.12724 USD), open=True
+- miner_burn: **0.44000100647099316**
+- registration cost: 0.0005 TAO (0.125445 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 1058.1 days  |  registered at block 1489797
+- subnet age: 1058.2 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 11296.23959805965** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 10085.939205690087
-- top_miner_usd_day: 11296.23959805965 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 11128.661016389891** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 9936.315308974292
+- top_miner_usd_day: 11128.661016389891 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-20T09:45:10Z  |  block: 9107962  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 11288.0204 USD/day  |  payback on registration: 0.0 days
+- net margin: 11120.4418 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 55.9 (rank 22), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 36.86 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 1.8d ago
+- score: 55.8 (rank 20), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 36.8 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 2.0d ago
 
 ## On-chain description
 

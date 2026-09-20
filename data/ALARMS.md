@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-20T09:45:10Z, block 9107962
+# ALARMS - generated 2026-09-20T13:44:37Z, block 9109135
 
-window: first_seen in [2026-09-20T08:30:43Z, 2026-09-20T09:45:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-20T12:30:04Z, 2026-09-20T13:45:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:burn_drop:0.000` | 11 | BURN_DROP | P0 | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-09-20T09:37:09Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay |
-| `sn78:scoring_commit:2026-09-20T06:21:53Z` | 78 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn78 commit touches scoring: Reuse validated reserved publications across a signing round |
-| `sn91:scoring_commit:2026-09-20T07:38:07Z` | 91 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on … |
-| `sn100:scoring_commit:2026-09-20T08:42:49Z` | 100 | SCORING_COMMIT | P1 | 2026-09-20T09:45:43Z | sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards |
+| `sn71:burn_drop:0.750` | 71 | BURN_DROP | P0 | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
+| `sn11:release:v0.7.1` | 11 | RELEASE | P1 | 2026-09-20T13:45:04Z | sn11 released v0.7.1 |
+| `sn21:scoring_commit:2026-09-20T12:01:04Z` | 21 | SCORING_COMMIT | P1 | 2026-09-20T13:45:04Z | sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num… |
+| `sn71:scoring_commit:2026-09-20T13:21:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T13:45:04Z | sn71 commit touches scoring: test(arena): reject unrelated score failures |
 
 ### detail
 
-- **`sn11:burn_drop:0.000`** - sn11 burn fell 1.000 -> 0.000 - miners can earn again
+- **`sn71:burn_drop:0.750`** - sn71 burn fell 1.000 -> 0.750 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-09-20T09:37:09Z`** - sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay
+- **`sn11:release:v0.7.1`** - sn11 released v0.7.1
+  - published 2026-09-20T10:56:49Z (was v0.7.0)
+- **`sn21:scoring_commit:2026-09-20T12:01:04Z`** - sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-20T06:21:53Z`** - sn78 commit touches scoring: Reuse validated reserved publications across a signing round
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-20T07:38:07Z`** - sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-20T08:42:49Z`** - sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards
+- **`sn71:scoring_commit:2026-09-20T13:21:27Z`** - sn71 commit touches scoring: test(arena): reject unrelated score failures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,14 +42,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn15:release:v2.0.9` | 15 | RELEASE | 2026-09-13T12:20:01Z | sn15 released v2.0.9 |
-| `sn61:release:4.10.5` | 61 | RELEASE | 2026-09-13T12:20:01Z | sn61 released 4.10.5 |
-| `sn61:scoring_commit:2026-09-13T07:47:58Z` | 61 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.3 |
-| `sn71:scoring_commit:2026-09-13T09:49:04Z` | 71 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn71 commit touches scoring: Bind recovered Arena future stages to the corrected scorer |
-| `sn78:scoring_commit:2026-09-13T06:02:29Z` | 78 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn78 commit touches scoring: Accept the verified stopped successor during interrupted publication … |
-| `sn81:scoring_commit:2026-09-13T09:02:00Z` | 81 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn81 commit touches scoring: fix: bound validator startup memory (#255) |
-| `sn91:scoring_commit:2026-09-13T10:23:14Z` | 91 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn91 commit touches scoring: pool: publish packs mv_channels iff effective_block >= [scoring] mv_s… |
-| `sn100:scoring_commit:2026-09-13T09:53:24Z` | 100 | SCORING_COMMIT | 2026-09-13T12:20:01Z | sn100 commit touches scoring: docs(proof): keep miner tbench rebake pin after skew-hint copy |
+| `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn78:scoring_commit:2026-09-13T15:50:06Z` | 78 | SCORING_COMMIT | 2026-09-13T16:33:13Z | sn78 commit touches scoring: Merge pull request #61 from Umi-BitSign/codex/miner-readiness-20260913 |
 | `sn71:scoring_commit:2026-09-13T16:53:24Z` | 71 | SCORING_COMMIT | 2026-09-13T19:00:00Z | sn71 commit touches scoring: Bind stage two recovery to tested scorer image |
 | `sn78:scoring_commit:2026-09-13T18:55:26Z` | 78 | SCORING_COMMIT | 2026-09-13T19:00:00Z | sn78 commit touches scoring: Merge pull request #64 from Umi-BitSign/codex/endpoint-paired-evaluat… |
@@ -248,6 +238,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
 | `sn74:release:release-20260919-231145` | 74 | RELEASE | 2026-09-20T00:07:19Z | sn74 released release-20260919-231145 |
 | `sn71:scoring_commit:2026-09-20T04:44:07Z` | 71 | SCORING_COMMIT | 2026-09-20T04:52:31Z | sn71 commit touches scoring: Seal September 20 verifier and runtime recovery |
+| `sn71:scoring_commit:2026-09-20T09:37:09Z` | 71 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay |
+| `sn78:scoring_commit:2026-09-20T06:21:53Z` | 78 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn78 commit touches scoring: Reuse validated reserved publications across a signing round |
+| `sn91:scoring_commit:2026-09-20T07:38:07Z` | 91 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on … |
+| `sn100:scoring_commit:2026-09-20T08:42:49Z` | 100 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |

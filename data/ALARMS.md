@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-19T21:47:42Z, block 9104420
+# ALARMS - generated 2026-09-20T00:06:54Z, block 9105108
 
-window: first_seen in [2026-09-19T20:33:06Z, 2026-09-19T21:48:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-19T22:52:19Z, 2026-09-20T00:07:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:scoring_commit:2026-09-19T20:43:16Z` | 11 | SCORING_COMMIT | P1 | 2026-09-19T21:48:06Z | sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-… |
-| `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | P1 | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
+| `sn74:release:release-20260919-231145` | 74 | RELEASE | P1 | 2026-09-20T00:07:19Z | sn74 released release-20260919-231145 |
 
 ### detail
 
-- **`sn11:scoring_commit:2026-09-19T20:43:16Z`** - sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-19T21:06:10Z`** - sn71 commit touches scoring: Retry proved miner-funded Responses throttles
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260919-231145`** - sn74 released release-20260919-231145
+  - published 2026-09-19T23:00:59Z (was release-20260918-164355)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,10 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
-| `sn15:release:v2.0.7` | 15 | RELEASE | 2026-09-12T23:27:19Z | sn15 released v2.0.7 |
-| `sn15:scoring_commit:2026-09-12T22:23:01Z` | 15 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn15 commit touches scoring: chore(validator): pin oro-env-runtime 0.2.13 (justification + recover… |
-| `sn25:scoring_commit:2026-09-12T22:03:18Z` | 25 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn25 commit touches scoring: Bind historical reward batch RPCs to capture cancellation |
-| `sn78:scoring_commit:2026-09-12T22:27:05Z` | 78 | SCORING_COMMIT | 2026-09-12T23:27:19Z | sn78 commit touches scoring: Point new validator installations at the IP-cap host release |
 | `sn91:scoring_commit:2026-09-12T23:55:31Z` | 91 | SCORING_COMMIT | 2026-09-13T01:22:07Z | sn91 commit touches scoring: provision: pin the Lium pull by digest and verify worker CODE before … |
 | `sn100:scoring_commit:2026-09-13T00:05:10Z` | 100 | SCORING_COMMIT | 2026-09-13T01:22:07Z | sn100 commit touches scoring: fix(proof): align results_path validation across hosts |
 | `sn15:release:v2.0.8` | 15 | RELEASE | 2026-09-13T06:30:50Z | sn15 released v2.0.8 |
@@ -245,6 +238,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-19T15:00:49Z` | 71 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn71 commit touches scoring: Route Luna across verified Azure regions |
 | `sn25:scoring_commit:2026-09-19T19:29:32Z` | 25 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn25 commit touches scoring: Read retained validator runtime through reviewed history |
 | `sn78:scoring_commit:2026-09-19T18:07:54Z` | 78 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain |
+| `sn11:scoring_commit:2026-09-19T20:43:16Z` | 11 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-… |
+| `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
 | `sn71:readme_task_diff:2b78fd54843d3b86` | 71 | README_TASK_DIFF | 2026-09-13T06:30:50Z | sn71 README task/scoring sections changed |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |

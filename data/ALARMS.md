@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-21T07:15:26Z, block 9114372
+# ALARMS - generated 2026-09-21T14:25:35Z, block 9116523
 
-window: first_seen in [2026-09-21T06:00:57Z, 2026-09-21T07:15:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-21T13:11:07Z, 2026-09-21T14:26:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:release:v0.7.3` | 11 | RELEASE | P1 | 2026-09-21T07:15:57Z | sn11 released v0.7.3 |
-| `sn11:scoring_commit:2026-09-21T05:24:33Z` | 11 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi… |
-| `sn51:release:executor-v1.132` | 51 | RELEASE | P1 | 2026-09-21T07:15:57Z | sn51 released executor-v1.132 |
-| `sn51:scoring_commit:2026-09-21T06:05:21Z` | 51 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of… |
-| `sn71:scoring_commit:2026-09-21T04:53:08Z` | 71 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn71 commit touches scoring: Keep single contact role ID validation simple |
+| `sn15:release:v2.0.28: chore(validator): split hosted ` | 15 | RELEASE | P1 | 2026-09-21T14:26:07Z | sn15 released v2.0.28: chore(validator): split hosted and local runtime profiles (#327) |
+| `sn15:scoring_commit:2026-09-21T07:54:54Z` | 15 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn15 commit touches scoring: chore(validator): split hosted and local runtime profiles (#327) |
+| `sn25:release:v2026.9.21-1051772980` | 25 | RELEASE | P1 | 2026-09-21T14:26:07Z | sn25 released v2026.9.21-1051772980 |
+| `sn25:scoring_commit:2026-09-21T13:11:56Z` | 25 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn25 commit touches scoring: Avoid whole-fleet rendering in validator authority fixtures |
+| `sn28:release:v0.4.20-dev` | 28 | RELEASE | P1 | 2026-09-21T14:26:07Z | sn28 released v0.4.20-dev |
+| `sn28:scoring_commit:2026-09-21T12:54:53Z` | 28 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn28 commit touches scoring: chore: prepare KubeTEE FLUX miner release 0.4.20-dev |
+| `sn38:scoring_commit:2026-09-21T13:25:08Z` | 38 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn38 commit touches scoring: fix: increase max_new_tokens from 50 to 100 for quality evaluation |
+| `sn51:release:executor-v1.133` | 51 | RELEASE | P1 | 2026-09-21T14:26:07Z | sn51 released executor-v1.133 |
+| `sn51:scoring_commit:2026-09-21T08:36:29Z` | 51 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn51 commit touches scoring: DAH-3678 - [P2] validator: explain add_public_keys failures on exitin… |
+| `sn56:scoring_commit:2026-09-21T13:49:51Z` | 56 | SCORING_COMMIT | P1 | 2026-09-21T14:26:07Z | sn56 commit touches scoring: Keep prep-failed task rows when replacing tournament tasks (#1383) |
 
 ### detail
 
-- **`sn11:release:v0.7.3`** - sn11 released v0.7.3
-  - published 2026-09-21T06:39:32Z (was v0.7.1)
-- **`sn11:scoring_commit:2026-09-21T05:24:33Z`** - sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi…
+- **`sn15:release:v2.0.28: chore(validator): split hosted `** - sn15 released v2.0.28: chore(validator): split hosted and local runtime profiles (#327)
+  - published 2026-09-21T07:54:54Z (was v2.0.27)
+- **`sn15:scoring_commit:2026-09-21T07:54:54Z`** - sn15 commit touches scoring: chore(validator): split hosted and local runtime profiles (#327)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.132`** - sn51 released executor-v1.132
-  - published 2026-09-21T05:46:51Z (was watchtower-v1.1.0)
-- **`sn51:scoring_commit:2026-09-21T06:05:21Z`** - sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of…
+- **`sn25:release:v2026.9.21-1051772980`** - sn25 released v2026.9.21-1051772980
+  - published 2026-09-21T08:00:15Z (was v2026.9.19-1050096260)
+- **`sn25:scoring_commit:2026-09-21T13:11:56Z`** - sn25 commit touches scoring: Avoid whole-fleet rendering in validator authority fixtures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-21T04:53:08Z`** - sn71 commit touches scoring: Keep single contact role ID validation simple
+- **`sn28:release:v0.4.20-dev`** - sn28 released v0.4.20-dev
+  - published 2026-09-21T13:10:16Z (was v0.4.19)
+- **`sn28:scoring_commit:2026-09-21T12:54:53Z`** - sn28 commit touches scoring: chore: prepare KubeTEE FLUX miner release 0.4.20-dev
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn38:scoring_commit:2026-09-21T13:25:08Z`** - sn38 commit touches scoring: fix: increase max_new_tokens from 50 to 100 for quality evaluation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:release:executor-v1.133`** - sn51 released executor-v1.133
+  - published 2026-09-21T09:37:54Z (was executor-v1.132)
+- **`sn51:scoring_commit:2026-09-21T08:36:29Z`** - sn51 commit touches scoring: DAH-3678 - [P2] validator: explain add_public_keys failures on exitin…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn56:scoring_commit:2026-09-21T13:49:51Z`** - sn56 commit touches scoring: Keep prep-failed task rows when replacing tournament tasks (#1383)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn69:burn_drop:0.000` | 69 | BURN_DROP | 2026-09-14T13:23:56Z | sn69 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
@@ -45,18 +59,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:scoring_commit:2026-09-14T07:58:25Z` | 15 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn15 commit touches scoring: chore(validator): bump oro-env-runtime 0.2.14 -> 0.2.18 for new-gener… |
-| `sn25:release:v2026.9.14-1045806490` | 25 | RELEASE | 2026-09-14T13:23:56Z | sn25 released v2026.9.14-1045806490 |
-| `sn25:scoring_commit:2026-09-14T08:31:58Z` | 25 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn25 commit touches scoring: Validate capture ownership against growing source census |
-| `sn28:scoring_commit:2026-09-14T11:05:56Z` | 28 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn28 commit touches scoring: refactor(near): fold the path check into request validation |
-| `sn38:scoring_commit:2026-09-14T12:58:13Z` | 38 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
-| `sn51:release:executor-v1.128` | 51 | RELEASE | 2026-09-14T13:23:56Z | sn51 released executor-v1.128 |
-| `sn51:scoring_commit:2026-09-14T13:17:55Z` | 51 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn51 commit touches scoring: DAH-3247 - [P1] lium_protocol: the validator↔backend wire as one vers… |
-| `sn67:scoring_commit:2026-09-14T10:53:38Z` | 67 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260914.post5 |
-| `sn78:scoring_commit:2026-09-14T11:54:17Z` | 78 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn78 commit touches scoring: Prioritize pending evaluator evidence over retained upload audits |
-| `sn91:scoring_commit:2026-09-14T11:24:34Z` | 91 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn91 commit touches scoring: Merge pull request #278 from TensorLink-AI/docs/miner-docs-simplify |
-| `sn111:scoring_commit:2026-09-14T12:16:34Z` | 111 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn111 commit touches scoring: fix(validator): attribute dendrite failures to miner UIDs |
-| `sn114:scoring_commit:2026-09-14T10:40:48Z` | 114 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn114 commit touches scoring: add default config value for validator |
 | `sn1:release:v4.4.6` | 1 | RELEASE | 2026-09-14T18:48:49Z | sn1 released v4.4.6 |
 | `sn21:scoring_commit:2026-09-14T14:13:22Z` | 21 | SCORING_COMMIT | 2026-09-14T18:48:49Z | sn21 commit touches scoring: scoring: the settle schedule is 10 / 17 / 31 days after the basket; p… |
 | `sn25:release:v2026.9.14-1046068620` | 25 | RELEASE | 2026-09-14T18:48:49Z | sn25 released v2026.9.14-1046068620 |
@@ -234,10 +236,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-20T22:32:29Z` | 25 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn25 commit touches scoring: validator: preserve client key batch steering budget |
 | `sn71:scoring_commit:2026-09-20T23:04:23Z` | 71 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn71 commit touches scoring: fix: keep unrelated verifier guidance out of source budget |
 | `sn74:release:release-20260920-225500` | 74 | RELEASE | 2026-09-20T23:36:36Z | sn74 released release-20260920-225500 |
-| `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
-| `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
-| `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |
-| `sn91:readme_task_diff:9c8c6d309a9f02a7` | 91 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn91 README task/scoring sections changed |
+| `sn11:release:v0.7.3` | 11 | RELEASE | 2026-09-21T07:15:57Z | sn11 released v0.7.3 |
+| `sn11:scoring_commit:2026-09-21T05:24:33Z` | 11 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi… |
+| `sn51:release:executor-v1.132` | 51 | RELEASE | 2026-09-21T07:15:57Z | sn51 released executor-v1.132 |
+| `sn51:scoring_commit:2026-09-21T06:05:21Z` | 51 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of… |
+| `sn71:scoring_commit:2026-09-21T04:53:08Z` | 71 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn71 commit touches scoring: Keep single contact role ID validation simple |
 | `sn40:readme_task_diff:e5e91c3bf216a40b` | 40 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn40 README task/scoring sections changed |
 | `sn90:readme_task_diff:e7ec7e8de55efc5a` | 90 | README_TASK_DIFF | 2026-09-14T18:48:49Z | sn90 README task/scoring sections changed |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |

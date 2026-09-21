@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-21T19:39:59Z, block 9118095
+# ALARMS - generated 2026-09-21T22:50:33Z, block 9119048
 
-window: first_seen in [2026-09-21T18:25:22Z, 2026-09-21T19:40:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-21T21:36:06Z, 2026-09-21T22:51:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,56 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.810` | 10 | BURN_DROP | P0 | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
-| `sn10:scoring_commit:2026-09-19T07:04:13Z` | 10 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn10 commit touches scoring: fix(bench): validate both baselines before candidate grading |
-| `sn14:scoring_commit:2026-09-21T16:03:35Z` | 14 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn14 commit touches scoring: Merge pull request #120 from latent-to/release/reward-clock-inclusion… |
-| `sn15:scoring_commit:2026-09-21T18:14:18Z` | 15 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn15 commit touches scoring: fix(validator): fail fast on invalid preflight config (#328) |
-| `sn21:scoring_commit:2026-09-21T16:31:00Z` | 21 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn21 commit touches scoring: verify: the grouping recheck narrows to the same rows the run read |
-| `sn26:scoring_commit:2026-09-21T13:03:03Z` | 26 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn26 commit touches scoring: feat: report model evaluations in the training/evaluations API schema |
-| `sn28:release:v0.4.20` | 28 | RELEASE | P1 | 2026-09-21T19:40:22Z | sn28 released v0.4.20 |
-| `sn28:scoring_commit:2026-09-21T16:14:48Z` | 28 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.20 |
-| `sn33:scoring_commit:2026-09-21T16:36:04Z` | 33 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn33 commit touches scoring: Merge pull request #137 from afterpartyai/adjust-put-task-ordering |
-| `sn71:scoring_commit:2026-09-21T16:02:14Z` | 71 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn71 commit touches scoring: docs: use validators consistently in setup guides |
-| `sn78:scoring_commit:2026-09-21T17:50:38Z` | 78 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn78 commit touches scoring: Validate continuous intake status and readiness in the public monitor… |
-| `sn102:release:v0.6.3` | 102 | RELEASE | P1 | 2026-09-21T19:40:22Z | sn102 released v0.6.3 |
-| `sn120:scoring_commit:2026-09-21T14:37:50Z` | 120 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn120 commit touches scoring: eval_client/validator: upstream 5xx / transport / stream-loss are inf… |
-| `sn124:scoring_commit:2026-09-21T13:13:22Z` | 124 | SCORING_COMMIT | P1 | 2026-09-21T19:40:22Z | sn124 commit touches scoring: Merge pull request #159 from swarm-subnet/feature/ali/validator-image |
-| `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | P2 | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
-| `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | P2 | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
+| `sn62:release:v0.3.6` | 62 | RELEASE | P1 | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
+| `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | P1 | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
+| `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | P1 | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
+| `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | P2 | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:burn_drop:0.810`** - sn10 burn fell 1.000 -> 0.810 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn10:scoring_commit:2026-09-19T07:04:13Z`** - sn10 commit touches scoring: fix(bench): validate both baselines before candidate grading
+- **`sn62:release:v0.3.6`** - sn62 released v0.3.6
+  - published 2026-09-21T21:44:10Z (was v0.3.5)
+- **`sn100:scoring_commit:2026-09-21T19:49:44Z`** - sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn14:scoring_commit:2026-09-21T16:03:35Z`** - sn14 commit touches scoring: Merge pull request #120 from latent-to/release/reward-clock-inclusion…
+- **`sn120:scoring_commit:2026-09-21T21:22:20Z`** - sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:scoring_commit:2026-09-21T18:14:18Z`** - sn15 commit touches scoring: fix(validator): fail fast on invalid preflight config (#328)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-09-21T16:31:00Z`** - sn21 commit touches scoring: verify: the grouping recheck narrows to the same rows the run read
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:scoring_commit:2026-09-21T13:03:03Z`** - sn26 commit touches scoring: feat: report model evaluations in the training/evaluations API schema
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.20`** - sn28 released v0.4.20
-  - published 2026-09-21T16:42:17Z (was v0.4.20-dev)
-- **`sn28:scoring_commit:2026-09-21T16:14:48Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.20
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn33:scoring_commit:2026-09-21T16:36:04Z`** - sn33 commit touches scoring: Merge pull request #137 from afterpartyai/adjust-put-task-ordering
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-21T16:02:14Z`** - sn71 commit touches scoring: docs: use validators consistently in setup guides
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-09-21T17:50:38Z`** - sn78 commit touches scoring: Validate continuous intake status and readiness in the public monitor…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.6.3`** - sn102 released v0.6.3
-  - published 2026-09-21T14:51:35Z (was v0.6.2)
-- **`sn120:scoring_commit:2026-09-21T14:37:50Z`** - sn120 commit touches scoring: eval_client/validator: upstream 5xx / transport / stream-loss are inf…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-09-21T13:13:22Z`** - sn124 commit touches scoring: Merge pull request #159 from swarm-subnet/feature/ali/validator-image
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:readme_task_diff:aba46e7645c1a7ed`** - sn26 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn71:readme_task_diff:7438252e1ccc736e`** - sn71 README task/scoring sections changed
+- **`sn66:readme_task_diff:8a675979eb4c570a`** - sn66 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -77,11 +41,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn62:scoring_commit:2026-09-14T18:42:44Z` | 62 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn62 commit touches scoring: add PublicEvaluationRun model |
-| `sn71:scoring_commit:2026-09-14T22:21:33Z` | 71 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn71 commit touches scoring: Refresh protected source for verified paragraph coverage |
-| `sn76:scoring_commit:2026-09-14T22:08:23Z` | 76 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn76 commit touches scoring: docs(miner): credential path leads INSTALL/README; bind is the fallba… |
-| `sn78:scoring_commit:2026-09-14T21:24:12Z` | 78 | SCORING_COMMIT | 2026-09-14T22:27:00Z | sn78 commit touches scoring: Publish runtime-independent validator host pin and signed manifests |
-| `sn111:release:v0.2.0` | 111 | RELEASE | 2026-09-14T22:27:00Z | sn111 released v0.2.0 |
+| `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn71:scoring_commit:2026-09-14T23:58:08Z` | 71 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn71 commit touches scoring: Refresh reviewed scorer workflow protections |
 | `sn81:scoring_commit:2026-09-15T00:01:23Z` | 81 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission… |
 | `sn71:scoring_commit:2026-09-15T04:46:46Z` | 71 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn71 commit touches scoring: Preserve declared homepage encodings during company verification |
@@ -259,6 +219,19 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.133` | 51 | RELEASE | 2026-09-21T14:26:07Z | sn51 released executor-v1.133 |
 | `sn51:scoring_commit:2026-09-21T08:36:29Z` | 51 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn51 commit touches scoring: DAH-3678 - [P2] validator: explain add_public_keys failures on exitin… |
 | `sn56:scoring_commit:2026-09-21T13:49:51Z` | 56 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn56 commit touches scoring: Keep prep-failed task rows when replacing tournament tasks (#1383) |
+| `sn10:scoring_commit:2026-09-19T07:04:13Z` | 10 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn10 commit touches scoring: fix(bench): validate both baselines before candidate grading |
+| `sn14:scoring_commit:2026-09-21T16:03:35Z` | 14 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn14 commit touches scoring: Merge pull request #120 from latent-to/release/reward-clock-inclusion… |
+| `sn15:scoring_commit:2026-09-21T18:14:18Z` | 15 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn15 commit touches scoring: fix(validator): fail fast on invalid preflight config (#328) |
+| `sn21:scoring_commit:2026-09-21T16:31:00Z` | 21 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn21 commit touches scoring: verify: the grouping recheck narrows to the same rows the run read |
+| `sn26:scoring_commit:2026-09-21T13:03:03Z` | 26 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn26 commit touches scoring: feat: report model evaluations in the training/evaluations API schema |
+| `sn28:release:v0.4.20` | 28 | RELEASE | 2026-09-21T19:40:22Z | sn28 released v0.4.20 |
+| `sn28:scoring_commit:2026-09-21T16:14:48Z` | 28 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.20 |
+| `sn33:scoring_commit:2026-09-21T16:36:04Z` | 33 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn33 commit touches scoring: Merge pull request #137 from afterpartyai/adjust-put-task-ordering |
+| `sn71:scoring_commit:2026-09-21T16:02:14Z` | 71 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn71 commit touches scoring: docs: use validators consistently in setup guides |
+| `sn78:scoring_commit:2026-09-21T17:50:38Z` | 78 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn78 commit touches scoring: Validate continuous intake status and readiness in the public monitor… |
+| `sn102:release:v0.6.3` | 102 | RELEASE | 2026-09-21T19:40:22Z | sn102 released v0.6.3 |
+| `sn120:scoring_commit:2026-09-21T14:37:50Z` | 120 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn120 commit touches scoring: eval_client/validator: upstream 5xx / transport / stream-loss are inf… |
+| `sn124:scoring_commit:2026-09-21T13:13:22Z` | 124 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn124 commit touches scoring: Merge pull request #159 from swarm-subnet/feature/ali/validator-image |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
@@ -269,6 +242,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
+| `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
+| `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

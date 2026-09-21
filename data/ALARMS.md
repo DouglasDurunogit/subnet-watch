@@ -1,13 +1,32 @@
-# ALARMS - generated 2026-09-21T01:44:01Z, block 9112715
+# ALARMS - generated 2026-09-21T07:15:26Z, block 9114372
 
-window: first_seen in [2026-09-21T00:29:26Z, 2026-09-21T01:44:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-21T06:00:57Z, 2026-09-21T07:15:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn11:release:v0.7.3` | 11 | RELEASE | P1 | 2026-09-21T07:15:57Z | sn11 released v0.7.3 |
+| `sn11:scoring_commit:2026-09-21T05:24:33Z` | 11 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi… |
+| `sn51:release:executor-v1.132` | 51 | RELEASE | P1 | 2026-09-21T07:15:57Z | sn51 released executor-v1.132 |
+| `sn51:scoring_commit:2026-09-21T06:05:21Z` | 51 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of… |
+| `sn71:scoring_commit:2026-09-21T04:53:08Z` | 71 | SCORING_COMMIT | P1 | 2026-09-21T07:15:57Z | sn71 commit touches scoring: Keep single contact role ID validation simple |
+
+### detail
+
+- **`sn11:release:v0.7.3`** - sn11 released v0.7.3
+  - published 2026-09-21T06:39:32Z (was v0.7.1)
+- **`sn11:scoring_commit:2026-09-21T05:24:33Z`** - sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:release:executor-v1.132`** - sn51 released executor-v1.132
+  - published 2026-09-21T05:46:51Z (was watchtower-v1.1.0)
+- **`sn51:scoring_commit:2026-09-21T06:05:21Z`** - sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-21T04:53:08Z`** - sn71 commit touches scoring: Keep single contact role ID validation simple
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -26,13 +45,6 @@ _none_
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.14: feat: capture per-episode wall ` | 15 | RELEASE | 2026-09-14T06:42:05Z | sn15 released v2.0.14: feat: capture per-episode wall time (#304) |
-| `sn15:scoring_commit:2026-09-14T04:01:53Z` | 15 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn15 commit touches scoring: fix: reject any generated evaluation infrastructure error (#303) |
-| `sn25:release:v2026.9.13-1045655440` | 25 | RELEASE | 2026-09-14T06:42:05Z | sn25 released v2026.9.13-1045655440 |
-| `sn71:scoring_commit:2026-09-14T05:15:09Z` | 71 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn71 commit touches scoring: Retain native provider billing receipts and align scoring timeouts |
-| `sn78:scoring_commit:2026-09-14T05:26:34Z` | 78 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn78 commit touches scoring: docs: use private holdout for automatic competition evaluation |
-| `sn81:scoring_commit:2026-09-14T04:57:45Z` | 81 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn81 commit touches scoring: Warn miners about Transformers runtime differences |
-| `sn91:scoring_commit:2026-09-14T02:21:06Z` | 91 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn91 commit touches scoring: feat(funding): miner-chosen submission label (`cascade fund --label`) |
 | `sn15:scoring_commit:2026-09-14T07:58:25Z` | 15 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn15 commit touches scoring: chore(validator): bump oro-env-runtime 0.2.14 -> 0.2.18 for new-gener… |
 | `sn25:release:v2026.9.14-1045806490` | 25 | RELEASE | 2026-09-14T13:23:56Z | sn25 released v2026.9.14-1045806490 |
 | `sn25:scoring_commit:2026-09-14T08:31:58Z` | 25 | SCORING_COMMIT | 2026-09-14T13:23:56Z | sn25 commit touches scoring: Validate capture ownership against growing source census |

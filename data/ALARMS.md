@@ -1,26 +1,13 @@
-# ALARMS - generated 2026-09-20T23:36:04Z, block 9112075
+# ALARMS - generated 2026-09-21T01:44:01Z, block 9112715
 
-window: first_seen in [2026-09-20T22:21:36Z, 2026-09-20T23:36:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-21T00:29:26Z, 2026-09-21T01:44:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-20T22:32:29Z` | 25 | SCORING_COMMIT | P1 | 2026-09-20T23:36:36Z | sn25 commit touches scoring: validator: preserve client key batch steering budget |
-| `sn71:scoring_commit:2026-09-20T23:04:23Z` | 71 | SCORING_COMMIT | P1 | 2026-09-20T23:36:36Z | sn71 commit touches scoring: fix: keep unrelated verifier guidance out of source budget |
-| `sn74:release:release-20260920-225500` | 74 | RELEASE | P1 | 2026-09-20T23:36:36Z | sn74 released release-20260920-225500 |
-
-### detail
-
-- **`sn25:scoring_commit:2026-09-20T22:32:29Z`** - sn25 commit touches scoring: validator: preserve client key batch steering budget
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-20T23:04:23Z`** - sn71 commit touches scoring: fix: keep unrelated verifier guidance out of source budget
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260920-225500`** - sn74 released release-20260920-225500
-  - published 2026-09-20T22:54:14Z (was release-20260919-231145)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,10 +26,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.12` | 15 | RELEASE | 2026-09-14T01:21:09Z | sn15 released v2.0.12 |
-| `sn15:scoring_commit:2026-09-13T23:48:08Z` | 15 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn15 commit touches scoring: fix: make validator startup logs formatting-safe (#302) |
-| `sn20:scoring_commit:2026-09-13T20:16:47Z` | 20 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn20 commit touches scoring: Resolve the validator signing key before timed network dispatch |
-| `sn81:scoring_commit:2026-09-14T00:28:08Z` | 81 | SCORING_COMMIT | 2026-09-14T01:21:09Z | sn81 commit touches scoring: fix(weight-only): retain only reward fields from archives (#259) |
 | `sn15:release:v2.0.14: feat: capture per-episode wall ` | 15 | RELEASE | 2026-09-14T06:42:05Z | sn15 released v2.0.14: feat: capture per-episode wall time (#304) |
 | `sn15:scoring_commit:2026-09-14T04:01:53Z` | 15 | SCORING_COMMIT | 2026-09-14T06:42:05Z | sn15 commit touches scoring: fix: reject any generated evaluation infrastructure error (#303) |
 | `sn25:release:v2026.9.13-1045655440` | 25 | RELEASE | 2026-09-14T06:42:05Z | sn25 released v2026.9.13-1045655440 |
@@ -236,6 +219,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
 | `sn25:scoring_commit:2026-09-20T20:10:20Z` | 25 | SCORING_COMMIT | 2026-09-20T21:45:24Z | sn25 commit touches scoring: validator: admit reviewed successor on provisional recovery |
 | `sn71:scoring_commit:2026-09-20T20:50:07Z` | 71 | SCORING_COMMIT | 2026-09-20T21:45:24Z | sn71 commit touches scoring: Fix normal validator scoring preflight and Webshare setup |
+| `sn25:scoring_commit:2026-09-20T22:32:29Z` | 25 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn25 commit touches scoring: validator: preserve client key batch steering budget |
+| `sn71:scoring_commit:2026-09-20T23:04:23Z` | 71 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn71 commit touches scoring: fix: keep unrelated verifier guidance out of source budget |
+| `sn74:release:release-20260920-225500` | 74 | RELEASE | 2026-09-20T23:36:36Z | sn74 released release-20260920-225500 |
 | `sn40:readme_task_diff:03959b1ab90af5c4` | 40 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn40 README task/scoring sections changed |
 | `sn66:readme_task_diff:e6d3eecf74563f7e` | 66 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn66 README task/scoring sections changed |
 | `sn67:readme_task_diff:9c525b1cc53f9b59` | 67 | README_TASK_DIFF | 2026-09-14T13:23:56Z | sn67 README task/scoring sections changed |

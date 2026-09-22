@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-21T22:50:33Z, block 9119048
+# ALARMS - generated 2026-09-22T01:34:53Z, block 9119869
 
-window: first_seen in [2026-09-21T21:36:06Z, 2026-09-21T22:51:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-22T00:20:19Z, 2026-09-22T01:35:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn62:release:v0.3.6` | 62 | RELEASE | P1 | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
-| `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | P1 | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
-| `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | P1 | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
-| `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | P2 | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
+| `sn25:release:v2026.9.21-1052359470` | 25 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn25 released v2026.9.21-1052359470 |
+| `sn78:release:Cohort 3: provisional scores (uncertifie` | 78 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn78 released Cohort 3: provisional scores (uncertified) |
+| `sn91:release:worker-v0.12.0` | 91 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn91 released worker-v0.12.0 |
 
 ### detail
 
-- **`sn62:release:v0.3.6`** - sn62 released v0.3.6
-  - published 2026-09-21T21:44:10Z (was v0.3.5)
-- **`sn100:scoring_commit:2026-09-21T19:49:44Z`** - sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-21T21:22:20Z`** - sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:readme_task_diff:8a675979eb4c570a`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn25:release:v2026.9.21-1052359470`** - sn25 released v2026.9.21-1052359470
+  - published 2026-09-22T00:17:58Z (was v2026.9.21-1051772980)
+- **`sn78:release:Cohort 3: provisional scores (uncertifie`** - sn78 released Cohort 3: provisional scores (uncertified)
+  - published 2026-09-22T00:45:34Z (was Open competition miner bundle v1 (feed config + pinned artifacts))
+- **`sn91:release:worker-v0.12.0`** - sn91 released worker-v0.12.0
+  - published 2026-09-22T01:19:31Z (was worker-v0.7.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,8 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
-| `sn71:scoring_commit:2026-09-14T23:58:08Z` | 71 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn71 commit touches scoring: Refresh reviewed scorer workflow protections |
-| `sn81:scoring_commit:2026-09-15T00:01:23Z` | 81 | SCORING_COMMIT | 2026-09-15T00:51:26Z | sn81 commit touches scoring: Merge pull request #267 from reliquadotai/design/task-scoped-emission… |
 | `sn71:scoring_commit:2026-09-15T04:46:46Z` | 71 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn71 commit touches scoring: Preserve declared homepage encodings during company verification |
 | `sn76:scoring_commit:2026-09-15T03:56:34Z` | 76 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn76 commit touches scoring: docs(protocol): production runs one operator-run validator and cross-… |
 | `sn78:scoring_commit:2026-09-15T02:49:36Z` | 78 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn78 commit touches scoring: Merge pull request #97 from Umi-BitSign/codex/uid0-single-evaluator-l… |
@@ -232,6 +227,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.6.3` | 102 | RELEASE | 2026-09-21T19:40:22Z | sn102 released v0.6.3 |
 | `sn120:scoring_commit:2026-09-21T14:37:50Z` | 120 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn120 commit touches scoring: eval_client/validator: upstream 5xx / transport / stream-loss are inf… |
 | `sn124:scoring_commit:2026-09-21T13:13:22Z` | 124 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn124 commit touches scoring: Merge pull request #159 from swarm-subnet/feature/ali/validator-image |
+| `sn62:release:v0.3.6` | 62 | RELEASE | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
+| `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
+| `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
@@ -244,6 +242,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
+| `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

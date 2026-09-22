@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-22T01:34:53Z, block 9119869
+# ALARMS - generated 2026-09-22T06:49:47Z, block 9121444
 
-window: first_seen in [2026-09-22T00:20:19Z, 2026-09-22T01:35:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-22T05:35:15Z, 2026-09-22T06:50:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.21-1052359470` | 25 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn25 released v2026.9.21-1052359470 |
-| `sn78:release:Cohort 3: provisional scores (uncertifie` | 78 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn78 released Cohort 3: provisional scores (uncertified) |
-| `sn91:release:worker-v0.12.0` | 91 | RELEASE | P1 | 2026-09-22T01:35:19Z | sn91 released worker-v0.12.0 |
+| `sn100:burn_drop:0.803` | 100 | BURN_DROP | P0 | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
+| `sn15:release:v2.0.29` | 15 | RELEASE | P1 | 2026-09-22T06:50:15Z | sn15 released v2.0.29 |
+| `sn25:release:v2026.9.21-1052448720` | 25 | RELEASE | P1 | 2026-09-22T06:50:15Z | sn25 released v2026.9.21-1052448720 |
+| `sn26:scoring_commit:2026-09-22T00:59:43Z` | 26 | SCORING_COMMIT | P1 | 2026-09-22T06:50:15Z | sn26 commit touches scoring: fix: commitment snapshot carries the model hash and is the sole verif… |
+| `sn45:scoring_commit:2026-09-22T05:57:35Z` | 45 | SCORING_COMMIT | P1 | 2026-09-22T06:50:15Z | sn45 commit touches scoring: Owe a share again to a miner sent nothing for six epochs |
+| `sn51:release:executor-v1.134` | 51 | RELEASE | P1 | 2026-09-22T06:50:15Z | sn51 released executor-v1.134 |
+| `sn67:scoring_commit:2026-09-21T11:04:20Z` | 67 | SCORING_COMMIT | P1 | 2026-09-22T06:50:15Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260921.post0 |
+| `sn78:release:Cohort 4 miner connection inputs (policy` | 78 | RELEASE | P1 | 2026-09-22T06:50:15Z | sn78 released Cohort 4 miner connection inputs (policy 8) |
+| `sn78:scoring_commit:2026-09-22T02:52:21Z` | 78 | SCORING_COMMIT | P1 | 2026-09-22T06:50:15Z | sn78 commit touches scoring: Publish current C4 miner setup and verified connection inputs (#191) |
+| `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | P2 | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.9.21-1052359470`** - sn25 released v2026.9.21-1052359470
-  - published 2026-09-22T00:17:58Z (was v2026.9.21-1051772980)
-- **`sn78:release:Cohort 3: provisional scores (uncertifie`** - sn78 released Cohort 3: provisional scores (uncertified)
-  - published 2026-09-22T00:45:34Z (was Open competition miner bundle v1 (feed config + pinned artifacts))
-- **`sn91:release:worker-v0.12.0`** - sn91 released worker-v0.12.0
-  - published 2026-09-22T01:19:31Z (was worker-v0.7.0)
+- **`sn100:burn_drop:0.803`** - sn100 burn fell 1.000 -> 0.803 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v2.0.29`** - sn15 released v2.0.29
+  - published 2026-09-22T05:58:14Z (was v2.0.28: chore(validator): split hosted and local runtime profiles (#327))
+- **`sn25:release:v2026.9.21-1052448720`** - sn25 released v2026.9.21-1052448720
+  - published 2026-09-22T02:46:31Z (was v2026.9.21-1052359470)
+- **`sn26:scoring_commit:2026-09-22T00:59:43Z`** - sn26 commit touches scoring: fix: commitment snapshot carries the model hash and is the sole verif…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn45:scoring_commit:2026-09-22T05:57:35Z`** - sn45 commit touches scoring: Owe a share again to a miner sent nothing for six epochs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:release:executor-v1.134`** - sn51 released executor-v1.134
+  - published 2026-09-22T03:25:19Z (was executor-v1.133)
+- **`sn67:scoring_commit:2026-09-21T11:04:20Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260921.post0
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:release:Cohort 4 miner connection inputs (policy`** - sn78 released Cohort 4 miner connection inputs (policy 8)
+  - published 2026-09-22T02:46:36Z (was Cohort 3: provisional scores (uncertified))
+- **`sn78:scoring_commit:2026-09-22T02:52:21Z`** - sn78 commit touches scoring: Publish current C4 miner setup and verified connection inputs (#191)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:readme_task_diff:e68802e7781d35c0`** - sn78 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn20:burn_drop:0.793` | 20 | BURN_DROP | 2026-09-15T06:08:06Z | sn20 burn fell 1.000 -> 0.793 - miners can earn again |
 | `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
@@ -39,10 +59,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
-| `sn71:scoring_commit:2026-09-15T04:46:46Z` | 71 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn71 commit touches scoring: Preserve declared homepage encodings during company verification |
-| `sn76:scoring_commit:2026-09-15T03:56:34Z` | 76 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn76 commit touches scoring: docs(protocol): production runs one operator-run validator and cross-… |
-| `sn78:scoring_commit:2026-09-15T02:49:36Z` | 78 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn78 commit touches scoring: Merge pull request #97 from Umi-BitSign/codex/uid0-single-evaluator-l… |
-| `sn104:scoring_commit:2026-09-10T11:48:51Z` | 104 | SCORING_COMMIT | 2026-09-15T06:08:06Z | sn104 commit touches scoring: fix: burn the full allocation when no miner has earned a score |
 | `sn10:scoring_commit:2026-09-15T10:10:42Z` | 10 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn10 commit touches scoring: feat: add campaign context coverage and reliability scoring for SGLan… |
 | `sn11:scoring_commit:2026-09-15T11:10:55Z` | 11 | SCORING_COMMIT | 2026-09-15T11:58:52Z | sn11 commit touches scoring: Merge pull request #321 from trajectoryRL/agent/coding/disable-miner-… |
 | `sn15:release:v2.0.15: chore(validator): pin runtime 1` | 15 | RELEASE | 2026-09-15T11:58:52Z | sn15 released v2.0.15: chore(validator): pin runtime 1.0.6 for generated packs |
@@ -230,6 +246,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.3.6` | 62 | RELEASE | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
 | `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
 | `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
+| `sn25:release:v2026.9.21-1052359470` | 25 | RELEASE | 2026-09-22T01:35:19Z | sn25 released v2026.9.21-1052359470 |
+| `sn78:release:Cohort 3: provisional scores (uncertifie` | 78 | RELEASE | 2026-09-22T01:35:19Z | sn78 released Cohort 3: provisional scores (uncertified) |
+| `sn91:release:worker-v0.12.0` | 91 | RELEASE | 2026-09-22T01:35:19Z | sn91 released worker-v0.12.0 |
 | `sn90:readme_task_diff:ffaaddc742488086` | 90 | README_TASK_DIFF | 2026-09-15T11:58:52Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-22T17:19:29Z · block 9124591 · run_status **ok**_
+_snapshot 2026-09-22T20:20:38Z · block 9125497 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 59 of 128
+# 61 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 97 | `miner_burn` < 0.99 |
 | Ranked | 97 | passed every gate |
-| **Positive margin** | **59** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **61** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,9 +31,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 66 | `████████████████████████████` |
 | 0–0.2 | 8 | `███` |
-| 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 4 | `██` |
-| 0.6–0.8 | 9 | `████` |
+| 0.2–0.4 | 6 | `███` |
+| 0.4–0.6 | 3 | `█` |
+| 0.6–0.8 | 8 | `███` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 31 | `█████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn4 Targon | 78.5 | 9,370 | 26,309 | rtx4090* | 6 | 53% |
-| 2 | sn3 Teutonic | 76.8 | 5,605 | 5,605 = | rtx4090* | 5 | 20% |
-| 3 | sn91 cascade | 72.8 | 657 | 2,633 | cpu-small | 5 | 52% |
-| 4 | sn102 ConnitoAI | 69.6 | 660 | 2,319 | rtx4090* | 5 | 47% |
-| 5 | sn67 Harnyx | 69.5 | 10.81 | 1,368 | cpu-small | 126 | 37% |
-| 6 | sn107 Minos | 68.9 | 355 | 29,873 | cpu-small | 20 | 80% |
-| 7 | sn38 ChronoLLM | 68.2 | 187 | 2,541 | cpu-small | 10 | 52% |
-| 8 | sn15 ORO | 68.1 | 11.74 | 24.13 | cpu-small | 64 | 96% |
-| 9 | sn124 Swarm | 67.1 | 324 | 1,032 | rtx4090* | 25 | 11% |
-| 10 | sn111 Claims | 66.4 | 268 | 3,171 | rtx4090* | 5 | 75% |
-| 11 | sn28 SayGM | 62.4 | 79.02 | 1,531 | rtx4090* | 66 | 11% |
-| 12 | sn74 Gittensor | 62.1 | 73.92 | 317 | rtx4090* | 13 | 63% |
-| 13 | sn56 Gradients | 62.1 | 69.49 | 5,878 | rtx4090* | 18 | 40% |
-| 14 | sn62 Ridges | 61.6 | 59.69 | 2,912 | rtx4090* | 19 | 30% |
-| 15 | sn23 Trishool | 61.5 | 781 | 781 = | cpu-small | 2 | 80% |
-| 16 | sn60 Bitsec.ai | 60.4 | 572 | 572 = | cpu-small | 3 | 50% |
-| 17 | sn61 RedTeam | 59.1 | 29.47 | 819 | rtx4090* | 116 | 9% |
-| 18 | sn14 Cacheon | 58.7 | 24.48 | 4,998 | rtx4090* | 15 | 61% |
-| 19 | sn81 Reliquary | 58.5 | 23.01 | 85.65 | rtx4090* | 24 | 86% |
-| 20 | sn51 lium.io | 58.2 | 32.07 | 1,858 | rtx4090* | 67 | 84% |
+| 1 | sn114 SOMA | 91.5 | 2,922 | 7,306 | cpu-small | 4 | 50% |
+| 2 | sn4 Targon | 78.5 | 9,296 | 26,139 | rtx4090* | 6 | 53% |
+| 3 | sn3 Teutonic | 76.8 | 5,562 | 5,562 = | rtx4090* | 5 | 20% |
+| 4 | sn91 cascade | 72.7 | 643 | 2,575 | cpu-small | 5 | 52% |
+| 5 | sn1 Apex | 71 | 1,012 | 1,243 | rtx4090* | 4 | 54% |
+| 6 | sn102 ConnitoAI | 70.4 | 825 | 1,919 | rtx4090* | 6 | 39% |
+| 7 | sn67 Harnyx | 69.4 | 10.63 | 1,348 | cpu-small | 126 | 37% |
+| 8 | sn107 Minos | 68.9 | 349 | 29,644 | cpu-small | 20 | 80% |
+| 9 | sn56 Gradients | 68.5 | 476 | 5,823 | rtx4090* | 12 | 40% |
+| 10 | sn15 ORO | 68.5 | 12.03 | 24.70 | cpu-small | 64 | 96% |
+| 11 | sn38 ChronoLLM | 68.2 | 185 | 2,518 | cpu-small | 10 | 52% |
+| 12 | sn124 Swarm | 67.1 | 322 | 1,028 | rtx4090* | 25 | 11% |
+| 13 | sn111 Claims | 66.3 | 264 | 3,146 | rtx4090* | 5 | 76% |
+| 14 | sn74 Gittensor | 62.1 | 73.49 | 314 | rtx4090* | 13 | 63% |
+| 15 | sn62 Ridges | 61.6 | 58.98 | 2,882 | rtx4090* | 19 | 30% |
+| 16 | sn23 Trishool | 61.4 | 769 | 769 = | cpu-small | 2 | 80% |
+| 17 | sn28 SayGM | 60.8 | 49.24 | 1,016 | rtx4090* | 68 | 38% |
+| 18 | sn60 Bitsec.ai | 60.4 | 560 | 560 = | cpu-small | 3 | 50% |
+| 19 | sn61 RedTeam | 59 | 27.83 | 637 | rtx4090* | 121 | 7% |
+| 20 | sn51 lium.io | 58.6 | 34.92 | 2,362 | rtx4090* | 70 | 80% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 22 |
-| concentrated (30–60%) | 25 |
-| dominated (60–90%) | 21 |
-| captured (>90%) | 26 |
+| wide (<30%) | 21 |
+| concentrated (30–60%) | 26 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -97,16 +97,20 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 98 |
-| README keywords (GUESS) | 10 |
+| no evidence | 99 |
 | min_compute.yml (curated) | 10 |
 | code-submission (validator runs it) | 9 |
+| README keywords (GUESS) | 9 |
 | README stated VRAM (explicit) | 1 |
 
 ## Recent changes (last 7 days)
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-22T20:21 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Resume bounded parallel miner fault contr |
+| 2026-09-22T20:21 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify shadow rounds under current Arena  |
+| 2026-09-22T20:21 | sn74 | RELEASE | sn74 released release-20260922-190530: spark-hermes: full scoring conf |
+| 2026-09-22T20:21 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext  |
 | 2026-09-22T17:19 | sn1 | RELEASE | sn1 released v4.4.8 |
 | 2026-09-22T17:19 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Make miner fault recovery durable and rec |
 | 2026-09-22T17:19 | sn50 | RELEASE | sn50 released v1.13.0 |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-22T06:50 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: Owe a share again to a miner sent nothing |
 | 2026-09-22T06:50 | sn51 | RELEASE | sn51 released executor-v1.134 |
 | 2026-09-22T06:50 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-09-22T06:50 | sn78 | RELEASE | sn78 released Cohort 4 miner connection inputs (policy 8) |
-| 2026-09-22T06:50 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Publish current C4 miner setup and verifi |
-| 2026-09-22T06:50 | sn78 | README_TASK_DIFF | sn78 README task/scoring sections changed |
-| 2026-09-22T06:50 | sn100 | BURN_DROP | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 
 ---
 

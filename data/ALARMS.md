@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-22T17:19:29Z, block 9124591
+# ALARMS - generated 2026-09-22T20:20:38Z, block 9125497
 
-window: first_seen in [2026-09-22T16:04:59Z, 2026-09-22T17:19:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-22T19:06:06Z, 2026-09-22T20:21:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.8` | 1 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn1 released v4.4.8 |
-| `sn25:scoring_commit:2026-09-22T12:54:58Z` | 25 | SCORING_COMMIT | P1 | 2026-09-22T17:19:59Z | sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls |
-| `sn50:release:v1.13.0` | 50 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
-| `sn74:release:release-20260922-171907` | 74 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn74 released release-20260922-171907 |
-| `sn120:scoring_commit:2026-09-22T15:44:37Z` | 120 | SCORING_COMMIT | P1 | 2026-09-22T17:19:59Z | sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog … |
+| `sn25:scoring_commit:2026-09-22T18:16:13Z` | 25 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures |
+| `sn71:scoring_commit:2026-09-22T19:58:10Z` | 71 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy |
+| `sn74:release:release-20260922-190530: spark-hermes: f` | 74 | RELEASE | P1 | 2026-09-22T20:21:06Z | sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791) |
+| `sn120:scoring_commit:2026-09-22T19:35:26Z` | 120 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari… |
 
 ### detail
 
-- **`sn1:release:v4.4.8`** - sn1 released v4.4.8
-  - published 2026-09-22T15:33:41Z (was v4.4.6)
-- **`sn25:scoring_commit:2026-09-22T12:54:58Z`** - sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls
+- **`sn25:scoring_commit:2026-09-22T18:16:13Z`** - sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:release:v1.13.0`** - sn50 released v1.13.0
-  - published 2026-09-22T13:08:32Z (was v1.12.0)
-- **`sn74:release:release-20260922-171907`** - sn74 released release-20260922-171907
-  - published 2026-09-22T17:18:46Z (was release-20260920-225500)
-- **`sn120:scoring_commit:2026-09-22T15:44:37Z`** - sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog …
+- **`sn71:scoring_commit:2026-09-22T19:58:10Z`** - sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn74:release:release-20260922-190530: spark-hermes: f`** - sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791)
+  - published 2026-09-22T18:11:29Z (was release-20260922-171907)
+- **`sn120:scoring_commit:2026-09-22T19:35:26Z`** - sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -45,10 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
-| `sn15:release:v2.0.17` | 15 | RELEASE | 2026-09-15T20:12:28Z | sn15 released v2.0.17 |
-| `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
-| `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |
-| `sn78:scoring_commit:2026-09-15T18:26:35Z` | 78 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn78 commit touches scoring: Merge pull request #107 from Umi-BitSign/codex/two-task-scoring-202609 |
 | `sn15:release:v2.0.18: search-server sync-worker fix +` | 15 | RELEASE | 2026-09-15T23:01:57Z | sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244) |
 | `sn62:scoring_commit:2026-09-15T21:51:17Z` | 62 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o… |
 | `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
@@ -228,6 +221,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-09-21T11:04:20Z` | 67 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260921.post0 |
 | `sn78:release:Cohort 4 miner connection inputs (policy` | 78 | RELEASE | 2026-09-22T06:50:15Z | sn78 released Cohort 4 miner connection inputs (policy 8) |
 | `sn78:scoring_commit:2026-09-22T02:52:21Z` | 78 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn78 commit touches scoring: Publish current C4 miner setup and verified connection inputs (#191) |
+| `sn1:release:v4.4.8` | 1 | RELEASE | 2026-09-22T17:19:59Z | sn1 released v4.4.8 |
+| `sn25:scoring_commit:2026-09-22T12:54:58Z` | 25 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls |
+| `sn50:release:v1.13.0` | 50 | RELEASE | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
+| `sn74:release:release-20260922-171907` | 74 | RELEASE | 2026-09-22T17:19:59Z | sn74 released release-20260922-171907 |
+| `sn120:scoring_commit:2026-09-22T15:44:37Z` | 120 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog … |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |

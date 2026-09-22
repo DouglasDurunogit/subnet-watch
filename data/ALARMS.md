@@ -1,13 +1,32 @@
-# ALARMS - generated 2026-09-22T12:33:38Z, block 9123163
+# ALARMS - generated 2026-09-22T17:19:29Z, block 9124591
 
-window: first_seen in [2026-09-22T11:19:01Z, 2026-09-22T12:34:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-22T16:04:59Z, 2026-09-22T17:19:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn1:release:v4.4.8` | 1 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn1 released v4.4.8 |
+| `sn25:scoring_commit:2026-09-22T12:54:58Z` | 25 | SCORING_COMMIT | P1 | 2026-09-22T17:19:59Z | sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls |
+| `sn50:release:v1.13.0` | 50 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
+| `sn74:release:release-20260922-171907` | 74 | RELEASE | P1 | 2026-09-22T17:19:59Z | sn74 released release-20260922-171907 |
+| `sn120:scoring_commit:2026-09-22T15:44:37Z` | 120 | SCORING_COMMIT | P1 | 2026-09-22T17:19:59Z | sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog … |
+
+### detail
+
+- **`sn1:release:v4.4.8`** - sn1 released v4.4.8
+  - published 2026-09-22T15:33:41Z (was v4.4.6)
+- **`sn25:scoring_commit:2026-09-22T12:54:58Z`** - sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn50:release:v1.13.0`** - sn50 released v1.13.0
+  - published 2026-09-22T13:08:32Z (was v1.12.0)
+- **`sn74:release:release-20260922-171907`** - sn74 released release-20260922-171907
+  - published 2026-09-22T17:18:46Z (was release-20260920-225500)
+- **`sn120:scoring_commit:2026-09-22T15:44:37Z`** - sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -26,10 +45,6 @@ _none_
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
-| `sn10:scoring_commit:2026-09-15T13:11:21Z` | 10 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn10 commit touches scoring: fix: harden validator API binding and service privileges (#159) |
-| `sn66:scoring_commit:2026-09-15T16:49:50Z` | 66 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn66 commit touches scoring: Raise proof token limit to one million for local verifiers |
-| `sn90:release:v1.2.0` | 90 | RELEASE | 2026-09-15T16:53:10Z | sn90 released v1.2.0 |
-| `sn90:scoring_commit:2026-09-15T15:53:37Z` | 90 | SCORING_COMMIT | 2026-09-15T16:53:10Z | sn90 commit touches scoring: fix(scoring): divide emission pool by the 50% miner share of combined… |
 | `sn15:release:v2.0.17` | 15 | RELEASE | 2026-09-15T20:12:28Z | sn15 released v2.0.17 |
 | `sn34:scoring_commit:2026-09-15T17:50:38Z` | 34 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn34 commit touches scoring: Fix generative callback staleness and validator memory pressure (#449) |
 | `sn76:scoring_commit:2026-09-15T18:26:04Z` | 76 | SCORING_COMMIT | 2026-09-15T20:12:28Z | sn76 commit touches scoring: docs: day-one fixes from the first third-party miner (2026-09-15) — I… |

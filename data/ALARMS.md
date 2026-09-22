@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-22T20:20:38Z, block 9125497
+# ALARMS - generated 2026-09-22T23:07:58Z, block 9126334
 
-window: first_seen in [2026-09-22T19:06:06Z, 2026-09-22T20:21:06Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-22T21:53:21Z, 2026-09-22T23:08:21Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-22T18:16:13Z` | 25 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures |
-| `sn71:scoring_commit:2026-09-22T19:58:10Z` | 71 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy |
-| `sn74:release:release-20260922-190530: spark-hermes: f` | 74 | RELEASE | P1 | 2026-09-22T20:21:06Z | sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791) |
-| `sn120:scoring_commit:2026-09-22T19:35:26Z` | 120 | SCORING_COMMIT | P1 | 2026-09-22T20:21:06Z | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari… |
+| `sn14:release:glm53-mock-submission-20260906: Merge m3` | 14 | RELEASE | P1 | 2026-09-22T23:08:21Z | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108) |
+| `sn56:scoring_commit:2026-09-22T22:03:29Z` | 56 | SCORING_COMMIT | P1 | 2026-09-22T23:08:21Z | sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386) |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-22T18:16:13Z`** - sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-22T19:58:10Z`** - sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260922-190530: spark-hermes: f`** - sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791)
-  - published 2026-09-22T18:11:29Z (was release-20260922-171907)
-- **`sn120:scoring_commit:2026-09-22T19:35:26Z`** - sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari…
+- **`sn14:release:glm53-mock-submission-20260906: Merge m3`** - sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108)
+  - published 2026-09-04T07:51:14Z (was GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06))
+- **`sn56:scoring_commit:2026-09-22T22:03:29Z`** - sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -42,11 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
-| `sn15:release:v2.0.18: search-server sync-worker fix +` | 15 | RELEASE | 2026-09-15T23:01:57Z | sn15 released v2.0.18: search-server sync-worker fix + rebuilt base (ORO-2244) |
-| `sn62:scoring_commit:2026-09-15T21:51:17Z` | 62 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn62 commit touches scoring: test: :white_check_mark: Update tests to validate that the baseline o… |
-| `sn76:scoring_commit:2026-09-15T20:44:58Z` | 76 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn76 commit touches scoring: docs: FAQ from the first external miner's day one (expected first-run… |
-| `sn102:release:v0.6.0 — scheduled task switching` | 102 | RELEASE | 2026-09-15T23:01:57Z | sn102 released v0.6.0 — scheduled task switching |
-| `sn102:scoring_commit:2026-09-15T20:14:58Z` | 102 | SCORING_COMMIT | 2026-09-15T23:01:57Z | sn102 commit touches scoring: ⚡️ perf(validator): cap the in-shard eval offset independently of sha… |
 | `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
 | `sn62:release:v0.3.5` | 62 | RELEASE | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
 | `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
@@ -226,6 +215,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn50:release:v1.13.0` | 50 | RELEASE | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
 | `sn74:release:release-20260922-171907` | 74 | RELEASE | 2026-09-22T17:19:59Z | sn74 released release-20260922-171907 |
 | `sn120:scoring_commit:2026-09-22T15:44:37Z` | 120 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog … |
+| `sn25:scoring_commit:2026-09-22T18:16:13Z` | 25 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures |
+| `sn71:scoring_commit:2026-09-22T19:58:10Z` | 71 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy |
+| `sn74:release:release-20260922-190530: spark-hermes: f` | 74 | RELEASE | 2026-09-22T20:21:06Z | sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791) |
+| `sn120:scoring_commit:2026-09-22T19:35:26Z` | 120 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari… |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |

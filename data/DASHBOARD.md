@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-23T12:18:54Z · block 9130282 · run_status **ok**_
+_snapshot 2026-09-23T17:21:00Z · block 9131793 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 64 of 128
+# 62 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 98 | `miner_burn` < 0.99 |
 | Ranked | 98 | passed every gate |
-| **Positive margin** | **64** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **62** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 65 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 4 | `██` |
-| 0.6–0.8 | 8 | `███` |
+| 0 (none) | 64 | `████████████████████████████` |
+| 0–0.2 | 8 | `████` |
+| 0.2–0.4 | 8 | `████` |
+| 0.4–0.6 | 3 | `█` |
+| 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 7 | `███` |
 | ≥0.99 dead | 30 | `█████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn4 Targon | 80.4 | 16,255 | 26,133 | rtx4090* | 5 | 54% |
-| 2 | sn3 Teutonic | 76.7 | 5,427 | 5,427 = | rtx4090* | 5 | 20% |
-| 3 | sn114 SOMA | 75.7 | 1,834 | 3,670 | cpu-small | 5 | 50% |
-| 4 | sn91 cascade | 72.6 | 625 | 2,504 | cpu-small | 5 | 52% |
-| 5 | sn67 Harnyx | 71.3 | 17.66 | 1,218 | cpu-small | 124 | 34% |
-| 6 | sn1 Apex | 70.7 | 913 | 1,140 | rtx4090* | 4 | 57% |
-| 7 | sn56 Gradients | 69.5 | 633 | 5,784 | rtx4090* | 10 | 40% |
-| 8 | sn107 Minos | 69.4 | 397 | 27,954 | cpu-small | 20 | 78% |
-| 9 | sn15 ORO | 69.2 | 13.79 | 21,556 | cpu-small | 68 | 96% |
-| 10 | sn111 Claims | 69.1 | 588 | 2,602 | rtx4090* | 5 | 64% |
-| 11 | sn38 ChronoLLM | 68.3 | 193 | 2,621 | cpu-small | 10 | 52% |
-| 12 | sn102 ConnitoAI | 68.1 | 424 | 1,404 | rtx4090* | 7 | 30% |
-| 13 | sn124 Swarm | 67 | 318 | 1,013 | rtx4090* | 25 | 11% |
-| 14 | sn100 Cortex | 63.2 | 96.06 | 159 | rtx4090* | 11 | 70% |
-| 15 | sn62 Ridges | 61.3 | 58.21 | 2,848 | rtx4090* | 19 | 30% |
-| 16 | sn26 Perturb | 61.3 | 57.42 | 57.42 = | rtx3060 | 4 | 90% |
-| 17 | sn28 SayGM | 61.3 | 57.24 | 793 | rtx4090* | 59 | 43% |
-| 18 | sn23 Trishool | 61.2 | 722 | 722 = | cpu-small | 2 | 81% |
-| 19 | sn60 Bitsec.ai | 60.4 | 563 | 563 = | cpu-small | 3 | 50% |
-| 20 | sn74 Gittensor | 60.3 | 50.77 | 126 | rtx4090* | 15 | 64% |
+| 1 | sn4 Targon | 80.2 | 15,594 | 25,071 | rtx4090* | 5 | 54% |
+| 2 | sn3 Teutonic | 76.5 | 5,149 | 5,149 = | rtx4090* | 5 | 20% |
+| 3 | sn91 cascade | 72.7 | 639 | 2,561 | cpu-small | 5 | 52% |
+| 4 | sn114 SOMA | 72.3 | 786 | 7,870 | cpu-small | 8 | 50% |
+| 5 | sn67 Harnyx | 71.2 | 16.81 | 1,162 | cpu-small | 124 | 34% |
+| 6 | sn1 Apex | 70.5 | 847 | 1,063 | rtx4090* | 4 | 58% |
+| 7 | sn102 ConnitoAI | 70.4 | 841 | 1,746 | rtx4090* | 5 | 37% |
+| 8 | sn56 Gradients | 69.3 | 606 | 5,539 | rtx4090* | 10 | 40% |
+| 9 | sn15 ORO | 68.9 | 13.18 | 20,667 | cpu-small | 68 | 96% |
+| 10 | sn107 Minos | 68.6 | 327 | 27,574 | cpu-small | 20 | 80% |
+| 11 | sn38 ChronoLLM | 68.1 | 178 | 2,417 | cpu-small | 10 | 52% |
+| 12 | sn124 Swarm | 66.9 | 304 | 963 | rtx4090* | 25 | 11% |
+| 13 | sn111 Claims | 66.1 | 254 | 2,953 | rtx4090* | 5 | 75% |
+| 14 | sn14 Cacheon | 65.8 | 213 | 4,347 | rtx4090* | 11 | 56% |
+| 15 | sn26 Perturb | 64.2 | 135 | 214 | rtx3060 | 4 | 90% |
+| 16 | sn100 Cortex | 63 | 92.43 | 153 | rtx4090* | 11 | 70% |
+| 17 | sn23 Trishool | 61.5 | 802 | 802 = | cpu-small | 2 | 81% |
+| 18 | sn62 Ridges | 61.3 | 55.73 | 2,742 | rtx4090* | 19 | 30% |
+| 19 | sn74 Gittensor | 60.6 | 49.04 | 119 | rtx4090* | 17 | 63% |
+| 20 | sn28 SayGM | 60.5 | 45.24 | 844 | rtx4090* | 68 | 36% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 23 |
-| dominated (60–90%) | 23 |
+| wide (<30%) | 23 |
+| concentrated (30–60%) | 25 |
+| dominated (60–90%) | 22 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-23T17:21 | sn9 | RELEASE | sn9 released v4.13.2 |
+| 2026-09-23T17:21 | sn25 | RELEASE | sn25 released v2026.9.23-1053753970 |
+| 2026-09-23T17:21 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: chore: show float score instead of a 0/1  |
+| 2026-09-23T17:21 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92) |
 | 2026-09-23T12:19 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: ci: validate rendered Envoy configs with  |
 | 2026-09-23T12:19 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docke |
 | 2026-09-23T12:19 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-23T01:38 | sn100 | BURN_DROP | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | 2026-09-22T23:08 | sn14 | RELEASE | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-re |
 | 2026-09-22T23:08 | sn56 | SCORING_COMMIT | sn56 commit touches scoring: Add Runpod evaluation backend via dstack  |
-| 2026-09-22T20:21 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Resume bounded parallel miner fault contr |
-| 2026-09-22T20:21 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify shadow rounds under current Arena  |
-| 2026-09-22T20:21 | sn74 | RELEASE | sn74 released release-20260922-190530: spark-hermes: full scoring conf |
-| 2026-09-22T20:21 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext  |
 
 ---
 

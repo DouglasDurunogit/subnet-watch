@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T12:18:54Z, block 9130282
+# ALARMS - generated 2026-09-23T17:21:00Z, block 9131793
 
-window: first_seen in [2026-09-23T11:04:18Z, 2026-09-23T12:19:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T16:06:31Z, 2026-09-23T17:21:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
-| `sn51:scoring_commit:2026-09-23T11:44:49Z` | 51 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th… |
-| `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
-| `sn71:scoring_commit:2026-09-23T08:39:50Z` | 71 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn71 commit touches scoring: Document company-only validator compatibility |
-| `sn97:scoring_commit:2026-09-23T11:59:47Z` | 97 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu… |
+| `sn9:release:v4.13.2` | 9 | RELEASE | P1 | 2026-09-23T17:21:31Z | sn9 released v4.13.2 |
+| `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | P1 | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
+| `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | P1 | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
+| `sn120:scoring_commit:2026-09-23T12:45:56Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T17:21:31Z | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi… |
 
 ### detail
 
-- **`sn28:scoring_commit:2026-09-23T11:46:58Z`** - sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image
+- **`sn9:release:v4.13.2`** - sn9 released v4.13.2
+  - published 2026-09-23T15:55:12Z (was v4.13.1)
+- **`sn25:release:v2026.9.23-1053753970`** - sn25 released v2026.9.23-1053753970
+  - published 2026-09-23T15:01:37Z (was v2026.9.22-1053244730)
+- **`sn97:scoring_commit:2026-09-23T15:58:19Z`** - sn97 commit touches scoring: chore: show float score instead of a 0/1 mark
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-23T11:44:49Z`** - sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-09-23T07:25:23Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-23T08:39:50Z`** - sn71 commit touches scoring: Document company-only validator compatibility
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-09-23T11:59:47Z`** - sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu…
+- **`sn120:scoring_commit:2026-09-23T12:45:56Z`** - sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
@@ -45,12 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn9:release:v4.13.0` | 9 | RELEASE | 2026-09-16T16:47:34Z | sn9 released v4.13.0 |
-| `sn51:release:executor-v1.129` | 51 | RELEASE | 2026-09-16T16:47:34Z | sn51 released executor-v1.129 |
-| `sn66:release:v1.0.4` | 66 | RELEASE | 2026-09-16T16:47:34Z | sn66 released v1.0.4 |
-| `sn76:scoring_commit:2026-09-16T14:56:09Z` | 76 | SCORING_COMMIT | 2026-09-16T16:47:34Z | sn76 commit touches scoring: feat(client): optional chosen miner_id on registration — receipts, pr… |
-| `sn92:release:v0.4.4` | 92 | RELEASE | 2026-09-16T16:47:34Z | sn92 released v0.4.4 |
-| `sn92:scoring_commit:2026-09-16T16:42:38Z` | 92 | SCORING_COMMIT | 2026-09-16T16:47:34Z | sn92 commit touches scoring: penalties: declared factors on the standing vector, verified by valid… |
 | `sn34:scoring_commit:2026-09-16T18:39:36Z` | 34 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn34 commit touches scoring: Exclude no_answer rows before the reward-stats row cap. |
 | `sn71:scoring_commit:2026-09-16T17:06:43Z` | 71 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn71 commit touches scoring: Fix Sep16 benchmark bank verification |
 | `sn78:scoring_commit:2026-09-16T18:11:28Z` | 78 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn78 commit touches scoring: fix: keep valid bridge miners eligible during registration churn |
@@ -221,6 +211,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
 | `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
 | `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
+| `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
+| `sn51:scoring_commit:2026-09-23T11:44:49Z` | 51 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th… |
+| `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
+| `sn71:scoring_commit:2026-09-23T08:39:50Z` | 71 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn71 commit touches scoring: Document company-only validator compatibility |
+| `sn97:scoring_commit:2026-09-23T11:59:47Z` | 97 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu… |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |

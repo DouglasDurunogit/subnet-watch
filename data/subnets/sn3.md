@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-09-23T20:35:24Z  |  block: 9132765  |  row_status: ok
+snapshot_utc: 2026-09-23T23:14:01Z  |  block: 9133558  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (287.17999971282 USD), open=True
+- registration cost: 0.999999999 TAO (287.72999971227 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 11  |  free: 0
-- subnet age: 689.9 days  |  registered at block 4165565
+- subnet age: 690.0 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 5068.856416237931** (uid 3) <- the only figure quotable as achievable
-- median_miner_usd_day: 5068.856416237931
-- top_miner_usd_day: 5068.856416237931 (uid 3, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 5080.308665155004** (uid 3) <- the only figure quotable as achievable
+- median_miner_usd_day: 5080.308665155004
+- top_miner_usd_day: 5080.308665155004 (uid 3, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-23T20:35:24Z  |  block: 9132765  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 5060.6372 USD/day  |  payback on registration: 0.06 days
+- net margin: 5072.0895 USD/day  |  payback on registration: 0.06 days
 
 ## Score
 
 - gate: **OK** 
 - score: 76.4 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 33.69 / freshness 35.0 / resource 11.25 / registration 9.98
-- freshness basis: SCORING_COMMIT 5.3d ago
+- components: income 33.7 / freshness 35.0 / resource 11.25 / registration 9.98
+- freshness basis: SCORING_COMMIT 5.4d ago
 
 ## On-chain description
 

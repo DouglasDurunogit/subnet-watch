@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T20:35:24Z, block 9132765
+# ALARMS - generated 2026-09-23T23:14:01Z, block 9133558
 
-window: first_seen in [2026-09-23T19:20:56Z, 2026-09-23T20:35:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T21:59:27Z, 2026-09-23T23:14:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:scoring_commit:2026-09-23T10:47:00Z` | 14 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits |
-| `sn15:scoring_commit:2026-09-23T19:01:26Z` | 15 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier… |
-| `sn25:release:v2026.9.23-1053868550` | 25 | RELEASE | P1 | 2026-09-23T20:35:56Z | sn25 released v2026.9.23-1053868550 |
-| `sn25:scoring_commit:2026-09-23T08:56:00Z` | 25 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines |
-| `sn28:release:v0.4.21-dev` | 28 | RELEASE | P1 | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
-| `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
-| `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | P2 | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
+| `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
 
 ### detail
 
-- **`sn14:scoring_commit:2026-09-23T10:47:00Z`** - sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits
+- **`sn120:scoring_commit:2026-09-23T21:51:12Z`** - sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:scoring_commit:2026-09-23T19:01:26Z`** - sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.23-1053868550`** - sn25 released v2026.9.23-1053868550
-  - published 2026-09-23T18:12:39Z (was v2026.9.23-1053753970)
-- **`sn25:scoring_commit:2026-09-23T08:56:00Z`** - sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.21-dev`** - sn28 released v0.4.21-dev
-  - published 2026-09-23T20:22:18Z (was v0.4.20)
-- **`sn28:scoring_commit:2026-09-23T20:17:29Z`** - sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:readme_task_diff:b07f84dabcd1a3a1`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -50,11 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn28:release:v0.4.18` | 28 | RELEASE | 2026-09-16T22:24:56Z | sn28 released v0.4.18 |
-| `sn45:scoring_commit:2026-09-16T17:29:43Z` | 45 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn45 commit touches scoring: Allow a per-model scale on audit scores |
-| `sn78:scoring_commit:2026-09-16T20:06:28Z` | 78 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn78 commit touches scoring: release: pin fresh validator installs to registration churn fix |
-| `sn102:release:v0.6.1` | 102 | RELEASE | 2026-09-16T22:24:56Z | sn102 released v0.6.1 |
-| `sn102:scoring_commit:2026-09-16T20:16:29Z` | 102 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn102 commit touches scoring: Merge pull request #274 from Connito-AI/feat/switch-task-release-then… |
 | `sn40:scoring_commit:2026-09-16T00:55:22Z` | 40 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, auditor weights |
 | `sn78:scoring_commit:2026-09-16T22:31:06Z` | 78 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/codex/evaluator-finality-wai… |
 | `sn15:release:v2.0.20` | 15 | RELEASE | 2026-09-17T06:06:18Z | sn15 released v2.0.20 |
@@ -224,7 +201,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
 | `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
 | `sn120:scoring_commit:2026-09-23T12:45:56Z` | 120 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi… |
-| `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
+| `sn14:scoring_commit:2026-09-23T10:47:00Z` | 14 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits |
+| `sn15:scoring_commit:2026-09-23T19:01:26Z` | 15 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier… |
+| `sn25:release:v2026.9.23-1053868550` | 25 | RELEASE | 2026-09-23T20:35:56Z | sn25 released v2026.9.23-1053868550 |
+| `sn25:scoring_commit:2026-09-23T08:56:00Z` | 25 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines |
+| `sn28:release:v0.4.21-dev` | 28 | RELEASE | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
+| `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
@@ -236,6 +218,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
 | `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
+| `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

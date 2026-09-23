@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-22T23:07:58Z, block 9126334
+# ALARMS - generated 2026-09-23T01:37:55Z, block 9127083
 
-window: first_seen in [2026-09-22T21:53:21Z, 2026-09-22T23:08:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T00:23:19Z, 2026-09-23T01:38:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:glm53-mock-submission-20260906: Merge m3` | 14 | RELEASE | P1 | 2026-09-22T23:08:21Z | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108) |
-| `sn56:scoring_commit:2026-09-22T22:03:29Z` | 56 | SCORING_COMMIT | P1 | 2026-09-22T23:08:21Z | sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386) |
+| `sn100:burn_drop:0.708` | 100 | BURN_DROP | P0 | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
+| `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | P1 | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
 
 ### detail
 
-- **`sn14:release:glm53-mock-submission-20260906: Merge m3`** - sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108)
-  - published 2026-09-04T07:51:14Z (was GLM-5.3 mock mainnet submissions (validator self-test, 2026-09-06))
-- **`sn56:scoring_commit:2026-09-22T22:03:29Z`** - sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:burn_drop:0.708`** - sn100 burn fell 1.000 -> 0.708 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.9.22-1053244730`** - sn25 released v2026.9.22-1053244730
+  - published 2026-09-23T00:53:05Z (was v2026.9.21-1052448720)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,9 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
-| `sn34:release:5.0.5 — Generator Qualification & Paid R` | 34 | RELEASE | 2026-09-16T01:23:06Z | sn34 released 5.0.5 — Generator Qualification & Paid Resubmissions |
-| `sn62:release:v0.3.5` | 62 | RELEASE | 2026-09-16T01:23:06Z | sn62 released v0.3.5 |
-| `sn78:scoring_commit:2026-09-15T23:51:06Z` | 78 | SCORING_COMMIT | 2026-09-16T01:23:06Z | sn78 commit touches scoring: Verify current installer against signed frozen operator bundle |
 | `sn15:release:v2.0.19` | 15 | RELEASE | 2026-09-16T06:23:31Z | sn15 released v2.0.19 |
 | `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
 | `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
@@ -219,6 +216,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-22T19:58:10Z` | 71 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy |
 | `sn74:release:release-20260922-190530: spark-hermes: f` | 74 | RELEASE | 2026-09-22T20:21:06Z | sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791) |
 | `sn120:scoring_commit:2026-09-22T19:35:26Z` | 120 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari… |
+| `sn14:release:glm53-mock-submission-20260906: Merge m3` | 14 | RELEASE | 2026-09-22T23:08:21Z | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108) |
+| `sn56:scoring_commit:2026-09-22T22:03:29Z` | 56 | SCORING_COMMIT | 2026-09-22T23:08:21Z | sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386) |
 | `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |

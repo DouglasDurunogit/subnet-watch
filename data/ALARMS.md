@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T17:21:00Z, block 9131793
+# ALARMS - generated 2026-09-23T20:35:24Z, block 9132765
 
-window: first_seen in [2026-09-23T16:06:31Z, 2026-09-23T17:21:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T19:20:56Z, 2026-09-23T20:35:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.13.2` | 9 | RELEASE | P1 | 2026-09-23T17:21:31Z | sn9 released v4.13.2 |
-| `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | P1 | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
-| `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | P1 | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
-| `sn120:scoring_commit:2026-09-23T12:45:56Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T17:21:31Z | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi… |
+| `sn14:scoring_commit:2026-09-23T10:47:00Z` | 14 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits |
+| `sn15:scoring_commit:2026-09-23T19:01:26Z` | 15 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier… |
+| `sn25:release:v2026.9.23-1053868550` | 25 | RELEASE | P1 | 2026-09-23T20:35:56Z | sn25 released v2026.9.23-1053868550 |
+| `sn25:scoring_commit:2026-09-23T08:56:00Z` | 25 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines |
+| `sn28:release:v0.4.21-dev` | 28 | RELEASE | P1 | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
+| `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | P1 | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
+| `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | P2 | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 
 ### detail
 
-- **`sn9:release:v4.13.2`** - sn9 released v4.13.2
-  - published 2026-09-23T15:55:12Z (was v4.13.1)
-- **`sn25:release:v2026.9.23-1053753970`** - sn25 released v2026.9.23-1053753970
-  - published 2026-09-23T15:01:37Z (was v2026.9.22-1053244730)
-- **`sn97:scoring_commit:2026-09-23T15:58:19Z`** - sn97 commit touches scoring: chore: show float score instead of a 0/1 mark
+- **`sn14:scoring_commit:2026-09-23T10:47:00Z`** - sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-23T12:45:56Z`** - sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi…
+- **`sn15:scoring_commit:2026-09-23T19:01:26Z`** - sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.9.23-1053868550`** - sn25 released v2026.9.23-1053868550
+  - published 2026-09-23T18:12:39Z (was v2026.9.23-1053753970)
+- **`sn25:scoring_commit:2026-09-23T08:56:00Z`** - sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.21-dev`** - sn28 released v0.4.21-dev
+  - published 2026-09-23T20:22:18Z (was v0.4.20)
+- **`sn28:scoring_commit:2026-09-23T20:17:29Z`** - sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:b07f84dabcd1a3a1`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,11 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn34:scoring_commit:2026-09-16T18:39:36Z` | 34 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn34 commit touches scoring: Exclude no_answer rows before the reward-stats row cap. |
-| `sn71:scoring_commit:2026-09-16T17:06:43Z` | 71 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn71 commit touches scoring: Fix Sep16 benchmark bank verification |
-| `sn78:scoring_commit:2026-09-16T18:11:28Z` | 78 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn78 commit touches scoring: fix: keep valid bridge miners eligible during registration churn |
-| `sn92:release:v0.4.6` | 92 | RELEASE | 2026-09-16T19:46:19Z | sn92 released v0.4.6 |
-| `sn92:scoring_commit:2026-09-16T17:47:30Z` | 92 | SCORING_COMMIT | 2026-09-16T19:46:19Z | sn92 commit touches scoring: mt-4g: 3 GiB disk ceiling, matching the arenas validators enforce (#77 |
 | `sn28:release:v0.4.18` | 28 | RELEASE | 2026-09-16T22:24:56Z | sn28 released v0.4.18 |
 | `sn45:scoring_commit:2026-09-16T17:29:43Z` | 45 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn45 commit touches scoring: Allow a per-model scale on audit scores |
 | `sn78:scoring_commit:2026-09-16T20:06:28Z` | 78 | SCORING_COMMIT | 2026-09-16T22:24:56Z | sn78 commit touches scoring: release: pin fresh validator installs to registration churn fix |
@@ -216,6 +220,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
 | `sn71:scoring_commit:2026-09-23T08:39:50Z` | 71 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn71 commit touches scoring: Document company-only validator compatibility |
 | `sn97:scoring_commit:2026-09-23T11:59:47Z` | 97 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu… |
+| `sn9:release:v4.13.2` | 9 | RELEASE | 2026-09-23T17:21:31Z | sn9 released v4.13.2 |
+| `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
+| `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
+| `sn120:scoring_commit:2026-09-23T12:45:56Z` | 120 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi… |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T01:37:55Z, block 9127083
+# ALARMS - generated 2026-09-23T06:44:59Z, block 9128619
 
-window: first_seen in [2026-09-23T00:23:19Z, 2026-09-23T01:38:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T05:30:27Z, 2026-09-23T06:45:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:burn_drop:0.708` | 100 | BURN_DROP | P0 | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | P1 | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
+| `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | P1 | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
+| `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
 
 ### detail
 
-- **`sn100:burn_drop:0.708`** - sn100 burn fell 1.000 -> 0.708 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.9.22-1053244730`** - sn25 released v2026.9.22-1053244730
-  - published 2026-09-23T00:53:05Z (was v2026.9.21-1052448720)
+- **`sn78:scoring_commit:2026-09-23T02:08:31Z`** - sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-09-23T03:12:20Z`** - sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn36:burn_drop:0.951` | 36 | BURN_DROP | 2026-09-16T06:23:31Z | sn36 burn fell 1.000 -> 0.951 - miners can earn again |
 | `sn20:burn_drop:0.754` | 20 | BURN_DROP | 2026-09-16T16:47:34Z | sn20 burn fell 1.000 -> 0.754 - miners can earn again |
 | `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
@@ -36,10 +35,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
-| `sn15:release:v2.0.19` | 15 | RELEASE | 2026-09-16T06:23:31Z | sn15 released v2.0.19 |
-| `sn25:scoring_commit:2026-09-16T03:56:01Z` | 25 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn25 commit touches scoring: Retain verified reserve repairs for exact software revisions |
-| `sn51:scoring_commit:2026-09-16T06:18:33Z` | 51 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn51 commit touches scoring: DAH-2662 - [P1] validator matches GPU bans against the kernel's GPU U… |
-| `sn78:scoring_commit:2026-09-16T01:47:17Z` | 78 | SCORING_COMMIT | 2026-09-16T06:23:31Z | sn78 commit touches scoring: Stage verified successor helpers outside non-executable tmp |
+| `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn10:scoring_commit:2026-09-16T08:26:18Z` | 10 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163) |
 | `sn25:scoring_commit:2026-09-16T10:32:54Z` | 25 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route |
 | `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
@@ -218,7 +214,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-09-22T19:35:26Z` | 120 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn120 commit touches scoring: AA gap-fill go-live 1/2: affine_scitext e1 (202 teacher-verified vari… |
 | `sn14:release:glm53-mock-submission-20260906: Merge m3` | 14 | RELEASE | 2026-09-22T23:08:21Z | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108) |
 | `sn56:scoring_commit:2026-09-22T22:03:29Z` | 56 | SCORING_COMMIT | 2026-09-22T23:08:21Z | sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386) |
-| `sn15:readme_task_diff:553c134e9ff5c4e1` | 15 | README_TASK_DIFF | 2026-09-16T06:23:31Z | sn15 README task/scoring sections changed |
+| `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |

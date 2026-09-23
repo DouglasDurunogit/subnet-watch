@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T06:44:59Z, block 9128619
+# ALARMS - generated 2026-09-23T12:18:54Z, block 9130282
 
-window: first_seen in [2026-09-23T05:30:27Z, 2026-09-23T06:45:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-23T11:04:18Z, 2026-09-23T12:19:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | P1 | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
-| `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
+| `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
+| `sn51:scoring_commit:2026-09-23T11:44:49Z` | 51 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th… |
+| `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
+| `sn71:scoring_commit:2026-09-23T08:39:50Z` | 71 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn71 commit touches scoring: Document company-only validator compatibility |
+| `sn97:scoring_commit:2026-09-23T11:59:47Z` | 97 | SCORING_COMMIT | P1 | 2026-09-23T12:19:18Z | sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu… |
 
 ### detail
 
-- **`sn78:scoring_commit:2026-09-23T02:08:31Z`** - sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l…
+- **`sn28:scoring_commit:2026-09-23T11:46:58Z`** - sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-23T03:12:20Z`** - sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first…
+- **`sn51:scoring_commit:2026-09-23T11:44:49Z`** - sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-09-23T07:25:23Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-23T08:39:50Z`** - sn71 commit touches scoring: Document company-only validator compatibility
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-09-23T11:59:47Z`** - sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,11 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn10:scoring_commit:2026-09-16T08:26:18Z` | 10 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn10 commit touches scoring: fix(bench): lower Qwen correctness scorer memory allocation (#163) |
-| `sn25:scoring_commit:2026-09-16T10:32:54Z` | 25 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn25 commit touches scoring: Allow bounded retained validator history warmup on every RPC route |
-| `sn51:scoring_commit:2026-09-16T08:11:18Z` | 51 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn51 commit touches scoring: DAH-3480 - [P1] validator: GPU probe blocked by a mid-cycle pod or fi… |
-| `sn78:scoring_commit:2026-09-16T08:59:20Z` | 78 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn78 commit touches scoring: Merge pull request #129 from Umi-BitSign/codex/miner-historical-admis… |
-| `sn114:scoring_commit:2026-09-16T07:55:05Z` | 114 | SCORING_COMMIT | 2026-09-16T11:55:55Z | sn114 commit touches scoring: docs: describe complexity incentive layers |
 | `sn9:release:v4.13.0` | 9 | RELEASE | 2026-09-16T16:47:34Z | sn9 released v4.13.0 |
 | `sn51:release:executor-v1.129` | 51 | RELEASE | 2026-09-16T16:47:34Z | sn51 released executor-v1.129 |
 | `sn66:release:v1.0.4` | 66 | RELEASE | 2026-09-16T16:47:34Z | sn66 released v1.0.4 |
@@ -215,6 +219,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:release:glm53-mock-submission-20260906: Merge m3` | 14 | RELEASE | 2026-09-22T23:08:21Z | sn14 released glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108) |
 | `sn56:scoring_commit:2026-09-22T22:03:29Z` | 56 | SCORING_COMMIT | 2026-09-22T23:08:21Z | sn56 commit touches scoring: Add Runpod evaluation backend via dstack (#1386) |
 | `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
+| `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
+| `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
 | `sn28:readme_task_diff:dbf1289fea38b78e` | 28 | README_TASK_DIFF | 2026-09-16T22:24:56Z | sn28 README task/scoring sections changed |
 | `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |

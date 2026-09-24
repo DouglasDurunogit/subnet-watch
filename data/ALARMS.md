@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-24T06:47:32Z, block 9135825
+# ALARMS - generated 2026-09-24T12:41:41Z, block 9137596
 
-window: first_seen in [2026-09-24T05:32:57Z, 2026-09-24T06:47:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-24T11:27:03Z, 2026-09-24T12:42:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:burn_drop:0.783` | 71 | BURN_DROP | P0 | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | P1 | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
-| `sn51:scoring_commit:2026-09-24T06:27:30Z` | 51 | SCORING_COMMIT | P1 | 2026-09-24T06:47:57Z | sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS … |
-| `sn71:scoring_commit:2026-09-24T06:33:26Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T06:47:57Z | sn71 commit touches scoring: Bind final verifier extraction release to committed source |
+| `sn1:release:v4.4.9` | 1 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn1 released v4.4.9 |
+| `sn9:release:v4.13.3` | 9 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn9 released v4.13.3 |
+| `sn22:scoring_commit:2026-08-21T14:46:57Z` | 22 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn22 commit touches scoring: feat: reject sources a miner could have served itself |
+| `sn28:release:v0.4.21` | 28 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn28 released v0.4.21 |
+| `sn28:scoring_commit:2026-09-24T08:59:00Z` | 28 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.21 (#274) |
+| `sn51:release:executor-v1.135` | 51 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn51 released executor-v1.135 |
+| `sn51:scoring_commit:2026-09-24T12:38:05Z` | 51 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn51 commit touches scoring: Validator: pull a present image when the registry tag moved (#1468) |
+| `sn71:scoring_commit:2026-09-24T11:42:05Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn71 commit touches scoring: Preserve local visible article headers in verifier evidence |
 
 ### detail
 
-- **`sn71:burn_drop:0.783`** - sn71 burn fell 1.000 -> 0.783 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:release:SN21 rich training data v3 (slice 2)`** - sn21 released SN21 rich training data v3 (slice 2)
-  - published 2026-09-24T04:05:38Z (was SN21 rich training data v2)
-- **`sn51:scoring_commit:2026-09-24T06:27:30Z`** - sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS …
+- **`sn1:release:v4.4.9`** - sn1 released v4.4.9
+  - published 2026-09-24T10:58:45Z (was v4.4.8)
+- **`sn9:release:v4.13.3`** - sn9 released v4.13.3
+  - published 2026-09-24T12:39:40Z (was v4.13.2)
+- **`sn22:scoring_commit:2026-08-21T14:46:57Z`** - sn22 commit touches scoring: feat: reject sources a miner could have served itself
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-24T06:33:26Z`** - sn71 commit touches scoring: Bind final verifier extraction release to committed source
+- **`sn28:release:v0.4.21`** - sn28 released v0.4.21
+  - published 2026-09-24T09:19:50Z (was v0.4.21-dev)
+- **`sn28:scoring_commit:2026-09-24T08:59:00Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.21 (#274)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:release:executor-v1.135`** - sn51 released executor-v1.135
+  - published 2026-09-24T09:47:53Z (was executor-v1.134)
+- **`sn51:scoring_commit:2026-09-24T12:38:05Z`** - sn51 commit touches scoring: Validator: pull a present image when the registry tag moved (#1468)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-24T11:42:05Z`** - sn71 commit touches scoring: Preserve local visible article headers in verifier evidence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
@@ -40,11 +51,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn51:release:executor-v1.130` | 51 | RELEASE | 2026-09-17T11:36:55Z | sn51 released executor-v1.130 |
-| `sn51:scoring_commit:2026-09-17T07:44:39Z` | 51 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn51 commit touches scoring: DAH-3519 - [P2] validator: a node whose scrape lists fewer GPUs than … |
-| `sn78:scoring_commit:2026-09-17T08:39:07Z` | 78 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn78 commit touches scoring: Merge pull request #153 from Umi-BitSign/codex/evaluator-idle-finalit… |
-| `sn92:release:v0.4.9` | 92 | RELEASE | 2026-09-17T11:36:55Z | sn92 released v0.4.9 |
-| `sn97:scoring_commit:2026-09-16T15:02:19Z` | 97 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn97 commit touches scoring: feat: add extra attempts, so miners which got FPs can resubmit with p… |
+| `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn10:scoring_commit:2026-09-17T10:11:18Z` | 10 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn10 commit touches scoring: fix: refresh campaign fees before payment and verify inclusion |
 | `sn56:scoring_commit:2026-09-17T15:30:38Z` | 56 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn56 commit touches scoring: Update autoupdate_validator_steps.sh to ensure proper package managem… |
 | `sn92:release:v0.4.11` | 92 | RELEASE | 2026-09-17T15:41:12Z | sn92 released v0.4.11 |
@@ -210,6 +217,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
 | `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
 | `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
+| `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
+| `sn51:scoring_commit:2026-09-24T06:27:30Z` | 51 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS … |
+| `sn71:scoring_commit:2026-09-24T06:33:26Z` | 71 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn71 commit touches scoring: Bind final verifier extraction release to committed source |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |

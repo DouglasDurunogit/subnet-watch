@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-24T20:48:11Z, block 9140029
+# ALARMS - generated 2026-09-24T23:51:26Z, block 9140945
 
-window: first_seen in [2026-09-24T19:33:43Z, 2026-09-24T20:48:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-24T22:36:50Z, 2026-09-24T23:51:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,41 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.30: fix(validator): lower default s` | 15 | RELEASE | P1 | 2026-09-24T20:48:43Z | sn15 released v2.0.30: fix(validator): lower default sandbox max workers to 30 |
-| `sn15:scoring_commit:2026-09-24T18:59:25Z` | 15 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn15 commit touches scoring: fix(validator): lower default sandbox max workers to 30 |
-| `sn25:release:v2026.9.24-1054792560` | 25 | RELEASE | P1 | 2026-09-24T20:48:43Z | sn25 released v2026.9.24-1054792560 |
-| `sn25:scoring_commit:2026-09-24T20:12:46Z` | 25 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn25 commit touches scoring: Retain on-chain proof of R42 validator source-slot failure |
-| `sn28:release:v0.4.23` | 28 | RELEASE | P1 | 2026-09-24T20:48:43Z | sn28 released v0.4.23 |
-| `sn28:scoring_commit:2026-09-24T19:58:11Z` | 28 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.23 (#280) |
-| `sn45:scoring_commit:2026-09-24T19:23:02Z` | 45 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn45 commit touches scoring: Score the stock anchor on a sample of audits |
-| `sn46:scoring_commit:2026-09-18T08:40:59Z` | 46 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn46 commit touches scoring: Merge pull request #5 from Subnet46/docs/validator-requirements |
-| `sn71:scoring_commit:2026-09-24T20:11:33Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn71 commit touches scoring: chore(release): bind verifier cache and semantic fixes |
-| `sn100:scoring_commit:2026-09-24T18:24:45Z` | 100 | SCORING_COMMIT | P1 | 2026-09-24T20:48:43Z | sn100 commit touches scoring: feat(challenges): load docker challenges and move bounty out (#312) |
-| `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | P2 | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
+| `sn69:scoring_commit:2026-09-24T15:23:49Z` | 69 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn69 commit touches scoring: Merge the v2 validator into dev |
+| `sn91:scoring_commit:2026-09-24T22:23:56Z` | 91 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor… |
+| `sn120:scoring_commit:2026-09-24T08:48:05Z` | 120 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea… |
+| `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | P2 | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.30: fix(validator): lower default s`** - sn15 released v2.0.30: fix(validator): lower default sandbox max workers to 30
-  - published 2026-09-24T18:59:25Z (was v2.0.29)
-- **`sn15:scoring_commit:2026-09-24T18:59:25Z`** - sn15 commit touches scoring: fix(validator): lower default sandbox max workers to 30
+- **`sn69:scoring_commit:2026-09-24T15:23:49Z`** - sn69 commit touches scoring: Merge the v2 validator into dev
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.9.24-1054792560`** - sn25 released v2026.9.24-1054792560
-  - published 2026-09-24T19:52:15Z (was v2026.9.23-1053868550)
-- **`sn25:scoring_commit:2026-09-24T20:12:46Z`** - sn25 commit touches scoring: Retain on-chain proof of R42 validator source-slot failure
+- **`sn91:scoring_commit:2026-09-24T22:23:56Z`** - sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.23`** - sn28 released v0.4.23
-  - published 2026-09-24T20:18:11Z (was v0.4.22-dev)
-- **`sn28:scoring_commit:2026-09-24T19:58:11Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.23 (#280)
+- **`sn120:scoring_commit:2026-09-24T08:48:05Z`** - sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-09-24T19:23:02Z`** - sn45 commit touches scoring: Score the stock anchor on a sample of audits
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn46:scoring_commit:2026-09-18T08:40:59Z`** - sn46 commit touches scoring: Merge pull request #5 from Subnet46/docs/validator-requirements
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-24T20:11:33Z`** - sn71 commit touches scoring: chore(release): bind verifier cache and semantic fixes
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-24T18:24:45Z`** - sn100 commit touches scoring: feat(challenges): load docker challenges and move bounty out (#312)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn88:readme_task_diff:71d034a5ee0cc823`** - sn88 README task/scoring sections changed
+- **`sn69:readme_task_diff:3d7258dffafe1a92`** - sn69 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -61,15 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn4:release:v2.0.1` | 4 | RELEASE | 2026-09-17T22:20:24Z | sn4 released v2.0.1 |
-| `sn15:scoring_commit:2026-09-17T21:02:27Z` | 15 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn15 commit touches scoring: fix(validator): delete orphaned retry_queue.add_progress on logs_s3_k… |
-| `sn25:release:v2026.9.17-1048832810` | 25 | RELEASE | 2026-09-17T22:20:24Z | sn25 released v2026.9.17-1048832810 |
-| `sn69:scoring_commit:2026-09-17T19:29:06Z` | 69 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn69 commit touches scoring: Re-submit the latest miner weights on a block cadence |
-| `sn74:release:release-20260917-220301` | 74 | RELEASE | 2026-09-17T22:20:24Z | sn74 released release-20260917-220301 |
-| `sn90:scoring_commit:2026-09-17T21:14:03Z` | 90 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn90 commit touches scoring: feat(validator): raise minimum node spec to 72 cores / 1024 GiB / 5 n… |
-| `sn93:scoring_commit:2026-09-17T21:13:10Z` | 93 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn93 commit touches scoring: docs: replace CLAUDE.md with AGENTS.md + on-chain liveness verificati… |
-| `sn102:release:v0.6.2` | 102 | RELEASE | 2026-09-17T22:20:24Z | sn102 released v0.6.2 |
-| `sn102:scoring_commit:2026-09-17T17:58:30Z` | 102 | SCORING_COMMIT | 2026-09-17T22:20:24Z | sn102 commit touches scoring: 🐛 fix(validator): drop evaluations that finish after their round is f… |
 | `sn15:release:v2.0.22` | 15 | RELEASE | 2026-09-18T00:36:11Z | sn15 released v2.0.22 |
 | `sn15:scoring_commit:2026-09-18T00:19:14Z` | 15 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320) |
 | `sn25:release:v2026.9.17-1048903120` | 25 | RELEASE | 2026-09-18T00:36:11Z | sn25 released v2026.9.17-1048903120 |
@@ -235,6 +205,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.22-dev` | 28 | RELEASE | 2026-09-24T17:35:05Z | sn28 released v0.4.22-dev |
 | `sn28:scoring_commit:2026-09-24T17:21:09Z` | 28 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.22-dev (#277) |
 | `sn71:scoring_commit:2026-09-24T17:22:54Z` | 71 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn71 commit touches scoring: chore(release): bind verifier evidence reuse source |
+| `sn15:release:v2.0.30: fix(validator): lower default s` | 15 | RELEASE | 2026-09-24T20:48:43Z | sn15 released v2.0.30: fix(validator): lower default sandbox max workers to 30 |
+| `sn15:scoring_commit:2026-09-24T18:59:25Z` | 15 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn15 commit touches scoring: fix(validator): lower default sandbox max workers to 30 |
+| `sn25:release:v2026.9.24-1054792560` | 25 | RELEASE | 2026-09-24T20:48:43Z | sn25 released v2026.9.24-1054792560 |
+| `sn25:scoring_commit:2026-09-24T20:12:46Z` | 25 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn25 commit touches scoring: Retain on-chain proof of R42 validator source-slot failure |
+| `sn28:release:v0.4.23` | 28 | RELEASE | 2026-09-24T20:48:43Z | sn28 released v0.4.23 |
+| `sn28:scoring_commit:2026-09-24T19:58:11Z` | 28 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.23 (#280) |
+| `sn45:scoring_commit:2026-09-24T19:23:02Z` | 45 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn45 commit touches scoring: Score the stock anchor on a sample of audits |
+| `sn46:scoring_commit:2026-09-18T08:40:59Z` | 46 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn46 commit touches scoring: Merge pull request #5 from Subnet46/docs/validator-requirements |
+| `sn71:scoring_commit:2026-09-24T20:11:33Z` | 71 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn71 commit touches scoring: chore(release): bind verifier cache and semantic fixes |
+| `sn100:scoring_commit:2026-09-24T18:24:45Z` | 100 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn100 commit touches scoring: feat(challenges): load docker challenges and move bounty out (#312) |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
@@ -243,6 +223,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
 | `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
+| `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

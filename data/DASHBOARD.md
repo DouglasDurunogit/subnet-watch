@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-24T20:48:11Z · block 9140029 · run_status **ok**_
+_snapshot 2026-09-24T23:51:26Z · block 9140945 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 97 | `miner_burn` < 0.99 |
 | Ranked | 97 | passed every gate |
 | **Positive margin** | **57** | income beats machine cost |
-| New events this window | 11 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,9 +29,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 64 | `████████████████████████████` |
+| 0 (none) | 63 | `████████████████████████████` |
 | 0–0.2 | 8 | `████` |
-| 0.2–0.4 | 6 | `███` |
+| 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 6 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn4 Targon | 80.2 | 15,324 | 27,719 | rtx4090* | 5 | 58% |
-| 2 | sn3 Teutonic | 76.6 | 5,266 | 5,266 = | rtx4090* | 5 | 20% |
-| 3 | sn91 cascade | 72.7 | 647 | 2,589 | cpu-small | 5 | 52% |
-| 4 | sn102 ConnitoAI | 72 | 1,330 | 1,595 | rtx4090* | 5 | 28% |
-| 5 | sn26 Perturb | 71.2 | 45.30 | 49.62 | rtx3060 | 5 | 90% |
-| 6 | sn1 Apex | 69.9 | 719 | 1,175 | rtx4090* | 4 | 58% |
-| 7 | sn67 Harnyx | 68.7 | 8.92 | 1,177 | cpu-small | 126 | 35% |
-| 8 | sn107 Minos | 68.6 | 328 | 29,350 | cpu-small | 20 | 80% |
-| 9 | sn14 Cacheon | 68.5 | 476 | 2,441 | rtx4090* | 12 | 31% |
-| 10 | sn38 ChronoLLM | 68.5 | 202 | 1,777 | cpu-small | 10 | 52% |
-| 11 | sn56 Gradients | 68.4 | 460 | 5,624 | rtx4090* | 10 | 40% |
-| 12 | sn15 ORO | 67.9 | 10.47 | 22.94 | cpu-small | 58 | 97% |
-| 13 | sn124 Swarm | 67.1 | 323 | 934 | rtx4090* | 25 | 11% |
-| 14 | sn111 Claims | 65.5 | 214 | 1,933 | rtx4090* | 5 | 49% |
-| 15 | sn100 Cortex | 62.6 | 80.25 | 169 | rtx4090* | 13 | 70% |
-| 16 | sn23 Trishool | 62 | 917 | 917 = | cpu-small | 2 | 80% |
-| 17 | sn62 Ridges | 61.8 | 64.14 | 1,916 | rtx4090* | 20 | 21% |
-| 18 | sn28 SayGM | 61.6 | 62.22 | 2,913 | rtx4090* | 80 | 16% |
-| 19 | sn61 RedTeam | 59.8 | 35.71 | 373 | rtx4090* | 126 | 4% |
-| 20 | sn81 Reliquary | 58.8 | 25.78 | 52.96 | rtx4090* | 29 | 84% |
+| 1 | sn3 Teutonic | 76.5 | 5,238 | 5,238 = | rtx4090* | 5 | 20% |
+| 2 | sn91 cascade | 72.8 | 668 | 2,675 | cpu-small | 5 | 52% |
+| 3 | sn102 ConnitoAI | 72.1 | 1,368 | 1,369 | rtx4090* | 4 | 25% |
+| 4 | sn26 Perturb | 71.2 | 45.42 | 49.74 | rtx3060 | 5 | 90% |
+| 5 | sn1 Apex | 69.8 | 699 | 1,152 | rtx4090* | 4 | 59% |
+| 6 | sn107 Minos | 68.8 | 344 | 28,969 | cpu-small | 20 | 80% |
+| 7 | sn67 Harnyx | 68.7 | 8.83 | 1,166 | cpu-small | 126 | 35% |
+| 8 | sn38 ChronoLLM | 68.5 | 203 | 1,786 | cpu-small | 10 | 52% |
+| 9 | sn56 Gradients | 68.4 | 456 | 5,583 | rtx4090* | 10 | 40% |
+| 10 | sn4 Targon | 68.2 | 15,197 | 27,488 | rtx4090* | 5 | 58% |
+| 11 | sn14 Cacheon | 67.6 | 365 | 2,460 | rtx4090* | 12 | 32% |
+| 12 | sn15 ORO | 67.6 | 9.44 | 21.19 | cpu-small | 57 | 97% |
+| 13 | sn124 Swarm | 67 | 314 | 909 | rtx4090* | 25 | 11% |
+| 14 | sn111 Claims | 65.9 | 238 | 3,037 | rtx4090* | 5 | 77% |
+| 15 | sn100 Cortex | 62.9 | 87.31 | 183 | rtx4090* | 13 | 70% |
+| 16 | sn28 SayGM | 62.6 | 83.32 | 901 | rtx4090* | 62 | 28% |
+| 17 | sn23 Trishool | 62 | 922 | 922 = | cpu-small | 2 | 80% |
+| 18 | sn62 Ridges | 61.4 | 56.82 | 1,887 | rtx4090* | 20 | 21% |
+| 19 | sn51 lium.io | 60 | 48.27 | 2,164 | rtx4090* | 73 | 76% |
+| 20 | sn61 RedTeam | 59.9 | 37.44 | 383 | rtx4090* | 126 | 4% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 24 |
-| concentrated (30–60%) | 26 |
-| dominated (60–90%) | 18 |
-| captured (>90%) | 26 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-24T23:51 | sn69 | SCORING_COMMIT | sn69 commit touches scoring: Merge the v2 validator into dev |
+| 2026-09-24T23:51 | sn69 | README_TASK_DIFF | sn69 README task/scoring sections changed |
+| 2026-09-24T23:51 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: trainer: verify harvested funded checkpoi |
+| 2026-09-24T23:51 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells |
 | 2026-09-24T20:48 | sn15 | RELEASE | sn15 released v2.0.30: fix(validator): lower default sandbox max worke |
 | 2026-09-24T20:48 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: fix(validator): lower default sandbox max |
 | 2026-09-24T20:48 | sn25 | RELEASE | sn25 released v2026.9.24-1054792560 |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-24T20:48 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: chore(release): bind verifier cache and s |
 | 2026-09-24T20:48 | sn88 | README_TASK_DIFF | sn88 README task/scoring sections changed |
 | 2026-09-24T20:48 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: feat(challenges): load docker challenges |
-| 2026-09-24T17:35 | sn20 | SCORING_COMMIT | sn20 commit touches scoring: Ground native semantic scoring in clip ev |
-| 2026-09-24T17:35 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Derive policy rollover activations from v |
-| 2026-09-24T17:35 | sn28 | RELEASE | sn28 released v0.4.22-dev |
-| 2026-09-24T17:35 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: chore(release): gm-miner 0.4.22-dev (#277 |
 
 ---
 

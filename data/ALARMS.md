@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-23T23:14:01Z, block 9133558
+# ALARMS - generated 2026-09-24T01:34:52Z, block 9134262
 
-window: first_seen in [2026-09-23T21:59:27Z, 2026-09-23T23:14:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-24T00:20:20Z, 2026-09-24T01:35:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | P1 | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
+| `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | P1 | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
 
 ### detail
 
-- **`sn120:scoring_commit:2026-09-23T21:51:12Z`** - sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task …
+- **`sn120:scoring_commit:2026-09-23T22:13:58Z`** - sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -32,8 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn40:scoring_commit:2026-09-16T00:55:22Z` | 40 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn40 commit touches scoring: Docs: round-7 rules, miner CLI flow, auditor weights |
-| `sn78:scoring_commit:2026-09-16T22:31:06Z` | 78 | SCORING_COMMIT | 2026-09-17T00:48:02Z | sn78 commit touches scoring: Merge pull request #135 from Umi-BitSign/codex/evaluator-finality-wai… |
 | `sn15:release:v2.0.20` | 15 | RELEASE | 2026-09-17T06:06:18Z | sn15 released v2.0.20 |
 | `sn15:scoring_commit:2026-09-17T05:30:31Z` | 15 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn15 commit touches scoring: Stop generated runs when miner inference budget is exhausted (#317) |
 | `sn51:scoring_commit:2026-09-17T05:33:07Z` | 51 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU benchmark that could not alloca… |
@@ -207,7 +205,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-09-23T08:56:00Z` | 25 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines |
 | `sn28:release:v0.4.21-dev` | 28 | RELEASE | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
 | `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
-| `sn40:readme_task_diff:b6863d625c3e10b3` | 40 | README_TASK_DIFF | 2026-09-17T00:48:02Z | sn40 README task/scoring sections changed |
+| `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |

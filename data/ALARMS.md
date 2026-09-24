@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-24T12:41:41Z, block 9137596
+# ALARMS - generated 2026-09-24T17:34:39Z, block 9139061
 
-window: first_seen in [2026-09-24T11:27:03Z, 2026-09-24T12:42:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-24T16:20:05Z, 2026-09-24T17:35:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.9` | 1 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn1 released v4.4.9 |
-| `sn9:release:v4.13.3` | 9 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn9 released v4.13.3 |
-| `sn22:scoring_commit:2026-08-21T14:46:57Z` | 22 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn22 commit touches scoring: feat: reject sources a miner could have served itself |
-| `sn28:release:v0.4.21` | 28 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn28 released v0.4.21 |
-| `sn28:scoring_commit:2026-09-24T08:59:00Z` | 28 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.21 (#274) |
-| `sn51:release:executor-v1.135` | 51 | RELEASE | P1 | 2026-09-24T12:42:03Z | sn51 released executor-v1.135 |
-| `sn51:scoring_commit:2026-09-24T12:38:05Z` | 51 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn51 commit touches scoring: Validator: pull a present image when the registry tag moved (#1468) |
-| `sn71:scoring_commit:2026-09-24T11:42:05Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T12:42:03Z | sn71 commit touches scoring: Preserve local visible article headers in verifier evidence |
+| `sn20:scoring_commit:2026-09-24T16:34:09Z` | 20 | SCORING_COMMIT | P1 | 2026-09-24T17:35:05Z | sn20 commit touches scoring: Ground native semantic scoring in clip evidence |
+| `sn25:scoring_commit:2026-09-24T13:07:35Z` | 25 | SCORING_COMMIT | P1 | 2026-09-24T17:35:05Z | sn25 commit touches scoring: Derive policy rollover activations from verified V2 terminal |
+| `sn28:release:v0.4.22-dev` | 28 | RELEASE | P1 | 2026-09-24T17:35:05Z | sn28 released v0.4.22-dev |
+| `sn28:scoring_commit:2026-09-24T17:21:09Z` | 28 | SCORING_COMMIT | P1 | 2026-09-24T17:35:05Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.22-dev (#277) |
+| `sn71:scoring_commit:2026-09-24T17:22:54Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T17:35:05Z | sn71 commit touches scoring: chore(release): bind verifier evidence reuse source |
 
 ### detail
 
-- **`sn1:release:v4.4.9`** - sn1 released v4.4.9
-  - published 2026-09-24T10:58:45Z (was v4.4.8)
-- **`sn9:release:v4.13.3`** - sn9 released v4.13.3
-  - published 2026-09-24T12:39:40Z (was v4.13.2)
-- **`sn22:scoring_commit:2026-08-21T14:46:57Z`** - sn22 commit touches scoring: feat: reject sources a miner could have served itself
+- **`sn20:scoring_commit:2026-09-24T16:34:09Z`** - sn20 commit touches scoring: Ground native semantic scoring in clip evidence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.21`** - sn28 released v0.4.21
-  - published 2026-09-24T09:19:50Z (was v0.4.21-dev)
-- **`sn28:scoring_commit:2026-09-24T08:59:00Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.21 (#274)
+- **`sn25:scoring_commit:2026-09-24T13:07:35Z`** - sn25 commit touches scoring: Derive policy rollover activations from verified V2 terminal
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.135`** - sn51 released executor-v1.135
-  - published 2026-09-24T09:47:53Z (was executor-v1.134)
-- **`sn51:scoring_commit:2026-09-24T12:38:05Z`** - sn51 commit touches scoring: Validator: pull a present image when the registry tag moved (#1468)
+- **`sn28:release:v0.4.22-dev`** - sn28 released v0.4.22-dev
+  - published 2026-09-24T17:21:35Z (was v0.4.21)
+- **`sn28:scoring_commit:2026-09-24T17:21:09Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.4.22-dev (#277)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-24T11:42:05Z`** - sn71 commit touches scoring: Preserve local visible article headers in verifier evidence
+- **`sn71:scoring_commit:2026-09-24T17:22:54Z`** - sn71 commit touches scoring: chore(release): bind verifier evidence reuse source
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -52,11 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn10:scoring_commit:2026-09-17T10:11:18Z` | 10 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn10 commit touches scoring: fix: refresh campaign fees before payment and verify inclusion |
-| `sn56:scoring_commit:2026-09-17T15:30:38Z` | 56 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn56 commit touches scoring: Update autoupdate_validator_steps.sh to ensure proper package managem… |
-| `sn92:release:v0.4.11` | 92 | RELEASE | 2026-09-17T15:41:12Z | sn92 released v0.4.11 |
-| `sn92:scoring_commit:2026-09-17T12:16:02Z` | 92 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn92 commit touches scoring: validator: rig verification needs substrate-interface, and is skipped… |
-| `sn124:scoring_commit:2026-09-17T11:43:08Z` | 124 | SCORING_COMMIT | 2026-09-17T15:41:12Z | sn124 commit touches scoring: Pin numpy and repair a drifted validator at startup |
 | `sn25:release:v2026.9.17-1048676710` | 25 | RELEASE | 2026-09-17T19:19:51Z | sn25 released v2026.9.17-1048676710 |
 | `sn74:release:release-20260917-174533` | 74 | RELEASE | 2026-09-17T19:19:51Z | sn74 released release-20260917-174533 |
 | `sn4:release:v2.0.1` | 4 | RELEASE | 2026-09-17T22:20:24Z | sn4 released v2.0.1 |
@@ -220,8 +206,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
 | `sn51:scoring_commit:2026-09-24T06:27:30Z` | 51 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS … |
 | `sn71:scoring_commit:2026-09-24T06:33:26Z` | 71 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn71 commit touches scoring: Bind final verifier extraction release to committed source |
-| `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
-| `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
+| `sn1:release:v4.4.9` | 1 | RELEASE | 2026-09-24T12:42:03Z | sn1 released v4.4.9 |
+| `sn9:release:v4.13.3` | 9 | RELEASE | 2026-09-24T12:42:03Z | sn9 released v4.13.3 |
+| `sn22:scoring_commit:2026-08-21T14:46:57Z` | 22 | SCORING_COMMIT | 2026-09-24T12:42:03Z | sn22 commit touches scoring: feat: reject sources a miner could have served itself |
+| `sn28:release:v0.4.21` | 28 | RELEASE | 2026-09-24T12:42:03Z | sn28 released v0.4.21 |
+| `sn28:scoring_commit:2026-09-24T08:59:00Z` | 28 | SCORING_COMMIT | 2026-09-24T12:42:03Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.21 (#274) |
+| `sn51:release:executor-v1.135` | 51 | RELEASE | 2026-09-24T12:42:03Z | sn51 released executor-v1.135 |
+| `sn51:scoring_commit:2026-09-24T12:38:05Z` | 51 | SCORING_COMMIT | 2026-09-24T12:42:03Z | sn51 commit touches scoring: Validator: pull a present image when the registry tag moved (#1468) |
+| `sn71:scoring_commit:2026-09-24T11:42:05Z` | 71 | SCORING_COMMIT | 2026-09-24T12:42:03Z | sn71 commit touches scoring: Preserve local visible article headers in verifier evidence |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |

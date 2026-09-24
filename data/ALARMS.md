@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-24T01:34:52Z, block 9134262
+# ALARMS - generated 2026-09-24T06:47:32Z, block 9135825
 
-window: first_seen in [2026-09-24T00:20:20Z, 2026-09-24T01:35:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-24T05:32:57Z, 2026-09-24T06:47:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | P1 | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
+| `sn71:burn_drop:0.783` | 71 | BURN_DROP | P0 | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
+| `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | P1 | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
+| `sn51:scoring_commit:2026-09-24T06:27:30Z` | 51 | SCORING_COMMIT | P1 | 2026-09-24T06:47:57Z | sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS … |
+| `sn71:scoring_commit:2026-09-24T06:33:26Z` | 71 | SCORING_COMMIT | P1 | 2026-09-24T06:47:57Z | sn71 commit touches scoring: Bind final verifier extraction release to committed source |
 
 ### detail
 
-- **`sn120:scoring_commit:2026-09-23T22:13:58Z`** - sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids …
+- **`sn71:burn_drop:0.783`** - sn71 burn fell 1.000 -> 0.783 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn21:release:SN21 rich training data v3 (slice 2)`** - sn21 released SN21 rich training data v3 (slice 2)
+  - published 2026-09-24T04:05:38Z (was SN21 rich training data v2)
+- **`sn51:scoring_commit:2026-09-24T06:27:30Z`** - sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-24T06:33:26Z`** - sn71 commit touches scoring: Bind final verifier extraction release to committed source
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.811` | 10 | BURN_DROP | 2026-09-17T06:06:18Z | sn10 burn fell 1.000 -> 0.811 - miners can earn again |
 | `sn15:burn_drop:0.000` | 15 | BURN_DROP | 2026-09-17T11:36:55Z | sn15 burn fell 0.997 -> 0.000 - miners can earn again |
 | `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
@@ -32,11 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
-| `sn15:release:v2.0.20` | 15 | RELEASE | 2026-09-17T06:06:18Z | sn15 released v2.0.20 |
-| `sn15:scoring_commit:2026-09-17T05:30:31Z` | 15 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn15 commit touches scoring: Stop generated runs when miner inference budget is exhausted (#317) |
-| `sn51:scoring_commit:2026-09-17T05:33:07Z` | 51 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn51 commit touches scoring: DAH-3264 - [P2] validator names a GPU benchmark that could not alloca… |
-| `sn78:scoring_commit:2026-09-17T00:15:39Z` | 78 | SCORING_COMMIT | 2026-09-17T06:06:18Z | sn78 commit touches scoring: Verify retained clip objects before retrying an upload |
-| `sn92:release:v0.4.7` | 92 | RELEASE | 2026-09-17T06:06:18Z | sn92 released v0.4.7 |
 | `sn51:release:executor-v1.130` | 51 | RELEASE | 2026-09-17T11:36:55Z | sn51 released executor-v1.130 |
 | `sn51:scoring_commit:2026-09-17T07:44:39Z` | 51 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn51 commit touches scoring: DAH-3519 - [P2] validator: a node whose scrape lists fewer GPUs than … |
 | `sn78:scoring_commit:2026-09-17T08:39:07Z` | 78 | SCORING_COMMIT | 2026-09-17T11:36:55Z | sn78 commit touches scoring: Merge pull request #153 from Umi-BitSign/codex/evaluator-idle-finalit… |
@@ -206,6 +209,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.4.21-dev` | 28 | RELEASE | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
 | `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
 | `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
+| `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
 | `sn56:readme_task_diff:ef6f6fe132bb0121` | 56 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn56 README task/scoring sections changed |
 | `sn124:readme_task_diff:5c048f406be8cfd7` | 124 | README_TASK_DIFF | 2026-09-17T15:41:12Z | sn124 README task/scoring sections changed |
 | `sn74:readme_task_diff:60b1b8229a2e5bd0` | 74 | README_TASK_DIFF | 2026-09-17T19:19:51Z | sn74 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-25T10:08:55Z, block 9144032
+# ALARMS - generated 2026-09-25T15:24:11Z, block 9145609
 
-window: first_seen in [2026-09-25T08:54:24Z, 2026-09-25T10:09:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T14:09:37Z, 2026-09-25T15:24:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn112:burn_drop:0.850` | 112 | BURN_DROP | P0 | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn51:release:miner-v1.005` | 51 | RELEASE | P1 | 2026-09-25T10:09:24Z | sn51 released miner-v1.005 |
-| `sn71:scoring_commit:2026-09-25T08:06:33Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T10:09:24Z | sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review |
-| `sn91:scoring_commit:2026-09-25T05:08:49Z` | 91 | SCORING_COMMIT | P1 | 2026-09-25T10:09:24Z | sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-… |
-| `sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co` | 96 | RELEASE | P1 | 2026-09-25T10:09:24Z | sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility |
+| `sn25:scoring_commit:2026-09-25T14:49:07Z` | 25 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn25 commit touches scoring: competition: clarify staging finalization in score contract |
+| `sn51:scoring_commit:2026-09-25T12:37:33Z` | 51 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after a timed-out docker rm before… |
+| `sn66:scoring_commit:2026-09-25T09:57:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn66 commit touches scoring: Withhold a miner's source while it is on the Pareto frontier |
+| `sn71:scoring_commit:2026-09-25T15:07:15Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn71 commit touches scoring: Bind verified activity repair to committed protected source |
+| `sn102:release:v0.6.4 — the reference miner trains the ` | 102 | RELEASE | P1 | 2026-09-25T15:24:37Z | sn102 released v0.6.4 — the reference miner trains the full model |
+| `sn102:scoring_commit:2026-09-25T14:15:25Z` | 102 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology |
+| `sn111:scoring_commit:2026-09-25T13:39:45Z` | 111 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn111 commit touches scoring: docs(miner): update V1 consensus review setup |
+| `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | P2 | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn112:burn_drop:0.850`** - sn112 burn fell 1.000 -> 0.850 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn51:release:miner-v1.005`** - sn51 released miner-v1.005
-  - published 2026-09-25T05:50:48Z (was executor-v1.135)
-- **`sn71:scoring_commit:2026-09-25T08:06:33Z`** - sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review
+- **`sn25:scoring_commit:2026-09-25T14:49:07Z`** - sn25 commit touches scoring: competition: clarify staging finalization in score contract
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-25T05:08:49Z`** - sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-…
+- **`sn51:scoring_commit:2026-09-25T12:37:33Z`** - sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after a timed-out docker rm before…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co`** - sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility
-  - published 2026-09-25T09:09:05Z (was Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support)
+- **`sn66:scoring_commit:2026-09-25T09:57:35Z`** - sn66 commit touches scoring: Withhold a miner's source while it is on the Pareto frontier
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-25T15:07:15Z`** - sn71 commit touches scoring: Bind verified activity repair to committed protected source
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn102:release:v0.6.4 — the reference miner trains the `** - sn102 released v0.6.4 — the reference miner trains the full model
+  - published 2026-09-25T14:37:01Z (was v0.6.3)
+- **`sn102:scoring_commit:2026-09-25T14:15:25Z`** - sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-25T13:39:45Z`** - sn111 commit touches scoring: docs(miner): update V1 consensus review setup
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:134d009e42d9c43d`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,10 +51,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn3:scoring_commit:2026-09-18T13:31:22Z` | 3 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn3 commit touches scoring: Add category-stratified evaluation sampling and per-sample loss tracki |
-| `sn9:release:v4.13.1` | 9 | RELEASE | 2026-09-18T14:27:07Z | sn9 released v4.13.1 |
-| `sn71:scoring_commit:2026-09-18T10:07:01Z` | 71 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn71 commit touches scoring: Reuse exact retained miner scores for Sep18 rerun295 |
-| `sn104:scoring_commit:2026-09-18T10:58:29Z` | 104 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn104 commit touches scoring: Merge pull request #13 from taostatus/feat/scoring-mech |
+| `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn12:release:validator-staging-2026-09-18-35368036673` | 12 | RELEASE | 2026-09-18T17:50:06Z | sn12 released validator-staging-2026-09-18-35368036673-626-1: fix: evict old neurons in allowance evict_old_data task |
 | `sn12:scoring_commit:2026-09-18T16:19:52Z` | 12 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn12 commit touches scoring: fix: evict old neurons in allowance evict_old_data task |
 | `sn15:scoring_commit:2026-09-18T17:44:07Z` | 15 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn15 commit touches scoring: validator: hard-fail generated runs at >=30% harness-failure rate (#32 |
@@ -205,6 +211,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
 | `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
 | `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
+| `sn51:release:miner-v1.005` | 51 | RELEASE | 2026-09-25T10:09:24Z | sn51 released miner-v1.005 |
+| `sn71:scoring_commit:2026-09-25T08:06:33Z` | 71 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review |
+| `sn91:scoring_commit:2026-09-25T05:08:49Z` | 91 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-… |
+| `sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co` | 96 | RELEASE | 2026-09-25T10:09:24Z | sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |

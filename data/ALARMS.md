@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-25T19:26:25Z, block 9146820
+# ALARMS - generated 2026-09-25T22:42:45Z, block 9147802
 
-window: first_seen in [2026-09-25T18:11:50Z, 2026-09-25T19:26:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T21:28:10Z, 2026-09-25T22:43:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.31: fix(proxy): re-resolve Backend ` | 15 | RELEASE | P1 | 2026-09-25T19:26:50Z | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334) |
-| `sn15:scoring_commit:2026-09-25T18:07:06Z` | 15 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn15 commit touches scoring: refactor(validator): simplify session call orchestration |
-| `sn71:scoring_commit:2026-09-25T16:34:18Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries |
-| `sn74:release:release-20260925-183535` | 74 | RELEASE | P1 | 2026-09-25T19:26:50Z | sn74 released release-20260925-183535 |
-| `sn100:scoring_commit:2026-09-25T18:28:24Z` | 100 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314) |
+| `sn1:release:v4.4.10` | 1 | RELEASE | P1 | 2026-09-25T22:43:10Z | sn1 released v4.4.10 |
 
 ### detail
 
-- **`sn15:release:v2.0.31: fix(proxy): re-resolve Backend `** - sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334)
-  - published 2026-09-25T17:39:29Z (was v2.0.30: fix(validator): lower default sandbox max workers to 30)
-- **`sn15:scoring_commit:2026-09-25T18:07:06Z`** - sn15 commit touches scoring: refactor(validator): simplify session call orchestration
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-25T16:34:18Z`** - sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260925-183535`** - sn74 released release-20260925-183535
-  - published 2026-09-25T18:31:11Z (was release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791))
-- **`sn100:scoring_commit:2026-09-25T18:28:24Z`** - sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn1:release:v4.4.10`** - sn1 released v4.4.10
+  - published 2026-09-25T19:49:34Z (was v4.4.9)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,11 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn15:release:v2.0.26: fix(proxy): fail over user-simu` | 15 | RELEASE | 2026-09-18T20:51:36Z | sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429 |
-| `sn15:scoring_commit:2026-09-18T18:17:14Z` | 15 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend … |
-| `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
-| `sn71:scoring_commit:2026-09-18T19:06:48Z` | 71 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn71 commit touches scoring: Add Sep18 cancelled rerun302 with fresh judge scores |
-| `sn78:scoring_commit:2026-09-18T20:19:20Z` | 78 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn78 commit touches scoring: Merge pull request #169 from Umi-BitSign/codex/portable-scoring-runti… |
 | `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
 | `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
 | `sn61:release:4.10.6` | 61 | RELEASE | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
@@ -203,6 +186,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.6.4 — the reference miner trains the ` | 102 | RELEASE | 2026-09-25T15:24:37Z | sn102 released v0.6.4 — the reference miner trains the full model |
 | `sn102:scoring_commit:2026-09-25T14:15:25Z` | 102 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology |
 | `sn111:scoring_commit:2026-09-25T13:39:45Z` | 111 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn111 commit touches scoring: docs(miner): update V1 consensus review setup |
+| `sn15:release:v2.0.31: fix(proxy): re-resolve Backend ` | 15 | RELEASE | 2026-09-25T19:26:50Z | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334) |
+| `sn15:scoring_commit:2026-09-25T18:07:06Z` | 15 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn15 commit touches scoring: refactor(validator): simplify session call orchestration |
+| `sn71:scoring_commit:2026-09-25T16:34:18Z` | 71 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries |
+| `sn74:release:release-20260925-183535` | 74 | RELEASE | 2026-09-25T19:26:50Z | sn74 released release-20260925-183535 |
+| `sn100:scoring_commit:2026-09-25T18:28:24Z` | 100 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314) |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |

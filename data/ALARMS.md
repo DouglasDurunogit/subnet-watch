@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-24T23:51:26Z, block 9140945
+# ALARMS - generated 2026-09-25T04:49:08Z, block 9142433
 
-window: first_seen in [2026-09-24T22:36:50Z, 2026-09-24T23:51:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T03:34:29Z, 2026-09-25T04:49:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn69:scoring_commit:2026-09-24T15:23:49Z` | 69 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn69 commit touches scoring: Merge the v2 validator into dev |
-| `sn91:scoring_commit:2026-09-24T22:23:56Z` | 91 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor… |
-| `sn120:scoring_commit:2026-09-24T08:48:05Z` | 120 | SCORING_COMMIT | P1 | 2026-09-24T23:51:50Z | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea… |
-| `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | P2 | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
+| `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | P1 | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
+| `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
+| `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | P1 | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
 
 ### detail
 
-- **`sn69:scoring_commit:2026-09-24T15:23:49Z`** - sn69 commit touches scoring: Merge the v2 validator into dev
+- **`sn25:release:v2026.9.24-1054966040`** - sn25 released v2026.9.24-1054966040
+  - published 2026-09-25T00:42:23Z (was v2026.9.24-1054792560)
+- **`sn71:scoring_commit:2026-09-25T02:03:16Z`** - sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-24T22:23:56Z`** - sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor…
+- **`sn120:scoring_commit:2026-09-25T00:41:24Z`** - sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-24T08:48:05Z`** - sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn69:readme_task_diff:3d7258dffafe1a92`** - sn69 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn127:burn_drop:0.714` | 127 | BURN_DROP | 2026-09-18T00:36:11Z | sn127 burn fell 1.000 -> 0.714 - miners can earn again |
 | `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
@@ -40,12 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn15:release:v2.0.22` | 15 | RELEASE | 2026-09-18T00:36:11Z | sn15 released v2.0.22 |
-| `sn15:scoring_commit:2026-09-18T00:19:14Z` | 15 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn15 commit touches scoring: Score partial harness failures alongside agent failures (#320) |
-| `sn25:release:v2026.9.17-1048903120` | 25 | RELEASE | 2026-09-18T00:36:11Z | sn25 released v2026.9.17-1048903120 |
-| `sn34:scoring_commit:2026-09-17T22:39:06Z` | 34 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn34 commit touches scoring: Merge pull request #460 from BitMind-AI/feat/random-challenge-allocati |
-| `sn71:scoring_commit:2026-09-17T23:22:48Z` | 71 | SCORING_COMMIT | 2026-09-18T00:36:11Z | sn71 commit touches scoring: Fit Sep18 evaluation schedule to measured validator capacity |
-| `sn74:release:release-20260917-234413` | 74 | RELEASE | 2026-09-18T00:36:11Z | sn74 released release-20260917-234413 |
 | `sn15:release:v2.0.23` | 15 | RELEASE | 2026-09-18T05:16:57Z | sn15 released v2.0.23 |
 | `sn25:release:v2026.9.17-1048981210` | 25 | RELEASE | 2026-09-18T05:16:57Z | sn25 released v2026.9.17-1048981210 |
 | `sn49:scoring_commit:2026-09-18T01:53:42Z` | 49 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with… |
@@ -215,6 +205,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:scoring_commit:2026-09-18T08:40:59Z` | 46 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn46 commit touches scoring: Merge pull request #5 from Subnet46/docs/validator-requirements |
 | `sn71:scoring_commit:2026-09-24T20:11:33Z` | 71 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn71 commit touches scoring: chore(release): bind verifier cache and semantic fixes |
 | `sn100:scoring_commit:2026-09-24T18:24:45Z` | 100 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn100 commit touches scoring: feat(challenges): load docker challenges and move bounty out (#312) |
+| `sn69:scoring_commit:2026-09-24T15:23:49Z` | 69 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn69 commit touches scoring: Merge the v2 validator into dev |
+| `sn91:scoring_commit:2026-09-24T22:23:56Z` | 91 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor… |
+| `sn120:scoring_commit:2026-09-24T08:48:05Z` | 120 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea… |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
@@ -224,6 +217,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
+| `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

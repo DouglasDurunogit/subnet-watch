@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-25T04:49:08Z, block 9142433
+# ALARMS - generated 2026-09-25T10:08:55Z, block 9144032
 
-window: first_seen in [2026-09-25T03:34:29Z, 2026-09-25T04:49:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T08:54:24Z, 2026-09-25T10:09:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | P1 | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
-| `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
-| `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | P1 | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
+| `sn112:burn_drop:0.850` | 112 | BURN_DROP | P0 | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
+| `sn51:release:miner-v1.005` | 51 | RELEASE | P1 | 2026-09-25T10:09:24Z | sn51 released miner-v1.005 |
+| `sn71:scoring_commit:2026-09-25T08:06:33Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T10:09:24Z | sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review |
+| `sn91:scoring_commit:2026-09-25T05:08:49Z` | 91 | SCORING_COMMIT | P1 | 2026-09-25T10:09:24Z | sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-… |
+| `sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co` | 96 | RELEASE | P1 | 2026-09-25T10:09:24Z | sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility |
 
 ### detail
 
-- **`sn25:release:v2026.9.24-1054966040`** - sn25 released v2026.9.24-1054966040
-  - published 2026-09-25T00:42:23Z (was v2026.9.24-1054792560)
-- **`sn71:scoring_commit:2026-09-25T02:03:16Z`** - sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change
+- **`sn112:burn_drop:0.850`** - sn112 burn fell 1.000 -> 0.850 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn51:release:miner-v1.005`** - sn51 released miner-v1.005
+  - published 2026-09-25T05:50:48Z (was executor-v1.135)
+- **`sn71:scoring_commit:2026-09-25T08:06:33Z`** - sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-25T00:41:24Z`** - sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat…
+- **`sn91:scoring_commit:2026-09-25T05:08:49Z`** - sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co`** - sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility
+  - published 2026-09-25T09:09:05Z (was Verathos v0.2.2 – Consistent Validator Decisions and Microtensor Support)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -36,18 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
-| `sn15:release:v2.0.23` | 15 | RELEASE | 2026-09-18T05:16:57Z | sn15 released v2.0.23 |
-| `sn25:release:v2026.9.17-1048981210` | 25 | RELEASE | 2026-09-18T05:16:57Z | sn25 released v2026.9.17-1048981210 |
-| `sn49:scoring_commit:2026-09-18T01:53:42Z` | 49 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn49 commit touches scoring: Enhance tournament reward structure to support podium placements with… |
-| `sn71:scoring_commit:2026-09-18T04:15:55Z` | 71 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn71 commit touches scoring: Preserve verified historical local release archives |
-| `sn78:scoring_commit:2026-09-18T04:12:28Z` | 78 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn78 commit touches scoring: Bind evaluation readiness to the deployed launch (#159) |
-| `sn92:release:v0.4.12` | 92 | RELEASE | 2026-09-18T05:16:57Z | sn92 released v0.4.12 |
-| `sn92:scoring_commit:2026-09-18T02:43:45Z` | 92 | SCORING_COMMIT | 2026-09-18T05:16:57Z | sn92 commit touches scoring: scoring: extraction F1 compares leaf fields, so nested JSON scores ag… |
-| `sn25:release:v2026.9.17-1049083750` | 25 | RELEASE | 2026-09-18T09:58:19Z | sn25 released v2026.9.17-1049083750 |
-| `sn28:release:v0.4.19-dev` | 28 | RELEASE | 2026-09-18T09:58:19Z | sn28 released v0.4.19-dev |
-| `sn28:scoring_commit:2026-09-18T09:53:30Z` | 28 | SCORING_COMMIT | 2026-09-18T09:58:19Z | sn28 commit touches scoring: chore(release): bump miner to 0.4.19 |
-| `sn51:release:watchtower-v1.1.0` | 51 | RELEASE | 2026-09-18T09:58:19Z | sn51 released watchtower-v1.1.0 |
-| `sn71:scoring_commit:2026-09-18T07:44:16Z` | 71 | SCORING_COMMIT | 2026-09-18T09:58:19Z | sn71 commit touches scoring: Seal Sep18 baseline rerun for validated public sales agent |
 | `sn3:scoring_commit:2026-09-18T13:31:22Z` | 3 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn3 commit touches scoring: Add category-stratified evaluation sampling and per-sample loss tracki |
 | `sn9:release:v4.13.1` | 9 | RELEASE | 2026-09-18T14:27:07Z | sn9 released v4.13.1 |
 | `sn71:scoring_commit:2026-09-18T10:07:01Z` | 71 | SCORING_COMMIT | 2026-09-18T14:27:07Z | sn71 commit touches scoring: Reuse exact retained miner scores for Sep18 rerun295 |
@@ -208,6 +202,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn69:scoring_commit:2026-09-24T15:23:49Z` | 69 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn69 commit touches scoring: Merge the v2 validator into dev |
 | `sn91:scoring_commit:2026-09-24T22:23:56Z` | 91 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor… |
 | `sn120:scoring_commit:2026-09-24T08:48:05Z` | 120 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea… |
+| `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
+| `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
+| `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-25T15:24:11Z · block 9145609 · run_status **ok**_
+_snapshot 2026-09-25T19:26:25Z · block 9146820 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 56 of 128
+# 61 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 96 | `miner_burn` < 0.99 |
 | Ranked | 96 | passed every gate |
-| **Positive margin** | **56** | income beats machine cost |
-| New events this window | 8 | see ALARMS.md |
+| **Positive margin** | **61** | income beats machine cost |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
-| 0–0.2 | 8 | `████` |
+| 0 (none) | 61 | `████████████████████████████` |
+| 0–0.2 | 9 | `████` |
 | 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 12 | `█████` |
+| 0.4–0.6 | 2 | `█` |
+| 0.6–0.8 | 13 | `██████` |
 | 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 32 | `██████████████` |
+| ≥0.99 dead | 32 | `███████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn91 cascade | 72.7 | 642 | 2,571 | cpu-small | 5 | 52% |
-| 2 | sn26 Perturb | 71.3 | 46.55 | 56.65 | rtx3060 | 5 | 90% |
-| 3 | sn56 Gradients | 70.3 | 820 | 5,839 | rtx4090* | 8 | 42% |
-| 4 | sn38 ChronoLLM | 69.6 | 269 | 2,369 | cpu-small | 10 | 52% |
-| 5 | sn1 Apex | 69.5 | 634 | 1,098 | rtx4090* | 4 | 62% |
-| 6 | sn107 Minos | 69 | 360 | 30,507 | cpu-small | 20 | 80% |
-| 7 | sn14 Cacheon | 68.7 | 500 | 2,444 | rtx4090* | 13 | 31% |
-| 8 | sn4 Targon | 68.3 | 15,566 | 28,155 | rtx4090* | 5 | 58% |
-| 9 | sn15 ORO | 68.2 | 12.63 | 22.27 | cpu-small | 57 | 97% |
-| 10 | sn67 Harnyx | 68.2 | 7.84 | 1,396 | cpu-small | 119 | 41% |
-| 11 | sn124 Swarm | 67.1 | 320 | 926 | rtx4090* | 25 | 11% |
-| 12 | sn96 Verathos | 66.7 | 15.63 | 261 | rtx4090 | 78 | 30% |
-| 13 | sn111 Claims | 66.4 | 273 | 2,448 | rtx4090* | 5 | 61% |
-| 14 | sn3 Teutonic | 64.7 | 5,321 | 5,321 = | rtx4090* | 5 | 20% |
-| 15 | sn28 SayGM | 62.5 | 82.05 | 1,083 | rtx4090* | 78 | 6% |
-| 16 | sn23 Trishool | 62.3 | 1,003 | 1,003 = | cpu-small | 2 | 80% |
-| 17 | sn62 Ridges | 61.5 | 58.45 | 1,707 | rtx4090* | 21 | 19% |
-| 18 | sn61 RedTeam | 60.4 | 42.08 | 391 | rtx4090* | 121 | 4% |
-| 19 | sn100 Cortex | 59.4 | 30.97 | 203 | rtx4090* | 19 | 72% |
-| 20 | sn74 Gittensor | 59.3 | 33.47 | 306 | rtx4090* | 16 | 64% |
+| 1 | sn91 cascade | 72.8 | 656 | 2,629 | cpu-small | 5 | 52% |
+| 2 | sn102 ConnitoAI | 72.4 | 1,512 | 1,512 = | rtx4090* | 4 | 25% |
+| 3 | sn56 Gradients | 71 | 993 | 5,814 | rtx4090* | 8 | 41% |
+| 4 | sn38 ChronoLLM | 70 | 301 | 2,651 | cpu-small | 10 | 52% |
+| 5 | sn1 Apex | 69.4 | 626 | 1,207 | rtx4090* | 4 | 60% |
+| 6 | sn107 Minos | 69.1 | 371 | 31,089 | cpu-small | 20 | 80% |
+| 7 | sn14 Cacheon | 68.9 | 540 | 2,473 | rtx4090* | 13 | 31% |
+| 8 | sn4 Targon | 68.4 | 15,787 | 28,555 | rtx4090* | 5 | 58% |
+| 9 | sn67 Harnyx | 68.3 | 7.99 | 1,419 | cpu-small | 124 | 41% |
+| 10 | sn96 Verathos | 68 | 21.02 | 236 | rtx4090 | 78 | 31% |
+| 11 | sn15 ORO | 67.8 | 12.90 | 22.72 | cpu-small | 57 | 97% |
+| 12 | sn124 Swarm | 67.1 | 325 | 940 | rtx4090* | 25 | 11% |
+| 13 | sn111 Claims | 65.8 | 231 | 3,206 | rtx4090* | 5 | 78% |
+| 14 | sn3 Teutonic | 64.8 | 5,402 | 5,402 = | rtx4090* | 5 | 20% |
+| 15 | sn23 Trishool | 62.2 | 987 | 987 = | cpu-small | 2 | 80% |
+| 16 | sn62 Ridges | 61.6 | 59.15 | 1,725 | rtx4090* | 21 | 19% |
+| 17 | sn26 Perturb | 61 | 52.48 | 57.61 | rtx3060 | 5 | 90% |
+| 18 | sn61 RedTeam | 60.5 | 43.77 | 316 | rtx4090* | 131 | 3% |
+| 19 | sn28 SayGM | 60.2 | 42.05 | 426 | rtx4090* | 57 | 67% |
+| 20 | sn100 Cortex | 60 | 36.39 | 247 | rtx4090* | 19 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 22 |
+| wide (<30%) | 23 |
+| concentrated (30–60%) | 21 |
+| dominated (60–90%) | 24 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality
@@ -107,6 +107,11 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-25T19:26 | sn15 | RELEASE | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowli |
+| 2026-09-25T19:26 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: refactor(validator): simplify session cal |
+| 2026-09-25T19:26 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve terminal verified intent evidenc |
+| 2026-09-25T19:26 | sn74 | RELEASE | sn74 released release-20260925-183535 |
+| 2026-09-25T19:26 | sn100 | SCORING_COMMIT | sn100 commit touches scoring: test(network): verify opentype 75/25 sea |
 | 2026-09-25T15:24 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: competition: clarify staging finalization |
 | 2026-09-25T15:24 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after  |
 | 2026-09-25T15:24 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Withhold a miner's source while it is on  |
@@ -117,11 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-25T15:24 | sn111 | README_TASK_DIFF | sn111 README task/scoring sections changed |
 | 2026-09-25T10:09 | sn51 | RELEASE | sn51 released miner-v1.005 |
 | 2026-09-25T10:09 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Retain verified Greenhouse department met |
-| 2026-09-25T10:09 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Merge pull request #315 from TensorLink-A |
-| 2026-09-25T10:09 | sn96 | RELEASE | sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility |
-| 2026-09-25T10:09 | sn112 | BURN_DROP | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| 2026-09-25T04:49 | sn25 | RELEASE | sn25 released v2026.9.24-1054966040 |
-| 2026-09-25T04:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind protected verifier workflows to revi |
 
 ---
 

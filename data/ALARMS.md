@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-25T15:24:11Z, block 9145609
+# ALARMS - generated 2026-09-25T19:26:25Z, block 9146820
 
-window: first_seen in [2026-09-25T14:09:37Z, 2026-09-25T15:24:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T18:11:50Z, 2026-09-25T19:26:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-09-25T14:49:07Z` | 25 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn25 commit touches scoring: competition: clarify staging finalization in score contract |
-| `sn51:scoring_commit:2026-09-25T12:37:33Z` | 51 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after a timed-out docker rm before… |
-| `sn66:scoring_commit:2026-09-25T09:57:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn66 commit touches scoring: Withhold a miner's source while it is on the Pareto frontier |
-| `sn71:scoring_commit:2026-09-25T15:07:15Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn71 commit touches scoring: Bind verified activity repair to committed protected source |
-| `sn102:release:v0.6.4 — the reference miner trains the ` | 102 | RELEASE | P1 | 2026-09-25T15:24:37Z | sn102 released v0.6.4 — the reference miner trains the full model |
-| `sn102:scoring_commit:2026-09-25T14:15:25Z` | 102 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology |
-| `sn111:scoring_commit:2026-09-25T13:39:45Z` | 111 | SCORING_COMMIT | P1 | 2026-09-25T15:24:37Z | sn111 commit touches scoring: docs(miner): update V1 consensus review setup |
-| `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | P2 | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
+| `sn15:release:v2.0.31: fix(proxy): re-resolve Backend ` | 15 | RELEASE | P1 | 2026-09-25T19:26:50Z | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334) |
+| `sn15:scoring_commit:2026-09-25T18:07:06Z` | 15 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn15 commit touches scoring: refactor(validator): simplify session call orchestration |
+| `sn71:scoring_commit:2026-09-25T16:34:18Z` | 71 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries |
+| `sn74:release:release-20260925-183535` | 74 | RELEASE | P1 | 2026-09-25T19:26:50Z | sn74 released release-20260925-183535 |
+| `sn100:scoring_commit:2026-09-25T18:28:24Z` | 100 | SCORING_COMMIT | P1 | 2026-09-25T19:26:50Z | sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314) |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-09-25T14:49:07Z`** - sn25 commit touches scoring: competition: clarify staging finalization in score contract
+- **`sn15:release:v2.0.31: fix(proxy): re-resolve Backend `** - sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334)
+  - published 2026-09-25T17:39:29Z (was v2.0.30: fix(validator): lower default sandbox max workers to 30)
+- **`sn15:scoring_commit:2026-09-25T18:07:06Z`** - sn15 commit touches scoring: refactor(validator): simplify session call orchestration
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-25T12:37:33Z`** - sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after a timed-out docker rm before…
+- **`sn71:scoring_commit:2026-09-25T16:34:18Z`** - sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-25T09:57:35Z`** - sn66 commit touches scoring: Withhold a miner's source while it is on the Pareto frontier
+- **`sn74:release:release-20260925-183535`** - sn74 released release-20260925-183535
+  - published 2026-09-25T18:31:11Z (was release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791))
+- **`sn100:scoring_commit:2026-09-25T18:28:24Z`** - sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-25T15:07:15Z`** - sn71 commit touches scoring: Bind verified activity repair to committed protected source
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.6.4 — the reference miner trains the `** - sn102 released v0.6.4 — the reference miner trains the full model
-  - published 2026-09-25T14:37:01Z (was v0.6.3)
-- **`sn102:scoring_commit:2026-09-25T14:15:25Z`** - sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-25T13:39:45Z`** - sn111 commit touches scoring: docs(miner): update V1 consensus review setup
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:134d009e42d9c43d`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -52,16 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn12:release:validator-staging-2026-09-18-35368036673` | 12 | RELEASE | 2026-09-18T17:50:06Z | sn12 released validator-staging-2026-09-18-35368036673-626-1: fix: evict old neurons in allowance evict_old_data task |
-| `sn12:scoring_commit:2026-09-18T16:19:52Z` | 12 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn12 commit touches scoring: fix: evict old neurons in allowance evict_old_data task |
-| `sn15:scoring_commit:2026-09-18T17:44:07Z` | 15 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn15 commit touches scoring: validator: hard-fail generated runs at >=30% harness-failure rate (#32 |
-| `sn25:release:v2026.9.18-1049469180` | 25 | RELEASE | 2026-09-18T17:50:06Z | sn25 released v2026.9.18-1049469180 |
-| `sn28:release:v0.4.19` | 28 | RELEASE | 2026-09-18T17:50:06Z | sn28 released v0.4.19 |
-| `sn71:scoring_commit:2026-09-18T17:43:00Z` | 71 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn71 commit touches scoring: Clarify validator credentials and required scoring proxy setup |
-| `sn74:release:release-20260918-164355` | 74 | RELEASE | 2026-09-18T17:50:06Z | sn74 released release-20260918-164355 |
-| `sn90:scoring_commit:2026-09-18T17:37:57Z` | 90 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn90 commit touches scoring: docs: client-facing attestation of inference — API + verification gui… |
-| `sn97:scoring_commit:2026-09-18T14:33:15Z` | 97 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn97 commit touches scoring: feat: Added scored_output the judge-facing text of a rollout |
-| `sn111:scoring_commit:2026-09-18T15:54:53Z` | 111 | SCORING_COMMIT | 2026-09-18T17:50:06Z | sn111 commit touches scoring: docs: document funding-lineage miner selection |
 | `sn15:release:v2.0.26: fix(proxy): fail over user-simu` | 15 | RELEASE | 2026-09-18T20:51:36Z | sn15 released v2.0.26: fix(proxy): fail over user-simulator from Mistral Small to Qwen on 429 |
 | `sn15:scoring_commit:2026-09-18T18:17:14Z` | 15 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn15 commit touches scoring: validator: strict > infra boundary — 3/10 not infra, matches Backend … |
 | `sn45:scoring_commit:2026-09-18T17:10:04Z` | 45 | SCORING_COMMIT | 2026-09-18T20:51:36Z | sn45 commit touches scoring: Score pool audits under a second matcher, recorded as the audit_v2 ch… |
@@ -215,6 +196,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-25T08:06:33Z` | 71 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review |
 | `sn91:scoring_commit:2026-09-25T05:08:49Z` | 91 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-… |
 | `sn96:release:Verathos v0.2.3 – DeepSeek Mesh Proof Co` | 96 | RELEASE | 2026-09-25T10:09:24Z | sn96 released Verathos v0.2.3 – DeepSeek Mesh Proof Compatibility |
+| `sn25:scoring_commit:2026-09-25T14:49:07Z` | 25 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn25 commit touches scoring: competition: clarify staging finalization in score contract |
+| `sn51:scoring_commit:2026-09-25T12:37:33Z` | 51 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn51 commit touches scoring: DAH-3467 - [P2] validator: inspect after a timed-out docker rm before… |
+| `sn66:scoring_commit:2026-09-25T09:57:35Z` | 66 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn66 commit touches scoring: Withhold a miner's source while it is on the Pareto frontier |
+| `sn71:scoring_commit:2026-09-25T15:07:15Z` | 71 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn71 commit touches scoring: Bind verified activity repair to committed protected source |
+| `sn102:release:v0.6.4 — the reference miner trains the ` | 102 | RELEASE | 2026-09-25T15:24:37Z | sn102 released v0.6.4 — the reference miner trains the full model |
+| `sn102:scoring_commit:2026-09-25T14:15:25Z` | 102 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn102 commit touches scoring: Merge pull request #283 from Connito-AI/feat/miner-full-topology |
+| `sn111:scoring_commit:2026-09-25T13:39:45Z` | 111 | SCORING_COMMIT | 2026-09-25T15:24:37Z | sn111 commit touches scoring: docs(miner): update V1 consensus review setup |
 | `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
@@ -225,6 +213,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
+| `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

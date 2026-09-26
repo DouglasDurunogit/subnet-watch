@@ -1,26 +1,18 @@
-# ALARMS - generated 2026-09-25T22:42:45Z, block 9147802
+# ALARMS - generated 2026-09-26T00:55:53Z, block 9148467
 
-window: first_seen in [2026-09-25T21:28:10Z, 2026-09-25T22:43:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-25T23:41:27Z, 2026-09-26T00:56:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn1:release:v4.4.10` | 1 | RELEASE | P1 | 2026-09-25T22:43:10Z | sn1 released v4.4.10 |
-
-### detail
-
-- **`sn1:release:v4.4.10`** - sn1 released v4.4.10
-  - published 2026-09-25T19:49:34Z (was v4.4.9)
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.814` | 10 | BURN_DROP | 2026-09-18T23:15:17Z | sn10 burn fell 1.000 -> 0.814 - miners can earn again |
 | `sn10:burn_drop:0.830` | 10 | BURN_DROP | 2026-09-19T11:19:32Z | sn10 burn fell 1.000 -> 0.830 - miners can earn again |
 | `sn112:burn_drop:0.867` | 112 | BURN_DROP | 2026-09-19T11:19:32Z | sn112 burn fell 1.000 -> 0.867 - miners can earn again |
 | `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -31,8 +23,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn25:release:v2026.9.18-1049702080` | 25 | RELEASE | 2026-09-18T23:15:17Z | sn25 released v2026.9.18-1049702080 |
-| `sn71:scoring_commit:2026-09-18T22:13:21Z` | 71 | SCORING_COMMIT | 2026-09-18T23:15:17Z | sn71 commit touches scoring: Refresh protected verifier integrity manifest |
 | `sn61:release:4.10.6` | 61 | RELEASE | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
 | `sn61:scoring_commit:2026-09-19T01:16:23Z` | 61 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4 |
 | `sn71:scoring_commit:2026-09-19T00:42:55Z` | 71 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn71 commit touches scoring: Keep baseline source update independent of miner progress |
@@ -191,7 +181,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-25T16:34:18Z` | 71 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries |
 | `sn74:release:release-20260925-183535` | 74 | RELEASE | 2026-09-25T19:26:50Z | sn74 released release-20260925-183535 |
 | `sn100:scoring_commit:2026-09-25T18:28:24Z` | 100 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314) |
-| `sn71:readme_task_diff:d96d81f0465762fa` | 71 | README_TASK_DIFF | 2026-09-18T23:15:17Z | sn71 README task/scoring sections changed |
+| `sn1:release:v4.4.10` | 1 | RELEASE | 2026-09-25T22:43:10Z | sn1 released v4.4.10 |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |

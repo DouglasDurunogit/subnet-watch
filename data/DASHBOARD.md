@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-26T15:03:51Z · block 9152707 · run_status **ok**_
+_snapshot 2026-09-26T18:33:48Z · block 9153757 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 62 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 95 | `miner_burn` < 0.99 |
 | Ranked | 95 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **62** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 62 | `████████████████████████████` |
+| 0 (none) | 63 | `████████████████████████████` |
 | 0–0.2 | 8 | `████` |
 | 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 2 | `█` |
-| 0.6–0.8 | 10 | `█████` |
+| 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 33 | `███████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn91 cascade | 72.8 | 655 | 2,622 | cpu-small | 5 | 52% |
-| 2 | sn1 Apex | 71.6 | 1,178 | 1,207 | rtx4090* | 4 | 54% |
-| 3 | sn38 ChronoLLM | 70.3 | 337 | 2,966 | cpu-small | 10 | 52% |
-| 4 | sn56 Gradients | 69.5 | 646 | 3,401 | rtx4090* | 8 | 41% |
-| 5 | sn67 Harnyx | 69.5 | 10.73 | 1,377 | cpu-small | 120 | 37% |
-| 6 | sn107 Minos | 69.2 | 379 | 31,931 | cpu-small | 20 | 80% |
-| 7 | sn15 ORO | 69.2 | 14.25 | 22,852 | cpu-small | 63 | 96% |
-| 8 | sn4 Targon | 68.6 | 16,832 | 30,446 | rtx4090* | 5 | 58% |
-| 9 | sn96 Verathos | 67.5 | 19.20 | 282 | rtx4090 | 74 | 30% |
-| 10 | sn124 Swarm | 67.3 | 347 | 1,000 | rtx4090* | 25 | 11% |
-| 11 | sn111 Claims | 67.2 | 340 | 3,042 | rtx4090* | 5 | 70% |
-| 12 | sn3 Teutonic | 65 | 5,747 | 5,747 = | rtx4090* | 5 | 20% |
-| 13 | sn62 Ridges | 63.4 | 104 | 1,412 | rtx4090* | 24 | 14% |
-| 14 | sn28 SayGM | 63.3 | 102 | 1,078 | rtx4090* | 61 | 20% |
-| 15 | sn14 Cacheon | 63 | 91.46 | 2,515 | rtx4090* | 13 | 29% |
-| 16 | sn23 Trishool | 62.4 | 1,026 | 1,026 = | cpu-small | 2 | 80% |
-| 17 | sn26 Perturb | 61.6 | 62.03 | 62.03 = | rtx3060 | 5 | 90% |
-| 18 | sn100 Cortex | 60.2 | 38.57 | 260 | rtx4090* | 19 | 70% |
-| 19 | sn102 ConnitoAI | 60.1 | 38.62 | 1,996 | rtx4090* | 8 | 33% |
-| 20 | sn74 Gittensor | 59.1 | 32.28 | 307 | rtx4090* | 17 | 63% |
+| 1 | sn91 cascade | 72.6 | 632 | 2,531 | cpu-small | 5 | 52% |
+| 2 | sn1 Apex | 71.4 | 1,140 | 1,168 | rtx4090* | 4 | 54% |
+| 3 | sn38 ChronoLLM | 70.7 | 368 | 3,232 | cpu-small | 10 | 52% |
+| 4 | sn56 Gradients | 69.6 | 649 | 3,371 | rtx4090* | 8 | 40% |
+| 5 | sn67 Harnyx | 69.5 | 10.65 | 1,367 | cpu-small | 121 | 37% |
+| 6 | sn107 Minos | 69.2 | 382 | 31,510 | cpu-small | 20 | 79% |
+| 7 | sn4 Targon | 68.6 | 16,698 | 30,202 | rtx4090* | 5 | 58% |
+| 8 | sn15 ORO | 68.4 | 13.71 | 22,573 | cpu-small | 64 | 96% |
+| 9 | sn124 Swarm | 67.3 | 345 | 995 | rtx4090* | 25 | 11% |
+| 10 | sn111 Claims | 67.2 | 337 | 3,013 | rtx4090* | 5 | 70% |
+| 11 | sn96 Verathos | 66.8 | 16.09 | 270 | rtx4090 | 77 | 30% |
+| 12 | sn14 Cacheon | 66.6 | 269 | 2,607 | rtx4090* | 14 | 31% |
+| 13 | sn3 Teutonic | 64.9 | 5,705 | 5,705 = | rtx4090* | 5 | 20% |
+| 14 | sn62 Ridges | 64.1 | 126 | 1,302 | rtx4090* | 25 | 13% |
+| 15 | sn26 Perturb | 62.9 | 91.89 | 141 | rtx3060 | 5 | 90% |
+| 16 | sn23 Trishool | 62.3 | 1,018 | 1,018 = | cpu-small | 2 | 80% |
+| 17 | sn28 SayGM | 62.3 | 76.66 | 1,122 | rtx4090* | 65 | 15% |
+| 18 | sn100 Cortex | 61 | 49.33 | 2,323 | rtx4090* | 18 | 65% |
+| 19 | sn51 lium.io | 59 | 38.62 | 2,962 | rtx4090* | 69 | 77% |
+| 20 | sn74 Gittensor | 58.3 | 25.36 | 305 | rtx4090* | 19 | 62% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 24 |
 | dominated (60–90%) | 21 |
 | captured (>90%) | 25 |
 
@@ -97,8 +97,8 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 98 |
-| README keywords (GUESS) | 10 |
+| no evidence | 97 |
+| README keywords (GUESS) | 11 |
 | min_compute.yml (curated) | 10 |
 | code-submission (validator runs it) | 9 |
 | README stated VRAM (explicit) | 1 |
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-26T18:34 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind protected manifest to evidence quali |
+| 2026-09-26T18:34 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Merge pull request #281 from reliquadotai |
 | 2026-09-26T15:04 | sn7 | RELEASE | sn7 released release-20260926-135859 |
 | 2026-09-26T15:04 | sn7 | SCORING_COMMIT | sn7 commit touches scoring: Hide alpha price flags from alw miner quot |
 | 2026-09-26T15:04 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Show potential winners and link scoring b |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-25T22:43 | sn1 | RELEASE | sn1 released v4.4.10 |
 | 2026-09-25T19:26 | sn15 | RELEASE | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowli |
 | 2026-09-25T19:26 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: refactor(validator): simplify session cal |
-| 2026-09-25T19:26 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve terminal verified intent evidenc |
-| 2026-09-25T19:26 | sn74 | RELEASE | sn74 released release-20260925-183535 |
 
 ---
 

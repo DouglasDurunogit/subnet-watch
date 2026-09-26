@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-26T11:22:15Z, block 9151599
+# ALARMS - generated 2026-09-26T15:03:51Z, block 9152707
 
-window: first_seen in [2026-09-26T10:07:54Z, 2026-09-26T11:22:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-26T13:49:18Z, 2026-09-26T15:04:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-26T08:19:27Z` | 71 | SCORING_COMMIT | P1 | 2026-09-26T11:22:54Z | sn71 commit touches scoring: Bind protected verifier manifest to alias fix |
-| `sn120:scoring_commit:2026-09-26T09:23:06Z` | 120 | SCORING_COMMIT | P1 | 2026-09-26T11:22:54Z | sn120 commit touches scoring: wvk 25 scoring bundle STAGED (all knobs off until T0 2026-09-30 14:00… |
-| `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | P2 | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
+| `sn7:release:release-20260926-135859` | 7 | RELEASE | P1 | 2026-09-26T15:04:18Z | sn7 released release-20260926-135859 |
+| `sn7:scoring_commit:2026-09-25T17:45:15Z` | 7 | SCORING_COMMIT | P1 | 2026-09-26T15:04:18Z | sn7 commit touches scoring: Hide alpha price flags from alw miner quotes --help (#756) |
+| `sn14:scoring_commit:2026-09-26T14:38:01Z` | 14 | SCORING_COMMIT | P1 | 2026-09-26T15:04:18Z | sn14 commit touches scoring: Show potential winners and link scoring baselines (#127) |
+| `sn22:scoring_commit:2026-09-25T07:25:31Z` | 22 | SCORING_COMMIT | P1 | 2026-09-26T15:04:18Z | sn22 commit touches scoring: feat: burn all emission and stop querying miners until the next releas |
+| `sn81:scoring_commit:2026-09-26T12:28:35Z` | 81 | SCORING_COMMIT | P1 | 2026-09-26T15:04:18Z | sn81 commit touches scoring: docs(corpus): the task has no seats; audit throughput only delays pay… |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-26T08:19:27Z`** - sn71 commit touches scoring: Bind protected verifier manifest to alias fix
+- **`sn7:release:release-20260926-135859`** - sn7 released release-20260926-135859
+  - published 2026-09-25T23:38:58Z (was release-20260911-013831)
+- **`sn7:scoring_commit:2026-09-25T17:45:15Z`** - sn7 commit touches scoring: Hide alpha price flags from alw miner quotes --help (#756)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-26T09:23:06Z`** - sn120 commit touches scoring: wvk 25 scoring bundle STAGED (all knobs off until T0 2026-09-30 14:00…
+- **`sn14:scoring_commit:2026-09-26T14:38:01Z`** - sn14 commit touches scoring: Show potential winners and link scoring baselines (#127)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:readme_task_diff:8299976ab43651d9`** - sn25 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn22:scoring_commit:2026-09-25T07:25:31Z`** - sn22 commit touches scoring: feat: burn all emission and stop querying miners until the next releas
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-09-26T12:28:35Z`** - sn81 commit touches scoring: docs(corpus): the task has no seats; audit throughput only delays pay…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -34,8 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn11:scoring_commit:2026-09-19T12:33:44Z` | 11 | SCORING_COMMIT | 2026-09-19T14:37:19Z | sn11 commit touches scoring: docs(roadmap): the protocol (objective = environment + verifier, fit … |
-| `sn71:scoring_commit:2026-09-19T11:23:50Z` | 71 | SCORING_COMMIT | 2026-09-19T14:37:19Z | sn71 commit touches scoring: Bind rerun316 to fixed scorer image |
 | `sn11:scoring_commit:2026-09-19T15:53:33Z` | 11 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn11 commit touches scoring: docs: Season 2 pass over the public docs (README rewritten, MINER_GUI… |
 | `sn34:scoring_commit:2026-09-19T17:11:58Z` | 34 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn34 commit touches scoring: Merge testnet into reward fix; retain release version 5.0.8 |
 | `sn71:scoring_commit:2026-09-19T15:00:49Z` | 71 | SCORING_COMMIT | 2026-09-19T17:29:09Z | sn71 commit touches scoring: Route Luna across verified Azure regions |
@@ -184,6 +188,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn1:release:v4.4.10` | 1 | RELEASE | 2026-09-25T22:43:10Z | sn1 released v4.4.10 |
 | `sn62:release:v0.3.7` | 62 | RELEASE | 2026-09-26T06:07:24Z | sn62 released v0.3.7 |
 | `sn71:scoring_commit:2026-09-26T03:45:10Z` | 71 | SCORING_COMMIT | 2026-09-26T06:07:24Z | sn71 commit touches scoring: Allow focused validation of saved Arena output assignments |
+| `sn71:scoring_commit:2026-09-26T08:19:27Z` | 71 | SCORING_COMMIT | 2026-09-26T11:22:54Z | sn71 commit touches scoring: Bind protected verifier manifest to alias fix |
+| `sn120:scoring_commit:2026-09-26T09:23:06Z` | 120 | SCORING_COMMIT | 2026-09-26T11:22:54Z | sn120 commit touches scoring: wvk 25 scoring bundle STAGED (all knobs off until T0 2026-09-30 14:00… |
 | `sn11:readme_task_diff:9c29fc16d2b625fa` | 11 | README_TASK_DIFF | 2026-09-19T17:29:09Z | sn11 README task/scoring sections changed |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
@@ -194,6 +200,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
+| `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

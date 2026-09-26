@@ -1,35 +1,35 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-09-26T11:22:15Z  |  block: 9151599  |  row_status: ok
+snapshot_utc: 2026-09-26T15:03:51Z  |  block: 9152707  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.11224784841760993**
-- registration cost: 0.15 TAO (48.0735 USD), open=True
+- miner_burn: **0.1151849515736103**
+- registration cost: 0.15 TAO (49.4145 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 906.1 days  |  registered at block 2627691
+- subnet age: 906.3 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 787.937645063295
-- top_miner_usd_day: 1276.3979540762339 (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 808.1957785527361
+- top_miner_usd_day: 1296.7870278695968 (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.2911058890550451  |  top1_share: 0.5489059114352856  |  top10_share: 1.0
-- owner_incentive_share: 0.11224707785271766 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.2866138688396178  |  top1_share: 0.5450994155616254  |  top10_share: 1.0
+- owner_incentive_share: 0.11517861230219889 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 11274 bytes, sha 57eb0ab5ed815fe3
-- latest release: release-20260911-013831 2026-09-11T01:08:48Z
-- last commit: 2026-09-11T01:08:48Z
-- scoring-related commit: Miner wizard: funding step, one shared EVM key, container check after… 2026-09-11T01:08:48Z
+- README: 19675 bytes, sha dc345f9e5261b6c1
+- latest release: release-20260926-135859 2026-09-25T23:38:58Z
+- last commit: 2026-09-25T23:38:58Z
+- scoring-related commit: Hide alpha price flags from alw miner quotes --help (#756) 2026-09-25T17:45:15Z
 
 ## Resources
 
@@ -41,9 +41,9 @@ snapshot_utc: 2026-09-26T11:22:15Z  |  block: 9151599  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 71), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 15d ago
+- score: 39.3 (rank 51), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 
@@ -64,7 +64,7 @@ Native cross-chain transactions for programs that hold one asset and need to pay
 
 Allways is a settlement layer built to be driven by software. An agent or application that holds SOL, TAO, BTC, or any supported asset submits a single swap and receives the destination asset natively in its own wallet — no account, no custodian, no bridge in the path. Allways creates a verification layer above independent systems: miners complete transactions, validators independently verify both legs on-chain, and a smart contract enforces outcomes through collateral and slashing.
 
-Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, CRO, ASTER, UNI, QNT, POL, USDC-on-Polygon, PAXG, and USDC-on-Solana — plus SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, CRO, ASTER, UNI, QNT, POL, USDC-on-Polygon, PAXG, and USDC-on-Solana — plus every Bittensor subnet alpha token (`sn1`…`sn128`) against SOL and each spoke, and SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
 
 ## For agents
 
@@ -152,10 +152,7 @@ The manual sequence it automates: bond, then activate, then quote — in that or
 one specific bond answers for, so `set_quote` refuses a purse you are not already serving
 (`MinerNotActive`). Quoting before activation is rejected, not queued.
 
-**SOL-backed** (collateral held on Solana):
-
-```bash
-alw collateral deposit --amount <SOL>          # fund the local pu
+**SOL-backed** (collateral held on S
 ```
 
-_(truncated at 6000 of 11274 chars - read the full file at https://github.com/entrius/allways)_
+_(truncated at 6000 of 19675 chars - read the full file at https://github.com/entrius/allways)_

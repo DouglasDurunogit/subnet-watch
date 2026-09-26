@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-26T18:33:48Z, block 9153757
+# ALARMS - generated 2026-09-26T21:36:39Z, block 9154671
 
-window: first_seen in [2026-09-26T17:19:12Z, 2026-09-26T18:34:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-26T20:22:04Z, 2026-09-26T21:37:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-26T17:32:25Z` | 71 | SCORING_COMMIT | P1 | 2026-09-26T18:34:12Z | sn71 commit touches scoring: Bind protected manifest to evidence quality verifier source |
-| `sn81:scoring_commit:2026-09-26T18:16:53Z` | 81 | SCORING_COMMIT | P1 | 2026-09-26T18:34:12Z | sn81 commit touches scoring: Merge pull request #281 from reliquadotai/fix/corpus-miner-long-contex |
+| `sn15:release:v2.0.32: fix(validator): save downloaded` | 15 | RELEASE | P1 | 2026-09-26T21:37:04Z | sn15 released v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336) |
+| `sn15:scoring_commit:2026-09-26T19:43:24Z` | 15 | SCORING_COMMIT | P1 | 2026-09-26T21:37:04Z | sn15 commit touches scoring: fix(validator): save downloaded agent source as raw bytes (#336) |
+| `sn25:release:v2026.9.26-1056505490` | 25 | RELEASE | P1 | 2026-09-26T21:37:04Z | sn25 released v2026.9.26-1056505490 |
+| `sn71:scoring_commit:2026-09-26T19:50:49Z` | 71 | SCORING_COMMIT | P1 | 2026-09-26T21:37:04Z | sn71 commit touches scoring: Reuse verified investigator source for attribute repair |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-26T17:32:25Z`** - sn71 commit touches scoring: Bind protected manifest to evidence quality verifier source
+- **`sn15:release:v2.0.32: fix(validator): save downloaded`** - sn15 released v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336)
+  - published 2026-09-26T19:43:24Z (was v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334))
+- **`sn15:scoring_commit:2026-09-26T19:43:24Z`** - sn15 commit touches scoring: fix(validator): save downloaded agent source as raw bytes (#336)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-09-26T18:16:53Z`** - sn81 commit touches scoring: Merge pull request #281 from reliquadotai/fix/corpus-miner-long-contex
+- **`sn25:release:v2026.9.26-1056505490`** - sn25 released v2026.9.26-1056505490
+  - published 2026-09-26T19:27:20Z (was v2026.9.24-1054966040)
+- **`sn71:scoring_commit:2026-09-26T19:50:49Z`** - sn71 commit touches scoring: Reuse verified investigator source for attribute repair
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -31,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn25:scoring_commit:2026-09-19T19:29:32Z` | 25 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn25 commit touches scoring: Read retained validator runtime through reviewed history |
-| `sn78:scoring_commit:2026-09-19T18:07:54Z` | 78 | SCORING_COMMIT | 2026-09-19T19:37:26Z | sn78 commit touches scoring: Bound uncontended dispatch by the longest miner chain |
 | `sn11:scoring_commit:2026-09-19T20:43:16Z` | 11 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn11 commit touches scoring: Merge pull request #328 from trajectoryRL/agent/coding/restore-miner-… |
 | `sn71:scoring_commit:2026-09-19T21:06:10Z` | 71 | SCORING_COMMIT | 2026-09-19T21:48:06Z | sn71 commit touches scoring: Retry proved miner-funded Responses throttles |
 | `sn74:release:release-20260919-231145` | 74 | RELEASE | 2026-09-20T00:07:19Z | sn74 released release-20260919-231145 |
@@ -183,6 +187,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn14:scoring_commit:2026-09-26T14:38:01Z` | 14 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn14 commit touches scoring: Show potential winners and link scoring baselines (#127) |
 | `sn22:scoring_commit:2026-09-25T07:25:31Z` | 22 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn22 commit touches scoring: feat: burn all emission and stop querying miners until the next releas |
 | `sn81:scoring_commit:2026-09-26T12:28:35Z` | 81 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn81 commit touches scoring: docs(corpus): the task has no seats; audit throughput only delays pay… |
+| `sn71:scoring_commit:2026-09-26T17:32:25Z` | 71 | SCORING_COMMIT | 2026-09-26T18:34:12Z | sn71 commit touches scoring: Bind protected manifest to evidence quality verifier source |
+| `sn81:scoring_commit:2026-09-26T18:16:53Z` | 81 | SCORING_COMMIT | 2026-09-26T18:34:12Z | sn81 commit touches scoring: Merge pull request #281 from reliquadotai/fix/corpus-miner-long-contex |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |

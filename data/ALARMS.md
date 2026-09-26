@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-09-26T00:55:53Z, block 9148467
+# ALARMS - generated 2026-09-26T06:06:49Z, block 9150022
 
-window: first_seen in [2026-09-25T23:41:27Z, 2026-09-26T00:56:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-26T04:52:24Z, 2026-09-26T06:07:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn62:release:v0.3.7` | 62 | RELEASE | P1 | 2026-09-26T06:07:24Z | sn62 released v0.3.7 |
+| `sn71:scoring_commit:2026-09-26T03:45:10Z` | 71 | SCORING_COMMIT | P1 | 2026-09-26T06:07:24Z | sn71 commit touches scoring: Allow focused validation of saved Arena output assignments |
+
+### detail
+
+- **`sn62:release:v0.3.7`** - sn62 released v0.3.7
+  - published 2026-09-26T01:27:49Z (was v0.3.6)
+- **`sn71:scoring_commit:2026-09-26T03:45:10Z`** - sn71 commit touches scoring: Allow focused validation of saved Arena output assignments
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -23,10 +33,6 @@ _none_
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn61:release:4.10.6` | 61 | RELEASE | 2026-09-19T01:25:22Z | sn61 released 4.10.6 |
-| `sn61:scoring_commit:2026-09-19T01:16:23Z` | 61 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn61 commit touches scoring: deps: update ada_detection challenge image version to 3.0.4 |
-| `sn71:scoring_commit:2026-09-19T00:42:55Z` | 71 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn71 commit touches scoring: Keep baseline source update independent of miner progress |
-| `sn100:scoring_commit:2026-09-19T01:21:57Z` | 100 | SCORING_COMMIT | 2026-09-19T01:25:22Z | sn100 commit touches scoring: feat(bounty): python subnet with production bounty validator |
 | `sn15:release:v2.0.27` | 15 | RELEASE | 2026-09-19T06:16:37Z | sn15 released v2.0.27 |
 | `sn25:release:v2026.9.18-1049819730` | 25 | RELEASE | 2026-09-19T06:16:37Z | sn25 released v2026.9.18-1049819730 |
 | `sn11:release:v0.7.0` | 11 | RELEASE | 2026-09-19T11:19:32Z | sn11 released v0.7.0 |

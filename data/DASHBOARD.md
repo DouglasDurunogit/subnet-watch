@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-26T00:55:53Z · block 9148467 · run_status **ok**_
+_snapshot 2026-09-26T06:06:49Z · block 9150022 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 59 of 128
+# 55 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 96 | `miner_burn` < 0.99 |
 | Ranked | 96 | passed every gate |
-| **Positive margin** | **59** | income beats machine cost |
-| New events this window | 0 | see ALARMS.md |
+| **Positive margin** | **55** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
+| 0 (none) | 62 | `████████████████████████████` |
 | 0–0.2 | 8 | `████` |
-| 0.2–0.4 | 6 | `███` |
+| 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 3 | `█` |
-| 0.6–0.8 | 10 | `████` |
+| 0.6–0.8 | 10 | `█████` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 32 | `██████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn91 cascade | 72.8 | 655 | 2,621 | cpu-small | 5 | 52% |
-| 2 | sn1 Apex | 71.6 | 1,191 | 1,218 | rtx4090* | 4 | 51% |
-| 3 | sn56 Gradients | 71 | 1,005 | 5,776 | rtx4090* | 8 | 41% |
-| 4 | sn38 ChronoLLM | 70.1 | 315 | 2,772 | cpu-small | 10 | 52% |
-| 5 | sn107 Minos | 69.2 | 381 | 31,398 | cpu-small | 20 | 80% |
-| 6 | sn15 ORO | 69.1 | 13.13 | 23.11 | cpu-small | 57 | 97% |
-| 7 | sn14 Cacheon | 69 | 549 | 2,515 | rtx4090* | 13 | 31% |
-| 8 | sn102 ConnitoAI | 68.7 | 507 | 2,391 | rtx4090* | 7 | 40% |
-| 9 | sn67 Harnyx | 68.5 | 8.12 | 44.73 | cpu-small | 130 | 41% |
-| 10 | sn4 Targon | 68.4 | 16,040 | 29,012 | rtx4090* | 5 | 58% |
-| 11 | sn124 Swarm | 67.2 | 333 | 961 | rtx4090* | 25 | 11% |
-| 12 | sn96 Verathos | 66.8 | 16.09 | 274 | rtx4090 | 76 | 30% |
-| 13 | sn111 Claims | 66.5 | 280 | 3,084 | rtx4090* | 5 | 74% |
-| 14 | sn3 Teutonic | 64.8 | 5,483 | 5,483 = | rtx4090* | 5 | 20% |
-| 15 | sn28 SayGM | 63.7 | 114 | 2,902 | rtx4090* | 71 | 14% |
-| 16 | sn23 Trishool | 62.3 | 1,000 | 1,000 = | cpu-small | 2 | 80% |
-| 17 | sn62 Ridges | 62 | 66.57 | 1,658 | rtx4090* | 22 | 18% |
-| 18 | sn26 Perturb | 61.1 | 53.35 | 58.56 | rtx3060 | 5 | 90% |
-| 19 | sn61 RedTeam | 60.7 | 46.69 | 324 | rtx4090* | 127 | 3% |
-| 20 | sn100 Cortex | 60.1 | 37.53 | 254 | rtx4090* | 19 | 70% |
+| 1 | sn91 cascade | 72.8 | 659 | 2,641 | cpu-small | 5 | 52% |
+| 2 | sn1 Apex | 71.5 | 1,153 | 1,180 | rtx4090* | 4 | 52% |
+| 3 | sn56 Gradients | 71 | 995 | 5,716 | rtx4090* | 8 | 41% |
+| 4 | sn102 ConnitoAI | 69.8 | 708 | 2,326 | rtx4090* | 6 | 41% |
+| 5 | sn38 ChronoLLM | 69.7 | 278 | 2,447 | cpu-small | 10 | 52% |
+| 6 | sn67 Harnyx | 69.3 | 10.04 | 1,296 | cpu-small | 116 | 37% |
+| 7 | sn15 ORO | 69.2 | 13.46 | 21,426 | cpu-small | 62 | 96% |
+| 8 | sn107 Minos | 69.1 | 370 | 30,047 | cpu-small | 20 | 80% |
+| 9 | sn4 Targon | 68.4 | 15,846 | 28,661 | rtx4090* | 5 | 58% |
+| 10 | sn14 Cacheon | 68.3 | 452 | 2,291 | rtx4090* | 13 | 28% |
+| 11 | sn96 Verathos | 67.4 | 18.34 | 265 | rtx4090 | 74 | 30% |
+| 12 | sn124 Swarm | 67.1 | 328 | 948 | rtx4090* | 25 | 11% |
+| 13 | sn111 Claims | 66.5 | 275 | 3,033 | rtx4090* | 5 | 74% |
+| 14 | sn3 Teutonic | 64.8 | 5,435 | 5,435 = | rtx4090* | 5 | 20% |
+| 15 | sn62 Ridges | 62.6 | 81.89 | 1,510 | rtx4090* | 23 | 16% |
+| 16 | sn23 Trishool | 62.3 | 999 | 999 = | cpu-small | 2 | 80% |
+| 17 | sn28 SayGM | 61.8 | 66.22 | 957 | rtx4090* | 73 | 22% |
+| 18 | sn26 Perturb | 61.4 | 58.20 | 58.20 = | rtx3060 | 5 | 90% |
+| 19 | sn100 Cortex | 60 | 36.92 | 251 | rtx4090* | 19 | 70% |
+| 20 | sn74 Gittensor | 58.9 | 30.15 | 285 | rtx4090* | 17 | 62% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 22 |
-| concentrated (30–60%) | 24 |
-| dominated (60–90%) | 22 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 23 |
+| dominated (60–90%) | 21 |
 | captured (>90%) | 24 |
 
 ## Hardware evidence quality
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-26T06:07 | sn62 | RELEASE | sn62 released v0.3.7 |
+| 2026-09-26T06:07 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Allow focused validation of saved Arena o |
 | 2026-09-25T22:43 | sn1 | RELEASE | sn1 released v4.4.10 |
 | 2026-09-25T19:26 | sn15 | RELEASE | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowli |
 | 2026-09-25T19:26 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: refactor(validator): simplify session cal |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-25T15:24 | sn102 | RELEASE | sn102 released v0.6.4 — the reference miner trains the full model |
 | 2026-09-25T15:24 | sn102 | SCORING_COMMIT | sn102 commit touches scoring: Merge pull request #283 from Connito-AI/ |
 | 2026-09-25T15:24 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: docs(miner): update V1 consensus review  |
-| 2026-09-25T15:24 | sn111 | README_TASK_DIFF | sn111 README task/scoring sections changed |
-| 2026-09-25T10:09 | sn51 | RELEASE | sn51 released miner-v1.005 |
 
 ---
 

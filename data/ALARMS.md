@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-26T23:56:13Z, block 9155369
+# ALARMS - generated 2026-09-27T05:12:04Z, block 9156948
 
-window: first_seen in [2026-09-26T22:41:43Z, 2026-09-26T23:56:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-27T03:57:30Z, 2026-09-27T05:12:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-26T23:16:13Z` | 71 | SCORING_COMMIT | P1 | 2026-09-26T23:56:43Z | sn71 commit touches scoring: Bind verified homepage navigation source |
+| `sn25:release:v2026.9.26-1056759680` | 25 | RELEASE | P1 | 2026-09-27T05:12:30Z | sn25 released v2026.9.26-1056759680 |
+| `sn34:scoring_commit:2026-09-27T03:46:53Z` | 34 | SCORING_COMMIT | P1 | 2026-09-27T05:12:30Z | sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin |
+| `sn71:scoring_commit:2026-09-27T03:42:38Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T05:12:30Z | sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages |
+| `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | P2 | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-26T23:16:13Z`** - sn71 commit touches scoring: Bind verified homepage navigation source
+- **`sn25:release:v2026.9.26-1056759680`** - sn25 released v2026.9.26-1056759680
+  - published 2026-09-27T02:31:18Z (was v2026.9.26-1056505490)
+- **`sn34:scoring_commit:2026-09-27T03:46:53Z`** - sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-27T03:42:38Z`** - sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn34:readme_task_diff:46170c9c42dc2e42`** - sn34 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -28,8 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn74:release:release-20260919-231145` | 74 | RELEASE | 2026-09-20T00:07:19Z | sn74 released release-20260919-231145 |
-| `sn71:scoring_commit:2026-09-20T04:44:07Z` | 71 | SCORING_COMMIT | 2026-09-20T04:52:31Z | sn71 commit touches scoring: Seal September 20 verifier and runtime recovery |
 | `sn71:scoring_commit:2026-09-20T09:37:09Z` | 71 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay |
 | `sn78:scoring_commit:2026-09-20T06:21:53Z` | 78 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn78 commit touches scoring: Reuse validated reserved publications across a signing round |
 | `sn91:scoring_commit:2026-09-20T07:38:07Z` | 91 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on … |
@@ -182,6 +189,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:scoring_commit:2026-09-26T19:43:24Z` | 15 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn15 commit touches scoring: fix(validator): save downloaded agent source as raw bytes (#336) |
 | `sn25:release:v2026.9.26-1056505490` | 25 | RELEASE | 2026-09-26T21:37:04Z | sn25 released v2026.9.26-1056505490 |
 | `sn71:scoring_commit:2026-09-26T19:50:49Z` | 71 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn71 commit touches scoring: Reuse verified investigator source for attribute repair |
+| `sn71:scoring_commit:2026-09-26T23:16:13Z` | 71 | SCORING_COMMIT | 2026-09-26T23:56:43Z | sn71 commit touches scoring: Bind verified homepage navigation source |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |

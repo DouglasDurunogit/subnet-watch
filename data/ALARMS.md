@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-27T15:20:08Z, block 9159989
+# ALARMS - generated 2026-09-27T19:08:35Z, block 9161130
 
-window: first_seen in [2026-09-27T14:05:39Z, 2026-09-27T15:20:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-27T17:54:06Z, 2026-09-27T19:09:06Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-27T14:35:41Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn71 commit touches scoring: Bind verifier release to current Arena base |
-| `sn111:scoring_commit:2026-09-27T13:52:01Z` | 111 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 … |
-| `sn120:scoring_commit:2026-09-27T11:40:34Z` | 120 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga… |
-| `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | P2 | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
+| `sn78:release:Linux amd64 validator recovery installer` | 78 | RELEASE | P1 | 2026-09-27T19:09:06Z | sn78 released Linux amd64 validator recovery installer (c0503f5) |
+| `sn81:scoring_commit:2026-09-27T16:59:58Z` | 81 | SCORING_COMMIT | P1 | 2026-09-27T19:09:06Z | sn81 commit touches scoring: feat(corpus): serve the task's contract and let the miner fetch it |
+| `sn111:scoring_commit:2026-09-27T17:45:19Z` | 111 | SCORING_COMMIT | P1 | 2026-09-27T19:09:06Z | sn111 commit touches scoring: fix(consensus): exclude validators from reviewer selection |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-27T14:35:41Z`** - sn71 commit touches scoring: Bind verifier release to current Arena base
+- **`sn78:release:Linux amd64 validator recovery installer`** - sn78 released Linux amd64 validator recovery installer (c0503f5)
+  - published 2026-09-27T18:37:51Z (was Cohort 4 miner connection inputs (policy 8))
+- **`sn81:scoring_commit:2026-09-27T16:59:58Z`** - sn81 commit touches scoring: feat(corpus): serve the task's contract and let the miner fetch it
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-27T13:52:01Z`** - sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 …
+- **`sn111:scoring_commit:2026-09-27T17:45:19Z`** - sn111 commit touches scoring: fix(consensus): exclude validators from reviewer selection
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-27T11:40:34Z`** - sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:readme_task_diff:6726c60aad04c385`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn71:scoring_commit:2026-09-20T16:53:41Z` | 71 | SCORING_COMMIT | 2026-09-20T17:03:14Z | sn71 commit touches scoring: Expose public scoring validator attribution |
 | `sn71:scoring_commit:2026-09-20T18:33:27Z` | 71 | SCORING_COMMIT | 2026-09-20T19:25:08Z | sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes |
 | `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
 | `sn25:scoring_commit:2026-09-20T20:10:20Z` | 25 | SCORING_COMMIT | 2026-09-20T21:45:24Z | sn25 commit touches scoring: validator: admit reviewed successor on provisional recovery |
@@ -189,6 +185,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn61:scoring_commit:2026-09-27T10:35:08Z` | 61 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker |
 | `sn71:scoring_commit:2026-09-27T08:15:54Z` | 71 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source |
 | `sn120:scoring_commit:2026-09-27T08:35:30Z` | 120 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links |
+| `sn71:scoring_commit:2026-09-27T14:35:41Z` | 71 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn71 commit touches scoring: Bind verifier release to current Arena base |
+| `sn111:scoring_commit:2026-09-27T13:52:01Z` | 111 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 … |
+| `sn120:scoring_commit:2026-09-27T11:40:34Z` | 120 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga… |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
@@ -200,6 +199,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
+| `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

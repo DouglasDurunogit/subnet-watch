@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-27T05:12:04Z, block 9156948
+# ALARMS - generated 2026-09-27T10:39:38Z, block 9158586
 
-window: first_seen in [2026-09-27T03:57:30Z, 2026-09-27T05:12:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-27T09:25:11Z, 2026-09-27T10:40:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.9.26-1056759680` | 25 | RELEASE | P1 | 2026-09-27T05:12:30Z | sn25 released v2026.9.26-1056759680 |
-| `sn34:scoring_commit:2026-09-27T03:46:53Z` | 34 | SCORING_COMMIT | P1 | 2026-09-27T05:12:30Z | sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin |
-| `sn71:scoring_commit:2026-09-27T03:42:38Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T05:12:30Z | sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages |
-| `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | P2 | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
+| `sn15:release:v2.0.34: Authorize inference without a s` | 15 | RELEASE | P1 | 2026-09-27T10:40:11Z | sn15 released v2.0.34: Authorize inference without a shared Compose mount |
+| `sn61:release:4.10.7` | 61 | RELEASE | P1 | 2026-09-27T10:40:11Z | sn61 released 4.10.7 |
+| `sn61:scoring_commit:2026-09-27T10:35:08Z` | 61 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker |
+| `sn71:scoring_commit:2026-09-27T08:15:54Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source |
+| `sn120:scoring_commit:2026-09-27T08:35:30Z` | 120 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links |
 
 ### detail
 
-- **`sn25:release:v2026.9.26-1056759680`** - sn25 released v2026.9.26-1056759680
-  - published 2026-09-27T02:31:18Z (was v2026.9.26-1056505490)
-- **`sn34:scoring_commit:2026-09-27T03:46:53Z`** - sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin
+- **`sn15:release:v2.0.34: Authorize inference without a s`** - sn15 released v2.0.34: Authorize inference without a shared Compose mount
+  - published 2026-09-27T08:00:06Z (was v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336))
+- **`sn61:release:4.10.7`** - sn61 released 4.10.7
+  - published 2026-09-27T10:37:12Z (was 4.10.6)
+- **`sn61:scoring_commit:2026-09-27T10:35:08Z`** - sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-27T03:42:38Z`** - sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages
+- **`sn71:scoring_commit:2026-09-27T08:15:54Z`** - sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:readme_task_diff:46170c9c42dc2e42`** - sn34 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn120:scoring_commit:2026-09-27T08:35:30Z`** - sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn11:burn_drop:0.000` | 11 | BURN_DROP | 2026-09-20T09:45:43Z | sn11 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
@@ -37,10 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn71:scoring_commit:2026-09-20T09:37:09Z` | 71 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn71 commit touches scoring: Add Sep20 authority-preserving scoring replay |
-| `sn78:scoring_commit:2026-09-20T06:21:53Z` | 78 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn78 commit touches scoring: Reuse validated reserved publications across a signing round |
-| `sn91:scoring_commit:2026-09-20T07:38:07Z` | 91 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn91 commit touches scoring: trainer: one GPU type per manifest — drop and requeue challengers on … |
-| `sn100:scoring_commit:2026-09-20T08:42:49Z` | 100 | SCORING_COMMIT | 2026-09-20T09:45:43Z | sn100 commit touches scoring: feat(bounty): activate proportional valid-report rewards |
 | `sn11:release:v0.7.1` | 11 | RELEASE | 2026-09-20T13:45:04Z | sn11 released v0.7.1 |
 | `sn21:scoring_commit:2026-09-20T12:01:04Z` | 21 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num… |
 | `sn71:scoring_commit:2026-09-20T13:21:27Z` | 71 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn71 commit touches scoring: test(arena): reject unrelated score failures |
@@ -190,6 +188,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.26-1056505490` | 25 | RELEASE | 2026-09-26T21:37:04Z | sn25 released v2026.9.26-1056505490 |
 | `sn71:scoring_commit:2026-09-26T19:50:49Z` | 71 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn71 commit touches scoring: Reuse verified investigator source for attribute repair |
 | `sn71:scoring_commit:2026-09-26T23:16:13Z` | 71 | SCORING_COMMIT | 2026-09-26T23:56:43Z | sn71 commit touches scoring: Bind verified homepage navigation source |
+| `sn25:release:v2026.9.26-1056759680` | 25 | RELEASE | 2026-09-27T05:12:30Z | sn25 released v2026.9.26-1056759680 |
+| `sn34:scoring_commit:2026-09-27T03:46:53Z` | 34 | SCORING_COMMIT | 2026-09-27T05:12:30Z | sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin |
+| `sn71:scoring_commit:2026-09-27T03:42:38Z` | 71 | SCORING_COMMIT | 2026-09-27T05:12:30Z | sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
@@ -200,6 +201,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
+| `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

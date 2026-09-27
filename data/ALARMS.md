@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-27T10:39:38Z, block 9158586
+# ALARMS - generated 2026-09-27T15:20:08Z, block 9159989
 
-window: first_seen in [2026-09-27T09:25:11Z, 2026-09-27T10:40:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-27T14:05:39Z, 2026-09-27T15:20:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.34: Authorize inference without a s` | 15 | RELEASE | P1 | 2026-09-27T10:40:11Z | sn15 released v2.0.34: Authorize inference without a shared Compose mount |
-| `sn61:release:4.10.7` | 61 | RELEASE | P1 | 2026-09-27T10:40:11Z | sn61 released 4.10.7 |
-| `sn61:scoring_commit:2026-09-27T10:35:08Z` | 61 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker |
-| `sn71:scoring_commit:2026-09-27T08:15:54Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source |
-| `sn120:scoring_commit:2026-09-27T08:35:30Z` | 120 | SCORING_COMMIT | P1 | 2026-09-27T10:40:11Z | sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links |
+| `sn71:scoring_commit:2026-09-27T14:35:41Z` | 71 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn71 commit touches scoring: Bind verifier release to current Arena base |
+| `sn111:scoring_commit:2026-09-27T13:52:01Z` | 111 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 … |
+| `sn120:scoring_commit:2026-09-27T11:40:34Z` | 120 | SCORING_COMMIT | P1 | 2026-09-27T15:20:39Z | sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga… |
+| `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | P2 | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.34: Authorize inference without a s`** - sn15 released v2.0.34: Authorize inference without a shared Compose mount
-  - published 2026-09-27T08:00:06Z (was v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336))
-- **`sn61:release:4.10.7`** - sn61 released 4.10.7
-  - published 2026-09-27T10:37:12Z (was 4.10.6)
-- **`sn61:scoring_commit:2026-09-27T10:35:08Z`** - sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker
+- **`sn71:scoring_commit:2026-09-27T14:35:41Z`** - sn71 commit touches scoring: Bind verifier release to current Arena base
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-27T08:15:54Z`** - sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source
+- **`sn111:scoring_commit:2026-09-27T13:52:01Z`** - sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-09-27T08:35:30Z`** - sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links
+- **`sn120:scoring_commit:2026-09-27T11:40:34Z`** - sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:readme_task_diff:6726c60aad04c385`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn71:burn_drop:0.750` | 71 | BURN_DROP | 2026-09-20T13:45:04Z | sn71 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn108:burn_drop:0.000` | 108 | BURN_DROP | 2026-09-20T21:45:24Z | sn108 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn11:release:v0.7.1` | 11 | RELEASE | 2026-09-20T13:45:04Z | sn11 released v0.7.1 |
-| `sn21:scoring_commit:2026-09-20T12:01:04Z` | 21 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn21 commit touches scoring: admission: report the gate score per horizon and publish the gate num… |
-| `sn71:scoring_commit:2026-09-20T13:21:27Z` | 71 | SCORING_COMMIT | 2026-09-20T13:45:04Z | sn71 commit touches scoring: test(arena): reject unrelated score failures |
 | `sn71:scoring_commit:2026-09-20T16:53:41Z` | 71 | SCORING_COMMIT | 2026-09-20T17:03:14Z | sn71 commit touches scoring: Expose public scoring validator attribution |
 | `sn71:scoring_commit:2026-09-20T18:33:27Z` | 71 | SCORING_COMMIT | 2026-09-20T19:25:08Z | sn71 commit touches scoring: Bind protected verifier manifest to committed audit fixes |
 | `sn78:release:Open competition miner bundle v1 (feed c` | 78 | RELEASE | 2026-09-20T19:25:08Z | sn78 released Open competition miner bundle v1 (feed config + pinned artifacts) |
@@ -191,6 +184,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.9.26-1056759680` | 25 | RELEASE | 2026-09-27T05:12:30Z | sn25 released v2026.9.26-1056759680 |
 | `sn34:scoring_commit:2026-09-27T03:46:53Z` | 34 | SCORING_COMMIT | 2026-09-27T05:12:30Z | sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin |
 | `sn71:scoring_commit:2026-09-27T03:42:38Z` | 71 | SCORING_COMMIT | 2026-09-27T05:12:30Z | sn71 commit touches scoring: Preserve fresh investigation budget when reusing verified source pages |
+| `sn15:release:v2.0.34: Authorize inference without a s` | 15 | RELEASE | 2026-09-27T10:40:11Z | sn15 released v2.0.34: Authorize inference without a shared Compose mount |
+| `sn61:release:4.10.7` | 61 | RELEASE | 2026-09-27T10:40:11Z | sn61 released 4.10.7 |
+| `sn61:scoring_commit:2026-09-27T10:35:08Z` | 61 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker |
+| `sn71:scoring_commit:2026-09-27T08:15:54Z` | 71 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source |
+| `sn120:scoring_commit:2026-09-27T08:35:30Z` | 120 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links |
 | `sn71:readme_task_diff:2291f503cdbc7816` | 71 | README_TASK_DIFF | 2026-09-20T21:45:24Z | sn71 README task/scoring sections changed |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |

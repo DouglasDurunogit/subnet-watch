@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-27T22:26:49Z, block 9162121
+# ALARMS - generated 2026-09-28T01:05:10Z, block 9162913
 
-window: first_seen in [2026-09-27T21:12:12Z, 2026-09-27T22:27:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-27T23:50:42Z, 2026-09-28T01:05:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn122:burn_drop:0.724` | 122 | BURN_DROP | P0 | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
-| `sn56:scoring_commit:2026-09-27T21:33:47Z` | 56 | SCORING_COMMIT | P1 | 2026-09-27T22:27:12Z | sn56 commit touches scoring: 3 task round 1 image (#1387) |
-| `sn78:release:Yuma validator recovery package 0.1.0` | 78 | RELEASE | P1 | 2026-09-27T22:27:12Z | sn78 released Yuma validator recovery package 0.1.0 |
+| `sn15:release:v2.0.35: Log nested inference tool types` | 15 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn15 released v2.0.35: Log nested inference tool types in proxy access logs |
+| `sn15:scoring_commit:2026-09-27T22:53:19Z` | 15 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator |
+| `sn28:release:v0.4.24-dev` | 28 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn28 released v0.4.24-dev |
+| `sn28:scoring_commit:2026-09-27T23:56:42Z` | 28 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290) |
+| `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
+| `sn91:release:worker-v0.8.2` | 91 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
+| `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | P2 | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 
 ### detail
 
-- **`sn122:burn_drop:0.724`** - sn122 burn fell 1.000 -> 0.724 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn56:scoring_commit:2026-09-27T21:33:47Z`** - sn56 commit touches scoring: 3 task round 1 image (#1387)
+- **`sn15:release:v2.0.35: Log nested inference tool types`** - sn15 released v2.0.35: Log nested inference tool types in proxy access logs
+  - published 2026-09-27T22:08:18Z (was v2.0.34: Authorize inference without a shared Compose mount)
+- **`sn15:scoring_commit:2026-09-27T22:53:19Z`** - sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:release:Yuma validator recovery package 0.1.0`** - sn78 released Yuma validator recovery package 0.1.0
-  - published 2026-09-27T21:10:59Z (was Linux amd64 validator recovery installer (c0503f5))
+- **`sn28:release:v0.4.24-dev`** - sn28 released v0.4.24-dev
+  - published 2026-09-28T00:12:27Z (was v0.4.23)
+- **`sn28:scoring_commit:2026-09-27T23:56:42Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-09-27T22:36:31Z`** - sn71 commit touches scoring: Bind final evidence resolution verifier release
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:release:worker-v0.8.2`** - sn91 released worker-v0.8.2
+  - published 2026-09-27T22:25:34Z (was worker-v0.12.0)
+- **`sn28:readme_task_diff:f38f4d2e27184292`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -31,9 +43,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
-| `sn25:scoring_commit:2026-09-20T22:32:29Z` | 25 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn25 commit touches scoring: validator: preserve client key batch steering budget |
-| `sn71:scoring_commit:2026-09-20T23:04:23Z` | 71 | SCORING_COMMIT | 2026-09-20T23:36:36Z | sn71 commit touches scoring: fix: keep unrelated verifier guidance out of source budget |
-| `sn74:release:release-20260920-225500` | 74 | RELEASE | 2026-09-20T23:36:36Z | sn74 released release-20260920-225500 |
+| `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
 | `sn11:release:v0.7.3` | 11 | RELEASE | 2026-09-21T07:15:57Z | sn11 released v0.7.3 |
 | `sn11:scoring_commit:2026-09-21T05:24:33Z` | 11 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi… |
 | `sn51:release:executor-v1.132` | 51 | RELEASE | 2026-09-21T07:15:57Z | sn51 released executor-v1.132 |
@@ -186,6 +196,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:release:Linux amd64 validator recovery installer` | 78 | RELEASE | 2026-09-27T19:09:06Z | sn78 released Linux amd64 validator recovery installer (c0503f5) |
 | `sn81:scoring_commit:2026-09-27T16:59:58Z` | 81 | SCORING_COMMIT | 2026-09-27T19:09:06Z | sn81 commit touches scoring: feat(corpus): serve the task's contract and let the miner fetch it |
 | `sn111:scoring_commit:2026-09-27T17:45:19Z` | 111 | SCORING_COMMIT | 2026-09-27T19:09:06Z | sn111 commit touches scoring: fix(consensus): exclude validators from reviewer selection |
+| `sn56:scoring_commit:2026-09-27T21:33:47Z` | 56 | SCORING_COMMIT | 2026-09-27T22:27:12Z | sn56 commit touches scoring: 3 task round 1 image (#1387) |
+| `sn78:release:Yuma validator recovery package 0.1.0` | 78 | RELEASE | 2026-09-27T22:27:12Z | sn78 released Yuma validator recovery package 0.1.0 |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |

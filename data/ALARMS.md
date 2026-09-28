@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-28T06:48:40Z, block 9164630
+# ALARMS - generated 2026-09-28T15:21:24Z, block 9167194
 
-window: first_seen in [2026-09-28T05:34:13Z, 2026-09-28T06:49:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-28T14:06:54Z, 2026-09-28T15:21:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | P1 | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
+| `sn20:scoring_commit:2026-09-28T15:15:07Z` | 20 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation |
+| `sn26:scoring_commit:2026-09-28T12:26:31Z` | 26 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca… |
+| `sn28:release:v0.4.24` | 28 | RELEASE | P1 | 2026-09-28T15:21:54Z | sn28 released v0.4.24 |
+| `sn28:scoring_commit:2026-09-28T09:37:40Z` | 28 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 (#291) |
+| `sn41:scoring_commit:2026-09-28T13:20:51Z` | 41 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn41 commit touches scoring: Merge pull request #49 from corvxai/forecast_scoring_lastPredictedAt |
+| `sn51:scoring_commit:2026-09-28T14:32:49Z` | 51 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker… |
+| `sn66:scoring_commit:2026-09-28T12:57:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin |
+| `sn111:release:v1.0.0` | 111 | RELEASE | P1 | 2026-09-28T15:21:54Z | sn111 released v1.0.0 |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-28T02:46:34Z`** - sn71 commit touches scoring: Verify cross-domain company rebrands
+- **`sn20:scoring_commit:2026-09-28T15:15:07Z`** - sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn26:scoring_commit:2026-09-28T12:26:31Z`** - sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:release:v0.4.24`** - sn28 released v0.4.24
+  - published 2026-09-28T09:52:09Z (was v0.4.24-dev)
+- **`sn28:scoring_commit:2026-09-28T09:37:40Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 (#291)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn41:scoring_commit:2026-09-28T13:20:51Z`** - sn41 commit touches scoring: Merge pull request #49 from corvxai/forecast_scoring_lastPredictedAt
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:scoring_commit:2026-09-28T14:32:49Z`** - sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:scoring_commit:2026-09-28T12:57:35Z`** - sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:release:v1.0.0`** - sn111 released v1.0.0
+  - published 2026-09-28T10:34:59Z (was v0.2.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -26,21 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
-| `sn11:release:v0.7.3` | 11 | RELEASE | 2026-09-21T07:15:57Z | sn11 released v0.7.3 |
-| `sn11:scoring_commit:2026-09-21T05:24:33Z` | 11 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn11 commit touches scoring: feat(validator): report health on the heartbeat, and never blame a mi… |
-| `sn51:release:executor-v1.132` | 51 | RELEASE | 2026-09-21T07:15:57Z | sn51 released executor-v1.132 |
-| `sn51:scoring_commit:2026-09-21T06:05:21Z` | 51 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn51 commit touches scoring: DAH-3677 - [P2] validator scrape: disk_type (nvme|ssd|hdd|unknown) of… |
-| `sn71:scoring_commit:2026-09-21T04:53:08Z` | 71 | SCORING_COMMIT | 2026-09-21T07:15:57Z | sn71 commit touches scoring: Keep single contact role ID validation simple |
-| `sn15:release:v2.0.28: chore(validator): split hosted ` | 15 | RELEASE | 2026-09-21T14:26:07Z | sn15 released v2.0.28: chore(validator): split hosted and local runtime profiles (#327) |
-| `sn15:scoring_commit:2026-09-21T07:54:54Z` | 15 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn15 commit touches scoring: chore(validator): split hosted and local runtime profiles (#327) |
-| `sn25:release:v2026.9.21-1051772980` | 25 | RELEASE | 2026-09-21T14:26:07Z | sn25 released v2026.9.21-1051772980 |
-| `sn25:scoring_commit:2026-09-21T13:11:56Z` | 25 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn25 commit touches scoring: Avoid whole-fleet rendering in validator authority fixtures |
-| `sn28:release:v0.4.20-dev` | 28 | RELEASE | 2026-09-21T14:26:07Z | sn28 released v0.4.20-dev |
-| `sn28:scoring_commit:2026-09-21T12:54:53Z` | 28 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn28 commit touches scoring: chore: prepare KubeTEE FLUX miner release 0.4.20-dev |
-| `sn38:scoring_commit:2026-09-21T13:25:08Z` | 38 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn38 commit touches scoring: fix: increase max_new_tokens from 50 to 100 for quality evaluation |
-| `sn51:release:executor-v1.133` | 51 | RELEASE | 2026-09-21T14:26:07Z | sn51 released executor-v1.133 |
-| `sn51:scoring_commit:2026-09-21T08:36:29Z` | 51 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn51 commit touches scoring: DAH-3678 - [P2] validator: explain add_public_keys failures on exitin… |
-| `sn56:scoring_commit:2026-09-21T13:49:51Z` | 56 | SCORING_COMMIT | 2026-09-21T14:26:07Z | sn56 commit touches scoring: Keep prep-failed task rows when replacing tournament tasks (#1383) |
 | `sn10:scoring_commit:2026-09-19T07:04:13Z` | 10 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn10 commit touches scoring: fix(bench): validate both baselines before candidate grading |
 | `sn14:scoring_commit:2026-09-21T16:03:35Z` | 14 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn14 commit touches scoring: Merge pull request #120 from latent-to/release/reward-clock-inclusion… |
 | `sn15:scoring_commit:2026-09-21T18:14:18Z` | 15 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn15 commit touches scoring: fix(validator): fail fast on invalid preflight config (#328) |
@@ -186,6 +192,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-09-27T23:56:42Z` | 28 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290) |
 | `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
 | `sn91:release:worker-v0.8.2` | 91 | RELEASE | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
+| `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |

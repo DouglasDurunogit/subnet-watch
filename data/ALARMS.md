@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-28T15:21:24Z, block 9167194
+# ALARMS - generated 2026-09-28T21:19:03Z, block 9168982
 
-window: first_seen in [2026-09-28T14:06:54Z, 2026-09-28T15:21:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-28T20:04:29Z, 2026-09-28T21:19:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,57 +9,46 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:scoring_commit:2026-09-28T15:15:07Z` | 20 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation |
-| `sn26:scoring_commit:2026-09-28T12:26:31Z` | 26 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca… |
-| `sn28:release:v0.4.24` | 28 | RELEASE | P1 | 2026-09-28T15:21:54Z | sn28 released v0.4.24 |
-| `sn28:scoring_commit:2026-09-28T09:37:40Z` | 28 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 (#291) |
-| `sn41:scoring_commit:2026-09-28T13:20:51Z` | 41 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn41 commit touches scoring: Merge pull request #49 from corvxai/forecast_scoring_lastPredictedAt |
-| `sn51:scoring_commit:2026-09-28T14:32:49Z` | 51 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker… |
-| `sn66:scoring_commit:2026-09-28T12:57:35Z` | 66 | SCORING_COMMIT | P1 | 2026-09-28T15:21:54Z | sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin |
-| `sn111:release:v1.0.0` | 111 | RELEASE | P1 | 2026-09-28T15:21:54Z | sn111 released v1.0.0 |
+| `sn121:burn_drop:0.600` | 121 | BURN_DROP | P0 | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
+| `sn20:scoring_commit:2026-09-28T18:47:48Z` | 20 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes |
+| `sn34:scoring_commit:2026-09-28T18:21:09Z` | 34 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions |
+| `sn45:scoring_commit:2026-09-28T16:32:06Z` | 45 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu… |
+| `sn51:scoring_commit:2026-09-28T16:19:46Z` | 51 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa… |
+| `sn94:release:Cathedral static TDX verifier cathedral-` | 94 | RELEASE | P1 | 2026-09-28T21:19:29Z | sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0 |
+| `sn94:scoring_commit:2026-09-28T07:10:07Z` | 94 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203) |
+| `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
+| `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | P2 | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 
 ### detail
 
-- **`sn20:scoring_commit:2026-09-28T15:15:07Z`** - sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation
+- **`sn121:burn_drop:0.600`** - sn121 burn fell 1.000 -> 0.600 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn20:scoring_commit:2026-09-28T18:47:48Z`** - sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:scoring_commit:2026-09-28T12:26:31Z`** - sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca…
+- **`sn34:scoring_commit:2026-09-28T18:21:09Z`** - sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.24`** - sn28 released v0.4.24
-  - published 2026-09-28T09:52:09Z (was v0.4.24-dev)
-- **`sn28:scoring_commit:2026-09-28T09:37:40Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 (#291)
+- **`sn45:scoring_commit:2026-09-28T16:32:06Z`** - sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn41:scoring_commit:2026-09-28T13:20:51Z`** - sn41 commit touches scoring: Merge pull request #49 from corvxai/forecast_scoring_lastPredictedAt
+- **`sn51:scoring_commit:2026-09-28T16:19:46Z`** - sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-28T14:32:49Z`** - sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker…
+- **`sn94:release:Cathedral static TDX verifier cathedral-`** - sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0
+  - published 2026-08-30T06:57:19Z (was Internal Testnet GUI (Latest))
+- **`sn94:scoring_commit:2026-09-28T07:10:07Z`** - sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-09-28T12:57:35Z`** - sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin
+- **`sn100:scoring_commit:2026-09-28T21:11:51Z`** - sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:release:v1.0.0`** - sn111 released v1.0.0
-  - published 2026-09-28T10:34:59Z (was v0.2.0)
+- **`sn94:readme_task_diff:f2d2965f7776dbf2`** - sn94 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.810` | 10 | BURN_DROP | 2026-09-21T19:40:22Z | sn10 burn fell 1.000 -> 0.810 - miners can earn again |
 | `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
-| `sn10:scoring_commit:2026-09-19T07:04:13Z` | 10 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn10 commit touches scoring: fix(bench): validate both baselines before candidate grading |
-| `sn14:scoring_commit:2026-09-21T16:03:35Z` | 14 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn14 commit touches scoring: Merge pull request #120 from latent-to/release/reward-clock-inclusion… |
-| `sn15:scoring_commit:2026-09-21T18:14:18Z` | 15 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn15 commit touches scoring: fix(validator): fail fast on invalid preflight config (#328) |
-| `sn21:scoring_commit:2026-09-21T16:31:00Z` | 21 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn21 commit touches scoring: verify: the grouping recheck narrows to the same rows the run read |
-| `sn26:scoring_commit:2026-09-21T13:03:03Z` | 26 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn26 commit touches scoring: feat: report model evaluations in the training/evaluations API schema |
-| `sn28:release:v0.4.20` | 28 | RELEASE | 2026-09-21T19:40:22Z | sn28 released v0.4.20 |
-| `sn28:scoring_commit:2026-09-21T16:14:48Z` | 28 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.20 |
-| `sn33:scoring_commit:2026-09-21T16:36:04Z` | 33 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn33 commit touches scoring: Merge pull request #137 from afterpartyai/adjust-put-task-ordering |
-| `sn71:scoring_commit:2026-09-21T16:02:14Z` | 71 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn71 commit touches scoring: docs: use validators consistently in setup guides |
-| `sn78:scoring_commit:2026-09-21T17:50:38Z` | 78 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn78 commit touches scoring: Validate continuous intake status and readiness in the public monitor… |
-| `sn102:release:v0.6.3` | 102 | RELEASE | 2026-09-21T19:40:22Z | sn102 released v0.6.3 |
-| `sn120:scoring_commit:2026-09-21T14:37:50Z` | 120 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn120 commit touches scoring: eval_client/validator: upstream 5xx / transport / stream-loss are inf… |
-| `sn124:scoring_commit:2026-09-21T13:13:22Z` | 124 | SCORING_COMMIT | 2026-09-21T19:40:22Z | sn124 commit touches scoring: Merge pull request #159 from swarm-subnet/feature/ali/validator-image |
 | `sn62:release:v0.3.6` | 62 | RELEASE | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
 | `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
 | `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
@@ -193,8 +182,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
 | `sn91:release:worker-v0.8.2` | 91 | RELEASE | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
 | `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
-| `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
-| `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
+| `sn20:scoring_commit:2026-09-28T15:15:07Z` | 20 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation |
+| `sn26:scoring_commit:2026-09-28T12:26:31Z` | 26 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca… |
+| `sn28:release:v0.4.24` | 28 | RELEASE | 2026-09-28T15:21:54Z | sn28 released v0.4.24 |
+| `sn28:scoring_commit:2026-09-28T09:37:40Z` | 28 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 (#291) |
+| `sn41:scoring_commit:2026-09-28T13:20:51Z` | 41 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn41 commit touches scoring: Merge pull request #49 from corvxai/forecast_scoring_lastPredictedAt |
+| `sn51:scoring_commit:2026-09-28T14:32:49Z` | 51 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker… |
+| `sn66:scoring_commit:2026-09-28T12:57:35Z` | 66 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin |
+| `sn111:release:v1.0.0` | 111 | RELEASE | 2026-09-28T15:21:54Z | sn111 released v1.0.0 |
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
 | `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |

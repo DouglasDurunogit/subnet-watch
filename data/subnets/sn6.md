@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-09-28T01:05:10Z  |  block: 9162913  |  row_status: ok
+snapshot_utc: 2026-09-28T06:48:40Z  |  block: 9164630  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (63.144000000000005 USD), open=True
+- registration cost: 0.2 TAO (61.208000000000006 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 118  |  free: 0
-- subnet age: 825.4 days  |  registered at block 3219949
+- subnet age: 825.7 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 486.7885884408214** (uid 41) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.06518326036968686
-- top_miner_usd_day: 486.7885884408214 (uid 41, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 468.21916580366224** (uid 41) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.06269672814724989
+- top_miner_usd_day: 468.21916580366224 (uid 41, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 105  |  gini: 0.8999341819780939  |  top1_share: 0.22836523760014676  |  top10_share: 0.8490459299125436
+- earners: 105  |  gini: 0.8999341819780937  |  top1_share: 0.2283652376001468  |  top10_share: 0.8490459299125435
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,14 +36,14 @@ snapshot_utc: 2026-09-28T01:05:10Z  |  block: 9162913  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9211 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9236 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
 - score: 25.5 (rank 71), confidence 1.0 
 - components: income 0.0 / freshness 10.5 / resource 15.0 / registration 0.0
-- freshness basis: WEIGHTS_VERSION_BUMP 45d ago
+- freshness basis: WEIGHTS_VERSION_BUMP 46d ago
 
 ## On-chain description
 

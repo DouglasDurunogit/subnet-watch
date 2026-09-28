@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-28T01:05:10Z, block 9162913
+# ALARMS - generated 2026-09-28T06:48:40Z, block 9164630
 
-window: first_seen in [2026-09-27T23:50:42Z, 2026-09-28T01:05:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-28T05:34:13Z, 2026-09-28T06:49:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.35: Log nested inference tool types` | 15 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn15 released v2.0.35: Log nested inference tool types in proxy access logs |
-| `sn15:scoring_commit:2026-09-27T22:53:19Z` | 15 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator |
-| `sn28:release:v0.4.24-dev` | 28 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn28 released v0.4.24-dev |
-| `sn28:scoring_commit:2026-09-27T23:56:42Z` | 28 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290) |
-| `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | P1 | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
-| `sn91:release:worker-v0.8.2` | 91 | RELEASE | P1 | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
-| `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | P2 | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | P1 | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
 
 ### detail
 
-- **`sn15:release:v2.0.35: Log nested inference tool types`** - sn15 released v2.0.35: Log nested inference tool types in proxy access logs
-  - published 2026-09-27T22:08:18Z (was v2.0.34: Authorize inference without a shared Compose mount)
-- **`sn15:scoring_commit:2026-09-27T22:53:19Z`** - sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator
+- **`sn71:scoring_commit:2026-09-28T02:46:34Z`** - sn71 commit touches scoring: Verify cross-domain company rebrands
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.24-dev`** - sn28 released v0.4.24-dev
-  - published 2026-09-28T00:12:27Z (was v0.4.23)
-- **`sn28:scoring_commit:2026-09-27T23:56:42Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-09-27T22:36:31Z`** - sn71 commit touches scoring: Bind final evidence resolution verifier release
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:release:worker-v0.8.2`** - sn91 released worker-v0.8.2
-  - published 2026-09-27T22:25:34Z (was worker-v0.12.0)
-- **`sn28:readme_task_diff:f38f4d2e27184292`** - sn28 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -198,6 +180,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-09-27T17:45:19Z` | 111 | SCORING_COMMIT | 2026-09-27T19:09:06Z | sn111 commit touches scoring: fix(consensus): exclude validators from reviewer selection |
 | `sn56:scoring_commit:2026-09-27T21:33:47Z` | 56 | SCORING_COMMIT | 2026-09-27T22:27:12Z | sn56 commit touches scoring: 3 task round 1 image (#1387) |
 | `sn78:release:Yuma validator recovery package 0.1.0` | 78 | RELEASE | 2026-09-27T22:27:12Z | sn78 released Yuma validator recovery package 0.1.0 |
+| `sn15:release:v2.0.35: Log nested inference tool types` | 15 | RELEASE | 2026-09-28T01:05:42Z | sn15 released v2.0.35: Log nested inference tool types in proxy access logs |
+| `sn15:scoring_commit:2026-09-27T22:53:19Z` | 15 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator |
+| `sn28:release:v0.4.24-dev` | 28 | RELEASE | 2026-09-28T01:05:42Z | sn28 released v0.4.24-dev |
+| `sn28:scoring_commit:2026-09-27T23:56:42Z` | 28 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290) |
+| `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
+| `sn91:release:worker-v0.8.2` | 91 | RELEASE | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
 | `sn26:readme_task_diff:aba46e7645c1a7ed` | 26 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn26 README task/scoring sections changed |
 | `sn71:readme_task_diff:7438252e1ccc736e` | 71 | README_TASK_DIFF | 2026-09-21T19:40:22Z | sn71 README task/scoring sections changed |
 | `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
@@ -209,6 +197,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
+| `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

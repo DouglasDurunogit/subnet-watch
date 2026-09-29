@@ -1,13 +1,13 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
+snapshot_utc: 2026-09-29T23:13:44Z  |  block: 9176755  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **1.90644059330225e-05**
+- miner_burn: **2.9498012736439705e-05**
 - registration cost: 0.0005 TAO ([UNKNOWN] USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 1078.4 days  |  registered at block 1411451
+- subnet age: 1078.5 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
@@ -18,8 +18,8 @@ snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.5987273587352939  |  top1_share: 0.5993468939313018  |  top10_share: 1.0
-- owner_incentive_share: 1.525948758640685e-05 (independent check on miner_burn; disagreement 0.0)
+- earners: 5  |  gini: 0.6405273839862051  |  top1_share: 0.6825471914055943  |  top10_share: 1.0
+- owner_incentive_share: 1.5259953304542888e-05 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -41,7 +41,7 @@ snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 45), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 44), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: RELEASE 12d ago
 

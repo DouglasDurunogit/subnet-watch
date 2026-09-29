@@ -118,7 +118,7 @@ netuid,name,required_vram_gb,gpu_class_required,gpu_class_basis,machine_class_ch
 117,everyframe.studio,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 118,Ditto,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 119,CapabilityForge Next,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
-120,Affine,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
+120,Affine,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 121,sundae_bar,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,,,,OK
 122,CookingTAO,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 123,MANTIS,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK

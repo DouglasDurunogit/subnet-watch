@@ -1,13 +1,13 @@
 # sn1 - Apex (α)
 
-snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
+snapshot_utc: 2026-09-29T23:13:44Z  |  block: 9176755  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.5299826662521809**
+- miner_burn: **0.537957536522299**
 - registration cost: 0.0005 TAO ([UNKNOWN] USD), open=True
 - tempo: 99.0  |  max_uids: 256  |  active: 12  |  free: 0
-- subnet age: 1066.4 days  |  registered at block 1497824
+- subnet age: 1066.5 days  |  registered at block 1497824
 - weights_version: 21706  |  mechanisms: 1
 
 ## Income (miner side)
@@ -18,8 +18,8 @@ snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.32712145026170036  |  top1_share: 0.5299925228510827  |  top10_share: 1.0
-- owner_incentive_share: 0.5299925228510827 (independent check on miner_burn; disagreement 0.0)
+- earners: 4  |  gini: 0.3343073824274423  |  top1_share: 0.5379650257881404  |  top10_share: 1.0
+- owner_incentive_share: 0.5379650257881405 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -41,9 +41,9 @@ snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 14), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 15), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 0.0d ago
+- freshness basis: RELEASE 0.2d ago
 
 ## On-chain description
 

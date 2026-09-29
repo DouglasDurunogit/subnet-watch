@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-29T14:12:37Z, block 9174050
+# ALARMS - generated 2026-09-29T19:32:43Z, block 9175650
 
-window: first_seen in [2026-09-29T12:58:00Z, 2026-09-29T14:13:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-29T18:18:10Z, 2026-09-29T19:33:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,38 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.37: fix(proxy): sum inference count` | 15 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347) |
-| `sn23:scoring_commit:2026-09-29T10:36:58Z` | 23 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix |
-| `sn46:release:v0.1.2` | 46 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn46 released v0.1.2 |
-| `sn46:scoring_commit:2026-09-28T17:59:23Z` | 46 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric… |
-| `sn51:release:executor-v1.136` | 51 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn51 released executor-v1.136 |
-| `sn53:scoring_commit:2026-09-29T09:45:05Z` | 53 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer |
-| `sn69:scoring_commit:2026-09-26T06:16:04Z` | 69 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle |
-| `sn94:scoring_commit:2026-09-29T13:47:13Z` | 94 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie |
-| `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | P2 | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
-| `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | P2 | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |
+| `sn20:burn_drop:0.799` | 20 | BURN_DROP | P0 | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
+| `sn46:burn_drop:0.726` | 46 | BURN_DROP | P0 | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
+| `sn1:release:v4.4.11` | 1 | RELEASE | P1 | 2026-09-29T19:33:10Z | sn1 released v4.4.11 |
+| `sn5:scoring_commit:2026-09-29T16:00:26Z` | 5 | SCORING_COMMIT | P1 | 2026-09-29T19:33:10Z | sn5 commit touches scoring: Merge pull request #10 from hone-subnet-org/v3-repo-tasks |
+| `sn15:release:v2.0.38: fix(agent): retry a 200 inferen` | 15 | RELEASE | P1 | 2026-09-29T19:33:10Z | sn15 released v2.0.38: fix(agent): retry a 200 inference response whose body is not JSON (#348) |
+| `sn20:scoring_commit:2026-09-29T18:56:24Z` | 20 | SCORING_COMMIT | P1 | 2026-09-29T19:33:10Z | sn20 commit touches scoring: Separate website from the public subnet and retain validator evidence… |
+| `sn41:scoring_commit:2026-09-28T18:49:08Z` | 41 | SCORING_COMMIT | P1 | 2026-09-29T19:33:10Z | sn41 commit touches scoring: pillar scoring updates around market-relative brier. updating baselin… |
+| `sn81:scoring_commit:2026-09-29T15:04:56Z` | 81 | SCORING_COMMIT | P1 | 2026-09-29T19:33:10Z | sn81 commit touches scoring: docs(corpus): ledger v2 migration, verify and rollback in the launch … |
+| `sn94:scoring_commit:2026-09-29T14:06:52Z` | 94 | SCORING_COMMIT | P1 | 2026-09-29T19:33:10Z | sn94 commit touches scoring: cli: export the validator's #256 policy file from the signed list |
+| `sn5:readme_task_diff:12b2073e10277692` | 5 | README_TASK_DIFF | P2 | 2026-09-29T19:33:10Z | sn5 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.37: fix(proxy): sum inference count`** - sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347)
-  - published 2026-09-29T08:57:05Z (was v2.0.36: Send validator heartbeats every eight seconds)
-- **`sn23:scoring_commit:2026-09-29T10:36:58Z`** - sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix
+- **`sn20:burn_drop:0.799`** - sn20 burn fell 1.000 -> 0.799 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn46:burn_drop:0.726`** - sn46 burn fell 1.000 -> 0.726 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn1:release:v4.4.11`** - sn1 released v4.4.11
+  - published 2026-09-29T14:28:28Z (was v4.4.10)
+- **`sn5:scoring_commit:2026-09-29T16:00:26Z`** - sn5 commit touches scoring: Merge pull request #10 from hone-subnet-org/v3-repo-tasks
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn46:release:v0.1.2`** - sn46 released v0.1.2
-  - published 2026-09-29T08:24:14Z (was v0.1.1)
-- **`sn46:scoring_commit:2026-09-28T17:59:23Z`** - sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric…
+- **`sn15:release:v2.0.38: fix(agent): retry a 200 inferen`** - sn15 released v2.0.38: fix(agent): retry a 200 inference response whose body is not JSON (#348)
+  - published 2026-09-29T19:00:41Z (was v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347))
+- **`sn20:scoring_commit:2026-09-29T18:56:24Z`** - sn20 commit touches scoring: Separate website from the public subnet and retain validator evidence…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.136`** - sn51 released executor-v1.136
-  - published 2026-09-29T11:06:15Z (was miner-v1.005)
-- **`sn53:scoring_commit:2026-09-29T09:45:05Z`** - sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer
+- **`sn41:scoring_commit:2026-09-28T18:49:08Z`** - sn41 commit touches scoring: pillar scoring updates around market-relative brier. updating baselin…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn69:scoring_commit:2026-09-26T06:16:04Z`** - sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle
+- **`sn81:scoring_commit:2026-09-29T15:04:56Z`** - sn81 commit touches scoring: docs(corpus): ledger v2 migration, verify and rollback in the launch …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-09-29T13:47:13Z`** - sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie
+- **`sn94:scoring_commit:2026-09-29T14:06:52Z`** - sn94 commit touches scoring: cli: export the validator's #256 policy file from the signed list
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:readme_task_diff:298e8500ae9f9443`** - sn53 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn69:readme_task_diff:ad40463d48698a60`** - sn69 README task/scoring sections changed
+- **`sn5:readme_task_diff:12b2073e10277692`** - sn5 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -52,11 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn1:release:v4.4.8` | 1 | RELEASE | 2026-09-22T17:19:59Z | sn1 released v4.4.8 |
-| `sn25:scoring_commit:2026-09-22T12:54:58Z` | 25 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls |
-| `sn50:release:v1.13.0` | 50 | RELEASE | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
-| `sn74:release:release-20260922-171907` | 74 | RELEASE | 2026-09-22T17:19:59Z | sn74 released release-20260922-171907 |
-| `sn120:scoring_commit:2026-09-22T15:44:37Z` | 120 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn120 commit touches scoring: rollouts: affine_gen_v1 shared store/teacher/verify + genenv catalog … |
 | `sn25:scoring_commit:2026-09-22T18:16:13Z` | 25 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn25 commit touches scoring: Resume bounded parallel miner fault controls across transient failures |
 | `sn71:scoring_commit:2026-09-22T19:58:10Z` | 71 | SCORING_COMMIT | 2026-09-22T20:21:06Z | sn71 commit touches scoring: Verify shadow rounds under current Arena scheduling policy |
 | `sn74:release:release-20260922-190530: spark-hermes: f` | 74 | RELEASE | 2026-09-22T20:21:06Z | sn74 released release-20260922-190530: spark-hermes: full scoring config (50% maintainer cut) (#1791) |
@@ -191,6 +186,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
 | `sn61:release:4.10.8` | 61 | RELEASE | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
 | `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
+| `sn15:release:v2.0.37: fix(proxy): sum inference count` | 15 | RELEASE | 2026-09-29T14:13:00Z | sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347) |
+| `sn23:scoring_commit:2026-09-29T10:36:58Z` | 23 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix |
+| `sn46:release:v0.1.2` | 46 | RELEASE | 2026-09-29T14:13:00Z | sn46 released v0.1.2 |
+| `sn46:scoring_commit:2026-09-28T17:59:23Z` | 46 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric… |
+| `sn51:release:executor-v1.136` | 51 | RELEASE | 2026-09-29T14:13:00Z | sn51 released executor-v1.136 |
+| `sn53:scoring_commit:2026-09-29T09:45:05Z` | 53 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer |
+| `sn69:scoring_commit:2026-09-26T06:16:04Z` | 69 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle |
+| `sn94:scoring_commit:2026-09-29T13:47:13Z` | 94 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
@@ -201,6 +204,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
+| `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
+| `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

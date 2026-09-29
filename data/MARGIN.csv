@@ -18,7 +18,7 @@ netuid,name,required_vram_gb,gpu_class_required,gpu_class_basis,machine_class_ch
 17,404—GEN,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 18,Zeus,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 19,blockmachine,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-20,Witness,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
+20,Witness,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 21,AdTAO,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,,,,OK
 22,Desearch,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 23,Trishool,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,,,,OK
@@ -44,7 +44,7 @@ netuid,name,required_vram_gb,gpu_class_required,gpu_class_basis,machine_class_ch
 43,Graphite,0,cpu-only,min_compute.yml (curated),cpu-small,0,1000,0.9863,,,,OK
 44,Score,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 45,AlphaRidge.ai,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-46,Instant,0,cpu-only,README keywords (GUESS),cpu-small,0,1000,0.9863,,,,BLOCKED:burn
+46,Instant,0,cpu-only,README keywords (GUESS),cpu-small,0,1000,0.9863,,,,OK
 47,GPUForge,80,80GB datacentre,README keywords (GUESS),a100-80,80,2000,29.589,,,,OK
 48,Quantum Compute,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 49,Nepher Robotics,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
@@ -67,7 +67,7 @@ netuid,name,required_vram_gb,gpu_class_required,gpu_class_basis,machine_class_ch
 66,conjectures,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 67,Harnyx,0,cpu-only (dev box),code-submission (validator runs it),cpu-small,0,1000,0.9863,,,,OK
 68,NOVA,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
-69,Herald,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
+69,Herald,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,BLOCKED:burn
 70,ghayn,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 71,Leadpoet,,unknown,no evidence,rtx4090,24,1000,8.2192,,,,OK
 72,StreetVision by NATIX,4,24GB consumer,min_compute.yml (curated),rtx3060,12,1000,2.9589,,,,BLOCKED:burn

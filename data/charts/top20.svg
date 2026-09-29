@@ -55,10 +55,10 @@
 <text class="ink2 t-lab" x="158" y="277" text-anchor="end">8. sn91 cascade</text>
 <path class="accent" d="M168.0,263.0 H539.7 a4.0,4.0 0 0 1 4.0,4.0 V279.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="551.7" y="277">42</text>
-<text class="ink2 t-lab" x="158" y="304" text-anchor="end">9. sn53 engy</text>
-<path class="accent" d="M168.0,290.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V306.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
-<text class="ink t-val" x="523.4" y="304">39</text>
-<text class="ink2 t-lab" x="158" y="331" text-anchor="end">10. sn81 Reliquary</text>
+<text class="ink2 t-lab" x="158" y="304" text-anchor="end">9. sn46 Instant</text>
+<path class="accent" d="M168.0,290.0 H539.7 a4.0,4.0 0 0 1 4.0,4.0 V306.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
+<text class="ink t-val" x="551.7" y="304">42</text>
+<text class="ink2 t-lab" x="158" y="331" text-anchor="end">10. sn53 engy</text>
 <path class="accent" d="M168.0,317.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V333.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="331">39</text>
 <text class="ink2 t-lab" x="158" y="358" text-anchor="end">11. sn100 Cortex</text>
@@ -79,16 +79,16 @@
 <text class="ink2 t-lab" x="158" y="493" text-anchor="end">16. sn71 Leadpoet</text>
 <path class="accent" d="M168.0,479.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V495.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="493">39</text>
-<text class="ink2 t-lab" x="158" y="520" text-anchor="end">17. sn69 Herald</text>
+<text class="ink2 t-lab" x="158" y="520" text-anchor="end">17. sn81 Reliquary</text>
 <path class="accent" d="M168.0,506.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V522.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="520">39</text>
 <text class="ink2 t-lab" x="158" y="547" text-anchor="end">18. sn45 AlphaRidge.ai</text>
 <path class="accent" d="M168.0,533.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V549.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="547">39</text>
-<text class="ink2 t-lab" x="158" y="574" text-anchor="end">19. sn62 Ridges</text>
+<text class="ink2 t-lab" x="158" y="574" text-anchor="end">19. sn88 Investing</text>
 <path class="accent" d="M168.0,560.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V576.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="574">39</text>
-<text class="ink2 t-lab" x="158" y="601" text-anchor="end">20. sn88 Investing</text>
+<text class="ink2 t-lab" x="158" y="601" text-anchor="end">20. sn102 ConnitoAI</text>
 <path class="accent" d="M168.0,587.0 H511.4 a4.0,4.0 0 0 1 4.0,4.0 V603.0 a4.0,4.0 0 0 1 -4.0,4.0 H168.0 Z"/>
 <text class="ink t-val" x="523.4" y="601">39</text>
 <line class="axis" x1="168" y1="68" x2="168" y2="609" stroke-width="1"/>

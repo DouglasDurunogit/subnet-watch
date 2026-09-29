@@ -1,13 +1,13 @@
 # sn1 - Apex (α)
 
-snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
+snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.5238673835992813**
+- miner_burn: **0.5299826662521809**
 - registration cost: 0.0005 TAO ([UNKNOWN] USD), open=True
 - tempo: 99.0  |  max_uids: 256  |  active: 12  |  free: 0
-- subnet age: 1066.1 days  |  registered at block 1497824
+- subnet age: 1066.4 days  |  registered at block 1497824
 - weights_version: 21706  |  mechanisms: 1
 
 ## Income (miner side)
@@ -18,8 +18,8 @@ snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.32477263016541524  |  top1_share: 0.5238814624916072  |  top10_share: 1.0
-- owner_incentive_share: 0.5238814624916072 (independent check on miner_burn; disagreement 0.0)
+- earners: 4  |  gini: 0.32712145026170036  |  top1_share: 0.5299925228510827  |  top10_share: 1.0
+- owner_incentive_share: 0.5299925228510827 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,8 +27,8 @@ snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 - resolved URL: `https://github.com/macrocosm-os/apex`
 - status: **ok** 
 - README: 9490 bytes, sha 338249d54a2bb1dc
-- latest release: v4.4.10 2026-09-25T19:49:34Z
-- last commit: 2026-09-25T19:49:30Z
+- latest release: v4.4.11 2026-09-29T14:28:28Z
+- last commit: 2026-09-29T14:28:24Z
 - scoring-related commit: (none) 
 
 ## Resources
@@ -43,7 +43,7 @@ snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 - gate: **OK** 
 - score: 39.3 (rank 14), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 3.6d ago
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

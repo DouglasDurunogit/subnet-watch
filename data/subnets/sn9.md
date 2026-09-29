@@ -1,13 +1,13 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
+snapshot_utc: 2026-09-29T19:32:43Z  |  block: 9175650  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.16374207101762295**
+- miner_burn: **0.10215686028823256**
 - registration cost: 0.0005 TAO ([UNKNOWN] USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 1067.3 days  |  registered at block 1489797
+- subnet age: 1067.5 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
@@ -18,8 +18,8 @@ snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.31935055620832276  |  top1_share: 0.6427601361146293  |  top10_share: 1.0
-- owner_incentive_share: 0.1637343018021455 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.42521070809108896  |  top1_share: 0.7399630720400409  |  top10_share: 1.0
+- owner_incentive_share: 0.10214700990340744 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -43,7 +43,7 @@ snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 - gate: **OK** 
 - score: 39.3 (rank 15), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 5.1d ago
+- freshness basis: RELEASE 5.3d ago
 
 ## On-chain description
 

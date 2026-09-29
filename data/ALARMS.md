@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-29T07:13:48Z, block 9171956
+# ALARMS - generated 2026-09-29T14:12:37Z, block 9174050
 
-window: first_seen in [2026-09-29T05:59:20Z, 2026-09-29T07:14:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-29T12:58:00Z, 2026-09-29T14:13:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | P1 | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
-| `sn61:release:4.10.8` | 61 | RELEASE | P1 | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
-| `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | P1 | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
-| `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | P2 | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
+| `sn15:release:v2.0.37: fix(proxy): sum inference count` | 15 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347) |
+| `sn23:scoring_commit:2026-09-29T10:36:58Z` | 23 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix |
+| `sn46:release:v0.1.2` | 46 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn46 released v0.1.2 |
+| `sn46:scoring_commit:2026-09-28T17:59:23Z` | 46 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric… |
+| `sn51:release:executor-v1.136` | 51 | RELEASE | P1 | 2026-09-29T14:13:00Z | sn51 released executor-v1.136 |
+| `sn53:scoring_commit:2026-09-29T09:45:05Z` | 53 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer |
+| `sn69:scoring_commit:2026-09-26T06:16:04Z` | 69 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle |
+| `sn94:scoring_commit:2026-09-29T13:47:13Z` | 94 | SCORING_COMMIT | P1 | 2026-09-29T14:13:00Z | sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie |
+| `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | P2 | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
+| `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | P2 | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-09-29T05:54:45Z`** - sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu…
+- **`sn15:release:v2.0.37: fix(proxy): sum inference count`** - sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347)
+  - published 2026-09-29T08:57:05Z (was v2.0.36: Send validator heartbeats every eight seconds)
+- **`sn23:scoring_commit:2026-09-29T10:36:58Z`** - sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.10.8`** - sn61 released 4.10.8
-  - published 2026-09-29T07:13:45Z (was 4.10.7)
-- **`sn61:scoring_commit:2026-09-29T06:36:25Z`** - sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer…
+- **`sn46:release:v0.1.2`** - sn46 released v0.1.2
+  - published 2026-09-29T08:24:14Z (was v0.1.1)
+- **`sn46:scoring_commit:2026-09-28T17:59:23Z`** - sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:readme_task_diff:170d4566869a3dcc`** - sn51 README task/scoring sections changed
+- **`sn51:release:executor-v1.136`** - sn51 released executor-v1.136
+  - published 2026-09-29T11:06:15Z (was miner-v1.005)
+- **`sn53:scoring_commit:2026-09-29T09:45:05Z`** - sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn69:scoring_commit:2026-09-26T06:16:04Z`** - sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-09-29T13:47:13Z`** - sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn53:readme_task_diff:298e8500ae9f9443`** - sn53 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn69:readme_task_diff:ad40463d48698a60`** - sn69 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -170,6 +188,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
 | `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
 | `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
+| `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
+| `sn61:release:4.10.8` | 61 | RELEASE | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
+| `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
@@ -179,6 +200,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
+| `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

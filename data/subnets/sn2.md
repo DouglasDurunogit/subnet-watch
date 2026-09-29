@@ -1,25 +1,25 @@
 # sn2 - DSperse (β)
 
-snapshot_utc: 2026-09-29T07:13:48Z  |  block: 9171956  |  row_status: ok
+snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.8158827524166554**
+- miner_burn: **0.8060788863804191**
 - registration cost: 0.0005 TAO ([UNKNOWN] USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 46  |  free: 0
-- subnet age: 894.2 days  |  registered at block 2734060
+- tempo: 360.0  |  max_uids: 256  |  active: 50  |  free: 0
+- subnet age: 894.4 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: [UNKNOWN]** (uid 148) <- the only figure quotable as achievable
+- **competitive_miner_usd_day: [UNKNOWN]** (uid 102) <- the only figure quotable as achievable
 - median_miner_usd_day: [UNKNOWN]
 - top_miner_usd_day: [UNKNOWN] (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 42  |  gini: 0.8604311401270832  |  top1_share: 0.8161309033183747  |  top10_share: 0.9058674481790152
-- owner_incentive_share: 0.8161309033183747 (independent check on miner_burn; disagreement 0.0002)
+- earners: 46  |  gini: 0.831626013292674  |  top1_share: 0.806319163550332  |  top10_share: 0.8732351369915287
+- owner_incentive_share: 0.806319163550332 (independent check on miner_burn; disagreement 0.0002)
 
 ## Repository
 
@@ -43,7 +43,7 @@ snapshot_utc: 2026-09-29T07:13:48Z  |  block: 9171956  |  row_status: ok
 - gate: **OK** 
 - score: 27.4 (rank 41), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 20d ago
+- freshness basis: RELEASE 21d ago
 
 ## On-chain description
 

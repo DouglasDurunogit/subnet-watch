@@ -1,13 +1,13 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-09-29T07:13:48Z  |  block: 9171956  |  row_status: ok
+snapshot_utc: 2026-09-29T14:12:37Z  |  block: 9174050  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
 - registration cost: 0.999999999 TAO ([UNKNOWN] USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 12  |  free: 0
-- subnet age: 695.3 days  |  registered at block 4165565
+- subnet age: 695.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
@@ -18,7 +18,7 @@ snapshot_utc: 2026-09-29T07:13:48Z  |  block: 9171956  |  row_status: ok
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.0027588732566303786  |  top1_share: 0.20068971831415755  |  top10_share: 1.0
+- earners: 5  |  gini: 2.220446049250313e-16  |  top1_share: 0.2  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository

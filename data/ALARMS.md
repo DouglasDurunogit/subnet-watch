@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-29T01:08:06Z, block 9170127
+# ALARMS - generated 2026-09-29T07:13:48Z, block 9171956
 
-window: first_seen in [2026-09-28T23:53:37Z, 2026-09-29T01:08:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-29T05:59:20Z, 2026-09-29T07:14:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,37 +9,31 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | P1 | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
-| `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | P1 | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
+| `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | P1 | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
+| `sn61:release:4.10.8` | 61 | RELEASE | P1 | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
+| `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | P1 | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
+| `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | P2 | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v2.0.36: Send validator heartbeats every`** - sn15 released v2.0.36: Send validator heartbeats every eight seconds
-  - published 2026-09-28T23:17:34Z (was v2.0.35: Log nested inference tool types in proxy access logs)
-- **`sn15:scoring_commit:2026-09-28T23:17:34Z`** - sn15 commit touches scoring: Send validator heartbeats every eight seconds
+- **`sn51:scoring_commit:2026-09-29T05:54:45Z`** - sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn61:release:4.10.8`** - sn61 released 4.10.8
+  - published 2026-09-29T07:13:45Z (was 4.10.7)
+- **`sn61:scoring_commit:2026-09-29T06:36:25Z`** - sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:readme_task_diff:170d4566869a3dcc`** - sn51 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn100:burn_drop:0.803` | 100 | BURN_DROP | 2026-09-22T06:50:15Z | sn100 burn fell 1.000 -> 0.803 - miners can earn again |
 | `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn25:release:v2026.9.21-1052359470` | 25 | RELEASE | 2026-09-22T01:35:19Z | sn25 released v2026.9.21-1052359470 |
-| `sn78:release:Cohort 3: provisional scores (uncertifie` | 78 | RELEASE | 2026-09-22T01:35:19Z | sn78 released Cohort 3: provisional scores (uncertified) |
-| `sn91:release:worker-v0.12.0` | 91 | RELEASE | 2026-09-22T01:35:19Z | sn91 released worker-v0.12.0 |
-| `sn15:release:v2.0.29` | 15 | RELEASE | 2026-09-22T06:50:15Z | sn15 released v2.0.29 |
-| `sn25:release:v2026.9.21-1052448720` | 25 | RELEASE | 2026-09-22T06:50:15Z | sn25 released v2026.9.21-1052448720 |
-| `sn26:scoring_commit:2026-09-22T00:59:43Z` | 26 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn26 commit touches scoring: fix: commitment snapshot carries the model hash and is the sole verif… |
-| `sn45:scoring_commit:2026-09-22T05:57:35Z` | 45 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn45 commit touches scoring: Owe a share again to a miner sent nothing for six epochs |
-| `sn51:release:executor-v1.134` | 51 | RELEASE | 2026-09-22T06:50:15Z | sn51 released executor-v1.134 |
-| `sn67:scoring_commit:2026-09-21T11:04:20Z` | 67 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260921.post0 |
-| `sn78:release:Cohort 4 miner connection inputs (policy` | 78 | RELEASE | 2026-09-22T06:50:15Z | sn78 released Cohort 4 miner connection inputs (policy 8) |
-| `sn78:scoring_commit:2026-09-22T02:52:21Z` | 78 | SCORING_COMMIT | 2026-09-22T06:50:15Z | sn78 commit touches scoring: Publish current C4 miner setup and verified connection inputs (#191) |
 | `sn1:release:v4.4.8` | 1 | RELEASE | 2026-09-22T17:19:59Z | sn1 released v4.4.8 |
 | `sn25:scoring_commit:2026-09-22T12:54:58Z` | 25 | SCORING_COMMIT | 2026-09-22T17:19:59Z | sn25 commit touches scoring: Make miner fault recovery durable and reconcile ambiguous controls |
 | `sn50:release:v1.13.0` | 50 | RELEASE | 2026-09-22T17:19:59Z | sn50 released v1.13.0 |
@@ -174,7 +168,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:release:Cathedral static TDX verifier cathedral-` | 94 | RELEASE | 2026-09-28T21:19:29Z | sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0 |
 | `sn94:scoring_commit:2026-09-28T07:10:07Z` | 94 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203) |
 | `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
-| `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
+| `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
+| `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |

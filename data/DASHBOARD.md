@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-09-28T21:19:03Z · block 9168982 · run_status **ok**_
+_snapshot 2026-09-29T01:08:06Z · block 9170127 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 61 of 128
+# 60 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 97 | `miner_burn` < 0.99 |
 | Ranked | 97 | passed every gate |
-| **Positive margin** | **61** | income beats machine cost |
-| New events this window | 9 | see ALARMS.md |
+| **Positive margin** | **60** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,10 +30,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 67 | `████████████████████████████` |
-| 0–0.2 | 5 | `██` |
+| 0–0.2 | 6 | `███` |
 | 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 2 | `█` |
-| 0.6–0.8 | 11 | `█████` |
+| 0.4–0.6 | 3 | `█` |
+| 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 31 | `█████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn41 Almanac | 75.9 | 58.30 | 127 | cpu-small | 113 | 2% |
-| 2 | sn102 ConnitoAI | 72.2 | 1,410 | 1,410 | rtx4090* | 4 | 25% |
-| 3 | sn91 cascade | 72.2 | 553 | 2,214 | cpu-small | 5 | 52% |
-| 4 | sn1 Apex | 71.3 | 1,077 | 1,182 | rtx4090* | 4 | 52% |
-| 5 | sn26 Perturb | 70.5 | 38.89 | 124 | rtx3060 | 5 | 90% |
-| 6 | sn67 Harnyx | 69.3 | 9.96 | 1,213 | cpu-small | 116 | 36% |
-| 7 | sn107 Minos | 69 | 366 | 29,729 | cpu-small | 20 | 80% |
-| 8 | sn96 Verathos | 68.2 | 22.18 | 225 | rtx4090 | 76 | 30% |
-| 9 | sn15 ORO | 68.2 | 13.03 | 19,839 | cpu-small | 75 | 95% |
-| 10 | sn111 Claims | 65.3 | 203 | 3,236 | rtx4090* | 5 | 80% |
-| 11 | sn3 Teutonic | 64.6 | 5,160 | 5,160 = | rtx4090* | 5 | 20% |
-| 12 | sn62 Ridges | 64.4 | 138 | 1,195 | rtx4090* | 26 | 13% |
-| 13 | sn66 conjectures | 63.3 | 101 | 412 | rtx4090* | 4 | 81% |
-| 14 | sn61 RedTeam | 63 | 91.11 | 261 | rtx4090* | 86 | 3% |
-| 15 | sn23 Trishool | 61.9 | 893 | 893 = | cpu-small | 2 | 80% |
-| 16 | sn14 Cacheon | 61.1 | 51.37 | 2,352 | rtx4090* | 14 | 30% |
-| 17 | sn28 SayGM | 59.7 | 36.21 | 1,838 | rtx4090* | 69 | 36% |
-| 18 | sn100 Cortex | 59.6 | 32.66 | 226 | rtx4090* | 19 | 70% |
-| 19 | sn80 OpenRoboto | 59.2 | 1,016 | 3,144 | rtx4090* | 8 | 33% |
-| 20 | sn74 Gittensor | 58.4 | 26.39 | 254 | rtx4090* | 20 | 62% |
+| 1 | sn41 Almanac | 75.9 | 57.44 | 125 | cpu-small | 113 | 2% |
+| 2 | sn91 cascade | 72.2 | 547 | 2,193 | cpu-small | 5 | 52% |
+| 3 | sn102 ConnitoAI | 71.7 | 1,247 | 1,629 | rtx4090* | 5 | 29% |
+| 4 | sn1 Apex | 71.5 | 1,152 | 1,167 | rtx4090* | 4 | 51% |
+| 5 | sn26 Perturb | 70.5 | 38.42 | 122 | rtx3060 | 5 | 90% |
+| 6 | sn67 Harnyx | 69.2 | 9.87 | 1,203 | cpu-small | 116 | 36% |
+| 7 | sn107 Minos | 69 | 363 | 29,157 | cpu-small | 20 | 79% |
+| 8 | sn15 ORO | 68.9 | 13.04 | 19,861 | cpu-small | 75 | 95% |
+| 9 | sn96 Verathos | 68.3 | 22.68 | 239 | rtx4090 | 76 | 30% |
+| 10 | sn111 Claims | 65.4 | 202 | 3,225 | rtx4090* | 5 | 80% |
+| 11 | sn3 Teutonic | 64.6 | 5,118 | 5,118 = | rtx4090* | 5 | 20% |
+| 12 | sn62 Ridges | 64.3 | 137 | 1,183 | rtx4090* | 26 | 13% |
+| 13 | sn61 RedTeam | 63 | 91.52 | 263 | rtx4090* | 86 | 3% |
+| 14 | sn23 Trishool | 61.9 | 887 | 887 = | cpu-small | 2 | 80% |
+| 15 | sn28 SayGM | 61.2 | 55.65 | 844 | rtx4090* | 67 | 32% |
+| 16 | sn14 Cacheon | 61.1 | 50.91 | 2,335 | rtx4090* | 14 | 30% |
+| 17 | sn66 conjectures | 61 | 50.93 | 165 | rtx4090* | 9 | 81% |
+| 18 | sn38 ChronoLLM | 60.6 | 618 | 10,045 | cpu-small | 10 | 52% |
+| 19 | sn80 OpenRoboto | 59.1 | 1,001 | 3,097 | rtx4090* | 8 | 33% |
+| 20 | sn74 Gittensor | 58.1 | 24.09 | 252 | rtx4090* | 20 | 62% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 23 |
-| concentrated (30–60%) | 21 |
+| concentrated (30–60%) | 22 |
 | dominated (60–90%) | 23 |
-| captured (>90%) | 26 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-09-29T01:08 | sn15 | RELEASE | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
+| 2026-09-29T01:08 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: Send validator heartbeats every eight sec |
 | 2026-09-28T21:19 | sn20 | SCORING_COMMIT | sn20 commit touches scoring: Allow verified Archive download mirrors f |
 | 2026-09-28T21:19 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: Show recent chain-verified reveals alongs |
 | 2026-09-28T21:19 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: Skip a validation sample when the validat |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-09-28T15:21 | sn26 | SCORING_COMMIT | sn26 commit touches scoring: fix: seed evaluation sampling from the pi |
 | 2026-09-28T15:21 | sn28 | RELEASE | sn28 released v0.4.24 |
 | 2026-09-28T15:21 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.24 ( |
-| 2026-09-28T15:21 | sn41 | SCORING_COMMIT | sn41 commit touches scoring: Merge pull request #49 from corvxai/forec |
-| 2026-09-28T15:21 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node  |
 
 ---
 

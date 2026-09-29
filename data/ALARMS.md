@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-28T21:19:03Z, block 9168982
+# ALARMS - generated 2026-09-29T01:08:06Z, block 9170127
 
-window: first_seen in [2026-09-28T20:04:29Z, 2026-09-28T21:19:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-28T23:53:37Z, 2026-09-29T01:08:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn121:burn_drop:0.600` | 121 | BURN_DROP | P0 | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn20:scoring_commit:2026-09-28T18:47:48Z` | 20 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes |
-| `sn34:scoring_commit:2026-09-28T18:21:09Z` | 34 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions |
-| `sn45:scoring_commit:2026-09-28T16:32:06Z` | 45 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu… |
-| `sn51:scoring_commit:2026-09-28T16:19:46Z` | 51 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa… |
-| `sn94:release:Cathedral static TDX verifier cathedral-` | 94 | RELEASE | P1 | 2026-09-28T21:19:29Z | sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0 |
-| `sn94:scoring_commit:2026-09-28T07:10:07Z` | 94 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203) |
-| `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | P1 | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
-| `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | P2 | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
+| `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | P1 | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
+| `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | P1 | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
 
 ### detail
 
-- **`sn121:burn_drop:0.600`** - sn121 burn fell 1.000 -> 0.600 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn20:scoring_commit:2026-09-28T18:47:48Z`** - sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes
+- **`sn15:release:v2.0.36: Send validator heartbeats every`** - sn15 released v2.0.36: Send validator heartbeats every eight seconds
+  - published 2026-09-28T23:17:34Z (was v2.0.35: Log nested inference tool types in proxy access logs)
+- **`sn15:scoring_commit:2026-09-28T23:17:34Z`** - sn15 commit touches scoring: Send validator heartbeats every eight seconds
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-09-28T18:21:09Z`** - sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-09-28T16:32:06Z`** - sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-28T16:19:46Z`** - sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:release:Cathedral static TDX verifier cathedral-`** - sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0
-  - published 2026-08-30T06:57:19Z (was Internal Testnet GUI (Latest))
-- **`sn94:scoring_commit:2026-09-28T07:10:07Z`** - sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-09-28T21:11:51Z`** - sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:readme_task_diff:f2d2965f7776dbf2`** - sn94 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,9 +28,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
-| `sn62:release:v0.3.6` | 62 | RELEASE | 2026-09-21T22:51:06Z | sn62 released v0.3.6 |
-| `sn100:scoring_commit:2026-09-21T19:49:44Z` | 100 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn100 commit touches scoring: fix(validator): make gateway authoritative and peer consensus opt-in … |
-| `sn120:scoring_commit:2026-09-21T21:22:20Z` | 120 | SCORING_COMMIT | 2026-09-21T22:51:06Z | sn120 commit touches scoring: coverage: unverified / errored_only cells are present, not gaps (51 r… |
+| `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn25:release:v2026.9.21-1052359470` | 25 | RELEASE | 2026-09-22T01:35:19Z | sn25 released v2026.9.21-1052359470 |
 | `sn78:release:Cohort 3: provisional scores (uncertifie` | 78 | RELEASE | 2026-09-22T01:35:19Z | sn78 released Cohort 3: provisional scores (uncertified) |
 | `sn91:release:worker-v0.12.0` | 91 | RELEASE | 2026-09-22T01:35:19Z | sn91 released worker-v0.12.0 |
@@ -190,7 +167,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-09-28T14:32:49Z` | 51 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: an idle node that cannot pull from Docker… |
 | `sn66:scoring_commit:2026-09-28T12:57:35Z` | 66 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn66 commit touches scoring: Merge pull request #109 from conjectures-io/chore/remove-legacy-scorin |
 | `sn111:release:v1.0.0` | 111 | RELEASE | 2026-09-28T15:21:54Z | sn111 released v1.0.0 |
-| `sn66:readme_task_diff:8a675979eb4c570a` | 66 | README_TASK_DIFF | 2026-09-21T22:51:06Z | sn66 README task/scoring sections changed |
+| `sn20:scoring_commit:2026-09-28T18:47:48Z` | 20 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes |
+| `sn34:scoring_commit:2026-09-28T18:21:09Z` | 34 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions |
+| `sn45:scoring_commit:2026-09-28T16:32:06Z` | 45 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu… |
+| `sn51:scoring_commit:2026-09-28T16:19:46Z` | 51 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa… |
+| `sn94:release:Cathedral static TDX verifier cathedral-` | 94 | RELEASE | 2026-09-28T21:19:29Z | sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0 |
+| `sn94:scoring_commit:2026-09-28T07:10:07Z` | 94 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203) |
+| `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
 | `sn78:readme_task_diff:e68802e7781d35c0` | 78 | README_TASK_DIFF | 2026-09-22T06:50:15Z | sn78 README task/scoring sections changed |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
@@ -200,6 +183,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
+| `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

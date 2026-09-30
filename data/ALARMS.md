@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-30T02:18:03Z, block 9177677
+# ALARMS - generated 2026-09-30T08:50:20Z, block 9179639
 
-window: first_seen in [2026-09-30T01:03:29Z, 2026-09-30T02:18:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-30T07:35:53Z, 2026-09-30T08:50:53Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn5:scoring_commit:2026-09-29T22:46:58Z` | 5 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn5 commit touches scoring: Test this release against the previous release's miner and validator |
-| `sn15:release:v2.0.39: Translate live Chutes model IDs` | 15 | RELEASE | P1 | 2026-09-30T02:18:29Z | sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345) |
-| `sn20:scoring_commit:2026-09-30T00:12:27Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn20 commit touches scoring: Record foreground waits for prefetched challengers |
-| `sn94:scoring_commit:2026-09-30T01:23:22Z` | 94 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#… |
+| `sn20:scoring_commit:2026-09-30T08:36:21Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses |
+| `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | P1 | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
+| `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
+| `sn91:scoring_commit:2026-09-30T07:36:25Z` | 91 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue |
 
 ### detail
 
-- **`sn5:scoring_commit:2026-09-29T22:46:58Z`** - sn5 commit touches scoring: Test this release against the previous release's miner and validator
+- **`sn20:scoring_commit:2026-09-30T08:36:21Z`** - sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:release:v2.0.39: Translate live Chutes model IDs`** - sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345)
-  - published 2026-09-30T00:44:19Z (was v2.0.38: fix(agent): retry a 200 inference response whose body is not JSON (#348))
-- **`sn20:scoring_commit:2026-09-30T00:12:27Z`** - sn20 commit touches scoring: Record foreground waits for prefetched challengers
+- **`sn51:release:lium-core-v0.1.13`** - sn51 released lium-core-v0.1.13
+  - published 2026-09-30T08:04:16Z (was executor-v1.136)
+- **`sn51:scoring_commit:2026-09-30T08:43:37Z`** - sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-09-30T01:23:22Z`** - sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#…
+- **`sn91:scoring_commit:2026-09-30T07:36:25Z`** - sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -35,8 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
-| `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
-| `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
 | `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
 | `sn51:scoring_commit:2026-09-23T11:44:49Z` | 51 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th… |
 | `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
@@ -178,6 +176,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-09-29T15:04:56Z` | 81 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn81 commit touches scoring: docs(corpus): ledger v2 migration, verify and rollback in the launch … |
 | `sn94:scoring_commit:2026-09-29T14:06:52Z` | 94 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn94 commit touches scoring: cli: export the validator's #256 policy file from the signed list |
 | `sn20:scoring_commit:2026-09-29T23:10:34Z` | 20 | SCORING_COMMIT | 2026-09-29T23:14:10Z | sn20 commit touches scoring: Bind evaluator publications to their window policy |
+| `sn5:scoring_commit:2026-09-29T22:46:58Z` | 5 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn5 commit touches scoring: Test this release against the previous release's miner and validator |
+| `sn15:release:v2.0.39: Translate live Chutes model IDs` | 15 | RELEASE | 2026-09-30T02:18:29Z | sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345) |
+| `sn20:scoring_commit:2026-09-30T00:12:27Z` | 20 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn20 commit touches scoring: Record foreground waits for prefetched challengers |
+| `sn94:scoring_commit:2026-09-30T01:23:22Z` | 94 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#… |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |

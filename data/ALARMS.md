@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-30T08:50:20Z, block 9179639
+# ALARMS - generated 2026-09-30T15:52:45Z, block 9181750
 
-window: first_seen in [2026-09-30T07:35:53Z, 2026-09-30T08:50:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-30T14:38:11Z, 2026-09-30T15:53:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:scoring_commit:2026-09-30T08:36:21Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses |
-| `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | P1 | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
-| `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
-| `sn91:scoring_commit:2026-09-30T07:36:25Z` | 91 | SCORING_COMMIT | P1 | 2026-09-30T08:50:53Z | sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue |
+| `sn20:scoring_commit:2026-09-30T09:55:00Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor |
+| `sn25:scoring_commit:2026-09-30T07:07:19Z` | 25 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn25 commit touches scoring: Build mips64 miner targets as softfloat |
+| `sn51:scoring_commit:2026-09-30T13:04:53Z` | 51 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha… |
+| `sn97:scoring_commit:2026-09-29T15:51:34Z` | 97 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring… |
+| `sn111:scoring_commit:2026-09-29T23:46:11Z` | 111 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn111 commit touches scoring: feat(validator): wait for due canonical batches |
 
 ### detail
 
-- **`sn20:scoring_commit:2026-09-30T08:36:21Z`** - sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses
+- **`sn20:scoring_commit:2026-09-30T09:55:00Z`** - sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:lium-core-v0.1.13`** - sn51 released lium-core-v0.1.13
-  - published 2026-09-30T08:04:16Z (was executor-v1.136)
-- **`sn51:scoring_commit:2026-09-30T08:43:37Z`** - sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine…
+- **`sn25:scoring_commit:2026-09-30T07:07:19Z`** - sn25 commit touches scoring: Build mips64 miner targets as softfloat
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-09-30T07:36:25Z`** - sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue
+- **`sn51:scoring_commit:2026-09-30T13:04:53Z`** - sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-09-29T15:51:34Z`** - sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-09-29T23:46:11Z`** - sn111 commit touches scoring: feat(validator): wait for due canonical batches
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -35,11 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
-| `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
-| `sn51:scoring_commit:2026-09-23T11:44:49Z` | 51 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn51 commit touches scoring: DAH-3505 - [P2] validator: keep the Docker SDK's SSH session alive th… |
-| `sn67:scoring_commit:2026-09-23T07:25:23Z` | 67 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20260923.post2 |
-| `sn71:scoring_commit:2026-09-23T08:39:50Z` | 71 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn71 commit touches scoring: Document company-only validator compatibility |
-| `sn97:scoring_commit:2026-09-23T11:59:47Z` | 97 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn97 commit touches scoring: fix: show tasks and trajectories on the detail page of every distribu… |
 | `sn9:release:v4.13.2` | 9 | RELEASE | 2026-09-23T17:21:31Z | sn9 released v4.13.2 |
 | `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
 | `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
@@ -180,6 +178,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:release:v2.0.39: Translate live Chutes model IDs` | 15 | RELEASE | 2026-09-30T02:18:29Z | sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345) |
 | `sn20:scoring_commit:2026-09-30T00:12:27Z` | 20 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn20 commit touches scoring: Record foreground waits for prefetched challengers |
 | `sn94:scoring_commit:2026-09-30T01:23:22Z` | 94 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#… |
+| `sn20:scoring_commit:2026-09-30T08:36:21Z` | 20 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses |
+| `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
+| `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
+| `sn91:scoring_commit:2026-09-30T07:36:25Z` | 91 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |

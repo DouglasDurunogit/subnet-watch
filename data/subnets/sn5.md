@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-09-30T15:52:45Z  |  block: 9181750  |  row_status: ok
+snapshot_utc: 2026-09-30T20:46:03Z  |  block: 9183217  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.265821248 TAO (81.43168111231999 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 247  |  free: 0
-- subnet age: 929.2 days  |  registered at block 2491604
+- registration cost: 0.411343093 TAO (124.22972751693 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 244  |  free: 0
+- subnet age: 929.4 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 52.663734574545195** (uid 92) <- the only figure quotable as achievable
-- median_miner_usd_day: 50.18126897170468
-- top_miner_usd_day: 52.663734574545195 (uid 92, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 52.21087797571031** (uid 43) <- the only figure quotable as achievable
+- median_miner_usd_day: 49.68735220688431
+- top_miner_usd_day: 52.21087797571031 (uid 43, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 237  |  gini: 0.03424436112284779  |  top1_share: 0.004553748025942565  |  top10_share: 0.0449241808619923
+- earners: 234  |  gini: 0.041048926993199286  |  top1_share: 0.004643962848297214  |  top10_share: 0.045851393188854485
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-09-30T15:52:45Z  |  block: 9181750  |  row_status: ok
 - on-chain URL: `https://github.com/hone-subnet-org/hone-subnet`
 - resolved URL: `https://github.com/hone-subnet-org/hone-subnet`
 - status: **ok** 
-- README: 3950 bytes, sha 2bbd2b0dfefdbab7
+- README: 4290 bytes, sha 8e5fadf7a2ef99e0
 - latest release: (none) 
-- last commit: 2026-09-30T00:38:33Z
-- scoring-related commit: Test this release against the previous release's miner and validator 2026-09-29T22:46:58Z
+- last commit: 2026-09-30T20:11:20Z
+- scoring-related commit: Merge pull request #13 from hone-subnet-org/terminal-task-fixture 2026-09-30T18:36:40Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 41.9621 USD/day  |  payback on registration: 1.94 days
+- net margin: 41.4682 USD/day  |  payback on registration: 3.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 59.9 (rank 19), confidence 0.85 - hardware requirement unknown
-- components: income 14.85 / freshness 35.0 / resource 11.25 / registration 9.35
-- freshness basis: SCORING_COMMIT 0.6d ago
+- score: 59.5 (rank 19), confidence 0.85 - hardware requirement unknown
+- components: income 14.81 / freshness 35.0 / resource 11.25 / registration 9.0
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -91,9 +91,14 @@ optional settings.
 Dispatch, grading, scoring, cadence, resource limits, sandbox image, and owner
 burn are fixed in release policy. Operators do not configure them in `.env`.
 The owner burn share is 0%. The one sizing choice is how many miners are graded
-at the same time, `VALIDATOR_GRADING_CONCURRENCY`, default 2. Each concurrent
-grading may use a full sandbox memory limit and a copy of the task workspace on
-disk, so raise it only on a machine with the memory and disk to match.
+at the same time, `VALIDATOR_GRADING_CONCURRENCY`. Unset, the validator sizes it
+from the host at startup: one per two CPUs, one per 4 GB of RAM after 4 GB for
+the system, one per 10 GB of free disk after 2 GB, at most 16, and prints the
+result. Each concurrent grading may use a full sandbox memory limit and a copy
+of the task workspace on disk, so set it higher only on a machine with the
+memory and disk to match. Byte-identical submissions in a round are graded
+once, so the number of distinct answers, not the number of miners, sets the
+grading time.
 
 The validator stores its scoring window in `data/validator_scores.json`.
 Preserve that file across restarts.
@@ -119,7 +124,7 @@ miners' workspaces, the network, or the trusted result record. Infrastructure
 or protocol failures abandon the round without changing miner scores.
 
 The complete V3 contract is documented in [`docs/V3_TASKS.md`](docs/V3_TASKS.md).
-Miners can grade a patch against a real retired task with `scripts/try_task.py`; see [`docs/DEMO_MINER.md`](docs/DEMO_MINER.md).
+Miners can grade a patch or a script against a real retired task with `scripts/try_task.py`; see [`docs/DEMO_MINER.md`](docs/DEMO_MINER.md).
 
 ## Demo miner
 

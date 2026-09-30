@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-30T15:52:45Z, block 9181750
+# ALARMS - generated 2026-09-30T20:46:03Z, block 9183217
 
-window: first_seen in [2026-09-30T14:38:11Z, 2026-09-30T15:53:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-30T19:31:36Z, 2026-09-30T20:46:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:scoring_commit:2026-09-30T09:55:00Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor |
-| `sn25:scoring_commit:2026-09-30T07:07:19Z` | 25 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn25 commit touches scoring: Build mips64 miner targets as softfloat |
-| `sn51:scoring_commit:2026-09-30T13:04:53Z` | 51 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha… |
-| `sn97:scoring_commit:2026-09-29T15:51:34Z` | 97 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring… |
-| `sn111:scoring_commit:2026-09-29T23:46:11Z` | 111 | SCORING_COMMIT | P1 | 2026-09-30T15:53:11Z | sn111 commit touches scoring: feat(validator): wait for due canonical batches |
+| `sn117:burn_drop:0.978` | 117 | BURN_DROP | P0 | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
+| `sn5:scoring_commit:2026-09-30T18:36:40Z` | 5 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn5 commit touches scoring: Merge pull request #13 from hone-subnet-org/terminal-task-fixture |
+| `sn8:scoring_commit:2026-09-24T08:39:47Z` | 8 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn8 commit touches scoring: disable miner daily summary (#934) |
+| `sn41:scoring_commit:2026-09-30T18:16:49Z` | 41 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn41 commit touches scoring: Updates to handling excess miner emissions and burn |
+| `sn81:scoring_commit:2026-09-30T18:12:28Z` | 81 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn81 commit touches scoring: fix(corpus): next on a free job is a 409, and the miner stops asking |
+| `sn108:scoring_commit:2026-09-30T14:03:10Z` | 108 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn108 commit touches scoring: Validator: periodic weight status line, change-only state logs, 409 a… |
+| `sn117:release:everycli v0.1.3` | 117 | RELEASE | P1 | 2026-09-30T20:46:36Z | sn117 released everycli v0.1.3 |
+| `sn117:scoring_commit:2026-09-30T17:20:20Z` | 117 | SCORING_COMMIT | P1 | 2026-09-30T20:46:36Z | sn117 commit touches scoring: feat: simplify miner onboarding and API key management |
+| `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | P2 | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
+| `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | P2 | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |
+| `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | P2 | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn20:scoring_commit:2026-09-30T09:55:00Z`** - sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor
+- **`sn117:burn_drop:0.978`** - sn117 burn fell 1.000 -> 0.978 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn5:scoring_commit:2026-09-30T18:36:40Z`** - sn5 commit touches scoring: Merge pull request #13 from hone-subnet-org/terminal-task-fixture
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-09-30T07:07:19Z`** - sn25 commit touches scoring: Build mips64 miner targets as softfloat
+- **`sn8:scoring_commit:2026-09-24T08:39:47Z`** - sn8 commit touches scoring: disable miner daily summary (#934)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-09-30T13:04:53Z`** - sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha…
+- **`sn41:scoring_commit:2026-09-30T18:16:49Z`** - sn41 commit touches scoring: Updates to handling excess miner emissions and burn
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-09-29T15:51:34Z`** - sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring…
+- **`sn81:scoring_commit:2026-09-30T18:12:28Z`** - sn81 commit touches scoring: fix(corpus): next on a free job is a 409, and the miner stops asking
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-09-29T23:46:11Z`** - sn111 commit touches scoring: feat(validator): wait for due canonical batches
+- **`sn108:scoring_commit:2026-09-30T14:03:10Z`** - sn108 commit touches scoring: Validator: periodic weight status line, change-only state logs, 409 a…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.1.3`** - sn117 released everycli v0.1.3
+  - published 2026-09-30T17:37:55Z (was everycli v0.1.1)
+- **`sn117:scoring_commit:2026-09-30T17:20:20Z`** - sn117 commit touches scoring: feat: simplify miner onboarding and API key management
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:readme_task_diff:6d33aaba03894c45`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn108:readme_task_diff:ba7ede20804945f8`** - sn108 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:readme_task_diff:f5c96a7d91dc6d0c`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -38,16 +56,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
-| `sn9:release:v4.13.2` | 9 | RELEASE | 2026-09-23T17:21:31Z | sn9 released v4.13.2 |
-| `sn25:release:v2026.9.23-1053753970` | 25 | RELEASE | 2026-09-23T17:21:31Z | sn25 released v2026.9.23-1053753970 |
-| `sn97:scoring_commit:2026-09-23T15:58:19Z` | 97 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn97 commit touches scoring: chore: show float score instead of a 0/1 mark |
-| `sn120:scoring_commit:2026-09-23T12:45:56Z` | 120 | SCORING_COMMIT | 2026-09-23T17:21:31Z | sn120 commit touches scoring: Merge PR #3 (cursor/discord-mirror-1b92): ops: discord-mirror — archi… |
-| `sn14:scoring_commit:2026-09-23T10:47:00Z` | 14 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn14 commit touches scoring: Drain evaluation workers and remove redundant recovery splits |
-| `sn15:scoring_commit:2026-09-23T19:01:26Z` | 15 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn15 commit touches scoring: docs: correct local-test EnvPack size, families, and runtime/verifier… |
-| `sn25:release:v2026.9.23-1053868550` | 25 | RELEASE | 2026-09-23T20:35:56Z | sn25 released v2026.9.23-1053868550 |
-| `sn25:scoring_commit:2026-09-23T08:56:00Z` | 25 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn25 commit touches scoring: Preserve validator readback transport errors and request deadlines |
-| `sn28:release:v0.4.21-dev` | 28 | RELEASE | 2026-09-23T20:35:56Z | sn28 released v0.4.21-dev |
-| `sn28:scoring_commit:2026-09-23T20:17:29Z` | 28 | SCORING_COMMIT | 2026-09-23T20:35:56Z | sn28 commit touches scoring: feat(image): route Chutes -TEE requests through the attestation verif… |
 | `sn120:scoring_commit:2026-09-23T21:51:12Z` | 120 | SCORING_COMMIT | 2026-09-23T23:14:27Z | sn120 commit touches scoring: Merge PR #66 (cursor/band-backfill-outcomes-8929): env-backfill task … |
 | `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
 | `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
@@ -182,7 +190,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
 | `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
 | `sn91:scoring_commit:2026-09-30T07:36:25Z` | 91 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue |
-| `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
+| `sn20:scoring_commit:2026-09-30T09:55:00Z` | 20 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor |
+| `sn25:scoring_commit:2026-09-30T07:07:19Z` | 25 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn25 commit touches scoring: Build mips64 miner targets as softfloat |
+| `sn51:scoring_commit:2026-09-30T13:04:53Z` | 51 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha… |
+| `sn97:scoring_commit:2026-09-29T15:51:34Z` | 97 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring… |
+| `sn111:scoring_commit:2026-09-29T23:46:11Z` | 111 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn111 commit touches scoring: feat(validator): wait for due canonical batches |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |

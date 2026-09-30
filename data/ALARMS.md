@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-09-29T23:13:44Z, block 9176755
+# ALARMS - generated 2026-09-30T02:18:03Z, block 9177677
 
-window: first_seen in [2026-09-29T21:59:10Z, 2026-09-29T23:14:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-09-30T01:03:29Z, 2026-09-30T02:18:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,25 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn20:scoring_commit:2026-09-29T23:10:34Z` | 20 | SCORING_COMMIT | P1 | 2026-09-29T23:14:10Z | sn20 commit touches scoring: Bind evaluator publications to their window policy |
+| `sn5:scoring_commit:2026-09-29T22:46:58Z` | 5 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn5 commit touches scoring: Test this release against the previous release's miner and validator |
+| `sn15:release:v2.0.39: Translate live Chutes model IDs` | 15 | RELEASE | P1 | 2026-09-30T02:18:29Z | sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345) |
+| `sn20:scoring_commit:2026-09-30T00:12:27Z` | 20 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn20 commit touches scoring: Record foreground waits for prefetched challengers |
+| `sn94:scoring_commit:2026-09-30T01:23:22Z` | 94 | SCORING_COMMIT | P1 | 2026-09-30T02:18:29Z | sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#… |
 
 ### detail
 
-- **`sn20:scoring_commit:2026-09-29T23:10:34Z`** - sn20 commit touches scoring: Bind evaluator publications to their window policy
+- **`sn5:scoring_commit:2026-09-29T22:46:58Z`** - sn5 commit touches scoring: Test this release against the previous release's miner and validator
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:release:v2.0.39: Translate live Chutes model IDs`** - sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345)
+  - published 2026-09-30T00:44:19Z (was v2.0.38: fix(agent): retry a 200 inference response whose body is not JSON (#348))
+- **`sn20:scoring_commit:2026-09-30T00:12:27Z`** - sn20 commit touches scoring: Record foreground waits for prefetched challengers
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-09-30T01:23:22Z`** - sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn100:burn_drop:0.708` | 100 | BURN_DROP | 2026-09-23T01:38:19Z | sn100 burn fell 1.000 -> 0.708 - miners can earn again |
 | `sn71:burn_drop:0.783` | 71 | BURN_DROP | 2026-09-24T06:47:57Z | sn71 burn fell 1.000 -> 0.783 - miners can earn again |
 | `sn112:burn_drop:0.850` | 112 | BURN_DROP | 2026-09-25T10:09:24Z | sn112 burn fell 1.000 -> 0.850 - miners can earn again |
 | `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
-| `sn25:release:v2026.9.22-1053244730` | 25 | RELEASE | 2026-09-23T01:38:19Z | sn25 released v2026.9.22-1053244730 |
 | `sn78:scoring_commit:2026-09-23T02:08:31Z` | 78 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn78 commit touches scoring: Retry interrupted miner downloads and redact clip capabilities from l… |
 | `sn120:scoring_commit:2026-09-23T03:12:20Z` | 120 | SCORING_COMMIT | 2026-09-23T06:45:27Z | sn120 commit touches scoring: wvk 23 live 17:20 UTC: AGENTS.md snapshot + Discord live lines (first… |
 | `sn28:scoring_commit:2026-09-23T11:46:58Z` | 28 | SCORING_COMMIT | 2026-09-23T12:19:18Z | sn28 commit touches scoring: ci: validate rendered Envoy configs with the pinned Envoy image |
@@ -170,6 +177,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn41:scoring_commit:2026-09-28T18:49:08Z` | 41 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn41 commit touches scoring: pillar scoring updates around market-relative brier. updating baselin… |
 | `sn81:scoring_commit:2026-09-29T15:04:56Z` | 81 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn81 commit touches scoring: docs(corpus): ledger v2 migration, verify and rollback in the launch … |
 | `sn94:scoring_commit:2026-09-29T14:06:52Z` | 94 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn94 commit touches scoring: cli: export the validator's #256 policy file from the signed list |
+| `sn20:scoring_commit:2026-09-29T23:10:34Z` | 20 | SCORING_COMMIT | 2026-09-29T23:14:10Z | sn20 commit touches scoring: Bind evaluator publications to their window policy |
 | `sn28:readme_task_diff:b07f84dabcd1a3a1` | 28 | README_TASK_DIFF | 2026-09-23T20:35:56Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |

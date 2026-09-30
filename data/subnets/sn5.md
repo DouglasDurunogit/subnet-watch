@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-09-29T23:13:44Z  |  block: 9176755  |  row_status: ok
+snapshot_utc: 2026-09-30T02:18:03Z  |  block: 9177677  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.160128159 TAO ([UNKNOWN] USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 250  |  free: 0
-- subnet age: 928.5 days  |  registered at block 2491604
+- registration cost: 0.166135732 TAO (50.2394453568 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 252  |  free: 0
+- subnet age: 928.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: [UNKNOWN]** (uid 26) <- the only figure quotable as achievable
-- median_miner_usd_day: [UNKNOWN]
-- top_miner_usd_day: [UNKNOWN] (uid 26, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 50.72449535203158** (uid 26) <- the only figure quotable as achievable
+- median_miner_usd_day: 48.45063866383706
+- top_miner_usd_day: 50.72449535203158 (uid 26, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 240  |  gini: 0.03213016462603746  |  top1_share: 0.0044633986028950945  |  top10_share: 0.04396141911618593
+- earners: 242  |  gini: 0.033044394083652895  |  top1_share: 0.00443391178044492  |  top10_share: 0.04369696506383304
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-09-29T23:13:44Z  |  block: 9176755  |  row_status: ok
 - on-chain URL: `https://github.com/hone-subnet-org/hone-subnet`
 - resolved URL: `https://github.com/hone-subnet-org/hone-subnet`
 - status: **ok** 
-- README: 3731 bytes, sha af9e538274712410
+- README: 3950 bytes, sha 2bbd2b0dfefdbab7
 - latest release: (none) 
-- last commit: 2026-09-29T16:27:01Z
-- scoring-related commit: Merge pull request #10 from hone-subnet-org/v3-repo-tasks 2026-09-29T16:00:26Z
+- last commit: 2026-09-30T00:38:33Z
+- scoring-related commit: Test this release against the previous release's miner and validator 2026-09-29T22:46:58Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: [UNKNOWN] USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: 40.2315 USD/day  |  payback on registration: 1.25 days
 
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 27), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 0.2d ago
+- score: 59.9 (rank 19), confidence 0.85 - hardware requirement unknown
+- components: income 14.69 / freshness 35.0 / resource 11.25 / registration 9.58
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -65,6 +65,8 @@ Requirements:
 
 - Linux with Python 3.10–3.12
 - Docker with the daemon running
+- an ordinary user in the `docker` group to run everything as: the validator
+  refuses to run as root, since it runs miner code in containers
 - at least 25 GB free on the filesystem holding `data/`: grading refuses to
   start a round with less than about 20 GB free, since each of the two
   concurrent gradings may use a 10 GB workspace
@@ -80,10 +82,11 @@ From the repository root:
 ./start_validator.sh
 ```
 
-Setup creates `.venv` and `.env`, installs dependencies, pulls and checks the
-release-pinned V3 sandbox image, and verifies the problem service and local
-clock. If wallet arguments are omitted, set only `WALLET_NAME` and
-`WALLET_HOTKEY` in `.env`.
+Setup creates `.venv` and a four-line `.env`, installs dependencies, pulls and
+checks the release-pinned V3 sandbox image, and verifies the problem service
+and local clock. If wallet arguments are omitted, set `WALLET_NAME` and
+`WALLET_HOTKEY` in `.env`. Nothing else is required; `.env.example` lists the
+optional settings.
 
 Dispatch, grading, scoring, cadence, resource limits, sandbox image, and owner
 burn are fixed in release policy. Operators do not configure them in `.env`.

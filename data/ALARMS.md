@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-01T13:42:25Z, block 9188299
+# ALARMS - generated 2026-10-01T19:03:51Z, block 9189906
 
-window: first_seen in [2026-10-01T12:27:59Z, 2026-10-01T13:42:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-01T17:49:22Z, 2026-10-01T19:04:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn13:release:Release v1.18.73` | 13 | RELEASE | P1 | 2026-10-01T13:42:59Z | sn13 released Release v1.18.73 |
-| `sn13:scoring_commit:2026-09-30T21:26:32Z` | 13 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn13 commit touches scoring: docs(agents): rewrite from code-verified review; add on-demand path |
-| `sn22:scoring_commit:2026-10-01T13:39:51Z` | 22 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn22 commit touches scoring: fix(validators): take an upload before waiting on its seed, so parall… |
-| `sn25:release:v2026.10.1-1060587890` | 25 | RELEASE | P1 | 2026-10-01T13:42:59Z | sn25 released v2026.10.1-1060587890 |
-| `sn51:release:validator-v2026.10.01` | 51 | RELEASE | P1 | 2026-10-01T13:42:59Z | sn51 released validator-v2026.10.01 |
-| `sn51:scoring_commit:2026-10-01T12:36:27Z` | 51 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: remove INSPECTOR_ENFORCE_ENABLED, finding… |
-| `sn71:scoring_commit:2026-10-01T06:39:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn71 commit touches scoring: Release October 1 provider hold with exact score retries |
-| `sn81:scoring_commit:2026-10-01T06:33:05Z` | 81 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn81 commit touches scoring: docs(design): evaluation on SN81, rulings of the v2 fix pass |
-| `sn91:scoring_commit:2026-10-01T11:42:23Z` | 91 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn91 commit touches scoring: Merge pull request #347 from TensorLink-AI/fix/validator-startup-rest… |
-| `sn94:scoring_commit:2026-10-01T10:29:20Z` | 94 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn94 commit touches scoring: snp friend probe: an unavailable AMD verifier is inconclusive, never … |
-| `sn120:scoring_commit:2026-10-01T13:03:37Z` | 120 | SCORING_COMMIT | P1 | 2026-10-01T13:42:59Z | sn120 commit touches scoring: Document original Trivia Abstain tasks and distinct native grading co… |
-| `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | P2 | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
+| `sn22:burn_drop:0.809` | 22 | BURN_DROP | P0 | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
+| `sn20:scoring_commit:2026-10-01T17:03:24Z` | 20 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn20 commit touches scoring: Clarify legacy and event scoring in the benchmark guide |
+| `sn46:release:v0.1.3` | 46 | RELEASE | P1 | 2026-10-01T19:04:22Z | sn46 released v0.1.3 |
+| `sn46:scoring_commit:2026-10-01T15:23:12Z` | 46 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn46 commit touches scoring: sn46-validator update: signed, scheduled self-update with rollback |
+| `sn71:scoring_commit:2026-10-01T18:50:32Z` | 71 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn71 commit touches scoring: Preserve verified rebrand homepage evidence path |
+| `sn81:scoring_commit:2026-10-01T18:50:51Z` | 81 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn81 commit touches scoring: Merge pull request #293 from reliquadotai/feat/corpus-miner-status |
+| `sn108:scoring_commit:2026-10-01T13:52:10Z` | 108 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn108 commit touches scoring: Validator logs explain the MIN_IMPROVEMENT_PERCENT decision: % gain o… |
+| `sn117:release:everycli v0.2.1` | 117 | RELEASE | P1 | 2026-10-01T19:04:22Z | sn117 released everycli v0.2.1 |
+| `sn117:scoring_commit:2026-10-01T16:42:56Z` | 117 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn117 commit touches scoring: fix: explain missing miner profiles in status and doctor |
+| `sn120:scoring_commit:2026-10-01T18:05:55Z` | 120 | SCORING_COMMIT | P1 | 2026-10-01T19:04:22Z | sn120 commit touches scoring: Record independently verified balanced checkpoint publication |
+| `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | P2 | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn13:release:Release v1.18.73`** - sn13 released Release v1.18.73
-  - published 2026-10-01T12:47:36Z (was Release v1.18.72)
-- **`sn13:scoring_commit:2026-09-30T21:26:32Z`** - sn13 commit touches scoring: docs(agents): rewrite from code-verified review; add on-demand path
+- **`sn22:burn_drop:0.809`** - sn22 burn fell 1.000 -> 0.809 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn20:scoring_commit:2026-10-01T17:03:24Z`** - sn20 commit touches scoring: Clarify legacy and event scoring in the benchmark guide
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn22:scoring_commit:2026-10-01T13:39:51Z`** - sn22 commit touches scoring: fix(validators): take an upload before waiting on its seed, so parall…
+- **`sn46:release:v0.1.3`** - sn46 released v0.1.3
+  - published 2026-10-01T15:38:31Z (was v0.1.2)
+- **`sn46:scoring_commit:2026-10-01T15:23:12Z`** - sn46 commit touches scoring: sn46-validator update: signed, scheduled self-update with rollback
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.1-1060587890`** - sn25 released v2026.10.1-1060587890
-  - published 2026-10-01T12:52:24Z (was v2026.9.30-1060350310)
-- **`sn51:release:validator-v2026.10.01`** - sn51 released validator-v2026.10.01
-  - published 2026-10-01T08:49:49Z (was lium-core-v0.1.13)
-- **`sn51:scoring_commit:2026-10-01T12:36:27Z`** - sn51 commit touches scoring: NO-TICKET - [P2] validator: remove INSPECTOR_ENFORCE_ENABLED, finding…
+- **`sn71:scoring_commit:2026-10-01T18:50:32Z`** - sn71 commit touches scoring: Preserve verified rebrand homepage evidence path
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-01T06:39:33Z`** - sn71 commit touches scoring: Release October 1 provider hold with exact score retries
+- **`sn81:scoring_commit:2026-10-01T18:50:51Z`** - sn81 commit touches scoring: Merge pull request #293 from reliquadotai/feat/corpus-miner-status
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-01T06:33:05Z`** - sn81 commit touches scoring: docs(design): evaluation on SN81, rulings of the v2 fix pass
+- **`sn108:scoring_commit:2026-10-01T13:52:10Z`** - sn108 commit touches scoring: Validator logs explain the MIN_IMPROVEMENT_PERCENT decision: % gain o…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-01T11:42:23Z`** - sn91 commit touches scoring: Merge pull request #347 from TensorLink-AI/fix/validator-startup-rest…
+- **`sn117:release:everycli v0.2.1`** - sn117 released everycli v0.2.1
+  - published 2026-10-01T17:11:02Z (was everycli v0.1.4)
+- **`sn117:scoring_commit:2026-10-01T16:42:56Z`** - sn117 commit touches scoring: fix: explain missing miner profiles in status and doctor
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-01T10:29:20Z`** - sn94 commit touches scoring: snp friend probe: an unavailable AMD verifier is inconclusive, never …
+- **`sn120:scoring_commit:2026-10-01T18:05:55Z`** - sn120 commit touches scoring: Record independently verified balanced checkpoint publication
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-01T13:03:37Z`** - sn120 commit touches scoring: Document original Trivia Abstain tasks and distinct native grading co…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:readme_task_diff:91f7ce813a4d3359`** - sn108 README task/scoring sections changed
+- **`sn117:readme_task_diff:4fe3235ab658f65b`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -59,11 +56,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
-| `sn20:scoring_commit:2026-09-24T16:34:09Z` | 20 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn20 commit touches scoring: Ground native semantic scoring in clip evidence |
-| `sn25:scoring_commit:2026-09-24T13:07:35Z` | 25 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn25 commit touches scoring: Derive policy rollover activations from verified V2 terminal |
-| `sn28:release:v0.4.22-dev` | 28 | RELEASE | 2026-09-24T17:35:05Z | sn28 released v0.4.22-dev |
-| `sn28:scoring_commit:2026-09-24T17:21:09Z` | 28 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.22-dev (#277) |
-| `sn71:scoring_commit:2026-09-24T17:22:54Z` | 71 | SCORING_COMMIT | 2026-09-24T17:35:05Z | sn71 commit touches scoring: chore(release): bind verifier evidence reuse source |
 | `sn15:release:v2.0.30: fix(validator): lower default s` | 15 | RELEASE | 2026-09-24T20:48:43Z | sn15 released v2.0.30: fix(validator): lower default sandbox max workers to 30 |
 | `sn15:scoring_commit:2026-09-24T18:59:25Z` | 15 | SCORING_COMMIT | 2026-09-24T20:48:43Z | sn15 commit touches scoring: fix(validator): lower default sandbox max workers to 30 |
 | `sn25:release:v2026.9.24-1054792560` | 25 | RELEASE | 2026-09-24T20:48:43Z | sn25 released v2026.9.24-1054792560 |
@@ -202,6 +194,17 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn74:release:release-20261001-004737` | 74 | RELEASE | 2026-10-01T06:20:47Z | sn74 released release-20261001-004737 |
 | `sn78:scoring_commit:2026-10-01T04:50:44Z` | 78 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn78 commit touches scoring: Publish C5 miner inputs and connection guide (#198) |
 | `sn120:scoring_commit:2026-10-01T06:19:24Z` | 120 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn120 commit touches scoring: Verify controlled native Agent tool rollouts in isolated images |
+| `sn13:release:Release v1.18.73` | 13 | RELEASE | 2026-10-01T13:42:59Z | sn13 released Release v1.18.73 |
+| `sn13:scoring_commit:2026-09-30T21:26:32Z` | 13 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn13 commit touches scoring: docs(agents): rewrite from code-verified review; add on-demand path |
+| `sn22:scoring_commit:2026-10-01T13:39:51Z` | 22 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn22 commit touches scoring: fix(validators): take an upload before waiting on its seed, so parall… |
+| `sn25:release:v2026.10.1-1060587890` | 25 | RELEASE | 2026-10-01T13:42:59Z | sn25 released v2026.10.1-1060587890 |
+| `sn51:release:validator-v2026.10.01` | 51 | RELEASE | 2026-10-01T13:42:59Z | sn51 released validator-v2026.10.01 |
+| `sn51:scoring_commit:2026-10-01T12:36:27Z` | 51 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: remove INSPECTOR_ENFORCE_ENABLED, finding… |
+| `sn71:scoring_commit:2026-10-01T06:39:33Z` | 71 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn71 commit touches scoring: Release October 1 provider hold with exact score retries |
+| `sn81:scoring_commit:2026-10-01T06:33:05Z` | 81 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn81 commit touches scoring: docs(design): evaluation on SN81, rulings of the v2 fix pass |
+| `sn91:scoring_commit:2026-10-01T11:42:23Z` | 91 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn91 commit touches scoring: Merge pull request #347 from TensorLink-AI/fix/validator-startup-rest… |
+| `sn94:scoring_commit:2026-10-01T10:29:20Z` | 94 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn94 commit touches scoring: snp friend probe: an unavailable AMD verifier is inconclusive, never … |
+| `sn120:scoring_commit:2026-10-01T13:03:37Z` | 120 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn120 commit touches scoring: Document original Trivia Abstain tasks and distinct native grading co… |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
@@ -219,6 +222,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:1174f1fc742efb54` | 117 | README_TASK_DIFF | 2026-10-01T00:12:52Z | sn117 README task/scoring sections changed |
 | `sn78:readme_task_diff:1b02e745e3230412` | 78 | README_TASK_DIFF | 2026-10-01T06:20:47Z | sn78 README task/scoring sections changed |
+| `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-01T00:12:25Z, block 9184249
+# ALARMS - generated 2026-10-01T06:20:21Z, block 9186089
 
-window: first_seen in [2026-09-30T22:57:52Z, 2026-10-01T00:12:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-01T05:05:47Z, 2026-10-01T06:20:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-09-30T23:08:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-01T00:12:52Z | sn71 commit touches scoring: Bind October verifier evidence release |
-| `sn74:release:release-20260930-235444` | 74 | RELEASE | P1 | 2026-10-01T00:12:52Z | sn74 released release-20260930-235444 |
-| `sn78:scoring_commit:2026-09-30T23:10:44Z` | 78 | SCORING_COMMIT | P1 | 2026-10-01T00:12:52Z | sn78 commit touches scoring: Separate miner transport signer from cohort reviewers |
-| `sn117:release:everycli v0.1.4` | 117 | RELEASE | P1 | 2026-10-01T00:12:52Z | sn117 released everycli v0.1.4 |
-| `sn117:readme_task_diff:1174f1fc742efb54` | 117 | README_TASK_DIFF | P2 | 2026-10-01T00:12:52Z | sn117 README task/scoring sections changed |
+| `sn25:release:v2026.9.30-1060350310` | 25 | RELEASE | P1 | 2026-10-01T06:20:47Z | sn25 released v2026.9.30-1060350310 |
+| `sn25:scoring_commit:2026-10-01T04:51:10Z` | 25 | SCORING_COMMIT | P1 | 2026-10-01T06:20:47Z | sn25 commit touches scoring: Verify and aggregate pinned mainnet image receipts offline |
+| `sn71:scoring_commit:2026-10-01T05:00:38Z` | 71 | SCORING_COMMIT | P1 | 2026-10-01T06:20:47Z | sn71 commit touches scoring: Bind protected workflows to verifier recovery source |
+| `sn74:release:release-20261001-004737` | 74 | RELEASE | P1 | 2026-10-01T06:20:47Z | sn74 released release-20261001-004737 |
+| `sn78:scoring_commit:2026-10-01T04:50:44Z` | 78 | SCORING_COMMIT | P1 | 2026-10-01T06:20:47Z | sn78 commit touches scoring: Publish C5 miner inputs and connection guide (#198) |
+| `sn120:scoring_commit:2026-10-01T06:19:24Z` | 120 | SCORING_COMMIT | P1 | 2026-10-01T06:20:47Z | sn120 commit touches scoring: Verify controlled native Agent tool rollouts in isolated images |
+| `sn78:readme_task_diff:1b02e745e3230412` | 78 | README_TASK_DIFF | P2 | 2026-10-01T06:20:47Z | sn78 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-09-30T23:08:42Z`** - sn71 commit touches scoring: Bind October verifier evidence release
+- **`sn25:release:v2026.9.30-1060350310`** - sn25 released v2026.9.30-1060350310
+  - published 2026-10-01T06:15:59Z (was v2026.9.26-1056759680)
+- **`sn25:scoring_commit:2026-10-01T04:51:10Z`** - sn25 commit touches scoring: Verify and aggregate pinned mainnet image receipts offline
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20260930-235444`** - sn74 released release-20260930-235444
-  - published 2026-09-30T23:54:22Z (was release-20260925-183535)
-- **`sn78:scoring_commit:2026-09-30T23:10:44Z`** - sn78 commit touches scoring: Separate miner transport signer from cohort reviewers
+- **`sn71:scoring_commit:2026-10-01T05:00:38Z`** - sn71 commit touches scoring: Bind protected workflows to verifier recovery source
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.1.4`** - sn117 released everycli v0.1.4
-  - published 2026-09-30T23:45:44Z (was everycli v0.1.3)
-- **`sn117:readme_task_diff:1174f1fc742efb54`** - sn117 README task/scoring sections changed
+- **`sn74:release:release-20261001-004737`** - sn74 released release-20261001-004737
+  - published 2026-10-01T00:47:21Z (was release-20260930-235444)
+- **`sn78:scoring_commit:2026-10-01T04:50:44Z`** - sn78 commit touches scoring: Publish C5 miner inputs and connection guide (#198)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-01T06:19:24Z`** - sn120 commit touches scoring: Verify controlled native Agent tool rollouts in isolated images
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:readme_task_diff:1b02e745e3230412`** - sn78 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -39,7 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
-| `sn120:scoring_commit:2026-09-23T22:13:58Z` | 120 | SCORING_COMMIT | 2026-09-24T01:35:20Z | sn120 commit touches scoring: rollouts.prepass: --uids-file restricts the pool to listed task uids … |
 | `sn21:release:SN21 rich training data v3 (slice 2)` | 21 | RELEASE | 2026-09-24T06:47:57Z | sn21 released SN21 rich training data v3 (slice 2) |
 | `sn51:scoring_commit:2026-09-24T06:27:30Z` | 51 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn51 commit touches scoring: DAH-3521 - [P1] validator: a custom build reaches the node's own DNS … |
 | `sn71:scoring_commit:2026-09-24T06:33:26Z` | 71 | SCORING_COMMIT | 2026-09-24T06:47:57Z | sn71 commit touches scoring: Bind final verifier extraction release to committed source |
@@ -184,6 +189,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-09-30T14:03:10Z` | 108 | SCORING_COMMIT | 2026-09-30T20:46:36Z | sn108 commit touches scoring: Validator: periodic weight status line, change-only state logs, 409 a… |
 | `sn117:release:everycli v0.1.3` | 117 | RELEASE | 2026-09-30T20:46:36Z | sn117 released everycli v0.1.3 |
 | `sn117:scoring_commit:2026-09-30T17:20:20Z` | 117 | SCORING_COMMIT | 2026-09-30T20:46:36Z | sn117 commit touches scoring: feat: simplify miner onboarding and API key management |
+| `sn71:scoring_commit:2026-09-30T23:08:42Z` | 71 | SCORING_COMMIT | 2026-10-01T00:12:52Z | sn71 commit touches scoring: Bind October verifier evidence release |
+| `sn74:release:release-20260930-235444` | 74 | RELEASE | 2026-10-01T00:12:52Z | sn74 released release-20260930-235444 |
+| `sn78:scoring_commit:2026-09-30T23:10:44Z` | 78 | SCORING_COMMIT | 2026-10-01T00:12:52Z | sn78 commit touches scoring: Separate miner transport signer from cohort reviewers |
+| `sn117:release:everycli v0.1.4` | 117 | RELEASE | 2026-10-01T00:12:52Z | sn117 released everycli v0.1.4 |
 | `sn88:readme_task_diff:71d034a5ee0cc823` | 88 | README_TASK_DIFF | 2026-09-24T20:48:43Z | sn88 README task/scoring sections changed |
 | `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
@@ -199,6 +208,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
 | `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |
+| `sn117:readme_task_diff:1174f1fc742efb54` | 117 | README_TASK_DIFF | 2026-10-01T00:12:52Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

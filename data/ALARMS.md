@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-02T15:44:26Z, block 9196109
+# ALARMS - generated 2026-10-02T20:10:41Z, block 9197440
 
-window: first_seen in [2026-10-02T14:29:59Z, 2026-10-02T15:44:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-02T18:56:07Z, 2026-10-02T20:11:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-02T12:24:50Z` | 25 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn25 commit touches scoring: Record scoped native miner monitor and backup custody qualification |
-| `sn51:release:validator-v2026.10.02.2` | 51 | RELEASE | P1 | 2026-10-02T15:44:59Z | sn51 released validator-v2026.10.02.2 |
-| `sn51:scoring_commit:2026-10-02T14:46:23Z` | 51 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn51 commit touches scoring: DAH-3980 - validator: check a present Docker Hub image's tag from the… |
-| `sn71:scoring_commit:2026-10-02T13:19:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn71 commit touches scoring: Verify extended recovery schedule on migration replay |
-| `sn74:release:release-20261002-144641` | 74 | RELEASE | P1 | 2026-10-02T15:44:59Z | sn74 released release-20261002-144641 |
-| `sn78:scoring_commit:2026-10-02T07:14:11Z` | 78 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn78 commit touches scoring: Alert when successor validators stop reconciling |
-| `sn81:scoring_commit:2026-10-02T09:28:38Z` | 81 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn81 commit touches scoring: fix(corpus): auditor miners.json on the judge client; settle reads en… |
-| `sn89:scoring_commit:2026-10-02T13:45:26Z` | 89 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn89 commit touches scoring: hf: diversity-blocked qualified miners keep the probation dust floor |
-| `sn97:scoring_commit:2026-10-02T14:26:23Z` | 97 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn97 commit touches scoring: fix: swesmith tasks are served as one upstream commit, and git show r… |
-| `sn120:scoring_commit:2026-10-02T15:06:50Z` | 120 | SCORING_COMMIT | P1 | 2026-10-02T15:44:59Z | sn120 commit touches scoring: Bootstrap external MATH miners from authority-approved source |
-| `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | P2 | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
+| `sn1:release:v4.4.12` | 1 | RELEASE | P1 | 2026-10-02T20:11:07Z | sn1 released v4.4.12 |
+| `sn15:scoring_commit:2026-10-02T18:43:36Z` | 15 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn15 commit touches scoring: Capture cached input tokens in private evaluation usage |
+| `sn25:scoring_commit:2026-10-02T19:50:40Z` | 25 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn25 commit touches scoring: Preserve qualification headroom with verified inactive cache reclaim |
+| `sn71:scoring_commit:2026-10-02T17:54:51Z` | 71 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn71 commit touches scoring: Archive October 1 optional-signal scores for full rejudge |
+| `sn81:scoring_commit:2026-10-02T15:52:08Z` | 81 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn81 commit touches scoring: feat(corpus): a GPU process that scores every judge's audits |
+| `sn94:scoring_commit:2026-10-02T05:21:24Z` | 94 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn94 commit touches scoring: Fix fork sentinel command verification (#258) |
+| `sn104:scoring_commit:2026-09-30T10:52:16Z` | 104 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn104 commit touches scoring: Merge pull request #15 from taostatus/feat/security-validator |
+| `sn120:scoring_commit:2026-10-02T20:02:41Z` | 120 | SCORING_COMMIT | P1 | 2026-10-02T20:11:07Z | sn120 commit touches scoring: Project the separated math pilot and publish verified corpus assets |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-02T12:24:50Z`** - sn25 commit touches scoring: Record scoped native miner monitor and backup custody qualification
+- **`sn1:release:v4.4.12`** - sn1 released v4.4.12
+  - published 2026-10-02T18:32:13Z (was v4.4.11)
+- **`sn15:scoring_commit:2026-10-02T18:43:36Z`** - sn15 commit touches scoring: Capture cached input tokens in private evaluation usage
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:validator-v2026.10.02.2`** - sn51 released validator-v2026.10.02.2
-  - published 2026-10-02T11:03:24Z (was validator-v2026.10.02)
-- **`sn51:scoring_commit:2026-10-02T14:46:23Z`** - sn51 commit touches scoring: DAH-3980 - validator: check a present Docker Hub image's tag from the…
+- **`sn25:scoring_commit:2026-10-02T19:50:40Z`** - sn25 commit touches scoring: Preserve qualification headroom with verified inactive cache reclaim
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-02T13:19:39Z`** - sn71 commit touches scoring: Verify extended recovery schedule on migration replay
+- **`sn71:scoring_commit:2026-10-02T17:54:51Z`** - sn71 commit touches scoring: Archive October 1 optional-signal scores for full rejudge
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20261002-144641`** - sn74 released release-20261002-144641
-  - published 2026-10-02T14:39:01Z (was release-20261001-004737)
-- **`sn78:scoring_commit:2026-10-02T07:14:11Z`** - sn78 commit touches scoring: Alert when successor validators stop reconciling
+- **`sn81:scoring_commit:2026-10-02T15:52:08Z`** - sn81 commit touches scoring: feat(corpus): a GPU process that scores every judge's audits
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-02T09:28:38Z`** - sn81 commit touches scoring: fix(corpus): auditor miners.json on the judge client; settle reads en…
+- **`sn94:scoring_commit:2026-10-02T05:21:24Z`** - sn94 commit touches scoring: Fix fork sentinel command verification (#258)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-10-02T13:45:26Z`** - sn89 commit touches scoring: hf: diversity-blocked qualified miners keep the probation dust floor
+- **`sn104:scoring_commit:2026-09-30T10:52:16Z`** - sn104 commit touches scoring: Merge pull request #15 from taostatus/feat/security-validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-10-02T14:26:23Z`** - sn97 commit touches scoring: fix: swesmith tasks are served as one upstream commit, and git show r…
+- **`sn120:scoring_commit:2026-10-02T20:02:41Z`** - sn120 commit touches scoring: Project the separated math pilot and publish verified corpus assets
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-02T15:06:50Z`** - sn120 commit touches scoring: Bootstrap external MATH miners from authority-approved source
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:readme_task_diff:8ab3367c1c73f078`** - sn74 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -56,11 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn15:release:v2.0.31: fix(proxy): re-resolve Backend ` | 15 | RELEASE | 2026-09-25T19:26:50Z | sn15 released v2.0.31: fix(proxy): re-resolve Backend host for allowlist fetch (#334) |
-| `sn15:scoring_commit:2026-09-25T18:07:06Z` | 15 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn15 commit touches scoring: refactor(validator): simplify session call orchestration |
-| `sn71:scoring_commit:2026-09-25T16:34:18Z` | 71 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn71 commit touches scoring: Preserve terminal verified intent evidence within Arena retries |
-| `sn74:release:release-20260925-183535` | 74 | RELEASE | 2026-09-25T19:26:50Z | sn74 released release-20260925-183535 |
-| `sn100:scoring_commit:2026-09-25T18:28:24Z` | 100 | SCORING_COMMIT | 2026-09-25T19:26:50Z | sn100 commit touches scoring: test(network): verify opentype 75/25 sealed payouts (#314) |
 | `sn1:release:v4.4.10` | 1 | RELEASE | 2026-09-25T22:43:10Z | sn1 released v4.4.10 |
 | `sn62:release:v0.3.7` | 62 | RELEASE | 2026-09-26T06:07:24Z | sn62 released v0.3.7 |
 | `sn71:scoring_commit:2026-09-26T03:45:10Z` | 71 | SCORING_COMMIT | 2026-09-26T06:07:24Z | sn71 commit touches scoring: Allow focused validation of saved Arena output assignments |
@@ -206,6 +192,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-10-02T05:56:09Z` | 81 | SCORING_COMMIT | 2026-10-02T08:53:07Z | sn81 commit touches scoring: Merge pull request #297 from reliquadotai/perf/corpus-tasks-instant |
 | `sn91:scoring_commit:2026-10-02T04:47:21Z` | 91 | SCORING_COMMIT | 2026-10-02T08:53:07Z | sn91 commit touches scoring: Receipts verify across code versions; a stale receipt king is never s… |
 | `sn117:release:everycli v0.2.2` | 117 | RELEASE | 2026-10-02T08:53:07Z | sn117 released everycli v0.2.2 |
+| `sn25:scoring_commit:2026-10-02T12:24:50Z` | 25 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn25 commit touches scoring: Record scoped native miner monitor and backup custody qualification |
+| `sn51:release:validator-v2026.10.02.2` | 51 | RELEASE | 2026-10-02T15:44:59Z | sn51 released validator-v2026.10.02.2 |
+| `sn51:scoring_commit:2026-10-02T14:46:23Z` | 51 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn51 commit touches scoring: DAH-3980 - validator: check a present Docker Hub image's tag from the… |
+| `sn71:scoring_commit:2026-10-02T13:19:39Z` | 71 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn71 commit touches scoring: Verify extended recovery schedule on migration replay |
+| `sn74:release:release-20261002-144641` | 74 | RELEASE | 2026-10-02T15:44:59Z | sn74 released release-20261002-144641 |
+| `sn78:scoring_commit:2026-10-02T07:14:11Z` | 78 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn78 commit touches scoring: Alert when successor validators stop reconciling |
+| `sn81:scoring_commit:2026-10-02T09:28:38Z` | 81 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn81 commit touches scoring: fix(corpus): auditor miners.json on the judge client; settle reads en… |
+| `sn89:scoring_commit:2026-10-02T13:45:26Z` | 89 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn89 commit touches scoring: hf: diversity-blocked qualified miners keep the probation dust floor |
+| `sn97:scoring_commit:2026-10-02T14:26:23Z` | 97 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn97 commit touches scoring: fix: swesmith tasks are served as one upstream commit, and git show r… |
+| `sn120:scoring_commit:2026-10-02T15:06:50Z` | 120 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn120 commit touches scoring: Bootstrap external MATH miners from authority-approved source |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
@@ -223,6 +219,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
 | `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
+| `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

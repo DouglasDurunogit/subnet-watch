@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-02T02:25:33Z, block 9192115
+# ALARMS - generated 2026-10-02T08:52:05Z, block 9194047
 
-window: first_seen in [2026-10-02T01:11:04Z, 2026-10-02T02:26:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-02T07:38:07Z, 2026-10-02T08:53:07Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:scoring_commit:2026-10-02T02:05:43Z` | 14 | SCORING_COMMIT | P1 | 2026-10-02T02:26:04Z | sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136) |
-| `sn111:release:v1.0.1` | 111 | RELEASE | P1 | 2026-10-02T02:26:04Z | sn111 released v1.0.1 |
-| `sn120:scoring_commit:2026-10-02T00:37:49Z` | 120 | SCORING_COMMIT | P1 | 2026-10-02T02:26:04Z | sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay |
+| `sn51:release:validator-v2026.10.02` | 51 | RELEASE | P1 | 2026-10-02T08:53:07Z | sn51 released validator-v2026.10.02 |
+| `sn51:scoring_commit:2026-10-02T08:25:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: a shell lost mid-check sends its reason c… |
+| `sn67:scoring_commit:2026-10-02T04:02:08Z` | 67 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261002.post1 |
+| `sn71:scoring_commit:2026-10-02T08:39:30Z` | 71 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn71 commit touches scoring: Merge pull request #200 from leadpoet/codex/progressive-model-scores |
+| `sn78:scoring_commit:2026-10-02T05:43:42Z` | 78 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn78 commit touches scoring: Point C5 miner upgrade at enrollment runtime (#202) |
+| `sn81:scoring_commit:2026-10-02T05:56:09Z` | 81 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn81 commit touches scoring: Merge pull request #297 from reliquadotai/perf/corpus-tasks-instant |
+| `sn91:scoring_commit:2026-10-02T04:47:21Z` | 91 | SCORING_COMMIT | P1 | 2026-10-02T08:53:07Z | sn91 commit touches scoring: Receipts verify across code versions; a stale receipt king is never s… |
+| `sn117:release:everycli v0.2.2` | 117 | RELEASE | P1 | 2026-10-02T08:53:07Z | sn117 released everycli v0.2.2 |
 
 ### detail
 
-- **`sn14:scoring_commit:2026-10-02T02:05:43Z`** - sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136)
+- **`sn51:release:validator-v2026.10.02`** - sn51 released validator-v2026.10.02
+  - published 2026-10-02T08:48:11Z (was validator-v2026.10.01)
+- **`sn51:scoring_commit:2026-10-02T08:25:54Z`** - sn51 commit touches scoring: NO-TICKET - [P1] validator: a shell lost mid-check sends its reason c…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:release:v1.0.1`** - sn111 released v1.0.1
-  - published 2026-10-02T02:06:49Z (was v1.0.0)
-- **`sn120:scoring_commit:2026-10-02T00:37:49Z`** - sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay
+- **`sn67:scoring_commit:2026-10-02T04:02:08Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261002.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-02T08:39:30Z`** - sn71 commit touches scoring: Merge pull request #200 from leadpoet/codex/progressive-model-scores
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-02T05:43:42Z`** - sn78 commit touches scoring: Point C5 miner upgrade at enrollment runtime (#202)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-02T05:56:09Z`** - sn81 commit touches scoring: Merge pull request #297 from reliquadotai/perf/corpus-tasks-instant
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-10-02T04:47:21Z`** - sn91 commit touches scoring: Receipts verify across code versions; a stale receipt king is never s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.2.2`** - sn117 released everycli v0.2.2
+  - published 2026-10-02T05:37:04Z (was everycli v0.2.1)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,9 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
-| `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
-| `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
 | `sn51:release:miner-v1.005` | 51 | RELEASE | 2026-09-25T10:09:24Z | sn51 released miner-v1.005 |
 | `sn71:scoring_commit:2026-09-25T08:06:33Z` | 71 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn71 commit touches scoring: Retain verified Greenhouse department metadata for intent review |
 | `sn91:scoring_commit:2026-09-25T05:08:49Z` | 91 | SCORING_COMMIT | 2026-09-25T10:09:24Z | sn91 commit touches scoring: Merge pull request #315 from TensorLink-AI/fix/promotion-scoring-cfg-… |
@@ -186,6 +198,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-01T20:28:39Z` | 78 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn78 commit touches scoring: Keep miner upgrades cohort-neutral |
 | `sn81:scoring_commit:2026-10-01T20:32:20Z` | 81 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn81 commit touches scoring: Merge pull request #294 from reliquadotai/feat/corpus-tasks-route |
 | `sn120:scoring_commit:2026-10-01T22:38:51Z` | 120 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn120 commit touches scoring: Document independently verified Wiki signed resource stage |
+| `sn14:scoring_commit:2026-10-02T02:05:43Z` | 14 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136) |
+| `sn111:release:v1.0.1` | 111 | RELEASE | 2026-10-02T02:26:04Z | sn111 released v1.0.1 |
+| `sn120:scoring_commit:2026-10-02T00:37:49Z` | 120 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |

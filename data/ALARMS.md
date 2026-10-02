@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-01T23:08:42Z, block 9191130
+# ALARMS - generated 2026-10-02T02:25:33Z, block 9192115
 
-window: first_seen in [2026-10-01T21:54:13Z, 2026-10-01T23:09:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-02T01:11:04Z, 2026-10-02T02:26:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:release:GLM crowned baseline source — 2026-10-01` | 14 | RELEASE | P1 | 2026-10-01T23:09:13Z | sn14 released GLM crowned baseline source — 2026-10-01 |
-| `sn15:release:v2.0.40: Composed situation tasks: valid` | 15 | RELEASE | P1 | 2026-10-01T23:09:13Z | sn15 released v2.0.40: Composed situation tasks: validator, proxy and local testing |
-| `sn15:scoring_commit:2026-10-01T20:36:02Z` | 15 | SCORING_COMMIT | P1 | 2026-10-01T23:09:13Z | sn15 commit touches scoring: Composed situation tasks: validator, proxy and local testing |
-| `sn20:scoring_commit:2026-10-01T19:18:50Z` | 20 | SCORING_COMMIT | P1 | 2026-10-01T23:09:13Z | sn20 commit touches scoring: Export signed closed-window scores without serving media or model out… |
-| `sn62:release:v0.3.9` | 62 | RELEASE | P1 | 2026-10-01T23:09:13Z | sn62 released v0.3.9 |
-| `sn78:scoring_commit:2026-10-01T20:28:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-01T23:09:13Z | sn78 commit touches scoring: Keep miner upgrades cohort-neutral |
-| `sn81:scoring_commit:2026-10-01T20:32:20Z` | 81 | SCORING_COMMIT | P1 | 2026-10-01T23:09:13Z | sn81 commit touches scoring: Merge pull request #294 from reliquadotai/feat/corpus-tasks-route |
-| `sn120:scoring_commit:2026-10-01T22:38:51Z` | 120 | SCORING_COMMIT | P1 | 2026-10-01T23:09:13Z | sn120 commit touches scoring: Document independently verified Wiki signed resource stage |
-| `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | P2 | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
+| `sn14:scoring_commit:2026-10-02T02:05:43Z` | 14 | SCORING_COMMIT | P1 | 2026-10-02T02:26:04Z | sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136) |
+| `sn111:release:v1.0.1` | 111 | RELEASE | P1 | 2026-10-02T02:26:04Z | sn111 released v1.0.1 |
+| `sn120:scoring_commit:2026-10-02T00:37:49Z` | 120 | SCORING_COMMIT | P1 | 2026-10-02T02:26:04Z | sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay |
 
 ### detail
 
-- **`sn14:release:GLM crowned baseline source — 2026-10-01`** - sn14 released GLM crowned baseline source — 2026-10-01
-  - published 2026-10-01T20:36:01Z (was glm53-mock-submission-20260906: Merge m3-runtime-seed-restore into main (#108))
-- **`sn15:release:v2.0.40: Composed situation tasks: valid`** - sn15 released v2.0.40: Composed situation tasks: validator, proxy and local testing
-  - published 2026-10-01T20:36:02Z (was v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345))
-- **`sn15:scoring_commit:2026-10-01T20:36:02Z`** - sn15 commit touches scoring: Composed situation tasks: validator, proxy and local testing
+- **`sn14:scoring_commit:2026-10-02T02:05:43Z`** - sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn20:scoring_commit:2026-10-01T19:18:50Z`** - sn20 commit touches scoring: Export signed closed-window scores without serving media or model out…
+- **`sn111:release:v1.0.1`** - sn111 released v1.0.1
+  - published 2026-10-02T02:06:49Z (was v1.0.0)
+- **`sn120:scoring_commit:2026-10-02T00:37:49Z`** - sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.9`** - sn62 released v0.3.9
-  - published 2026-10-01T22:54:45Z (was v0.3.7)
-- **`sn78:scoring_commit:2026-10-01T20:28:39Z`** - sn78 commit touches scoring: Keep miner upgrades cohort-neutral
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-01T20:32:20Z`** - sn81 commit touches scoring: Merge pull request #294 from reliquadotai/feat/corpus-tasks-route
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-01T22:38:51Z`** - sn120 commit touches scoring: Document independently verified Wiki signed resource stage
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:b8c62e4a86eca8fd`** - sn15 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,9 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn69:scoring_commit:2026-09-24T15:23:49Z` | 69 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn69 commit touches scoring: Merge the v2 validator into dev |
-| `sn91:scoring_commit:2026-09-24T22:23:56Z` | 91 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn91 commit touches scoring: trainer: verify harvested funded checkpoints against in-memory tensor… |
-| `sn120:scoring_commit:2026-09-24T08:48:05Z` | 120 | SCORING_COMMIT | 2026-09-24T23:51:50Z | sn120 commit touches scoring: kingboard matrix: leak-audited SWE cells show the score excluding lea… |
 | `sn25:release:v2026.9.24-1054966040` | 25 | RELEASE | 2026-09-25T04:49:29Z | sn25 released v2026.9.24-1054966040 |
 | `sn71:scoring_commit:2026-09-25T02:03:16Z` | 71 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn71 commit touches scoring: Bind protected verifier workflows to reviewed stage evidence change |
 | `sn120:scoring_commit:2026-09-25T00:41:24Z` | 120 | SCORING_COMMIT | 2026-09-25T04:49:29Z | sn120 commit touches scoring: bench_fail chat suites: option (i) + reasoning-only waiver -- validat… |
@@ -199,7 +178,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:release:everycli v0.2.1` | 117 | RELEASE | 2026-10-01T19:04:22Z | sn117 released everycli v0.2.1 |
 | `sn117:scoring_commit:2026-10-01T16:42:56Z` | 117 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn117 commit touches scoring: fix: explain missing miner profiles in status and doctor |
 | `sn120:scoring_commit:2026-10-01T18:05:55Z` | 120 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn120 commit touches scoring: Record independently verified balanced checkpoint publication |
-| `sn69:readme_task_diff:3d7258dffafe1a92` | 69 | README_TASK_DIFF | 2026-09-24T23:51:50Z | sn69 README task/scoring sections changed |
+| `sn14:release:GLM crowned baseline source — 2026-10-01` | 14 | RELEASE | 2026-10-01T23:09:13Z | sn14 released GLM crowned baseline source — 2026-10-01 |
+| `sn15:release:v2.0.40: Composed situation tasks: valid` | 15 | RELEASE | 2026-10-01T23:09:13Z | sn15 released v2.0.40: Composed situation tasks: validator, proxy and local testing |
+| `sn15:scoring_commit:2026-10-01T20:36:02Z` | 15 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn15 commit touches scoring: Composed situation tasks: validator, proxy and local testing |
+| `sn20:scoring_commit:2026-10-01T19:18:50Z` | 20 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn20 commit touches scoring: Export signed closed-window scores without serving media or model out… |
+| `sn62:release:v0.3.9` | 62 | RELEASE | 2026-10-01T23:09:13Z | sn62 released v0.3.9 |
+| `sn78:scoring_commit:2026-10-01T20:28:39Z` | 78 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn78 commit touches scoring: Keep miner upgrades cohort-neutral |
+| `sn81:scoring_commit:2026-10-01T20:32:20Z` | 81 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn81 commit touches scoring: Merge pull request #294 from reliquadotai/feat/corpus-tasks-route |
+| `sn120:scoring_commit:2026-10-01T22:38:51Z` | 120 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn120 commit touches scoring: Document independently verified Wiki signed resource stage |
 | `sn111:readme_task_diff:134d009e42d9c43d` | 111 | README_TASK_DIFF | 2026-09-25T15:24:37Z | sn111 README task/scoring sections changed |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
@@ -217,6 +203,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:readme_task_diff:1b02e745e3230412` | 78 | README_TASK_DIFF | 2026-10-01T06:20:47Z | sn78 README task/scoring sections changed |
 | `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
+| `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

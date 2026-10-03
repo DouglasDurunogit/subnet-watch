@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-02T23:55:48Z, block 9198566
+# ALARMS - generated 2026-10-03T05:10:55Z, block 9200141
 
-window: first_seen in [2026-10-02T22:41:15Z, 2026-10-02T23:56:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-03T03:56:26Z, 2026-10-03T05:11:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-10-02T20:29:49Z` | 15 | SCORING_COMMIT | P1 | 2026-10-02T23:56:15Z | sn15 commit touches scoring: Validator v2.0.41: per-event market notices, preflight replay parity … |
-| `sn71:scoring_commit:2026-10-02T23:10:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-02T23:56:15Z | sn71 commit touches scoring: Reuse exact Arena verifier requests through the provider ledger |
-| `sn81:scoring_commit:2026-10-02T21:06:44Z` | 81 | SCORING_COMMIT | P1 | 2026-10-02T23:56:15Z | sn81 commit touches scoring: fix(corpus): bound the audits of one judge pass; log each scoring cal… |
-| `sn117:release:everycli v0.2.3` | 117 | RELEASE | P1 | 2026-10-02T23:56:15Z | sn117 released everycli v0.2.3 |
-| `sn120:scoring_commit:2026-10-02T23:47:07Z` | 120 | SCORING_COMMIT | P1 | 2026-10-02T23:56:15Z | sn120 commit touches scoring: Prepare public dashboard projection for corrected H200 miner pilot |
+| `sn71:scoring_commit:2026-10-03T01:31:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-03T05:11:26Z | sn71 commit touches scoring: Preserve concurrent verifier lease correction |
+| `sn81:scoring_commit:2026-10-03T03:49:09Z` | 81 | SCORING_COMMIT | P1 | 2026-10-03T05:11:26Z | sn81 commit touches scoring: perf(corpus): verify drand rounds by BLS here, take the fastest relay… |
+| `sn120:scoring_commit:2026-10-03T04:24:40Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T05:11:26Z | sn120 commit touches scoring: Record verified public full-model update and checkpoint publication |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-10-02T20:29:49Z`** - sn15 commit touches scoring: Validator v2.0.41: per-event market notices, preflight replay parity …
+- **`sn71:scoring_commit:2026-10-03T01:31:39Z`** - sn71 commit touches scoring: Preserve concurrent verifier lease correction
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-02T23:10:33Z`** - sn71 commit touches scoring: Reuse exact Arena verifier requests through the provider ledger
+- **`sn81:scoring_commit:2026-10-03T03:49:09Z`** - sn81 commit touches scoring: perf(corpus): verify drand rounds by BLS here, take the fastest relay…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-02T21:06:44Z`** - sn81 commit touches scoring: fix(corpus): bound the audits of one judge pass; log each scoring cal…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.2.3`** - sn117 released everycli v0.2.3
-  - published 2026-10-02T23:32:02Z (was everycli v0.2.2)
-- **`sn120:scoring_commit:2026-10-02T23:47:07Z`** - sn120 commit touches scoring: Prepare public dashboard projection for corrected H200 miner pilot
+- **`sn120:scoring_commit:2026-10-03T04:24:40Z`** - sn120 commit touches scoring: Record verified public full-model update and checkpoint publication
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -200,6 +194,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-10-02T05:21:24Z` | 94 | SCORING_COMMIT | 2026-10-02T20:11:07Z | sn94 commit touches scoring: Fix fork sentinel command verification (#258) |
 | `sn104:scoring_commit:2026-09-30T10:52:16Z` | 104 | SCORING_COMMIT | 2026-10-02T20:11:07Z | sn104 commit touches scoring: Merge pull request #15 from taostatus/feat/security-validator |
 | `sn120:scoring_commit:2026-10-02T20:02:41Z` | 120 | SCORING_COMMIT | 2026-10-02T20:11:07Z | sn120 commit touches scoring: Project the separated math pilot and publish verified corpus assets |
+| `sn15:scoring_commit:2026-10-02T20:29:49Z` | 15 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn15 commit touches scoring: Validator v2.0.41: per-event market notices, preflight replay parity … |
+| `sn71:scoring_commit:2026-10-02T23:10:33Z` | 71 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn71 commit touches scoring: Reuse exact Arena verifier requests through the provider ledger |
+| `sn81:scoring_commit:2026-10-02T21:06:44Z` | 81 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn81 commit touches scoring: fix(corpus): bound the audits of one judge pass; log each scoring cal… |
+| `sn117:release:everycli v0.2.3` | 117 | RELEASE | 2026-10-02T23:56:15Z | sn117 released everycli v0.2.3 |
+| `sn120:scoring_commit:2026-10-02T23:47:07Z` | 120 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn120 commit touches scoring: Prepare public dashboard projection for corrected H200 miner pilot |
 | `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |

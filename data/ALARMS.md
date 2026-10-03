@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-03T10:31:18Z, block 9201743
+# ALARMS - generated 2026-10-03T14:56:55Z, block 9203071
 
-window: first_seen in [2026-10-03T09:16:46Z, 2026-10-03T10:31:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-03T13:42:25Z, 2026-10-03T14:57:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:Validator v2.1.0: runtime contract on cl` | 15 | RELEASE | P1 | 2026-10-03T10:31:46Z | sn15 released Validator v2.1.0: runtime contract on claim and delivery load (#361) |
-| `sn15:scoring_commit:2026-10-03T07:47:51Z` | 15 | SCORING_COMMIT | P1 | 2026-10-03T10:31:46Z | sn15 commit touches scoring: Validator v2.1.0: runtime contract on claim and delivery load (#361) |
-| `sn25:scoring_commit:2026-10-03T09:53:42Z` | 25 | SCORING_COMMIT | P1 | 2026-10-03T10:31:46Z | sn25 commit touches scoring: Verify HTTP retry controls and preserve qualification disk headroom |
-| `sn71:scoring_commit:2026-10-03T10:07:15Z` | 71 | SCORING_COMMIT | P1 | 2026-10-03T10:31:46Z | sn71 commit touches scoring: fix: prefer verified exact homepage brand over title |
-| `sn120:scoring_commit:2026-10-03T09:11:08Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T10:31:46Z | sn120 commit touches scoring: Document verified successor, external miner participation and honest … |
+| `sn71:scoring_commit:2026-10-03T13:45:43Z` | 71 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company |
+| `sn81:scoring_commit:2026-10-03T12:08:37Z` | 81 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode |
+| `sn120:scoring_commit:2026-10-03T14:53:57Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades |
 
 ### detail
 
-- **`sn15:release:Validator v2.1.0: runtime contract on cl`** - sn15 released Validator v2.1.0: runtime contract on claim and delivery load (#361)
-  - published 2026-10-03T07:47:51Z (was v2.0.40: Composed situation tasks: validator, proxy and local testing)
-- **`sn15:scoring_commit:2026-10-03T07:47:51Z`** - sn15 commit touches scoring: Validator v2.1.0: runtime contract on claim and delivery load (#361)
+- **`sn71:scoring_commit:2026-10-03T13:45:43Z`** - sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-03T09:53:42Z`** - sn25 commit touches scoring: Verify HTTP retry controls and preserve qualification disk headroom
+- **`sn81:scoring_commit:2026-10-03T12:08:37Z`** - sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-03T10:07:15Z`** - sn71 commit touches scoring: fix: prefer verified exact homepage brand over title
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-03T09:11:08Z`** - sn120 commit touches scoring: Document verified successor, external miner participation and honest …
+- **`sn120:scoring_commit:2026-10-03T14:53:57Z`** - sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -38,8 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn71:scoring_commit:2026-09-26T08:19:27Z` | 71 | SCORING_COMMIT | 2026-09-26T11:22:54Z | sn71 commit touches scoring: Bind protected verifier manifest to alias fix |
-| `sn120:scoring_commit:2026-09-26T09:23:06Z` | 120 | SCORING_COMMIT | 2026-09-26T11:22:54Z | sn120 commit touches scoring: wvk 25 scoring bundle STAGED (all knobs off until T0 2026-09-30 14:00… |
 | `sn7:release:release-20260926-135859` | 7 | RELEASE | 2026-09-26T15:04:18Z | sn7 released release-20260926-135859 |
 | `sn7:scoring_commit:2026-09-25T17:45:15Z` | 7 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn7 commit touches scoring: Hide alpha price flags from alw miner quotes --help (#756) |
 | `sn14:scoring_commit:2026-09-26T14:38:01Z` | 14 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn14 commit touches scoring: Show potential winners and link scoring baselines (#127) |
@@ -206,7 +198,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-03T01:31:39Z` | 71 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn71 commit touches scoring: Preserve concurrent verifier lease correction |
 | `sn81:scoring_commit:2026-10-03T03:49:09Z` | 81 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn81 commit touches scoring: perf(corpus): verify drand rounds by BLS here, take the fastest relay… |
 | `sn120:scoring_commit:2026-10-03T04:24:40Z` | 120 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn120 commit touches scoring: Record verified public full-model update and checkpoint publication |
-| `sn25:readme_task_diff:8299976ab43651d9` | 25 | README_TASK_DIFF | 2026-09-26T11:22:54Z | sn25 README task/scoring sections changed |
+| `sn15:release:Validator v2.1.0: runtime contract on cl` | 15 | RELEASE | 2026-10-03T10:31:46Z | sn15 released Validator v2.1.0: runtime contract on claim and delivery load (#361) |
+| `sn15:scoring_commit:2026-10-03T07:47:51Z` | 15 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn15 commit touches scoring: Validator v2.1.0: runtime contract on claim and delivery load (#361) |
+| `sn25:scoring_commit:2026-10-03T09:53:42Z` | 25 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn25 commit touches scoring: Verify HTTP retry controls and preserve qualification disk headroom |
+| `sn71:scoring_commit:2026-10-03T10:07:15Z` | 71 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn71 commit touches scoring: fix: prefer verified exact homepage brand over title |
+| `sn120:scoring_commit:2026-10-03T09:11:08Z` | 120 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn120 commit touches scoring: Document verified successor, external miner participation and honest … |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |

@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-10-03T14:56:55Z  |  block: 9203071  |  row_status: ok
+snapshot_utc: 2026-10-03T18:39:46Z  |  block: 9204186  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.03161432547494769**
-- registration cost: 0.15 TAO (44.127 USD), open=True
+- miner_burn: **0.07726000295951962**
+- registration cost: 0.15 TAO (44.2005 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 913.2 days  |  registered at block 2627691
+- subnet age: 913.4 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1033.9305995404088
-- top_miner_usd_day: 1052.0749228895204 (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 851.0014354524404
+- top_miner_usd_day: 1130.4743569022835 (uid 116, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.3045386802577834  |  top1_share: 0.488410419178124  |  top10_share: 1.0
-- owner_incentive_share: 0.031602398791448584 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.2994577878149767  |  top1_share: 0.5264442884609516  |  top10_share: 1.0
+- owner_incentive_share: 0.07725760673848689 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -41,9 +41,9 @@ snapshot_utc: 2026-10-03T14:56:55Z  |  block: 9203071  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 53), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: RELEASE 7.0d ago
+- score: 27.4 (rank 73), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
+- freshness basis: RELEASE 7d ago
 
 ## On-chain description
 

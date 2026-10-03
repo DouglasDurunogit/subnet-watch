@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-03T14:56:55Z, block 9203071
+# ALARMS - generated 2026-10-03T18:39:46Z, block 9204186
 
-window: first_seen in [2026-10-03T13:42:25Z, 2026-10-03T14:57:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-03T17:25:15Z, 2026-10-03T18:40:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-10-03T13:45:43Z` | 71 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company |
-| `sn81:scoring_commit:2026-10-03T12:08:37Z` | 81 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode |
-| `sn120:scoring_commit:2026-10-03T14:53:57Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T14:57:25Z | sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades |
+| `sn120:scoring_commit:2026-10-03T18:20:16Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T18:40:15Z | sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-10-03T13:45:43Z`** - sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-03T12:08:37Z`** - sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-03T14:53:57Z`** - sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades
+- **`sn120:scoring_commit:2026-10-03T18:20:16Z`** - sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -32,13 +26,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn7:release:release-20260926-135859` | 7 | RELEASE | 2026-09-26T15:04:18Z | sn7 released release-20260926-135859 |
-| `sn7:scoring_commit:2026-09-25T17:45:15Z` | 7 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn7 commit touches scoring: Hide alpha price flags from alw miner quotes --help (#756) |
-| `sn14:scoring_commit:2026-09-26T14:38:01Z` | 14 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn14 commit touches scoring: Show potential winners and link scoring baselines (#127) |
-| `sn22:scoring_commit:2026-09-25T07:25:31Z` | 22 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn22 commit touches scoring: feat: burn all emission and stop querying miners until the next releas |
-| `sn81:scoring_commit:2026-09-26T12:28:35Z` | 81 | SCORING_COMMIT | 2026-09-26T15:04:18Z | sn81 commit touches scoring: docs(corpus): the task has no seats; audit throughput only delays pay… |
-| `sn71:scoring_commit:2026-09-26T17:32:25Z` | 71 | SCORING_COMMIT | 2026-09-26T18:34:12Z | sn71 commit touches scoring: Bind protected manifest to evidence quality verifier source |
-| `sn81:scoring_commit:2026-09-26T18:16:53Z` | 81 | SCORING_COMMIT | 2026-09-26T18:34:12Z | sn81 commit touches scoring: Merge pull request #281 from reliquadotai/fix/corpus-miner-long-contex |
 | `sn15:release:v2.0.32: fix(validator): save downloaded` | 15 | RELEASE | 2026-09-26T21:37:04Z | sn15 released v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336) |
 | `sn15:scoring_commit:2026-09-26T19:43:24Z` | 15 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn15 commit touches scoring: fix(validator): save downloaded agent source as raw bytes (#336) |
 | `sn25:release:v2026.9.26-1056505490` | 25 | RELEASE | 2026-09-26T21:37:04Z | sn25 released v2026.9.26-1056505490 |
@@ -203,6 +190,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-10-03T09:53:42Z` | 25 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn25 commit touches scoring: Verify HTTP retry controls and preserve qualification disk headroom |
 | `sn71:scoring_commit:2026-10-03T10:07:15Z` | 71 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn71 commit touches scoring: fix: prefer verified exact homepage brand over title |
 | `sn120:scoring_commit:2026-10-03T09:11:08Z` | 120 | SCORING_COMMIT | 2026-10-03T10:31:46Z | sn120 commit touches scoring: Document verified successor, external miner participation and honest … |
+| `sn71:scoring_commit:2026-10-03T13:45:43Z` | 71 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company |
+| `sn81:scoring_commit:2026-10-03T12:08:37Z` | 81 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode |
+| `sn120:scoring_commit:2026-10-03T14:53:57Z` | 120 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |

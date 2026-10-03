@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-03T18:39:46Z, block 9204186
+# ALARMS - generated 2026-10-03T21:48:46Z, block 9205131
 
-window: first_seen in [2026-10-03T17:25:15Z, 2026-10-03T18:40:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-03T20:34:33Z, 2026-10-03T21:49:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,11 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:scoring_commit:2026-10-03T18:20:16Z` | 120 | SCORING_COMMIT | P1 | 2026-10-03T18:40:15Z | sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit |
+| `sn22:burn_drop:0.820` | 22 | BURN_DROP | P0 | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
+| `sn11:release:v0.7.4` | 11 | RELEASE | P1 | 2026-10-03T21:49:33Z | sn11 released v0.7.4 |
+| `sn11:scoring_commit:2026-10-03T18:55:49Z` | 11 | SCORING_COMMIT | P1 | 2026-10-03T21:49:33Z | sn11 commit touches scoring: [coding-agent] validator: weight-only by default, eval behind EVAL_EN… |
+| `sn78:scoring_commit:2026-10-03T14:17:42Z` | 78 | SCORING_COMMIT | P1 | 2026-10-03T21:49:33Z | sn78 commit touches scoring: Reject partial successor reward ownership |
 
 ### detail
 
-- **`sn120:scoring_commit:2026-10-03T18:20:16Z`** - sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit
+- **`sn22:burn_drop:0.820`** - sn22 burn fell 1.000 -> 0.820 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn11:release:v0.7.4`** - sn11 released v0.7.4
+  - published 2026-10-03T19:44:54Z (was v0.7.3)
+- **`sn11:scoring_commit:2026-10-03T18:55:49Z`** - sn11 commit touches scoring: [coding-agent] validator: weight-only by default, eval behind EVAL_EN…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-03T14:17:42Z`** - sn78 commit touches scoring: Reject partial successor reward ownership
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -26,10 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
-| `sn15:release:v2.0.32: fix(validator): save downloaded` | 15 | RELEASE | 2026-09-26T21:37:04Z | sn15 released v2.0.32: fix(validator): save downloaded agent source as raw bytes (#336) |
-| `sn15:scoring_commit:2026-09-26T19:43:24Z` | 15 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn15 commit touches scoring: fix(validator): save downloaded agent source as raw bytes (#336) |
-| `sn25:release:v2026.9.26-1056505490` | 25 | RELEASE | 2026-09-26T21:37:04Z | sn25 released v2026.9.26-1056505490 |
-| `sn71:scoring_commit:2026-09-26T19:50:49Z` | 71 | SCORING_COMMIT | 2026-09-26T21:37:04Z | sn71 commit touches scoring: Reuse verified investigator source for attribute repair |
 | `sn71:scoring_commit:2026-09-26T23:16:13Z` | 71 | SCORING_COMMIT | 2026-09-26T23:56:43Z | sn71 commit touches scoring: Bind verified homepage navigation source |
 | `sn25:release:v2026.9.26-1056759680` | 25 | RELEASE | 2026-09-27T05:12:30Z | sn25 released v2026.9.26-1056759680 |
 | `sn34:scoring_commit:2026-09-27T03:46:53Z` | 34 | SCORING_COMMIT | 2026-09-27T05:12:30Z | sn34 commit touches scoring: Merge pull request #464 from BitMind-AI/docs/align-taxonomy-and-scorin |
@@ -193,6 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-03T13:45:43Z` | 71 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn71 commit touches scoring: Bind unverified homepage context to observed identity and card company |
 | `sn81:scoring_commit:2026-10-03T12:08:37Z` | 81 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn81 commit touches scoring: Merge pull request #308 from reliquadotai/feat/eval-validator-mode |
 | `sn120:scoring_commit:2026-10-03T14:53:57Z` | 120 | SCORING_COMMIT | 2026-10-03T14:57:25Z | sn120 commit touches scoring: Keep original audit source pins across approved reward upgrades |
+| `sn120:scoring_commit:2026-10-03T18:20:16Z` | 120 | SCORING_COMMIT | 2026-10-03T18:40:15Z | sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit |
 | `sn34:readme_task_diff:46170c9c42dc2e42` | 34 | README_TASK_DIFF | 2026-09-27T05:12:30Z | sn34 README task/scoring sections changed |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |

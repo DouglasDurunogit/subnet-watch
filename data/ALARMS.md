@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-04T20:09:29Z, block 9211834
+# ALARMS - generated 2026-10-04T23:26:12Z, block 9212818
 
-window: first_seen in [2026-10-04T18:54:59Z, 2026-10-04T20:09:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-04T22:11:37Z, 2026-10-04T23:26:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-04T19:11:16Z` | 25 | SCORING_COMMIT | P1 | 2026-10-04T20:09:59Z | sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening |
-| `sn120:scoring_commit:2026-10-04T19:54:42Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T20:09:59Z | sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract |
+| `sn85:burn_drop:0.000` | 85 | BURN_DROP | P0 | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-04T19:11:16Z`** - sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-04T19:54:42Z`** - sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract
+- **`sn85:burn_drop:0.000`** - sn85 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn120:scoring_commit:2026-10-04T23:19:10Z`** - sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn122:burn_drop:0.724` | 122 | BURN_DROP | 2026-09-27T22:27:12Z | sn122 burn fell 1.000 -> 0.724 - miners can earn again |
 | `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
@@ -32,8 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn22:burn_drop:0.820` | 22 | BURN_DROP | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn56:scoring_commit:2026-09-27T21:33:47Z` | 56 | SCORING_COMMIT | 2026-09-27T22:27:12Z | sn56 commit touches scoring: 3 task round 1 image (#1387) |
-| `sn78:release:Yuma validator recovery package 0.1.0` | 78 | RELEASE | 2026-09-27T22:27:12Z | sn78 released Yuma validator recovery package 0.1.0 |
 | `sn15:release:v2.0.35: Log nested inference tool types` | 15 | RELEASE | 2026-09-28T01:05:42Z | sn15 released v2.0.35: Log nested inference tool types in proxy access logs |
 | `sn15:scoring_commit:2026-09-27T22:53:19Z` | 15 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator |
 | `sn28:release:v0.4.24-dev` | 28 | RELEASE | 2026-09-28T01:05:42Z | sn28 released v0.4.24-dev |
@@ -201,6 +198,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn9:release:v4.13.4` | 9 | RELEASE | 2026-10-04T17:06:18Z | sn9 released v4.13.4 |
 | `sn25:scoring_commit:2026-10-04T16:31:25Z` | 25 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn25 commit touches scoring: Verify completed original capture and Yuma Rust regression controls |
 | `sn120:scoring_commit:2026-10-04T14:42:39Z` | 120 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs |
+| `sn25:scoring_commit:2026-10-04T19:11:16Z` | 25 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening |
+| `sn120:scoring_commit:2026-10-04T19:54:42Z` | 120 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |

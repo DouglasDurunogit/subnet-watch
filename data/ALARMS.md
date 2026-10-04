@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-04T06:24:03Z, block 9207707
+# ALARMS - generated 2026-10-04T12:45:08Z, block 9209612
 
-window: first_seen in [2026-10-04T05:09:29Z, 2026-10-04T06:24:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-04T11:30:39Z, 2026-10-04T12:45:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn30:burn_drop:0.000` | 30 | BURN_DROP | P0 | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:scoring_commit:2026-10-04T06:18:37Z` | 25 | SCORING_COMMIT | P1 | 2026-10-04T06:24:29Z | sn25 commit touches scoring: Retain complete model success and actual validator reconnect qualific… |
-| `sn26:scoring_commit:2026-10-04T03:18:36Z` | 26 | SCORING_COMMIT | P1 | 2026-10-04T06:24:29Z | sn26 commit touches scoring: feat: rank scanning miners by stake-weighted consensus rank instead o… |
-| `sn71:scoring_commit:2026-10-04T05:56:54Z` | 71 | SCORING_COMMIT | P1 | 2026-10-04T06:24:29Z | sn71 commit touches scoring: Merge pull request #209 from leadpoet/codex/arena-score-host-recovery… |
-| `sn120:scoring_commit:2026-10-04T03:50:26Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T06:24:29Z | sn120 commit touches scoring: Preserve checkpoint read access through post-epoch verification |
-| `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | P2 | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-04T12:40:19Z` | 25 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests |
+| `sn28:release:v0.4.25` | 28 | RELEASE | P1 | 2026-10-04T12:45:39Z | sn28 released v0.4.25 |
+| `sn28:scoring_commit:2026-10-04T08:55:13Z` | 28 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29 |
+| `sn51:scoring_commit:2026-10-04T09:18:47Z` | 51 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running… |
+| `sn71:scoring_commit:2026-10-04T07:34:40Z` | 71 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest |
+| `sn78:scoring_commit:2026-10-04T08:39:44Z` | 78 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn78 commit touches scoring: Stabilize checkpoint cache verification |
+| `sn81:scoring_commit:2026-10-04T08:17:34Z` | 81 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i |
+| `sn120:scoring_commit:2026-10-04T09:29:43Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead… |
 
 ### detail
 
-- **`sn30:burn_drop:0.000`** - sn30 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:scoring_commit:2026-10-04T06:18:37Z`** - sn25 commit touches scoring: Retain complete model success and actual validator reconnect qualific…
+- **`sn25:scoring_commit:2026-10-04T12:40:19Z`** - sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:scoring_commit:2026-10-04T03:18:36Z`** - sn26 commit touches scoring: feat: rank scanning miners by stake-weighted consensus rank instead o…
+- **`sn28:release:v0.4.25`** - sn28 released v0.4.25
+  - published 2026-10-04T09:10:17Z (was v0.4.24)
+- **`sn28:scoring_commit:2026-10-04T08:55:13Z`** - sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-04T05:56:54Z`** - sn71 commit touches scoring: Merge pull request #209 from leadpoet/codex/arena-score-host-recovery…
+- **`sn51:scoring_commit:2026-10-04T09:18:47Z`** - sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-04T03:50:26Z`** - sn120 commit touches scoring: Preserve checkpoint read access through post-epoch verification
+- **`sn71:scoring_commit:2026-10-04T07:34:40Z`** - sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn26:readme_task_diff:417360e9baf6fbbe`** - sn26 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn78:scoring_commit:2026-10-04T08:39:44Z`** - sn78 commit touches scoring: Stabilize checkpoint cache verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-04T08:17:34Z`** - sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-04T09:29:43Z`** - sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,11 +48,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
 | `sn22:burn_drop:0.820` | 22 | BURN_DROP | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
-| `sn15:release:v2.0.34: Authorize inference without a s` | 15 | RELEASE | 2026-09-27T10:40:11Z | sn15 released v2.0.34: Authorize inference without a shared Compose mount |
-| `sn61:release:4.10.7` | 61 | RELEASE | 2026-09-27T10:40:11Z | sn61 released 4.10.7 |
-| `sn61:scoring_commit:2026-09-27T10:35:08Z` | 61 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn61 commit touches scoring: Merge pull request #149 from RedTeamSubnet/challenge/bex_tracker |
-| `sn71:scoring_commit:2026-09-27T08:15:54Z` | 71 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn71 commit touches scoring: Bind verifier evidence continuity to reviewed source |
-| `sn120:scoring_commit:2026-09-27T08:35:30Z` | 120 | SCORING_COMMIT | 2026-09-27T10:40:11Z | sn120 commit touches scoring: wvk 25 δ fork: flip time 08:35 UTC in AGENTS.md; Discord links |
+| `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:scoring_commit:2026-09-27T14:35:41Z` | 71 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn71 commit touches scoring: Bind verifier release to current Arena base |
 | `sn111:scoring_commit:2026-09-27T13:52:01Z` | 111 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 … |
 | `sn120:scoring_commit:2026-09-27T11:40:34Z` | 120 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga… |
@@ -207,6 +209,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-03T14:17:42Z` | 78 | SCORING_COMMIT | 2026-10-03T21:49:33Z | sn78 commit touches scoring: Reject partial successor reward ownership |
 | `sn71:scoring_commit:2026-10-04T00:23:22Z` | 71 | SCORING_COMMIT | 2026-10-04T00:33:21Z | sn71 commit touches scoring: Merge pull request #205 from leadpoet/codex/daily-miner-admission |
 | `sn81:scoring_commit:2026-10-03T15:52:28Z` | 81 | SCORING_COMMIT | 2026-10-04T00:33:21Z | sn81 commit touches scoring: feat(corpus): new jobs settle by period; tasks close frees a finished… |
+| `sn25:scoring_commit:2026-10-04T06:18:37Z` | 25 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn25 commit touches scoring: Retain complete model success and actual validator reconnect qualific… |
+| `sn26:scoring_commit:2026-10-04T03:18:36Z` | 26 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn26 commit touches scoring: feat: rank scanning miners by stake-weighted consensus rank instead o… |
+| `sn71:scoring_commit:2026-10-04T05:56:54Z` | 71 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn71 commit touches scoring: Merge pull request #209 from leadpoet/codex/arena-score-host-recovery… |
+| `sn120:scoring_commit:2026-10-04T03:50:26Z` | 120 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn120 commit touches scoring: Preserve checkpoint read access through post-epoch verification |
 | `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
@@ -223,6 +229,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
 | `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
 | `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
+| `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

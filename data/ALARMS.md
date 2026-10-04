@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-04T12:45:08Z, block 9209612
+# ALARMS - generated 2026-10-04T17:05:53Z, block 9210916
 
-window: first_seen in [2026-10-04T11:30:39Z, 2026-10-04T12:45:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-04T15:51:18Z, 2026-10-04T17:06:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-04T12:40:19Z` | 25 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests |
-| `sn28:release:v0.4.25` | 28 | RELEASE | P1 | 2026-10-04T12:45:39Z | sn28 released v0.4.25 |
-| `sn28:scoring_commit:2026-10-04T08:55:13Z` | 28 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29 |
-| `sn51:scoring_commit:2026-10-04T09:18:47Z` | 51 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running… |
-| `sn71:scoring_commit:2026-10-04T07:34:40Z` | 71 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest |
-| `sn78:scoring_commit:2026-10-04T08:39:44Z` | 78 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn78 commit touches scoring: Stabilize checkpoint cache verification |
-| `sn81:scoring_commit:2026-10-04T08:17:34Z` | 81 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i |
-| `sn120:scoring_commit:2026-10-04T09:29:43Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T12:45:39Z | sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead… |
+| `sn116:burn_drop:0.000` | 116 | BURN_DROP | P0 | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn9:release:v4.13.4` | 9 | RELEASE | P1 | 2026-10-04T17:06:18Z | sn9 released v4.13.4 |
+| `sn25:scoring_commit:2026-10-04T16:31:25Z` | 25 | SCORING_COMMIT | P1 | 2026-10-04T17:06:18Z | sn25 commit touches scoring: Verify completed original capture and Yuma Rust regression controls |
+| `sn120:scoring_commit:2026-10-04T14:42:39Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T17:06:18Z | sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs |
+| `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | P2 | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-04T12:40:19Z`** - sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests
+- **`sn116:burn_drop:0.000`** - sn116 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn9:release:v4.13.4`** - sn9 released v4.13.4
+  - published 2026-10-04T16:24:54Z (was v4.13.3)
+- **`sn25:scoring_commit:2026-10-04T16:31:25Z`** - sn25 commit touches scoring: Verify completed original capture and Yuma Rust regression controls
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.25`** - sn28 released v0.4.25
-  - published 2026-10-04T09:10:17Z (was v0.4.24)
-- **`sn28:scoring_commit:2026-10-04T08:55:13Z`** - sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29
+- **`sn120:scoring_commit:2026-10-04T14:42:39Z`** - sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-04T09:18:47Z`** - sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-04T07:34:40Z`** - sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-04T08:39:44Z`** - sn78 commit touches scoring: Stabilize checkpoint cache verification
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-04T08:17:34Z`** - sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-04T09:29:43Z`** - sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:readme_task_diff:6dafd77986a370d3`** - sn25 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,9 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
 | `sn22:burn_drop:0.820` | 22 | BURN_DROP | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-09-27T14:35:41Z` | 71 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn71 commit touches scoring: Bind verifier release to current Arena base |
-| `sn111:scoring_commit:2026-09-27T13:52:01Z` | 111 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn111 commit touches scoring: perf(miner): default consensus review to single-case batches with 50 … |
-| `sn120:scoring_commit:2026-09-27T11:40:34Z` | 120 | SCORING_COMMIT | 2026-09-27T15:20:39Z | sn120 commit touches scoring: Merge PR #78 (cursor/task-instruction-gate-8929): task-instruction ga… |
 | `sn78:release:Linux amd64 validator recovery installer` | 78 | RELEASE | 2026-09-27T19:09:06Z | sn78 released Linux amd64 validator recovery installer (c0503f5) |
 | `sn81:scoring_commit:2026-09-27T16:59:58Z` | 81 | SCORING_COMMIT | 2026-09-27T19:09:06Z | sn81 commit touches scoring: feat(corpus): serve the task's contract and let the miner fetch it |
 | `sn111:scoring_commit:2026-09-27T17:45:19Z` | 111 | SCORING_COMMIT | 2026-09-27T19:09:06Z | sn111 commit touches scoring: fix(consensus): exclude validators from reviewer selection |
@@ -213,7 +201,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:scoring_commit:2026-10-04T03:18:36Z` | 26 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn26 commit touches scoring: feat: rank scanning miners by stake-weighted consensus rank instead o… |
 | `sn71:scoring_commit:2026-10-04T05:56:54Z` | 71 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn71 commit touches scoring: Merge pull request #209 from leadpoet/codex/arena-score-host-recovery… |
 | `sn120:scoring_commit:2026-10-04T03:50:26Z` | 120 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn120 commit touches scoring: Preserve checkpoint read access through post-epoch verification |
-| `sn111:readme_task_diff:6726c60aad04c385` | 111 | README_TASK_DIFF | 2026-09-27T15:20:39Z | sn111 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-04T12:40:19Z` | 25 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests |
+| `sn28:release:v0.4.25` | 28 | RELEASE | 2026-10-04T12:45:39Z | sn28 released v0.4.25 |
+| `sn28:scoring_commit:2026-10-04T08:55:13Z` | 28 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29 |
+| `sn51:scoring_commit:2026-10-04T09:18:47Z` | 51 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running… |
+| `sn71:scoring_commit:2026-10-04T07:34:40Z` | 71 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest |
+| `sn78:scoring_commit:2026-10-04T08:39:44Z` | 78 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn78 commit touches scoring: Stabilize checkpoint cache verification |
+| `sn81:scoring_commit:2026-10-04T08:17:34Z` | 81 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i |
+| `sn120:scoring_commit:2026-10-04T09:29:43Z` | 120 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead… |
 | `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |

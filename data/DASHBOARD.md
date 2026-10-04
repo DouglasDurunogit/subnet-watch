@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-04T00:32:56Z · block 9205951 · run_status **ok**_
+_snapshot 2026-10-04T06:24:03Z · block 9207707 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 97 | `miner_burn` < 0.99 |
-| Ranked | 97 | passed every gate |
+| Pays miners at all | 98 | `miner_burn` < 0.99 |
+| Ranked | 98 | passed every gate |
 | **Positive margin** | **59** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| New events this window | 6 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 64 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
-| 0.2–0.4 | 6 | `███` |
+| 0 (none) | 66 | `████████████████████████████` |
+| 0–0.2 | 8 | `███` |
+| 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 7 | `███` |
-| ≥0.99 dead | 31 | `██████████████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 30 | `█████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn41 Almanac | 74.4 | 39.74 | 133 | cpu-small | 126 | 2% |
-| 2 | sn23 Trishool | 74.1 | 975 | 975 = | cpu-small | 2 | 79% |
-| 3 | sn26 Perturb | 73 | 71.12 | 121 | rtx3060 | 4 | 90% |
-| 4 | sn120 Affine | 72.4 | 1,583 | 1,583 = | rtx4090* | 33 | 4% |
-| 5 | sn53 engy | 72 | 1,328 | 3,641 | rtx4090 | 14 | 22% |
-| 6 | sn91 cascade | 71.5 | 453 | 2,419 | cpu-small | 5 | 52% |
-| 7 | sn56 Gradients | 69.6 | 653 | 5,294 | rtx4090* | 8 | 39% |
-| 8 | sn1 Apex | 69.5 | 643 | 1,046 | rtx4090* | 4 | 62% |
-| 9 | sn46 Instant | 69.4 | 240 | 296 | cpu-small | 8 | 51% |
-| 10 | sn111 Claims | 68.9 | 530 | 2,346 | rtx4090* | 5 | 60% |
-| 11 | sn107 Minos | 68.8 | 345 | 29,357 | cpu-small | 20 | 80% |
-| 12 | sn67 Harnyx | 68.8 | 9.03 | 1,155 | cpu-small | 120 | 36% |
-| 13 | sn15 ORO | 66.8 | 8.75 | 17.46 | cpu-small | 55 | 98% |
-| 14 | sn4 Targon | 65.6 | 6,890 | 32,590 | rtx4090* | 5 | 70% |
-| 15 | sn62 Ridges | 63.3 | 101 | 2,330 | rtx4090* | 30 | 25% |
-| 16 | sn61 RedTeam | 62.8 | 86.77 | 157 | rtx4090* | 113 | 2% |
-| 17 | sn28 SayGM | 62.7 | 85.12 | 1,034 | rtx4090* | 63 | 24% |
-| 18 | sn14 Cacheon | 61.2 | 53.59 | 1,863 | rtx4090* | 13 | 23% |
-| 19 | sn80 OpenRoboto | 59.6 | 1,150 | 3,489 | rtx4090* | 8 | 34% |
-| 20 | sn5 Hone | 59 | 39.15 | 41.26 | rtx4090* | 243 | 0% |
+| 1 | sn23 Trishool | 74.2 | 1,016 | 1,016 = | cpu-small | 2 | 78% |
+| 2 | sn41 Almanac | 73.9 | 35.52 | 2,179 | cpu-small | 127 | 31% |
+| 3 | sn53 engy | 71.9 | 1,307 | 3,582 | rtx4090 | 14 | 22% |
+| 4 | sn91 cascade | 71.5 | 455 | 2,430 | cpu-small | 5 | 52% |
+| 5 | sn67 Harnyx | 70.6 | 14.24 | 953 | cpu-small | 123 | 30% |
+| 6 | sn46 Instant | 70.2 | 303 | 349 | cpu-small | 6 | 52% |
+| 7 | sn56 Gradients | 69.6 | 650 | 5,271 | rtx4090* | 8 | 39% |
+| 8 | sn1 Apex | 69.4 | 612 | 1,014 | rtx4090* | 4 | 63% |
+| 9 | sn111 Claims | 68.8 | 526 | 2,329 | rtx4090* | 5 | 60% |
+| 10 | sn120 Affine | 68.1 | 487 | 734 | rtx4090* | 77 | 2% |
+| 11 | sn15 ORO | 67.3 | 9.10 | 21,911 | cpu-small | 52 | 98% |
+| 12 | sn4 Targon | 65.6 | 6,839 | 32,346 | rtx4090* | 5 | 70% |
+| 13 | sn62 Ridges | 64.7 | 151 | 2,312 | rtx4090* | 30 | 25% |
+| 14 | sn28 SayGM | 63.3 | 103 | 983 | rtx4090* | 60 | 38% |
+| 15 | sn61 RedTeam | 62.8 | 87.20 | 157 | rtx4090* | 113 | 2% |
+| 16 | sn14 Cacheon | 61.2 | 53.24 | 1,852 | rtx4090* | 13 | 23% |
+| 17 | sn26 Perturb | 59.8 | 37.58 | 69.92 | rtx3060 | 4 | 90% |
+| 18 | sn5 Hone | 59 | 38.79 | 40.89 | rtx4090* | 244 | 0% |
+| 19 | sn80 OpenRoboto | 58.7 | 896 | 3,347 | rtx4090* | 8 | 33% |
+| 20 | sn38 ChronoLLM | 58.6 | 348 | 4,733 | cpu-small | 10 | 52% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
-| concentrated (30–60%) | 25 |
-| dominated (60–90%) | 21 |
-| captured (>90%) | 24 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 27 |
+| dominated (60–90%) | 20 |
+| captured (>90%) | 25 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,12 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-04T06:24 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Retain complete model success and actual  |
+| 2026-10-04T06:24 | sn26 | SCORING_COMMIT | sn26 commit touches scoring: feat: rank scanning miners by stake-weigh |
+| 2026-10-04T06:24 | sn26 | README_TASK_DIFF | sn26 README task/scoring sections changed |
+| 2026-10-04T06:24 | sn30 | BURN_DROP | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
+| 2026-10-04T06:24 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #209 from leadpoet/cod |
+| 2026-10-04T06:24 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Preserve checkpoint read access through  |
 | 2026-10-04T00:33 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #205 from leadpoet/cod |
 | 2026-10-04T00:33 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat(corpus): new jobs settle by period;  |
 | 2026-10-03T21:49 | sn11 | RELEASE | sn11 released v0.7.4 |
@@ -116,12 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-03T18:40 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Record verified five-role source staging |
 | 2026-10-03T14:57 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Bind unverified homepage context to obser |
 | 2026-10-03T14:57 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Merge pull request #308 from reliquadotai |
-| 2026-10-03T14:57 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Keep original audit source pins across a |
-| 2026-10-03T10:31 | sn15 | RELEASE | sn15 released Validator v2.1.0: runtime contract on claim and delivery |
-| 2026-10-03T10:31 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: Validator v2.1.0: runtime contract on cla |
-| 2026-10-03T10:31 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Verify HTTP retry controls and preserve q |
-| 2026-10-03T10:31 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: fix: prefer verified exact homepage brand |
-| 2026-10-03T10:31 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Document verified successor, external mi |
 
 ---
 

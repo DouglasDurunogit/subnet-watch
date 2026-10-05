@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-05T02:18:23Z, block 9213679
+# ALARMS - generated 2026-10-05T09:25:17Z, block 9215813
 
-window: first_seen in [2026-10-05T01:03:48Z, 2026-10-05T02:18:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-05T08:10:44Z, 2026-10-05T09:25:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,` | 15 | RELEASE | P1 | 2026-10-05T02:18:48Z | sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
-| `sn15:scoring_commit:2026-10-05T01:34:33Z` | 15 | SCORING_COMMIT | P1 | 2026-10-05T02:18:48Z | sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
-| `sn120:scoring_commit:2026-10-05T01:33:05Z` | 120 | SCORING_COMMIT | P1 | 2026-10-05T02:18:48Z | sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang |
+| `sn49:scoring_commit:2026-09-30T00:44:13Z` | 49 | SCORING_COMMIT | P1 | 2026-10-05T09:25:44Z | sn49 commit touches scoring: Upgrade validator sandbox to Isaac Sim 6.1 / Isaac Lab 3.0.0 |
+| `sn51:scoring_commit:2026-10-05T09:19:32Z` | 51 | SCORING_COMMIT | P1 | 2026-10-05T09:25:44Z | sn51 commit touches scoring: NO-TICKET - [P2] Validator scrape: record the host's Sysbox version (… |
+| `sn71:scoring_commit:2026-10-05T04:23:20Z` | 71 | SCORING_COMMIT | P1 | 2026-10-05T09:25:44Z | sn71 commit touches scoring: Document resource-safe model capacity for all validators |
+| `sn108:scoring_commit:2026-10-05T07:32:21Z` | 108 | SCORING_COMMIT | P1 | 2026-10-05T09:25:44Z | sn108 commit touches scoring: docs: validator hardware requirements (min 16 physical cores + 32 GB,… |
+| `sn120:scoring_commit:2026-10-05T06:36:49Z` | 120 | SCORING_COMMIT | P1 | 2026-10-05T09:25:44Z | sn120 commit touches scoring: Align current verifier roster and publication guide with E12 |
+| `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | P2 | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,`** - sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362)
-  - published 2026-10-05T01:34:33Z (was Validator v2.1.0: runtime contract on claim and delivery load (#361))
-- **`sn15:scoring_commit:2026-10-05T01:34:33Z`** - sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362)
+- **`sn49:scoring_commit:2026-09-30T00:44:13Z`** - sn49 commit touches scoring: Upgrade validator sandbox to Isaac Sim 6.1 / Isaac Lab 3.0.0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-05T01:33:05Z`** - sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang
+- **`sn51:scoring_commit:2026-10-05T09:19:32Z`** - sn51 commit touches scoring: NO-TICKET - [P2] Validator scrape: record the host's Sysbox version (…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-05T04:23:20Z`** - sn71 commit touches scoring: Document resource-safe model capacity for all validators
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-10-05T07:32:21Z`** - sn108 commit touches scoring: docs: validator hardware requirements (min 16 physical cores + 32 GB,…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-05T06:36:49Z`** - sn120 commit touches scoring: Align current verifier roster and publication guide with E12
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn80:readme_task_diff:7fcffd77dd4a6c7a`** - sn80 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -35,7 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
 | `sn20:scoring_commit:2026-09-28T15:15:07Z` | 20 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation |
 | `sn26:scoring_commit:2026-09-28T12:26:31Z` | 26 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca… |
 | `sn28:release:v0.4.24` | 28 | RELEASE | 2026-09-28T15:21:54Z | sn28 released v0.4.24 |
@@ -199,6 +207,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-10-04T19:11:16Z` | 25 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening |
 | `sn120:scoring_commit:2026-10-04T19:54:42Z` | 120 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract |
 | `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
+| `sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,` | 15 | RELEASE | 2026-10-05T02:18:48Z | sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
+| `sn15:scoring_commit:2026-10-05T01:34:33Z` | 15 | SCORING_COMMIT | 2026-10-05T02:18:48Z | sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
+| `sn120:scoring_commit:2026-10-05T01:33:05Z` | 120 | SCORING_COMMIT | 2026-10-05T02:18:48Z | sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 | `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |

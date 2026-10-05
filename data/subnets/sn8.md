@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-10-05T09:25:17Z  |  block: 9215813  |  row_status: ok
+snapshot_utc: 2026-10-05T18:45:48Z  |  block: 9218616  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.15252000000000002 USD), open=True
+- registration cost: 0.0005 TAO (0.14985 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 36  |  free: 0
-- subnet age: 1074.8 days  |  registered at block 1477264
+- subnet age: 1075.2 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1695.2610603162104** (uid 68) <- the only figure quotable as achievable
-- median_miner_usd_day: 1.2190276080893172
-- top_miner_usd_day: 19907.93986770664 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1663.8264356516495** (uid 68) <- the only figure quotable as achievable
+- median_miner_usd_day: 1.1969974357206112
+- top_miner_usd_day: 19549.761119334264 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 21  |  gini: 0.8994282281181425  |  top1_share: 0.7483389084910416  |  top10_share: 0.9995417678595978
+- earners: 21  |  gini: 0.899436956349388  |  top1_share: 0.7484000061097618  |  top10_share: 0.9995417678595976
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-05T09:25:17Z  |  block: 9215813  |  row_status: ok
 - on-chain URL: `https://github.com/taoshidev/vanta-network`
 - resolved URL: `https://github.com/taoshidev/vanta-network`
 - status: **ok** 
-- README: 9648 bytes, sha 7146650d22213c89
+- README: 10016 bytes, sha 59ebdc072eb311f2
 - latest release: (none) 
-- last commit: 2026-10-02T21:54:12Z
+- last commit: 2026-10-05T16:26:43Z
 - scoring-related commit: disable miner daily summary (#934) 2026-09-24T08:39:47Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-05T09:25:17Z  |  block: 9215813  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.0002 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.0222 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 50), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 51), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 4.5d ago
+- freshness basis: SCORING_COMMIT 4.9d ago
 
 ## On-chain description
 
@@ -151,7 +151,7 @@ those that provide the most returns, while never exceeding certain drawdown limi
 
 ### Rules
 
-1. Miners can submit LONG, SHORT, or FLAT signal for Forex, Crypto, Equities, or Commodities trade pairs into the network during market hours. <a href="https://github.com/taoshidev/vanta-network/blob/main/vali_objects/trade_pair.py#L125">Currently supported trade pairs</a>
+1. Miners can submit LONG, SHORT, or FLAT signal for Forex, Crypto, Equities, or Commodities trade pairs into the network during market hours. Crypto, commodities and other Hyperliquid perps trade 24/7, forex trades Sunday 17:00 to Friday 17:00 ET, and equities trade 09:30–16:00 ET with limit-only pre-market (04:00–09:30 ET) and after-hours (16:00–20:00 ET) sessions. <a href="https://github.com/taoshidev/vanta-network/blob/main/docs/miner.md#market-hours-and-order-types">Market hours and order types</a> · <a href="https://github.com/taoshidev/vanta-network/blob/main/vali_objects/trade_pair.py#L125">Currently supported trade pairs</a>
 2. Miners are eliminated if they are detected as plagiarising other miners, if they exceed a 5% intraday drawdown from the day's opening equity, an 8% end-of-day drawdown from their highest-ever end-of-day equity (high-water mark), or if they go 60 days without submitting a single order (more info in the "Eliminations" section).
 3. There is a fee for leaving positions open "carry fee". The fee is equal to 10.95%/3% per year for a 1x leverage position (crypto/forex respectively); equities instead pay a 3%/yr stock-borrow fee (short) or 6.6%/yr margin interest on the borrowed amount (long). Positions in Hyperliquid-sourced trade pairs (most crypto pairs, commodities, indices, and some equities) pay live Hyperliquid funding rates instead of the flat rates above <a href="https://docs.taoshi.io/tips/p4/">More info</a>
 4. There is a spread (transaction) fee applied to crypto, equities, and commodities orders, calculated as a percentage of order value - 0.03% for crypto, 0.01% for equities, and 0.005% for commodities (forex and indices have no spread fee). This simulates a transaction cost that a normal exchange would add. Maker and taker fills are priced identically.
@@ -163,16 +163,7 @@ With this system only the world's best traders & deep learning / quant based tra
 
 # Eliminations
 
-In the Vanta Network, eliminations occur for miners that commit plagiarism, breach drawdown limits, fail to exit probation in time, or are inactive.
-
-
-### Plagiarism Eliminations
-
-Miners who repeatedly copy another miner's trades will be eliminated. Our system analyzes the uniqueness of each submitted order. If an order is found to be a copy (plagiarized), it triggers the miner's elimination.
-
-### Max Drawdown Elimination
-
-Min
+In the Vanta Network, eliminations occur for miners that commi
 ```
 
-_(truncated at 6000 of 9648 chars - read the full file at https://github.com/taoshidev/vanta-network)_
+_(truncated at 6000 of 10016 chars - read the full file at https://github.com/taoshidev/vanta-network)_

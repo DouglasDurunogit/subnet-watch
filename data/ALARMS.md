@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-04T23:26:12Z, block 9212818
+# ALARMS - generated 2026-10-05T02:18:23Z, block 9213679
 
-window: first_seen in [2026-10-04T22:11:37Z, 2026-10-04T23:26:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-05T01:03:48Z, 2026-10-05T02:18:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn85:burn_drop:0.000` | 85 | BURN_DROP | P0 | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | P1 | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
+| `sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,` | 15 | RELEASE | P1 | 2026-10-05T02:18:48Z | sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
+| `sn15:scoring_commit:2026-10-05T01:34:33Z` | 15 | SCORING_COMMIT | P1 | 2026-10-05T02:18:48Z | sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
+| `sn120:scoring_commit:2026-10-05T01:33:05Z` | 120 | SCORING_COMMIT | P1 | 2026-10-05T02:18:48Z | sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang |
 
 ### detail
 
-- **`sn85:burn_drop:0.000`** - sn85 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn120:scoring_commit:2026-10-04T23:19:10Z`** - sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler
+- **`sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,`** - sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362)
+  - published 2026-10-05T01:34:33Z (was Validator v2.1.0: runtime contract on claim and delivery load (#361))
+- **`sn15:scoring_commit:2026-10-05T01:34:33Z`** - sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-05T01:33:05Z`** - sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -31,12 +34,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn22:burn_drop:0.820` | 22 | BURN_DROP | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.35: Log nested inference tool types` | 15 | RELEASE | 2026-09-28T01:05:42Z | sn15 released v2.0.35: Log nested inference tool types in proxy access logs |
-| `sn15:scoring_commit:2026-09-27T22:53:19Z` | 15 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn15 commit touches scoring: chore(deps): bump anyio from 4.13.0 to 4.14.2 in /docker/validator |
-| `sn28:release:v0.4.24-dev` | 28 | RELEASE | 2026-09-28T01:05:42Z | sn28 released v0.4.24-dev |
-| `sn28:scoring_commit:2026-09-27T23:56:42Z` | 28 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.24-dev (#290) |
-| `sn71:scoring_commit:2026-09-27T22:36:31Z` | 71 | SCORING_COMMIT | 2026-09-28T01:05:42Z | sn71 commit touches scoring: Bind final evidence resolution verifier release |
-| `sn91:release:worker-v0.8.2` | 91 | RELEASE | 2026-09-28T01:05:42Z | sn91 released worker-v0.8.2 |
+| `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn71:scoring_commit:2026-09-28T02:46:34Z` | 71 | SCORING_COMMIT | 2026-09-28T06:49:13Z | sn71 commit touches scoring: Verify cross-domain company rebrands |
 | `sn20:scoring_commit:2026-09-28T15:15:07Z` | 20 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn20 commit touches scoring: Initialize public Witness subnet with bounded five-video evaluation |
 | `sn26:scoring_commit:2026-09-28T12:26:31Z` | 26 | SCORING_COMMIT | 2026-09-28T15:21:54Z | sn26 commit touches scoring: fix: seed evaluation sampling from the pinned dataset commit so it ca… |
@@ -200,7 +198,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-10-04T14:42:39Z` | 120 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs |
 | `sn25:scoring_commit:2026-10-04T19:11:16Z` | 25 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening |
 | `sn120:scoring_commit:2026-10-04T19:54:42Z` | 120 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract |
-| `sn28:readme_task_diff:f38f4d2e27184292` | 28 | README_TASK_DIFF | 2026-09-28T01:05:42Z | sn28 README task/scoring sections changed |
+| `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
 | `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 | `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |

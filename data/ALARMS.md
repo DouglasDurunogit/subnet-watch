@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-06T00:23:42Z, block 9220305
+# ALARMS - generated 2026-10-06T06:42:28Z, block 9222199
 
-window: first_seen in [2026-10-05T23:09:10Z, 2026-10-06T00:24:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-06T05:28:00Z, 2026-10-06T06:43:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-05T23:54:13Z` | 25 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn25 commit touches scoring: Merge executable root validator registration bootstrap |
-| `sn51:release:executor-v1.137` | 51 | RELEASE | P1 | 2026-10-06T00:24:10Z | sn51 released executor-v1.137 |
-| `sn51:scoring_commit:2026-10-05T19:18:41Z` | 51 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi… |
-| `sn71:scoring_commit:2026-10-05T22:08:15Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn71 commit touches scoring: Stop the scoring-readiness tests from execve-ing the test session |
-| `sn94:scoring_commit:2026-10-05T19:11:29Z` | 94 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn94 commit touches scoring: docs: mission-first miner README and one canonical operating guide (#… |
-| `sn97:scoring_commit:2026-10-05T23:47:15Z` | 97 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn97 commit touches scoring: chore: increase scoring timeout |
-| `sn116:scoring_commit:2026-10-06T00:10:09Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test… |
-| `sn120:scoring_commit:2026-10-05T23:28:14Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease |
+| `sn25:scoring_commit:2026-10-06T02:25:10Z` | 25 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn25 commit touches scoring: Merge bounded early miner recovery diagnostics |
+| `sn37:scoring_commit:2026-10-06T02:41:33Z` | 37 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26) |
+| `sn67:scoring_commit:2026-10-06T05:02:36Z` | 67 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1 |
+| `sn71:scoring_commit:2026-10-06T05:47:00Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures |
+| `sn116:scoring_commit:2026-10-06T03:58:21Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun… |
+| `sn120:scoring_commit:2026-10-06T06:04:01Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-05T23:54:13Z`** - sn25 commit touches scoring: Merge executable root validator registration bootstrap
+- **`sn25:scoring_commit:2026-10-06T02:25:10Z`** - sn25 commit touches scoring: Merge bounded early miner recovery diagnostics
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.137`** - sn51 released executor-v1.137
-  - published 2026-10-05T19:25:36Z (was validator-v2026.10.02.2)
-- **`sn51:scoring_commit:2026-10-05T19:18:41Z`** - sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi…
+- **`sn37:scoring_commit:2026-10-06T02:41:33Z`** - sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-05T22:08:15Z`** - sn71 commit touches scoring: Stop the scoring-readiness tests from execve-ing the test session
+- **`sn67:scoring_commit:2026-10-06T05:02:36Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-05T19:11:29Z`** - sn94 commit touches scoring: docs: mission-first miner README and one canonical operating guide (#…
+- **`sn71:scoring_commit:2026-10-06T05:47:00Z`** - sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-10-05T23:47:15Z`** - sn97 commit touches scoring: chore: increase scoring timeout
+- **`sn116:scoring_commit:2026-10-06T03:58:21Z`** - sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-06T00:10:09Z`** - sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-05T23:28:14Z`** - sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease
+- **`sn120:scoring_commit:2026-10-06T06:04:01Z`** - sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,8 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
-| `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
 | `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
 | `sn61:release:4.10.8` | 61 | RELEASE | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
 | `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
@@ -217,6 +209,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-05T11:00:55Z` | 67 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261005.post0 |
 | `sn76:scoring_commit:2026-10-05T15:29:39Z` | 76 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn76 commit touches scoring: MINER_TERMS §3: publish rate version earned-bid-2x-v1 (2x from 2026-1… |
 | `sn120:scoring_commit:2026-10-05T18:43:57Z` | 120 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn120 commit touches scoring: Add prospective owned cached native evaluation and telemetry |
+| `sn25:scoring_commit:2026-10-05T23:54:13Z` | 25 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn25 commit touches scoring: Merge executable root validator registration bootstrap |
+| `sn51:release:executor-v1.137` | 51 | RELEASE | 2026-10-06T00:24:10Z | sn51 released executor-v1.137 |
+| `sn51:scoring_commit:2026-10-05T19:18:41Z` | 51 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi… |
+| `sn71:scoring_commit:2026-10-05T22:08:15Z` | 71 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn71 commit touches scoring: Stop the scoring-readiness tests from execve-ing the test session |
+| `sn94:scoring_commit:2026-10-05T19:11:29Z` | 94 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn94 commit touches scoring: docs: mission-first miner README and one canonical operating guide (#… |
+| `sn97:scoring_commit:2026-10-05T23:47:15Z` | 97 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn97 commit touches scoring: chore: increase scoring timeout |
+| `sn116:scoring_commit:2026-10-06T00:10:09Z` | 116 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test… |
+| `sn120:scoring_commit:2026-10-05T23:28:14Z` | 120 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 | `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
 | `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |

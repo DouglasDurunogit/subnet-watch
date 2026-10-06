@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-06T13:39:30Z, block 9224284
+# ALARMS - generated 2026-10-06T19:07:23Z, block 9225924
 
-window: first_seen in [2026-10-06T12:24:56Z, 2026-10-06T13:39:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-06T17:52:57Z, 2026-10-06T19:07:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,47 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.13.5` | 9 | RELEASE | P1 | 2026-10-06T13:39:56Z | sn9 released v4.13.5 |
-| `sn51:scoring_commit:2026-10-06T12:42:30Z` | 51 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor… |
-| `sn67:scoring_commit:2026-10-06T07:52:50Z` | 67 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3 |
-| `sn108:scoring_commit:2026-10-06T11:47:46Z` | 108 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn108 commit touches scoring: Minimum improvement comes from the challenge server (/validator/sync … |
-| `sn116:scoring_commit:2026-10-06T13:03:10Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn116 commit touches scoring: Merge pull request #679 from carbonphysicsai/claude/validator-13d-l1-… |
-| `sn120:scoring_commit:2026-10-06T12:39:56Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn120 commit touches scoring: Document actual E24 learning and partial verifier capacity rollout |
+| `sn108:burn_drop:0.900` | 108 | BURN_DROP | P0 | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
+| `sn10:scoring_commit:2026-10-06T15:02:05Z` | 10 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn10 commit touches scoring: feat(ops): add private PRO6000 FP8 campaign with v5 C4 scoring (#188) |
+| `sn21:scoring_commit:2026-10-06T14:07:59Z` | 21 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn21 commit touches scoring: fix(validator): /health in daily mode no longer echoes the loaded rel… |
+| `sn28:release:v0.4.26` | 28 | RELEASE | P1 | 2026-10-06T19:07:57Z | sn28 released v0.4.26 |
+| `sn50:scoring_commit:2026-10-06T15:38:51Z` | 50 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn50 commit touches scoring: perf(validator): write predictions to Bigtable from the dendrite work… |
+| `sn51:scoring_commit:2026-10-06T14:05:39Z` | 51 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn51 commit touches scoring: DAH-3947 - [P2] lium-io drops celium-collateral; miner reclaims with … |
+| `sn71:scoring_commit:2026-10-06T17:48:44Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn71 commit touches scoring: Merge PR #238: retain validated company evidence |
+| `sn76:scoring_commit:2026-10-06T16:30:48Z` | 76 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn76 commit touches scoring: ormas-miner CLI and user-only installer (#25) |
+| `sn78:scoring_commit:2026-10-06T14:55:05Z` | 78 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn78 commit touches scoring: Match miner scoring runtime pins and diagnose admission holds |
+| `sn111:scoring_commit:2026-10-06T14:44:24Z` | 111 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn111 commit touches scoring: fix(validator): scope split audit repairs to expected draft units |
+| `sn114:scoring_commit:2026-10-01T14:32:15Z` | 114 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn114 commit touches scoring: feat(scoring): count jev input tokens in miner weighted tokens |
+| `sn116:scoring_commit:2026-10-06T19:02:44Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn116 commit touches scoring: Merge pull request #708 from carbonphysicsai/claude/validator-19-s4-a… |
+| `sn120:scoring_commit:2026-10-06T17:07:55Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T19:07:57Z | sn120 commit touches scoring: Calculate hourly current miner weights with six-hour contribution EMA |
 
 ### detail
 
-- **`sn9:release:v4.13.5`** - sn9 released v4.13.5
-  - published 2026-10-06T12:20:36Z (was v4.13.4)
-- **`sn51:scoring_commit:2026-10-06T12:42:30Z`** - sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor…
+- **`sn108:burn_drop:0.900`** - sn108 burn fell 1.000 -> 0.900 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn10:scoring_commit:2026-10-06T15:02:05Z`** - sn10 commit touches scoring: feat(ops): add private PRO6000 FP8 campaign with v5 C4 scoring (#188)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-06T07:52:50Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3
+- **`sn21:scoring_commit:2026-10-06T14:07:59Z`** - sn21 commit touches scoring: fix(validator): /health in daily mode no longer echoes the loaded rel…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-10-06T11:47:46Z`** - sn108 commit touches scoring: Minimum improvement comes from the challenge server (/validator/sync …
+- **`sn28:release:v0.4.26`** - sn28 released v0.4.26
+  - published 2026-10-06T15:02:15Z (was v0.4.25)
+- **`sn50:scoring_commit:2026-10-06T15:38:51Z`** - sn50 commit touches scoring: perf(validator): write predictions to Bigtable from the dendrite work…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-06T13:03:10Z`** - sn116 commit touches scoring: Merge pull request #679 from carbonphysicsai/claude/validator-13d-l1-…
+- **`sn51:scoring_commit:2026-10-06T14:05:39Z`** - sn51 commit touches scoring: DAH-3947 - [P2] lium-io drops celium-collateral; miner reclaims with …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-06T12:39:56Z`** - sn120 commit touches scoring: Document actual E24 learning and partial verifier capacity rollout
+- **`sn71:scoring_commit:2026-10-06T17:48:44Z`** - sn71 commit touches scoring: Merge PR #238: retain validated company evidence
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-10-06T16:30:48Z`** - sn76 commit touches scoring: ormas-miner CLI and user-only installer (#25)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-06T14:55:05Z`** - sn78 commit touches scoring: Match miner scoring runtime pins and diagnose admission holds
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-10-06T14:44:24Z`** - sn111 commit touches scoring: fix(validator): scope split audit repairs to expected draft units
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-10-01T14:32:15Z`** - sn114 commit touches scoring: feat(scoring): count jev input tokens in miner weighted tokens
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-06T19:02:44Z`** - sn116 commit touches scoring: Merge pull request #708 from carbonphysicsai/claude/validator-19-s4-a…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-06T17:07:55Z`** - sn120 commit touches scoring: Calculate hourly current miner weights with six-hour contribution EMA
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,14 +64,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v2.0.37: fix(proxy): sum inference count` | 15 | RELEASE | 2026-09-29T14:13:00Z | sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347) |
-| `sn23:scoring_commit:2026-09-29T10:36:58Z` | 23 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix |
-| `sn46:release:v0.1.2` | 46 | RELEASE | 2026-09-29T14:13:00Z | sn46 released v0.1.2 |
-| `sn46:scoring_commit:2026-09-28T17:59:23Z` | 46 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn46 commit touches scoring: Burn whatever leaves the miners the summary's signed USD target, pric… |
-| `sn51:release:executor-v1.136` | 51 | RELEASE | 2026-09-29T14:13:00Z | sn51 released executor-v1.136 |
-| `sn53:scoring_commit:2026-09-29T09:45:05Z` | 53 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn53 commit touches scoring: Merge pull request #51 from hanlinai/docs/miner-provider-docs-pointer |
-| `sn69:scoring_commit:2026-09-26T06:16:04Z` | 69 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn69 commit touches scoring: Merge pull request #17 from HeraldMedia/miner-key-lifecycle |
-| `sn94:scoring_commit:2026-09-29T13:47:13Z` | 94 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn94 commit touches scoring: Merge pull request #225 from skyrocket2026/feat/central-access-verifie |
 | `sn1:release:v4.4.11` | 1 | RELEASE | 2026-09-29T19:33:10Z | sn1 released v4.4.11 |
 | `sn5:scoring_commit:2026-09-29T16:00:26Z` | 5 | SCORING_COMMIT | 2026-09-29T19:33:10Z | sn5 commit touches scoring: Merge pull request #10 from hone-subnet-org/v3-repo-tasks |
 | `sn15:release:v2.0.38: fix(agent): retry a 200 inferen` | 15 | RELEASE | 2026-09-29T19:33:10Z | sn15 released v2.0.38: fix(agent): retry a 200 inference response whose body is not JSON (#348) |
@@ -220,8 +233,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-06T05:47:00Z` | 71 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures |
 | `sn116:scoring_commit:2026-10-06T03:58:21Z` | 116 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun… |
 | `sn120:scoring_commit:2026-10-06T06:04:01Z` | 120 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse |
-| `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
-| `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |
+| `sn9:release:v4.13.5` | 9 | RELEASE | 2026-10-06T13:39:56Z | sn9 released v4.13.5 |
+| `sn51:scoring_commit:2026-10-06T12:42:30Z` | 51 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor… |
+| `sn67:scoring_commit:2026-10-06T07:52:50Z` | 67 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3 |
+| `sn108:scoring_commit:2026-10-06T11:47:46Z` | 108 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn108 commit touches scoring: Minimum improvement comes from the challenge server (/validator/sync … |
+| `sn116:scoring_commit:2026-10-06T13:03:10Z` | 116 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn116 commit touches scoring: Merge pull request #679 from carbonphysicsai/claude/validator-13d-l1-… |
+| `sn120:scoring_commit:2026-10-06T12:39:56Z` | 120 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn120 commit touches scoring: Document actual E24 learning and partial verifier capacity rollout |
 | `sn5:readme_task_diff:12b2073e10277692` | 5 | README_TASK_DIFF | 2026-09-29T19:33:10Z | sn5 README task/scoring sections changed |
 | `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
 | `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |

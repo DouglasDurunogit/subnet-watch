@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-06T13:39:30Z  |  block: 9224284  |  row_status: ok
+snapshot_utc: 2026-10-06T19:07:23Z  |  block: 9225924  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (303.06999969693 USD), open=True
+- registration cost: 1.529924756 TAO (464.04147774236003 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 702.6 days  |  registered at block 4165565
+- subnet age: 702.8 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4591.866040422124** (uid 85) <- the only figure quotable as achievable
-- median_miner_usd_day: 4591.866040422124
-- top_miner_usd_day: 4591.866040422124 (uid 12, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
+- median_miner_usd_day: 4577.7351176885495
+- top_miner_usd_day: 4577.7351176885495 (uid 12, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-06T13:39:30Z  |  block: 9224284  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 4583.6469 USD/day  |  payback on registration: 0.07 days
+- net margin: [UNKNOWN] USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 53.7 (rank 28), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 33.3 / freshness 35.0 / resource 11.25 / registration 9.98
-- freshness basis: SCORING_COMMIT 0.8d ago
+- score: 39.3 (rank 57), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: SCORING_COMMIT 1.0d ago
 
 ## On-chain description
 

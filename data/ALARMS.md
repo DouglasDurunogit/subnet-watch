@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-06T06:42:28Z, block 9222199
+# ALARMS - generated 2026-10-06T13:39:30Z, block 9224284
 
-window: first_seen in [2026-10-06T05:28:00Z, 2026-10-06T06:43:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-06T12:24:56Z, 2026-10-06T13:39:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-06T02:25:10Z` | 25 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn25 commit touches scoring: Merge bounded early miner recovery diagnostics |
-| `sn37:scoring_commit:2026-10-06T02:41:33Z` | 37 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26) |
-| `sn67:scoring_commit:2026-10-06T05:02:36Z` | 67 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1 |
-| `sn71:scoring_commit:2026-10-06T05:47:00Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures |
-| `sn116:scoring_commit:2026-10-06T03:58:21Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun… |
-| `sn120:scoring_commit:2026-10-06T06:04:01Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T06:43:00Z | sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse |
+| `sn9:release:v4.13.5` | 9 | RELEASE | P1 | 2026-10-06T13:39:56Z | sn9 released v4.13.5 |
+| `sn51:scoring_commit:2026-10-06T12:42:30Z` | 51 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor… |
+| `sn67:scoring_commit:2026-10-06T07:52:50Z` | 67 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3 |
+| `sn108:scoring_commit:2026-10-06T11:47:46Z` | 108 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn108 commit touches scoring: Minimum improvement comes from the challenge server (/validator/sync … |
+| `sn116:scoring_commit:2026-10-06T13:03:10Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn116 commit touches scoring: Merge pull request #679 from carbonphysicsai/claude/validator-13d-l1-… |
+| `sn120:scoring_commit:2026-10-06T12:39:56Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T13:39:56Z | sn120 commit touches scoring: Document actual E24 learning and partial verifier capacity rollout |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-06T02:25:10Z`** - sn25 commit touches scoring: Merge bounded early miner recovery diagnostics
+- **`sn9:release:v4.13.5`** - sn9 released v4.13.5
+  - published 2026-10-06T12:20:36Z (was v4.13.4)
+- **`sn51:scoring_commit:2026-10-06T12:42:30Z`** - sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:scoring_commit:2026-10-06T02:41:33Z`** - sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26)
+- **`sn67:scoring_commit:2026-10-06T07:52:50Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-06T05:02:36Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1
+- **`sn108:scoring_commit:2026-10-06T11:47:46Z`** - sn108 commit touches scoring: Minimum improvement comes from the challenge server (/validator/sync …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-06T05:47:00Z`** - sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures
+- **`sn116:scoring_commit:2026-10-06T13:03:10Z`** - sn116 commit touches scoring: Merge pull request #679 from carbonphysicsai/claude/validator-13d-l1-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-06T03:58:21Z`** - sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-06T06:04:01Z`** - sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse
+- **`sn120:scoring_commit:2026-10-06T12:39:56Z`** - sn120 commit touches scoring: Document actual E24 learning and partial verifier capacity rollout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,9 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
-| `sn61:release:4.10.8` | 61 | RELEASE | 2026-09-29T07:14:20Z | sn61 released 4.10.8 |
-| `sn61:scoring_commit:2026-09-29T06:36:25Z` | 61 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn61 commit touches scoring: refactor: move bot_virus to inactive challenges and update bex_tracer… |
 | `sn15:release:v2.0.37: fix(proxy): sum inference count` | 15 | RELEASE | 2026-09-29T14:13:00Z | sn15 released v2.0.37: fix(proxy): sum inference counters across ProxyClient instances (#347) |
 | `sn23:scoring_commit:2026-09-29T10:36:58Z` | 23 | SCORING_COMMIT | 2026-09-29T14:13:00Z | sn23 commit touches scoring: Merge pull request #57 from TrishoolAI/validator-build-fix |
 | `sn46:release:v0.1.2` | 46 | RELEASE | 2026-09-29T14:13:00Z | sn46 released v0.1.2 |
@@ -217,7 +214,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-10-05T23:47:15Z` | 97 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn97 commit touches scoring: chore: increase scoring timeout |
 | `sn116:scoring_commit:2026-10-06T00:10:09Z` | 116 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test… |
 | `sn120:scoring_commit:2026-10-05T23:28:14Z` | 120 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease |
-| `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-06T02:25:10Z` | 25 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn25 commit touches scoring: Merge bounded early miner recovery diagnostics |
+| `sn37:scoring_commit:2026-10-06T02:41:33Z` | 37 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26) |
+| `sn67:scoring_commit:2026-10-06T05:02:36Z` | 67 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1 |
+| `sn71:scoring_commit:2026-10-06T05:47:00Z` | 71 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures |
+| `sn116:scoring_commit:2026-10-06T03:58:21Z` | 116 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun… |
+| `sn120:scoring_commit:2026-10-06T06:04:01Z` | 120 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse |
 | `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
 | `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |
 | `sn5:readme_task_diff:12b2073e10277692` | 5 | README_TASK_DIFF | 2026-09-29T19:33:10Z | sn5 README task/scoring sections changed |

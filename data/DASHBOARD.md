@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-05T18:45:48Z · block 9218616 · run_status **ok**_
+_snapshot 2026-10-06T00:23:42Z · block 9220305 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 54 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 98 | `miner_burn` < 0.99 |
 | Ranked | 99 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 12 | see ALARMS.md |
+| **Positive margin** | **54** | income beats machine cost |
+| New events this window | 8 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,11 +29,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 67 | `████████████████████████████` |
+| 0 (none) | 66 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 8 | `███` |
+| 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 4 | `██` |
 | ≥0.99 dead | 30 | `█████████████` |
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn26 Perturb | 79.1 | 326 | 406 | rtx3060 | 4 | 60% |
-| 2 | sn23 Trishool | 74.6 | 1,145 | 1,145 = | cpu-small | 2 | 76% |
-| 3 | sn41 Almanac | 74 | 36.22 | 104 | cpu-small | 123 | 29% |
-| 4 | sn91 cascade | 72.2 | 552 | 2,210 | cpu-small | 5 | 52% |
-| 5 | sn53 engy | 71.9 | 1,305 | 3,577 | rtx4090 | 14 | 22% |
-| 6 | sn46 Instant | 69.3 | 235 | 299 | cpu-small | 8 | 49% |
-| 7 | sn67 Harnyx | 69.1 | 9.55 | 1,233 | cpu-small | 136 | 40% |
-| 8 | sn1 Apex | 69 | 549 | 1,049 | rtx4090* | 4 | 65% |
-| 9 | sn80 OpenRoboto | 68.6 | 481 | 2,176 | rtx4090* | 8 | 25% |
-| 10 | sn4 Targon | 67.1 | 10,750 | 31,696 | rtx4090* | 5 | 70% |
-| 11 | sn111 Claims | 66.9 | 293 | 2,625 | rtx4090* | 5 | 70% |
-| 12 | sn15 ORO | 64.7 | 9.32 | 18.59 | cpu-small | 51 | 98% |
-| 13 | sn62 Ridges | 64.1 | 128 | 1,914 | rtx4090* | 32 | 21% |
-| 14 | sn65 True Performance | 62.4 | 81.77 | 172 | rtx4090* | 6 | 75% |
-| 15 | sn61 RedTeam | 61.9 | 66.49 | 121 | rtx4090* | 129 | 1% |
-| 16 | sn14 Cacheon | 61.1 | 51.84 | 827 | rtx4090* | 13 | 60% |
-| 17 | sn28 SayGM | 59.5 | 33.58 | 2,448 | rtx4090* | 64 | 31% |
-| 18 | sn5 Hone | 58.4 | 37.60 | 40.85 | rtx4090* | 243 | 0% |
-| 19 | sn107 Minos | 58.2 | 340 | 28,247 | cpu-small | 20 | 79% |
-| 20 | sn74 Gittensor | 58.1 | 23.98 | 272 | rtx4090* | 21 | 50% |
+| 1 | sn26 Perturb | 79.2 | 339 | 422 | rtx3060 | 4 | 60% |
+| 2 | sn23 Trishool | 74.6 | 1,119 | 1,119 = | cpu-small | 2 | 77% |
+| 3 | sn41 Almanac | 73.8 | 34.72 | 101 | cpu-small | 126 | 31% |
+| 4 | sn91 cascade | 72.2 | 556 | 2,226 | cpu-small | 5 | 52% |
+| 5 | sn53 engy | 72 | 1,341 | 3,675 | rtx4090 | 14 | 22% |
+| 6 | sn67 Harnyx | 69.2 | 9.76 | 1,257 | cpu-small | 138 | 40% |
+| 7 | sn46 Instant | 69.1 | 222 | 261 | cpu-small | 8 | 51% |
+| 8 | sn1 Apex | 69 | 546 | 1,042 | rtx4090* | 4 | 66% |
+| 9 | sn80 OpenRoboto | 68.6 | 487 | 2,203 | rtx4090* | 8 | 25% |
+| 10 | sn15 ORO | 67.6 | 9.70 | 19.30 | cpu-small | 51 | 98% |
+| 11 | sn4 Targon | 67.2 | 10,984 | 32,384 | rtx4090* | 5 | 70% |
+| 12 | sn111 Claims | 65.8 | 215 | 2,599 | rtx4090* | 6 | 69% |
+| 13 | sn14 Cacheon | 64.5 | 145 | 241 | rtx4090* | 6 | 91% |
+| 14 | sn62 Ridges | 64 | 123 | 1,633 | rtx4090* | 33 | 19% |
+| 15 | sn65 True Performance | 62.5 | 82.56 | 173 | rtx4090* | 6 | 75% |
+| 16 | sn61 RedTeam | 61.8 | 66.92 | 121 | rtx4090* | 117 | 1% |
+| 17 | sn28 SayGM | 60.1 | 40.56 | 2,776 | rtx4090* | 71 | 28% |
+| 18 | sn107 Minos | 59 | 408 | 27,889 | cpu-small | 20 | 77% |
+| 19 | sn5 Hone | 58.5 | 38.38 | 41.52 | rtx4090* | 244 | 0% |
+| 20 | sn74 Gittensor | 58.1 | 24.35 | 277 | rtx4090* | 21 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 21 |
-| concentrated (30–60%) | 26 |
-| dominated (60–90%) | 23 |
-| captured (>90%) | 23 |
+| concentrated (30–60%) | 25 |
+| dominated (60–90%) | 21 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,14 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-06T00:24 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge executable root validator registrat |
+| 2026-10-06T00:24 | sn51 | RELEASE | sn51 released executor-v1.137 |
+| 2026-10-06T00:24 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverif |
+| 2026-10-06T00:24 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Stop the scoring-readiness tests from exe |
+| 2026-10-06T00:24 | sn94 | SCORING_COMMIT | sn94 commit touches scoring: docs: mission-first miner README and one  |
+| 2026-10-06T00:24 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: chore: increase scoring timeout |
+| 2026-10-06T00:24 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Merge pull request #646 from carbonphysi |
+| 2026-10-06T00:24 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Keep verifier polling after a terminal b |
 | 2026-10-05T18:46 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Switch evaluator to single-GPU replicas an |
 | 2026-10-05T18:46 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: fix(validator): the reg-index staleness a |
 | 2026-10-05T18:46 | sn22 | SCORING_COMMIT | sn22 commit touches scoring: fix(task-api): judge completions when the |
@@ -114,14 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-05T18:46 | sn50 | SCORING_COMMIT | sn50 commit touches scoring: perf(validator): reuse dendrite process p |
 | 2026-10-05T18:46 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3980 - validator: connector reads the |
 | 2026-10-05T18:46 | sn61 | RELEASE | sn61 released 4.10.9 |
-| 2026-10-05T18:46 | sn61 | SCORING_COMMIT | sn61 commit touches scoring: refactor: increase max_unique_commits for |
-| 2026-10-05T18:46 | sn65 | SCORING_COMMIT | sn65 commit touches scoring: update miner docs |
-| 2026-10-05T18:46 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-10-05T18:46 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: MINER_TERMS §3: publish rate version earn |
-| 2026-10-05T18:46 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Add prospective owned cached native eval |
-| 2026-10-05T09:25 | sn49 | SCORING_COMMIT | sn49 commit touches scoring: Upgrade validator sandbox to Isaac Sim 6. |
-| 2026-10-05T09:25 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: NO-TICKET - [P2] Validator scrape: record |
-| 2026-10-05T09:25 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Document resource-safe model capacity for |
 
 ---
 

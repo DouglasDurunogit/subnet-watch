@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-05T18:45:48Z, block 9218616
+# ALARMS - generated 2026-10-06T00:23:42Z, block 9220305
 
-window: first_seen in [2026-10-05T17:31:20Z, 2026-10-05T18:46:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-05T23:09:10Z, 2026-10-06T00:24:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-10-05T11:24:15Z` | 3 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn3 commit touches scoring: Switch evaluator to single-GPU replicas and adjust batch size |
-| `sn21:scoring_commit:2026-10-05T16:48:30Z` | 21 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn21 commit touches scoring: fix(validator): the reg-index staleness alarm follows the head refresh |
-| `sn22:scoring_commit:2026-10-05T18:30:37Z` | 22 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn22 commit touches scoring: fix(task-api): judge completions when they reach the API, run storage… |
-| `sn25:scoring_commit:2026-10-05T17:18:29Z` | 25 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn25 commit touches scoring: fix(miner): preserve boolean CLI option declarations |
-| `sn50:scoring_commit:2026-10-05T16:47:46Z` | 50 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn50 commit touches scoring: perf(validator): reuse dendrite process pool, as_completed, drop per-… |
-| `sn51:scoring_commit:2026-10-05T14:58:10Z` | 51 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn51 commit touches scoring: DAH-3980 - validator: connector reads the chain off its event loop an… |
-| `sn61:release:4.10.9` | 61 | RELEASE | P1 | 2026-10-05T18:46:20Z | sn61 released 4.10.9 |
-| `sn61:scoring_commit:2026-10-05T10:45:34Z` | 61 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn61 commit touches scoring: refactor: increase max_unique_commits for ada_detection_v3 challenge |
-| `sn65:scoring_commit:2026-10-01T06:43:28Z` | 65 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn65 commit touches scoring: update miner docs |
-| `sn67:scoring_commit:2026-10-05T11:00:55Z` | 67 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261005.post0 |
-| `sn76:scoring_commit:2026-10-05T15:29:39Z` | 76 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn76 commit touches scoring: MINER_TERMS §3: publish rate version earned-bid-2x-v1 (2x from 2026-1… |
-| `sn120:scoring_commit:2026-10-05T18:43:57Z` | 120 | SCORING_COMMIT | P1 | 2026-10-05T18:46:20Z | sn120 commit touches scoring: Add prospective owned cached native evaluation and telemetry |
+| `sn25:scoring_commit:2026-10-05T23:54:13Z` | 25 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn25 commit touches scoring: Merge executable root validator registration bootstrap |
+| `sn51:release:executor-v1.137` | 51 | RELEASE | P1 | 2026-10-06T00:24:10Z | sn51 released executor-v1.137 |
+| `sn51:scoring_commit:2026-10-05T19:18:41Z` | 51 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi… |
+| `sn71:scoring_commit:2026-10-05T22:08:15Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn71 commit touches scoring: Stop the scoring-readiness tests from execve-ing the test session |
+| `sn94:scoring_commit:2026-10-05T19:11:29Z` | 94 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn94 commit touches scoring: docs: mission-first miner README and one canonical operating guide (#… |
+| `sn97:scoring_commit:2026-10-05T23:47:15Z` | 97 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn97 commit touches scoring: chore: increase scoring timeout |
+| `sn116:scoring_commit:2026-10-06T00:10:09Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test… |
+| `sn120:scoring_commit:2026-10-05T23:28:14Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T00:24:10Z | sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-10-05T11:24:15Z`** - sn3 commit touches scoring: Switch evaluator to single-GPU replicas and adjust batch size
+- **`sn25:scoring_commit:2026-10-05T23:54:13Z`** - sn25 commit touches scoring: Merge executable root validator registration bootstrap
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-10-05T16:48:30Z`** - sn21 commit touches scoring: fix(validator): the reg-index staleness alarm follows the head refresh
+- **`sn51:release:executor-v1.137`** - sn51 released executor-v1.137
+  - published 2026-10-05T19:25:36Z (was validator-v2026.10.02.2)
+- **`sn51:scoring_commit:2026-10-05T19:18:41Z`** - sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn22:scoring_commit:2026-10-05T18:30:37Z`** - sn22 commit touches scoring: fix(task-api): judge completions when they reach the API, run storage…
+- **`sn71:scoring_commit:2026-10-05T22:08:15Z`** - sn71 commit touches scoring: Stop the scoring-readiness tests from execve-ing the test session
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-05T17:18:29Z`** - sn25 commit touches scoring: fix(miner): preserve boolean CLI option declarations
+- **`sn94:scoring_commit:2026-10-05T19:11:29Z`** - sn94 commit touches scoring: docs: mission-first miner README and one canonical operating guide (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:scoring_commit:2026-10-05T16:47:46Z`** - sn50 commit touches scoring: perf(validator): reuse dendrite process pool, as_completed, drop per-…
+- **`sn97:scoring_commit:2026-10-05T23:47:15Z`** - sn97 commit touches scoring: chore: increase scoring timeout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-05T14:58:10Z`** - sn51 commit touches scoring: DAH-3980 - validator: connector reads the chain off its event loop an…
+- **`sn116:scoring_commit:2026-10-06T00:10:09Z`** - sn116 commit touches scoring: Merge pull request #646 from carbonphysicsai/claude/validator-14-test…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.10.9`** - sn61 released 4.10.9
-  - published 2026-10-05T10:46:49Z (was 4.10.8)
-- **`sn61:scoring_commit:2026-10-05T10:45:34Z`** - sn61 commit touches scoring: refactor: increase max_unique_commits for ada_detection_v3 challenge
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn65:scoring_commit:2026-10-01T06:43:28Z`** - sn65 commit touches scoring: update miner docs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-05T11:00:55Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261005.post0
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-05T15:29:39Z`** - sn76 commit touches scoring: MINER_TERMS §3: publish rate version earned-bid-2x-v1 (2x from 2026-1…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-05T18:43:57Z`** - sn120 commit touches scoring: Add prospective owned cached native evaluation and telemetry
+- **`sn120:scoring_commit:2026-10-05T23:28:14Z`** - sn120 commit touches scoring: Keep verifier polling after a terminal backend loses its lease
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn121:burn_drop:0.600` | 121 | BURN_DROP | 2026-09-28T21:19:29Z | sn121 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn20:burn_drop:0.799` | 20 | BURN_DROP | 2026-09-29T19:33:10Z | sn20 burn fell 1.000 -> 0.799 - miners can earn again |
 | `sn46:burn_drop:0.726` | 46 | BURN_DROP | 2026-09-29T19:33:10Z | sn46 burn fell 1.000 -> 0.726 - miners can earn again |
 | `sn117:burn_drop:0.978` | 117 | BURN_DROP | 2026-09-30T20:46:36Z | sn117 burn fell 1.000 -> 0.978 - miners can earn again |
@@ -62,13 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn20:scoring_commit:2026-09-28T18:47:48Z` | 20 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn20 commit touches scoring: Allow verified Archive download mirrors for restricted routes |
-| `sn34:scoring_commit:2026-09-28T18:21:09Z` | 34 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn34 commit touches scoring: Show recent chain-verified reveals alongside validator submissions |
-| `sn45:scoring_commit:2026-09-28T16:32:06Z` | 45 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn45 commit touches scoring: Skip a validation sample when the validator's own reference call retu… |
-| `sn51:scoring_commit:2026-09-28T16:19:46Z` | 51 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn51 commit touches scoring: DAH-3804 - [P1] validator: a new node is rentable in minutes (fast pa… |
-| `sn94:release:Cathedral static TDX verifier cathedral-` | 94 | RELEASE | 2026-09-28T21:19:29Z | sn94 released Cathedral static TDX verifier cathedral-tdx-verifier-v1.0.0 |
-| `sn94:scoring_commit:2026-09-28T07:10:07Z` | 94 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn94 commit touches scoring: docs: state what the TDX and SNP validators actually apply (#203) |
-| `sn100:scoring_commit:2026-09-28T21:11:51Z` | 100 | SCORING_COMMIT | 2026-09-28T21:19:29Z | sn100 commit touches scoring: feat(master): send the completed epoch's chain time to challenges (#31 |
 | `sn15:release:v2.0.36: Send validator heartbeats every` | 15 | RELEASE | 2026-09-29T01:08:37Z | sn15 released v2.0.36: Send validator heartbeats every eight seconds |
 | `sn15:scoring_commit:2026-09-28T23:17:34Z` | 15 | SCORING_COMMIT | 2026-09-29T01:08:37Z | sn15 commit touches scoring: Send validator heartbeats every eight seconds |
 | `sn51:scoring_commit:2026-09-29T05:54:45Z` | 51 | SCORING_COMMIT | 2026-09-29T07:14:20Z | sn51 commit touches scoring: DAH-2870 - [P2] protocol 1.4.0: pod_ssh and validation_event on Execu… |
@@ -225,7 +205,18 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-05T04:23:20Z` | 71 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn71 commit touches scoring: Document resource-safe model capacity for all validators |
 | `sn108:scoring_commit:2026-10-05T07:32:21Z` | 108 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn108 commit touches scoring: docs: validator hardware requirements (min 16 physical cores + 32 GB,… |
 | `sn120:scoring_commit:2026-10-05T06:36:49Z` | 120 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn120 commit touches scoring: Align current verifier roster and publication guide with E12 |
-| `sn94:readme_task_diff:f2d2965f7776dbf2` | 94 | README_TASK_DIFF | 2026-09-28T21:19:29Z | sn94 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-10-05T11:24:15Z` | 3 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn3 commit touches scoring: Switch evaluator to single-GPU replicas and adjust batch size |
+| `sn21:scoring_commit:2026-10-05T16:48:30Z` | 21 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn21 commit touches scoring: fix(validator): the reg-index staleness alarm follows the head refresh |
+| `sn22:scoring_commit:2026-10-05T18:30:37Z` | 22 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn22 commit touches scoring: fix(task-api): judge completions when they reach the API, run storage… |
+| `sn25:scoring_commit:2026-10-05T17:18:29Z` | 25 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn25 commit touches scoring: fix(miner): preserve boolean CLI option declarations |
+| `sn50:scoring_commit:2026-10-05T16:47:46Z` | 50 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn50 commit touches scoring: perf(validator): reuse dendrite process pool, as_completed, drop per-… |
+| `sn51:scoring_commit:2026-10-05T14:58:10Z` | 51 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn51 commit touches scoring: DAH-3980 - validator: connector reads the chain off its event loop an… |
+| `sn61:release:4.10.9` | 61 | RELEASE | 2026-10-05T18:46:20Z | sn61 released 4.10.9 |
+| `sn61:scoring_commit:2026-10-05T10:45:34Z` | 61 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn61 commit touches scoring: refactor: increase max_unique_commits for ada_detection_v3 challenge |
+| `sn65:scoring_commit:2026-10-01T06:43:28Z` | 65 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn65 commit touches scoring: update miner docs |
+| `sn67:scoring_commit:2026-10-05T11:00:55Z` | 67 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261005.post0 |
+| `sn76:scoring_commit:2026-10-05T15:29:39Z` | 76 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn76 commit touches scoring: MINER_TERMS §3: publish rate version earned-bid-2x-v1 (2x from 2026-1… |
+| `sn120:scoring_commit:2026-10-05T18:43:57Z` | 120 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn120 commit touches scoring: Add prospective owned cached native evaluation and telemetry |
 | `sn51:readme_task_diff:170d4566869a3dcc` | 51 | README_TASK_DIFF | 2026-09-29T07:14:20Z | sn51 README task/scoring sections changed |
 | `sn53:readme_task_diff:298e8500ae9f9443` | 53 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn53 README task/scoring sections changed |
 | `sn69:readme_task_diff:ad40463d48698a60` | 69 | README_TASK_DIFF | 2026-09-29T14:13:00Z | sn69 README task/scoring sections changed |

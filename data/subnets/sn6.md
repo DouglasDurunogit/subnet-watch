@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-10-05T18:45:48Z  |  block: 9218616  |  row_status: ok
+snapshot_utc: 2026-10-06T00:23:42Z  |  block: 9220305  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (59.94 USD), open=True
+- registration cost: 0.2 TAO (61.17000000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 175  |  free: 0
-- subnet age: 833.1 days  |  registered at block 3219949
+- subnet age: 833.4 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 228.3407897697331** (uid 120) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.03070747576247083
-- top_miner_usd_day: 1038.0048031988017 (uid 82, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 234.66979269306003** (uid 120) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.03155860579519365
+- top_miner_usd_day: 1066.7755516949314 (uid 82, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 162  |  gini: 0.9701051154791498  |  top1_share: 0.5164469161077414  |  top10_share: 0.9800009166883108
+- earners: 162  |  gini: 0.9701051154791496  |  top1_share: 0.5164469161077415  |  top10_share: 0.9800009166883107
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-10-05T18:45:48Z  |  block: 9218616  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9556 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9547 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 25.5 (rank 74), confidence 1.0 
+- score: 25.5 (rank 70), confidence 1.0 
 - components: income 0.0 / freshness 10.5 / resource 15.0 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 53d ago
 

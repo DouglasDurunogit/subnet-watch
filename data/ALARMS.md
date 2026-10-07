@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-07T02:19:01Z, block 9228082
+# ALARMS - generated 2026-10-07T09:02:12Z, block 9230098
 
-window: first_seen in [2026-10-07T01:04:32Z, 2026-10-07T02:19:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-07T07:47:39Z, 2026-10-07T09:02:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn5:scoring_commit:2026-10-06T23:26:54Z` | 5 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100 |
-| `sn25:release:v2026.10.6-1065359600` | 25 | RELEASE | P1 | 2026-10-07T02:19:32Z | sn25 released v2026.10.6-1065359600 |
-| `sn25:scoring_commit:2026-10-06T23:47:29Z` | 25 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn25 commit touches scoring: Merge feat/operator-discovery-validator |
-| `sn71:scoring_commit:2026-10-07T01:32:36Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification |
-| `sn116:scoring_commit:2026-10-06T23:29:18Z` | 116 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz… |
-| `sn120:scoring_commit:2026-10-07T02:05:04Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle |
+| `sn25:release:v2026.10.6-1065506180` | 25 | RELEASE | P1 | 2026-10-07T09:02:39Z | sn25 released v2026.10.6-1065506180 |
+| `sn51:scoring_commit:2026-10-07T02:54:22Z` | 51 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while… |
+| `sn71:scoring_commit:2026-10-07T06:05:38Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn71 commit touches scoring: Record validator source commits in Arena runtime audit data |
+| `sn76:scoring_commit:2026-10-07T08:42:56Z` | 76 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,… |
+| `sn81:scoring_commit:2026-10-07T06:43:08Z` | 81 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn81 commit touches scoring: Keep failed scorer health and release chained forward frames |
+| `sn120:scoring_commit:2026-10-07T08:41:08Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening |
+| `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | P2 | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 
 ### detail
 
-- **`sn5:scoring_commit:2026-10-06T23:26:54Z`** - sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100
+- **`sn25:release:v2026.10.6-1065506180`** - sn25 released v2026.10.6-1065506180
+  - published 2026-10-07T05:30:14Z (was v2026.10.6-1065359600)
+- **`sn51:scoring_commit:2026-10-07T02:54:22Z`** - sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.6-1065359600`** - sn25 released v2026.10.6-1065359600
-  - published 2026-10-07T01:27:13Z (was v2026.10.6-1065229510)
-- **`sn25:scoring_commit:2026-10-06T23:47:29Z`** - sn25 commit touches scoring: Merge feat/operator-discovery-validator
+- **`sn71:scoring_commit:2026-10-07T06:05:38Z`** - sn71 commit touches scoring: Record validator source commits in Arena runtime audit data
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-07T01:32:36Z`** - sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification
+- **`sn76:scoring_commit:2026-10-07T08:42:56Z`** - sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-06T23:29:18Z`** - sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz…
+- **`sn81:scoring_commit:2026-10-07T06:43:08Z`** - sn81 commit touches scoring: Keep failed scorer health and release chained forward frames
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-07T02:05:04Z`** - sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle
+- **`sn120:scoring_commit:2026-10-07T08:41:08Z`** - sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:readme_task_diff:0fe72f423e42ba2f`** - sn76 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,10 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
-| `sn20:scoring_commit:2026-09-30T08:36:21Z` | 20 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses |
-| `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
-| `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
-| `sn91:scoring_commit:2026-09-30T07:36:25Z` | 91 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn91 commit touches scoring: Merge pull request #344 from TensorLink-AI/fix/verify-bench-queue |
 | `sn20:scoring_commit:2026-09-30T09:55:00Z` | 20 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor |
 | `sn25:scoring_commit:2026-09-30T07:07:19Z` | 25 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn25 commit touches scoring: Build mips64 miner targets as softfloat |
 | `sn51:scoring_commit:2026-09-30T13:04:53Z` | 51 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha… |
@@ -226,6 +225,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:release:worker-images-v1` | 116 | RELEASE | 2026-10-06T23:03:41Z | sn116 released worker-images-v1 |
 | `sn116:scoring_commit:2026-10-06T21:40:29Z` | 116 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn116 commit touches scoring: Fix main: rank the hidden-pool score variant per device class |
 | `sn120:scoring_commit:2026-10-06T22:39:33Z` | 120 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn120 commit touches scoring: Admit exact ROOT-pinned retired verifier terminal reports |
+| `sn5:scoring_commit:2026-10-06T23:26:54Z` | 5 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100 |
+| `sn25:release:v2026.10.6-1065359600` | 25 | RELEASE | 2026-10-07T02:19:32Z | sn25 released v2026.10.6-1065359600 |
+| `sn25:scoring_commit:2026-10-06T23:47:29Z` | 25 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn25 commit touches scoring: Merge feat/operator-discovery-validator |
+| `sn71:scoring_commit:2026-10-07T01:32:36Z` | 71 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification |
+| `sn116:scoring_commit:2026-10-06T23:29:18Z` | 116 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz… |
+| `sn120:scoring_commit:2026-10-07T02:05:04Z` | 120 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle |
 | `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
 | `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |

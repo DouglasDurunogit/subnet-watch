@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-07T02:19:01Z · block 9228082 · run_status **ok**_
+_snapshot 2026-10-07T09:02:12Z · block 9230098 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 64 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 100 | `miner_burn` < 0.99 |
 | Ranked | 100 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| **Positive margin** | **64** | income beats machine cost |
+| New events this window | 7 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -32,9 +32,9 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | 0 (none) | 67 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 7 | `███` |
+| 0.4–0.6 | 6 | `███` |
 | 0.6–0.8 | 8 | `███` |
-| 0.8–0.99 | 7 | `███` |
+| 0.8–0.99 | 8 | `███` |
 | ≥0.99 dead | 28 | `████████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn26 Perturb | 79.5 | 359 | 1,214 | rtx3060 | 4 | 60% |
-| 2 | sn41 Almanac | 73.2 | 29.60 | 115 | cpu-small | 133 | 2% |
-| 3 | sn49 Nepher Robotics | 72.3 | 1,481 | 5,205 | rtx4090* | 4 | 69% |
-| 4 | sn91 cascade | 72.1 | 535 | 2,141 | cpu-small | 5 | 52% |
-| 5 | sn67 Harnyx | 70.1 | 12.47 | 1,032 | cpu-small | 138 | 35% |
-| 6 | sn46 Instant | 69 | 213 | 257 | cpu-small | 8 | 50% |
-| 7 | sn1 Apex | 68.9 | 537 | 1,090 | rtx4090* | 4 | 66% |
-| 8 | sn80 OpenRoboto | 68.4 | 461 | 2,087 | rtx4090* | 8 | 25% |
-| 9 | sn4 Targon | 67 | 10,505 | 30,971 | rtx4090* | 5 | 70% |
-| 10 | sn15 ORO | 67 | 8.64 | 16.95 | cpu-small | 53 | 98% |
-| 11 | sn111 Claims | 66.7 | 280 | 2,514 | rtx4090* | 5 | 70% |
-| 12 | sn62 Ridges | 63.8 | 117 | 1,445 | rtx4090* | 34 | 17% |
-| 13 | sn120 Affine | 63.6 | 185 | 415 | rtx4090* | 205 | 1% |
-| 14 | sn65 True Performance | 62.4 | 80.85 | 170 | rtx4090* | 6 | 75% |
-| 15 | sn61 RedTeam | 62.1 | 71.51 | 112 | rtx4090* | 128 | 1% |
-| 16 | sn23 Trishool | 62 | 926 | 926 = | cpu-small | 2 | 80% |
-| 17 | sn14 Cacheon | 60.6 | 43.53 | 1,069 | rtx4090* | 7 | 83% |
-| 18 | sn53 engy | 60.2 | 1,369 | 3,751 | rtx4090 | 14 | 22% |
-| 19 | sn74 Gittensor | 58.6 | 27.19 | 150 | rtx4090* | 21 | 50% |
-| 20 | sn107 Minos | 57.9 | 315 | 26,756 | cpu-small | 20 | 80% |
+| 1 | sn41 Almanac | 73.4 | 31.34 | 122 | cpu-small | 133 | 2% |
+| 2 | sn49 Nepher Robotics | 72.5 | 1,557 | 5,471 | rtx4090* | 4 | 69% |
+| 3 | sn91 cascade | 71.2 | 411 | 1,098 | cpu-small | 5 | 52% |
+| 4 | sn46 Instant | 70.6 | 346 | 354 | cpu-small | 6 | 48% |
+| 5 | sn1 Apex | 68.9 | 536 | 1,090 | rtx4090* | 4 | 68% |
+| 6 | sn67 Harnyx | 68.9 | 9.34 | 1,044 | cpu-small | 131 | 34% |
+| 7 | sn80 OpenRoboto | 68.5 | 474 | 2,146 | rtx4090* | 8 | 25% |
+| 8 | sn15 ORO | 67.7 | 9.30 | 20,430 | cpu-small | 63 | 97% |
+| 9 | sn4 Targon | 67.1 | 10,815 | 31,880 | rtx4090* | 5 | 70% |
+| 10 | sn26 Perturb | 66.3 | 244 | 408 | rtx3060 | 4 | 60% |
+| 11 | sn120 Affine | 63.9 | 202 | 291 | rtx4090* | 210 | 1% |
+| 12 | sn62 Ridges | 63.9 | 120 | 1,483 | rtx4090* | 34 | 17% |
+| 13 | sn23 Trishool | 62.7 | 1,136 | 1,136 = | cpu-small | 2 | 76% |
+| 14 | sn61 RedTeam | 62.5 | 81.47 | 120 | rtx4090* | 125 | 1% |
+| 15 | sn65 True Performance | 62.4 | 82.04 | 172 | rtx4090* | 6 | 75% |
+| 16 | sn14 Cacheon | 61.2 | 53.23 | 6,395 | rtx4090* | 7 | 83% |
+| 17 | sn53 engy | 60.3 | 1,427 | 3,909 | rtx4090 | 14 | 22% |
+| 18 | sn28 SayGM | 59.9 | 37.81 | 7,563 | rtx4090* | 74 | 37% |
+| 19 | sn74 Gittensor | 58.3 | 25.71 | 142 | rtx4090* | 21 | 50% |
+| 20 | sn5 Hone | 58.2 | 36.79 | 41.77 | rtx4090* | 245 | 0% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 21 |
-| concentrated (30–60%) | 26 |
-| dominated (60–90%) | 25 |
+| wide (<30%) | 22 |
+| concentrated (30–60%) | 24 |
+| dominated (60–90%) | 26 |
 | captured (>90%) | 24 |
 
 ## Hardware evidence quality
@@ -107,6 +107,13 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-07T09:02 | sn25 | RELEASE | sn25 released v2026.10.6-1065506180 |
+| 2026-10-07T09:02 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3980 - validator: a filler create sta |
+| 2026-10-07T09:02 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Record validator source commits in Arena  |
+| 2026-10-07T09:02 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/c |
+| 2026-10-07T09:02 | sn76 | README_TASK_DIFF | sn76 README task/scoring sections changed |
+| 2026-10-07T09:02 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Keep failed scorer health and release cha |
+| 2026-10-07T09:02 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Validate frozen blacklist freshness at t |
 | 2026-10-07T02:19 | sn5 | SCORING_COMMIT | sn5 commit touches scoring: Merge pull request #18 from hone-subnet-or |
 | 2026-10-07T02:19 | sn25 | RELEASE | sn25 released v2026.10.6-1065359600 |
 | 2026-10-07T02:19 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge feat/operator-discovery-validator |
@@ -115,13 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-07T02:19 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Prepare isolated all750 matched native e |
 | 2026-10-06T23:03 | sn10 | BURN_DROP | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | 2026-10-06T23:03 | sn25 | RELEASE | sn25 released v2026.10.6-1065229510 |
-| 2026-10-06T23:03 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge feat/operator-discovery-miner into  |
-| 2026-10-06T23:03 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Prove dynamic Deepline tools through base |
-| 2026-10-06T23:03 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Reduce intake seal contention and isolate |
-| 2026-10-06T23:03 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(validator): default miner burn to 9 |
-| 2026-10-06T23:03 | sn116 | RELEASE | sn116 released worker-images-v1 |
-| 2026-10-06T23:03 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Fix main: rank the hidden-pool score var |
-| 2026-10-06T23:03 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Admit exact ROOT-pinned retired verifier |
 
 ---
 

@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-10-06T23:03:13Z  |  block: 9227103  |  row_status: ok
+snapshot_utc: 2026-10-07T02:19:01Z  |  block: 9228082  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.859990404 TAO (262.95926583108 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 254  |  free: 0
-- subnet age: 935.5 days  |  registered at block 2491604
+- registration cost: 0.844614255 TAO (246.3233013282 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 255  |  free: 0
+- subnet age: 935.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 50.52509419124987** (uid 85) <- the only figure quotable as achievable
-- median_miner_usd_day: 46.329238618274104
-- top_miner_usd_day: 50.52509419124987 (uid 85, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 49.287230311467624** (uid 75) <- the only figure quotable as achievable
+- median_miner_usd_day: 43.773743530862774
+- top_miner_usd_day: 49.287230311467624 (uid 75, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 244  |  gini: 0.031616338393584575  |  top1_share: 0.004435372479204396  |  top10_share: 0.04423094631511096
+- earners: 245  |  gini: 0.04064248603145382  |  top1_share: 0.004509806919113937  |  top10_share: 0.04496048186140369
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -28,22 +28,22 @@ snapshot_utc: 2026-10-06T23:03:13Z  |  block: 9227103  |  row_status: ok
 - status: **ok** 
 - README: 4290 bytes, sha 8e5fadf7a2ef99e0
 - latest release: (none) 
-- last commit: 2026-10-02T06:50:02Z
-- scoring-related commit: Merge pull request #13 from hone-subnet-org/terminal-task-fixture 2026-09-30T18:36:40Z
+- last commit: 2026-10-06T23:26:54Z
+- scoring-related commit: Merge pull request #18 from hone-subnet-org/score-window-100 2026-10-06T23:26:54Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 38.1101 USD/day  |  payback on registration: 6.9 days
+- net margin: 35.5546 USD/day  |  payback on registration: 6.93 days
 
 ## Score
 
 - gate: **OK** 
-- score: 58.2 (rank 20), confidence 0.85 - hardware requirement unknown
-- components: income 14.48 / freshness 35.0 / resource 11.25 / registration 7.7
-- freshness basis: SCORING_COMMIT 6.1d ago
+- score: 57.9 (rank 22), confidence 0.85 - hardware requirement unknown
+- components: income 14.22 / freshness 35.0 / resource 11.25 / registration 7.69
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 

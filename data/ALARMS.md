@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-06T23:03:13Z, block 9227103
+# ALARMS - generated 2026-10-07T02:19:01Z, block 9228082
 
-window: first_seen in [2026-10-06T21:48:41Z, 2026-10-06T23:03:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-07T01:04:32Z, 2026-10-07T02:19:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,35 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.902` | 10 | BURN_DROP | P0 | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
-| `sn25:release:v2026.10.6-1065229510` | 25 | RELEASE | P1 | 2026-10-06T23:03:41Z | sn25 released v2026.10.6-1065229510 |
-| `sn25:scoring_commit:2026-10-06T22:10:55Z` | 25 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn25 commit touches scoring: Merge feat/operator-discovery-miner into feat/operator-discovery |
-| `sn71:scoring_commit:2026-10-06T22:49:48Z` | 71 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn71 commit touches scoring: Prove dynamic Deepline tools through baseline and miner publication |
-| `sn78:scoring_commit:2026-10-06T20:23:37Z` | 78 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn78 commit touches scoring: Reduce intake seal contention and isolate upgraded miner imports (#230 |
-| `sn111:scoring_commit:2026-10-06T21:03:45Z` | 111 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn111 commit touches scoring: feat(validator): default miner burn to 90 percent |
-| `sn116:release:worker-images-v1` | 116 | RELEASE | P1 | 2026-10-06T23:03:41Z | sn116 released worker-images-v1 |
-| `sn116:scoring_commit:2026-10-06T21:40:29Z` | 116 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn116 commit touches scoring: Fix main: rank the hidden-pool score variant per device class |
-| `sn120:scoring_commit:2026-10-06T22:39:33Z` | 120 | SCORING_COMMIT | P1 | 2026-10-06T23:03:41Z | sn120 commit touches scoring: Admit exact ROOT-pinned retired verifier terminal reports |
+| `sn5:scoring_commit:2026-10-06T23:26:54Z` | 5 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100 |
+| `sn25:release:v2026.10.6-1065359600` | 25 | RELEASE | P1 | 2026-10-07T02:19:32Z | sn25 released v2026.10.6-1065359600 |
+| `sn25:scoring_commit:2026-10-06T23:47:29Z` | 25 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn25 commit touches scoring: Merge feat/operator-discovery-validator |
+| `sn71:scoring_commit:2026-10-07T01:32:36Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification |
+| `sn116:scoring_commit:2026-10-06T23:29:18Z` | 116 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz… |
+| `sn120:scoring_commit:2026-10-07T02:05:04Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T02:19:32Z | sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle |
 
 ### detail
 
-- **`sn10:burn_drop:0.902`** - sn10 burn fell 1.000 -> 0.902 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.6-1065229510`** - sn25 released v2026.10.6-1065229510
-  - published 2026-10-06T21:49:48Z (was v2026.10.1-1060587890)
-- **`sn25:scoring_commit:2026-10-06T22:10:55Z`** - sn25 commit touches scoring: Merge feat/operator-discovery-miner into feat/operator-discovery
+- **`sn5:scoring_commit:2026-10-06T23:26:54Z`** - sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-06T22:49:48Z`** - sn71 commit touches scoring: Prove dynamic Deepline tools through baseline and miner publication
+- **`sn25:release:v2026.10.6-1065359600`** - sn25 released v2026.10.6-1065359600
+  - published 2026-10-07T01:27:13Z (was v2026.10.6-1065229510)
+- **`sn25:scoring_commit:2026-10-06T23:47:29Z`** - sn25 commit touches scoring: Merge feat/operator-discovery-validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-06T20:23:37Z`** - sn78 commit touches scoring: Reduce intake seal contention and isolate upgraded miner imports (#230
+- **`sn71:scoring_commit:2026-10-07T01:32:36Z`** - sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-10-06T21:03:45Z`** - sn111 commit touches scoring: feat(validator): default miner burn to 90 percent
+- **`sn116:scoring_commit:2026-10-06T23:29:18Z`** - sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:worker-images-v1`** - sn116 released worker-images-v1
-  - published 2026-10-06T20:57:42Z (was archive/pre-wave-b-legacy-2026-08-30: B-01E immutable pre-quarantine archive)
-- **`sn116:scoring_commit:2026-10-06T21:40:29Z`** - sn116 commit touches scoring: Fix main: rank the hidden-pool score variant per device class
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-06T22:39:33Z`** - sn120 commit touches scoring: Admit exact ROOT-pinned retired verifier terminal reports
+- **`sn120:scoring_commit:2026-10-07T02:05:04Z`** - sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -51,11 +42,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
-| `sn20:scoring_commit:2026-09-29T23:10:34Z` | 20 | SCORING_COMMIT | 2026-09-29T23:14:10Z | sn20 commit touches scoring: Bind evaluator publications to their window policy |
-| `sn5:scoring_commit:2026-09-29T22:46:58Z` | 5 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn5 commit touches scoring: Test this release against the previous release's miner and validator |
-| `sn15:release:v2.0.39: Translate live Chutes model IDs` | 15 | RELEASE | 2026-09-30T02:18:29Z | sn15 released v2.0.39: Translate live Chutes model IDs on OpenRouter runs (#345) |
-| `sn20:scoring_commit:2026-09-30T00:12:27Z` | 20 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn20 commit touches scoring: Record foreground waits for prefetched challengers |
-| `sn94:scoring_commit:2026-09-30T01:23:22Z` | 94 | SCORING_COMMIT | 2026-09-30T02:18:29Z | sn94 commit touches scoring: feat(snp): emit the validator policy entry an observed guest needs (#… |
+| `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn20:scoring_commit:2026-09-30T08:36:21Z` | 20 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn20 commit touches scoring: Keep validator credentials out of local GPU subprocesses |
 | `sn51:release:lium-core-v0.1.13` | 51 | RELEASE | 2026-09-30T08:50:53Z | sn51 released lium-core-v0.1.13 |
 | `sn51:scoring_commit:2026-09-30T08:43:37Z` | 51 | SCORING_COMMIT | 2026-09-30T08:50:53Z | sn51 commit touches scoring: DAH-3890 - [P1] validator: unique obfuscated key names in the machine… |
@@ -231,6 +218,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn114:scoring_commit:2026-10-01T14:32:15Z` | 114 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn114 commit touches scoring: feat(scoring): count jev input tokens in miner weighted tokens |
 | `sn116:scoring_commit:2026-10-06T19:02:44Z` | 116 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn116 commit touches scoring: Merge pull request #708 from carbonphysicsai/claude/validator-19-s4-a… |
 | `sn120:scoring_commit:2026-10-06T17:07:55Z` | 120 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn120 commit touches scoring: Calculate hourly current miner weights with six-hour contribution EMA |
+| `sn25:release:v2026.10.6-1065229510` | 25 | RELEASE | 2026-10-06T23:03:41Z | sn25 released v2026.10.6-1065229510 |
+| `sn25:scoring_commit:2026-10-06T22:10:55Z` | 25 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn25 commit touches scoring: Merge feat/operator-discovery-miner into feat/operator-discovery |
+| `sn71:scoring_commit:2026-10-06T22:49:48Z` | 71 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn71 commit touches scoring: Prove dynamic Deepline tools through baseline and miner publication |
+| `sn78:scoring_commit:2026-10-06T20:23:37Z` | 78 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn78 commit touches scoring: Reduce intake seal contention and isolate upgraded miner imports (#230 |
+| `sn111:scoring_commit:2026-10-06T21:03:45Z` | 111 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn111 commit touches scoring: feat(validator): default miner burn to 90 percent |
+| `sn116:release:worker-images-v1` | 116 | RELEASE | 2026-10-06T23:03:41Z | sn116 released worker-images-v1 |
+| `sn116:scoring_commit:2026-10-06T21:40:29Z` | 116 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn116 commit touches scoring: Fix main: rank the hidden-pool score variant per device class |
+| `sn120:scoring_commit:2026-10-06T22:39:33Z` | 120 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn120 commit touches scoring: Admit exact ROOT-pinned retired verifier terminal reports |
 | `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
 | `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |

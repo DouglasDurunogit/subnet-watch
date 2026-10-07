@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-07T09:02:12Z  |  block: 9230098  |  row_status: ok
+snapshot_utc: 2026-10-07T16:23:17Z  |  block: 9232303  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (300.1999996998 USD), open=True
+- registration cost: 0.999999999 TAO (291.32999970867 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 703.4 days  |  registered at block 4165565
+- subnet age: 703.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4554.873590976899** (uid 126) <- the only figure quotable as achievable
-- median_miner_usd_day: 4554.873590976899
-- top_miner_usd_day: 4554.873590976899 (uid 12, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 4451.315647739841** (uid 126) <- the only figure quotable as achievable
+- median_miner_usd_day: 4451.315647739841
+- top_miner_usd_day: 4451.315647739841 (uid 12, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,24 +26,24 @@ snapshot_utc: 2026-10-07T09:02:12Z  |  block: 9230098  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 3817 bytes, sha d4e0c8138a2767eb
+- README: 5093 bytes, sha fbca33fd060cacc2
 - latest release: (none) 
-- last commit: 2026-10-05T11:24:15Z
-- scoring-related commit: Switch evaluator to single-GPU replicas and adjust batch size 2026-10-05T11:24:15Z
+- last commit: 2026-10-07T10:33:19Z
+- scoring-related commit: Add math, code, and text competitions with gradual reward transition 2026-10-06T12:20:17Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 4546.6544 USD/day  |  payback on registration: 0.07 days
+- net margin: 4443.0965 USD/day  |  payback on registration: 0.07 days
 
 ## Score
 
 - gate: **OK** 
-- score: 53.7 (rank 29), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 33.27 / freshness 35.0 / resource 11.25 / registration 9.98
-- freshness basis: SCORING_COMMIT 1.6d ago
+- score: 53.6 (rank 28), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 33.18 / freshness 35.0 / resource 11.25 / registration 9.98
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -144,6 +144,18 @@ teutonic-miner auth --hotkey "$HOTKEY_NAME"
 The public mailbox URL is built in. The encrypted result is written locally as
 `upload-auth.json` with mode `0600`. Never share or commit this file.
 
+Credentials last seven days. While the registration remains eligible, the
+controller renews them one day before expiry and replaces already-expired
+credentials after an outage. The same hotkey and upload prefix are retained;
+the expired secret and session token cannot be reused.
+
+The current CLI discovers and decrypts the latest generation automatically.
+`auth` refreshes the local file, and `upload` and `submit` retrieve current
+credentials before uploading. Update older CLI installations to use automatic
+discovery; `auth --generation N` remains available to select an explicit generation.
+Renewal never restores upload access after a finalized ready submission,
+deregistration, or upload quota revocation.
+
 ### Upload and submit a model
 
 The model directory must contain a complete checkpoint. It must not contain
@@ -192,5 +204,15 @@ teutonic-miner list
 teutonic-miner use your-other-hotkey
 teutonic-miner status
 ```
+
+## Competitions
+
+Miners can select `main`, `math`, `code`, or `text` with
+`teutonic-miner ready --competition math` (also supported by `submit`). Omission
+selects MAIN. One ready submission per hotkey is shared across all competitions.
+Specialists use 30,000 planned samples with a 70/15/15 category-group mix;
+early stopping remains enabled. PostgreSQL controls active manifests and thresholds.
+See [deployment and configuration](DEPLOY.md#main-math-code-and-text-competitions)
+for manifest publication, `scripts/configure_evaluation.py`, and gradual rewards.
 
 ```

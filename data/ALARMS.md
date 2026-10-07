@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-07T09:02:12Z, block 9230098
+# ALARMS - generated 2026-10-07T16:23:17Z, block 9232303
 
-window: first_seen in [2026-10-07T07:47:39Z, 2026-10-07T09:02:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-07T15:08:49Z, 2026-10-07T16:23:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.6-1065506180` | 25 | RELEASE | P1 | 2026-10-07T09:02:39Z | sn25 released v2026.10.6-1065506180 |
-| `sn51:scoring_commit:2026-10-07T02:54:22Z` | 51 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while… |
-| `sn71:scoring_commit:2026-10-07T06:05:38Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn71 commit touches scoring: Record validator source commits in Arena runtime audit data |
-| `sn76:scoring_commit:2026-10-07T08:42:56Z` | 76 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,… |
-| `sn81:scoring_commit:2026-10-07T06:43:08Z` | 81 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn81 commit touches scoring: Keep failed scorer health and release chained forward frames |
-| `sn120:scoring_commit:2026-10-07T08:41:08Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T09:02:39Z | sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening |
-| `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | P2 | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
+| `sn37:burn_drop:0.978` | 37 | BURN_DROP | P0 | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
+| `sn3:scoring_commit:2026-10-06T12:20:17Z` | 3 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn3 commit touches scoring: Add math, code, and text competitions with gradual reward transition |
+| `sn15:scoring_commit:2026-10-07T09:22:23Z` | 15 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn15 commit touches scoring: Bind configured Readers to cancellable miner-funded simulator inferen… |
+| `sn38:scoring_commit:2026-10-07T13:55:15Z` | 38 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn38 commit touches scoring: Leak returns to the score at 30%, over a [-11, -25] window |
+| `sn51:scoring_commit:2026-10-07T14:24:30Z` | 51 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn51 commit touches scoring: DAH-3980 - validator: a customer rent removes the node's filler in on… |
+| `sn67:scoring_commit:2026-10-07T09:20:51Z` | 67 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn67 commit touches scoring: Document miner decision queries and staging smoke results (#1673) |
+| `sn71:scoring_commit:2026-10-07T15:24:41Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn71 commit touches scoring: Assert current scoring adapter and all judge results in managed-provi… |
+| `sn120:scoring_commit:2026-10-07T14:22:11Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T16:23:49Z | sn120 commit touches scoring: Record verified checkpoint-32 full held-out regression |
 
 ### detail
 
-- **`sn25:release:v2026.10.6-1065506180`** - sn25 released v2026.10.6-1065506180
-  - published 2026-10-07T05:30:14Z (was v2026.10.6-1065359600)
-- **`sn51:scoring_commit:2026-10-07T02:54:22Z`** - sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while…
+- **`sn37:burn_drop:0.978`** - sn37 burn fell 1.000 -> 0.978 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn3:scoring_commit:2026-10-06T12:20:17Z`** - sn3 commit touches scoring: Add math, code, and text competitions with gradual reward transition
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-07T06:05:38Z`** - sn71 commit touches scoring: Record validator source commits in Arena runtime audit data
+- **`sn15:scoring_commit:2026-10-07T09:22:23Z`** - sn15 commit touches scoring: Bind configured Readers to cancellable miner-funded simulator inferen…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-07T08:42:56Z`** - sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,…
+- **`sn38:scoring_commit:2026-10-07T13:55:15Z`** - sn38 commit touches scoring: Leak returns to the score at 30%, over a [-11, -25] window
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-07T06:43:08Z`** - sn81 commit touches scoring: Keep failed scorer health and release chained forward frames
+- **`sn51:scoring_commit:2026-10-07T14:24:30Z`** - sn51 commit touches scoring: DAH-3980 - validator: a customer rent removes the node's filler in on…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-07T08:41:08Z`** - sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening
+- **`sn67:scoring_commit:2026-10-07T09:20:51Z`** - sn67 commit touches scoring: Document miner decision queries and staging smoke results (#1673)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:readme_task_diff:0fe72f423e42ba2f`** - sn76 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn71:scoring_commit:2026-10-07T15:24:41Z`** - sn71 commit touches scoring: Assert current scoring adapter and all judge results in managed-provi…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-07T14:22:11Z`** - sn120 commit touches scoring: Record verified checkpoint-32 full held-out regression
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -46,11 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
-| `sn20:scoring_commit:2026-09-30T09:55:00Z` | 20 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn20 commit touches scoring: Isolate GPU model execution and enforce validator download stake floor |
-| `sn25:scoring_commit:2026-09-30T07:07:19Z` | 25 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn25 commit touches scoring: Build mips64 miner targets as softfloat |
-| `sn51:scoring_commit:2026-09-30T13:04:53Z` | 51 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: log repeated check outcomes at DEBUG, cha… |
-| `sn97:scoring_commit:2026-09-29T15:51:34Z` | 97 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn97 commit touches scoring: fix: accept submits like the bench in eval and pre-eval, stop scoring… |
-| `sn111:scoring_commit:2026-09-29T23:46:11Z` | 111 | SCORING_COMMIT | 2026-09-30T15:53:11Z | sn111 commit touches scoring: feat(validator): wait for due canonical batches |
 | `sn5:scoring_commit:2026-09-30T18:36:40Z` | 5 | SCORING_COMMIT | 2026-09-30T20:46:36Z | sn5 commit touches scoring: Merge pull request #13 from hone-subnet-org/terminal-task-fixture |
 | `sn8:scoring_commit:2026-09-24T08:39:47Z` | 8 | SCORING_COMMIT | 2026-09-30T20:46:36Z | sn8 commit touches scoring: disable miner daily summary (#934) |
 | `sn41:scoring_commit:2026-09-30T18:16:49Z` | 41 | SCORING_COMMIT | 2026-09-30T20:46:36Z | sn41 commit touches scoring: Updates to handling excess miner emissions and burn |
@@ -231,6 +229,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-07T01:32:36Z` | 71 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification |
 | `sn116:scoring_commit:2026-10-06T23:29:18Z` | 116 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz… |
 | `sn120:scoring_commit:2026-10-07T02:05:04Z` | 120 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle |
+| `sn25:release:v2026.10.6-1065506180` | 25 | RELEASE | 2026-10-07T09:02:39Z | sn25 released v2026.10.6-1065506180 |
+| `sn51:scoring_commit:2026-10-07T02:54:22Z` | 51 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while… |
+| `sn71:scoring_commit:2026-10-07T06:05:38Z` | 71 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn71 commit touches scoring: Record validator source commits in Arena runtime audit data |
+| `sn76:scoring_commit:2026-10-07T08:42:56Z` | 76 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,… |
+| `sn81:scoring_commit:2026-10-07T06:43:08Z` | 81 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn81 commit touches scoring: Keep failed scorer health and release chained forward frames |
+| `sn120:scoring_commit:2026-10-07T08:41:08Z` | 120 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening |
 | `sn66:readme_task_diff:6d33aaba03894c45` | 66 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn66 README task/scoring sections changed |
 | `sn108:readme_task_diff:ba7ede20804945f8` | 108 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:f5c96a7d91dc6d0c` | 117 | README_TASK_DIFF | 2026-09-30T20:46:36Z | sn117 README task/scoring sections changed |
@@ -243,6 +247,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
+| `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

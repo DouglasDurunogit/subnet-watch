@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-07T21:27:55Z, block 9233826
+# ALARMS - generated 2026-10-08T01:21:26Z, block 9234994
 
-window: first_seen in [2026-10-07T20:13:20Z, 2026-10-07T21:28:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-08T00:06:53Z, 2026-10-08T01:21:53Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v2.3.0` | 15 | RELEASE | P1 | 2026-10-07T21:28:20Z | sn15 released v2.3.0 |
-| `sn25:scoring_commit:2026-10-07T16:41:48Z` | 25 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn25 commit touches scoring: Merge the sole validator's activation-pending config path |
-| `sn50:release:v1.14.0` | 50 | RELEASE | P1 | 2026-10-07T21:28:20Z | sn50 released v1.14.0 |
-| `sn51:scoring_commit:2026-10-07T19:36:24Z` | 51 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn51 commit touches scoring: DAH-3980 - validator: encrypted volume and renter keys in one exec, r… |
-| `sn54:scoring_commit:2026-09-28T17:33:55Z` | 54 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn54 commit touches scoring: help miners to sign message |
-| `sn66:scoring_commit:2026-10-07T15:16:57Z` | 66 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn66 commit touches scoring: tasks: an unusable identity home is an identity failure, not a doctor… |
-| `sn71:scoring_commit:2026-10-07T21:26:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn71 commit touches scoring: Merge PR #265: refresh protected verifier manifest |
-| `sn81:scoring_commit:2026-10-07T16:49:28Z` | 81 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn81 commit touches scoring: Fix pinned operator generation task admission |
-| `sn120:scoring_commit:2026-10-07T21:07:51Z` | 120 | SCORING_COMMIT | P1 | 2026-10-07T21:28:20Z | sn120 commit touches scoring: Admit explicitly signed source-bound verifier capacity sidecars |
-| `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | P2 | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
-| `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | P2 | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-07T20:43:00Z` | 25 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey |
+| `sn71:scoring_commit:2026-10-07T22:35:21Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events |
+| `sn78:scoring_commit:2026-10-08T00:04:50Z` | 78 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231 |
+| `sn116:scoring_commit:2026-10-07T23:24:57Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-… |
+| `sn120:scoring_commit:2026-10-07T23:59:16Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches |
 
 ### detail
 
-- **`sn15:release:v2.3.0`** - sn15 released v2.3.0
-  - published 2026-10-07T09:22:23Z (was Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362))
-- **`sn25:scoring_commit:2026-10-07T16:41:48Z`** - sn25 commit touches scoring: Merge the sole validator's activation-pending config path
+- **`sn25:scoring_commit:2026-10-07T20:43:00Z`** - sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:release:v1.14.0`** - sn50 released v1.14.0
-  - published 2026-10-07T18:32:25Z (was v1.13.0)
-- **`sn51:scoring_commit:2026-10-07T19:36:24Z`** - sn51 commit touches scoring: DAH-3980 - validator: encrypted volume and renter keys in one exec, r…
+- **`sn71:scoring_commit:2026-10-07T22:35:21Z`** - sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn54:scoring_commit:2026-09-28T17:33:55Z`** - sn54 commit touches scoring: help miners to sign message
+- **`sn78:scoring_commit:2026-10-08T00:04:50Z`** - sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:scoring_commit:2026-10-07T15:16:57Z`** - sn66 commit touches scoring: tasks: an unusable identity home is an identity failure, not a doctor…
+- **`sn116:scoring_commit:2026-10-07T23:24:57Z`** - sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-07T21:26:53Z`** - sn71 commit touches scoring: Merge PR #265: refresh protected verifier manifest
+- **`sn120:scoring_commit:2026-10-07T23:59:16Z`** - sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-07T16:49:28Z`** - sn81 commit touches scoring: Fix pinned operator generation task admission
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-07T21:07:51Z`** - sn120 commit touches scoring: Admit explicitly signed source-bound verifier capacity sidecars
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn54:readme_task_diff:97fe30779066869c`** - sn54 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn66:readme_task_diff:3eb60404bf70ad6f`** - sn66 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -58,10 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
-| `sn71:scoring_commit:2026-09-30T23:08:42Z` | 71 | SCORING_COMMIT | 2026-10-01T00:12:52Z | sn71 commit touches scoring: Bind October verifier evidence release |
-| `sn74:release:release-20260930-235444` | 74 | RELEASE | 2026-10-01T00:12:52Z | sn74 released release-20260930-235444 |
-| `sn78:scoring_commit:2026-09-30T23:10:44Z` | 78 | SCORING_COMMIT | 2026-10-01T00:12:52Z | sn78 commit touches scoring: Separate miner transport signer from cohort reviewers |
-| `sn117:release:everycli v0.1.4` | 117 | RELEASE | 2026-10-01T00:12:52Z | sn117 released everycli v0.1.4 |
 | `sn25:release:v2026.9.30-1060350310` | 25 | RELEASE | 2026-10-01T06:20:47Z | sn25 released v2026.9.30-1060350310 |
 | `sn25:scoring_commit:2026-10-01T04:51:10Z` | 25 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn25 commit touches scoring: Verify and aggregate pinned mainnet image receipts offline |
 | `sn71:scoring_commit:2026-10-01T05:00:38Z` | 71 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn71 commit touches scoring: Bind protected workflows to verifier recovery source |
@@ -244,7 +222,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-07T09:20:51Z` | 67 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn67 commit touches scoring: Document miner decision queries and staging smoke results (#1673) |
 | `sn71:scoring_commit:2026-10-07T15:24:41Z` | 71 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn71 commit touches scoring: Assert current scoring adapter and all judge results in managed-provi… |
 | `sn120:scoring_commit:2026-10-07T14:22:11Z` | 120 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn120 commit touches scoring: Record verified checkpoint-32 full held-out regression |
-| `sn117:readme_task_diff:1174f1fc742efb54` | 117 | README_TASK_DIFF | 2026-10-01T00:12:52Z | sn117 README task/scoring sections changed |
+| `sn15:release:v2.3.0` | 15 | RELEASE | 2026-10-07T21:28:20Z | sn15 released v2.3.0 |
+| `sn25:scoring_commit:2026-10-07T16:41:48Z` | 25 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn25 commit touches scoring: Merge the sole validator's activation-pending config path |
+| `sn50:release:v1.14.0` | 50 | RELEASE | 2026-10-07T21:28:20Z | sn50 released v1.14.0 |
+| `sn51:scoring_commit:2026-10-07T19:36:24Z` | 51 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn51 commit touches scoring: DAH-3980 - validator: encrypted volume and renter keys in one exec, r… |
+| `sn54:scoring_commit:2026-09-28T17:33:55Z` | 54 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn54 commit touches scoring: help miners to sign message |
+| `sn66:scoring_commit:2026-10-07T15:16:57Z` | 66 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn66 commit touches scoring: tasks: an unusable identity home is an identity failure, not a doctor… |
+| `sn71:scoring_commit:2026-10-07T21:26:53Z` | 71 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn71 commit touches scoring: Merge PR #265: refresh protected verifier manifest |
+| `sn81:scoring_commit:2026-10-07T16:49:28Z` | 81 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn81 commit touches scoring: Fix pinned operator generation task admission |
+| `sn120:scoring_commit:2026-10-07T21:07:51Z` | 120 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn120 commit touches scoring: Admit explicitly signed source-bound verifier capacity sidecars |
 | `sn78:readme_task_diff:1b02e745e3230412` | 78 | README_TASK_DIFF | 2026-10-01T06:20:47Z | sn78 README task/scoring sections changed |
 | `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
@@ -254,6 +240,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
+| `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
+| `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

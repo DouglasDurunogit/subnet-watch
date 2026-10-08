@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-08T01:21:26Z, block 9234994
+# ALARMS - generated 2026-10-08T07:46:04Z, block 9236917
 
-window: first_seen in [2026-10-08T00:06:53Z, 2026-10-08T01:21:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-08T06:31:34Z, 2026-10-08T07:46:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-07T20:43:00Z` | 25 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey |
-| `sn71:scoring_commit:2026-10-07T22:35:21Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events |
-| `sn78:scoring_commit:2026-10-08T00:04:50Z` | 78 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231 |
-| `sn116:scoring_commit:2026-10-07T23:24:57Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-… |
-| `sn120:scoring_commit:2026-10-07T23:59:16Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T01:21:53Z | sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches |
+| `sn25:burn_drop:0.000` | 25 | BURN_DROP | P0 | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn25:scoring_commit:2026-10-08T02:54:58Z` | 25 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator |
+| `sn51:release:executor-v1.138` | 51 | RELEASE | P1 | 2026-10-08T07:46:34Z | sn51 released executor-v1.138 |
+| `sn51:scoring_commit:2026-10-08T07:42:00Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (… |
+| `sn71:scoring_commit:2026-10-08T06:51:28Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati… |
+| `sn100:scoring_commit:2026-10-08T04:21:19Z` | 100 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script … |
+| `sn116:release:producer-code-r2: code-only tag for the ` | 116 | RELEASE | P1 | 2026-10-08T07:46:34Z | sn116 released producer-code-r2: code-only tag for the producer and the leak runbook |
+| `sn116:scoring_commit:2026-10-08T07:05:19Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd… |
+| `sn120:scoring_commit:2026-10-08T06:54:09Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn120 commit touches scoring: Validate paired held-out trainer optimization results |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-07T20:43:00Z`** - sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey
+- **`sn25:burn_drop:0.000`** - sn25 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:scoring_commit:2026-10-08T02:54:58Z`** - sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-07T22:35:21Z`** - sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events
+- **`sn51:release:executor-v1.138`** - sn51 released executor-v1.138
+  - published 2026-10-08T07:39:38Z (was executor-v1.137)
+- **`sn51:scoring_commit:2026-10-08T07:42:00Z`** - sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-08T00:04:50Z`** - sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231
+- **`sn71:scoring_commit:2026-10-08T06:51:28Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-07T23:24:57Z`** - sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-…
+- **`sn100:scoring_commit:2026-10-08T04:21:19Z`** - sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-07T23:59:16Z`** - sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches
+- **`sn116:release:producer-code-r2: code-only tag for the `** - sn116 released producer-code-r2: code-only tag for the producer and the leak runbook
+  - published 2026-10-08T07:43:42Z (was worker-images-v1)
+- **`sn116:scoring_commit:2026-10-08T07:05:19Z`** - sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-08T06:54:09Z`** - sn120 commit touches scoring: Validate paired held-out trainer optimization results
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,12 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
-| `sn25:release:v2026.9.30-1060350310` | 25 | RELEASE | 2026-10-01T06:20:47Z | sn25 released v2026.9.30-1060350310 |
-| `sn25:scoring_commit:2026-10-01T04:51:10Z` | 25 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn25 commit touches scoring: Verify and aggregate pinned mainnet image receipts offline |
-| `sn71:scoring_commit:2026-10-01T05:00:38Z` | 71 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn71 commit touches scoring: Bind protected workflows to verifier recovery source |
-| `sn74:release:release-20261001-004737` | 74 | RELEASE | 2026-10-01T06:20:47Z | sn74 released release-20261001-004737 |
-| `sn78:scoring_commit:2026-10-01T04:50:44Z` | 78 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn78 commit touches scoring: Publish C5 miner inputs and connection guide (#198) |
-| `sn120:scoring_commit:2026-10-01T06:19:24Z` | 120 | SCORING_COMMIT | 2026-10-01T06:20:47Z | sn120 commit touches scoring: Verify controlled native Agent tool rollouts in isolated images |
 | `sn13:release:Release v1.18.73` | 13 | RELEASE | 2026-10-01T13:42:59Z | sn13 released Release v1.18.73 |
 | `sn13:scoring_commit:2026-09-30T21:26:32Z` | 13 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn13 commit touches scoring: docs(agents): rewrite from code-verified review; add on-demand path |
 | `sn22:scoring_commit:2026-10-01T13:39:51Z` | 22 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn22 commit touches scoring: fix(validators): take an upload before waiting on its seed, so parall… |
@@ -231,7 +237,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-07T21:26:53Z` | 71 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn71 commit touches scoring: Merge PR #265: refresh protected verifier manifest |
 | `sn81:scoring_commit:2026-10-07T16:49:28Z` | 81 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn81 commit touches scoring: Fix pinned operator generation task admission |
 | `sn120:scoring_commit:2026-10-07T21:07:51Z` | 120 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn120 commit touches scoring: Admit explicitly signed source-bound verifier capacity sidecars |
-| `sn78:readme_task_diff:1b02e745e3230412` | 78 | README_TASK_DIFF | 2026-10-01T06:20:47Z | sn78 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-07T20:43:00Z` | 25 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey |
+| `sn71:scoring_commit:2026-10-07T22:35:21Z` | 71 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events |
+| `sn78:scoring_commit:2026-10-08T00:04:50Z` | 78 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231 |
+| `sn116:scoring_commit:2026-10-07T23:24:57Z` | 116 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-… |
+| `sn120:scoring_commit:2026-10-07T23:59:16Z` | 120 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches |
 | `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
 | `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |

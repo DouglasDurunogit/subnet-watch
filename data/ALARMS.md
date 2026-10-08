@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-08T14:58:11Z, block 9239078
+# ALARMS - generated 2026-10-08T20:40:05Z, block 9240787
 
-window: first_seen in [2026-10-08T13:43:35Z, 2026-10-08T14:58:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-08T19:25:32Z, 2026-10-08T20:40:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,45 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-10-08T10:48:25Z` | 3 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout |
-| `sn15:release:v2.4.0: Prepare runtime 3.5 validator an` | 15 | RELEASE | P1 | 2026-10-08T14:58:35Z | sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367) |
-| `sn15:scoring_commit:2026-10-08T08:48:54Z` | 15 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367) |
-| `sn21:scoring_commit:2026-10-08T14:35:15Z` | 21 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn21 commit touches scoring: fix(scoring): copy groups agree on one earner, the earliest submission |
-| `sn51:scoring_commit:2026-10-08T09:21:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn51 commit touches scoring: DAH-4001 - validator: shadow never delays the live weights, settlemen… |
-| `sn71:scoring_commit:2026-10-08T07:52:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn71 commit touches scoring: Merge PR #276: verify judging through the miner provider route |
-| `sn81:scoring_commit:2026-10-08T08:52:59Z` | 81 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn81 commit touches scoring: docs(corpus): the open route and the agentic miner's use of it |
-| `sn116:release:worker-images-v2` | 116 | RELEASE | P1 | 2026-10-08T14:58:35Z | sn116 released worker-images-v2 |
-| `sn116:scoring_commit:2026-10-08T13:55:12Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule- |
-| `sn120:scoring_commit:2026-10-08T08:41:04Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport |
+| `sn25:release:v2026.10.8-1066912010` | 25 | RELEASE | P1 | 2026-10-08T20:40:32Z | sn25 released v2026.10.8-1066912010 |
+| `sn41:scoring_commit:2026-10-08T19:33:16Z` | 41 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2 |
+| `sn51:scoring_commit:2026-10-08T15:36:23Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit… |
+| `sn58:scoring_commit:2026-10-08T18:16:01Z` | 58 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission … |
+| `sn71:scoring_commit:2026-10-08T17:08:48Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn71 commit touches scoring: Allow bounded score batch RPC reads to finish |
+| `sn90:scoring_commit:2026-10-08T18:01:39Z` | 90 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod… |
+| `sn116:scoring_commit:2026-10-08T19:33:03Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01 |
+| `sn120:scoring_commit:2026-10-08T15:53:32Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-10-08T10:48:25Z`** - sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout
+- **`sn25:release:v2026.10.8-1066912010`** - sn25 released v2026.10.8-1066912010
+  - published 2026-10-08T20:33:45Z (was v2026.10.6-1065506180)
+- **`sn41:scoring_commit:2026-10-08T19:33:16Z`** - sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:release:v2.4.0: Prepare runtime 3.5 validator an`** - sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367)
-  - published 2026-10-08T08:48:54Z (was v2.3.0)
-- **`sn15:scoring_commit:2026-10-08T08:48:54Z`** - sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367)
+- **`sn51:scoring_commit:2026-10-08T15:36:23Z`** - sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-10-08T14:35:15Z`** - sn21 commit touches scoring: fix(scoring): copy groups agree on one earner, the earliest submission
+- **`sn58:scoring_commit:2026-10-08T18:16:01Z`** - sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-08T09:21:54Z`** - sn51 commit touches scoring: DAH-4001 - validator: shadow never delays the live weights, settlemen…
+- **`sn71:scoring_commit:2026-10-08T17:08:48Z`** - sn71 commit touches scoring: Allow bounded score batch RPC reads to finish
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-08T07:52:06Z`** - sn71 commit touches scoring: Merge PR #276: verify judging through the miner provider route
+- **`sn90:scoring_commit:2026-10-08T18:01:39Z`** - sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-08T08:52:59Z`** - sn81 commit touches scoring: docs(corpus): the open route and the agentic miner's use of it
+- **`sn116:scoring_commit:2026-10-08T19:33:03Z`** - sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:worker-images-v2`** - sn116 released worker-images-v2
-  - published 2026-10-08T13:56:36Z (was producer-code-r2: code-only tag for the producer and the leak runbook)
-- **`sn116:scoring_commit:2026-10-08T13:55:12Z`** - sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule-
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-08T08:41:04Z`** - sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport
+- **`sn120:scoring_commit:2026-10-08T15:53:32Z`** - sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn22:burn_drop:0.809` | 22 | BURN_DROP | 2026-10-01T19:04:22Z | sn22 burn fell 1.000 -> 0.809 - miners can earn again |
 | `sn22:burn_drop:0.820` | 22 | BURN_DROP | 2026-10-03T21:49:33Z | sn22 burn fell 1.000 -> 0.820 - miners can earn again |
 | `sn30:burn_drop:0.000` | 30 | BURN_DROP | 2026-10-04T06:24:29Z | sn30 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -56,15 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn20:scoring_commit:2026-10-01T17:03:24Z` | 20 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn20 commit touches scoring: Clarify legacy and event scoring in the benchmark guide |
-| `sn46:release:v0.1.3` | 46 | RELEASE | 2026-10-01T19:04:22Z | sn46 released v0.1.3 |
-| `sn46:scoring_commit:2026-10-01T15:23:12Z` | 46 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn46 commit touches scoring: sn46-validator update: signed, scheduled self-update with rollback |
-| `sn71:scoring_commit:2026-10-01T18:50:32Z` | 71 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn71 commit touches scoring: Preserve verified rebrand homepage evidence path |
-| `sn81:scoring_commit:2026-10-01T18:50:51Z` | 81 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn81 commit touches scoring: Merge pull request #293 from reliquadotai/feat/corpus-miner-status |
-| `sn108:scoring_commit:2026-10-01T13:52:10Z` | 108 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn108 commit touches scoring: Validator logs explain the MIN_IMPROVEMENT_PERCENT decision: % gain o… |
-| `sn117:release:everycli v0.2.1` | 117 | RELEASE | 2026-10-01T19:04:22Z | sn117 released everycli v0.2.1 |
-| `sn117:scoring_commit:2026-10-01T16:42:56Z` | 117 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn117 commit touches scoring: fix: explain missing miner profiles in status and doctor |
-| `sn120:scoring_commit:2026-10-01T18:05:55Z` | 120 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn120 commit touches scoring: Record independently verified balanced checkpoint publication |
 | `sn14:release:GLM crowned baseline source — 2026-10-01` | 14 | RELEASE | 2026-10-01T23:09:13Z | sn14 released GLM crowned baseline source — 2026-10-01 |
 | `sn15:release:v2.0.40: Composed situation tasks: valid` | 15 | RELEASE | 2026-10-01T23:09:13Z | sn15 released v2.0.40: Composed situation tasks: validator, proxy and local testing |
 | `sn15:scoring_commit:2026-10-01T20:36:02Z` | 15 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn15 commit touches scoring: Composed situation tasks: validator, proxy and local testing |
@@ -243,7 +227,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:release:producer-code-r2: code-only tag for the ` | 116 | RELEASE | 2026-10-08T07:46:34Z | sn116 released producer-code-r2: code-only tag for the producer and the leak runbook |
 | `sn116:scoring_commit:2026-10-08T07:05:19Z` | 116 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd… |
 | `sn120:scoring_commit:2026-10-08T06:54:09Z` | 120 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn120 commit touches scoring: Validate paired held-out trainer optimization results |
-| `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-10-08T10:48:25Z` | 3 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout |
+| `sn15:release:v2.4.0: Prepare runtime 3.5 validator an` | 15 | RELEASE | 2026-10-08T14:58:35Z | sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367) |
+| `sn15:scoring_commit:2026-10-08T08:48:54Z` | 15 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367) |
+| `sn21:scoring_commit:2026-10-08T14:35:15Z` | 21 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn21 commit touches scoring: fix(scoring): copy groups agree on one earner, the earliest submission |
+| `sn51:scoring_commit:2026-10-08T09:21:54Z` | 51 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn51 commit touches scoring: DAH-4001 - validator: shadow never delays the live weights, settlemen… |
+| `sn71:scoring_commit:2026-10-08T07:52:06Z` | 71 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn71 commit touches scoring: Merge PR #276: verify judging through the miner provider route |
+| `sn81:scoring_commit:2026-10-08T08:52:59Z` | 81 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn81 commit touches scoring: docs(corpus): the open route and the agentic miner's use of it |
+| `sn116:release:worker-images-v2` | 116 | RELEASE | 2026-10-08T14:58:35Z | sn116 released worker-images-v2 |
+| `sn116:scoring_commit:2026-10-08T13:55:12Z` | 116 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule- |
+| `sn120:scoring_commit:2026-10-08T08:41:04Z` | 120 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport |
 | `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
 | `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |

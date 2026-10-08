@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-08T07:46:04Z, block 9236917
+# ALARMS - generated 2026-10-08T14:58:11Z, block 9239078
 
-window: first_seen in [2026-10-08T06:31:34Z, 2026-10-08T07:46:34Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-08T13:43:35Z, 2026-10-08T14:58:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,35 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:burn_drop:0.000` | 25 | BURN_DROP | P0 | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:scoring_commit:2026-10-08T02:54:58Z` | 25 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator |
-| `sn51:release:executor-v1.138` | 51 | RELEASE | P1 | 2026-10-08T07:46:34Z | sn51 released executor-v1.138 |
-| `sn51:scoring_commit:2026-10-08T07:42:00Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (… |
-| `sn71:scoring_commit:2026-10-08T06:51:28Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati… |
-| `sn100:scoring_commit:2026-10-08T04:21:19Z` | 100 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script … |
-| `sn116:release:producer-code-r2: code-only tag for the ` | 116 | RELEASE | P1 | 2026-10-08T07:46:34Z | sn116 released producer-code-r2: code-only tag for the producer and the leak runbook |
-| `sn116:scoring_commit:2026-10-08T07:05:19Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd… |
-| `sn120:scoring_commit:2026-10-08T06:54:09Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T07:46:34Z | sn120 commit touches scoring: Validate paired held-out trainer optimization results |
+| `sn3:scoring_commit:2026-10-08T10:48:25Z` | 3 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout |
+| `sn15:release:v2.4.0: Prepare runtime 3.5 validator an` | 15 | RELEASE | P1 | 2026-10-08T14:58:35Z | sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367) |
+| `sn15:scoring_commit:2026-10-08T08:48:54Z` | 15 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367) |
+| `sn21:scoring_commit:2026-10-08T14:35:15Z` | 21 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn21 commit touches scoring: fix(scoring): copy groups agree on one earner, the earliest submission |
+| `sn51:scoring_commit:2026-10-08T09:21:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn51 commit touches scoring: DAH-4001 - validator: shadow never delays the live weights, settlemen… |
+| `sn71:scoring_commit:2026-10-08T07:52:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn71 commit touches scoring: Merge PR #276: verify judging through the miner provider route |
+| `sn81:scoring_commit:2026-10-08T08:52:59Z` | 81 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn81 commit touches scoring: docs(corpus): the open route and the agentic miner's use of it |
+| `sn116:release:worker-images-v2` | 116 | RELEASE | P1 | 2026-10-08T14:58:35Z | sn116 released worker-images-v2 |
+| `sn116:scoring_commit:2026-10-08T13:55:12Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule- |
+| `sn120:scoring_commit:2026-10-08T08:41:04Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T14:58:35Z | sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport |
 
 ### detail
 
-- **`sn25:burn_drop:0.000`** - sn25 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:scoring_commit:2026-10-08T02:54:58Z`** - sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator
+- **`sn3:scoring_commit:2026-10-08T10:48:25Z`** - sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.138`** - sn51 released executor-v1.138
-  - published 2026-10-08T07:39:38Z (was executor-v1.137)
-- **`sn51:scoring_commit:2026-10-08T07:42:00Z`** - sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (…
+- **`sn15:release:v2.4.0: Prepare runtime 3.5 validator an`** - sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367)
+  - published 2026-10-08T08:48:54Z (was v2.3.0)
+- **`sn15:scoring_commit:2026-10-08T08:48:54Z`** - sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-08T06:51:28Z`** - sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati…
+- **`sn21:scoring_commit:2026-10-08T14:35:15Z`** - sn21 commit touches scoring: fix(scoring): copy groups agree on one earner, the earliest submission
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-10-08T04:21:19Z`** - sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script …
+- **`sn51:scoring_commit:2026-10-08T09:21:54Z`** - sn51 commit touches scoring: DAH-4001 - validator: shadow never delays the live weights, settlemen…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:producer-code-r2: code-only tag for the `** - sn116 released producer-code-r2: code-only tag for the producer and the leak runbook
-  - published 2026-10-08T07:43:42Z (was worker-images-v1)
-- **`sn116:scoring_commit:2026-10-08T07:05:19Z`** - sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd…
+- **`sn71:scoring_commit:2026-10-08T07:52:06Z`** - sn71 commit touches scoring: Merge PR #276: verify judging through the miner provider route
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-08T06:54:09Z`** - sn120 commit touches scoring: Validate paired held-out trainer optimization results
+- **`sn81:scoring_commit:2026-10-08T08:52:59Z`** - sn81 commit touches scoring: docs(corpus): the open route and the agentic miner's use of it
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:release:worker-images-v2`** - sn116 released worker-images-v2
+  - published 2026-10-08T13:56:36Z (was producer-code-r2: code-only tag for the producer and the leak runbook)
+- **`sn116:scoring_commit:2026-10-08T13:55:12Z`** - sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule-
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-08T08:41:04Z`** - sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -52,17 +55,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
-| `sn13:release:Release v1.18.73` | 13 | RELEASE | 2026-10-01T13:42:59Z | sn13 released Release v1.18.73 |
-| `sn13:scoring_commit:2026-09-30T21:26:32Z` | 13 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn13 commit touches scoring: docs(agents): rewrite from code-verified review; add on-demand path |
-| `sn22:scoring_commit:2026-10-01T13:39:51Z` | 22 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn22 commit touches scoring: fix(validators): take an upload before waiting on its seed, so parall… |
-| `sn25:release:v2026.10.1-1060587890` | 25 | RELEASE | 2026-10-01T13:42:59Z | sn25 released v2026.10.1-1060587890 |
-| `sn51:release:validator-v2026.10.01` | 51 | RELEASE | 2026-10-01T13:42:59Z | sn51 released validator-v2026.10.01 |
-| `sn51:scoring_commit:2026-10-01T12:36:27Z` | 51 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn51 commit touches scoring: NO-TICKET - [P2] validator: remove INSPECTOR_ENFORCE_ENABLED, finding… |
-| `sn71:scoring_commit:2026-10-01T06:39:33Z` | 71 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn71 commit touches scoring: Release October 1 provider hold with exact score retries |
-| `sn81:scoring_commit:2026-10-01T06:33:05Z` | 81 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn81 commit touches scoring: docs(design): evaluation on SN81, rulings of the v2 fix pass |
-| `sn91:scoring_commit:2026-10-01T11:42:23Z` | 91 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn91 commit touches scoring: Merge pull request #347 from TensorLink-AI/fix/validator-startup-rest… |
-| `sn94:scoring_commit:2026-10-01T10:29:20Z` | 94 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn94 commit touches scoring: snp friend probe: an unavailable AMD verifier is inconclusive, never … |
-| `sn120:scoring_commit:2026-10-01T13:03:37Z` | 120 | SCORING_COMMIT | 2026-10-01T13:42:59Z | sn120 commit touches scoring: Document original Trivia Abstain tasks and distinct native grading co… |
+| `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn20:scoring_commit:2026-10-01T17:03:24Z` | 20 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn20 commit touches scoring: Clarify legacy and event scoring in the benchmark guide |
 | `sn46:release:v0.1.3` | 46 | RELEASE | 2026-10-01T19:04:22Z | sn46 released v0.1.3 |
 | `sn46:scoring_commit:2026-10-01T15:23:12Z` | 46 | SCORING_COMMIT | 2026-10-01T19:04:22Z | sn46 commit touches scoring: sn46-validator update: signed, scheduled self-update with rollback |
@@ -242,7 +235,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-08T00:04:50Z` | 78 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231 |
 | `sn116:scoring_commit:2026-10-07T23:24:57Z` | 116 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn116 commit touches scoring: Merge pull request #782 from carbonphysicsai/agent/validator-23-bank-… |
 | `sn120:scoring_commit:2026-10-07T23:59:16Z` | 120 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn120 commit touches scoring: Use signed manifest quotas for miner-bound multi-rollout batches |
-| `sn108:readme_task_diff:91f7ce813a4d3359` | 108 | README_TASK_DIFF | 2026-10-01T13:42:59Z | sn108 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-08T02:54:58Z` | 25 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator |
+| `sn51:release:executor-v1.138` | 51 | RELEASE | 2026-10-08T07:46:34Z | sn51 released executor-v1.138 |
+| `sn51:scoring_commit:2026-10-08T07:42:00Z` | 51 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (… |
+| `sn71:scoring_commit:2026-10-08T06:51:28Z` | 71 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati… |
+| `sn100:scoring_commit:2026-10-08T04:21:19Z` | 100 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script … |
+| `sn116:release:producer-code-r2: code-only tag for the ` | 116 | RELEASE | 2026-10-08T07:46:34Z | sn116 released producer-code-r2: code-only tag for the producer and the leak runbook |
+| `sn116:scoring_commit:2026-10-08T07:05:19Z` | 116 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd… |
+| `sn120:scoring_commit:2026-10-08T06:54:09Z` | 120 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn120 commit touches scoring: Validate paired held-out trainer optimization results |
 | `sn117:readme_task_diff:4fe3235ab658f65b` | 117 | README_TASK_DIFF | 2026-10-01T19:04:22Z | sn117 README task/scoring sections changed |
 | `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
 | `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |

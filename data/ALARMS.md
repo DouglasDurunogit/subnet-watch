@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-08T20:40:05Z, block 9240787
+# ALARMS - generated 2026-10-09T00:41:47Z, block 9241992
 
-window: first_seen in [2026-10-08T19:25:32Z, 2026-10-08T20:40:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-08T23:27:20Z, 2026-10-09T00:42:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.8-1066912010` | 25 | RELEASE | P1 | 2026-10-08T20:40:32Z | sn25 released v2026.10.8-1066912010 |
-| `sn41:scoring_commit:2026-10-08T19:33:16Z` | 41 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2 |
-| `sn51:scoring_commit:2026-10-08T15:36:23Z` | 51 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit… |
-| `sn58:scoring_commit:2026-10-08T18:16:01Z` | 58 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission … |
-| `sn71:scoring_commit:2026-10-08T17:08:48Z` | 71 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn71 commit touches scoring: Allow bounded score batch RPC reads to finish |
-| `sn90:scoring_commit:2026-10-08T18:01:39Z` | 90 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod… |
-| `sn116:scoring_commit:2026-10-08T19:33:03Z` | 116 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01 |
-| `sn120:scoring_commit:2026-10-08T15:53:32Z` | 120 | SCORING_COMMIT | P1 | 2026-10-08T20:40:32Z | sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration |
+| `sn37:burn_drop:0.000` | 37 | BURN_DROP | P0 | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn25:release:v2026.10.8-1066946420` | 25 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn25 released v2026.10.8-1066946420 |
+| `sn62:release:v0.3.10` | 62 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn62 released v0.3.10 |
+| `sn71:scoring_commit:2026-10-09T00:04:40Z` | 71 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing |
+| `sn78:scoring_commit:2026-10-08T23:22:27Z` | 78 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives |
+| `sn116:release:worker-images-v3` | 116 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn116 released worker-images-v3 |
+| `sn116:scoring_commit:2026-10-08T22:48:01Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co… |
+| `sn120:scoring_commit:2026-10-08T21:41:26Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation |
 
 ### detail
 
-- **`sn25:release:v2026.10.8-1066912010`** - sn25 released v2026.10.8-1066912010
-  - published 2026-10-08T20:33:45Z (was v2026.10.6-1065506180)
-- **`sn41:scoring_commit:2026-10-08T19:33:16Z`** - sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2
+- **`sn37:burn_drop:0.000`** - sn37 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.10.8-1066946420`** - sn25 released v2026.10.8-1066946420
+  - published 2026-10-08T21:31:35Z (was v2026.10.8-1066912010)
+- **`sn62:release:v0.3.10`** - sn62 released v0.3.10
+  - published 2026-10-09T00:11:57Z (was v0.3.9)
+- **`sn71:scoring_commit:2026-10-09T00:04:40Z`** - sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-08T15:36:23Z`** - sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit…
+- **`sn78:scoring_commit:2026-10-08T23:22:27Z`** - sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn58:scoring_commit:2026-10-08T18:16:01Z`** - sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission …
+- **`sn116:release:worker-images-v3`** - sn116 released worker-images-v3
+  - published 2026-10-08T23:02:31Z (was worker-images-v2)
+- **`sn116:scoring_commit:2026-10-08T22:48:01Z`** - sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-08T17:08:48Z`** - sn71 commit touches scoring: Allow bounded score batch RPC reads to finish
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:scoring_commit:2026-10-08T18:01:39Z`** - sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-08T19:33:03Z`** - sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-08T15:53:32Z`** - sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration
+- **`sn120:scoring_commit:2026-10-08T21:41:26Z`** - sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,14 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn14:release:GLM crowned baseline source — 2026-10-01` | 14 | RELEASE | 2026-10-01T23:09:13Z | sn14 released GLM crowned baseline source — 2026-10-01 |
-| `sn15:release:v2.0.40: Composed situation tasks: valid` | 15 | RELEASE | 2026-10-01T23:09:13Z | sn15 released v2.0.40: Composed situation tasks: validator, proxy and local testing |
-| `sn15:scoring_commit:2026-10-01T20:36:02Z` | 15 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn15 commit touches scoring: Composed situation tasks: validator, proxy and local testing |
-| `sn20:scoring_commit:2026-10-01T19:18:50Z` | 20 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn20 commit touches scoring: Export signed closed-window scores without serving media or model out… |
-| `sn62:release:v0.3.9` | 62 | RELEASE | 2026-10-01T23:09:13Z | sn62 released v0.3.9 |
-| `sn78:scoring_commit:2026-10-01T20:28:39Z` | 78 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn78 commit touches scoring: Keep miner upgrades cohort-neutral |
-| `sn81:scoring_commit:2026-10-01T20:32:20Z` | 81 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn81 commit touches scoring: Merge pull request #294 from reliquadotai/feat/corpus-tasks-route |
-| `sn120:scoring_commit:2026-10-01T22:38:51Z` | 120 | SCORING_COMMIT | 2026-10-01T23:09:13Z | sn120 commit touches scoring: Document independently verified Wiki signed resource stage |
 | `sn14:scoring_commit:2026-10-02T02:05:43Z` | 14 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136) |
 | `sn111:release:v1.0.1` | 111 | RELEASE | 2026-10-02T02:26:04Z | sn111 released v1.0.1 |
 | `sn120:scoring_commit:2026-10-02T00:37:49Z` | 120 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay |
@@ -237,7 +229,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:release:worker-images-v2` | 116 | RELEASE | 2026-10-08T14:58:35Z | sn116 released worker-images-v2 |
 | `sn116:scoring_commit:2026-10-08T13:55:12Z` | 116 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn116 commit touches scoring: Merge pull request #815 from carbonphysicsai/agent/battery-score-rule- |
 | `sn120:scoring_commit:2026-10-08T08:41:04Z` | 120 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn120 commit touches scoring: Keep learner startup independent of an unreachable verifier transport |
-| `sn15:readme_task_diff:b8c62e4a86eca8fd` | 15 | README_TASK_DIFF | 2026-10-01T23:09:13Z | sn15 README task/scoring sections changed |
+| `sn25:release:v2026.10.8-1066912010` | 25 | RELEASE | 2026-10-08T20:40:32Z | sn25 released v2026.10.8-1066912010 |
+| `sn41:scoring_commit:2026-10-08T19:33:16Z` | 41 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2 |
+| `sn51:scoring_commit:2026-10-08T15:36:23Z` | 51 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit… |
+| `sn58:scoring_commit:2026-10-08T18:16:01Z` | 58 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission … |
+| `sn71:scoring_commit:2026-10-08T17:08:48Z` | 71 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn71 commit touches scoring: Allow bounded score batch RPC reads to finish |
+| `sn90:scoring_commit:2026-10-08T18:01:39Z` | 90 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod… |
+| `sn116:scoring_commit:2026-10-08T19:33:03Z` | 116 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01 |
+| `sn120:scoring_commit:2026-10-08T15:53:32Z` | 120 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration |
 | `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |

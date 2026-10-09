@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-09T00:41:47Z, block 9241992
+# ALARMS - generated 2026-10-09T06:48:15Z, block 9243824
 
-window: first_seen in [2026-10-08T23:27:20Z, 2026-10-09T00:42:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-09T05:33:38Z, 2026-10-09T06:48:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:burn_drop:0.000` | 37 | BURN_DROP | P0 | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.10.8-1066946420` | 25 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn25 released v2026.10.8-1066946420 |
-| `sn62:release:v0.3.10` | 62 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn62 released v0.3.10 |
-| `sn71:scoring_commit:2026-10-09T00:04:40Z` | 71 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing |
-| `sn78:scoring_commit:2026-10-08T23:22:27Z` | 78 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives |
-| `sn116:release:worker-images-v3` | 116 | RELEASE | P1 | 2026-10-09T00:42:20Z | sn116 released worker-images-v3 |
-| `sn116:scoring_commit:2026-10-08T22:48:01Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co… |
-| `sn120:scoring_commit:2026-10-08T21:41:26Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T00:42:20Z | sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation |
+| `sn51:scoring_commit:2026-10-09T04:13:41Z` | 51 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn51 commit touches scoring: DAH-4001 - validator: no settled window keeps the weights in force, i… |
+| `sn81:scoring_commit:2026-10-09T02:51:22Z` | 81 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn81 commit touches scoring: Merge pull request #342 from reliquadotai/fix/task-catalog-artifact-r… |
+| `sn89:scoring_commit:2026-10-09T02:22:48Z` | 89 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn89 commit touches scoring: README: IQ Markets for players (web app, /markets, no miner needed; r… |
+| `sn101:scoring_commit:2026-10-08T15:09:53Z` | 101 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn101 commit touches scoring: Add v1.1 scoring, AWS corpus leasing, weight-setting hardening, and l… |
+| `sn107:scoring_commit:2026-10-09T03:53:09Z` | 107 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn107 commit touches scoring: Merge pull request #40 from minos-protocol/fix/scoring-cutoff-lead |
+| `sn116:scoring_commit:2026-10-09T05:13:15Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn116 commit touches scoring: Merge pull request #854 from carbonphysicsai/agent/score-feed-schema |
+| `sn120:scoring_commit:2026-10-09T06:24:44Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T06:48:38Z | sn120 commit touches scoring: Bind native recovery imports and keep evaluator read capabilities out… |
+| `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | P2 | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 
 ### detail
 
-- **`sn37:burn_drop:0.000`** - sn37 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.8-1066946420`** - sn25 released v2026.10.8-1066946420
-  - published 2026-10-08T21:31:35Z (was v2026.10.8-1066912010)
-- **`sn62:release:v0.3.10`** - sn62 released v0.3.10
-  - published 2026-10-09T00:11:57Z (was v0.3.9)
-- **`sn71:scoring_commit:2026-10-09T00:04:40Z`** - sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing
+- **`sn51:scoring_commit:2026-10-09T04:13:41Z`** - sn51 commit touches scoring: DAH-4001 - validator: no settled window keeps the weights in force, i…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-08T23:22:27Z`** - sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives
+- **`sn81:scoring_commit:2026-10-09T02:51:22Z`** - sn81 commit touches scoring: Merge pull request #342 from reliquadotai/fix/task-catalog-artifact-r…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:worker-images-v3`** - sn116 released worker-images-v3
-  - published 2026-10-08T23:02:31Z (was worker-images-v2)
-- **`sn116:scoring_commit:2026-10-08T22:48:01Z`** - sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co…
+- **`sn89:scoring_commit:2026-10-09T02:22:48Z`** - sn89 commit touches scoring: README: IQ Markets for players (web app, /markets, no miner needed; r…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-08T21:41:26Z`** - sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation
+- **`sn101:scoring_commit:2026-10-08T15:09:53Z`** - sn101 commit touches scoring: Add v1.1 scoring, AWS corpus leasing, weight-setting hardening, and l…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn107:scoring_commit:2026-10-09T03:53:09Z`** - sn107 commit touches scoring: Merge pull request #40 from minos-protocol/fix/scoring-cutoff-lead
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-09T05:13:15Z`** - sn116 commit touches scoring: Merge pull request #854 from carbonphysicsai/agent/score-feed-schema
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-09T06:24:44Z`** - sn120 commit touches scoring: Bind native recovery imports and keep evaluator read capabilities out…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn101:readme_task_diff:69a3be15960a468f`** - sn101 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,9 +49,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn14:scoring_commit:2026-10-02T02:05:43Z` | 14 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn14 commit touches scoring: Show consumed evaluation credits in dashboard fee labels (#136) |
-| `sn111:release:v1.0.1` | 111 | RELEASE | 2026-10-02T02:26:04Z | sn111 released v1.0.1 |
-| `sn120:scoring_commit:2026-10-02T00:37:49Z` | 120 | SCORING_COMMIT | 2026-10-02T02:26:04Z | sn120 commit touches scoring: Reproduce per-task Pydantic proposal controls with fresh native replay |
+| `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn51:release:validator-v2026.10.02` | 51 | RELEASE | 2026-10-02T08:53:07Z | sn51 released validator-v2026.10.02 |
 | `sn51:scoring_commit:2026-10-02T08:25:54Z` | 51 | SCORING_COMMIT | 2026-10-02T08:53:07Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: a shell lost mid-check sends its reason c… |
 | `sn67:scoring_commit:2026-10-02T04:02:08Z` | 67 | SCORING_COMMIT | 2026-10-02T08:53:07Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261002.post1 |
@@ -237,6 +235,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:scoring_commit:2026-10-08T18:01:39Z` | 90 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod… |
 | `sn116:scoring_commit:2026-10-08T19:33:03Z` | 116 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01 |
 | `sn120:scoring_commit:2026-10-08T15:53:32Z` | 120 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration |
+| `sn25:release:v2026.10.8-1066946420` | 25 | RELEASE | 2026-10-09T00:42:20Z | sn25 released v2026.10.8-1066946420 |
+| `sn62:release:v0.3.10` | 62 | RELEASE | 2026-10-09T00:42:20Z | sn62 released v0.3.10 |
+| `sn71:scoring_commit:2026-10-09T00:04:40Z` | 71 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing |
+| `sn78:scoring_commit:2026-10-08T23:22:27Z` | 78 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives |
+| `sn116:release:worker-images-v3` | 116 | RELEASE | 2026-10-09T00:42:20Z | sn116 released worker-images-v3 |
+| `sn116:scoring_commit:2026-10-08T22:48:01Z` | 116 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co… |
+| `sn120:scoring_commit:2026-10-08T21:41:26Z` | 120 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation |
 | `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |

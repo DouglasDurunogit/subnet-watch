@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-09T14:19:45Z · block 9246082 · run_status **ok**_
+_snapshot 2026-10-09T19:36:33Z · block 9247666 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 60 of 128
+# 54 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 100 | `miner_burn` < 0.99 |
 | Ranked | 100 | passed every gate |
-| **Positive margin** | **60** | income beats machine cost |
-| New events this window | 12 | see ALARMS.md |
+| **Positive margin** | **54** | income beats machine cost |
+| New events this window | 14 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,11 +30,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 69 | `████████████████████████████` |
-| 0–0.2 | 6 | `██` |
+| 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 8 | `███` |
-| 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 6 | `██` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 8 | `███` |
+| 0.8–0.99 | 5 | `██` |
 | ≥0.99 dead | 28 | `███████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 81.8 | 274 | 23,221 | cpu-small | 20 | 80% |
-| 2 | sn41 Almanac | 74.9 | 44.26 | 111 | cpu-small | 121 | 3% |
-| 3 | sn80 OpenRoboto | 71.9 | 1,306 | 6,230 | rtx4090* | 7 | 35% |
-| 4 | sn1 Apex | 70.9 | 969 | 1,013 | rtx4090* | 4 | 53% |
-| 5 | sn101 Tag101 | 70 | 12.69 | 17.17 | cpu-small | 243 | 1% |
-| 6 | sn38 ChronoLLM | 68.7 | 210 | 956 | cpu-small | 9 | 52% |
-| 7 | sn67 Harnyx | 68.4 | 7.96 | 828 | cpu-small | 147 | 30% |
-| 8 | sn4 Targon | 66.8 | 9,867 | 29,093 | rtx4090* | 5 | 70% |
-| 9 | sn26 Perturb | 66.3 | 246 | 411 | rtx3060 | 4 | 60% |
-| 10 | sn15 ORO | 65.8 | 6.12 | 18,306 | cpu-small | 46 | 98% |
-| 11 | sn62 Ridges | 63.5 | 106 | 1,304 | rtx4090* | 34 | 17% |
-| 12 | sn61 RedTeam | 62.4 | 79.15 | 105 | rtx4090* | 124 | 1% |
-| 13 | sn65 True Performance | 62.3 | 78.99 | 166 | rtx4090* | 6 | 75% |
-| 14 | sn53 engy | 60 | 1,318 | 4,358 | rtx4090 | 18 | 17% |
-| 15 | sn23 Trishool | 59.2 | 403 | 403 = | cpu-small | 3 | 80% |
-| 16 | sn91 cascade | 59.2 | 401 | 1,072 | cpu-small | 5 | 52% |
-| 17 | sn28 SayGM | 59 | 29.67 | 2,821 | rtx4090* | 68 | 24% |
-| 18 | sn81 Reliquary | 58.8 | 25.12 | 391 | rtx4090* | 42 | 42% |
-| 19 | sn46 Instant | 58.2 | 296 | 393 | cpu-small | 6 | 44% |
-| 20 | sn5 Hone | 57.8 | 33.80 | 35.67 | rtx4090* | 244 | 0% |
+| 1 | sn107 Minos | 81.7 | 265 | 22,539 | cpu-small | 20 | 80% |
+| 2 | sn41 Almanac | 74.8 | 43.90 | 111 | cpu-small | 121 | 2% |
+| 3 | sn80 OpenRoboto | 72 | 1,331 | 6,351 | rtx4090* | 7 | 35% |
+| 4 | sn1 Apex | 70.8 | 940 | 985 | rtx4090* | 4 | 53% |
+| 5 | sn101 Tag101 | 70.1 | 13.01 | 16.92 | cpu-small | 244 | 1% |
+| 6 | sn38 ChronoLLM | 68.7 | 209 | 952 | cpu-small | 9 | 52% |
+| 7 | sn67 Harnyx | 68.3 | 7.86 | 823 | cpu-small | 149 | 30% |
+| 8 | sn79 MVTRX | 67.5 | 8.07 | 52.27 | cpu-small | 245 | 2% |
+| 9 | sn4 Targon | 66.8 | 9,831 | 28,987 | rtx4090* | 5 | 70% |
+| 10 | sn26 Perturb | 66.2 | 237 | 397 | rtx3060 | 4 | 60% |
+| 11 | sn15 ORO | 65.4 | 6.02 | 12.46 | cpu-small | 47 | 98% |
+| 12 | sn62 Ridges | 63.5 | 106 | 1,080 | rtx4090* | 35 | 17% |
+| 13 | sn65 True Performance | 62.3 | 78.15 | 165 | rtx4090* | 6 | 75% |
+| 14 | sn61 RedTeam | 62.3 | 76.11 | 102 | rtx4090* | 126 | 1% |
+| 15 | sn53 engy | 60.1 | 1,345 | 4,448 | rtx4090 | 18 | 17% |
+| 16 | sn111 Claims | 59.7 | 34.60 | 3,053 | rtx4090* | 6 | 90% |
+| 17 | sn91 cascade | 59.3 | 414 | 1,106 | cpu-small | 5 | 52% |
+| 18 | sn23 Trishool | 59.2 | 400 | 400 = | cpu-small | 3 | 80% |
+| 19 | sn5 Hone | 58 | 33.73 | 35.59 | rtx4090* | 243 | 0% |
+| 20 | sn56 Gradients | 57.8 | 669 | 4,631 | rtx4090* | 9 | 39% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
+| wide (<30%) | 22 |
 | concentrated (30–60%) | 26 |
-| dominated (60–90%) | 25 |
+| dominated (60–90%) | 26 |
 | captured (>90%) | 22 |
 
 ## Hardware evidence quality
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-09T19:37 | sn13 | RELEASE | sn13 released Release v1.18.74 |
+| 2026-10-09T19:37 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs(rewards): self-mining section lists  |
+| 2026-10-09T19:37 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Name a rejected network sign-in in the va |
+| 2026-10-09T19:37 | sn48 | README_TASK_DIFF | sn48 README task/scoring sections changed |
+| 2026-10-09T19:37 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
+| 2026-10-09T19:37 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Include accepted host scores in closed bi |
+| 2026-10-09T19:37 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Pool deliveries: claim-refusal backoff +  |
+| 2026-10-09T19:37 | sn79 | README_TASK_DIFF | sn79 README task/scoring sections changed |
+| 2026-10-09T19:37 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat(env): score reliquary/stdio-program/ |
+| 2026-10-09T19:37 | sn104 | MECHANISM_ADDED | sn104 now runs 2 incentive mechanisms (was 1) |
+| 2026-10-09T19:37 | sn116 | RELEASE | sn116 released producer-code-r5 |
+| 2026-10-09T19:37 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Merge pull request #935 from carbonphysi |
+| 2026-10-09T19:37 | sn117 | README_TASK_DIFF | sn117 README task/scoring sections changed |
+| 2026-10-09T19:37 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Recover hourly miner weight submissions  |
 | 2026-10-09T14:20 | sn3 | SCORING_COMMIT | sn3 commit touches scoring: Add competition filters to evaluation hist |
-| 2026-10-09T14:20 | sn21 | RELEASE | sn21 released SN21 training data v4 (live basket shape) |
-| 2026-10-09T14:20 | sn50 | SCORING_COMMIT | sn50 commit touches scoring: Avoid a full miner_predictions scan when  |
-| 2026-10-09T14:20 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-3980 - Validator: one Docker SDK SSH  |
-| 2026-10-09T14:20 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Refresh protected judge fit manifest for  |
-| 2026-10-09T14:20 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: protected/miner/manifest.json: single adm |
-| 2026-10-09T14:20 | sn76 | README_TASK_DIFF | sn76 README task/scoring sections changed |
-| 2026-10-09T14:20 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Unblock C5 admission reads and correct hi |
-| 2026-10-09T14:20 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: scoring: cache z_for_resolve (pure functi |
-| 2026-10-09T14:20 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: feat(validator): route verified operator |
-| 2026-10-09T14:20 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: VALIDATOR-30 contract: the refusal order |
-| 2026-10-09T14:20 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Verify effective-LR evidence for normal  |
-| 2026-10-09T06:48 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-4001 - validator: no settled window k |
-| 2026-10-09T06:48 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Merge pull request #342 from reliquadotai |
-| 2026-10-09T06:48 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: README: IQ Markets for players (web app,  |
 
 ---
 

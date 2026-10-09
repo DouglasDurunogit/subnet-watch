@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-09T14:19:45Z, block 9246082
+# ALARMS - generated 2026-10-09T19:36:33Z, block 9247666
 
-window: first_seen in [2026-10-09T13:05:19Z, 2026-10-09T14:20:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-09T18:22:09Z, 2026-10-09T19:37:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,50 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-10-09T13:41:35Z` | 3 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn3 commit touches scoring: Add competition filters to evaluation history and update dataset summ… |
-| `sn21:release:SN21 training data v4 (live basket shape` | 21 | RELEASE | P1 | 2026-10-09T14:20:19Z | sn21 released SN21 training data v4 (live basket shape) |
-| `sn50:scoring_commit:2026-10-09T13:27:10Z` | 50 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn50 commit touches scoring: Avoid a full miner_predictions scan when loading scores (#337) |
-| `sn51:scoring_commit:2026-10-09T09:49:06Z` | 51 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn51 commit touches scoring: DAH-3980 - Validator: one Docker SDK SSH channel per host, not per UR… |
-| `sn71:scoring_commit:2026-10-09T07:27:04Z` | 71 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn71 commit touches scoring: Refresh protected judge fit manifest for merged scorer |
-| `sn76:scoring_commit:2026-10-09T14:10:54Z` | 76 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn76 commit touches scoring: protected/miner/manifest.json: single admitted compose hash after the… |
-| `sn78:scoring_commit:2026-10-09T09:19:01Z` | 78 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn78 commit touches scoring: Unblock C5 admission reads and correct historical block verification … |
-| `sn89:scoring_commit:2026-10-09T08:42:41Z` | 89 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn89 commit touches scoring: scoring: cache z_for_resolve (pure function, bit-identical output) |
-| `sn111:scoring_commit:2026-10-08T19:49:34Z` | 111 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn111 commit touches scoring: feat(validator): route verified operator miner allocation |
-| `sn116:scoring_commit:2026-10-09T12:50:59Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn116 commit touches scoring: VALIDATOR-30 contract: the refusal order (root allow-list first) and … |
-| `sn120:scoring_commit:2026-10-09T11:15:27Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T14:20:19Z | sn120 commit touches scoring: Verify effective-LR evidence for normal optimizer continuation |
-| `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | P2 | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
+| `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | P0 | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
+| `sn13:release:Release v1.18.74` | 13 | RELEASE | P1 | 2026-10-09T19:37:09Z | sn13 released Release v1.18.74 |
+| `sn21:scoring_commit:2026-10-09T15:47:13Z` | 21 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn21 commit touches scoring: docs(rewards): self-mining section lists the operator-run miners (UID… |
+| `sn25:scoring_commit:2026-10-09T17:31:17Z` | 25 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn25 commit touches scoring: Name a rejected network sign-in in the validator |
+| `sn71:scoring_commit:2026-10-09T19:30:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn71 commit touches scoring: Include accepted host scores in closed billing selector |
+| `sn76:scoring_commit:2026-10-09T18:01:37Z` | 76 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn76 commit touches scoring: Pool deliveries: claim-refusal backoff + claim_health(); validator --… |
+| `sn81:scoring_commit:2026-10-09T09:04:13Z` | 81 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn81 commit touches scoring: feat(env): score reliquary/stdio-program/v1 sources in the sandbox |
+| `sn116:release:producer-code-r5` | 116 | RELEASE | P1 | 2026-10-09T19:37:09Z | sn116 released producer-code-r5 |
+| `sn116:scoring_commit:2026-10-09T19:34:16Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn116 commit touches scoring: Merge pull request #935 from carbonphysicsai/codex/v3-score-inputs-01 |
+| `sn120:scoring_commit:2026-10-09T19:24:54Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T19:37:09Z | sn120 commit touches scoring: Recover hourly miner weight submissions from finalized chain evidence |
+| `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | P2 | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
+| `sn66:readme_task_diff:53ca2fbbcaa75039` | 66 | README_TASK_DIFF | P2 | 2026-10-09T19:37:09Z | sn66 README task/scoring sections changed |
+| `sn79:readme_task_diff:1ab076cd7112df84` | 79 | README_TASK_DIFF | P2 | 2026-10-09T19:37:09Z | sn79 README task/scoring sections changed |
+| `sn117:readme_task_diff:ad8c3f68204b01ab` | 117 | README_TASK_DIFF | P2 | 2026-10-09T19:37:09Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-10-09T13:41:35Z`** - sn3 commit touches scoring: Add competition filters to evaluation history and update dataset summ…
+- **`sn104:mechanism_added:1to2`** - sn104 now runs 2 incentive mechanisms (was 1)
+  - A second distinct challenge now runs under this netuid.
+- **`sn13:release:Release v1.18.74`** - sn13 released Release v1.18.74
+  - published 2026-10-09T18:14:47Z (was Release v1.18.73)
+- **`sn21:scoring_commit:2026-10-09T15:47:13Z`** - sn21 commit touches scoring: docs(rewards): self-mining section lists the operator-run miners (UID…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:release:SN21 training data v4 (live basket shape`** - sn21 released SN21 training data v4 (live basket shape)
-  - published 2026-10-09T11:33:29Z (was SN21 rich training data v3 (slice 2))
-- **`sn50:scoring_commit:2026-10-09T13:27:10Z`** - sn50 commit touches scoring: Avoid a full miner_predictions scan when loading scores (#337)
+- **`sn25:scoring_commit:2026-10-09T17:31:17Z`** - sn25 commit touches scoring: Name a rejected network sign-in in the validator
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-09T09:49:06Z`** - sn51 commit touches scoring: DAH-3980 - Validator: one Docker SDK SSH channel per host, not per UR…
+- **`sn71:scoring_commit:2026-10-09T19:30:42Z`** - sn71 commit touches scoring: Include accepted host scores in closed billing selector
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-09T07:27:04Z`** - sn71 commit touches scoring: Refresh protected judge fit manifest for merged scorer
+- **`sn76:scoring_commit:2026-10-09T18:01:37Z`** - sn76 commit touches scoring: Pool deliveries: claim-refusal backoff + claim_health(); validator --…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-09T14:10:54Z`** - sn76 commit touches scoring: protected/miner/manifest.json: single admitted compose hash after the…
+- **`sn81:scoring_commit:2026-10-09T09:04:13Z`** - sn81 commit touches scoring: feat(env): score reliquary/stdio-program/v1 sources in the sandbox
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-09T09:19:01Z`** - sn78 commit touches scoring: Unblock C5 admission reads and correct historical block verification …
+- **`sn116:release:producer-code-r5`** - sn116 released producer-code-r5
+  - published 2026-10-09T19:28:10Z (was worker-images-v3)
+- **`sn116:scoring_commit:2026-10-09T19:34:16Z`** - sn116 commit touches scoring: Merge pull request #935 from carbonphysicsai/codex/v3-score-inputs-01
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-10-09T08:42:41Z`** - sn89 commit touches scoring: scoring: cache z_for_resolve (pure function, bit-identical output)
+- **`sn120:scoring_commit:2026-10-09T19:24:54Z`** - sn120 commit touches scoring: Recover hourly miner weight submissions from finalized chain evidence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-10-08T19:49:34Z`** - sn111 commit touches scoring: feat(validator): route verified operator miner allocation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-09T12:50:59Z`** - sn116 commit touches scoring: VALIDATOR-30 contract: the refusal order (root allow-list first) and …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-09T11:15:27Z`** - sn120 commit touches scoring: Verify effective-LR evidence for normal optimizer continuation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:readme_task_diff:c11a1b8d6bd23a9b`** - sn76 README task/scoring sections changed
+- **`sn48:readme_task_diff:681058003f640cf6`** - sn48 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn66:readme_task_diff:53ca2fbbcaa75039`** - sn66 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn79:readme_task_diff:1ab076cd7112df84`** - sn79 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:readme_task_diff:ad8c3f68204b01ab`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -62,16 +68,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:scoring_commit:2026-10-02T12:24:50Z` | 25 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn25 commit touches scoring: Record scoped native miner monitor and backup custody qualification |
-| `sn51:release:validator-v2026.10.02.2` | 51 | RELEASE | 2026-10-02T15:44:59Z | sn51 released validator-v2026.10.02.2 |
-| `sn51:scoring_commit:2026-10-02T14:46:23Z` | 51 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn51 commit touches scoring: DAH-3980 - validator: check a present Docker Hub image's tag from the… |
-| `sn71:scoring_commit:2026-10-02T13:19:39Z` | 71 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn71 commit touches scoring: Verify extended recovery schedule on migration replay |
-| `sn74:release:release-20261002-144641` | 74 | RELEASE | 2026-10-02T15:44:59Z | sn74 released release-20261002-144641 |
-| `sn78:scoring_commit:2026-10-02T07:14:11Z` | 78 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn78 commit touches scoring: Alert when successor validators stop reconciling |
-| `sn81:scoring_commit:2026-10-02T09:28:38Z` | 81 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn81 commit touches scoring: fix(corpus): auditor miners.json on the judge client; settle reads en… |
-| `sn89:scoring_commit:2026-10-02T13:45:26Z` | 89 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn89 commit touches scoring: hf: diversity-blocked qualified miners keep the probation dust floor |
-| `sn97:scoring_commit:2026-10-02T14:26:23Z` | 97 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn97 commit touches scoring: fix: swesmith tasks are served as one upstream commit, and git show r… |
-| `sn120:scoring_commit:2026-10-02T15:06:50Z` | 120 | SCORING_COMMIT | 2026-10-02T15:44:59Z | sn120 commit touches scoring: Bootstrap external MATH miners from authority-approved source |
 | `sn1:release:v4.4.12` | 1 | RELEASE | 2026-10-02T20:11:07Z | sn1 released v4.4.12 |
 | `sn15:scoring_commit:2026-10-02T18:43:36Z` | 15 | SCORING_COMMIT | 2026-10-02T20:11:07Z | sn15 commit touches scoring: Capture cached input tokens in private evaluation usage |
 | `sn25:scoring_commit:2026-10-02T19:50:40Z` | 25 | SCORING_COMMIT | 2026-10-02T20:11:07Z | sn25 commit touches scoring: Preserve qualification headroom with verified inactive cache reclaim |
@@ -253,7 +249,17 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn107:scoring_commit:2026-10-09T03:53:09Z` | 107 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn107 commit touches scoring: Merge pull request #40 from minos-protocol/fix/scoring-cutoff-lead |
 | `sn116:scoring_commit:2026-10-09T05:13:15Z` | 116 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn116 commit touches scoring: Merge pull request #854 from carbonphysicsai/agent/score-feed-schema |
 | `sn120:scoring_commit:2026-10-09T06:24:44Z` | 120 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn120 commit touches scoring: Bind native recovery imports and keep evaluator read capabilities out… |
-| `sn74:readme_task_diff:8ab3367c1c73f078` | 74 | README_TASK_DIFF | 2026-10-02T15:44:59Z | sn74 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-10-09T13:41:35Z` | 3 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn3 commit touches scoring: Add competition filters to evaluation history and update dataset summ… |
+| `sn21:release:SN21 training data v4 (live basket shape` | 21 | RELEASE | 2026-10-09T14:20:19Z | sn21 released SN21 training data v4 (live basket shape) |
+| `sn50:scoring_commit:2026-10-09T13:27:10Z` | 50 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn50 commit touches scoring: Avoid a full miner_predictions scan when loading scores (#337) |
+| `sn51:scoring_commit:2026-10-09T09:49:06Z` | 51 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn51 commit touches scoring: DAH-3980 - Validator: one Docker SDK SSH channel per host, not per UR… |
+| `sn71:scoring_commit:2026-10-09T07:27:04Z` | 71 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn71 commit touches scoring: Refresh protected judge fit manifest for merged scorer |
+| `sn76:scoring_commit:2026-10-09T14:10:54Z` | 76 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn76 commit touches scoring: protected/miner/manifest.json: single admitted compose hash after the… |
+| `sn78:scoring_commit:2026-10-09T09:19:01Z` | 78 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn78 commit touches scoring: Unblock C5 admission reads and correct historical block verification … |
+| `sn89:scoring_commit:2026-10-09T08:42:41Z` | 89 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn89 commit touches scoring: scoring: cache z_for_resolve (pure function, bit-identical output) |
+| `sn111:scoring_commit:2026-10-08T19:49:34Z` | 111 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn111 commit touches scoring: feat(validator): route verified operator miner allocation |
+| `sn116:scoring_commit:2026-10-09T12:50:59Z` | 116 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn116 commit touches scoring: VALIDATOR-30 contract: the refusal order (root allow-list first) and … |
+| `sn120:scoring_commit:2026-10-09T11:15:27Z` | 120 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn120 commit touches scoring: Verify effective-LR evidence for normal optimizer continuation |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
@@ -261,6 +267,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
+| `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

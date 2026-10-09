@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-09T06:48:15Z  |  block: 9243824  |  row_status: ok
+snapshot_utc: 2026-10-09T14:19:45Z  |  block: 9246082  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (276.03999972396 USD), open=True
+- registration cost: 0.999999999 TAO (273.61999972638 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 705.3 days  |  registered at block 4165565
+- subnet age: 705.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 6274.191548275041** (uid 182) <- the only figure quotable as achievable
-- median_miner_usd_day: 4182.581608936556
-- top_miner_usd_day: 6274.191548275041 (uid 182, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3093.0319688789623** (uid 110) <- the only figure quotable as achievable
+- median_miner_usd_day: 4123.832856981454
+- top_miner_usd_day: 6186.063937757925 (uid 182, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,24 +26,24 @@ snapshot_utc: 2026-10-09T06:48:15Z  |  block: 9243824  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 5093 bytes, sha fbca33fd060cacc2
+- README: 5802 bytes, sha 347d3d6b3a46de04
 - latest release: (none) 
-- last commit: 2026-10-08T10:48:25Z
-- scoring-related commit: Add competition dataset panel and update evaluation history layout 2026-10-08T10:48:25Z
+- last commit: 2026-10-09T13:41:35Z
+- scoring-related commit: Add competition filters to evaluation history and update dataset summ… 2026-10-09T13:41:35Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 3128.8766 USD/day  |  payback on registration: 0.09 days
+- net margin: 3084.8128 USD/day  |  payback on registration: 0.09 days
 
 ## Score
 
 - gate: **OK** 
-- score: 74.8 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 31.79 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 0.7d ago
+- score: 52.8 (rank 28), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
+- components: income 31.74 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -60,6 +60,16 @@ Miners submit immutable model checkpoints. The validator verifies each
 submission and sends the challenger and current king to a remote GPU evaluator
 for paired cross-entropy scoring. A successful challenger becomes the new king,
 and the validator updates subnet weights and publishes the resulting state.
+
+Evaluation isolates EOS-delimited document fragments inside the sampled windows,
+resets their positions, and excludes predictions across document boundaries.
+Scores are weighted by scored-token counts; bootstrap resamples paired original
+windows. See [masked evaluation setup and GPU checks](DEPLOY.md#document-masked-evaluation).
+
+Evaluation can additionally sample approximately 6M tokens in complete documents
+between 2049 and 8192 tokens, with category-proportional coverage of 2049–4096
+and 4097–8192. It supports MAIN, MATH, CODE and TEXT, with a combined token-weighted verdict
+and separate long-document metrics. See [configuration and GPU validation](DEPLOY.md#additional-long-document-evaluation).
 
 ## Miner CLI
 

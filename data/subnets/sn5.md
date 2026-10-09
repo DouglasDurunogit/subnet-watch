@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-10-09T19:36:33Z  |  block: 9247666  |  row_status: ok
+snapshot_utc: 2026-10-09T23:34:22Z  |  block: 9248855  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.73901312 TAO (201.11503047679997 USD), open=True
+- registration cost: 0.592947608 TAO (163.0902395804 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 253  |  free: 0
-- subnet age: 938.3 days  |  registered at block 2491604
+- subnet age: 938.5 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 43.810982107033716** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 41.9466849960961
-- top_miner_usd_day: 43.810982107033716 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 44.05308343329093** (uid 54) <- the only figure quotable as achievable
+- median_miner_usd_day: 42.17181296638882
+- top_miner_usd_day: 44.05308343329093 (uid 54, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 243  |  gini: 0.0201075322388653  |  top1_share: 0.004327077994813644  |  top10_share: 0.04308664896963374
+- earners: 243  |  gini: 0.022230388259571354  |  top1_share: 0.0043292044123990885  |  top10_share: 0.04324582485980157
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,18 +36,18 @@ snapshot_utc: 2026-10-09T19:36:33Z  |  block: 9247666  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 33.7275 USD/day  |  payback on registration: 5.96 days
+- net margin: 33.9526 USD/day  |  payback on registration: 4.8 days
 
 ## Score
 
 - gate: **OK** 
-- score: 58.0 (rank 19), confidence 0.85 - hardware requirement unknown
-- components: income 14.01 / freshness 35.0 / resource 11.25 / registration 8.01
-- freshness basis: SCORING_COMMIT 2.7d ago
+- score: 58.4 (rank 21), confidence 0.85 - hardware requirement unknown
+- components: income 14.04 / freshness 35.0 / resource 11.25 / registration 8.4
+- freshness basis: SCORING_COMMIT 2.9d ago
 
 ## On-chain description
 
-> Hone training
+> Hone (SN5) is an RLVR subnet: reinforcement learning from verifiable rewards. Miners are paid to solve real software-engineering tasks- repository patches submitted as git diffs and terminal tasks submitted as scripts with full trajectories. Validators lease tasks from a problem server and grade eve
 
 ## README excerpt (evidence for the brief)
 

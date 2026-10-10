@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-10T15:35:08Z, block 9253658
+# ALARMS - generated 2026-10-10T19:33:35Z, block 9254851
 
-window: first_seen in [2026-10-10T14:20:44Z, 2026-10-10T15:35:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-10T18:19:14Z, 2026-10-10T19:34:14Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.10-1068404160` | 25 | RELEASE | P1 | 2026-10-10T15:35:44Z | sn25 released v2026.10.10-1068404160 |
-| `sn28:release:v0.4.27-dev` | 28 | RELEASE | P1 | 2026-10-10T15:35:44Z | sn28 released v0.4.27-dev |
-| `sn28:scoring_commit:2026-10-10T13:53:49Z` | 28 | SCORING_COMMIT | P1 | 2026-10-10T15:35:44Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310) |
-| `sn71:scoring_commit:2026-10-10T15:33:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-10T15:35:44Z | sn71 commit touches scoring: Rejudge Oct10 saved outputs on final ATS scorer |
+| `sn25:release:v2026.10.10-1068595480` | 25 | RELEASE | P1 | 2026-10-10T19:34:14Z | sn25 released v2026.10.10-1068595480 |
+| `sn71:scoring_commit:2026-10-10T19:08:12Z` | 71 | SCORING_COMMIT | P1 | 2026-10-10T19:34:14Z | sn71 commit touches scoring: Merge pull request #354 from leadpoet/fix/arena-confirmed-score-parall |
+| `sn108:scoring_commit:2026-10-10T15:01:19Z` | 108 | SCORING_COMMIT | P1 | 2026-10-10T19:34:14Z | sn108 commit touches scoring: On a baseline_epoch change the validator's bar is exactly the server'… |
+| `sn120:scoring_commit:2026-10-10T17:31:08Z` | 120 | SCORING_COMMIT | P1 | 2026-10-10T19:34:14Z | sn120 commit touches scoring: Clarify availability of reused historical evaluations |
 
 ### detail
 
-- **`sn25:release:v2026.10.10-1068404160`** - sn25 released v2026.10.10-1068404160
-  - published 2026-10-10T14:00:28Z (was v2026.10.10-1068162640)
-- **`sn28:release:v0.4.27-dev`** - sn28 released v0.4.27-dev
-  - published 2026-10-10T14:12:35Z (was v0.4.26)
-- **`sn28:scoring_commit:2026-10-10T13:53:49Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310)
+- **`sn25:release:v2026.10.10-1068595480`** - sn25 released v2026.10.10-1068595480
+  - published 2026-10-10T19:19:01Z (was v2026.10.10-1068404160)
+- **`sn71:scoring_commit:2026-10-10T19:08:12Z`** - sn71 commit touches scoring: Merge pull request #354 from leadpoet/fix/arena-confirmed-score-parall
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-10T15:33:53Z`** - sn71 commit touches scoring: Rejudge Oct10 saved outputs on final ATS scorer
+- **`sn108:scoring_commit:2026-10-10T15:01:19Z`** - sn108 commit touches scoring: On a baseline_epoch change the validator's bar is exactly the server'…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-10-10T17:31:08Z`** - sn120 commit touches scoring: Clarify availability of reused historical evaluations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -39,7 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
-| `sn120:scoring_commit:2026-10-03T18:20:16Z` | 120 | SCORING_COMMIT | 2026-10-03T18:40:15Z | sn120 commit touches scoring: Record verified five-role source staging and ongoing independent audit |
 | `sn11:release:v0.7.4` | 11 | RELEASE | 2026-10-03T21:49:33Z | sn11 released v0.7.4 |
 | `sn11:scoring_commit:2026-10-03T18:55:49Z` | 11 | SCORING_COMMIT | 2026-10-03T21:49:33Z | sn11 commit touches scoring: [coding-agent] validator: weight-only by default, eval behind EVAL_EN… |
 | `sn78:scoring_commit:2026-10-03T14:17:42Z` | 78 | SCORING_COMMIT | 2026-10-03T21:49:33Z | sn78 commit touches scoring: Reject partial successor reward ownership |
@@ -229,6 +228,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-10-10T04:05:02Z` | 51 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: cap fresh vloopback volume at the ext4 16… |
 | `sn71:scoring_commit:2026-10-10T04:22:43Z` | 71 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn71 commit touches scoring: Merge pull request #328 from leadpoet/codex/paid-score-abandonment-441 |
 | `sn120:scoring_commit:2026-10-10T09:04:36Z` | 120 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn120 commit touches scoring: Document live epoch 116 distinct-task training intake |
+| `sn25:release:v2026.10.10-1068404160` | 25 | RELEASE | 2026-10-10T15:35:44Z | sn25 released v2026.10.10-1068404160 |
+| `sn28:release:v0.4.27-dev` | 28 | RELEASE | 2026-10-10T15:35:44Z | sn28 released v0.4.27-dev |
+| `sn28:scoring_commit:2026-10-10T13:53:49Z` | 28 | SCORING_COMMIT | 2026-10-10T15:35:44Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310) |
+| `sn71:scoring_commit:2026-10-10T15:33:53Z` | 71 | SCORING_COMMIT | 2026-10-10T15:35:44Z | sn71 commit touches scoring: Rejudge Oct10 saved outputs on final ATS scorer |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |

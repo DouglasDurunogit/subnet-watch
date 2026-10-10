@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-09T23:34:22Z, block 9248855
+# ALARMS - generated 2026-10-10T02:47:51Z, block 9249822
 
-window: first_seen in [2026-10-09T22:19:47Z, 2026-10-09T23:34:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-10T01:33:16Z, 2026-10-10T02:48:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:scoring_commit:2026-10-09T21:56:54Z` | 14 | SCORING_COMMIT | P1 | 2026-10-09T23:34:47Z | sn14 commit touches scoring: Notify Discord when new hotkeys receive committed and active weights … |
-| `sn71:scoring_commit:2026-10-09T23:12:54Z` | 71 | SCORING_COMMIT | P1 | 2026-10-09T23:34:47Z | sn71 commit touches scoring: Refresh protected scorer manifest for required-stage retry |
-| `sn116:release:producer-code-r6` | 116 | RELEASE | P1 | 2026-10-09T23:34:47Z | sn116 released producer-code-r6 |
-| `sn116:scoring_commit:2026-10-09T20:56:19Z` | 116 | SCORING_COMMIT | P1 | 2026-10-09T23:34:47Z | sn116 commit touches scoring: Merge pull request #943 from carbonphysicsai/codex/landscape-miner-in… |
-| `sn120:scoring_commit:2026-10-09T21:02:00Z` | 120 | SCORING_COMMIT | P1 | 2026-10-09T23:34:47Z | sn120 commit touches scoring: Retain partial miner batches and advance sampling attempts on retries |
+| `sn25:release:v2026.10.9-1067985620` | 25 | RELEASE | P1 | 2026-10-10T02:48:16Z | sn25 released v2026.10.9-1067985620 |
+| `sn62:release:v0.3.11` | 62 | RELEASE | P1 | 2026-10-10T02:48:16Z | sn62 released v0.3.11 |
+| `sn71:scoring_commit:2026-10-10T02:16:30Z` | 71 | SCORING_COMMIT | P1 | 2026-10-10T02:48:16Z | sn71 commit touches scoring: Merge pull request #322 from leadpoet/codex/arena-partial-score-deadl… |
+| `sn120:scoring_commit:2026-10-10T01:21:35Z` | 120 | SCORING_COMMIT | P1 | 2026-10-10T02:48:16Z | sn120 commit touches scoring: Support prospective nine-batch mining and 512-task training |
 
 ### detail
 
-- **`sn14:scoring_commit:2026-10-09T21:56:54Z`** - sn14 commit touches scoring: Notify Discord when new hotkeys receive committed and active weights …
+- **`sn25:release:v2026.10.9-1067985620`** - sn25 released v2026.10.9-1067985620
+  - published 2026-10-10T02:22:27Z (was v2026.10.8-1066946420)
+- **`sn62:release:v0.3.11`** - sn62 released v0.3.11
+  - published 2026-10-09T23:48:30Z (was v0.3.10)
+- **`sn71:scoring_commit:2026-10-10T02:16:30Z`** - sn71 commit touches scoring: Merge pull request #322 from leadpoet/codex/arena-partial-score-deadl…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-09T23:12:54Z`** - sn71 commit touches scoring: Refresh protected scorer manifest for required-stage retry
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:producer-code-r6`** - sn116 released producer-code-r6
-  - published 2026-10-09T20:39:04Z (was producer-code-r5)
-- **`sn116:scoring_commit:2026-10-09T20:56:19Z`** - sn116 commit touches scoring: Merge pull request #943 from carbonphysicsai/codex/landscape-miner-in…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-09T21:02:00Z`** - sn120 commit touches scoring: Retain partial miner batches and advance sampling attempts on retries
+- **`sn120:scoring_commit:2026-10-10T01:21:35Z`** - sn120 commit touches scoring: Support prospective nine-batch mining and 512-task training
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -42,11 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
-| `sn15:scoring_commit:2026-10-02T20:29:49Z` | 15 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn15 commit touches scoring: Validator v2.0.41: per-event market notices, preflight replay parity … |
-| `sn71:scoring_commit:2026-10-02T23:10:33Z` | 71 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn71 commit touches scoring: Reuse exact Arena verifier requests through the provider ledger |
-| `sn81:scoring_commit:2026-10-02T21:06:44Z` | 81 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn81 commit touches scoring: fix(corpus): bound the audits of one judge pass; log each scoring cal… |
-| `sn117:release:everycli v0.2.3` | 117 | RELEASE | 2026-10-02T23:56:15Z | sn117 released everycli v0.2.3 |
-| `sn120:scoring_commit:2026-10-02T23:47:07Z` | 120 | SCORING_COMMIT | 2026-10-02T23:56:15Z | sn120 commit touches scoring: Prepare public dashboard projection for corrected H200 miner pilot |
 | `sn71:scoring_commit:2026-10-03T01:31:39Z` | 71 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn71 commit touches scoring: Preserve concurrent verifier lease correction |
 | `sn81:scoring_commit:2026-10-03T03:49:09Z` | 81 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn81 commit touches scoring: perf(corpus): verify drand rounds by BLS here, take the fastest relay… |
 | `sn120:scoring_commit:2026-10-03T04:24:40Z` | 120 | SCORING_COMMIT | 2026-10-03T05:11:26Z | sn120 commit touches scoring: Record verified public full-model update and checkpoint publication |
@@ -235,6 +227,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:release:producer-code-r5` | 116 | RELEASE | 2026-10-09T19:37:09Z | sn116 released producer-code-r5 |
 | `sn116:scoring_commit:2026-10-09T19:34:16Z` | 116 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn116 commit touches scoring: Merge pull request #935 from carbonphysicsai/codex/v3-score-inputs-01 |
 | `sn120:scoring_commit:2026-10-09T19:24:54Z` | 120 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn120 commit touches scoring: Recover hourly miner weight submissions from finalized chain evidence |
+| `sn14:scoring_commit:2026-10-09T21:56:54Z` | 14 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn14 commit touches scoring: Notify Discord when new hotkeys receive committed and active weights … |
+| `sn71:scoring_commit:2026-10-09T23:12:54Z` | 71 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn71 commit touches scoring: Refresh protected scorer manifest for required-stage retry |
+| `sn116:release:producer-code-r6` | 116 | RELEASE | 2026-10-09T23:34:47Z | sn116 released producer-code-r6 |
+| `sn116:scoring_commit:2026-10-09T20:56:19Z` | 116 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn116 commit touches scoring: Merge pull request #943 from carbonphysicsai/codex/landscape-miner-in… |
+| `sn120:scoring_commit:2026-10-09T21:02:00Z` | 120 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn120 commit touches scoring: Retain partial miner batches and advance sampling attempts on retries |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-09T23:34:22Z · block 9248855 · run_status **ok**_
+_snapshot 2026-10-10T02:47:51Z · block 9249822 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 100 | `miner_burn` < 0.99 |
 | Ranked | 100 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **53** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,11 +30,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 70 | `████████████████████████████` |
-| 0–0.2 | 6 | `██` |
-| 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 7 | `███` |
+| 0–0.2 | 7 | `███` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 6 | `██` |
 | 0.6–0.8 | 8 | `███` |
-| 0.8–0.99 | 5 | `██` |
+| 0.8–0.99 | 4 | `██` |
 | ≥0.99 dead | 28 | `███████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 81.8 | 269 | 22,861 | cpu-small | 20 | 80% |
-| 2 | sn41 Almanac | 74.9 | 44.26 | 111 | cpu-small | 121 | 2% |
-| 3 | sn80 OpenRoboto | 72 | 1,353 | 6,455 | rtx4090* | 7 | 35% |
-| 4 | sn101 Tag101 | 70.3 | 13.11 | 16.71 | cpu-small | 246 | 1% |
-| 5 | sn38 ChronoLLM | 68.7 | 211 | 961 | cpu-small | 9 | 52% |
-| 6 | sn67 Harnyx | 68.4 | 7.95 | 831 | cpu-small | 149 | 30% |
-| 7 | sn79 MVTRX | 67.1 | 7.44 | 70.27 | cpu-small | 249 | 3% |
-| 8 | sn4 Targon | 66.8 | 9,944 | 29,320 | rtx4090* | 5 | 70% |
-| 9 | sn26 Perturb | 66.2 | 237 | 396 | rtx3060 | 4 | 60% |
-| 10 | sn15 ORO | 66.2 | 6.06 | 12.53 | cpu-small | 47 | 98% |
-| 11 | sn120 Affine | 63.7 | 160 | 324 | rtx4090* | 249 | 1% |
-| 12 | sn62 Ridges | 63.5 | 107 | 1,093 | rtx4090* | 35 | 17% |
-| 13 | sn61 RedTeam | 62.4 | 77.75 | 105 | rtx4090* | 126 | 1% |
-| 14 | sn65 True Performance | 62.3 | 78.84 | 166 | rtx4090* | 6 | 75% |
-| 15 | sn28 SayGM | 61.1 | 53.60 | 1,877 | rtx4090* | 70 | 32% |
-| 16 | sn53 engy | 60.1 | 1,362 | 4,502 | rtx4090 | 18 | 17% |
-| 17 | sn111 Claims | 59.5 | 32.21 | 3,086 | rtx4090* | 7 | 90% |
-| 18 | sn91 cascade | 59.3 | 406 | 1,084 | cpu-small | 5 | 52% |
-| 19 | sn23 Trishool | 59.2 | 403 | 403 = | cpu-small | 3 | 80% |
-| 20 | sn1 Apex | 58.9 | 932 | 977 | rtx4090* | 4 | 54% |
+| 1 | sn107 Minos | 81.8 | 273 | 23,106 | cpu-small | 20 | 80% |
+| 2 | sn41 Almanac | 74.5 | 40.86 | 111 | cpu-small | 123 | 2% |
+| 3 | sn80 OpenRoboto | 72.1 | 1,374 | 6,554 | rtx4090* | 7 | 35% |
+| 4 | sn101 Tag101 | 70.4 | 13.52 | 16.44 | cpu-small | 243 | 1% |
+| 5 | sn49 Nepher Robotics | 69.8 | 703 | 4,593 | rtx4090* | 4 | 68% |
+| 6 | sn38 ChronoLLM | 68.7 | 212 | 967 | cpu-small | 9 | 52% |
+| 7 | sn67 Harnyx | 68.5 | 7.99 | 835 | cpu-small | 149 | 30% |
+| 8 | sn79 MVTRX | 66.8 | 7.57 | 69.44 | cpu-small | 247 | 3% |
+| 9 | sn15 ORO | 66.1 | 6.00 | 12.40 | cpu-small | 46 | 98% |
+| 10 | sn26 Perturb | 66 | 225 | 369 | rtx3060 | 4 | 61% |
+| 11 | sn62 Ridges | 63.6 | 108 | 1,100 | rtx4090* | 35 | 17% |
+| 12 | sn120 Affine | 63.3 | 156 | 315 | rtx4090* | 249 | 1% |
+| 13 | sn61 RedTeam | 62.4 | 76.91 | 105 | rtx4090* | 126 | 1% |
+| 14 | sn65 True Performance | 62.3 | 79.35 | 167 | rtx4090* | 6 | 75% |
+| 15 | sn28 SayGM | 61.3 | 56.93 | 1,613 | rtx4090* | 71 | 23% |
+| 16 | sn53 engy | 60.3 | 1,418 | 4,686 | rtx4090 | 18 | 17% |
+| 17 | sn111 Claims | 59.5 | 32.45 | 3,104 | rtx4090* | 7 | 90% |
+| 18 | sn23 Trishool | 59.3 | 409 | 409 = | cpu-small | 3 | 80% |
+| 19 | sn91 cascade | 59.3 | 409 | 1,091 | cpu-small | 5 | 52% |
+| 20 | sn1 Apex | 58.8 | 924 | 968 | rtx4090* | 4 | 55% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 23 |
-| concentrated (30–60%) | 26 |
+| wide (<30%) | 24 |
+| concentrated (30–60%) | 25 |
 | dominated (60–90%) | 26 |
 | captured (>90%) | 21 |
 
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-10T02:48 | sn25 | RELEASE | sn25 released v2026.10.9-1067985620 |
+| 2026-10-10T02:48 | sn62 | RELEASE | sn62 released v0.3.11 |
+| 2026-10-10T02:48 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #322 from leadpoet/cod |
+| 2026-10-10T02:48 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Support prospective nine-batch mining an |
 | 2026-10-09T23:34 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Notify Discord when new hotkeys receive c |
 | 2026-10-09T23:34 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Refresh protected scorer manifest for req |
 | 2026-10-09T23:34 | sn116 | RELEASE | sn116 released producer-code-r6 |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-09T19:37 | sn48 | README_TASK_DIFF | sn48 README task/scoring sections changed |
 | 2026-10-09T19:37 | sn66 | README_TASK_DIFF | sn66 README task/scoring sections changed |
 | 2026-10-09T19:37 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Include accepted host scores in closed bi |
-| 2026-10-09T19:37 | sn76 | SCORING_COMMIT | sn76 commit touches scoring: Pool deliveries: claim-refusal backoff +  |
-| 2026-10-09T19:37 | sn79 | README_TASK_DIFF | sn79 README task/scoring sections changed |
-| 2026-10-09T19:37 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat(env): score reliquary/stdio-program/ |
-| 2026-10-09T19:37 | sn104 | MECHANISM_ADDED | sn104 now runs 2 incentive mechanisms (was 1) |
 
 ---
 

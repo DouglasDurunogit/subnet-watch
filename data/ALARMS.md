@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-10T22:58:35Z, block 9255876
+# ALARMS - generated 2026-10-11T01:48:55Z, block 9256727
 
-window: first_seen in [2026-10-10T21:44:03Z, 2026-10-10T22:59:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-11T00:34:20Z, 2026-10-11T01:49:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-10T20:21:02Z` | 25 | SCORING_COMMIT | P1 | 2026-10-10T22:59:03Z | sn25 commit touches scoring: Merge seeding validator trails from every online provider |
-| `sn71:scoring_commit:2026-10-10T21:43:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-10T22:59:03Z | sn71 commit touches scoring: Merge pull request #363 from leadpoet/fix/arena-oct10-score-claim-cuto |
+| `sn25:release:v2026.10.10-1068748650` | 25 | RELEASE | P1 | 2026-10-11T01:49:20Z | sn25 released v2026.10.10-1068748650 |
+| `sn71:scoring_commit:2026-10-11T01:38:29Z` | 71 | SCORING_COMMIT | P1 | 2026-10-11T01:49:20Z | sn71 commit touches scoring: Verify guarded natural expiry retains uncertain execute bills |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-10T20:21:02Z`** - sn25 commit touches scoring: Merge seeding validator trails from every online provider
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-10T21:43:42Z`** - sn71 commit touches scoring: Merge pull request #363 from leadpoet/fix/arena-oct10-score-claim-cuto
+- **`sn25:release:v2026.10.10-1068748650`** - sn25 released v2026.10.10-1068748650
+  - published 2026-10-10T23:34:42Z (was v2026.10.10-1068595480)
+- **`sn71:scoring_commit:2026-10-11T01:38:29Z`** - sn71 commit touches scoring: Verify guarded natural expiry retains uncertain execute bills
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -32,8 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
-| `sn71:scoring_commit:2026-10-04T00:23:22Z` | 71 | SCORING_COMMIT | 2026-10-04T00:33:21Z | sn71 commit touches scoring: Merge pull request #205 from leadpoet/codex/daily-miner-admission |
-| `sn81:scoring_commit:2026-10-03T15:52:28Z` | 81 | SCORING_COMMIT | 2026-10-04T00:33:21Z | sn81 commit touches scoring: feat(corpus): new jobs settle by period; tasks close frees a finished… |
 | `sn25:scoring_commit:2026-10-04T06:18:37Z` | 25 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn25 commit touches scoring: Retain complete model success and actual validator reconnect qualific… |
 | `sn26:scoring_commit:2026-10-04T03:18:36Z` | 26 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn26 commit touches scoring: feat: rank scanning miners by stake-weighted consensus rank instead o… |
 | `sn71:scoring_commit:2026-10-04T05:56:54Z` | 71 | SCORING_COMMIT | 2026-10-04T06:24:29Z | sn71 commit touches scoring: Merge pull request #209 from leadpoet/codex/arena-score-host-recovery… |
@@ -226,6 +224,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-10T19:08:12Z` | 71 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn71 commit touches scoring: Merge pull request #354 from leadpoet/fix/arena-confirmed-score-parall |
 | `sn108:scoring_commit:2026-10-10T15:01:19Z` | 108 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn108 commit touches scoring: On a baseline_epoch change the validator's bar is exactly the server'… |
 | `sn120:scoring_commit:2026-10-10T17:31:08Z` | 120 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn120 commit touches scoring: Clarify availability of reused historical evaluations |
+| `sn25:scoring_commit:2026-10-10T20:21:02Z` | 25 | SCORING_COMMIT | 2026-10-10T22:59:03Z | sn25 commit touches scoring: Merge seeding validator trails from every online provider |
+| `sn71:scoring_commit:2026-10-10T21:43:42Z` | 71 | SCORING_COMMIT | 2026-10-10T22:59:03Z | sn71 commit touches scoring: Merge pull request #363 from leadpoet/fix/arena-oct10-score-claim-cuto |
 | `sn26:readme_task_diff:417360e9baf6fbbe` | 26 | README_TASK_DIFF | 2026-10-04T06:24:29Z | sn26 README task/scoring sections changed |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |

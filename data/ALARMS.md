@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-11T15:07:21Z, block 9260719
+# ALARMS - generated 2026-10-11T19:37:57Z, block 9262072
 
-window: first_seen in [2026-10-11T13:52:48Z, 2026-10-11T15:07:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-11T18:23:20Z, 2026-10-11T19:38:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,47 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn116:release:producer-code-r7` | 116 | RELEASE | P1 | 2026-10-11T15:07:48Z | sn116 released producer-code-r7 |
-| `sn116:scoring_commit:2026-10-11T14:34:29Z` | 116 | SCORING_COMMIT | P1 | 2026-10-11T15:07:48Z | sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification… |
+| `sn108:burn_drop:0.902` | 108 | BURN_DROP | P0 | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
+| `sn15:release:v2.4.1` | 15 | RELEASE | P1 | 2026-10-11T19:38:20Z | sn15 released v2.4.1 |
+| `sn21:scoring_commit:2026-10-11T17:10:16Z` | 21 | SCORING_COMMIT | P1 | 2026-10-11T19:38:20Z | sn21 commit touches scoring: docs(verifying): the standing preview exists only during a notice per… |
+| `sn22:scoring_commit:2026-10-11T18:25:03Z` | 22 | SCORING_COMMIT | P1 | 2026-10-11T19:38:20Z | sn22 commit touches scoring: fix(validators): no JS rendering, 20 pages per 1,000-URL task, fail o… |
+| `sn71:scoring_commit:2026-10-11T16:11:47Z` | 71 | SCORING_COMMIT | P1 | 2026-10-11T19:38:20Z | sn71 commit touches scoring: Install current reward RPCs in per-ICP round fixture |
+| `sn76:scoring_commit:2026-10-11T16:48:26Z` | 76 | SCORING_COMMIT | P1 | 2026-10-11T19:38:20Z | sn76 commit touches scoring: Fix miner registration-first onboarding |
+| `sn81:scoring_commit:2026-10-11T06:43:18Z` | 81 | SCORING_COMMIT | P1 | 2026-10-11T19:38:20Z | sn81 commit touches scoring: feat(cli): tasks set-cap sets or clears a corpus task's token price |
+| `sn116:release:producer-code-r8.1` | 116 | RELEASE | P1 | 2026-10-11T19:38:20Z | sn116 released producer-code-r8.1 |
+| `sn117:release:everycli v0.2.4` | 117 | RELEASE | P1 | 2026-10-11T19:38:20Z | sn117 released everycli v0.2.4 |
+| `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | P2 | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
+| `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | P2 | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn116:release:producer-code-r7`** - sn116 released producer-code-r7
-  - published 2026-10-11T11:27:58Z (was producer-code-r6)
-- **`sn116:scoring_commit:2026-10-11T14:34:29Z`** - sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification…
+- **`sn108:burn_drop:0.902`** - sn108 burn fell 1.000 -> 0.902 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:release:v2.4.1`** - sn15 released v2.4.1
+  - published 2026-10-11T18:01:39Z (was v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367))
+- **`sn21:scoring_commit:2026-10-11T17:10:16Z`** - sn21 commit touches scoring: docs(verifying): the standing preview exists only during a notice per…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn22:scoring_commit:2026-10-11T18:25:03Z`** - sn22 commit touches scoring: fix(validators): no JS rendering, 20 pages per 1,000-URL task, fail o…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-11T16:11:47Z`** - sn71 commit touches scoring: Install current reward RPCs in per-ICP round fixture
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:scoring_commit:2026-10-11T16:48:26Z`** - sn76 commit touches scoring: Fix miner registration-first onboarding
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-11T06:43:18Z`** - sn81 commit touches scoring: feat(cli): tasks set-cap sets or clears a corpus task's token price
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:release:producer-code-r8.1`** - sn116 released producer-code-r8.1
+  - published 2026-10-11T17:09:40Z (was producer-code-r7)
+- **`sn117:release:everycli v0.2.4`** - sn117 released everycli v0.2.4
+  - published 2026-10-11T18:20:21Z (was everycli v0.2.3)
+- **`sn76:readme_task_diff:0a4c226e1573572b`** - sn76 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:readme_task_diff:1f5936ceb48b4e59`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn116:burn_drop:0.000` | 116 | BURN_DROP | 2026-10-04T17:06:18Z | sn116 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
@@ -31,9 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
-| `sn9:release:v4.13.4` | 9 | RELEASE | 2026-10-04T17:06:18Z | sn9 released v4.13.4 |
-| `sn25:scoring_commit:2026-10-04T16:31:25Z` | 25 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn25 commit touches scoring: Verify completed original capture and Yuma Rust regression controls |
-| `sn120:scoring_commit:2026-10-04T14:42:39Z` | 120 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs |
 | `sn25:scoring_commit:2026-10-04T19:11:16Z` | 25 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn25 commit touches scoring: Record final miner qualification and remaining recovery hardening |
 | `sn120:scoring_commit:2026-10-04T19:54:42Z` | 120 | SCORING_COMMIT | 2026-10-04T20:09:59Z | sn120 commit touches scoring: Authorize qualified verifier additions without changing epoch contract |
 | `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
@@ -219,7 +242,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.10.10-1068958850` | 25 | RELEASE | 2026-10-11T08:43:38Z | sn25 released v2026.10.10-1068958850 |
 | `sn116:scoring_commit:2026-10-11T02:06:55Z` | 116 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn116 commit touches scoring: Merge pull request #1041 from carbonphysicsai/claude/miner-survive-re… |
 | `sn120:scoring_commit:2026-10-11T07:02:34Z` | 120 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn120 commit touches scoring: Document independent epoch openings and hourly reward fallback |
-| `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
+| `sn116:release:producer-code-r7` | 116 | RELEASE | 2026-10-11T15:07:48Z | sn116 released producer-code-r7 |
+| `sn116:scoring_commit:2026-10-11T14:34:29Z` | 116 | SCORING_COMMIT | 2026-10-11T15:07:48Z | sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification… |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |

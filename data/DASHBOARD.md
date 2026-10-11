@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-11T01:48:55Z · block 9256727 · run_status **ok**_
+_snapshot 2026-10-11T08:43:09Z · block 9258799 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 61 of 128
+# 58 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 100 | `miner_burn` < 0.99 |
 | Ranked | 100 | passed every gate |
-| **Positive margin** | **61** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| **Positive margin** | **58** | income beats machine cost |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,8 +29,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 72 | `████████████████████████████` |
-| 0–0.2 | 6 | `██` |
+| 0 (none) | 71 | `████████████████████████████` |
+| 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 7 | `███` |
 | 0.6–0.8 | 7 | `███` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 82.4 | 312 | 26,271 | cpu-small | 20 | 80% |
-| 2 | sn3 Teutonic | 75 | 3,279 | 8,555 | rtx4090* | 5 | 40% |
-| 3 | sn41 Almanac | 74.5 | 40.64 | 112 | cpu-small | 125 | 2% |
-| 4 | sn80 OpenRoboto | 72.3 | 1,452 | 6,923 | rtx4090* | 7 | 35% |
-| 5 | sn101 Tag101 | 70.3 | 13.25 | 15.38 | cpu-small | 244 | 1% |
-| 6 | sn67 Harnyx | 69 | 9.21 | 896 | cpu-small | 132 | 31% |
-| 7 | sn38 ChronoLLM | 68.8 | 219 | 997 | cpu-small | 9 | 52% |
-| 8 | sn79 MVTRX | 67.8 | 8.41 | 28.10 | cpu-small | 250 | 1% |
-| 9 | sn15 ORO | 66.8 | 6.85 | 14.10 | cpu-small | 52 | 98% |
-| 10 | sn26 Perturb | 66.2 | 237 | 396 | rtx3060 | 4 | 60% |
-| 11 | sn62 Ridges | 63.9 | 120 | 1,379 | rtx4090* | 36 | 17% |
-| 12 | sn120 Affine | 63.3 | 152 | 403 | rtx4090* | 239 | 1% |
-| 13 | sn65 True Performance | 62.6 | 84.44 | 177 | rtx4090* | 6 | 75% |
-| 14 | sn61 RedTeam | 62.2 | 73.45 | 107 | rtx4090* | 137 | 1% |
-| 15 | sn28 SayGM | 60.8 | 48.69 | 1,286 | rtx4090* | 69 | 19% |
-| 16 | sn53 engy | 60 | 1,312 | 2,518 | rtx4090 | 18 | 17% |
-| 17 | sn23 Trishool | 59.4 | 422 | 422 = | cpu-small | 3 | 80% |
-| 18 | sn91 cascade | 59.2 | 402 | 2,151 | cpu-small | 5 | 52% |
-| 19 | sn81 Reliquary | 59.2 | 28.60 | 245 | rtx4090* | 47 | 54% |
-| 20 | sn5 Hone | 59 | 35.59 | 37.05 | rtx4090* | 243 | 0% |
+| 1 | sn107 Minos | 82.3 | 301 | 25,567 | cpu-small | 20 | 80% |
+| 2 | sn3 Teutonic | 74.9 | 3,196 | 8,537 | rtx4090* | 5 | 40% |
+| 3 | sn80 OpenRoboto | 72.2 | 1,446 | 6,898 | rtx4090* | 7 | 35% |
+| 4 | sn101 Tag101 | 70.2 | 12.85 | 14.86 | cpu-small | 243 | 1% |
+| 5 | sn67 Harnyx | 69 | 8.98 | 932 | cpu-small | 120 | 33% |
+| 6 | sn38 ChronoLLM | 68.8 | 217 | 990 | cpu-small | 9 | 52% |
+| 7 | sn79 MVTRX | 67.6 | 8.43 | 41.02 | cpu-small | 246 | 2% |
+| 8 | sn15 ORO | 66.4 | 6.68 | 13.76 | cpu-small | 52 | 98% |
+| 9 | sn62 Ridges | 63.9 | 118 | 1,364 | rtx4090* | 36 | 17% |
+| 10 | sn120 Affine | 63.4 | 155 | 352 | rtx4090* | 238 | 1% |
+| 11 | sn65 True Performance | 62.6 | 85.65 | 180 | rtx4090* | 6 | 75% |
+| 12 | sn41 Almanac | 62.5 | 3.06 | 164 | cpu-small | 125 | 3% |
+| 13 | sn61 RedTeam | 62.3 | 76.95 | 110 | rtx4090* | 128 | 1% |
+| 14 | sn28 SayGM | 60.6 | 46.84 | 737 | rtx4090* | 71 | 27% |
+| 15 | sn53 engy | 60.1 | 1,346 | 2,583 | rtx4090 | 18 | 17% |
+| 16 | sn23 Trishool | 59.4 | 423 | 423 = | cpu-small | 3 | 80% |
+| 17 | sn5 Hone | 58.9 | 35.51 | 36.81 | rtx4090* | 245 | 0% |
+| 18 | sn81 Reliquary | 58.9 | 25.88 | 236 | rtx4090* | 50 | 55% |
+| 19 | sn111 Claims | 58.2 | 22.47 | 252 | rtx4090* | 7 | 90% |
+| 20 | sn91 cascade | 57.8 | 267 | 536 | cpu-small | 5 | 52% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
+| wide (<30%) | 24 |
 | concentrated (30–60%) | 23 |
-| dominated (60–90%) | 27 |
+| dominated (60–90%) | 28 |
 | captured (>90%) | 21 |
 
 ## Hardware evidence quality
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-11T08:43 | sn22 | SCORING_COMMIT | sn22 commit touches scoring: fix(validators): restore rendered recheck |
+| 2026-10-11T08:43 | sn25 | RELEASE | sn25 released v2026.10.10-1068958850 |
+| 2026-10-11T08:43 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Merge pull request #1041 from carbonphys |
+| 2026-10-11T08:43 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Document independent epoch openings and  |
 | 2026-10-11T01:49 | sn25 | RELEASE | sn25 released v2026.10.10-1068748650 |
 | 2026-10-11T01:49 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify guarded natural expiry retains unc |
 | 2026-10-10T22:59 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge seeding validator trails from every |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-10T15:35 | sn25 | RELEASE | sn25 released v2026.10.10-1068404160 |
 | 2026-10-10T15:35 | sn28 | RELEASE | sn28 released v0.4.27-dev |
 | 2026-10-10T15:35 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310 |
-| 2026-10-10T15:35 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Rejudge Oct10 saved outputs on final ATS  |
-| 2026-10-10T09:44 | sn25 | RELEASE | sn25 released v2026.10.10-1068162640 |
-| 2026-10-10T09:44 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: NO-TICKET - [P1] validator: cap fresh vlo |
-| 2026-10-10T09:44 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #328 from leadpoet/cod |
 
 ---
 

@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-11T08:43:09Z · block 9258799 · run_status **ok**_
+_snapshot 2026-10-11T15:07:21Z · block 9260719 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 63 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 100 | `miner_burn` < 0.99 |
 | Ranked | 100 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 4 | see ALARMS.md |
+| **Positive margin** | **63** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn107 Minos | 82.3 | 301 | 25,567 | cpu-small | 20 | 80% |
-| 2 | sn3 Teutonic | 74.9 | 3,196 | 8,537 | rtx4090* | 5 | 40% |
-| 3 | sn80 OpenRoboto | 72.2 | 1,446 | 6,898 | rtx4090* | 7 | 35% |
-| 4 | sn101 Tag101 | 70.2 | 12.85 | 14.86 | cpu-small | 243 | 1% |
-| 5 | sn67 Harnyx | 69 | 8.98 | 932 | cpu-small | 120 | 33% |
-| 6 | sn38 ChronoLLM | 68.8 | 217 | 990 | cpu-small | 9 | 52% |
-| 7 | sn79 MVTRX | 67.6 | 8.43 | 41.02 | cpu-small | 246 | 2% |
-| 8 | sn15 ORO | 66.4 | 6.68 | 13.76 | cpu-small | 52 | 98% |
-| 9 | sn62 Ridges | 63.9 | 118 | 1,364 | rtx4090* | 36 | 17% |
-| 10 | sn120 Affine | 63.4 | 155 | 352 | rtx4090* | 238 | 1% |
-| 11 | sn65 True Performance | 62.6 | 85.65 | 180 | rtx4090* | 6 | 75% |
-| 12 | sn41 Almanac | 62.5 | 3.06 | 164 | cpu-small | 125 | 3% |
-| 13 | sn61 RedTeam | 62.3 | 76.95 | 110 | rtx4090* | 128 | 1% |
-| 14 | sn28 SayGM | 60.6 | 46.84 | 737 | rtx4090* | 71 | 27% |
-| 15 | sn53 engy | 60.1 | 1,346 | 2,583 | rtx4090 | 18 | 17% |
-| 16 | sn23 Trishool | 59.4 | 423 | 423 = | cpu-small | 3 | 80% |
-| 17 | sn5 Hone | 58.9 | 35.51 | 36.81 | rtx4090* | 245 | 0% |
-| 18 | sn81 Reliquary | 58.9 | 25.88 | 236 | rtx4090* | 50 | 55% |
-| 19 | sn111 Claims | 58.2 | 22.47 | 252 | rtx4090* | 7 | 90% |
-| 20 | sn91 cascade | 57.8 | 267 | 536 | cpu-small | 5 | 52% |
+| 1 | sn107 Minos | 82.4 | 310 | 26,275 | cpu-small | 20 | 80% |
+| 2 | sn3 Teutonic | 75 | 3,271 | 8,737 | rtx4090* | 5 | 40% |
+| 3 | sn80 OpenRoboto | 72.3 | 1,489 | 7,101 | rtx4090* | 7 | 35% |
+| 4 | sn14 Cacheon | 70.7 | 905 | 5,883 | rtx4090* | 3 | 80% |
+| 5 | sn101 Tag101 | 70.2 | 13.01 | 14.96 | cpu-small | 243 | 1% |
+| 6 | sn38 ChronoLLM | 68.8 | 218 | 996 | cpu-small | 9 | 52% |
+| 7 | sn67 Harnyx | 68.8 | 9.19 | 952 | cpu-small | 127 | 33% |
+| 8 | sn79 MVTRX | 67.6 | 8.44 | 42.94 | cpu-small | 249 | 2% |
+| 9 | sn4 Targon | 67 | 10,386 | 30,620 | rtx4090* | 5 | 70% |
+| 10 | sn15 ORO | 65.9 | 6.62 | 13.64 | cpu-small | 52 | 98% |
+| 11 | sn62 Ridges | 63.9 | 121 | 1,394 | rtx4090* | 36 | 17% |
+| 12 | sn120 Affine | 63 | 153 | 276 | rtx4090* | 246 | 1% |
+| 13 | sn41 Almanac | 63 | 3.36 | 177 | cpu-small | 123 | 3% |
+| 14 | sn28 SayGM | 62.8 | 89.54 | 945 | rtx4090* | 60 | 16% |
+| 15 | sn65 True Performance | 62.6 | 86.77 | 182 | rtx4090* | 6 | 75% |
+| 16 | sn61 RedTeam | 62 | 70.63 | 107 | rtx4090* | 137 | 1% |
+| 17 | sn53 engy | 60.2 | 1,386 | 2,659 | rtx4090 | 18 | 17% |
+| 18 | sn23 Trishool | 59.4 | 427 | 427 = | cpu-small | 3 | 80% |
+| 19 | sn5 Hone | 58.8 | 36.40 | 37.39 | rtx4090* | 243 | 0% |
+| 20 | sn81 Reliquary | 58.6 | 23.68 | 306 | rtx4090* | 50 | 55% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 24 |
 | concentrated (30–60%) | 23 |
-| dominated (60–90%) | 28 |
-| captured (>90%) | 21 |
+| dominated (60–90%) | 27 |
+| captured (>90%) | 22 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-11T15:07 | sn116 | RELEASE | sn116 released producer-code-r7 |
+| 2026-10-11T15:07 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Merge pull request #1046 from carbonphys |
 | 2026-10-11T08:43 | sn22 | SCORING_COMMIT | sn22 commit touches scoring: fix(validators): restore rendered recheck |
 | 2026-10-11T08:43 | sn25 | RELEASE | sn25 released v2026.10.10-1068958850 |
 | 2026-10-11T08:43 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Merge pull request #1041 from carbonphys |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-10T19:34 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: On a baseline_epoch change the validator |
 | 2026-10-10T19:34 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: Clarify availability of reused historica |
 | 2026-10-10T15:35 | sn25 | RELEASE | sn25 released v2026.10.10-1068404160 |
-| 2026-10-10T15:35 | sn28 | RELEASE | sn28 released v0.4.27-dev |
-| 2026-10-10T15:35 | sn28 | SCORING_COMMIT | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310 |
 
 ---
 

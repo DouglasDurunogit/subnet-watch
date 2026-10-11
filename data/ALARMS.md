@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-11T08:43:09Z, block 9258799
+# ALARMS - generated 2026-10-11T15:07:21Z, block 9260719
 
-window: first_seen in [2026-10-11T07:28:38Z, 2026-10-11T08:43:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-11T13:52:48Z, 2026-10-11T15:07:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn22:scoring_commit:2026-10-11T08:32:04Z` | 22 | SCORING_COMMIT | P1 | 2026-10-11T08:43:38Z | sn22 commit touches scoring: fix(validators): restore rendered rechecks and the 5% sample |
-| `sn25:release:v2026.10.10-1068958850` | 25 | RELEASE | P1 | 2026-10-11T08:43:38Z | sn25 released v2026.10.10-1068958850 |
-| `sn116:scoring_commit:2026-10-11T02:06:55Z` | 116 | SCORING_COMMIT | P1 | 2026-10-11T08:43:38Z | sn116 commit touches scoring: Merge pull request #1041 from carbonphysicsai/claude/miner-survive-re… |
-| `sn120:scoring_commit:2026-10-11T07:02:34Z` | 120 | SCORING_COMMIT | P1 | 2026-10-11T08:43:38Z | sn120 commit touches scoring: Document independent epoch openings and hourly reward fallback |
+| `sn116:release:producer-code-r7` | 116 | RELEASE | P1 | 2026-10-11T15:07:48Z | sn116 released producer-code-r7 |
+| `sn116:scoring_commit:2026-10-11T14:34:29Z` | 116 | SCORING_COMMIT | P1 | 2026-10-11T15:07:48Z | sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification… |
 
 ### detail
 
-- **`sn22:scoring_commit:2026-10-11T08:32:04Z`** - sn22 commit touches scoring: fix(validators): restore rendered rechecks and the 5% sample
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.10-1068958850`** - sn25 released v2026.10.10-1068958850
-  - published 2026-10-11T05:24:43Z (was v2026.10.10-1068748650)
-- **`sn116:scoring_commit:2026-10-11T02:06:55Z`** - sn116 commit touches scoring: Merge pull request #1041 from carbonphysicsai/claude/miner-survive-re…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-11T07:02:34Z`** - sn120 commit touches scoring: Document independent epoch openings and hourly reward fallback
+- **`sn116:release:producer-code-r7`** - sn116 released producer-code-r7
+  - published 2026-10-11T11:27:58Z (was producer-code-r6)
+- **`sn116:scoring_commit:2026-10-11T14:34:29Z`** - sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -37,14 +31,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
-| `sn25:scoring_commit:2026-10-04T12:40:19Z` | 25 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn25 commit touches scoring: Retain passing signed-history and terminal-custody validator tests |
-| `sn28:release:v0.4.25` | 28 | RELEASE | 2026-10-04T12:45:39Z | sn28 released v0.4.25 |
-| `sn28:scoring_commit:2026-10-04T08:55:13Z` | 28 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn28 commit touches scoring: Handle scheduled miner price increases as successful declarations (#29 |
-| `sn51:scoring_commit:2026-10-04T09:18:47Z` | 51 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn51 commit touches scoring: validator: keep a banned node verified while a live rental is running… |
-| `sn71:scoring_commit:2026-10-04T07:34:40Z` | 71 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn71 commit touches scoring: Bind local verifier fix to protected workflow manifest |
-| `sn78:scoring_commit:2026-10-04T08:39:44Z` | 78 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn78 commit touches scoring: Stabilize checkpoint cache verification |
-| `sn81:scoring_commit:2026-10-04T08:17:34Z` | 81 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn81 commit touches scoring: docs(corpus): episode jobs on the split validator, and how to deploy i |
-| `sn120:scoring_commit:2026-10-04T09:29:43Z` | 120 | SCORING_COMMIT | 2026-10-04T12:45:39Z | sn120 commit touches scoring: Document guarded covered-training handoff and verify prospective dead… |
 | `sn9:release:v4.13.4` | 9 | RELEASE | 2026-10-04T17:06:18Z | sn9 released v4.13.4 |
 | `sn25:scoring_commit:2026-10-04T16:31:25Z` | 25 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn25 commit touches scoring: Verify completed original capture and Yuma Rust regression controls |
 | `sn120:scoring_commit:2026-10-04T14:42:39Z` | 120 | SCORING_COMMIT | 2026-10-04T17:06:18Z | sn120 commit touches scoring: Update public miner setup for signed forced sampling epochs |
@@ -229,6 +215,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-10T21:43:42Z` | 71 | SCORING_COMMIT | 2026-10-10T22:59:03Z | sn71 commit touches scoring: Merge pull request #363 from leadpoet/fix/arena-oct10-score-claim-cuto |
 | `sn25:release:v2026.10.10-1068748650` | 25 | RELEASE | 2026-10-11T01:49:20Z | sn25 released v2026.10.10-1068748650 |
 | `sn71:scoring_commit:2026-10-11T01:38:29Z` | 71 | SCORING_COMMIT | 2026-10-11T01:49:20Z | sn71 commit touches scoring: Verify guarded natural expiry retains uncertain execute bills |
+| `sn22:scoring_commit:2026-10-11T08:32:04Z` | 22 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn22 commit touches scoring: fix(validators): restore rendered rechecks and the 5% sample |
+| `sn25:release:v2026.10.10-1068958850` | 25 | RELEASE | 2026-10-11T08:43:38Z | sn25 released v2026.10.10-1068958850 |
+| `sn116:scoring_commit:2026-10-11T02:06:55Z` | 116 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn116 commit touches scoring: Merge pull request #1041 from carbonphysicsai/claude/miner-survive-re… |
+| `sn120:scoring_commit:2026-10-11T07:02:34Z` | 120 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn120 commit touches scoring: Document independent epoch openings and hourly reward fallback |
 | `sn25:readme_task_diff:6dafd77986a370d3` | 25 | README_TASK_DIFF | 2026-10-04T17:06:18Z | sn25 README task/scoring sections changed |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |

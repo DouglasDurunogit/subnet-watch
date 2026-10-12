@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-12T09:48:31Z, block 9266325
+# ALARMS - generated 2026-10-12T19:46:33Z, block 9269315
 
-window: first_seen in [2026-10-12T08:34:01Z, 2026-10-12T09:49:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-12T18:32:00Z, 2026-10-12T19:47:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,63 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn122:burn_drop:0.100` | 122 | BURN_DROP | P0 | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
-| `sn25:scoring_commit:2026-10-12T00:57:57Z` | 25 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse… |
-| `sn51:release:executor-v1.139` | 51 | RELEASE | P1 | 2026-10-12T09:49:01Z | sn51 released executor-v1.139 |
-| `sn51:scoring_commit:2026-10-12T07:54:49Z` | 51 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri… |
-| `sn58:scoring_commit:2026-10-11T10:31:29Z` | 58 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the … |
-| `sn94:scoring_commit:2026-10-12T09:13:20Z` | 94 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next |
-| `sn116:scoring_commit:2026-10-12T07:28:34Z` | 116 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee… |
-| `sn117:release:everycli v0.3.3` | 117 | RELEASE | P1 | 2026-10-12T09:49:01Z | sn117 released everycli v0.3.3 |
-| `sn120:scoring_commit:2026-10-12T07:59:56Z` | 120 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series |
+| `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | P0 | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
+| `sn58:burn_drop:0.833` | 58 | BURN_DROP | P0 | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
+| `sn3:scoring_commit:2026-10-12T11:52:12Z` | 3 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn3 commit touches scoring: Optimize evaluator shard downloads with cached HTTP range reads |
+| `sn9:release:v4.13.6` | 9 | RELEASE | P1 | 2026-10-12T19:47:00Z | sn9 released v4.13.6 |
+| `sn14:scoring_commit:2026-10-12T18:41:34Z` | 14 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn14 commit touches scoring: Retain audit diagnostics and post bundle results to Discord (#145) |
+| `sn21:scoring_commit:2026-10-12T12:32:21Z` | 21 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn21 commit touches scoring: fix(validator): the validator site sends daily-results requests to th… |
+| `sn28:release:v0.4.27` | 28 | RELEASE | P1 | 2026-10-12T19:47:00Z | sn28 released v0.4.27 |
+| `sn28:scoring_commit:2026-10-12T11:20:56Z` | 28 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.27 (#313) |
+| `sn38:scoring_commit:2026-10-12T14:44:32Z` | 38 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
+| `sn51:scoring_commit:2026-10-12T19:29:45Z` | 51 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn51 commit touches scoring: DAH-4001 - validator: report each live weight submission with the cyc… |
+| `sn53:scoring_commit:2026-10-12T12:53:09Z` | 53 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn53 commit touches scoring: Merge pull request #52 from hanlinai/fix/tee-miner-kv-heartbeat-10s |
+| `sn71:scoring_commit:2026-10-12T16:30:43Z` | 71 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn71 commit touches scoring: Apply existing provider failure classification to interrupted scorer … |
+| `sn116:release:producer-code-r8.4` | 116 | RELEASE | P1 | 2026-10-12T19:47:00Z | sn116 released producer-code-r8.4 |
+| `sn116:scoring_commit:2026-10-12T19:20:37Z` | 116 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn116 commit touches scoring: Record OWNER-BATTERY-CHAMPIONSHIP-04: miner status rows, laddered sco… |
+| `sn117:release:everycli v0.3.7` | 117 | RELEASE | P1 | 2026-10-12T19:47:00Z | sn117 released everycli v0.3.7 |
+| `sn120:scoring_commit:2026-10-12T17:41:42Z` | 120 | SCORING_COMMIT | P1 | 2026-10-12T19:47:00Z | sn120 commit touches scoring: Add prospective verifier-only symmetric sampling adjudication |
+| `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | P2 | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
+| `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | P2 | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn122:burn_drop:0.100`** - sn122 burn fell 1.000 -> 0.100 - miners can earn again
+- **`sn12:mechanism_added:1to2`** - sn12 now runs 2 incentive mechanisms (was 1)
+  - A second distinct challenge now runs under this netuid.
+- **`sn58:burn_drop:0.833`** - sn58 burn fell 1.000 -> 0.833 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:scoring_commit:2026-10-12T00:57:57Z`** - sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse…
+- **`sn3:scoring_commit:2026-10-12T11:52:12Z`** - sn3 commit touches scoring: Optimize evaluator shard downloads with cached HTTP range reads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.139`** - sn51 released executor-v1.139
-  - published 2026-10-12T05:13:16Z (was executor-v1.138)
-- **`sn51:scoring_commit:2026-10-12T07:54:49Z`** - sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri…
+- **`sn9:release:v4.13.6`** - sn9 released v4.13.6
+  - published 2026-10-12T12:27:41Z (was v4.13.5)
+- **`sn14:scoring_commit:2026-10-12T18:41:34Z`** - sn14 commit touches scoring: Retain audit diagnostics and post bundle results to Discord (#145)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn58:scoring_commit:2026-10-11T10:31:29Z`** - sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the …
+- **`sn21:scoring_commit:2026-10-12T12:32:21Z`** - sn21 commit touches scoring: fix(validator): the validator site sends daily-results requests to th…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-12T09:13:20Z`** - sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next
+- **`sn28:release:v0.4.27`** - sn28 released v0.4.27
+  - published 2026-10-12T11:33:17Z (was v0.4.27-dev)
+- **`sn28:scoring_commit:2026-10-12T11:20:56Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.27 (#313)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-12T07:28:34Z`** - sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee…
+- **`sn38:scoring_commit:2026-10-12T14:44:32Z`** - sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.3.3`** - sn117 released everycli v0.3.3
-  - published 2026-10-12T08:11:35Z (was everycli v0.3.1)
-- **`sn120:scoring_commit:2026-10-12T07:59:56Z`** - sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series
+- **`sn51:scoring_commit:2026-10-12T19:29:45Z`** - sn51 commit touches scoring: DAH-4001 - validator: report each live weight submission with the cyc…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn53:scoring_commit:2026-10-12T12:53:09Z`** - sn53 commit touches scoring: Merge pull request #52 from hanlinai/fix/tee-miner-kv-heartbeat-10s
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-12T16:30:43Z`** - sn71 commit touches scoring: Apply existing provider failure classification to interrupted scorer …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:release:producer-code-r8.4`** - sn116 released producer-code-r8.4
+  - published 2026-10-12T15:22:31Z (was producer-code-r8.1)
+- **`sn116:scoring_commit:2026-10-12T19:20:37Z`** - sn116 commit touches scoring: Record OWNER-BATTERY-CHAMPIONSHIP-04: miner status rows, laddered sco…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.3.7`** - sn117 released everycli v0.3.7
+  - published 2026-10-12T18:47:23Z (was everycli v0.3.3)
+- **`sn120:scoring_commit:2026-10-12T17:41:42Z`** - sn120 commit touches scoring: Add prospective verifier-only symmetric sampling adjudication
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:a275dd150e9b5f4f`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:readme_task_diff:4631619b61bf245f`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -52,18 +79,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
-| `sn3:scoring_commit:2026-10-05T11:24:15Z` | 3 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn3 commit touches scoring: Switch evaluator to single-GPU replicas and adjust batch size |
-| `sn21:scoring_commit:2026-10-05T16:48:30Z` | 21 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn21 commit touches scoring: fix(validator): the reg-index staleness alarm follows the head refresh |
-| `sn22:scoring_commit:2026-10-05T18:30:37Z` | 22 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn22 commit touches scoring: fix(task-api): judge completions when they reach the API, run storage… |
-| `sn25:scoring_commit:2026-10-05T17:18:29Z` | 25 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn25 commit touches scoring: fix(miner): preserve boolean CLI option declarations |
-| `sn50:scoring_commit:2026-10-05T16:47:46Z` | 50 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn50 commit touches scoring: perf(validator): reuse dendrite process pool, as_completed, drop per-… |
-| `sn51:scoring_commit:2026-10-05T14:58:10Z` | 51 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn51 commit touches scoring: DAH-3980 - validator: connector reads the chain off its event loop an… |
-| `sn61:release:4.10.9` | 61 | RELEASE | 2026-10-05T18:46:20Z | sn61 released 4.10.9 |
-| `sn61:scoring_commit:2026-10-05T10:45:34Z` | 61 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn61 commit touches scoring: refactor: increase max_unique_commits for ada_detection_v3 challenge |
-| `sn65:scoring_commit:2026-10-01T06:43:28Z` | 65 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn65 commit touches scoring: update miner docs |
-| `sn67:scoring_commit:2026-10-05T11:00:55Z` | 67 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261005.post0 |
-| `sn76:scoring_commit:2026-10-05T15:29:39Z` | 76 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn76 commit touches scoring: MINER_TERMS §3: publish rate version earned-bid-2x-v1 (2x from 2026-1… |
-| `sn120:scoring_commit:2026-10-05T18:43:57Z` | 120 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn120 commit touches scoring: Add prospective owned cached native evaluation and telemetry |
+| `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn25:scoring_commit:2026-10-05T23:54:13Z` | 25 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn25 commit touches scoring: Merge executable root validator registration bootstrap |
 | `sn51:release:executor-v1.137` | 51 | RELEASE | 2026-10-06T00:24:10Z | sn51 released executor-v1.137 |
 | `sn51:scoring_commit:2026-10-05T19:18:41Z` | 51 | SCORING_COMMIT | 2026-10-06T00:24:10Z | sn51 commit touches scoring: NO-TICKET - [P1] verifyx: vendor libverifyx.so from celium-gpu-verifi… |
@@ -240,6 +256,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
 | `sn117:release:everycli v0.3.1` | 117 | RELEASE | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
 | `sn120:scoring_commit:2026-10-12T00:43:15Z` | 120 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests |
+| `sn25:scoring_commit:2026-10-12T00:57:57Z` | 25 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse… |
+| `sn51:release:executor-v1.139` | 51 | RELEASE | 2026-10-12T09:49:01Z | sn51 released executor-v1.139 |
+| `sn51:scoring_commit:2026-10-12T07:54:49Z` | 51 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri… |
+| `sn58:scoring_commit:2026-10-11T10:31:29Z` | 58 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the … |
+| `sn94:scoring_commit:2026-10-12T09:13:20Z` | 94 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next |
+| `sn116:scoring_commit:2026-10-12T07:28:34Z` | 116 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee… |
+| `sn117:release:everycli v0.3.3` | 117 | RELEASE | 2026-10-12T09:49:01Z | sn117 released everycli v0.3.3 |
+| `sn120:scoring_commit:2026-10-12T07:59:56Z` | 120 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |

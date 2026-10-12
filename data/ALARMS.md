@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-12T02:33:26Z, block 9264150
+# ALARMS - generated 2026-10-12T09:48:31Z, block 9266325
 
-window: first_seen in [2026-10-12T01:19:00Z, 2026-10-12T02:34:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-12T08:34:01Z, 2026-10-12T09:49:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn30:burn_drop:0.984` | 30 | BURN_DROP | P0 | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
-| `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | P1 | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
-| `sn117:release:everycli v0.3.1` | 117 | RELEASE | P1 | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
-| `sn120:scoring_commit:2026-10-12T00:43:15Z` | 120 | SCORING_COMMIT | P1 | 2026-10-12T02:34:00Z | sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests |
+| `sn122:burn_drop:0.100` | 122 | BURN_DROP | P0 | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
+| `sn25:scoring_commit:2026-10-12T00:57:57Z` | 25 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse… |
+| `sn51:release:executor-v1.139` | 51 | RELEASE | P1 | 2026-10-12T09:49:01Z | sn51 released executor-v1.139 |
+| `sn51:scoring_commit:2026-10-12T07:54:49Z` | 51 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri… |
+| `sn58:scoring_commit:2026-10-11T10:31:29Z` | 58 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the … |
+| `sn94:scoring_commit:2026-10-12T09:13:20Z` | 94 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next |
+| `sn116:scoring_commit:2026-10-12T07:28:34Z` | 116 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee… |
+| `sn117:release:everycli v0.3.3` | 117 | RELEASE | P1 | 2026-10-12T09:49:01Z | sn117 released everycli v0.3.3 |
+| `sn120:scoring_commit:2026-10-12T07:59:56Z` | 120 | SCORING_COMMIT | P1 | 2026-10-12T09:49:01Z | sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series |
 
 ### detail
 
-- **`sn30:burn_drop:0.984`** - sn30 burn fell 0.997 -> 0.984 - miners can earn again
+- **`sn122:burn_drop:0.100`** - sn122 burn fell 1.000 -> 0.100 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-10-12T01:30:49Z`** - sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation
+- **`sn25:scoring_commit:2026-10-12T00:57:57Z`** - sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.3.1`** - sn117 released everycli v0.3.1
-  - published 2026-10-12T02:18:02Z (was v0.2.5)
-- **`sn120:scoring_commit:2026-10-12T00:43:15Z`** - sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests
+- **`sn51:release:executor-v1.139`** - sn51 released executor-v1.139
+  - published 2026-10-12T05:13:16Z (was executor-v1.138)
+- **`sn51:scoring_commit:2026-10-12T07:54:49Z`** - sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn58:scoring_commit:2026-10-11T10:31:29Z`** - sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-10-12T09:13:20Z`** - sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-12T07:28:34Z`** - sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.3.3`** - sn117 released everycli v0.3.3
+  - published 2026-10-12T08:11:35Z (was everycli v0.3.1)
+- **`sn120:scoring_commit:2026-10-12T07:59:56Z`** - sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -36,11 +51,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
-| `sn49:scoring_commit:2026-09-30T00:44:13Z` | 49 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn49 commit touches scoring: Upgrade validator sandbox to Isaac Sim 6.1 / Isaac Lab 3.0.0 |
-| `sn51:scoring_commit:2026-10-05T09:19:32Z` | 51 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn51 commit touches scoring: NO-TICKET - [P2] Validator scrape: record the host's Sysbox version (… |
-| `sn71:scoring_commit:2026-10-05T04:23:20Z` | 71 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn71 commit touches scoring: Document resource-safe model capacity for all validators |
-| `sn108:scoring_commit:2026-10-05T07:32:21Z` | 108 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn108 commit touches scoring: docs: validator hardware requirements (min 16 physical cores + 32 GB,… |
-| `sn120:scoring_commit:2026-10-05T06:36:49Z` | 120 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn120 commit touches scoring: Align current verifier roster and publication guide with E12 |
+| `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
 | `sn3:scoring_commit:2026-10-05T11:24:15Z` | 3 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn3 commit touches scoring: Switch evaluator to single-GPU replicas and adjust batch size |
 | `sn21:scoring_commit:2026-10-05T16:48:30Z` | 21 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn21 commit touches scoring: fix(validator): the reg-index staleness alarm follows the head refresh |
 | `sn22:scoring_commit:2026-10-05T18:30:37Z` | 22 | SCORING_COMMIT | 2026-10-05T18:46:20Z | sn22 commit touches scoring: fix(task-api): judge completions when they reach the API, run storage… |
@@ -226,7 +237,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:release:producer-code-r8.1` | 116 | RELEASE | 2026-10-11T19:38:20Z | sn116 released producer-code-r8.1 |
 | `sn117:release:everycli v0.2.4` | 117 | RELEASE | 2026-10-11T19:38:20Z | sn117 released everycli v0.2.4 |
 | `sn117:release:v0.2.5` | 117 | RELEASE | 2026-10-11T23:13:02Z | sn117 released v0.2.5 |
-| `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
+| `sn117:release:everycli v0.3.1` | 117 | RELEASE | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
+| `sn120:scoring_commit:2026-10-12T00:43:15Z` | 120 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |

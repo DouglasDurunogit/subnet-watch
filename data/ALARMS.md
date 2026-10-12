@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-11T23:12:35Z, block 9263146
+# ALARMS - generated 2026-10-12T02:33:26Z, block 9264150
 
-window: first_seen in [2026-10-11T21:58:02Z, 2026-10-11T23:13:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-12T01:19:00Z, 2026-10-12T02:34:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn117:release:v0.2.5` | 117 | RELEASE | P1 | 2026-10-11T23:13:02Z | sn117 released v0.2.5 |
-| `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | P2 | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
+| `sn30:burn_drop:0.984` | 30 | BURN_DROP | P0 | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
+| `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | P1 | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
+| `sn117:release:everycli v0.3.1` | 117 | RELEASE | P1 | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
+| `sn120:scoring_commit:2026-10-12T00:43:15Z` | 120 | SCORING_COMMIT | P1 | 2026-10-12T02:34:00Z | sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests |
 
 ### detail
 
-- **`sn117:release:v0.2.5`** - sn117 released v0.2.5
-  - published 2026-10-11T23:00:09Z (was everycli v0.2.4)
-- **`sn117:readme_task_diff:0f4be566c399b388`** - sn117 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn30:burn_drop:0.984`** - sn30 burn fell 0.997 -> 0.984 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-10-12T01:30:49Z`** - sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.3.1`** - sn117 released everycli v0.3.1
+  - published 2026-10-12T02:18:02Z (was v0.2.5)
+- **`sn120:scoring_commit:2026-10-12T00:43:15Z`** - sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn85:burn_drop:0.000` | 85 | BURN_DROP | 2026-10-04T23:26:37Z | sn85 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
@@ -31,10 +36,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
-| `sn120:scoring_commit:2026-10-04T23:19:10Z` | 120 | SCORING_COMMIT | 2026-10-04T23:26:37Z | sn120 commit touches scoring: Recommend bounded per-task mining search without changing the sampler |
-| `sn15:release:Validator v2.2.0: oro-env-runtime 3.3.0,` | 15 | RELEASE | 2026-10-05T02:18:48Z | sn15 released Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
-| `sn15:scoring_commit:2026-10-05T01:34:33Z` | 15 | SCORING_COMMIT | 2026-10-05T02:18:48Z | sn15 commit touches scoring: Validator v2.2.0: oro-env-runtime 3.3.0, runtime contract 2 (#362) |
-| `sn120:scoring_commit:2026-10-05T01:33:05Z` | 120 | SCORING_COMMIT | 2026-10-05T02:18:48Z | sn120 commit touches scoring: Reuse checkpoint evaluation when only source download capability chang |
 | `sn49:scoring_commit:2026-09-30T00:44:13Z` | 49 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn49 commit touches scoring: Upgrade validator sandbox to Isaac Sim 6.1 / Isaac Lab 3.0.0 |
 | `sn51:scoring_commit:2026-10-05T09:19:32Z` | 51 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn51 commit touches scoring: NO-TICKET - [P2] Validator scrape: record the host's Sysbox version (… |
 | `sn71:scoring_commit:2026-10-05T04:23:20Z` | 71 | SCORING_COMMIT | 2026-10-05T09:25:44Z | sn71 commit touches scoring: Document resource-safe model capacity for all validators |
@@ -224,6 +225,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-10-11T06:43:18Z` | 81 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn81 commit touches scoring: feat(cli): tasks set-cap sets or clears a corpus task's token price |
 | `sn116:release:producer-code-r8.1` | 116 | RELEASE | 2026-10-11T19:38:20Z | sn116 released producer-code-r8.1 |
 | `sn117:release:everycli v0.2.4` | 117 | RELEASE | 2026-10-11T19:38:20Z | sn117 released everycli v0.2.4 |
+| `sn117:release:v0.2.5` | 117 | RELEASE | 2026-10-11T23:13:02Z | sn117 released v0.2.5 |
 | `sn80:readme_task_diff:7fcffd77dd4a6c7a` | 80 | README_TASK_DIFF | 2026-10-05T09:25:44Z | sn80 README task/scoring sections changed |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
@@ -236,6 +238,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:ad8c3f68204b01ab` | 117 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn117 README task/scoring sections changed |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
+| `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

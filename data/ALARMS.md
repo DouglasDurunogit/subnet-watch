@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-13T01:39:03Z, block 9271077
+# ALARMS - generated 2026-10-13T08:31:13Z, block 9273138
 
-window: first_seen in [2026-10-13T00:24:30Z, 2026-10-13T01:39:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-13T07:16:47Z, 2026-10-13T08:31:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.4.28` | 28 | RELEASE | P1 | 2026-10-13T01:39:30Z | sn28 released v0.4.28 |
-| `sn28:scoring_commit:2026-10-12T21:12:43Z` | 28 | SCORING_COMMIT | P1 | 2026-10-13T01:39:30Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.28 (#317) |
-| `sn71:scoring_commit:2026-10-12T22:46:22Z` | 71 | SCORING_COMMIT | P1 | 2026-10-13T01:39:30Z | sn71 commit touches scoring: Finish validated bounded evidence reviews without time-only failure |
-| `sn74:release:release-20261012-224627` | 74 | RELEASE | P1 | 2026-10-13T01:39:30Z | sn74 released release-20261012-224627 |
-| `sn74:scoring_commit:2026-10-12T22:45:40Z` | 74 | SCORING_COMMIT | P1 | 2026-10-13T01:39:30Z | sn74 commit touches scoring: chore(weights): burn all miner emissions (empty registry, compute sha… |
-| `sn117:release:everycli v0.3.8` | 117 | RELEASE | P1 | 2026-10-13T01:39:30Z | sn117 released everycli v0.3.8 |
+| `sn25:release:v2026.10.13-1070793380` | 25 | RELEASE | P1 | 2026-10-13T08:31:47Z | sn25 released v2026.10.13-1070793380 |
+| `sn25:scoring_commit:2026-10-13T05:05:10Z` | 25 | SCORING_COMMIT | P1 | 2026-10-13T08:31:47Z | sn25 commit touches scoring: Merge the validator steering fixes deployed on Oct 13 |
+| `sn51:release:executor-v1.140` | 51 | RELEASE | P1 | 2026-10-13T08:31:47Z | sn51 released executor-v1.140 |
+| `sn51:scoring_commit:2026-10-13T04:12:42Z` | 51 | SCORING_COMMIT | P1 | 2026-10-13T08:31:47Z | sn51 commit touches scoring: DAH-3980 - Validator: install sshd without recommended packages (#1547 |
+| `sn67:scoring_commit:2026-10-13T02:10:44Z` | 67 | SCORING_COMMIT | P1 | 2026-10-13T08:31:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261013.post1 |
+| `sn71:scoring_commit:2026-10-13T04:39:21Z` | 71 | SCORING_COMMIT | P1 | 2026-10-13T08:31:47Z | sn71 commit touches scoring: Merge pull request #408 from leadpoet/fix/arena-public-completed-scor… |
+| `sn117:release:everycli v0.3.9` | 117 | RELEASE | P1 | 2026-10-13T08:31:47Z | sn117 released everycli v0.3.9 |
+| `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | P2 | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn28:release:v0.4.28`** - sn28 released v0.4.28
-  - published 2026-10-12T21:28:21Z (was v0.4.27)
-- **`sn28:scoring_commit:2026-10-12T21:12:43Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.4.28 (#317)
+- **`sn25:release:v2026.10.13-1070793380`** - sn25 released v2026.10.13-1070793380
+  - published 2026-10-13T08:23:46Z (was v2026.10.10-1068958850)
+- **`sn25:scoring_commit:2026-10-13T05:05:10Z`** - sn25 commit touches scoring: Merge the validator steering fixes deployed on Oct 13
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-12T22:46:22Z`** - sn71 commit touches scoring: Finish validated bounded evidence reviews without time-only failure
+- **`sn51:release:executor-v1.140`** - sn51 released executor-v1.140
+  - published 2026-10-13T07:31:13Z (was executor-v1.139)
+- **`sn51:scoring_commit:2026-10-13T04:12:42Z`** - sn51 commit touches scoring: DAH-3980 - Validator: install sshd without recommended packages (#1547
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn74:release:release-20261012-224627`** - sn74 released release-20261012-224627
-  - published 2026-10-12T22:45:40Z (was release-20261002-144641)
-- **`sn74:scoring_commit:2026-10-12T22:45:40Z`** - sn74 commit touches scoring: chore(weights): burn all miner emissions (empty registry, compute sha…
+- **`sn67:scoring_commit:2026-10-13T02:10:44Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261013.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.3.8`** - sn117 released everycli v0.3.8
-  - published 2026-10-13T00:53:06Z (was everycli v0.3.7)
+- **`sn71:scoring_commit:2026-10-13T04:39:21Z`** - sn71 commit touches scoring: Merge pull request #408 from leadpoet/fix/arena-public-completed-scor…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.3.9`** - sn117 released everycli v0.3.9
+  - published 2026-10-13T05:04:56Z (was everycli v0.3.8)
+- **`sn117:readme_task_diff:98a036ed300e2537`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -46,12 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
-| `sn25:scoring_commit:2026-10-06T02:25:10Z` | 25 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn25 commit touches scoring: Merge bounded early miner recovery diagnostics |
-| `sn37:scoring_commit:2026-10-06T02:41:33Z` | 37 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn37 commit touches scoring: feat(validator)!: default-off master switch VALIDATOR_ENABLED (#26) |
-| `sn67:scoring_commit:2026-10-06T05:02:36Z` | 67 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post1 |
-| `sn71:scoring_commit:2026-10-06T05:47:00Z` | 71 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn71 commit touches scoring: Verify round diagnostics preserve recovery and failures |
-| `sn116:scoring_commit:2026-10-06T03:58:21Z` | 116 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn116 commit touches scoring: Merge pull request #674 from carbonphysicsai/claude/battery-score-tun… |
-| `sn120:scoring_commit:2026-10-06T06:04:01Z` | 120 | SCORING_COMMIT | 2026-10-06T06:43:00Z | sn120 commit touches scoring: feat: opt into bounded single owned verifier checkpoint reuse |
 | `sn9:release:v4.13.5` | 9 | RELEASE | 2026-10-06T13:39:56Z | sn9 released v4.13.5 |
 | `sn51:scoring_commit:2026-10-06T12:42:30Z` | 51 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn51 commit touches scoring: DAH-3980 - validator: start the host probes at SSH connect and restor… |
 | `sn67:scoring_commit:2026-10-06T07:52:50Z` | 67 | SCORING_COMMIT | 2026-10-06T13:39:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261006.post3 |
@@ -236,6 +236,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-10-12T19:20:37Z` | 116 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn116 commit touches scoring: Record OWNER-BATTERY-CHAMPIONSHIP-04: miner status rows, laddered sco… |
 | `sn117:release:everycli v0.3.7` | 117 | RELEASE | 2026-10-12T19:47:00Z | sn117 released everycli v0.3.7 |
 | `sn120:scoring_commit:2026-10-12T17:41:42Z` | 120 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn120 commit touches scoring: Add prospective verifier-only symmetric sampling adjudication |
+| `sn28:release:v0.4.28` | 28 | RELEASE | 2026-10-13T01:39:30Z | sn28 released v0.4.28 |
+| `sn28:scoring_commit:2026-10-12T21:12:43Z` | 28 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.28 (#317) |
+| `sn71:scoring_commit:2026-10-12T22:46:22Z` | 71 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn71 commit touches scoring: Finish validated bounded evidence reviews without time-only failure |
+| `sn74:release:release-20261012-224627` | 74 | RELEASE | 2026-10-13T01:39:30Z | sn74 released release-20261012-224627 |
+| `sn74:scoring_commit:2026-10-12T22:45:40Z` | 74 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn74 commit touches scoring: chore(weights): burn all miner emissions (empty registry, compute sha… |
+| `sn117:release:everycli v0.3.8` | 117 | RELEASE | 2026-10-13T01:39:30Z | sn117 released everycli v0.3.8 |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |

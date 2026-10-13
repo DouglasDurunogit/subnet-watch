@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-13T16:28:48Z, block 9275526
+# ALARMS - generated 2026-10-13T21:34:55Z, block 9277056
 
-window: first_seen in [2026-10-13T15:14:14Z, 2026-10-13T16:29:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-13T20:20:22Z, 2026-10-13T21:35:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,66 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-13T15:45:33Z` | 21 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn21 commit touches scoring: fix(scoring): the configured goal is ranked high, medium, low, then n… |
-| `sn25:release:v2026.10.13-1070979130` | 25 | RELEASE | P1 | 2026-10-13T16:29:14Z | sn25 released v2026.10.13-1070979130 |
-| `sn25:scoring_commit:2026-10-13T08:19:37Z` | 25 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn25 commit touches scoring: Merge the validator trail fixes and bounded steering cut waits |
-| `sn37:scoring_commit:2026-10-13T14:58:28Z` | 37 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn37 commit touches scoring: Replace the legacy public tree with the v5 miner and participant guid… |
-| `sn51:scoring_commit:2026-10-13T13:20:45Z` | 51 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn51 commit touches scoring: A create that fails on the node itself keeps the node at score 0 unti… |
-| `sn53:scoring_commit:2026-10-13T11:57:30Z` | 53 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn53 commit touches scoring: Merge pull request #53 from hanlinai/fix/tee-miner-no-body-in-logs |
-| `sn61:release:4.10.10` | 61 | RELEASE | P1 | 2026-10-13T16:29:14Z | sn61 released 4.10.10 |
-| `sn61:scoring_commit:2026-10-13T10:21:07Z` | 61 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn61 commit touches scoring: fix: adjust challenge incentive weights and max unique commits for be… |
-| `sn68:scoring_commit:2026-09-18T16:21:27Z` | 68 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn68 commit touches scoring: route all validator chain calls through one reconnecting client |
-| `sn81:scoring_commit:2026-10-13T10:12:22Z` | 81 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn81 commit touches scoring: feat(envscaler): one call per message in the task prompt; episodes bo… |
-| `sn114:scoring_commit:2026-10-13T10:59:50Z` | 114 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn114 commit touches scoring: Merge pull request #229 from DendriteHQ/fix/soma-task-eval-resource-l… |
-| `sn116:release:producer-code-r8.5` | 116 | RELEASE | P1 | 2026-10-13T16:29:14Z | sn116 released producer-code-r8.5 |
-| `sn116:scoring_commit:2026-10-13T15:01:13Z` | 116 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn116 commit touches scoring: Merge pull request #1281 from carbonphysicsai/codex/opt15b-score-lab-… |
-| `sn117:release:everycli v0.4.0` | 117 | RELEASE | P1 | 2026-10-13T16:29:14Z | sn117 released everycli v0.4.0 |
-| `sn120:scoring_commit:2026-10-13T15:41:21Z` | 120 | SCORING_COMMIT | P1 | 2026-10-13T16:29:14Z | sn120 commit touches scoring: Validate trainer completion against fresh receipt clock |
-| `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | P2 | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
-| `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | P2 | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
+| `sn15:release:v2.5.0` | 15 | RELEASE | P1 | 2026-10-13T21:35:22Z | sn15 released v2.5.0 |
+| `sn15:scoring_commit:2026-10-13T20:00:27Z` | 15 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn15 commit touches scoring: Load v7 and v8 task packs; move to oro-env-runtime 3.7.0 (runtime con… |
+| `sn25:scoring_commit:2026-10-13T20:37:33Z` | 25 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn25 commit touches scoring: Write the validator's settlement v2 adoption commands and hold them t… |
+| `sn41:scoring_commit:2026-10-13T16:32:43Z` | 41 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn41 commit touches scoring: Adding weights version key to validator logs as a helpful indicator t… |
+| `sn63:scoring_commit:2026-10-13T21:02:02Z` | 63 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn63 commit touches scoring: Track whether a terminal verify update reached the platform and HQP L… |
+| `sn66:scoring_commit:2026-10-13T20:24:34Z` | 66 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn66 commit touches scoring: Port Mathlib headers to the immutable task registry and refresh hold … |
+| `sn71:scoring_commit:2026-10-13T17:04:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn71 commit touches scoring: Merge pull request #415: Verify judge provider path after fifth failur |
+| `sn116:release:producer-code-r8.6` | 116 | RELEASE | P1 | 2026-10-13T21:35:22Z | sn116 released producer-code-r8.6 |
+| `sn120:scoring_commit:2026-10-13T18:50:26Z` | 120 | SCORING_COMMIT | P1 | 2026-10-13T21:35:22Z | sn120 commit touches scoring: Reduce hourly evidence scan cost without changing reward assessment |
+| `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | P2 | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-13T15:45:33Z`** - sn21 commit touches scoring: fix(scoring): the configured goal is ranked high, medium, low, then n…
+- **`sn15:release:v2.5.0`** - sn15 released v2.5.0
+  - published 2026-10-13T20:00:27Z (was v2.4.1)
+- **`sn15:scoring_commit:2026-10-13T20:00:27Z`** - sn15 commit touches scoring: Load v7 and v8 task packs; move to oro-env-runtime 3.7.0 (runtime con…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.13-1070979130`** - sn25 released v2026.10.13-1070979130
-  - published 2026-10-13T13:32:31Z (was v2026.10.13-1070793380)
-- **`sn25:scoring_commit:2026-10-13T08:19:37Z`** - sn25 commit touches scoring: Merge the validator trail fixes and bounded steering cut waits
+- **`sn25:scoring_commit:2026-10-13T20:37:33Z`** - sn25 commit touches scoring: Write the validator's settlement v2 adoption commands and hold them t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:scoring_commit:2026-10-13T14:58:28Z`** - sn37 commit touches scoring: Replace the legacy public tree with the v5 miner and participant guid…
+- **`sn41:scoring_commit:2026-10-13T16:32:43Z`** - sn41 commit touches scoring: Adding weights version key to validator logs as a helpful indicator t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-13T13:20:45Z`** - sn51 commit touches scoring: A create that fails on the node itself keeps the node at score 0 unti…
+- **`sn63:scoring_commit:2026-10-13T21:02:02Z`** - sn63 commit touches scoring: Track whether a terminal verify update reached the platform and HQP L…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-10-13T11:57:30Z`** - sn53 commit touches scoring: Merge pull request #53 from hanlinai/fix/tee-miner-no-body-in-logs
+- **`sn66:scoring_commit:2026-10-13T20:24:34Z`** - sn66 commit touches scoring: Port Mathlib headers to the immutable task registry and refresh hold …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.10.10`** - sn61 released 4.10.10
-  - published 2026-10-13T10:22:50Z (was 4.10.9)
-- **`sn61:scoring_commit:2026-10-13T10:21:07Z`** - sn61 commit touches scoring: fix: adjust challenge incentive weights and max unique commits for be…
+- **`sn71:scoring_commit:2026-10-13T17:04:42Z`** - sn71 commit touches scoring: Merge pull request #415: Verify judge provider path after fifth failur
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn68:scoring_commit:2026-09-18T16:21:27Z`** - sn68 commit touches scoring: route all validator chain calls through one reconnecting client
+- **`sn116:release:producer-code-r8.6`** - sn116 released producer-code-r8.6
+  - published 2026-10-13T16:45:25Z (was producer-code-r8.5)
+- **`sn120:scoring_commit:2026-10-13T18:50:26Z`** - sn120 commit touches scoring: Reduce hourly evidence scan cost without changing reward assessment
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-13T10:12:22Z`** - sn81 commit touches scoring: feat(envscaler): one call per message in the task prompt; episodes bo…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-13T10:59:50Z`** - sn114 commit touches scoring: Merge pull request #229 from DendriteHQ/fix/soma-task-eval-resource-l…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:producer-code-r8.5`** - sn116 released producer-code-r8.5
-  - published 2026-10-13T10:13:35Z (was producer-code-r8.4)
-- **`sn116:scoring_commit:2026-10-13T15:01:13Z`** - sn116 commit touches scoring: Merge pull request #1281 from carbonphysicsai/codex/opt15b-score-lab-…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.4.0`** - sn117 released everycli v0.4.0
-  - published 2026-10-13T10:53:26Z (was everycli v0.3.9)
-- **`sn120:scoring_commit:2026-10-13T15:41:21Z`** - sn120 commit touches scoring: Validate trainer completion against fresh receipt clock
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:f7819507937d66e4`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn117:readme_task_diff:0955f3d4e32cce12`** - sn117 README task/scoring sections changed
+- **`sn117:readme_task_diff:a5f1105da1e310ab`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn108:burn_drop:0.900` | 108 | BURN_DROP | 2026-10-06T19:07:57Z | sn108 burn fell 1.000 -> 0.900 - miners can earn again |
 | `sn10:burn_drop:0.902` | 10 | BURN_DROP | 2026-10-06T23:03:41Z | sn10 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn37:burn_drop:0.978` | 37 | BURN_DROP | 2026-10-07T16:23:49Z | sn37 burn fell 1.000 -> 0.978 - miners can earn again |
 | `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -79,18 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
-| `sn10:scoring_commit:2026-10-06T15:02:05Z` | 10 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn10 commit touches scoring: feat(ops): add private PRO6000 FP8 campaign with v5 C4 scoring (#188) |
-| `sn21:scoring_commit:2026-10-06T14:07:59Z` | 21 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn21 commit touches scoring: fix(validator): /health in daily mode no longer echoes the loaded rel… |
-| `sn28:release:v0.4.26` | 28 | RELEASE | 2026-10-06T19:07:57Z | sn28 released v0.4.26 |
-| `sn50:scoring_commit:2026-10-06T15:38:51Z` | 50 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn50 commit touches scoring: perf(validator): write predictions to Bigtable from the dendrite work… |
-| `sn51:scoring_commit:2026-10-06T14:05:39Z` | 51 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn51 commit touches scoring: DAH-3947 - [P2] lium-io drops celium-collateral; miner reclaims with … |
-| `sn71:scoring_commit:2026-10-06T17:48:44Z` | 71 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn71 commit touches scoring: Merge PR #238: retain validated company evidence |
-| `sn76:scoring_commit:2026-10-06T16:30:48Z` | 76 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn76 commit touches scoring: ormas-miner CLI and user-only installer (#25) |
-| `sn78:scoring_commit:2026-10-06T14:55:05Z` | 78 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn78 commit touches scoring: Match miner scoring runtime pins and diagnose admission holds |
-| `sn111:scoring_commit:2026-10-06T14:44:24Z` | 111 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn111 commit touches scoring: fix(validator): scope split audit repairs to expected draft units |
-| `sn114:scoring_commit:2026-10-01T14:32:15Z` | 114 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn114 commit touches scoring: feat(scoring): count jev input tokens in miner weighted tokens |
-| `sn116:scoring_commit:2026-10-06T19:02:44Z` | 116 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn116 commit touches scoring: Merge pull request #708 from carbonphysicsai/claude/validator-19-s4-a… |
-| `sn120:scoring_commit:2026-10-06T17:07:55Z` | 120 | SCORING_COMMIT | 2026-10-06T19:07:57Z | sn120 commit touches scoring: Calculate hourly current miner weights with six-hour contribution EMA |
 | `sn25:release:v2026.10.6-1065229510` | 25 | RELEASE | 2026-10-06T23:03:41Z | sn25 released v2026.10.6-1065229510 |
 | `sn25:scoring_commit:2026-10-06T22:10:55Z` | 25 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn25 commit touches scoring: Merge feat/operator-discovery-miner into feat/operator-discovery |
 | `sn71:scoring_commit:2026-10-06T22:49:48Z` | 71 | SCORING_COMMIT | 2026-10-06T23:03:41Z | sn71 commit touches scoring: Prove dynamic Deepline tools through baseline and miner publication |
@@ -270,6 +236,21 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-13T02:10:44Z` | 67 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261013.post1 |
 | `sn71:scoring_commit:2026-10-13T04:39:21Z` | 71 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn71 commit touches scoring: Merge pull request #408 from leadpoet/fix/arena-public-completed-scor… |
 | `sn117:release:everycli v0.3.9` | 117 | RELEASE | 2026-10-13T08:31:47Z | sn117 released everycli v0.3.9 |
+| `sn21:scoring_commit:2026-10-13T15:45:33Z` | 21 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn21 commit touches scoring: fix(scoring): the configured goal is ranked high, medium, low, then n… |
+| `sn25:release:v2026.10.13-1070979130` | 25 | RELEASE | 2026-10-13T16:29:14Z | sn25 released v2026.10.13-1070979130 |
+| `sn25:scoring_commit:2026-10-13T08:19:37Z` | 25 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn25 commit touches scoring: Merge the validator trail fixes and bounded steering cut waits |
+| `sn37:scoring_commit:2026-10-13T14:58:28Z` | 37 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn37 commit touches scoring: Replace the legacy public tree with the v5 miner and participant guid… |
+| `sn51:scoring_commit:2026-10-13T13:20:45Z` | 51 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn51 commit touches scoring: A create that fails on the node itself keeps the node at score 0 unti… |
+| `sn53:scoring_commit:2026-10-13T11:57:30Z` | 53 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn53 commit touches scoring: Merge pull request #53 from hanlinai/fix/tee-miner-no-body-in-logs |
+| `sn61:release:4.10.10` | 61 | RELEASE | 2026-10-13T16:29:14Z | sn61 released 4.10.10 |
+| `sn61:scoring_commit:2026-10-13T10:21:07Z` | 61 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn61 commit touches scoring: fix: adjust challenge incentive weights and max unique commits for be… |
+| `sn68:scoring_commit:2026-09-18T16:21:27Z` | 68 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn68 commit touches scoring: route all validator chain calls through one reconnecting client |
+| `sn81:scoring_commit:2026-10-13T10:12:22Z` | 81 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn81 commit touches scoring: feat(envscaler): one call per message in the task prompt; episodes bo… |
+| `sn114:scoring_commit:2026-10-13T10:59:50Z` | 114 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn114 commit touches scoring: Merge pull request #229 from DendriteHQ/fix/soma-task-eval-resource-l… |
+| `sn116:release:producer-code-r8.5` | 116 | RELEASE | 2026-10-13T16:29:14Z | sn116 released producer-code-r8.5 |
+| `sn116:scoring_commit:2026-10-13T15:01:13Z` | 116 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn116 commit touches scoring: Merge pull request #1281 from carbonphysicsai/codex/opt15b-score-lab-… |
+| `sn117:release:everycli v0.4.0` | 117 | RELEASE | 2026-10-13T16:29:14Z | sn117 released everycli v0.4.0 |
+| `sn120:scoring_commit:2026-10-13T15:41:21Z` | 120 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn120 commit touches scoring: Validate trainer completion against fresh receipt clock |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
@@ -285,6 +266,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
 | `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
+| `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
+| `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

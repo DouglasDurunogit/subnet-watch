@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-14T10:38:40Z, block 9280975
+# ALARMS - generated 2026-10-14T15:32:41Z, block 9282445
 
-window: first_seen in [2026-10-14T09:24:10Z, 2026-10-14T10:39:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-14T14:18:11Z, 2026-10-14T15:33:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,41 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:burn_drop:0.715` | 37 | BURN_DROP | P0 | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
-| `sn25:release:v2026.10.14-1071632750` | 25 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn25 released v2026.10.14-1071632750 |
-| `sn51:scoring_commit:2026-10-14T08:21:57Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s… |
-| `sn67:scoring_commit:2026-10-14T06:48:35Z` | 67 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3 |
-| `sn71:scoring_commit:2026-10-14T09:50:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest… |
-| `sn76:scoring_commit:2026-10-14T06:05:09Z` | 76 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn76 commit touches scoring: security: repair frozen verifier snapshot |
-| `sn78:scoring_commit:2026-10-14T06:12:46Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover |
-| `sn108:scoring_commit:2026-10-14T09:43:47Z` | 108 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli… |
-| `sn116:release:r8.7` | 116 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn116 released r8.7 |
-| `sn117:release:everycli v0.5.1` | 117 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn117 released everycli v0.5.1 |
-| `sn117:scoring_commit:2026-10-14T09:42:22Z` | 117 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29) |
+| `sn104:burn_drop:0.953` | 104 | BURN_DROP | P0 | 2026-10-14T15:33:11Z | sn104 burn fell 1.000 -> 0.953 - miners can earn again |
+| `sn108:burn_drop:0.921` | 108 | BURN_DROP | P0 | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
+| `sn51:scoring_commit:2026-10-14T14:13:17Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T15:33:11Z | sn51 commit touches scoring: DAH-4035 - [P1] Validator: resolve hostname nodes in their own thread… |
+| `sn66:scoring_commit:2026-10-14T10:04:47Z` | 66 | SCORING_COMMIT | P1 | 2026-10-14T15:33:11Z | sn66 commit touches scoring: feat: extend leaderboard endpoint (add past champions challengers his… |
+| `sn71:scoring_commit:2026-10-14T14:16:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-14T15:33:11Z | sn71 commit touches scoring: Merge PR #434: retain bounded validator error causes |
+| `sn116:scoring_commit:2026-10-14T12:47:36Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T15:33:11Z | sn116 commit touches scoring: Merge pull request #1347 from carbonphysicsai/codex/incentive-observe… |
+| `sn117:release:everycli v0.5.4` | 117 | RELEASE | P1 | 2026-10-14T15:33:11Z | sn117 released everycli v0.5.4 |
+| `sn117:scoring_commit:2026-10-14T12:01:19Z` | 117 | SCORING_COMMIT | P1 | 2026-10-14T15:33:11Z | sn117 commit touches scoring: fix: profile reconnect and miner dashboard identity (v0.5.2) (#30) |
 
 ### detail
 
-- **`sn37:burn_drop:0.715`** - sn37 burn fell 1.000 -> 0.715 - miners can earn again
+- **`sn104:burn_drop:0.953`** - sn104 burn fell 1.000 -> 0.953 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.14-1071632750`** - sn25 released v2026.10.14-1071632750
-  - published 2026-10-14T07:43:21Z (was v2026.10.13-1071515580)
-- **`sn51:scoring_commit:2026-10-14T08:21:57Z`** - sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s…
+- **`sn108:burn_drop:0.921`** - sn108 burn fell 1.000 -> 0.921 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn51:scoring_commit:2026-10-14T14:13:17Z`** - sn51 commit touches scoring: DAH-4035 - [P1] Validator: resolve hostname nodes in their own thread…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-14T06:48:35Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3
+- **`sn66:scoring_commit:2026-10-14T10:04:47Z`** - sn66 commit touches scoring: feat: extend leaderboard endpoint (add past champions challengers his…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-14T09:50:39Z`** - sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest…
+- **`sn71:scoring_commit:2026-10-14T14:16:53Z`** - sn71 commit touches scoring: Merge PR #434: retain bounded validator error causes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-14T06:05:09Z`** - sn76 commit touches scoring: security: repair frozen verifier snapshot
+- **`sn116:scoring_commit:2026-10-14T12:47:36Z`** - sn116 commit touches scoring: Merge pull request #1347 from carbonphysicsai/codex/incentive-observe…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-14T06:12:46Z`** - sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-10-14T09:43:47Z`** - sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:r8.7`** - sn116 released r8.7
-  - published 2026-10-14T10:08:16Z (was producer-code-r8.6)
-- **`sn117:release:everycli v0.5.1`** - sn117 released everycli v0.5.1
-  - published 2026-10-14T09:34:53Z (was feat: everycli v0.5.0 browser setup and miner reliability (#27))
-- **`sn117:scoring_commit:2026-10-14T09:42:22Z`** - sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29)
+- **`sn117:release:everycli v0.5.4`** - sn117 released everycli v0.5.4
+  - published 2026-10-14T15:01:51Z (was everycli v0.5.1)
+- **`sn117:scoring_commit:2026-10-14T12:01:19Z`** - sn117 commit touches scoring: fix: profile reconnect and miner dashboard identity (v0.5.2) (#30)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -59,6 +50,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
+| `sn37:burn_drop:0.715` | 37 | BURN_DROP | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
 | `sn3:scoring_commit:2026-10-06T12:20:17Z` | 3 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn3 commit touches scoring: Add math, code, and text competitions with gradual reward transition |
 | `sn15:scoring_commit:2026-10-07T09:22:23Z` | 15 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn15 commit touches scoring: Bind configured Readers to cancellable miner-funded simulator inferen… |
 | `sn38:scoring_commit:2026-10-07T13:55:15Z` | 38 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn38 commit touches scoring: Leak returns to the score at 30%, over a [-11, -25] window |
@@ -259,6 +251,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-14T02:15:19Z` | 78 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi… |
 | `sn91:scoring_commit:2026-10-14T02:36:42Z` | 91 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005… |
 | `sn116:scoring_commit:2026-10-14T01:37:24Z` | 116 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-… |
+| `sn25:release:v2026.10.14-1071632750` | 25 | RELEASE | 2026-10-14T10:39:10Z | sn25 released v2026.10.14-1071632750 |
+| `sn51:scoring_commit:2026-10-14T08:21:57Z` | 51 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s… |
+| `sn67:scoring_commit:2026-10-14T06:48:35Z` | 67 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3 |
+| `sn71:scoring_commit:2026-10-14T09:50:39Z` | 71 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest… |
+| `sn76:scoring_commit:2026-10-14T06:05:09Z` | 76 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn76 commit touches scoring: security: repair frozen verifier snapshot |
+| `sn78:scoring_commit:2026-10-14T06:12:46Z` | 78 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover |
+| `sn108:scoring_commit:2026-10-14T09:43:47Z` | 108 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli… |
+| `sn116:release:r8.7` | 116 | RELEASE | 2026-10-14T10:39:10Z | sn116 released r8.7 |
+| `sn117:release:everycli v0.5.1` | 117 | RELEASE | 2026-10-14T10:39:10Z | sn117 released everycli v0.5.1 |
+| `sn117:scoring_commit:2026-10-14T09:42:22Z` | 117 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29) |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |

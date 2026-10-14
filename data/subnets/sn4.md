@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-10-14T15:32:41Z  |  block: 9282445  |  row_status: ok
+snapshot_utc: 2026-10-14T19:44:09Z  |  block: 9283703  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **3.1848205253481865e-05**
-- registration cost: 0.0005 TAO (0.13505 USD), open=True
+- miner_burn: **3.184867091476917e-05**
+- registration cost: 0.0005 TAO (0.13496000000000002 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 1093.2 days  |  registered at block 1411451
+- subnet age: 1093.4 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 28545.810504601024** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 2394.677716907161
-- top_miner_usd_day: 28545.810504601024 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 28510.69780331217** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 2391.7321496988566
+- top_miner_usd_day: 28510.69780331217 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-10-14T15:32:41Z  |  block: 9282445  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 9678.8 USD/day  |  payback on registration: 0.0 days
+- net margin: 9666.8845 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 66.7 (rank 10), confidence 0.85 - hardware requirement unknown
+- score: 66.7 (rank 11), confidence 0.85 - hardware requirement unknown
 - components: income 36.25 / freshness 21.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 27d ago
 

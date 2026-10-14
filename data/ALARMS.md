@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-14T05:28:40Z, block 9279425
+# ALARMS - generated 2026-10-14T10:38:40Z, block 9280975
 
-window: first_seen in [2026-10-14T04:14:19Z, 2026-10-14T05:29:19Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-14T09:24:10Z, 2026-10-14T10:39:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.13-1071515580` | 25 | RELEASE | P1 | 2026-10-14T05:29:19Z | sn25 released v2026.10.13-1071515580 |
-| `sn25:scoring_commit:2026-10-14T04:17:54Z` | 25 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn25 commit touches scoring: Merge v2/gate-miner-tests into main |
-| `sn37:scoring_commit:2026-10-14T03:25:35Z` | 37 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md |
-| `sn41:scoring_commit:2026-10-13T23:52:00Z` | 41 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn41 commit touches scoring: Score update |
-| `sn51:scoring_commit:2026-10-14T02:31:17Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check… |
-| `sn71:scoring_commit:2026-10-14T01:25:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges |
-| `sn76:scoring_commit:2026-10-14T05:10:32Z` | 76 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn76 commit touches scoring: security: validate repository scope before execution |
-| `sn78:scoring_commit:2026-10-14T02:15:19Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi… |
-| `sn91:scoring_commit:2026-10-14T02:36:42Z` | 91 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005… |
-| `sn116:scoring_commit:2026-10-14T01:37:24Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-… |
-| `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | P2 | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
+| `sn37:burn_drop:0.715` | 37 | BURN_DROP | P0 | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
+| `sn25:release:v2026.10.14-1071632750` | 25 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn25 released v2026.10.14-1071632750 |
+| `sn51:scoring_commit:2026-10-14T08:21:57Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s… |
+| `sn67:scoring_commit:2026-10-14T06:48:35Z` | 67 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3 |
+| `sn71:scoring_commit:2026-10-14T09:50:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest… |
+| `sn76:scoring_commit:2026-10-14T06:05:09Z` | 76 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn76 commit touches scoring: security: repair frozen verifier snapshot |
+| `sn78:scoring_commit:2026-10-14T06:12:46Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover |
+| `sn108:scoring_commit:2026-10-14T09:43:47Z` | 108 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli… |
+| `sn116:release:r8.7` | 116 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn116 released r8.7 |
+| `sn117:release:everycli v0.5.1` | 117 | RELEASE | P1 | 2026-10-14T10:39:10Z | sn117 released everycli v0.5.1 |
+| `sn117:scoring_commit:2026-10-14T09:42:22Z` | 117 | SCORING_COMMIT | P1 | 2026-10-14T10:39:10Z | sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29) |
 
 ### detail
 
-- **`sn25:release:v2026.10.13-1071515580`** - sn25 released v2026.10.13-1071515580
-  - published 2026-10-14T04:28:12Z (was v2026.10.13-1070979130)
-- **`sn25:scoring_commit:2026-10-14T04:17:54Z`** - sn25 commit touches scoring: Merge v2/gate-miner-tests into main
+- **`sn37:burn_drop:0.715`** - sn37 burn fell 1.000 -> 0.715 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.10.14-1071632750`** - sn25 released v2026.10.14-1071632750
+  - published 2026-10-14T07:43:21Z (was v2026.10.13-1071515580)
+- **`sn51:scoring_commit:2026-10-14T08:21:57Z`** - sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:scoring_commit:2026-10-14T03:25:35Z`** - sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md
+- **`sn67:scoring_commit:2026-10-14T06:48:35Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn41:scoring_commit:2026-10-13T23:52:00Z`** - sn41 commit touches scoring: Score update
+- **`sn71:scoring_commit:2026-10-14T09:50:39Z`** - sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-14T02:31:17Z`** - sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check…
+- **`sn76:scoring_commit:2026-10-14T06:05:09Z`** - sn76 commit touches scoring: security: repair frozen verifier snapshot
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-14T01:25:55Z`** - sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges
+- **`sn78:scoring_commit:2026-10-14T06:12:46Z`** - sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-14T05:10:32Z`** - sn76 commit touches scoring: security: validate repository scope before execution
+- **`sn108:scoring_commit:2026-10-14T09:43:47Z`** - sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-14T02:15:19Z`** - sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi…
+- **`sn116:release:r8.7`** - sn116 released r8.7
+  - published 2026-10-14T10:08:16Z (was producer-code-r8.6)
+- **`sn117:release:everycli v0.5.1`** - sn117 released everycli v0.5.1
+  - published 2026-10-14T09:34:53Z (was feat: everycli v0.5.0 browser setup and miner reliability (#27))
+- **`sn117:scoring_commit:2026-10-14T09:42:22Z`** - sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-14T02:36:42Z`** - sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-14T01:37:24Z`** - sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:6ee01103ec5344ac`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -59,12 +59,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
-| `sn25:release:v2026.10.6-1065506180` | 25 | RELEASE | 2026-10-07T09:02:39Z | sn25 released v2026.10.6-1065506180 |
-| `sn51:scoring_commit:2026-10-07T02:54:22Z` | 51 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while… |
-| `sn71:scoring_commit:2026-10-07T06:05:38Z` | 71 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn71 commit touches scoring: Record validator source commits in Arena runtime audit data |
-| `sn76:scoring_commit:2026-10-07T08:42:56Z` | 76 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn76 commit touches scoring: Sync public_subnet: doctor cells/hotkey/cap, /runners/me, --miner-id,… |
-| `sn81:scoring_commit:2026-10-07T06:43:08Z` | 81 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn81 commit touches scoring: Keep failed scorer health and release chained forward frames |
-| `sn120:scoring_commit:2026-10-07T08:41:08Z` | 120 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn120 commit touches scoring: Validate frozen blacklist freshness at the authenticated epoch opening |
 | `sn3:scoring_commit:2026-10-06T12:20:17Z` | 3 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn3 commit touches scoring: Add math, code, and text competitions with gradual reward transition |
 | `sn15:scoring_commit:2026-10-07T09:22:23Z` | 15 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn15 commit touches scoring: Bind configured Readers to cancellable miner-funded simulator inferen… |
 | `sn38:scoring_commit:2026-10-07T13:55:15Z` | 38 | SCORING_COMMIT | 2026-10-07T16:23:49Z | sn38 commit touches scoring: Leak returns to the score at 30%, over a [-11, -25] window |
@@ -255,7 +249,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn54:scoring_commit:2026-10-13T20:00:04Z` | 54 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn54 commit touches scoring: adding in query from validators |
 | `sn78:scoring_commit:2026-10-14T00:18:48Z` | 78 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn78 commit touches scoring: Merge pull request #247 from Umi-BitSign/codex/c5-geometric-reward-tr… |
 | `sn120:scoring_commit:2026-10-13T22:30:02Z` | 120 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn120 commit touches scoring: Reduce repeated commitment derivation in hourly reward assessment |
-| `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
+| `sn25:release:v2026.10.13-1071515580` | 25 | RELEASE | 2026-10-14T05:29:19Z | sn25 released v2026.10.13-1071515580 |
+| `sn25:scoring_commit:2026-10-14T04:17:54Z` | 25 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn25 commit touches scoring: Merge v2/gate-miner-tests into main |
+| `sn37:scoring_commit:2026-10-14T03:25:35Z` | 37 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md |
+| `sn41:scoring_commit:2026-10-13T23:52:00Z` | 41 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn41 commit touches scoring: Score update |
+| `sn51:scoring_commit:2026-10-14T02:31:17Z` | 51 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check… |
+| `sn71:scoring_commit:2026-10-14T01:25:55Z` | 71 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges |
+| `sn76:scoring_commit:2026-10-14T05:10:32Z` | 76 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn76 commit touches scoring: security: validate repository scope before execution |
+| `sn78:scoring_commit:2026-10-14T02:15:19Z` | 78 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi… |
+| `sn91:scoring_commit:2026-10-14T02:36:42Z` | 91 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005… |
+| `sn116:scoring_commit:2026-10-14T01:37:24Z` | 116 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-… |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
@@ -273,6 +276,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
+| `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

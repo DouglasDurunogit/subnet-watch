@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-14T00:38:35Z, block 9277975
+# ALARMS - generated 2026-10-14T05:28:40Z, block 9279425
 
-window: first_seen in [2026-10-13T23:24:12Z, 2026-10-14T00:39:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-14T04:14:19Z, 2026-10-14T05:29:19Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20261013-222136` | 7 | RELEASE | P1 | 2026-10-14T00:39:12Z | sn7 released release-20261013-222136 |
-| `sn7:scoring_commit:2026-10-13T21:54:01Z` | 7 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn7 commit touches scoring: Ban a miner from scoring for 12 rounds when it posts an unusable addr… |
-| `sn25:scoring_commit:2026-10-13T23:48:30Z` | 25 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn25 commit touches scoring: Merge the validator test and correctness fixes: steering-limit text, … |
-| `sn45:scoring_commit:2026-10-13T06:46:35Z` | 45 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn45 commit touches scoring: soak report: read rotated validator logs |
-| `sn54:scoring_commit:2026-10-13T20:00:04Z` | 54 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn54 commit touches scoring: adding in query from validators |
-| `sn78:scoring_commit:2026-10-14T00:18:48Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn78 commit touches scoring: Merge pull request #247 from Umi-BitSign/codex/c5-geometric-reward-tr… |
-| `sn120:scoring_commit:2026-10-13T22:30:02Z` | 120 | SCORING_COMMIT | P1 | 2026-10-14T00:39:12Z | sn120 commit touches scoring: Reduce repeated commitment derivation in hourly reward assessment |
+| `sn25:release:v2026.10.13-1071515580` | 25 | RELEASE | P1 | 2026-10-14T05:29:19Z | sn25 released v2026.10.13-1071515580 |
+| `sn25:scoring_commit:2026-10-14T04:17:54Z` | 25 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn25 commit touches scoring: Merge v2/gate-miner-tests into main |
+| `sn37:scoring_commit:2026-10-14T03:25:35Z` | 37 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md |
+| `sn41:scoring_commit:2026-10-13T23:52:00Z` | 41 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn41 commit touches scoring: Score update |
+| `sn51:scoring_commit:2026-10-14T02:31:17Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check… |
+| `sn71:scoring_commit:2026-10-14T01:25:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges |
+| `sn76:scoring_commit:2026-10-14T05:10:32Z` | 76 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn76 commit touches scoring: security: validate repository scope before execution |
+| `sn78:scoring_commit:2026-10-14T02:15:19Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi… |
+| `sn91:scoring_commit:2026-10-14T02:36:42Z` | 91 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005… |
+| `sn116:scoring_commit:2026-10-14T01:37:24Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T05:29:19Z | sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-… |
+| `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | P2 | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 
 ### detail
 
-- **`sn7:release:release-20261013-222136`** - sn7 released release-20261013-222136
-  - published 2026-10-13T21:54:27Z (was release-20260926-135859)
-- **`sn7:scoring_commit:2026-10-13T21:54:01Z`** - sn7 commit touches scoring: Ban a miner from scoring for 12 rounds when it posts an unusable addr…
+- **`sn25:release:v2026.10.13-1071515580`** - sn25 released v2026.10.13-1071515580
+  - published 2026-10-14T04:28:12Z (was v2026.10.13-1070979130)
+- **`sn25:scoring_commit:2026-10-14T04:17:54Z`** - sn25 commit touches scoring: Merge v2/gate-miner-tests into main
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-13T23:48:30Z`** - sn25 commit touches scoring: Merge the validator test and correctness fixes: steering-limit text, …
+- **`sn37:scoring_commit:2026-10-14T03:25:35Z`** - sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-10-13T06:46:35Z`** - sn45 commit touches scoring: soak report: read rotated validator logs
+- **`sn41:scoring_commit:2026-10-13T23:52:00Z`** - sn41 commit touches scoring: Score update
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn54:scoring_commit:2026-10-13T20:00:04Z`** - sn54 commit touches scoring: adding in query from validators
+- **`sn51:scoring_commit:2026-10-14T02:31:17Z`** - sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-14T00:18:48Z`** - sn78 commit touches scoring: Merge pull request #247 from Umi-BitSign/codex/c5-geometric-reward-tr…
+- **`sn71:scoring_commit:2026-10-14T01:25:55Z`** - sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-13T22:30:02Z`** - sn120 commit touches scoring: Reduce repeated commitment derivation in hourly reward assessment
+- **`sn76:scoring_commit:2026-10-14T05:10:32Z`** - sn76 commit touches scoring: security: validate repository scope before execution
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-14T02:15:19Z`** - sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-10-14T02:36:42Z`** - sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-14T01:37:24Z`** - sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn37:readme_task_diff:6ee01103ec5344ac`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,12 +59,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
-| `sn5:scoring_commit:2026-10-06T23:26:54Z` | 5 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn5 commit touches scoring: Merge pull request #18 from hone-subnet-org/score-window-100 |
-| `sn25:release:v2026.10.6-1065359600` | 25 | RELEASE | 2026-10-07T02:19:32Z | sn25 released v2026.10.6-1065359600 |
-| `sn25:scoring_commit:2026-10-06T23:47:29Z` | 25 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn25 commit touches scoring: Merge feat/operator-discovery-validator |
-| `sn71:scoring_commit:2026-10-07T01:32:36Z` | 71 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn71 commit touches scoring: Preserve commercial terms sources in bounded company verification |
-| `sn116:scoring_commit:2026-10-06T23:29:18Z` | 116 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn116 commit touches scoring: Merge pull request #723 from carbonphysicsai/claude/validator-19-quiz… |
-| `sn120:scoring_commit:2026-10-07T02:05:04Z` | 120 | SCORING_COMMIT | 2026-10-07T02:19:32Z | sn120 commit touches scoring: Prepare isolated all750 matched native evaluation CPU lifecycle |
 | `sn25:release:v2026.10.6-1065506180` | 25 | RELEASE | 2026-10-07T09:02:39Z | sn25 released v2026.10.6-1065506180 |
 | `sn51:scoring_commit:2026-10-07T02:54:22Z` | 51 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn51 commit touches scoring: DAH-3980 - validator: a filler create stands down at docker run while… |
 | `sn71:scoring_commit:2026-10-07T06:05:38Z` | 71 | SCORING_COMMIT | 2026-10-07T09:02:39Z | sn71 commit touches scoring: Record validator source commits in Arena runtime audit data |
@@ -242,6 +248,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-13T17:04:42Z` | 71 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn71 commit touches scoring: Merge pull request #415: Verify judge provider path after fifth failur |
 | `sn116:release:producer-code-r8.6` | 116 | RELEASE | 2026-10-13T21:35:22Z | sn116 released producer-code-r8.6 |
 | `sn120:scoring_commit:2026-10-13T18:50:26Z` | 120 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn120 commit touches scoring: Reduce hourly evidence scan cost without changing reward assessment |
+| `sn7:release:release-20261013-222136` | 7 | RELEASE | 2026-10-14T00:39:12Z | sn7 released release-20261013-222136 |
+| `sn7:scoring_commit:2026-10-13T21:54:01Z` | 7 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn7 commit touches scoring: Ban a miner from scoring for 12 rounds when it posts an unusable addr… |
+| `sn25:scoring_commit:2026-10-13T23:48:30Z` | 25 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn25 commit touches scoring: Merge the validator test and correctness fixes: steering-limit text, … |
+| `sn45:scoring_commit:2026-10-13T06:46:35Z` | 45 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn45 commit touches scoring: soak report: read rotated validator logs |
+| `sn54:scoring_commit:2026-10-13T20:00:04Z` | 54 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn54 commit touches scoring: adding in query from validators |
+| `sn78:scoring_commit:2026-10-14T00:18:48Z` | 78 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn78 commit touches scoring: Merge pull request #247 from Umi-BitSign/codex/c5-geometric-reward-tr… |
+| `sn120:scoring_commit:2026-10-13T22:30:02Z` | 120 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn120 commit touches scoring: Reduce repeated commitment derivation in hourly reward assessment |
 | `sn76:readme_task_diff:0fe72f423e42ba2f` | 76 | README_TASK_DIFF | 2026-10-07T09:02:39Z | sn76 README task/scoring sections changed |
 | `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
 | `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |

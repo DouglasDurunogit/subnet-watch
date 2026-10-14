@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-14T19:44:09Z, block 9283703
+# ALARMS - generated 2026-10-14T22:42:19Z, block 9284593
 
-window: first_seen in [2026-10-14T18:29:42Z, 2026-10-14T19:44:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-14T21:27:49Z, 2026-10-14T22:42:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,47 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.532` | 10 | BURN_DROP | P0 | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
-| `sn76:burn_drop:0.988` | 76 | BURN_DROP | P0 | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn14:scoring_commit:2026-10-14T19:21:08Z` | 14 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn14 commit touches scoring: Show evaluator activity from the current worker heartbeat (#150) |
-| `sn28:release:v0.4.29-dev` | 28 | RELEASE | P1 | 2026-10-14T19:44:42Z | sn28 released v0.4.29-dev |
-| `sn28:scoring_commit:2026-10-14T18:30:19Z` | 28 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.29-dev (#320) |
-| `sn51:scoring_commit:2026-10-14T18:37:43Z` | 51 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn51 commit touches scoring: NO-TICKET - validator: the spot pay flag is named for the backend's p… |
-| `sn76:scoring_commit:2026-10-14T18:51:37Z` | 76 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn76 commit touches scoring: security: harden public miner and validator boundaries |
-| `sn78:scoring_commit:2026-10-14T16:40:24Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn78 commit touches scoring: Merge pull request #252 from Umi-BitSign/codex/header-verification-ca… |
-| `sn96:scoring_commit:2026-10-14T19:13:46Z` | 96 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn96 commit touches scoring: fix: move the Decide validator handover to block 9,287,280 |
-| `sn116:scoring_commit:2026-10-14T19:19:20Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn116 commit touches scoring: Merge pull request #1354 from carbonphysicsai/codex/v8-8-validator-set |
-| `sn117:release:everycli v0.5.5` | 117 | RELEASE | P1 | 2026-10-14T19:44:42Z | sn117 released everycli v0.5.5 |
-| `sn117:scoring_commit:2026-10-14T15:53:23Z` | 117 | SCORING_COMMIT | P1 | 2026-10-14T19:44:42Z | sn117 commit touches scoring: fix: streamline model offers and miner dashboard reporting (#33) |
-| `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | P2 | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-10-14T20:58:47Z` | 21 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index |
+| `sn25:scoring_commit:2026-10-14T21:15:56Z` | 25 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad |
+| `sn28:release:v0.5.0` | 28 | RELEASE | P1 | 2026-10-14T22:42:49Z | sn28 released v0.5.0 |
+| `sn28:scoring_commit:2026-10-14T21:33:01Z` | 28 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.0 (#322) |
+| `sn78:scoring_commit:2026-10-14T22:06:52Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn78 commit touches scoring: Keep stopped reward reconciliation alive across native history batches |
+| `sn116:scoring_commit:2026-10-14T22:11:40Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn116 commit touches scoring: Merge pull request #1365 from carbonphysicsai/codex/score-lab-champio… |
+| `sn117:release:everycli v0.5.6` | 117 | RELEASE | P1 | 2026-10-14T22:42:49Z | sn117 released everycli v0.5.6 |
+| `sn120:scoring_commit:2026-10-14T20:48:32Z` | 120 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim |
+| `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | P2 | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn10:burn_drop:0.532`** - sn10 burn fell 1.000 -> 0.532 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn76:burn_drop:0.988`** - sn76 burn fell 1.000 -> 0.988 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn14:scoring_commit:2026-10-14T19:21:08Z`** - sn14 commit touches scoring: Show evaluator activity from the current worker heartbeat (#150)
+- **`sn21:scoring_commit:2026-10-14T20:58:47Z`** - sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.4.29-dev`** - sn28 released v0.4.29-dev
-  - published 2026-10-14T18:45:13Z (was v0.4.28)
-- **`sn28:scoring_commit:2026-10-14T18:30:19Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.4.29-dev (#320)
+- **`sn25:scoring_commit:2026-10-14T21:15:56Z`** - sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-14T18:37:43Z`** - sn51 commit touches scoring: NO-TICKET - validator: the spot pay flag is named for the backend's p…
+- **`sn28:release:v0.5.0`** - sn28 released v0.5.0
+  - published 2026-10-14T21:51:44Z (was v0.4.29-dev)
+- **`sn28:scoring_commit:2026-10-14T21:33:01Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.5.0 (#322)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-14T18:51:37Z`** - sn76 commit touches scoring: security: harden public miner and validator boundaries
+- **`sn78:scoring_commit:2026-10-14T22:06:52Z`** - sn78 commit touches scoring: Keep stopped reward reconciliation alive across native history batches
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-14T16:40:24Z`** - sn78 commit touches scoring: Merge pull request #252 from Umi-BitSign/codex/header-verification-ca…
+- **`sn116:scoring_commit:2026-10-14T22:11:40Z`** - sn116 commit touches scoring: Merge pull request #1365 from carbonphysicsai/codex/score-lab-champio…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn96:scoring_commit:2026-10-14T19:13:46Z`** - sn96 commit touches scoring: fix: move the Decide validator handover to block 9,287,280
+- **`sn117:release:everycli v0.5.6`** - sn117 released everycli v0.5.6
+  - published 2026-10-14T20:54:50Z (was everycli v0.5.5)
+- **`sn120:scoring_commit:2026-10-14T20:48:32Z`** - sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-14T19:19:20Z`** - sn116 commit touches scoring: Merge pull request #1354 from carbonphysicsai/codex/v8-8-validator-set
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.5.5`** - sn117 released everycli v0.5.5
-  - published 2026-10-14T16:29:18Z (was everycli v0.5.4)
-- **`sn117:scoring_commit:2026-10-14T15:53:23Z`** - sn117 commit touches scoring: fix: streamline model offers and miner dashboard reporting (#33)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:readme_task_diff:ffe23d677b34cef6`** - sn117 README task/scoring sections changed
+- **`sn117:readme_task_diff:e92bc71aef91f2cd`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -67,15 +55,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.715` | 37 | BURN_DROP | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
 | `sn104:burn_drop:0.953` | 104 | BURN_DROP | 2026-10-14T15:33:11Z | sn104 burn fell 1.000 -> 0.953 - miners can earn again |
 | `sn108:burn_drop:0.921` | 108 | BURN_DROP | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
-| `sn15:release:v2.3.0` | 15 | RELEASE | 2026-10-07T21:28:20Z | sn15 released v2.3.0 |
-| `sn25:scoring_commit:2026-10-07T16:41:48Z` | 25 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn25 commit touches scoring: Merge the sole validator's activation-pending config path |
-| `sn50:release:v1.14.0` | 50 | RELEASE | 2026-10-07T21:28:20Z | sn50 released v1.14.0 |
-| `sn51:scoring_commit:2026-10-07T19:36:24Z` | 51 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn51 commit touches scoring: DAH-3980 - validator: encrypted volume and renter keys in one exec, r… |
-| `sn54:scoring_commit:2026-09-28T17:33:55Z` | 54 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn54 commit touches scoring: help miners to sign message |
-| `sn66:scoring_commit:2026-10-07T15:16:57Z` | 66 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn66 commit touches scoring: tasks: an unusable identity home is an identity failure, not a doctor… |
-| `sn71:scoring_commit:2026-10-07T21:26:53Z` | 71 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn71 commit touches scoring: Merge PR #265: refresh protected verifier manifest |
-| `sn81:scoring_commit:2026-10-07T16:49:28Z` | 81 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn81 commit touches scoring: Fix pinned operator generation task admission |
-| `sn120:scoring_commit:2026-10-07T21:07:51Z` | 120 | SCORING_COMMIT | 2026-10-07T21:28:20Z | sn120 commit touches scoring: Admit explicitly signed source-bound verifier capacity sidecars |
+| `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
+| `sn76:burn_drop:0.988` | 76 | BURN_DROP | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn25:scoring_commit:2026-10-07T20:43:00Z` | 25 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn25 commit touches scoring: Assert the owner-validator's root seat keeps its own coldkey |
 | `sn71:scoring_commit:2026-10-07T22:35:21Z` | 71 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn71 commit touches scoring: Merge PR #266: support verified Finney runtime 475 reveal events |
 | `sn78:scoring_commit:2026-10-08T00:04:50Z` | 78 | SCORING_COMMIT | 2026-10-08T01:21:53Z | sn78 commit touches scoring: Restore original C5 progression and preserve miner upgrade state (#231 |
@@ -276,8 +257,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-10-14T12:47:36Z` | 116 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn116 commit touches scoring: Merge pull request #1347 from carbonphysicsai/codex/incentive-observe… |
 | `sn117:release:everycli v0.5.4` | 117 | RELEASE | 2026-10-14T15:33:11Z | sn117 released everycli v0.5.4 |
 | `sn117:scoring_commit:2026-10-14T12:01:19Z` | 117 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn117 commit touches scoring: fix: profile reconnect and miner dashboard identity (v0.5.2) (#30) |
-| `sn54:readme_task_diff:97fe30779066869c` | 54 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn54 README task/scoring sections changed |
-| `sn66:readme_task_diff:3eb60404bf70ad6f` | 66 | README_TASK_DIFF | 2026-10-07T21:28:20Z | sn66 README task/scoring sections changed |
+| `sn14:scoring_commit:2026-10-14T19:21:08Z` | 14 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn14 commit touches scoring: Show evaluator activity from the current worker heartbeat (#150) |
+| `sn28:release:v0.4.29-dev` | 28 | RELEASE | 2026-10-14T19:44:42Z | sn28 released v0.4.29-dev |
+| `sn28:scoring_commit:2026-10-14T18:30:19Z` | 28 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.29-dev (#320) |
+| `sn51:scoring_commit:2026-10-14T18:37:43Z` | 51 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn51 commit touches scoring: NO-TICKET - validator: the spot pay flag is named for the backend's p… |
+| `sn76:scoring_commit:2026-10-14T18:51:37Z` | 76 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn76 commit touches scoring: security: harden public miner and validator boundaries |
+| `sn78:scoring_commit:2026-10-14T16:40:24Z` | 78 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn78 commit touches scoring: Merge pull request #252 from Umi-BitSign/codex/header-verification-ca… |
+| `sn96:scoring_commit:2026-10-14T19:13:46Z` | 96 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn96 commit touches scoring: fix: move the Decide validator handover to block 9,287,280 |
+| `sn116:scoring_commit:2026-10-14T19:19:20Z` | 116 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn116 commit touches scoring: Merge pull request #1354 from carbonphysicsai/codex/v8-8-validator-set |
+| `sn117:release:everycli v0.5.5` | 117 | RELEASE | 2026-10-14T19:44:42Z | sn117 released everycli v0.5.5 |
+| `sn117:scoring_commit:2026-10-14T15:53:23Z` | 117 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn117 commit touches scoring: fix: streamline model offers and miner dashboard reporting (#33) |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
@@ -294,6 +283,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
+| `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

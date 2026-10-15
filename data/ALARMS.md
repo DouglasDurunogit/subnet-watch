@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-14T22:42:19Z, block 9284593
+# ALARMS - generated 2026-10-15T00:57:19Z, block 9285268
 
-window: first_seen in [2026-10-14T21:27:49Z, 2026-10-14T22:42:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-14T23:42:43Z, 2026-10-15T00:57:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-14T20:58:47Z` | 21 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index |
-| `sn25:scoring_commit:2026-10-14T21:15:56Z` | 25 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad |
-| `sn28:release:v0.5.0` | 28 | RELEASE | P1 | 2026-10-14T22:42:49Z | sn28 released v0.5.0 |
-| `sn28:scoring_commit:2026-10-14T21:33:01Z` | 28 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.0 (#322) |
-| `sn78:scoring_commit:2026-10-14T22:06:52Z` | 78 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn78 commit touches scoring: Keep stopped reward reconciliation alive across native history batches |
-| `sn116:scoring_commit:2026-10-14T22:11:40Z` | 116 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn116 commit touches scoring: Merge pull request #1365 from carbonphysicsai/codex/score-lab-champio… |
-| `sn117:release:everycli v0.5.6` | 117 | RELEASE | P1 | 2026-10-14T22:42:49Z | sn117 released everycli v0.5.6 |
-| `sn120:scoring_commit:2026-10-14T20:48:32Z` | 120 | SCORING_COMMIT | P1 | 2026-10-14T22:42:49Z | sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim |
-| `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | P2 | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
+| `sn8:scoring_commit:2026-10-14T22:26:16Z` | 8 | SCORING_COMMIT | P1 | 2026-10-15T00:57:43Z | sn8 commit touches scoring: Sync price updates and challenge loop (#954) |
+| `sn25:scoring_commit:2026-10-15T00:43:14Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T00:57:43Z | sn25 commit touches scoring: Select the startup verified tests and pin the memo's replay edge |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-14T20:58:47Z`** - sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index
+- **`sn8:scoring_commit:2026-10-14T22:26:16Z`** - sn8 commit touches scoring: Sync price updates and challenge loop (#954)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-14T21:15:56Z`** - sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad
+- **`sn25:scoring_commit:2026-10-15T00:43:14Z`** - sn25 commit touches scoring: Select the startup verified tests and pin the memo's replay edge
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.0`** - sn28 released v0.5.0
-  - published 2026-10-14T21:51:44Z (was v0.4.29-dev)
-- **`sn28:scoring_commit:2026-10-14T21:33:01Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.5.0 (#322)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-14T22:06:52Z`** - sn78 commit touches scoring: Keep stopped reward reconciliation alive across native history batches
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-14T22:11:40Z`** - sn116 commit touches scoring: Merge pull request #1365 from carbonphysicsai/codex/score-lab-champio…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.5.6`** - sn117 released everycli v0.5.6
-  - published 2026-10-14T20:54:50Z (was everycli v0.5.5)
-- **`sn120:scoring_commit:2026-10-14T20:48:32Z`** - sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:readme_task_diff:e92bc71aef91f2cd`** - sn117 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -267,6 +246,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-10-14T19:19:20Z` | 116 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn116 commit touches scoring: Merge pull request #1354 from carbonphysicsai/codex/v8-8-validator-set |
 | `sn117:release:everycli v0.5.5` | 117 | RELEASE | 2026-10-14T19:44:42Z | sn117 released everycli v0.5.5 |
 | `sn117:scoring_commit:2026-10-14T15:53:23Z` | 117 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn117 commit touches scoring: fix: streamline model offers and miner dashboard reporting (#33) |
+| `sn21:scoring_commit:2026-10-14T20:58:47Z` | 21 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index |
+| `sn25:scoring_commit:2026-10-14T21:15:56Z` | 25 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad |
+| `sn28:release:v0.5.0` | 28 | RELEASE | 2026-10-14T22:42:49Z | sn28 released v0.5.0 |
+| `sn28:scoring_commit:2026-10-14T21:33:01Z` | 28 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.0 (#322) |
+| `sn78:scoring_commit:2026-10-14T22:06:52Z` | 78 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn78 commit touches scoring: Keep stopped reward reconciliation alive across native history batches |
+| `sn116:scoring_commit:2026-10-14T22:11:40Z` | 116 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn116 commit touches scoring: Merge pull request #1365 from carbonphysicsai/codex/score-lab-champio… |
+| `sn117:release:everycli v0.5.6` | 117 | RELEASE | 2026-10-14T22:42:49Z | sn117 released everycli v0.5.6 |
+| `sn120:scoring_commit:2026-10-14T20:48:32Z` | 120 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
@@ -284,6 +271,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
+| `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-15T05:51:14Z, block 9286738
+# ALARMS - generated 2026-10-15T11:20:08Z, block 9288382
 
-window: first_seen in [2026-10-15T04:36:38Z, 2026-10-15T05:51:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-15T10:05:44Z, 2026-10-15T11:20:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn118:burn_drop:0.700` | 118 | BURN_DROP | P0 | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn15:release:v2.5.2` | 15 | RELEASE | P1 | 2026-10-15T05:51:38Z | sn15 released v2.5.2 |
-| `sn15:scoring_commit:2026-10-15T05:19:00Z` | 15 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn15 commit touches scoring: Treat a miner's OpenRouter credit 402 as an exhausted run key (#374) |
-| `sn25:scoring_commit:2026-10-15T04:12:02Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn25 commit touches scoring: Update the SN25 timeline with the validator operator's answers |
-| `sn51:scoring_commit:2026-10-15T04:20:45Z` | 51 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn51 commit touches scoring: DAH-4071 - [P1] validator: SCORING_EXCLUDED_HOTKEYS, listed hotkeys e… |
-| `sn67:scoring_commit:2026-10-14T14:32:28Z` | 67 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post6 |
-| `sn78:scoring_commit:2026-10-15T05:43:45Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn78 commit touches scoring: Merge pull request #266 from Umi-BitSign/codex/verified-checkpoint-ex… |
-| `sn116:scoring_commit:2026-10-15T04:30:56Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T05:51:38Z | sn116 commit touches scoring: Merge pull request #1371 from carbonphysicsai/codex/scorelab-referenc… |
+| `sn3:scoring_commit:2026-10-15T11:18:15Z` | 3 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn3 commit touches scoring: Optimize evaluator model loading by broadcasting weights to GPU replic |
+| `sn14:scoring_commit:2026-10-15T10:47:18Z` | 14 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn14 commit touches scoring: Resume checkpointed evaluations across GPU worker replacement (#151) |
+| `sn25:scoring_commit:2026-10-15T08:24:53Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn25 commit touches scoring: Verify the begun intent before the receipt outage test's timed poll |
+| `sn51:scoring_commit:2026-10-15T10:55:56Z` | 51 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn51 commit touches scoring: validator: name the reason when a rented node scores 0 because Sysbox… |
+| `sn67:scoring_commit:2026-10-15T02:32:18Z` | 67 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261015.post0 |
+| `sn78:scoring_commit:2026-10-15T08:44:03Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn78 commit touches scoring: Preserve nested history profile aliases when starting rewards |
+| `sn81:scoring_commit:2026-10-14T10:33:36Z` | 81 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn81 commit touches scoring: test(corpus): the signed-sandbox restart e2e serves period-settled tas |
+| `sn89:scoring_commit:2026-10-15T07:37:15Z` | 89 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn89 commit touches scoring: HF warmup dust: not-yet-eligible HF miners hold DUST_WEIGHT for 8 day… |
+| `sn116:scoring_commit:2026-10-15T05:37:59Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T11:20:44Z | sn116 commit touches scoring: Expose battery scorer initializer closure as unproved |
 
 ### detail
 
-- **`sn118:burn_drop:0.700`** - sn118 burn fell 1.000 -> 0.700 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v2.5.2`** - sn15 released v2.5.2
-  - published 2026-10-15T05:19:11Z (was v2.5.0)
-- **`sn15:scoring_commit:2026-10-15T05:19:00Z`** - sn15 commit touches scoring: Treat a miner's OpenRouter credit 402 as an exhausted run key (#374)
+- **`sn3:scoring_commit:2026-10-15T11:18:15Z`** - sn3 commit touches scoring: Optimize evaluator model loading by broadcasting weights to GPU replic
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-15T04:12:02Z`** - sn25 commit touches scoring: Update the SN25 timeline with the validator operator's answers
+- **`sn14:scoring_commit:2026-10-15T10:47:18Z`** - sn14 commit touches scoring: Resume checkpointed evaluations across GPU worker replacement (#151)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-15T04:20:45Z`** - sn51 commit touches scoring: DAH-4071 - [P1] validator: SCORING_EXCLUDED_HOTKEYS, listed hotkeys e…
+- **`sn25:scoring_commit:2026-10-15T08:24:53Z`** - sn25 commit touches scoring: Verify the begun intent before the receipt outage test's timed poll
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-14T14:32:28Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post6
+- **`sn51:scoring_commit:2026-10-15T10:55:56Z`** - sn51 commit touches scoring: validator: name the reason when a rented node scores 0 because Sysbox…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-15T05:43:45Z`** - sn78 commit touches scoring: Merge pull request #266 from Umi-BitSign/codex/verified-checkpoint-ex…
+- **`sn67:scoring_commit:2026-10-15T02:32:18Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261015.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-15T04:30:56Z`** - sn116 commit touches scoring: Merge pull request #1371 from carbonphysicsai/codex/scorelab-referenc…
+- **`sn78:scoring_commit:2026-10-15T08:44:03Z`** - sn78 commit touches scoring: Preserve nested history profile aliases when starting rewards
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-14T10:33:36Z`** - sn81 commit touches scoring: test(corpus): the signed-sandbox restart e2e serves period-settled tas
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-10-15T07:37:15Z`** - sn89 commit touches scoring: HF warmup dust: not-yet-eligible HF miners hold DUST_WEIGHT for 8 day…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-15T05:37:59Z`** - sn116 commit touches scoring: Expose battery scorer initializer closure as unproved
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn25:burn_drop:0.000` | 25 | BURN_DROP | 2026-10-08T07:46:34Z | sn25 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
@@ -54,14 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.921` | 108 | BURN_DROP | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
 | `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
 | `sn76:burn_drop:0.988` | 76 | BURN_DROP | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
-| `sn25:scoring_commit:2026-10-08T02:54:58Z` | 25 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn25 commit touches scoring: Merge runtime upgrade tolerance for the production validator |
-| `sn51:release:executor-v1.138` | 51 | RELEASE | 2026-10-08T07:46:34Z | sn51 released executor-v1.138 |
-| `sn51:scoring_commit:2026-10-08T07:42:00Z` | 51 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn51 commit touches scoring: validator: remove the failed container before the stale-mount retry (… |
-| `sn71:scoring_commit:2026-10-08T06:51:28Z` | 71 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn71 commit touches scoring: Merge remote-tracking branch 'origin/main' into codex/public-evaluati… |
-| `sn100:scoring_commit:2026-10-08T04:21:19Z` | 100 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn100 commit touches scoring: docs(repo): remove retired products, add readme and validator script … |
-| `sn116:release:producer-code-r2: code-only tag for the ` | 116 | RELEASE | 2026-10-08T07:46:34Z | sn116 released producer-code-r2: code-only tag for the producer and the leak runbook |
-| `sn116:scoring_commit:2026-10-08T07:05:19Z` | 116 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn116 commit touches scoring: Merge pull request #780 from carbonphysicsai/agent/validator-24-withd… |
-| `sn120:scoring_commit:2026-10-08T06:54:09Z` | 120 | SCORING_COMMIT | 2026-10-08T07:46:34Z | sn120 commit touches scoring: Validate paired held-out trainer optimization results |
+| `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn3:scoring_commit:2026-10-08T10:48:25Z` | 3 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn3 commit touches scoring: Add competition dataset panel and update evaluation history layout |
 | `sn15:release:v2.4.0: Prepare runtime 3.5 validator an` | 15 | RELEASE | 2026-10-08T14:58:35Z | sn15 released v2.4.0: Prepare runtime 3.5 validator and practice delivery (#367) |
 | `sn15:scoring_commit:2026-10-08T08:48:54Z` | 15 | SCORING_COMMIT | 2026-10-08T14:58:35Z | sn15 commit touches scoring: Prepare runtime 3.5 validator and practice delivery (#367) |
@@ -269,6 +264,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-10-14T20:48:32Z` | 120 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn120 commit touches scoring: Award contested tasks to the earliest Cloudflare R2 claim |
 | `sn8:scoring_commit:2026-10-14T22:26:16Z` | 8 | SCORING_COMMIT | 2026-10-15T00:57:43Z | sn8 commit touches scoring: Sync price updates and challenge loop (#954) |
 | `sn25:scoring_commit:2026-10-15T00:43:14Z` | 25 | SCORING_COMMIT | 2026-10-15T00:57:43Z | sn25 commit touches scoring: Select the startup verified tests and pin the memo's replay edge |
+| `sn15:release:v2.5.2` | 15 | RELEASE | 2026-10-15T05:51:38Z | sn15 released v2.5.2 |
+| `sn15:scoring_commit:2026-10-15T05:19:00Z` | 15 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn15 commit touches scoring: Treat a miner's OpenRouter credit 402 as an exhausted run key (#374) |
+| `sn25:scoring_commit:2026-10-15T04:12:02Z` | 25 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn25 commit touches scoring: Update the SN25 timeline with the validator operator's answers |
+| `sn51:scoring_commit:2026-10-15T04:20:45Z` | 51 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn51 commit touches scoring: DAH-4071 - [P1] validator: SCORING_EXCLUDED_HOTKEYS, listed hotkeys e… |
+| `sn67:scoring_commit:2026-10-14T14:32:28Z` | 67 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post6 |
+| `sn78:scoring_commit:2026-10-15T05:43:45Z` | 78 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn78 commit touches scoring: Merge pull request #266 from Umi-BitSign/codex/verified-checkpoint-ex… |
+| `sn116:scoring_commit:2026-10-15T04:30:56Z` | 116 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn116 commit touches scoring: Merge pull request #1371 from carbonphysicsai/codex/scorelab-referenc… |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |

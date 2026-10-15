@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-15T19:27:10Z, block 9290818
+# ALARMS - generated 2026-10-15T22:38:45Z, block 9291775
 
-window: first_seen in [2026-10-15T18:12:45Z, 2026-10-15T19:27:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-15T21:24:09Z, 2026-10-15T22:39:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,36 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.979` | 76 | BURN_DROP | P0 | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
-| `sn122:burn_drop:0.727` | 122 | BURN_DROP | P0 | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
-| `sn7:release:release-20261015-164605: Gate quotes and` | 7 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn7 released release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772) |
-| `sn9:release:v4.13.7` | 9 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn9 released v4.13.7 |
-| `sn15:release:v2.5.3` | 15 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn15 released v2.5.3 |
-| `sn25:scoring_commit:2026-10-15T16:11:13Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn25 commit touches scoring: Merge test/validator-crash-loop-root-cause into main |
-| `sn28:release:v0.5.1-dev` | 28 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn28 released v0.5.1-dev |
-| `sn51:release:executor-v1.141` | 51 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn51 released executor-v1.141 |
-| `sn51:scoring_commit:2026-10-15T17:07:10Z` | 51 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn51 commit touches scoring: DAH-4465 validator: fail an unrented node whose busy GPU is thermally… |
-| `sn78:scoring_commit:2026-10-15T19:16:31Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn78 commit touches scoring: Reuse verified host and OCI identities during worker reconciliation |
-| `sn92:release:v1.2.0-rc3` | 92 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn92 released v1.2.0-rc3 |
-| `sn92:scoring_commit:2026-10-15T15:10:01Z` | 92 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_… |
-| `sn116:release:Carbon worker images v4` | 116 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn116 released Carbon worker images v4 |
-| `sn116:scoring_commit:2026-10-15T19:09:06Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib… |
+| `sn7:release:release-20261015-220818: Quote the min f` | 7 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775) |
+| `sn7:scoring_commit:2026-10-15T21:59:48Z` | 7 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774) |
+| `sn25:release:v2026.10.15-1072937160` | 25 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn25 released v2026.10.15-1072937160 |
+| `sn71:scoring_commit:2026-10-15T20:53:09Z` | 71 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access |
+| `sn78:scoring_commit:2026-10-15T19:35:00Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn78 commit touches scoring: Overlap retained history loading with bounded native verification |
+| `sn92:release:v1.2.0-rc4` | 92 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn92 released v1.2.0-rc4 |
+| `sn92:scoring_commit:2026-10-15T19:21:22Z` | 92 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la… |
+| `sn116:scoring_commit:2026-10-15T20:45:43Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn116 commit touches scoring: Verify persisted contract record through submission guards |
+| `sn117:release:everycli v0.5.7` | 117 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn117 released everycli v0.5.7 |
 
 ### detail
 
-- **`sn76:burn_drop:0.979`** - sn76 burn fell 1.000 -> 0.979 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn122:burn_drop:0.727`** - sn122 burn fell 1.000 -> 0.727 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn7:release:release-20261015-164605: Gate quotes and`** - sn7 released release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772)
-  - published 2026-10-15T16:32:48Z (was release-20261013-222136)
-- **`sn9:release:v4.13.7`** - sn9 released v4.13.7
-  - published 2026-10-15T16:59:37Z (was v4.13.6)
-- **`sn15:release:v2.5.3`** - sn15 released v2.5.3
-  - published 2026-10-15T17:55:28Z (was v2.5.2)
-- **`sn25:scoring_commit:2026-10-15T16:11:13Z`** - sn25 commit touches scoring: Merge test/validator-crash-loop-root-cause into main
+- **`sn7:release:release-20261015-220818: Quote the min f`** - sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775)
+  - published 2026-10-15T21:59:48Z (was release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772))
+- **`sn7:scoring_commit:2026-10-15T21:59:48Z`** - sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.1-dev`** - sn28 released v0.5.1-dev
-  - published 2026-10-15T17:18:29Z (was v0.5.0)
-- **`sn51:release:executor-v1.141`** - sn51 released executor-v1.141
-  - published 2026-10-15T18:37:48Z (was executor-v1.140)
-- **`sn51:scoring_commit:2026-10-15T17:07:10Z`** - sn51 commit touches scoring: DAH-4465 validator: fail an unrented node whose busy GPU is thermally…
+- **`sn25:release:v2026.10.15-1072937160`** - sn25 released v2026.10.15-1072937160
+  - published 2026-10-15T19:57:47Z (was v2026.10.15-1072765730)
+- **`sn71:scoring_commit:2026-10-15T20:53:09Z`** - sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-15T19:16:31Z`** - sn78 commit touches scoring: Reuse verified host and OCI identities during worker reconciliation
+- **`sn78:scoring_commit:2026-10-15T19:35:00Z`** - sn78 commit touches scoring: Overlap retained history loading with bounded native verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc3`** - sn92 released v1.2.0-rc3
-  - published 2026-10-15T17:33:27Z (was v1.2.0-rc2)
-- **`sn92:scoring_commit:2026-10-15T15:10:01Z`** - sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_…
+- **`sn92:release:v1.2.0-rc4`** - sn92 released v1.2.0-rc4
+  - published 2026-10-15T21:45:30Z (was v1.2.0-rc3)
+- **`sn92:scoring_commit:2026-10-15T19:21:22Z`** - sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:Carbon worker images v4`** - sn116 released Carbon worker images v4
-  - published 2026-10-15T18:46:34Z (was r8.7)
-- **`sn116:scoring_commit:2026-10-15T19:09:06Z`** - sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib…
+- **`sn116:scoring_commit:2026-10-15T20:45:43Z`** - sn116 commit touches scoring: Verify persisted contract record through submission guards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.5.7`** - sn117 released everycli v0.5.7
+  - published 2026-10-15T22:11:55Z (was everycli v0.5.6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -72,14 +57,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
 | `sn76:burn_drop:0.988` | 76 | BURN_DROP | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn25:release:v2026.10.8-1066912010` | 25 | RELEASE | 2026-10-08T20:40:32Z | sn25 released v2026.10.8-1066912010 |
-| `sn41:scoring_commit:2026-10-08T19:33:16Z` | 41 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn41 commit touches scoring: Merge pull request #55 from corvxai/forecasting_scoring_v2 |
-| `sn51:scoring_commit:2026-10-08T15:36:23Z` | 51 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn51 commit touches scoring: DAH-3769 - Validator: dropped SSH transport becomes a typed error wit… |
-| `sn58:scoring_commit:2026-10-08T18:16:01Z` | 58 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn58 commit touches scoring: fix(miner): `attune miner status` checks the Hub with the submission … |
-| `sn71:scoring_commit:2026-10-08T17:08:48Z` | 71 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn71 commit touches scoring: Allow bounded score batch RPC reads to finish |
-| `sn90:scoring_commit:2026-10-08T18:01:39Z` | 90 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn90 commit touches scoring: docs(nemotron-omni): 256k context verified + NIM 2.0.13 + gateway mod… |
-| `sn116:scoring_commit:2026-10-08T19:33:03Z` | 116 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn116 commit touches scoring: Record the owner's canary answers 2-4 in OWNER-CANARY-MINER-01 |
-| `sn120:scoring_commit:2026-10-08T15:53:32Z` | 120 | SCORING_COMMIT | 2026-10-08T20:40:32Z | sn120 commit touches scoring: Verify longer harness cannot reuse shorter-budget calibration |
+| `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
+| `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
 | `sn25:release:v2026.10.8-1066946420` | 25 | RELEASE | 2026-10-09T00:42:20Z | sn25 released v2026.10.8-1066946420 |
 | `sn62:release:v0.3.10` | 62 | RELEASE | 2026-10-09T00:42:20Z | sn62 released v0.3.10 |
 | `sn71:scoring_commit:2026-10-09T00:04:40Z` | 71 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing |
@@ -297,6 +276,18 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:release:v0.7.0` | 102 | RELEASE | 2026-10-15T15:41:01Z | sn102 released v0.7.0 |
 | `sn102:scoring_commit:2026-10-14T17:10:14Z` | 102 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn102 commit touches scoring: 📝 docs(miner-faq): base usage varies a little more on c4 than on task… |
 | `sn116:scoring_commit:2026-10-15T13:57:09Z` | 116 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn116 commit touches scoring: Merge pull request #1377 from carbonphysicsai/codex/scorelab-complete… |
+| `sn7:release:release-20261015-164605: Gate quotes and` | 7 | RELEASE | 2026-10-15T19:27:45Z | sn7 released release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772) |
+| `sn9:release:v4.13.7` | 9 | RELEASE | 2026-10-15T19:27:45Z | sn9 released v4.13.7 |
+| `sn15:release:v2.5.3` | 15 | RELEASE | 2026-10-15T19:27:45Z | sn15 released v2.5.3 |
+| `sn25:scoring_commit:2026-10-15T16:11:13Z` | 25 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn25 commit touches scoring: Merge test/validator-crash-loop-root-cause into main |
+| `sn28:release:v0.5.1-dev` | 28 | RELEASE | 2026-10-15T19:27:45Z | sn28 released v0.5.1-dev |
+| `sn51:release:executor-v1.141` | 51 | RELEASE | 2026-10-15T19:27:45Z | sn51 released executor-v1.141 |
+| `sn51:scoring_commit:2026-10-15T17:07:10Z` | 51 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn51 commit touches scoring: DAH-4465 validator: fail an unrented node whose busy GPU is thermally… |
+| `sn78:scoring_commit:2026-10-15T19:16:31Z` | 78 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn78 commit touches scoring: Reuse verified host and OCI identities during worker reconciliation |
+| `sn92:release:v1.2.0-rc3` | 92 | RELEASE | 2026-10-15T19:27:45Z | sn92 released v1.2.0-rc3 |
+| `sn92:scoring_commit:2026-10-15T15:10:01Z` | 92 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_… |
+| `sn116:release:Carbon worker images v4` | 116 | RELEASE | 2026-10-15T19:27:45Z | sn116 released Carbon worker images v4 |
+| `sn116:scoring_commit:2026-10-15T19:09:06Z` | 116 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib… |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |

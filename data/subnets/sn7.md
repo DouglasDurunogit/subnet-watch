@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-10-15T15:40:28Z  |  block: 9289684  |  row_status: ok
+snapshot_utc: 2026-10-15T19:27:10Z  |  block: 9290818  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.12882066913880408**
-- registration cost: 0.15 TAO (40.943999999999996 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 21  |  free: 0
-- subnet age: 925.3 days  |  registered at block 2627691
+- miner_burn: **0.13784671062603593**
+- registration cost: 0.15 TAO (41.9475 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 19  |  free: 0
+- subnet age: 925.4 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 331.5550953924244** (uid 222) <- the only figure quotable as achievable
-- median_miner_usd_day: 257.1783152809772
-- top_miner_usd_day: 358.5808503623917 (uid 122, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 381.54334845426644** (uid 222) <- the only figure quotable as achievable
+- median_miner_usd_day: 273.1894763598637
+- top_miner_usd_day: 381.54334845426644 (uid 222, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 8  |  gini: 0.269195113762952  |  top1_share: 0.1955868215043262  |  top10_share: 1.0
-- owner_incentive_share: 0.12882452579695106 (independent check on miner_burn; disagreement 0.0)
+- earners: 7  |  gini: 0.21638177787175983  |  top1_share: 0.2046207138606156  |  top10_share: 1.0
+- owner_incentive_share: 0.13784315819993592 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -27,8 +27,8 @@ snapshot_utc: 2026-10-15T15:40:28Z  |  block: 9289684  |  row_status: ok
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
 - README: 19675 bytes, sha dc345f9e5261b6c1
-- latest release: release-20261013-222136 2026-10-13T21:54:27Z
-- last commit: 2026-10-13T21:54:27Z
+- latest release: release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772) 2026-10-15T16:32:48Z
+- last commit: 2026-10-15T16:32:48Z
 - scoring-related commit: Ban a miner from scoring for 12 rounds when it posts an unusable addr… 2026-10-13T21:54:01Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-15T15:40:28Z  |  block: 9289684  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 233.7257 USD/day  |  payback on registration: 0.18 days
+- net margin: 264.9703 USD/day  |  payback on registration: 0.16 days
 
 ## Score
 
 - gate: **OK** 
-- score: 66.1 (rank 14), confidence 0.85 - hardware requirement unknown
-- components: income 21.56 / freshness 35.0 / resource 11.25 / registration 9.94
-- freshness basis: RELEASE 1.6d ago
+- score: 66.5 (rank 13), confidence 0.85 - hardware requirement unknown
+- components: income 22.05 / freshness 35.0 / resource 11.25 / registration 9.95
+- freshness basis: RELEASE 0.0d ago
 
 ## On-chain description
 

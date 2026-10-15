@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-15T15:40:28Z, block 9289684
+# ALARMS - generated 2026-10-15T19:27:10Z, block 9290818
 
-window: first_seen in [2026-10-15T14:26:01Z, 2026-10-15T15:41:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-15T18:12:45Z, 2026-10-15T19:27:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,50 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-10-15T12:45:19Z` | 3 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn3 commit touches scoring: Optimize evaluator dataset downloads with authenticated R2 reads and … |
-| `sn10:scoring_commit:2026-10-15T11:54:42Z` | 10 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn10 commit touches scoring: fix(score): charge short completions at full length in tier timing (#… |
-| `sn18:scoring_commit:2026-10-15T11:51:02Z` | 18 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn18 commit touches scoring: change reward function to win rate (#92) |
-| `sn25:release:v2026.10.15-1072765730` | 25 | RELEASE | P1 | 2026-10-15T15:41:01Z | sn25 released v2026.10.15-1072765730 |
-| `sn25:scoring_commit:2026-10-15T14:28:03Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn25 commit touches scoring: Merge v2/cheaper-validator-production-tests into main |
-| `sn71:scoring_commit:2026-10-15T12:43:48Z` | 71 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn71 commit touches scoring: Merge pull request #461: broker diagnostics and protected scorer mani… |
-| `sn78:scoring_commit:2026-10-15T11:26:49Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn78 commit touches scoring: Reuse parsed packages across independently verified stored copies |
-| `sn92:release:v1.2.0-rc2` | 92 | RELEASE | P1 | 2026-10-15T15:41:01Z | sn92 released v1.2.0-rc2 |
-| `sn92:scoring_commit:2026-10-15T13:20:37Z` | 92 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn92 commit touches scoring: tests: tier/split tests keep synthetic track scores floor-free |
-| `sn102:release:v0.7.0` | 102 | RELEASE | P1 | 2026-10-15T15:41:01Z | sn102 released v0.7.0 |
-| `sn102:scoring_commit:2026-10-14T17:10:14Z` | 102 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn102 commit touches scoring: 📝 docs(miner-faq): base usage varies a little more on c4 than on task… |
-| `sn116:scoring_commit:2026-10-15T13:57:09Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T15:41:01Z | sn116 commit touches scoring: Merge pull request #1377 from carbonphysicsai/codex/scorelab-complete… |
+| `sn76:burn_drop:0.979` | 76 | BURN_DROP | P0 | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
+| `sn122:burn_drop:0.727` | 122 | BURN_DROP | P0 | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
+| `sn7:release:release-20261015-164605: Gate quotes and` | 7 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn7 released release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772) |
+| `sn9:release:v4.13.7` | 9 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn9 released v4.13.7 |
+| `sn15:release:v2.5.3` | 15 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn15 released v2.5.3 |
+| `sn25:scoring_commit:2026-10-15T16:11:13Z` | 25 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn25 commit touches scoring: Merge test/validator-crash-loop-root-cause into main |
+| `sn28:release:v0.5.1-dev` | 28 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn28 released v0.5.1-dev |
+| `sn51:release:executor-v1.141` | 51 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn51 released executor-v1.141 |
+| `sn51:scoring_commit:2026-10-15T17:07:10Z` | 51 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn51 commit touches scoring: DAH-4465 validator: fail an unrented node whose busy GPU is thermally… |
+| `sn78:scoring_commit:2026-10-15T19:16:31Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn78 commit touches scoring: Reuse verified host and OCI identities during worker reconciliation |
+| `sn92:release:v1.2.0-rc3` | 92 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn92 released v1.2.0-rc3 |
+| `sn92:scoring_commit:2026-10-15T15:10:01Z` | 92 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_… |
+| `sn116:release:Carbon worker images v4` | 116 | RELEASE | P1 | 2026-10-15T19:27:45Z | sn116 released Carbon worker images v4 |
+| `sn116:scoring_commit:2026-10-15T19:09:06Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T19:27:45Z | sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib… |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-10-15T12:45:19Z`** - sn3 commit touches scoring: Optimize evaluator dataset downloads with authenticated R2 reads and …
+- **`sn76:burn_drop:0.979`** - sn76 burn fell 1.000 -> 0.979 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn122:burn_drop:0.727`** - sn122 burn fell 1.000 -> 0.727 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn7:release:release-20261015-164605: Gate quotes and`** - sn7 released release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772)
+  - published 2026-10-15T16:32:48Z (was release-20261013-222136)
+- **`sn9:release:v4.13.7`** - sn9 released v4.13.7
+  - published 2026-10-15T16:59:37Z (was v4.13.6)
+- **`sn15:release:v2.5.3`** - sn15 released v2.5.3
+  - published 2026-10-15T17:55:28Z (was v2.5.2)
+- **`sn25:scoring_commit:2026-10-15T16:11:13Z`** - sn25 commit touches scoring: Merge test/validator-crash-loop-root-cause into main
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn10:scoring_commit:2026-10-15T11:54:42Z`** - sn10 commit touches scoring: fix(score): charge short completions at full length in tier timing (#…
+- **`sn28:release:v0.5.1-dev`** - sn28 released v0.5.1-dev
+  - published 2026-10-15T17:18:29Z (was v0.5.0)
+- **`sn51:release:executor-v1.141`** - sn51 released executor-v1.141
+  - published 2026-10-15T18:37:48Z (was executor-v1.140)
+- **`sn51:scoring_commit:2026-10-15T17:07:10Z`** - sn51 commit touches scoring: DAH-4465 validator: fail an unrented node whose busy GPU is thermally…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn18:scoring_commit:2026-10-15T11:51:02Z`** - sn18 commit touches scoring: change reward function to win rate (#92)
+- **`sn78:scoring_commit:2026-10-15T19:16:31Z`** - sn78 commit touches scoring: Reuse verified host and OCI identities during worker reconciliation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.15-1072765730`** - sn25 released v2026.10.15-1072765730
-  - published 2026-10-15T15:12:14Z (was v2026.10.14-1071632750)
-- **`sn25:scoring_commit:2026-10-15T14:28:03Z`** - sn25 commit touches scoring: Merge v2/cheaper-validator-production-tests into main
+- **`sn92:release:v1.2.0-rc3`** - sn92 released v1.2.0-rc3
+  - published 2026-10-15T17:33:27Z (was v1.2.0-rc2)
+- **`sn92:scoring_commit:2026-10-15T15:10:01Z`** - sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-15T12:43:48Z`** - sn71 commit touches scoring: Merge pull request #461: broker diagnostics and protected scorer mani…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-15T11:26:49Z`** - sn78 commit touches scoring: Reuse parsed packages across independently verified stored copies
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc2`** - sn92 released v1.2.0-rc2
-  - published 2026-10-15T15:25:46Z (was v1.1.0-rc2)
-- **`sn92:scoring_commit:2026-10-15T13:20:37Z`** - sn92 commit touches scoring: tests: tier/split tests keep synthetic track scores floor-free
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn102:release:v0.7.0`** - sn102 released v0.7.0
-  - published 2026-10-15T14:02:26Z (was v0.6.4 — the reference miner trains the full model)
-- **`sn102:scoring_commit:2026-10-14T17:10:14Z`** - sn102 commit touches scoring: 📝 docs(miner-faq): base usage varies a little more on c4 than on task…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-15T13:57:09Z`** - sn116 commit touches scoring: Merge pull request #1377 from carbonphysicsai/codex/scorelab-complete…
+- **`sn116:release:Carbon worker images v4`** - sn116 released Carbon worker images v4
+  - published 2026-10-15T18:46:34Z (was r8.7)
+- **`sn116:scoring_commit:2026-10-15T19:09:06Z`** - sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -279,6 +285,18 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-10-14T10:33:36Z` | 81 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn81 commit touches scoring: test(corpus): the signed-sandbox restart e2e serves period-settled tas |
 | `sn89:scoring_commit:2026-10-15T07:37:15Z` | 89 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn89 commit touches scoring: HF warmup dust: not-yet-eligible HF miners hold DUST_WEIGHT for 8 day… |
 | `sn116:scoring_commit:2026-10-15T05:37:59Z` | 116 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn116 commit touches scoring: Expose battery scorer initializer closure as unproved |
+| `sn3:scoring_commit:2026-10-15T12:45:19Z` | 3 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn3 commit touches scoring: Optimize evaluator dataset downloads with authenticated R2 reads and … |
+| `sn10:scoring_commit:2026-10-15T11:54:42Z` | 10 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn10 commit touches scoring: fix(score): charge short completions at full length in tier timing (#… |
+| `sn18:scoring_commit:2026-10-15T11:51:02Z` | 18 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn18 commit touches scoring: change reward function to win rate (#92) |
+| `sn25:release:v2026.10.15-1072765730` | 25 | RELEASE | 2026-10-15T15:41:01Z | sn25 released v2026.10.15-1072765730 |
+| `sn25:scoring_commit:2026-10-15T14:28:03Z` | 25 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn25 commit touches scoring: Merge v2/cheaper-validator-production-tests into main |
+| `sn71:scoring_commit:2026-10-15T12:43:48Z` | 71 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn71 commit touches scoring: Merge pull request #461: broker diagnostics and protected scorer mani… |
+| `sn78:scoring_commit:2026-10-15T11:26:49Z` | 78 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn78 commit touches scoring: Reuse parsed packages across independently verified stored copies |
+| `sn92:release:v1.2.0-rc2` | 92 | RELEASE | 2026-10-15T15:41:01Z | sn92 released v1.2.0-rc2 |
+| `sn92:scoring_commit:2026-10-15T13:20:37Z` | 92 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn92 commit touches scoring: tests: tier/split tests keep synthetic track scores floor-free |
+| `sn102:release:v0.7.0` | 102 | RELEASE | 2026-10-15T15:41:01Z | sn102 released v0.7.0 |
+| `sn102:scoring_commit:2026-10-14T17:10:14Z` | 102 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn102 commit touches scoring: 📝 docs(miner-faq): base usage varies a little more on c4 than on task… |
+| `sn116:scoring_commit:2026-10-15T13:57:09Z` | 116 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn116 commit touches scoring: Merge pull request #1377 from carbonphysicsai/codex/scorelab-complete… |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |

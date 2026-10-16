@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T14:57:55Z, block 9296671
+# ALARMS - generated 2026-10-16T18:46:09Z, block 9297812
 
-window: first_seen in [2026-10-16T13:43:20Z, 2026-10-16T14:58:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T17:31:43Z, 2026-10-16T18:46:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,41 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.13` | 1 | RELEASE | P1 | 2026-10-16T14:58:20Z | sn1 released v4.4.13 |
-| `sn21:scoring_commit:2026-10-16T12:06:08Z` | 21 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a… |
-| `sn51:scoring_commit:2026-10-16T14:00:51Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend… |
-| `sn67:scoring_commit:2026-10-16T11:32:32Z` | 67 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1 |
-| `sn78:scoring_commit:2026-10-16T13:20:49Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage |
-| `sn90:scoring_commit:2026-10-16T10:16:08Z` | 90 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync |
-| `sn92:scoring_commit:2026-10-16T10:25:45Z` | 92 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co… |
-| `sn100:scoring_commit:2026-10-16T13:16:02Z` | 100 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318) |
-| `sn114:scoring_commit:2026-10-16T11:35:50Z` | 114 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn114 commit touches scoring: update scoring.md docs |
-| `sn116:scoring_commit:2026-10-16T10:36:39Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4… |
-| `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | P2 | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
+| `sn100:burn_drop:0.705` | 100 | BURN_DROP | P0 | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
+| `sn71:scoring_commit:2026-10-16T18:40:01Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493 |
+| `sn92:release:v1.2.0-rc6` | 92 | RELEASE | P1 | 2026-10-16T18:46:43Z | sn92 released v1.2.0-rc6 |
+| `sn102:scoring_commit:2026-10-15T19:51:21Z` | 102 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall… |
+| `sn116:scoring_commit:2026-10-16T13:41:47Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge |
+| `sn121:scoring_commit:2026-10-16T15:26:35Z` | 121 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F |
+| `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | P2 | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 
 ### detail
 
-- **`sn1:release:v4.4.13`** - sn1 released v4.4.13
-  - published 2026-10-16T12:27:47Z (was v4.4.12)
-- **`sn21:scoring_commit:2026-10-16T12:06:08Z`** - sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a…
+- **`sn100:burn_drop:0.705`** - sn100 burn fell 1.000 -> 0.705 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-10-16T18:40:01Z`** - sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-16T14:00:51Z`** - sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend…
+- **`sn92:release:v1.2.0-rc6`** - sn92 released v1.2.0-rc6
+  - published 2026-10-16T16:29:41Z (was v1.2.0-rc4)
+- **`sn102:scoring_commit:2026-10-15T19:51:21Z`** - sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-16T11:32:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1
+- **`sn116:scoring_commit:2026-10-16T13:41:47Z`** - sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-16T13:20:49Z`** - sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage
+- **`sn121:scoring_commit:2026-10-16T15:26:35Z`** - sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:scoring_commit:2026-10-16T10:16:08Z`** - sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-10-16T10:25:45Z`** - sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn100:scoring_commit:2026-10-16T13:16:02Z`** - sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-16T11:35:50Z`** - sn114 commit touches scoring: update scoring.md docs
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-16T10:36:39Z`** - sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:readme_task_diff:31c270cb714e86fe`** - sn90 README task/scoring sections changed
+- **`sn121:readme_task_diff:3c2e2790982a3aff`** - sn121 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -294,6 +282,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-16T09:32:28Z` | 71 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop… |
 | `sn78:scoring_commit:2026-10-16T04:36:39Z` | 78 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn78 commit touches scoring: Add read-only retained miner revision preflight |
 | `sn116:scoring_commit:2026-10-16T07:49:42Z` | 116 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4… |
+| `sn1:release:v4.4.13` | 1 | RELEASE | 2026-10-16T14:58:20Z | sn1 released v4.4.13 |
+| `sn21:scoring_commit:2026-10-16T12:06:08Z` | 21 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a… |
+| `sn51:scoring_commit:2026-10-16T14:00:51Z` | 51 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend… |
+| `sn67:scoring_commit:2026-10-16T11:32:32Z` | 67 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1 |
+| `sn78:scoring_commit:2026-10-16T13:20:49Z` | 78 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage |
+| `sn90:scoring_commit:2026-10-16T10:16:08Z` | 90 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync |
+| `sn92:scoring_commit:2026-10-16T10:25:45Z` | 92 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co… |
+| `sn100:scoring_commit:2026-10-16T13:16:02Z` | 100 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318) |
+| `sn114:scoring_commit:2026-10-16T11:35:50Z` | 114 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn114 commit touches scoring: update scoring.md docs |
+| `sn116:scoring_commit:2026-10-16T10:36:39Z` | 116 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4… |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
 | `sn66:readme_task_diff:53ca2fbbcaa75039` | 66 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn66 README task/scoring sections changed |
 | `sn79:readme_task_diff:1ab076cd7112df84` | 79 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn79 README task/scoring sections changed |
@@ -311,6 +309,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
+| `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

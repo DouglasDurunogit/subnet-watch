@@ -1,24 +1,24 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-10-16T21:46:46Z  |  block: 9298716  |  row_status: ok
+snapshot_utc: 2026-10-16T23:58:52Z  |  block: 9299376  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.13631000000000001 USD), open=True
+- registration cost: 0.0005 TAO (0.13788 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 1084.6 days  |  registered at block 1489797
+- subnet age: 1084.7 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 16359.033697398218** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 9622.943723298999
-- top_miner_usd_day: 16359.033697398218 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 16555.0031027311** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 9738.219637138985
+- top_miner_usd_day: 16555.0031027311 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 2  |  gini: 0.35000152592547384  |  top1_share: 0.8500015259254737  |  top10_share: 1.0
+- earners: 2  |  gini: 0.35000152592547407  |  top1_share: 0.8500015259254738  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-16T21:46:46Z  |  block: 9298716  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 16350.8145 USD/day  |  payback on registration: 0.0 days
+- net margin: 16546.7839 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 56.7 (rank 23), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 38.32 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 1.1d ago
+- score: 56.8 (rank 23), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 38.37 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 1.2d ago
 
 ## On-chain description
 

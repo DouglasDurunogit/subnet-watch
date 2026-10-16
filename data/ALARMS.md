@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T21:46:46Z, block 9298716
+# ALARMS - generated 2026-10-16T23:58:52Z, block 9299376
 
-window: first_seen in [2026-10-16T20:32:16Z, 2026-10-16T21:47:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T22:44:25Z, 2026-10-16T23:59:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn97:burn_drop:0.600` | 97 | BURN_DROP | P0 | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn25:release:v2026.10.16-1073843780` | 25 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn25 released v2026.10.16-1073843780 |
-| `sn25:scoring_commit:2026-10-16T19:01:39Z` | 25 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib… |
-| `sn71:scoring_commit:2026-10-16T19:32:25Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496) |
-| `sn91:scoring_commit:2026-10-16T20:57:49Z` | 91 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard |
-| `sn92:release:v1.2.0-rc7` | 92 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn92 released v1.2.0-rc7 |
-| `sn102:release:v0.7.1` | 102 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn102 released v0.7.1 |
-| `sn116:scoring_commit:2026-10-16T20:22:44Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control… |
+| `sn25:release:v2026.10.16-1073891640` | 25 | RELEASE | P1 | 2026-10-16T23:59:25Z | sn25 released v2026.10.16-1073891640 |
+| `sn71:scoring_commit:2026-10-16T23:28:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface |
+| `sn78:scoring_commit:2026-10-16T22:57:25Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence |
+| `sn116:release:worker-images-v5 (DEVELOPMENT)` | 116 | RELEASE | P1 | 2026-10-16T23:59:25Z | sn116 released worker-images-v5 (DEVELOPMENT) |
+| `sn116:scoring_commit:2026-10-16T20:58:13Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn116 commit touches scoring: Format F06 Challenge registry assertions |
 
 ### detail
 
-- **`sn97:burn_drop:0.600`** - sn97 burn fell 1.000 -> 0.600 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.16-1073843780`** - sn25 released v2026.10.16-1073843780
-  - published 2026-10-16T21:09:26Z (was v2026.10.15-1073121200)
-- **`sn25:scoring_commit:2026-10-16T19:01:39Z`** - sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib…
+- **`sn25:release:v2026.10.16-1073891640`** - sn25 released v2026.10.16-1073891640
+  - published 2026-10-16T22:28:39Z (was v2026.10.16-1073843780)
+- **`sn71:scoring_commit:2026-10-16T23:28:33Z`** - sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-16T19:32:25Z`** - sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496)
+- **`sn78:scoring_commit:2026-10-16T22:57:25Z`** - sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-16T20:57:49Z`** - sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc7`** - sn92 released v1.2.0-rc7
-  - published 2026-10-16T20:23:50Z (was v1.2.0-rc6)
-- **`sn102:release:v0.7.1`** - sn102 released v0.7.1
-  - published 2026-10-16T19:10:08Z (was v0.7.0)
-- **`sn116:scoring_commit:2026-10-16T20:22:44Z`** - sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control…
+- **`sn116:release:worker-images-v5 (DEVELOPMENT)`** - sn116 released worker-images-v5 (DEVELOPMENT)
+  - published 2026-10-16T23:48:21Z (was Carbon worker images v4)
+- **`sn116:scoring_commit:2026-10-16T20:58:13Z`** - sn116 commit touches scoring: Format F06 Challenge registry assertions
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -57,11 +48,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.713` | 37 | BURN_DROP | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
 | `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
-| `sn14:scoring_commit:2026-10-09T21:56:54Z` | 14 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn14 commit touches scoring: Notify Discord when new hotkeys receive committed and active weights … |
-| `sn71:scoring_commit:2026-10-09T23:12:54Z` | 71 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn71 commit touches scoring: Refresh protected scorer manifest for required-stage retry |
-| `sn116:release:producer-code-r6` | 116 | RELEASE | 2026-10-09T23:34:47Z | sn116 released producer-code-r6 |
-| `sn116:scoring_commit:2026-10-09T20:56:19Z` | 116 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn116 commit touches scoring: Merge pull request #943 from carbonphysicsai/codex/landscape-miner-in… |
-| `sn120:scoring_commit:2026-10-09T21:02:00Z` | 120 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn120 commit touches scoring: Retain partial miner batches and advance sampling attempts on retries |
+| `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn25:release:v2026.10.9-1067985620` | 25 | RELEASE | 2026-10-10T02:48:16Z | sn25 released v2026.10.9-1067985620 |
 | `sn62:release:v0.3.11` | 62 | RELEASE | 2026-10-10T02:48:16Z | sn62 released v0.3.11 |
 | `sn71:scoring_commit:2026-10-10T02:16:30Z` | 71 | SCORING_COMMIT | 2026-10-10T02:48:16Z | sn71 commit touches scoring: Merge pull request #322 from leadpoet/codex/arena-partial-score-deadl… |
@@ -291,6 +278,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn102:scoring_commit:2026-10-15T19:51:21Z` | 102 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall… |
 | `sn116:scoring_commit:2026-10-16T13:41:47Z` | 116 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge |
 | `sn121:scoring_commit:2026-10-16T15:26:35Z` | 121 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F |
+| `sn25:release:v2026.10.16-1073843780` | 25 | RELEASE | 2026-10-16T21:47:16Z | sn25 released v2026.10.16-1073843780 |
+| `sn25:scoring_commit:2026-10-16T19:01:39Z` | 25 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib… |
+| `sn71:scoring_commit:2026-10-16T19:32:25Z` | 71 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496) |
+| `sn91:scoring_commit:2026-10-16T20:57:49Z` | 91 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard |
+| `sn92:release:v1.2.0-rc7` | 92 | RELEASE | 2026-10-16T21:47:16Z | sn92 released v1.2.0-rc7 |
+| `sn102:release:v0.7.1` | 102 | RELEASE | 2026-10-16T21:47:16Z | sn102 released v0.7.1 |
+| `sn116:scoring_commit:2026-10-16T20:22:44Z` | 116 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control… |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

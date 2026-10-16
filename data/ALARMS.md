@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T00:49:00Z, block 9292427
+# ALARMS - generated 2026-10-16T05:47:18Z, block 9293918
 
-window: first_seen in [2026-10-15T23:34:24Z, 2026-10-16T00:49:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T04:32:49Z, 2026-10-16T05:47:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.15-1073082520` | 25 | RELEASE | P1 | 2026-10-16T00:49:24Z | sn25 released v2026.10.15-1073082520 |
-| `sn37:scoring_commit:2026-10-16T00:31:00Z` | 37 | SCORING_COMMIT | P1 | 2026-10-16T00:49:24Z | sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30) |
-| `sn116:scoring_commit:2026-10-16T00:40:42Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T00:49:24Z | sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4… |
-| `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | P2 | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
+| `sn25:release:v2026.10.15-1073121200` | 25 | RELEASE | P1 | 2026-10-16T05:47:49Z | sn25 released v2026.10.15-1073121200 |
+| `sn51:scoring_commit:2026-10-16T02:57:37Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b… |
+| `sn71:scoring_commit:2026-10-16T04:40:16Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn71 commit touches scoring: Verify failed fallback stays an infrastructure error |
+| `sn78:scoring_commit:2026-10-16T03:44:01Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies |
+| `sn81:scoring_commit:2026-10-15T10:03:46Z` | 81 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front |
+| `sn91:scoring_commit:2026-10-16T02:59:40Z` | 91 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes… |
+| `sn94:scoring_commit:2026-10-16T03:19:42Z` | 94 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c |
+| `sn116:scoring_commit:2026-10-16T04:42:09Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419… |
 
 ### detail
 
-- **`sn25:release:v2026.10.15-1073082520`** - sn25 released v2026.10.15-1073082520
-  - published 2026-10-15T23:59:22Z (was v2026.10.15-1072937160)
-- **`sn37:scoring_commit:2026-10-16T00:31:00Z`** - sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30)
+- **`sn25:release:v2026.10.15-1073121200`** - sn25 released v2026.10.15-1073121200
+  - published 2026-10-16T01:04:10Z (was v2026.10.15-1073082520)
+- **`sn51:scoring_commit:2026-10-16T02:57:37Z`** - sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-16T00:40:42Z`** - sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4…
+- **`sn71:scoring_commit:2026-10-16T04:40:16Z`** - sn71 commit touches scoring: Verify failed fallback stays an infrastructure error
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:8fd038bdd4d28f3e`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn78:scoring_commit:2026-10-16T03:44:01Z`** - sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-15T10:03:46Z`** - sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-10-16T02:59:40Z`** - sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-10-16T03:19:42Z`** - sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-16T04:42:09Z`** - sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -274,6 +286,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-10-15T19:21:22Z` | 92 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la… |
 | `sn116:scoring_commit:2026-10-15T20:45:43Z` | 116 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn116 commit touches scoring: Verify persisted contract record through submission guards |
 | `sn117:release:everycli v0.5.7` | 117 | RELEASE | 2026-10-15T22:39:09Z | sn117 released everycli v0.5.7 |
+| `sn25:release:v2026.10.15-1073082520` | 25 | RELEASE | 2026-10-16T00:49:24Z | sn25 released v2026.10.15-1073082520 |
+| `sn37:scoring_commit:2026-10-16T00:31:00Z` | 37 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30) |
+| `sn116:scoring_commit:2026-10-16T00:40:42Z` | 116 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4… |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
@@ -292,6 +307,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
+| `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

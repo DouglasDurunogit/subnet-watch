@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-15T22:38:45Z, block 9291775
+# ALARMS - generated 2026-10-16T00:49:00Z, block 9292427
 
-window: first_seen in [2026-10-15T21:24:09Z, 2026-10-15T22:39:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-15T23:34:24Z, 2026-10-16T00:49:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20261015-220818: Quote the min f` | 7 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775) |
-| `sn7:scoring_commit:2026-10-15T21:59:48Z` | 7 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774) |
-| `sn25:release:v2026.10.15-1072937160` | 25 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn25 released v2026.10.15-1072937160 |
-| `sn71:scoring_commit:2026-10-15T20:53:09Z` | 71 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access |
-| `sn78:scoring_commit:2026-10-15T19:35:00Z` | 78 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn78 commit touches scoring: Overlap retained history loading with bounded native verification |
-| `sn92:release:v1.2.0-rc4` | 92 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn92 released v1.2.0-rc4 |
-| `sn92:scoring_commit:2026-10-15T19:21:22Z` | 92 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la… |
-| `sn116:scoring_commit:2026-10-15T20:45:43Z` | 116 | SCORING_COMMIT | P1 | 2026-10-15T22:39:09Z | sn116 commit touches scoring: Verify persisted contract record through submission guards |
-| `sn117:release:everycli v0.5.7` | 117 | RELEASE | P1 | 2026-10-15T22:39:09Z | sn117 released everycli v0.5.7 |
+| `sn25:release:v2026.10.15-1073082520` | 25 | RELEASE | P1 | 2026-10-16T00:49:24Z | sn25 released v2026.10.15-1073082520 |
+| `sn37:scoring_commit:2026-10-16T00:31:00Z` | 37 | SCORING_COMMIT | P1 | 2026-10-16T00:49:24Z | sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30) |
+| `sn116:scoring_commit:2026-10-16T00:40:42Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T00:49:24Z | sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4… |
+| `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | P2 | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 
 ### detail
 
-- **`sn7:release:release-20261015-220818: Quote the min f`** - sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775)
-  - published 2026-10-15T21:59:48Z (was release-20261015-164605: Gate quotes and crown reconcile on the offer's own backing bit (#772))
-- **`sn7:scoring_commit:2026-10-15T21:59:48Z`** - sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774)
+- **`sn25:release:v2026.10.15-1073082520`** - sn25 released v2026.10.15-1073082520
+  - published 2026-10-15T23:59:22Z (was v2026.10.15-1072937160)
+- **`sn37:scoring_commit:2026-10-16T00:31:00Z`** - sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.15-1072937160`** - sn25 released v2026.10.15-1072937160
-  - published 2026-10-15T19:57:47Z (was v2026.10.15-1072765730)
-- **`sn71:scoring_commit:2026-10-15T20:53:09Z`** - sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access
+- **`sn116:scoring_commit:2026-10-16T00:40:42Z`** - sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-15T19:35:00Z`** - sn78 commit touches scoring: Overlap retained history loading with bounded native verification
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc4`** - sn92 released v1.2.0-rc4
-  - published 2026-10-15T21:45:30Z (was v1.2.0-rc3)
-- **`sn92:scoring_commit:2026-10-15T19:21:22Z`** - sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-15T20:45:43Z`** - sn116 commit touches scoring: Verify persisted contract record through submission guards
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.5.7`** - sn117 released everycli v0.5.7
-  - published 2026-10-15T22:11:55Z (was everycli v0.5.6)
+- **`sn37:readme_task_diff:8fd038bdd4d28f3e`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn37:burn_drop:0.000` | 37 | BURN_DROP | 2026-10-09T00:42:20Z | sn37 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
@@ -59,13 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
-| `sn25:release:v2026.10.8-1066946420` | 25 | RELEASE | 2026-10-09T00:42:20Z | sn25 released v2026.10.8-1066946420 |
-| `sn62:release:v0.3.10` | 62 | RELEASE | 2026-10-09T00:42:20Z | sn62 released v0.3.10 |
-| `sn71:scoring_commit:2026-10-09T00:04:40Z` | 71 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn71 commit touches scoring: Merge pull request #295 from leadpoet/fix/host-score-closed-billing |
-| `sn78:scoring_commit:2026-10-08T23:22:27Z` | 78 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn78 commit touches scoring: Select policy-budget miner release and resume completed-case archives |
-| `sn116:release:worker-images-v3` | 116 | RELEASE | 2026-10-09T00:42:20Z | sn116 released worker-images-v3 |
-| `sn116:scoring_commit:2026-10-08T22:48:01Z` | 116 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn116 commit touches scoring: Merge pull request #846 from carbonphysicsai/codex/challenge-value-co… |
-| `sn120:scoring_commit:2026-10-08T21:41:26Z` | 120 | SCORING_COMMIT | 2026-10-09T00:42:20Z | sn120 commit touches scoring: Confirm fresh public epoch and authenticated base evaluation |
 | `sn51:scoring_commit:2026-10-09T04:13:41Z` | 51 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn51 commit touches scoring: DAH-4001 - validator: no settled window keeps the weights in force, i… |
 | `sn81:scoring_commit:2026-10-09T02:51:22Z` | 81 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn81 commit touches scoring: Merge pull request #342 from reliquadotai/fix/task-catalog-artifact-r… |
 | `sn89:scoring_commit:2026-10-09T02:22:48Z` | 89 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn89 commit touches scoring: README: IQ Markets for players (web app, /markets, no miner needed; r… |
@@ -288,6 +265,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:scoring_commit:2026-10-15T15:10:01Z` | 92 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn92 commit touches scoring: tiers: keep the per-miner tier-order rule (H3); s1-lite / s1-cpu max_… |
 | `sn116:release:Carbon worker images v4` | 116 | RELEASE | 2026-10-15T19:27:45Z | sn116 released Carbon worker images v4 |
 | `sn116:scoring_commit:2026-10-15T19:09:06Z` | 116 | SCORING_COMMIT | 2026-10-15T19:27:45Z | sn116 commit touches scoring: Merge pull request #1383 from carbonphysicsai/codex/scorelab-v3-calib… |
+| `sn7:release:release-20261015-220818: Quote the min f` | 7 | RELEASE | 2026-10-15T22:39:09Z | sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775) |
+| `sn7:scoring_commit:2026-10-15T21:59:48Z` | 7 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774) |
+| `sn25:release:v2026.10.15-1072937160` | 25 | RELEASE | 2026-10-15T22:39:09Z | sn25 released v2026.10.15-1072937160 |
+| `sn71:scoring_commit:2026-10-15T20:53:09Z` | 71 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access |
+| `sn78:scoring_commit:2026-10-15T19:35:00Z` | 78 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn78 commit touches scoring: Overlap retained history loading with bounded native verification |
+| `sn92:release:v1.2.0-rc4` | 92 | RELEASE | 2026-10-15T22:39:09Z | sn92 released v1.2.0-rc4 |
+| `sn92:scoring_commit:2026-10-15T19:21:22Z` | 92 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la… |
+| `sn116:scoring_commit:2026-10-15T20:45:43Z` | 116 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn116 commit touches scoring: Verify persisted contract record through submission guards |
+| `sn117:release:everycli v0.5.7` | 117 | RELEASE | 2026-10-15T22:39:09Z | sn117 released everycli v0.5.7 |
 | `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |

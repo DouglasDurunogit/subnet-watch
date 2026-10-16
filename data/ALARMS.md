@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T18:46:09Z, block 9297812
+# ALARMS - generated 2026-10-16T21:46:46Z, block 9298716
 
-window: first_seen in [2026-10-16T17:31:43Z, 2026-10-16T18:46:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T20:32:16Z, 2026-10-16T21:47:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn100:burn_drop:0.705` | 100 | BURN_DROP | P0 | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
-| `sn71:scoring_commit:2026-10-16T18:40:01Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493 |
-| `sn92:release:v1.2.0-rc6` | 92 | RELEASE | P1 | 2026-10-16T18:46:43Z | sn92 released v1.2.0-rc6 |
-| `sn102:scoring_commit:2026-10-15T19:51:21Z` | 102 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall… |
-| `sn116:scoring_commit:2026-10-16T13:41:47Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge |
-| `sn121:scoring_commit:2026-10-16T15:26:35Z` | 121 | SCORING_COMMIT | P1 | 2026-10-16T18:46:43Z | sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F |
-| `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | P2 | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
+| `sn97:burn_drop:0.600` | 97 | BURN_DROP | P0 | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
+| `sn25:release:v2026.10.16-1073843780` | 25 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn25 released v2026.10.16-1073843780 |
+| `sn25:scoring_commit:2026-10-16T19:01:39Z` | 25 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib… |
+| `sn71:scoring_commit:2026-10-16T19:32:25Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496) |
+| `sn91:scoring_commit:2026-10-16T20:57:49Z` | 91 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard |
+| `sn92:release:v1.2.0-rc7` | 92 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn92 released v1.2.0-rc7 |
+| `sn102:release:v0.7.1` | 102 | RELEASE | P1 | 2026-10-16T21:47:16Z | sn102 released v0.7.1 |
+| `sn116:scoring_commit:2026-10-16T20:22:44Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T21:47:16Z | sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control… |
 
 ### detail
 
-- **`sn100:burn_drop:0.705`** - sn100 burn fell 1.000 -> 0.705 - miners can earn again
+- **`sn97:burn_drop:0.600`** - sn97 burn fell 1.000 -> 0.600 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-10-16T18:40:01Z`** - sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493
+- **`sn25:release:v2026.10.16-1073843780`** - sn25 released v2026.10.16-1073843780
+  - published 2026-10-16T21:09:26Z (was v2026.10.15-1073121200)
+- **`sn25:scoring_commit:2026-10-16T19:01:39Z`** - sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc6`** - sn92 released v1.2.0-rc6
-  - published 2026-10-16T16:29:41Z (was v1.2.0-rc4)
-- **`sn102:scoring_commit:2026-10-15T19:51:21Z`** - sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall…
+- **`sn71:scoring_commit:2026-10-16T19:32:25Z`** - sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-16T13:41:47Z`** - sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge
+- **`sn91:scoring_commit:2026-10-16T20:57:49Z`** - sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn121:scoring_commit:2026-10-16T15:26:35Z`** - sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F
+- **`sn92:release:v1.2.0-rc7`** - sn92 released v1.2.0-rc7
+  - published 2026-10-16T20:23:50Z (was v1.2.0-rc6)
+- **`sn102:release:v0.7.1`** - sn102 released v0.7.1
+  - published 2026-10-16T19:10:08Z (was v0.7.0)
+- **`sn116:scoring_commit:2026-10-16T20:22:44Z`** - sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn121:readme_task_diff:3c2e2790982a3aff`** - sn121 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:mechanism_added:1to2` | 104 | MECHANISM_ADDED | 2026-10-09T19:37:09Z | sn104 now runs 2 incentive mechanisms (was 1) |
 | `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
@@ -54,15 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
 | `sn37:burn_drop:0.713` | 37 | BURN_DROP | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
 | `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
-| `sn13:release:Release v1.18.74` | 13 | RELEASE | 2026-10-09T19:37:09Z | sn13 released Release v1.18.74 |
-| `sn21:scoring_commit:2026-10-09T15:47:13Z` | 21 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn21 commit touches scoring: docs(rewards): self-mining section lists the operator-run miners (UID… |
-| `sn25:scoring_commit:2026-10-09T17:31:17Z` | 25 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn25 commit touches scoring: Name a rejected network sign-in in the validator |
-| `sn71:scoring_commit:2026-10-09T19:30:42Z` | 71 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn71 commit touches scoring: Include accepted host scores in closed billing selector |
-| `sn76:scoring_commit:2026-10-09T18:01:37Z` | 76 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn76 commit touches scoring: Pool deliveries: claim-refusal backoff + claim_health(); validator --… |
-| `sn81:scoring_commit:2026-10-09T09:04:13Z` | 81 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn81 commit touches scoring: feat(env): score reliquary/stdio-program/v1 sources in the sandbox |
-| `sn116:release:producer-code-r5` | 116 | RELEASE | 2026-10-09T19:37:09Z | sn116 released producer-code-r5 |
-| `sn116:scoring_commit:2026-10-09T19:34:16Z` | 116 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn116 commit touches scoring: Merge pull request #935 from carbonphysicsai/codex/v3-score-inputs-01 |
-| `sn120:scoring_commit:2026-10-09T19:24:54Z` | 120 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn120 commit touches scoring: Recover hourly miner weight submissions from finalized chain evidence |
+| `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn14:scoring_commit:2026-10-09T21:56:54Z` | 14 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn14 commit touches scoring: Notify Discord when new hotkeys receive committed and active weights … |
 | `sn71:scoring_commit:2026-10-09T23:12:54Z` | 71 | SCORING_COMMIT | 2026-10-09T23:34:47Z | sn71 commit touches scoring: Refresh protected scorer manifest for required-stage retry |
 | `sn116:release:producer-code-r6` | 116 | RELEASE | 2026-10-09T23:34:47Z | sn116 released producer-code-r6 |
@@ -292,10 +286,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-10-16T13:16:02Z` | 100 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318) |
 | `sn114:scoring_commit:2026-10-16T11:35:50Z` | 114 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn114 commit touches scoring: update scoring.md docs |
 | `sn116:scoring_commit:2026-10-16T10:36:39Z` | 116 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4… |
-| `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
-| `sn66:readme_task_diff:53ca2fbbcaa75039` | 66 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn66 README task/scoring sections changed |
-| `sn79:readme_task_diff:1ab076cd7112df84` | 79 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn79 README task/scoring sections changed |
-| `sn117:readme_task_diff:ad8c3f68204b01ab` | 117 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn117 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-10-16T18:40:01Z` | 71 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493 |
+| `sn92:release:v1.2.0-rc6` | 92 | RELEASE | 2026-10-16T18:46:43Z | sn92 released v1.2.0-rc6 |
+| `sn102:scoring_commit:2026-10-15T19:51:21Z` | 102 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall… |
+| `sn116:scoring_commit:2026-10-16T13:41:47Z` | 116 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn116 commit touches scoring: test(launchpad): bind retain policy fixture to registered challenge |
+| `sn121:scoring_commit:2026-10-16T15:26:35Z` | 121 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn121 commit touches scoring: Update README for skill bundles, the leadership margin and a Discord F |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
@@ -310,6 +305,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
+| `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

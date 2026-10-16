@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T10:10:18Z, block 9295233
+# ALARMS - generated 2026-10-16T14:57:55Z, block 9296671
 
-window: first_seen in [2026-10-16T08:55:43Z, 2026-10-16T10:10:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T13:43:20Z, 2026-10-16T14:58:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:burn_drop:0.713` | 37 | BURN_DROP | P0 | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
-| `sn76:burn_drop:0.961` | 76 | BURN_DROP | P0 | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
-| `sn51:scoring_commit:2026-10-16T06:29:35Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 … |
-| `sn71:scoring_commit:2026-10-16T09:32:28Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop… |
-| `sn78:scoring_commit:2026-10-16T04:36:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn78 commit touches scoring: Add read-only retained miner revision preflight |
-| `sn116:scoring_commit:2026-10-16T07:49:42Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4… |
+| `sn1:release:v4.4.13` | 1 | RELEASE | P1 | 2026-10-16T14:58:20Z | sn1 released v4.4.13 |
+| `sn21:scoring_commit:2026-10-16T12:06:08Z` | 21 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a… |
+| `sn51:scoring_commit:2026-10-16T14:00:51Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend… |
+| `sn67:scoring_commit:2026-10-16T11:32:32Z` | 67 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1 |
+| `sn78:scoring_commit:2026-10-16T13:20:49Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage |
+| `sn90:scoring_commit:2026-10-16T10:16:08Z` | 90 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync |
+| `sn92:scoring_commit:2026-10-16T10:25:45Z` | 92 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co… |
+| `sn100:scoring_commit:2026-10-16T13:16:02Z` | 100 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318) |
+| `sn114:scoring_commit:2026-10-16T11:35:50Z` | 114 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn114 commit touches scoring: update scoring.md docs |
+| `sn116:scoring_commit:2026-10-16T10:36:39Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T14:58:20Z | sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4… |
+| `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | P2 | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 
 ### detail
 
-- **`sn37:burn_drop:0.713`** - sn37 burn fell 1.000 -> 0.713 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn76:burn_drop:0.961`** - sn76 burn fell 0.999 -> 0.961 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn51:scoring_commit:2026-10-16T06:29:35Z`** - sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 …
+- **`sn1:release:v4.4.13`** - sn1 released v4.4.13
+  - published 2026-10-16T12:27:47Z (was v4.4.12)
+- **`sn21:scoring_commit:2026-10-16T12:06:08Z`** - sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-16T09:32:28Z`** - sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop…
+- **`sn51:scoring_commit:2026-10-16T14:00:51Z`** - sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-16T04:36:39Z`** - sn78 commit touches scoring: Add read-only retained miner revision preflight
+- **`sn67:scoring_commit:2026-10-16T11:32:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-16T07:49:42Z`** - sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4…
+- **`sn78:scoring_commit:2026-10-16T13:20:49Z`** - sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:scoring_commit:2026-10-16T10:16:08Z`** - sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-10-16T10:25:45Z`** - sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn100:scoring_commit:2026-10-16T13:16:02Z`** - sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-10-16T11:35:50Z`** - sn114 commit touches scoring: update scoring.md docs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-16T10:36:39Z`** - sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:readme_task_diff:31c270cb714e86fe`** - sn90 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,17 +64,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
-| `sn3:scoring_commit:2026-10-09T13:41:35Z` | 3 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn3 commit touches scoring: Add competition filters to evaluation history and update dataset summ… |
-| `sn21:release:SN21 training data v4 (live basket shape` | 21 | RELEASE | 2026-10-09T14:20:19Z | sn21 released SN21 training data v4 (live basket shape) |
-| `sn50:scoring_commit:2026-10-09T13:27:10Z` | 50 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn50 commit touches scoring: Avoid a full miner_predictions scan when loading scores (#337) |
-| `sn51:scoring_commit:2026-10-09T09:49:06Z` | 51 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn51 commit touches scoring: DAH-3980 - Validator: one Docker SDK SSH channel per host, not per UR… |
-| `sn71:scoring_commit:2026-10-09T07:27:04Z` | 71 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn71 commit touches scoring: Refresh protected judge fit manifest for merged scorer |
-| `sn76:scoring_commit:2026-10-09T14:10:54Z` | 76 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn76 commit touches scoring: protected/miner/manifest.json: single admitted compose hash after the… |
-| `sn78:scoring_commit:2026-10-09T09:19:01Z` | 78 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn78 commit touches scoring: Unblock C5 admission reads and correct historical block verification … |
-| `sn89:scoring_commit:2026-10-09T08:42:41Z` | 89 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn89 commit touches scoring: scoring: cache z_for_resolve (pure function, bit-identical output) |
-| `sn111:scoring_commit:2026-10-08T19:49:34Z` | 111 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn111 commit touches scoring: feat(validator): route verified operator miner allocation |
-| `sn116:scoring_commit:2026-10-09T12:50:59Z` | 116 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn116 commit touches scoring: VALIDATOR-30 contract: the refusal order (root allow-list first) and … |
-| `sn120:scoring_commit:2026-10-09T11:15:27Z` | 120 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn120 commit touches scoring: Verify effective-LR evidence for normal optimizer continuation |
+| `sn37:burn_drop:0.713` | 37 | BURN_DROP | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
+| `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
 | `sn13:release:Release v1.18.74` | 13 | RELEASE | 2026-10-09T19:37:09Z | sn13 released Release v1.18.74 |
 | `sn21:scoring_commit:2026-10-09T15:47:13Z` | 21 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn21 commit touches scoring: docs(rewards): self-mining section lists the operator-run miners (UID… |
 | `sn25:scoring_commit:2026-10-09T17:31:17Z` | 25 | SCORING_COMMIT | 2026-10-09T19:37:09Z | sn25 commit touches scoring: Name a rejected network sign-in in the validator |
@@ -284,7 +290,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-10-16T02:59:40Z` | 91 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes… |
 | `sn94:scoring_commit:2026-10-16T03:19:42Z` | 94 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c |
 | `sn116:scoring_commit:2026-10-16T04:42:09Z` | 116 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419… |
-| `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
+| `sn51:scoring_commit:2026-10-16T06:29:35Z` | 51 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 … |
+| `sn71:scoring_commit:2026-10-16T09:32:28Z` | 71 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop… |
+| `sn78:scoring_commit:2026-10-16T04:36:39Z` | 78 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn78 commit touches scoring: Add read-only retained miner revision preflight |
+| `sn116:scoring_commit:2026-10-16T07:49:42Z` | 116 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4… |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
 | `sn66:readme_task_diff:53ca2fbbcaa75039` | 66 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn66 README task/scoring sections changed |
 | `sn79:readme_task_diff:1ab076cd7112df84` | 79 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn79 README task/scoring sections changed |

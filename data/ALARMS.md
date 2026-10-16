@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T05:47:18Z, block 9293918
+# ALARMS - generated 2026-10-16T10:10:18Z, block 9295233
 
-window: first_seen in [2026-10-16T04:32:49Z, 2026-10-16T05:47:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-16T08:55:43Z, 2026-10-16T10:10:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.15-1073121200` | 25 | RELEASE | P1 | 2026-10-16T05:47:49Z | sn25 released v2026.10.15-1073121200 |
-| `sn51:scoring_commit:2026-10-16T02:57:37Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b… |
-| `sn71:scoring_commit:2026-10-16T04:40:16Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn71 commit touches scoring: Verify failed fallback stays an infrastructure error |
-| `sn78:scoring_commit:2026-10-16T03:44:01Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies |
-| `sn81:scoring_commit:2026-10-15T10:03:46Z` | 81 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front |
-| `sn91:scoring_commit:2026-10-16T02:59:40Z` | 91 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes… |
-| `sn94:scoring_commit:2026-10-16T03:19:42Z` | 94 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c |
-| `sn116:scoring_commit:2026-10-16T04:42:09Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T05:47:49Z | sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419… |
+| `sn37:burn_drop:0.713` | 37 | BURN_DROP | P0 | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
+| `sn76:burn_drop:0.961` | 76 | BURN_DROP | P0 | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
+| `sn51:scoring_commit:2026-10-16T06:29:35Z` | 51 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 … |
+| `sn71:scoring_commit:2026-10-16T09:32:28Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop… |
+| `sn78:scoring_commit:2026-10-16T04:36:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn78 commit touches scoring: Add read-only retained miner revision preflight |
+| `sn116:scoring_commit:2026-10-16T07:49:42Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T10:10:43Z | sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4… |
 
 ### detail
 
-- **`sn25:release:v2026.10.15-1073121200`** - sn25 released v2026.10.15-1073121200
-  - published 2026-10-16T01:04:10Z (was v2026.10.15-1073082520)
-- **`sn51:scoring_commit:2026-10-16T02:57:37Z`** - sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b…
+- **`sn37:burn_drop:0.713`** - sn37 burn fell 1.000 -> 0.713 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:burn_drop:0.961`** - sn76 burn fell 0.999 -> 0.961 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn51:scoring_commit:2026-10-16T06:29:35Z`** - sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-16T04:40:16Z`** - sn71 commit touches scoring: Verify failed fallback stays an infrastructure error
+- **`sn71:scoring_commit:2026-10-16T09:32:28Z`** - sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-16T03:44:01Z`** - sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies
+- **`sn78:scoring_commit:2026-10-16T04:36:39Z`** - sn78 commit touches scoring: Add read-only retained miner revision preflight
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-15T10:03:46Z`** - sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-16T02:59:40Z`** - sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-16T03:19:42Z`** - sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-16T04:42:09Z`** - sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419…
+- **`sn116:scoring_commit:2026-10-16T07:49:42Z`** - sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -55,13 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
-| `sn51:scoring_commit:2026-10-09T04:13:41Z` | 51 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn51 commit touches scoring: DAH-4001 - validator: no settled window keeps the weights in force, i… |
-| `sn81:scoring_commit:2026-10-09T02:51:22Z` | 81 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn81 commit touches scoring: Merge pull request #342 from reliquadotai/fix/task-catalog-artifact-r… |
-| `sn89:scoring_commit:2026-10-09T02:22:48Z` | 89 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn89 commit touches scoring: README: IQ Markets for players (web app, /markets, no miner needed; r… |
-| `sn101:scoring_commit:2026-10-08T15:09:53Z` | 101 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn101 commit touches scoring: Add v1.1 scoring, AWS corpus leasing, weight-setting hardening, and l… |
-| `sn107:scoring_commit:2026-10-09T03:53:09Z` | 107 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn107 commit touches scoring: Merge pull request #40 from minos-protocol/fix/scoring-cutoff-lead |
-| `sn116:scoring_commit:2026-10-09T05:13:15Z` | 116 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn116 commit touches scoring: Merge pull request #854 from carbonphysicsai/agent/score-feed-schema |
-| `sn120:scoring_commit:2026-10-09T06:24:44Z` | 120 | SCORING_COMMIT | 2026-10-09T06:48:38Z | sn120 commit touches scoring: Bind native recovery imports and keep evaluator read capabilities out… |
 | `sn3:scoring_commit:2026-10-09T13:41:35Z` | 3 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn3 commit touches scoring: Add competition filters to evaluation history and update dataset summ… |
 | `sn21:release:SN21 training data v4 (live basket shape` | 21 | RELEASE | 2026-10-09T14:20:19Z | sn21 released SN21 training data v4 (live basket shape) |
 | `sn50:scoring_commit:2026-10-09T13:27:10Z` | 50 | SCORING_COMMIT | 2026-10-09T14:20:19Z | sn50 commit touches scoring: Avoid a full miner_predictions scan when loading scores (#337) |
@@ -289,7 +276,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.10.15-1073082520` | 25 | RELEASE | 2026-10-16T00:49:24Z | sn25 released v2026.10.15-1073082520 |
 | `sn37:scoring_commit:2026-10-16T00:31:00Z` | 37 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30) |
 | `sn116:scoring_commit:2026-10-16T00:40:42Z` | 116 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4… |
-| `sn101:readme_task_diff:69a3be15960a468f` | 101 | README_TASK_DIFF | 2026-10-09T06:48:38Z | sn101 README task/scoring sections changed |
+| `sn25:release:v2026.10.15-1073121200` | 25 | RELEASE | 2026-10-16T05:47:49Z | sn25 released v2026.10.15-1073121200 |
+| `sn51:scoring_commit:2026-10-16T02:57:37Z` | 51 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b… |
+| `sn71:scoring_commit:2026-10-16T04:40:16Z` | 71 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn71 commit touches scoring: Verify failed fallback stays an infrastructure error |
+| `sn78:scoring_commit:2026-10-16T03:44:01Z` | 78 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies |
+| `sn81:scoring_commit:2026-10-15T10:03:46Z` | 81 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front |
+| `sn91:scoring_commit:2026-10-16T02:59:40Z` | 91 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes… |
+| `sn94:scoring_commit:2026-10-16T03:19:42Z` | 94 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c |
+| `sn116:scoring_commit:2026-10-16T04:42:09Z` | 116 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419… |
 | `sn76:readme_task_diff:c11a1b8d6bd23a9b` | 76 | README_TASK_DIFF | 2026-10-09T14:20:19Z | sn76 README task/scoring sections changed |
 | `sn48:readme_task_diff:681058003f640cf6` | 48 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn48 README task/scoring sections changed |
 | `sn66:readme_task_diff:53ca2fbbcaa75039` | 66 | README_TASK_DIFF | 2026-10-09T19:37:09Z | sn66 README task/scoring sections changed |

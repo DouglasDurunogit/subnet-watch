@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-16T23:58:52Z, block 9299376
+# ALARMS - generated 2026-10-17T04:16:44Z, block 9300665
 
-window: first_seen in [2026-10-16T22:44:25Z, 2026-10-16T23:59:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T03:02:15Z, 2026-10-17T04:17:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.16-1073891640` | 25 | RELEASE | P1 | 2026-10-16T23:59:25Z | sn25 released v2026.10.16-1073891640 |
-| `sn71:scoring_commit:2026-10-16T23:28:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface |
-| `sn78:scoring_commit:2026-10-16T22:57:25Z` | 78 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence |
-| `sn116:release:worker-images-v5 (DEVELOPMENT)` | 116 | RELEASE | P1 | 2026-10-16T23:59:25Z | sn116 released worker-images-v5 (DEVELOPMENT) |
-| `sn116:scoring_commit:2026-10-16T20:58:13Z` | 116 | SCORING_COMMIT | P1 | 2026-10-16T23:59:25Z | sn116 commit touches scoring: Format F06 Challenge registry assertions |
+| `sn25:release:v2026.10.16-1074037020` | 25 | RELEASE | P1 | 2026-10-17T04:17:15Z | sn25 released v2026.10.16-1074037020 |
+| `sn71:scoring_commit:2026-10-17T01:24:18Z` | 71 | SCORING_COMMIT | P1 | 2026-10-17T04:17:15Z | sn71 commit touches scoring: Merge current main and validate selected judge runtime in training ex… |
+| `sn91:scoring_commit:2026-10-17T01:20:18Z` | 91 | SCORING_COMMIT | P1 | 2026-10-17T04:17:15Z | sn91 commit touches scoring: fix(promotion): anchor the trainer's reign clock where validators res… |
+| `sn92:release:v1.2.0-rc7.post1` | 92 | RELEASE | P1 | 2026-10-17T04:17:15Z | sn92 released v1.2.0-rc7.post1 |
 
 ### detail
 
-- **`sn25:release:v2026.10.16-1073891640`** - sn25 released v2026.10.16-1073891640
-  - published 2026-10-16T22:28:39Z (was v2026.10.16-1073843780)
-- **`sn71:scoring_commit:2026-10-16T23:28:33Z`** - sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface
+- **`sn25:release:v2026.10.16-1074037020`** - sn25 released v2026.10.16-1074037020
+  - published 2026-10-17T02:31:01Z (was v2026.10.16-1073891640)
+- **`sn71:scoring_commit:2026-10-17T01:24:18Z`** - sn71 commit touches scoring: Merge current main and validate selected judge runtime in training ex…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-16T22:57:25Z`** - sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence
+- **`sn91:scoring_commit:2026-10-17T01:20:18Z`** - sn91 commit touches scoring: fix(promotion): anchor the trainer's reign clock where validators res…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:release:worker-images-v5 (DEVELOPMENT)`** - sn116 released worker-images-v5 (DEVELOPMENT)
-  - published 2026-10-16T23:48:21Z (was Carbon worker images v4)
-- **`sn116:scoring_commit:2026-10-16T20:58:13Z`** - sn116 commit touches scoring: Format F06 Challenge registry assertions
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v1.2.0-rc7.post1`** - sn92 released v1.2.0-rc7.post1
+  - published 2026-10-17T01:16:33Z (was v1.2.0-rc7)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,10 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn25:release:v2026.10.9-1067985620` | 25 | RELEASE | 2026-10-10T02:48:16Z | sn25 released v2026.10.9-1067985620 |
-| `sn62:release:v0.3.11` | 62 | RELEASE | 2026-10-10T02:48:16Z | sn62 released v0.3.11 |
-| `sn71:scoring_commit:2026-10-10T02:16:30Z` | 71 | SCORING_COMMIT | 2026-10-10T02:48:16Z | sn71 commit touches scoring: Merge pull request #322 from leadpoet/codex/arena-partial-score-deadl… |
-| `sn120:scoring_commit:2026-10-10T01:21:35Z` | 120 | SCORING_COMMIT | 2026-10-10T02:48:16Z | sn120 commit touches scoring: Support prospective nine-batch mining and 512-task training |
 | `sn25:release:v2026.10.10-1068162640` | 25 | RELEASE | 2026-10-10T09:44:36Z | sn25 released v2026.10.10-1068162640 |
 | `sn51:scoring_commit:2026-10-10T04:05:02Z` | 51 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: cap fresh vloopback volume at the ext4 16… |
 | `sn71:scoring_commit:2026-10-10T04:22:43Z` | 71 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn71 commit touches scoring: Merge pull request #328 from leadpoet/codex/paid-score-abandonment-441 |
@@ -285,6 +278,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:release:v1.2.0-rc7` | 92 | RELEASE | 2026-10-16T21:47:16Z | sn92 released v1.2.0-rc7 |
 | `sn102:release:v0.7.1` | 102 | RELEASE | 2026-10-16T21:47:16Z | sn102 released v0.7.1 |
 | `sn116:scoring_commit:2026-10-16T20:22:44Z` | 116 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control… |
+| `sn25:release:v2026.10.16-1073891640` | 25 | RELEASE | 2026-10-16T23:59:25Z | sn25 released v2026.10.16-1073891640 |
+| `sn71:scoring_commit:2026-10-16T23:28:33Z` | 71 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface |
+| `sn78:scoring_commit:2026-10-16T22:57:25Z` | 78 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence |
+| `sn116:release:worker-images-v5 (DEVELOPMENT)` | 116 | RELEASE | 2026-10-16T23:59:25Z | sn116 released worker-images-v5 (DEVELOPMENT) |
+| `sn116:scoring_commit:2026-10-16T20:58:13Z` | 116 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn116 commit touches scoring: Format F06 Challenge registry assertions |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

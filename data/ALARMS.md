@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-17T15:58:08Z, block 9304172
+# ALARMS - generated 2026-10-17T18:25:22Z, block 9304909
 
-window: first_seen in [2026-10-17T14:43:40Z, 2026-10-17T15:58:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T17:10:49Z, 2026-10-17T18:25:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20261017-152034: Bound event ing` | 7 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792) |
-| `sn28:release:v0.5.2` | 28 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn28 released v0.5.2 |
-| `sn28:scoring_commit:2026-10-17T13:33:09Z` | 28 | SCORING_COMMIT | P1 | 2026-10-17T15:58:40Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327) |
-| `sn51:scoring_commit:2026-10-17T12:38:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T15:58:40Z | sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t… |
-| `sn92:release:v1.2.0-rc8` | 92 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn92 released v1.2.0-rc8 |
+| `sn41:scoring_commit:2026-10-17T16:02:48Z` | 41 | SCORING_COMMIT | P1 | 2026-10-17T18:25:49Z | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring |
+| `sn78:scoring_commit:2026-10-17T17:36:20Z` | 78 | SCORING_COMMIT | P1 | 2026-10-17T18:25:49Z | sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime |
 
 ### detail
 
-- **`sn7:release:release-20261017-152034: Bound event ing`** - sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792)
-  - published 2026-10-16T22:29:37Z (was release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775))
-- **`sn28:release:v0.5.2`** - sn28 released v0.5.2
-  - published 2026-10-17T13:52:37Z (was v0.5.1-dev)
-- **`sn28:scoring_commit:2026-10-17T13:33:09Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327)
+- **`sn41:scoring_commit:2026-10-17T16:02:48Z`** - sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-17T12:38:54Z`** - sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t…
+- **`sn78:scoring_commit:2026-10-17T17:36:20Z`** - sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc8`** - sn92 released v1.2.0-rc8
-  - published 2026-10-17T14:56:55Z (was v1.2.0-rc7.post4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -298,6 +289,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:release:executor-v1.142` | 51 | RELEASE | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
 | `sn51:scoring_commit:2026-10-17T11:57:18Z` | 51 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails… |
 | `sn92:release:v1.2.0-rc7.post4` | 92 | RELEASE | 2026-10-17T12:28:43Z | sn92 released v1.2.0-rc7.post4 |
+| `sn7:release:release-20261017-152034: Bound event ing` | 7 | RELEASE | 2026-10-17T15:58:40Z | sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792) |
+| `sn28:release:v0.5.2` | 28 | RELEASE | 2026-10-17T15:58:40Z | sn28 released v0.5.2 |
+| `sn28:scoring_commit:2026-10-17T13:33:09Z` | 28 | SCORING_COMMIT | 2026-10-17T15:58:40Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327) |
+| `sn51:scoring_commit:2026-10-17T12:38:54Z` | 51 | SCORING_COMMIT | 2026-10-17T15:58:40Z | sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t… |
+| `sn92:release:v1.2.0-rc8` | 92 | RELEASE | 2026-10-17T15:58:40Z | sn92 released v1.2.0-rc8 |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

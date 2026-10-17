@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-17T20:51:22Z · block 9305639 · run_status **ok**_
+_snapshot 2026-10-17T23:04:03Z · block 9306302 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 56 of 128
+# 54 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 99 | `miner_burn` < 0.99 |
 | Ranked | 99 | passed every gate |
-| **Positive margin** | **56** | income beats machine cost |
-| New events this window | 1 | see ALARMS.md |
+| **Positive margin** | **54** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn41 Almanac | 76.1 | 60.79 | 101 | cpu-small | 120 | 6% |
-| 2 | sn102 ConnitoAI | 70 | 733 | 1,244 | rtx4090* | 7 | 28% |
-| 3 | sn53 engy | 69.3 | 607 | 2,522 | rtx4090 | 24 | 16% |
-| 4 | sn91 cascade | 68.9 | 210 | 843 | cpu-small | 5 | 52% |
-| 5 | sn1 Apex | 68.7 | 502 | 946 | rtx4090* | 5 | 54% |
-| 6 | sn82 Noah | 68.1 | 646 | 646 = | rtx4090* | 64 | 2% |
-| 7 | sn67 Harnyx | 68.1 | 7.45 | 154 | cpu-small | 185 | 6% |
-| 8 | sn58 Attune | 67.8 | 389 | 628 | rtx4090* | 5 | 71% |
-| 9 | sn15 ORO | 67.6 | 8.16 | 16.28 | cpu-small | 65 | 97% |
-| 10 | sn107 Minos | 67.5 | 249 | 22,316 | cpu-small | 19 | 81% |
-| 11 | sn4 Targon | 66.8 | 9,962 | 29,372 | rtx4090* | 5 | 70% |
-| 12 | sn14 Cacheon | 66.6 | 268 | 1,867 | rtx4090* | 9 | 52% |
-| 13 | sn66 conjectures | 63.8 | 117 | 242 | rtx4090* | 4 | 80% |
-| 14 | sn120 Affine | 62.7 | 104 | 658 | rtx4090* | 192 | 2% |
-| 15 | sn92 REAX | 62.3 | 106 | 3,275 | rtx4090 | 235 | 11% |
-| 16 | sn97 Ingot | 61.5 | 2,059 | 2,059 = | rtx4090* | 4 | 40% |
-| 17 | sn61 RedTeam | 61 | 51.02 | 90.74 | rtx4090* | 139 | 1% |
-| 18 | sn28 SayGM | 59.7 | 35.41 | 3,900 | rtx4090* | 96 | 18% |
-| 19 | sn80 OpenRoboto | 58 | 729 | 3,372 | rtx4090* | 10 | 37% |
-| 20 | sn23 Trishool | 57.5 | 244 | 244 = | cpu-small | 4 | 80% |
+| 1 | sn41 Almanac | 76.1 | 59.86 | 99.78 | cpu-small | 120 | 6% |
+| 2 | sn53 engy | 69.3 | 602 | 2,501 | rtx4090 | 24 | 16% |
+| 3 | sn102 ConnitoAI | 69 | 552 | 1,758 | rtx4090* | 6 | 40% |
+| 4 | sn91 cascade | 68.9 | 206 | 828 | cpu-small | 5 | 52% |
+| 5 | sn1 Apex | 68.6 | 490 | 922 | rtx4090* | 5 | 54% |
+| 6 | sn82 Noah | 68.1 | 634 | 634 = | rtx4090* | 64 | 2% |
+| 7 | sn67 Harnyx | 68.1 | 7.34 | 151 | cpu-small | 189 | 6% |
+| 8 | sn58 Attune | 67.7 | 383 | 617 | rtx4090* | 5 | 71% |
+| 9 | sn15 ORO | 67.6 | 8.01 | 16.00 | cpu-small | 65 | 97% |
+| 10 | sn107 Minos | 67.5 | 250 | 21,239 | cpu-small | 20 | 80% |
+| 11 | sn14 Cacheon | 65.1 | 170 | 597 | rtx4090* | 9 | 52% |
+| 12 | sn66 conjectures | 63.8 | 116 | 225 | rtx4090* | 4 | 81% |
+| 13 | sn120 Affine | 63.6 | 127 | 513 | rtx4090* | 196 | 2% |
+| 14 | sn28 SayGM | 61.8 | 65.91 | 4,053 | rtx4090* | 92 | 21% |
+| 15 | sn97 Ingot | 61.5 | 2,024 | 2,024 = | rtx4090* | 5 | 20% |
+| 16 | sn92 REAX | 61.4 | 89.72 | 3,377 | rtx4090 | 236 | 11% |
+| 17 | sn61 RedTeam | 60.9 | 50.09 | 90.83 | rtx4090* | 137 | 1% |
+| 18 | sn80 OpenRoboto | 58.1 | 744 | 3,213 | rtx4090* | 10 | 35% |
+| 19 | sn4 Targon | 57.8 | 9,790 | 28,865 | rtx4090* | 5 | 70% |
+| 20 | sn23 Trishool | 57.5 | 240 | 240 = | cpu-small | 4 | 80% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
-| concentrated (30–60%) | 23 |
+| wide (<30%) | 27 |
+| concentrated (30–60%) | 21 |
 | dominated (60–90%) | 26 |
 | captured (>90%) | 24 |
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-17T23:04 | sn51 | RELEASE | sn51 released miner-v1.006 |
+| 2026-10-17T23:04 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes |
+| 2026-10-17T23:04 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Recover historical reward coverage gaps f |
 | 2026-10-17T20:51 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Merge pull request #373 from TensorLink-A |
 | 2026-10-17T18:25 | sn41 | SCORING_COMMIT | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_ |
 | 2026-10-17T18:25 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Backport current reward coverage capture  |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-17T12:28 | sn25 | RELEASE | sn25 released v2026.10.17-1074370910 |
 | 2026-10-17T12:28 | sn51 | RELEASE | sn51 released executor-v1.142 |
 | 2026-10-17T12:28 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: Sysbox installer: show the verify contain |
-| 2026-10-17T12:28 | sn92 | RELEASE | sn92 released v1.2.0-rc7.post4 |
-| 2026-10-17T08:43 | sn15 | RELEASE | sn15 released v2.5.5: Bound validator reads of sandbox output files (# |
-| 2026-10-17T08:43 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: Bound validator reads of sandbox output f |
 
 ---
 

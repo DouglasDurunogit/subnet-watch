@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-17T18:25:22Z, block 9304909
+# ALARMS - generated 2026-10-17T20:51:22Z, block 9305639
 
-window: first_seen in [2026-10-17T17:10:49Z, 2026-10-17T18:25:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T19:36:47Z, 2026-10-17T20:51:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn41:scoring_commit:2026-10-17T16:02:48Z` | 41 | SCORING_COMMIT | P1 | 2026-10-17T18:25:49Z | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring |
-| `sn78:scoring_commit:2026-10-17T17:36:20Z` | 78 | SCORING_COMMIT | P1 | 2026-10-17T18:25:49Z | sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime |
+| `sn91:scoring_commit:2026-10-17T20:13:24Z` | 91 | SCORING_COMMIT | P1 | 2026-10-17T20:51:47Z | sn91 commit touches scoring: Merge pull request #373 from TensorLink-AI/feat/payer-bench-unverified |
 
 ### detail
 
-- **`sn41:scoring_commit:2026-10-17T16:02:48Z`** - sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-17T17:36:20Z`** - sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime
+- **`sn91:scoring_commit:2026-10-17T20:13:24Z`** - sn91 commit touches scoring: Merge pull request #373 from TensorLink-AI/feat/payer-bench-unverified
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -41,10 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
-| `sn25:release:v2026.10.10-1068595480` | 25 | RELEASE | 2026-10-10T19:34:14Z | sn25 released v2026.10.10-1068595480 |
-| `sn71:scoring_commit:2026-10-10T19:08:12Z` | 71 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn71 commit touches scoring: Merge pull request #354 from leadpoet/fix/arena-confirmed-score-parall |
-| `sn108:scoring_commit:2026-10-10T15:01:19Z` | 108 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn108 commit touches scoring: On a baseline_epoch change the validator's bar is exactly the server'… |
-| `sn120:scoring_commit:2026-10-10T17:31:08Z` | 120 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn120 commit touches scoring: Clarify availability of reused historical evaluations |
 | `sn25:scoring_commit:2026-10-10T20:21:02Z` | 25 | SCORING_COMMIT | 2026-10-10T22:59:03Z | sn25 commit touches scoring: Merge seeding validator trails from every online provider |
 | `sn71:scoring_commit:2026-10-10T21:43:42Z` | 71 | SCORING_COMMIT | 2026-10-10T22:59:03Z | sn71 commit touches scoring: Merge pull request #363 from leadpoet/fix/arena-oct10-score-claim-cuto |
 | `sn25:release:v2026.10.10-1068748650` | 25 | RELEASE | 2026-10-11T01:49:20Z | sn25 released v2026.10.10-1068748650 |
@@ -294,6 +287,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-10-17T13:33:09Z` | 28 | SCORING_COMMIT | 2026-10-17T15:58:40Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327) |
 | `sn51:scoring_commit:2026-10-17T12:38:54Z` | 51 | SCORING_COMMIT | 2026-10-17T15:58:40Z | sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t… |
 | `sn92:release:v1.2.0-rc8` | 92 | RELEASE | 2026-10-17T15:58:40Z | sn92 released v1.2.0-rc8 |
+| `sn41:scoring_commit:2026-10-17T16:02:48Z` | 41 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring |
+| `sn78:scoring_commit:2026-10-17T17:36:20Z` | 78 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

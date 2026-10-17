@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-17T08:42:55Z, block 9301996
+# ALARMS - generated 2026-10-17T12:28:13Z, block 9303123
 
-window: first_seen in [2026-10-17T07:28:24Z, 2026-10-17T08:43:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T11:13:43Z, 2026-10-17T12:28:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,45 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | P0 | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
-| `sn15:release:v2.5.5: Bound validator reads of sandbox` | 15 | RELEASE | P1 | 2026-10-17T08:43:24Z | sn15 released v2.5.5: Bound validator reads of sandbox output files (#378) |
-| `sn15:scoring_commit:2026-10-17T07:52:59Z` | 15 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn15 commit touches scoring: Bound validator reads of sandbox output files (#378) |
-| `sn25:release:v2026.10.16-1074191560` | 25 | RELEASE | P1 | 2026-10-17T08:43:24Z | sn25 released v2026.10.16-1074191560 |
-| `sn37:scoring_commit:2026-10-17T05:44:48Z` | 37 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn37 commit touches scoring: fix(miner): enable reviewed runtime479 funding (#31) |
-| `sn51:scoring_commit:2026-10-17T08:20:58Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn51 commit touches scoring: DAH-4280 - [P0] Validator: cross-check the reported GPU count against… |
-| `sn71:scoring_commit:2026-10-17T06:44:45Z` | 71 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn71 commit touches scoring: fix(arena): retain verified source redirects for fallback (#519) |
-| `sn78:scoring_commit:2026-10-17T06:12:23Z` | 78 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn78 commit touches scoring: Merge pull request #294 from Umi-BitSign/codex/c6-portable-byte-verif… |
-| `sn92:release:v1.2.0-rc7.post3` | 92 | RELEASE | P1 | 2026-10-17T08:43:24Z | sn92 released v1.2.0-rc7.post3 |
-| `sn108:scoring_commit:2026-10-16T09:36:40Z` | 108 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn108 commit touches scoring: Validators don't pay records the server marks banned (coldkey banned … |
-| `sn116:scoring_commit:2026-10-17T04:56:00Z` | 116 | SCORING_COMMIT | P1 | 2026-10-17T08:43:24Z | sn116 commit touches scoring: Merge pull request #1416 from carbonphysicsai/codex/s5-challenge-sele… |
-| `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | P2 | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-10-17T11:22:46Z` | 21 | SCORING_COMMIT | P1 | 2026-10-17T12:28:43Z | sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry… |
+| `sn25:release:v2026.10.17-1074370910` | 25 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn25 released v2026.10.17-1074370910 |
+| `sn51:release:executor-v1.142` | 51 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
+| `sn51:scoring_commit:2026-10-17T11:57:18Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T12:28:43Z | sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails… |
+| `sn92:release:v1.2.0-rc7.post4` | 92 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn92 released v1.2.0-rc7.post4 |
 
 ### detail
 
-- **`sn120:mechanism_added:1to2`** - sn120 now runs 2 incentive mechanisms (was 1)
-  - A second distinct challenge now runs under this netuid.
-- **`sn15:release:v2.5.5: Bound validator reads of sandbox`** - sn15 released v2.5.5: Bound validator reads of sandbox output files (#378)
-  - published 2026-10-17T07:52:59Z (was v2.5.3)
-- **`sn15:scoring_commit:2026-10-17T07:52:59Z`** - sn15 commit touches scoring: Bound validator reads of sandbox output files (#378)
+- **`sn21:scoring_commit:2026-10-17T11:22:46Z`** - sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.16-1074191560`** - sn25 released v2026.10.16-1074191560
-  - published 2026-10-17T06:48:50Z (was v2026.10.16-1074037020)
-- **`sn37:scoring_commit:2026-10-17T05:44:48Z`** - sn37 commit touches scoring: fix(miner): enable reviewed runtime479 funding (#31)
+- **`sn25:release:v2026.10.17-1074370910`** - sn25 released v2026.10.17-1074370910
+  - published 2026-10-17T11:47:28Z (was v2026.10.16-1074191560)
+- **`sn51:release:executor-v1.142`** - sn51 released executor-v1.142
+  - published 2026-10-17T11:27:28Z (was executor-v1.141)
+- **`sn51:scoring_commit:2026-10-17T11:57:18Z`** - sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-17T08:20:58Z`** - sn51 commit touches scoring: DAH-4280 - [P0] Validator: cross-check the reported GPU count against…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-17T06:44:45Z`** - sn71 commit touches scoring: fix(arena): retain verified source redirects for fallback (#519)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-17T06:12:23Z`** - sn78 commit touches scoring: Merge pull request #294 from Umi-BitSign/codex/c6-portable-byte-verif…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc7.post3`** - sn92 released v1.2.0-rc7.post3
-  - published 2026-10-17T08:22:53Z (was v1.2.0-rc7.post1)
-- **`sn108:scoring_commit:2026-10-16T09:36:40Z`** - sn108 commit touches scoring: Validators don't pay records the server marks banned (coldkey banned …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-17T04:56:00Z`** - sn116 commit touches scoring: Merge pull request #1416 from carbonphysicsai/codex/s5-challenge-sele…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:0aa02311a0f783a4`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn92:release:v1.2.0-rc7.post4`** - sn92 released v1.2.0-rc7.post4
+  - published 2026-10-17T09:56:09Z (was v1.2.0-rc7.post3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -70,10 +49,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
-| `sn25:release:v2026.10.10-1068162640` | 25 | RELEASE | 2026-10-10T09:44:36Z | sn25 released v2026.10.10-1068162640 |
-| `sn51:scoring_commit:2026-10-10T04:05:02Z` | 51 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn51 commit touches scoring: NO-TICKET - [P1] validator: cap fresh vloopback volume at the ext4 16… |
-| `sn71:scoring_commit:2026-10-10T04:22:43Z` | 71 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn71 commit touches scoring: Merge pull request #328 from leadpoet/codex/paid-score-abandonment-441 |
-| `sn120:scoring_commit:2026-10-10T09:04:36Z` | 120 | SCORING_COMMIT | 2026-10-10T09:44:36Z | sn120 commit touches scoring: Document live epoch 116 distinct-task training intake |
+| `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn25:release:v2026.10.10-1068404160` | 25 | RELEASE | 2026-10-10T15:35:44Z | sn25 released v2026.10.10-1068404160 |
 | `sn28:release:v0.4.27-dev` | 28 | RELEASE | 2026-10-10T15:35:44Z | sn28 released v0.4.27-dev |
 | `sn28:scoring_commit:2026-10-10T13:53:49Z` | 28 | SCORING_COMMIT | 2026-10-10T15:35:44Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310) |
@@ -311,6 +287,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-17T01:24:18Z` | 71 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn71 commit touches scoring: Merge current main and validate selected judge runtime in training ex… |
 | `sn91:scoring_commit:2026-10-17T01:20:18Z` | 91 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn91 commit touches scoring: fix(promotion): anchor the trainer's reign clock where validators res… |
 | `sn92:release:v1.2.0-rc7.post1` | 92 | RELEASE | 2026-10-17T04:17:15Z | sn92 released v1.2.0-rc7.post1 |
+| `sn15:release:v2.5.5: Bound validator reads of sandbox` | 15 | RELEASE | 2026-10-17T08:43:24Z | sn15 released v2.5.5: Bound validator reads of sandbox output files (#378) |
+| `sn15:scoring_commit:2026-10-17T07:52:59Z` | 15 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn15 commit touches scoring: Bound validator reads of sandbox output files (#378) |
+| `sn25:release:v2026.10.16-1074191560` | 25 | RELEASE | 2026-10-17T08:43:24Z | sn25 released v2026.10.16-1074191560 |
+| `sn37:scoring_commit:2026-10-17T05:44:48Z` | 37 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn37 commit touches scoring: fix(miner): enable reviewed runtime479 funding (#31) |
+| `sn51:scoring_commit:2026-10-17T08:20:58Z` | 51 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn51 commit touches scoring: DAH-4280 - [P0] Validator: cross-check the reported GPU count against… |
+| `sn71:scoring_commit:2026-10-17T06:44:45Z` | 71 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn71 commit touches scoring: fix(arena): retain verified source redirects for fallback (#519) |
+| `sn78:scoring_commit:2026-10-17T06:12:23Z` | 78 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn78 commit touches scoring: Merge pull request #294 from Umi-BitSign/codex/c6-portable-byte-verif… |
+| `sn92:release:v1.2.0-rc7.post3` | 92 | RELEASE | 2026-10-17T08:43:24Z | sn92 released v1.2.0-rc7.post3 |
+| `sn108:scoring_commit:2026-10-16T09:36:40Z` | 108 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn108 commit touches scoring: Validators don't pay records the server marks banned (coldkey banned … |
+| `sn116:scoring_commit:2026-10-17T04:56:00Z` | 116 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn116 commit touches scoring: Merge pull request #1416 from carbonphysicsai/codex/s5-challenge-sele… |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
@@ -326,6 +312,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
+| `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

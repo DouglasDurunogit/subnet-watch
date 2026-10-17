@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-17T12:28:13Z, block 9303123
+# ALARMS - generated 2026-10-17T15:58:08Z, block 9304172
 
-window: first_seen in [2026-10-17T11:13:43Z, 2026-10-17T12:28:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T14:43:40Z, 2026-10-17T15:58:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-17T11:22:46Z` | 21 | SCORING_COMMIT | P1 | 2026-10-17T12:28:43Z | sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry… |
-| `sn25:release:v2026.10.17-1074370910` | 25 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn25 released v2026.10.17-1074370910 |
-| `sn51:release:executor-v1.142` | 51 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
-| `sn51:scoring_commit:2026-10-17T11:57:18Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T12:28:43Z | sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails… |
-| `sn92:release:v1.2.0-rc7.post4` | 92 | RELEASE | P1 | 2026-10-17T12:28:43Z | sn92 released v1.2.0-rc7.post4 |
+| `sn7:release:release-20261017-152034: Bound event ing` | 7 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792) |
+| `sn28:release:v0.5.2` | 28 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn28 released v0.5.2 |
+| `sn28:scoring_commit:2026-10-17T13:33:09Z` | 28 | SCORING_COMMIT | P1 | 2026-10-17T15:58:40Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327) |
+| `sn51:scoring_commit:2026-10-17T12:38:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T15:58:40Z | sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t… |
+| `sn92:release:v1.2.0-rc8` | 92 | RELEASE | P1 | 2026-10-17T15:58:40Z | sn92 released v1.2.0-rc8 |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-17T11:22:46Z`** - sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry…
+- **`sn7:release:release-20261017-152034: Bound event ing`** - sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792)
+  - published 2026-10-16T22:29:37Z (was release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775))
+- **`sn28:release:v0.5.2`** - sn28 released v0.5.2
+  - published 2026-10-17T13:52:37Z (was v0.5.1-dev)
+- **`sn28:scoring_commit:2026-10-17T13:33:09Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.17-1074370910`** - sn25 released v2026.10.17-1074370910
-  - published 2026-10-17T11:47:28Z (was v2026.10.16-1074191560)
-- **`sn51:release:executor-v1.142`** - sn51 released executor-v1.142
-  - published 2026-10-17T11:27:28Z (was executor-v1.141)
-- **`sn51:scoring_commit:2026-10-17T11:57:18Z`** - sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails…
+- **`sn51:scoring_commit:2026-10-17T12:38:54Z`** - sn51 commit touches scoring: DAH-4601 - [P0] Validator: fail a node where sshd does not start in t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc7.post4`** - sn92 released v1.2.0-rc7.post4
-  - published 2026-10-17T09:56:09Z (was v1.2.0-rc7.post3)
+- **`sn92:release:v1.2.0-rc8`** - sn92 released v1.2.0-rc8
+  - published 2026-10-17T14:56:55Z (was v1.2.0-rc7.post4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -50,10 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
-| `sn25:release:v2026.10.10-1068404160` | 25 | RELEASE | 2026-10-10T15:35:44Z | sn25 released v2026.10.10-1068404160 |
-| `sn28:release:v0.4.27-dev` | 28 | RELEASE | 2026-10-10T15:35:44Z | sn28 released v0.4.27-dev |
-| `sn28:scoring_commit:2026-10-10T13:53:49Z` | 28 | SCORING_COMMIT | 2026-10-10T15:35:44Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.27-dev (#310) |
-| `sn71:scoring_commit:2026-10-10T15:33:53Z` | 71 | SCORING_COMMIT | 2026-10-10T15:35:44Z | sn71 commit touches scoring: Rejudge Oct10 saved outputs on final ATS scorer |
 | `sn25:release:v2026.10.10-1068595480` | 25 | RELEASE | 2026-10-10T19:34:14Z | sn25 released v2026.10.10-1068595480 |
 | `sn71:scoring_commit:2026-10-10T19:08:12Z` | 71 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn71 commit touches scoring: Merge pull request #354 from leadpoet/fix/arena-confirmed-score-parall |
 | `sn108:scoring_commit:2026-10-10T15:01:19Z` | 108 | SCORING_COMMIT | 2026-10-10T19:34:14Z | sn108 commit touches scoring: On a baseline_epoch change the validator's bar is exactly the server'… |
@@ -297,6 +293,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn92:release:v1.2.0-rc7.post3` | 92 | RELEASE | 2026-10-17T08:43:24Z | sn92 released v1.2.0-rc7.post3 |
 | `sn108:scoring_commit:2026-10-16T09:36:40Z` | 108 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn108 commit touches scoring: Validators don't pay records the server marks banned (coldkey banned … |
 | `sn116:scoring_commit:2026-10-17T04:56:00Z` | 116 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn116 commit touches scoring: Merge pull request #1416 from carbonphysicsai/codex/s5-challenge-sele… |
+| `sn21:scoring_commit:2026-10-17T11:22:46Z` | 21 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry… |
+| `sn25:release:v2026.10.17-1074370910` | 25 | RELEASE | 2026-10-17T12:28:43Z | sn25 released v2026.10.17-1074370910 |
+| `sn51:release:executor-v1.142` | 51 | RELEASE | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
+| `sn51:scoring_commit:2026-10-17T11:57:18Z` | 51 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails… |
+| `sn92:release:v1.2.0-rc7.post4` | 92 | RELEASE | 2026-10-17T12:28:43Z | sn92 released v1.2.0-rc7.post4 |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

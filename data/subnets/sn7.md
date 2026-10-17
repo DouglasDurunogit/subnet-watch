@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-10-17T12:28:13Z  |  block: 9303123  |  row_status: ok
+snapshot_utc: 2026-10-17T15:58:08Z  |  block: 9304172  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (40.812 USD), open=True
+- registration cost: 0.15 TAO (40.1715 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 927.1 days  |  registered at block 2627691
+- subnet age: 927.3 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1759.4795683055572
-- top_miner_usd_day: 1759.4795683055572 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1731.6632686854393
+- top_miner_usd_day: 1731.6632686854393 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -27,8 +27,8 @@ snapshot_utc: 2026-10-17T12:28:13Z  |  block: 9303123  |  row_status: ok
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
 - README: 19675 bytes, sha dc345f9e5261b6c1
-- latest release: release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775) 2026-10-15T21:59:48Z
-- last commit: 2026-10-15T21:59:48Z
+- latest release: release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792) 2026-10-16T22:29:37Z
+- last commit: 2026-10-16T22:29:37Z
 - scoring-related commit: Quote /rate from held miner states and a lazy market memo (#774) 2026-10-15T21:59:48Z
 
 ## Resources

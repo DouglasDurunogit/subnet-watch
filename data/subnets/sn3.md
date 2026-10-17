@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-17T12:28:13Z  |  block: 9303123  |  row_status: ok
+snapshot_utc: 2026-10-17T15:58:08Z  |  block: 9304172  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 1.37418246 TAO (373.8875637168 USD), open=True
+- registration cost: 1.130239912 TAO (302.68955083272 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 713.5 days  |  registered at block 4165565
+- subnet age: 713.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2955.9649733717374** (uid 42) <- the only figure quotable as achievable
-- median_miner_usd_day: 2955.9649733717374
-- top_miner_usd_day: 7882.473026143778 (uid 26, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2910.5480091947366** (uid 42) <- the only figure quotable as achievable
+- median_miner_usd_day: 2910.5480091947366
+- top_miner_usd_day: 7761.362661751947 (uid 26, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-17T12:28:13Z  |  block: 9303123  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2947.7458 USD/day  |  payback on registration: 0.13 days
+- net margin: 2902.3288 USD/day  |  payback on registration: 0.1 days
 
 ## Score
 
 - gate: **OK** 
 - score: 74.6 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 31.56 / freshness 35.0 / resource 11.25 / registration 9.96
-- freshness basis: SCORING_COMMIT 1.9d ago
+- components: income 31.5 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 2.0d ago
 
 ## On-chain description
 

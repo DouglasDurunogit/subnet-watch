@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-18T17:34:16Z, block 9311853
+# ALARMS - generated 2026-10-18T19:42:14Z, block 9312493
 
-window: first_seen in [2026-10-18T16:19:40Z, 2026-10-18T17:34:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-18T18:27:43Z, 2026-10-18T19:42:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:scoring_commit:2026-10-18T16:02:02Z` | 66 | SCORING_COMMIT | P1 | 2026-10-18T17:34:40Z | sn66 commit touches scoring: Activate the Mathlib header task release |
-| `sn116:scoring_commit:2026-10-18T16:35:31Z` | 116 | SCORING_COMMIT | P1 | 2026-10-18T17:34:40Z | sn116 commit touches scoring: Merge pull request #1423 from carbonphysicsai/codex/scorelab-dual-del… |
+| `sn1:release:v4.4.14` | 1 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn1 released v4.4.14 |
+| `sn25:release:v2026.10.18-1075514170` | 25 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn25 released v2026.10.18-1075514170 |
+| `sn82:scoring_commit:2026-10-18T18:10:45Z` | 82 | SCORING_COMMIT | P1 | 2026-10-18T19:42:43Z | sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring |
+| `sn92:release:v1.2.0-rc9` | 92 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn92 released v1.2.0-rc9 |
 
 ### detail
 
-- **`sn66:scoring_commit:2026-10-18T16:02:02Z`** - sn66 commit touches scoring: Activate the Mathlib header task release
+- **`sn1:release:v4.4.14`** - sn1 released v4.4.14
+  - published 2026-10-18T19:19:34Z (was v4.4.13)
+- **`sn25:release:v2026.10.18-1075514170`** - sn25 released v2026.10.18-1075514170
+  - published 2026-10-18T19:33:02Z (was v2026.10.17-1074871400)
+- **`sn82:scoring_commit:2026-10-18T18:10:45Z`** - sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-18T16:35:31Z`** - sn116 commit touches scoring: Merge pull request #1423 from carbonphysicsai/codex/scorelab-dual-del…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v1.2.0-rc9`** - sn92 released v1.2.0-rc9
+  - published 2026-10-18T18:33:06Z (was v1.2.0-rc8)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn108:burn_drop:0.902` | 108 | BURN_DROP | 2026-10-11T19:38:20Z | sn108 burn fell 1.000 -> 0.902 - miners can earn again |
 | `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
@@ -42,14 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
-| `sn15:release:v2.4.1` | 15 | RELEASE | 2026-10-11T19:38:20Z | sn15 released v2.4.1 |
-| `sn21:scoring_commit:2026-10-11T17:10:16Z` | 21 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn21 commit touches scoring: docs(verifying): the standing preview exists only during a notice per… |
-| `sn22:scoring_commit:2026-10-11T18:25:03Z` | 22 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn22 commit touches scoring: fix(validators): no JS rendering, 20 pages per 1,000-URL task, fail o… |
-| `sn71:scoring_commit:2026-10-11T16:11:47Z` | 71 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn71 commit touches scoring: Install current reward RPCs in per-ICP round fixture |
-| `sn76:scoring_commit:2026-10-11T16:48:26Z` | 76 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn76 commit touches scoring: Fix miner registration-first onboarding |
-| `sn81:scoring_commit:2026-10-11T06:43:18Z` | 81 | SCORING_COMMIT | 2026-10-11T19:38:20Z | sn81 commit touches scoring: feat(cli): tasks set-cap sets or clears a corpus task's token price |
-| `sn116:release:producer-code-r8.1` | 116 | RELEASE | 2026-10-11T19:38:20Z | sn116 released producer-code-r8.1 |
-| `sn117:release:everycli v0.2.4` | 117 | RELEASE | 2026-10-11T19:38:20Z | sn117 released everycli v0.2.4 |
 | `sn117:release:v0.2.5` | 117 | RELEASE | 2026-10-11T23:13:02Z | sn117 released v0.2.5 |
 | `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
 | `sn117:release:everycli v0.3.1` | 117 | RELEASE | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
@@ -298,8 +295,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
 | `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
 | `sn67:scoring_commit:2026-10-18T12:04:24Z` | 67 | SCORING_COMMIT | 2026-10-18T14:32:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261018.post0 |
-| `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
-| `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
+| `sn66:scoring_commit:2026-10-18T16:02:02Z` | 66 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn66 commit touches scoring: Activate the Mathlib header task release |
+| `sn116:scoring_commit:2026-10-18T16:35:31Z` | 116 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn116 commit touches scoring: Merge pull request #1423 from carbonphysicsai/codex/scorelab-dual-del… |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
 | `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |

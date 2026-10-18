@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-10-18T19:42:14Z  |  block: 9312493  |  row_status: ok
+snapshot_utc: 2026-10-18T21:56:02Z  |  block: 9313162  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **3.184867091476917e-05**
-- registration cost: 0.0005 TAO (0.12742 USD), open=True
+- registration cost: 0.0005 TAO (0.13009 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 1097.4 days  |  registered at block 1411451
+- subnet age: 1097.5 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 27669.472948498584** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 2321.162690323868
-- top_miner_usd_day: 27669.472948498584 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 28284.831248139304** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 2372.7844443401355
+- top_miner_usd_day: 28284.831248139304 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-10-18T19:42:14Z  |  block: 9312493  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 9381.4149 USD/day  |  payback on registration: 0.0 days
+- net margin: 9590.2367 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 57.7 (rank 22), confidence 0.85 - hardware requirement unknown
-- components: income 36.13 / freshness 10.5 / resource 11.25 / registration 10.0
+- score: 57.8 (rank 22), confidence 0.85 - hardware requirement unknown
+- components: income 36.22 / freshness 10.5 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 31d ago
 
 ## On-chain description

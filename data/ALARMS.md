@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-18T19:42:14Z, block 9312493
+# ALARMS - generated 2026-10-18T21:56:02Z, block 9313162
 
-window: first_seen in [2026-10-18T18:27:43Z, 2026-10-18T19:42:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-18T20:41:26Z, 2026-10-18T21:56:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,12 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.4.14` | 1 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn1 released v4.4.14 |
-| `sn25:release:v2026.10.18-1075514170` | 25 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn25 released v2026.10.18-1075514170 |
-| `sn82:scoring_commit:2026-10-18T18:10:45Z` | 82 | SCORING_COMMIT | P1 | 2026-10-18T19:42:43Z | sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring |
-| `sn92:release:v1.2.0-rc9` | 92 | RELEASE | P1 | 2026-10-18T19:42:43Z | sn92 released v1.2.0-rc9 |
+| `sn78:scoring_commit:2026-10-18T21:56:00Z` | 78 | SCORING_COMMIT | P1 | 2026-10-18T21:56:26Z | sn78 commit touches scoring: Wait for identity-checked validator worker startup (#310) |
 
 ### detail
 
-- **`sn1:release:v4.4.14`** - sn1 released v4.4.14
-  - published 2026-10-18T19:19:34Z (was v4.4.13)
-- **`sn25:release:v2026.10.18-1075514170`** - sn25 released v2026.10.18-1075514170
-  - published 2026-10-18T19:33:02Z (was v2026.10.17-1074871400)
-- **`sn82:scoring_commit:2026-10-18T18:10:45Z`** - sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring
+- **`sn78:scoring_commit:2026-10-18T21:56:00Z`** - sn78 commit touches scoring: Wait for identity-checked validator worker startup (#310)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc9`** - sn92 released v1.2.0-rc9
-  - published 2026-10-18T18:33:06Z (was v1.2.0-rc8)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -297,6 +288,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-18T12:04:24Z` | 67 | SCORING_COMMIT | 2026-10-18T14:32:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261018.post0 |
 | `sn66:scoring_commit:2026-10-18T16:02:02Z` | 66 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn66 commit touches scoring: Activate the Mathlib header task release |
 | `sn116:scoring_commit:2026-10-18T16:35:31Z` | 116 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn116 commit touches scoring: Merge pull request #1423 from carbonphysicsai/codex/scorelab-dual-del… |
+| `sn1:release:v4.4.14` | 1 | RELEASE | 2026-10-18T19:42:43Z | sn1 released v4.4.14 |
+| `sn25:release:v2026.10.18-1075514170` | 25 | RELEASE | 2026-10-18T19:42:43Z | sn25 released v2026.10.18-1075514170 |
+| `sn82:scoring_commit:2026-10-18T18:10:45Z` | 82 | SCORING_COMMIT | 2026-10-18T19:42:43Z | sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring |
+| `sn92:release:v1.2.0-rc9` | 92 | RELEASE | 2026-10-18T19:42:43Z | sn92 released v1.2.0-rc9 |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
 | `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |

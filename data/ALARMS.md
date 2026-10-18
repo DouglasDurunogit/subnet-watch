@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-17T23:04:03Z, block 9306302
+# ALARMS - generated 2026-10-18T00:58:36Z, block 9306875
 
-window: first_seen in [2026-10-17T21:49:30Z, 2026-10-17T23:04:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-17T23:44:01Z, 2026-10-18T00:59:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:miner-v1.006` | 51 | RELEASE | P1 | 2026-10-17T23:04:30Z | sn51 released miner-v1.006 |
-| `sn51:scoring_commit:2026-10-17T21:06:14Z` | 51 | SCORING_COMMIT | P1 | 2026-10-17T23:04:30Z | sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes only the node it names (#166 |
-| `sn78:scoring_commit:2026-10-17T21:58:15Z` | 78 | SCORING_COMMIT | P1 | 2026-10-17T23:04:30Z | sn78 commit touches scoring: Recover historical reward coverage gaps from durable native endpoints |
+| `sn15:release:v2.5.6: Bound per-evaluation sandbox dis` | 15 | RELEASE | P1 | 2026-10-18T00:59:01Z | sn15 released v2.5.6: Bound per-evaluation sandbox disk use |
+| `sn15:scoring_commit:2026-10-17T23:22:22Z` | 15 | SCORING_COMMIT | P1 | 2026-10-18T00:59:01Z | sn15 commit touches scoring: Bound per-evaluation sandbox disk use |
 
 ### detail
 
-- **`sn51:release:miner-v1.006`** - sn51 released miner-v1.006
-  - published 2026-10-17T21:35:26Z (was executor-v1.142)
-- **`sn51:scoring_commit:2026-10-17T21:06:14Z`** - sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes only the node it names (#166
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-17T21:58:15Z`** - sn78 commit touches scoring: Recover historical reward coverage gaps from durable native endpoints
+- **`sn15:release:v2.5.6: Bound per-evaluation sandbox dis`** - sn15 released v2.5.6: Bound per-evaluation sandbox disk use
+  - published 2026-10-17T23:22:22Z (was v2.5.5: Bound validator reads of sandbox output files (#378))
+- **`sn15:scoring_commit:2026-10-17T23:22:22Z`** - sn15 commit touches scoring: Bound per-evaluation sandbox disk use
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -294,6 +291,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn41:scoring_commit:2026-10-17T16:02:48Z` | 41 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring |
 | `sn78:scoring_commit:2026-10-17T17:36:20Z` | 78 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime |
 | `sn91:scoring_commit:2026-10-17T20:13:24Z` | 91 | SCORING_COMMIT | 2026-10-17T20:51:47Z | sn91 commit touches scoring: Merge pull request #373 from TensorLink-AI/feat/payer-bench-unverified |
+| `sn51:release:miner-v1.006` | 51 | RELEASE | 2026-10-17T23:04:30Z | sn51 released miner-v1.006 |
+| `sn51:scoring_commit:2026-10-17T21:06:14Z` | 51 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes only the node it names (#166 |
+| `sn78:scoring_commit:2026-10-17T21:58:15Z` | 78 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn78 commit touches scoring: Recover historical reward coverage gaps from durable native endpoints |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

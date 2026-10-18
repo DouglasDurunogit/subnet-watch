@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-17T23:04:03Z  |  block: 9306302  |  row_status: ok
+snapshot_utc: 2026-10-18T00:58:36Z  |  block: 9306875  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (267.30999973269 USD), open=True
+- registration cost: 0.999999999 TAO (269.51999973048 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 714.0 days  |  registered at block 4165565
+- subnet age: 714.1 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2901.596648944101
-- top_miner_usd_day: 7737.492671289088 (uid 26, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2925.8392386297514
+- top_miner_usd_day: 7802.138755056123 (uid 26, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.1999969481024828  |  top1_share: 0.39999694810248276  |  top10_share: 1.0
+- earners: 5  |  gini: 0.19999694810248303  |  top1_share: 0.39999694810248276  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -41,9 +41,9 @@ snapshot_utc: 2026-10-17T23:04:03Z  |  block: 9306302  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 55), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 56), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 2.3d ago
+- freshness basis: SCORING_COMMIT 2.4d ago
 
 ## On-chain description
 

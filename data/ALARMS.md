@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-18T05:48:50Z, block 9308326
+# ALARMS - generated 2026-10-18T10:56:38Z, block 9309865
 
-window: first_seen in [2026-10-18T04:34:20Z, 2026-10-18T05:49:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-18T09:41:59Z, 2026-10-18T10:56:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-10-18T05:27:40Z` | 15 | SCORING_COMMIT | P1 | 2026-10-18T05:49:20Z | sn15 commit touches scoring: fix(validator): send sandbox_metadata when retrying a completion (#352 |
-| `sn25:release:v2026.10.17-1074871400` | 25 | RELEASE | P1 | 2026-10-18T05:49:20Z | sn25 released v2026.10.17-1074871400 |
-| `sn53:scoring_commit:2026-10-18T04:05:58Z` | 53 | SCORING_COMMIT | P1 | 2026-10-18T05:49:20Z | sn53 commit touches scoring: tee_miner: default to half the legs on the LB, half on Cloudflare, sh… |
-| `sn55:scoring_commit:2026-10-18T05:30:43Z` | 55 | SCORING_COMMIT | P1 | 2026-10-18T05:49:20Z | sn55 commit touches scoring: set weights using valid scores |
-| `sn71:scoring_commit:2026-10-18T01:41:09Z` | 71 | SCORING_COMMIT | P1 | 2026-10-18T05:49:20Z | sn71 commit touches scoring: Prune superseded Deepline score billing heads before V3 candidate wor… |
-| `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | P2 | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
+| `sn55:burn_drop:0.010` | 55 | BURN_DROP | P0 | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
+| `sn15:scoring_commit:2026-10-18T06:23:50Z` | 15 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run … |
+| `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
+| `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-10-18T05:27:40Z`** - sn15 commit touches scoring: fix(validator): send sandbox_metadata when retrying a completion (#352
+- **`sn55:burn_drop:0.010`** - sn55 burn fell 1.000 -> 0.010 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:scoring_commit:2026-10-18T06:23:50Z`** - sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.17-1074871400`** - sn25 released v2026.10.17-1074871400
-  - published 2026-10-18T01:41:54Z (was v2026.10.17-1074370910)
-- **`sn53:scoring_commit:2026-10-18T04:05:58Z`** - sn53 commit touches scoring: tee_miner: default to half the legs on the LB, half on Cloudflare, sh…
+- **`sn71:scoring_commit:2026-10-18T06:55:55Z`** - sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn55:scoring_commit:2026-10-18T05:30:43Z`** - sn55 commit touches scoring: set weights using valid scores
+- **`sn116:scoring_commit:2026-10-17T23:42:51Z`** - sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-18T01:41:09Z`** - sn71 commit touches scoring: Prune superseded Deepline score billing heads before V3 candidate wor…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn125:readme_task_diff:5d449bf6f7a1b5b8`** - sn125 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -53,10 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
-| `sn22:scoring_commit:2026-10-11T08:32:04Z` | 22 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn22 commit touches scoring: fix(validators): restore rendered rechecks and the 5% sample |
-| `sn25:release:v2026.10.10-1068958850` | 25 | RELEASE | 2026-10-11T08:43:38Z | sn25 released v2026.10.10-1068958850 |
-| `sn116:scoring_commit:2026-10-11T02:06:55Z` | 116 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn116 commit touches scoring: Merge pull request #1041 from carbonphysicsai/claude/miner-survive-re… |
-| `sn120:scoring_commit:2026-10-11T07:02:34Z` | 120 | SCORING_COMMIT | 2026-10-11T08:43:38Z | sn120 commit touches scoring: Document independent epoch openings and hourly reward fallback |
 | `sn116:release:producer-code-r7` | 116 | RELEASE | 2026-10-11T15:07:48Z | sn116 released producer-code-r7 |
 | `sn116:scoring_commit:2026-10-11T14:34:29Z` | 116 | SCORING_COMMIT | 2026-10-11T15:07:48Z | sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification… |
 | `sn15:release:v2.4.1` | 15 | RELEASE | 2026-10-11T19:38:20Z | sn15 released v2.4.1 |
@@ -306,6 +296,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-17T21:58:15Z` | 78 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn78 commit touches scoring: Recover historical reward coverage gaps from durable native endpoints |
 | `sn15:release:v2.5.6: Bound per-evaluation sandbox dis` | 15 | RELEASE | 2026-10-18T00:59:01Z | sn15 released v2.5.6: Bound per-evaluation sandbox disk use |
 | `sn15:scoring_commit:2026-10-17T23:22:22Z` | 15 | SCORING_COMMIT | 2026-10-18T00:59:01Z | sn15 commit touches scoring: Bound per-evaluation sandbox disk use |
+| `sn15:scoring_commit:2026-10-18T05:27:40Z` | 15 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn15 commit touches scoring: fix(validator): send sandbox_metadata when retrying a completion (#352 |
+| `sn25:release:v2026.10.17-1074871400` | 25 | RELEASE | 2026-10-18T05:49:20Z | sn25 released v2026.10.17-1074871400 |
+| `sn53:scoring_commit:2026-10-18T04:05:58Z` | 53 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn53 commit touches scoring: tee_miner: default to half the legs on the LB, half on Cloudflare, sh… |
+| `sn55:scoring_commit:2026-10-18T05:30:43Z` | 55 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn55 commit touches scoring: set weights using valid scores |
+| `sn71:scoring_commit:2026-10-18T01:41:09Z` | 71 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn71 commit touches scoring: Prune superseded Deepline score billing heads before V3 candidate wor… |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |
@@ -322,6 +317,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
+| `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

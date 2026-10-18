@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-18T10:56:38Z, block 9309865
+# ALARMS - generated 2026-10-18T14:32:01Z, block 9310942
 
-window: first_seen in [2026-10-18T09:41:59Z, 2026-10-18T10:56:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-18T13:17:37Z, 2026-10-18T14:32:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn55:burn_drop:0.010` | 55 | BURN_DROP | P0 | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
-| `sn15:scoring_commit:2026-10-18T06:23:50Z` | 15 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run … |
-| `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
-| `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | P1 | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
+| `sn67:scoring_commit:2026-10-18T12:04:24Z` | 67 | SCORING_COMMIT | P1 | 2026-10-18T14:32:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261018.post0 |
 
 ### detail
 
-- **`sn55:burn_drop:0.010`** - sn55 burn fell 1.000 -> 0.010 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:scoring_commit:2026-10-18T06:23:50Z`** - sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-18T06:55:55Z`** - sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-17T23:42:51Z`** - sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards
+- **`sn67:scoring_commit:2026-10-18T12:04:24Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261018.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -47,6 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
+| `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn116:release:producer-code-r7` | 116 | RELEASE | 2026-10-11T15:07:48Z | sn116 released producer-code-r7 |
 | `sn116:scoring_commit:2026-10-11T14:34:29Z` | 116 | SCORING_COMMIT | 2026-10-11T15:07:48Z | sn116 commit touches scoring: Merge pull request #1046 from carbonphysicsai/codex/code-verification… |
 | `sn15:release:v2.4.1` | 15 | RELEASE | 2026-10-11T19:38:20Z | sn15 released v2.4.1 |
@@ -301,6 +293,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn53:scoring_commit:2026-10-18T04:05:58Z` | 53 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn53 commit touches scoring: tee_miner: default to half the legs on the LB, half on Cloudflare, sh… |
 | `sn55:scoring_commit:2026-10-18T05:30:43Z` | 55 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn55 commit touches scoring: set weights using valid scores |
 | `sn71:scoring_commit:2026-10-18T01:41:09Z` | 71 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn71 commit touches scoring: Prune superseded Deepline score billing heads before V3 candidate wor… |
+| `sn15:scoring_commit:2026-10-18T06:23:50Z` | 15 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run … |
+| `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
+| `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
 | `sn76:readme_task_diff:0a4c226e1573572b` | 76 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f5936ceb48b4e59` | 117 | README_TASK_DIFF | 2026-10-11T19:38:20Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:0f4be566c399b388` | 117 | README_TASK_DIFF | 2026-10-11T23:13:02Z | sn117 README task/scoring sections changed |

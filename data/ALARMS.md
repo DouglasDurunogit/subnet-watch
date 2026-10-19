@@ -1,19 +1,49 @@
-# ALARMS - generated 2026-10-19T00:10:33Z, block 9313835
+# ALARMS - generated 2026-10-19T05:03:02Z, block 9315297
 
-window: first_seen in [2026-10-18T22:56:05Z, 2026-10-19T00:11:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-19T03:48:29Z, 2026-10-19T05:03:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
+| `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |
+| `sn51:release:executor-v1.143` | 51 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn51 released executor-v1.143 |
+| `sn51:scoring_commit:2026-10-19T04:21:15Z` | 51 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa… |
+| `sn71:scoring_commit:2026-10-19T01:00:51Z` | 71 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537) |
+| `sn116:scoring_commit:2026-10-18T18:52:31Z` | 116 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn116 commit touches scoring: Retain admitted cold overlays from verified original source |
+| `sn117:release:everycli v0.5.8` | 117 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn117 released everycli v0.5.8 |
+| `sn117:scoring_commit:2026-10-19T03:47:45Z` | 117 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs |
+| `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | P2 | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
+
+### detail
+
+- **`sn21:scoring_commit:2026-10-19T03:05:03Z`** - sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn25:release:v2026.10.18-1075707760`** - sn25 released v2026.10.18-1075707760
+  - published 2026-10-19T00:55:46Z (was v2026.10.18-1075514170)
+- **`sn51:release:executor-v1.143`** - sn51 released executor-v1.143
+  - published 2026-10-19T04:50:35Z (was miner-v1.006)
+- **`sn51:scoring_commit:2026-10-19T04:21:15Z`** - sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-19T01:00:51Z`** - sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-10-18T18:52:31Z`** - sn116 commit touches scoring: Retain admitted cold overlays from verified original source
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.5.8`** - sn117 released everycli v0.5.8
+  - published 2026-10-19T04:32:39Z (was everycli v0.5.7)
+- **`sn117:scoring_commit:2026-10-19T03:47:45Z`** - sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:readme_task_diff:46569451fd573f74`** - sn89 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn30:burn_drop:0.984` | 30 | BURN_DROP | 2026-10-12T02:34:00Z | sn30 burn fell 0.997 -> 0.984 - miners can earn again |
 | `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
@@ -31,9 +61,6 @@ _none_
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
-| `sn71:scoring_commit:2026-10-12T01:30:49Z` | 71 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn71 commit touches scoring: Verify miner credit diagnostics through PostgreSQL reconciliation |
-| `sn117:release:everycli v0.3.1` | 117 | RELEASE | 2026-10-12T02:34:00Z | sn117 released everycli v0.3.1 |
-| `sn120:scoring_commit:2026-10-12T00:43:15Z` | 120 | SCORING_COMMIT | 2026-10-12T02:34:00Z | sn120 commit touches scoring: Rotate overused math tasks through existing epoch manifests |
 | `sn25:scoring_commit:2026-10-12T00:57:57Z` | 25 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse… |
 | `sn51:release:executor-v1.139` | 51 | RELEASE | 2026-10-12T09:49:01Z | sn51 released executor-v1.139 |
 | `sn51:scoring_commit:2026-10-12T07:54:49Z` | 51 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri… |

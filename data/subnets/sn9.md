@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-10-18T21:56:02Z  |  block: 9313162  |  row_status: ok
+snapshot_utc: 2026-10-19T00:10:33Z  |  block: 9313835  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.13009 USD), open=True
+- registration cost: 0.0005 TAO (0.13528 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 1086.6 days  |  registered at block 1489797
+- subnet age: 1086.7 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 14266.001437504796** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 8916.284912406198
-- top_miner_usd_day: 14266.001437504796 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 14836.879064539486** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 9273.084790427933
+- top_miner_usd_day: 14836.879064539486 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-18T21:56:02Z  |  block: 9313162  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 14257.7823 USD/day  |  payback on registration: 0.0 days
+- net margin: 14828.6599 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 56.4 (rank 24), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 37.78 / freshness 35.0 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 3.1d ago
+- score: 56.5 (rank 24), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
+- components: income 37.94 / freshness 35.0 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 3.2d ago
 
 ## On-chain description
 

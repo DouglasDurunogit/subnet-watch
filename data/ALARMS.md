@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-19T17:12:29Z, block 9318944
+# ALARMS - generated 2026-10-19T21:39:01Z, block 9320277
 
-window: first_seen in [2026-10-19T15:57:59Z, 2026-10-19T17:12:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-19T20:24:26Z, 2026-10-19T21:39:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,46 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:release:release-20261019-165322` | 7 | RELEASE | P1 | 2026-10-19T17:12:59Z | sn7 released release-20261019-165322 |
-| `sn21:scoring_commit:2026-10-19T14:00:58Z` | 21 | SCORING_COMMIT | P1 | 2026-10-19T17:12:59Z | sn21 commit touches scoring: feat(scoring): the pooled count score can be published before the cou… |
-| `sn22:scoring_commit:2026-10-19T12:52:00Z` | 22 | SCORING_COMMIT | P1 | 2026-10-19T17:12:59Z | sn22 commit touches scoring: fix(task-api): reference vectors finish and stay kept even when the a… |
-| `sn25:release:v2026.10.19-1076177550` | 25 | RELEASE | P1 | 2026-10-19T17:12:59Z | sn25 released v2026.10.19-1076177550 |
-| `sn28:release:v0.5.3-dev` | 28 | RELEASE | P1 | 2026-10-19T17:12:59Z | sn28 released v0.5.3-dev |
-| `sn51:release:miner-v1.008` | 51 | RELEASE | P1 | 2026-10-19T17:12:59Z | sn51 released miner-v1.008 |
-| `sn51:scoring_commit:2026-10-19T16:11:54Z` | 51 | SCORING_COMMIT | P1 | 2026-10-19T17:12:59Z | sn51 commit touches scoring: DAH-4124 - [P2] validator: record EXECUTOR_UNREACHABLE_BY_MINER for a… |
-| `sn67:scoring_commit:2026-10-19T11:36:22Z` | 67 | SCORING_COMMIT | P1 | 2026-10-19T17:12:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post4 |
-| `sn82:scoring_commit:2026-10-19T16:17:18Z` | 82 | SCORING_COMMIT | P1 | 2026-10-19T17:12:59Z | sn82 commit touches scoring: Allow configured validator publishing identities (#2) |
-| `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | P2 | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
+| `sn7:burn_drop:0.505` | 7 | BURN_DROP | P0 | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
+| `sn15:scoring_commit:2026-10-19T19:37:29Z` | 15 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn15 commit touches scoring: fix: use validator lockfile for local tests and CI |
+| `sn41:scoring_commit:2026-10-19T18:42:33Z` | 41 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn41 commit touches scoring: Updating default miner alpha to 3600, or 50% of total emissions with … |
+| `sn50:scoring_commit:2026-10-19T20:29:17Z` | 50 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn50 commit touches scoring: burn 22% of miner emission (#341) |
+| `sn51:scoring_commit:2026-10-19T19:42:46Z` | 51 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn51 commit touches scoring: DAH-4195 - [P2] Skip could-not-reach rows when the miner reached almo… |
+| `sn71:scoring_commit:2026-10-19T20:07:21Z` | 71 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn71 commit touches scoring: Record verified runtime recovery release fingerprint |
+| `sn100:scoring_commit:2026-10-19T20:57:30Z` | 100 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn100 commit touches scoring: docs(validator): cover both profile version caps and restart wording |
+| `sn111:release:v1.1.0` | 111 | RELEASE | P1 | 2026-10-19T21:39:26Z | sn111 released v1.1.0 |
+| `sn111:scoring_commit:2026-10-19T13:02:58Z` | 111 | SCORING_COMMIT | P1 | 2026-10-19T21:39:26Z | sn111 commit touches scoring: Integrate approved-group fractional coverage into validator scoring |
 
 ### detail
 
-- **`sn7:release:release-20261019-165322`** - sn7 released release-20261019-165322
-  - published 2026-10-19T16:38:35Z (was release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792))
-- **`sn21:scoring_commit:2026-10-19T14:00:58Z`** - sn21 commit touches scoring: feat(scoring): the pooled count score can be published before the cou…
+- **`sn7:burn_drop:0.505`** - sn7 burn fell 1.000 -> 0.505 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn15:scoring_commit:2026-10-19T19:37:29Z`** - sn15 commit touches scoring: fix: use validator lockfile for local tests and CI
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn22:scoring_commit:2026-10-19T12:52:00Z`** - sn22 commit touches scoring: fix(task-api): reference vectors finish and stay kept even when the a…
+- **`sn41:scoring_commit:2026-10-19T18:42:33Z`** - sn41 commit touches scoring: Updating default miner alpha to 3600, or 50% of total emissions with …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.19-1076177550`** - sn25 released v2026.10.19-1076177550
-  - published 2026-10-19T13:58:55Z (was v2026.10.19-1076002880)
-- **`sn28:release:v0.5.3-dev`** - sn28 released v0.5.3-dev
-  - published 2026-10-19T14:44:22Z (was v0.5.2)
-- **`sn51:release:miner-v1.008`** - sn51 released miner-v1.008
-  - published 2026-10-19T12:51:38Z (was miner-v1.007)
-- **`sn51:scoring_commit:2026-10-19T16:11:54Z`** - sn51 commit touches scoring: DAH-4124 - [P2] validator: record EXECUTOR_UNREACHABLE_BY_MINER for a…
+- **`sn50:scoring_commit:2026-10-19T20:29:17Z`** - sn50 commit touches scoring: burn 22% of miner emission (#341)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-19T11:36:22Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post4
+- **`sn51:scoring_commit:2026-10-19T19:42:46Z`** - sn51 commit touches scoring: DAH-4195 - [P2] Skip could-not-reach rows when the miner reached almo…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn82:scoring_commit:2026-10-19T16:17:18Z`** - sn82 commit touches scoring: Allow configured validator publishing identities (#2)
+- **`sn71:scoring_commit:2026-10-19T20:07:21Z`** - sn71 commit touches scoring: Record verified runtime recovery release fingerprint
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:readme_task_diff:f94fa7f5ba6e1765`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn100:scoring_commit:2026-10-19T20:57:30Z`** - sn100 commit touches scoring: docs(validator): cover both profile version caps and restart wording
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:release:v1.1.0`** - sn111 released v1.1.0
+  - published 2026-10-19T21:26:11Z (was v1.0.1)
+- **`sn111:scoring_commit:2026-10-19T13:02:58Z`** - sn111 commit touches scoring: Integrate approved-group fractional coverage into validator scoring
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
-| `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
 | `sn37:burn_drop:0.715` | 37 | BURN_DROP | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
 | `sn104:burn_drop:0.953` | 104 | BURN_DROP | 2026-10-14T15:33:11Z | sn104 burn fell 1.000 -> 0.953 - miners can earn again |
 | `sn108:burn_drop:0.921` | 108 | BURN_DROP | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
@@ -64,20 +59,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn3:scoring_commit:2026-10-12T11:52:12Z` | 3 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn3 commit touches scoring: Optimize evaluator shard downloads with cached HTTP range reads |
-| `sn9:release:v4.13.6` | 9 | RELEASE | 2026-10-12T19:47:00Z | sn9 released v4.13.6 |
-| `sn14:scoring_commit:2026-10-12T18:41:34Z` | 14 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn14 commit touches scoring: Retain audit diagnostics and post bundle results to Discord (#145) |
-| `sn21:scoring_commit:2026-10-12T12:32:21Z` | 21 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn21 commit touches scoring: fix(validator): the validator site sends daily-results requests to th… |
-| `sn28:release:v0.4.27` | 28 | RELEASE | 2026-10-12T19:47:00Z | sn28 released v0.4.27 |
-| `sn28:scoring_commit:2026-10-12T11:20:56Z` | 28 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.27 (#313) |
-| `sn38:scoring_commit:2026-10-12T14:44:32Z` | 38 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn38 commit touches scoring: Update validator image to the latest version in docker-compose.valida… |
-| `sn51:scoring_commit:2026-10-12T19:29:45Z` | 51 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn51 commit touches scoring: DAH-4001 - validator: report each live weight submission with the cyc… |
-| `sn53:scoring_commit:2026-10-12T12:53:09Z` | 53 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn53 commit touches scoring: Merge pull request #52 from hanlinai/fix/tee-miner-kv-heartbeat-10s |
-| `sn71:scoring_commit:2026-10-12T16:30:43Z` | 71 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn71 commit touches scoring: Apply existing provider failure classification to interrupted scorer … |
-| `sn116:release:producer-code-r8.4` | 116 | RELEASE | 2026-10-12T19:47:00Z | sn116 released producer-code-r8.4 |
-| `sn116:scoring_commit:2026-10-12T19:20:37Z` | 116 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn116 commit touches scoring: Record OWNER-BATTERY-CHAMPIONSHIP-04: miner status rows, laddered sco… |
-| `sn117:release:everycli v0.3.7` | 117 | RELEASE | 2026-10-12T19:47:00Z | sn117 released everycli v0.3.7 |
-| `sn120:scoring_commit:2026-10-12T17:41:42Z` | 120 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn120 commit touches scoring: Add prospective verifier-only symmetric sampling adjudication |
 | `sn28:release:v0.4.28` | 28 | RELEASE | 2026-10-13T01:39:30Z | sn28 released v0.4.28 |
 | `sn28:scoring_commit:2026-10-12T21:12:43Z` | 28 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.28 (#317) |
 | `sn71:scoring_commit:2026-10-12T22:46:22Z` | 71 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn71 commit touches scoring: Finish validated bounded evidence reviews without time-only failure |
@@ -323,8 +304,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-19T08:17:23Z` | 71 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn71 commit touches scoring: Preserve first-party funding context through verification and retries |
 | `sn78:scoring_commit:2026-10-19T07:58:40Z` | 78 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn78 commit touches scoring: Merge pull request #315 from Umi-BitSign/fix/miner-direct-upload-retr… |
 | `sn92:release:v1.2.0-rc9.post3` | 92 | RELEASE | 2026-10-19T10:42:29Z | sn92 released v1.2.0-rc9.post3 |
-| `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
-| `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |
+| `sn7:release:release-20261019-165322` | 7 | RELEASE | 2026-10-19T17:12:59Z | sn7 released release-20261019-165322 |
+| `sn21:scoring_commit:2026-10-19T14:00:58Z` | 21 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn21 commit touches scoring: feat(scoring): the pooled count score can be published before the cou… |
+| `sn22:scoring_commit:2026-10-19T12:52:00Z` | 22 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn22 commit touches scoring: fix(task-api): reference vectors finish and stay kept even when the a… |
+| `sn25:release:v2026.10.19-1076177550` | 25 | RELEASE | 2026-10-19T17:12:59Z | sn25 released v2026.10.19-1076177550 |
+| `sn28:release:v0.5.3-dev` | 28 | RELEASE | 2026-10-19T17:12:59Z | sn28 released v0.5.3-dev |
+| `sn51:release:miner-v1.008` | 51 | RELEASE | 2026-10-19T17:12:59Z | sn51 released miner-v1.008 |
+| `sn51:scoring_commit:2026-10-19T16:11:54Z` | 51 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn51 commit touches scoring: DAH-4124 - [P2] validator: record EXECUTOR_UNREACHABLE_BY_MINER for a… |
+| `sn67:scoring_commit:2026-10-19T11:36:22Z` | 67 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post4 |
+| `sn82:scoring_commit:2026-10-19T16:17:18Z` | 82 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn82 commit touches scoring: Allow configured validator publishing identities (#2) |
 | `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
@@ -338,6 +326,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
+| `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

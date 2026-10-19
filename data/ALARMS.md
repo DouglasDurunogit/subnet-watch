@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-19T05:03:02Z, block 9315297
+# ALARMS - generated 2026-10-19T10:42:00Z, block 9316992
 
-window: first_seen in [2026-10-19T03:48:29Z, 2026-10-19T05:03:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-19T09:27:29Z, 2026-10-19T10:42:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
-| `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |
-| `sn51:release:executor-v1.143` | 51 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn51 released executor-v1.143 |
-| `sn51:scoring_commit:2026-10-19T04:21:15Z` | 51 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa… |
-| `sn71:scoring_commit:2026-10-19T01:00:51Z` | 71 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537) |
-| `sn116:scoring_commit:2026-10-18T18:52:31Z` | 116 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn116 commit touches scoring: Retain admitted cold overlays from verified original source |
-| `sn117:release:everycli v0.5.8` | 117 | RELEASE | P1 | 2026-10-19T05:03:29Z | sn117 released everycli v0.5.8 |
-| `sn117:scoring_commit:2026-10-19T03:47:45Z` | 117 | SCORING_COMMIT | P1 | 2026-10-19T05:03:29Z | sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs |
-| `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | P2 | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
+| `sn122:burn_drop:0.700` | 122 | BURN_DROP | P0 | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
+| `sn25:release:v2026.10.19-1076002880` | 25 | RELEASE | P1 | 2026-10-19T10:42:29Z | sn25 released v2026.10.19-1076002880 |
+| `sn51:release:miner-v1.007` | 51 | RELEASE | P1 | 2026-10-19T10:42:29Z | sn51 released miner-v1.007 |
+| `sn51:scoring_commit:2026-10-19T10:33:44Z` | 51 | SCORING_COMMIT | P1 | 2026-10-19T10:42:29Z | sn51 commit touches scoring: DAH-2834 - [P2] shadow the verify agent over SSH and ship it in the e… |
+| `sn53:scoring_commit:2026-10-19T07:16:06Z` | 53 | SCORING_COMMIT | P1 | 2026-10-19T10:42:29Z | sn53 commit touches scoring: Merge pull request #56 from hanlinai/fix/tee-miner-prefix-continuation |
+| `sn67:scoring_commit:2026-10-19T09:18:23Z` | 67 | SCORING_COMMIT | P1 | 2026-10-19T10:42:29Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post1 |
+| `sn71:scoring_commit:2026-10-19T08:17:23Z` | 71 | SCORING_COMMIT | P1 | 2026-10-19T10:42:29Z | sn71 commit touches scoring: Preserve first-party funding context through verification and retries |
+| `sn78:scoring_commit:2026-10-19T07:58:40Z` | 78 | SCORING_COMMIT | P1 | 2026-10-19T10:42:29Z | sn78 commit touches scoring: Merge pull request #315 from Umi-BitSign/fix/miner-direct-upload-retr… |
+| `sn92:release:v1.2.0-rc9.post3` | 92 | RELEASE | P1 | 2026-10-19T10:42:29Z | sn92 released v1.2.0-rc9.post3 |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-19T03:05:03Z`** - sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr…
+- **`sn122:burn_drop:0.700`** - sn122 burn fell 1.000 -> 0.700 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.10.19-1076002880`** - sn25 released v2026.10.19-1076002880
+  - published 2026-10-19T09:07:31Z (was v2026.10.18-1075707760)
+- **`sn51:release:miner-v1.007`** - sn51 released miner-v1.007
+  - published 2026-10-19T06:14:35Z (was executor-v1.143)
+- **`sn51:scoring_commit:2026-10-19T10:33:44Z`** - sn51 commit touches scoring: DAH-2834 - [P2] shadow the verify agent over SSH and ship it in the e…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.18-1075707760`** - sn25 released v2026.10.18-1075707760
-  - published 2026-10-19T00:55:46Z (was v2026.10.18-1075514170)
-- **`sn51:release:executor-v1.143`** - sn51 released executor-v1.143
-  - published 2026-10-19T04:50:35Z (was miner-v1.006)
-- **`sn51:scoring_commit:2026-10-19T04:21:15Z`** - sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa…
+- **`sn53:scoring_commit:2026-10-19T07:16:06Z`** - sn53 commit touches scoring: Merge pull request #56 from hanlinai/fix/tee-miner-prefix-continuation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-19T01:00:51Z`** - sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537)
+- **`sn67:scoring_commit:2026-10-19T09:18:23Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-18T18:52:31Z`** - sn116 commit touches scoring: Retain admitted cold overlays from verified original source
+- **`sn71:scoring_commit:2026-10-19T08:17:23Z`** - sn71 commit touches scoring: Preserve first-party funding context through verification and retries
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.5.8`** - sn117 released everycli v0.5.8
-  - published 2026-10-19T04:32:39Z (was everycli v0.5.7)
-- **`sn117:scoring_commit:2026-10-19T03:47:45Z`** - sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs
+- **`sn78:scoring_commit:2026-10-19T07:58:40Z`** - sn78 commit touches scoring: Merge pull request #315 from Umi-BitSign/fix/miner-direct-upload-retr…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:readme_task_diff:46569451fd573f74`** - sn89 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn92:release:v1.2.0-rc9.post3`** - sn92 released v1.2.0-rc9.post3
+  - published 2026-10-19T10:32:37Z (was v1.2.0-rc9)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn122:burn_drop:0.100` | 122 | BURN_DROP | 2026-10-12T09:49:01Z | sn122 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn12:mechanism_added:1to2` | 12 | MECHANISM_ADDED | 2026-10-12T19:47:00Z | sn12 now runs 2 incentive mechanisms (was 1) |
 | `sn58:burn_drop:0.833` | 58 | BURN_DROP | 2026-10-12T19:47:00Z | sn58 burn fell 1.000 -> 0.833 - miners can earn again |
 | `sn37:burn_drop:0.715` | 37 | BURN_DROP | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
@@ -61,14 +60,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
-| `sn25:scoring_commit:2026-10-12T00:57:57Z` | 25 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn25 commit touches scoring: Admit one pinned native gap edge so the validator resumes after misse… |
-| `sn51:release:executor-v1.139` | 51 | RELEASE | 2026-10-12T09:49:01Z | sn51 released executor-v1.139 |
-| `sn51:scoring_commit:2026-10-12T07:54:49Z` | 51 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn51 commit touches scoring: DAH-3998 - [P2] Signed node heartbeat; validator forwards only a veri… |
-| `sn58:scoring_commit:2026-10-11T10:31:29Z` | 58 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn58 commit touches scoring: feat(vector): a validator on another host takes the lane up from the … |
-| `sn94:scoring_commit:2026-10-12T09:13:20Z` | 94 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn94 commit touches scoring: Merge pull request #254 from skyrocket2026/feat/verifier-release-next |
-| `sn116:scoring_commit:2026-10-12T07:28:34Z` | 116 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn116 commit touches scoring: Merge pull request #1143 from carbonphysicsai/agent/validator-33a-fee… |
-| `sn117:release:everycli v0.3.3` | 117 | RELEASE | 2026-10-12T09:49:01Z | sn117 released everycli v0.3.3 |
-| `sn120:scoring_commit:2026-10-12T07:59:56Z` | 120 | SCORING_COMMIT | 2026-10-12T09:49:01Z | sn120 commit touches scoring: Plot fixed previously trained tasks in TRAIN fit series |
 | `sn3:scoring_commit:2026-10-12T11:52:12Z` | 3 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn3 commit touches scoring: Optimize evaluator shard downloads with cached HTTP range reads |
 | `sn9:release:v4.13.6` | 9 | RELEASE | 2026-10-12T19:47:00Z | sn9 released v4.13.6 |
 | `sn14:scoring_commit:2026-10-12T18:41:34Z` | 14 | SCORING_COMMIT | 2026-10-12T19:47:00Z | sn14 commit touches scoring: Retain audit diagnostics and post bundle results to Discord (#145) |
@@ -312,6 +303,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn82:scoring_commit:2026-10-18T18:10:45Z` | 82 | SCORING_COMMIT | 2026-10-18T19:42:43Z | sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring |
 | `sn92:release:v1.2.0-rc9` | 92 | RELEASE | 2026-10-18T19:42:43Z | sn92 released v1.2.0-rc9 |
 | `sn78:scoring_commit:2026-10-18T21:56:00Z` | 78 | SCORING_COMMIT | 2026-10-18T21:56:26Z | sn78 commit touches scoring: Wait for identity-checked validator worker startup (#310) |
+| `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
+| `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |
+| `sn51:release:executor-v1.143` | 51 | RELEASE | 2026-10-19T05:03:29Z | sn51 released executor-v1.143 |
+| `sn51:scoring_commit:2026-10-19T04:21:15Z` | 51 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa… |
+| `sn71:scoring_commit:2026-10-19T01:00:51Z` | 71 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537) |
+| `sn116:scoring_commit:2026-10-18T18:52:31Z` | 116 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn116 commit touches scoring: Retain admitted cold overlays from verified original source |
+| `sn117:release:everycli v0.5.8` | 117 | RELEASE | 2026-10-19T05:03:29Z | sn117 released everycli v0.5.8 |
+| `sn117:scoring_commit:2026-10-19T03:47:45Z` | 117 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs |
 | `sn28:readme_task_diff:a275dd150e9b5f4f` | 28 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn28 README task/scoring sections changed |
 | `sn117:readme_task_diff:4631619b61bf245f` | 117 | README_TASK_DIFF | 2026-10-12T19:47:00Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
@@ -326,6 +325,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
+| `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

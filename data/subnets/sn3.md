@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-20T15:15:50Z  |  block: 9325561  |  row_status: ok
+snapshot_utc: 2026-10-20T19:27:53Z  |  block: 9326821  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (269.59999973040004 USD), open=True
+- registration cost: 0.999999999 TAO (270.55999972944 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 716.7 days  |  registered at block 4165565
+- subnet age: 716.8 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 7266.662639487251** (uid 2) <- the only figure quotable as achievable
-- median_miner_usd_day: 2725.0331418059613
-- top_miner_usd_day: 7266.662639487251 (uid 2, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 7299.746761699794** (uid 2) <- the only figure quotable as achievable
+- median_miner_usd_day: 2737.4398454014786
+- top_miner_usd_day: 7299.746761699794 (uid 2, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-20T15:15:50Z  |  block: 9325561  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2716.814 USD/day  |  payback on registration: 0.1 days
+- net margin: 2729.2207 USD/day  |  payback on registration: 0.1 days
 
 ## Score
 
 - gate: **OK** 
-- score: 74.3 (rank 1), confidence 0.85 - hardware requirement unknown
-- components: income 31.23 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 0.0d ago
+- score: 74.3 (rank 2), confidence 0.85 - hardware requirement unknown
+- components: income 31.25 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 0.2d ago
 
 ## On-chain description
 

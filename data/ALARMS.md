@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-20T19:27:53Z, block 9326821
+# ALARMS - generated 2026-10-20T22:43:14Z, block 9327798
 
-window: first_seen in [2026-10-20T18:13:18Z, 2026-10-20T19:28:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-20T21:28:54Z, 2026-10-20T22:43:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn48:burn_drop:0.000` | 48 | BURN_DROP | P0 | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn66:release:deployed/dev: Merge pull request #143 fr` | 66 | RELEASE | P1 | 2026-10-20T19:28:18Z | sn66 released deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue |
-| `sn66:scoring_commit:2026-10-20T09:00:23Z` | 66 | SCORING_COMMIT | P1 | 2026-10-20T19:28:18Z | sn66 commit touches scoring: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
-| `sn71:scoring_commit:2026-10-20T15:18:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T19:28:18Z | sn71 commit touches scoring: Refresh persisted Arena model scores before unpublished evidence (#615 |
-| `sn81:scoring_commit:2026-10-20T12:58:45Z` | 81 | SCORING_COMMIT | P1 | 2026-10-20T19:28:18Z | sn81 commit touches scoring: ci: replace obsolete validator check runs |
-| `sn92:release:v1.2.0-rc9.post6` | 92 | RELEASE | P1 | 2026-10-20T19:28:18Z | sn92 released v1.2.0-rc9.post6 |
+| `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
+| `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
+| `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
 
 ### detail
 
-- **`sn48:burn_drop:0.000`** - sn48 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn66:release:deployed/dev: Merge pull request #143 fr`** - sn66 released deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue
-  - published 2026-10-20T15:07:18Z (was deployed/dev: Merge pull request #141 from conjectures-io/ci/prod-hardening)
-- **`sn66:scoring_commit:2026-10-20T09:00:23Z`** - sn66 commit touches scoring: Merge pull request #139 from conjectures-io/fix/deploy-task-modes
+- **`sn5:scoring_commit:2026-10-20T01:48:53Z`** - sn5 commit touches scoring: Keep validator connections alive while miners think
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-20T15:18:06Z`** - sn71 commit touches scoring: Refresh persisted Arena model scores before unpublished evidence (#615
+- **`sn71:scoring_commit:2026-10-20T21:51:33Z`** - sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-20T12:58:45Z`** - sn81 commit touches scoring: ci: replace obsolete validator check runs
+- **`sn81:scoring_commit:2026-10-20T20:19:23Z`** - sn81 commit touches scoring: Merge invalidated export filtering (#365)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc9.post6`** - sn92 released v1.2.0-rc9.post6
-  - published 2026-10-20T19:20:17Z (was v1.2.0-rc9.post3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -53,15 +44,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
-| `sn15:release:v2.5.0` | 15 | RELEASE | 2026-10-13T21:35:22Z | sn15 released v2.5.0 |
-| `sn15:scoring_commit:2026-10-13T20:00:27Z` | 15 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn15 commit touches scoring: Load v7 and v8 task packs; move to oro-env-runtime 3.7.0 (runtime con… |
-| `sn25:scoring_commit:2026-10-13T20:37:33Z` | 25 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn25 commit touches scoring: Write the validator's settlement v2 adoption commands and hold them t… |
-| `sn41:scoring_commit:2026-10-13T16:32:43Z` | 41 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn41 commit touches scoring: Adding weights version key to validator logs as a helpful indicator t… |
-| `sn63:scoring_commit:2026-10-13T21:02:02Z` | 63 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn63 commit touches scoring: Track whether a terminal verify update reached the platform and HQP L… |
-| `sn66:scoring_commit:2026-10-13T20:24:34Z` | 66 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn66 commit touches scoring: Port Mathlib headers to the immutable task registry and refresh hold … |
-| `sn71:scoring_commit:2026-10-13T17:04:42Z` | 71 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn71 commit touches scoring: Merge pull request #415: Verify judge provider path after fifth failur |
-| `sn116:release:producer-code-r8.6` | 116 | RELEASE | 2026-10-13T21:35:22Z | sn116 released producer-code-r8.6 |
-| `sn120:scoring_commit:2026-10-13T18:50:26Z` | 120 | SCORING_COMMIT | 2026-10-13T21:35:22Z | sn120 commit touches scoring: Reduce hourly evidence scan cost without changing reward assessment |
+| `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:release:release-20261013-222136` | 7 | RELEASE | 2026-10-14T00:39:12Z | sn7 released release-20261013-222136 |
 | `sn7:scoring_commit:2026-10-13T21:54:01Z` | 7 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn7 commit touches scoring: Ban a miner from scoring for 12 rounds when it posts an unusable addr… |
 | `sn25:scoring_commit:2026-10-13T23:48:30Z` | 25 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn25 commit touches scoring: Merge the validator test and correctness fixes: steering-limit text, … |
@@ -309,7 +292,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-20T11:02:08Z` | 67 | SCORING_COMMIT | 2026-10-20T15:16:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post3 |
 | `sn71:scoring_commit:2026-10-20T14:26:05Z` | 71 | SCORING_COMMIT | 2026-10-20T15:16:23Z | sn71 commit touches scoring: Recover abandoned scorer-image setup through bounded lease recovery |
 | `sn97:scoring_commit:2026-10-20T14:46:53Z` | 97 | SCORING_COMMIT | 2026-10-20T15:16:23Z | sn97 commit touches scoring: fix: show diverged challengers as < −50% and republish evals with non… |
-| `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
+| `sn66:release:deployed/dev: Merge pull request #143 fr` | 66 | RELEASE | 2026-10-20T19:28:18Z | sn66 released deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue |
+| `sn66:scoring_commit:2026-10-20T09:00:23Z` | 66 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn66 commit touches scoring: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
+| `sn71:scoring_commit:2026-10-20T15:18:06Z` | 71 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn71 commit touches scoring: Refresh persisted Arena model scores before unpublished evidence (#615 |
+| `sn81:scoring_commit:2026-10-20T12:58:45Z` | 81 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn81 commit touches scoring: ci: replace obsolete validator check runs |
+| `sn92:release:v1.2.0-rc9.post6` | 92 | RELEASE | 2026-10-20T19:28:18Z | sn92 released v1.2.0-rc9.post6 |
 | `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |

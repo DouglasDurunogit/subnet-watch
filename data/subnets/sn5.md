@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-10-20T19:27:53Z  |  block: 9326821  |  row_status: ok
+snapshot_utc: 2026-10-20T22:43:14Z  |  block: 9327798  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.787803101 TAO (213.14800700656 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 254  |  free: 0
-- subnet age: 949.3 days  |  registered at block 2491604
+- registration cost: 0.976763083 TAO (269.73312537045 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 253  |  free: 0
+- subnet age: 949.5 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 52.86285580668015** (uid 237) <- the only figure quotable as achievable
-- median_miner_usd_day: 40.827796415533946
-- top_miner_usd_day: 52.86285580668015 (uid 237, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 51.09751138714195** (uid 237) <- the only figure quotable as achievable
+- median_miner_usd_day: 42.21776093266911
+- top_miner_usd_day: 51.09751138714195 (uid 237, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 244  |  gini: 0.03885782253300896  |  top1_share: 0.005325026088024063  |  top10_share: 0.04823215272236204
+- earners: 243  |  gini: 0.03755686702205341  |  top1_share: 0.0050148304436901815  |  top10_share: 0.046845855120325346
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-10-20T19:27:53Z  |  block: 9326821  |  row_status: ok
 - on-chain URL: `https://github.com/hone-subnet-org/hone-subnet`
 - resolved URL: `https://github.com/hone-subnet-org/hone-subnet`
 - status: **ok** 
-- README: 4290 bytes, sha 8e5fadf7a2ef99e0
+- README: 4578 bytes, sha 7da13ddd527716cf
 - latest release: (none) 
-- last commit: 2026-10-12T16:17:09Z
-- scoring-related commit: Merge pull request #18 from hone-subnet-org/score-window-100 2026-10-06T23:26:54Z
+- last commit: 2026-10-20T20:39:58Z
+- scoring-related commit: Keep validator connections alive while miners think 2026-10-20T01:48:53Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 32.6086 USD/day  |  payback on registration: 6.54 days
+- net margin: 33.9986 USD/day  |  payback on registration: 7.93 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.9 (rank 47), confidence 0.85 - hardware requirement unknown
-- components: income 13.88 / freshness 21.0 / resource 11.25 / registration 7.82
-- freshness basis: SCORING_COMMIT 14d ago
+- score: 57.5 (rank 23), confidence 0.85 - hardware requirement unknown
+- components: income 14.04 / freshness 35.0 / resource 11.25 / registration 7.36
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -74,6 +74,10 @@ Requirements:
   validator itself and Docker
 - a registered validator hotkey on Finney NETUID 5
 - a system clock synchronized with NTP
+- a direct route to miners and the problem server: the validator's HTTP
+  client ignores `HTTP_PROXY`, `HTTPS_PROXY` and `ALL_PROXY`. It sends a TCP
+  keepalive probe every minute while a miner works, to help keep slow
+  answers from being dropped by idle-connection timeouts on the path
 
 From the repository root:
 

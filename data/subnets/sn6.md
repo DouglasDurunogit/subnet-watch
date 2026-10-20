@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-10-19T21:39:01Z  |  block: 9320277  |  row_status: ok
+snapshot_utc: 2026-10-20T00:43:03Z  |  block: 9321197  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (53.102000000000004 USD), open=True
+- registration cost: 0.2 TAO (53.33200000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 137  |  free: 0
-- subnet age: 847.3 days  |  registered at block 3219949
+- subnet age: 847.4 days  |  registered at block 3219949
 - weights_version: 3000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 262.44712274521646** (uid 174) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.02654198247827836
-- top_miner_usd_day: 262.44712274521646 (uid 174, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 263.454279556547** (uid 174) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.026643838951916163
+- top_miner_usd_day: 263.454279556547 (uid 174, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-10-19T21:39:01Z  |  block: 9320277  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: cpu-only (dev box) (~0 GB VRAM)  |  basis: **code-submission (validator runs it)**
 - cheapest satisfying machine: cpu-small at 0.9863 USD/day
-- net margin: -0.9598 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -0.9597 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 25.5 (rank 77), confidence 1.0 
+- score: 25.5 (rank 76), confidence 1.0 
 - components: income 0.0 / freshness 10.5 / resource 15.0 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 67d ago
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-20T00:43:03Z, block 9321197
+# ALARMS - generated 2026-10-20T05:23:46Z, block 9322601
 
-window: first_seen in [2026-10-19T23:28:32Z, 2026-10-20T00:43:32Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-20T04:09:18Z, 2026-10-20T05:24:18Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.989` | 76 | BURN_DROP | P0 | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
-| `sn117:burn_drop:0.884` | 117 | BURN_DROP | P0 | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
-| `sn22:scoring_commit:2026-10-19T21:30:20Z` | 22 | SCORING_COMMIT | P1 | 2026-10-20T00:43:32Z | sn22 commit touches scoring: fix(validators): embed checks wait up to 120 s for reference vectors,… |
-| `sn28:release:v0.5.4` | 28 | RELEASE | P1 | 2026-10-20T00:43:32Z | sn28 released v0.5.4 |
-| `sn28:scoring_commit:2026-10-19T22:56:58Z` | 28 | SCORING_COMMIT | P1 | 2026-10-20T00:43:32Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.4 (#333) |
-| `sn71:scoring_commit:2026-10-19T23:46:13Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T00:43:32Z | sn71 commit touches scoring: Regenerate protected scorer manifest from committed source |
+| `sn37:scoring_commit:2026-10-20T03:53:10Z` | 37 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32) |
+| `sn71:scoring_commit:2026-10-20T04:57:34Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality |
+| `sn81:scoring_commit:2026-10-20T03:50:31Z` | 81 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served |
+| `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | P2 | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 
 ### detail
 
-- **`sn76:burn_drop:0.989`** - sn76 burn fell 1.000 -> 0.989 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn117:burn_drop:0.884`** - sn117 burn fell 1.000 -> 0.884 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn22:scoring_commit:2026-10-19T21:30:20Z`** - sn22 commit touches scoring: fix(validators): embed checks wait up to 120 s for reference vectors,…
+- **`sn37:scoring_commit:2026-10-20T03:53:10Z`** - sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.4`** - sn28 released v0.5.4
-  - published 2026-10-19T23:18:01Z (was v0.5.3-dev)
-- **`sn28:scoring_commit:2026-10-19T22:56:58Z`** - sn28 commit touches scoring: chore(release): promote gm-miner 0.5.4 (#333)
+- **`sn71:scoring_commit:2026-10-20T04:57:34Z`** - sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-19T23:46:13Z`** - sn71 commit touches scoring: Regenerate protected scorer manifest from committed source
+- **`sn81:scoring_commit:2026-10-20T03:50:31Z`** - sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn37:readme_task_diff:7d03fd0e56d5b691`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,12 +45,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
-| `sn28:release:v0.4.28` | 28 | RELEASE | 2026-10-13T01:39:30Z | sn28 released v0.4.28 |
-| `sn28:scoring_commit:2026-10-12T21:12:43Z` | 28 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.4.28 (#317) |
-| `sn71:scoring_commit:2026-10-12T22:46:22Z` | 71 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn71 commit touches scoring: Finish validated bounded evidence reviews without time-only failure |
-| `sn74:release:release-20261012-224627` | 74 | RELEASE | 2026-10-13T01:39:30Z | sn74 released release-20261012-224627 |
-| `sn74:scoring_commit:2026-10-12T22:45:40Z` | 74 | SCORING_COMMIT | 2026-10-13T01:39:30Z | sn74 commit touches scoring: chore(weights): burn all miner emissions (empty registry, compute sha… |
-| `sn117:release:everycli v0.3.8` | 117 | RELEASE | 2026-10-13T01:39:30Z | sn117 released everycli v0.3.8 |
+| `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
+| `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn25:release:v2026.10.13-1070793380` | 25 | RELEASE | 2026-10-13T08:31:47Z | sn25 released v2026.10.13-1070793380 |
 | `sn25:scoring_commit:2026-10-13T05:05:10Z` | 25 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn25 commit touches scoring: Merge the validator steering fixes deployed on Oct 13 |
 | `sn51:release:executor-v1.140` | 51 | RELEASE | 2026-10-13T08:31:47Z | sn51 released executor-v1.140 |
@@ -313,6 +303,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn100:scoring_commit:2026-10-19T20:57:30Z` | 100 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn100 commit touches scoring: docs(validator): cover both profile version caps and restart wording |
 | `sn111:release:v1.1.0` | 111 | RELEASE | 2026-10-19T21:39:26Z | sn111 released v1.1.0 |
 | `sn111:scoring_commit:2026-10-19T13:02:58Z` | 111 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn111 commit touches scoring: Integrate approved-group fractional coverage into validator scoring |
+| `sn22:scoring_commit:2026-10-19T21:30:20Z` | 22 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn22 commit touches scoring: fix(validators): embed checks wait up to 120 s for reference vectors,… |
+| `sn28:release:v0.5.4` | 28 | RELEASE | 2026-10-20T00:43:32Z | sn28 released v0.5.4 |
+| `sn28:scoring_commit:2026-10-19T22:56:58Z` | 28 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.4 (#333) |
+| `sn71:scoring_commit:2026-10-19T23:46:13Z` | 71 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn71 commit touches scoring: Regenerate protected scorer manifest from committed source |
 | `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |

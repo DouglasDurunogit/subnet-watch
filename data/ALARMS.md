@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-20T05:23:46Z, block 9322601
+# ALARMS - generated 2026-10-20T10:17:46Z, block 9324071
 
-window: first_seen in [2026-10-20T04:09:18Z, 2026-10-20T05:24:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-20T09:03:20Z, 2026-10-20T10:18:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:scoring_commit:2026-10-20T03:53:10Z` | 37 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32) |
-| `sn71:scoring_commit:2026-10-20T04:57:34Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality |
-| `sn81:scoring_commit:2026-10-20T03:50:31Z` | 81 | SCORING_COMMIT | P1 | 2026-10-20T05:24:18Z | sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served |
-| `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | P2 | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
+| `sn25:release:v2026.10.20-1076869840` | 25 | RELEASE | P1 | 2026-10-20T10:18:20Z | sn25 released v2026.10.20-1076869840 |
+| `sn51:scoring_commit:2026-10-20T08:46:36Z` | 51 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t… |
+| `sn66:release:deployed/dev: Merge pull request #139 fr` | 66 | RELEASE | P1 | 2026-10-20T10:18:20Z | sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
+| `sn67:scoring_commit:2026-10-20T06:10:57Z` | 67 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2 |
+| `sn71:scoring_commit:2026-10-20T07:07:45Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks |
+| `sn127:scoring_commit:2026-10-20T09:51:40Z` | 127 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts |
 
 ### detail
 
-- **`sn37:scoring_commit:2026-10-20T03:53:10Z`** - sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32)
+- **`sn25:release:v2026.10.20-1076869840`** - sn25 released v2026.10.20-1076869840
+  - published 2026-10-20T09:12:27Z (was v2026.10.19-1076177550)
+- **`sn51:scoring_commit:2026-10-20T08:46:36Z`** - sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-20T04:57:34Z`** - sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality
+- **`sn66:release:deployed/dev: Merge pull request #139 fr`** - sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes
+  - published 2026-10-20T09:00:23Z (was v1.0.4)
+- **`sn67:scoring_commit:2026-10-20T06:10:57Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-20T03:50:31Z`** - sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served
+- **`sn71:scoring_commit:2026-10-20T07:07:45Z`** - sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:7d03fd0e56d5b691`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn127:scoring_commit:2026-10-20T09:51:40Z`** - sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,13 +53,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
-| `sn25:release:v2026.10.13-1070793380` | 25 | RELEASE | 2026-10-13T08:31:47Z | sn25 released v2026.10.13-1070793380 |
-| `sn25:scoring_commit:2026-10-13T05:05:10Z` | 25 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn25 commit touches scoring: Merge the validator steering fixes deployed on Oct 13 |
-| `sn51:release:executor-v1.140` | 51 | RELEASE | 2026-10-13T08:31:47Z | sn51 released executor-v1.140 |
-| `sn51:scoring_commit:2026-10-13T04:12:42Z` | 51 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn51 commit touches scoring: DAH-3980 - Validator: install sshd without recommended packages (#1547 |
-| `sn67:scoring_commit:2026-10-13T02:10:44Z` | 67 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261013.post1 |
-| `sn71:scoring_commit:2026-10-13T04:39:21Z` | 71 | SCORING_COMMIT | 2026-10-13T08:31:47Z | sn71 commit touches scoring: Merge pull request #408 from leadpoet/fix/arena-public-completed-scor… |
-| `sn117:release:everycli v0.3.9` | 117 | RELEASE | 2026-10-13T08:31:47Z | sn117 released everycli v0.3.9 |
 | `sn21:scoring_commit:2026-10-13T15:45:33Z` | 21 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn21 commit touches scoring: fix(scoring): the configured goal is ranked high, medium, low, then n… |
 | `sn25:release:v2026.10.13-1070979130` | 25 | RELEASE | 2026-10-13T16:29:14Z | sn25 released v2026.10.13-1070979130 |
 | `sn25:scoring_commit:2026-10-13T08:19:37Z` | 25 | SCORING_COMMIT | 2026-10-13T16:29:14Z | sn25 commit touches scoring: Merge the validator trail fixes and bounded steering cut waits |
@@ -307,7 +306,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:release:v0.5.4` | 28 | RELEASE | 2026-10-20T00:43:32Z | sn28 released v0.5.4 |
 | `sn28:scoring_commit:2026-10-19T22:56:58Z` | 28 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.4 (#333) |
 | `sn71:scoring_commit:2026-10-19T23:46:13Z` | 71 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn71 commit touches scoring: Regenerate protected scorer manifest from committed source |
-| `sn117:readme_task_diff:98a036ed300e2537` | 117 | README_TASK_DIFF | 2026-10-13T08:31:47Z | sn117 README task/scoring sections changed |
+| `sn37:scoring_commit:2026-10-20T03:53:10Z` | 37 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32) |
+| `sn71:scoring_commit:2026-10-20T04:57:34Z` | 71 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality |
+| `sn81:scoring_commit:2026-10-20T03:50:31Z` | 81 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served |
 | `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |
@@ -321,6 +322,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
+| `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

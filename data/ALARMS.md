@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-20T10:17:46Z, block 9324071
+# ALARMS - generated 2026-10-20T15:15:50Z, block 9325561
 
-window: first_seen in [2026-10-20T09:03:20Z, 2026-10-20T10:18:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-20T14:01:23Z, 2026-10-20T15:16:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,26 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.20-1076869840` | 25 | RELEASE | P1 | 2026-10-20T10:18:20Z | sn25 released v2026.10.20-1076869840 |
-| `sn51:scoring_commit:2026-10-20T08:46:36Z` | 51 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t… |
-| `sn66:release:deployed/dev: Merge pull request #139 fr` | 66 | RELEASE | P1 | 2026-10-20T10:18:20Z | sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
-| `sn67:scoring_commit:2026-10-20T06:10:57Z` | 67 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2 |
-| `sn71:scoring_commit:2026-10-20T07:07:45Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks |
-| `sn127:scoring_commit:2026-10-20T09:51:40Z` | 127 | SCORING_COMMIT | P1 | 2026-10-20T10:18:20Z | sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts |
+| `sn3:scoring_commit:2026-10-20T11:26:30Z` | 3 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn3 commit touches scoring: Sample evaluation sequences from at least five shards per category |
+| `sn25:release:v2026.10.20-1077000950` | 25 | RELEASE | P1 | 2026-10-20T15:16:23Z | sn25 released v2026.10.20-1077000950 |
+| `sn28:release:v0.5.5` | 28 | RELEASE | P1 | 2026-10-20T15:16:23Z | sn28 released v0.5.5 |
+| `sn28:scoring_commit:2026-10-20T10:26:11Z` | 28 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.5 (#335) |
+| `sn51:scoring_commit:2026-10-20T14:27:06Z` | 51 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn51 commit touches scoring: DAH-4481 - [P1] Validator says the miner no longer lists the executor… |
+| `sn66:release:deployed/dev: Merge pull request #141 fr` | 66 | RELEASE | P1 | 2026-10-20T15:16:23Z | sn66 released deployed/dev: Merge pull request #141 from conjectures-io/ci/prod-hardening |
+| `sn67:scoring_commit:2026-10-20T11:02:08Z` | 67 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post3 |
+| `sn71:scoring_commit:2026-10-20T14:26:05Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn71 commit touches scoring: Recover abandoned scorer-image setup through bounded lease recovery |
+| `sn97:scoring_commit:2026-10-20T14:46:53Z` | 97 | SCORING_COMMIT | P1 | 2026-10-20T15:16:23Z | sn97 commit touches scoring: fix: show diverged challengers as < −50% and republish evals with non… |
 
 ### detail
 
-- **`sn25:release:v2026.10.20-1076869840`** - sn25 released v2026.10.20-1076869840
-  - published 2026-10-20T09:12:27Z (was v2026.10.19-1076177550)
-- **`sn51:scoring_commit:2026-10-20T08:46:36Z`** - sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t…
+- **`sn3:scoring_commit:2026-10-20T11:26:30Z`** - sn3 commit touches scoring: Sample evaluation sequences from at least five shards per category
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:deployed/dev: Merge pull request #139 fr`** - sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes
-  - published 2026-10-20T09:00:23Z (was v1.0.4)
-- **`sn67:scoring_commit:2026-10-20T06:10:57Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2
+- **`sn25:release:v2026.10.20-1077000950`** - sn25 released v2026.10.20-1077000950
+  - published 2026-10-20T12:50:48Z (was v2026.10.20-1076869840)
+- **`sn28:release:v0.5.5`** - sn28 released v0.5.5
+  - published 2026-10-20T10:50:43Z (was v0.5.4)
+- **`sn28:scoring_commit:2026-10-20T10:26:11Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.5 (#335)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-20T07:07:45Z`** - sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks
+- **`sn51:scoring_commit:2026-10-20T14:27:06Z`** - sn51 commit touches scoring: DAH-4481 - [P1] Validator says the miner no longer lists the executor…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:scoring_commit:2026-10-20T09:51:40Z`** - sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts
+- **`sn66:release:deployed/dev: Merge pull request #141 fr`** - sn66 released deployed/dev: Merge pull request #141 from conjectures-io/ci/prod-hardening
+  - published 2026-10-20T13:33:00Z (was deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes)
+- **`sn67:scoring_commit:2026-10-20T11:02:08Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post3
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-20T14:26:05Z`** - sn71 commit touches scoring: Recover abandoned scorer-image setup through bounded lease recovery
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-10-20T14:46:53Z`** - sn97 commit touches scoring: fix: show diverged challengers as < −50% and republish evals with non…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -309,6 +318,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:scoring_commit:2026-10-20T03:53:10Z` | 37 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32) |
 | `sn71:scoring_commit:2026-10-20T04:57:34Z` | 71 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality |
 | `sn81:scoring_commit:2026-10-20T03:50:31Z` | 81 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served |
+| `sn25:release:v2026.10.20-1076869840` | 25 | RELEASE | 2026-10-20T10:18:20Z | sn25 released v2026.10.20-1076869840 |
+| `sn51:scoring_commit:2026-10-20T08:46:36Z` | 51 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t… |
+| `sn66:release:deployed/dev: Merge pull request #139 fr` | 66 | RELEASE | 2026-10-20T10:18:20Z | sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
+| `sn67:scoring_commit:2026-10-20T06:10:57Z` | 67 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2 |
+| `sn71:scoring_commit:2026-10-20T07:07:45Z` | 71 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks |
+| `sn127:scoring_commit:2026-10-20T09:51:40Z` | 127 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts |
 | `sn37:readme_task_diff:f7819507937d66e4` | 37 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:0955f3d4e32cce12` | 117 | README_TASK_DIFF | 2026-10-13T16:29:14Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:a5f1105da1e310ab` | 117 | README_TASK_DIFF | 2026-10-13T21:35:22Z | sn117 README task/scoring sections changed |

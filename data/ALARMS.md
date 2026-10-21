@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-20T22:43:14Z, block 9327798
+# ALARMS - generated 2026-10-21T01:02:11Z, block 9328470
 
-window: first_seen in [2026-10-20T21:28:54Z, 2026-10-20T22:43:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-20T23:47:40Z, 2026-10-21T01:02:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
-| `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
-| `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | P1 | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
+| `sn120:burn_drop:0.100` | 120 | BURN_DROP | P0 | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
+| `sn25:release:v2026.10.20-1077406510` | 25 | RELEASE | P1 | 2026-10-21T01:02:40Z | sn25 released v2026.10.20-1077406510 |
+| `sn71:scoring_commit:2026-10-20T22:59:19Z` | 71 | SCORING_COMMIT | P1 | 2026-10-21T01:02:40Z | sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order |
+| `sn92:release:v1.2.0-rc9.post7` | 92 | RELEASE | P1 | 2026-10-21T01:02:40Z | sn92 released v1.2.0-rc9.post7 |
 
 ### detail
 
-- **`sn5:scoring_commit:2026-10-20T01:48:53Z`** - sn5 commit touches scoring: Keep validator connections alive while miners think
+- **`sn120:burn_drop:0.100`** - sn120 burn fell 1.000 -> 0.100 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.10.20-1077406510`** - sn25 released v2026.10.20-1077406510
+  - published 2026-10-21T00:06:30Z (was v2026.10.20-1077000950)
+- **`sn71:scoring_commit:2026-10-20T22:59:19Z`** - sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-20T21:51:33Z`** - sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-20T20:19:23Z`** - sn81 commit touches scoring: Merge invalidated export filtering (#365)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v1.2.0-rc9.post7`** - sn92 released v1.2.0-rc9.post7
+  - published 2026-10-20T22:48:55Z (was v1.2.0-rc9.post6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,13 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn7:release:release-20261013-222136` | 7 | RELEASE | 2026-10-14T00:39:12Z | sn7 released release-20261013-222136 |
-| `sn7:scoring_commit:2026-10-13T21:54:01Z` | 7 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn7 commit touches scoring: Ban a miner from scoring for 12 rounds when it posts an unusable addr… |
-| `sn25:scoring_commit:2026-10-13T23:48:30Z` | 25 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn25 commit touches scoring: Merge the validator test and correctness fixes: steering-limit text, … |
-| `sn45:scoring_commit:2026-10-13T06:46:35Z` | 45 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn45 commit touches scoring: soak report: read rotated validator logs |
-| `sn54:scoring_commit:2026-10-13T20:00:04Z` | 54 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn54 commit touches scoring: adding in query from validators |
-| `sn78:scoring_commit:2026-10-14T00:18:48Z` | 78 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn78 commit touches scoring: Merge pull request #247 from Umi-BitSign/codex/c5-geometric-reward-tr… |
-| `sn120:scoring_commit:2026-10-13T22:30:02Z` | 120 | SCORING_COMMIT | 2026-10-14T00:39:12Z | sn120 commit touches scoring: Reduce repeated commitment derivation in hourly reward assessment |
 | `sn25:release:v2026.10.13-1071515580` | 25 | RELEASE | 2026-10-14T05:29:19Z | sn25 released v2026.10.13-1071515580 |
 | `sn25:scoring_commit:2026-10-14T04:17:54Z` | 25 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn25 commit touches scoring: Merge v2/gate-miner-tests into main |
 | `sn37:scoring_commit:2026-10-14T03:25:35Z` | 37 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md |
@@ -297,6 +293,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-20T15:18:06Z` | 71 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn71 commit touches scoring: Refresh persisted Arena model scores before unpublished evidence (#615 |
 | `sn81:scoring_commit:2026-10-20T12:58:45Z` | 81 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn81 commit touches scoring: ci: replace obsolete validator check runs |
 | `sn92:release:v1.2.0-rc9.post6` | 92 | RELEASE | 2026-10-20T19:28:18Z | sn92 released v1.2.0-rc9.post6 |
+| `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
+| `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
+| `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
 | `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |

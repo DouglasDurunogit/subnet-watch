@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-21T11:40:19Z  |  block: 9331602  |  row_status: ok
+snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (272.44999972755 USD), open=True
+- registration cost: 1.123730207 TAO (311.37440305762993 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 717.5 days  |  registered at block 4165565
+- subnet age: 717.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 7342.75981926705** (uid 2) <- the only figure quotable as achievable
-- median_miner_usd_day: 2753.5699471023954
-- top_miner_usd_day: 7342.75981926705 (uid 2, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 7445.031405980249** (uid 2) <- the only figure quotable as achievable
+- median_miner_usd_day: 2791.9222798148185
+- top_miner_usd_day: 7445.031405980249 (uid 2, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.19999694810248303  |  top1_share: 0.39999694810248276  |  top10_share: 1.0
+- earners: 5  |  gini: 0.19999694810248259  |  top1_share: 0.3999969481024827  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-10-21T11:40:19Z  |  block: 9331602  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 5802 bytes, sha 347d3d6b3a46de04
+- README: 6694 bytes, sha 8c312d379c5b66cf
 - latest release: (none) 
-- last commit: 2026-10-20T11:26:30Z
-- scoring-related commit: Sample evaluation sequences from at least five shards per category 2026-10-20T11:26:30Z
+- last commit: 2026-10-21T14:45:39Z
+- scoring-related commit: Fix category dataset validation and hide retired competition mixes 2026-10-21T14:45:39Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2745.3508 USD/day  |  payback on registration: 0.1 days
+- net margin: 2783.7031 USD/day  |  payback on registration: 0.11 days
 
 ## Score
 
 - gate: **OK** 
 - score: 74.4 (rank 3), confidence 0.85 - hardware requirement unknown
-- components: income 31.28 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 0.9d ago
+- components: income 31.33 / freshness 35.0 / resource 11.25 / registration 9.96
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -217,12 +217,17 @@ teutonic-miner status
 
 ## Competitions
 
-Miners can select `main`, `math`, `code`, or `text` with
-`teutonic-miner ready --competition math` (also supported by `submit`). Omission
+Miners can select `MAIN` or `MIX01`–`MIX06` with
+`teutonic-miner ready --competition MIX02` (also supported by `submit`). Omission
 selects MAIN. One ready submission per hotkey is shared across all competitions.
-Specialists use 30,000 planned samples with a 70/15/15 category-group mix;
-early stopping remains enabled. PostgreSQL controls active manifests and thresholds.
-See [deployment and configuration](DEPLOY.md#main-math-code-and-text-competitions)
-for manifest publication, `scripts/configure_evaluation.py`, and gradual rewards.
+Each competition uses an explicit category list, 20,000 windows, and 30M whole-document
+input tokens. Acceptance uses the whole mix's token-weighted bootstrap LCB.
+A kingless MIX challenges the latest MAIN king using its own mix and threshold.
 
+At cutover, current rewards are preserved. Each first MIX winner receives 12.5%
+and evicts one oldest legacy reward position; after all six MIXes have winners,
+MAIN receives 25%. Historical math/code/text results remain visible.
+PostgreSQL controls the active configuration; editing `c
 ```
+
+_(truncated at 6000 of 6694 chars - read the full file at https://github.com/unarbos/teutonic)_

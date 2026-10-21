@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-21T11:40:19Z, block 9331602
+# ALARMS - generated 2026-10-21T16:08:02Z, block 9332941
 
-window: first_seen in [2026-10-21T10:25:48Z, 2026-10-21T11:40:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-21T14:53:35Z, 2026-10-21T16:08:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,28 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:miner-v1.009` | 51 | RELEASE | P1 | 2026-10-21T11:40:48Z | sn51 released miner-v1.009 |
-| `sn51:scoring_commit:2026-10-21T10:38:31Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T11:40:48Z | sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR… |
-| `sn67:scoring_commit:2026-10-21T11:20:00Z` | 67 | SCORING_COMMIT | P1 | 2026-10-21T11:40:48Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9 |
-| `sn92:release:v1.2.0-rc10` | 92 | RELEASE | P1 | 2026-10-21T11:40:48Z | sn92 released v1.2.0-rc10 |
+| `sn3:scoring_commit:2026-10-21T14:45:39Z` | 3 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes |
+| `sn50:scoring_commit:2026-10-21T13:49:08Z` | 50 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340) |
+| `sn51:scoring_commit:2026-10-21T14:02:49Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead… |
+| `sn66:release:v2026.10.21.2` | 66 | RELEASE | P1 | 2026-10-21T16:08:35Z | sn66 released v2026.10.21.2 |
+| `sn81:scoring_commit:2026-10-21T14:21:49Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start |
+| `sn111:scoring_commit:2026-10-21T14:34:11Z` | 111 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads |
+| `sn114:scoring_commit:2026-10-21T12:16:14Z` | 114 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn114 commit touches scoring: Improve competition operations and validation dispatch |
+| `sn117:release:v0.6.1: Merge pull request #39 from ever` | 117 | RELEASE | P1 | 2026-10-21T16:08:35Z | sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max |
+| `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | P2 | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
+| `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | P2 | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:release:miner-v1.009`** - sn51 released miner-v1.009
-  - published 2026-10-21T08:39:40Z (was executor-v1.149)
-- **`sn51:scoring_commit:2026-10-21T10:38:31Z`** - sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR…
+- **`sn3:scoring_commit:2026-10-21T14:45:39Z`** - sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-21T11:20:00Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9
+- **`sn50:scoring_commit:2026-10-21T13:49:08Z`** - sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc10`** - sn92 released v1.2.0-rc10
-  - published 2026-10-21T09:16:01Z (was v1.2.0-rc9.post7)
+- **`sn51:scoring_commit:2026-10-21T14:02:49Z`** - sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn66:release:v2026.10.21.2`** - sn66 released v2026.10.21.2
+  - published 2026-10-21T15:32:48Z (was deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue)
+- **`sn81:scoring_commit:2026-10-21T14:21:49Z`** - sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-10-21T14:34:11Z`** - sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-10-21T12:16:14Z`** - sn114 commit touches scoring: Improve competition operations and validation dispatch
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:v0.6.1: Merge pull request #39 from ever`** - sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max
+  - published 2026-10-21T15:53:44Z (was everycli v0.6.0)
+- **`sn111:readme_task_diff:6b385b714324083a`** - sn111 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:readme_task_diff:c73733117d32dcc0`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:burn_drop:0.953` | 104 | BURN_DROP | 2026-10-14T15:33:11Z | sn104 burn fell 1.000 -> 0.953 - miners can earn again |
-| `sn108:burn_drop:0.921` | 108 | BURN_DROP | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
 | `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
 | `sn76:burn_drop:0.988` | 76 | BURN_DROP | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
@@ -48,12 +64,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
-| `sn51:scoring_commit:2026-10-14T14:13:17Z` | 51 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn51 commit touches scoring: DAH-4035 - [P1] Validator: resolve hostname nodes in their own thread… |
-| `sn66:scoring_commit:2026-10-14T10:04:47Z` | 66 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn66 commit touches scoring: feat: extend leaderboard endpoint (add past champions challengers his… |
-| `sn71:scoring_commit:2026-10-14T14:16:53Z` | 71 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn71 commit touches scoring: Merge PR #434: retain bounded validator error causes |
-| `sn116:scoring_commit:2026-10-14T12:47:36Z` | 116 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn116 commit touches scoring: Merge pull request #1347 from carbonphysicsai/codex/incentive-observe… |
-| `sn117:release:everycli v0.5.4` | 117 | RELEASE | 2026-10-14T15:33:11Z | sn117 released everycli v0.5.4 |
-| `sn117:scoring_commit:2026-10-14T12:01:19Z` | 117 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn117 commit touches scoring: fix: profile reconnect and miner dashboard identity (v0.5.2) (#30) |
 | `sn14:scoring_commit:2026-10-14T19:21:08Z` | 14 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn14 commit touches scoring: Show evaluator activity from the current worker heartbeat (#150) |
 | `sn28:release:v0.4.29-dev` | 28 | RELEASE | 2026-10-14T19:44:42Z | sn28 released v0.4.29-dev |
 | `sn28:scoring_commit:2026-10-14T18:30:19Z` | 28 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.29-dev (#320) |
@@ -287,6 +297,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-10-21T04:53:42Z` | 81 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io |
 | `sn117:release:everycli v0.6.0` | 117 | RELEASE | 2026-10-21T05:59:05Z | sn117 released everycli v0.6.0 |
 | `sn117:scoring_commit:2026-10-20T22:36:00Z` | 117 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation |
+| `sn51:release:miner-v1.009` | 51 | RELEASE | 2026-10-21T11:40:48Z | sn51 released miner-v1.009 |
+| `sn51:scoring_commit:2026-10-21T10:38:31Z` | 51 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR… |
+| `sn67:scoring_commit:2026-10-21T11:20:00Z` | 67 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9 |
+| `sn92:release:v1.2.0-rc10` | 92 | RELEASE | 2026-10-21T11:40:48Z | sn92 released v1.2.0-rc10 |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |

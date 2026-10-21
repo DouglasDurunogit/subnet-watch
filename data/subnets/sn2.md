@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
+snapshot_utc: 2026-10-21T20:16:27Z  |  block: 9334183  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.138545 USD), open=True
+- registration cost: 0.000622707 TAO (0.17146859952000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 0
-- subnet age: 916.5 days  |  registered at block 2734060
+- subnet age: 916.7 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2769.537276427181
-- top_miner_usd_day: 2769.537276427181 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2848.052757275673
+- top_miner_usd_day: 2848.052757275673 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -25,11 +25,11 @@ snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
 
 - on-chain URL: `https://github.com/DaniLabsAI/subnet`
 - resolved URL: `https://github.com/DaniLabsAI/subnet`
-- status: **dead** - HTTP 404 (deleted or private)
-- README: 0 bytes, sha (none)
+- status: **ok** 
+- README: 1667 bytes, sha d71409d0a2a6d6c9
 - latest release: (none) 
-- last commit: (unknown)
-- scoring-related commit: (none) 
+- last commit: 2026-10-21T19:32:52Z
+- scoring-related commit: Explain the subnet validator purpose and responsibilities 2026-10-21T19:32:52Z
 
 ## Resources
 
@@ -48,3 +48,48 @@ snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
 ## On-chain description
 
 > Distributed Accelerated Neural intelligence
+
+## README excerpt (evidence for the brief)
+
+```markdown
+# DaniLabs Subnet
+
+DaniLabs is a Bittensor subnet for distributed AI inference. This repository is
+home to its validator software: the code that evaluates miner performance,
+calculates scores, and submits weights to Bittensor.
+
+The validator's role is to determine how miners are rewarded for the inference
+work they contribute. This repo is intended for validator operators and
+contributors developing the subnet's evaluation and incentive rules.
+
+## Validator responsibilities
+
+The validator is being developed to:
+
+- Track subnet state and associate registered miners with their on-chain
+  identities.
+- Check the source, format, and freshness of performance reports, rejecting
+  invalid or duplicate submissions.
+- Evaluate inference performance using latency, token throughput, completed
+  requests, and availability.
+- Calculate miner scores using consistent, documented evaluation rules.
+- Convert eligible miner scores into weights and submit them to Bittensor.
+
+## Scoring
+
+The goal is to reward useful, fast, reliable inference. Scoring needs to account
+for both performance and successful completion, so generation speed alone does
+not determine a miner's score.
+
+The scoring formula, eligibility requirements, and measurement definitions are
+still being developed. They will be documented and tested here before live
+weight submission is enabled. Validator reports should contain operational
+measurements, without customer prompts or generated responses.
+
+## Current status
+
+This repository currently contains documentation only. The validator
+implementation, tests, configuration, and operator setup instructions will be
+added as development progresses.
+
+```

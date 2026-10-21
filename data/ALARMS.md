@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-21T16:08:02Z, block 9332941
+# ALARMS - generated 2026-10-21T20:16:27Z, block 9334183
 
-window: first_seen in [2026-10-21T14:53:35Z, 2026-10-21T16:08:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-21T19:02:01Z, 2026-10-21T20:17:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,46 +9,53 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-10-21T14:45:39Z` | 3 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes |
-| `sn50:scoring_commit:2026-10-21T13:49:08Z` | 50 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340) |
-| `sn51:scoring_commit:2026-10-21T14:02:49Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead… |
-| `sn66:release:v2026.10.21.2` | 66 | RELEASE | P1 | 2026-10-21T16:08:35Z | sn66 released v2026.10.21.2 |
-| `sn81:scoring_commit:2026-10-21T14:21:49Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start |
-| `sn111:scoring_commit:2026-10-21T14:34:11Z` | 111 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads |
-| `sn114:scoring_commit:2026-10-21T12:16:14Z` | 114 | SCORING_COMMIT | P1 | 2026-10-21T16:08:35Z | sn114 commit touches scoring: Improve competition operations and validation dispatch |
-| `sn117:release:v0.6.1: Merge pull request #39 from ever` | 117 | RELEASE | P1 | 2026-10-21T16:08:35Z | sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max |
-| `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | P2 | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
-| `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | P2 | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
+| `sn30:burn_drop:0.981` | 30 | BURN_DROP | P0 | 2026-10-21T20:17:01Z | sn30 burn fell 0.996 -> 0.981 - miners can earn again |
+| `sn37:burn_drop:0.711` | 37 | BURN_DROP | P0 | 2026-10-21T20:17:01Z | sn37 burn fell 1.000 -> 0.711 - miners can earn again |
+| `sn117:burn_drop:0.883` | 117 | BURN_DROP | P0 | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
+| `sn7:release:release-20261021-195318: Scale the miner` | 7 | RELEASE | P1 | 2026-10-21T20:17:01Z | sn7 released release-20261021-195318: Scale the miner pool by recent swap fees (#811) |
+| `sn7:scoring_commit:2026-10-21T19:52:45Z` | 7 | SCORING_COMMIT | P1 | 2026-10-21T20:17:01Z | sn7 commit touches scoring: Scale the miner pool by recent swap fees (#811) |
+| `sn28:release:v0.5.6-dev` | 28 | RELEASE | P1 | 2026-10-21T20:17:01Z | sn28 released v0.5.6-dev |
+| `sn28:scoring_commit:2026-10-21T16:47:19Z` | 28 | SCORING_COMMIT | P1 | 2026-10-21T20:17:01Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.6-dev (#337) |
+| `sn71:scoring_commit:2026-10-21T19:53:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-21T20:17:01Z | sn71 commit touches scoring: Retain proofs and receipts for approved scoring provider routes |
+| `sn76:release:v0.0.3: Merge pull request #45 from hero` | 76 | RELEASE | P1 | 2026-10-21T20:17:01Z | sn76 released v0.0.3: Merge pull request #45 from heroncovelabs/fix/recover-public-work-packet |
+| `sn78:scoring_commit:2026-10-21T19:17:18Z` | 78 | SCORING_COMMIT | P1 | 2026-10-21T20:17:01Z | sn78 commit touches scoring: chore(verification): bind qualified baseline guard sources |
+| `sn81:scoring_commit:2026-10-21T20:16:18Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T20:17:01Z | sn81 commit touches scoring: Merge pull request #379 from reliquadotai/fix/evaluation-sandbox-scope |
+| `sn117:release:everycli v0.6.2` | 117 | RELEASE | P1 | 2026-10-21T20:17:01Z | sn117 released everycli v0.6.2 |
+| `sn28:readme_task_diff:2b144e347e430710` | 28 | README_TASK_DIFF | P2 | 2026-10-21T20:17:01Z | sn28 README task/scoring sections changed |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-10-21T14:45:39Z`** - sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes
+- **`sn30:burn_drop:0.981`** - sn30 burn fell 0.996 -> 0.981 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn37:burn_drop:0.711`** - sn37 burn fell 1.000 -> 0.711 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn117:burn_drop:0.883`** - sn117 burn fell 1.000 -> 0.883 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn7:release:release-20261021-195318: Scale the miner`** - sn7 released release-20261021-195318: Scale the miner pool by recent swap fees (#811)
+  - published 2026-10-21T19:52:45Z (was release-20261019-165322)
+- **`sn7:scoring_commit:2026-10-21T19:52:45Z`** - sn7 commit touches scoring: Scale the miner pool by recent swap fees (#811)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:scoring_commit:2026-10-21T13:49:08Z`** - sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340)
+- **`sn28:release:v0.5.6-dev`** - sn28 released v0.5.6-dev
+  - published 2026-10-21T17:43:27Z (was v0.5.5)
+- **`sn28:scoring_commit:2026-10-21T16:47:19Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.6-dev (#337)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-21T14:02:49Z`** - sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead…
+- **`sn71:scoring_commit:2026-10-21T19:53:06Z`** - sn71 commit touches scoring: Retain proofs and receipts for approved scoring provider routes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.10.21.2`** - sn66 released v2026.10.21.2
-  - published 2026-10-21T15:32:48Z (was deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue)
-- **`sn81:scoring_commit:2026-10-21T14:21:49Z`** - sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start
+- **`sn76:release:v0.0.3: Merge pull request #45 from hero`** - sn76 released v0.0.3: Merge pull request #45 from heroncovelabs/fix/recover-public-work-packet
+  - published 2026-10-21T11:53:11Z (was v0.0.3)
+- **`sn78:scoring_commit:2026-10-21T19:17:18Z`** - sn78 commit touches scoring: chore(verification): bind qualified baseline guard sources
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-10-21T14:34:11Z`** - sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads
+- **`sn81:scoring_commit:2026-10-21T20:16:18Z`** - sn81 commit touches scoring: Merge pull request #379 from reliquadotai/fix/evaluation-sandbox-scope
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-21T12:16:14Z`** - sn114 commit touches scoring: Improve competition operations and validation dispatch
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:v0.6.1: Merge pull request #39 from ever`** - sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max
-  - published 2026-10-21T15:53:44Z (was everycli v0.6.0)
-- **`sn111:readme_task_diff:6b385b714324083a`** - sn111 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn117:readme_task_diff:c73733117d32dcc0`** - sn117 README task/scoring sections changed
+- **`sn117:release:everycli v0.6.2`** - sn117 released everycli v0.6.2
+  - published 2026-10-21T16:48:22Z (was v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max)
+- **`sn28:readme_task_diff:2b144e347e430710`** - sn28 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
-| `sn76:burn_drop:0.988` | 76 | BURN_DROP | 2026-10-14T19:44:42Z | sn76 burn fell 1.000 -> 0.988 - miners can earn again |
 | `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
@@ -64,16 +71,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
-| `sn14:scoring_commit:2026-10-14T19:21:08Z` | 14 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn14 commit touches scoring: Show evaluator activity from the current worker heartbeat (#150) |
-| `sn28:release:v0.4.29-dev` | 28 | RELEASE | 2026-10-14T19:44:42Z | sn28 released v0.4.29-dev |
-| `sn28:scoring_commit:2026-10-14T18:30:19Z` | 28 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn28 commit touches scoring: chore(release): gm-miner 0.4.29-dev (#320) |
-| `sn51:scoring_commit:2026-10-14T18:37:43Z` | 51 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn51 commit touches scoring: NO-TICKET - validator: the spot pay flag is named for the backend's p… |
-| `sn76:scoring_commit:2026-10-14T18:51:37Z` | 76 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn76 commit touches scoring: security: harden public miner and validator boundaries |
-| `sn78:scoring_commit:2026-10-14T16:40:24Z` | 78 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn78 commit touches scoring: Merge pull request #252 from Umi-BitSign/codex/header-verification-ca… |
-| `sn96:scoring_commit:2026-10-14T19:13:46Z` | 96 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn96 commit touches scoring: fix: move the Decide validator handover to block 9,287,280 |
-| `sn116:scoring_commit:2026-10-14T19:19:20Z` | 116 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn116 commit touches scoring: Merge pull request #1354 from carbonphysicsai/codex/v8-8-validator-set |
-| `sn117:release:everycli v0.5.5` | 117 | RELEASE | 2026-10-14T19:44:42Z | sn117 released everycli v0.5.5 |
-| `sn117:scoring_commit:2026-10-14T15:53:23Z` | 117 | SCORING_COMMIT | 2026-10-14T19:44:42Z | sn117 commit touches scoring: fix: streamline model offers and miner dashboard reporting (#33) |
 | `sn21:scoring_commit:2026-10-14T20:58:47Z` | 21 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn21 commit touches scoring: perf(scoring): read receipts through a small per-day standing index |
 | `sn25:scoring_commit:2026-10-14T21:15:56Z` | 25 | SCORING_COMMIT | 2026-10-14T22:42:49Z | sn25 commit touches scoring: State that any v2 request checkpoint write blocks a validator downgrad |
 | `sn28:release:v0.5.0` | 28 | RELEASE | 2026-10-14T22:42:49Z | sn28 released v0.5.0 |
@@ -301,7 +298,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-10-21T10:38:31Z` | 51 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR… |
 | `sn67:scoring_commit:2026-10-21T11:20:00Z` | 67 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9 |
 | `sn92:release:v1.2.0-rc10` | 92 | RELEASE | 2026-10-21T11:40:48Z | sn92 released v1.2.0-rc10 |
-| `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-10-21T14:45:39Z` | 3 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes |
+| `sn50:scoring_commit:2026-10-21T13:49:08Z` | 50 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340) |
+| `sn51:scoring_commit:2026-10-21T14:02:49Z` | 51 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead… |
+| `sn66:release:v2026.10.21.2` | 66 | RELEASE | 2026-10-21T16:08:35Z | sn66 released v2026.10.21.2 |
+| `sn81:scoring_commit:2026-10-21T14:21:49Z` | 81 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start |
+| `sn111:scoring_commit:2026-10-21T14:34:11Z` | 111 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads |
+| `sn114:scoring_commit:2026-10-21T12:16:14Z` | 114 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn114 commit touches scoring: Improve competition operations and validation dispatch |
+| `sn117:release:v0.6.1: Merge pull request #39 from ever` | 117 | RELEASE | 2026-10-21T16:08:35Z | sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
@@ -312,6 +316,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
+| `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
+| `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

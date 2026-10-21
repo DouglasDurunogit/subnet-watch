@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
+snapshot_utc: 2026-10-21T20:16:27Z  |  block: 9334183  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (41.5635 USD), open=True
+- registration cost: 0.15 TAO (41.304 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 931.3 days  |  registered at block 2627691
+- subnet age: 931.5 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1792.71734107027
-- top_miner_usd_day: 1792.71734107027 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1781.4766251687925
+- top_miner_usd_day: 1781.4766251687925 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -27,9 +27,9 @@ snapshot_utc: 2026-10-21T16:08:02Z  |  block: 9332941  |  row_status: ok
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
 - README: 19675 bytes, sha dc345f9e5261b6c1
-- latest release: release-20261019-165322 2026-10-19T16:38:35Z
-- last commit: 2026-10-19T16:38:35Z
-- scoring-related commit: Quote /rate from held miner states and a lazy market memo (#774) 2026-10-15T21:59:48Z
+- latest release: release-20261021-195318: Scale the miner pool by recent swap fees (#811) 2026-10-21T19:52:45Z
+- last commit: 2026-10-21T19:52:45Z
+- scoring-related commit: Scale the miner pool by recent swap fees (#811) 2026-10-21T19:52:45Z
 
 ## Resources
 

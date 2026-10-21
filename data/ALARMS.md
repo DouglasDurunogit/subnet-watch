@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-21T05:58:40Z, block 9329894
+# ALARMS - generated 2026-10-21T11:40:19Z, block 9331602
 
-window: first_seen in [2026-10-21T04:44:05Z, 2026-10-21T05:59:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-21T10:25:48Z, 2026-10-21T11:40:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.20-1077553990` | 25 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn25 released v2026.10.20-1077553990 |
-| `sn30:release:v0.1.3 — Identical-forecast pooling, pro` | 30 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044 |
-| `sn30:scoring_commit:2026-10-20T07:46:32Z` | 30 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m… |
-| `sn51:release:executor-v1.149` | 51 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn51 released executor-v1.149 |
-| `sn51:scoring_commit:2026-10-21T02:57:33Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn51 commit touches scoring: DAH-4266 - [P2] validator: keep a pass-through nvidia entrypoint with… |
-| `sn81:scoring_commit:2026-10-21T04:53:42Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io |
-| `sn117:release:everycli v0.6.0` | 117 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn117 released everycli v0.6.0 |
-| `sn117:scoring_commit:2026-10-20T22:36:00Z` | 117 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation |
-| `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | P2 | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
+| `sn51:release:miner-v1.009` | 51 | RELEASE | P1 | 2026-10-21T11:40:48Z | sn51 released miner-v1.009 |
+| `sn51:scoring_commit:2026-10-21T10:38:31Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T11:40:48Z | sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR… |
+| `sn67:scoring_commit:2026-10-21T11:20:00Z` | 67 | SCORING_COMMIT | P1 | 2026-10-21T11:40:48Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9 |
+| `sn92:release:v1.2.0-rc10` | 92 | RELEASE | P1 | 2026-10-21T11:40:48Z | sn92 released v1.2.0-rc10 |
 
 ### detail
 
-- **`sn25:release:v2026.10.20-1077553990`** - sn25 released v2026.10.20-1077553990
-  - published 2026-10-21T04:12:23Z (was v2026.10.20-1077406510)
-- **`sn30:release:v0.1.3 — Identical-forecast pooling, pro`** - sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044
-  - published 2026-10-21T05:15:38Z (was v0.1.2 — Owner-controlled burn, protocol 2043)
-- **`sn30:scoring_commit:2026-10-20T07:46:32Z`** - sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m…
+- **`sn51:release:miner-v1.009`** - sn51 released miner-v1.009
+  - published 2026-10-21T08:39:40Z (was executor-v1.149)
+- **`sn51:scoring_commit:2026-10-21T10:38:31Z`** - sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.149`** - sn51 released executor-v1.149
-  - published 2026-10-21T05:32:08Z (was miner-v1.008)
-- **`sn51:scoring_commit:2026-10-21T02:57:33Z`** - sn51 commit touches scoring: DAH-4266 - [P2] validator: keep a pass-through nvidia entrypoint with…
+- **`sn67:scoring_commit:2026-10-21T11:20:00Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-21T04:53:42Z`** - sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.6.0`** - sn117 released everycli v0.6.0
-  - published 2026-10-21T02:47:48Z (was everycli v0.5.8)
-- **`sn117:scoring_commit:2026-10-20T22:36:00Z`** - sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn30:readme_task_diff:4a7c5aebb5ea217a`** - sn30 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn92:release:v1.2.0-rc10`** - sn92 released v1.2.0-rc10
+  - published 2026-10-21T09:16:01Z (was v1.2.0-rc9.post7)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn37:burn_drop:0.715` | 37 | BURN_DROP | 2026-10-14T10:39:10Z | sn37 burn fell 1.000 -> 0.715 - miners can earn again |
 | `sn104:burn_drop:0.953` | 104 | BURN_DROP | 2026-10-14T15:33:11Z | sn104 burn fell 1.000 -> 0.953 - miners can earn again |
 | `sn108:burn_drop:0.921` | 108 | BURN_DROP | 2026-10-14T15:33:11Z | sn108 burn fell 1.000 -> 0.921 - miners can earn again |
 | `sn10:burn_drop:0.532` | 10 | BURN_DROP | 2026-10-14T19:44:42Z | sn10 burn fell 1.000 -> 0.532 - miners can earn again |
@@ -64,16 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
-| `sn25:release:v2026.10.14-1071632750` | 25 | RELEASE | 2026-10-14T10:39:10Z | sn25 released v2026.10.14-1071632750 |
-| `sn51:scoring_commit:2026-10-14T08:21:57Z` | 51 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s… |
-| `sn67:scoring_commit:2026-10-14T06:48:35Z` | 67 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3 |
-| `sn71:scoring_commit:2026-10-14T09:50:39Z` | 71 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn71 commit touches scoring: Merge PR #432: repair verified domain conflicts before rebrand invest… |
-| `sn76:scoring_commit:2026-10-14T06:05:09Z` | 76 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn76 commit touches scoring: security: repair frozen verifier snapshot |
-| `sn78:scoring_commit:2026-10-14T06:12:46Z` | 78 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn78 commit touches scoring: Preserve native reward history through writer preparation and cutover |
-| `sn108:scoring_commit:2026-10-14T09:43:47Z` | 108 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn108 commit touches scoring: Validator sends its EDA server the batch's time: time_limit_s (deadli… |
-| `sn116:release:r8.7` | 116 | RELEASE | 2026-10-14T10:39:10Z | sn116 released r8.7 |
-| `sn117:release:everycli v0.5.1` | 117 | RELEASE | 2026-10-14T10:39:10Z | sn117 released everycli v0.5.1 |
-| `sn117:scoring_commit:2026-10-14T09:42:22Z` | 117 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn117 commit touches scoring: docs: align miner README with v0.5.1 setup and lifecycle (#29) |
 | `sn51:scoring_commit:2026-10-14T14:13:17Z` | 51 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn51 commit touches scoring: DAH-4035 - [P1] Validator: resolve hostname nodes in their own thread… |
 | `sn66:scoring_commit:2026-10-14T10:04:47Z` | 66 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn66 commit touches scoring: feat: extend leaderboard endpoint (add past champions challengers his… |
 | `sn71:scoring_commit:2026-10-14T14:16:53Z` | 71 | SCORING_COMMIT | 2026-10-14T15:33:11Z | sn71 commit touches scoring: Merge PR #434: retain bounded validator error causes |
@@ -305,6 +279,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.10.20-1077406510` | 25 | RELEASE | 2026-10-21T01:02:40Z | sn25 released v2026.10.20-1077406510 |
 | `sn71:scoring_commit:2026-10-20T22:59:19Z` | 71 | SCORING_COMMIT | 2026-10-21T01:02:40Z | sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order |
 | `sn92:release:v1.2.0-rc9.post7` | 92 | RELEASE | 2026-10-21T01:02:40Z | sn92 released v1.2.0-rc9.post7 |
+| `sn25:release:v2026.10.20-1077553990` | 25 | RELEASE | 2026-10-21T05:59:05Z | sn25 released v2026.10.20-1077553990 |
+| `sn30:release:v0.1.3 — Identical-forecast pooling, pro` | 30 | RELEASE | 2026-10-21T05:59:05Z | sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044 |
+| `sn30:scoring_commit:2026-10-20T07:46:32Z` | 30 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m… |
+| `sn51:release:executor-v1.149` | 51 | RELEASE | 2026-10-21T05:59:05Z | sn51 released executor-v1.149 |
+| `sn51:scoring_commit:2026-10-21T02:57:33Z` | 51 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn51 commit touches scoring: DAH-4266 - [P2] validator: keep a pass-through nvidia entrypoint with… |
+| `sn81:scoring_commit:2026-10-21T04:53:42Z` | 81 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io |
+| `sn117:release:everycli v0.6.0` | 117 | RELEASE | 2026-10-21T05:59:05Z | sn117 released everycli v0.6.0 |
+| `sn117:scoring_commit:2026-10-20T22:36:00Z` | 117 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
@@ -315,6 +297,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
+| `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

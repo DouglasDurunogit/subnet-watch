@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-21T01:02:11Z, block 9328470
+# ALARMS - generated 2026-10-21T05:58:40Z, block 9329894
 
-window: first_seen in [2026-10-20T23:47:40Z, 2026-10-21T01:02:40Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-21T04:44:05Z, 2026-10-21T05:59:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,36 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn120:burn_drop:0.100` | 120 | BURN_DROP | P0 | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
-| `sn25:release:v2026.10.20-1077406510` | 25 | RELEASE | P1 | 2026-10-21T01:02:40Z | sn25 released v2026.10.20-1077406510 |
-| `sn71:scoring_commit:2026-10-20T22:59:19Z` | 71 | SCORING_COMMIT | P1 | 2026-10-21T01:02:40Z | sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order |
-| `sn92:release:v1.2.0-rc9.post7` | 92 | RELEASE | P1 | 2026-10-21T01:02:40Z | sn92 released v1.2.0-rc9.post7 |
+| `sn25:release:v2026.10.20-1077553990` | 25 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn25 released v2026.10.20-1077553990 |
+| `sn30:release:v0.1.3 — Identical-forecast pooling, pro` | 30 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044 |
+| `sn30:scoring_commit:2026-10-20T07:46:32Z` | 30 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m… |
+| `sn51:release:executor-v1.149` | 51 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn51 released executor-v1.149 |
+| `sn51:scoring_commit:2026-10-21T02:57:33Z` | 51 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn51 commit touches scoring: DAH-4266 - [P2] validator: keep a pass-through nvidia entrypoint with… |
+| `sn81:scoring_commit:2026-10-21T04:53:42Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io |
+| `sn117:release:everycli v0.6.0` | 117 | RELEASE | P1 | 2026-10-21T05:59:05Z | sn117 released everycli v0.6.0 |
+| `sn117:scoring_commit:2026-10-20T22:36:00Z` | 117 | SCORING_COMMIT | P1 | 2026-10-21T05:59:05Z | sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation |
+| `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | P2 | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 
 ### detail
 
-- **`sn120:burn_drop:0.100`** - sn120 burn fell 1.000 -> 0.100 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.20-1077406510`** - sn25 released v2026.10.20-1077406510
-  - published 2026-10-21T00:06:30Z (was v2026.10.20-1077000950)
-- **`sn71:scoring_commit:2026-10-20T22:59:19Z`** - sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order
+- **`sn25:release:v2026.10.20-1077553990`** - sn25 released v2026.10.20-1077553990
+  - published 2026-10-21T04:12:23Z (was v2026.10.20-1077406510)
+- **`sn30:release:v0.1.3 — Identical-forecast pooling, pro`** - sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044
+  - published 2026-10-21T05:15:38Z (was v0.1.2 — Owner-controlled burn, protocol 2043)
+- **`sn30:scoring_commit:2026-10-20T07:46:32Z`** - sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc9.post7`** - sn92 released v1.2.0-rc9.post7
-  - published 2026-10-20T22:48:55Z (was v1.2.0-rc9.post6)
+- **`sn51:release:executor-v1.149`** - sn51 released executor-v1.149
+  - published 2026-10-21T05:32:08Z (was miner-v1.008)
+- **`sn51:scoring_commit:2026-10-21T02:57:33Z`** - sn51 commit touches scoring: DAH-4266 - [P2] validator: keep a pass-through nvidia entrypoint with…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-21T04:53:42Z`** - sn81 commit touches scoring: Merge pull request #372 from reliquadotai/fix/miner-state-metadata-io
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.6.0`** - sn117 released everycli v0.6.0
+  - published 2026-10-21T02:47:48Z (was everycli v0.5.8)
+- **`sn117:scoring_commit:2026-10-20T22:36:00Z`** - sn117 commit touches scoring: docs(release): finalize v0.6.0 routing and four-platform validation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn30:readme_task_diff:4a7c5aebb5ea217a`** - sn30 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,16 +63,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.10.13-1071515580` | 25 | RELEASE | 2026-10-14T05:29:19Z | sn25 released v2026.10.13-1071515580 |
-| `sn25:scoring_commit:2026-10-14T04:17:54Z` | 25 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn25 commit touches scoring: Merge v2/gate-miner-tests into main |
-| `sn37:scoring_commit:2026-10-14T03:25:35Z` | 37 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn37 commit touches scoring: docs: describe planned stake-retention mechanism in INCENTIVES.md |
-| `sn41:scoring_commit:2026-10-13T23:52:00Z` | 41 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn41 commit touches scoring: Score update |
-| `sn51:scoring_commit:2026-10-14T02:31:17Z` | 51 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn51 commit touches scoring: DAH-4035 - [P0] Validator: connect to a hostname node only at a check… |
-| `sn71:scoring_commit:2026-10-14T01:25:55Z` | 71 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn71 commit touches scoring: Merge pull request #418: Preserve verified headcount ranges |
-| `sn76:scoring_commit:2026-10-14T05:10:32Z` | 76 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn76 commit touches scoring: security: validate repository scope before execution |
-| `sn78:scoring_commit:2026-10-14T02:15:19Z` | 78 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn78 commit touches scoring: Merge pull request #248 from Umi-BitSign/codex/durable-package-verifi… |
-| `sn91:scoring_commit:2026-10-14T02:36:42Z` | 91 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn91 commit touches scoring: fix(validator): carry staged promotions across a dethrone (DEC-CA-005… |
-| `sn116:scoring_commit:2026-10-14T01:37:24Z` | 116 | SCORING_COMMIT | 2026-10-14T05:29:19Z | sn116 commit touches scoring: Merge pull request #1335 from carbonphysicsai/codex/opt15c-score-lab-… |
+| `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn25:release:v2026.10.14-1071632750` | 25 | RELEASE | 2026-10-14T10:39:10Z | sn25 released v2026.10.14-1071632750 |
 | `sn51:scoring_commit:2026-10-14T08:21:57Z` | 51 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn51 commit touches scoring: DAH-4270 - [P1] Validator: count rented nodes the miner leaves out (s… |
 | `sn67:scoring_commit:2026-10-14T06:48:35Z` | 67 | SCORING_COMMIT | 2026-10-14T10:39:10Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post3 |
@@ -296,7 +302,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
 | `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
 | `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
-| `sn37:readme_task_diff:6ee01103ec5344ac` | 37 | README_TASK_DIFF | 2026-10-14T05:29:19Z | sn37 README task/scoring sections changed |
+| `sn25:release:v2026.10.20-1077406510` | 25 | RELEASE | 2026-10-21T01:02:40Z | sn25 released v2026.10.20-1077406510 |
+| `sn71:scoring_commit:2026-10-20T22:59:19Z` | 71 | SCORING_COMMIT | 2026-10-21T01:02:40Z | sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order |
+| `sn92:release:v1.2.0-rc9.post7` | 92 | RELEASE | 2026-10-21T01:02:40Z | sn92 released v1.2.0-rc9.post7 |
 | `sn117:readme_task_diff:ffe23d677b34cef6` | 117 | README_TASK_DIFF | 2026-10-14T19:44:42Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:e92bc71aef91f2cd` | 117 | README_TASK_DIFF | 2026-10-14T22:42:49Z | sn117 README task/scoring sections changed |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |

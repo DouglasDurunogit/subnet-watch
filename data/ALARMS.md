@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-21T23:30:03Z, block 9335151
+# ALARMS - generated 2026-10-22T01:56:46Z, block 9335885
 
-window: first_seen in [2026-10-21T22:15:35Z, 2026-10-21T23:30:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-22T00:42:11Z, 2026-10-22T01:57:11Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn10:burn_drop:0.571` | 10 | BURN_DROP | P0 | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
-| `sn71:burn_drop:0.700` | 71 | BURN_DROP | P0 | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn25:release:v2026.10.21-1078195620` | 25 | RELEASE | P1 | 2026-10-21T23:30:35Z | sn25 released v2026.10.21-1078195620 |
-| `sn28:release:v0.5.7` | 28 | RELEASE | P1 | 2026-10-21T23:30:35Z | sn28 released v0.5.7 |
-| `sn28:scoring_commit:2026-10-21T21:33:17Z` | 28 | SCORING_COMMIT | P1 | 2026-10-21T23:30:35Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.7 (#340) |
-| `sn71:scoring_commit:2026-10-21T22:55:23Z` | 71 | SCORING_COMMIT | P1 | 2026-10-21T23:30:35Z | sn71 commit touches scoring: Keep restored-score exclusions visible without inventing scores |
-| `sn78:scoring_commit:2026-10-21T20:49:08Z` | 78 | SCORING_COMMIT | P1 | 2026-10-21T23:30:35Z | sn78 commit touches scoring: Merge pull request #343 from Umi-BitSign/qualify-c6-model-only-reward… |
-| `sn81:scoring_commit:2026-10-21T20:51:36Z` | 81 | SCORING_COMMIT | P1 | 2026-10-21T23:30:35Z | sn81 commit touches scoring: fix: verify evaluation image against supported sandbox pin |
+| `sn2:scoring_commit:2026-10-22T01:50:24Z` | 2 | SCORING_COMMIT | P1 | 2026-10-22T01:57:11Z | sn2 commit touches scoring: Add finalized-chain observer for validator pilot |
+| `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | P1 | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
+| `sn117:release:everycli v0.7.0` | 117 | RELEASE | P1 | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
+| `sn117:scoring_commit:2026-10-21T23:16:35Z` | 117 | SCORING_COMMIT | P1 | 2026-10-22T01:57:11Z | sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation |
 
 ### detail
 
-- **`sn10:burn_drop:0.571`** - sn10 burn fell 1.000 -> 0.571 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:burn_drop:0.700`** - sn71 burn fell 1.000 -> 0.700 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.10.21-1078195620`** - sn25 released v2026.10.21-1078195620
-  - published 2026-10-21T22:02:03Z (was v2026.10.20-1077553990)
-- **`sn28:release:v0.5.7`** - sn28 released v0.5.7
-  - published 2026-10-21T21:53:19Z (was v0.5.6-dev)
-- **`sn28:scoring_commit:2026-10-21T21:33:17Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.7 (#340)
+- **`sn2:scoring_commit:2026-10-22T01:50:24Z`** - sn2 commit touches scoring: Add finalized-chain observer for validator pilot
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-21T22:55:23Z`** - sn71 commit touches scoring: Keep restored-score exclusions visible without inventing scores
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-21T20:49:08Z`** - sn78 commit touches scoring: Merge pull request #343 from Umi-BitSign/qualify-c6-model-only-reward…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-21T20:51:36Z`** - sn81 commit touches scoring: fix: verify evaluation image against supported sandbox pin
+- **`sn25:release:v2026.10.21-1078274420`** - sn25 released v2026.10.21-1078274420
+  - published 2026-10-22T00:13:00Z (was v2026.10.21-1078195620)
+- **`sn117:release:everycli v0.7.0`** - sn117 released everycli v0.7.0
+  - published 2026-10-22T01:16:09Z (was everycli v0.6.2)
+- **`sn117:scoring_commit:2026-10-21T23:16:35Z`** - sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -59,8 +47,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn30:burn_drop:0.981` | 30 | BURN_DROP | 2026-10-21T20:17:01Z | sn30 burn fell 0.996 -> 0.981 - miners can earn again |
 | `sn37:burn_drop:0.711` | 37 | BURN_DROP | 2026-10-21T20:17:01Z | sn37 burn fell 1.000 -> 0.711 - miners can earn again |
 | `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
-| `sn8:scoring_commit:2026-10-14T22:26:16Z` | 8 | SCORING_COMMIT | 2026-10-15T00:57:43Z | sn8 commit touches scoring: Sync price updates and challenge loop (#954) |
-| `sn25:scoring_commit:2026-10-15T00:43:14Z` | 25 | SCORING_COMMIT | 2026-10-15T00:57:43Z | sn25 commit touches scoring: Select the startup verified tests and pin the memo's replay edge |
+| `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
+| `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn15:release:v2.5.2` | 15 | RELEASE | 2026-10-15T05:51:38Z | sn15 released v2.5.2 |
 | `sn15:scoring_commit:2026-10-15T05:19:00Z` | 15 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn15 commit touches scoring: Treat a miner's OpenRouter credit 402 as an exhausted run key (#374) |
 | `sn25:scoring_commit:2026-10-15T04:12:02Z` | 25 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn25 commit touches scoring: Update the SN25 timeline with the validator operator's answers |
@@ -295,6 +283,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-21T19:17:18Z` | 78 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn78 commit touches scoring: chore(verification): bind qualified baseline guard sources |
 | `sn81:scoring_commit:2026-10-21T20:16:18Z` | 81 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn81 commit touches scoring: Merge pull request #379 from reliquadotai/fix/evaluation-sandbox-scope |
 | `sn117:release:everycli v0.6.2` | 117 | RELEASE | 2026-10-21T20:17:01Z | sn117 released everycli v0.6.2 |
+| `sn25:release:v2026.10.21-1078195620` | 25 | RELEASE | 2026-10-21T23:30:35Z | sn25 released v2026.10.21-1078195620 |
+| `sn28:release:v0.5.7` | 28 | RELEASE | 2026-10-21T23:30:35Z | sn28 released v0.5.7 |
+| `sn28:scoring_commit:2026-10-21T21:33:17Z` | 28 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.7 (#340) |
+| `sn71:scoring_commit:2026-10-21T22:55:23Z` | 71 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn71 commit touches scoring: Keep restored-score exclusions visible without inventing scores |
+| `sn78:scoring_commit:2026-10-21T20:49:08Z` | 78 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn78 commit touches scoring: Merge pull request #343 from Umi-BitSign/qualify-c6-model-only-reward… |
+| `sn81:scoring_commit:2026-10-21T20:51:36Z` | 81 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn81 commit touches scoring: fix: verify evaluation image against supported sandbox pin |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |

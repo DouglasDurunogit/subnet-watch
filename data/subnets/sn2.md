@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-10-21T23:30:03Z  |  block: 9335151  |  row_status: ok
+snapshot_utc: 2026-10-22T01:56:46Z  |  block: 9335885  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.000613017 TAO (0.16646476635000002 USD), open=True
+- registration cost: 0.000596584 TAO (0.15987854616000002 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 0
-- subnet age: 916.8 days  |  registered at block 2734060
+- subnet age: 916.9 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2792.1188676603065
-- top_miner_usd_day: 2792.1188676603065 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2785.0449869260606
+- top_miner_usd_day: 2785.0449869260606 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,10 +26,10 @@ snapshot_utc: 2026-10-21T23:30:03Z  |  block: 9335151  |  row_status: ok
 - on-chain URL: `https://github.com/DaniLabsAI/subnet`
 - resolved URL: `https://github.com/DaniLabsAI/subnet`
 - status: **ok** 
-- README: 1667 bytes, sha d71409d0a2a6d6c9
+- README: 2054 bytes, sha 555163fcd4a58ced
 - latest release: (none) 
-- last commit: 2026-10-21T19:32:52Z
-- scoring-related commit: Explain the subnet validator purpose and responsibilities 2026-10-21T19:32:52Z
+- last commit: 2026-10-22T01:50:24Z
+- scoring-related commit: Add finalized-chain observer for validator pilot 2026-10-22T01:50:24Z
 
 ## Resources
 
@@ -88,8 +88,13 @@ measurements, without customer prompts or generated responses.
 
 ## Current status
 
-This repository currently contains documentation only. The validator
-implementation, tests, configuration, and operator setup instructions will be
-added as development progresses.
+The first executable pilot is a **read-only chain observer**. It checks finalized
+registered subnet identities, validator state and burn evidence. It does not open wallets,
+submit weights, maintain the existing burn process, or calculate trusted miner
+scores. Authenticated evaluation and live weight submission are still pending.
+
+The CLI provides `status`, `watch` and a `shadow` command that explicitly reports
+scoring as pending. See the [operator guide](docs/operator-pilot.md) for setup,
+host sizing, configuration pins and the boundaries of burn verification.
 
 ```

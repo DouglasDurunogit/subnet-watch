@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-22T07:29:24Z  |  block: 9337548  |  row_status: ok
+snapshot_utc: 2026-10-22T13:13:21Z  |  block: 9339268  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 1.371539142 TAO (360.44048651760005 USD), open=True
+- registration cost: 1.404064602 TAO (362.83837444884006 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
-- subnet age: 718.3 days  |  registered at block 4165565
+- subnet age: 718.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 8061.851690894287** (uid 251) <- the only figure quotable as achievable
-- median_miner_usd_day: 2222.03727097988
-- top_miner_usd_day: 8061.851690894287 (uid 251, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 7890.7518916300405** (uid 251) <- the only figure quotable as achievable
+- median_miner_usd_day: 2169.7713422969546
+- top_miner_usd_day: 7890.7518916300405 (uid 251, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 5  |  gini: 0.28658975767563954  |  top1_share: 0.4569218091924556  |  top10_share: 1.0
+- earners: 5  |  gini: 0.2818391295722633  |  top1_share: 0.4545634890357235  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-22T07:29:24Z  |  block: 9337548  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6694 bytes, sha 8c312d379c5b66cf
+- README: 6903 bytes, sha 8fbf8eb9031ce144
 - latest release: (none) 
-- last commit: 2026-10-21T19:54:10Z
+- last commit: 2026-10-22T09:02:00Z
 - scoring-related commit: Fix category dataset validation and hide retired competition mixes 2026-10-21T14:45:39Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-22T07:29:24Z  |  block: 9337548  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2213.8181 USD/day  |  payback on registration: 0.16 days
+- net margin: 2161.5522 USD/day  |  payback on registration: 0.17 days
 
 ## Score
 
 - gate: **OK** 
-- score: 73.6 (rank 1), confidence 0.85 - hardware requirement unknown
-- components: income 30.43 / freshness 35.0 / resource 11.25 / registration 9.95
-- freshness basis: SCORING_COMMIT 0.6d ago
+- score: 73.5 (rank 1), confidence 0.85 - hardware requirement unknown
+- components: income 30.33 / freshness 35.0 / resource 11.25 / registration 9.94
+- freshness basis: SCORING_COMMIT 0.9d ago
 
 ## On-chain description
 
@@ -222,12 +222,12 @@ Miners can select `MAIN` or `MIX01`–`MIX06` with
 selects MAIN. One ready submission per hotkey is shared across all competitions.
 Each competition uses an explicit category list, 20,000 windows, and 30M whole-document
 input tokens. Acceptance uses the whole mix's token-weighted bootstrap LCB.
-A kingless MIX challenges the latest MAIN king using its own mix and threshold.
+A kingless MIX challenges its fixed starting MAIN king using its own mix and threshold.
+The starting king is pinned once; later MAIN promotions do not move it. After its
+first win, the MIX challenges its own current king. `competitions.json` publishes
+the pinned model as `starting_king`.
 
-At cutover, current rewards are preserved. Each first MIX winner receives 12.5%
-and evicts one oldest legacy reward position; after all six MIXes have winners,
-MAIN receives 25%. Historical math/code/text results remain visible.
-PostgreSQL controls the active configuration; editing `c
+At cutover, current rewards are preserved. Each first MIX winner receives 12
 ```
 
-_(truncated at 6000 of 6694 chars - read the full file at https://github.com/unarbos/teutonic)_
+_(truncated at 6000 of 6903 chars - read the full file at https://github.com/unarbos/teutonic)_

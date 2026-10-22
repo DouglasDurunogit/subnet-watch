@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-22T07:29:24Z, block 9337548
+# ALARMS - generated 2026-10-22T13:13:21Z, block 9339268
 
-window: first_seen in [2026-10-22T06:14:56Z, 2026-10-22T07:29:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-22T11:58:57Z, 2026-10-22T13:13:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,29 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.5.8` | 28 | RELEASE | P1 | 2026-10-22T07:29:56Z | sn28 released v0.5.8 |
-| `sn28:scoring_commit:2026-10-22T06:29:41Z` | 28 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343) |
-| `sn51:scoring_commit:2026-10-22T07:26:30Z` | 51 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem… |
-| `sn67:scoring_commit:2026-10-22T06:46:09Z` | 67 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post1 |
-| `sn71:scoring_commit:2026-10-22T07:15:03Z` | 71 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn71 commit touches scoring: Validate Arena round IDs before store filters |
-| `sn81:scoring_commit:2026-10-22T02:19:36Z` | 81 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn81 commit touches scoring: Merge pull request #383 from reliquadotai/fix/validator-application-on |
-| `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | P2 | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
+| `sn15:scoring_commit:2026-10-22T08:44:01Z` | 15 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn15 commit touches scoring: Validator v3: world packs on oro-env-runtime 4.0.1, a thin world sear… |
+| `sn22:scoring_commit:2026-10-22T09:25:54Z` | 22 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn22 commit touches scoring: fix(validators): a pinned read refused after its task closed is a mis… |
+| `sn25:scoring_commit:2026-10-22T08:30:09Z` | 25 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn25 commit touches scoring: Merge pull request #15 from Ryanmello07/miner/windows-service |
+| `sn51:scoring_commit:2026-10-22T11:56:35Z` | 51 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn51 commit touches scoring: DAH-4817 - [P2] Validator: fresh-node grace, VerifyX EMA hold and reg… |
+| `sn56:scoring_commit:2026-10-22T09:05:28Z` | 56 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn56 commit touches scoring: Fix FP8 LoRA evaluation and Flux cache artifacts (#1403) |
+| `sn67:scoring_commit:2026-10-22T10:47:28Z` | 67 | SCORING_COMMIT | P1 | 2026-10-22T13:13:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post5 |
+| `sn92:release:v1.2.0-rc11` | 92 | RELEASE | P1 | 2026-10-22T13:13:57Z | sn92 released v1.2.0-rc11 |
+| `sn15:readme_task_diff:71fad80912f70006` | 15 | README_TASK_DIFF | P2 | 2026-10-22T13:13:57Z | sn15 README task/scoring sections changed |
 
 ### detail
 
-- **`sn28:release:v0.5.8`** - sn28 released v0.5.8
-  - published 2026-10-22T06:49:43Z (was v0.5.7)
-- **`sn28:scoring_commit:2026-10-22T06:29:41Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343)
+- **`sn15:scoring_commit:2026-10-22T08:44:01Z`** - sn15 commit touches scoring: Validator v3: world packs on oro-env-runtime 4.0.1, a thin world sear…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-22T07:26:30Z`** - sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem…
+- **`sn22:scoring_commit:2026-10-22T09:25:54Z`** - sn22 commit touches scoring: fix(validators): a pinned read refused after its task closed is a mis…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-22T06:46:09Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post1
+- **`sn25:scoring_commit:2026-10-22T08:30:09Z`** - sn25 commit touches scoring: Merge pull request #15 from Ryanmello07/miner/windows-service
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-22T07:15:03Z`** - sn71 commit touches scoring: Validate Arena round IDs before store filters
+- **`sn51:scoring_commit:2026-10-22T11:56:35Z`** - sn51 commit touches scoring: DAH-4817 - [P2] Validator: fresh-node grace, VerifyX EMA hold and reg…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-22T02:19:36Z`** - sn81 commit touches scoring: Merge pull request #383 from reliquadotai/fix/validator-application-on
+- **`sn56:scoring_commit:2026-10-22T09:05:28Z`** - sn56 commit touches scoring: Fix FP8 LoRA evaluation and Flux cache artifacts (#1403)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:readme_task_diff:07cc2c9379a76a69`** - sn78 README task/scoring sections changed
+- **`sn67:scoring_commit:2026-10-22T10:47:28Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post5
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v1.2.0-rc11`** - sn92 released v1.2.0-rc11
+  - published 2026-10-22T08:39:41Z (was v1.2.0-rc10)
+- **`sn15:readme_task_diff:71fad80912f70006`** - sn15 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -57,15 +60,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
 | `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
 | `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn3:scoring_commit:2026-10-15T11:18:15Z` | 3 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn3 commit touches scoring: Optimize evaluator model loading by broadcasting weights to GPU replic |
-| `sn14:scoring_commit:2026-10-15T10:47:18Z` | 14 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn14 commit touches scoring: Resume checkpointed evaluations across GPU worker replacement (#151) |
-| `sn25:scoring_commit:2026-10-15T08:24:53Z` | 25 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn25 commit touches scoring: Verify the begun intent before the receipt outage test's timed poll |
-| `sn51:scoring_commit:2026-10-15T10:55:56Z` | 51 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn51 commit touches scoring: validator: name the reason when a rented node scores 0 because Sysbox… |
-| `sn67:scoring_commit:2026-10-15T02:32:18Z` | 67 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261015.post0 |
-| `sn78:scoring_commit:2026-10-15T08:44:03Z` | 78 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn78 commit touches scoring: Preserve nested history profile aliases when starting rewards |
-| `sn81:scoring_commit:2026-10-14T10:33:36Z` | 81 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn81 commit touches scoring: test(corpus): the signed-sandbox restart e2e serves period-settled tas |
-| `sn89:scoring_commit:2026-10-15T07:37:15Z` | 89 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn89 commit touches scoring: HF warmup dust: not-yet-eligible HF miners hold DUST_WEIGHT for 8 day… |
-| `sn116:scoring_commit:2026-10-15T05:37:59Z` | 116 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn116 commit touches scoring: Expose battery scorer initializer closure as unproved |
 | `sn3:scoring_commit:2026-10-15T12:45:19Z` | 3 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn3 commit touches scoring: Optimize evaluator dataset downloads with authenticated R2 reads and … |
 | `sn10:scoring_commit:2026-10-15T11:54:42Z` | 10 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn10 commit touches scoring: fix(score): charge short completions at full length in tier timing (#… |
 | `sn18:scoring_commit:2026-10-15T11:51:02Z` | 18 | SCORING_COMMIT | 2026-10-15T15:41:01Z | sn18 commit touches scoring: change reward function to win rate (#92) |
@@ -294,6 +288,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
 | `sn117:release:everycli v0.7.0` | 117 | RELEASE | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
 | `sn117:scoring_commit:2026-10-21T23:16:35Z` | 117 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation |
+| `sn28:release:v0.5.8` | 28 | RELEASE | 2026-10-22T07:29:56Z | sn28 released v0.5.8 |
+| `sn28:scoring_commit:2026-10-22T06:29:41Z` | 28 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343) |
+| `sn51:scoring_commit:2026-10-22T07:26:30Z` | 51 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem… |
+| `sn67:scoring_commit:2026-10-22T06:46:09Z` | 67 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post1 |
+| `sn71:scoring_commit:2026-10-22T07:15:03Z` | 71 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn71 commit touches scoring: Validate Arena round IDs before store filters |
+| `sn81:scoring_commit:2026-10-22T02:19:36Z` | 81 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn81 commit touches scoring: Merge pull request #383 from reliquadotai/fix/validator-application-on |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
@@ -306,6 +306,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:2b144e347e430710` | 28 | README_TASK_DIFF | 2026-10-21T20:17:01Z | sn28 README task/scoring sections changed |
+| `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

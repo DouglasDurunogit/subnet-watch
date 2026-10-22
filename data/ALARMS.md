@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-22T01:56:46Z, block 9335885
+# ALARMS - generated 2026-10-22T07:29:24Z, block 9337548
 
-window: first_seen in [2026-10-22T00:42:11Z, 2026-10-22T01:57:11Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-22T06:14:56Z, 2026-10-22T07:29:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:scoring_commit:2026-10-22T01:50:24Z` | 2 | SCORING_COMMIT | P1 | 2026-10-22T01:57:11Z | sn2 commit touches scoring: Add finalized-chain observer for validator pilot |
-| `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | P1 | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
-| `sn117:release:everycli v0.7.0` | 117 | RELEASE | P1 | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
-| `sn117:scoring_commit:2026-10-21T23:16:35Z` | 117 | SCORING_COMMIT | P1 | 2026-10-22T01:57:11Z | sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation |
+| `sn28:release:v0.5.8` | 28 | RELEASE | P1 | 2026-10-22T07:29:56Z | sn28 released v0.5.8 |
+| `sn28:scoring_commit:2026-10-22T06:29:41Z` | 28 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343) |
+| `sn51:scoring_commit:2026-10-22T07:26:30Z` | 51 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem… |
+| `sn67:scoring_commit:2026-10-22T06:46:09Z` | 67 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post1 |
+| `sn71:scoring_commit:2026-10-22T07:15:03Z` | 71 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn71 commit touches scoring: Validate Arena round IDs before store filters |
+| `sn81:scoring_commit:2026-10-22T02:19:36Z` | 81 | SCORING_COMMIT | P1 | 2026-10-22T07:29:56Z | sn81 commit touches scoring: Merge pull request #383 from reliquadotai/fix/validator-application-on |
+| `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | P2 | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:scoring_commit:2026-10-22T01:50:24Z`** - sn2 commit touches scoring: Add finalized-chain observer for validator pilot
+- **`sn28:release:v0.5.8`** - sn28 released v0.5.8
+  - published 2026-10-22T06:49:43Z (was v0.5.7)
+- **`sn28:scoring_commit:2026-10-22T06:29:41Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.10.21-1078274420`** - sn25 released v2026.10.21-1078274420
-  - published 2026-10-22T00:13:00Z (was v2026.10.21-1078195620)
-- **`sn117:release:everycli v0.7.0`** - sn117 released everycli v0.7.0
-  - published 2026-10-22T01:16:09Z (was everycli v0.6.2)
-- **`sn117:scoring_commit:2026-10-21T23:16:35Z`** - sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation
+- **`sn51:scoring_commit:2026-10-22T07:26:30Z`** - sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn67:scoring_commit:2026-10-22T06:46:09Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261022.post1
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-22T07:15:03Z`** - sn71 commit touches scoring: Validate Arena round IDs before store filters
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-22T02:19:36Z`** - sn81 commit touches scoring: Merge pull request #383 from reliquadotai/fix/validator-application-on
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:readme_task_diff:07cc2c9379a76a69`** - sn78 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn118:burn_drop:0.700` | 118 | BURN_DROP | 2026-10-15T05:51:38Z | sn118 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn76:burn_drop:0.979` | 76 | BURN_DROP | 2026-10-15T19:27:45Z | sn76 burn fell 1.000 -> 0.979 - miners can earn again |
 | `sn122:burn_drop:0.727` | 122 | BURN_DROP | 2026-10-15T19:27:45Z | sn122 burn fell 1.000 -> 0.727 - miners can earn again |
 | `sn37:burn_drop:0.713` | 37 | BURN_DROP | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
@@ -49,13 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
 | `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
 | `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn15:release:v2.5.2` | 15 | RELEASE | 2026-10-15T05:51:38Z | sn15 released v2.5.2 |
-| `sn15:scoring_commit:2026-10-15T05:19:00Z` | 15 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn15 commit touches scoring: Treat a miner's OpenRouter credit 402 as an exhausted run key (#374) |
-| `sn25:scoring_commit:2026-10-15T04:12:02Z` | 25 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn25 commit touches scoring: Update the SN25 timeline with the validator operator's answers |
-| `sn51:scoring_commit:2026-10-15T04:20:45Z` | 51 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn51 commit touches scoring: DAH-4071 - [P1] validator: SCORING_EXCLUDED_HOTKEYS, listed hotkeys e… |
-| `sn67:scoring_commit:2026-10-14T14:32:28Z` | 67 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261014.post6 |
-| `sn78:scoring_commit:2026-10-15T05:43:45Z` | 78 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn78 commit touches scoring: Merge pull request #266 from Umi-BitSign/codex/verified-checkpoint-ex… |
-| `sn116:scoring_commit:2026-10-15T04:30:56Z` | 116 | SCORING_COMMIT | 2026-10-15T05:51:38Z | sn116 commit touches scoring: Merge pull request #1371 from carbonphysicsai/codex/scorelab-referenc… |
 | `sn3:scoring_commit:2026-10-15T11:18:15Z` | 3 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn3 commit touches scoring: Optimize evaluator model loading by broadcasting weights to GPU replic |
 | `sn14:scoring_commit:2026-10-15T10:47:18Z` | 14 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn14 commit touches scoring: Resume checkpointed evaluations across GPU worker replacement (#151) |
 | `sn25:scoring_commit:2026-10-15T08:24:53Z` | 25 | SCORING_COMMIT | 2026-10-15T11:20:44Z | sn25 commit touches scoring: Verify the begun intent before the receipt outage test's timed poll |
@@ -289,6 +290,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-21T22:55:23Z` | 71 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn71 commit touches scoring: Keep restored-score exclusions visible without inventing scores |
 | `sn78:scoring_commit:2026-10-21T20:49:08Z` | 78 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn78 commit touches scoring: Merge pull request #343 from Umi-BitSign/qualify-c6-model-only-reward… |
 | `sn81:scoring_commit:2026-10-21T20:51:36Z` | 81 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn81 commit touches scoring: fix: verify evaluation image against supported sandbox pin |
+| `sn2:scoring_commit:2026-10-22T01:50:24Z` | 2 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn2 commit touches scoring: Add finalized-chain observer for validator pilot |
+| `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
+| `sn117:release:everycli v0.7.0` | 117 | RELEASE | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
+| `sn117:scoring_commit:2026-10-21T23:16:35Z` | 117 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |

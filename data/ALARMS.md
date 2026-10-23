@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-23T19:25:40Z, block 9348329
+# ALARMS - generated 2026-10-23T22:31:51Z, block 9349260
 
-window: first_seen in [2026-10-23T18:11:12Z, 2026-10-23T19:26:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-23T21:17:24Z, 2026-10-23T22:32:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn8:scoring_commit:2026-10-23T16:19:53Z` | 8 | SCORING_COMMIT | P1 | 2026-10-23T19:26:12Z | sn8 commit touches scoring: Optimizations for miner statistics (#964) |
-| `sn21:scoring_commit:2026-10-23T07:40:31Z` | 21 | SCORING_COMMIT | P1 | 2026-10-23T19:26:12Z | sn21 commit touches scoring: fix(scoring): only real scored entries count toward the previous-mode… |
-| `sn22:scoring_commit:2026-10-23T11:12:15Z` | 22 | SCORING_COMMIT | P1 | 2026-10-23T19:26:12Z | sn22 commit touches scoring: fix(bot): open a fresh connection for each task API request again, so… |
-| `sn66:release:v2026.10.23.2` | 66 | RELEASE | P1 | 2026-10-23T19:26:12Z | sn66 released v2026.10.23.2 |
-| `sn71:scoring_commit:2026-10-23T19:17:11Z` | 71 | SCORING_COMMIT | P1 | 2026-10-23T19:26:12Z | sn71 commit touches scoring: Bind company-evidence release to reviewed scorer source |
-| `sn120:scoring_commit:2026-10-23T19:17:25Z` | 120 | SCORING_COMMIT | P1 | 2026-10-23T19:26:12Z | sn120 commit touches scoring: Flip-incentive SHADOW docs + audit helper (LIVE still v9/seq7) (#88) |
+| `sn7:burn_drop:0.985` | 7 | BURN_DROP | P0 | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
+| `sn76:burn_drop:0.987` | 76 | BURN_DROP | P0 | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
+| `sn71:scoring_commit:2026-10-23T20:43:00Z` | 71 | SCORING_COMMIT | P1 | 2026-10-23T22:32:24Z | sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies |
+| `sn78:scoring_commit:2026-10-23T21:58:21Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T22:32:24Z | sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs |
+| `sn117:release:everycli v0.7.3` | 117 | RELEASE | P1 | 2026-10-23T22:32:24Z | sn117 released everycli v0.7.3 |
 
 ### detail
 
-- **`sn8:scoring_commit:2026-10-23T16:19:53Z`** - sn8 commit touches scoring: Optimizations for miner statistics (#964)
+- **`sn7:burn_drop:0.985`** - sn7 burn fell 0.991 -> 0.985 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:burn_drop:0.987`** - sn76 burn fell 0.992 -> 0.987 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-10-23T20:43:00Z`** - sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:scoring_commit:2026-10-23T07:40:31Z`** - sn21 commit touches scoring: fix(scoring): only real scored entries count toward the previous-mode…
+- **`sn78:scoring_commit:2026-10-23T21:58:21Z`** - sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn22:scoring_commit:2026-10-23T11:12:15Z`** - sn22 commit touches scoring: fix(bot): open a fresh connection for each task API request again, so…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.10.23.2`** - sn66 released v2026.10.23.2
-  - published 2026-10-23T17:25:32Z (was v2026.10.23)
-- **`sn71:scoring_commit:2026-10-23T19:17:11Z`** - sn71 commit touches scoring: Bind company-evidence release to reviewed scorer source
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-23T19:17:25Z`** - sn120 commit touches scoring: Flip-incentive SHADOW docs + audit helper (LIVE still v9/seq7) (#88)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.7.3`** - sn117 released everycli v0.7.3
+  - published 2026-10-23T19:58:36Z (was everycli v0.7.2)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
@@ -53,13 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
-| `sn25:release:v2026.10.16-1073843780` | 25 | RELEASE | 2026-10-16T21:47:16Z | sn25 released v2026.10.16-1073843780 |
-| `sn25:scoring_commit:2026-10-16T19:01:39Z` | 25 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn25 commit touches scoring: Authenticate finalized chain absence before revoking validator eligib… |
-| `sn71:scoring_commit:2026-10-16T19:32:25Z` | 71 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn71 commit touches scoring: Select verified homepage profile for unbound size citations (#496) |
-| `sn91:scoring_commit:2026-10-16T20:57:49Z` | 91 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn91 commit touches scoring: Merge pull request #370 from TensorLink-AI/docs/miner-admission-guard |
-| `sn92:release:v1.2.0-rc7` | 92 | RELEASE | 2026-10-16T21:47:16Z | sn92 released v1.2.0-rc7 |
-| `sn102:release:v0.7.1` | 102 | RELEASE | 2026-10-16T21:47:16Z | sn102 released v0.7.1 |
-| `sn116:scoring_commit:2026-10-16T20:22:44Z` | 116 | SCORING_COMMIT | 2026-10-16T21:47:16Z | sn116 commit touches scoring: Merge pull request #1408 from carbonphysicsai/codex/gpu-miner-control… |
 | `sn25:release:v2026.10.16-1073891640` | 25 | RELEASE | 2026-10-16T23:59:25Z | sn25 released v2026.10.16-1073891640 |
 | `sn71:scoring_commit:2026-10-16T23:28:33Z` | 71 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface |
 | `sn78:scoring_commit:2026-10-16T22:57:25Z` | 78 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence |
@@ -279,6 +268,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-10-23T11:04:36Z` | 97 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn97 commit touches scoring: feat(eval): fetch the challenger claimed ahead while the current eval… |
 | `sn117:release:everycli v0.7.2` | 117 | RELEASE | 2026-10-23T15:20:36Z | sn117 released everycli v0.7.2 |
 | `sn117:scoring_commit:2026-10-23T10:11:21Z` | 117 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn117 commit touches scoring: docs: record bootstrap artifacts and live validation gates |
+| `sn8:scoring_commit:2026-10-23T16:19:53Z` | 8 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn8 commit touches scoring: Optimizations for miner statistics (#964) |
+| `sn21:scoring_commit:2026-10-23T07:40:31Z` | 21 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn21 commit touches scoring: fix(scoring): only real scored entries count toward the previous-mode… |
+| `sn22:scoring_commit:2026-10-23T11:12:15Z` | 22 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn22 commit touches scoring: fix(bot): open a fresh connection for each task API request again, so… |
+| `sn66:release:v2026.10.23.2` | 66 | RELEASE | 2026-10-23T19:26:12Z | sn66 released v2026.10.23.2 |
+| `sn71:scoring_commit:2026-10-23T19:17:11Z` | 71 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn71 commit touches scoring: Bind company-evidence release to reviewed scorer source |
+| `sn120:scoring_commit:2026-10-23T19:17:25Z` | 120 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn120 commit touches scoring: Flip-incentive SHADOW docs + audit helper (LIVE still v9/seq7) (#88) |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |

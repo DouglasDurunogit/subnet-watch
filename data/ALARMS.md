@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-23T05:09:53Z, block 9344050
+# ALARMS - generated 2026-10-23T10:21:32Z, block 9345608
 
-window: first_seen in [2026-10-23T03:55:24Z, 2026-10-23T05:10:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-23T09:06:57Z, 2026-10-23T10:21:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,49 +9,38 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn104:burn_drop:0.000` | 104 | BURN_DROP | P0 | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v3.0.2: security: patch Python dependenc` | 15 | RELEASE | P1 | 2026-10-23T05:10:24Z | sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388) |
-| `sn21:release:SN21 training data v5 (rules from 30 Oct` | 21 | RELEASE | P1 | 2026-10-23T05:10:24Z | sn21 released SN21 training data v5 (rules from 30 Oct 2026) |
-| `sn28:release:v0.5.10` | 28 | RELEASE | P1 | 2026-10-23T05:10:24Z | sn28 released v0.5.10 |
-| `sn28:scoring_commit:2026-10-23T01:00:34Z` | 28 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10 (#348) |
-| `sn51:release:executor-v1.152` | 51 | RELEASE | P1 | 2026-10-23T05:10:24Z | sn51 released executor-v1.152 |
-| `sn51:scoring_commit:2026-10-23T04:54:13Z` | 51 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn51 commit touches scoring: DAH-5012 - [P0] Validator: a killed filler still exiting no longer fa… |
-| `sn71:scoring_commit:2026-10-23T02:21:04Z` | 71 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn71 commit touches scoring: Carry verified numeric LinkedIn identity into investigator evidence (… |
-| `sn78:scoring_commit:2026-10-23T01:53:59Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn78 commit touches scoring: Handle runtime483 reward eligibility and preserve recovery checks (#35 |
-| `sn81:scoring_commit:2026-10-23T02:34:18Z` | 81 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn81 commit touches scoring: Merge pull request #393 from reliquadotai/fix/rl-reward-error |
-| `sn123:scoring_commit:2026-10-23T03:36:50Z` | 123 | SCORING_COMMIT | P1 | 2026-10-23T05:10:24Z | sn123 commit touches scoring: Update validator.py |
+| `sn12:release:miner-staging-2026-10-23-39921557432-424` | 12 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization |
+| `sn28:release:v0.5.11-dev` | 28 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn28 released v0.5.11-dev |
+| `sn28:scoring_commit:2026-10-23T09:46:31Z` | 28 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350) |
+| `sn46:release:Merge pull request #10 from Subnet46/rel` | 46 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn46 released Merge pull request #10 from Subnet46/release/v0.1.4 |
+| `sn51:scoring_commit:2026-10-23T07:55:50Z` | 51 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting… |
+| `sn67:scoring_commit:2026-10-23T07:34:32Z` | 67 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3 |
+| `sn78:scoring_commit:2026-10-23T10:05:58Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355) |
+| `sn114:scoring_commit:2026-10-23T09:03:37Z` | 114 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint |
 
 ### detail
 
-- **`sn104:burn_drop:0.000`** - sn104 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v3.0.2: security: patch Python dependenc`** - sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388)
-  - published 2026-10-23T04:07:22Z (was v3.0.0)
-- **`sn21:release:SN21 training data v5 (rules from 30 Oct`** - sn21 released SN21 training data v5 (rules from 30 Oct 2026)
-  - published 2026-10-23T02:35:09Z (was SN21 training data v4 (live basket shape))
-- **`sn28:release:v0.5.10`** - sn28 released v0.5.10
-  - published 2026-10-23T01:26:06Z (was v0.5.10-dev)
-- **`sn28:scoring_commit:2026-10-23T01:00:34Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.10 (#348)
+- **`sn12:release:miner-staging-2026-10-23-39921557432-424`** - sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization
+  - published 2026-10-23T08:00:01Z (was miner-staging-2026-10-22-39790980356-423-1: fix: security fixes)
+- **`sn28:release:v0.5.11-dev`** - sn28 released v0.5.11-dev
+  - published 2026-10-23T10:05:13Z (was v0.5.10)
+- **`sn28:scoring_commit:2026-10-23T09:46:31Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.152`** - sn51 released executor-v1.152
-  - published 2026-10-23T04:38:47Z (was executor-v1.151)
-- **`sn51:scoring_commit:2026-10-23T04:54:13Z`** - sn51 commit touches scoring: DAH-5012 - [P0] Validator: a killed filler still exiting no longer fa…
+- **`sn46:release:Merge pull request #10 from Subnet46/rel`** - sn46 released Merge pull request #10 from Subnet46/release/v0.1.4
+  - published 2026-10-23T09:19:16Z (was v0.1.3)
+- **`sn51:scoring_commit:2026-10-23T07:55:50Z`** - sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-23T02:21:04Z`** - sn71 commit touches scoring: Carry verified numeric LinkedIn identity into investigator evidence (…
+- **`sn67:scoring_commit:2026-10-23T07:34:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-23T01:53:59Z`** - sn78 commit touches scoring: Handle runtime483 reward eligibility and preserve recovery checks (#35
+- **`sn78:scoring_commit:2026-10-23T10:05:58Z`** - sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-23T02:34:18Z`** - sn81 commit touches scoring: Merge pull request #393 from reliquadotai/fix/rl-reward-error
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn123:scoring_commit:2026-10-23T03:36:50Z`** - sn123 commit touches scoring: Update validator.py
+- **`sn114:scoring_commit:2026-10-23T09:03:37Z`** - sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn37:burn_drop:0.713` | 37 | BURN_DROP | 2026-10-16T10:10:43Z | sn37 burn fell 1.000 -> 0.713 - miners can earn again |
-| `sn76:burn_drop:0.961` | 76 | BURN_DROP | 2026-10-16T10:10:43Z | sn76 burn fell 0.999 -> 0.961 - miners can earn again |
 | `sn100:burn_drop:0.705` | 100 | BURN_DROP | 2026-10-16T18:46:43Z | sn100 burn fell 1.000 -> 0.705 - miners can earn again |
 | `sn97:burn_drop:0.600` | 97 | BURN_DROP | 2026-10-16T21:47:16Z | sn97 burn fell 1.000 -> 0.600 - miners can earn again |
 | `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
@@ -69,18 +58,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
-| `sn25:release:v2026.10.15-1073121200` | 25 | RELEASE | 2026-10-16T05:47:49Z | sn25 released v2026.10.15-1073121200 |
-| `sn51:scoring_commit:2026-10-16T02:57:37Z` | 51 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn51 commit touches scoring: DAH-3980 - Validator: new loopback volumes on a v2 plugin installed b… |
-| `sn71:scoring_commit:2026-10-16T04:40:16Z` | 71 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn71 commit touches scoring: Verify failed fallback stays an infrastructure error |
-| `sn78:scoring_commit:2026-10-16T03:44:01Z` | 78 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn78 commit touches scoring: Reuse verified semantics for authenticated sealed package copies |
-| `sn81:scoring_commit:2026-10-15T10:03:46Z` | 81 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn81 commit touches scoring: fix(corpus): serve signed jobs from the split validator's front |
-| `sn91:scoring_commit:2026-10-16T02:59:40Z` | 91 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn91 commit touches scoring: Pin the best-bench round in the receipt index so the scoreboard's bes… |
-| `sn94:scoring_commit:2026-10-16T03:19:42Z` | 94 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn94 commit touches scoring: Merge pull request #281 from cathedralai/docs/sn94-snp-miner-dd7182c |
-| `sn116:scoring_commit:2026-10-16T04:42:09Z` | 116 | SCORING_COMMIT | 2026-10-16T05:47:49Z | sn116 commit touches scoring: Merge pull request #1401 from carbonphysicsai/codex/scorelab-guard419… |
-| `sn51:scoring_commit:2026-10-16T06:29:35Z` | 51 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn51 commit touches scoring: DAH-4362 - [P3] Validator: remove settings unchanged for more than 3 … |
-| `sn71:scoring_commit:2026-10-16T09:32:28Z` | 71 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn71 commit touches scoring: Merge pull request #489 from leadpoet/fix/validator-run-recovery-scop… |
-| `sn78:scoring_commit:2026-10-16T04:36:39Z` | 78 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn78 commit touches scoring: Add read-only retained miner revision preflight |
-| `sn116:scoring_commit:2026-10-16T07:49:42Z` | 116 | SCORING_COMMIT | 2026-10-16T10:10:43Z | sn116 commit touches scoring: Merge pull request #1404 from carbonphysicsai/codex/scorelab-guarded4… |
+| `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn1:release:v4.4.13` | 1 | RELEASE | 2026-10-16T14:58:20Z | sn1 released v4.4.13 |
 | `sn21:scoring_commit:2026-10-16T12:06:08Z` | 21 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a… |
 | `sn51:scoring_commit:2026-10-16T14:00:51Z` | 51 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend… |
@@ -290,6 +268,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-22T18:59:12Z` | 71 | SCORING_COMMIT | 2026-10-22T21:32:31Z | sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr… |
 | `sn28:release:v0.5.10-dev` | 28 | RELEASE | 2026-10-23T00:12:40Z | sn28 released v0.5.10-dev |
 | `sn28:scoring_commit:2026-10-22T23:53:16Z` | 28 | SCORING_COMMIT | 2026-10-23T00:12:40Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10-dev (#347) |
+| `sn15:release:v3.0.2: security: patch Python dependenc` | 15 | RELEASE | 2026-10-23T05:10:24Z | sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388) |
+| `sn21:release:SN21 training data v5 (rules from 30 Oct` | 21 | RELEASE | 2026-10-23T05:10:24Z | sn21 released SN21 training data v5 (rules from 30 Oct 2026) |
+| `sn28:release:v0.5.10` | 28 | RELEASE | 2026-10-23T05:10:24Z | sn28 released v0.5.10 |
+| `sn28:scoring_commit:2026-10-23T01:00:34Z` | 28 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10 (#348) |
+| `sn51:release:executor-v1.152` | 51 | RELEASE | 2026-10-23T05:10:24Z | sn51 released executor-v1.152 |
+| `sn51:scoring_commit:2026-10-23T04:54:13Z` | 51 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn51 commit touches scoring: DAH-5012 - [P0] Validator: a killed filler still exiting no longer fa… |
+| `sn71:scoring_commit:2026-10-23T02:21:04Z` | 71 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn71 commit touches scoring: Carry verified numeric LinkedIn identity into investigator evidence (… |
+| `sn78:scoring_commit:2026-10-23T01:53:59Z` | 78 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn78 commit touches scoring: Handle runtime483 reward eligibility and preserve recovery checks (#35 |
+| `sn81:scoring_commit:2026-10-23T02:34:18Z` | 81 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn81 commit touches scoring: Merge pull request #393 from reliquadotai/fix/rl-reward-error |
+| `sn123:scoring_commit:2026-10-23T03:36:50Z` | 123 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn123 commit touches scoring: Update validator.py |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |

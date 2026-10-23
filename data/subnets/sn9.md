@@ -1,20 +1,20 @@
 # sn9 - iota (ι)
 
-snapshot_utc: 2026-10-23T10:21:32Z  |  block: 9345608  |  row_status: ok
+snapshot_utc: 2026-10-23T15:20:11Z  |  block: 9347102  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.13031500000000001 USD), open=True
+- registration cost: 0.0005 TAO (0.12978 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 14  |  free: 0
-- subnet age: 1091.1 days  |  registered at block 1489797
+- subnet age: 1091.3 days  |  registered at block 1489797
 - weights_version: 4062  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 11090.083626935966** (uid 171) <- the only figure quotable as achievable
-- median_miner_usd_day: 9206.474885455418
-- top_miner_usd_day: 11090.083626935966 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 11117.373263772568** (uid 171) <- the only figure quotable as achievable
+- median_miner_usd_day: 9229.129480733596
+- top_miner_usd_day: 11117.373263772568 (uid 171, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-10-23T10:21:32Z  |  block: 9345608  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 11081.8644 USD/day  |  payback on registration: 0.0 days
+- net margin: 11109.1541 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
 - score: 47.4 (rank 42), confidence 0.6 - hardware requirement unknown; income rests on 1 competitive miner (n<=2: not a distribution)
-- components: income 36.79 / freshness 21.0 / resource 11.25 / registration 10.0
+- components: income 36.8 / freshness 21.0 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 8d ago
 
 ## On-chain description

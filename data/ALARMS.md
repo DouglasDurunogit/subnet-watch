@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-23T10:21:32Z, block 9345608
+# ALARMS - generated 2026-10-23T15:20:11Z, block 9347102
 
-window: first_seen in [2026-10-23T09:06:57Z, 2026-10-23T10:21:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-23T14:05:36Z, 2026-10-23T15:20:36Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,57 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:miner-staging-2026-10-23-39921557432-424` | 12 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization |
-| `sn28:release:v0.5.11-dev` | 28 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn28 released v0.5.11-dev |
-| `sn28:scoring_commit:2026-10-23T09:46:31Z` | 28 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350) |
-| `sn46:release:Merge pull request #10 from Subnet46/rel` | 46 | RELEASE | P1 | 2026-10-23T10:21:57Z | sn46 released Merge pull request #10 from Subnet46/release/v0.1.4 |
-| `sn51:scoring_commit:2026-10-23T07:55:50Z` | 51 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting… |
-| `sn67:scoring_commit:2026-10-23T07:34:32Z` | 67 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3 |
-| `sn78:scoring_commit:2026-10-23T10:05:58Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355) |
-| `sn114:scoring_commit:2026-10-23T09:03:37Z` | 114 | SCORING_COMMIT | P1 | 2026-10-23T10:21:57Z | sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint |
+| `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | P0 | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
+| `sn28:release:v0.5.11` | 28 | RELEASE | P1 | 2026-10-23T15:20:36Z | sn28 released v0.5.11 |
+| `sn28:scoring_commit:2026-10-23T11:46:00Z` | 28 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11 (#351) |
+| `sn46:release:v0.1.4` | 46 | RELEASE | P1 | 2026-10-23T15:20:36Z | sn46 released v0.1.4 |
+| `sn51:release:lium-protocol-v1.16.0` | 51 | RELEASE | P1 | 2026-10-23T15:20:36Z | sn51 released lium-protocol-v1.16.0 |
+| `sn51:scoring_commit:2026-10-23T14:38:12Z` | 51 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn51 commit touches scoring: DAH-3476 - [P0] libdmcompverify.so: add sm_75 kernel so Tesla T4 pass… |
+| `sn56:scoring_commit:2026-10-23T13:35:41Z` | 56 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn56 commit touches scoring: Sunset environment tournaments and evaluation runtime (#1397) |
+| `sn66:release:v2026.10.23` | 66 | RELEASE | P1 | 2026-10-23T15:20:36Z | sn66 released v2026.10.23 |
+| `sn71:scoring_commit:2026-10-23T12:24:04Z` | 71 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn71 commit touches scoring: Merge pull request #718 from leadpoet/fix/oct23-unvalidated-tool-repl… |
+| `sn78:scoring_commit:2026-10-23T12:32:14Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn78 commit touches scoring: Discover proved reward runtimes automatically across upgrades (#358) |
+| `sn89:scoring_commit:2026-10-23T13:43:17Z` | 89 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn89 commit touches scoring: Keep-alive floor for fresh and active miners from 2026-10-23 16:00 UTC |
+| `sn92:scoring_commit:2026-10-23T11:35:56Z` | 92 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn92 commit touches scoring: eval v5.1: public format doc, reference scorer and 300-item dev set (… |
+| `sn97:scoring_commit:2026-10-23T11:04:36Z` | 97 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn97 commit touches scoring: feat(eval): fetch the challenger claimed ahead while the current eval… |
+| `sn117:release:everycli v0.7.2` | 117 | RELEASE | P1 | 2026-10-23T15:20:36Z | sn117 released everycli v0.7.2 |
+| `sn117:scoring_commit:2026-10-23T10:11:21Z` | 117 | SCORING_COMMIT | P1 | 2026-10-23T15:20:36Z | sn117 commit touches scoring: docs: record bootstrap artifacts and live validation gates |
+| `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | P2 | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn12:release:miner-staging-2026-10-23-39921557432-424`** - sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization
-  - published 2026-10-23T08:00:01Z (was miner-staging-2026-10-22-39790980356-423-1: fix: security fixes)
-- **`sn28:release:v0.5.11-dev`** - sn28 released v0.5.11-dev
-  - published 2026-10-23T10:05:13Z (was v0.5.10)
-- **`sn28:scoring_commit:2026-10-23T09:46:31Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350)
+- **`sn6:weights_version_bump:4000`** - sn6 weights_version 3000 -> 4000
+  - Owner raised the version gate; the chain now rejects weights from un-upgraded validators. Near-certain breaking scoring change.
+- **`sn28:release:v0.5.11`** - sn28 released v0.5.11
+  - published 2026-10-23T12:07:08Z (was v0.5.11-dev)
+- **`sn28:scoring_commit:2026-10-23T11:46:00Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.11 (#351)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn46:release:Merge pull request #10 from Subnet46/rel`** - sn46 released Merge pull request #10 from Subnet46/release/v0.1.4
-  - published 2026-10-23T09:19:16Z (was v0.1.3)
-- **`sn51:scoring_commit:2026-10-23T07:55:50Z`** - sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting…
+- **`sn46:release:v0.1.4`** - sn46 released v0.1.4
+  - published 2026-10-23T10:22:00Z (was Merge pull request #10 from Subnet46/release/v0.1.4)
+- **`sn51:release:lium-protocol-v1.16.0`** - sn51 released lium-protocol-v1.16.0
+  - published 2026-10-23T11:38:10Z (was executor-v1.152)
+- **`sn51:scoring_commit:2026-10-23T14:38:12Z`** - sn51 commit touches scoring: DAH-3476 - [P0] libdmcompverify.so: add sm_75 kernel so Tesla T4 pass…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-23T07:34:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3
+- **`sn56:scoring_commit:2026-10-23T13:35:41Z`** - sn56 commit touches scoring: Sunset environment tournaments and evaluation runtime (#1397)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-23T10:05:58Z`** - sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355)
+- **`sn66:release:v2026.10.23`** - sn66 released v2026.10.23
+  - published 2026-10-23T14:33:57Z (was v2026.10.22.2)
+- **`sn71:scoring_commit:2026-10-23T12:24:04Z`** - sn71 commit touches scoring: Merge pull request #718 from leadpoet/fix/oct23-unvalidated-tool-repl…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-23T09:03:37Z`** - sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint
+- **`sn78:scoring_commit:2026-10-23T12:32:14Z`** - sn78 commit touches scoring: Discover proved reward runtimes automatically across upgrades (#358)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-10-23T13:43:17Z`** - sn89 commit touches scoring: Keep-alive floor for fresh and active miners from 2026-10-23 16:00 UTC
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:scoring_commit:2026-10-23T11:35:56Z`** - sn92 commit touches scoring: eval v5.1: public format doc, reference scorer and 300-item dev set (…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-10-23T11:04:36Z`** - sn97 commit touches scoring: feat(eval): fetch the challenger claimed ahead while the current eval…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.7.2`** - sn117 released everycli v0.7.2
+  - published 2026-10-23T13:46:34Z (was everycli v0.7.1)
+- **`sn117:scoring_commit:2026-10-23T10:11:21Z`** - sn117 commit touches scoring: docs: record bootstrap artifacts and live validation gates
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:readme_task_diff:cb1456ccf5f760fc`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -59,16 +83,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn1:release:v4.4.13` | 1 | RELEASE | 2026-10-16T14:58:20Z | sn1 released v4.4.13 |
-| `sn21:scoring_commit:2026-10-16T12:06:08Z` | 21 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn21 commit touches scoring: scoring: an entry without a measurable efficiency is scored on cost a… |
-| `sn51:scoring_commit:2026-10-16T14:00:51Z` | 51 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn51 commit touches scoring: DAH-4123 - Validator: split build-log streams into frames the backend… |
-| `sn67:scoring_commit:2026-10-16T11:32:32Z` | 67 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261016.post1 |
-| `sn78:scoring_commit:2026-10-16T13:20:49Z` | 78 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn78 commit touches scoring: Adopt qualified reward runtimes without resetting signed coverage |
-| `sn90:scoring_commit:2026-10-16T10:16:08Z` | 90 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn90 commit touches scoring: docs(subnet): README model lists + validator stats sync |
-| `sn92:scoring_commit:2026-10-16T10:25:45Z` | 92 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn92 commit touches scoring: engine track: protect pending challenger, same-cycle fresh-session co… |
-| `sn100:scoring_commit:2026-10-16T13:16:02Z` | 100 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn100 commit touches scoring: fix(challenges): raise get_weights timeout to 180 seconds (#318) |
-| `sn114:scoring_commit:2026-10-16T11:35:50Z` | 114 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn114 commit touches scoring: update scoring.md docs |
-| `sn116:scoring_commit:2026-10-16T10:36:39Z` | 116 | SCORING_COMMIT | 2026-10-16T14:58:20Z | sn116 commit touches scoring: Merge pull request #1405 from carbonphysicsai/codex/scorelab-guarded4… |
 | `sn71:scoring_commit:2026-10-16T18:40:01Z` | 71 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn71 commit touches scoring: Allow selected frozen executions in isolated shadow verification (#493 |
 | `sn92:release:v1.2.0-rc6` | 92 | RELEASE | 2026-10-16T18:46:43Z | sn92 released v1.2.0-rc6 |
 | `sn102:scoring_commit:2026-10-15T19:51:21Z` | 102 | SCORING_COMMIT | 2026-10-16T18:46:43Z | sn102 commit touches scoring: ✅ test(validator): after a skipped round, stale weights take the fall… |
@@ -278,7 +292,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-23T01:53:59Z` | 78 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn78 commit touches scoring: Handle runtime483 reward eligibility and preserve recovery checks (#35 |
 | `sn81:scoring_commit:2026-10-23T02:34:18Z` | 81 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn81 commit touches scoring: Merge pull request #393 from reliquadotai/fix/rl-reward-error |
 | `sn123:scoring_commit:2026-10-23T03:36:50Z` | 123 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn123 commit touches scoring: Update validator.py |
-| `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
+| `sn12:release:miner-staging-2026-10-23-39921557432-424` | 12 | RELEASE | 2026-10-23T10:21:57Z | sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization |
+| `sn28:release:v0.5.11-dev` | 28 | RELEASE | 2026-10-23T10:21:57Z | sn28 released v0.5.11-dev |
+| `sn28:scoring_commit:2026-10-23T09:46:31Z` | 28 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350) |
+| `sn46:release:Merge pull request #10 from Subnet46/rel` | 46 | RELEASE | 2026-10-23T10:21:57Z | sn46 released Merge pull request #10 from Subnet46/release/v0.1.4 |
+| `sn51:scoring_commit:2026-10-23T07:55:50Z` | 51 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting… |
+| `sn67:scoring_commit:2026-10-23T07:34:32Z` | 67 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3 |
+| `sn78:scoring_commit:2026-10-23T10:05:58Z` | 78 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355) |
+| `sn114:scoring_commit:2026-10-23T09:03:37Z` | 114 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |

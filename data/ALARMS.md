@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-22T21:32:08Z, block 9341761
+# ALARMS - generated 2026-10-23T00:12:08Z, block 9342561
 
-window: first_seen in [2026-10-22T20:17:31Z, 2026-10-22T21:32:31Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-22T22:57:40Z, 2026-10-23T00:12:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:burn_drop:0.986` | 7 | BURN_DROP | P0 | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
-| `sn13:release:Release v1.18.75` | 13 | RELEASE | P1 | 2026-10-22T21:32:31Z | sn13 released Release v1.18.75 |
-| `sn66:release:v2026.10.22.2` | 66 | RELEASE | P1 | 2026-10-22T21:32:31Z | sn66 released v2026.10.22.2 |
-| `sn71:scoring_commit:2026-10-22T18:59:12Z` | 71 | SCORING_COMMIT | P1 | 2026-10-22T21:32:31Z | sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr… |
+| `sn81:burn_drop:0.810` | 81 | BURN_DROP | P0 | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
+| `sn28:release:v0.5.10-dev` | 28 | RELEASE | P1 | 2026-10-23T00:12:40Z | sn28 released v0.5.10-dev |
+| `sn28:scoring_commit:2026-10-22T23:53:16Z` | 28 | SCORING_COMMIT | P1 | 2026-10-23T00:12:40Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10-dev (#347) |
 
 ### detail
 
-- **`sn7:burn_drop:0.986`** - sn7 burn fell 0.990 -> 0.986 - miners can earn again
+- **`sn81:burn_drop:0.810`** - sn81 burn fell 0.996 -> 0.810 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn13:release:Release v1.18.75`** - sn13 released Release v1.18.75
-  - published 2026-10-22T20:51:59Z (was Release v1.18.74)
-- **`sn66:release:v2026.10.22.2`** - sn66 released v2026.10.22.2
-  - published 2026-10-22T21:25:46Z (was v2026.10.21.2)
-- **`sn71:scoring_commit:2026-10-22T18:59:12Z`** - sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr…
+- **`sn28:release:v0.5.10-dev`** - sn28 released v0.5.10-dev
+  - published 2026-10-23T00:07:35Z (was v0.5.8)
+- **`sn28:scoring_commit:2026-10-22T23:53:16Z`** - sn28 commit touches scoring: chore(release): gm-miner 0.5.10-dev (#347)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -46,15 +43,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
 | `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
 | `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn7:release:release-20261015-220818: Quote the min f` | 7 | RELEASE | 2026-10-15T22:39:09Z | sn7 released release-20261015-220818: Quote the min for alpha pairs from each candidate's floor (#775) |
-| `sn7:scoring_commit:2026-10-15T21:59:48Z` | 7 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn7 commit touches scoring: Quote /rate from held miner states and a lazy market memo (#774) |
-| `sn25:release:v2026.10.15-1072937160` | 25 | RELEASE | 2026-10-15T22:39:09Z | sn25 released v2026.10.15-1072937160 |
-| `sn71:scoring_commit:2026-10-15T20:53:09Z` | 71 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn71 commit touches scoring: Fix Arena progression lock order and close legacy scoring RPC access |
-| `sn78:scoring_commit:2026-10-15T19:35:00Z` | 78 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn78 commit touches scoring: Overlap retained history loading with bounded native verification |
-| `sn92:release:v1.2.0-rc4` | 92 | RELEASE | 2026-10-15T22:39:09Z | sn92 released v1.2.0-rc4 |
-| `sn92:scoring_commit:2026-10-15T19:21:22Z` | 92 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn92 commit touches scoring: probe: open each UID's window at the validator's first send to it; la… |
-| `sn116:scoring_commit:2026-10-15T20:45:43Z` | 116 | SCORING_COMMIT | 2026-10-15T22:39:09Z | sn116 commit touches scoring: Verify persisted contract record through submission guards |
-| `sn117:release:everycli v0.5.7` | 117 | RELEASE | 2026-10-15T22:39:09Z | sn117 released everycli v0.5.7 |
+| `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
 | `sn25:release:v2026.10.15-1073082520` | 25 | RELEASE | 2026-10-16T00:49:24Z | sn25 released v2026.10.15-1073082520 |
 | `sn37:scoring_commit:2026-10-16T00:31:00Z` | 37 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn37 commit touches scoring: fix(miner): support reviewed mainnet runtime479 (#30) |
 | `sn116:scoring_commit:2026-10-16T00:40:42Z` | 116 | SCORING_COMMIT | 2026-10-16T00:49:24Z | sn116 commit touches scoring: Merge pull request #1393 from carbonphysicsai/codex/scorelab-guarded4… |
@@ -274,6 +263,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:scoring_commit:2026-10-22T14:48:07Z` | 76 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn76 commit touches scoring: Allow manual CI verification after repository recovery (#15) |
 | `sn81:scoring_commit:2026-10-22T14:26:47Z` | 81 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn81 commit touches scoring: Merge pull request #387: evaluation feed destination safeguards |
 | `sn117:release:everycli v0.7.1` | 117 | RELEASE | 2026-10-22T18:06:27Z | sn117 released everycli v0.7.1 |
+| `sn13:release:Release v1.18.75` | 13 | RELEASE | 2026-10-22T21:32:31Z | sn13 released Release v1.18.75 |
+| `sn66:release:v2026.10.22.2` | 66 | RELEASE | 2026-10-22T21:32:31Z | sn66 released v2026.10.22.2 |
+| `sn71:scoring_commit:2026-10-22T18:59:12Z` | 71 | SCORING_COMMIT | 2026-10-22T21:32:31Z | sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr… |
 | `sn37:readme_task_diff:8fd038bdd4d28f3e` | 37 | README_TASK_DIFF | 2026-10-16T00:49:24Z | sn37 README task/scoring sections changed |
 | `sn90:readme_task_diff:31c270cb714e86fe` | 90 | README_TASK_DIFF | 2026-10-16T14:58:20Z | sn90 README task/scoring sections changed |
 | `sn121:readme_task_diff:3c2e2790982a3aff` | 121 | README_TASK_DIFF | 2026-10-16T18:46:43Z | sn121 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-24T01:10:10Z, block 9350052
+# ALARMS - generated 2026-10-24T06:10:29Z, block 9351553
 
-window: first_seen in [2026-10-23T23:55:35Z, 2026-10-24T01:10:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-24T04:56:04Z, 2026-10-24T06:11:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-10-24T01:08:52Z` | 71 | SCORING_COMMIT | P1 | 2026-10-24T01:10:35Z | sn71 commit touches scoring: Bind headcount release to committed protected scorer source |
-| `sn78:scoring_commit:2026-10-23T23:09:56Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T01:10:35Z | sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff |
-| `sn117:release:everycli v0.7.4` | 117 | RELEASE | P1 | 2026-10-24T01:10:35Z | sn117 released everycli v0.7.4 |
+| `sn2:scoring_commit:2026-10-24T01:34:32Z` | 2 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn2 commit touches scoring: Document localnet validator operation and production boundary |
+| `sn62:release:v0.3.12` | 62 | RELEASE | P1 | 2026-10-24T06:11:04Z | sn62 released v0.3.12 |
+| `sn71:scoring_commit:2026-10-24T04:51:31Z` | 71 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness |
+| `sn78:scoring_commit:2026-10-24T03:49:11Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-… |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-10-24T01:08:52Z`** - sn71 commit touches scoring: Bind headcount release to committed protected scorer source
+- **`sn2:scoring_commit:2026-10-24T01:34:32Z`** - sn2 commit touches scoring: Document localnet validator operation and production boundary
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-23T23:09:56Z`** - sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff
+- **`sn62:release:v0.3.12`** - sn62 released v0.3.12
+  - published 2026-10-24T05:18:19Z (was v0.3.11)
+- **`sn71:scoring_commit:2026-10-24T04:51:31Z`** - sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.7.4`** - sn117 released everycli v0.7.4
-  - published 2026-10-24T00:27:59Z (was everycli v0.7.3)
+- **`sn78:scoring_commit:2026-10-24T03:49:11Z`** - sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -45,10 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
-| `sn25:release:v2026.10.16-1074037020` | 25 | RELEASE | 2026-10-17T04:17:15Z | sn25 released v2026.10.16-1074037020 |
-| `sn71:scoring_commit:2026-10-17T01:24:18Z` | 71 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn71 commit touches scoring: Merge current main and validate selected judge runtime in training ex… |
-| `sn91:scoring_commit:2026-10-17T01:20:18Z` | 91 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn91 commit touches scoring: fix(promotion): anchor the trainer's reign clock where validators res… |
-| `sn92:release:v1.2.0-rc7.post1` | 92 | RELEASE | 2026-10-17T04:17:15Z | sn92 released v1.2.0-rc7.post1 |
 | `sn15:release:v2.5.5: Bound validator reads of sandbox` | 15 | RELEASE | 2026-10-17T08:43:24Z | sn15 released v2.5.5: Bound validator reads of sandbox output files (#378) |
 | `sn15:scoring_commit:2026-10-17T07:52:59Z` | 15 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn15 commit touches scoring: Bound validator reads of sandbox output files (#378) |
 | `sn25:release:v2026.10.16-1074191560` | 25 | RELEASE | 2026-10-17T08:43:24Z | sn25 released v2026.10.16-1074191560 |
@@ -268,6 +267,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-23T20:43:00Z` | 71 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies |
 | `sn78:scoring_commit:2026-10-23T21:58:21Z` | 78 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs |
 | `sn117:release:everycli v0.7.3` | 117 | RELEASE | 2026-10-23T22:32:24Z | sn117 released everycli v0.7.3 |
+| `sn71:scoring_commit:2026-10-24T01:08:52Z` | 71 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn71 commit touches scoring: Bind headcount release to committed protected scorer source |
+| `sn78:scoring_commit:2026-10-23T23:09:56Z` | 78 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff |
+| `sn117:release:everycli v0.7.4` | 117 | RELEASE | 2026-10-24T01:10:35Z | sn117 released everycli v0.7.4 |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |

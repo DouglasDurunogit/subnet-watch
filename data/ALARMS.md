@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-24T06:10:29Z, block 9351553
+# ALARMS - generated 2026-10-24T11:23:11Z, block 9353117
 
-window: first_seen in [2026-10-24T04:56:04Z, 2026-10-24T06:11:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-24T10:08:46Z, 2026-10-24T11:23:46Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:scoring_commit:2026-10-24T01:34:32Z` | 2 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn2 commit touches scoring: Document localnet validator operation and production boundary |
-| `sn62:release:v0.3.12` | 62 | RELEASE | P1 | 2026-10-24T06:11:04Z | sn62 released v0.3.12 |
-| `sn71:scoring_commit:2026-10-24T04:51:31Z` | 71 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness |
-| `sn78:scoring_commit:2026-10-24T03:49:11Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T06:11:04Z | sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-… |
+| `sn21:scoring_commit:2026-10-24T06:28:19Z` | 21 | SCORING_COMMIT | P1 | 2026-10-24T11:23:46Z | sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the … |
+| `sn62:release:v0.3.13` | 62 | RELEASE | P1 | 2026-10-24T11:23:46Z | sn62 released v0.3.13 |
+| `sn81:scoring_commit:2026-10-24T10:32:01Z` | 81 | SCORING_COMMIT | P1 | 2026-10-24T11:23:46Z | sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners |
 
 ### detail
 
-- **`sn2:scoring_commit:2026-10-24T01:34:32Z`** - sn2 commit touches scoring: Document localnet validator operation and production boundary
+- **`sn21:scoring_commit:2026-10-24T06:28:19Z`** - sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.12`** - sn62 released v0.3.12
-  - published 2026-10-24T05:18:19Z (was v0.3.11)
-- **`sn71:scoring_commit:2026-10-24T04:51:31Z`** - sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-24T03:49:11Z`** - sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-…
+- **`sn62:release:v0.3.13`** - sn62 released v0.3.13
+  - published 2026-10-24T09:20:00Z (was v0.3.12)
+- **`sn81:scoring_commit:2026-10-24T10:32:01Z`** - sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn120:mechanism_added:1to2` | 120 | MECHANISM_ADDED | 2026-10-17T08:43:24Z | sn120 now runs 2 incentive mechanisms (was 1) |
 | `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
@@ -48,16 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
-| `sn15:release:v2.5.5: Bound validator reads of sandbox` | 15 | RELEASE | 2026-10-17T08:43:24Z | sn15 released v2.5.5: Bound validator reads of sandbox output files (#378) |
-| `sn15:scoring_commit:2026-10-17T07:52:59Z` | 15 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn15 commit touches scoring: Bound validator reads of sandbox output files (#378) |
-| `sn25:release:v2026.10.16-1074191560` | 25 | RELEASE | 2026-10-17T08:43:24Z | sn25 released v2026.10.16-1074191560 |
-| `sn37:scoring_commit:2026-10-17T05:44:48Z` | 37 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn37 commit touches scoring: fix(miner): enable reviewed runtime479 funding (#31) |
-| `sn51:scoring_commit:2026-10-17T08:20:58Z` | 51 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn51 commit touches scoring: DAH-4280 - [P0] Validator: cross-check the reported GPU count against… |
-| `sn71:scoring_commit:2026-10-17T06:44:45Z` | 71 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn71 commit touches scoring: fix(arena): retain verified source redirects for fallback (#519) |
-| `sn78:scoring_commit:2026-10-17T06:12:23Z` | 78 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn78 commit touches scoring: Merge pull request #294 from Umi-BitSign/codex/c6-portable-byte-verif… |
-| `sn92:release:v1.2.0-rc7.post3` | 92 | RELEASE | 2026-10-17T08:43:24Z | sn92 released v1.2.0-rc7.post3 |
-| `sn108:scoring_commit:2026-10-16T09:36:40Z` | 108 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn108 commit touches scoring: Validators don't pay records the server marks banned (coldkey banned … |
-| `sn116:scoring_commit:2026-10-17T04:56:00Z` | 116 | SCORING_COMMIT | 2026-10-17T08:43:24Z | sn116 commit touches scoring: Merge pull request #1416 from carbonphysicsai/codex/s5-challenge-sele… |
 | `sn21:scoring_commit:2026-10-17T11:22:46Z` | 21 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry… |
 | `sn25:release:v2026.10.17-1074370910` | 25 | RELEASE | 2026-10-17T12:28:43Z | sn25 released v2026.10.17-1074370910 |
 | `sn51:release:executor-v1.142` | 51 | RELEASE | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
@@ -270,7 +256,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-24T01:08:52Z` | 71 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn71 commit touches scoring: Bind headcount release to committed protected scorer source |
 | `sn78:scoring_commit:2026-10-23T23:09:56Z` | 78 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff |
 | `sn117:release:everycli v0.7.4` | 117 | RELEASE | 2026-10-24T01:10:35Z | sn117 released everycli v0.7.4 |
-| `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
+| `sn2:scoring_commit:2026-10-24T01:34:32Z` | 2 | SCORING_COMMIT | 2026-10-24T06:11:04Z | sn2 commit touches scoring: Document localnet validator operation and production boundary |
+| `sn62:release:v0.3.12` | 62 | RELEASE | 2026-10-24T06:11:04Z | sn62 released v0.3.12 |
+| `sn71:scoring_commit:2026-10-24T04:51:31Z` | 71 | SCORING_COMMIT | 2026-10-24T06:11:04Z | sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness |
+| `sn78:scoring_commit:2026-10-24T03:49:11Z` | 78 | SCORING_COMMIT | 2026-10-24T06:11:04Z | sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-… |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |

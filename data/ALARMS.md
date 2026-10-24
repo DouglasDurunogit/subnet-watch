@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-23T22:31:51Z, block 9349260
+# ALARMS - generated 2026-10-24T01:10:10Z, block 9350052
 
-window: first_seen in [2026-10-23T21:17:24Z, 2026-10-23T22:32:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-23T23:55:35Z, 2026-10-24T01:10:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:burn_drop:0.985` | 7 | BURN_DROP | P0 | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
-| `sn76:burn_drop:0.987` | 76 | BURN_DROP | P0 | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
-| `sn71:scoring_commit:2026-10-23T20:43:00Z` | 71 | SCORING_COMMIT | P1 | 2026-10-23T22:32:24Z | sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies |
-| `sn78:scoring_commit:2026-10-23T21:58:21Z` | 78 | SCORING_COMMIT | P1 | 2026-10-23T22:32:24Z | sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs |
-| `sn117:release:everycli v0.7.3` | 117 | RELEASE | P1 | 2026-10-23T22:32:24Z | sn117 released everycli v0.7.3 |
+| `sn71:scoring_commit:2026-10-24T01:08:52Z` | 71 | SCORING_COMMIT | P1 | 2026-10-24T01:10:35Z | sn71 commit touches scoring: Bind headcount release to committed protected scorer source |
+| `sn78:scoring_commit:2026-10-23T23:09:56Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T01:10:35Z | sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff |
+| `sn117:release:everycli v0.7.4` | 117 | RELEASE | P1 | 2026-10-24T01:10:35Z | sn117 released everycli v0.7.4 |
 
 ### detail
 
-- **`sn7:burn_drop:0.985`** - sn7 burn fell 0.991 -> 0.985 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn76:burn_drop:0.987`** - sn76 burn fell 0.992 -> 0.987 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-10-23T20:43:00Z`** - sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies
+- **`sn71:scoring_commit:2026-10-24T01:08:52Z`** - sn71 commit touches scoring: Bind headcount release to committed protected scorer source
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-23T21:58:21Z`** - sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs
+- **`sn78:scoring_commit:2026-10-23T23:09:56Z`** - sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.7.3`** - sn117 released everycli v0.7.3
-  - published 2026-10-23T19:58:36Z (was everycli v0.7.2)
+- **`sn117:release:everycli v0.7.4`** - sn117 released everycli v0.7.4
+  - published 2026-10-24T00:27:59Z (was everycli v0.7.3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -49,11 +43,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
-| `sn25:release:v2026.10.16-1073891640` | 25 | RELEASE | 2026-10-16T23:59:25Z | sn25 released v2026.10.16-1073891640 |
-| `sn71:scoring_commit:2026-10-16T23:28:33Z` | 71 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn71 commit touches scoring: Move scorer checkpoint and output IO behind runtime interface |
-| `sn78:scoring_commit:2026-10-16T22:57:25Z` | 78 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn78 commit touches scoring: Score original forecast ranges and retain comparable outcome evidence |
-| `sn116:release:worker-images-v5 (DEVELOPMENT)` | 116 | RELEASE | 2026-10-16T23:59:25Z | sn116 released worker-images-v5 (DEVELOPMENT) |
-| `sn116:scoring_commit:2026-10-16T20:58:13Z` | 116 | SCORING_COMMIT | 2026-10-16T23:59:25Z | sn116 commit touches scoring: Format F06 Challenge registry assertions |
+| `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
+| `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn25:release:v2026.10.16-1074037020` | 25 | RELEASE | 2026-10-17T04:17:15Z | sn25 released v2026.10.16-1074037020 |
 | `sn71:scoring_commit:2026-10-17T01:24:18Z` | 71 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn71 commit touches scoring: Merge current main and validate selected judge runtime in training ex… |
 | `sn91:scoring_commit:2026-10-17T01:20:18Z` | 91 | SCORING_COMMIT | 2026-10-17T04:17:15Z | sn91 commit touches scoring: fix(promotion): anchor the trainer's reign clock where validators res… |
@@ -274,6 +265,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:release:v2026.10.23.2` | 66 | RELEASE | 2026-10-23T19:26:12Z | sn66 released v2026.10.23.2 |
 | `sn71:scoring_commit:2026-10-23T19:17:11Z` | 71 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn71 commit touches scoring: Bind company-evidence release to reviewed scorer source |
 | `sn120:scoring_commit:2026-10-23T19:17:25Z` | 120 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn120 commit touches scoring: Flip-incentive SHADOW docs + audit helper (LIVE still v9/seq7) (#88) |
+| `sn71:scoring_commit:2026-10-23T20:43:00Z` | 71 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies |
+| `sn78:scoring_commit:2026-10-23T21:58:21Z` | 78 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs |
+| `sn117:release:everycli v0.7.3` | 117 | RELEASE | 2026-10-23T22:32:24Z | sn117 released everycli v0.7.3 |
 | `sn37:readme_task_diff:0aa02311a0f783a4` | 37 | README_TASK_DIFF | 2026-10-17T08:43:24Z | sn37 README task/scoring sections changed |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |

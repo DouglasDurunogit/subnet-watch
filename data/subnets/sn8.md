@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-10-23T22:31:51Z  |  block: 9349260  |  row_status: ok
+snapshot_utc: 2026-10-24T01:10:10Z  |  block: 9350052  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.128355 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 37  |  free: 0
-- subnet age: 1093.3 days  |  registered at block 1477264
+- registration cost: 0.0005 TAO (0.12653 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 35  |  free: 0
+- subnet age: 1093.4 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1.3304063723038497** (uid 98) <- the only figure quotable as achievable
-- median_miner_usd_day: 1.3304063723038497
-- top_miner_usd_day: 22047.050933028626 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1.3137761467157583** (uid 98) <- the only figure quotable as achievable
+- median_miner_usd_day: 1.3137761467157583
+- top_miner_usd_day: 21767.956974933397 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 22  |  gini: 0.9320615159892418  |  top1_share: 0.7593206359873536  |  top10_share: 0.9996181632123166
+- earners: 20  |  gini: 0.92531616568915  |  top1_share: 0.7592100439882699  |  top10_share: 0.9996487047898339
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-23T22:31:51Z  |  block: 9349260  |  row_status: ok
 - on-chain URL: `https://github.com/taoshidev/vanta-network`
 - resolved URL: `https://github.com/taoshidev/vanta-network`
 - status: **ok** 
-- README: 10197 bytes, sha 2b9bd61f89124c68
+- README: 10437 bytes, sha 0e291f1f2edd1fcc
 - latest release: (none) 
-- last commit: 2026-10-23T16:19:53Z
+- last commit: 2026-10-23T22:53:28Z
 - scoring-related commit: Optimizations for miner statistics (#964) 2026-10-23T16:19:53Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-23T22:31:51Z  |  block: 9349260  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -6.8888 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -6.9054 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 39.3 (rank 57), confidence 0.85 - hardware requirement unknown
+- score: 39.3 (rank 56), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 0.1d ago
+- freshness basis: SCORING_COMMIT 0.2d ago
 
 ## On-chain description
 
@@ -52,8 +52,6 @@ snapshot_utc: 2026-10-23T22:31:51Z  |  block: 9349260  |  row_status: ok
 ## README excerpt (evidence for the brief)
 
 ```markdown
-> Proprietary Trading Network is now Vanta Network!
-
 <p align="center">
   <a href="https://www.vantanetwork.io">
     <img width="385" alt="Vanta Network logo" src="https://www.taoshi.io/white-black.png">
@@ -163,7 +161,7 @@ With this system only the world's best traders & deep learning / quant based tra
 
 # Eliminations
 
-In the Vanta Network, eliminations occur for miners that commi
+In the Vanta Network, eliminations occur for miners that commit plagiarism, breach drawdown limits, fail to exit pr
 ```
 
-_(truncated at 6000 of 10197 chars - read the full file at https://github.com/taoshidev/vanta-network)_
+_(truncated at 6000 of 10437 chars - read the full file at https://github.com/taoshidev/vanta-network)_

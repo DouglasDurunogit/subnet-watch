@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-24T17:39:12Z, block 9354997
+# ALARMS - generated 2026-10-24T19:50:57Z, block 9355656
 
-window: first_seen in [2026-10-24T16:24:36Z, 2026-10-24T17:39:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-24T18:36:23Z, 2026-10-24T19:51:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-10-24T17:11:03Z` | 71 | SCORING_COMMIT | P1 | 2026-10-24T17:39:36Z | sn71 commit touches scoring: Preserve source metadata and validated company evidence in Arena judgi |
-| `sn78:scoring_commit:2026-10-24T14:56:17Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T17:39:36Z | sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386) |
+| `sn117:burn_drop:0.926` | 117 | BURN_DROP | P0 | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
+| `sn78:scoring_commit:2026-10-24T18:32:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-24T19:51:23Z | sn78 commit touches scoring: Keep threshold shape validation on failed multisig calls |
+| `sn81:scoring_commit:2026-10-24T17:47:45Z` | 81 | SCORING_COMMIT | P1 | 2026-10-24T19:51:23Z | sn81 commit touches scoring: Merge pull request #416 from reliquadotai/fix/rl-miner-submission-expo |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-10-24T17:11:03Z`** - sn71 commit touches scoring: Preserve source metadata and validated company evidence in Arena judgi
+- **`sn117:burn_drop:0.926`** - sn117 burn fell 1.000 -> 0.926 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn78:scoring_commit:2026-10-24T18:32:39Z`** - sn78 commit touches scoring: Keep threshold shape validation on failed multisig calls
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-24T14:56:17Z`** - sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386)
+- **`sn81:scoring_commit:2026-10-24T17:47:45Z`** - sn81 commit touches scoring: Merge pull request #416 from reliquadotai/fix/rl-miner-submission-expo
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -41,8 +44,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
-| `sn41:scoring_commit:2026-10-17T16:02:48Z` | 41 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn41 commit touches scoring: Merge pull request #59 from corvxai/vali_no_assign_before_scoring |
-| `sn78:scoring_commit:2026-10-17T17:36:20Z` | 78 | SCORING_COMMIT | 2026-10-17T18:25:49Z | sn78 commit touches scoring: Backport current reward coverage capture to exact C5 runtime |
 | `sn91:scoring_commit:2026-10-17T20:13:24Z` | 91 | SCORING_COMMIT | 2026-10-17T20:51:47Z | sn91 commit touches scoring: Merge pull request #373 from TensorLink-AI/feat/payer-bench-unverified |
 | `sn51:release:miner-v1.006` | 51 | RELEASE | 2026-10-17T23:04:30Z | sn51 released miner-v1.006 |
 | `sn51:scoring_commit:2026-10-17T21:06:14Z` | 51 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes only the node it names (#166 |
@@ -251,6 +252,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.3.13` | 62 | RELEASE | 2026-10-24T11:23:46Z | sn62 released v0.3.13 |
 | `sn81:scoring_commit:2026-10-24T10:32:01Z` | 81 | SCORING_COMMIT | 2026-10-24T11:23:46Z | sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners |
 | `sn81:scoring_commit:2026-10-24T11:36:09Z` | 81 | SCORING_COMMIT | 2026-10-24T14:45:03Z | sn81 commit touches scoring: Merge pull request #413 from reliquadotai/fix/rl-active-miner-live-lea |
+| `sn71:scoring_commit:2026-10-24T17:11:03Z` | 71 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn71 commit touches scoring: Preserve source metadata and validated company evidence in Arena judgi |
+| `sn78:scoring_commit:2026-10-24T14:56:17Z` | 78 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386) |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |

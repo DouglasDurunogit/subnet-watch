@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-24T11:23:11Z, block 9353117
+# ALARMS - generated 2026-10-24T14:44:37Z, block 9354124
 
-window: first_seen in [2026-10-24T10:08:46Z, 2026-10-24T11:23:46Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-24T13:30:03Z, 2026-10-24T14:45:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-24T06:28:19Z` | 21 | SCORING_COMMIT | P1 | 2026-10-24T11:23:46Z | sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the … |
-| `sn62:release:v0.3.13` | 62 | RELEASE | P1 | 2026-10-24T11:23:46Z | sn62 released v0.3.13 |
-| `sn81:scoring_commit:2026-10-24T10:32:01Z` | 81 | SCORING_COMMIT | P1 | 2026-10-24T11:23:46Z | sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners |
+| `sn81:scoring_commit:2026-10-24T11:36:09Z` | 81 | SCORING_COMMIT | P1 | 2026-10-24T14:45:03Z | sn81 commit touches scoring: Merge pull request #413 from reliquadotai/fix/rl-active-miner-live-lea |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-24T06:28:19Z`** - sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.13`** - sn62 released v0.3.13
-  - published 2026-10-24T09:20:00Z (was v0.3.12)
-- **`sn81:scoring_commit:2026-10-24T10:32:01Z`** - sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners
+- **`sn81:scoring_commit:2026-10-24T11:36:09Z`** - sn81 commit touches scoring: Merge pull request #413 from reliquadotai/fix/rl-active-miner-live-lea
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -44,11 +38,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
-| `sn21:scoring_commit:2026-10-17T11:22:46Z` | 21 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn21 commit touches scoring: feat(scoring): absence charges stop once a hotkey holds no real entry… |
-| `sn25:release:v2026.10.17-1074370910` | 25 | RELEASE | 2026-10-17T12:28:43Z | sn25 released v2026.10.17-1074370910 |
-| `sn51:release:executor-v1.142` | 51 | RELEASE | 2026-10-17T12:28:43Z | sn51 released executor-v1.142 |
-| `sn51:scoring_commit:2026-10-17T11:57:18Z` | 51 | SCORING_COMMIT | 2026-10-17T12:28:43Z | sn51 commit touches scoring: Sysbox installer: show the verify container's error when step 6 fails… |
-| `sn92:release:v1.2.0-rc7.post4` | 92 | RELEASE | 2026-10-17T12:28:43Z | sn92 released v1.2.0-rc7.post4 |
 | `sn7:release:release-20261017-152034: Bound event ing` | 7 | RELEASE | 2026-10-17T15:58:40Z | sn7 released release-20261017-152034: Bound event ingest per pass and cap its lookback at 6h (#792) |
 | `sn28:release:v0.5.2` | 28 | RELEASE | 2026-10-17T15:58:40Z | sn28 released v0.5.2 |
 | `sn28:scoring_commit:2026-10-17T13:33:09Z` | 28 | SCORING_COMMIT | 2026-10-17T15:58:40Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.2 (#327) |
@@ -260,6 +249,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn62:release:v0.3.12` | 62 | RELEASE | 2026-10-24T06:11:04Z | sn62 released v0.3.12 |
 | `sn71:scoring_commit:2026-10-24T04:51:31Z` | 71 | SCORING_COMMIT | 2026-10-24T06:11:04Z | sn71 commit touches scoring: Keep degraded proxy events clear of scoring readiness |
 | `sn78:scoring_commit:2026-10-24T03:49:11Z` | 78 | SCORING_COMMIT | 2026-10-24T06:11:04Z | sn78 commit touches scoring: Merge pull request #378 from Umi-BitSign/fix/assignment-verification-… |
+| `sn21:scoring_commit:2026-10-24T06:28:19Z` | 21 | SCORING_COMMIT | 2026-10-24T11:23:46Z | sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the … |
+| `sn62:release:v0.3.13` | 62 | RELEASE | 2026-10-24T11:23:46Z | sn62 released v0.3.13 |
+| `sn81:scoring_commit:2026-10-24T10:32:01Z` | 81 | SCORING_COMMIT | 2026-10-24T11:23:46Z | sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |

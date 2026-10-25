@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-24T22:25:50Z, block 9356430
+# ALARMS - generated 2026-10-25T00:28:38Z, block 9357044
 
-window: first_seen in [2026-10-24T21:11:21Z, 2026-10-24T22:26:21Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-24T23:14:02Z, 2026-10-25T00:29:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,12 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.24-1080739690` | 25 | RELEASE | P1 | 2026-10-24T22:26:21Z | sn25 released v2026.10.24-1080739690 |
+| `sn15:release:v3.0.3: feat: capture BYOK upstream infe` | 15 | RELEASE | P1 | 2026-10-25T00:29:02Z | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391) |
+| `sn15:scoring_commit:2026-10-24T23:44:40Z` | 15 | SCORING_COMMIT | P1 | 2026-10-25T00:29:02Z | sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390) |
+| `sn78:scoring_commit:2026-10-25T00:12:57Z` | 78 | SCORING_COMMIT | P1 | 2026-10-25T00:29:02Z | sn78 commit touches scoring: Publish compatible model-only cohort readers to miner clients |
 
 ### detail
 
-- **`sn25:release:v2026.10.24-1080739690`** - sn25 released v2026.10.24-1080739690
-  - published 2026-10-24T20:42:25Z (was v2026.10.22-1078873780)
+- **`sn15:release:v3.0.3: feat: capture BYOK upstream infe`** - sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391)
+  - published 2026-10-25T00:02:45Z (was v3.0.2: security: patch Python dependencies and supported runtimes (#388))
+- **`sn15:scoring_commit:2026-10-24T23:44:40Z`** - sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-25T00:12:57Z`** - sn78 commit touches scoring: Publish compatible model-only cohort readers to miner clients
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,9 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
-| `sn51:release:miner-v1.006` | 51 | RELEASE | 2026-10-17T23:04:30Z | sn51 released miner-v1.006 |
-| `sn51:scoring_commit:2026-10-17T21:06:14Z` | 51 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn51 commit touches scoring: DAH-4539 - Miner: a portal delete removes only the node it names (#166 |
-| `sn78:scoring_commit:2026-10-17T21:58:15Z` | 78 | SCORING_COMMIT | 2026-10-17T23:04:30Z | sn78 commit touches scoring: Recover historical reward coverage gaps from durable native endpoints |
 | `sn15:release:v2.5.6: Bound per-evaluation sandbox dis` | 15 | RELEASE | 2026-10-18T00:59:01Z | sn15 released v2.5.6: Bound per-evaluation sandbox disk use |
 | `sn15:scoring_commit:2026-10-17T23:22:22Z` | 15 | SCORING_COMMIT | 2026-10-18T00:59:01Z | sn15 commit touches scoring: Bound per-evaluation sandbox disk use |
 | `sn15:scoring_commit:2026-10-18T05:27:40Z` | 15 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn15 commit touches scoring: fix(validator): send sandbox_metadata when retrying a completion (#352 |
@@ -250,6 +253,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-24T14:56:17Z` | 78 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386) |
 | `sn78:scoring_commit:2026-10-24T18:32:39Z` | 78 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn78 commit touches scoring: Keep threshold shape validation on failed multisig calls |
 | `sn81:scoring_commit:2026-10-24T17:47:45Z` | 81 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn81 commit touches scoring: Merge pull request #416 from reliquadotai/fix/rl-miner-submission-expo |
+| `sn25:release:v2026.10.24-1080739690` | 25 | RELEASE | 2026-10-24T22:26:21Z | sn25 released v2026.10.24-1080739690 |
 | `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |

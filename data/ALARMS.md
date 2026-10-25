@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-25T09:59:37Z, block 9359899
+# ALARMS - generated 2026-10-25T14:19:31Z, block 9361198
 
-window: first_seen in [2026-10-25T08:45:10Z, 2026-10-25T10:00:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-25T13:05:01Z, 2026-10-25T14:20:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-10-25T07:57:10Z` | 71 | SCORING_COMMIT | P1 | 2026-10-25T10:00:10Z | sn71 commit touches scoring: Allow miner execution alongside baseline judging |
+| `sn51:scoring_commit:2026-10-25T12:39:04Z` | 51 | SCORING_COMMIT | P1 | 2026-10-25T14:20:01Z | sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an idle node whose whole GPU set… |
+| `sn71:scoring_commit:2026-10-25T10:32:22Z` | 71 | SCORING_COMMIT | P1 | 2026-10-25T14:20:01Z | sn71 commit touches scoring: Materialize eligible closed score runs before uncertain calls |
+| `sn97:scoring_commit:2026-10-25T13:32:48Z` | 97 | SCORING_COMMIT | P1 | 2026-10-25T14:20:01Z | sn97 commit touches scoring: feat(eval): score agent turns mid-trajectory, higher swe and terminal… |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-10-25T07:57:10Z`** - sn71 commit touches scoring: Allow miner execution alongside baseline judging
+- **`sn51:scoring_commit:2026-10-25T12:39:04Z`** - sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an idle node whose whole GPU set…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-25T10:32:22Z`** - sn71 commit touches scoring: Materialize eligible closed score runs before uncertain calls
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn97:scoring_commit:2026-10-25T13:32:48Z`** - sn97 commit touches scoring: feat(eval): score agent turns mid-trajectory, higher swe and terminal…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn55:burn_drop:0.010` | 55 | BURN_DROP | 2026-10-18T10:56:59Z | sn55 burn fell 1.000 -> 0.010 - miners can earn again |
 | `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
@@ -40,9 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn15:scoring_commit:2026-10-18T06:23:50Z` | 15 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run … |
-| `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
-| `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
 | `sn67:scoring_commit:2026-10-18T12:04:24Z` | 67 | SCORING_COMMIT | 2026-10-18T14:32:37Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261018.post0 |
 | `sn66:scoring_commit:2026-10-18T16:02:02Z` | 66 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn66 commit touches scoring: Activate the Mathlib header task release |
 | `sn116:scoring_commit:2026-10-18T16:35:31Z` | 116 | SCORING_COMMIT | 2026-10-18T17:34:40Z | sn116 commit touches scoring: Merge pull request #1423 from carbonphysicsai/codex/scorelab-dual-del… |
@@ -248,6 +250,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:release:v3.0.4: fix: gate BYOK cost fields on us` | 15 | RELEASE | 2026-10-25T05:23:07Z | sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392) |
 | `sn25:release:v2026.10.24-1080878340` | 25 | RELEASE | 2026-10-25T05:23:07Z | sn25 released v2026.10.24-1080878340 |
 | `sn81:scoring_commit:2026-10-25T03:19:05Z` | 81 | SCORING_COMMIT | 2026-10-25T05:23:07Z | sn81 commit touches scoring: Merge pull request #417 from reliquadotai/fix/no-min-incentive-floor |
+| `sn71:scoring_commit:2026-10-25T07:57:10Z` | 71 | SCORING_COMMIT | 2026-10-25T10:00:10Z | sn71 commit touches scoring: Allow miner execution alongside baseline judging |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |

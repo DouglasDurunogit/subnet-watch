@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-10-25T00:28:38Z  |  block: 9357044  |  row_status: ok
+snapshot_utc: 2026-10-25T05:22:42Z  |  block: 9358514  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0493909940123558e-05**
-- registration cost: 0.0005 TAO (0.12573 USD), open=True
+- registration cost: 0.0005 TAO (0.12577 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 16  |  free: 0
-- subnet age: 1103.6 days  |  registered at block 1411451
+- subnet age: 1103.8 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 28019.7733001999** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 10193.416363320644
-- top_miner_usd_day: 28019.7733001999 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 28024.934753206355** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 10195.294067289578
+- top_miner_usd_day: 28024.934753206355 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-10-25T00:28:38Z  |  block: 9357044  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 19098.3757 USD/day  |  payback on registration: 0.0 days
+- net margin: 19101.8952 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 42.4 (rank 45), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
+- score: 42.4 (rank 42), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
 - components: income 38.94 / freshness 10.5 / resource 11.25 / registration 10.0
 - freshness basis: RELEASE 37d ago
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-25T05:22:42Z, block 9358514
+# ALARMS - generated 2026-10-25T09:59:37Z, block 9359899
 
-window: first_seen in [2026-10-25T04:08:07Z, 2026-10-25T05:23:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-25T08:45:10Z, 2026-10-25T10:00:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,11 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.982` | 76 | BURN_DROP | P0 | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn15:release:v3.0.4: fix: gate BYOK cost fields on us` | 15 | RELEASE | P1 | 2026-10-25T05:23:07Z | sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392) |
-| `sn25:release:v2026.10.24-1080878340` | 25 | RELEASE | P1 | 2026-10-25T05:23:07Z | sn25 released v2026.10.24-1080878340 |
-| `sn81:scoring_commit:2026-10-25T03:19:05Z` | 81 | SCORING_COMMIT | P1 | 2026-10-25T05:23:07Z | sn81 commit touches scoring: Merge pull request #417 from reliquadotai/fix/no-min-incentive-floor |
+| `sn71:scoring_commit:2026-10-25T07:57:10Z` | 71 | SCORING_COMMIT | P1 | 2026-10-25T10:00:10Z | sn71 commit touches scoring: Allow miner execution alongside baseline judging |
 
 ### detail
 
-- **`sn76:burn_drop:0.982`** - sn76 burn fell 1.000 -> 0.982 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v3.0.4: fix: gate BYOK cost fields on us`** - sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392)
-  - published 2026-10-25T00:29:45Z (was v3.0.3: feat: capture BYOK upstream inference cost per call (#391))
-- **`sn25:release:v2026.10.24-1080878340`** - sn25 released v2026.10.24-1080878340
-  - published 2026-10-25T00:33:23Z (was v2026.10.24-1080739690)
-- **`sn81:scoring_commit:2026-10-25T03:19:05Z`** - sn81 commit touches scoring: Merge pull request #417 from reliquadotai/fix/no-min-incentive-floor
+- **`sn71:scoring_commit:2026-10-25T07:57:10Z`** - sn71 commit touches scoring: Allow miner execution alongside baseline judging
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -48,11 +39,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
-| `sn15:scoring_commit:2026-10-18T05:27:40Z` | 15 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn15 commit touches scoring: fix(validator): send sandbox_metadata when retrying a completion (#352 |
-| `sn25:release:v2026.10.17-1074871400` | 25 | RELEASE | 2026-10-18T05:49:20Z | sn25 released v2026.10.17-1074871400 |
-| `sn53:scoring_commit:2026-10-18T04:05:58Z` | 53 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn53 commit touches scoring: tee_miner: default to half the legs on the LB, half on Cloudflare, sh… |
-| `sn55:scoring_commit:2026-10-18T05:30:43Z` | 55 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn55 commit touches scoring: set weights using valid scores |
-| `sn71:scoring_commit:2026-10-18T01:41:09Z` | 71 | SCORING_COMMIT | 2026-10-18T05:49:20Z | sn71 commit touches scoring: Prune superseded Deepline score billing heads before V3 candidate wor… |
+| `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn15:scoring_commit:2026-10-18T06:23:50Z` | 15 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn15 commit touches scoring: docs: update stale pack digest and runtime in miner-guide sample run … |
 | `sn71:scoring_commit:2026-10-18T06:55:55Z` | 71 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn71 commit touches scoring: fix(arena): classify unavailable frozen score routes before dispatch |
 | `sn116:scoring_commit:2026-10-17T23:42:51Z` | 116 | SCORING_COMMIT | 2026-10-18T10:56:59Z | sn116 commit touches scoring: docs: lock bank-version reuse and reward-clock safeguards |
@@ -258,7 +245,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn15:release:v3.0.3: feat: capture BYOK upstream infe` | 15 | RELEASE | 2026-10-25T00:29:02Z | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391) |
 | `sn15:scoring_commit:2026-10-24T23:44:40Z` | 15 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390) |
 | `sn78:scoring_commit:2026-10-25T00:12:57Z` | 78 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn78 commit touches scoring: Publish compatible model-only cohort readers to miner clients |
-| `sn125:readme_task_diff:5d449bf6f7a1b5b8` | 125 | README_TASK_DIFF | 2026-10-18T05:49:20Z | sn125 README task/scoring sections changed |
+| `sn15:release:v3.0.4: fix: gate BYOK cost fields on us` | 15 | RELEASE | 2026-10-25T05:23:07Z | sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392) |
+| `sn25:release:v2026.10.24-1080878340` | 25 | RELEASE | 2026-10-25T05:23:07Z | sn25 released v2026.10.24-1080878340 |
+| `sn81:scoring_commit:2026-10-25T03:19:05Z` | 81 | SCORING_COMMIT | 2026-10-25T05:23:07Z | sn81 commit touches scoring: Merge pull request #417 from reliquadotai/fix/no-min-incentive-floor |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |

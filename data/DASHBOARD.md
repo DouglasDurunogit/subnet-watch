@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-25T20:01:10Z · block 9362907 · run_status **ok**_
+_snapshot 2026-10-25T22:30:25Z · block 9363653 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 51 of 128
+# 53 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,9 +15,9 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 94 | `miner_burn` < 0.99 |
-| Ranked | 95 | passed every gate |
-| **Positive margin** | **51** | income beats machine cost |
+| Pays miners at all | 96 | `miner_burn` < 0.99 |
+| Ranked | 97 | passed every gate |
+| **Positive margin** | **53** | income beats machine cost |
 | New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
+| 0 (none) | 64 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 7 | `███` |
 | 0.6–0.8 | 8 | `████` |
-| 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 34 | `███████████████` |
+| 0.8–0.99 | 5 | `██` |
+| ≥0.99 dead | 32 | `██████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.5 | 2,126 | 4,260 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73 | 1,832 | 1,832 = | rtx4090* | 5 | 20% |
-| 3 | sn67 Harnyx | 70.5 | 13.78 | 144 | cpu-small | 128 | 7% |
-| 4 | sn56 Gradients | 69.8 | 693 | 5,726 | rtx4090* | 6 | 51% |
-| 5 | sn46 Instant | 69.2 | 227 | 236 | cpu-small | 6 | 43% |
-| 6 | sn1 Apex | 68.3 | 440 | 840 | rtx4090* | 5 | 56% |
-| 7 | sn41 Almanac | 67.9 | 8.44 | 130 | cpu-small | 160 | 5% |
-| 8 | sn82 Noah | 67.8 | 590 | 597 | rtx4090* | 63 | 2% |
-| 9 | sn107 Minos | 66.9 | 217 | 18,175 | cpu-small | 20 | 80% |
-| 10 | sn53 engy | 66.8 | 288 | 2,490 | rtx4090 | 36 | 11% |
-| 11 | sn120 Affine | 64.7 | 173 | 962 | rtx4090* | 131 | 3% |
-| 12 | sn66 conjectures | 63.4 | 102 | 212 | rtx4090* | 4 | 80% |
-| 13 | sn62 Ridges | 62.7 | 83.27 | 926 | rtx4090* | 44 | 15% |
-| 14 | sn23 Trishool | 62.5 | 1,074 | 1,074 = | cpu-small | 2 | 80% |
-| 15 | sn15 ORO | 62.4 | 4.51 | 10.25 | cpu-small | 48 | 98% |
-| 16 | sn28 SayGM | 61.7 | 63.24 | 2,243 | rtx4090* | 133 | 10% |
-| 17 | sn14 Cacheon | 60.8 | 1,636 | 4,208 | rtx4090* | 3 | 65% |
-| 18 | sn111 Claims | 58.9 | 27.83 | 2,697 | rtx4090* | 6 | 90% |
-| 19 | sn92 REAX | 58.7 | 35.03 | 3,399 | rtx4090 | 228 | 18% |
-| 20 | sn81 Reliquary | 57.6 | 17.65 | 206 | rtx4090* | 40 | 41% |
+| 1 | sn3 Teutonic | 73.5 | 2,114 | 4,237 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73 | 1,818 | 1,818 = | rtx4090* | 5 | 20% |
+| 3 | sn56 Gradients | 71.2 | 1,053 | 5,705 | rtx4090* | 6 | 51% |
+| 4 | sn67 Harnyx | 70.4 | 13.73 | 143 | cpu-small | 129 | 7% |
+| 5 | sn46 Instant | 69.2 | 226 | 236 | cpu-small | 6 | 43% |
+| 6 | sn1 Apex | 68.2 | 433 | 826 | rtx4090* | 5 | 56% |
+| 7 | sn82 Noah | 67.8 | 586 | 593 | rtx4090* | 63 | 2% |
+| 8 | sn41 Almanac | 67.8 | 8.37 | 128 | cpu-small | 159 | 5% |
+| 9 | sn53 engy | 66.8 | 287 | 2,489 | rtx4090 | 36 | 11% |
+| 10 | sn107 Minos | 66.8 | 214 | 18,167 | cpu-small | 20 | 80% |
+| 11 | sn120 Affine | 64.3 | 148 | 1,524 | rtx4090* | 122 | 5% |
+| 12 | sn15 ORO | 64.1 | 4.50 | 10.21 | cpu-small | 48 | 98% |
+| 13 | sn66 conjectures | 63.4 | 101 | 211 | rtx4090* | 4 | 80% |
+| 14 | sn62 Ridges | 62.7 | 82.99 | 924 | rtx4090* | 44 | 15% |
+| 15 | sn23 Trishool | 62.5 | 1,071 | 1,071 = | cpu-small | 2 | 80% |
+| 16 | sn92 REAX | 59 | 36.23 | 3,509 | rtx4090 | 230 | 18% |
+| 17 | sn111 Claims | 58.9 | 27.71 | 2,688 | rtx4090* | 6 | 90% |
+| 18 | sn81 Reliquary | 58.3 | 21.50 | 195 | rtx4090* | 41 | 42% |
+| 19 | sn28 SayGM | 58.2 | 23.38 | 1,191 | rtx4090* | 136 | 50% |
+| 20 | sn5 Hone | 57.5 | 29.08 | 35.07 | rtx4090* | 242 | 0% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 29 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 22 |
-| captured (>90%) | 23 |
+| wide (<30%) | 27 |
+| concentrated (30–60%) | 22 |
+| dominated (60–90%) | 23 |
+| captured (>90%) | 24 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-25T22:30 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Reuse native request closure verification |
+| 2026-10-25T22:30 | sn117 | BURN_DROP | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | 2026-10-25T20:01 | sn76 | BURN_DROP | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | 2026-10-25T20:01 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/ |
 | 2026-10-25T14:20 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an i |
@@ -120,8 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-25T00:29 | sn15 | RELEASE | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per c |
 | 2026-10-25T00:29 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: chore: remove dead _upload_logs method fr |
 | 2026-10-25T00:29 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Publish compatible model-only cohort read |
-| 2026-10-24T22:26 | sn25 | RELEASE | sn25 released v2026.10.24-1080739690 |
-| 2026-10-24T19:51 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Keep threshold shape validation on failed |
 
 ---
 

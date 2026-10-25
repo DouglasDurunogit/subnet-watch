@@ -1,13 +1,23 @@
-# ALARMS - generated 2026-10-25T17:44:45Z, block 9362224
+# ALARMS - generated 2026-10-25T20:01:10Z, block 9362907
 
-window: first_seen in [2026-10-25T16:30:12Z, 2026-10-25T17:45:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-25T18:46:41Z, 2026-10-25T20:01:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn76:burn_drop:0.965` | 76 | BURN_DROP | P0 | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
+| `sn78:scoring_commit:2026-10-25T17:59:54Z` | 78 | SCORING_COMMIT | P1 | 2026-10-25T20:01:41Z | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica… |
+
+### detail
+
+- **`sn76:burn_drop:0.965`** - sn76 burn fell 1.000 -> 0.965 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn78:scoring_commit:2026-10-25T17:59:54Z`** - sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -32,10 +42,6 @@ _none_
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn1:release:v4.4.14` | 1 | RELEASE | 2026-10-18T19:42:43Z | sn1 released v4.4.14 |
-| `sn25:release:v2026.10.18-1075514170` | 25 | RELEASE | 2026-10-18T19:42:43Z | sn25 released v2026.10.18-1075514170 |
-| `sn82:scoring_commit:2026-10-18T18:10:45Z` | 82 | SCORING_COMMIT | 2026-10-18T19:42:43Z | sn82 commit touches scoring: Release v0.1.0: multisig receipts and surplus-bonus scoring |
-| `sn92:release:v1.2.0-rc9` | 92 | RELEASE | 2026-10-18T19:42:43Z | sn92 released v1.2.0-rc9 |
 | `sn78:scoring_commit:2026-10-18T21:56:00Z` | 78 | SCORING_COMMIT | 2026-10-18T21:56:26Z | sn78 commit touches scoring: Wait for identity-checked validator worker startup (#310) |
 | `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
 | `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |

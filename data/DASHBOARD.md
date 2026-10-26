@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-26T11:28:02Z · block 9367541 · run_status **ok**_
+_snapshot 2026-10-26T17:39:35Z · block 9369399 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 57 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 96 | `miner_burn` < 0.99 |
-| Ranked | 96 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 10 | see ALARMS.md |
+| Pays miners at all | 97 | `miner_burn` < 0.99 |
+| Ranked | 97 | passed every gate |
+| **Positive margin** | **57** | income beats machine cost |
+| New events this window | 9 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 65 | `████████████████████████████` |
+| 0 (none) | 63 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 6 | `███` |
+| 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 32 | `██████████████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 31 | `██████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.4 | 2,091 | 4,191 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73 | 1,795 | 1,795 = | rtx4090* | 5 | 20% |
-| 3 | sn56 Gradients | 71.1 | 1,036 | 5,609 | rtx4090* | 6 | 51% |
-| 4 | sn46 Instant | 69.2 | 230 | 287 | cpu-small | 6 | 43% |
-| 5 | sn1 Apex | 68 | 409 | 874 | rtx4090* | 5 | 56% |
-| 6 | sn82 Noah | 67.8 | 563 | 569 | rtx4090* | 63 | 2% |
-| 7 | sn41 Almanac | 67.8 | 8.30 | 134 | cpu-small | 160 | 2% |
-| 8 | sn67 Harnyx | 67.7 | 7.21 | 211 | cpu-small | 122 | 10% |
-| 9 | sn107 Minos | 66.9 | 216 | 17,997 | cpu-small | 20 | 80% |
-| 10 | sn15 ORO | 65.7 | 6.86 | 14,728 | cpu-small | 55 | 97% |
-| 11 | sn104 TAOstatus | 65.6 | 2,690 | 2,690 = | cpu-small | 1 | 100% |
-| 12 | sn120 Affine | 63.9 | 138 | 1,411 | rtx4090* | 137 | 5% |
-| 13 | sn66 conjectures | 63.3 | 101 | 196 | rtx4090* | 4 | 81% |
-| 14 | sn62 Ridges | 62.6 | 81.76 | 911 | rtx4090* | 44 | 15% |
-| 15 | sn23 Trishool | 62.5 | 1,056 | 1,056 = | cpu-small | 2 | 80% |
-| 16 | sn91 cascade | 61.6 | 806 | 1,613 | cpu-small | 5 | 52% |
-| 17 | sn28 SayGM | 61.3 | 55.90 | 2,099 | rtx4090* | 139 | 33% |
-| 18 | sn34 BitMind | 59.9 | 8,390 | 8,390 = | a100-80 | 3 | 85% |
-| 19 | sn81 Reliquary | 59 | 27.17 | 356 | rtx4090* | 41 | 39% |
-| 20 | sn111 Claims | 58.9 | 27.28 | 2,656 | rtx4090* | 6 | 90% |
+| 1 | sn3 Teutonic | 73.5 | 2,142 | 4,190 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73 | 1,810 | 1,810 = | rtx4090* | 5 | 20% |
+| 3 | sn46 Instant | 71.6 | 461 | 463 | cpu-small | 4 | 46% |
+| 4 | sn60 Bitsec.ai | 70 | 289 | 289 = | cpu-small | 3 | 50% |
+| 5 | sn41 Almanac | 68 | 8.67 | 136 | cpu-small | 159 | 2% |
+| 6 | sn67 Harnyx | 67.9 | 7.28 | 213 | cpu-small | 125 | 10% |
+| 7 | sn1 Apex | 67.8 | 384 | 921 | rtx4090* | 5 | 56% |
+| 8 | sn82 Noah | 67.7 | 554 | 560 | rtx4090* | 63 | 2% |
+| 9 | sn107 Minos | 66.8 | 216 | 18,172 | cpu-small | 20 | 80% |
+| 10 | sn111 Claims | 64.1 | 127 | 2,690 | rtx4090* | 4 | 90% |
+| 11 | sn15 ORO | 63.7 | 6.86 | 13.06 | cpu-small | 55 | 97% |
+| 12 | sn28 SayGM | 63.6 | 111 | 1,357 | rtx4090* | 96 | 14% |
+| 13 | sn120 Affine | 63.5 | 124 | 1,176 | rtx4090* | 152 | 4% |
+| 14 | sn66 conjectures | 63.4 | 102 | 212 | rtx4090* | 4 | 80% |
+| 15 | sn62 Ridges | 62.7 | 82.76 | 921 | rtx4090* | 44 | 15% |
+| 16 | sn23 Trishool | 62.5 | 1,067 | 1,067 = | cpu-small | 2 | 80% |
+| 17 | sn81 Reliquary | 59.5 | 31.92 | 264 | rtx4090* | 54 | 29% |
+| 18 | sn34 BitMind | 57.8 | 4,489 | 8,506 | a100-80 | 3 | 85% |
+| 19 | sn102 ConnitoAI | 57.8 | 688 | 1,053 | rtx4090* | 5 | 32% |
+| 20 | sn5 Hone | 57.6 | 29.92 | 35.21 | rtx4090* | 241 | 0% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 27 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 23 |
-| captured (>90%) | 23 |
+| wide (<30%) | 29 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 25 |
+| captured (>90%) | 22 |
 
 ## Hardware evidence quality
 
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-26T17:40 | sn12 | RELEASE | sn12 released validator-staging-2026-10-26-40344021717-627-1: fix: eMu |
+| 2026-10-26T17:40 | sn12 | SCORING_COMMIT | sn12 commit touches scoring: fix(validator): fix prometheus image |
+| 2026-10-26T17:40 | sn51 | RELEASE | sn51 released miner-v1.010 |
+| 2026-10-26T17:40 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5187 - [P1] Validator: re-probe misse |
+| 2026-10-26T17:40 | sn60 | SCORING_COMMIT | sn60 commit touches scoring: changed scorer model to DeepSeek-V3.2 |
+| 2026-10-26T17:40 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #796 from leadpoet/fix |
+| 2026-10-26T17:40 | sn75 | RELEASE | sn75 released Runtime 92023 rc2 (srtool, 873384f) |
+| 2026-10-26T17:40 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Enforce broader C7+ evaluation suites (#4 |
+| 2026-10-26T17:40 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: fix(web): display NaN scores properly |
 | 2026-10-26T11:28 | sn9 | RELEASE | sn9 released v4.13.9 |
 | 2026-10-26T11:28 | sn22 | SCORING_COMMIT | sn22 commit touches scoring: chore(validators): one upload schema and  |
 | 2026-10-26T11:28 | sn51 | RELEASE | sn51 released executor-v1.155 |
 | 2026-10-26T11:28 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5075 - [P0] Central miner: retry an e |
 | 2026-10-26T11:28 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
 | 2026-10-26T11:28 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #794 from leadpoet/fix |
-| 2026-10-26T11:28 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Bound native HD suite decode threads with |
-| 2026-10-26T11:28 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat(validator): name every declared card |
-| 2026-10-26T11:28 | sn92 | RELEASE | sn92 released v1.2.0-rc11.post7 |
-| 2026-10-26T11:28 | sn123 | SCORING_COMMIT | sn123 commit touches scoring: Update validator.py |
-| 2026-10-26T05:27 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag |
-| 2026-10-26T05:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Classify verified provider output failure |
-| 2026-10-26T05:27 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Expose native checkpoint metadata progres |
-| 2026-10-26T00:45 | sn25 | RELEASE | sn25 released v2026.10.25-1081686250 |
-| 2026-10-26T00:45 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Project the verified retained predecessor |
 
 ---
 

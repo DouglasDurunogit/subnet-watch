@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-26T05:27:24Z, block 9365738
+# ALARMS - generated 2026-10-26T11:28:02Z, block 9367541
 
-window: first_seen in [2026-10-26T04:12:56Z, 2026-10-26T05:27:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-26T10:13:34Z, 2026-10-26T11:28:34Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-10-26T03:35:42Z` | 51 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco… |
-| `sn71:scoring_commit:2026-10-26T02:30:24Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn71 commit touches scoring: Classify verified provider output failures within capture coverage |
-| `sn78:scoring_commit:2026-10-26T03:27:58Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42 |
+| `sn9:release:v4.13.9` | 9 | RELEASE | P1 | 2026-10-26T11:28:34Z | sn9 released v4.13.9 |
+| `sn22:scoring_commit:2026-10-26T09:06:22Z` | 22 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn22 commit touches scoring: chore(validators): one upload schema and no v1 check or reason; a fil… |
+| `sn51:release:executor-v1.155` | 51 | RELEASE | P1 | 2026-10-26T11:28:34Z | sn51 released executor-v1.155 |
+| `sn51:scoring_commit:2026-10-26T11:08:28Z` | 51 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn51 commit touches scoring: DAH-5075 - [P0] Central miner: retry an executor's SSH-key upload so … |
+| `sn67:scoring_commit:2026-10-26T05:55:47Z` | 67 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261026.post2 |
+| `sn71:scoring_commit:2026-10-26T11:18:07Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn71 commit touches scoring: Merge pull request #794 from leadpoet/fix/recovered-score-credential-… |
+| `sn78:scoring_commit:2026-10-26T09:41:35Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn78 commit touches scoring: Bound native HD suite decode threads within verifier memory |
+| `sn81:scoring_commit:2026-10-25T15:22:13Z` | 81 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn81 commit touches scoring: feat(validator): name every declared card model |
+| `sn92:release:v1.2.0-rc11.post7` | 92 | RELEASE | P1 | 2026-10-26T11:28:34Z | sn92 released v1.2.0-rc11.post7 |
+| `sn123:scoring_commit:2026-10-26T06:24:32Z` | 123 | SCORING_COMMIT | P1 | 2026-10-26T11:28:34Z | sn123 commit touches scoring: Update validator.py |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-10-26T03:35:42Z`** - sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco…
+- **`sn9:release:v4.13.9`** - sn9 released v4.13.9
+  - published 2026-10-26T11:21:01Z (was v4.13.7)
+- **`sn22:scoring_commit:2026-10-26T09:06:22Z`** - sn22 commit touches scoring: chore(validators): one upload schema and no v1 check or reason; a fil…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-26T02:30:24Z`** - sn71 commit touches scoring: Classify verified provider output failures within capture coverage
+- **`sn51:release:executor-v1.155`** - sn51 released executor-v1.155
+  - published 2026-10-26T08:49:38Z (was lium-protocol-v1.16.0)
+- **`sn51:scoring_commit:2026-10-26T11:08:28Z`** - sn51 commit touches scoring: DAH-5075 - [P0] Central miner: retry an executor's SSH-key upload so …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-26T03:27:58Z`** - sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42
+- **`sn67:scoring_commit:2026-10-26T05:55:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261026.post2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-26T11:18:07Z`** - sn71 commit touches scoring: Merge pull request #794 from leadpoet/fix/recovered-score-credential-…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-26T09:41:35Z`** - sn78 commit touches scoring: Bound native HD suite decode threads within verifier memory
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-10-25T15:22:13Z`** - sn81 commit touches scoring: feat(validator): name every declared card model
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn92:release:v1.2.0-rc11.post7`** - sn92 released v1.2.0-rc11.post7
+  - published 2026-10-26T09:09:23Z (was v1.2.0-rc11)
+- **`sn123:scoring_commit:2026-10-26T06:24:32Z`** - sn123 commit touches scoring: Update validator.py
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn122:burn_drop:0.700` | 122 | BURN_DROP | 2026-10-19T10:42:29Z | sn122 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
@@ -47,14 +67,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn25:release:v2026.10.19-1076002880` | 25 | RELEASE | 2026-10-19T10:42:29Z | sn25 released v2026.10.19-1076002880 |
-| `sn51:release:miner-v1.007` | 51 | RELEASE | 2026-10-19T10:42:29Z | sn51 released miner-v1.007 |
-| `sn51:scoring_commit:2026-10-19T10:33:44Z` | 51 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn51 commit touches scoring: DAH-2834 - [P2] shadow the verify agent over SSH and ship it in the e… |
-| `sn53:scoring_commit:2026-10-19T07:16:06Z` | 53 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn53 commit touches scoring: Merge pull request #56 from hanlinai/fix/tee-miner-prefix-continuation |
-| `sn67:scoring_commit:2026-10-19T09:18:23Z` | 67 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261019.post1 |
-| `sn71:scoring_commit:2026-10-19T08:17:23Z` | 71 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn71 commit touches scoring: Preserve first-party funding context through verification and retries |
-| `sn78:scoring_commit:2026-10-19T07:58:40Z` | 78 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn78 commit touches scoring: Merge pull request #315 from Umi-BitSign/fix/miner-direct-upload-retr… |
-| `sn92:release:v1.2.0-rc9.post3` | 92 | RELEASE | 2026-10-19T10:42:29Z | sn92 released v1.2.0-rc9.post3 |
 | `sn7:release:release-20261019-165322` | 7 | RELEASE | 2026-10-19T17:12:59Z | sn7 released release-20261019-165322 |
 | `sn21:scoring_commit:2026-10-19T14:00:58Z` | 21 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn21 commit touches scoring: feat(scoring): the pooled count score can be published before the cou… |
 | `sn22:scoring_commit:2026-10-19T12:52:00Z` | 22 | SCORING_COMMIT | 2026-10-19T17:12:59Z | sn22 commit touches scoring: fix(task-api): reference vectors finish and stay kept even when the a… |
@@ -246,6 +258,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
 | `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
 | `sn78:scoring_commit:2026-10-25T22:48:12Z` | 78 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe… |
+| `sn51:scoring_commit:2026-10-26T03:35:42Z` | 51 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco… |
+| `sn71:scoring_commit:2026-10-26T02:30:24Z` | 71 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn71 commit touches scoring: Classify verified provider output failures within capture coverage |
+| `sn78:scoring_commit:2026-10-26T03:27:58Z` | 78 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42 |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |

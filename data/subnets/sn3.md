@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-10-26T05:27:24Z  |  block: 9365738  |  row_status: ok
+snapshot_utc: 2026-10-26T11:28:02Z  |  block: 9367541  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 1.441946902 TAO (362.76500160516 USD), open=True
+- registration cost: 1.470468657 TAO (368.57296887705 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 11  |  free: 0
-- subnet age: 722.2 days  |  registered at block 4165565
+- subnet age: 722.5 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4216.015715869966** (uid 139) <- the only figure quotable as achievable
-- median_miner_usd_day: 2107.8791874925764
-- top_miner_usd_day: 4216.015715869966 (uid 139, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 4198.953446673432** (uid 139) <- the only figure quotable as achievable
+- median_miner_usd_day: 2099.3485736252264
+- top_miner_usd_day: 4198.953446673432 (uid 139, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 7  |  gini: 0.1071543024571453  |  top1_share: 0.2500114453142883  |  top10_share: 1.0
+- earners: 7  |  gini: 0.10715430245714552  |  top1_share: 0.2500114453142883  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-26T05:27:24Z  |  block: 9365738  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6903 bytes, sha 8fbf8eb9031ce144
+- README: 5897 bytes, sha dfde648bae7a6468
 - latest release: (none) 
-- last commit: 2026-10-22T09:02:00Z
+- last commit: 2026-10-26T10:19:38Z
 - scoring-related commit: Fix category dataset validation and hide retired competition mixes 2026-10-21T14:45:39Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-26T05:27:24Z  |  block: 9365738  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2099.66 USD/day  |  payback on registration: 0.17 days
+- net margin: 2091.1294 USD/day  |  payback on registration: 0.18 days
 
 ## Score
 
 - gate: **OK** 
 - score: 73.4 (rank 1), confidence 0.85 - hardware requirement unknown
-- components: income 30.22 / freshness 35.0 / resource 11.25 / registration 9.94
-- freshness basis: SCORING_COMMIT 4.6d ago
+- components: income 30.2 / freshness 35.0 / resource 11.25 / registration 9.94
+- freshness basis: SCORING_COMMIT 4.8d ago
 
 ## On-chain description
 
@@ -66,7 +66,7 @@ resets their positions, and excludes predictions across document boundaries.
 Scores are weighted by scored-token counts; bootstrap resamples paired original
 windows. See [masked evaluation setup and GPU checks](DEPLOY.md#document-masked-evaluation).
 
-Evaluation can additionally sample approximately 6M tokens in complete documents
+Evaluation can additionally sample complete documents
 between 2049 and 8192 tokens, with category-proportional coverage of 2049–4096
 and 4097–8192. It supports MAIN, MATH, CODE and TEXT, with a combined token-weighted verdict
 and separate long-document metrics. See [configuration and GPU validation](DEPLOY.md#additional-long-document-evaluation).
@@ -227,7 +227,5 @@ The starting king is pinned once; later MAIN promotions do not move it. After it
 first win, the MIX challenges its own current king. `competitions.json` publishes
 the pinned model as `starting_king`.
 
-At cutover, current rewards are preserved. Each first MIX winner receives 12
-```
 
-_(truncated at 6000 of 6903 chars - read the full file at https://github.com/unarbos/teutonic)_
+```

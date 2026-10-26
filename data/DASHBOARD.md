@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-26T00:44:55Z · block 9364325 · run_status **ok**_
+_snapshot 2026-10-26T05:27:24Z · block 9365738 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 53 of 128
+# 54 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 95 | `miner_burn` < 0.99 |
 | Ranked | 96 | passed every gate |
-| **Positive margin** | **53** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **54** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 63 | `████████████████████████████` |
+| 0 (none) | 64 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 6 | `███` |
-| 0.6–0.8 | 8 | `████` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 33 | `███████████████` |
+| ≥0.99 dead | 33 | `██████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.5 | 2,107 | 4,222 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73 | 1,811 | 1,811 = | rtx4090* | 5 | 20% |
-| 3 | sn56 Gradients | 71.2 | 1,048 | 5,680 | rtx4090* | 6 | 51% |
-| 4 | sn67 Harnyx | 70.4 | 13.65 | 142 | cpu-small | 129 | 7% |
-| 5 | sn46 Instant | 69.3 | 233 | 276 | cpu-small | 6 | 43% |
-| 6 | sn1 Apex | 68 | 409 | 933 | rtx4090* | 5 | 55% |
-| 7 | sn82 Noah | 67.8 | 583 | 589 | rtx4090* | 63 | 2% |
-| 8 | sn41 Almanac | 67.8 | 8.35 | 128 | cpu-small | 159 | 5% |
-| 9 | sn53 engy | 66.9 | 291 | 2,518 | rtx4090 | 36 | 11% |
-| 10 | sn107 Minos | 66.9 | 216 | 18,086 | cpu-small | 20 | 80% |
-| 11 | sn120 Affine | 64.9 | 178 | 1,374 | rtx4090* | 122 | 4% |
-| 12 | sn15 ORO | 63.7 | 4.39 | 9.99 | cpu-small | 47 | 98% |
+| 1 | sn3 Teutonic | 73.4 | 2,100 | 4,208 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73 | 1,800 | 1,800 = | rtx4090* | 5 | 20% |
+| 3 | sn56 Gradients | 71.2 | 1,045 | 5,660 | rtx4090* | 6 | 51% |
+| 4 | sn46 Instant | 69.3 | 236 | 276 | cpu-small | 6 | 43% |
+| 5 | sn1 Apex | 68.1 | 422 | 900 | rtx4090* | 5 | 55% |
+| 6 | sn67 Harnyx | 67.9 | 7.35 | 189 | cpu-small | 122 | 9% |
+| 7 | sn82 Noah | 67.8 | 576 | 582 | rtx4090* | 63 | 2% |
+| 8 | sn41 Almanac | 67.8 | 8.39 | 133 | cpu-small | 161 | 2% |
+| 9 | sn53 engy | 66.8 | 288 | 2,495 | rtx4090 | 36 | 11% |
+| 10 | sn107 Minos | 66.8 | 212 | 18,039 | cpu-small | 20 | 80% |
+| 11 | sn15 ORO | 66.1 | 6.78 | 14,577 | cpu-small | 55 | 97% |
+| 12 | sn120 Affine | 63.9 | 142 | 1,454 | rtx4090* | 138 | 5% |
 | 13 | sn66 conjectures | 63.3 | 101 | 210 | rtx4090* | 4 | 80% |
-| 14 | sn62 Ridges | 62.7 | 82.57 | 919 | rtx4090* | 44 | 15% |
-| 15 | sn23 Trishool | 62.5 | 1,065 | 1,065 = | cpu-small | 2 | 80% |
-| 16 | sn28 SayGM | 60 | 38.32 | 1,395 | rtx4090* | 133 | 46% |
-| 17 | sn34 BitMind | 59.9 | 8,492 | 8,492 = | a100-80 | 3 | 85% |
-| 18 | sn111 Claims | 58.9 | 27.56 | 2,677 | rtx4090* | 6 | 90% |
-| 19 | sn81 Reliquary | 58.3 | 21.74 | 221 | rtx4090* | 42 | 37% |
-| 20 | sn5 Hone | 57.4 | 28.82 | 34.29 | rtx4090* | 242 | 0% |
+| 14 | sn62 Ridges | 62.7 | 82.23 | 916 | rtx4090* | 44 | 15% |
+| 15 | sn23 Trishool | 62.6 | 1,081 | 1,081 = | cpu-small | 2 | 80% |
+| 16 | sn91 cascade | 61.5 | 799 | 1,599 | cpu-small | 5 | 52% |
+| 17 | sn28 SayGM | 60.8 | 49.48 | 2,114 | rtx4090* | 132 | 19% |
+| 18 | sn34 BitMind | 59.9 | 8,440 | 8,440 = | a100-80 | 3 | 85% |
+| 19 | sn81 Reliquary | 59.2 | 28.44 | 220 | rtx4090* | 41 | 48% |
+| 20 | sn111 Claims | 58.9 | 27.43 | 2,667 | rtx4090* | 6 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 28 |
-| concentrated (30–60%) | 20 |
-| dominated (60–90%) | 25 |
-| captured (>90%) | 21 |
+| wide (<30%) | 29 |
+| concentrated (30–60%) | 19 |
+| dominated (60–90%) | 23 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-26T05:27 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag |
+| 2026-10-26T05:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Classify verified provider output failure |
+| 2026-10-26T05:27 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Expose native checkpoint metadata progres |
 | 2026-10-26T00:45 | sn25 | RELEASE | sn25 released v2026.10.25-1081686250 |
 | 2026-10-26T00:45 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Project the verified retained predecessor |
 | 2026-10-26T00:45 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Record final live verification of all twe |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-25T14:20 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an i |
 | 2026-10-25T14:20 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Materialize eligible closed score runs be |
 | 2026-10-25T14:20 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: feat(eval): score agent turns mid-traject |
-| 2026-10-25T10:00 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Allow miner execution alongside baseline  |
-| 2026-10-25T05:23 | sn15 | RELEASE | sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#39 |
-| 2026-10-25T05:23 | sn25 | RELEASE | sn25 released v2026.10.24-1080878340 |
 
 ---
 

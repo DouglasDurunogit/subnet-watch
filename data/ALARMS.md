@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-26T00:44:55Z, block 9364325
+# ALARMS - generated 2026-10-26T05:27:24Z, block 9365738
 
-window: first_seen in [2026-10-25T23:30:22Z, 2026-10-26T00:45:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-26T04:12:56Z, 2026-10-26T05:27:56Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,18 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | P1 | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
-| `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
-| `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
-| `sn78:scoring_commit:2026-10-25T22:48:12Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe… |
-| `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | P2 | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
+| `sn51:scoring_commit:2026-10-26T03:35:42Z` | 51 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco… |
+| `sn71:scoring_commit:2026-10-26T02:30:24Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn71 commit touches scoring: Classify verified provider output failures within capture coverage |
+| `sn78:scoring_commit:2026-10-26T03:27:58Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T05:27:56Z | sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42 |
 
 ### detail
 
-- **`sn25:release:v2026.10.25-1081686250`** - sn25 released v2026.10.25-1081686250
-  - published 2026-10-25T23:00:24Z (was v2026.10.24-1080878340)
-- **`sn25:scoring_commit:2026-10-25T23:59:22Z`** - sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery
+- **`sn51:scoring_commit:2026-10-26T03:35:42Z`** - sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-25T21:47:33Z`** - sn71 commit touches scoring: Record final live verification of all twenty-five provider routes
+- **`sn71:scoring_commit:2026-10-26T02:30:24Z`** - sn71 commit touches scoring: Classify verified provider output failures within capture coverage
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-25T22:48:12Z`** - sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe…
+- **`sn78:scoring_commit:2026-10-26T03:27:58Z`** - sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:readme_task_diff:5bed35973cd7335b`** - sn71 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -53,14 +47,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
-| `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |
-| `sn51:release:executor-v1.143` | 51 | RELEASE | 2026-10-19T05:03:29Z | sn51 released executor-v1.143 |
-| `sn51:scoring_commit:2026-10-19T04:21:15Z` | 51 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn51 commit touches scoring: DAH-3980 - Validator: customer create removes a leftover filler or fa… |
-| `sn71:scoring_commit:2026-10-19T01:00:51Z` | 71 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn71 commit touches scoring: Resolve verified LinkedIn company redirects in either direction (#537) |
-| `sn116:scoring_commit:2026-10-18T18:52:31Z` | 116 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn116 commit touches scoring: Retain admitted cold overlays from verified original source |
-| `sn117:release:everycli v0.5.8` | 117 | RELEASE | 2026-10-19T05:03:29Z | sn117 released everycli v0.5.8 |
-| `sn117:scoring_commit:2026-10-19T03:47:45Z` | 117 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn117 commit touches scoring: fix: validate provider model availability and clarify catalog IDs |
 | `sn25:release:v2026.10.19-1076002880` | 25 | RELEASE | 2026-10-19T10:42:29Z | sn25 released v2026.10.19-1076002880 |
 | `sn51:release:miner-v1.007` | 51 | RELEASE | 2026-10-19T10:42:29Z | sn51 released miner-v1.007 |
 | `sn51:scoring_commit:2026-10-19T10:33:44Z` | 51 | SCORING_COMMIT | 2026-10-19T10:42:29Z | sn51 commit touches scoring: DAH-2834 - [P2] shadow the verify agent over SSH and ship it in the e… |
@@ -256,7 +242,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-10-25T13:32:48Z` | 97 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn97 commit touches scoring: feat(eval): score agent turns mid-trajectory, higher swe and terminal… |
 | `sn78:scoring_commit:2026-10-25T17:59:54Z` | 78 | SCORING_COMMIT | 2026-10-25T20:01:41Z | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica… |
 | `sn78:scoring_commit:2026-10-25T22:24:39Z` | 78 | SCORING_COMMIT | 2026-10-25T22:30:52Z | sn78 commit touches scoring: Reuse native request closure verification through publication and rev… |
-| `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
+| `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
+| `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
+| `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
+| `sn78:scoring_commit:2026-10-25T22:48:12Z` | 78 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe… |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
@@ -269,6 +258,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:readme_task_diff:f81741e228d9d939` | 76 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn76 README task/scoring sections changed |
 | `sn117:readme_task_diff:61eefa3e188bb2fb` | 117 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn117 README task/scoring sections changed |
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
+| `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

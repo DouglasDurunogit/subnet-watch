@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-10-26T00:44:55Z  |  block: 9364325  |  row_status: ok
+snapshot_utc: 2026-10-26T05:27:24Z  |  block: 9365738  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.12625 USD), open=True
+- registration cost: 0.0005 TAO (0.12579 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 6  |  free: 0
-- subnet age: 920.9 days  |  registered at block 2734060
+- subnet age: 921.1 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2614.7412908412593
-- top_miner_usd_day: 2614.7412908412593 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2605.0628084004225
+- top_miner_usd_day: 2605.0628084004225 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-26T00:44:55Z  |  block: 9364325  |  row_status: ok
 - on-chain URL: `https://github.com/DaniLabsAI/subnet`
 - resolved URL: `https://github.com/DaniLabsAI/subnet`
 - status: **ok** 
-- README: 2173 bytes, sha 5af80313f3f73410
+- README: 2363 bytes, sha 6547a3a3b39d3ccf
 - latest release: (none) 
-- last commit: 2026-10-24T01:41:12Z
+- last commit: 2026-10-26T04:54:43Z
 - scoring-related commit: Document localnet validator operation and production boundary 2026-10-24T01:34:32Z
 
 ## Resources
@@ -93,12 +93,14 @@ burn pilot**. The pilot runs an isolated signer, a PM2 worker, and a staged work
 updater with health checks and rollback. It targets the subnet owner's registered
 UID and verifies the resulting weight row and miner-burn settlement separately.
 
-Transaction signing is currently restricted to a pinned development chain and a
-known development key. Finney remains read-only. Miner scoring and production
-weight submission are still pending.
+The signer supports encrypted hotkey custody, an explicit operator policy, and
+optional automatic recovery through OCI Secret Management.
+The deployed pilot uses a development key on localnet; Finney signing is disabled.
+Miner scoring and production activation are still pending.
 
 See the [observer guide](docs/operator-pilot.md) for chain monitoring and the
 [localnet guide](docs/localnet-validator.md) for burn testing, PM2 controls and
-updates.
+updates. The [signer guide](docs/production-signer.md) covers key custody and
+production activation requirements.
 
 ```

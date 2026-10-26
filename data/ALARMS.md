@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-26T17:39:35Z, block 9369399
+# ALARMS - generated 2026-10-26T21:55:35Z, block 9370679
 
-window: first_seen in [2026-10-26T16:25:02Z, 2026-10-26T17:40:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-26T20:41:01Z, 2026-10-26T21:56:01Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:validator-staging-2026-10-26-40344021717` | 12 | RELEASE | P1 | 2026-10-26T17:40:02Z | sn12 released validator-staging-2026-10-26-40344021717-627-1: fix: eMudhra ca incident immunization - internal deps |
-| `sn12:scoring_commit:2026-10-26T16:19:50Z` | 12 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn12 commit touches scoring: fix(validator): fix prometheus image |
-| `sn51:release:miner-v1.010` | 51 | RELEASE | P1 | 2026-10-26T17:40:02Z | sn51 released miner-v1.010 |
-| `sn51:scoring_commit:2026-10-26T16:46:20Z` | 51 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn51 commit touches scoring: DAH-5187 - [P1] Validator: re-probe missed ports once before failing … |
-| `sn60:scoring_commit:2026-10-26T15:27:49Z` | 60 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn60 commit touches scoring: changed scorer model to DeepSeek-V3.2 |
-| `sn71:scoring_commit:2026-10-26T12:29:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn71 commit touches scoring: Merge pull request #796 from leadpoet/fix/close-scoring-covered-credi… |
-| `sn75:release:Runtime 92023 rc2 (srtool, 873384f)` | 75 | RELEASE | P1 | 2026-10-26T17:40:02Z | sn75 released Runtime 92023 rc2 (srtool, 873384f) |
-| `sn78:scoring_commit:2026-10-26T15:21:01Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn78 commit touches scoring: Enforce broader C7+ evaluation suites (#441) |
-| `sn97:scoring_commit:2026-10-26T16:35:25Z` | 97 | SCORING_COMMIT | P1 | 2026-10-26T17:40:02Z | sn97 commit touches scoring: fix(web): display NaN scores properly |
+| `sn2:scoring_commit:2026-10-26T19:40:08Z` | 2 | SCORING_COMMIT | P1 | 2026-10-26T21:56:01Z | sn2 commit touches scoring: Document live Finney burn validator status |
+| `sn28:release:v0.5.12` | 28 | RELEASE | P1 | 2026-10-26T21:56:01Z | sn28 released v0.5.12 |
+| `sn28:scoring_commit:2026-10-24T09:19:08Z` | 28 | SCORING_COMMIT | P1 | 2026-10-26T21:56:01Z | sn28 commit touches scoring: attestd: fix the kubetee.attestation.v1 binding verification (gm-veri… |
+| `sn51:scoring_commit:2026-10-26T17:40:00Z` | 51 | SCORING_COMMIT | P1 | 2026-10-26T21:56:01Z | sn51 commit touches scoring: DAH-4972 - [P1] Validator fails nodes without pid: host (#1806) |
+| `sn123:scoring_commit:2026-10-26T19:14:29Z` | 123 | SCORING_COMMIT | P1 | 2026-10-26T21:56:01Z | sn123 commit touches scoring: Update validator.py |
+| `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | P2 | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 
 ### detail
 
-- **`sn12:release:validator-staging-2026-10-26-40344021717`** - sn12 released validator-staging-2026-10-26-40344021717-627-1: fix: eMudhra ca incident immunization - internal deps
-  - published 2026-10-26T13:11:34Z (was miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization)
-- **`sn12:scoring_commit:2026-10-26T16:19:50Z`** - sn12 commit touches scoring: fix(validator): fix prometheus image
+- **`sn2:scoring_commit:2026-10-26T19:40:08Z`** - sn2 commit touches scoring: Document live Finney burn validator status
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:miner-v1.010`** - sn51 released miner-v1.010
-  - published 2026-10-26T11:08:28Z (was executor-v1.155)
-- **`sn51:scoring_commit:2026-10-26T16:46:20Z`** - sn51 commit touches scoring: DAH-5187 - [P1] Validator: re-probe missed ports once before failing …
+- **`sn28:release:v0.5.12`** - sn28 released v0.5.12
+  - published 2026-10-26T21:40:58Z (was v0.5.11)
+- **`sn28:scoring_commit:2026-10-24T09:19:08Z`** - sn28 commit touches scoring: attestd: fix the kubetee.attestation.v1 binding verification (gm-veri…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn60:scoring_commit:2026-10-26T15:27:49Z`** - sn60 commit touches scoring: changed scorer model to DeepSeek-V3.2
+- **`sn51:scoring_commit:2026-10-26T17:40:00Z`** - sn51 commit touches scoring: DAH-4972 - [P1] Validator fails nodes without pid: host (#1806)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-26T12:29:53Z`** - sn71 commit touches scoring: Merge pull request #796 from leadpoet/fix/close-scoring-covered-credi…
+- **`sn123:scoring_commit:2026-10-26T19:14:29Z`** - sn123 commit touches scoring: Update validator.py
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn75:release:Runtime 92023 rc2 (srtool, 873384f)`** - sn75 released Runtime 92023 rc2 (srtool, 873384f)
-  - published 2026-10-26T13:54:42Z (was v9.1.8.4)
-- **`sn78:scoring_commit:2026-10-26T15:21:01Z`** - sn78 commit touches scoring: Enforce broader C7+ evaluation suites (#441)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-10-26T16:35:25Z`** - sn97 commit touches scoring: fix(web): display NaN scores properly
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn2:readme_task_diff:48eb164474c3f6a5`** - sn2 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn7:burn_drop:0.505` | 7 | BURN_DROP | 2026-10-19T21:39:26Z | sn7 burn fell 1.000 -> 0.505 - miners can earn again |
 | `sn76:burn_drop:0.989` | 76 | BURN_DROP | 2026-10-20T00:43:32Z | sn76 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn117:burn_drop:0.884` | 117 | BURN_DROP | 2026-10-20T00:43:32Z | sn117 burn fell 1.000 -> 0.884 - miners can earn again |
 | `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -64,14 +54,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn15:scoring_commit:2026-10-19T19:37:29Z` | 15 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn15 commit touches scoring: fix: use validator lockfile for local tests and CI |
-| `sn41:scoring_commit:2026-10-19T18:42:33Z` | 41 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn41 commit touches scoring: Updating default miner alpha to 3600, or 50% of total emissions with … |
-| `sn50:scoring_commit:2026-10-19T20:29:17Z` | 50 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn50 commit touches scoring: burn 22% of miner emission (#341) |
-| `sn51:scoring_commit:2026-10-19T19:42:46Z` | 51 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn51 commit touches scoring: DAH-4195 - [P2] Skip could-not-reach rows when the miner reached almo… |
-| `sn71:scoring_commit:2026-10-19T20:07:21Z` | 71 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn71 commit touches scoring: Record verified runtime recovery release fingerprint |
-| `sn100:scoring_commit:2026-10-19T20:57:30Z` | 100 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn100 commit touches scoring: docs(validator): cover both profile version caps and restart wording |
-| `sn111:release:v1.1.0` | 111 | RELEASE | 2026-10-19T21:39:26Z | sn111 released v1.1.0 |
-| `sn111:scoring_commit:2026-10-19T13:02:58Z` | 111 | SCORING_COMMIT | 2026-10-19T21:39:26Z | sn111 commit touches scoring: Integrate approved-group fractional coverage into validator scoring |
 | `sn22:scoring_commit:2026-10-19T21:30:20Z` | 22 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn22 commit touches scoring: fix(validators): embed checks wait up to 120 s for reference vectors,… |
 | `sn28:release:v0.5.4` | 28 | RELEASE | 2026-10-20T00:43:32Z | sn28 released v0.5.4 |
 | `sn28:scoring_commit:2026-10-19T22:56:58Z` | 28 | SCORING_COMMIT | 2026-10-20T00:43:32Z | sn28 commit touches scoring: chore(release): promote gm-miner 0.5.4 (#333) |
@@ -259,6 +241,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-10-25T15:22:13Z` | 81 | SCORING_COMMIT | 2026-10-26T11:28:34Z | sn81 commit touches scoring: feat(validator): name every declared card model |
 | `sn92:release:v1.2.0-rc11.post7` | 92 | RELEASE | 2026-10-26T11:28:34Z | sn92 released v1.2.0-rc11.post7 |
 | `sn123:scoring_commit:2026-10-26T06:24:32Z` | 123 | SCORING_COMMIT | 2026-10-26T11:28:34Z | sn123 commit touches scoring: Update validator.py |
+| `sn12:release:validator-staging-2026-10-26-40344021717` | 12 | RELEASE | 2026-10-26T17:40:02Z | sn12 released validator-staging-2026-10-26-40344021717-627-1: fix: eMudhra ca incident immunization - internal deps |
+| `sn12:scoring_commit:2026-10-26T16:19:50Z` | 12 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn12 commit touches scoring: fix(validator): fix prometheus image |
+| `sn51:release:miner-v1.010` | 51 | RELEASE | 2026-10-26T17:40:02Z | sn51 released miner-v1.010 |
+| `sn51:scoring_commit:2026-10-26T16:46:20Z` | 51 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn51 commit touches scoring: DAH-5187 - [P1] Validator: re-probe missed ports once before failing … |
+| `sn60:scoring_commit:2026-10-26T15:27:49Z` | 60 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn60 commit touches scoring: changed scorer model to DeepSeek-V3.2 |
+| `sn71:scoring_commit:2026-10-26T12:29:53Z` | 71 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn71 commit touches scoring: Merge pull request #796 from leadpoet/fix/close-scoring-covered-credi… |
+| `sn75:release:Runtime 92023 rc2 (srtool, 873384f)` | 75 | RELEASE | 2026-10-26T17:40:02Z | sn75 released Runtime 92023 rc2 (srtool, 873384f) |
+| `sn78:scoring_commit:2026-10-26T15:21:01Z` | 78 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn78 commit touches scoring: Enforce broader C7+ evaluation suites (#441) |
+| `sn97:scoring_commit:2026-10-26T16:35:25Z` | 97 | SCORING_COMMIT | 2026-10-26T17:40:02Z | sn97 commit touches scoring: fix(web): display NaN scores properly |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |

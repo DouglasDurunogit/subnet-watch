@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-25T22:30:25Z, block 9363653
+# ALARMS - generated 2026-10-26T00:44:55Z, block 9364325
 
-window: first_seen in [2026-10-25T21:15:52Z, 2026-10-25T22:30:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-25T23:30:22Z, 2026-10-26T00:45:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn117:burn_drop:0.955` | 117 | BURN_DROP | P0 | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn78:scoring_commit:2026-10-25T22:24:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-25T22:30:52Z | sn78 commit touches scoring: Reuse native request closure verification through publication and rev… |
+| `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | P1 | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
+| `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
+| `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
+| `sn78:scoring_commit:2026-10-25T22:48:12Z` | 78 | SCORING_COMMIT | P1 | 2026-10-26T00:45:22Z | sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe… |
+| `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | P2 | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 
 ### detail
 
-- **`sn117:burn_drop:0.955`** - sn117 burn fell 1.000 -> 0.955 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn78:scoring_commit:2026-10-25T22:24:39Z`** - sn78 commit touches scoring: Reuse native request closure verification through publication and rev…
+- **`sn25:release:v2026.10.25-1081686250`** - sn25 released v2026.10.25-1081686250
+  - published 2026-10-25T23:00:24Z (was v2026.10.24-1080878340)
+- **`sn25:scoring_commit:2026-10-25T23:59:22Z`** - sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-25T21:47:33Z`** - sn71 commit touches scoring: Record final live verification of all twenty-five provider routes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-25T22:48:12Z`** - sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:readme_task_diff:5bed35973cd7335b`** - sn71 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,6 +52,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
+| `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn21:scoring_commit:2026-10-19T03:05:03Z` | 21 | SCORING_COMMIT | 2026-10-19T05:03:29Z | sn21 commit touches scoring: feat(executor): the scored run can wait for the basket's change descr… |
 | `sn25:release:v2026.10.18-1075707760` | 25 | RELEASE | 2026-10-19T05:03:29Z | sn25 released v2026.10.18-1075707760 |
 | `sn51:release:executor-v1.143` | 51 | RELEASE | 2026-10-19T05:03:29Z | sn51 released executor-v1.143 |
@@ -245,6 +255,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-25T10:32:22Z` | 71 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn71 commit touches scoring: Materialize eligible closed score runs before uncertain calls |
 | `sn97:scoring_commit:2026-10-25T13:32:48Z` | 97 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn97 commit touches scoring: feat(eval): score agent turns mid-trajectory, higher swe and terminal… |
 | `sn78:scoring_commit:2026-10-25T17:59:54Z` | 78 | SCORING_COMMIT | 2026-10-25T20:01:41Z | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica… |
+| `sn78:scoring_commit:2026-10-25T22:24:39Z` | 78 | SCORING_COMMIT | 2026-10-25T22:30:52Z | sn78 commit touches scoring: Reuse native request closure verification through publication and rev… |
 | `sn89:readme_task_diff:46569451fd573f74` | 89 | README_TASK_DIFF | 2026-10-19T05:03:29Z | sn89 README task/scoring sections changed |
 | `sn90:readme_task_diff:f94fa7f5ba6e1765` | 90 | README_TASK_DIFF | 2026-10-19T17:12:59Z | sn90 README task/scoring sections changed |
 | `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-27T06:46:16Z, block 9373332
+# ALARMS - generated 2026-10-27T12:46:06Z, block 9375131
 
-window: first_seen in [2026-10-27T05:31:43Z, 2026-10-27T06:46:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-27T11:31:40Z, 2026-10-27T12:46:40Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn73:burn_drop:0.000` | 73 | BURN_DROP | P0 | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn2:scoring_commit:2026-10-27T04:19:07Z` | 2 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews |
-| `sn15:release:v3.0.5: fix(validator): policy_view.max_` | 15 | RELEASE | P1 | 2026-10-27T06:46:43Z | sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit |
-| `sn15:scoring_commit:2026-10-27T04:52:29Z` | 15 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit |
-| `sn76:scoring_commit:2026-10-27T02:34:08Z` | 76 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan… |
-| `sn78:scoring_commit:2026-10-27T04:29:51Z` | 78 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s… |
-| `sn2:readme_task_diff:1ff49772ce88e83f` | 2 | README_TASK_DIFF | P2 | 2026-10-27T06:46:43Z | sn2 README task/scoring sections changed |
-| `sn123:readme_task_diff:923cc435a761cf7e` | 123 | README_TASK_DIFF | P2 | 2026-10-27T06:46:43Z | sn123 README task/scoring sections changed |
+| `sn1:release:v4.5.0` | 1 | RELEASE | P1 | 2026-10-27T12:46:40Z | sn1 released v4.5.0 |
+| `sn2:scoring_commit:2026-10-27T07:31:43Z` | 2 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn2 commit touches scoring: Gate unverified miner scores and refresh narrow validator dependencies |
+| `sn3:scoring_commit:2026-10-27T11:33:11Z` | 3 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn3 commit touches scoring: Show per-category losses in evaluation history |
+| `sn25:release:v2026.10.26-1082839840` | 25 | RELEASE | P1 | 2026-10-27T12:46:40Z | sn25 released v2026.10.26-1082839840 |
+| `sn51:scoring_commit:2026-10-27T11:28:16Z` | 51 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn51 commit touches scoring: DAH-5235 - [P0] Validator: publish a node at once when its GPU comes … |
+| `sn67:scoring_commit:2026-10-27T10:49:10Z` | 67 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261027.post2 |
+| `sn75:release:Runtime 92023` | 75 | RELEASE | P1 | 2026-10-27T12:46:40Z | sn75 released Runtime 92023 |
+| `sn78:scoring_commit:2026-10-27T09:44:39Z` | 78 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn78 commit touches scoring: Cap retained reward coverage at native successor activation |
+| `sn91:scoring_commit:2026-10-27T00:15:55Z` | 91 | SCORING_COMMIT | P1 | 2026-10-27T12:46:40Z | sn91 commit touches scoring: Report static-guard rejections from verify instead of crashing |
+| `sn2:readme_task_diff:db6ec8f75a1e4b61` | 2 | README_TASK_DIFF | P2 | 2026-10-27T12:46:40Z | sn2 README task/scoring sections changed |
+| `sn91:readme_task_diff:9eb19065ad44711d` | 91 | README_TASK_DIFF | P2 | 2026-10-27T12:46:40Z | sn91 README task/scoring sections changed |
 
 ### detail
 
-- **`sn73:burn_drop:0.000`** - sn73 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn2:scoring_commit:2026-10-27T04:19:07Z`** - sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews
+- **`sn1:release:v4.5.0`** - sn1 released v4.5.0
+  - published 2026-10-27T11:28:12Z (was v4.4.15)
+- **`sn2:scoring_commit:2026-10-27T07:31:43Z`** - sn2 commit touches scoring: Gate unverified miner scores and refresh narrow validator dependencies
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:release:v3.0.5: fix(validator): policy_view.max_`** - sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit
-  - published 2026-10-27T04:52:29Z (was v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392))
-- **`sn15:scoring_commit:2026-10-27T04:52:29Z`** - sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit
+- **`sn3:scoring_commit:2026-10-27T11:33:11Z`** - sn3 commit touches scoring: Show per-category losses in evaluation history
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:scoring_commit:2026-10-27T02:34:08Z`** - sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan…
+- **`sn25:release:v2026.10.26-1082839840`** - sn25 released v2026.10.26-1082839840
+  - published 2026-10-27T07:03:05Z (was v2026.10.25-1081686250)
+- **`sn51:scoring_commit:2026-10-27T11:28:16Z`** - sn51 commit touches scoring: DAH-5235 - [P0] Validator: publish a node at once when its GPU comes …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-27T04:29:51Z`** - sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s…
+- **`sn67:scoring_commit:2026-10-27T10:49:10Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261027.post2
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn2:readme_task_diff:1ff49772ce88e83f`** - sn2 README task/scoring sections changed
+- **`sn75:release:Runtime 92023`** - sn75 released Runtime 92023
+  - published 2026-10-27T10:20:01Z (was Runtime 92023 rc2 (srtool, 873384f))
+- **`sn78:scoring_commit:2026-10-27T09:44:39Z`** - sn78 commit touches scoring: Cap retained reward coverage at native successor activation
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-10-27T00:15:55Z`** - sn91 commit touches scoring: Report static-guard rejections from verify instead of crashing
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn2:readme_task_diff:db6ec8f75a1e4b61`** - sn2 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn123:readme_task_diff:923cc435a761cf7e`** - sn123 README task/scoring sections changed
+- **`sn91:readme_task_diff:9eb19065ad44711d`** - sn91 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -59,12 +68,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
-| `sn25:release:v2026.10.20-1076869840` | 25 | RELEASE | 2026-10-20T10:18:20Z | sn25 released v2026.10.20-1076869840 |
-| `sn51:scoring_commit:2026-10-20T08:46:36Z` | 51 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t… |
-| `sn66:release:deployed/dev: Merge pull request #139 fr` | 66 | RELEASE | 2026-10-20T10:18:20Z | sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
-| `sn67:scoring_commit:2026-10-20T06:10:57Z` | 67 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261020.post2 |
-| `sn71:scoring_commit:2026-10-20T07:07:45Z` | 71 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn71 commit touches scoring: Reuse validated company authority for consumer ownership checks |
-| `sn127:scoring_commit:2026-10-20T09:51:40Z` | 127 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn127 commit touches scoring: Merge pull request #1 from astridintelligence/astrid-score-payouts |
+| `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn3:scoring_commit:2026-10-20T11:26:30Z` | 3 | SCORING_COMMIT | 2026-10-20T15:16:23Z | sn3 commit touches scoring: Sample evaluation sequences from at least five shards per category |
 | `sn25:release:v2026.10.20-1077000950` | 25 | RELEASE | 2026-10-20T15:16:23Z | sn25 released v2026.10.20-1077000950 |
 | `sn28:release:v0.5.5` | 28 | RELEASE | 2026-10-20T15:16:23Z | sn28 released v0.5.5 |
@@ -255,6 +259,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn123:scoring_commit:2026-10-26T19:14:29Z` | 123 | SCORING_COMMIT | 2026-10-26T21:56:01Z | sn123 commit touches scoring: Update validator.py |
 | `sn71:scoring_commit:2026-10-27T00:51:51Z` | 71 | SCORING_COMMIT | 2026-10-27T01:27:07Z | sn71 commit touches scoring: Record the authorized evidence-verification release scope |
 | `sn94:scoring_commit:2026-10-26T23:13:36Z` | 94 | SCORING_COMMIT | 2026-10-27T01:27:07Z | sn94 commit touches scoring: Accept a list of AMD ARK pins in the broker verifier config |
+| `sn2:scoring_commit:2026-10-27T04:19:07Z` | 2 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews |
+| `sn15:release:v3.0.5: fix(validator): policy_view.max_` | 15 | RELEASE | 2026-10-27T06:46:43Z | sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit |
+| `sn15:scoring_commit:2026-10-27T04:52:29Z` | 15 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit |
+| `sn76:scoring_commit:2026-10-27T02:34:08Z` | 76 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan… |
+| `sn78:scoring_commit:2026-10-27T04:29:51Z` | 78 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s… |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
@@ -269,6 +278,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
 | `sn125:readme_task_diff:1476e035289bbae4` | 125 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn125 README task/scoring sections changed |
+| `sn2:readme_task_diff:1ff49772ce88e83f` | 2 | README_TASK_DIFF | 2026-10-27T06:46:43Z | sn2 README task/scoring sections changed |
+| `sn123:readme_task_diff:923cc435a761cf7e` | 123 | README_TASK_DIFF | 2026-10-27T06:46:43Z | sn123 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

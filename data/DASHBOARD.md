@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-26T21:55:35Z · block 9370679 · run_status **ok**_
+_snapshot 2026-10-27T01:26:40Z · block 9371734 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 96 | `miner_burn` < 0.99 |
-| Ranked | 96 | passed every gate |
+| Pays miners at all | 97 | `miner_burn` < 0.99 |
+| Ranked | 97 | passed every gate |
 | **Positive margin** | **54** | income beats machine cost |
-| New events this window | 6 | see ALARMS.md |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,11 +31,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 64 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 7 | `███` |
-| 0.4–0.6 | 7 | `███` |
+| 0.2–0.4 | 6 | `███` |
+| 0.4–0.6 | 8 | `████` |
 | 0.6–0.8 | 7 | `███` |
-| 0.8–0.99 | 4 | `██` |
-| ≥0.99 dead | 32 | `██████████████` |
+| 0.8–0.99 | 5 | `██` |
+| ≥0.99 dead | 31 | `██████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.5 | 2,111 | 4,231 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73 | 1,815 | 1,815 = | rtx4090* | 5 | 20% |
+| 1 | sn3 Teutonic | 73.5 | 2,092 | 4,192 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73 | 1,792 | 1,792 = | rtx4090* | 5 | 20% |
 | 3 | sn60 Bitsec.ai | 70 | 286 | 286 = | cpu-small | 3 | 50% |
-| 4 | sn46 Instant | 69.6 | 254 | 292 | cpu-small | 6 | 45% |
-| 5 | sn1 Apex | 68.2 | 437 | 880 | rtx4090* | 5 | 55% |
-| 6 | sn67 Harnyx | 67.8 | 7.11 | 209 | cpu-small | 127 | 10% |
-| 7 | sn82 Noah | 67.6 | 533 | 539 | rtx4090* | 63 | 2% |
-| 8 | sn56 Gradients | 67.4 | 340 | 5,579 | rtx4090* | 8 | 51% |
-| 9 | sn107 Minos | 66.8 | 211 | 17,923 | cpu-small | 20 | 80% |
-| 10 | sn120 Affine | 66.3 | 265 | 949 | rtx4090* | 102 | 3% |
-| 11 | sn15 ORO | 66 | 6.52 | 12.88 | cpu-small | 57 | 97% |
-| 12 | sn66 conjectures | 63.3 | 100 | 209 | rtx4090* | 4 | 80% |
-| 13 | sn62 Ridges | 62.6 | 80.67 | 900 | rtx4090* | 44 | 15% |
-| 14 | sn23 Trishool | 62.5 | 1,059 | 1,059 = | cpu-small | 2 | 80% |
-| 15 | sn111 Claims | 60 | 38.19 | 2,652 | rtx4090* | 5 | 90% |
-| 16 | sn28 SayGM | 59.6 | 35.03 | 2,000 | rtx4090* | 142 | 17% |
-| 17 | sn81 Reliquary | 58.3 | 21.95 | 218 | rtx4090* | 56 | 38% |
-| 18 | sn34 BitMind | 57.9 | 4,697 | 8,429 | a100-80 | 3 | 85% |
-| 19 | sn5 Hone | 57.1 | 28.68 | 37.26 | rtx4090* | 240 | 1% |
-| 20 | sn92 REAX | 57 | 23.23 | 2,335 | rtx4090 | 244 | 15% |
+| 4 | sn46 Instant | 68.6 | 190 | 227 | cpu-small | 7 | 45% |
+| 5 | sn1 Apex | 68.2 | 431 | 864 | rtx4090* | 5 | 55% |
+| 6 | sn67 Harnyx | 67.9 | 7.08 | 208 | cpu-small | 127 | 10% |
+| 7 | sn56 Gradients | 67.4 | 338 | 5,561 | rtx4090* | 8 | 51% |
+| 8 | sn120 Affine | 67.2 | 345 | 1,053 | rtx4090* | 91 | 3% |
+| 9 | sn107 Minos | 66.7 | 210 | 17,837 | cpu-small | 20 | 80% |
+| 10 | sn15 ORO | 65.9 | 6.51 | 12.85 | cpu-small | 57 | 97% |
+| 11 | sn125 Refinery | 65.7 | 207 | 856 | rtx4090* | 4 | 50% |
+| 12 | sn66 conjectures | 63.3 | 99.94 | 208 | rtx4090* | 4 | 80% |
+| 13 | sn62 Ridges | 62.6 | 80.39 | 897 | rtx4090* | 44 | 15% |
+| 14 | sn111 Claims | 60 | 38.05 | 2,644 | rtx4090* | 5 | 90% |
+| 15 | sn28 SayGM | 59.1 | 29.58 | 1,160 | rtx4090* | 143 | 33% |
+| 16 | sn58 Attune | 57.3 | 593 | 954 | rtx4090* | 5 | 70% |
+| 17 | sn5 Hone | 57.3 | 28.84 | 38.47 | rtx4090* | 241 | 1% |
+| 18 | sn81 Reliquary | 56.6 | 12.56 | 92.07 | rtx4090* | 65 | 55% |
+| 19 | sn101 Tag101 | 56.3 | 12.90 | 12.98 | cpu-small | 240 | 1% |
+| 20 | sn92 REAX | 56.1 | 25.20 | 2,354 | rtx4090 | 234 | 14% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 28 |
-| concentrated (30–60%) | 23 |
+| wide (<30%) | 27 |
+| concentrated (30–60%) | 24 |
 | dominated (60–90%) | 22 |
-| captured (>90%) | 22 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -97,9 +97,9 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 96 |
+| no evidence | 97 |
 | README keywords (GUESS) | 13 |
-| min_compute.yml (curated) | 10 |
+| min_compute.yml (curated) | 9 |
 | code-submission (validator runs it) | 8 |
 | README stated VRAM (explicit) | 1 |
 
@@ -107,6 +107,11 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-27T01:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Record the authorized evidence-verificati |
+| 2026-10-27T01:27 | sn76 | BURN_DROP | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
+| 2026-10-27T01:27 | sn94 | SCORING_COMMIT | sn94 commit touches scoring: Accept a list of AMD ARK pins in the brok |
+| 2026-10-27T01:27 | sn123 | README_TASK_DIFF | sn123 README task/scoring sections changed |
+| 2026-10-27T01:27 | sn125 | README_TASK_DIFF | sn125 README task/scoring sections changed |
 | 2026-10-26T21:56 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Document live Finney burn validator status |
 | 2026-10-26T21:56 | sn2 | README_TASK_DIFF | sn2 README task/scoring sections changed |
 | 2026-10-26T21:56 | sn28 | RELEASE | sn28 released v0.5.12 |
@@ -117,11 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-26T17:40 | sn12 | SCORING_COMMIT | sn12 commit touches scoring: fix(validator): fix prometheus image |
 | 2026-10-26T17:40 | sn51 | RELEASE | sn51 released miner-v1.010 |
 | 2026-10-26T17:40 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5187 - [P1] Validator: re-probe misse |
-| 2026-10-26T17:40 | sn60 | SCORING_COMMIT | sn60 commit touches scoring: changed scorer model to DeepSeek-V3.2 |
-| 2026-10-26T17:40 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #796 from leadpoet/fix |
-| 2026-10-26T17:40 | sn75 | RELEASE | sn75 released Runtime 92023 rc2 (srtool, 873384f) |
-| 2026-10-26T17:40 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Enforce broader C7+ evaluation suites (#4 |
-| 2026-10-26T17:40 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: fix(web): display NaN scores properly |
 
 ---
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-27T18:23:27Z, block 9376818
+# ALARMS - generated 2026-10-27T22:29:01Z, block 9378046
 
-window: first_seen in [2026-10-27T17:09:01Z, 2026-10-27T18:24:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-27T21:14:30Z, 2026-10-27T22:29:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn9:release:v4.13.10` | 9 | RELEASE | P1 | 2026-10-27T18:24:01Z | sn9 released v4.13.10 |
-| `sn25:release:v2026.10.27-1083160450` | 25 | RELEASE | P1 | 2026-10-27T18:24:01Z | sn25 released v2026.10.27-1083160450 |
-| `sn33:scoring_commit:2026-10-21T15:43:18Z` | 33 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn33 commit touches scoring: Enable 25% burn and shuffle task dispatch order |
-| `sn50:scoring_commit:2026-10-27T16:16:32Z` | 50 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn50 commit touches scoring: fix(validator): resync the metagraph after a prompt that raised (#350) |
-| `sn71:scoring_commit:2026-10-27T17:58:21Z` | 71 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn71 commit touches scoring: Record verified SSM cutover and permanent AWS account guidance |
-| `sn78:scoring_commit:2026-10-27T18:03:38Z` | 78 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn78 commit touches scoring: Cap C7+ evaluation sources and preserve historical suite semantics (#… |
-| `sn81:scoring_commit:2026-10-27T13:02:41Z` | 81 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn81 commit touches scoring: fix(rl-async): never charge miners for the validator's own downtime |
-| `sn89:scoring_commit:2026-10-27T04:02:56Z` | 89 | SCORING_COMMIT | P1 | 2026-10-27T18:24:01Z | sn89 commit touches scoring: Signals entity accounts: hosted miners as subaccounts of one UID (arm… |
+| `sn8:scoring_commit:2026-10-27T20:14:01Z` | 8 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde… |
+| `sn51:release:executor-v1.157` | 51 | RELEASE | P1 | 2026-10-27T22:29:30Z | sn51 released executor-v1.157 |
+| `sn71:scoring_commit:2026-10-27T19:54:01Z` | 71 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn71 commit touches scoring: docs: scope Tyche capture verification and rollout |
+| `sn92:release:v1.2.0-rc11.post8.1` | 92 | RELEASE | P1 | 2026-10-27T22:29:30Z | sn92 released v1.2.0-rc11.post8.1 |
+| `sn92:scoring_commit:2026-10-27T22:13:15Z` | 92 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E… |
 
 ### detail
 
-- **`sn9:release:v4.13.10`** - sn9 released v4.13.10
-  - published 2026-10-27T17:03:51Z (was v4.13.9)
-- **`sn25:release:v2026.10.27-1083160450`** - sn25 released v2026.10.27-1083160450
-  - published 2026-10-27T15:57:29Z (was v2026.10.26-1082839840)
-- **`sn33:scoring_commit:2026-10-21T15:43:18Z`** - sn33 commit touches scoring: Enable 25% burn and shuffle task dispatch order
+- **`sn8:scoring_commit:2026-10-27T20:14:01Z`** - sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:scoring_commit:2026-10-27T16:16:32Z`** - sn50 commit touches scoring: fix(validator): resync the metagraph after a prompt that raised (#350)
+- **`sn51:release:executor-v1.157`** - sn51 released executor-v1.157
+  - published 2026-10-27T20:34:12Z (was miner-v1.010)
+- **`sn71:scoring_commit:2026-10-27T19:54:01Z`** - sn71 commit touches scoring: docs: scope Tyche capture verification and rollout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-27T17:58:21Z`** - sn71 commit touches scoring: Record verified SSM cutover and permanent AWS account guidance
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-27T18:03:38Z`** - sn78 commit touches scoring: Cap C7+ evaluation sources and preserve historical suite semantics (#…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-27T13:02:41Z`** - sn81 commit touches scoring: fix(rl-async): never charge miners for the validator's own downtime
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-10-27T04:02:56Z`** - sn89 commit touches scoring: Signals entity accounts: hosted miners as subaccounts of one UID (arm…
+- **`sn92:release:v1.2.0-rc11.post8.1`** - sn92 released v1.2.0-rc11.post8.1
+  - published 2026-10-27T22:13:19Z (was v1.2.0-rc11.post7)
+- **`sn92:scoring_commit:2026-10-27T22:13:15Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn48:burn_drop:0.000` | 48 | BURN_DROP | 2026-10-20T19:28:18Z | sn48 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn30:burn_drop:0.981` | 30 | BURN_DROP | 2026-10-21T20:17:01Z | sn30 burn fell 0.996 -> 0.981 - miners can earn again |
 | `sn37:burn_drop:0.711` | 37 | BURN_DROP | 2026-10-21T20:17:01Z | sn37 burn fell 1.000 -> 0.711 - miners can earn again |
@@ -60,11 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn66:release:deployed/dev: Merge pull request #143 fr` | 66 | RELEASE | 2026-10-20T19:28:18Z | sn66 released deployed/dev: Merge pull request #143 from conjectures-io/ci/merge-queue |
-| `sn66:scoring_commit:2026-10-20T09:00:23Z` | 66 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn66 commit touches scoring: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
-| `sn71:scoring_commit:2026-10-20T15:18:06Z` | 71 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn71 commit touches scoring: Refresh persisted Arena model scores before unpublished evidence (#615 |
-| `sn81:scoring_commit:2026-10-20T12:58:45Z` | 81 | SCORING_COMMIT | 2026-10-20T19:28:18Z | sn81 commit touches scoring: ci: replace obsolete validator check runs |
-| `sn92:release:v1.2.0-rc9.post6` | 92 | RELEASE | 2026-10-20T19:28:18Z | sn92 released v1.2.0-rc9.post6 |
 | `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
 | `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
 | `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
@@ -255,6 +240,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn75:release:Runtime 92023` | 75 | RELEASE | 2026-10-27T12:46:40Z | sn75 released Runtime 92023 |
 | `sn78:scoring_commit:2026-10-27T09:44:39Z` | 78 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn78 commit touches scoring: Cap retained reward coverage at native successor activation |
 | `sn91:scoring_commit:2026-10-27T00:15:55Z` | 91 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn91 commit touches scoring: Report static-guard rejections from verify instead of crashing |
+| `sn9:release:v4.13.10` | 9 | RELEASE | 2026-10-27T18:24:01Z | sn9 released v4.13.10 |
+| `sn25:release:v2026.10.27-1083160450` | 25 | RELEASE | 2026-10-27T18:24:01Z | sn25 released v2026.10.27-1083160450 |
+| `sn33:scoring_commit:2026-10-21T15:43:18Z` | 33 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn33 commit touches scoring: Enable 25% burn and shuffle task dispatch order |
+| `sn50:scoring_commit:2026-10-27T16:16:32Z` | 50 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn50 commit touches scoring: fix(validator): resync the metagraph after a prompt that raised (#350) |
+| `sn71:scoring_commit:2026-10-27T17:58:21Z` | 71 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn71 commit touches scoring: Record verified SSM cutover and permanent AWS account guidance |
+| `sn78:scoring_commit:2026-10-27T18:03:38Z` | 78 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn78 commit touches scoring: Cap C7+ evaluation sources and preserve historical suite semantics (#… |
+| `sn81:scoring_commit:2026-10-27T13:02:41Z` | 81 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn81 commit touches scoring: fix(rl-async): never charge miners for the validator's own downtime |
+| `sn89:scoring_commit:2026-10-27T04:02:56Z` | 89 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn89 commit touches scoring: Signals entity accounts: hosted miners as subaccounts of one UID (arm… |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |

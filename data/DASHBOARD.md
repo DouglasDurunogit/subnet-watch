@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-27T12:46:06Z · block 9375131 · run_status **ok**_
+_snapshot 2026-10-27T18:23:27Z · block 9376818 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 54 of 128
+# 56 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 97 | `miner_burn` < 0.99 |
 | Ranked | 97 | passed every gate |
-| **Positive margin** | **54** | income beats machine cost |
-| New events this window | 11 | see ALARMS.md |
+| **Positive margin** | **56** | income beats machine cost |
+| New events this window | 8 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 64 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
+| 0 (none) | 65 | `████████████████████████████` |
+| 0–0.2 | 8 | `███` |
 | 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 6 | `███` |
-| 0.6–0.8 | 8 | `████` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 7 | `███` |
 | 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 31 | `██████████████` |
+| ≥0.99 dead | 31 | `█████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.5 | 2,121 | 4,251 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73 | 1,795 | 1,795 = | rtx4090* | 5 | 20% |
-| 3 | sn60 Bitsec.ai | 69.8 | 269 | 269 = | cpu-small | 3 | 50% |
-| 4 | sn46 Instant | 69.5 | 246 | 277 | cpu-small | 6 | 44% |
-| 5 | sn1 Apex | 68 | 413 | 826 | rtx4090* | 5 | 58% |
-| 6 | sn107 Minos | 67.4 | 243 | 16,996 | cpu-small | 20 | 77% |
-| 7 | sn67 Harnyx | 67.4 | 6.64 | 385 | cpu-small | 133 | 18% |
-| 8 | sn56 Gradients | 67.3 | 334 | 5,503 | rtx4090* | 7 | 51% |
-| 9 | sn120 Affine | 66.6 | 297 | 1,058 | rtx4090* | 105 | 3% |
-| 10 | sn125 Refinery | 65.8 | 208 | 861 | rtx4090* | 4 | 50% |
-| 11 | sn15 ORO | 65.6 | 6.63 | 14.25 | cpu-small | 67 | 97% |
-| 12 | sn66 conjectures | 63.3 | 101 | 209 | rtx4090* | 4 | 80% |
-| 13 | sn62 Ridges | 62.6 | 81.01 | 903 | rtx4090* | 44 | 15% |
-| 14 | sn28 SayGM | 62.2 | 73.48 | 1,898 | rtx4090* | 136 | 10% |
-| 15 | sn34 Yugos | 59.1 | 1,017 | 8,708 | rtx4090* | 3 | 85% |
-| 16 | sn78 Umi | 58.5 | 30.11 | 485 | rtx4090* | 21 | 30% |
-| 17 | sn49 Nepher Robotics | 57.7 | 668 | 3,146 | rtx4090* | 5 | 69% |
-| 18 | sn58 Attune | 57.4 | 606 | 975 | rtx4090* | 5 | 70% |
-| 19 | sn5 Hone | 57.3 | 28.66 | 37.68 | rtx4090* | 242 | 1% |
-| 20 | sn111 Claims | 57.3 | 16.83 | 2,659 | rtx4090* | 7 | 90% |
+| 1 | sn3 Teutonic | 73.5 | 2,135 | 4,277 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73.1 | 1,896 | 1,896 = | rtx4090* | 5 | 20% |
+| 3 | sn60 Bitsec.ai | 69.9 | 275 | 275 = | cpu-small | 3 | 50% |
+| 4 | sn1 Apex | 67.9 | 401 | 907 | rtx4090* | 5 | 57% |
+| 5 | sn67 Harnyx | 67.6 | 6.67 | 386 | cpu-small | 136 | 18% |
+| 6 | sn56 Gradients | 67.3 | 336 | 5,528 | rtx4090* | 7 | 51% |
+| 7 | sn46 Instant | 66.8 | 111 | 329 | cpu-small | 8 | 44% |
+| 8 | sn107 Minos | 66.7 | 210 | 18,044 | cpu-small | 20 | 80% |
+| 9 | sn120 Affine | 66.6 | 288 | 1,177 | rtx4090* | 109 | 4% |
+| 10 | sn125 Refinery | 65.8 | 209 | 865 | rtx4090* | 4 | 50% |
+| 11 | sn66 conjectures | 63.4 | 101 | 211 | rtx4090* | 4 | 80% |
+| 12 | sn15 ORO | 63.3 | 6.68 | 14.34 | cpu-small | 67 | 97% |
+| 13 | sn28 SayGM | 62.8 | 87.24 | 1,357 | rtx4090* | 139 | 6% |
+| 14 | sn62 Ridges | 62.6 | 80.81 | 901 | rtx4090* | 44 | 15% |
+| 15 | sn23 Trishool | 62.5 | 1,063 | 1,063 = | cpu-small | 2 | 80% |
+| 16 | sn34 Yugos | 59.1 | 1,019 | 8,725 | rtx4090* | 3 | 85% |
+| 17 | sn111 Claims | 58.9 | 27.28 | 2,654 | rtx4090* | 6 | 90% |
+| 18 | sn78 Umi | 58.8 | 32.37 | 514 | rtx4090* | 21 | 30% |
+| 19 | sn102 ConnitoAI | 57.7 | 668 | 1,119 | rtx4090* | 6 | 33% |
+| 20 | sn58 Attune | 57.4 | 605 | 974 | rtx4090* | 5 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 28 |
-| concentrated (30–60%) | 21 |
+| wide (<30%) | 26 |
+| concentrated (30–60%) | 23 |
 | dominated (60–90%) | 23 |
 | captured (>90%) | 24 |
 
@@ -107,6 +107,14 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-27T18:24 | sn9 | RELEASE | sn9 released v4.13.10 |
+| 2026-10-27T18:24 | sn25 | RELEASE | sn25 released v2026.10.27-1083160450 |
+| 2026-10-27T18:24 | sn33 | SCORING_COMMIT | sn33 commit touches scoring: Enable 25% burn and shuffle task dispatch |
+| 2026-10-27T18:24 | sn50 | SCORING_COMMIT | sn50 commit touches scoring: fix(validator): resync the metagraph afte |
+| 2026-10-27T18:24 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Record verified SSM cutover and permanent |
+| 2026-10-27T18:24 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Cap C7+ evaluation sources and preserve h |
+| 2026-10-27T18:24 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: fix(rl-async): never charge miners for th |
+| 2026-10-27T18:24 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: Signals entity accounts: hosted miners as |
 | 2026-10-27T12:46 | sn1 | RELEASE | sn1 released v4.5.0 |
 | 2026-10-27T12:46 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Gate unverified miner scores and refresh n |
 | 2026-10-27T12:46 | sn2 | README_TASK_DIFF | sn2 README task/scoring sections changed |
@@ -114,14 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-27T12:46 | sn25 | RELEASE | sn25 released v2026.10.26-1082839840 |
 | 2026-10-27T12:46 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5235 - [P0] Validator: publish a node |
 | 2026-10-27T12:46 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-10-27T12:46 | sn75 | RELEASE | sn75 released Runtime 92023 |
-| 2026-10-27T12:46 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Cap retained reward coverage at native su |
-| 2026-10-27T12:46 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Report static-guard rejections from verif |
-| 2026-10-27T12:46 | sn91 | README_TASK_DIFF | sn91 README task/scoring sections changed |
-| 2026-10-27T06:46 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Score finalized epoch snapshots and log un |
-| 2026-10-27T06:46 | sn2 | README_TASK_DIFF | sn2 README task/scoring sections changed |
-| 2026-10-27T06:46 | sn15 | RELEASE | sn15 released v3.0.5: fix(validator): policy_view.max_steps is the tas |
-| 2026-10-27T06:46 | sn15 | SCORING_COMMIT | sn15 commit touches scoring: fix(validator): policy_view.max_steps is  |
 
 ---
 

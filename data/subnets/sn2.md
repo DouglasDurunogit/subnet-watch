@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-10-27T01:26:40Z  |  block: 9371734  |  row_status: ok
+snapshot_utc: 2026-10-27T06:46:16Z  |  block: 9373332  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.12461 USD), open=True
+- registration cost: 0.0005 TAO (0.12412000000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 6  |  free: 0
-- subnet age: 921.9 days  |  registered at block 2734060
+- subnet age: 922.1 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2622.7568799151736
-- top_miner_usd_day: 2622.7568799151736 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2587.4195481827524
+- top_miner_usd_day: 2587.4195481827524 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,10 +26,10 @@ snapshot_utc: 2026-10-27T01:26:40Z  |  block: 9371734  |  row_status: ok
 - on-chain URL: `https://github.com/DaniLabsAI/subnet`
 - resolved URL: `https://github.com/DaniLabsAI/subnet`
 - status: **ok** 
-- README: 2345 bytes, sha f1b8f6f7dee3add1
+- README: 2484 bytes, sha dfbaca0edf30a42d
 - latest release: (none) 
-- last commit: 2026-10-26T19:40:08Z
-- scoring-related commit: Document live Finney burn validator status 2026-10-26T19:40:08Z
+- last commit: 2026-10-27T04:19:07Z
+- scoring-related commit: Score finalized epoch snapshots and log unsigned weight previews 2026-10-27T04:19:07Z
 
 ## Resources
 
@@ -81,10 +81,11 @@ The goal is to reward useful, fast, reliable inference. Scoring needs to account
 for both performance and successful completion, so generation speed alone does
 not determine a miner's score.
 
-The scoring formula, eligibility requirements, and measurement definitions are
-still being developed. They will be documented and tested here before miner
-scoring is enabled. Validator reports should contain operational
-measurements, without customer prompts or generated responses.
+Validators fetch signed aggregate reports over HTTPS, verify registered miner
+identities against finalized chain state, and calculate candidate weights.
+The current policy weights TPS at 50%, TTFT at 35%, completion reliability at
+10%, and gateway-to-miner RTT at 5%. Reports exclude customer prompts and
+responses. See [report setup and scoring](docs/validator-reports.md).
 
 ## Current status
 
@@ -95,8 +96,9 @@ UID and verifies the resulting weight row and miner-burn settlement separately.
 
 The signer supports encrypted hotkey custody, an explicit operator policy, and
 optional automatic recovery through OCI Secret Management.
-The production validator runs on Finney with 100% miner-incentive burn while
-miner scoring is developed. Changes are tested on localnet before deployment.
+The production validator runs on Finney with 100% miner-incentive burn. Miner
+scores and candidate weights are logged without changing the burn signer.
+Changes are tested on localnet before deployment.
 
 See the [observer guide](docs/operator-pilot.md) for chain monitoring and the
 [localnet guide](docs/localnet-validator.md) for burn testing, PM2 controls and

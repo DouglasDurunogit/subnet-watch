@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-27T01:26:40Z, block 9371734
+# ALARMS - generated 2026-10-27T06:46:16Z, block 9373332
 
-window: first_seen in [2026-10-27T00:12:07Z, 2026-10-27T01:27:07Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-27T05:31:43Z, 2026-10-27T06:46:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.978` | 76 | BURN_DROP | P0 | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
-| `sn71:scoring_commit:2026-10-27T00:51:51Z` | 71 | SCORING_COMMIT | P1 | 2026-10-27T01:27:07Z | sn71 commit touches scoring: Record the authorized evidence-verification release scope |
-| `sn94:scoring_commit:2026-10-26T23:13:36Z` | 94 | SCORING_COMMIT | P1 | 2026-10-27T01:27:07Z | sn94 commit touches scoring: Accept a list of AMD ARK pins in the broker verifier config |
-| `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | P2 | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
-| `sn125:readme_task_diff:1476e035289bbae4` | 125 | README_TASK_DIFF | P2 | 2026-10-27T01:27:07Z | sn125 README task/scoring sections changed |
+| `sn73:burn_drop:0.000` | 73 | BURN_DROP | P0 | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn2:scoring_commit:2026-10-27T04:19:07Z` | 2 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews |
+| `sn15:release:v3.0.5: fix(validator): policy_view.max_` | 15 | RELEASE | P1 | 2026-10-27T06:46:43Z | sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit |
+| `sn15:scoring_commit:2026-10-27T04:52:29Z` | 15 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit |
+| `sn76:scoring_commit:2026-10-27T02:34:08Z` | 76 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan… |
+| `sn78:scoring_commit:2026-10-27T04:29:51Z` | 78 | SCORING_COMMIT | P1 | 2026-10-27T06:46:43Z | sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s… |
+| `sn2:readme_task_diff:1ff49772ce88e83f` | 2 | README_TASK_DIFF | P2 | 2026-10-27T06:46:43Z | sn2 README task/scoring sections changed |
+| `sn123:readme_task_diff:923cc435a761cf7e` | 123 | README_TASK_DIFF | P2 | 2026-10-27T06:46:43Z | sn123 README task/scoring sections changed |
 
 ### detail
 
-- **`sn76:burn_drop:0.978`** - sn76 burn fell 0.998 -> 0.978 - miners can earn again
+- **`sn73:burn_drop:0.000`** - sn73 burn fell 1.000 -> 0.000 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn71:scoring_commit:2026-10-27T00:51:51Z`** - sn71 commit touches scoring: Record the authorized evidence-verification release scope
+- **`sn2:scoring_commit:2026-10-27T04:19:07Z`** - sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-26T23:13:36Z`** - sn94 commit touches scoring: Accept a list of AMD ARK pins in the broker verifier config
+- **`sn15:release:v3.0.5: fix(validator): policy_view.max_`** - sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit
+  - published 2026-10-27T04:52:29Z (was v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392))
+- **`sn15:scoring_commit:2026-10-27T04:52:29Z`** - sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn123:readme_task_diff:f9658db3bedf0002`** - sn123 README task/scoring sections changed
+- **`sn76:scoring_commit:2026-10-27T02:34:08Z`** - sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn78:scoring_commit:2026-10-27T04:29:51Z`** - sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn2:readme_task_diff:1ff49772ce88e83f`** - sn2 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn125:readme_task_diff:1476e035289bbae4`** - sn125 README task/scoring sections changed
+- **`sn123:readme_task_diff:923cc435a761cf7e`** - sn123 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -49,9 +58,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn37:scoring_commit:2026-10-20T03:53:10Z` | 37 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn37 commit touches scoring: fix(miner): admit reviewed runtime481 funding (#32) |
-| `sn71:scoring_commit:2026-10-20T04:57:34Z` | 71 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn71 commit touches scoring: Merge pull request #583 from leadpoet/audit/oct20-scoring-quality |
-| `sn81:scoring_commit:2026-10-20T03:50:31Z` | 81 | SCORING_COMMIT | 2026-10-20T05:24:18Z | sn81 commit touches scoring: fix(validator): a task on Qwen3.5's text-only class can be served |
+| `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn25:release:v2026.10.20-1076869840` | 25 | RELEASE | 2026-10-20T10:18:20Z | sn25 released v2026.10.20-1076869840 |
 | `sn51:scoring_commit:2026-10-20T08:46:36Z` | 51 | SCORING_COMMIT | 2026-10-20T10:18:20Z | sn51 commit touches scoring: DAH-4622 - [P1] Validator: report rented cards with uncorrected ECC t… |
 | `sn66:release:deployed/dev: Merge pull request #139 fr` | 66 | RELEASE | 2026-10-20T10:18:20Z | sn66 released deployed/dev: Merge pull request #139 from conjectures-io/fix/deploy-task-modes |
@@ -246,7 +253,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:scoring_commit:2026-10-24T09:19:08Z` | 28 | SCORING_COMMIT | 2026-10-26T21:56:01Z | sn28 commit touches scoring: attestd: fix the kubetee.attestation.v1 binding verification (gm-veri… |
 | `sn51:scoring_commit:2026-10-26T17:40:00Z` | 51 | SCORING_COMMIT | 2026-10-26T21:56:01Z | sn51 commit touches scoring: DAH-4972 - [P1] Validator fails nodes without pid: host (#1806) |
 | `sn123:scoring_commit:2026-10-26T19:14:29Z` | 123 | SCORING_COMMIT | 2026-10-26T21:56:01Z | sn123 commit touches scoring: Update validator.py |
-| `sn37:readme_task_diff:7d03fd0e56d5b691` | 37 | README_TASK_DIFF | 2026-10-20T05:24:18Z | sn37 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-10-27T00:51:51Z` | 71 | SCORING_COMMIT | 2026-10-27T01:27:07Z | sn71 commit touches scoring: Record the authorized evidence-verification release scope |
+| `sn94:scoring_commit:2026-10-26T23:13:36Z` | 94 | SCORING_COMMIT | 2026-10-27T01:27:07Z | sn94 commit touches scoring: Accept a list of AMD ARK pins in the broker verifier config |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
@@ -259,6 +267,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
+| `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
+| `sn125:readme_task_diff:1476e035289bbae4` | 125 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn125 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

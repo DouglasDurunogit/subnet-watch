@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-28T08:21:19Z, block 9381007
+# ALARMS - generated 2026-10-28T15:18:10Z, block 9383092
 
-window: first_seen in [2026-10-28T07:06:49Z, 2026-10-28T08:21:49Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-28T14:03:42Z, 2026-10-28T15:18:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,35 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.5.1` | 1 | RELEASE | P1 | 2026-10-28T08:21:49Z | sn1 released v4.5.1 |
-| `sn34:scoring_commit:2026-10-28T03:34:22Z` | 34 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn34 commit touches scoring: Document wording gate enforcement for new evaluations |
-| `sn51:release:lium-protocol-v1.17.0` | 51 | RELEASE | P1 | 2026-10-28T08:21:49Z | sn51 released lium-protocol-v1.17.0 |
-| `sn51:scoring_commit:2026-10-28T08:21:00Z` | 51 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn51 commit touches scoring: DAH-5037 - [P1] Validator: attach a default job's last log lines when… |
-| `sn62:release:v0.3.14` | 62 | RELEASE | P1 | 2026-10-28T08:21:49Z | sn62 released v0.3.14 |
-| `sn62:scoring_commit:2026-10-28T02:43:13Z` | 62 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn62 commit touches scoring: Merge pull request #532 from ridgesai/feat/validator-registry-dev |
-| `sn71:scoring_commit:2026-10-28T08:00:36Z` | 71 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn71 commit touches scoring: Preserve verified pre-dispatch errors in Arena trajectory exports |
-| `sn78:scoring_commit:2026-10-28T04:09:07Z` | 78 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn78 commit touches scoring: Merge pull request #460 from Umi-BitSign/fix/category-capacity-verifi… |
-| `sn81:scoring_commit:2026-10-28T03:02:55Z` | 81 | SCORING_COMMIT | P1 | 2026-10-28T08:21:49Z | sn81 commit touches scoring: fix(eval): the auditor passes observe to score_sequences only for a d… |
+| `sn28:scoring_commit:2026-10-28T14:32:16Z` | 28 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359) |
+| `sn32:scoring_commit:2026-10-28T07:45:48Z` | 32 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1) |
+| `sn50:release:v1.15.0` | 50 | RELEASE | P1 | 2026-10-28T15:18:42Z | sn50 released v1.15.0 |
+| `sn51:scoring_commit:2026-10-28T11:12:55Z` | 51 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn51 commit touches scoring: DAH-5194 - [P1] Validator: key sshd bootstrap and registry pull state… |
+| `sn53:scoring_commit:2026-10-28T10:52:11Z` | 53 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn53 commit touches scoring: Merge pull request #58 from hanlinai/feat/tee-miner-leg-rotation |
+| `sn66:release:deployed/dev: Merge pull request #165 fr` | 66 | RELEASE | P1 | 2026-10-28T15:18:42Z | sn66 released deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom |
+| `sn78:scoring_commit:2026-10-28T14:35:16Z` | 78 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468) |
+| `sn104:scoring_commit:2026-10-28T09:46:22Z` | 104 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner |
+| `sn114:scoring_commit:2026-10-28T14:14:48Z` | 114 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn114 commit touches scoring: Fix validator task image tag resolution |
 
 ### detail
 
-- **`sn1:release:v4.5.1`** - sn1 released v4.5.1
-  - published 2026-10-28T02:58:53Z (was v4.5.0)
-- **`sn34:scoring_commit:2026-10-28T03:34:22Z`** - sn34 commit touches scoring: Document wording gate enforcement for new evaluations
+- **`sn28:scoring_commit:2026-10-28T14:32:16Z`** - sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:lium-protocol-v1.17.0`** - sn51 released lium-protocol-v1.17.0
-  - published 2026-10-28T06:19:04Z (was executor-v1.157)
-- **`sn51:scoring_commit:2026-10-28T08:21:00Z`** - sn51 commit touches scoring: DAH-5037 - [P1] Validator: attach a default job's last log lines when…
+- **`sn32:scoring_commit:2026-10-28T07:45:48Z`** - sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.14`** - sn62 released v0.3.14
-  - published 2026-10-28T03:32:16Z (was v0.3.13)
-- **`sn62:scoring_commit:2026-10-28T02:43:13Z`** - sn62 commit touches scoring: Merge pull request #532 from ridgesai/feat/validator-registry-dev
+- **`sn50:release:v1.15.0`** - sn50 released v1.15.0
+  - published 2026-10-28T14:28:45Z (was v1.14.0)
+- **`sn51:scoring_commit:2026-10-28T11:12:55Z`** - sn51 commit touches scoring: DAH-5194 - [P1] Validator: key sshd bootstrap and registry pull state…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-28T08:00:36Z`** - sn71 commit touches scoring: Preserve verified pre-dispatch errors in Arena trajectory exports
+- **`sn53:scoring_commit:2026-10-28T10:52:11Z`** - sn53 commit touches scoring: Merge pull request #58 from hanlinai/feat/tee-miner-leg-rotation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-28T04:09:07Z`** - sn78 commit touches scoring: Merge pull request #460 from Umi-BitSign/fix/category-capacity-verifi…
+- **`sn66:release:deployed/dev: Merge pull request #165 fr`** - sn66 released deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom
+  - published 2026-10-28T12:39:23Z (was v2026.10.23.2)
+- **`sn78:scoring_commit:2026-10-28T14:35:16Z`** - sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-10-28T03:02:55Z`** - sn81 commit touches scoring: fix(eval): the auditor passes observe to score_sequences only for a d…
+- **`sn104:scoring_commit:2026-10-28T09:46:22Z`** - sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-10-28T14:14:48Z`** - sn114 commit touches scoring: Fix validator task image tag resolution
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -61,10 +61,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:release:miner-v1.009` | 51 | RELEASE | 2026-10-21T11:40:48Z | sn51 released miner-v1.009 |
-| `sn51:scoring_commit:2026-10-21T10:38:31Z` | 51 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn51 commit touches scoring: DAH-4860 - [P2] validator: CPU truth check always runs (remove CPU_TR… |
-| `sn67:scoring_commit:2026-10-21T11:20:00Z` | 67 | SCORING_COMMIT | 2026-10-21T11:40:48Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261021.post9 |
-| `sn92:release:v1.2.0-rc10` | 92 | RELEASE | 2026-10-21T11:40:48Z | sn92 released v1.2.0-rc10 |
 | `sn3:scoring_commit:2026-10-21T14:45:39Z` | 3 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes |
 | `sn50:scoring_commit:2026-10-21T13:49:08Z` | 50 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340) |
 | `sn51:scoring_commit:2026-10-21T14:02:49Z` | 51 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead… |
@@ -254,6 +250,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-28T01:19:48Z` | 71 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn71 commit touches scoring: docs: update Discord invite link |
 | `sn91:scoring_commit:2026-10-28T00:15:26Z` | 91 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn91 commit touches scoring: Merge pull request #381 from TensorLink-AI/docs/validator-upgrade-11.3 |
 | `sn94:scoring_commit:2026-10-27T22:57:38Z` | 94 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn94 commit touches scoring: Require AMD-verified attestation before planting an Escape nonce |
+| `sn1:release:v4.5.1` | 1 | RELEASE | 2026-10-28T08:21:49Z | sn1 released v4.5.1 |
+| `sn34:scoring_commit:2026-10-28T03:34:22Z` | 34 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn34 commit touches scoring: Document wording gate enforcement for new evaluations |
+| `sn51:release:lium-protocol-v1.17.0` | 51 | RELEASE | 2026-10-28T08:21:49Z | sn51 released lium-protocol-v1.17.0 |
+| `sn51:scoring_commit:2026-10-28T08:21:00Z` | 51 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn51 commit touches scoring: DAH-5037 - [P1] Validator: attach a default job's last log lines when… |
+| `sn62:release:v0.3.14` | 62 | RELEASE | 2026-10-28T08:21:49Z | sn62 released v0.3.14 |
+| `sn62:scoring_commit:2026-10-28T02:43:13Z` | 62 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn62 commit touches scoring: Merge pull request #532 from ridgesai/feat/validator-registry-dev |
+| `sn71:scoring_commit:2026-10-28T08:00:36Z` | 71 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn71 commit touches scoring: Preserve verified pre-dispatch errors in Arena trajectory exports |
+| `sn78:scoring_commit:2026-10-28T04:09:07Z` | 78 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn78 commit touches scoring: Merge pull request #460 from Umi-BitSign/fix/category-capacity-verifi… |
+| `sn81:scoring_commit:2026-10-28T03:02:55Z` | 81 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn81 commit touches scoring: fix(eval): the auditor passes observe to score_sequences only for a d… |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:2b144e347e430710` | 28 | README_TASK_DIFF | 2026-10-21T20:17:01Z | sn28 README task/scoring sections changed |

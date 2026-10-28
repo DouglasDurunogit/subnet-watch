@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-27T22:29:01Z · block 9378046 · run_status **ok**_
+_snapshot 2026-10-28T01:48:11Z · block 9379042 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -18,7 +18,7 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Pays miners at all | 98 | `miner_burn` < 0.99 |
 | Ranked | 98 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| New events this window | 4 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,8 +30,8 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 64 | `████████████████████████████` |
-| 0–0.2 | 9 | `████` |
-| 0.2–0.4 | 6 | `███` |
+| 0–0.2 | 8 | `████` |
+| 0.2–0.4 | 7 | `███` |
 | 0.4–0.6 | 7 | `███` |
 | 0.6–0.8 | 8 | `████` |
 | 0.8–0.99 | 4 | `██` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn3 Teutonic | 73.6 | 2,167 | 4,238 | rtx4090* | 7 | 25% |
-| 2 | sn97 Ingot | 73.1 | 1,874 | 1,874 = | rtx4090* | 5 | 20% |
-| 3 | sn60 Bitsec.ai | 69.7 | 263 | 263 = | cpu-small | 3 | 52% |
-| 4 | sn56 Gradients | 68.7 | 509 | 5,575 | rtx4090* | 6 | 51% |
-| 5 | sn1 Apex | 68.1 | 425 | 891 | rtx4090* | 5 | 57% |
-| 6 | sn46 Instant | 67.7 | 146 | 172 | cpu-small | 9 | 44% |
-| 7 | sn67 Harnyx | 67.6 | 6.72 | 388 | cpu-small | 136 | 18% |
-| 8 | sn107 Minos | 66.9 | 218 | 18,512 | cpu-small | 20 | 80% |
-| 9 | sn120 Affine | 66.3 | 263 | 1,076 | rtx4090* | 118 | 3% |
-| 10 | sn15 ORO | 66.3 | 6.75 | 14.48 | cpu-small | 67 | 97% |
-| 11 | sn125 Refinery | 65.8 | 211 | 872 | rtx4090* | 4 | 50% |
-| 12 | sn66 conjectures | 63.4 | 102 | 212 | rtx4090* | 4 | 80% |
-| 13 | sn62 Ridges | 62.6 | 81.18 | 905 | rtx4090* | 44 | 15% |
-| 14 | sn23 Trishool | 62.5 | 1,063 | 1,063 = | cpu-small | 2 | 80% |
-| 15 | sn28 SayGM | 62 | 69.49 | 954 | rtx4090* | 142 | 18% |
-| 16 | sn6 Numinous | 60.6 | 49.24 | 166 | rtx4090* | 30 | 11% |
-| 17 | sn34 Yugos | 59.1 | 1,007 | 8,624 | rtx4090* | 3 | 85% |
-| 18 | sn111 Claims | 58.9 | 27.35 | 2,659 | rtx4090* | 6 | 90% |
-| 19 | sn78 Umi | 58.5 | 30.23 | 486 | rtx4090* | 21 | 30% |
-| 20 | sn5 Hone | 57.5 | 29.55 | 38.26 | rtx4090* | 238 | 1% |
+| 1 | sn3 Teutonic | 73.5 | 2,145 | 4,403 | rtx4090* | 7 | 25% |
+| 2 | sn97 Ingot | 73.2 | 1,927 | 1,927 = | rtx4090* | 5 | 20% |
+| 3 | sn91 cascade | 70.8 | 933 | 1,875 | rtx4090* | 5 | 52% |
+| 4 | sn60 Bitsec.ai | 69.9 | 278 | 278 = | cpu-small | 3 | 50% |
+| 5 | sn56 Gradients | 68.8 | 515 | 5,646 | rtx4090* | 6 | 51% |
+| 6 | sn1 Apex | 68.1 | 423 | 887 | rtx4090* | 5 | 57% |
+| 7 | sn67 Harnyx | 67.6 | 6.82 | 393 | cpu-small | 136 | 18% |
+| 8 | sn46 Instant | 67.4 | 134 | 248 | cpu-small | 9 | 44% |
+| 9 | sn107 Minos | 67 | 221 | 18,768 | cpu-small | 20 | 80% |
+| 10 | sn120 Affine | 66.4 | 265 | 1,084 | rtx4090* | 117 | 3% |
+| 11 | sn125 Refinery | 65.8 | 214 | 883 | rtx4090* | 4 | 50% |
+| 12 | sn15 ORO | 65.8 | 6.49 | 13.97 | cpu-small | 66 | 97% |
+| 13 | sn66 conjectures | 63.4 | 103 | 215 | rtx4090* | 4 | 80% |
+| 14 | sn62 Ridges | 62.7 | 82.30 | 917 | rtx4090* | 44 | 15% |
+| 15 | sn23 Trishool | 62.5 | 1,072 | 1,072 = | cpu-small | 2 | 80% |
+| 16 | sn28 SayGM | 62.4 | 81.20 | 986 | rtx4090* | 142 | 18% |
+| 17 | sn6 Numinous | 60.5 | 49.76 | 168 | rtx4090* | 30 | 11% |
+| 18 | sn111 Claims | 59 | 27.80 | 2,693 | rtx4090* | 6 | 90% |
+| 19 | sn78 Umi | 58.3 | 28.92 | 469 | rtx4090* | 21 | 30% |
+| 20 | sn58 Attune | 57.5 | 622 | 1,000 | rtx4090* | 5 | 70% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -87,8 +87,8 @@ single UID takes almost everything, so the headline income is not reachable.
 |---|---:|
 | wide (<30%) | 27 |
 | concentrated (30–60%) | 22 |
-| dominated (60–90%) | 25 |
-| captured (>90%) | 23 |
+| dominated (60–90%) | 24 |
+| captured (>90%) | 24 |
 
 ## Hardware evidence quality
 
@@ -97,8 +97,8 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 99 |
-| README keywords (GUESS) | 11 |
+| no evidence | 100 |
+| README keywords (GUESS) | 10 |
 | min_compute.yml (curated) | 9 |
 | code-submission (validator runs it) | 8 |
 | README stated VRAM (explicit) | 1 |
@@ -107,6 +107,10 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-28T01:48 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: Merge pull request #27 from BitMind-AI/fe |
+| 2026-10-28T01:48 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: docs: update Discord invite link |
+| 2026-10-28T01:48 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Merge pull request #381 from TensorLink-A |
+| 2026-10-28T01:48 | sn94 | SCORING_COMMIT | sn94 commit touches scoring: Require AMD-verified attestation before p |
 | 2026-10-27T22:29 | sn8 | SCORING_COMMIT | sn8 commit touches scoring: MinerAccountManager: one lock order (accou |
 | 2026-10-27T22:29 | sn51 | RELEASE | sn51 released executor-v1.157 |
 | 2026-10-27T22:29 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: docs: scope Tyche capture verification an |
@@ -118,10 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-27T18:24 | sn50 | SCORING_COMMIT | sn50 commit touches scoring: fix(validator): resync the metagraph afte |
 | 2026-10-27T18:24 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Record verified SSM cutover and permanent |
 | 2026-10-27T18:24 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Cap C7+ evaluation sources and preserve h |
-| 2026-10-27T18:24 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: fix(rl-async): never charge miners for th |
-| 2026-10-27T18:24 | sn89 | SCORING_COMMIT | sn89 commit touches scoring: Signals entity accounts: hosted miners as |
-| 2026-10-27T12:46 | sn1 | RELEASE | sn1 released v4.5.0 |
-| 2026-10-27T12:46 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Gate unverified miner scores and refresh n |
 
 ---
 

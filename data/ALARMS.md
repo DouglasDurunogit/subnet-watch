@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-27T22:29:01Z, block 9378046
+# ALARMS - generated 2026-10-28T01:48:11Z, block 9379042
 
-window: first_seen in [2026-10-27T21:14:30Z, 2026-10-27T22:29:30Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-28T00:33:43Z, 2026-10-28T01:48:43Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn8:scoring_commit:2026-10-27T20:14:01Z` | 8 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde… |
-| `sn51:release:executor-v1.157` | 51 | RELEASE | P1 | 2026-10-27T22:29:30Z | sn51 released executor-v1.157 |
-| `sn71:scoring_commit:2026-10-27T19:54:01Z` | 71 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn71 commit touches scoring: docs: scope Tyche capture verification and rollout |
-| `sn92:release:v1.2.0-rc11.post8.1` | 92 | RELEASE | P1 | 2026-10-27T22:29:30Z | sn92 released v1.2.0-rc11.post8.1 |
-| `sn92:scoring_commit:2026-10-27T22:13:15Z` | 92 | SCORING_COMMIT | P1 | 2026-10-27T22:29:30Z | sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E… |
+| `sn34:scoring_commit:2026-10-27T23:51:10Z` | 34 | SCORING_COMMIT | P1 | 2026-10-28T01:48:43Z | sn34 commit touches scoring: Merge pull request #27 from BitMind-AI/feat/private-prepared-task-ext… |
+| `sn71:scoring_commit:2026-10-28T01:19:48Z` | 71 | SCORING_COMMIT | P1 | 2026-10-28T01:48:43Z | sn71 commit touches scoring: docs: update Discord invite link |
+| `sn91:scoring_commit:2026-10-28T00:15:26Z` | 91 | SCORING_COMMIT | P1 | 2026-10-28T01:48:43Z | sn91 commit touches scoring: Merge pull request #381 from TensorLink-AI/docs/validator-upgrade-11.3 |
+| `sn94:scoring_commit:2026-10-27T22:57:38Z` | 94 | SCORING_COMMIT | P1 | 2026-10-28T01:48:43Z | sn94 commit touches scoring: Require AMD-verified attestation before planting an Escape nonce |
 
 ### detail
 
-- **`sn8:scoring_commit:2026-10-27T20:14:01Z`** - sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde…
+- **`sn34:scoring_commit:2026-10-27T23:51:10Z`** - sn34 commit touches scoring: Merge pull request #27 from BitMind-AI/feat/private-prepared-task-ext…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.157`** - sn51 released executor-v1.157
-  - published 2026-10-27T20:34:12Z (was miner-v1.010)
-- **`sn71:scoring_commit:2026-10-27T19:54:01Z`** - sn71 commit touches scoring: docs: scope Tyche capture verification and rollout
+- **`sn71:scoring_commit:2026-10-28T01:19:48Z`** - sn71 commit touches scoring: docs: update Discord invite link
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc11.post8.1`** - sn92 released v1.2.0-rc11.post8.1
-  - published 2026-10-27T22:13:19Z (was v1.2.0-rc11.post7)
-- **`sn92:scoring_commit:2026-10-27T22:13:15Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E…
+- **`sn91:scoring_commit:2026-10-28T00:15:26Z`** - sn91 commit touches scoring: Merge pull request #381 from TensorLink-AI/docs/validator-upgrade-11.3
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-10-27T22:57:38Z`** - sn94 commit touches scoring: Require AMD-verified attestation before planting an Escape nonce
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn120:burn_drop:0.100` | 120 | BURN_DROP | 2026-10-21T01:02:40Z | sn120 burn fell 1.000 -> 0.100 - miners can earn again |
 | `sn30:burn_drop:0.981` | 30 | BURN_DROP | 2026-10-21T20:17:01Z | sn30 burn fell 0.996 -> 0.981 - miners can earn again |
 | `sn37:burn_drop:0.711` | 37 | BURN_DROP | 2026-10-21T20:17:01Z | sn37 burn fell 1.000 -> 0.711 - miners can earn again |
 | `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
@@ -50,12 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn5:scoring_commit:2026-10-20T01:48:53Z` | 5 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn5 commit touches scoring: Keep validator connections alive while miners think |
-| `sn71:scoring_commit:2026-10-20T21:51:33Z` | 71 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn71 commit touches scoring: Bound composed scorer image tags without losing repair identity |
-| `sn81:scoring_commit:2026-10-20T20:19:23Z` | 81 | SCORING_COMMIT | 2026-10-20T22:43:54Z | sn81 commit touches scoring: Merge invalidated export filtering (#365) |
-| `sn25:release:v2026.10.20-1077406510` | 25 | RELEASE | 2026-10-21T01:02:40Z | sn25 released v2026.10.20-1077406510 |
-| `sn71:scoring_commit:2026-10-20T22:59:19Z` | 71 | SCORING_COMMIT | 2026-10-21T01:02:40Z | sn71 commit touches scoring: Evaluate Arena claim admission lazily in priority order |
-| `sn92:release:v1.2.0-rc9.post7` | 92 | RELEASE | 2026-10-21T01:02:40Z | sn92 released v1.2.0-rc9.post7 |
 | `sn25:release:v2026.10.20-1077553990` | 25 | RELEASE | 2026-10-21T05:59:05Z | sn25 released v2026.10.20-1077553990 |
 | `sn30:release:v0.1.3 — Identical-forecast pooling, pro` | 30 | RELEASE | 2026-10-21T05:59:05Z | sn30 released v0.1.3 — Identical-forecast pooling, protocol 2044 |
 | `sn30:scoring_commit:2026-10-20T07:46:32Z` | 30 | SCORING_COMMIT | 2026-10-21T05:59:05Z | sn30 commit touches scoring: feat(scoring): identical-forecast pooling (2044) and v0.1.3 release m… |
@@ -248,6 +238,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-27T18:03:38Z` | 78 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn78 commit touches scoring: Cap C7+ evaluation sources and preserve historical suite semantics (#… |
 | `sn81:scoring_commit:2026-10-27T13:02:41Z` | 81 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn81 commit touches scoring: fix(rl-async): never charge miners for the validator's own downtime |
 | `sn89:scoring_commit:2026-10-27T04:02:56Z` | 89 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn89 commit touches scoring: Signals entity accounts: hosted miners as subaccounts of one UID (arm… |
+| `sn8:scoring_commit:2026-10-27T20:14:01Z` | 8 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde… |
+| `sn51:release:executor-v1.157` | 51 | RELEASE | 2026-10-27T22:29:30Z | sn51 released executor-v1.157 |
+| `sn71:scoring_commit:2026-10-27T19:54:01Z` | 71 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn71 commit touches scoring: docs: scope Tyche capture verification and rollout |
+| `sn92:release:v1.2.0-rc11.post8.1` | 92 | RELEASE | 2026-10-27T22:29:30Z | sn92 released v1.2.0-rc11.post8.1 |
+| `sn92:scoring_commit:2026-10-27T22:13:15Z` | 92 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E… |
 | `sn30:readme_task_diff:4a7c5aebb5ea217a` | 30 | README_TASK_DIFF | 2026-10-21T05:59:05Z | sn30 README task/scoring sections changed |
 | `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
 | `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |

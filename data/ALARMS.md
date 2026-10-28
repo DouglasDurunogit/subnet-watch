@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-28T15:18:10Z, block 9383092
+# ALARMS - generated 2026-10-28T20:27:03Z, block 9384636
 
-window: first_seen in [2026-10-28T14:03:42Z, 2026-10-28T15:18:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-28T19:12:26Z, 2026-10-28T20:27:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,44 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:scoring_commit:2026-10-28T14:32:16Z` | 28 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359) |
-| `sn32:scoring_commit:2026-10-28T07:45:48Z` | 32 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1) |
-| `sn50:release:v1.15.0` | 50 | RELEASE | P1 | 2026-10-28T15:18:42Z | sn50 released v1.15.0 |
-| `sn51:scoring_commit:2026-10-28T11:12:55Z` | 51 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn51 commit touches scoring: DAH-5194 - [P1] Validator: key sshd bootstrap and registry pull state… |
-| `sn53:scoring_commit:2026-10-28T10:52:11Z` | 53 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn53 commit touches scoring: Merge pull request #58 from hanlinai/feat/tee-miner-leg-rotation |
-| `sn66:release:deployed/dev: Merge pull request #165 fr` | 66 | RELEASE | P1 | 2026-10-28T15:18:42Z | sn66 released deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom |
-| `sn78:scoring_commit:2026-10-28T14:35:16Z` | 78 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468) |
-| `sn104:scoring_commit:2026-10-28T09:46:22Z` | 104 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner |
-| `sn114:scoring_commit:2026-10-28T14:14:48Z` | 114 | SCORING_COMMIT | P1 | 2026-10-28T15:18:42Z | sn114 commit touches scoring: Fix validator task image tag resolution |
+| `sn32:burn_drop:0.000` | 32 | BURN_DROP | P0 | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn117:burn_drop:0.982` | 117 | BURN_DROP | P0 | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
+| `sn17:release:witness-client-v0.2.15` | 17 | RELEASE | P1 | 2026-10-28T20:27:26Z | sn17 released witness-client-v0.2.15 |
+| `sn66:release:v2026.10.28.2` | 66 | RELEASE | P1 | 2026-10-28T20:27:26Z | sn66 released v2026.10.28.2 |
+| `sn71:scoring_commit:2026-10-28T19:43:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati |
+| `sn78:scoring_commit:2026-10-28T18:17:42Z` | 78 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress |
+| `sn97:scoring_commit:2026-10-28T16:13:46Z` | 97 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch… |
 
 ### detail
 
-- **`sn28:scoring_commit:2026-10-28T14:32:16Z`** - sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359)
+- **`sn32:burn_drop:0.000`** - sn32 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn117:burn_drop:0.982`** - sn117 burn fell 1.000 -> 0.982 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn17:release:witness-client-v0.2.15`** - sn17 released witness-client-v0.2.15
+  - published 2026-10-28T16:31:28Z (was witness-client-v0.2.14)
+- **`sn66:release:v2026.10.28.2`** - sn66 released v2026.10.28.2
+  - published 2026-10-28T17:12:04Z (was deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom)
+- **`sn71:scoring_commit:2026-10-28T19:43:06Z`** - sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn32:scoring_commit:2026-10-28T07:45:48Z`** - sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1)
+- **`sn78:scoring_commit:2026-10-28T18:17:42Z`** - sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn50:release:v1.15.0`** - sn50 released v1.15.0
-  - published 2026-10-28T14:28:45Z (was v1.14.0)
-- **`sn51:scoring_commit:2026-10-28T11:12:55Z`** - sn51 commit touches scoring: DAH-5194 - [P1] Validator: key sshd bootstrap and registry pull state…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-10-28T10:52:11Z`** - sn53 commit touches scoring: Merge pull request #58 from hanlinai/feat/tee-miner-leg-rotation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:deployed/dev: Merge pull request #165 fr`** - sn66 released deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom
-  - published 2026-10-28T12:39:23Z (was v2026.10.23.2)
-- **`sn78:scoring_commit:2026-10-28T14:35:16Z`** - sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn104:scoring_commit:2026-10-28T09:46:22Z`** - sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-28T14:14:48Z`** - sn114 commit touches scoring: Fix validator task image tag resolution
+- **`sn97:scoring_commit:2026-10-28T16:13:46Z`** - sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn30:burn_drop:0.981` | 30 | BURN_DROP | 2026-10-21T20:17:01Z | sn30 burn fell 0.996 -> 0.981 - miners can earn again |
-| `sn37:burn_drop:0.711` | 37 | BURN_DROP | 2026-10-21T20:17:01Z | sn37 burn fell 1.000 -> 0.711 - miners can earn again |
-| `sn117:burn_drop:0.883` | 117 | BURN_DROP | 2026-10-21T20:17:01Z | sn117 burn fell 1.000 -> 0.883 - miners can earn again |
 | `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
 | `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
@@ -61,23 +52,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn3:scoring_commit:2026-10-21T14:45:39Z` | 3 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn3 commit touches scoring: Fix category dataset validation and hide retired competition mixes |
-| `sn50:scoring_commit:2026-10-21T13:49:08Z` | 50 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn50 commit touches scoring: feat(validator): one VHFT competition per rewarded asset (#340) |
-| `sn51:scoring_commit:2026-10-21T14:02:49Z` | 51 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn51 commit touches scoring: DAH-4937 - [P1] Validator: a create waits out a miner restart instead… |
-| `sn66:release:v2026.10.21.2` | 66 | RELEASE | 2026-10-21T16:08:35Z | sn66 released v2026.10.21.2 |
-| `sn81:scoring_commit:2026-10-21T14:21:49Z` | 81 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn81 commit touches scoring: Merge pull request #375 from reliquadotai/fix/miner-state-cold-start |
-| `sn111:scoring_commit:2026-10-21T14:34:11Z` | 111 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn111 commit touches scoring: fix: retry backend 503 responses for miner and validator uploads |
-| `sn114:scoring_commit:2026-10-21T12:16:14Z` | 114 | SCORING_COMMIT | 2026-10-21T16:08:35Z | sn114 commit touches scoring: Improve competition operations and validation dispatch |
-| `sn117:release:v0.6.1: Merge pull request #39 from ever` | 117 | RELEASE | 2026-10-21T16:08:35Z | sn117 released v0.6.1: Merge pull request #39 from everyframe-studio/feat/flux3-max |
-| `sn7:release:release-20261021-195318: Scale the miner` | 7 | RELEASE | 2026-10-21T20:17:01Z | sn7 released release-20261021-195318: Scale the miner pool by recent swap fees (#811) |
-| `sn7:scoring_commit:2026-10-21T19:52:45Z` | 7 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn7 commit touches scoring: Scale the miner pool by recent swap fees (#811) |
-| `sn28:release:v0.5.6-dev` | 28 | RELEASE | 2026-10-21T20:17:01Z | sn28 released v0.5.6-dev |
-| `sn28:scoring_commit:2026-10-21T16:47:19Z` | 28 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.6-dev (#337) |
-| `sn71:scoring_commit:2026-10-21T19:53:06Z` | 71 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn71 commit touches scoring: Retain proofs and receipts for approved scoring provider routes |
-| `sn76:release:v0.0.3: Merge pull request #45 from hero` | 76 | RELEASE | 2026-10-21T20:17:01Z | sn76 released v0.0.3: Merge pull request #45 from heroncovelabs/fix/recover-public-work-packet |
-| `sn78:scoring_commit:2026-10-21T19:17:18Z` | 78 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn78 commit touches scoring: chore(verification): bind qualified baseline guard sources |
-| `sn81:scoring_commit:2026-10-21T20:16:18Z` | 81 | SCORING_COMMIT | 2026-10-21T20:17:01Z | sn81 commit touches scoring: Merge pull request #379 from reliquadotai/fix/evaluation-sandbox-scope |
-| `sn117:release:everycli v0.6.2` | 117 | RELEASE | 2026-10-21T20:17:01Z | sn117 released everycli v0.6.2 |
 | `sn25:release:v2026.10.21-1078195620` | 25 | RELEASE | 2026-10-21T23:30:35Z | sn25 released v2026.10.21-1078195620 |
 | `sn28:release:v0.5.7` | 28 | RELEASE | 2026-10-21T23:30:35Z | sn28 released v0.5.7 |
 | `sn28:scoring_commit:2026-10-21T21:33:17Z` | 28 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.7 (#340) |
@@ -259,9 +233,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-28T08:00:36Z` | 71 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn71 commit touches scoring: Preserve verified pre-dispatch errors in Arena trajectory exports |
 | `sn78:scoring_commit:2026-10-28T04:09:07Z` | 78 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn78 commit touches scoring: Merge pull request #460 from Umi-BitSign/fix/category-capacity-verifi… |
 | `sn81:scoring_commit:2026-10-28T03:02:55Z` | 81 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn81 commit touches scoring: fix(eval): the auditor passes observe to score_sequences only for a d… |
-| `sn111:readme_task_diff:6b385b714324083a` | 111 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn111 README task/scoring sections changed |
-| `sn117:readme_task_diff:c73733117d32dcc0` | 117 | README_TASK_DIFF | 2026-10-21T16:08:35Z | sn117 README task/scoring sections changed |
-| `sn28:readme_task_diff:2b144e347e430710` | 28 | README_TASK_DIFF | 2026-10-21T20:17:01Z | sn28 README task/scoring sections changed |
+| `sn28:scoring_commit:2026-10-28T14:32:16Z` | 28 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359) |
+| `sn32:scoring_commit:2026-10-28T07:45:48Z` | 32 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1) |
+| `sn50:release:v1.15.0` | 50 | RELEASE | 2026-10-28T15:18:42Z | sn50 released v1.15.0 |
+| `sn51:scoring_commit:2026-10-28T11:12:55Z` | 51 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn51 commit touches scoring: DAH-5194 - [P1] Validator: key sshd bootstrap and registry pull state… |
+| `sn53:scoring_commit:2026-10-28T10:52:11Z` | 53 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn53 commit touches scoring: Merge pull request #58 from hanlinai/feat/tee-miner-leg-rotation |
+| `sn66:release:deployed/dev: Merge pull request #165 fr` | 66 | RELEASE | 2026-10-28T15:18:42Z | sn66 released deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom |
+| `sn78:scoring_commit:2026-10-28T14:35:16Z` | 78 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468) |
+| `sn104:scoring_commit:2026-10-28T09:46:22Z` | 104 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner |
+| `sn114:scoring_commit:2026-10-28T14:14:48Z` | 114 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn114 commit touches scoring: Fix validator task image tag resolution |
 | `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
 | `sn15:readme_task_diff:71fad80912f70006` | 15 | README_TASK_DIFF | 2026-10-22T13:13:57Z | sn15 README task/scoring sections changed |
 | `sn6:readme_task_diff:f71150d0a859d726` | 6 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn6 README task/scoring sections changed |

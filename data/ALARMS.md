@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-29T00:17:57Z, block 9385791
+# ALARMS - generated 2026-10-29T06:10:31Z, block 9387553
 
-window: first_seen in [2026-10-28T23:03:27Z, 2026-10-29T00:18:27Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-29T04:55:57Z, 2026-10-29T06:10:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,17 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:release:v2026.10.28.3` | 66 | RELEASE | P1 | 2026-10-29T00:18:27Z | sn66 released v2026.10.28.3 |
-| `sn71:scoring_commit:2026-10-28T22:42:44Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T00:18:27Z | sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain |
-| `sn78:scoring_commit:2026-10-28T23:35:18Z` | 78 | SCORING_COMMIT | P1 | 2026-10-29T00:18:27Z | sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history |
+| `sn34:scoring_commit:2026-10-29T00:52:16Z` | 34 | SCORING_COMMIT | P1 | 2026-10-29T06:10:57Z | sn34 commit touches scoring: Explain submission quota errors in the miner CLI (#32) |
+| `sn51:scoring_commit:2026-10-29T05:17:40Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T06:10:57Z | sn51 commit touches scoring: DAH-5320 - [P0] Validator: idle node disk write check, shadow verdict… |
+| `sn71:scoring_commit:2026-10-29T05:23:54Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T06:10:57Z | sn71 commit touches scoring: Verify terminal failure control preserves captured worker receipts |
 
 ### detail
 
-- **`sn66:release:v2026.10.28.3`** - sn66 released v2026.10.28.3
-  - published 2026-10-28T20:31:47Z (was v2026.10.28.2)
-- **`sn71:scoring_commit:2026-10-28T22:42:44Z`** - sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain
+- **`sn34:scoring_commit:2026-10-29T00:52:16Z`** - sn34 commit touches scoring: Explain submission quota errors in the miner CLI (#32)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-28T23:35:18Z`** - sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history
+- **`sn51:scoring_commit:2026-10-29T05:17:40Z`** - sn51 commit touches scoring: DAH-5320 - [P0] Validator: idle node disk write check, shadow verdict…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-10-29T05:23:54Z`** - sn71 commit touches scoring: Verify terminal failure control preserves captured worker receipts
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -40,10 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn2:scoring_commit:2026-10-22T01:50:24Z` | 2 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn2 commit touches scoring: Add finalized-chain observer for validator pilot |
-| `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
-| `sn117:release:everycli v0.7.0` | 117 | RELEASE | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
-| `sn117:scoring_commit:2026-10-21T23:16:35Z` | 117 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn117 commit touches scoring: test: record final v0.6.3 offline updater Phala validation |
 | `sn28:release:v0.5.8` | 28 | RELEASE | 2026-10-22T07:29:56Z | sn28 released v0.5.8 |
 | `sn28:scoring_commit:2026-10-22T06:29:41Z` | 28 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.8 (#343) |
 | `sn51:scoring_commit:2026-10-22T07:26:30Z` | 51 | SCORING_COMMIT | 2026-10-22T07:29:56Z | sn51 commit touches scoring: DAH-4954 - [P0] Validator: revert the always-on GPU identity enforcem… |
@@ -229,6 +225,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-28T19:43:06Z` | 71 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati |
 | `sn78:scoring_commit:2026-10-28T18:17:42Z` | 78 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress |
 | `sn97:scoring_commit:2026-10-28T16:13:46Z` | 97 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch… |
+| `sn66:release:v2026.10.28.3` | 66 | RELEASE | 2026-10-29T00:18:27Z | sn66 released v2026.10.28.3 |
+| `sn71:scoring_commit:2026-10-28T22:42:44Z` | 71 | SCORING_COMMIT | 2026-10-29T00:18:27Z | sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain |
+| `sn78:scoring_commit:2026-10-28T23:35:18Z` | 78 | SCORING_COMMIT | 2026-10-29T00:18:27Z | sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history |
 | `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
 | `sn15:readme_task_diff:71fad80912f70006` | 15 | README_TASK_DIFF | 2026-10-22T13:13:57Z | sn15 README task/scoring sections changed |
 | `sn6:readme_task_diff:f71150d0a859d726` | 6 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn6 README task/scoring sections changed |

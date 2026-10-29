@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-29T19:16:38Z, block 9391484
+# ALARMS - generated 2026-10-29T23:28:49Z, block 9392745
 
-window: first_seen in [2026-10-29T18:02:09Z, 2026-10-29T19:17:09Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-29T22:14:16Z, 2026-10-29T23:29:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,63 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.5.3` | 1 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn1 released v4.5.3 |
-| `sn25:scoring_commit:2026-10-29T14:56:25Z` | 25 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn25 commit touches scoring: Preserve deployed validator recovery in timeout release |
-| `sn28:release:v0.5.15` | 28 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn28 released v0.5.15 |
-| `sn51:scoring_commit:2026-10-29T16:18:13Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha… |
-| `sn66:release:v2026.10.29` | 66 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn66 released v2026.10.29 |
-| `sn67:scoring_commit:2026-10-29T13:26:47Z` | 67 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2 |
-| `sn71:scoring_commit:2026-10-29T19:16:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916) |
-| `sn78:scoring_commit:2026-10-29T16:00:09Z` | 78 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes… |
-| `sn90:release:v1.3.3` | 90 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn90 released v1.3.3 |
-| `sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self` | 92 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side) |
-| `sn92:scoring_commit:2026-10-29T16:23:25Z` | 92 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po… |
-| `sn94:scoring_commit:2026-10-29T17:21:49Z` | 94 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A… |
-| `sn97:scoring_commit:2026-10-29T14:20:37Z` | 97 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars |
-| `sn117:release:everycli v0.8.0` | 117 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn117 released everycli v0.8.0 |
-| `sn117:scoring_commit:2026-10-29T17:19:07Z` | 117 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn117 commit touches scoring: Add Director tool models to miner |
-| `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | P2 | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
+| `sn1:release:v4.5.4` | 1 | RELEASE | P1 | 2026-10-29T23:29:16Z | sn1 released v4.5.4 |
+| `sn25:scoring_commit:2026-10-29T21:28:46Z` | 25 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec |
+| `sn51:scoring_commit:2026-10-29T21:11:22Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator… |
+| `sn62:scoring_commit:2026-10-29T20:08:25Z` | 62 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators |
+| `sn94:scoring_commit:2026-10-29T20:51:05Z` | 94 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369) |
 
 ### detail
 
-- **`sn1:release:v4.5.3`** - sn1 released v4.5.3
-  - published 2026-10-29T14:43:51Z (was v4.5.1)
-- **`sn25:scoring_commit:2026-10-29T14:56:25Z`** - sn25 commit touches scoring: Preserve deployed validator recovery in timeout release
+- **`sn1:release:v4.5.4`** - sn1 released v4.5.4
+  - published 2026-10-29T23:03:40Z (was v4.5.3)
+- **`sn25:scoring_commit:2026-10-29T21:28:46Z`** - sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.15`** - sn28 released v0.5.15
-  - published 2026-10-29T16:43:23Z (was v0.5.14)
-- **`sn51:scoring_commit:2026-10-29T16:18:13Z`** - sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha…
+- **`sn51:scoring_commit:2026-10-29T21:11:22Z`** - sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.10.29`** - sn66 released v2026.10.29
-  - published 2026-10-29T15:52:41Z (was deployed/dev)
-- **`sn67:scoring_commit:2026-10-29T13:26:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2
+- **`sn62:scoring_commit:2026-10-29T20:08:25Z`** - sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-29T19:16:39Z`** - sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916)
+- **`sn94:scoring_commit:2026-10-29T20:51:05Z`** - sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-29T16:00:09Z`** - sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.3.3`** - sn90 released v1.3.3
-  - published 2026-10-29T13:52:28Z (was v1.3.2)
-- **`sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self`** - sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side)
-  - published 2026-10-29T16:23:37Z (was v1.2.0-rc11.post8.1)
-- **`sn92:scoring_commit:2026-10-29T16:23:25Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-29T17:21:49Z`** - sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-10-29T14:20:37Z`** - sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.8.0`** - sn117 released everycli v0.8.0
-  - published 2026-10-29T19:07:42Z (was everycli v0.7.4)
-- **`sn117:scoring_commit:2026-10-29T17:19:07Z`** - sn117 commit touches scoring: Add Director tool models to miner
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:readme_task_diff:2556ca8f0ae41586`** - sn51 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
@@ -79,9 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn13:release:Release v1.18.75` | 13 | RELEASE | 2026-10-22T21:32:31Z | sn13 released Release v1.18.75 |
-| `sn66:release:v2026.10.22.2` | 66 | RELEASE | 2026-10-22T21:32:31Z | sn66 released v2026.10.22.2 |
-| `sn71:scoring_commit:2026-10-22T18:59:12Z` | 71 | SCORING_COMMIT | 2026-10-22T21:32:31Z | sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr… |
 | `sn28:release:v0.5.10-dev` | 28 | RELEASE | 2026-10-23T00:12:40Z | sn28 released v0.5.10-dev |
 | `sn28:scoring_commit:2026-10-22T23:53:16Z` | 28 | SCORING_COMMIT | 2026-10-23T00:12:40Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10-dev (#347) |
 | `sn15:release:v3.0.2: security: patch Python dependenc` | 15 | RELEASE | 2026-10-23T05:10:24Z | sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388) |
@@ -259,6 +222,21 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-10-29T11:38:45Z` | 91 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn91 commit touches scoring: Merge pull request #384 from TensorLink-AI/fix/energy-score-overflow |
 | `sn114:scoring_commit:2026-10-29T10:47:22Z` | 114 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn114 commit touches scoring: Show reset validations as pending |
 | `sn124:scoring_commit:2026-10-29T10:27:45Z` | 124 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn124 commit touches scoring: Give the Sentinel test tasks the family's own benchmark version |
+| `sn1:release:v4.5.3` | 1 | RELEASE | 2026-10-29T19:17:09Z | sn1 released v4.5.3 |
+| `sn25:scoring_commit:2026-10-29T14:56:25Z` | 25 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn25 commit touches scoring: Preserve deployed validator recovery in timeout release |
+| `sn28:release:v0.5.15` | 28 | RELEASE | 2026-10-29T19:17:09Z | sn28 released v0.5.15 |
+| `sn51:scoring_commit:2026-10-29T16:18:13Z` | 51 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha… |
+| `sn66:release:v2026.10.29` | 66 | RELEASE | 2026-10-29T19:17:09Z | sn66 released v2026.10.29 |
+| `sn67:scoring_commit:2026-10-29T13:26:47Z` | 67 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2 |
+| `sn71:scoring_commit:2026-10-29T19:16:39Z` | 71 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916) |
+| `sn78:scoring_commit:2026-10-29T16:00:09Z` | 78 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes… |
+| `sn90:release:v1.3.3` | 90 | RELEASE | 2026-10-29T19:17:09Z | sn90 released v1.3.3 |
+| `sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self` | 92 | RELEASE | 2026-10-29T19:17:09Z | sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side) |
+| `sn92:scoring_commit:2026-10-29T16:23:25Z` | 92 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po… |
+| `sn94:scoring_commit:2026-10-29T17:21:49Z` | 94 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A… |
+| `sn97:scoring_commit:2026-10-29T14:20:37Z` | 97 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars |
+| `sn117:release:everycli v0.8.0` | 117 | RELEASE | 2026-10-29T19:17:09Z | sn117 released everycli v0.8.0 |
+| `sn117:scoring_commit:2026-10-29T17:19:07Z` | 117 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn117 commit touches scoring: Add Director tool models to miner |
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
@@ -270,6 +248,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:readme_task_diff:9eb19065ad44711d` | 91 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn91 README task/scoring sections changed |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
+| `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

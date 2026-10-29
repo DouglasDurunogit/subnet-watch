@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-29T19:16:38Z · block 9391484 · run_status **ok**_
+_snapshot 2026-10-29T23:28:49Z · block 9392745 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 98 | `miner_burn` < 0.99 |
-| Ranked | 98 | passed every gate |
+| Pays miners at all | 99 | `miner_burn` < 0.99 |
+| Ranked | 99 | passed every gate |
 | **Positive margin** | **56** | income beats machine cost |
-| New events this window | 16 | see ALARMS.md |
+| New events this window | 5 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 65 | `████████████████████████████` |
+| 0 (none) | 66 | `████████████████████████████` |
 | 0–0.2 | 9 | `████` |
 | 0.2–0.4 | 5 | `██` |
 | 0.4–0.6 | 7 | `███` |
-| 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 3 | `█` |
-| ≥0.99 dead | 30 | `█████████████` |
+| 0.6–0.8 | 8 | `███` |
+| 0.8–0.99 | 4 | `██` |
+| ≥0.99 dead | 29 | `████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn120 Affine | 77.1 | 6,190 | 6,190 = | rtx4090* | 5 | 20% |
-| 2 | sn3 Teutonic | 73.5 | 2,102 | 2,102 = | rtx4090* | 7 | 25% |
-| 3 | sn97 Ingot | 73.1 | 1,861 | 1,861 = | rtx4090* | 5 | 20% |
-| 4 | sn56 Gradients | 71.1 | 1,018 | 5,504 | rtx4090* | 6 | 51% |
-| 5 | sn34 Yugos | 70.9 | 990 | 8,474 | rtx4090* | 3 | 85% |
-| 6 | sn60 Bitsec.ai | 69.5 | 243 | 243 = | cpu-small | 3 | 50% |
-| 7 | sn91 cascade | 69.4 | 622 | 1,673 | rtx4090* | 5 | 52% |
-| 8 | sn103 Terza Inference | 69.3 | 605 | 1,524 | rtx4090* | 5 | 31% |
-| 9 | sn53 engy | 68.3 | 444 | 2,390 | rtx4090 | 29 | 26% |
-| 10 | sn46 Instant | 68.3 | 172 | 257 | cpu-small | 7 | 45% |
-| 11 | sn1 Apex | 68 | 404 | 894 | rtx4090* | 5 | 59% |
-| 12 | sn67 Harnyx | 67.3 | 6.11 | 554 | cpu-small | 131 | 26% |
-| 13 | sn107 Minos | 66.2 | 187 | 15,895 | cpu-small | 20 | 80% |
-| 14 | sn124 Swarm | 66 | 234 | 680 | rtx4090* | 25 | 10% |
-| 15 | sn125 Refinery | 65.2 | 174 | 870 | rtx4090* | 4 | 50% |
-| 16 | sn15 ORO | 65.1 | 7.35 | 13,632 | cpu-small | 68 | 96% |
-| 17 | sn121 sundae_bar | 62.4 | 1,021 | 1,021 = | cpu-small | 2 | 60% |
-| 18 | sn62 Ridges | 62.4 | 76.22 | 747 | rtx4090* | 44 | 15% |
-| 19 | sn66 conjectures | 59.1 | 27.63 | 171 | rtx4090* | 7 | 80% |
-| 20 | sn117 everyframe.studi | 58.6 | 25.03 | 123 | rtx4090* | 7 | 76% |
+| 1 | sn120 Affine | 76.9 | 5,817 | 5,817 = | rtx4090* | 5 | 20% |
+| 2 | sn3 Teutonic | 73.3 | 1,975 | 1,975 = | rtx4090* | 7 | 25% |
+| 3 | sn97 Ingot | 72.8 | 1,694 | 1,694 = | rtx4090* | 5 | 20% |
+| 4 | sn56 Gradients | 70.9 | 959 | 5,186 | rtx4090* | 6 | 51% |
+| 5 | sn34 Yugos | 70.7 | 929 | 7,958 | rtx4090* | 3 | 85% |
+| 6 | sn103 Terza Inference | 69.3 | 596 | 1,443 | rtx4090* | 5 | 33% |
+| 7 | sn60 Bitsec.ai | 69.3 | 231 | 231 = | cpu-small | 3 | 50% |
+| 8 | sn91 cascade | 69 | 549 | 1,478 | rtx4090* | 5 | 52% |
+| 9 | sn46 Instant | 68.7 | 193 | 205 | cpu-small | 7 | 42% |
+| 10 | sn53 engy | 68.2 | 436 | 2,950 | rtx4090 | 29 | 26% |
+| 11 | sn1 Apex | 67.7 | 373 | 828 | rtx4090* | 5 | 60% |
+| 12 | sn15 ORO | 67 | 6.90 | 12,732 | cpu-small | 69 | 96% |
+| 13 | sn67 Harnyx | 66.9 | 5.68 | 521 | cpu-small | 131 | 26% |
+| 14 | sn107 Minos | 65.9 | 173 | 14,714 | cpu-small | 20 | 80% |
+| 15 | sn125 Refinery | 64.9 | 163 | 819 | rtx4090* | 4 | 50% |
+| 16 | sn62 Ridges | 62.4 | 75.56 | 705 | rtx4090* | 44 | 15% |
+| 17 | sn121 sundae_bar | 62.2 | 961 | 961 = | cpu-small | 2 | 60% |
+| 18 | sn124 Swarm | 61.8 | 72.13 | 5,411 | rtx4090* | 11 | 85% |
+| 19 | sn66 conjectures | 58.8 | 25.46 | 160 | rtx4090* | 7 | 80% |
+| 20 | sn4 Targon | 58.6 | 12,161 | 24,674 | rtx4090* | 4 | 61% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,9 +85,9 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 25 |
+| wide (<30%) | 23 |
 | concentrated (30–60%) | 25 |
-| dominated (60–90%) | 22 |
+| dominated (60–90%) | 25 |
 | captured (>90%) | 25 |
 
 ## Hardware evidence quality
@@ -107,6 +107,11 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-29T23:29 | sn1 | RELEASE | sn1 released v4.5.4 |
+| 2026-10-29T23:29 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge leadertop/head-summary-spec: valida |
+| 2026-10-29T23:29 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s ->  |
+| 2026-10-29T23:29 | sn62 | SCORING_COMMIT | sn62 commit touches scoring: Merge pull request #528 from ridgesai/fea |
+| 2026-10-29T23:29 | sn94 | SCORING_COMMIT | sn94 commit touches scoring: Validate claims-room upload paths and req |
 | 2026-10-29T19:17 | sn1 | RELEASE | sn1 released v4.5.3 |
 | 2026-10-29T19:17 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Preserve deployed validator recovery in t |
 | 2026-10-29T19:17 | sn28 | RELEASE | sn28 released v0.5.15 |
@@ -117,11 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-29T19:17 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve legacy baseline comparison autho |
 | 2026-10-29T19:17 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/ |
 | 2026-10-29T19:17 | sn90 | RELEASE | sn90 released v1.3.3 |
-| 2026-10-29T19:17 | sn92 | RELEASE | sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner si |
-| 2026-10-29T19:17 | sn92 | SCORING_COMMIT | sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1  |
-| 2026-10-29T19:17 | sn94 | SCORING_COMMIT | sn94 commit touches scoring: Room kit: attested guest TLS and hotel ke |
-| 2026-10-29T19:17 | sn97 | SCORING_COMMIT | sn97 commit touches scoring: fix(web): drop the score axis under the d |
-| 2026-10-29T19:17 | sn117 | RELEASE | sn117 released everycli v0.8.0 |
 
 ---
 

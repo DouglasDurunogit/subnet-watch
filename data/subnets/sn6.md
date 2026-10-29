@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-10-29T13:29:41Z  |  block: 9389749  |  row_status: ok
+snapshot_utc: 2026-10-29T19:16:38Z  |  block: 9391484  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (50.42400000000001 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 52  |  free: 0
-- subnet age: 856.9 days  |  registered at block 3219949
+- registration cost: 0.23742844 TAO (59.7987268984 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 67  |  free: 0
+- subnet age: 857.2 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 230.29256393732788** (uid 240) <- the only figure quotable as achievable
-- median_miner_usd_day: 30.775167505365506
-- top_miner_usd_day: 230.29256393732788 (uid 240, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 158.55801157740734** (uid 155) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.2617291497504759
+- top_miner_usd_day: 158.55801157740734 (uid 155, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 37  |  gini: 0.5468659184069982  |  top1_share: 0.1416230406446985  |  top10_share: 0.6392649460461851
+- earners: 52  |  gini: 0.6053441505676347  |  top1_share: 0.09710264395188374  |  top10_share: 0.5270043353483544
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-10-29T13:29:41Z  |  block: 9389749  |  row_status: ok
 - on-chain URL: `https://github.com/numinouslabs/numinous`
 - resolved URL: `https://github.com/numinouslabs/numinous`
 - status: **ok** 
-- README: 3648 bytes, sha 9502a1ace6b0e8be
+- README: 3667 bytes, sha 1de0e3f6c83a9998
 - latest release: (none) 
-- last commit: 2026-10-22T13:33:46Z
+- last commit: 2026-10-29T16:51:46Z
 - scoring-related commit: Reference the WorldReasoner paper in the reasoning scoring doc 2026-09-18T10:47:07Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-10-29T13:29:41Z  |  block: 9389749  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 22.556 USD/day  |  payback on registration: 2.24 days
+- net margin: -7.9574 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 57.8 (rank 21), confidence 0.85 - hardware requirement unknown
-- components: income 12.48 / freshness 35.0 / resource 11.25 / registration 9.25
-- freshness basis: WEIGHTS_VERSION_BUMP 5.9d ago
+- score: 39.3 (rank 61), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: WEIGHTS_VERSION_BUMP 6.2d ago
 
 ## On-chain description
 
@@ -99,7 +99,7 @@ Every day follows the same cycle: **Questions → Sealed forecasts → Opening �
 ### Rules
 
 1.  **Rounds:** a new round of questions is published every day and accepts forecasts until its deadline.
-2.  **One forecast per question:** the first one sent counts. Each of its statements names the company the question asks about.
+2.  **One forecast per question:** the last one sent before the deadline counts. Each of its statements names the company the question asks about.
 3.  **Sealed until the deadline:** nobody can read a forecast before the deadline, the backend included.
 4.  **New developments only:** a statement comes true through news reported after the deadline, until the round's horizon ends.
 

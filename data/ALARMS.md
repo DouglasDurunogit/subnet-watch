@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-29T13:29:41Z, block 9389749
+# ALARMS - generated 2026-10-29T19:16:38Z, block 9391484
 
-window: first_seen in [2026-10-29T12:15:23Z, 2026-10-29T13:30:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-29T18:02:09Z, 2026-10-29T19:17:09Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,53 +9,56 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn28:release:v0.5.14` | 28 | RELEASE | P1 | 2026-10-29T13:30:23Z | sn28 released v0.5.14 |
-| `sn34:scoring_commit:2026-10-29T10:49:47Z` | 34 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn34 commit touches scoring: Bound symbolic math grading and preserve unscored failures (#33) |
-| `sn51:release:executor-v1.163` | 51 | RELEASE | P1 | 2026-10-29T13:30:23Z | sn51 released executor-v1.163 |
-| `sn51:scoring_commit:2026-10-29T11:09:39Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn51 commit touches scoring: DAH-5295 - [P2] Rent survives a central-miner restart that refuses th… |
-| `sn66:release:deployed/dev` | 66 | RELEASE | P1 | 2026-10-29T13:30:23Z | sn66 released deployed/dev |
-| `sn67:scoring_commit:2026-10-29T05:43:31Z` | 67 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post1 |
-| `sn71:scoring_commit:2026-10-29T09:44:23Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn71 commit touches scoring: Verify exact final capture after lost upload acknowledgments |
-| `sn78:scoring_commit:2026-10-29T10:16:10Z` | 78 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn78 commit touches scoring: Drain evaluator status HTTP cleanup before releasing pool slots |
-| `sn90:release:v1.3.2` | 90 | RELEASE | P1 | 2026-10-29T13:30:23Z | sn90 released v1.3.2 |
-| `sn90:scoring_commit:2026-10-29T08:53:38Z` | 90 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn90 commit touches scoring: feat(validation): remove the minimum node-count gate |
-| `sn91:scoring_commit:2026-10-29T11:38:45Z` | 91 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn91 commit touches scoring: Merge pull request #384 from TensorLink-AI/fix/energy-score-overflow |
-| `sn114:scoring_commit:2026-10-29T10:47:22Z` | 114 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn114 commit touches scoring: Show reset validations as pending |
-| `sn124:scoring_commit:2026-10-29T10:27:45Z` | 124 | SCORING_COMMIT | P1 | 2026-10-29T13:30:23Z | sn124 commit touches scoring: Give the Sentinel test tasks the family's own benchmark version |
-| `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | P2 | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
-| `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | P2 | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
+| `sn1:release:v4.5.3` | 1 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn1 released v4.5.3 |
+| `sn25:scoring_commit:2026-10-29T14:56:25Z` | 25 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn25 commit touches scoring: Preserve deployed validator recovery in timeout release |
+| `sn28:release:v0.5.15` | 28 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn28 released v0.5.15 |
+| `sn51:scoring_commit:2026-10-29T16:18:13Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha… |
+| `sn66:release:v2026.10.29` | 66 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn66 released v2026.10.29 |
+| `sn67:scoring_commit:2026-10-29T13:26:47Z` | 67 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2 |
+| `sn71:scoring_commit:2026-10-29T19:16:39Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916) |
+| `sn78:scoring_commit:2026-10-29T16:00:09Z` | 78 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes… |
+| `sn90:release:v1.3.3` | 90 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn90 released v1.3.3 |
+| `sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self` | 92 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side) |
+| `sn92:scoring_commit:2026-10-29T16:23:25Z` | 92 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po… |
+| `sn94:scoring_commit:2026-10-29T17:21:49Z` | 94 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A… |
+| `sn97:scoring_commit:2026-10-29T14:20:37Z` | 97 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars |
+| `sn117:release:everycli v0.8.0` | 117 | RELEASE | P1 | 2026-10-29T19:17:09Z | sn117 released everycli v0.8.0 |
+| `sn117:scoring_commit:2026-10-29T17:19:07Z` | 117 | SCORING_COMMIT | P1 | 2026-10-29T19:17:09Z | sn117 commit touches scoring: Add Director tool models to miner |
+| `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | P2 | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
 
 ### detail
 
-- **`sn28:release:v0.5.14`** - sn28 released v0.5.14
-  - published 2026-10-29T13:13:37Z (was v0.5.12)
-- **`sn34:scoring_commit:2026-10-29T10:49:47Z`** - sn34 commit touches scoring: Bound symbolic math grading and preserve unscored failures (#33)
+- **`sn1:release:v4.5.3`** - sn1 released v4.5.3
+  - published 2026-10-29T14:43:51Z (was v4.5.1)
+- **`sn25:scoring_commit:2026-10-29T14:56:25Z`** - sn25 commit touches scoring: Preserve deployed validator recovery in timeout release
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.163`** - sn51 released executor-v1.163
-  - published 2026-10-29T11:31:06Z (was lium-protocol-v1.17.0)
-- **`sn51:scoring_commit:2026-10-29T11:09:39Z`** - sn51 commit touches scoring: DAH-5295 - [P2] Rent survives a central-miner restart that refuses th…
+- **`sn28:release:v0.5.15`** - sn28 released v0.5.15
+  - published 2026-10-29T16:43:23Z (was v0.5.14)
+- **`sn51:scoring_commit:2026-10-29T16:18:13Z`** - sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:deployed/dev`** - sn66 released deployed/dev
-  - published 2026-10-29T09:22:22Z (was v2026.10.28.3)
-- **`sn67:scoring_commit:2026-10-29T05:43:31Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post1
+- **`sn66:release:v2026.10.29`** - sn66 released v2026.10.29
+  - published 2026-10-29T15:52:41Z (was deployed/dev)
+- **`sn67:scoring_commit:2026-10-29T13:26:47Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-29T09:44:23Z`** - sn71 commit touches scoring: Verify exact final capture after lost upload acknowledgments
+- **`sn71:scoring_commit:2026-10-29T19:16:39Z`** - sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-29T10:16:10Z`** - sn78 commit touches scoring: Drain evaluator status HTTP cleanup before releasing pool slots
+- **`sn78:scoring_commit:2026-10-29T16:00:09Z`** - sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.3.2`** - sn90 released v1.3.2
-  - published 2026-10-29T12:29:48Z (was v1.2.0)
-- **`sn90:scoring_commit:2026-10-29T08:53:38Z`** - sn90 commit touches scoring: feat(validation): remove the minimum node-count gate
+- **`sn90:release:v1.3.3`** - sn90 released v1.3.3
+  - published 2026-10-29T13:52:28Z (was v1.3.2)
+- **`sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self`** - sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side)
+  - published 2026-10-29T16:23:37Z (was v1.2.0-rc11.post8.1)
+- **`sn92:scoring_commit:2026-10-29T16:23:25Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-29T11:38:45Z`** - sn91 commit touches scoring: Merge pull request #384 from TensorLink-AI/fix/energy-score-overflow
+- **`sn94:scoring_commit:2026-10-29T17:21:49Z`** - sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn114:scoring_commit:2026-10-29T10:47:22Z`** - sn114 commit touches scoring: Show reset validations as pending
+- **`sn97:scoring_commit:2026-10-29T14:20:37Z`** - sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-10-29T10:27:45Z`** - sn124 commit touches scoring: Give the Sentinel test tasks the family's own benchmark version
+- **`sn117:release:everycli v0.8.0`** - sn117 released everycli v0.8.0
+  - published 2026-10-29T19:07:42Z (was everycli v0.7.4)
+- **`sn117:scoring_commit:2026-10-29T17:19:07Z`** - sn117 commit touches scoring: Add Director tool models to miner
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:readme_task_diff:54113dbfe0b14a98`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn124:readme_task_diff:25de0bc84cbb03ae`** - sn124 README task/scoring sections changed
+- **`sn51:readme_task_diff:2556ca8f0ae41586`** - sn51 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -76,17 +79,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn1:release:v4.4.15` | 1 | RELEASE | 2026-10-22T18:06:27Z | sn1 released v4.4.15 |
-| `sn12:release:miner-staging-2026-10-22-39790980356-423` | 12 | RELEASE | 2026-10-22T18:06:27Z | sn12 released miner-staging-2026-10-22-39790980356-423-1: fix: security fixes |
-| `sn15:release:v3.0.0` | 15 | RELEASE | 2026-10-22T18:06:27Z | sn15 released v3.0.0 |
-| `sn21:scoring_commit:2026-10-22T10:49:09Z` | 21 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn21 commit touches scoring: fix(scoring): the outcomes reader keeps expected and actual conversio… |
-| `sn25:release:v2026.10.22-1078873780` | 25 | RELEASE | 2026-10-22T18:06:27Z | sn25 released v2026.10.22-1078873780 |
-| `sn51:release:executor-v1.151` | 51 | RELEASE | 2026-10-22T18:06:27Z | sn51 released executor-v1.151 |
-| `sn51:scoring_commit:2026-10-22T15:42:26Z` | 51 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn51 commit touches scoring: DAH-4983 - Validator: a failed edit's undo repairs a stale volume mou… |
-| `sn76:release:v0.0.3` | 76 | RELEASE | 2026-10-22T18:06:27Z | sn76 released v0.0.3 |
-| `sn76:scoring_commit:2026-10-22T14:48:07Z` | 76 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn76 commit touches scoring: Allow manual CI verification after repository recovery (#15) |
-| `sn81:scoring_commit:2026-10-22T14:26:47Z` | 81 | SCORING_COMMIT | 2026-10-22T18:06:27Z | sn81 commit touches scoring: Merge pull request #387: evaluation feed destination safeguards |
-| `sn117:release:everycli v0.7.1` | 117 | RELEASE | 2026-10-22T18:06:27Z | sn117 released everycli v0.7.1 |
 | `sn13:release:Release v1.18.75` | 13 | RELEASE | 2026-10-22T21:32:31Z | sn13 released Release v1.18.75 |
 | `sn66:release:v2026.10.22.2` | 66 | RELEASE | 2026-10-22T21:32:31Z | sn66 released v2026.10.22.2 |
 | `sn71:scoring_commit:2026-10-22T18:59:12Z` | 71 | SCORING_COMMIT | 2026-10-22T21:32:31Z | sn71 commit touches scoring: Merge pull request #705 from leadpoet/fix/validator-installed-interpr… |
@@ -254,9 +246,19 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-10-29T00:52:16Z` | 34 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn34 commit touches scoring: Explain submission quota errors in the miner CLI (#32) |
 | `sn51:scoring_commit:2026-10-29T05:17:40Z` | 51 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn51 commit touches scoring: DAH-5320 - [P0] Validator: idle node disk write check, shadow verdict… |
 | `sn71:scoring_commit:2026-10-29T05:23:54Z` | 71 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn71 commit touches scoring: Verify terminal failure control preserves captured worker receipts |
-| `sn6:readme_task_diff:f71150d0a859d726` | 6 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn6 README task/scoring sections changed |
-| `sn76:readme_task_diff:f81741e228d9d939` | 76 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn76 README task/scoring sections changed |
-| `sn117:readme_task_diff:61eefa3e188bb2fb` | 117 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn117 README task/scoring sections changed |
+| `sn28:release:v0.5.14` | 28 | RELEASE | 2026-10-29T13:30:23Z | sn28 released v0.5.14 |
+| `sn34:scoring_commit:2026-10-29T10:49:47Z` | 34 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn34 commit touches scoring: Bound symbolic math grading and preserve unscored failures (#33) |
+| `sn51:release:executor-v1.163` | 51 | RELEASE | 2026-10-29T13:30:23Z | sn51 released executor-v1.163 |
+| `sn51:scoring_commit:2026-10-29T11:09:39Z` | 51 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn51 commit touches scoring: DAH-5295 - [P2] Rent survives a central-miner restart that refuses th… |
+| `sn66:release:deployed/dev` | 66 | RELEASE | 2026-10-29T13:30:23Z | sn66 released deployed/dev |
+| `sn67:scoring_commit:2026-10-29T05:43:31Z` | 67 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post1 |
+| `sn71:scoring_commit:2026-10-29T09:44:23Z` | 71 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn71 commit touches scoring: Verify exact final capture after lost upload acknowledgments |
+| `sn78:scoring_commit:2026-10-29T10:16:10Z` | 78 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn78 commit touches scoring: Drain evaluator status HTTP cleanup before releasing pool slots |
+| `sn90:release:v1.3.2` | 90 | RELEASE | 2026-10-29T13:30:23Z | sn90 released v1.3.2 |
+| `sn90:scoring_commit:2026-10-29T08:53:38Z` | 90 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn90 commit touches scoring: feat(validation): remove the minimum node-count gate |
+| `sn91:scoring_commit:2026-10-29T11:38:45Z` | 91 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn91 commit touches scoring: Merge pull request #384 from TensorLink-AI/fix/energy-score-overflow |
+| `sn114:scoring_commit:2026-10-29T10:47:22Z` | 114 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn114 commit touches scoring: Show reset validations as pending |
+| `sn124:scoring_commit:2026-10-29T10:27:45Z` | 124 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn124 commit touches scoring: Give the Sentinel test tasks the family's own benchmark version |
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
@@ -266,6 +268,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn123:readme_task_diff:923cc435a761cf7e` | 123 | README_TASK_DIFF | 2026-10-27T06:46:43Z | sn123 README task/scoring sections changed |
 | `sn2:readme_task_diff:db6ec8f75a1e4b61` | 2 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn2 README task/scoring sections changed |
 | `sn91:readme_task_diff:9eb19065ad44711d` | 91 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn91 README task/scoring sections changed |
+| `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
+| `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

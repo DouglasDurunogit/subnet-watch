@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-28T20:27:03Z, block 9384636
+# ALARMS - generated 2026-10-29T00:17:57Z, block 9385791
 
-window: first_seen in [2026-10-28T19:12:26Z, 2026-10-28T20:27:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-28T23:03:27Z, 2026-10-29T00:18:27Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,37 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn32:burn_drop:0.000` | 32 | BURN_DROP | P0 | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn117:burn_drop:0.982` | 117 | BURN_DROP | P0 | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn17:release:witness-client-v0.2.15` | 17 | RELEASE | P1 | 2026-10-28T20:27:26Z | sn17 released witness-client-v0.2.15 |
-| `sn66:release:v2026.10.28.2` | 66 | RELEASE | P1 | 2026-10-28T20:27:26Z | sn66 released v2026.10.28.2 |
-| `sn71:scoring_commit:2026-10-28T19:43:06Z` | 71 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati |
-| `sn78:scoring_commit:2026-10-28T18:17:42Z` | 78 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress |
-| `sn97:scoring_commit:2026-10-28T16:13:46Z` | 97 | SCORING_COMMIT | P1 | 2026-10-28T20:27:26Z | sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch… |
+| `sn66:release:v2026.10.28.3` | 66 | RELEASE | P1 | 2026-10-29T00:18:27Z | sn66 released v2026.10.28.3 |
+| `sn71:scoring_commit:2026-10-28T22:42:44Z` | 71 | SCORING_COMMIT | P1 | 2026-10-29T00:18:27Z | sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain |
+| `sn78:scoring_commit:2026-10-28T23:35:18Z` | 78 | SCORING_COMMIT | P1 | 2026-10-29T00:18:27Z | sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history |
 
 ### detail
 
-- **`sn32:burn_drop:0.000`** - sn32 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn117:burn_drop:0.982`** - sn117 burn fell 1.000 -> 0.982 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn17:release:witness-client-v0.2.15`** - sn17 released witness-client-v0.2.15
-  - published 2026-10-28T16:31:28Z (was witness-client-v0.2.14)
-- **`sn66:release:v2026.10.28.2`** - sn66 released v2026.10.28.2
-  - published 2026-10-28T17:12:04Z (was deployed/dev: Merge pull request #165 from conjectures-io/feat/torchlean-intake-axiom)
-- **`sn71:scoring_commit:2026-10-28T19:43:06Z`** - sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati
+- **`sn66:release:v2026.10.28.3`** - sn66 released v2026.10.28.3
+  - published 2026-10-28T20:31:47Z (was v2026.10.28.2)
+- **`sn71:scoring_commit:2026-10-28T22:42:44Z`** - sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-10-28T18:17:42Z`** - sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-10-28T16:13:46Z`** - sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch…
+- **`sn78:scoring_commit:2026-10-28T23:35:18Z`** - sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.571` | 10 | BURN_DROP | 2026-10-21T23:30:35Z | sn10 burn fell 1.000 -> 0.571 - miners can earn again |
-| `sn71:burn_drop:0.700` | 71 | BURN_DROP | 2026-10-21T23:30:35Z | sn71 burn fell 1.000 -> 0.700 - miners can earn again |
 | `sn7:burn_drop:0.986` | 7 | BURN_DROP | 2026-10-22T21:32:31Z | sn7 burn fell 0.990 -> 0.986 - miners can earn again |
 | `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -52,12 +38,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.10.21-1078195620` | 25 | RELEASE | 2026-10-21T23:30:35Z | sn25 released v2026.10.21-1078195620 |
-| `sn28:release:v0.5.7` | 28 | RELEASE | 2026-10-21T23:30:35Z | sn28 released v0.5.7 |
-| `sn28:scoring_commit:2026-10-21T21:33:17Z` | 28 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.7 (#340) |
-| `sn71:scoring_commit:2026-10-21T22:55:23Z` | 71 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn71 commit touches scoring: Keep restored-score exclusions visible without inventing scores |
-| `sn78:scoring_commit:2026-10-21T20:49:08Z` | 78 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn78 commit touches scoring: Merge pull request #343 from Umi-BitSign/qualify-c6-model-only-reward… |
-| `sn81:scoring_commit:2026-10-21T20:51:36Z` | 81 | SCORING_COMMIT | 2026-10-21T23:30:35Z | sn81 commit touches scoring: fix: verify evaluation image against supported sandbox pin |
+| `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn2:scoring_commit:2026-10-22T01:50:24Z` | 2 | SCORING_COMMIT | 2026-10-22T01:57:11Z | sn2 commit touches scoring: Add finalized-chain observer for validator pilot |
 | `sn25:release:v2026.10.21-1078274420` | 25 | RELEASE | 2026-10-22T01:57:11Z | sn25 released v2026.10.21-1078274420 |
 | `sn117:release:everycli v0.7.0` | 117 | RELEASE | 2026-10-22T01:57:11Z | sn117 released everycli v0.7.0 |
@@ -242,6 +224,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-28T14:35:16Z` | 78 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn78 commit touches scoring: Preserve verified captures and retry transient model copies (#468) |
 | `sn104:scoring_commit:2026-10-28T09:46:22Z` | 104 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn104 commit touches scoring: Merge pull request #21 from taostatus/feat/python-script-miner |
 | `sn114:scoring_commit:2026-10-28T14:14:48Z` | 114 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn114 commit touches scoring: Fix validator task image tag resolution |
+| `sn17:release:witness-client-v0.2.15` | 17 | RELEASE | 2026-10-28T20:27:26Z | sn17 released witness-client-v0.2.15 |
+| `sn66:release:v2026.10.28.2` | 66 | RELEASE | 2026-10-28T20:27:26Z | sn66 released v2026.10.28.2 |
+| `sn71:scoring_commit:2026-10-28T19:43:06Z` | 71 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn71 commit touches scoring: Select preflight process helper before retained-slot recovery validati |
+| `sn78:scoring_commit:2026-10-28T18:17:42Z` | 78 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn78 commit touches scoring: Reuse reservation validation and expose incremental intake progress |
+| `sn97:scoring_commit:2026-10-28T16:13:46Z` | 97 | SCORING_COMMIT | 2026-10-28T20:27:26Z | sn97 commit touches scoring: feat(promoter): credit Bonsai 2 on q2 king cards by what the miner ch… |
 | `sn78:readme_task_diff:07cc2c9379a76a69` | 78 | README_TASK_DIFF | 2026-10-22T07:29:56Z | sn78 README task/scoring sections changed |
 | `sn15:readme_task_diff:71fad80912f70006` | 15 | README_TASK_DIFF | 2026-10-22T13:13:57Z | sn15 README task/scoring sections changed |
 | `sn6:readme_task_diff:f71150d0a859d726` | 6 | README_TASK_DIFF | 2026-10-22T18:06:27Z | sn6 README task/scoring sections changed |

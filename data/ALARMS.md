@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-30T09:54:41Z, block 9395874
+# ALARMS - generated 2026-10-30T16:40:30Z, block 9397903
 
-window: first_seen in [2026-10-30T08:40:02Z, 2026-10-30T09:55:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-30T15:26:00Z, 2026-10-30T16:41:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-30T04:21:00Z` | 25 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics |
-| `sn51:scoring_commit:2026-10-30T09:50:10Z` | 51 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi… |
-| `sn62:release:v0.3.15` | 62 | RELEASE | P1 | 2026-10-30T09:55:02Z | sn62 released v0.3.15 |
-| `sn66:release:deployed/dev: Merge pull request #174 fr` | 66 | RELEASE | P1 | 2026-10-30T09:55:02Z | sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements |
-| `sn67:scoring_commit:2026-10-30T02:27:14Z` | 67 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0 |
-| `sn71:scoring_commit:2026-10-30T07:55:16Z` | 71 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership |
+| `sn126:burn_drop:0.950` | 126 | BURN_DROP | P0 | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
+| `sn28:release:v0.5.16` | 28 | RELEASE | P1 | 2026-10-30T16:41:00Z | sn28 released v0.5.16 |
+| `sn51:release:lium-protocol-v1.18.0` | 51 | RELEASE | P1 | 2026-10-30T16:41:00Z | sn51 released lium-protocol-v1.18.0 |
+| `sn51:scoring_commit:2026-10-30T15:56:58Z` | 51 | SCORING_COMMIT | P1 | 2026-10-30T16:41:00Z | sn51 commit touches scoring: DAH-5393 - [P0] Validator: a full set of other GPUs re-verifies at on… |
+| `sn53:scoring_commit:2026-10-30T10:03:36Z` | 53 | SCORING_COMMIT | P1 | 2026-10-30T16:41:00Z | sn53 commit touches scoring: Merge pull request #59 from hanlinai/feat/tee-miner-vllm-kv |
+| `sn65:scoring_commit:2026-10-26T12:00:46Z` | 65 | SCORING_COMMIT | P1 | 2026-10-30T16:41:00Z | sn65 commit touches scoring: score all candidates |
+| `sn66:release:deployed/dev: Merge pull request #176 fr` | 66 | RELEASE | P1 | 2026-10-30T16:41:00Z | sn66 released deployed/dev: Merge pull request #176 from conjectures-io/fix/bounty-open-only-missing |
+| `sn97:scoring_commit:2026-10-30T14:36:17Z` | 97 | SCORING_COMMIT | P1 | 2026-10-30T16:41:00Z | sn97 commit touches scoring: feat(eval): KL decides a win, score per sample, per-domain answer cap… |
+| `sn102:release:v0.7.2: Merge pull request #299 from Con` | 102 | RELEASE | P1 | 2026-10-30T16:41:00Z | sn102 released v0.7.2: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
+| `sn102:scoring_commit:2026-10-30T14:28:47Z` | 102 | SCORING_COMMIT | P1 | 2026-10-30T16:41:00Z | sn102 commit touches scoring: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-30T04:21:00Z`** - sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics
+- **`sn126:burn_drop:0.950`** - sn126 burn fell 1.000 -> 0.950 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn28:release:v0.5.16`** - sn28 released v0.5.16
+  - published 2026-10-30T11:13:03Z (was v0.5.15)
+- **`sn51:release:lium-protocol-v1.18.0`** - sn51 released lium-protocol-v1.18.0
+  - published 2026-10-30T11:13:43Z (was executor-v1.163)
+- **`sn51:scoring_commit:2026-10-30T15:56:58Z`** - sn51 commit touches scoring: DAH-5393 - [P0] Validator: a full set of other GPUs re-verifies at on…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-30T09:50:10Z`** - sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi…
+- **`sn53:scoring_commit:2026-10-30T10:03:36Z`** - sn53 commit touches scoring: Merge pull request #59 from hanlinai/feat/tee-miner-vllm-kv
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.15`** - sn62 released v0.3.15
-  - published 2026-10-30T07:47:13Z (was v0.3.14)
-- **`sn66:release:deployed/dev: Merge pull request #174 fr`** - sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements
-  - published 2026-10-30T09:27:50Z (was v2026.10.29)
-- **`sn67:scoring_commit:2026-10-30T02:27:14Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0
+- **`sn65:scoring_commit:2026-10-26T12:00:46Z`** - sn65 commit touches scoring: score all candidates
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-30T07:55:16Z`** - sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership
+- **`sn66:release:deployed/dev: Merge pull request #176 fr`** - sn66 released deployed/dev: Merge pull request #176 from conjectures-io/fix/bounty-open-only-missing
+  - published 2026-10-30T16:07:45Z (was deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements)
+- **`sn97:scoring_commit:2026-10-30T14:36:17Z`** - sn97 commit touches scoring: feat(eval): KL decides a win, score per sample, per-domain answer cap…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn102:release:v0.7.2: Merge pull request #299 from Con`** - sn102 released v0.7.2: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend
+  - published 2026-10-30T14:28:47Z (was v0.7.1)
+- **`sn102:scoring_commit:2026-10-30T14:28:47Z`** - sn102 commit touches scoring: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
@@ -46,28 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn12:release:miner-staging-2026-10-23-39921557432-424` | 12 | RELEASE | 2026-10-23T10:21:57Z | sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization |
-| `sn28:release:v0.5.11-dev` | 28 | RELEASE | 2026-10-23T10:21:57Z | sn28 released v0.5.11-dev |
-| `sn28:scoring_commit:2026-10-23T09:46:31Z` | 28 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350) |
-| `sn46:release:Merge pull request #10 from Subnet46/rel` | 46 | RELEASE | 2026-10-23T10:21:57Z | sn46 released Merge pull request #10 from Subnet46/release/v0.1.4 |
-| `sn51:scoring_commit:2026-10-23T07:55:50Z` | 51 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn51 commit touches scoring: miner run.sh: retry the database migration while Postgres is starting… |
-| `sn67:scoring_commit:2026-10-23T07:34:32Z` | 67 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261023.post3 |
-| `sn78:scoring_commit:2026-10-23T10:05:58Z` | 78 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn78 commit touches scoring: Reuse verified model references in legacy retry reconciliation (#355) |
-| `sn114:scoring_commit:2026-10-23T09:03:37Z` | 114 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn114 commit touches scoring: Merge pull request #230 from DendriteHQ/miner-logs-enpoint |
-| `sn28:release:v0.5.11` | 28 | RELEASE | 2026-10-23T15:20:36Z | sn28 released v0.5.11 |
-| `sn28:scoring_commit:2026-10-23T11:46:00Z` | 28 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11 (#351) |
-| `sn46:release:v0.1.4` | 46 | RELEASE | 2026-10-23T15:20:36Z | sn46 released v0.1.4 |
-| `sn51:release:lium-protocol-v1.16.0` | 51 | RELEASE | 2026-10-23T15:20:36Z | sn51 released lium-protocol-v1.16.0 |
-| `sn51:scoring_commit:2026-10-23T14:38:12Z` | 51 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn51 commit touches scoring: DAH-3476 - [P0] libdmcompverify.so: add sm_75 kernel so Tesla T4 pass… |
-| `sn56:scoring_commit:2026-10-23T13:35:41Z` | 56 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn56 commit touches scoring: Sunset environment tournaments and evaluation runtime (#1397) |
-| `sn66:release:v2026.10.23` | 66 | RELEASE | 2026-10-23T15:20:36Z | sn66 released v2026.10.23 |
-| `sn71:scoring_commit:2026-10-23T12:24:04Z` | 71 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn71 commit touches scoring: Merge pull request #718 from leadpoet/fix/oct23-unvalidated-tool-repl… |
-| `sn78:scoring_commit:2026-10-23T12:32:14Z` | 78 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn78 commit touches scoring: Discover proved reward runtimes automatically across upgrades (#358) |
-| `sn89:scoring_commit:2026-10-23T13:43:17Z` | 89 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn89 commit touches scoring: Keep-alive floor for fresh and active miners from 2026-10-23 16:00 UTC |
-| `sn92:scoring_commit:2026-10-23T11:35:56Z` | 92 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn92 commit touches scoring: eval v5.1: public format doc, reference scorer and 300-item dev set (… |
-| `sn97:scoring_commit:2026-10-23T11:04:36Z` | 97 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn97 commit touches scoring: feat(eval): fetch the challenger claimed ahead while the current eval… |
-| `sn117:release:everycli v0.7.2` | 117 | RELEASE | 2026-10-23T15:20:36Z | sn117 released everycli v0.7.2 |
-| `sn117:scoring_commit:2026-10-23T10:11:21Z` | 117 | SCORING_COMMIT | 2026-10-23T15:20:36Z | sn117 commit touches scoring: docs: record bootstrap artifacts and live validation gates |
 | `sn8:scoring_commit:2026-10-23T16:19:53Z` | 8 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn8 commit touches scoring: Optimizations for miner statistics (#964) |
 | `sn21:scoring_commit:2026-10-23T07:40:31Z` | 21 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn21 commit touches scoring: fix(scoring): only real scored entries count toward the previous-mode… |
 | `sn22:scoring_commit:2026-10-23T11:12:15Z` | 22 | SCORING_COMMIT | 2026-10-23T19:26:12Z | sn22 commit touches scoring: fix(bot): open a fresh connection for each task API request again, so… |
@@ -235,7 +224,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-29T23:33:53Z` | 71 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn71 commit touches scoring: Ignore validator runtime state at checkout root |
 | `sn89:scoring_commit:2026-10-30T01:36:45Z` | 89 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn89 commit touches scoring: Agent competition scoreboard builder |
 | `sn124:scoring_commit:2026-10-30T00:04:10Z` | 124 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro… |
-| `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-10-30T04:21:00Z` | 25 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics |
+| `sn51:scoring_commit:2026-10-30T09:50:10Z` | 51 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi… |
+| `sn62:release:v0.3.15` | 62 | RELEASE | 2026-10-30T09:55:02Z | sn62 released v0.3.15 |
+| `sn66:release:deployed/dev: Merge pull request #174 fr` | 66 | RELEASE | 2026-10-30T09:55:02Z | sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements |
+| `sn67:scoring_commit:2026-10-30T02:27:14Z` | 67 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0 |
+| `sn71:scoring_commit:2026-10-30T07:55:16Z` | 71 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

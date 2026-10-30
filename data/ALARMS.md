@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-30T03:00:18Z, block 9393802
+# ALARMS - generated 2026-10-30T09:54:41Z, block 9395874
 
-window: first_seen in [2026-10-30T01:45:50Z, 2026-10-30T03:00:50Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-30T08:40:02Z, 2026-10-30T09:55:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-30T01:11:12Z` | 25 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ… |
-| `sn71:scoring_commit:2026-10-29T23:33:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn71 commit touches scoring: Ignore validator runtime state at checkout root |
-| `sn89:scoring_commit:2026-10-30T01:36:45Z` | 89 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn89 commit touches scoring: Agent competition scoreboard builder |
-| `sn124:scoring_commit:2026-10-30T00:04:10Z` | 124 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro… |
+| `sn25:scoring_commit:2026-10-30T04:21:00Z` | 25 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics |
+| `sn51:scoring_commit:2026-10-30T09:50:10Z` | 51 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi… |
+| `sn62:release:v0.3.15` | 62 | RELEASE | P1 | 2026-10-30T09:55:02Z | sn62 released v0.3.15 |
+| `sn66:release:deployed/dev: Merge pull request #174 fr` | 66 | RELEASE | P1 | 2026-10-30T09:55:02Z | sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements |
+| `sn67:scoring_commit:2026-10-30T02:27:14Z` | 67 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0 |
+| `sn71:scoring_commit:2026-10-30T07:55:16Z` | 71 | SCORING_COMMIT | P1 | 2026-10-30T09:55:02Z | sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-30T01:11:12Z`** - sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ…
+- **`sn25:scoring_commit:2026-10-30T04:21:00Z`** - sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-29T23:33:53Z`** - sn71 commit touches scoring: Ignore validator runtime state at checkout root
+- **`sn51:scoring_commit:2026-10-30T09:50:10Z`** - sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-10-30T01:36:45Z`** - sn89 commit touches scoring: Agent competition scoreboard builder
+- **`sn62:release:v0.3.15`** - sn62 released v0.3.15
+  - published 2026-10-30T07:47:13Z (was v0.3.14)
+- **`sn66:release:deployed/dev: Merge pull request #174 fr`** - sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements
+  - published 2026-10-30T09:27:50Z (was v2026.10.29)
+- **`sn67:scoring_commit:2026-10-30T02:27:14Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-10-30T00:04:10Z`** - sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro…
+- **`sn71:scoring_commit:2026-10-30T07:55:16Z`** - sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
@@ -41,16 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn15:release:v3.0.2: security: patch Python dependenc` | 15 | RELEASE | 2026-10-23T05:10:24Z | sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388) |
-| `sn21:release:SN21 training data v5 (rules from 30 Oct` | 21 | RELEASE | 2026-10-23T05:10:24Z | sn21 released SN21 training data v5 (rules from 30 Oct 2026) |
-| `sn28:release:v0.5.10` | 28 | RELEASE | 2026-10-23T05:10:24Z | sn28 released v0.5.10 |
-| `sn28:scoring_commit:2026-10-23T01:00:34Z` | 28 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10 (#348) |
-| `sn51:release:executor-v1.152` | 51 | RELEASE | 2026-10-23T05:10:24Z | sn51 released executor-v1.152 |
-| `sn51:scoring_commit:2026-10-23T04:54:13Z` | 51 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn51 commit touches scoring: DAH-5012 - [P0] Validator: a killed filler still exiting no longer fa… |
-| `sn71:scoring_commit:2026-10-23T02:21:04Z` | 71 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn71 commit touches scoring: Carry verified numeric LinkedIn identity into investigator evidence (… |
-| `sn78:scoring_commit:2026-10-23T01:53:59Z` | 78 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn78 commit touches scoring: Handle runtime483 reward eligibility and preserve recovery checks (#35 |
-| `sn81:scoring_commit:2026-10-23T02:34:18Z` | 81 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn81 commit touches scoring: Merge pull request #393 from reliquadotai/fix/rl-reward-error |
-| `sn123:scoring_commit:2026-10-23T03:36:50Z` | 123 | SCORING_COMMIT | 2026-10-23T05:10:24Z | sn123 commit touches scoring: Update validator.py |
 | `sn12:release:miner-staging-2026-10-23-39921557432-424` | 12 | RELEASE | 2026-10-23T10:21:57Z | sn12 released miner-staging-2026-10-23-39921557432-424-1: fix: eMudhra certificates incident immunization |
 | `sn28:release:v0.5.11-dev` | 28 | RELEASE | 2026-10-23T10:21:57Z | sn28 released v0.5.11-dev |
 | `sn28:scoring_commit:2026-10-23T09:46:31Z` | 28 | SCORING_COMMIT | 2026-10-23T10:21:57Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.11-dev (#350) |
@@ -236,6 +231,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-10-29T21:11:22Z` | 51 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator… |
 | `sn62:scoring_commit:2026-10-29T20:08:25Z` | 62 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators |
 | `sn94:scoring_commit:2026-10-29T20:51:05Z` | 94 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369) |
+| `sn25:scoring_commit:2026-10-30T01:11:12Z` | 25 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ… |
+| `sn71:scoring_commit:2026-10-29T23:33:53Z` | 71 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn71 commit touches scoring: Ignore validator runtime state at checkout root |
+| `sn89:scoring_commit:2026-10-30T01:36:45Z` | 89 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn89 commit touches scoring: Agent competition scoreboard builder |
+| `sn124:scoring_commit:2026-10-30T00:04:10Z` | 124 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro… |
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |

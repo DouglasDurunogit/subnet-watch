@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-29T23:28:49Z, block 9392745
+# ALARMS - generated 2026-10-30T03:00:18Z, block 9393802
 
-window: first_seen in [2026-10-29T22:14:16Z, 2026-10-29T23:29:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-30T01:45:50Z, 2026-10-30T03:00:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.5.4` | 1 | RELEASE | P1 | 2026-10-29T23:29:16Z | sn1 released v4.5.4 |
-| `sn25:scoring_commit:2026-10-29T21:28:46Z` | 25 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec |
-| `sn51:scoring_commit:2026-10-29T21:11:22Z` | 51 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator… |
-| `sn62:scoring_commit:2026-10-29T20:08:25Z` | 62 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators |
-| `sn94:scoring_commit:2026-10-29T20:51:05Z` | 94 | SCORING_COMMIT | P1 | 2026-10-29T23:29:16Z | sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369) |
+| `sn25:scoring_commit:2026-10-30T01:11:12Z` | 25 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ… |
+| `sn71:scoring_commit:2026-10-29T23:33:53Z` | 71 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn71 commit touches scoring: Ignore validator runtime state at checkout root |
+| `sn89:scoring_commit:2026-10-30T01:36:45Z` | 89 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn89 commit touches scoring: Agent competition scoreboard builder |
+| `sn124:scoring_commit:2026-10-30T00:04:10Z` | 124 | SCORING_COMMIT | P1 | 2026-10-30T03:00:50Z | sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro… |
 
 ### detail
 
-- **`sn1:release:v4.5.4`** - sn1 released v4.5.4
-  - published 2026-10-29T23:03:40Z (was v4.5.3)
-- **`sn25:scoring_commit:2026-10-29T21:28:46Z`** - sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec
+- **`sn25:scoring_commit:2026-10-30T01:11:12Z`** - sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-29T21:11:22Z`** - sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator…
+- **`sn71:scoring_commit:2026-10-29T23:33:53Z`** - sn71 commit touches scoring: Ignore validator runtime state at checkout root
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:scoring_commit:2026-10-29T20:08:25Z`** - sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators
+- **`sn89:scoring_commit:2026-10-30T01:36:45Z`** - sn89 commit touches scoring: Agent competition scoreboard builder
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-10-29T20:51:05Z`** - sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369)
+- **`sn124:scoring_commit:2026-10-30T00:04:10Z`** - sn124 commit touches scoring: Merge pull request #239 from swarm-subnet/feature/ali/validator-nonro…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn81:burn_drop:0.810` | 81 | BURN_DROP | 2026-10-23T00:12:40Z | sn81 burn fell 0.996 -> 0.810 - miners can earn again |
 | `sn104:burn_drop:0.000` | 104 | BURN_DROP | 2026-10-23T05:10:24Z | sn104 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn6:weights_version_bump:4000` | 6 | WEIGHTS_VERSION_BUMP | 2026-10-23T15:20:36Z | sn6 weights_version 3000 -> 4000 |
 | `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
@@ -45,8 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
-| `sn28:release:v0.5.10-dev` | 28 | RELEASE | 2026-10-23T00:12:40Z | sn28 released v0.5.10-dev |
-| `sn28:scoring_commit:2026-10-22T23:53:16Z` | 28 | SCORING_COMMIT | 2026-10-23T00:12:40Z | sn28 commit touches scoring: chore(release): gm-miner 0.5.10-dev (#347) |
 | `sn15:release:v3.0.2: security: patch Python dependenc` | 15 | RELEASE | 2026-10-23T05:10:24Z | sn15 released v3.0.2: security: patch Python dependencies and supported runtimes (#388) |
 | `sn21:release:SN21 training data v5 (rules from 30 Oct` | 21 | RELEASE | 2026-10-23T05:10:24Z | sn21 released SN21 training data v5 (rules from 30 Oct 2026) |
 | `sn28:release:v0.5.10` | 28 | RELEASE | 2026-10-23T05:10:24Z | sn28 released v0.5.10 |
@@ -237,6 +231,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-10-29T14:20:37Z` | 97 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars |
 | `sn117:release:everycli v0.8.0` | 117 | RELEASE | 2026-10-29T19:17:09Z | sn117 released everycli v0.8.0 |
 | `sn117:scoring_commit:2026-10-29T17:19:07Z` | 117 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn117 commit touches scoring: Add Director tool models to miner |
+| `sn1:release:v4.5.4` | 1 | RELEASE | 2026-10-29T23:29:16Z | sn1 released v4.5.4 |
+| `sn25:scoring_commit:2026-10-29T21:28:46Z` | 25 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec |
+| `sn51:scoring_commit:2026-10-29T21:11:22Z` | 51 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator… |
+| `sn62:scoring_commit:2026-10-29T20:08:25Z` | 62 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators |
+| `sn94:scoring_commit:2026-10-29T20:51:05Z` | 94 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369) |
 | `sn117:readme_task_diff:cb1456ccf5f760fc` | 117 | README_TASK_DIFF | 2026-10-23T15:20:36Z | sn117 README task/scoring sections changed |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |

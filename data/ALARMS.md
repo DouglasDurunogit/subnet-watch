@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-31T06:56:03Z, block 9402181
+# ALARMS - generated 2026-10-31T13:35:35Z, block 9404179
 
-window: first_seen in [2026-10-31T05:41:23Z, 2026-10-31T06:56:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-31T12:20:59Z, 2026-10-31T13:35:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-10-31T06:54:01Z` | 25 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn25 commit touches scoring: Record the census fix deployment in taskworker 1086289460 |
-| `sn34:scoring_commit:2026-10-30T23:21:18Z` | 34 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn34 commit touches scoring: fix: score empty stopped ArenaHard answers as incorrect |
-| `sn51:scoring_commit:2026-10-31T03:32:27Z` | 51 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn51 commit touches scoring: DAH-5457 - [P0] Validator: GPU drop report lists the new cards after … |
-| `sn62:release:v0.3.16` | 62 | RELEASE | P1 | 2026-10-31T06:56:23Z | sn62 released v0.3.16 |
-| `sn71:scoring_commit:2026-10-31T03:57:05Z` | 71 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn71 commit touches scoring: Keep validator checkout warnings out of usable training evidence |
-| `sn91:scoring_commit:2026-10-31T03:06:40Z` | 91 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn91 commit touches scoring: King leg: channel floor by ref, ignore the challenger abort |
-| `sn116:scoring_commit:2026-10-30T23:26:11Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn116 commit touches scoring: Record five owner decisions given in the Validator session (repack al… |
-| `sn120:scoring_commit:2026-10-31T01:15:16Z` | 120 | SCORING_COMMIT | P1 | 2026-10-31T06:56:23Z | sn120 commit touches scoring: SN120 free-file protocol: miners upload one affine-batch-v1 file (pro… |
+| `sn14:scoring_commit:2026-10-30T14:38:17Z` | 14 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn14 commit touches scoring: Pay no first PASS under the reward margin over stock |
+| `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
+| `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
+| `sn108:scoring_commit:2026-10-31T11:29:59Z` | 108 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status… |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-10-31T06:54:01Z`** - sn25 commit touches scoring: Record the census fix deployment in taskworker 1086289460
+- **`sn14:scoring_commit:2026-10-30T14:38:17Z`** - sn14 commit touches scoring: Pay no first PASS under the reward margin over stock
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-10-30T23:21:18Z`** - sn34 commit touches scoring: fix: score empty stopped ArenaHard answers as incorrect
+- **`sn67:scoring_commit:2026-10-31T05:58:58Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-10-31T03:32:27Z`** - sn51 commit touches scoring: DAH-5457 - [P0] Validator: GPU drop report lists the new cards after …
+- **`sn91:scoring_commit:2026-10-31T08:20:08Z`** - sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.16`** - sn62 released v0.3.16
-  - published 2026-10-31T02:51:18Z (was v0.3.15)
-- **`sn71:scoring_commit:2026-10-31T03:57:05Z`** - sn71 commit touches scoring: Keep validator checkout warnings out of usable training evidence
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-31T03:06:40Z`** - sn91 commit touches scoring: King leg: channel floor by ref, ignore the challenger abort
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-30T23:26:11Z`** - sn116 commit touches scoring: Record five owner decisions given in the Validator session (repack al…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-31T01:15:16Z`** - sn120 commit touches scoring: SN120 free-file protocol: miners upload one affine-batch-v1 file (pro…
+- **`sn108:scoring_commit:2026-10-31T11:29:59Z`** - sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -51,9 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn21:scoring_commit:2026-10-24T06:28:19Z` | 21 | SCORING_COMMIT | 2026-10-24T11:23:46Z | sn21 commit touches scoring: docs(scoring): the measurement amendment applies by basket, from the … |
-| `sn62:release:v0.3.13` | 62 | RELEASE | 2026-10-24T11:23:46Z | sn62 released v0.3.13 |
-| `sn81:scoring_commit:2026-10-24T10:32:01Z` | 81 | SCORING_COMMIT | 2026-10-24T11:23:46Z | sn81 commit touches scoring: fix(rl-price): level mode moves per hour, slower than the miners |
 | `sn81:scoring_commit:2026-10-24T11:36:09Z` | 81 | SCORING_COMMIT | 2026-10-24T14:45:03Z | sn81 commit touches scoring: Merge pull request #413 from reliquadotai/fix/rl-active-miner-live-lea |
 | `sn71:scoring_commit:2026-10-24T17:11:03Z` | 71 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn71 commit touches scoring: Preserve source metadata and validated company evidence in Arena judgi |
 | `sn78:scoring_commit:2026-10-24T14:56:17Z` | 78 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386) |
@@ -226,6 +211,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn78:scoring_commit:2026-10-30T23:30:40Z` | 78 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn78 commit touches scoring: Add quality-gated CPU efficiency rewards for C8+ [skip ci] |
 | `sn91:scoring_commit:2026-10-30T21:27:46Z` | 91 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn91 commit touches scoring: bench data: a completion marker only for a verified-complete pull |
 | `sn116:scoring_commit:2026-10-30T22:43:52Z` | 116 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn116 commit touches scoring: MINING: help contact is the owner's Telegram (no Discord) |
+| `sn25:scoring_commit:2026-10-31T06:54:01Z` | 25 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn25 commit touches scoring: Record the census fix deployment in taskworker 1086289460 |
+| `sn34:scoring_commit:2026-10-30T23:21:18Z` | 34 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn34 commit touches scoring: fix: score empty stopped ArenaHard answers as incorrect |
+| `sn51:scoring_commit:2026-10-31T03:32:27Z` | 51 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn51 commit touches scoring: DAH-5457 - [P0] Validator: GPU drop report lists the new cards after … |
+| `sn62:release:v0.3.16` | 62 | RELEASE | 2026-10-31T06:56:23Z | sn62 released v0.3.16 |
+| `sn71:scoring_commit:2026-10-31T03:57:05Z` | 71 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn71 commit touches scoring: Keep validator checkout warnings out of usable training evidence |
+| `sn91:scoring_commit:2026-10-31T03:06:40Z` | 91 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn91 commit touches scoring: King leg: channel floor by ref, ignore the challenger abort |
+| `sn116:scoring_commit:2026-10-30T23:26:11Z` | 116 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn116 commit touches scoring: Record five owner decisions given in the Validator session (repack al… |
+| `sn120:scoring_commit:2026-10-31T01:15:16Z` | 120 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn120 commit touches scoring: SN120 free-file protocol: miners upload one affine-batch-v1 file (pro… |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

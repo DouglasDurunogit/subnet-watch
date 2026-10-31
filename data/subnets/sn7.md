@@ -1,25 +1,25 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-10-30T21:07:57Z  |  block: 9399240  |  row_status: ok
+snapshot_utc: 2026-10-31T00:56:04Z  |  block: 9400381  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **0.9974045972339809**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (35.120999999999995 USD), open=True
+- miner_burn: **0.997691159369424**  <- 100% burn: miners earn NOTHING here
+- registration cost: 0.15 TAO (35.8395 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 15  |  free: 0
-- subnet age: 940.5 days  |  registered at block 2627691
+- subnet age: 940.7 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3.5800573836320293** (uid 32) <- the only figure quotable as achievable
-- median_miner_usd_day: 3.5800573836320293
-- top_miner_usd_day: 1602.7867864638629 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3.252897085245028** (uid 32) <- the only figure quotable as achievable
+- median_miner_usd_day: 3.252897085245028
+- top_miner_usd_day: 1636.0320778813511 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 3  |  gini: 0.6647134522556066  |  top1_share: 0.9974211465978973  |  top10_share: 1.0
-- owner_incentive_share: 0.9974211465978973 (independent check on miner_burn; disagreement 0.0)
+- earners: 3  |  gini: 0.6649372580735406  |  top1_share: 0.9977110768620389  |  top10_share: 1.0
+- owner_incentive_share: 0.997711076862039 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
@@ -36,11 +36,11 @@ snapshot_utc: 2026-10-30T21:07:57Z  |  block: 9399240  |  row_status: ok
 - min_compute.yml present: True  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -6.1472 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -6.3425 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
-- gate: **BLOCKED:burn** - miner_burn=0.997 - 99.7% of miner emission is withheld by owner-controlled hotkeys, so miners earn nothing here
+- gate: **BLOCKED:burn** - miner_burn=0.998 - 99.8% of miner emission is withheld by owner-controlled hotkeys, so miners earn nothing here
 - score: [UNKNOWN] (rank -), confidence [UNKNOWN] 
 - components: income [UNKNOWN] / freshness [UNKNOWN] / resource [UNKNOWN] / registration [UNKNOWN]
 - freshness basis: -

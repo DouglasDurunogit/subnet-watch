@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-30T21:07:57Z, block 9399240
+# ALARMS - generated 2026-10-31T00:56:04Z, block 9400381
 
-window: first_seen in [2026-10-30T19:53:18Z, 2026-10-30T21:08:18Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-30T23:41:30Z, 2026-10-31T00:56:30Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,34 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.964` | 76 | BURN_DROP | P0 | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn15:release:v3.0.6: fix(validator): keep sandbox out` | 15 | RELEASE | P1 | 2026-10-30T21:08:18Z | sn15 released v3.0.6: fix(validator): keep sandbox output from blocking run completion |
-| `sn15:scoring_commit:2026-10-30T18:12:56Z` | 15 | SCORING_COMMIT | P1 | 2026-10-30T21:08:18Z | sn15 commit touches scoring: fix(validator): keep sandbox output from blocking run completion |
-| `sn25:scoring_commit:2026-10-30T18:12:19Z` | 25 | SCORING_COMMIT | P1 | 2026-10-30T21:08:18Z | sn25 commit touches scoring: Require verified empty EMA prior for head replica bootstrap |
-| `sn117:release:everycli v0.8.2` | 117 | RELEASE | P1 | 2026-10-30T21:08:18Z | sn117 released everycli v0.8.2 |
-| `sn117:scoring_commit:2026-10-30T19:57:17Z` | 117 | SCORING_COMMIT | P1 | 2026-10-30T21:08:18Z | sn117 commit touches scoring: Document the combined v0.8.2 miner and CLI fixes |
+| `sn25:release:v2026.10.30-1086064830` | 25 | RELEASE | P1 | 2026-10-31T00:56:30Z | sn25 released v2026.10.30-1086064830 |
+| `sn78:scoring_commit:2026-10-30T23:30:40Z` | 78 | SCORING_COMMIT | P1 | 2026-10-31T00:56:30Z | sn78 commit touches scoring: Add quality-gated CPU efficiency rewards for C8+ [skip ci] |
+| `sn91:scoring_commit:2026-10-30T21:27:46Z` | 91 | SCORING_COMMIT | P1 | 2026-10-31T00:56:30Z | sn91 commit touches scoring: bench data: a completion marker only for a verified-complete pull |
+| `sn116:scoring_commit:2026-10-30T22:43:52Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T00:56:30Z | sn116 commit touches scoring: MINING: help contact is the owner's Telegram (no Discord) |
 
 ### detail
 
-- **`sn76:burn_drop:0.964`** - sn76 burn fell 0.993 -> 0.964 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn15:release:v3.0.6: fix(validator): keep sandbox out`** - sn15 released v3.0.6: fix(validator): keep sandbox output from blocking run completion
-  - published 2026-10-30T18:12:56Z (was v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit)
-- **`sn15:scoring_commit:2026-10-30T18:12:56Z`** - sn15 commit touches scoring: fix(validator): keep sandbox output from blocking run completion
+- **`sn25:release:v2026.10.30-1086064830`** - sn25 released v2026.10.30-1086064830
+  - published 2026-10-31T00:37:55Z (was v2026.10.27-1083160450)
+- **`sn78:scoring_commit:2026-10-30T23:30:40Z`** - sn78 commit touches scoring: Add quality-gated CPU efficiency rewards for C8+ [skip ci]
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-30T18:12:19Z`** - sn25 commit touches scoring: Require verified empty EMA prior for head replica bootstrap
+- **`sn91:scoring_commit:2026-10-30T21:27:46Z`** - sn91 commit touches scoring: bench data: a completion marker only for a verified-complete pull
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.8.2`** - sn117 released everycli v0.8.2
-  - published 2026-10-30T20:38:17Z (was everycli v0.8.0)
-- **`sn117:scoring_commit:2026-10-30T19:57:17Z`** - sn117 commit touches scoring: Document the combined v0.8.2 miner and CLI fixes
+- **`sn116:scoring_commit:2026-10-30T22:43:52Z`** - sn116 commit touches scoring: MINING: help contact is the owner's Telegram (no Discord)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn7:burn_drop:0.985` | 7 | BURN_DROP | 2026-10-23T22:32:24Z | sn7 burn fell 0.991 -> 0.985 - miners can earn again |
-| `sn76:burn_drop:0.987` | 76 | BURN_DROP | 2026-10-23T22:32:24Z | sn76 burn fell 0.992 -> 0.987 - miners can earn again |
 | `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
@@ -46,9 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
-| `sn71:scoring_commit:2026-10-23T20:43:00Z` | 71 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn71 commit touches scoring: Preserve the failed primary-intent reason when a bonus verifies |
-| `sn78:scoring_commit:2026-10-23T21:58:21Z` | 78 | SCORING_COMMIT | 2026-10-23T22:32:24Z | sn78 commit touches scoring: Retain bounded model pairs and finish resident evaluation jobs |
-| `sn117:release:everycli v0.7.3` | 117 | RELEASE | 2026-10-23T22:32:24Z | sn117 released everycli v0.7.3 |
+| `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn71:scoring_commit:2026-10-24T01:08:52Z` | 71 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn71 commit touches scoring: Bind headcount release to committed protected scorer source |
 | `sn78:scoring_commit:2026-10-23T23:09:56Z` | 78 | SCORING_COMMIT | 2026-10-24T01:10:35Z | sn78 commit touches scoring: Keep central model evaluations out of automatic miner absence cutoff |
 | `sn117:release:everycli v0.7.4` | 117 | RELEASE | 2026-10-24T01:10:35Z | sn117 released everycli v0.7.4 |
@@ -222,6 +212,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn97:scoring_commit:2026-10-30T14:36:17Z` | 97 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn97 commit touches scoring: feat(eval): KL decides a win, score per sample, per-domain answer cap… |
 | `sn102:release:v0.7.2: Merge pull request #299 from Con` | 102 | RELEASE | 2026-10-30T16:41:00Z | sn102 released v0.7.2: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
 | `sn102:scoring_commit:2026-10-30T14:28:47Z` | 102 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn102 commit touches scoring: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
+| `sn15:release:v3.0.6: fix(validator): keep sandbox out` | 15 | RELEASE | 2026-10-30T21:08:18Z | sn15 released v3.0.6: fix(validator): keep sandbox output from blocking run completion |
+| `sn15:scoring_commit:2026-10-30T18:12:56Z` | 15 | SCORING_COMMIT | 2026-10-30T21:08:18Z | sn15 commit touches scoring: fix(validator): keep sandbox output from blocking run completion |
+| `sn25:scoring_commit:2026-10-30T18:12:19Z` | 25 | SCORING_COMMIT | 2026-10-30T21:08:18Z | sn25 commit touches scoring: Require verified empty EMA prior for head replica bootstrap |
+| `sn117:release:everycli v0.8.2` | 117 | RELEASE | 2026-10-30T21:08:18Z | sn117 released everycli v0.8.2 |
+| `sn117:scoring_commit:2026-10-30T19:57:17Z` | 117 | SCORING_COMMIT | 2026-10-30T21:08:18Z | sn117 commit touches scoring: Document the combined v0.8.2 miner and CLI fixes |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

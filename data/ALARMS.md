@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-31T13:35:35Z, block 9404179
+# ALARMS - generated 2026-10-31T17:57:39Z, block 9405489
 
-window: first_seen in [2026-10-31T12:20:59Z, 2026-10-31T13:35:59Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-31T16:43:00Z, 2026-10-31T17:58:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn14:scoring_commit:2026-10-30T14:38:17Z` | 14 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn14 commit touches scoring: Pay no first PASS under the reward margin over stock |
-| `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
-| `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
-| `sn108:scoring_commit:2026-10-31T11:29:59Z` | 108 | SCORING_COMMIT | P1 | 2026-10-31T13:35:59Z | sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status… |
+| `sn21:scoring_commit:2026-10-31T13:41:41Z` | 21 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li… |
+| `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
+| `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
+| `sn120:scoring_commit:2026-10-31T13:21:27Z` | 120 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner… |
+| `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | P2 | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn14:scoring_commit:2026-10-30T14:38:17Z`** - sn14 commit touches scoring: Pay no first PASS under the reward margin over stock
+- **`sn21:scoring_commit:2026-10-31T13:41:41Z`** - sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-10-31T05:58:58Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0
+- **`sn71:scoring_commit:2026-10-31T16:38:42Z`** - sn71 commit touches scoring: Preserve verified training pairs from incomplete captures
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-10-31T08:20:08Z`** - sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections
+- **`sn116:scoring_commit:2026-10-31T14:24:06Z`** - sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-10-31T11:29:59Z`** - sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status…
+- **`sn120:scoring_commit:2026-10-31T13:21:27Z`** - sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:readme_task_diff:65365716ac8dc6df`** - sn21 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,9 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn81:scoring_commit:2026-10-24T11:36:09Z` | 81 | SCORING_COMMIT | 2026-10-24T14:45:03Z | sn81 commit touches scoring: Merge pull request #413 from reliquadotai/fix/rl-active-miner-live-lea |
-| `sn71:scoring_commit:2026-10-24T17:11:03Z` | 71 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn71 commit touches scoring: Preserve source metadata and validated company evidence in Arena judgi |
-| `sn78:scoring_commit:2026-10-24T14:56:17Z` | 78 | SCORING_COMMIT | 2026-10-24T17:39:36Z | sn78 commit touches scoring: Reset evaluation forecasts when evaluator processes change (#386) |
 | `sn78:scoring_commit:2026-10-24T18:32:39Z` | 78 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn78 commit touches scoring: Keep threshold shape validation on failed multisig calls |
 | `sn81:scoring_commit:2026-10-24T17:47:45Z` | 81 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn81 commit touches scoring: Merge pull request #416 from reliquadotai/fix/rl-miner-submission-expo |
 | `sn25:release:v2026.10.24-1080739690` | 25 | RELEASE | 2026-10-24T22:26:21Z | sn25 released v2026.10.24-1080739690 |
@@ -219,6 +219,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-10-31T03:06:40Z` | 91 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn91 commit touches scoring: King leg: channel floor by ref, ignore the challenger abort |
 | `sn116:scoring_commit:2026-10-30T23:26:11Z` | 116 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn116 commit touches scoring: Record five owner decisions given in the Validator session (repack al… |
 | `sn120:scoring_commit:2026-10-31T01:15:16Z` | 120 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn120 commit touches scoring: SN120 free-file protocol: miners upload one affine-batch-v1 file (pro… |
+| `sn14:scoring_commit:2026-10-30T14:38:17Z` | 14 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn14 commit touches scoring: Pay no first PASS under the reward margin over stock |
+| `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
+| `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
+| `sn108:scoring_commit:2026-10-31T11:29:59Z` | 108 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status… |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

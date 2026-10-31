@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-10-31T17:57:39Z · block 9405489 · run_status **ok**_
+_snapshot 2026-10-31T21:27:25Z · block 9406538 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 128
+# 54 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 99 | `miner_burn` < 0.99 |
 | Ranked | 99 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **54** | income beats machine cost |
+| New events this window | 10 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,10 +29,10 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 66 | `████████████████████████████` |
-| 0–0.2 | 8 | `███` |
-| 0.2–0.4 | 6 | `███` |
-| 0.4–0.6 | 4 | `██` |
+| 0 (none) | 65 | `████████████████████████████` |
+| 0–0.2 | 9 | `████` |
+| 0.2–0.4 | 5 | `██` |
+| 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 9 | `████` |
 | 0.8–0.99 | 6 | `███` |
 | ≥0.99 dead | 29 | `████████████` |
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn120 Affine | 74.6 | 2,913 | 2,913 = | rtx4090* | 10 | 10% |
-| 2 | sn3 Teutonic | 73.2 | 1,945 | 3,898 | rtx4090* | 7 | 25% |
-| 3 | sn97 Ingot | 72.8 | 1,693 | 1,693 = | rtx4090* | 5 | 20% |
-| 4 | sn103 Terza Inference | 70 | 738 | 1,931 | rtx4090* | 5 | 38% |
-| 5 | sn60 Bitsec.ai | 69.3 | 232 | 232 = | cpu-small | 3 | 50% |
-| 6 | sn53 engy | 67.9 | 398 | 2,147 | rtx4090 | 29 | 26% |
-| 7 | sn1 Apex | 67.4 | 337 | 786 | rtx4090* | 5 | 64% |
-| 8 | sn67 Harnyx | 67.2 | 6.08 | 479 | cpu-small | 139 | 24% |
-| 9 | sn107 Minos | 65.8 | 167 | 14,196 | cpu-small | 20 | 80% |
-| 10 | sn15 ORO | 65.4 | 6.64 | 14.07 | cpu-small | 74 | 96% |
-| 11 | sn125 Refinery | 64.7 | 153 | 826 | rtx4090* | 4 | 50% |
-| 12 | sn102 ConnitoAI | 64.5 | 145 | 765 | rtx4090* | 10 | 25% |
-| 13 | sn124 Swarm | 63 | 100 | 2,048 | rtx4090* | 14 | 33% |
-| 14 | sn62 Ridges | 61.2 | 54.28 | 2,528 | rtx4090* | 33 | 43% |
-| 15 | sn117 everyframe.studi | 59.9 | 37.11 | 197 | rtx4090* | 7 | 87% |
-| 16 | sn66 conjectures | 58.6 | 23.78 | 163 | rtx4090* | 7 | 82% |
-| 17 | sn4 Targon | 58.4 | 11,516 | 25,784 | rtx4090* | 4 | 64% |
-| 18 | sn91 cascade | 57.7 | 19.96 | 66.94 | rtx4090* | 6 | 95% |
-| 19 | sn56 Gradients | 57.6 | 634 | 5,211 | rtx4090* | 6 | 51% |
-| 20 | sn58 Attune | 57.1 | 561 | 903 | rtx4090* | 5 | 70% |
+| 1 | sn120 Affine | 74.6 | 2,903 | 2,903 = | rtx4090* | 10 | 10% |
+| 2 | sn3 Teutonic | 73.2 | 1,933 | 3,875 | rtx4090* | 7 | 25% |
+| 3 | sn97 Ingot | 72.8 | 1,685 | 1,685 = | rtx4090* | 5 | 20% |
+| 4 | sn103 Terza Inference | 70 | 731 | 1,913 | rtx4090* | 5 | 39% |
+| 5 | sn53 engy | 67.9 | 399 | 2,153 | rtx4090 | 29 | 26% |
+| 6 | sn1 Apex | 67.3 | 330 | 770 | rtx4090* | 5 | 65% |
+| 7 | sn67 Harnyx | 67.3 | 6.02 | 476 | cpu-small | 140 | 24% |
+| 8 | sn15 ORO | 66.7 | 6.50 | 12,183 | cpu-small | 74 | 96% |
+| 9 | sn107 Minos | 65.7 | 166 | 14,107 | cpu-small | 20 | 80% |
+| 10 | sn125 Refinery | 64.7 | 153 | 825 | rtx4090* | 4 | 50% |
+| 11 | sn102 ConnitoAI | 64.6 | 147 | 1,174 | rtx4090* | 7 | 39% |
+| 12 | sn124 Swarm | 63 | 102 | 2,074 | rtx4090* | 14 | 33% |
+| 13 | sn62 Ridges | 61.5 | 59.00 | 2,142 | rtx4090* | 34 | 37% |
+| 14 | sn117 everyframe.studi | 60.5 | 43.45 | 90.77 | rtx4090* | 7 | 89% |
+| 15 | sn66 conjectures | 58.9 | 26.53 | 99.56 | rtx4090* | 7 | 84% |
+| 16 | sn4 Targon | 58.4 | 11,539 | 25,835 | rtx4090* | 4 | 64% |
+| 17 | sn91 cascade | 57.5 | 18.94 | 64.22 | rtx4090* | 6 | 95% |
+| 18 | sn46 Instant | 57.4 | 233 | 251 | cpu-small | 6 | 40% |
+| 19 | sn58 Attune | 57.1 | 558 | 898 | rtx4090* | 5 | 70% |
+| 20 | sn56 Gradients | 56.6 | 473 | 1,289 | rtx4090* | 6 | 51% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,8 +85,8 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
+| wide (<30%) | 23 |
+| concentrated (30–60%) | 23 |
 | dominated (60–90%) | 23 |
 | captured (>90%) | 27 |
 
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-10-31T21:27 | sn1 | RELEASE | sn1 released v4.6.0 |
+| 2026-10-31T21:27 | sn11 | RELEASE | sn11 released v0.7.6 |
+| 2026-10-31T21:27 | sn11 | SCORING_COMMIT | sn11 commit touches scoring: chore(release): validator 0.7.6 for bound |
+| 2026-10-31T21:27 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and  |
+| 2026-10-31T21:27 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: Batch frozen tasks with redundant sandbox |
+| 2026-10-31T21:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Keep admission source review on verified  |
+| 2026-10-31T21:27 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets |
+| 2026-10-31T21:27 | sn117 | RELEASE | sn117 released everycli v0.8.3 |
+| 2026-10-31T21:27 | sn117 | README_TASK_DIFF | sn117 README task/scoring sections changed |
+| 2026-10-31T21:27 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: SN120 miner kit (miner/): everything a m |
 | 2026-10-31T17:58 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs: the settling window is 2 days every |
 | 2026-10-31T17:58 | sn21 | README_TASK_DIFF | sn21 README task/scoring sections changed |
 | 2026-10-31T17:58 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve verified training pairs from inc |
 | 2026-10-31T17:58 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Miner client: every HTTP call to a door  |
 | 2026-10-31T17:58 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (sit |
-| 2026-10-31T13:35 | sn14 | SCORING_COMMIT | sn14 commit touches scoring: Pay no first PASS under the reward margin |
-| 2026-10-31T13:35 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-10-31T13:35 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: Merge pull request #393 from TensorLink-A |
-| 2026-10-31T13:35 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: Between quests the validator checks its  |
-| 2026-10-31T06:56 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Record the census fix deployment in taskw |
-| 2026-10-31T06:56 | sn34 | SCORING_COMMIT | sn34 commit touches scoring: fix: score empty stopped ArenaHard answer |
-| 2026-10-31T06:56 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5457 - [P0] Validator: GPU drop repor |
-| 2026-10-31T06:56 | sn62 | RELEASE | sn62 released v0.3.16 |
-| 2026-10-31T06:56 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Keep validator checkout warnings out of u |
-| 2026-10-31T06:56 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: King leg: channel floor by ref, ignore th |
 
 ---
 

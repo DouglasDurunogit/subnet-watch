@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-31T17:57:39Z, block 9405489
+# ALARMS - generated 2026-10-31T21:27:25Z, block 9406538
 
-window: first_seen in [2026-10-31T16:43:00Z, 2026-10-31T17:58:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-31T20:12:52Z, 2026-10-31T21:27:52Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-10-31T13:41:41Z` | 21 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li… |
-| `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
-| `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
-| `sn120:scoring_commit:2026-10-31T13:21:27Z` | 120 | SCORING_COMMIT | P1 | 2026-10-31T17:58:00Z | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner… |
-| `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | P2 | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
+| `sn1:release:v4.6.0` | 1 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn1 released v4.6.0 |
+| `sn11:release:v0.7.6` | 11 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn11 released v0.7.6 |
+| `sn11:scoring_commit:2026-10-31T19:27:19Z` | 11 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343) |
+| `sn25:scoring_commit:2026-10-31T20:35:44Z` | 25 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for… |
+| `sn34:scoring_commit:2026-10-31T20:28:37Z` | 34 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40) |
+| `sn71:scoring_commit:2026-10-31T18:53:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950) |
+| `sn116:scoring_commit:2026-10-31T17:37:40Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified… |
+| `sn117:release:everycli v0.8.3` | 117 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn117 released everycli v0.8.3 |
+| `sn120:scoring_commit:2026-10-31T18:43:36Z` | 120 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the… |
+| `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | P2 | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-10-31T13:41:41Z`** - sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li…
+- **`sn1:release:v4.6.0`** - sn1 released v4.6.0
+  - published 2026-10-31T20:37:25Z (was v4.5.4)
+- **`sn11:release:v0.7.6`** - sn11 released v0.7.6
+  - published 2026-10-31T19:27:19Z (was v0.7.4)
+- **`sn11:scoring_commit:2026-10-31T19:27:19Z`** - sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-31T16:38:42Z`** - sn71 commit touches scoring: Preserve verified training pairs from incomplete captures
+- **`sn25:scoring_commit:2026-10-31T20:35:44Z`** - sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-31T14:24:06Z`** - sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev…
+- **`sn34:scoring_commit:2026-10-31T20:28:37Z`** - sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-10-31T13:21:27Z`** - sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner…
+- **`sn71:scoring_commit:2026-10-31T18:53:55Z`** - sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:65365716ac8dc6df`** - sn21 README task/scoring sections changed
+- **`sn116:scoring_commit:2026-10-31T17:37:40Z`** - sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.8.3`** - sn117 released everycli v0.8.3
+  - published 2026-10-31T20:55:40Z (was everycli v0.8.2)
+- **`sn120:scoring_commit:2026-10-31T18:43:36Z`** - sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:readme_task_diff:b849af97332968e4`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn117:burn_drop:0.926` | 117 | BURN_DROP | 2026-10-24T19:51:23Z | sn117 burn fell 1.000 -> 0.926 - miners can earn again |
 | `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
@@ -42,8 +56,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn78:scoring_commit:2026-10-24T18:32:39Z` | 78 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn78 commit touches scoring: Keep threshold shape validation on failed multisig calls |
-| `sn81:scoring_commit:2026-10-24T17:47:45Z` | 81 | SCORING_COMMIT | 2026-10-24T19:51:23Z | sn81 commit touches scoring: Merge pull request #416 from reliquadotai/fix/rl-miner-submission-expo |
 | `sn25:release:v2026.10.24-1080739690` | 25 | RELEASE | 2026-10-24T22:26:21Z | sn25 released v2026.10.24-1080739690 |
 | `sn15:release:v3.0.3: feat: capture BYOK upstream infe` | 15 | RELEASE | 2026-10-25T00:29:02Z | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391) |
 | `sn15:scoring_commit:2026-10-24T23:44:40Z` | 15 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390) |
@@ -223,6 +235,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
 | `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
 | `sn108:scoring_commit:2026-10-31T11:29:59Z` | 108 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status… |
+| `sn21:scoring_commit:2026-10-31T13:41:41Z` | 21 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li… |
+| `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
+| `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
+| `sn120:scoring_commit:2026-10-31T13:21:27Z` | 120 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner… |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
@@ -234,6 +250,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
+| `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

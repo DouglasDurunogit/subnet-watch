@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-01T13:50:24Z, block 9411453
+# ALARMS - generated 2026-11-01T18:52:45Z, block 9412964
 
-window: first_seen in [2026-11-01T12:35:47Z, 2026-11-01T13:50:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-01T17:38:08Z, 2026-11-01T18:53:08Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.990` | 76 | BURN_DROP | P0 | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
-| `sn9:release:v4.14.0` | 9 | RELEASE | P1 | 2026-11-01T13:50:47Z | sn9 released v4.14.0 |
-| `sn28:release:v0.5.17-dev` | 28 | RELEASE | P1 | 2026-11-01T13:50:47Z | sn28 released v0.5.17-dev |
-| `sn91:scoring_commit:2026-11-01T12:26:46Z` | 91 | SCORING_COMMIT | P1 | 2026-11-01T13:50:47Z | sn91 commit touches scoring: Merge pull request #409 from TensorLink-AI/fix/init-bench-validator-s… |
-| `sn94:scoring_commit:2026-11-01T10:17:21Z` | 94 | SCORING_COMMIT | P1 | 2026-11-01T13:50:47Z | sn94 commit touches scoring: Remove stale miner box runbook and seedbox proof template (#341) |
-| `sn116:scoring_commit:2026-11-01T12:55:30Z` | 116 | SCORING_COMMIT | P1 | 2026-11-01T13:50:47Z | sn116 commit touches scoring: MINING.md: practice time limit wording per Validator (per-Challenge, … |
-| `sn120:scoring_commit:2026-11-01T13:06:32Z` | 120 | SCORING_COMMIT | P1 | 2026-11-01T13:50:47Z | sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner |
+| `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | P1 | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
+| `sn117:release:everycli v0.8.4` | 117 | RELEASE | P1 | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
 
 ### detail
 
-- **`sn76:burn_drop:0.990`** - sn76 burn fell 0.991 -> 0.990 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn9:release:v4.14.0`** - sn9 released v4.14.0
-  - published 2026-11-01T09:01:19Z (was v4.13.10)
-- **`sn28:release:v0.5.17-dev`** - sn28 released v0.5.17-dev
-  - published 2026-11-01T11:13:05Z (was v0.5.16)
-- **`sn91:scoring_commit:2026-11-01T12:26:46Z`** - sn91 commit touches scoring: Merge pull request #409 from TensorLink-AI/fix/init-bench-validator-s…
+- **`sn116:scoring_commit:2026-11-01T15:36:00Z`** - sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-11-01T10:17:21Z`** - sn94 commit touches scoring: Remove stale miner box runbook and seedbox proof template (#341)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-01T12:55:30Z`** - sn116 commit touches scoring: MINING.md: practice time limit wording per Validator (per-Challenge, …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-11-01T13:06:32Z`** - sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.8.4`** - sn117 released everycli v0.8.4
+  - published 2026-11-01T18:43:32Z (was everycli v0.8.3)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -46,9 +31,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn51:scoring_commit:2026-10-25T12:39:04Z` | 51 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an idle node whose whole GPU set… |
-| `sn71:scoring_commit:2026-10-25T10:32:22Z` | 71 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn71 commit touches scoring: Materialize eligible closed score runs before uncertain calls |
-| `sn97:scoring_commit:2026-10-25T13:32:48Z` | 97 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn97 commit touches scoring: feat(eval): score agent turns mid-trajectory, higher swe and terminal… |
+| `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
 | `sn78:scoring_commit:2026-10-25T17:59:54Z` | 78 | SCORING_COMMIT | 2026-10-25T20:01:41Z | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica… |
 | `sn78:scoring_commit:2026-10-25T22:24:39Z` | 78 | SCORING_COMMIT | 2026-10-25T22:30:52Z | sn78 commit touches scoring: Reuse native request closure verification through publication and rev… |
 | `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
@@ -235,6 +218,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn11:release:v0.7.7` | 11 | RELEASE | 2026-11-01T06:44:04Z | sn11 released v0.7.7 |
 | `sn11:scoring_commit:2026-11-01T04:20:23Z` | 11 | SCORING_COMMIT | 2026-11-01T06:44:04Z | sn11 commit touches scoring: [coding-agent] bump validator version to 0.7.7 (#345) |
 | `sn81:scoring_commit:2026-11-01T05:43:16Z` | 81 | SCORING_COMMIT | 2026-11-01T06:44:04Z | sn81 commit touches scoring: Merge pull request #435 from reliquadotai/feat/job-verification-params |
+| `sn9:release:v4.14.0` | 9 | RELEASE | 2026-11-01T13:50:47Z | sn9 released v4.14.0 |
+| `sn28:release:v0.5.17-dev` | 28 | RELEASE | 2026-11-01T13:50:47Z | sn28 released v0.5.17-dev |
+| `sn91:scoring_commit:2026-11-01T12:26:46Z` | 91 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn91 commit touches scoring: Merge pull request #409 from TensorLink-AI/fix/init-bench-validator-s… |
+| `sn94:scoring_commit:2026-11-01T10:17:21Z` | 94 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn94 commit touches scoring: Remove stale miner box runbook and seedbox proof template (#341) |
+| `sn116:scoring_commit:2026-11-01T12:55:30Z` | 116 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn116 commit touches scoring: MINING.md: practice time limit wording per Validator (per-Challenge, … |
+| `sn120:scoring_commit:2026-11-01T13:06:32Z` | 120 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

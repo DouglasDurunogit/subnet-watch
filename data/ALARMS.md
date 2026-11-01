@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-10-31T21:27:25Z, block 9406538
+# ALARMS - generated 2026-11-01T00:26:56Z, block 9407435
 
-window: first_seen in [2026-10-31T20:12:52Z, 2026-10-31T21:27:52Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-10-31T23:12:23Z, 2026-11-01T00:27:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn1:release:v4.6.0` | 1 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn1 released v4.6.0 |
-| `sn11:release:v0.7.6` | 11 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn11 released v0.7.6 |
-| `sn11:scoring_commit:2026-10-31T19:27:19Z` | 11 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343) |
-| `sn25:scoring_commit:2026-10-31T20:35:44Z` | 25 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for… |
-| `sn34:scoring_commit:2026-10-31T20:28:37Z` | 34 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40) |
-| `sn71:scoring_commit:2026-10-31T18:53:55Z` | 71 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950) |
-| `sn116:scoring_commit:2026-10-31T17:37:40Z` | 116 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified… |
-| `sn117:release:everycli v0.8.3` | 117 | RELEASE | P1 | 2026-10-31T21:27:52Z | sn117 released everycli v0.8.3 |
-| `sn120:scoring_commit:2026-10-31T18:43:36Z` | 120 | SCORING_COMMIT | P1 | 2026-10-31T21:27:52Z | sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the… |
-| `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | P2 | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
+| `sn15:release:v3.0.7` | 15 | RELEASE | P1 | 2026-11-01T00:27:23Z | sn15 released v3.0.7 |
+| `sn66:release:v2026.10.31.2` | 66 | RELEASE | P1 | 2026-11-01T00:27:23Z | sn66 released v2026.10.31.2 |
 
 ### detail
 
-- **`sn1:release:v4.6.0`** - sn1 released v4.6.0
-  - published 2026-10-31T20:37:25Z (was v4.5.4)
-- **`sn11:release:v0.7.6`** - sn11 released v0.7.6
-  - published 2026-10-31T19:27:19Z (was v0.7.4)
-- **`sn11:scoring_commit:2026-10-31T19:27:19Z`** - sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-10-31T20:35:44Z`** - sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-10-31T20:28:37Z`** - sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-10-31T18:53:55Z`** - sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-10-31T17:37:40Z`** - sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.8.3`** - sn117 released everycli v0.8.3
-  - published 2026-10-31T20:55:40Z (was everycli v0.8.2)
-- **`sn120:scoring_commit:2026-10-31T18:43:36Z`** - sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:readme_task_diff:b849af97332968e4`** - sn117 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn15:release:v3.0.7`** - sn15 released v3.0.7
+  - published 2026-10-31T21:56:59Z (was v3.0.6: fix(validator): keep sandbox output from blocking run completion)
+- **`sn66:release:v2026.10.31.2`** - sn66 released v2026.10.31.2
+  - published 2026-10-31T23:38:50Z (was deployed/dev: Merge pull request #176 from conjectures-io/fix/bounty-open-only-missing)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -56,7 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn25:release:v2026.10.24-1080739690` | 25 | RELEASE | 2026-10-24T22:26:21Z | sn25 released v2026.10.24-1080739690 |
 | `sn15:release:v3.0.3: feat: capture BYOK upstream infe` | 15 | RELEASE | 2026-10-25T00:29:02Z | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391) |
 | `sn15:scoring_commit:2026-10-24T23:44:40Z` | 15 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390) |
 | `sn78:scoring_commit:2026-10-25T00:12:57Z` | 78 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn78 commit touches scoring: Publish compatible model-only cohort readers to miner clients |
@@ -239,6 +214,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
 | `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
 | `sn120:scoring_commit:2026-10-31T13:21:27Z` | 120 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner… |
+| `sn1:release:v4.6.0` | 1 | RELEASE | 2026-10-31T21:27:52Z | sn1 released v4.6.0 |
+| `sn11:release:v0.7.6` | 11 | RELEASE | 2026-10-31T21:27:52Z | sn11 released v0.7.6 |
+| `sn11:scoring_commit:2026-10-31T19:27:19Z` | 11 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343) |
+| `sn25:scoring_commit:2026-10-31T20:35:44Z` | 25 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for… |
+| `sn34:scoring_commit:2026-10-31T20:28:37Z` | 34 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40) |
+| `sn71:scoring_commit:2026-10-31T18:53:55Z` | 71 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950) |
+| `sn116:scoring_commit:2026-10-31T17:37:40Z` | 116 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified… |
+| `sn117:release:everycli v0.8.3` | 117 | RELEASE | 2026-10-31T21:27:52Z | sn117 released everycli v0.8.3 |
+| `sn120:scoring_commit:2026-10-31T18:43:36Z` | 120 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the… |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
@@ -251,6 +235,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
+| `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

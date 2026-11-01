@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-11-01T00:26:56Z · block 9407435 · run_status **ok**_
+_snapshot 2026-11-01T06:43:35Z · block 9409319 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 56 of 128
+# 59 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 100 | `miner_burn` < 0.99 |
-| Ranked | 100 | passed every gate |
-| **Positive margin** | **56** | income beats machine cost |
-| New events this window | 2 | see ALARMS.md |
+| Pays miners at all | 99 | `miner_burn` < 0.99 |
+| Ranked | 99 | passed every gate |
+| **Positive margin** | **59** | income beats machine cost |
+| New events this window | 3 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -31,11 +31,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 |---|---:|---|
 | 0 (none) | 65 | `████████████████████████████` |
 | 0–0.2 | 9 | `████` |
-| 0.2–0.4 | 5 | `██` |
-| 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 8 | `███` |
-| 0.8–0.99 | 8 | `███` |
-| ≥0.99 dead | 28 | `████████████` |
+| 0.2–0.4 | 6 | `███` |
+| 0.4–0.6 | 4 | `██` |
+| 0.6–0.8 | 9 | `████` |
+| 0.8–0.99 | 6 | `███` |
+| ≥0.99 dead | 29 | `████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn120 Affine | 74.6 | 2,904 | 2,904 = | rtx4090* | 10 | 10% |
-| 2 | sn3 Teutonic | 73.2 | 1,948 | 3,905 | rtx4090* | 7 | 25% |
-| 3 | sn97 Ingot | 72.8 | 1,682 | 1,682 = | rtx4090* | 5 | 20% |
-| 4 | sn103 Terza Inference | 70 | 749 | 1,961 | rtx4090* | 5 | 39% |
-| 5 | sn53 engy | 67.9 | 396 | 2,135 | rtx4090 | 29 | 26% |
-| 6 | sn67 Harnyx | 67.3 | 6.00 | 474 | cpu-small | 141 | 24% |
-| 7 | sn1 Apex | 67.2 | 324 | 759 | rtx4090* | 5 | 66% |
-| 8 | sn15 ORO | 66.7 | 6.49 | 12,173 | cpu-small | 74 | 96% |
-| 9 | sn107 Minos | 65.7 | 165 | 14,099 | cpu-small | 20 | 80% |
-| 10 | sn125 Refinery | 64.6 | 146 | 829 | rtx4090* | 4 | 50% |
-| 11 | sn102 ConnitoAI | 64.5 | 145 | 912 | rtx4090* | 6 | 30% |
-| 12 | sn124 Swarm | 63 | 101 | 2,071 | rtx4090* | 14 | 33% |
-| 13 | sn62 Ridges | 61.6 | 60.59 | 1,948 | rtx4090* | 35 | 33% |
-| 14 | sn117 everyframe.studi | 59.4 | 31.73 | 50.19 | rtx4090* | 7 | 93% |
-| 15 | sn66 conjectures | 58.8 | 25.29 | 159 | rtx4090* | 7 | 80% |
-| 16 | sn21 AdTAO | 58.5 | 10.43 | 10.43 = | cpu-small | 20 | 40% |
-| 17 | sn4 Targon | 58.4 | 11,504 | 25,762 | rtx4090* | 4 | 64% |
-| 18 | sn91 cascade | 57.6 | 19.38 | 65.37 | rtx4090* | 6 | 95% |
-| 19 | sn58 Attune | 57.1 | 557 | 896 | rtx4090* | 5 | 70% |
-| 20 | sn56 Gradients | 56.6 | 472 | 1,287 | rtx4090* | 6 | 51% |
+| 1 | sn120 Affine | 74.6 | 2,911 | 2,911 = | rtx4090* | 10 | 10% |
+| 2 | sn3 Teutonic | 73.2 | 1,938 | 3,885 | rtx4090* | 7 | 25% |
+| 3 | sn97 Ingot | 72.7 | 1,681 | 1,681 = | rtx4090* | 5 | 20% |
+| 4 | sn103 Terza Inference | 70 | 733 | 1,918 | rtx4090* | 5 | 38% |
+| 5 | sn60 Bitsec.ai | 69.3 | 233 | 233 = | cpu-small | 3 | 50% |
+| 6 | sn53 engy | 67.9 | 396 | 2,139 | rtx4090 | 29 | 26% |
+| 7 | sn67 Harnyx | 67.2 | 6.08 | 458 | cpu-small | 135 | 23% |
+| 8 | sn1 Apex | 67.1 | 314 | 738 | rtx4090* | 5 | 67% |
+| 9 | sn15 ORO | 66.9 | 6.83 | 12,234 | cpu-small | 74 | 96% |
+| 10 | sn107 Minos | 65.7 | 165 | 14,063 | cpu-small | 20 | 80% |
+| 11 | sn102 ConnitoAI | 64.6 | 148 | 822 | rtx4090* | 9 | 27% |
+| 12 | sn125 Refinery | 64.2 | 132 | 814 | rtx4090* | 4 | 50% |
+| 13 | sn124 Swarm | 63.1 | 103 | 1,909 | rtx4090* | 15 | 31% |
+| 14 | sn62 Ridges | 61.6 | 60.76 | 1,952 | rtx4090* | 35 | 33% |
+| 15 | sn66 conjectures | 58.8 | 25.14 | 159 | rtx4090* | 7 | 80% |
+| 16 | sn4 Targon | 58.4 | 11,492 | 25,731 | rtx4090* | 4 | 64% |
+| 17 | sn91 cascade | 57.7 | 20.00 | 67.03 | rtx4090* | 6 | 95% |
+| 18 | sn58 Attune | 57 | 538 | 866 | rtx4090* | 5 | 70% |
+| 19 | sn56 Gradients | 56.6 | 474 | 1,291 | rtx4090* | 6 | 51% |
+| 20 | sn9 iota | 56.2 | 12,753 | 12,753 = | rtx4090* | 2 | 80% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 24 |
-| concentrated (30–60%) | 22 |
-| dominated (60–90%) | 22 |
-| captured (>90%) | 29 |
+| wide (<30%) | 25 |
+| concentrated (30–60%) | 20 |
+| dominated (60–90%) | 24 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -107,6 +107,9 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-11-01T06:44 | sn11 | RELEASE | sn11 released v0.7.7 |
+| 2026-11-01T06:44 | sn11 | SCORING_COMMIT | sn11 commit touches scoring: [coding-agent] bump validator version to  |
+| 2026-11-01T06:44 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Merge pull request #435 from reliquadotai |
 | 2026-11-01T00:27 | sn15 | RELEASE | sn15 released v3.0.7 |
 | 2026-11-01T00:27 | sn66 | RELEASE | sn66 released v2026.10.31.2 |
 | 2026-10-31T21:27 | sn1 | RELEASE | sn1 released v4.6.0 |
@@ -119,9 +122,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-10-31T21:27 | sn117 | RELEASE | sn117 released everycli v0.8.3 |
 | 2026-10-31T21:27 | sn117 | README_TASK_DIFF | sn117 README task/scoring sections changed |
 | 2026-10-31T21:27 | sn120 | SCORING_COMMIT | sn120 commit touches scoring: SN120 miner kit (miner/): everything a m |
-| 2026-10-31T17:58 | sn21 | SCORING_COMMIT | sn21 commit touches scoring: docs: the settling window is 2 days every |
-| 2026-10-31T17:58 | sn21 | README_TASK_DIFF | sn21 README task/scoring sections changed |
-| 2026-10-31T17:58 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Preserve verified training pairs from inc |
 
 ---
 

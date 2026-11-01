@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-01T00:26:56Z, block 9407435
+# ALARMS - generated 2026-11-01T06:43:35Z, block 9409319
 
-window: first_seen in [2026-10-31T23:12:23Z, 2026-11-01T00:27:23Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-01T05:29:04Z, 2026-11-01T06:44:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v3.0.7` | 15 | RELEASE | P1 | 2026-11-01T00:27:23Z | sn15 released v3.0.7 |
-| `sn66:release:v2026.10.31.2` | 66 | RELEASE | P1 | 2026-11-01T00:27:23Z | sn66 released v2026.10.31.2 |
+| `sn11:release:v0.7.7` | 11 | RELEASE | P1 | 2026-11-01T06:44:04Z | sn11 released v0.7.7 |
+| `sn11:scoring_commit:2026-11-01T04:20:23Z` | 11 | SCORING_COMMIT | P1 | 2026-11-01T06:44:04Z | sn11 commit touches scoring: [coding-agent] bump validator version to 0.7.7 (#345) |
+| `sn81:scoring_commit:2026-11-01T05:43:16Z` | 81 | SCORING_COMMIT | P1 | 2026-11-01T06:44:04Z | sn81 commit touches scoring: Merge pull request #435 from reliquadotai/feat/job-verification-params |
 
 ### detail
 
-- **`sn15:release:v3.0.7`** - sn15 released v3.0.7
-  - published 2026-10-31T21:56:59Z (was v3.0.6: fix(validator): keep sandbox output from blocking run completion)
-- **`sn66:release:v2026.10.31.2`** - sn66 released v2026.10.31.2
-  - published 2026-10-31T23:38:50Z (was deployed/dev: Merge pull request #176 from conjectures-io/fix/bounty-open-only-missing)
+- **`sn11:release:v0.7.7`** - sn11 released v0.7.7
+  - published 2026-11-01T04:20:23Z (was v0.7.6)
+- **`sn11:scoring_commit:2026-11-01T04:20:23Z`** - sn11 commit touches scoring: [coding-agent] bump validator version to 0.7.7 (#345)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-11-01T05:43:16Z`** - sn81 commit touches scoring: Merge pull request #435 from reliquadotai/feat/job-verification-params
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.982` | 76 | BURN_DROP | 2026-10-25T05:23:07Z | sn76 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
 | `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
@@ -32,12 +34,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
-| `sn15:release:v3.0.3: feat: capture BYOK upstream infe` | 15 | RELEASE | 2026-10-25T00:29:02Z | sn15 released v3.0.3: feat: capture BYOK upstream inference cost per call (#391) |
-| `sn15:scoring_commit:2026-10-24T23:44:40Z` | 15 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn15 commit touches scoring: chore: remove dead _upload_logs method from validator (#390) |
-| `sn78:scoring_commit:2026-10-25T00:12:57Z` | 78 | SCORING_COMMIT | 2026-10-25T00:29:02Z | sn78 commit touches scoring: Publish compatible model-only cohort readers to miner clients |
-| `sn15:release:v3.0.4: fix: gate BYOK cost fields on us` | 15 | RELEASE | 2026-10-25T05:23:07Z | sn15 released v3.0.4: fix: gate BYOK cost fields on usage.is_byok (#392) |
-| `sn25:release:v2026.10.24-1080878340` | 25 | RELEASE | 2026-10-25T05:23:07Z | sn25 released v2026.10.24-1080878340 |
-| `sn81:scoring_commit:2026-10-25T03:19:05Z` | 81 | SCORING_COMMIT | 2026-10-25T05:23:07Z | sn81 commit touches scoring: Merge pull request #417 from reliquadotai/fix/no-min-incentive-floor |
 | `sn71:scoring_commit:2026-10-25T07:57:10Z` | 71 | SCORING_COMMIT | 2026-10-25T10:00:10Z | sn71 commit touches scoring: Allow miner execution alongside baseline judging |
 | `sn51:scoring_commit:2026-10-25T12:39:04Z` | 51 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn51 commit touches scoring: DAH-5061 - [P1] Validator: re-anchor an idle node whose whole GPU set… |
 | `sn71:scoring_commit:2026-10-25T10:32:22Z` | 71 | SCORING_COMMIT | 2026-10-25T14:20:01Z | sn71 commit touches scoring: Materialize eligible closed score runs before uncertain calls |
@@ -223,6 +219,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-10-31T17:37:40Z` | 116 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified… |
 | `sn117:release:everycli v0.8.3` | 117 | RELEASE | 2026-10-31T21:27:52Z | sn117 released everycli v0.8.3 |
 | `sn120:scoring_commit:2026-10-31T18:43:36Z` | 120 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the… |
+| `sn15:release:v3.0.7` | 15 | RELEASE | 2026-11-01T00:27:23Z | sn15 released v3.0.7 |
+| `sn66:release:v2026.10.31.2` | 66 | RELEASE | 2026-11-01T00:27:23Z | sn66 released v2026.10.31.2 |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

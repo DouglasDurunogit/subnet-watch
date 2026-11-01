@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-01T18:52:45Z, block 9412964
+# ALARMS - generated 2026-11-01T22:44:48Z, block 9414125
 
-window: first_seen in [2026-11-01T17:38:08Z, 2026-11-01T18:53:08Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-01T21:30:13Z, 2026-11-01T22:45:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,22 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | P1 | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
-| `sn117:release:everycli v0.8.4` | 117 | RELEASE | P1 | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
+| `sn11:scoring_commit:2026-11-01T22:44:28Z` | 11 | SCORING_COMMIT | P1 | 2026-11-01T22:45:13Z | sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346) |
+| `sn28:release:v0.5.18` | 28 | RELEASE | P1 | 2026-11-01T22:45:13Z | sn28 released v0.5.18 |
+| `sn117:release:everycli v0.8.6` | 117 | RELEASE | P1 | 2026-11-01T22:45:13Z | sn117 released everycli v0.8.6 |
 
 ### detail
 
-- **`sn116:scoring_commit:2026-11-01T15:36:00Z`** - sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700)
+- **`sn11:scoring_commit:2026-11-01T22:44:28Z`** - sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.8.4`** - sn117 released everycli v0.8.4
-  - published 2026-11-01T18:43:32Z (was everycli v0.8.3)
+- **`sn28:release:v0.5.18`** - sn28 released v0.5.18
+  - published 2026-11-01T20:22:26Z (was v0.5.17-dev)
+- **`sn117:release:everycli v0.8.6`** - sn117 released everycli v0.8.6
+  - published 2026-11-01T20:17:33Z (was everycli v0.8.4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.965` | 76 | BURN_DROP | 2026-10-25T20:01:41Z | sn76 burn fell 1.000 -> 0.965 - miners can earn again |
-| `sn117:burn_drop:0.955` | 117 | BURN_DROP | 2026-10-25T22:30:52Z | sn117 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn76:burn_drop:0.978` | 76 | BURN_DROP | 2026-10-27T01:27:07Z | sn76 burn fell 0.998 -> 0.978 - miners can earn again |
 | `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -32,8 +33,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
-| `sn78:scoring_commit:2026-10-25T17:59:54Z` | 78 | SCORING_COMMIT | 2026-10-25T20:01:41Z | sn78 commit touches scoring: Merge pull request #412 from Umi-BitSign/fix/legacy-original-verifica… |
-| `sn78:scoring_commit:2026-10-25T22:24:39Z` | 78 | SCORING_COMMIT | 2026-10-25T22:30:52Z | sn78 commit touches scoring: Reuse native request closure verification through publication and rev… |
 | `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
 | `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
 | `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
@@ -224,6 +223,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-11-01T10:17:21Z` | 94 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn94 commit touches scoring: Remove stale miner box runbook and seedbox proof template (#341) |
 | `sn116:scoring_commit:2026-11-01T12:55:30Z` | 116 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn116 commit touches scoring: MINING.md: practice time limit wording per Validator (per-Challenge, … |
 | `sn120:scoring_commit:2026-11-01T13:06:32Z` | 120 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner |
+| `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
+| `sn117:release:everycli v0.8.4` | 117 | RELEASE | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
 | `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |

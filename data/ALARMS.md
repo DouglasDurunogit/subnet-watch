@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-01T22:44:48Z, block 9414125
+# ALARMS - generated 2026-11-02T01:54:52Z, block 9415072
 
-window: first_seen in [2026-11-01T21:30:13Z, 2026-11-01T22:45:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-02T00:40:13Z, 2026-11-02T01:55:13Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:scoring_commit:2026-11-01T22:44:28Z` | 11 | SCORING_COMMIT | P1 | 2026-11-01T22:45:13Z | sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346) |
-| `sn28:release:v0.5.18` | 28 | RELEASE | P1 | 2026-11-01T22:45:13Z | sn28 released v0.5.18 |
-| `sn117:release:everycli v0.8.6` | 117 | RELEASE | P1 | 2026-11-01T22:45:13Z | sn117 released everycli v0.8.6 |
+| `sn117:release:Merge pull request #57: everycli v0.8.7 ` | 117 | RELEASE | P1 | 2026-11-02T01:55:13Z | sn117 released Merge pull request #57: everycli v0.8.7 UI reliability |
+| `sn120:scoring_commit:2026-11-02T00:27:39Z` | 120 | SCORING_COMMIT | P1 | 2026-11-02T01:55:13Z | sn120 commit touches scoring: bench site: Avg is the first score column (right after Model), divide… |
 
 ### detail
 
-- **`sn11:scoring_commit:2026-11-01T22:44:28Z`** - sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346)
+- **`sn117:release:Merge pull request #57: everycli v0.8.7 `** - sn117 released Merge pull request #57: everycli v0.8.7 UI reliability
+  - published 2026-11-02T01:54:28Z (was everycli v0.8.6)
+- **`sn120:scoring_commit:2026-11-02T00:27:39Z`** - sn120 commit touches scoring: bench site: Avg is the first score column (right after Model), divide…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.18`** - sn28 released v0.5.18
-  - published 2026-11-01T20:22:26Z (was v0.5.17-dev)
-- **`sn117:release:everycli v0.8.6`** - sn117 released everycli v0.8.6
-  - published 2026-11-01T20:17:33Z (was everycli v0.8.4)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -33,10 +30,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
-| `sn25:release:v2026.10.25-1081686250` | 25 | RELEASE | 2026-10-26T00:45:22Z | sn25 released v2026.10.25-1081686250 |
-| `sn25:scoring_commit:2026-10-25T23:59:22Z` | 25 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn25 commit touches scoring: Project the verified retained predecessor for native gap recovery |
-| `sn71:scoring_commit:2026-10-25T21:47:33Z` | 71 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn71 commit touches scoring: Record final live verification of all twenty-five provider routes |
-| `sn78:scoring_commit:2026-10-25T22:48:12Z` | 78 | SCORING_COMMIT | 2026-10-26T00:45:22Z | sn78 commit touches scoring: Score failed paired model candidates without invalidating the incumbe… |
 | `sn51:scoring_commit:2026-10-26T03:35:42Z` | 51 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn51 commit touches scoring: DAH-4568 - [P1] Remove the GPU alias flag: one miner's shared GPU sco… |
 | `sn71:scoring_commit:2026-10-26T02:30:24Z` | 71 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn71 commit touches scoring: Classify verified provider output failures within capture coverage |
 | `sn78:scoring_commit:2026-10-26T03:27:58Z` | 78 | SCORING_COMMIT | 2026-10-26T05:27:56Z | sn78 commit touches scoring: Expose native checkpoint metadata progress in reward service logs (#42 |
@@ -225,7 +218,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn120:scoring_commit:2026-11-01T13:06:32Z` | 120 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner |
 | `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
 | `sn117:release:everycli v0.8.4` | 117 | RELEASE | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
-| `sn71:readme_task_diff:5bed35973cd7335b` | 71 | README_TASK_DIFF | 2026-10-26T00:45:22Z | sn71 README task/scoring sections changed |
+| `sn11:scoring_commit:2026-11-01T22:44:28Z` | 11 | SCORING_COMMIT | 2026-11-01T22:45:13Z | sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346) |
+| `sn28:release:v0.5.18` | 28 | RELEASE | 2026-11-01T22:45:13Z | sn28 released v0.5.18 |
+| `sn117:release:everycli v0.8.6` | 117 | RELEASE | 2026-11-01T22:45:13Z | sn117 released everycli v0.8.6 |
 | `sn2:readme_task_diff:48eb164474c3f6a5` | 2 | README_TASK_DIFF | 2026-10-26T21:56:01Z | sn2 README task/scoring sections changed |
 | `sn123:readme_task_diff:f9658db3bedf0002` | 123 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn123 README task/scoring sections changed |
 | `sn125:readme_task_diff:1476e035289bbae4` | 125 | README_TASK_DIFF | 2026-10-27T01:27:07Z | sn125 README task/scoring sections changed |

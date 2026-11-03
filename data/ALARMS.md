@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-03T09:27:09Z, block 9424531
+# ALARMS - generated 2026-11-03T17:16:32Z, block 9426877
 
-window: first_seen in [2026-11-03T08:12:38Z, 2026-11-03T09:27:38Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-03T16:02:02Z, 2026-11-03T17:17:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,66 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn24:burn_drop:0.031` | 24 | BURN_DROP | P0 | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
-| `sn76:burn_drop:0.972` | 76 | BURN_DROP | P0 | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
-| `sn51:release:lium-protocol-v2.4.0` | 51 | RELEASE | P1 | 2026-11-03T09:27:38Z | sn51 released lium-protocol-v2.4.0 |
-| `sn51:scoring_commit:2026-11-03T09:04:18Z` | 51 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp… |
-| `sn71:scoring_commit:2026-11-03T06:56:37Z` | 71 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980) |
-| `sn81:scoring_commit:2026-11-03T09:09:32Z` | 81 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio |
-| `sn91:scoring_commit:2026-11-03T06:36:56Z` | 91 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good … |
-| `sn116:scoring_commit:2026-11-03T03:36:57Z` | 116 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe |
+| `sn1:release:v4.6.3` | 1 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn1 released v4.6.3 |
+| `sn21:release:SN21 training data v6 (windows 15 Aug - ` | 21 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn21 released SN21 training data v6 (windows 15 Aug - 20 Sep 2026) |
+| `sn51:release:miner-v1.011` | 51 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn51 released miner-v1.011 |
+| `sn51:scoring_commit:2026-11-03T16:15:58Z` | 51 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn51 commit touches scoring: DAH-5118 - [P1] Validator: flatten a many-layer image on the chosen n… |
+| `sn66:release:v2026.11.03` | 66 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn66 released v2026.11.03 |
+| `sn66:scoring_commit:2026-11-03T13:57:07Z` | 66 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn66 commit touches scoring: fix: preserve the task-pool retirement active on production |
+| `sn67:scoring_commit:2026-11-02T13:14:16Z` | 67 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261102.post5 |
+| `sn71:scoring_commit:2026-11-03T14:33:51Z` | 71 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn71 commit touches scoring: Clarify both host validators required for target-denial repair |
+| `sn81:scoring_commit:2026-11-03T10:21:06Z` | 81 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn81 commit touches scoring: Retain comparison cells for independent estimator verification |
+| `sn90:release:v1.3.4` | 90 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn90 released v1.3.4 |
+| `sn90:scoring_commit:2026-11-03T11:46:03Z` | 90 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn90 commit touches scoring: fix(validator): gate scoring on node heartbeat freshness + cluster he… |
+| `sn91:scoring_commit:2026-11-03T09:33:02Z` | 91 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn91 commit touches scoring: perf(validator): stream private-eval forecast samples instead of hold… |
+| `sn111:scoring_commit:2026-11-01T02:14:20Z` | 111 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn111 commit touches scoring: Match competition validation to mainnet harness and limits |
+| `sn114:scoring_commit:2026-11-03T09:38:54Z` | 114 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn114 commit touches scoring: Show reset validations as pending |
+| `sn116:scoring_commit:2026-11-03T15:19:27Z` | 116 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn116 commit touches scoring: Motor data kit: generate, parse, verify and practice score (kits/motor |
+| `sn117:release:everycli v0.9.6` | 117 | RELEASE | P1 | 2026-11-03T17:17:02Z | sn117 released everycli v0.9.6 |
+| `sn117:scoring_commit:2026-11-03T10:54:25Z` | 117 | SCORING_COMMIT | P1 | 2026-11-03T17:17:02Z | sn117 commit touches scoring: Fix BFL regional polling and preserve accepted task references |
+| `sn28:readme_task_diff:359c18a4bfd66b7f` | 28 | README_TASK_DIFF | P2 | 2026-11-03T17:17:02Z | sn28 README task/scoring sections changed |
+| `sn127:readme_task_diff:3849c8ce33ebd107` | 127 | README_TASK_DIFF | P2 | 2026-11-03T17:17:02Z | sn127 README task/scoring sections changed |
 
 ### detail
 
-- **`sn24:burn_drop:0.031`** - sn24 burn fell 1.000 -> 0.031 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn76:burn_drop:0.972`** - sn76 burn fell 0.997 -> 0.972 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn51:release:lium-protocol-v2.4.0`** - sn51 released lium-protocol-v2.4.0
-  - published 2026-11-03T05:17:13Z (was lium-protocol-v2.1.0)
-- **`sn51:scoring_commit:2026-11-03T09:04:18Z`** - sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp…
+- **`sn1:release:v4.6.3`** - sn1 released v4.6.3
+  - published 2026-11-03T15:28:16Z (was v4.6.1)
+- **`sn21:release:SN21 training data v6 (windows 15 Aug - `** - sn21 released SN21 training data v6 (windows 15 Aug - 20 Sep 2026)
+  - published 2026-11-03T16:22:29Z (was SN21 training data v5 (rules from 30 Oct 2026))
+- **`sn51:release:miner-v1.011`** - sn51 released miner-v1.011
+  - published 2026-11-03T10:18:45Z (was lium-protocol-v2.4.0)
+- **`sn51:scoring_commit:2026-11-03T16:15:58Z`** - sn51 commit touches scoring: DAH-5118 - [P1] Validator: flatten a many-layer image on the chosen n…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-03T06:56:37Z`** - sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980)
+- **`sn66:release:v2026.11.03`** - sn66 released v2026.11.03
+  - published 2026-11-03T14:34:45Z (was v2026.11.02.3)
+- **`sn66:scoring_commit:2026-11-03T13:57:07Z`** - sn66 commit touches scoring: fix: preserve the task-pool retirement active on production
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-03T09:09:32Z`** - sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio
+- **`sn67:scoring_commit:2026-11-02T13:14:16Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261102.post5
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-03T06:36:56Z`** - sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good …
+- **`sn71:scoring_commit:2026-11-03T14:33:51Z`** - sn71 commit touches scoring: Clarify both host validators required for target-denial repair
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-03T03:36:57Z`** - sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe
+- **`sn81:scoring_commit:2026-11-03T10:21:06Z`** - sn81 commit touches scoring: Retain comparison cells for independent estimator verification
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:release:v1.3.4`** - sn90 released v1.3.4
+  - published 2026-11-03T11:46:08Z (was v1.3.3)
+- **`sn90:scoring_commit:2026-11-03T11:46:03Z`** - sn90 commit touches scoring: fix(validator): gate scoring on node heartbeat freshness + cluster he…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-11-03T09:33:02Z`** - sn91 commit touches scoring: perf(validator): stream private-eval forecast samples instead of hold…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-01T02:14:20Z`** - sn111 commit touches scoring: Match competition validation to mainnet harness and limits
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-11-03T09:38:54Z`** - sn114 commit touches scoring: Show reset validations as pending
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-03T15:19:27Z`** - sn116 commit touches scoring: Motor data kit: generate, parse, verify and practice score (kits/motor
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v0.9.6`** - sn117 released everycli v0.9.6
+  - published 2026-11-03T12:27:55Z (was everycli v0.9.2)
+- **`sn117:scoring_commit:2026-11-03T10:54:25Z`** - sn117 commit touches scoring: Fix BFL regional polling and preserve accepted task references
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:359c18a4bfd66b7f`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn127:readme_task_diff:3849c8ce33ebd107`** - sn127 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,15 +80,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
 | `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn1:release:v4.5.0` | 1 | RELEASE | 2026-10-27T12:46:40Z | sn1 released v4.5.0 |
-| `sn2:scoring_commit:2026-10-27T07:31:43Z` | 2 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn2 commit touches scoring: Gate unverified miner scores and refresh narrow validator dependencies |
-| `sn3:scoring_commit:2026-10-27T11:33:11Z` | 3 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn3 commit touches scoring: Show per-category losses in evaluation history |
-| `sn25:release:v2026.10.26-1082839840` | 25 | RELEASE | 2026-10-27T12:46:40Z | sn25 released v2026.10.26-1082839840 |
-| `sn51:scoring_commit:2026-10-27T11:28:16Z` | 51 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn51 commit touches scoring: DAH-5235 - [P0] Validator: publish a node at once when its GPU comes … |
-| `sn67:scoring_commit:2026-10-27T10:49:10Z` | 67 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261027.post2 |
-| `sn75:release:Runtime 92023` | 75 | RELEASE | 2026-10-27T12:46:40Z | sn75 released Runtime 92023 |
-| `sn78:scoring_commit:2026-10-27T09:44:39Z` | 78 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn78 commit touches scoring: Cap retained reward coverage at native successor activation |
-| `sn91:scoring_commit:2026-10-27T00:15:55Z` | 91 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn91 commit touches scoring: Report static-guard rejections from verify instead of crashing |
+| `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
+| `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
 | `sn9:release:v4.13.10` | 9 | RELEASE | 2026-10-27T18:24:01Z | sn9 released v4.13.10 |
 | `sn25:release:v2026.10.27-1083160450` | 25 | RELEASE | 2026-10-27T18:24:01Z | sn25 released v2026.10.27-1083160450 |
 | `sn33:scoring_commit:2026-10-21T15:43:18Z` | 33 | SCORING_COMMIT | 2026-10-27T18:24:01Z | sn33 commit touches scoring: Enable 25% burn and shuffle task dispatch order |
@@ -236,8 +262,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-02T23:20:00Z` | 116 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn116 commit touches scoring: Crown re-measure tests: the fake adapter names its Challenge (rebuild… |
 | `sn117:release:everycli v0.9.2` | 117 | RELEASE | 2026-11-03T01:50:43Z | sn117 released everycli v0.9.2 |
 | `sn120:scoring_commit:2026-11-02T20:40:25Z` | 120 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn120 commit touches scoring: miner/README: point the pass-rate references at affine.io/passrate.js… |
-| `sn2:readme_task_diff:db6ec8f75a1e4b61` | 2 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn2 README task/scoring sections changed |
-| `sn91:readme_task_diff:9eb19065ad44711d` | 91 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn91 README task/scoring sections changed |
+| `sn51:release:lium-protocol-v2.4.0` | 51 | RELEASE | 2026-11-03T09:27:38Z | sn51 released lium-protocol-v2.4.0 |
+| `sn51:scoring_commit:2026-11-03T09:04:18Z` | 51 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp… |
+| `sn71:scoring_commit:2026-11-03T06:56:37Z` | 71 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980) |
+| `sn81:scoring_commit:2026-11-03T09:09:32Z` | 81 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio |
+| `sn91:scoring_commit:2026-11-03T06:36:56Z` | 91 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good … |
+| `sn116:scoring_commit:2026-11-03T03:36:57Z` | 116 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |

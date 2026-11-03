@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-03T17:16:32Z  |  block: 9426877  |  row_status: ok
+snapshot_utc: 2026-11-03T22:26:45Z  |  block: 9428428  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (226.63999977336 USD), open=True
+- registration cost: 0.999999999 TAO (227.27999977272 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 10  |  free: 0
-- subnet age: 730.7 days  |  registered at block 4165565
+- subnet age: 731.0 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3735.427440660312** (uid 78) <- the only figure quotable as achievable
-- median_miner_usd_day: 1867.5997171732051
-- top_miner_usd_day: 3735.427440660312 (uid 78, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3763.384544966315** (uid 78) <- the only figure quotable as achievable
+- median_miner_usd_day: 1881.5774160910144
+- top_miner_usd_day: 3763.384544966315 (uid 78, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-11-03T17:16:32Z  |  block: 9426877  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1859.3805 USD/day  |  payback on registration: 0.12 days
+- net margin: 1873.3582 USD/day  |  payback on registration: 0.12 days
 
 ## Score
 
 - gate: **OK** 
 - score: 61.2 (rank 18), confidence 0.85 - hardware requirement unknown
-- components: income 29.74 / freshness 21.0 / resource 11.25 / registration 9.96
+- components: income 29.77 / freshness 21.0 / resource 11.25 / registration 9.96
 - freshness basis: SCORING_COMMIT 7d ago
 
 ## On-chain description

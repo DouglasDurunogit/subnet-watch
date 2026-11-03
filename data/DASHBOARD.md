@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-11-03T17:16:32Z · block 9426877 · run_status **ok**_
+_snapshot 2026-11-03T22:26:45Z · block 9428428 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 61 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 99 | `miner_burn` < 0.99 |
-| Ranked | 99 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 19 | see ALARMS.md |
+| Pays miners at all | 100 | `miner_burn` < 0.99 |
+| Ranked | 100 | passed every gate |
+| **Positive margin** | **61** | income beats machine cost |
+| New events this window | 14 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,12 +30,12 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 66 | `████████████████████████████` |
-| 0–0.2 | 7 | `███` |
-| 0.2–0.4 | 7 | `███` |
+| 0–0.2 | 8 | `███` |
+| 0.2–0.4 | 6 | `███` |
 | 0.4–0.6 | 4 | `██` |
 | 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 6 | `███` |
-| ≥0.99 dead | 29 | `████████████` |
+| 0.8–0.99 | 7 | `███` |
+| ≥0.99 dead | 28 | `████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn120 Affine | 74.3 | 2,661 | 5,329 | rtx4090* | 10 | 19% |
-| 2 | sn97 Ingot | 72.6 | 1,588 | 1,588 = | rtx4090* | 5 | 20% |
-| 3 | sn34 Yugos | 70.2 | 804 | 6,895 | rtx4090* | 3 | 85% |
-| 4 | sn103 Terza Inference | 69.6 | 653 | 1,449 | rtx4090* | 5 | 38% |
-| 5 | sn14 Cacheon | 69.5 | 632 | 5,149 | rtx4090* | 3 | 80% |
-| 6 | sn53 engy | 67.7 | 370 | 2,011 | rtx4090 | 29 | 26% |
-| 7 | sn67 Harnyx | 67.3 | 6.31 | 80.43 | cpu-small | 139 | 8% |
-| 8 | sn1 Apex | 67.2 | 326 | 803 | rtx4090* | 4 | 68% |
-| 9 | sn56 Gradients | 66.8 | 283 | 4,985 | rtx4090* | 7 | 51% |
-| 10 | sn107 Minos | 66 | 177 | 15,062 | cpu-small | 20 | 80% |
-| 11 | sn102 ConnitoAI | 65.6 | 202 | 1,884 | rtx4090* | 5 | 53% |
-| 12 | sn15 ORO | 65.6 | 6.54 | 13.33 | cpu-small | 76 | 95% |
-| 13 | sn38 ChronoLLM | 63.6 | 53.91 | 481 | cpu-small | 10 | 52% |
-| 14 | sn124 Swarm | 62.1 | 80.41 | 1,828 | rtx4090* | 15 | 31% |
-| 15 | sn121 sundae_bar | 62 | 911 | 911 = | cpu-small | 2 | 60% |
-| 16 | sn62 Ridges | 61.6 | 59.42 | 1,406 | rtx4090* | 36 | 25% |
-| 17 | sn117 everyframe.studi | 61.4 | 57.51 | 102 | rtx4090* | 13 | 80% |
-| 18 | sn3 Teutonic | 61.2 | 1,859 | 3,727 | rtx4090* | 7 | 25% |
-| 19 | sn60 Bitsec.ai | 60 | 499 | 769 | cpu-small | 3 | 50% |
-| 20 | sn80 OpenRoboto | 58.7 | 893 | 1,277 | rtx4090* | 12 | 15% |
+| 1 | sn114 SOMA | 88 | 1,189 | 7,733 | cpu-small | 7 | 65% |
+| 2 | sn120 Affine | 74.5 | 2,822 | 2,822 = | rtx4090* | 10 | 10% |
+| 3 | sn97 Ingot | 72.5 | 1,580 | 1,580 = | rtx4090* | 5 | 20% |
+| 4 | sn14 Cacheon | 69.5 | 633 | 5,156 | rtx4090* | 3 | 80% |
+| 5 | sn103 Terza Inference | 68 | 413 | 1,362 | rtx4090* | 5 | 36% |
+| 6 | sn1 Apex | 67.9 | 396 | 798 | rtx4090* | 4 | 67% |
+| 7 | sn53 engy | 67.6 | 357 | 2,010 | rtx4090 | 29 | 26% |
+| 8 | sn67 Harnyx | 67.3 | 6.30 | 80.46 | cpu-small | 148 | 4% |
+| 9 | sn56 Gradients | 67 | 301 | 4,972 | rtx4090* | 7 | 51% |
+| 10 | sn15 ORO | 66.5 | 6.62 | 11,436 | cpu-small | 76 | 95% |
+| 11 | sn82 Noah | 66.4 | 403 | 442 | rtx4090* | 64 | 2% |
+| 12 | sn107 Minos | 66 | 176 | 15,018 | cpu-small | 20 | 80% |
+| 13 | sn102 ConnitoAI | 65.1 | 171 | 948 | rtx4090* | 8 | 27% |
+| 14 | sn38 ChronoLLM | 63.6 | 54.98 | 490 | cpu-small | 10 | 52% |
+| 15 | sn124 Swarm | 62.2 | 80.39 | 1,827 | rtx4090* | 15 | 31% |
+| 16 | sn121 sundae_bar | 62 | 914 | 914 = | cpu-small | 2 | 60% |
+| 17 | sn62 Ridges | 61.6 | 59.61 | 1,410 | rtx4090* | 36 | 25% |
+| 18 | sn3 Teutonic | 61.2 | 1,873 | 3,755 | rtx4090* | 7 | 25% |
+| 19 | sn117 everyframe.studi | 60.8 | 47.77 | 92.10 | rtx4090* | 15 | 80% |
+| 20 | sn111 Claims | 58.6 | 24.59 | 2,452 | rtx4090* | 6 | 90% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 29 |
-| concentrated (30–60%) | 19 |
+| concentrated (30–60%) | 18 |
 | dominated (60–90%) | 28 |
-| captured (>90%) | 22 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-11-03T22:27 | sn25 | SCORING_COMMIT | sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix |
+| 2026-11-03T22:27 | sn28 | RELEASE | sn28 released v0.5.19-dev |
+| 2026-11-03T22:27 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreac |
+| 2026-11-03T22:27 | sn70 | SCORING_COMMIT | sn70 commit touches scoring: fix(validator): keep a proof's JSON numbe |
+| 2026-11-03T22:27 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Merge pull request #988 from leadpoet/fea |
+| 2026-11-03T22:27 | sn78 | SCORING_COMMIT | sn78 commit touches scoring: Merge PR #503: reuse completed work and p |
+| 2026-11-03T22:27 | sn78 | README_TASK_DIFF | sn78 README task/scoring sections changed |
+| 2026-11-03T22:27 | sn82 | README_TASK_DIFF | sn82 README task/scoring sections changed |
+| 2026-11-03T22:27 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: fix(trainer): carry infra-failed challeng |
+| 2026-11-03T22:27 | sn108 | SCORING_COMMIT | sn108 commit touches scoring: Neuron 1.0.1: when the challenge server  |
+| 2026-11-03T22:27 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Separate competition intake from sequent |
+| 2026-11-03T22:27 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Kit local scorer: a thin caller of the o |
+| 2026-11-03T22:27 | sn126 | BURN_DROP | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
+| 2026-11-03T22:27 | sn127 | README_TASK_DIFF | sn127 README task/scoring sections changed |
 | 2026-11-03T17:17 | sn1 | RELEASE | sn1 released v4.6.3 |
-| 2026-11-03T17:17 | sn21 | RELEASE | sn21 released SN21 training data v6 (windows 15 Aug - 20 Sep 2026) |
-| 2026-11-03T17:17 | sn28 | README_TASK_DIFF | sn28 README task/scoring sections changed |
-| 2026-11-03T17:17 | sn51 | RELEASE | sn51 released miner-v1.011 |
-| 2026-11-03T17:17 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5118 - [P1] Validator: flatten a many |
-| 2026-11-03T17:17 | sn66 | RELEASE | sn66 released v2026.11.03 |
-| 2026-11-03T17:17 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: fix: preserve the task-pool retirement ac |
-| 2026-11-03T17:17 | sn67 | SCORING_COMMIT | sn67 commit touches scoring: chore(validator): bump repo-owned validat |
-| 2026-11-03T17:17 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Clarify both host validators required for |
-| 2026-11-03T17:17 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: Retain comparison cells for independent e |
-| 2026-11-03T17:17 | sn90 | RELEASE | sn90 released v1.3.4 |
-| 2026-11-03T17:17 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: fix(validator): gate scoring on node hear |
-| 2026-11-03T17:17 | sn91 | SCORING_COMMIT | sn91 commit touches scoring: perf(validator): stream private-eval fore |
-| 2026-11-03T17:17 | sn111 | SCORING_COMMIT | sn111 commit touches scoring: Match competition validation to mainnet  |
-| 2026-11-03T17:17 | sn114 | SCORING_COMMIT | sn114 commit touches scoring: Show reset validations as pending |
 
 ---
 

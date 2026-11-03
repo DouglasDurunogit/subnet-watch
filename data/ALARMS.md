@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-03T01:50:21Z, block 9422246
+# ALARMS - generated 2026-11-03T09:27:09Z, block 9424531
 
-window: first_seen in [2026-11-03T00:35:43Z, 2026-11-03T01:50:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-03T08:12:38Z, 2026-11-03T09:27:38Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,50 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:scoring_commit:2026-11-02T22:54:33Z` | 25 | SCORING_COMMIT | P1 | 2026-11-03T01:50:43Z | sn25 commit touches scoring: Document audited evaluator recovery metadata |
-| `sn34:scoring_commit:2026-11-02T21:29:37Z` | 34 | SCORING_COMMIT | P1 | 2026-11-03T01:50:43Z | sn34 commit touches scoring: docs: use pack versions in miner scoring guidance |
-| `sn91:scoring_commit:2026-11-03T00:59:04Z` | 91 | SCORING_COMMIT | P1 | 2026-11-03T01:50:43Z | sn91 commit touches scoring: feat(funding): miner-set total budget per submission (--max-total-spen |
-| `sn116:scoring_commit:2026-11-02T23:20:00Z` | 116 | SCORING_COMMIT | P1 | 2026-11-03T01:50:43Z | sn116 commit touches scoring: Crown re-measure tests: the fake adapter names its Challenge (rebuild… |
-| `sn117:release:everycli v0.9.2` | 117 | RELEASE | P1 | 2026-11-03T01:50:43Z | sn117 released everycli v0.9.2 |
-| `sn120:scoring_commit:2026-11-02T20:40:25Z` | 120 | SCORING_COMMIT | P1 | 2026-11-03T01:50:43Z | sn120 commit touches scoring: miner/README: point the pass-rate references at affine.io/passrate.js… |
-| `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | P2 | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |
-| `sn117:readme_task_diff:1f25c890c0113301` | 117 | README_TASK_DIFF | P2 | 2026-11-03T01:50:43Z | sn117 README task/scoring sections changed |
+| `sn24:burn_drop:0.031` | 24 | BURN_DROP | P0 | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
+| `sn76:burn_drop:0.972` | 76 | BURN_DROP | P0 | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
+| `sn51:release:lium-protocol-v2.4.0` | 51 | RELEASE | P1 | 2026-11-03T09:27:38Z | sn51 released lium-protocol-v2.4.0 |
+| `sn51:scoring_commit:2026-11-03T09:04:18Z` | 51 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp… |
+| `sn71:scoring_commit:2026-11-03T06:56:37Z` | 71 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980) |
+| `sn81:scoring_commit:2026-11-03T09:09:32Z` | 81 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio |
+| `sn91:scoring_commit:2026-11-03T06:36:56Z` | 91 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good … |
+| `sn116:scoring_commit:2026-11-03T03:36:57Z` | 116 | SCORING_COMMIT | P1 | 2026-11-03T09:27:38Z | sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe |
 
 ### detail
 
-- **`sn25:scoring_commit:2026-11-02T22:54:33Z`** - sn25 commit touches scoring: Document audited evaluator recovery metadata
+- **`sn24:burn_drop:0.031`** - sn24 burn fell 1.000 -> 0.031 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:burn_drop:0.972`** - sn76 burn fell 0.997 -> 0.972 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn51:release:lium-protocol-v2.4.0`** - sn51 released lium-protocol-v2.4.0
+  - published 2026-11-03T05:17:13Z (was lium-protocol-v2.1.0)
+- **`sn51:scoring_commit:2026-11-03T09:04:18Z`** - sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn34:scoring_commit:2026-11-02T21:29:37Z`** - sn34 commit touches scoring: docs: use pack versions in miner scoring guidance
+- **`sn71:scoring_commit:2026-11-03T06:56:37Z`** - sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-03T00:59:04Z`** - sn91 commit touches scoring: feat(funding): miner-set total budget per submission (--max-total-spen
+- **`sn81:scoring_commit:2026-11-03T09:09:32Z`** - sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-02T23:20:00Z`** - sn116 commit touches scoring: Crown re-measure tests: the fake adapter names its Challenge (rebuild…
+- **`sn91:scoring_commit:2026-11-03T06:36:56Z`** - sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v0.9.2`** - sn117 released everycli v0.9.2
-  - published 2026-11-02T20:13:22Z (was everycli v0.9.1)
-- **`sn120:scoring_commit:2026-11-02T20:40:25Z`** - sn120 commit touches scoring: miner/README: point the pass-rate references at affine.io/passrate.js…
+- **`sn116:scoring_commit:2026-11-03T03:36:57Z`** - sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn48:readme_task_diff:9f1b0dd706840592`** - sn48 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn117:readme_task_diff:1f25c890c0113301`** - sn117 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn73:burn_drop:0.000` | 73 | BURN_DROP | 2026-10-27T06:46:43Z | sn73 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn32:burn_drop:0.000` | 32 | BURN_DROP | 2026-10-28T20:27:26Z | sn32 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn117:burn_drop:0.982` | 117 | BURN_DROP | 2026-10-28T20:27:26Z | sn117 burn fell 1.000 -> 0.982 - miners can earn again |
 | `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
 | `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn2:scoring_commit:2026-10-27T04:19:07Z` | 2 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn2 commit touches scoring: Score finalized epoch snapshots and log unsigned weight previews |
-| `sn15:release:v3.0.5: fix(validator): policy_view.max_` | 15 | RELEASE | 2026-10-27T06:46:43Z | sn15 released v3.0.5: fix(validator): policy_view.max_steps is the task's own step limit |
-| `sn15:scoring_commit:2026-10-27T04:52:29Z` | 15 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn15 commit touches scoring: fix(validator): policy_view.max_steps is the task's own step limit |
-| `sn76:scoring_commit:2026-10-27T02:34:08Z` | 76 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn76 commit touches scoring: docs: sync worker CONTRACT.md (relay spend cap, verify feedback, plan… |
-| `sn78:scoring_commit:2026-10-27T04:29:51Z` | 78 | SCORING_COMMIT | 2026-10-27T06:46:43Z | sn78 commit touches scoring: Merge pull request #445 from Umi-BitSign/feat/reward-operator-early-s… |
 | `sn1:release:v4.5.0` | 1 | RELEASE | 2026-10-27T12:46:40Z | sn1 released v4.5.0 |
 | `sn2:scoring_commit:2026-10-27T07:31:43Z` | 2 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn2 commit touches scoring: Gate unverified miner scores and refresh narrow validator dependencies |
 | `sn3:scoring_commit:2026-10-27T11:33:11Z` | 3 | SCORING_COMMIT | 2026-10-27T12:46:40Z | sn3 commit touches scoring: Show per-category losses in evaluation history |
@@ -236,8 +230,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-02T16:02:57Z` | 116 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn116 commit touches scoring: Miner text: a stage conflict after a receiver update may mean nothing… |
 | `sn117:release:everycli v0.9.1` | 117 | RELEASE | 2026-11-02T19:40:04Z | sn117 released everycli v0.9.1 |
 | `sn120:scoring_commit:2026-11-02T16:52:47Z` | 120 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn120 commit touches scoring: SN120 task cap 12K (Jacob pt1084u, 2026-11-02 10:25 CR: move the task… |
-| `sn2:readme_task_diff:1ff49772ce88e83f` | 2 | README_TASK_DIFF | 2026-10-27T06:46:43Z | sn2 README task/scoring sections changed |
-| `sn123:readme_task_diff:923cc435a761cf7e` | 123 | README_TASK_DIFF | 2026-10-27T06:46:43Z | sn123 README task/scoring sections changed |
+| `sn25:scoring_commit:2026-11-02T22:54:33Z` | 25 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn25 commit touches scoring: Document audited evaluator recovery metadata |
+| `sn34:scoring_commit:2026-11-02T21:29:37Z` | 34 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn34 commit touches scoring: docs: use pack versions in miner scoring guidance |
+| `sn91:scoring_commit:2026-11-03T00:59:04Z` | 91 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn91 commit touches scoring: feat(funding): miner-set total budget per submission (--max-total-spen |
+| `sn116:scoring_commit:2026-11-02T23:20:00Z` | 116 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn116 commit touches scoring: Crown re-measure tests: the fake adapter names its Challenge (rebuild… |
+| `sn117:release:everycli v0.9.2` | 117 | RELEASE | 2026-11-03T01:50:43Z | sn117 released everycli v0.9.2 |
+| `sn120:scoring_commit:2026-11-02T20:40:25Z` | 120 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn120 commit touches scoring: miner/README: point the pass-rate references at affine.io/passrate.js… |
 | `sn2:readme_task_diff:db6ec8f75a1e4b61` | 2 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn2 README task/scoring sections changed |
 | `sn91:readme_task_diff:9eb19065ad44711d` | 91 | README_TASK_DIFF | 2026-10-27T12:46:40Z | sn91 README task/scoring sections changed |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
@@ -247,6 +245,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
+| `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |
+| `sn117:readme_task_diff:1f25c890c0113301` | 117 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn117 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

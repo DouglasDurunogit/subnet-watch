@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-11-04T02:38:11Z  |  block: 9429685  |  row_status: ok
+snapshot_utc: 2026-11-04T09:56:10Z  |  block: 9431875  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000545252 TAO (0.12059883736 USD), open=True
+- registration cost: 0.0005 TAO (0.114815 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 34  |  free: 0
-- subnet age: 1104.5 days  |  registered at block 1477264
+- subnet age: 1104.8 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1.1808489662965138** (uid 98) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.7872326441976757
-- top_miner_usd_day: 23003.725096100283 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1.2305919748036154** (uid 98) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.8203946498690768
+- top_miner_usd_day: 23976.85403707364 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 19  |  gini: 0.9356784097340123  |  top1_share: 0.8926258553274682  |  top10_share: 0.9998014418377321
+- earners: 19  |  gini: 0.9356930578856535  |  top1_share: 0.8927649565469735  |  top10_share: 0.9998014448704047
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-11-04T02:38:11Z  |  block: 9429685  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.4319 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.3988 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

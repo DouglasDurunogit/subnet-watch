@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-04T02:38:11Z, block 9429685
+# ALARMS - generated 2026-11-04T09:56:10Z, block 9431875
 
-window: first_seen in [2026-11-04T01:23:42Z, 2026-11-04T02:38:42Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-04T08:41:37Z, 2026-11-04T09:56:37Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,48 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn70:scoring_commit:2026-11-04T02:05:25Z` | 70 | SCORING_COMMIT | P1 | 2026-11-04T02:38:42Z | sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads |
-| `sn71:scoring_commit:2026-11-03T22:30:50Z` | 71 | SCORING_COMMIT | P1 | 2026-11-04T02:38:42Z | sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final… |
+| `sn70:burn_drop:0.101` | 70 | BURN_DROP | P0 | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
+| `sn25:scoring_commit:2026-11-04T03:01:40Z` | 25 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn25 commit touches scoring: Merge fix/validator-tunnel-tls-timeout: a tunnel's TLS establishment … |
+| `sn28:release:v0.5.19` | 28 | RELEASE | P1 | 2026-11-04T09:56:37Z | sn28 released v0.5.19 |
+| `sn51:release:executor-v1.168` | 51 | RELEASE | P1 | 2026-11-04T09:56:37Z | sn51 released executor-v1.168 |
+| `sn51:scoring_commit:2026-11-04T09:12:56Z` | 51 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn51 commit touches scoring: DAH-5682 - [P0] Validator: port check can skip later tiers after two … |
+| `sn55:scoring_commit:2026-11-04T06:13:10Z` | 55 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn55 commit touches scoring: update validation block number |
+| `sn70:scoring_commit:2026-11-04T04:01:35Z` | 70 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn70 commit touches scoring: Merge pull request #126 from fugal-ai/docs/miner-guide-failed-calls |
+| `sn71:scoring_commit:2026-11-04T07:50:53Z` | 71 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn71 commit touches scoring: Reuse validated scoring source within one Arena evidence read |
+| `sn89:scoring_commit:2026-11-03T18:21:02Z` | 89 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn89 commit touches scoring: Agent competition v2: receipts, anchoring, weekly freeze, validator w… |
+| `sn91:scoring_commit:2026-11-04T03:53:32Z` | 91 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn91 commit touches scoring: fix(funded): small our-side losses rerun on the miner's key; ready ti… |
+| `sn108:scoring_commit:2026-11-04T06:47:38Z` | 108 | SCORING_COMMIT | P1 | 2026-11-04T09:56:37Z | sn108 commit touches scoring: Validator hardware requirements (minimum and recommended): 16 cores /… |
+| `sn37:readme_task_diff:b959b882769e8d45` | 37 | README_TASK_DIFF | P2 | 2026-11-04T09:56:37Z | sn37 README task/scoring sections changed |
+| `sn51:readme_task_diff:6c34bfe187921963` | 51 | README_TASK_DIFF | P2 | 2026-11-04T09:56:37Z | sn51 README task/scoring sections changed |
 
 ### detail
 
-- **`sn70:scoring_commit:2026-11-04T02:05:25Z`** - sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads
+- **`sn70:burn_drop:0.101`** - sn70 burn fell 1.000 -> 0.101 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:scoring_commit:2026-11-04T03:01:40Z`** - sn25 commit touches scoring: Merge fix/validator-tunnel-tls-timeout: a tunnel's TLS establishment …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-03T22:30:50Z`** - sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final…
+- **`sn28:release:v0.5.19`** - sn28 released v0.5.19
+  - published 2026-11-04T09:00:59Z (was v0.5.19-dev)
+- **`sn51:release:executor-v1.168`** - sn51 released executor-v1.168
+  - published 2026-11-04T04:55:37Z (was miner-v1.011)
+- **`sn51:scoring_commit:2026-11-04T09:12:56Z`** - sn51 commit touches scoring: DAH-5682 - [P0] Validator: port check can skip later tiers after two …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn55:scoring_commit:2026-11-04T06:13:10Z`** - sn55 commit touches scoring: update validation block number
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn70:scoring_commit:2026-11-04T04:01:35Z`** - sn70 commit touches scoring: Merge pull request #126 from fugal-ai/docs/miner-guide-failed-calls
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-04T07:50:53Z`** - sn71 commit touches scoring: Reuse validated scoring source within one Arena evidence read
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn89:scoring_commit:2026-11-03T18:21:02Z`** - sn89 commit touches scoring: Agent competition v2: receipts, anchoring, weekly freeze, validator w…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-11-04T03:53:32Z`** - sn91 commit touches scoring: fix(funded): small our-side losses rerun on the miner's key; ready ti…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-11-04T06:47:38Z`** - sn108 commit touches scoring: Validator hardware requirements (minimum and recommended): 16 cores /…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn37:readme_task_diff:b959b882769e8d45`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn51:readme_task_diff:6c34bfe187921963`** - sn51 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -32,15 +65,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
 | `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
 | `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
-| `sn1:release:v4.5.1` | 1 | RELEASE | 2026-10-28T08:21:49Z | sn1 released v4.5.1 |
-| `sn34:scoring_commit:2026-10-28T03:34:22Z` | 34 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn34 commit touches scoring: Document wording gate enforcement for new evaluations |
-| `sn51:release:lium-protocol-v1.17.0` | 51 | RELEASE | 2026-10-28T08:21:49Z | sn51 released lium-protocol-v1.17.0 |
-| `sn51:scoring_commit:2026-10-28T08:21:00Z` | 51 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn51 commit touches scoring: DAH-5037 - [P1] Validator: attach a default job's last log lines when… |
-| `sn62:release:v0.3.14` | 62 | RELEASE | 2026-10-28T08:21:49Z | sn62 released v0.3.14 |
-| `sn62:scoring_commit:2026-10-28T02:43:13Z` | 62 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn62 commit touches scoring: Merge pull request #532 from ridgesai/feat/validator-registry-dev |
-| `sn71:scoring_commit:2026-10-28T08:00:36Z` | 71 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn71 commit touches scoring: Preserve verified pre-dispatch errors in Arena trajectory exports |
-| `sn78:scoring_commit:2026-10-28T04:09:07Z` | 78 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn78 commit touches scoring: Merge pull request #460 from Umi-BitSign/fix/category-capacity-verifi… |
-| `sn81:scoring_commit:2026-10-28T03:02:55Z` | 81 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn81 commit touches scoring: fix(eval): the auditor passes observe to score_sequences only for a d… |
 | `sn28:scoring_commit:2026-10-28T14:32:16Z` | 28 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn28 commit touches scoring: Verify NEAR's GLM-5.3-Flash attested host (#359) |
 | `sn32:scoring_commit:2026-10-28T07:45:48Z` | 32 | SCORING_COMMIT | 2026-10-28T15:18:42Z | sn32 commit touches scoring: Bump wandb to 0.31.0 so validator logs reach the current API (v3.15.1) |
 | `sn50:release:v1.15.0` | 50 | RELEASE | 2026-10-28T15:18:42Z | sn50 released v1.15.0 |
@@ -228,6 +252,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-11-03T18:12:32Z` | 108 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn108 commit touches scoring: Neuron 1.0.1: when the challenge server withholds the reward ladder (… |
 | `sn111:scoring_commit:2026-11-03T19:58:36Z` | 111 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn111 commit touches scoring: Separate competition intake from sequential evaluation |
 | `sn116:scoring_commit:2026-11-03T20:24:59Z` | 116 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn116 commit touches scoring: Kit local scorer: a thin caller of the official graph path, plus its … |
+| `sn70:scoring_commit:2026-11-04T02:05:25Z` | 70 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads |
+| `sn71:scoring_commit:2026-11-03T22:30:50Z` | 71 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final… |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |

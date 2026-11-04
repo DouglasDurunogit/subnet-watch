@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-03T22:26:45Z, block 9428428
+# ALARMS - generated 2026-11-04T02:38:11Z, block 9429685
 
-window: first_seen in [2026-11-03T21:12:15Z, 2026-11-03T22:27:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-04T01:23:42Z, 2026-11-04T02:38:42Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,15 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn126:burn_drop:0.956` | 126 | BURN_DROP | P0 | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
-| `sn25:scoring_commit:2026-11-03T17:23:34Z` | 25 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix: a start authenticates only… |
-| `sn28:release:v0.5.19-dev` | 28 | RELEASE | P1 | 2026-11-03T22:27:15Z | sn28 released v0.5.19-dev |
-| `sn51:scoring_commit:2026-11-03T17:34:44Z` | 51 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreachable node as soon as its mi… |
-| `sn70:scoring_commit:2026-11-03T21:11:05Z` | 70 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn70 commit touches scoring: fix(validator): keep a proof's JSON numbers as serialised; int 0 cost… |
-| `sn71:scoring_commit:2026-11-03T21:45:36Z` | 71 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn71 commit touches scoring: Merge pull request #988 from leadpoet/feat/history-rank-by-score |
-| `sn78:scoring_commit:2026-11-03T18:42:41Z` | 78 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn78 commit touches scoring: Merge PR #503: reuse completed work and publish approved rewards |
-| `sn91:scoring_commit:2026-11-03T21:02:09Z` | 91 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn91 commit touches scoring: fix(trainer): carry infra-failed challenger bench sweeps like deferre… |
-| `sn108:scoring_commit:2026-11-03T18:12:32Z` | 108 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn108 commit touches scoring: Neuron 1.0.1: when the challenge server withholds the reward ladder (… |
-| `sn111:scoring_commit:2026-11-03T19:58:36Z` | 111 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn111 commit touches scoring: Separate competition intake from sequential evaluation |
-| `sn116:scoring_commit:2026-11-03T20:24:59Z` | 116 | SCORING_COMMIT | P1 | 2026-11-03T22:27:15Z | sn116 commit touches scoring: Kit local scorer: a thin caller of the official graph path, plus its … |
-| `sn78:readme_task_diff:905be9e940ec4dea` | 78 | README_TASK_DIFF | P2 | 2026-11-03T22:27:15Z | sn78 README task/scoring sections changed |
-| `sn82:readme_task_diff:08b2f7bf22367533` | 82 | README_TASK_DIFF | P2 | 2026-11-03T22:27:15Z | sn82 README task/scoring sections changed |
-| `sn127:readme_task_diff:501a9ff7ce421afb` | 127 | README_TASK_DIFF | P2 | 2026-11-03T22:27:15Z | sn127 README task/scoring sections changed |
+| `sn70:scoring_commit:2026-11-04T02:05:25Z` | 70 | SCORING_COMMIT | P1 | 2026-11-04T02:38:42Z | sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads |
+| `sn71:scoring_commit:2026-11-03T22:30:50Z` | 71 | SCORING_COMMIT | P1 | 2026-11-04T02:38:42Z | sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final… |
 
 ### detail
 
-- **`sn126:burn_drop:0.956`** - sn126 burn fell 1.000 -> 0.956 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:scoring_commit:2026-11-03T17:23:34Z`** - sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix: a start authenticates only…
+- **`sn70:scoring_commit:2026-11-04T02:05:25Z`** - sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn28:release:v0.5.19-dev`** - sn28 released v0.5.19-dev
-  - published 2026-11-03T17:54:47Z (was v0.5.18)
-- **`sn51:scoring_commit:2026-11-03T17:34:44Z`** - sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreachable node as soon as its mi…
+- **`sn71:scoring_commit:2026-11-03T22:30:50Z`** - sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:scoring_commit:2026-11-03T21:11:05Z`** - sn70 commit touches scoring: fix(validator): keep a proof's JSON numbers as serialised; int 0 cost…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-03T21:45:36Z`** - sn71 commit touches scoring: Merge pull request #988 from leadpoet/feat/history-rank-by-score
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-11-03T18:42:41Z`** - sn78 commit touches scoring: Merge PR #503: reuse completed work and publish approved rewards
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-03T21:02:09Z`** - sn91 commit touches scoring: fix(trainer): carry infra-failed challenger bench sweeps like deferre…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-11-03T18:12:32Z`** - sn108 commit touches scoring: Neuron 1.0.1: when the challenge server withholds the reward ladder (…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-03T19:58:36Z`** - sn111 commit touches scoring: Separate competition intake from sequential evaluation
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-03T20:24:59Z`** - sn116 commit touches scoring: Kit local scorer: a thin caller of the official graph path, plus its …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:readme_task_diff:905be9e940ec4dea`** - sn78 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn82:readme_task_diff:08b2f7bf22367533`** - sn82 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn127:readme_task_diff:501a9ff7ce421afb`** - sn127 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -67,15 +31,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
 | `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
-| `sn8:scoring_commit:2026-10-27T20:14:01Z` | 8 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn8 commit touches scoring: MinerAccountManager: one lock order (accounts → disk), fixes the orde… |
-| `sn51:release:executor-v1.157` | 51 | RELEASE | 2026-10-27T22:29:30Z | sn51 released executor-v1.157 |
-| `sn71:scoring_commit:2026-10-27T19:54:01Z` | 71 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn71 commit touches scoring: docs: scope Tyche capture verification and rollout |
-| `sn92:release:v1.2.0-rc11.post8.1` | 92 | RELEASE | 2026-10-27T22:29:30Z | sn92 released v1.2.0-rc11.post8.1 |
-| `sn92:scoring_commit:2026-10-27T22:13:15Z` | 92 | SCORING_COMMIT | 2026-10-27T22:29:30Z | sn92 commit touches scoring: 1.2.0rc11.post8.1: validator release for Wed 28 Oct 2026 12:00 UTC. E… |
-| `sn34:scoring_commit:2026-10-27T23:51:10Z` | 34 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn34 commit touches scoring: Merge pull request #27 from BitMind-AI/feat/private-prepared-task-ext… |
-| `sn71:scoring_commit:2026-10-28T01:19:48Z` | 71 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn71 commit touches scoring: docs: update Discord invite link |
-| `sn91:scoring_commit:2026-10-28T00:15:26Z` | 91 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn91 commit touches scoring: Merge pull request #381 from TensorLink-AI/docs/validator-upgrade-11.3 |
-| `sn94:scoring_commit:2026-10-27T22:57:38Z` | 94 | SCORING_COMMIT | 2026-10-28T01:48:43Z | sn94 commit touches scoring: Require AMD-verified attestation before planting an Escape nonce |
+| `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
 | `sn1:release:v4.5.1` | 1 | RELEASE | 2026-10-28T08:21:49Z | sn1 released v4.5.1 |
 | `sn34:scoring_commit:2026-10-28T03:34:22Z` | 34 | SCORING_COMMIT | 2026-10-28T08:21:49Z | sn34 commit touches scoring: Document wording gate enforcement for new evaluations |
 | `sn51:release:lium-protocol-v1.17.0` | 51 | RELEASE | 2026-10-28T08:21:49Z | sn51 released lium-protocol-v1.17.0 |
@@ -262,6 +218,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-03T15:19:27Z` | 116 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn116 commit touches scoring: Motor data kit: generate, parse, verify and practice score (kits/motor |
 | `sn117:release:everycli v0.9.6` | 117 | RELEASE | 2026-11-03T17:17:02Z | sn117 released everycli v0.9.6 |
 | `sn117:scoring_commit:2026-11-03T10:54:25Z` | 117 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn117 commit touches scoring: Fix BFL regional polling and preserve accepted task references |
+| `sn25:scoring_commit:2026-11-03T17:23:34Z` | 25 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix: a start authenticates only… |
+| `sn28:release:v0.5.19-dev` | 28 | RELEASE | 2026-11-03T22:27:15Z | sn28 released v0.5.19-dev |
+| `sn51:scoring_commit:2026-11-03T17:34:44Z` | 51 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreachable node as soon as its mi… |
+| `sn70:scoring_commit:2026-11-03T21:11:05Z` | 70 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn70 commit touches scoring: fix(validator): keep a proof's JSON numbers as serialised; int 0 cost… |
+| `sn71:scoring_commit:2026-11-03T21:45:36Z` | 71 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn71 commit touches scoring: Merge pull request #988 from leadpoet/feat/history-rank-by-score |
+| `sn78:scoring_commit:2026-11-03T18:42:41Z` | 78 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn78 commit touches scoring: Merge PR #503: reuse completed work and publish approved rewards |
+| `sn91:scoring_commit:2026-11-03T21:02:09Z` | 91 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn91 commit touches scoring: fix(trainer): carry infra-failed challenger bench sweeps like deferre… |
+| `sn108:scoring_commit:2026-11-03T18:12:32Z` | 108 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn108 commit touches scoring: Neuron 1.0.1: when the challenge server withholds the reward ladder (… |
+| `sn111:scoring_commit:2026-11-03T19:58:36Z` | 111 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn111 commit touches scoring: Separate competition intake from sequential evaluation |
+| `sn116:scoring_commit:2026-11-03T20:24:59Z` | 116 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn116 commit touches scoring: Kit local scorer: a thin caller of the official graph path, plus its … |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
@@ -273,6 +239,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:1f25c890c0113301` | 117 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:359c18a4bfd66b7f` | 28 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn28 README task/scoring sections changed |
 | `sn127:readme_task_diff:3849c8ce33ebd107` | 127 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn127 README task/scoring sections changed |
+| `sn78:readme_task_diff:905be9e940ec4dea` | 78 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn78 README task/scoring sections changed |
+| `sn82:readme_task_diff:08b2f7bf22367533` | 82 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn82 README task/scoring sections changed |
+| `sn127:readme_task_diff:501a9ff7ce421afb` | 127 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn127 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

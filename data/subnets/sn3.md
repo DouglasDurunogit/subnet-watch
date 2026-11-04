@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-04T09:56:10Z  |  block: 9431875  |  row_status: ok
+snapshot_utc: 2026-11-04T17:57:33Z  |  block: 9434280  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (229.62999977037 USD), open=True
+- registration cost: 0.999999999 TAO (235.87999976412002 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 10  |  free: 0
-- subnet age: 731.4 days  |  registered at block 4165565
+- subnet age: 731.8 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1891.9250554628713** (uid 74) <- the only figure quotable as achievable
-- median_miner_usd_day: 1891.9250554628713
-- top_miner_usd_day: 3784.0810870038117 (uid 78, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3879.5502561818807** (uid 78) <- the only figure quotable as achievable
+- median_miner_usd_day: 1939.6567263862407
+- top_miner_usd_day: 3879.5502561818807 (uid 78, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -28,22 +28,22 @@ snapshot_utc: 2026-11-04T09:56:10Z  |  block: 9431875  |  row_status: ok
 - status: **ok** 
 - README: 5897 bytes, sha dfde648bae7a6468
 - latest release: (none) 
-- last commit: 2026-10-27T11:33:11Z
-- scoring-related commit: Show per-category losses in evaluation history 2026-10-27T11:33:11Z
+- last commit: 2026-11-04T14:07:31Z
+- scoring-related commit: Set document evaluation lower bound to 2 tokens 2026-11-04T14:07:31Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1883.7059 USD/day  |  payback on registration: 0.12 days
+- net margin: 1931.4375 USD/day  |  payback on registration: 0.12 days
 
 ## Score
 
 - gate: **OK** 
-- score: 61.2 (rank 17), confidence 0.85 - hardware requirement unknown
-- components: income 29.79 / freshness 21.0 / resource 11.25 / registration 9.96
-- freshness basis: SCORING_COMMIT 8d ago
+- score: 73.2 (rank 2), confidence 0.85 - hardware requirement unknown
+- components: income 29.89 / freshness 35.0 / resource 11.25 / registration 9.96
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 

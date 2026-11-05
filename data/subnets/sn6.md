@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-11-05T03:45:43Z  |  block: 9437220  |  row_status: ok
+snapshot_utc: 2026-11-05T11:38:10Z  |  block: 9439583  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (47.42 USD), open=True
+- registration cost: 0.232871606 TAO (54.64565106396 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 161  |  free: 0
-- subnet age: 863.5 days  |  registered at block 3219949
+- subnet age: 863.8 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 111.31697748562257** (uid 160) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.07094772306285697
-- top_miner_usd_day: 111.31697748562257 (uid 160, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 110.11713101055629** (uid 160) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.07018300255612257
+- top_miner_usd_day: 110.11713101055629 (uid 160, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,12 +36,12 @@ snapshot_utc: 2026-11-05T03:45:43Z  |  block: 9437220  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.1482 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.149 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 84), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 83), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 13d ago
 

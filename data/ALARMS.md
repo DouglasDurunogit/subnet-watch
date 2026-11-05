@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-05T03:45:43Z, block 9437220
+# ALARMS - generated 2026-11-05T11:38:10Z, block 9439583
 
-window: first_seen in [2026-11-05T02:31:12Z, 2026-11-05T03:46:12Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-05T10:23:32Z, 2026-11-05T11:38:32Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,33 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn126:burn_drop:0.955` | 126 | BURN_DROP | P0 | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn27:release:archive/worktrees-2026-11-04` | 27 | RELEASE | P1 | 2026-11-05T03:46:12Z | sn27 released archive/worktrees-2026-11-04 |
-| `sn71:scoring_commit:2026-11-05T00:57:17Z` | 71 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot |
-| `sn82:scoring_commit:2026-11-05T02:09:15Z` | 82 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics |
-| `sn116:scoring_commit:2026-11-05T02:39:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule |
+| `sn127:burn_drop:0.872` | 127 | BURN_DROP | P0 | 2026-11-05T11:38:32Z | sn127 burn fell 0.990 -> 0.872 - miners can earn again |
+| `sn51:release:executor-v1.171` | 51 | RELEASE | P1 | 2026-11-05T11:38:32Z | sn51 released executor-v1.171 |
+| `sn51:scoring_commit:2026-11-05T11:31:04Z` | 51 | SCORING_COMMIT | P1 | 2026-11-05T11:38:32Z | sn51 commit touches scoring: DAH-5664 - [P0] Validator: reclaim a killed filler's Dolphin cache di… |
+| `sn67:scoring_commit:2026-11-05T08:58:27Z` | 67 | SCORING_COMMIT | P1 | 2026-11-05T11:38:32Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261105.post4 |
+| `sn71:scoring_commit:2026-11-05T07:49:03Z` | 71 | SCORING_COMMIT | P1 | 2026-11-05T11:38:32Z | sn71 commit touches scoring: Merge pull request #1036 from leadpoet/op/arena-observation-verify-re… |
+| `sn81:scoring_commit:2026-11-05T07:55:40Z` | 81 | SCORING_COMMIT | P1 | 2026-11-05T11:38:32Z | sn81 commit touches scoring: fix(audit): refuse forced-draw drift without charging the miner |
+| `sn116:scoring_commit:2026-11-05T05:47:06Z` | 116 | SCORING_COMMIT | P1 | 2026-11-05T11:38:32Z | sn116 commit touches scoring: A2: keep attempt 1's evaluation files so a re-run binds its own (TL 4… |
+| `sn51:readme_task_diff:77525fe4e41362db` | 51 | README_TASK_DIFF | P2 | 2026-11-05T11:38:32Z | sn51 README task/scoring sections changed |
 
 ### detail
 
-- **`sn126:burn_drop:0.955`** - sn126 burn fell 1.000 -> 0.955 - miners can earn again
+- **`sn127:burn_drop:0.872`** - sn127 burn fell 0.990 -> 0.872 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn27:release:archive/worktrees-2026-11-04`** - sn27 released archive/worktrees-2026-11-04
-  - published 2026-11-05T03:45:01Z (was archive/task/public-subnet-docs/2026-10-29)
-- **`sn71:scoring_commit:2026-11-05T00:57:17Z`** - sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot
+- **`sn51:release:executor-v1.171`** - sn51 released executor-v1.171
+  - published 2026-11-05T10:05:18Z (was executor-v1.169)
+- **`sn51:scoring_commit:2026-11-05T11:31:04Z`** - sn51 commit touches scoring: DAH-5664 - [P0] Validator: reclaim a killed filler's Dolphin cache di…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn82:scoring_commit:2026-11-05T02:09:15Z`** - sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics
+- **`sn67:scoring_commit:2026-11-05T08:58:27Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261105.post4
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-05T02:39:53Z`** - sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule
+- **`sn71:scoring_commit:2026-11-05T07:49:03Z`** - sn71 commit touches scoring: Merge pull request #1036 from leadpoet/op/arena-observation-verify-re…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-11-05T07:55:40Z`** - sn81 commit touches scoring: fix(audit): refuse forced-draw drift without charging the miner
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-05T05:47:06Z`** - sn116 commit touches scoring: A2: keep attempt 1's evaluation files so a re-run binds its own (TL 4…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn51:readme_task_diff:77525fe4e41362db`** - sn51 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -41,9 +50,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
 | `sn70:burn_drop:0.101` | 70 | BURN_DROP | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
-| `sn34:scoring_commit:2026-10-29T00:52:16Z` | 34 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn34 commit touches scoring: Explain submission quota errors in the miner CLI (#32) |
-| `sn51:scoring_commit:2026-10-29T05:17:40Z` | 51 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn51 commit touches scoring: DAH-5320 - [P0] Validator: idle node disk write check, shadow verdict… |
-| `sn71:scoring_commit:2026-10-29T05:23:54Z` | 71 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn71 commit touches scoring: Verify terminal failure control preserves captured worker receipts |
+| `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn28:release:v0.5.14` | 28 | RELEASE | 2026-10-29T13:30:23Z | sn28 released v0.5.14 |
 | `sn34:scoring_commit:2026-10-29T10:49:47Z` | 34 | SCORING_COMMIT | 2026-10-29T13:30:23Z | sn34 commit touches scoring: Bound symbolic math grading and preserve unscored failures (#33) |
 | `sn51:release:executor-v1.163` | 51 | RELEASE | 2026-10-29T13:30:23Z | sn51 released executor-v1.163 |
@@ -245,6 +252,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-04T19:48:30Z` | 71 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn71 commit touches scoring: Pin reviewed scorer checkpoint imports in host boundary test |
 | `sn81:scoring_commit:2026-11-04T17:48:31Z` | 81 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn81 commit touches scoring: fix(admin): deliver evaluation files to the platform bucket beside HTT |
 | `sn120:scoring_commit:2026-11-04T23:06:44Z` | 120 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn120 commit touches scoring: local-gsm8k: a reply over 100 KB is passed to the Hub verify.py as it… |
+| `sn27:release:archive/worktrees-2026-11-04` | 27 | RELEASE | 2026-11-05T03:46:12Z | sn27 released archive/worktrees-2026-11-04 |
+| `sn71:scoring_commit:2026-11-05T00:57:17Z` | 71 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot |
+| `sn82:scoring_commit:2026-11-05T02:09:15Z` | 82 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics |
+| `sn116:scoring_commit:2026-11-05T02:39:53Z` | 116 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |

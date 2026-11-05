@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-04T23:36:19Z, block 9435973
+# ALARMS - generated 2026-11-05T03:45:43Z, block 9437220
 
-window: first_seen in [2026-11-04T22:21:57Z, 2026-11-04T23:36:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-05T02:31:12Z, 2026-11-05T03:46:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:sdk-v0.0.20: feat: local executor and lo` | 12 | RELEASE | P1 | 2026-11-04T23:36:57Z | sn12 released sdk-v0.0.20: feat: local executor and local bind mount volumes (#861) |
-| `sn58:scoring_commit:2026-11-04T13:21:00Z` | 58 | SCORING_COMMIT | P1 | 2026-11-04T23:36:57Z | sn58 commit touches scoring: feat(validator): only a permitted Hub account starts |
-| `sn70:release:image-v2026.11.05` | 70 | RELEASE | P1 | 2026-11-04T23:36:57Z | sn70 released image-v2026.11.05 |
-| `sn71:scoring_commit:2026-11-04T19:48:30Z` | 71 | SCORING_COMMIT | P1 | 2026-11-04T23:36:57Z | sn71 commit touches scoring: Pin reviewed scorer checkpoint imports in host boundary test |
-| `sn81:scoring_commit:2026-11-04T17:48:31Z` | 81 | SCORING_COMMIT | P1 | 2026-11-04T23:36:57Z | sn81 commit touches scoring: fix(admin): deliver evaluation files to the platform bucket beside HTT |
-| `sn120:scoring_commit:2026-11-04T23:06:44Z` | 120 | SCORING_COMMIT | P1 | 2026-11-04T23:36:57Z | sn120 commit touches scoring: local-gsm8k: a reply over 100 KB is passed to the Hub verify.py as it… |
-| `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | P2 | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
+| `sn126:burn_drop:0.955` | 126 | BURN_DROP | P0 | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
+| `sn27:release:archive/worktrees-2026-11-04` | 27 | RELEASE | P1 | 2026-11-05T03:46:12Z | sn27 released archive/worktrees-2026-11-04 |
+| `sn71:scoring_commit:2026-11-05T00:57:17Z` | 71 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot |
+| `sn82:scoring_commit:2026-11-05T02:09:15Z` | 82 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics |
+| `sn116:scoring_commit:2026-11-05T02:39:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-05T03:46:12Z | sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule |
 
 ### detail
 
-- **`sn12:release:sdk-v0.0.20: feat: local executor and lo`** - sn12 released sdk-v0.0.20: feat: local executor and local bind mount volumes (#861)
-  - published 2026-11-04T19:50:24Z (was validator-staging-2026-10-26-40344021717-627-1: fix: eMudhra ca incident immunization - internal deps)
-- **`sn58:scoring_commit:2026-11-04T13:21:00Z`** - sn58 commit touches scoring: feat(validator): only a permitted Hub account starts
+- **`sn126:burn_drop:0.955`** - sn126 burn fell 1.000 -> 0.955 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn27:release:archive/worktrees-2026-11-04`** - sn27 released archive/worktrees-2026-11-04
+  - published 2026-11-05T03:45:01Z (was archive/task/public-subnet-docs/2026-10-29)
+- **`sn71:scoring_commit:2026-11-05T00:57:17Z`** - sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:release:image-v2026.11.05`** - sn70 released image-v2026.11.05
-  - published 2026-11-04T22:47:39Z (was image-v2026.11.03)
-- **`sn71:scoring_commit:2026-11-04T19:48:30Z`** - sn71 commit touches scoring: Pin reviewed scorer checkpoint imports in host boundary test
+- **`sn82:scoring_commit:2026-11-05T02:09:15Z`** - sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-04T17:48:31Z`** - sn81 commit touches scoring: fix(admin): deliver evaluation files to the platform bucket beside HTT
+- **`sn116:scoring_commit:2026-11-05T02:39:53Z`** - sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-11-04T23:06:44Z`** - sn120 commit touches scoring: local-gsm8k: a reply over 100 KB is passed to the Hub verify.py as it…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn58:readme_task_diff:3b8b49ad2ebb4e84`** - sn58 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,9 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
 | `sn70:burn_drop:0.101` | 70 | BURN_DROP | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
-| `sn66:release:v2026.10.28.3` | 66 | RELEASE | 2026-10-29T00:18:27Z | sn66 released v2026.10.28.3 |
-| `sn71:scoring_commit:2026-10-28T22:42:44Z` | 71 | SCORING_COMMIT | 2026-10-29T00:18:27Z | sn71 commit touches scoring: Allow scored Arena publication during automatic restart drain |
-| `sn78:scoring_commit:2026-10-28T23:35:18Z` | 78 | SCORING_COMMIT | 2026-10-29T00:18:27Z | sn78 commit touches scoring: Keep reserved participation fair and reuse verified cohort history |
 | `sn34:scoring_commit:2026-10-29T00:52:16Z` | 34 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn34 commit touches scoring: Explain submission quota errors in the miner CLI (#32) |
 | `sn51:scoring_commit:2026-10-29T05:17:40Z` | 51 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn51 commit touches scoring: DAH-5320 - [P0] Validator: idle node disk write check, shadow verdict… |
 | `sn71:scoring_commit:2026-10-29T05:23:54Z` | 71 | SCORING_COMMIT | 2026-10-29T06:10:57Z | sn71 commit touches scoring: Verify terminal failure control preserves captured worker receipts |
@@ -248,6 +239,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-11-04T14:46:19Z` | 111 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn111 commit touches scoring: Automate sealed-package duplicate preflight before evaluation |
 | `sn114:scoring_commit:2026-11-04T13:20:00Z` | 114 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn114 commit touches scoring: Merge pull request #241 from DendriteHQ/feat/validator-docker-watcher |
 | `sn120:scoring_commit:2026-11-04T14:06:41Z` | 120 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn120 commit touches scoring: miner kit: affine_batch.py check accepts the file after the options; … |
+| `sn12:release:sdk-v0.0.20: feat: local executor and lo` | 12 | RELEASE | 2026-11-04T23:36:57Z | sn12 released sdk-v0.0.20: feat: local executor and local bind mount volumes (#861) |
+| `sn58:scoring_commit:2026-11-04T13:21:00Z` | 58 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn58 commit touches scoring: feat(validator): only a permitted Hub account starts |
+| `sn70:release:image-v2026.11.05` | 70 | RELEASE | 2026-11-04T23:36:57Z | sn70 released image-v2026.11.05 |
+| `sn71:scoring_commit:2026-11-04T19:48:30Z` | 71 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn71 commit touches scoring: Pin reviewed scorer checkpoint imports in host boundary test |
+| `sn81:scoring_commit:2026-11-04T17:48:31Z` | 81 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn81 commit touches scoring: fix(admin): deliver evaluation files to the platform bucket beside HTT |
+| `sn120:scoring_commit:2026-11-04T23:06:44Z` | 120 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn120 commit touches scoring: local-gsm8k: a reply over 100 KB is passed to the Hub verify.py as it… |
 | `sn90:readme_task_diff:54113dbfe0b14a98` | 90 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn90 README task/scoring sections changed |
 | `sn124:readme_task_diff:25de0bc84cbb03ae` | 124 | README_TASK_DIFF | 2026-10-29T13:30:23Z | sn124 README task/scoring sections changed |
 | `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
@@ -266,6 +263,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:readme_task_diff:6c34bfe187921963` | 51 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn51 README task/scoring sections changed |
 | `sn67:readme_task_diff:d645efe7e4c8621a` | 67 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:b99aba463098496e` | 90 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn90 README task/scoring sections changed |
+| `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

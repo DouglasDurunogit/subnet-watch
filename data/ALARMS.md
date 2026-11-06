@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-05T19:03:06Z, block 9441807
+# ALARMS - generated 2026-11-06T00:08:53Z, block 9443336
 
-window: first_seen in [2026-11-05T17:48:37Z, 2026-11-05T19:03:37Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-05T22:54:29Z, 2026-11-06T00:09:29Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,48 +9,36 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn81:burn_drop:0.965` | 81 | BURN_DROP | P0 | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
-| `sn121:burn_drop:0.602` | 121 | BURN_DROP | P0 | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
-| `sn21:scoring_commit:2026-11-05T17:26:44Z` | 21 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn21 commit touches scoring: feat(status): each miner's model start, days unchanged and first day … |
-| `sn46:release:v0.1.5` | 46 | RELEASE | P1 | 2026-11-05T19:03:37Z | sn46 released v0.1.5 |
-| `sn51:release:lium-protocol-v2.9.0` | 51 | RELEASE | P1 | 2026-11-05T19:03:37Z | sn51 released lium-protocol-v2.9.0 |
-| `sn51:scoring_commit:2026-11-05T15:36:10Z` | 51 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn51 commit touches scoring: DAH-5462 - [P2] Validator: skip the new-node network re-measure when … |
-| `sn55:scoring_commit:2026-11-05T14:45:40Z` | 55 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn55 commit touches scoring: report seeds after scoring |
-| `sn66:release:v2026.11.05` | 66 | RELEASE | P1 | 2026-11-05T19:03:37Z | sn66 released v2026.11.05 |
-| `sn70:release:image-v2026.11.05b` | 70 | RELEASE | P1 | 2026-11-05T19:03:37Z | sn70 released image-v2026.11.05b |
-| `sn71:scoring_commit:2026-11-05T17:57:29Z` | 71 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn71 commit touches scoring: Merge pull request #1046 from leadpoet/docs/task-deployment-responsib… |
-| `sn81:scoring_commit:2026-11-05T14:14:51Z` | 81 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn81 commit touches scoring: build(order-control): signed episode runtime and eval tasksets |
-| `sn120:scoring_commit:2026-11-05T14:09:43Z` | 120 | SCORING_COMMIT | P1 | 2026-11-05T19:03:37Z | sn120 commit touches scoring: bench site: references shown if on the size-vs-score Pareto front for… |
-| `sn58:readme_task_diff:de3e9164e32563c5` | 58 | README_TASK_DIFF | P2 | 2026-11-05T19:03:37Z | sn58 README task/scoring sections changed |
+| `sn76:burn_drop:0.973` | 76 | BURN_DROP | P0 | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
+| `sn5:scoring_commit:2026-11-05T21:08:24Z` | 5 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn5 commit touches scoring: Shorten the new-miner ramp to 12 observations |
+| `sn25:scoring_commit:2026-11-05T19:43:11Z` | 25 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn25 commit touches scoring: Describe prospective seeded crawl coverage and scorer version three |
+| `sn66:release:v2026.11.06` | 66 | RELEASE | P1 | 2026-11-06T00:09:29Z | sn66 released v2026.11.06 |
+| `sn66:scoring_commit:2026-11-05T22:47:24Z` | 66 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn66 commit touches scoring: Pin task documentation for part iii display |
+| `sn89:scoring_commit:2026-11-05T19:52:30Z` | 89 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn89 commit touches scoring: Validator: read blobs from extra bases (SN89_R2_EXTRA_BASES) |
+| `sn111:scoring_commit:2026-11-05T20:21:56Z` | 111 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn111 commit touches scoring: Support audited competition amendments and safe scoring continuation |
+| `sn120:scoring_commit:2026-11-05T19:50:55Z` | 120 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn120 commit touches scoring: sn120: gate-pool-v2 = gate-pool-v1 + hard-v1 slice (2,269 tasks, 32K … |
+| `sn127:scoring_commit:2026-11-05T20:40:37Z` | 127 | SCORING_COMMIT | P1 | 2026-11-06T00:09:29Z | sn127 commit touches scoring: Validator: weights never wait for a soup round to free the GPU (ZIL-16 |
 
 ### detail
 
-- **`sn81:burn_drop:0.965`** - sn81 burn fell 0.999 -> 0.965 - miners can earn again
+- **`sn76:burn_drop:0.973`** - sn76 burn fell 0.990 -> 0.973 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.602`** - sn121 burn fell 1.000 -> 0.602 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn21:scoring_commit:2026-11-05T17:26:44Z`** - sn21 commit touches scoring: feat(status): each miner's model start, days unchanged and first day …
+- **`sn5:scoring_commit:2026-11-05T21:08:24Z`** - sn5 commit touches scoring: Shorten the new-miner ramp to 12 observations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn46:release:v0.1.5`** - sn46 released v0.1.5
-  - published 2026-11-05T17:37:50Z (was v0.1.4)
-- **`sn51:release:lium-protocol-v2.9.0`** - sn51 released lium-protocol-v2.9.0
-  - published 2026-11-05T11:50:47Z (was executor-v1.171)
-- **`sn51:scoring_commit:2026-11-05T15:36:10Z`** - sn51 commit touches scoring: DAH-5462 - [P2] Validator: skip the new-node network re-measure when …
+- **`sn25:scoring_commit:2026-11-05T19:43:11Z`** - sn25 commit touches scoring: Describe prospective seeded crawl coverage and scorer version three
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn55:scoring_commit:2026-11-05T14:45:40Z`** - sn55 commit touches scoring: report seeds after scoring
+- **`sn66:release:v2026.11.06`** - sn66 released v2026.11.06
+  - published 2026-11-06T00:00:23Z (was v2026.11.05)
+- **`sn66:scoring_commit:2026-11-05T22:47:24Z`** - sn66 commit touches scoring: Pin task documentation for part iii display
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.05`** - sn66 released v2026.11.05
-  - published 2026-11-05T13:31:26Z (was deployed/dev: Merge pull request #190 from conjectures-io/main)
-- **`sn70:release:image-v2026.11.05b`** - sn70 released image-v2026.11.05b
-  - published 2026-11-05T17:17:51Z (was image-v2026.11.05)
-- **`sn71:scoring_commit:2026-11-05T17:57:29Z`** - sn71 commit touches scoring: Merge pull request #1046 from leadpoet/docs/task-deployment-responsib…
+- **`sn89:scoring_commit:2026-11-05T19:52:30Z`** - sn89 commit touches scoring: Validator: read blobs from extra bases (SN89_R2_EXTRA_BASES)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-05T14:14:51Z`** - sn81 commit touches scoring: build(order-control): signed episode runtime and eval tasksets
+- **`sn111:scoring_commit:2026-11-05T20:21:56Z`** - sn111 commit touches scoring: Support audited competition amendments and safe scoring continuation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-11-05T14:09:43Z`** - sn120 commit touches scoring: bench site: references shown if on the size-vs-score Pareto front for…
+- **`sn120:scoring_commit:2026-11-05T19:50:55Z`** - sn120 commit touches scoring: sn120: gate-pool-v2 = gate-pool-v1 + hard-v1 slice (2,269 tasks, 32K …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn58:readme_task_diff:de3e9164e32563c5`** - sn58 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn127:scoring_commit:2026-11-05T20:40:37Z`** - sn127 commit touches scoring: Validator: weights never wait for a soup round to free the GPU (ZIL-16
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -67,26 +55,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
 | `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn127:burn_drop:0.872` | 127 | BURN_DROP | 2026-11-05T11:38:32Z | sn127 burn fell 0.990 -> 0.872 - miners can earn again |
-| `sn1:release:v4.5.3` | 1 | RELEASE | 2026-10-29T19:17:09Z | sn1 released v4.5.3 |
-| `sn25:scoring_commit:2026-10-29T14:56:25Z` | 25 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn25 commit touches scoring: Preserve deployed validator recovery in timeout release |
-| `sn28:release:v0.5.15` | 28 | RELEASE | 2026-10-29T19:17:09Z | sn28 released v0.5.15 |
-| `sn51:scoring_commit:2026-10-29T16:18:13Z` | 51 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn51 commit touches scoring: DAH-3698 - [P2] Validator: pay a split node's free GPUs per split tha… |
-| `sn66:release:v2026.10.29` | 66 | RELEASE | 2026-10-29T19:17:09Z | sn66 released v2026.10.29 |
-| `sn67:scoring_commit:2026-10-29T13:26:47Z` | 67 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261029.post2 |
-| `sn71:scoring_commit:2026-10-29T19:16:39Z` | 71 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn71 commit touches scoring: Preserve legacy baseline comparison authority in reward slots (#916) |
-| `sn78:scoring_commit:2026-10-29T16:00:09Z` | 78 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn78 commit touches scoring: Merge pull request #496 from Umi-BitSign/fix/adaptive-challenge-lanes… |
-| `sn90:release:v1.3.3` | 90 | RELEASE | 2026-10-29T19:17:09Z | sn90 released v1.3.3 |
-| `sn92:release:v1.2.0-rc11.post8.1-kit1: mammoth-1 self` | 92 | RELEASE | 2026-10-29T19:17:09Z | sn92 released v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side) |
-| `sn92:scoring_commit:2026-10-29T16:23:25Z` | 92 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn92 commit touches scoring: 1.2.0rc11.post8.1 miner kit 1: mammoth-1 self-check for the s1-pro po… |
-| `sn94:scoring_commit:2026-10-29T17:21:49Z` | 94 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn94 commit touches scoring: Room kit: attested guest TLS and hotel key install for miner hotels A… |
-| `sn97:scoring_commit:2026-10-29T14:20:37Z` | 97 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn97 commit touches scoring: fix(web): drop the score axis under the dashboard's benchmark bars |
-| `sn117:release:everycli v0.8.0` | 117 | RELEASE | 2026-10-29T19:17:09Z | sn117 released everycli v0.8.0 |
-| `sn117:scoring_commit:2026-10-29T17:19:07Z` | 117 | SCORING_COMMIT | 2026-10-29T19:17:09Z | sn117 commit touches scoring: Add Director tool models to miner |
-| `sn1:release:v4.5.4` | 1 | RELEASE | 2026-10-29T23:29:16Z | sn1 released v4.5.4 |
-| `sn25:scoring_commit:2026-10-29T21:28:46Z` | 25 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn25 commit touches scoring: Merge leadertop/head-summary-spec: validator head summary v1 spec |
-| `sn51:scoring_commit:2026-10-29T21:11:22Z` | 51 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn51 commit touches scoring: DAH-5177 connector lead lock TTL 15 s -> 6 s so a rollout's validator… |
-| `sn62:scoring_commit:2026-10-29T20:08:25Z` | 62 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn62 commit touches scoring: Merge pull request #528 from ridgesai/feat/ridges-validators |
-| `sn94:scoring_commit:2026-10-29T20:51:05Z` | 94 | SCORING_COMMIT | 2026-10-29T23:29:16Z | sn94 commit touches scoring: Validate claims-room upload paths and require https broker URL (#369) |
+| `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
+| `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn25:scoring_commit:2026-10-30T01:11:12Z` | 25 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn25 commit touches scoring: Merge leadertop/head-summary-upload: the validator's signed head summ… |
 | `sn71:scoring_commit:2026-10-29T23:33:53Z` | 71 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn71 commit touches scoring: Ignore validator runtime state at checkout root |
 | `sn89:scoring_commit:2026-10-30T01:36:45Z` | 89 | SCORING_COMMIT | 2026-10-30T03:00:50Z | sn89 commit touches scoring: Agent competition scoreboard builder |
@@ -265,7 +235,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-05T07:49:03Z` | 71 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn71 commit touches scoring: Merge pull request #1036 from leadpoet/op/arena-observation-verify-re… |
 | `sn81:scoring_commit:2026-11-05T07:55:40Z` | 81 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn81 commit touches scoring: fix(audit): refuse forced-draw drift without charging the miner |
 | `sn116:scoring_commit:2026-11-05T05:47:06Z` | 116 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn116 commit touches scoring: A2: keep attempt 1's evaluation files so a re-run binds its own (TL 4… |
-| `sn51:readme_task_diff:2556ca8f0ae41586` | 51 | README_TASK_DIFF | 2026-10-29T19:17:09Z | sn51 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-11-05T17:26:44Z` | 21 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn21 commit touches scoring: feat(status): each miner's model start, days unchanged and first day … |
+| `sn46:release:v0.1.5` | 46 | RELEASE | 2026-11-05T19:03:37Z | sn46 released v0.1.5 |
+| `sn51:release:lium-protocol-v2.9.0` | 51 | RELEASE | 2026-11-05T19:03:37Z | sn51 released lium-protocol-v2.9.0 |
+| `sn51:scoring_commit:2026-11-05T15:36:10Z` | 51 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn51 commit touches scoring: DAH-5462 - [P2] Validator: skip the new-node network re-measure when … |
+| `sn55:scoring_commit:2026-11-05T14:45:40Z` | 55 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn55 commit touches scoring: report seeds after scoring |
+| `sn66:release:v2026.11.05` | 66 | RELEASE | 2026-11-05T19:03:37Z | sn66 released v2026.11.05 |
+| `sn70:release:image-v2026.11.05b` | 70 | RELEASE | 2026-11-05T19:03:37Z | sn70 released image-v2026.11.05b |
+| `sn71:scoring_commit:2026-11-05T17:57:29Z` | 71 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn71 commit touches scoring: Merge pull request #1046 from leadpoet/docs/task-deployment-responsib… |
+| `sn81:scoring_commit:2026-11-05T14:14:51Z` | 81 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn81 commit touches scoring: build(order-control): signed episode runtime and eval tasksets |
+| `sn120:scoring_commit:2026-11-05T14:09:43Z` | 120 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn120 commit touches scoring: bench site: references shown if on the size-vs-score Pareto front for… |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
@@ -283,6 +262,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:b99aba463098496e` | 90 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn90 README task/scoring sections changed |
 | `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
 | `sn51:readme_task_diff:77525fe4e41362db` | 51 | README_TASK_DIFF | 2026-11-05T11:38:32Z | sn51 README task/scoring sections changed |
+| `sn58:readme_task_diff:de3e9164e32563c5` | 58 | README_TASK_DIFF | 2026-11-05T19:03:37Z | sn58 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-11-06T07:08:33Z  |  block: 9445435  |  row_status: ok
+snapshot_utc: 2026-11-06T15:15:44Z  |  block: 9447870  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (43.604000000000006 USD), open=True
+- registration cost: 0.2 TAO (44.952 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 164  |  free: 0
-- subnet age: 864.7 days  |  registered at block 3219949
+- subnet age: 865.0 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 94.9484199895779** (uid 160) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.0647669986286343
-- top_miner_usd_day: 94.9484199895779 (uid 160, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 97.11812107375215** (uid 160) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.066247013010745
+- top_miner_usd_day: 97.11812107375215 (uid 160, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 151  |  gini: 0.868640251808406  |  top1_share: 0.06719120006111069  |  top10_share: 0.5775418226262318
+- earners: 151  |  gini: 0.8686402518084058  |  top1_share: 0.06719120006111068  |  top10_share: 0.5775418226262318
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-11-06T07:08:33Z  |  block: 9445435  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.1544 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.1529 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-06T07:08:33Z, block 9445435
+# ALARMS - generated 2026-11-06T15:15:44Z, block 9447870
 
-window: first_seen in [2026-11-06T05:53:56Z, 2026-11-06T07:08:56Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-06T14:01:05Z, 2026-11-06T15:16:05Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn66:release:v2026.11.06.2` | 66 | RELEASE | P1 | 2026-11-06T07:08:56Z | sn66 released v2026.11.06.2 |
-| `sn71:scoring_commit:2026-11-06T05:41:44Z` | 71 | SCORING_COMMIT | P1 | 2026-11-06T07:08:56Z | sn71 commit touches scoring: Finalize exact unused ninth review after miner planning |
-| `sn78:scoring_commit:2026-11-05T18:43:34Z` | 78 | SCORING_COMMIT | P1 | 2026-11-06T07:08:56Z | sn78 commit touches scoring: Pass retained coverage through reward service test doubles |
-| `sn123:readme_task_diff:855cbeee88da3234` | 123 | README_TASK_DIFF | P2 | 2026-11-06T07:08:56Z | sn123 README task/scoring sections changed |
+| `sn51:release:executor-v1.172` | 51 | RELEASE | P1 | 2026-11-06T15:16:05Z | sn51 released executor-v1.172 |
+| `sn51:scoring_commit:2026-11-06T12:40:51Z` | 51 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker… |
+| `sn71:scoring_commit:2026-11-06T13:56:24Z` | 71 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o… |
+| `sn78:scoring_commit:2026-11-06T05:33:30Z` | 78 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture |
+| `sn108:scoring_commit:2026-11-06T12:31:40Z` | 108 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk … |
+| `sn116:scoring_commit:2026-11-06T11:48:04Z` | 116 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1… |
 
 ### detail
 
-- **`sn66:release:v2026.11.06.2`** - sn66 released v2026.11.06.2
-  - published 2026-11-06T01:47:07Z (was v2026.11.06)
-- **`sn71:scoring_commit:2026-11-06T05:41:44Z`** - sn71 commit touches scoring: Finalize exact unused ninth review after miner planning
+- **`sn51:release:executor-v1.172`** - sn51 released executor-v1.172
+  - published 2026-11-06T13:57:35Z (was lium-protocol-v2.9.0)
+- **`sn51:scoring_commit:2026-11-06T12:40:51Z`** - sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-11-05T18:43:34Z`** - sn78 commit touches scoring: Pass retained coverage through reward service test doubles
+- **`sn71:scoring_commit:2026-11-06T13:56:24Z`** - sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn123:readme_task_diff:855cbeee88da3234`** - sn123 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn78:scoring_commit:2026-11-06T05:33:30Z`** - sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-11-06T12:31:40Z`** - sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-06T11:48:04Z`** - sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,12 +49,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
-| `sn25:scoring_commit:2026-10-30T04:21:00Z` | 25 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn25 commit touches scoring: Expose validator preparation stages through bounded diagnostics |
-| `sn51:scoring_commit:2026-10-30T09:50:10Z` | 51 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn51 commit touches scoring: DAH-5327 - [P1] Validator: a killed filler that dockerd removes withi… |
-| `sn62:release:v0.3.15` | 62 | RELEASE | 2026-10-30T09:55:02Z | sn62 released v0.3.15 |
-| `sn66:release:deployed/dev: Merge pull request #174 fr` | 66 | RELEASE | 2026-10-30T09:55:02Z | sn66 released deployed/dev: Merge pull request #174 from conjectures-io/fix/trace-sql-statements |
-| `sn67:scoring_commit:2026-10-30T02:27:14Z` | 67 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261030.post0 |
-| `sn71:scoring_commit:2026-10-30T07:55:16Z` | 71 | SCORING_COMMIT | 2026-10-30T09:55:02Z | sn71 commit touches scoring: Verify accepted Greenhouse API judgments require employer ownership |
 | `sn28:release:v0.5.16` | 28 | RELEASE | 2026-10-30T16:41:00Z | sn28 released v0.5.16 |
 | `sn51:release:lium-protocol-v1.18.0` | 51 | RELEASE | 2026-10-30T16:41:00Z | sn51 released lium-protocol-v1.18.0 |
 | `sn51:scoring_commit:2026-10-30T15:56:58Z` | 51 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn51 commit touches scoring: DAH-5393 - [P0] Validator: a full set of other GPUs re-verifies at on… |
@@ -235,6 +235,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-11-05T20:21:56Z` | 111 | SCORING_COMMIT | 2026-11-06T00:09:29Z | sn111 commit touches scoring: Support audited competition amendments and safe scoring continuation |
 | `sn120:scoring_commit:2026-11-05T19:50:55Z` | 120 | SCORING_COMMIT | 2026-11-06T00:09:29Z | sn120 commit touches scoring: sn120: gate-pool-v2 = gate-pool-v1 + hard-v1 slice (2,269 tasks, 32K … |
 | `sn127:scoring_commit:2026-11-05T20:40:37Z` | 127 | SCORING_COMMIT | 2026-11-06T00:09:29Z | sn127 commit touches scoring: Validator: weights never wait for a soup round to free the GPU (ZIL-16 |
+| `sn66:release:v2026.11.06.2` | 66 | RELEASE | 2026-11-06T07:08:56Z | sn66 released v2026.11.06.2 |
+| `sn71:scoring_commit:2026-11-06T05:41:44Z` | 71 | SCORING_COMMIT | 2026-11-06T07:08:56Z | sn71 commit touches scoring: Finalize exact unused ninth review after miner planning |
+| `sn78:scoring_commit:2026-11-05T18:43:34Z` | 78 | SCORING_COMMIT | 2026-11-06T07:08:56Z | sn78 commit touches scoring: Pass retained coverage through reward service test doubles |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
@@ -253,6 +256,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
 | `sn51:readme_task_diff:77525fe4e41362db` | 51 | README_TASK_DIFF | 2026-11-05T11:38:32Z | sn51 README task/scoring sections changed |
 | `sn58:readme_task_diff:de3e9164e32563c5` | 58 | README_TASK_DIFF | 2026-11-05T19:03:37Z | sn58 README task/scoring sections changed |
+| `sn123:readme_task_diff:855cbeee88da3234` | 123 | README_TASK_DIFF | 2026-11-06T07:08:56Z | sn123 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

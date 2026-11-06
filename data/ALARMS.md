@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-06T15:15:44Z, block 9447870
+# ALARMS - generated 2026-11-06T20:58:37Z, block 9449585
 
-window: first_seen in [2026-11-06T14:01:05Z, 2026-11-06T15:16:05Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-06T19:44:00Z, 2026-11-06T20:59:00Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:executor-v1.172` | 51 | RELEASE | P1 | 2026-11-06T15:16:05Z | sn51 released executor-v1.172 |
-| `sn51:scoring_commit:2026-11-06T12:40:51Z` | 51 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker… |
-| `sn71:scoring_commit:2026-11-06T13:56:24Z` | 71 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o… |
-| `sn78:scoring_commit:2026-11-06T05:33:30Z` | 78 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture |
-| `sn108:scoring_commit:2026-11-06T12:31:40Z` | 108 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk … |
-| `sn116:scoring_commit:2026-11-06T11:48:04Z` | 116 | SCORING_COMMIT | P1 | 2026-11-06T15:16:05Z | sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1… |
+| `sn2:scoring_commit:2026-11-06T20:42:23Z` | 2 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn2 commit touches scoring: Prepare Finney SN2 validator onboarding and cron updates |
+| `sn14:scoring_commit:2026-11-03T07:50:08Z` | 14 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn14 commit touches scoring: Release reward priority after completed worker HOLDs |
+| `sn28:release:v0.5.22` | 28 | RELEASE | P1 | 2026-11-06T20:59:00Z | sn28 released v0.5.22 |
+| `sn71:scoring_commit:2026-11-06T19:59:13Z` | 71 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn71 commit touches scoring: Preserve consumed redirect provenance and validate internal Chat trai… |
+| `sn104:scoring_commit:2026-11-06T17:39:31Z` | 104 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn104 commit touches scoring: fix(validator): sync live operational fixes into main |
+| `sn108:scoring_commit:2026-11-06T17:42:55Z` | 108 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn108 commit touches scoring: Validator requirements: 500 GB SSD recommended (300 GB minimum); the … |
+| `sn116:scoring_commit:2026-11-06T17:10:02Z` | 116 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn116 commit touches scoring: Dashboard Updates page (miner Updates), re-cut of 36845338 onto main … |
+| `sn120:scoring_commit:2026-11-06T15:23:57Z` | 120 | SCORING_COMMIT | P1 | 2026-11-06T20:59:00Z | sn120 commit touches scoring: sn120: gate task cap 32K -> 64K (Jacob pt1324u) |
+| `sn28:readme_task_diff:3988d29ccf7e7016` | 28 | README_TASK_DIFF | P2 | 2026-11-06T20:59:00Z | sn28 README task/scoring sections changed |
+| `sn88:readme_task_diff:b0837afa350cd1d5` | 88 | README_TASK_DIFF | P2 | 2026-11-06T20:59:00Z | sn88 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:release:executor-v1.172`** - sn51 released executor-v1.172
-  - published 2026-11-06T13:57:35Z (was lium-protocol-v2.9.0)
-- **`sn51:scoring_commit:2026-11-06T12:40:51Z`** - sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker…
+- **`sn2:scoring_commit:2026-11-06T20:42:23Z`** - sn2 commit touches scoring: Prepare Finney SN2 validator onboarding and cron updates
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-06T13:56:24Z`** - sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o…
+- **`sn14:scoring_commit:2026-11-03T07:50:08Z`** - sn14 commit touches scoring: Release reward priority after completed worker HOLDs
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-11-06T05:33:30Z`** - sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture
+- **`sn28:release:v0.5.22`** - sn28 released v0.5.22
+  - published 2026-11-06T18:19:13Z (was v0.5.21)
+- **`sn71:scoring_commit:2026-11-06T19:59:13Z`** - sn71 commit touches scoring: Preserve consumed redirect provenance and validate internal Chat trai…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-11-06T12:31:40Z`** - sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk …
+- **`sn104:scoring_commit:2026-11-06T17:39:31Z`** - sn104 commit touches scoring: fix(validator): sync live operational fixes into main
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-06T11:48:04Z`** - sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1…
+- **`sn108:scoring_commit:2026-11-06T17:42:55Z`** - sn108 commit touches scoring: Validator requirements: 500 GB SSD recommended (300 GB minimum); the …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-06T17:10:02Z`** - sn116 commit touches scoring: Dashboard Updates page (miner Updates), re-cut of 36845338 onto main …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-11-06T15:23:57Z`** - sn120 commit touches scoring: sn120: gate task cap 32K -> 64K (Jacob pt1324u)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn28:readme_task_diff:3988d29ccf7e7016`** - sn28 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn88:readme_task_diff:b0837afa350cd1d5`** - sn88 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn126:burn_drop:0.950` | 126 | BURN_DROP | 2026-10-30T16:41:00Z | sn126 burn fell 1.000 -> 0.950 - miners can earn again |
 | `sn76:burn_drop:0.964` | 76 | BURN_DROP | 2026-10-30T21:08:18Z | sn76 burn fell 0.993 -> 0.964 - miners can earn again |
 | `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
 | `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -49,15 +60,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
-| `sn28:release:v0.5.16` | 28 | RELEASE | 2026-10-30T16:41:00Z | sn28 released v0.5.16 |
-| `sn51:release:lium-protocol-v1.18.0` | 51 | RELEASE | 2026-10-30T16:41:00Z | sn51 released lium-protocol-v1.18.0 |
-| `sn51:scoring_commit:2026-10-30T15:56:58Z` | 51 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn51 commit touches scoring: DAH-5393 - [P0] Validator: a full set of other GPUs re-verifies at on… |
-| `sn53:scoring_commit:2026-10-30T10:03:36Z` | 53 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn53 commit touches scoring: Merge pull request #59 from hanlinai/feat/tee-miner-vllm-kv |
-| `sn65:scoring_commit:2026-10-26T12:00:46Z` | 65 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn65 commit touches scoring: score all candidates |
-| `sn66:release:deployed/dev: Merge pull request #176 fr` | 66 | RELEASE | 2026-10-30T16:41:00Z | sn66 released deployed/dev: Merge pull request #176 from conjectures-io/fix/bounty-open-only-missing |
-| `sn97:scoring_commit:2026-10-30T14:36:17Z` | 97 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn97 commit touches scoring: feat(eval): KL decides a win, score per sample, per-domain answer cap… |
-| `sn102:release:v0.7.2: Merge pull request #299 from Con` | 102 | RELEASE | 2026-10-30T16:41:00Z | sn102 released v0.7.2: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
-| `sn102:scoring_commit:2026-10-30T14:28:47Z` | 102 | SCORING_COMMIT | 2026-10-30T16:41:00Z | sn102 commit touches scoring: Merge pull request #299 from Connito-AI/feat/validator-prompt-blend |
 | `sn15:release:v3.0.6: fix(validator): keep sandbox out` | 15 | RELEASE | 2026-10-30T21:08:18Z | sn15 released v3.0.6: fix(validator): keep sandbox output from blocking run completion |
 | `sn15:scoring_commit:2026-10-30T18:12:56Z` | 15 | SCORING_COMMIT | 2026-10-30T21:08:18Z | sn15 commit touches scoring: fix(validator): keep sandbox output from blocking run completion |
 | `sn25:scoring_commit:2026-10-30T18:12:19Z` | 25 | SCORING_COMMIT | 2026-10-30T21:08:18Z | sn25 commit touches scoring: Require verified empty EMA prior for head replica bootstrap |
@@ -238,6 +240,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:release:v2026.11.06.2` | 66 | RELEASE | 2026-11-06T07:08:56Z | sn66 released v2026.11.06.2 |
 | `sn71:scoring_commit:2026-11-06T05:41:44Z` | 71 | SCORING_COMMIT | 2026-11-06T07:08:56Z | sn71 commit touches scoring: Finalize exact unused ninth review after miner planning |
 | `sn78:scoring_commit:2026-11-05T18:43:34Z` | 78 | SCORING_COMMIT | 2026-11-06T07:08:56Z | sn78 commit touches scoring: Pass retained coverage through reward service test doubles |
+| `sn51:release:executor-v1.172` | 51 | RELEASE | 2026-11-06T15:16:05Z | sn51 released executor-v1.172 |
+| `sn51:scoring_commit:2026-11-06T12:40:51Z` | 51 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker… |
+| `sn71:scoring_commit:2026-11-06T13:56:24Z` | 71 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o… |
+| `sn78:scoring_commit:2026-11-06T05:33:30Z` | 78 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture |
+| `sn108:scoring_commit:2026-11-06T12:31:40Z` | 108 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk … |
+| `sn116:scoring_commit:2026-11-06T11:48:04Z` | 116 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1… |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |

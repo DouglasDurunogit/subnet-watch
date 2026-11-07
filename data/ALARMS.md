@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-07T13:56:19Z, block 9454673
+# ALARMS - generated 2026-11-07T18:42:26Z, block 9456104
 
-window: first_seen in [2026-11-07T12:41:48Z, 2026-11-07T13:56:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-07T17:27:57Z, 2026-11-07T18:42:57Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-11-07T12:41:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn71 commit touches scoring: Merge pull request #1106 from leadpoet/codex/audit-sn71-score-retry-2… |
-| `sn81:scoring_commit:2026-11-07T11:15:29Z` | 81 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify |
-| `sn93:scoring_commit:2026-11-07T11:48:35Z` | 93 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179) |
-| `sn116:scoring_commit:2026-11-07T13:33:45Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, … |
+| `sn17:release:witness-client-v0.2.18` | 17 | RELEASE | P1 | 2026-11-07T18:42:57Z | sn17 released witness-client-v0.2.18 |
+| `sn17:scoring_commit:2026-11-07T18:17:24Z` | 17 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn17 commit touches scoring: Apply the request deadline to cached grant validation |
+| `sn66:release:v2026.11.07` | 66 | RELEASE | P1 | 2026-11-07T18:42:57Z | sn66 released v2026.11.07 |
+| `sn71:scoring_commit:2026-11-07T13:44:22Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates |
+| `sn116:scoring_commit:2026-11-07T14:54:24Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes |
+| `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | P2 | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-11-07T12:41:58Z`** - sn71 commit touches scoring: Merge pull request #1106 from leadpoet/codex/audit-sn71-score-retry-2…
+- **`sn17:release:witness-client-v0.2.18`** - sn17 released witness-client-v0.2.18
+  - published 2026-11-05T20:48:12Z (was witness-diagnostics-20261102)
+- **`sn17:scoring_commit:2026-11-07T18:17:24Z`** - sn17 commit touches scoring: Apply the request deadline to cached grant validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-07T11:15:29Z`** - sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify
+- **`sn66:release:v2026.11.07`** - sn66 released v2026.11.07
+  - published 2026-11-07T15:22:24Z (was v2026.11.06.3)
+- **`sn71:scoring_commit:2026-11-07T13:44:22Z`** - sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn93:scoring_commit:2026-11-07T11:48:35Z`** - sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179)
+- **`sn116:scoring_commit:2026-11-07T14:54:24Z`** - sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-07T13:33:45Z`** - sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn15:readme_task_diff:4d00db5f525b3425`** - sn15 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -42,10 +48,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
 | `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
-| `sn21:scoring_commit:2026-10-31T13:41:41Z` | 21 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li… |
-| `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
-| `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
-| `sn120:scoring_commit:2026-10-31T13:21:27Z` | 120 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn120 commit touches scoring: SN120 legacy removal docs: llms.txt (site + dashboard copy) and miner… |
 | `sn1:release:v4.6.0` | 1 | RELEASE | 2026-10-31T21:27:52Z | sn1 released v4.6.0 |
 | `sn11:release:v0.7.6` | 11 | RELEASE | 2026-10-31T21:27:52Z | sn11 released v0.7.6 |
 | `sn11:scoring_commit:2026-10-31T19:27:19Z` | 11 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343) |
@@ -228,7 +230,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-11-06T16:54:21Z` | 81 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut… |
 | `sn116:scoring_commit:2026-11-07T01:02:17Z` | 116 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne… |
 | `sn120:scoring_commit:2026-11-07T01:44:15Z` | 120 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters |
-| `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-11-07T12:41:58Z` | 71 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn71 commit touches scoring: Merge pull request #1106 from leadpoet/codex/audit-sn71-score-retry-2… |
+| `sn81:scoring_commit:2026-11-07T11:15:29Z` | 81 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify |
+| `sn93:scoring_commit:2026-11-07T11:48:35Z` | 93 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179) |
+| `sn116:scoring_commit:2026-11-07T13:33:45Z` | 116 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, … |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |

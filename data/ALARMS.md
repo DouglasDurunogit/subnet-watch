@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-07T18:42:26Z, block 9456104
+# ALARMS - generated 2026-11-07T22:20:36Z, block 9457195
 
-window: first_seen in [2026-11-07T17:27:57Z, 2026-11-07T18:42:57Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-07T21:06:04Z, 2026-11-07T22:21:04Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn17:release:witness-client-v0.2.18` | 17 | RELEASE | P1 | 2026-11-07T18:42:57Z | sn17 released witness-client-v0.2.18 |
-| `sn17:scoring_commit:2026-11-07T18:17:24Z` | 17 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn17 commit touches scoring: Apply the request deadline to cached grant validation |
-| `sn66:release:v2026.11.07` | 66 | RELEASE | P1 | 2026-11-07T18:42:57Z | sn66 released v2026.11.07 |
-| `sn71:scoring_commit:2026-11-07T13:44:22Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates |
-| `sn116:scoring_commit:2026-11-07T14:54:24Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T18:42:57Z | sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes |
-| `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | P2 | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-11-07T20:20:23Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn71 commit touches scoring: Integrate current training permission metadata before verified release |
+| `sn90:release:v1.3.6: feat(subnet): show Chutes median` | 90 | RELEASE | P1 | 2026-11-07T22:21:04Z | sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard |
+| `sn90:scoring_commit:2026-11-07T20:14:43Z` | 90 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5 |
+| `sn127:scoring_commit:2026-11-07T20:18:51Z` | 127 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier |
 
 ### detail
 
-- **`sn17:release:witness-client-v0.2.18`** - sn17 released witness-client-v0.2.18
-  - published 2026-11-05T20:48:12Z (was witness-diagnostics-20261102)
-- **`sn17:scoring_commit:2026-11-07T18:17:24Z`** - sn17 commit touches scoring: Apply the request deadline to cached grant validation
+- **`sn71:scoring_commit:2026-11-07T20:20:23Z`** - sn71 commit touches scoring: Integrate current training permission metadata before verified release
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.07`** - sn66 released v2026.11.07
-  - published 2026-11-07T15:22:24Z (was v2026.11.06.3)
-- **`sn71:scoring_commit:2026-11-07T13:44:22Z`** - sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates
+- **`sn90:release:v1.3.6: feat(subnet): show Chutes median`** - sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard
+  - published 2026-11-07T22:12:25Z (was v1.3.4)
+- **`sn90:scoring_commit:2026-11-07T20:14:43Z`** - sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-07T14:54:24Z`** - sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes
+- **`sn127:scoring_commit:2026-11-07T20:18:51Z`** - sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:4d00db5f525b3425`** - sn15 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,15 +42,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
 | `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
-| `sn1:release:v4.6.0` | 1 | RELEASE | 2026-10-31T21:27:52Z | sn1 released v4.6.0 |
-| `sn11:release:v0.7.6` | 11 | RELEASE | 2026-10-31T21:27:52Z | sn11 released v0.7.6 |
-| `sn11:scoring_commit:2026-10-31T19:27:19Z` | 11 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn11 commit touches scoring: chore(release): validator 0.7.6 for bounded two-worker SPEC 28 (#343) |
-| `sn25:scoring_commit:2026-10-31T20:35:44Z` | 25 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn25 commit touches scoring: Merge feat/miner-pprof: opt-in pprof and a SIGUSR1 goroutine dump for… |
-| `sn34:scoring_commit:2026-10-31T20:28:37Z` | 34 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn34 commit touches scoring: Batch frozen tasks with redundant sandbox defaults (#40) |
-| `sn71:scoring_commit:2026-10-31T18:53:55Z` | 71 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn71 commit touches scoring: Keep admission source review on verified Google Vertex provider (#950) |
-| `sn116:scoring_commit:2026-10-31T17:37:40Z` | 116 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn116 commit touches scoring: Rewards: testnet-winner-v5-launch resets a king's clock on a verified… |
-| `sn117:release:everycli v0.8.3` | 117 | RELEASE | 2026-10-31T21:27:52Z | sn117 released everycli v0.8.3 |
-| `sn120:scoring_commit:2026-10-31T18:43:36Z` | 120 | SCORING_COMMIT | 2026-10-31T21:27:52Z | sn120 commit touches scoring: SN120 miner kit (miner/): everything a miner needs, verbatim from the… |
 | `sn15:release:v3.0.7` | 15 | RELEASE | 2026-11-01T00:27:23Z | sn15 released v3.0.7 |
 | `sn66:release:v2026.10.31.2` | 66 | RELEASE | 2026-11-01T00:27:23Z | sn66 released v2026.10.31.2 |
 | `sn11:release:v0.7.7` | 11 | RELEASE | 2026-11-01T06:44:04Z | sn11 released v0.7.7 |
@@ -234,7 +219,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:scoring_commit:2026-11-07T11:15:29Z` | 81 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify |
 | `sn93:scoring_commit:2026-11-07T11:48:35Z` | 93 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179) |
 | `sn116:scoring_commit:2026-11-07T13:33:45Z` | 116 | SCORING_COMMIT | 2026-11-07T13:56:48Z | sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, … |
-| `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
+| `sn17:release:witness-client-v0.2.18` | 17 | RELEASE | 2026-11-07T18:42:57Z | sn17 released witness-client-v0.2.18 |
+| `sn17:scoring_commit:2026-11-07T18:17:24Z` | 17 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn17 commit touches scoring: Apply the request deadline to cached grant validation |
+| `sn66:release:v2026.11.07` | 66 | RELEASE | 2026-11-07T18:42:57Z | sn66 released v2026.11.07 |
+| `sn71:scoring_commit:2026-11-07T13:44:22Z` | 71 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates |
+| `sn116:scoring_commit:2026-11-07T14:54:24Z` | 116 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |
@@ -255,6 +244,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn28:readme_task_diff:3988d29ccf7e7016` | 28 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:b0837afa350cd1d5` | 88 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn88 README task/scoring sections changed |
 | `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
+| `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

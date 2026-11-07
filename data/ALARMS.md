@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-07T00:52:09Z, block 9450753
+# ALARMS - generated 2026-11-07T07:02:05Z, block 9452602
 
-window: first_seen in [2026-11-06T23:37:36Z, 2026-11-07T00:52:36Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-07T05:47:35Z, 2026-11-07T07:02:35Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,36 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:scoring_commit:2026-11-06T21:26:38Z` | 2 | SCORING_COMMIT | P1 | 2026-11-07T00:52:36Z | sn2 commit touches scoring: Publish operator-focused SN2 validator documentation |
-| `sn66:release:v2026.11.06.3` | 66 | RELEASE | P1 | 2026-11-07T00:52:36Z | sn66 released v2026.11.06.3 |
-| `sn66:scoring_commit:2026-11-06T20:07:47Z` | 66 | SCORING_COMMIT | P1 | 2026-11-07T00:52:36Z | sn66 commit touches scoring: Bound archive validation resources and enforce chat-log storage quotas |
-| `sn71:scoring_commit:2026-11-06T23:18:31Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T00:52:36Z | sn71 commit touches scoring: Test historical verifier finality with its matching frozen caller |
-| `sn116:scoring_commit:2026-11-06T21:53:51Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T00:52:36Z | sn116 commit touches scoring: Queue view: a GET never slows a grade (Validator-2 must-fix) |
-| `sn120:scoring_commit:2026-11-07T00:17:07Z` | 120 | SCORING_COMMIT | P1 | 2026-11-07T00:52:36Z | sn120 commit touches scoring: Clarify independent 64K gate limits in miner documentation |
+| `sn37:burn_drop:0.091` | 37 | BURN_DROP | P0 | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
+| `sn34:scoring_commit:2026-11-07T04:54:09Z` | 34 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48) |
+| `sn37:scoring_commit:2026-11-07T00:56:30Z` | 37 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding |
+| `sn71:scoring_commit:2026-11-07T05:16:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren… |
+| `sn78:scoring_commit:2026-11-07T01:44:01Z` | 78 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn78 commit touches scoring: Merge pull request #518 from Umi-BitSign/fix/chunked-verification-res… |
+| `sn81:scoring_commit:2026-11-06T16:54:21Z` | 81 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut… |
+| `sn116:scoring_commit:2026-11-07T01:02:17Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne… |
+| `sn120:scoring_commit:2026-11-07T01:44:15Z` | 120 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters |
+| `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | P2 | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:scoring_commit:2026-11-06T21:26:38Z`** - sn2 commit touches scoring: Publish operator-focused SN2 validator documentation
+- **`sn37:burn_drop:0.091`** - sn37 burn fell 1.000 -> 0.091 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn34:scoring_commit:2026-11-07T04:54:09Z`** - sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.06.3`** - sn66 released v2026.11.06.3
-  - published 2026-11-06T21:17:25Z (was v2026.11.06.2)
-- **`sn66:scoring_commit:2026-11-06T20:07:47Z`** - sn66 commit touches scoring: Bound archive validation resources and enforce chat-log storage quotas
+- **`sn37:scoring_commit:2026-11-07T00:56:30Z`** - sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-06T23:18:31Z`** - sn71 commit touches scoring: Test historical verifier finality with its matching frozen caller
+- **`sn71:scoring_commit:2026-11-07T05:16:58Z`** - sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-06T21:53:51Z`** - sn116 commit touches scoring: Queue view: a GET never slows a grade (Validator-2 must-fix)
+- **`sn78:scoring_commit:2026-11-07T01:44:01Z`** - sn78 commit touches scoring: Merge pull request #518 from Umi-BitSign/fix/chunked-verification-res…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-11-07T00:17:07Z`** - sn120 commit touches scoring: Clarify independent 64K gate limits in miner documentation
+- **`sn81:scoring_commit:2026-11-06T16:54:21Z`** - sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-07T01:02:17Z`** - sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn120:scoring_commit:2026-11-07T01:44:15Z`** - sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn37:readme_task_diff:0ff79d9d6b17ca0c`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -47,18 +56,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
-| `sn25:release:v2026.10.30-1086064830` | 25 | RELEASE | 2026-10-31T00:56:30Z | sn25 released v2026.10.30-1086064830 |
-| `sn78:scoring_commit:2026-10-30T23:30:40Z` | 78 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn78 commit touches scoring: Add quality-gated CPU efficiency rewards for C8+ [skip ci] |
-| `sn91:scoring_commit:2026-10-30T21:27:46Z` | 91 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn91 commit touches scoring: bench data: a completion marker only for a verified-complete pull |
-| `sn116:scoring_commit:2026-10-30T22:43:52Z` | 116 | SCORING_COMMIT | 2026-10-31T00:56:30Z | sn116 commit touches scoring: MINING: help contact is the owner's Telegram (no Discord) |
-| `sn25:scoring_commit:2026-10-31T06:54:01Z` | 25 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn25 commit touches scoring: Record the census fix deployment in taskworker 1086289460 |
-| `sn34:scoring_commit:2026-10-30T23:21:18Z` | 34 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn34 commit touches scoring: fix: score empty stopped ArenaHard answers as incorrect |
-| `sn51:scoring_commit:2026-10-31T03:32:27Z` | 51 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn51 commit touches scoring: DAH-5457 - [P0] Validator: GPU drop report lists the new cards after … |
-| `sn62:release:v0.3.16` | 62 | RELEASE | 2026-10-31T06:56:23Z | sn62 released v0.3.16 |
-| `sn71:scoring_commit:2026-10-31T03:57:05Z` | 71 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn71 commit touches scoring: Keep validator checkout warnings out of usable training evidence |
-| `sn91:scoring_commit:2026-10-31T03:06:40Z` | 91 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn91 commit touches scoring: King leg: channel floor by ref, ignore the challenger abort |
-| `sn116:scoring_commit:2026-10-30T23:26:11Z` | 116 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn116 commit touches scoring: Record five owner decisions given in the Validator session (repack al… |
-| `sn120:scoring_commit:2026-10-31T01:15:16Z` | 120 | SCORING_COMMIT | 2026-10-31T06:56:23Z | sn120 commit touches scoring: SN120 free-file protocol: miners upload one affine-batch-v1 file (pro… |
 | `sn14:scoring_commit:2026-10-30T14:38:17Z` | 14 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn14 commit touches scoring: Pay no first PASS under the reward margin over stock |
 | `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
 | `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
@@ -236,6 +233,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:scoring_commit:2026-11-06T17:42:55Z` | 108 | SCORING_COMMIT | 2026-11-06T20:59:00Z | sn108 commit touches scoring: Validator requirements: 500 GB SSD recommended (300 GB minimum); the … |
 | `sn116:scoring_commit:2026-11-06T17:10:02Z` | 116 | SCORING_COMMIT | 2026-11-06T20:59:00Z | sn116 commit touches scoring: Dashboard Updates page (miner Updates), re-cut of 36845338 onto main … |
 | `sn120:scoring_commit:2026-11-06T15:23:57Z` | 120 | SCORING_COMMIT | 2026-11-06T20:59:00Z | sn120 commit touches scoring: sn120: gate task cap 32K -> 64K (Jacob pt1324u) |
+| `sn2:scoring_commit:2026-11-06T21:26:38Z` | 2 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn2 commit touches scoring: Publish operator-focused SN2 validator documentation |
+| `sn66:release:v2026.11.06.3` | 66 | RELEASE | 2026-11-07T00:52:36Z | sn66 released v2026.11.06.3 |
+| `sn66:scoring_commit:2026-11-06T20:07:47Z` | 66 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn66 commit touches scoring: Bound archive validation resources and enforce chat-log storage quotas |
+| `sn71:scoring_commit:2026-11-06T23:18:31Z` | 71 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn71 commit touches scoring: Test historical verifier finality with its matching frozen caller |
+| `sn116:scoring_commit:2026-11-06T21:53:51Z` | 116 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn116 commit touches scoring: Queue view: a GET never slows a grade (Validator-2 must-fix) |
+| `sn120:scoring_commit:2026-11-07T00:17:07Z` | 120 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn120 commit touches scoring: Clarify independent 64K gate limits in miner documentation |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |

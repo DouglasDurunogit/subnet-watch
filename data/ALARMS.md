@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-07T07:02:05Z, block 9452602
+# ALARMS - generated 2026-11-07T13:56:19Z, block 9454673
 
-window: first_seen in [2026-11-07T05:47:35Z, 2026-11-07T07:02:35Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-07T12:41:48Z, 2026-11-07T13:56:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,21 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:burn_drop:0.091` | 37 | BURN_DROP | P0 | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
-| `sn34:scoring_commit:2026-11-07T04:54:09Z` | 34 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48) |
-| `sn37:scoring_commit:2026-11-07T00:56:30Z` | 37 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding |
-| `sn71:scoring_commit:2026-11-07T05:16:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren… |
-| `sn78:scoring_commit:2026-11-07T01:44:01Z` | 78 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn78 commit touches scoring: Merge pull request #518 from Umi-BitSign/fix/chunked-verification-res… |
-| `sn81:scoring_commit:2026-11-06T16:54:21Z` | 81 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut… |
-| `sn116:scoring_commit:2026-11-07T01:02:17Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne… |
-| `sn120:scoring_commit:2026-11-07T01:44:15Z` | 120 | SCORING_COMMIT | P1 | 2026-11-07T07:02:35Z | sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters |
-| `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | P2 | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
+| `sn71:scoring_commit:2026-11-07T12:41:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn71 commit touches scoring: Merge pull request #1106 from leadpoet/codex/audit-sn71-score-retry-2… |
+| `sn81:scoring_commit:2026-11-07T11:15:29Z` | 81 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify |
+| `sn93:scoring_commit:2026-11-07T11:48:35Z` | 93 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179) |
+| `sn116:scoring_commit:2026-11-07T13:33:45Z` | 116 | SCORING_COMMIT | P1 | 2026-11-07T13:56:48Z | sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, … |
 
 ### detail
 
-- **`sn37:burn_drop:0.091`** - sn37 burn fell 1.000 -> 0.091 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn34:scoring_commit:2026-11-07T04:54:09Z`** - sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48)
+- **`sn71:scoring_commit:2026-11-07T12:41:58Z`** - sn71 commit touches scoring: Merge pull request #1106 from leadpoet/codex/audit-sn71-score-retry-2…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:scoring_commit:2026-11-07T00:56:30Z`** - sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding
+- **`sn81:scoring_commit:2026-11-07T11:15:29Z`** - sn81 commit touches scoring: Merge pull request #466 from reliquadotai/perf/sparse-warp-verify
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-07T05:16:58Z`** - sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren…
+- **`sn93:scoring_commit:2026-11-07T11:48:35Z`** - sn93 commit touches scoring: fix: bound miner refreshes and reject private axon destinations (#179)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn78:scoring_commit:2026-11-07T01:44:01Z`** - sn78 commit touches scoring: Merge pull request #518 from Umi-BitSign/fix/chunked-verification-res…
+- **`sn116:scoring_commit:2026-11-07T13:33:45Z`** - sn116 commit touches scoring: Practice on the data kit's verify set for new versions (owner: "Yes, …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-06T16:54:21Z`** - sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-07T01:02:17Z`** - sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn120:scoring_commit:2026-11-07T01:44:15Z`** - sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:readme_task_diff:0ff79d9d6b17ca0c`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -56,10 +41,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
-| `sn14:scoring_commit:2026-10-30T14:38:17Z` | 14 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn14 commit touches scoring: Pay no first PASS under the reward margin over stock |
-| `sn67:scoring_commit:2026-10-31T05:58:58Z` | 67 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261031.post0 |
-| `sn91:scoring_commit:2026-10-31T08:20:08Z` | 91 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn91 commit touches scoring: Merge pull request #393 from TensorLink-AI/feat/miner-cost-protections |
-| `sn108:scoring_commit:2026-10-31T11:29:59Z` | 108 | SCORING_COMMIT | 2026-10-31T13:35:59Z | sn108 commit touches scoring: Between quests the validator checks its EDA server too, so its status… |
+| `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
 | `sn21:scoring_commit:2026-10-31T13:41:41Z` | 21 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn21 commit touches scoring: docs: the settling window is 2 days everywhere - MINER_MODEL_SPEC (li… |
 | `sn71:scoring_commit:2026-10-31T16:38:42Z` | 71 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn71 commit touches scoring: Preserve verified training pairs from incomplete captures |
 | `sn116:scoring_commit:2026-10-31T14:24:06Z` | 116 | SCORING_COMMIT | 2026-10-31T17:58:00Z | sn116 commit touches scoring: Miner client: every HTTP call to a door sends one explicit agent, nev… |
@@ -239,6 +221,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-06T23:18:31Z` | 71 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn71 commit touches scoring: Test historical verifier finality with its matching frozen caller |
 | `sn116:scoring_commit:2026-11-06T21:53:51Z` | 116 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn116 commit touches scoring: Queue view: a GET never slows a grade (Validator-2 must-fix) |
 | `sn120:scoring_commit:2026-11-07T00:17:07Z` | 120 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn120 commit touches scoring: Clarify independent 64K gate limits in miner documentation |
+| `sn34:scoring_commit:2026-11-07T04:54:09Z` | 34 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48) |
+| `sn37:scoring_commit:2026-11-07T00:56:30Z` | 37 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding |
+| `sn71:scoring_commit:2026-11-07T05:16:58Z` | 71 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren… |
+| `sn78:scoring_commit:2026-11-07T01:44:01Z` | 78 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn78 commit touches scoring: Merge pull request #518 from Umi-BitSign/fix/chunked-verification-res… |
+| `sn81:scoring_commit:2026-11-06T16:54:21Z` | 81 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn81 commit touches scoring: feat(order-control): keep an order from miners until its audit execut… |
+| `sn116:scoring_commit:2026-11-07T01:02:17Z` | 116 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn116 commit touches scoring: Queue view: only a built task waits to grade (cancelled / archived ne… |
+| `sn120:scoring_commit:2026-11-07T01:44:15Z` | 120 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn120 commit touches scoring: PE admission: verify every frozen probe cell, not summary counters |
 | `sn21:readme_task_diff:65365716ac8dc6df` | 21 | README_TASK_DIFF | 2026-10-31T17:58:00Z | sn21 README task/scoring sections changed |
 | `sn117:readme_task_diff:b849af97332968e4` | 117 | README_TASK_DIFF | 2026-10-31T21:27:52Z | sn117 README task/scoring sections changed |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
@@ -260,6 +249,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn123:readme_task_diff:855cbeee88da3234` | 123 | README_TASK_DIFF | 2026-11-06T07:08:56Z | sn123 README task/scoring sections changed |
 | `sn28:readme_task_diff:3988d29ccf7e7016` | 28 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:b0837afa350cd1d5` | 88 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn88 README task/scoring sections changed |
+| `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-07T22:20:36Z, block 9457195
+# ALARMS - generated 2026-11-08T01:41:45Z, block 9458201
 
-window: first_seen in [2026-11-07T21:06:04Z, 2026-11-07T22:21:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-08T00:27:10Z, 2026-11-08T01:42:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,23 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-11-07T20:20:23Z` | 71 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn71 commit touches scoring: Integrate current training permission metadata before verified release |
-| `sn90:release:v1.3.6: feat(subnet): show Chutes median` | 90 | RELEASE | P1 | 2026-11-07T22:21:04Z | sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard |
-| `sn90:scoring_commit:2026-11-07T20:14:43Z` | 90 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5 |
-| `sn127:scoring_commit:2026-11-07T20:18:51Z` | 127 | SCORING_COMMIT | P1 | 2026-11-07T22:21:04Z | sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier |
+| `sn76:burn_drop:0.984` | 76 | BURN_DROP | P0 | 2026-11-08T01:42:10Z | sn76 burn fell 0.992 -> 0.984 - miners can earn again |
+| `sn126:burn_drop:0.985` | 126 | BURN_DROP | P0 | 2026-11-08T01:42:10Z | sn126 burn fell 1.000 -> 0.985 - miners can earn again |
+| `sn17:release:witness-gateway-disconnect-20261108` | 17 | RELEASE | P1 | 2026-11-08T01:42:10Z | sn17 released witness-gateway-disconnect-20261108 |
+| `sn90:release:v1.4.1: feat(pricing): lower three-provi` | 90 | RELEASE | P1 | 2026-11-08T01:42:10Z | sn90 released v1.4.1: feat(pricing): lower three-provider markup to five percent |
+| `sn116:scoring_commit:2026-11-07T21:44:08Z` | 116 | SCORING_COMMIT | P1 | 2026-11-08T01:42:10Z | sn116 commit touches scoring: Held-contender view, miner side: signed feedback v5 + one plain line |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-11-07T20:20:23Z`** - sn71 commit touches scoring: Integrate current training permission metadata before verified release
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:release:v1.3.6: feat(subnet): show Chutes median`** - sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard
-  - published 2026-11-07T22:12:25Z (was v1.3.4)
-- **`sn90:scoring_commit:2026-11-07T20:14:43Z`** - sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:scoring_commit:2026-11-07T20:18:51Z`** - sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier
+- **`sn76:burn_drop:0.984`** - sn76 burn fell 0.992 -> 0.984 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn126:burn_drop:0.985`** - sn126 burn fell 1.000 -> 0.985 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn17:release:witness-gateway-disconnect-20261108`** - sn17 released witness-gateway-disconnect-20261108
+  - published 2026-11-08T00:48:12Z (was witness-client-v0.2.18)
+- **`sn90:release:v1.4.1: feat(pricing): lower three-provi`** - sn90 released v1.4.1: feat(pricing): lower three-provider markup to five percent
+  - published 2026-11-08T01:35:54Z (was v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard)
+- **`sn116:scoring_commit:2026-11-07T21:44:08Z`** - sn116 commit touches scoring: Held-contender view, miner side: signed feedback v5 + one plain line
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -42,8 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
 | `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
-| `sn15:release:v3.0.7` | 15 | RELEASE | 2026-11-01T00:27:23Z | sn15 released v3.0.7 |
-| `sn66:release:v2026.10.31.2` | 66 | RELEASE | 2026-11-01T00:27:23Z | sn66 released v2026.10.31.2 |
 | `sn11:release:v0.7.7` | 11 | RELEASE | 2026-11-01T06:44:04Z | sn11 released v0.7.7 |
 | `sn11:scoring_commit:2026-11-01T04:20:23Z` | 11 | SCORING_COMMIT | 2026-11-01T06:44:04Z | sn11 commit touches scoring: [coding-agent] bump validator version to 0.7.7 (#345) |
 | `sn81:scoring_commit:2026-11-01T05:43:16Z` | 81 | SCORING_COMMIT | 2026-11-01T06:44:04Z | sn81 commit touches scoring: Merge pull request #435 from reliquadotai/feat/job-verification-params |
@@ -224,6 +225,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn66:release:v2026.11.07` | 66 | RELEASE | 2026-11-07T18:42:57Z | sn66 released v2026.11.07 |
 | `sn71:scoring_commit:2026-11-07T13:44:22Z` | 71 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates |
 | `sn116:scoring_commit:2026-11-07T14:54:24Z` | 116 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes |
+| `sn71:scoring_commit:2026-11-07T20:20:23Z` | 71 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn71 commit touches scoring: Integrate current training permission metadata before verified release |
+| `sn90:release:v1.3.6: feat(subnet): show Chutes median` | 90 | RELEASE | 2026-11-07T22:21:04Z | sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard |
+| `sn90:scoring_commit:2026-11-07T20:14:43Z` | 90 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5 |
+| `sn127:scoring_commit:2026-11-07T20:18:51Z` | 127 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |

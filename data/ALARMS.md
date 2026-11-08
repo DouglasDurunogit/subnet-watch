@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-08T08:00:49Z, block 9460096
+# ALARMS - generated 2026-11-08T15:04:50Z, block 9462216
 
-window: first_seen in [2026-11-08T06:46:16Z, 2026-11-08T08:01:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-08T13:50:15Z, 2026-11-08T15:05:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn17:release:witness-gateway-fence-poll-20261108` | 17 | RELEASE | P1 | 2026-11-08T08:01:16Z | sn17 released witness-gateway-fence-poll-20261108 |
-| `sn71:scoring_commit:2026-11-08T04:41:42Z` | 71 | SCORING_COMMIT | P1 | 2026-11-08T08:01:16Z | sn71 commit touches scoring: Verify delegated admission deferral in replacement readiness |
+| `sn11:release:v0.7.8` | 11 | RELEASE | P1 | 2026-11-08T15:05:15Z | sn11 released v0.7.8 |
+| `sn11:scoring_commit:2026-11-08T10:30:24Z` | 11 | SCORING_COMMIT | P1 | 2026-11-08T15:05:15Z | sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347) |
 
 ### detail
 
-- **`sn17:release:witness-gateway-fence-poll-20261108`** - sn17 released witness-gateway-fence-poll-20261108
-  - published 2026-11-08T02:02:28Z (was witness-gateway-disconnect-20261108)
-- **`sn71:scoring_commit:2026-11-08T04:41:42Z`** - sn71 commit touches scoring: Verify delegated admission deferral in replacement readiness
+- **`sn11:release:v0.7.8`** - sn11 released v0.7.8
+  - published 2026-11-08T10:30:27Z (was v0.7.7)
+- **`sn11:scoring_commit:2026-11-08T10:30:24Z`** - sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.990` | 76 | BURN_DROP | 2026-11-01T13:50:47Z | sn76 burn fell 0.991 -> 0.990 - miners can earn again |
 | `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
 | `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
@@ -38,12 +37,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
 | `sn76:burn_drop:0.984` | 76 | BURN_DROP | 2026-11-08T01:42:10Z | sn76 burn fell 0.992 -> 0.984 - miners can earn again |
 | `sn126:burn_drop:0.985` | 126 | BURN_DROP | 2026-11-08T01:42:10Z | sn126 burn fell 1.000 -> 0.985 - miners can earn again |
-| `sn9:release:v4.14.0` | 9 | RELEASE | 2026-11-01T13:50:47Z | sn9 released v4.14.0 |
-| `sn28:release:v0.5.17-dev` | 28 | RELEASE | 2026-11-01T13:50:47Z | sn28 released v0.5.17-dev |
-| `sn91:scoring_commit:2026-11-01T12:26:46Z` | 91 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn91 commit touches scoring: Merge pull request #409 from TensorLink-AI/fix/init-bench-validator-s… |
-| `sn94:scoring_commit:2026-11-01T10:17:21Z` | 94 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn94 commit touches scoring: Remove stale miner box runbook and seedbox proof template (#341) |
-| `sn116:scoring_commit:2026-11-01T12:55:30Z` | 116 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn116 commit touches scoring: MINING.md: practice time limit wording per Validator (per-Challenge, … |
-| `sn120:scoring_commit:2026-11-01T13:06:32Z` | 120 | SCORING_COMMIT | 2026-11-01T13:50:47Z | sn120 commit touches scoring: bench tools: per-task MATH-500 cross-check vs calibrated runner |
 | `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
 | `sn117:release:everycli v0.8.4` | 117 | RELEASE | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
 | `sn11:scoring_commit:2026-11-01T22:44:28Z` | 11 | SCORING_COMMIT | 2026-11-01T22:45:13Z | sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346) |
@@ -222,6 +215,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn17:release:witness-gateway-disconnect-20261108` | 17 | RELEASE | 2026-11-08T01:42:10Z | sn17 released witness-gateway-disconnect-20261108 |
 | `sn90:release:v1.4.1: feat(pricing): lower three-provi` | 90 | RELEASE | 2026-11-08T01:42:10Z | sn90 released v1.4.1: feat(pricing): lower three-provider markup to five percent |
 | `sn116:scoring_commit:2026-11-07T21:44:08Z` | 116 | SCORING_COMMIT | 2026-11-08T01:42:10Z | sn116 commit touches scoring: Held-contender view, miner side: signed feedback v5 + one plain line |
+| `sn17:release:witness-gateway-fence-poll-20261108` | 17 | RELEASE | 2026-11-08T08:01:16Z | sn17 released witness-gateway-fence-poll-20261108 |
+| `sn71:scoring_commit:2026-11-08T04:41:42Z` | 71 | SCORING_COMMIT | 2026-11-08T08:01:16Z | sn71 commit touches scoring: Verify delegated admission deferral in replacement readiness |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |

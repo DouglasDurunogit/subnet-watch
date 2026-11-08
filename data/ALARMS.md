@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-08T15:04:50Z, block 9462216
+# ALARMS - generated 2026-11-08T19:38:04Z, block 9463578
 
-window: first_seen in [2026-11-08T13:50:15Z, 2026-11-08T15:05:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-08T18:23:31Z, 2026-11-08T19:38:31Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,15 +9,24 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn11:release:v0.7.8` | 11 | RELEASE | P1 | 2026-11-08T15:05:15Z | sn11 released v0.7.8 |
-| `sn11:scoring_commit:2026-11-08T10:30:24Z` | 11 | SCORING_COMMIT | P1 | 2026-11-08T15:05:15Z | sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347) |
+| `sn76:burn_drop:0.985` | 76 | BURN_DROP | P0 | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
+| `sn71:scoring_commit:2026-11-08T18:08:19Z` | 71 | SCORING_COMMIT | P1 | 2026-11-08T19:38:31Z | sn71 commit touches scoring: Verify full recovery function security on migration replay |
+| `sn90:release:v1.4.2` | 90 | RELEASE | P1 | 2026-11-08T19:38:31Z | sn90 released v1.4.2 |
+| `sn90:scoring_commit:2026-11-08T17:57:48Z` | 90 | SCORING_COMMIT | P1 | 2026-11-08T19:38:31Z | sn90 commit touches scoring: docs(subnet): consolidate miner node onboarding |
+| `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | P2 | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
 
 ### detail
 
-- **`sn11:release:v0.7.8`** - sn11 released v0.7.8
-  - published 2026-11-08T10:30:27Z (was v0.7.7)
-- **`sn11:scoring_commit:2026-11-08T10:30:24Z`** - sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347)
+- **`sn76:burn_drop:0.985`** - sn76 burn fell 0.996 -> 0.985 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn71:scoring_commit:2026-11-08T18:08:19Z`** - sn71 commit touches scoring: Verify full recovery function security on migration replay
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:release:v1.4.2`** - sn90 released v1.4.2
+  - published 2026-11-08T16:48:32Z (was v1.4.1: feat(pricing): lower three-provider markup to five percent)
+- **`sn90:scoring_commit:2026-11-08T17:57:48Z`** - sn90 commit touches scoring: docs(subnet): consolidate miner node onboarding
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:readme_task_diff:ddf545eb7067fc3b`** - sn90 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -37,8 +46,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:burn_drop:0.091` | 37 | BURN_DROP | 2026-11-07T07:02:35Z | sn37 burn fell 1.000 -> 0.091 - miners can earn again |
 | `sn76:burn_drop:0.984` | 76 | BURN_DROP | 2026-11-08T01:42:10Z | sn76 burn fell 0.992 -> 0.984 - miners can earn again |
 | `sn126:burn_drop:0.985` | 126 | BURN_DROP | 2026-11-08T01:42:10Z | sn126 burn fell 1.000 -> 0.985 - miners can earn again |
-| `sn116:scoring_commit:2026-11-01T15:36:00Z` | 116 | SCORING_COMMIT | 2026-11-01T18:53:08Z | sn116 commit touches scoring: GPU receipt worker: the per-task run directory is operator-only (0700) |
-| `sn117:release:everycli v0.8.4` | 117 | RELEASE | 2026-11-01T18:53:08Z | sn117 released everycli v0.8.4 |
 | `sn11:scoring_commit:2026-11-01T22:44:28Z` | 11 | SCORING_COMMIT | 2026-11-01T22:45:13Z | sn11 commit touches scoring: [coding-agent] remove automatic alpha burn from miner sample (#346) |
 | `sn28:release:v0.5.18` | 28 | RELEASE | 2026-11-01T22:45:13Z | sn28 released v0.5.18 |
 | `sn117:release:everycli v0.8.6` | 117 | RELEASE | 2026-11-01T22:45:13Z | sn117 released everycli v0.8.6 |
@@ -217,6 +224,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-07T21:44:08Z` | 116 | SCORING_COMMIT | 2026-11-08T01:42:10Z | sn116 commit touches scoring: Held-contender view, miner side: signed feedback v5 + one plain line |
 | `sn17:release:witness-gateway-fence-poll-20261108` | 17 | RELEASE | 2026-11-08T08:01:16Z | sn17 released witness-gateway-fence-poll-20261108 |
 | `sn71:scoring_commit:2026-11-08T04:41:42Z` | 71 | SCORING_COMMIT | 2026-11-08T08:01:16Z | sn71 commit touches scoring: Verify delegated admission deferral in replacement readiness |
+| `sn11:release:v0.7.8` | 11 | RELEASE | 2026-11-08T15:05:15Z | sn11 released v0.7.8 |
+| `sn11:scoring_commit:2026-11-08T10:30:24Z` | 11 | SCORING_COMMIT | 2026-11-08T15:05:15Z | sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347) |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |

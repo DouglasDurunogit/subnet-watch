@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-09T11:21:47Z, block 9468297
+# ALARMS - generated 2026-11-09T21:32:31Z, block 9471350
 
-window: first_seen in [2026-11-09T10:07:14Z, 2026-11-09T11:22:14Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-09T20:18:03Z, 2026-11-09T21:33:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,48 +9,53 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v3.0.8: feat(validator): report each epi` | 15 | RELEASE | P1 | 2026-11-09T11:22:14Z | sn15 released v3.0.8: feat(validator): report each episode's end reason and duration (#406) |
-| `sn51:release:watchtower-v1.2.1: DAH-5942 - docker_bui` | 51 | RELEASE | P1 | 2026-11-09T11:22:14Z | sn51 released watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive |
-| `sn51:scoring_commit:2026-11-09T09:10:49Z` | 51 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn51 commit touches scoring: DAH-5917 - [P2] Miner releases: create the GitHub release when a mine… |
-| `sn53:scoring_commit:2026-11-09T08:47:21Z` | 53 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn53 commit touches scoring: tee_miner: read KV load from sglang /v1/loads when /get_load is gone … |
-| `sn66:release:v2026.11.09` | 66 | RELEASE | P1 | 2026-11-09T11:22:14Z | sn66 released v2026.11.09 |
-| `sn67:scoring_commit:2026-11-09T07:00:28Z` | 67 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post1 |
-| `sn71:scoring_commit:2026-11-09T09:13:31Z` | 71 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn71 commit touches scoring: Allow the fixed reward clock failure label in telemetry |
-| `sn97:scoring_commit:2026-11-09T10:05:07Z` | 97 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn97 commit touches scoring: fix(miner): Fixed ty format |
-| `sn108:scoring_commit:2026-11-09T08:54:14Z` | 108 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn108 commit touches scoring: Neuron 1.0.5: a validator updated mid-evaluation waits for the run it… |
-| `sn127:scoring_commit:2026-11-09T04:08:30Z` | 127 | SCORING_COMMIT | P1 | 2026-11-09T11:22:14Z | sn127 commit touches scoring: Merge pull request #222 from ooo-hq/miner-delete-data |
-| `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | P2 | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
+| `sn121:burn_drop:0.646` | 121 | BURN_DROP | P0 | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
+| `sn127:burn_drop:0.960` | 127 | BURN_DROP | P0 | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
+| `sn28:release:v0.5.24` | 28 | RELEASE | P1 | 2026-11-09T21:33:03Z | sn28 released v0.5.24 |
+| `sn41:scoring_commit:2026-11-09T17:58:19Z` | 41 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn41 commit touches scoring: Using the validator gamma api call for the latest prices as proper pr… |
+| `sn51:scoring_commit:2026-11-09T13:43:37Z` | 51 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn51 commit touches scoring: DAH-6008 - [P0] validator: accept GB200 and pay it at the B200 rate a… |
+| `sn56:scoring_commit:2026-11-09T15:57:07Z` | 56 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn56 commit touches scoring: Route multi-GPU tasks to SXM/NVLink trainers only (#1424) |
+| `sn67:scoring_commit:2026-11-09T13:21:42Z` | 67 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post5 |
+| `sn71:scoring_commit:2026-11-09T19:23:33Z` | 71 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn71 commit touches scoring: Merge pull request #1160 from leadpoet/fix/verifier-tested-xxhash-ver… |
+| `sn116:scoring_commit:2026-11-09T07:06:50Z` | 116 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn116 commit touches scoring: Kit page Motor: Carbon Validator-Motor must-fixes (both back-EMF cell… |
+| `sn117:release:everycli v1.0.0` | 117 | RELEASE | P1 | 2026-11-09T21:33:03Z | sn117 released everycli v1.0.0 |
+| `sn117:scoring_commit:2026-11-09T12:31:12Z` | 117 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn117 commit touches scoring: test: verify Phala UI errors and await responsive layout |
+| `sn127:scoring_commit:2026-11-09T16:22:46Z` | 127 | SCORING_COMMIT | P1 | 2026-11-09T21:33:03Z | sn127 commit touches scoring: Merge pull request #225 from ooo-hq/miner-release-in-claim |
+| `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | P2 | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v3.0.8: feat(validator): report each epi`** - sn15 released v3.0.8: feat(validator): report each episode's end reason and duration (#406)
-  - published 2026-11-08T21:47:52Z (was v3.0.7)
-- **`sn51:release:watchtower-v1.2.1: DAH-5942 - docker_bui`** - sn51 released watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive
-  - published 2026-11-07T07:59:19Z (was executor-v1.172)
-- **`sn51:scoring_commit:2026-11-09T09:10:49Z`** - sn51 commit touches scoring: DAH-5917 - [P2] Miner releases: create the GitHub release when a mine…
+- **`sn121:burn_drop:0.646`** - sn121 burn fell 1.000 -> 0.646 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn127:burn_drop:0.960`** - sn127 burn fell 1.000 -> 0.960 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn28:release:v0.5.24`** - sn28 released v0.5.24
+  - published 2026-11-09T21:24:34Z (was v0.5.22)
+- **`sn41:scoring_commit:2026-11-09T17:58:19Z`** - sn41 commit touches scoring: Using the validator gamma api call for the latest prices as proper pr…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-11-09T08:47:21Z`** - sn53 commit touches scoring: tee_miner: read KV load from sglang /v1/loads when /get_load is gone …
+- **`sn51:scoring_commit:2026-11-09T13:43:37Z`** - sn51 commit touches scoring: DAH-6008 - [P0] validator: accept GB200 and pay it at the B200 rate a…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.09`** - sn66 released v2026.11.09
-  - published 2026-11-09T03:50:03Z (was v2026.11.07)
-- **`sn67:scoring_commit:2026-11-09T07:00:28Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post1
+- **`sn56:scoring_commit:2026-11-09T15:57:07Z`** - sn56 commit touches scoring: Route multi-GPU tasks to SXM/NVLink trainers only (#1424)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-09T09:13:31Z`** - sn71 commit touches scoring: Allow the fixed reward clock failure label in telemetry
+- **`sn67:scoring_commit:2026-11-09T13:21:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post5
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn97:scoring_commit:2026-11-09T10:05:07Z`** - sn97 commit touches scoring: fix(miner): Fixed ty format
+- **`sn71:scoring_commit:2026-11-09T19:23:33Z`** - sn71 commit touches scoring: Merge pull request #1160 from leadpoet/fix/verifier-tested-xxhash-ver…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-11-09T08:54:14Z`** - sn108 commit touches scoring: Neuron 1.0.5: a validator updated mid-evaluation waits for the run it…
+- **`sn116:scoring_commit:2026-11-09T07:06:50Z`** - sn116 commit touches scoring: Kit page Motor: Carbon Validator-Motor must-fixes (both back-EMF cell…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:scoring_commit:2026-11-09T04:08:30Z`** - sn127 commit touches scoring: Merge pull request #222 from ooo-hq/miner-delete-data
+- **`sn117:release:everycli v1.0.0`** - sn117 released everycli v1.0.0
+  - published 2026-11-09T14:04:08Z (was everycli v0.9.6)
+- **`sn117:scoring_commit:2026-11-09T12:31:12Z`** - sn117 commit touches scoring: test: verify Phala UI errors and await responsive layout
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn15:readme_task_diff:cf22c88e3fbbce23`** - sn15 README task/scoring sections changed
+- **`sn127:scoring_commit:2026-11-09T16:22:46Z`** - sn127 commit touches scoring: Merge pull request #225 from ooo-hq/miner-release-in-claim
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:readme_task_diff:833c1d2c18a944b2`** - sn117 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn31:burn_drop:0.000` | 31 | BURN_DROP | 2026-11-02T19:40:04Z | sn31 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
 | `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
 | `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
@@ -65,21 +70,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.984` | 76 | BURN_DROP | 2026-11-08T01:42:10Z | sn76 burn fell 0.992 -> 0.984 - miners can earn again |
 | `sn126:burn_drop:0.985` | 126 | BURN_DROP | 2026-11-08T01:42:10Z | sn126 burn fell 1.000 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
-| `sn1:release:v4.6.1` | 1 | RELEASE | 2026-11-02T19:40:04Z | sn1 released v4.6.1 |
-| `sn17:release:witness-diagnostics-20261102` | 17 | RELEASE | 2026-11-02T19:40:04Z | sn17 released witness-diagnostics-20261102 |
-| `sn21:scoring_commit:2026-11-02T14:33:30Z` | 21 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn21 commit touches scoring: docs: Performance Max campaigns in MINER_MODEL_SPEC (draft; dates to … |
-| `sn38:scoring_commit:2026-11-02T11:35:55Z` | 38 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn38 commit touches scoring: Update validator image in docker-compose.validator.yml to latest versi |
-| `sn51:release:lium-protocol-v2.1.0` | 51 | RELEASE | 2026-11-02T19:40:04Z | sn51 released lium-protocol-v2.1.0 |
-| `sn51:scoring_commit:2026-11-02T15:36:44Z` | 51 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn51 commit touches scoring: DAH-5327 - [P1] Validator re-sends the rm of a stuck filler so a cust… |
-| `sn56:scoring_commit:2026-11-02T16:14:51Z` | 56 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn56 commit touches scoring: Fix the challenger dependency review module name so the validator can… |
-| `sn66:release:v2026.11.02.3` | 66 | RELEASE | 2026-11-02T19:40:04Z | sn66 released v2026.11.02.3 |
-| `sn67:scoring_commit:2026-11-02T12:42:16Z` | 67 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261102.post3 |
-| `sn71:scoring_commit:2026-11-02T11:14:11Z` | 71 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn71 commit touches scoring: Attribute provider telemetry to validated requested models |
-| `sn81:scoring_commit:2026-11-02T10:33:52Z` | 81 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn81 commit touches scoring: feat: add retail video training inference and evaluation |
-| `sn89:scoring_commit:2026-11-02T12:59:18Z` | 89 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn89 commit touches scoring: Agent scoreboard: per-algo breakdown with owner nicknames |
-| `sn116:scoring_commit:2026-11-02T16:02:57Z` | 116 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn116 commit touches scoring: Miner text: a stage conflict after a receiver update may mean nothing… |
-| `sn117:release:everycli v0.9.1` | 117 | RELEASE | 2026-11-02T19:40:04Z | sn117 released everycli v0.9.1 |
-| `sn120:scoring_commit:2026-11-02T16:52:47Z` | 120 | SCORING_COMMIT | 2026-11-02T19:40:04Z | sn120 commit touches scoring: SN120 task cap 12K (Jacob pt1084u, 2026-11-02 10:25 CR: move the task… |
 | `sn25:scoring_commit:2026-11-02T22:54:33Z` | 25 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn25 commit touches scoring: Document audited evaluator recovery metadata |
 | `sn34:scoring_commit:2026-11-02T21:29:37Z` | 34 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn34 commit touches scoring: docs: use pack versions in miner scoring guidance |
 | `sn91:scoring_commit:2026-11-03T00:59:04Z` | 91 | SCORING_COMMIT | 2026-11-03T01:50:43Z | sn91 commit touches scoring: feat(funding): miner-set total budget per submission (--max-total-spen |
@@ -239,8 +229,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn34:scoring_commit:2026-11-09T00:20:00Z` | 34 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn34 commit touches scoring: Remove grader versions from prepared tasks |
 | `sn71:scoring_commit:2026-11-09T02:03:21Z` | 71 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn71 commit touches scoring: Merge pull request #1136 from leadpoet/fix/arena-verifier-accuracy-re… |
 | `sn116:scoring_commit:2026-11-08T02:06:53Z` | 116 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn116 commit touches scoring: Door chain reader: an uncollected SDK session-task failure is one typ… |
-| `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
-| `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
+| `sn15:release:v3.0.8: feat(validator): report each epi` | 15 | RELEASE | 2026-11-09T11:22:14Z | sn15 released v3.0.8: feat(validator): report each episode's end reason and duration (#406) |
+| `sn51:release:watchtower-v1.2.1: DAH-5942 - docker_bui` | 51 | RELEASE | 2026-11-09T11:22:14Z | sn51 released watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive |
+| `sn51:scoring_commit:2026-11-09T09:10:49Z` | 51 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn51 commit touches scoring: DAH-5917 - [P2] Miner releases: create the GitHub release when a mine… |
+| `sn53:scoring_commit:2026-11-09T08:47:21Z` | 53 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn53 commit touches scoring: tee_miner: read KV load from sglang /v1/loads when /get_load is gone … |
+| `sn66:release:v2026.11.09` | 66 | RELEASE | 2026-11-09T11:22:14Z | sn66 released v2026.11.09 |
+| `sn67:scoring_commit:2026-11-09T07:00:28Z` | 67 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post1 |
+| `sn71:scoring_commit:2026-11-09T09:13:31Z` | 71 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn71 commit touches scoring: Allow the fixed reward clock failure label in telemetry |
+| `sn97:scoring_commit:2026-11-09T10:05:07Z` | 97 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn97 commit touches scoring: fix(miner): Fixed ty format |
+| `sn108:scoring_commit:2026-11-09T08:54:14Z` | 108 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn108 commit touches scoring: Neuron 1.0.5: a validator updated mid-evaluation waits for the run it… |
+| `sn127:scoring_commit:2026-11-09T04:08:30Z` | 127 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn127 commit touches scoring: Merge pull request #222 from ooo-hq/miner-delete-data |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |
 | `sn117:readme_task_diff:1f25c890c0113301` | 117 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn117 README task/scoring sections changed |
 | `sn28:readme_task_diff:359c18a4bfd66b7f` | 28 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn28 README task/scoring sections changed |
@@ -261,6 +259,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
 | `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
 | `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
+| `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

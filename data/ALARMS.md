@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-08T23:11:01Z, block 9464643
+# ALARMS - generated 2026-11-09T02:52:04Z, block 9465748
 
-window: first_seen in [2026-11-08T21:56:26Z, 2026-11-08T23:11:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-09T01:37:26Z, 2026-11-09T02:52:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,14 +9,17 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-11-08T21:47:52Z` | 15 | SCORING_COMMIT | P1 | 2026-11-08T23:11:26Z | sn15 commit touches scoring: feat(validator): report each episode's end reason and duration (#406) |
-| `sn71:scoring_commit:2026-11-08T20:35:21Z` | 71 | SCORING_COMMIT | P1 | 2026-11-08T23:11:26Z | sn71 commit touches scoring: Merge pull request #1132 from leadpoet/fix/arena-provider-child-score… |
+| `sn34:scoring_commit:2026-11-09T00:20:00Z` | 34 | SCORING_COMMIT | P1 | 2026-11-09T02:52:26Z | sn34 commit touches scoring: Remove grader versions from prepared tasks |
+| `sn71:scoring_commit:2026-11-09T02:03:21Z` | 71 | SCORING_COMMIT | P1 | 2026-11-09T02:52:26Z | sn71 commit touches scoring: Merge pull request #1136 from leadpoet/fix/arena-verifier-accuracy-re… |
+| `sn116:scoring_commit:2026-11-08T02:06:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-09T02:52:26Z | sn116 commit touches scoring: Door chain reader: an uncollected SDK session-task failure is one typ… |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-11-08T21:47:52Z`** - sn15 commit touches scoring: feat(validator): report each episode's end reason and duration (#406)
+- **`sn34:scoring_commit:2026-11-09T00:20:00Z`** - sn34 commit touches scoring: Remove grader versions from prepared tasks
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-08T20:35:21Z`** - sn71 commit touches scoring: Merge pull request #1132 from leadpoet/fix/arena-provider-child-score…
+- **`sn71:scoring_commit:2026-11-09T02:03:21Z`** - sn71 commit touches scoring: Merge pull request #1136 from leadpoet/fix/arena-verifier-accuracy-re…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-08T02:06:53Z`** - sn116 commit touches scoring: Door chain reader: an uncollected SDK session-task failure is one typ…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -38,8 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.984` | 76 | BURN_DROP | 2026-11-08T01:42:10Z | sn76 burn fell 0.992 -> 0.984 - miners can earn again |
 | `sn126:burn_drop:0.985` | 126 | BURN_DROP | 2026-11-08T01:42:10Z | sn126 burn fell 1.000 -> 0.985 - miners can earn again |
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
-| `sn117:release:Merge pull request #57: everycli v0.8.7 ` | 117 | RELEASE | 2026-11-02T01:55:13Z | sn117 released Merge pull request #57: everycli v0.8.7 UI reliability |
-| `sn120:scoring_commit:2026-11-02T00:27:39Z` | 120 | SCORING_COMMIT | 2026-11-02T01:55:13Z | sn120 commit touches scoring: bench site: Avg is the first score column (right after Model), divide… |
 | `sn17:release:renderer-client-v0.1.4` | 17 | RELEASE | 2026-11-02T09:22:38Z | sn17 released renderer-client-v0.1.4 |
 | `sn51:release:lium-protocol-v2.0.0` | 51 | RELEASE | 2026-11-02T09:22:38Z | sn51 released lium-protocol-v2.0.0 |
 | `sn51:scoring_commit:2026-11-02T08:40:07Z` | 51 | SCORING_COMMIT | 2026-11-02T09:22:38Z | sn51 commit touches scoring: DAH-5329 - [P1] Validator: fail CC B200/B300 nodes below NVIDIA's R59… |
@@ -218,6 +219,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-08T18:08:19Z` | 71 | SCORING_COMMIT | 2026-11-08T19:38:31Z | sn71 commit touches scoring: Verify full recovery function security on migration replay |
 | `sn90:release:v1.4.2` | 90 | RELEASE | 2026-11-08T19:38:31Z | sn90 released v1.4.2 |
 | `sn90:scoring_commit:2026-11-08T17:57:48Z` | 90 | SCORING_COMMIT | 2026-11-08T19:38:31Z | sn90 commit touches scoring: docs(subnet): consolidate miner node onboarding |
+| `sn15:scoring_commit:2026-11-08T21:47:52Z` | 15 | SCORING_COMMIT | 2026-11-08T23:11:26Z | sn15 commit touches scoring: feat(validator): report each episode's end reason and duration (#406) |
+| `sn71:scoring_commit:2026-11-08T20:35:21Z` | 71 | SCORING_COMMIT | 2026-11-08T23:11:26Z | sn71 commit touches scoring: Merge pull request #1132 from leadpoet/fix/arena-provider-child-score… |
 | `sn17:readme_task_diff:8c892da1ead4dfc7` | 17 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn17 README task/scoring sections changed |
 | `sn117:readme_task_diff:9d04ab2709490011` | 117 | README_TASK_DIFF | 2026-11-02T19:40:04Z | sn117 README task/scoring sections changed |
 | `sn48:readme_task_diff:9f1b0dd706840592` | 48 | README_TASK_DIFF | 2026-11-03T01:50:43Z | sn48 README task/scoring sections changed |

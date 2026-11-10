@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-10T03:50:32Z, block 9473240
+# ALARMS - generated 2026-11-10T12:30:49Z, block 9475842
 
-window: first_seen in [2026-11-10T02:35:58Z, 2026-11-10T03:50:58Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-10T11:16:16Z, 2026-11-10T12:31:16Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,49 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-11-10T02:15:07Z` | 15 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn15 commit touches scoring: docs: tag oroagents.com links in the miner and validator guides for a… |
-| `sn36:scoring_commit:2026-11-10T02:29:05Z` | 36 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn36 commit touches scoring: Validator: GPUs with a UUID nvidia-smi would not give are not counted… |
-| `sn51:release:executor-v1.173` | 51 | RELEASE | P1 | 2026-11-10T03:50:58Z | sn51 released executor-v1.173 |
-| `sn66:release:v2026.11.10` | 66 | RELEASE | P1 | 2026-11-10T03:50:58Z | sn66 released v2026.11.10 |
-| `sn70:release:build-v2026.11.10: Merge pull request #1` | 70 | RELEASE | P1 | 2026-11-10T03:50:58Z | sn70 released build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2 |
-| `sn70:scoring_commit:2026-11-10T02:28:32Z` | 70 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn70 commit touches scoring: validator: only a head hash can count as a commitment |
-| `sn71:scoring_commit:2026-11-10T00:19:25Z` | 71 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn71 commit touches scoring: Keep historical publication proofs on their frozen reward economics |
-| `sn91:scoring_commit:2026-11-10T02:09:26Z` | 91 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn91 commit touches scoring: fix(validator): keep private-eval checkpoints on the GPU host, sha256… |
-| `sn127:scoring_commit:2026-11-09T23:53:44Z` | 127 | SCORING_COMMIT | P1 | 2026-11-10T03:50:58Z | sn127 commit touches scoring: Merge pull request #229 from ooo-hq/docs-pass-miners |
-| `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | P2 | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
-| `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | P2 | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |
+| `sn51:release:miner-v1.012` | 51 | RELEASE | P1 | 2026-11-10T12:31:16Z | sn51 released miner-v1.012 |
+| `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
+| `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
+| `sn71:scoring_commit:2026-11-10T08:22:18Z` | 71 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native… |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-11-10T02:15:07Z`** - sn15 commit touches scoring: docs: tag oroagents.com links in the miner and validator guides for a…
+- **`sn51:release:miner-v1.012`** - sn51 released miner-v1.012
+  - published 2026-11-10T07:39:14Z (was executor-v1.173)
+- **`sn51:scoring_commit:2026-11-10T11:34:23Z`** - sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn36:scoring_commit:2026-11-10T02:29:05Z`** - sn36 commit touches scoring: Validator: GPUs with a UUID nvidia-smi would not give are not counted…
+- **`sn67:scoring_commit:2026-11-09T15:21:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.173`** - sn51 released executor-v1.173
-  - published 2026-11-10T03:39:34Z (was watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive)
-- **`sn66:release:v2026.11.10`** - sn66 released v2026.11.10
-  - published 2026-11-10T03:27:05Z (was v2026.11.09)
-- **`sn70:release:build-v2026.11.10: Merge pull request #1`** - sn70 released build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2
-  - published 2026-11-10T02:47:17Z (was image-v2026.11.05b)
-- **`sn70:scoring_commit:2026-11-10T02:28:32Z`** - sn70 commit touches scoring: validator: only a head hash can count as a commitment
+- **`sn71:scoring_commit:2026-11-10T08:22:18Z`** - sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-10T00:19:25Z`** - sn71 commit touches scoring: Keep historical publication proofs on their frozen reward economics
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-10T02:09:26Z`** - sn91 commit touches scoring: fix(validator): keep private-eval checkpoints on the GPU host, sha256…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:scoring_commit:2026-11-09T23:53:44Z`** - sn127 commit touches scoring: Merge pull request #229 from ooo-hq/docs-pass-miners
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:readme_task_diff:7e6dcc00df19b743`** - sn70 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn127:readme_task_diff:1fb144e0f2f9b150`** - sn127 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn24:burn_drop:0.031` | 24 | BURN_DROP | 2026-11-03T09:27:38Z | sn24 burn fell 1.000 -> 0.031 - miners can earn again |
-| `sn76:burn_drop:0.972` | 76 | BURN_DROP | 2026-11-03T09:27:38Z | sn76 burn fell 0.997 -> 0.972 - miners can earn again |
 | `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
 | `sn70:burn_drop:0.101` | 70 | BURN_DROP | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
@@ -66,12 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
-| `sn51:release:lium-protocol-v2.4.0` | 51 | RELEASE | 2026-11-03T09:27:38Z | sn51 released lium-protocol-v2.4.0 |
-| `sn51:scoring_commit:2026-11-03T09:04:18Z` | 51 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn51 commit touches scoring: DAH-5372 - [P1] VerifyX: fail a node whose upload EMA is below 10 Mbp… |
-| `sn71:scoring_commit:2026-11-03T06:56:37Z` | 71 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn71 commit touches scoring: Hold November 3 scoring until improved verifier is live (#980) |
-| `sn81:scoring_commit:2026-11-03T09:09:32Z` | 81 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn81 commit touches scoring: Merge pull request #445 from reliquadotai/fix/evaluation-runner-versio |
-| `sn91:scoring_commit:2026-11-03T06:36:56Z` | 91 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn91 commit touches scoring: fix(money): miner spend per RENT, not per reused pod name; make-good … |
-| `sn116:scoring_commit:2026-11-03T03:36:57Z` | 116 | SCORING_COMMIT | 2026-11-03T09:27:38Z | sn116 commit touches scoring: Crown origin rebind tests: the cancel request names a real ChallengeKe |
 | `sn1:release:v4.6.3` | 1 | RELEASE | 2026-11-03T17:17:02Z | sn1 released v4.6.3 |
 | `sn21:release:SN21 training data v6 (windows 15 Aug - ` | 21 | RELEASE | 2026-11-03T17:17:02Z | sn21 released SN21 training data v6 (windows 15 Aug - 20 Sep 2026) |
 | `sn51:release:miner-v1.011` | 51 | RELEASE | 2026-11-03T17:17:02Z | sn51 released miner-v1.011 |
@@ -239,6 +210,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:release:everycli v1.0.0` | 117 | RELEASE | 2026-11-09T21:33:03Z | sn117 released everycli v1.0.0 |
 | `sn117:scoring_commit:2026-11-09T12:31:12Z` | 117 | SCORING_COMMIT | 2026-11-09T21:33:03Z | sn117 commit touches scoring: test: verify Phala UI errors and await responsive layout |
 | `sn127:scoring_commit:2026-11-09T16:22:46Z` | 127 | SCORING_COMMIT | 2026-11-09T21:33:03Z | sn127 commit touches scoring: Merge pull request #225 from ooo-hq/miner-release-in-claim |
+| `sn15:scoring_commit:2026-11-10T02:15:07Z` | 15 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn15 commit touches scoring: docs: tag oroagents.com links in the miner and validator guides for a… |
+| `sn36:scoring_commit:2026-11-10T02:29:05Z` | 36 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn36 commit touches scoring: Validator: GPUs with a UUID nvidia-smi would not give are not counted… |
+| `sn51:release:executor-v1.173` | 51 | RELEASE | 2026-11-10T03:50:58Z | sn51 released executor-v1.173 |
+| `sn66:release:v2026.11.10` | 66 | RELEASE | 2026-11-10T03:50:58Z | sn66 released v2026.11.10 |
+| `sn70:release:build-v2026.11.10: Merge pull request #1` | 70 | RELEASE | 2026-11-10T03:50:58Z | sn70 released build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2 |
+| `sn70:scoring_commit:2026-11-10T02:28:32Z` | 70 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn70 commit touches scoring: validator: only a head hash can count as a commitment |
+| `sn71:scoring_commit:2026-11-10T00:19:25Z` | 71 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn71 commit touches scoring: Keep historical publication proofs on their frozen reward economics |
+| `sn91:scoring_commit:2026-11-10T02:09:26Z` | 91 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn91 commit touches scoring: fix(validator): keep private-eval checkpoints on the GPU host, sha256… |
+| `sn127:scoring_commit:2026-11-09T23:53:44Z` | 127 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn127 commit touches scoring: Merge pull request #229 from ooo-hq/docs-pass-miners |
 | `sn28:readme_task_diff:359c18a4bfd66b7f` | 28 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn28 README task/scoring sections changed |
 | `sn127:readme_task_diff:3849c8ce33ebd107` | 127 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn127 README task/scoring sections changed |
 | `sn78:readme_task_diff:905be9e940ec4dea` | 78 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn78 README task/scoring sections changed |
@@ -259,6 +239,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
+| `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
+| `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

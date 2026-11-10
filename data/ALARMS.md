@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-10T12:30:49Z, block 9475842
+# ALARMS - generated 2026-11-10T20:01:50Z, block 9478097
 
-window: first_seen in [2026-11-10T11:16:16Z, 2026-11-10T12:31:16Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-10T18:47:20Z, 2026-11-10T20:02:20Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,45 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:release:miner-v1.012` | 51 | RELEASE | P1 | 2026-11-10T12:31:16Z | sn51 released miner-v1.012 |
-| `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
-| `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
-| `sn71:scoring_commit:2026-11-10T08:22:18Z` | 71 | SCORING_COMMIT | P1 | 2026-11-10T12:31:16Z | sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native… |
+| `sn3:scoring_commit:2026-11-10T12:44:11Z` | 3 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… |
+| `sn12:release:miner-staging-2026-11-10-42883644919-432` | 12 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862) |
+| `sn66:release:v2026.11.10.2` | 66 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn66 released v2026.11.10.2 |
+| `sn70:scoring_commit:2026-11-10T16:23:25Z` | 70 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn70 commit touches scoring: Merge pull request #188 from fugal-ai/docs/miner-guide-v2-on-main |
+| `sn71:scoring_commit:2026-11-10T16:56:50Z` | 71 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn71 commit touches scoring: Verify composed evidence prompts without fixed message offsets |
+| `sn108:scoring_commit:2026-11-10T17:27:04Z` | 108 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn108 commit touches scoring: Neuron 1.0.7: miner_cli.py withdraw and replace pick, by default, onl… |
+| `sn116:scoring_commit:2026-11-10T13:33:08Z` | 116 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn116 commit touches scoring: Updates: the lost-task re-queued uploads take the owner's (a): submit… |
+| `sn117:release:everycli v1.1.0` | 117 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn117 released everycli v1.1.0 |
+| `sn124:scoring_commit:2026-11-10T16:24:24Z` | 124 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie… |
+| `sn127:scoring_commit:2026-11-10T19:00:30Z` | 127 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first |
+| `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | P2 | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
+| `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | P2 | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
 
 ### detail
 
-- **`sn51:release:miner-v1.012`** - sn51 released miner-v1.012
-  - published 2026-11-10T07:39:14Z (was executor-v1.173)
-- **`sn51:scoring_commit:2026-11-10T11:34:23Z`** - sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp…
+- **`sn3:scoring_commit:2026-11-10T12:44:11Z`** - sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-09T15:21:32Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7
+- **`sn12:release:miner-staging-2026-11-10-42883644919-432`** - sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862)
+  - published 2026-11-10T19:16:41Z (was sdk-v0.0.20: feat: local executor and local bind mount volumes (#861))
+- **`sn66:release:v2026.11.10.2`** - sn66 released v2026.11.10.2
+  - published 2026-11-10T15:30:51Z (was v2026.11.10)
+- **`sn70:scoring_commit:2026-11-10T16:23:25Z`** - sn70 commit touches scoring: Merge pull request #188 from fugal-ai/docs/miner-guide-v2-on-main
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-10T08:22:18Z`** - sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native…
+- **`sn71:scoring_commit:2026-11-10T16:56:50Z`** - sn71 commit touches scoring: Verify composed evidence prompts without fixed message offsets
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn108:scoring_commit:2026-11-10T17:27:04Z`** - sn108 commit touches scoring: Neuron 1.0.7: miner_cli.py withdraw and replace pick, by default, onl…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-10T13:33:08Z`** - sn116 commit touches scoring: Updates: the lost-task re-queued uploads take the owner's (a): submit…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v1.1.0`** - sn117 released everycli v1.1.0
+  - published 2026-11-10T14:13:32Z (was everycli v1.0.0)
+- **`sn124:scoring_commit:2026-11-10T16:24:24Z`** - sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn127:scoring_commit:2026-11-10T19:00:30Z`** - sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:readme_task_diff:5e2cfc5911b6cfb7`** - sn117 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn124:readme_task_diff:ed4d53fe1d12dcb7`** - sn124 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -43,23 +67,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
-| `sn1:release:v4.6.3` | 1 | RELEASE | 2026-11-03T17:17:02Z | sn1 released v4.6.3 |
-| `sn21:release:SN21 training data v6 (windows 15 Aug - ` | 21 | RELEASE | 2026-11-03T17:17:02Z | sn21 released SN21 training data v6 (windows 15 Aug - 20 Sep 2026) |
-| `sn51:release:miner-v1.011` | 51 | RELEASE | 2026-11-03T17:17:02Z | sn51 released miner-v1.011 |
-| `sn51:scoring_commit:2026-11-03T16:15:58Z` | 51 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn51 commit touches scoring: DAH-5118 - [P1] Validator: flatten a many-layer image on the chosen n… |
-| `sn66:release:v2026.11.03` | 66 | RELEASE | 2026-11-03T17:17:02Z | sn66 released v2026.11.03 |
-| `sn66:scoring_commit:2026-11-03T13:57:07Z` | 66 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn66 commit touches scoring: fix: preserve the task-pool retirement active on production |
-| `sn67:scoring_commit:2026-11-02T13:14:16Z` | 67 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261102.post5 |
-| `sn71:scoring_commit:2026-11-03T14:33:51Z` | 71 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn71 commit touches scoring: Clarify both host validators required for target-denial repair |
-| `sn81:scoring_commit:2026-11-03T10:21:06Z` | 81 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn81 commit touches scoring: Retain comparison cells for independent estimator verification |
-| `sn90:release:v1.3.4` | 90 | RELEASE | 2026-11-03T17:17:02Z | sn90 released v1.3.4 |
-| `sn90:scoring_commit:2026-11-03T11:46:03Z` | 90 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn90 commit touches scoring: fix(validator): gate scoring on node heartbeat freshness + cluster he… |
-| `sn91:scoring_commit:2026-11-03T09:33:02Z` | 91 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn91 commit touches scoring: perf(validator): stream private-eval forecast samples instead of hold… |
-| `sn111:scoring_commit:2026-11-01T02:14:20Z` | 111 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn111 commit touches scoring: Match competition validation to mainnet harness and limits |
-| `sn114:scoring_commit:2026-11-03T09:38:54Z` | 114 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn114 commit touches scoring: Show reset validations as pending |
-| `sn116:scoring_commit:2026-11-03T15:19:27Z` | 116 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn116 commit touches scoring: Motor data kit: generate, parse, verify and practice score (kits/motor |
-| `sn117:release:everycli v0.9.6` | 117 | RELEASE | 2026-11-03T17:17:02Z | sn117 released everycli v0.9.6 |
-| `sn117:scoring_commit:2026-11-03T10:54:25Z` | 117 | SCORING_COMMIT | 2026-11-03T17:17:02Z | sn117 commit touches scoring: Fix BFL regional polling and preserve accepted task references |
 | `sn25:scoring_commit:2026-11-03T17:23:34Z` | 25 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix: a start authenticates only… |
 | `sn28:release:v0.5.19-dev` | 28 | RELEASE | 2026-11-03T22:27:15Z | sn28 released v0.5.19-dev |
 | `sn51:scoring_commit:2026-11-03T17:34:44Z` | 51 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreachable node as soon as its mi… |
@@ -219,8 +226,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-10T00:19:25Z` | 71 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn71 commit touches scoring: Keep historical publication proofs on their frozen reward economics |
 | `sn91:scoring_commit:2026-11-10T02:09:26Z` | 91 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn91 commit touches scoring: fix(validator): keep private-eval checkpoints on the GPU host, sha256… |
 | `sn127:scoring_commit:2026-11-09T23:53:44Z` | 127 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn127 commit touches scoring: Merge pull request #229 from ooo-hq/docs-pass-miners |
-| `sn28:readme_task_diff:359c18a4bfd66b7f` | 28 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn28 README task/scoring sections changed |
-| `sn127:readme_task_diff:3849c8ce33ebd107` | 127 | README_TASK_DIFF | 2026-11-03T17:17:02Z | sn127 README task/scoring sections changed |
+| `sn51:release:miner-v1.012` | 51 | RELEASE | 2026-11-10T12:31:16Z | sn51 released miner-v1.012 |
+| `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
+| `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
+| `sn71:scoring_commit:2026-11-10T08:22:18Z` | 71 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native… |
 | `sn78:readme_task_diff:905be9e940ec4dea` | 78 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn78 README task/scoring sections changed |
 | `sn82:readme_task_diff:08b2f7bf22367533` | 82 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn82 README task/scoring sections changed |
 | `sn127:readme_task_diff:501a9ff7ce421afb` | 127 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn127 README task/scoring sections changed |

@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-10T12:30:49Z  |  block: 9475842  |  row_status: ok
+snapshot_utc: 2026-11-10T20:01:50Z  |  block: 9478097  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (219.55999978044 USD), open=True
+- registration cost: 0.999999999 TAO (217.48999978251 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 10  |  free: 0
-- subnet age: 737.5 days  |  registered at block 4165565
+- subnet age: 737.9 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3375.408276975515** (uid 242) <- the only figure quotable as achievable
-- median_miner_usd_day: 1730.506333108052
-- top_miner_usd_day: 3375.408276975515 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3414.600952790726** (uid 242) <- the only figure quotable as achievable
+- median_miner_usd_day: 1707.1969094874833
+- top_miner_usd_day: 3414.600952790726 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 7  |  gini: 0.10547840683656351  |  top1_share: 0.2461010224324737  |  top10_share: 1.0
+- earners: 7  |  gini: 0.11226872289913081  |  top1_share: 0.2515680080575013  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-11-10T12:30:49Z  |  block: 9475842  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 5897 bytes, sha dfde648bae7a6468
+- README: 6003 bytes, sha 41ccbc4d80521129
 - latest release: (none) 
-- last commit: 2026-11-04T14:07:31Z
-- scoring-related commit: Set document evaluation lower bound to 2 tokens 2026-11-04T14:07:31Z
+- last commit: 2026-11-10T12:44:11Z
+- scoring-related commit: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… 2026-11-10T12:44:11Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1722.2872 USD/day  |  payback on registration: 0.13 days
+- net margin: 1698.9777 USD/day  |  payback on registration: 0.13 days
 
 ## Score
 
 - gate: **OK** 
-- score: 72.8 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 29.44 / freshness 35.0 / resource 11.25 / registration 9.96
-- freshness basis: SCORING_COMMIT 5.8d ago
+- score: 72.7 (rank 2), confidence 0.85 - hardware requirement unknown
+- components: income 29.38 / freshness 35.0 / resource 11.25 / registration 9.96
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -220,12 +220,14 @@ teutonic-miner status
 Miners can select `MAIN` or `MIX01`–`MIX06` with
 `teutonic-miner ready --competition MIX02` (also supported by `submit`). Omission
 selects MAIN. One ready submission per hotkey is shared across all competitions.
-Each competition uses an explicit category list, 20,000 windows, and 30M whole-document
-input tokens. Acceptance uses the whole mix's token-weighted bootstrap LCB.
+Each competition uses an explicit category list, zero windows, and a 70M-token
+whole-document input budget. PostgreSQL holds the active configuration; repository
+initialization defaults use the same budgets. Acceptance uses the whole mix's
+token-weighted bootstrap LCB.
 A kingless MIX challenges its fixed starting MAIN king using its own mix and threshold.
 The starting king is pinned once; later MAIN promotions do not move it. After its
 first win, the MIX challenges its own current king. `competitions.json` publishes
-the pinned model as `starting_king`.
-
-
+the pinned model as `starting_king`
 ```
+
+_(truncated at 6000 of 6003 chars - read the full file at https://github.com/unarbos/teutonic)_

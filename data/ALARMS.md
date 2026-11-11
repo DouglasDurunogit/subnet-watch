@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-11T00:36:45Z, block 9479471
+# ALARMS - generated 2026-11-11T07:13:56Z, block 9481457
 
-window: first_seen in [2026-11-10T23:22:10Z, 2026-11-11T00:37:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-11T05:59:22Z, 2026-11-11T07:14:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,45 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn2:scoring_commit:2026-11-10T21:17:39Z` | 2 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties |
-| `sn17:scoring_commit:2026-11-10T20:39:45Z` | 17 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94) |
-| `sn54:scoring_commit:2026-11-10T23:12:47Z` | 54 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn54 commit touches scoring: Validate validator requests and submission integrity (#126) |
-| `sn70:release:Fugal Subnet v0.3.1` | 70 | RELEASE | P1 | 2026-11-11T00:37:10Z | sn70 released Fugal Subnet v0.3.1 |
-| `sn71:scoring_commit:2026-11-10T20:51:26Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn71 commit touches scoring: Reserve replay network budget after local final validation |
-| `sn108:scoring_commit:2026-11-10T21:48:50Z` | 108 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be… |
-| `sn117:release:everycli v1.1.1` | 117 | RELEASE | P1 | 2026-11-11T00:37:10Z | sn117 released everycli v1.1.1 |
+| `sn108:burn_drop:0.823` | 108 | BURN_DROP | P0 | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
+| `sn36:scoring_commit:2026-11-11T06:08:30Z` | 36 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai… |
+| `sn45:scoring_commit:2026-11-08T21:20:02Z` | 45 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre… |
+| `sn51:scoring_commit:2026-11-11T06:51:21Z` | 51 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the… |
+| `sn62:release:v0.3.17` | 62 | RELEASE | P1 | 2026-11-11T07:14:22Z | sn62 released v0.3.17 |
+| `sn62:scoring_commit:2026-11-11T02:39:48Z` | 62 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size |
+| `sn71:scoring_commit:2026-11-11T05:08:55Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (… |
+| `sn81:scoring_commit:2026-11-11T06:46:42Z` | 81 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484) |
+| `sn116:scoring_commit:2026-11-11T01:09:19Z` | 116 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n… |
+| `sn127:release:Release ed8326b` | 127 | RELEASE | P1 | 2026-11-11T07:14:22Z | sn127 released Release ed8326b |
+| `sn127:scoring_commit:2026-11-11T04:16:42Z` | 127 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197) |
+| `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | P2 | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
 
 ### detail
 
-- **`sn2:scoring_commit:2026-11-10T21:17:39Z`** - sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties
+- **`sn108:burn_drop:0.823`** - sn108 burn fell 1.000 -> 0.823 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn36:scoring_commit:2026-11-11T06:08:30Z`** - sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn17:scoring_commit:2026-11-10T20:39:45Z`** - sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94)
+- **`sn45:scoring_commit:2026-11-08T21:20:02Z`** - sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn54:scoring_commit:2026-11-10T23:12:47Z`** - sn54 commit touches scoring: Validate validator requests and submission integrity (#126)
+- **`sn51:scoring_commit:2026-11-11T06:51:21Z`** - sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:release:Fugal Subnet v0.3.1`** - sn70 released Fugal Subnet v0.3.1
-  - published 2026-11-10T21:19:08Z (was build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2)
-- **`sn71:scoring_commit:2026-11-10T20:51:26Z`** - sn71 commit touches scoring: Reserve replay network budget after local final validation
+- **`sn62:release:v0.3.17`** - sn62 released v0.3.17
+  - published 2026-11-11T01:36:00Z (was v0.3.16)
+- **`sn62:scoring_commit:2026-11-11T02:39:48Z`** - sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-11-10T21:48:50Z`** - sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be…
+- **`sn71:scoring_commit:2026-11-11T05:08:55Z`** - sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.1.1`** - sn117 released everycli v1.1.1
-  - published 2026-11-10T22:59:47Z (was everycli v1.1.0)
+- **`sn81:scoring_commit:2026-11-11T06:46:42Z`** - sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-11T01:09:19Z`** - sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn127:release:Release ed8326b`** - sn127 released Release ed8326b
+  - published 2026-11-11T03:58:56Z (was Release f6eaff7)
+- **`sn127:scoring_commit:2026-11-11T04:16:42Z`** - sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:readme_task_diff:fd4904bbf0014ce9`** - sn81 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -51,8 +66,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
-| `sn70:scoring_commit:2026-11-04T02:05:25Z` | 70 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads |
-| `sn71:scoring_commit:2026-11-03T22:30:50Z` | 71 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final… |
 | `sn25:scoring_commit:2026-11-04T03:01:40Z` | 25 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn25 commit touches scoring: Merge fix/validator-tunnel-tls-timeout: a tunnel's TLS establishment … |
 | `sn28:release:v0.5.19` | 28 | RELEASE | 2026-11-04T09:56:37Z | sn28 released v0.5.19 |
 | `sn51:release:executor-v1.168` | 51 | RELEASE | 2026-11-04T09:56:37Z | sn51 released executor-v1.168 |
@@ -214,6 +227,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:release:everycli v1.1.0` | 117 | RELEASE | 2026-11-10T20:02:20Z | sn117 released everycli v1.1.0 |
 | `sn124:scoring_commit:2026-11-10T16:24:24Z` | 124 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie… |
 | `sn127:scoring_commit:2026-11-10T19:00:30Z` | 127 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first |
+| `sn2:scoring_commit:2026-11-10T21:17:39Z` | 2 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties |
+| `sn17:scoring_commit:2026-11-10T20:39:45Z` | 17 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94) |
+| `sn54:scoring_commit:2026-11-10T23:12:47Z` | 54 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn54 commit touches scoring: Validate validator requests and submission integrity (#126) |
+| `sn70:release:Fugal Subnet v0.3.1` | 70 | RELEASE | 2026-11-11T00:37:10Z | sn70 released Fugal Subnet v0.3.1 |
+| `sn71:scoring_commit:2026-11-10T20:51:26Z` | 71 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn71 commit touches scoring: Reserve replay network budget after local final validation |
+| `sn108:scoring_commit:2026-11-10T21:48:50Z` | 108 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be… |
+| `sn117:release:everycli v1.1.1` | 117 | RELEASE | 2026-11-11T00:37:10Z | sn117 released everycli v1.1.1 |
 | `sn37:readme_task_diff:b959b882769e8d45` | 37 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn37 README task/scoring sections changed |
 | `sn51:readme_task_diff:6c34bfe187921963` | 51 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn51 README task/scoring sections changed |
 | `sn67:readme_task_diff:d645efe7e4c8621a` | 67 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn67 README task/scoring sections changed |

@@ -1,20 +1,20 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-11-11T00:36:45Z  |  block: 9479471  |  row_status: ok
+snapshot_utc: 2026-11-11T07:13:56Z  |  block: 9481457  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (43.772000000000006 USD), open=True
+- registration cost: 0.2 TAO (43.45400000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 167  |  free: 0
-- subnet age: 869.4 days  |  registered at block 3219949
+- subnet age: 869.7 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 81.33610370220669** (uid 212) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.06310015803119215
-- top_miner_usd_day: 86.38411634470205 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 81.04259701741023** (uid 212) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.06287245695687373
+- top_miner_usd_day: 86.07239357396014 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-11-11T00:36:45Z  |  block: 9479471  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.1771 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.1773 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 84), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 85), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: WEIGHTS_VERSION_BUMP 18d ago
+- freshness basis: WEIGHTS_VERSION_BUMP 19d ago
 
 ## On-chain description
 

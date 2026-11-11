@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-11T07:13:56Z, block 9481457
+# ALARMS - generated 2026-11-11T15:29:56Z, block 9483937
 
-window: first_seen in [2026-11-11T05:59:22Z, 2026-11-11T07:14:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-11T14:15:25Z, 2026-11-11T15:30:25Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,41 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn108:burn_drop:0.823` | 108 | BURN_DROP | P0 | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
-| `sn36:scoring_commit:2026-11-11T06:08:30Z` | 36 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai… |
-| `sn45:scoring_commit:2026-11-08T21:20:02Z` | 45 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre… |
-| `sn51:scoring_commit:2026-11-11T06:51:21Z` | 51 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the… |
-| `sn62:release:v0.3.17` | 62 | RELEASE | P1 | 2026-11-11T07:14:22Z | sn62 released v0.3.17 |
-| `sn62:scoring_commit:2026-11-11T02:39:48Z` | 62 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size |
-| `sn71:scoring_commit:2026-11-11T05:08:55Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (… |
-| `sn81:scoring_commit:2026-11-11T06:46:42Z` | 81 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484) |
-| `sn116:scoring_commit:2026-11-11T01:09:19Z` | 116 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n… |
-| `sn127:release:Release ed8326b` | 127 | RELEASE | P1 | 2026-11-11T07:14:22Z | sn127 released Release ed8326b |
-| `sn127:scoring_commit:2026-11-11T04:16:42Z` | 127 | SCORING_COMMIT | P1 | 2026-11-11T07:14:22Z | sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197) |
-| `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | P2 | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
+| `sn76:burn_drop:0.983` | 76 | BURN_DROP | P0 | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
+| `sn17:release:Witness SDK 0.3.0` | 17 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn17 released Witness SDK 0.3.0 |
+| `sn17:scoring_commit:2026-11-11T14:24:20Z` | 17 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96) |
+| `sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht` | 51 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build |
+| `sn51:scoring_commit:2026-11-11T13:01:37Z` | 51 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2… |
+| `sn71:scoring_commit:2026-11-11T07:02:19Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe |
+| `sn81:scoring_commit:2026-11-11T09:18:01Z` | 81 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per… |
+| `sn117:release:everycli v1.1.3` | 117 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn117 released everycli v1.1.3 |
+| `sn117:scoring_commit:2026-11-11T11:12:58Z` | 117 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation |
 
 ### detail
 
-- **`sn108:burn_drop:0.823`** - sn108 burn fell 1.000 -> 0.823 - miners can earn again
+- **`sn76:burn_drop:0.983`** - sn76 burn fell 0.995 -> 0.983 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn36:scoring_commit:2026-11-11T06:08:30Z`** - sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai…
+- **`sn17:release:Witness SDK 0.3.0`** - sn17 released Witness SDK 0.3.0
+  - published 2026-11-11T11:06:48Z (was witness-gateway-fence-poll-20261108)
+- **`sn17:scoring_commit:2026-11-11T14:24:20Z`** - sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-11-08T21:20:02Z`** - sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre…
+- **`sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht`** - sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build
+  - published 2026-11-11T12:20:58Z (was miner-v1.012)
+- **`sn51:scoring_commit:2026-11-11T13:01:37Z`** - sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-11T06:51:21Z`** - sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the…
+- **`sn71:scoring_commit:2026-11-11T07:02:19Z`** - sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:release:v0.3.17`** - sn62 released v0.3.17
-  - published 2026-11-11T01:36:00Z (was v0.3.16)
-- **`sn62:scoring_commit:2026-11-11T02:39:48Z`** - sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size
+- **`sn81:scoring_commit:2026-11-11T09:18:01Z`** - sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-11T05:08:55Z`** - sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (…
+- **`sn117:release:everycli v1.1.3`** - sn117 released everycli v1.1.3
+  - published 2026-11-11T12:54:36Z (was everycli v1.1.1)
+- **`sn117:scoring_commit:2026-11-11T11:12:58Z`** - sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-11T06:46:42Z`** - sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-11T01:09:19Z`** - sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release ed8326b`** - sn127 released Release ed8326b
-  - published 2026-11-11T03:58:56Z (was Release f6eaff7)
-- **`sn127:scoring_commit:2026-11-11T04:16:42Z`** - sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:readme_task_diff:fd4904bbf0014ce9`** - sn81 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn70:burn_drop:0.101` | 70 | BURN_DROP | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
 | `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn127:burn_drop:0.872` | 127 | BURN_DROP | 2026-11-05T11:38:32Z | sn127 burn fell 0.990 -> 0.872 - miners can earn again |
@@ -66,16 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
-| `sn25:scoring_commit:2026-11-04T03:01:40Z` | 25 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn25 commit touches scoring: Merge fix/validator-tunnel-tls-timeout: a tunnel's TLS establishment … |
-| `sn28:release:v0.5.19` | 28 | RELEASE | 2026-11-04T09:56:37Z | sn28 released v0.5.19 |
-| `sn51:release:executor-v1.168` | 51 | RELEASE | 2026-11-04T09:56:37Z | sn51 released executor-v1.168 |
-| `sn51:scoring_commit:2026-11-04T09:12:56Z` | 51 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn51 commit touches scoring: DAH-5682 - [P0] Validator: port check can skip later tiers after two … |
-| `sn55:scoring_commit:2026-11-04T06:13:10Z` | 55 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn55 commit touches scoring: update validation block number |
-| `sn70:scoring_commit:2026-11-04T04:01:35Z` | 70 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn70 commit touches scoring: Merge pull request #126 from fugal-ai/docs/miner-guide-failed-calls |
-| `sn71:scoring_commit:2026-11-04T07:50:53Z` | 71 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn71 commit touches scoring: Reuse validated scoring source within one Arena evidence read |
-| `sn89:scoring_commit:2026-11-03T18:21:02Z` | 89 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn89 commit touches scoring: Agent competition v2: receipts, anchoring, weekly freeze, validator w… |
-| `sn91:scoring_commit:2026-11-04T03:53:32Z` | 91 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn91 commit touches scoring: fix(funded): small our-side losses rerun on the miner's key; ready ti… |
-| `sn108:scoring_commit:2026-11-04T06:47:38Z` | 108 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn108 commit touches scoring: Validator hardware requirements (minimum and recommended): 16 cores /… |
+| `sn108:burn_drop:0.823` | 108 | BURN_DROP | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn1:release:v4.7.0` | 1 | RELEASE | 2026-11-04T17:58:02Z | sn1 released v4.7.0 |
 | `sn3:scoring_commit:2026-11-04T14:07:31Z` | 3 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn3 commit touches scoring: Set document evaluation lower bound to 2 tokens |
 | `sn28:release:v0.5.21` | 28 | RELEASE | 2026-11-04T17:58:02Z | sn28 released v0.5.21 |
@@ -234,8 +215,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-10T20:51:26Z` | 71 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn71 commit touches scoring: Reserve replay network budget after local final validation |
 | `sn108:scoring_commit:2026-11-10T21:48:50Z` | 108 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be… |
 | `sn117:release:everycli v1.1.1` | 117 | RELEASE | 2026-11-11T00:37:10Z | sn117 released everycli v1.1.1 |
-| `sn37:readme_task_diff:b959b882769e8d45` | 37 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn37 README task/scoring sections changed |
-| `sn51:readme_task_diff:6c34bfe187921963` | 51 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn51 README task/scoring sections changed |
+| `sn36:scoring_commit:2026-11-11T06:08:30Z` | 36 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai… |
+| `sn45:scoring_commit:2026-11-08T21:20:02Z` | 45 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre… |
+| `sn51:scoring_commit:2026-11-11T06:51:21Z` | 51 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the… |
+| `sn62:release:v0.3.17` | 62 | RELEASE | 2026-11-11T07:14:22Z | sn62 released v0.3.17 |
+| `sn62:scoring_commit:2026-11-11T02:39:48Z` | 62 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size |
+| `sn71:scoring_commit:2026-11-11T05:08:55Z` | 71 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (… |
+| `sn81:scoring_commit:2026-11-11T06:46:42Z` | 81 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484) |
+| `sn116:scoring_commit:2026-11-11T01:09:19Z` | 116 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n… |
+| `sn127:release:Release ed8326b` | 127 | RELEASE | 2026-11-11T07:14:22Z | sn127 released Release ed8326b |
+| `sn127:scoring_commit:2026-11-11T04:16:42Z` | 127 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197) |
 | `sn67:readme_task_diff:d645efe7e4c8621a` | 67 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn67 README task/scoring sections changed |
 | `sn90:readme_task_diff:b99aba463098496e` | 90 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn90 README task/scoring sections changed |
 | `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
@@ -253,6 +242,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |
 | `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
 | `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
+| `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

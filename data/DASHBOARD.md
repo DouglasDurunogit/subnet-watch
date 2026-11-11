@@ -1,6 +1,6 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-11-11T07:13:56Z · block 9481457 · run_status **ok**_
+_snapshot 2026-11-11T15:29:56Z · block 9483937 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 128 | everything on chain |
-| Pays miners at all | 101 | `miner_burn` < 0.99 |
-| Ranked | 101 | passed every gate |
+| Pays miners at all | 99 | `miner_burn` < 0.99 |
+| Ranked | 99 | passed every gate |
 | **Positive margin** | **60** | income beats machine cost |
-| New events this window | 12 | see ALARMS.md |
+| New events this window | 9 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 70 | `████████████████████████████` |
+| 0 (none) | 68 | `████████████████████████████` |
 | 0–0.2 | 7 | `███` |
 | 0.2–0.4 | 4 | `██` |
 | 0.4–0.6 | 5 | `██` |
 | 0.6–0.8 | 10 | `████` |
 | 0.8–0.99 | 5 | `██` |
-| ≥0.99 dead | 27 | `███████████` |
+| ≥0.99 dead | 29 | `████████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn120 Affine | 74.5 | 2,805 | 2,805 = | rtx4090* | 10 | 10% |
-| 2 | sn3 Teutonic | 72.7 | 1,684 | 3,377 | rtx4090* | 7 | 25% |
-| 3 | sn97 Ingot | 72.2 | 1,411 | 1,411 = | rtx4090* | 5 | 20% |
-| 4 | sn41 Almanac | 70.4 | 14.75 | 168 | cpu-small | 160 | 2% |
-| 5 | sn34 Yugos | 70.1 | 771 | 6,619 | rtx4090* | 3 | 85% |
-| 6 | sn58 Attune | 69.5 | 652 | 1,048 | rtx4090* | 5 | 70% |
-| 7 | sn56 Gradients | 69.3 | 597 | 4,563 | rtx4090* | 6 | 50% |
-| 8 | sn1 Apex | 68.7 | 506 | 757 | rtx4090* | 4 | 58% |
-| 9 | sn67 Harnyx | 68.6 | 8.04 | 137 | cpu-small | 137 | 8% |
-| 10 | sn46 Instant | 67.3 | 130 | 171 | cpu-small | 10 | 46% |
-| 11 | sn124 Swarm | 67 | 316 | 1,619 | rtx4090* | 10 | 29% |
-| 12 | sn15 ORO | 66.3 | 6.72 | 10,925 | cpu-small | 73 | 95% |
-| 13 | sn82 Noah | 65.8 | 273 | 361 | rtx4090* | 66 | 2% |
-| 14 | sn53 engy | 65.1 | 173 | 2,690 | rtx4090 | 31 | 21% |
-| 15 | sn14 Cacheon | 62.5 | 79.32 | 202 | rtx4090* | 4 | 95% |
-| 16 | sn121 sundae_bar | 61.7 | 847 | 847 = | cpu-small | 2 | 60% |
-| 17 | sn62 Ridges | 61 | 49.62 | 875 | rtx4090* | 41 | 18% |
-| 18 | sn60 Bitsec.ai | 59.4 | 416 | 641 | cpu-small | 3 | 50% |
-| 19 | sn55 NIOME | 59.2 | 29.08 | 365 | rtx4090* | 11 | 30% |
-| 20 | sn4 Targon | 58.4 | 11,650 | 22,749 | rtx4090* | 5 | 60% |
+| 1 | sn120 Affine | 74.4 | 2,754 | 2,754 = | rtx4090* | 10 | 10% |
+| 2 | sn3 Teutonic | 72.6 | 1,627 | 3,263 | rtx4090* | 7 | 25% |
+| 3 | sn54 Yanez | 72.5 | 1,566 | 2,013 | a4000 | 3 | 61% |
+| 4 | sn97 Ingot | 72.3 | 1,461 | 1,461 = | rtx4090* | 5 | 20% |
+| 5 | sn56 Gradients | 70.6 | 877 | 4,624 | rtx4090* | 6 | 50% |
+| 6 | sn41 Almanac | 70.5 | 15.32 | 172 | cpu-small | 160 | 3% |
+| 7 | sn58 Attune | 69.8 | 709 | 1,140 | rtx4090* | 5 | 70% |
+| 8 | sn1 Apex | 68.8 | 512 | 639 | rtx4090* | 4 | 62% |
+| 9 | sn67 Harnyx | 68.7 | 8.22 | 140 | cpu-small | 137 | 8% |
+| 10 | sn124 Swarm | 67.2 | 331 | 1,693 | rtx4090* | 10 | 29% |
+| 11 | sn103 Terza Inference | 67.2 | 321 | 650 | rtx4090* | 5 | 35% |
+| 12 | sn46 Instant | 67.2 | 126 | 138 | cpu-small | 10 | 46% |
+| 13 | sn82 Noah | 66 | 278 | 367 | rtx4090* | 66 | 2% |
+| 14 | sn53 engy | 65.1 | 171 | 921 | rtx4090 | 23 | 40% |
+| 15 | sn15 ORO | 65.1 | 6.82 | 11,153 | cpu-small | 78 | 95% |
+| 16 | sn14 Cacheon | 62.6 | 81.45 | 207 | rtx4090* | 4 | 95% |
+| 17 | sn127 Zils | 62.2 | 72.43 | 72.43 = | rtx4090* | 4 | 88% |
+| 18 | sn121 sundae_bar | 61.8 | 865 | 865 = | cpu-small | 2 | 60% |
+| 19 | sn62 Ridges | 61.1 | 50.60 | 890 | rtx4090* | 41 | 18% |
+| 20 | sn60 Bitsec.ai | 59.4 | 427 | 658 | cpu-small | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -86,9 +86,9 @@ single UID takes almost everything, so the headline income is not reachable.
 | top-1 share | subnets (of those that pay) |
 |---|---:|
 | wide (<30%) | 28 |
-| concentrated (30–60%) | 18 |
+| concentrated (30–60%) | 16 |
 | dominated (60–90%) | 31 |
-| captured (>90%) | 22 |
+| captured (>90%) | 23 |
 
 ## Hardware evidence quality
 
@@ -107,21 +107,21 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-11-11T15:30 | sn17 | RELEASE | sn17 released Witness SDK 0.3.0 |
+| 2026-11-11T15:30 | sn17 | SCORING_COMMIT | sn17 commit touches scoring: Run resumable candidate validation on Run |
+| 2026-11-11T15:30 | sn51 | RELEASE | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the  |
+| 2026-11-11T15:30 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: Miner: name the executors a pubkey upload |
+| 2026-11-11T15:30 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Verify additive attempt bindings without  |
+| 2026-11-11T15:30 | sn76 | BURN_DROP | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
+| 2026-11-11T15:30 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: feat(orders): the admin job status says w |
+| 2026-11-11T15:30 | sn117 | RELEASE | sn117 released everycli v1.1.3 |
+| 2026-11-11T15:30 | sn117 | SCORING_COMMIT | sn117 commit touches scoring: Retain reviewed worker artifact for atte |
 | 2026-11-11T07:14 | sn36 | SCORING_COMMIT | sn36 commit touches scoring: Rented pool 10%, capped per miner at the  |
 | 2026-11-11T07:14 | sn45 | SCORING_COMMIT | sn45 commit touches scoring: 3.9.15: starter claims what the validator |
 | 2026-11-11T07:14 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cac |
 | 2026-11-11T07:14 | sn62 | RELEASE | sn62 released v0.3.17 |
 | 2026-11-11T07:14 | sn62 | SCORING_COMMIT | sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix |
 | 2026-11-11T07:14 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Expose private source-backed admission re |
-| 2026-11-11T07:14 | sn81 | SCORING_COMMIT | sn81 commit touches scoring: docs: one miner address, https://api.reli |
-| 2026-11-11T07:14 | sn81 | README_TASK_DIFF | sn81 README task/scoring sections changed |
-| 2026-11-11T07:14 | sn108 | BURN_DROP | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
-| 2026-11-11T07:14 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 swi |
-| 2026-11-11T07:14 | sn127 | RELEASE | sn127 released Release ed8326b |
-| 2026-11-11T07:14 | sn127 | SCORING_COMMIT | sn127 commit touches scoring: zils-miner report goes through the hoste |
-| 2026-11-11T00:37 | sn2 | SCORING_COMMIT | sn2 commit touches scoring: Merge pull request #1 from mybelovedstar12 |
-| 2026-11-11T00:37 | sn17 | SCORING_COMMIT | sn17 commit touches scoring: Add validation worker with manual replays |
-| 2026-11-11T00:37 | sn54 | SCORING_COMMIT | sn54 commit touches scoring: Validate validator requests and submissio |
 
 ---
 

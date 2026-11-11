@@ -1,24 +1,24 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-11-11T15:29:56Z  |  block: 9483937  |  row_status: ok
+snapshot_utc: 2026-11-11T22:18:24Z  |  block: 9485979  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000601538 TAO (0.13358955904 USD), open=True
+- registration cost: 0.0005 TAO (0.110015 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 37  |  free: 0
-- subnet age: 1112.0 days  |  registered at block 1477264
+- subnet age: 1112.3 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1.29997030121292** (uid 98) <- the only figure quotable as achievable
-- median_miner_usd_day: 1.0833085843441
-- top_miner_usd_day: 21663.138422845837 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1.2928007717701324** (uid 98) <- the only figure quotable as achievable
+- median_miner_usd_day: 1.0773339764751104
+- top_miner_usd_day: 21541.508326415125 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 24  |  gini: 0.9380964019838482  |  top1_share: 0.7636949680730806  |  top10_share: 0.999648651125844
+- earners: 24  |  gini: 0.9380967840501104  |  top1_share: 0.7637002520815828  |  top10_share: 0.9996486135512948
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-11-11T15:29:56Z  |  block: 9483937  |  row_status: ok
 - on-chain URL: `https://github.com/taoshidev/vanta-network`
 - resolved URL: `https://github.com/taoshidev/vanta-network`
 - status: **ok** 
-- README: 10437 bytes, sha 0e291f1f2edd1fcc
+- README: 10538 bytes, sha 9ff08869c442db28
 - latest release: (none) 
-- last commit: 2026-11-06T22:11:41Z
-- scoring-related commit: MinerAccountManager: one lock order (accounts → disk), fixes the orde… 2026-10-27T20:14:01Z
+- last commit: 2026-11-11T22:14:38Z
+- scoring-related commit: New regular miners (#975) 2026-11-11T22:14:38Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.3525 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.3573 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 80), confidence 0.85 - hardware requirement unknown
-- components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 15d ago
+- score: 39.3 (rank 55), confidence 0.85 - hardware requirement unknown
+- components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -155,13 +155,7 @@ those that provide the most returns, while never exceeding certain drawdown limi
 4. There is a spread (transaction) fee applied to crypto, equities, and commodities orders, calculated as a percentage of order value - 0.03% for crypto, 0.01% for equities, and 0.005% for commodities (forex and indices have no spread fee). This simulates a transaction cost that a normal exchange would add. Maker and taker fills are priced identically.
 5. There is a slippage assessed per order. The slippage cost is is greater for orders with higher leverages, and in assets with lower liquidity.
 6. Miners are rewarded using a debt-based scoring system that tracks their emissions, performance, and penalties. Weights are set based on the previous week's performance (PnL scaled by penalties), with payout periods starting and ending at midnight UTC on Sunday <a href="https://github.com/taoshidev/vanta-network/blob/main/docs/miner.md">More info</a>
-
-With this system only the world's best traders & deep learning / quant based trading systems can compete.
-
-
-# Eliminations
-
-In the Vanta Network, eliminations occur for miners that commit plagiarism, breach drawdown limits, fail to exit pr
+7. Miners whose hotkey registered after the standard account cutoff block trade on the standard account track: an account sized once from their collateral, the same challenge and funded stages as an entity subaccount, and a weight that pays
 ```
 
-_(truncated at 6000 of 10437 chars - read the full file at https://github.com/taoshidev/vanta-network)_
+_(truncated at 6000 of 10538 chars - read the full file at https://github.com/taoshidev/vanta-network)_

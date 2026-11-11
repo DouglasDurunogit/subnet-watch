@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-11T15:29:56Z, block 9483937
+# ALARMS - generated 2026-11-11T22:18:24Z, block 9485979
 
-window: first_seen in [2026-11-11T14:15:25Z, 2026-11-11T15:30:25Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-11T21:03:50Z, 2026-11-11T22:18:50Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,47 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn76:burn_drop:0.983` | 76 | BURN_DROP | P0 | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
-| `sn17:release:Witness SDK 0.3.0` | 17 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn17 released Witness SDK 0.3.0 |
-| `sn17:scoring_commit:2026-11-11T14:24:20Z` | 17 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96) |
-| `sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht` | 51 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build |
-| `sn51:scoring_commit:2026-11-11T13:01:37Z` | 51 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2… |
-| `sn71:scoring_commit:2026-11-11T07:02:19Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe |
-| `sn81:scoring_commit:2026-11-11T09:18:01Z` | 81 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per… |
-| `sn117:release:everycli v1.1.3` | 117 | RELEASE | P1 | 2026-11-11T15:30:25Z | sn117 released everycli v1.1.3 |
-| `sn117:scoring_commit:2026-11-11T11:12:58Z` | 117 | SCORING_COMMIT | P1 | 2026-11-11T15:30:25Z | sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation |
+| `sn126:burn_drop:0.952` | 126 | BURN_DROP | P0 | 2026-11-11T22:18:50Z | sn126 burn fell 1.000 -> 0.952 - miners can earn again |
+| `sn8:scoring_commit:2026-11-11T22:14:38Z` | 8 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn8 commit touches scoring: New regular miners (#975) |
+| `sn12:release:validator-staging-2026-11-11-43092055737` | 12 | RELEASE | P1 | 2026-11-11T22:18:50Z | sn12 released validator-staging-2026-11-11-43092055737-629-1: fix: upgrade vulnerable dependencies across subprojects (#864) |
+| `sn17:scoring_commit:2026-11-11T21:55:09Z` | 17 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn17 commit touches scoring: Publish verdicts and launch the next validation Pod in one poll (#113) |
+| `sn45:scoring_commit:2026-11-11T22:09:58Z` | 45 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn45 commit touches scoring: AlphaRidge 4.0.3: validator watchdog; the reference miner no longer p… |
+| `sn51:release:watchtower-v1.2.3` | 51 | RELEASE | P1 | 2026-11-11T22:18:50Z | sn51 released watchtower-v1.2.3 |
+| `sn51:scoring_commit:2026-11-11T16:03:30Z` | 51 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn51 commit touches scoring: DAH-6169 - Validator signs the whole request on every backend call (#… |
+| `sn91:scoring_commit:2026-11-11T19:55:46Z` | 91 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn91 commit touches scoring: feat(validator): elastic bench host — rent the DEC-CA-0063 sweep pod … |
+| `sn111:release:v2.0.0` | 111 | RELEASE | P1 | 2026-11-11T22:18:50Z | sn111 released v2.0.0 |
+| `sn111:scoring_commit:2026-11-11T17:38:31Z` | 111 | SCORING_COMMIT | P1 | 2026-11-11T22:18:50Z | sn111 commit touches scoring: Allocate competition weights to miners and normalize legacy carry |
+| `sn127:release:Release f9174a9` | 127 | RELEASE | P1 | 2026-11-11T22:18:50Z | sn127 released Release f9174a9 |
 
 ### detail
 
-- **`sn76:burn_drop:0.983`** - sn76 burn fell 0.995 -> 0.983 - miners can earn again
+- **`sn126:burn_drop:0.952`** - sn126 burn fell 1.000 -> 0.952 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn17:release:Witness SDK 0.3.0`** - sn17 released Witness SDK 0.3.0
-  - published 2026-11-11T11:06:48Z (was witness-gateway-fence-poll-20261108)
-- **`sn17:scoring_commit:2026-11-11T14:24:20Z`** - sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96)
+- **`sn8:scoring_commit:2026-11-11T22:14:38Z`** - sn8 commit touches scoring: New regular miners (#975)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht`** - sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build
-  - published 2026-11-11T12:20:58Z (was miner-v1.012)
-- **`sn51:scoring_commit:2026-11-11T13:01:37Z`** - sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2…
+- **`sn12:release:validator-staging-2026-11-11-43092055737`** - sn12 released validator-staging-2026-11-11-43092055737-629-1: fix: upgrade vulnerable dependencies across subprojects (#864)
+  - published 2026-11-11T19:55:36Z (was miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862))
+- **`sn17:scoring_commit:2026-11-11T21:55:09Z`** - sn17 commit touches scoring: Publish verdicts and launch the next validation Pod in one poll (#113)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-11T07:02:19Z`** - sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe
+- **`sn45:scoring_commit:2026-11-11T22:09:58Z`** - sn45 commit touches scoring: AlphaRidge 4.0.3: validator watchdog; the reference miner no longer p…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-11T09:18:01Z`** - sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per…
+- **`sn51:release:watchtower-v1.2.3`** - sn51 released watchtower-v1.2.3
+  - published 2026-11-11T14:05:59Z (was watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build)
+- **`sn51:scoring_commit:2026-11-11T16:03:30Z`** - sn51 commit touches scoring: DAH-6169 - Validator signs the whole request on every backend call (#…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.1.3`** - sn117 released everycli v1.1.3
-  - published 2026-11-11T12:54:36Z (was everycli v1.1.1)
-- **`sn117:scoring_commit:2026-11-11T11:12:58Z`** - sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation
+- **`sn91:scoring_commit:2026-11-11T19:55:46Z`** - sn91 commit touches scoring: feat(validator): elastic bench host — rent the DEC-CA-0063 sweep pod …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:release:v2.0.0`** - sn111 released v2.0.0
+  - published 2026-11-11T17:16:45Z (was v1.1.0)
+- **`sn111:scoring_commit:2026-11-11T17:38:31Z`** - sn111 commit touches scoring: Allocate competition weights to miners and normalize legacy carry
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn127:release:Release f9174a9`** - sn127 released Release f9174a9
+  - published 2026-11-11T16:49:54Z (was Release ed8326b)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
 | `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn127:burn_drop:0.872` | 127 | BURN_DROP | 2026-11-05T11:38:32Z | sn127 burn fell 0.990 -> 0.872 - miners can earn again |
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
@@ -57,22 +62,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
 | `sn108:burn_drop:0.823` | 108 | BURN_DROP | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
-| `sn1:release:v4.7.0` | 1 | RELEASE | 2026-11-04T17:58:02Z | sn1 released v4.7.0 |
-| `sn3:scoring_commit:2026-11-04T14:07:31Z` | 3 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn3 commit touches scoring: Set document evaluation lower bound to 2 tokens |
-| `sn28:release:v0.5.21` | 28 | RELEASE | 2026-11-04T17:58:02Z | sn28 released v0.5.21 |
-| `sn41:scoring_commit:2026-11-03T16:01:58Z` | 41 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn41 commit touches scoring: miner: builder-sign request sends only {method, path, body}; Almanac'… |
-| `sn51:release:executor-v1.169` | 51 | RELEASE | 2026-11-04T17:58:02Z | sn51 released executor-v1.169 |
-| `sn51:scoring_commit:2026-11-04T15:52:23Z` | 51 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn51 commit touches scoring: DAH-2786 - [P2] Validator: clear the filler's cap claim again once it… |
-| `sn66:release:deployed/dev: Merge pull request #190 fr` | 66 | RELEASE | 2026-11-04T17:58:02Z | sn66 released deployed/dev: Merge pull request #190 from conjectures-io/main |
-| `sn67:scoring_commit:2026-11-04T10:50:21Z` | 67 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261104.post2 |
-| `sn70:scoring_commit:2026-11-04T16:31:01Z` | 70 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn70 commit touches scoring: docs: MINER_GUIDE: reveal bucket; no GPU needed |
-| `sn71:scoring_commit:2026-11-04T11:42:22Z` | 71 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn71 commit touches scoring: Reuse verified clean text in final training export privacy walk |
-| `sn81:scoring_commit:2026-11-04T15:19:03Z` | 81 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn81 commit touches scoring: fix(admin): skip retired zero-cap tasks in the drain check |
-| `sn82:scoring_commit:2026-11-04T16:37:30Z` | 82 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn82 commit touches scoring: Scope validator collateral reads to the configured subnet (#5) |
-| `sn108:scoring_commit:2026-11-04T17:07:20Z` | 108 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn108 commit touches scoring: Neuron 1.0.2: miner_cli.py replace <zip> [--submission-id <id>] repla… |
-| `sn111:scoring_commit:2026-11-04T14:46:19Z` | 111 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn111 commit touches scoring: Automate sealed-package duplicate preflight before evaluation |
-| `sn114:scoring_commit:2026-11-04T13:20:00Z` | 114 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn114 commit touches scoring: Merge pull request #241 from DendriteHQ/feat/validator-docker-watcher |
-| `sn120:scoring_commit:2026-11-04T14:06:41Z` | 120 | SCORING_COMMIT | 2026-11-04T17:58:02Z | sn120 commit touches scoring: miner kit: affine_batch.py check accepts the file after the options; … |
+| `sn76:burn_drop:0.983` | 76 | BURN_DROP | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
 | `sn12:release:sdk-v0.0.20: feat: local executor and lo` | 12 | RELEASE | 2026-11-04T23:36:57Z | sn12 released sdk-v0.0.20: feat: local executor and local bind mount volumes (#861) |
 | `sn58:scoring_commit:2026-11-04T13:21:00Z` | 58 | SCORING_COMMIT | 2026-11-04T23:36:57Z | sn58 commit touches scoring: feat(validator): only a permitted Hub account starts |
 | `sn70:release:image-v2026.11.05` | 70 | RELEASE | 2026-11-04T23:36:57Z | sn70 released image-v2026.11.05 |
@@ -225,8 +215,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-11T01:09:19Z` | 116 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n… |
 | `sn127:release:Release ed8326b` | 127 | RELEASE | 2026-11-11T07:14:22Z | sn127 released Release ed8326b |
 | `sn127:scoring_commit:2026-11-11T04:16:42Z` | 127 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197) |
-| `sn67:readme_task_diff:d645efe7e4c8621a` | 67 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn67 README task/scoring sections changed |
-| `sn90:readme_task_diff:b99aba463098496e` | 90 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn90 README task/scoring sections changed |
+| `sn17:release:Witness SDK 0.3.0` | 17 | RELEASE | 2026-11-11T15:30:25Z | sn17 released Witness SDK 0.3.0 |
+| `sn17:scoring_commit:2026-11-11T14:24:20Z` | 17 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96) |
+| `sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht` | 51 | RELEASE | 2026-11-11T15:30:25Z | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build |
+| `sn51:scoring_commit:2026-11-11T13:01:37Z` | 51 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2… |
+| `sn71:scoring_commit:2026-11-11T07:02:19Z` | 71 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe |
+| `sn81:scoring_commit:2026-11-11T09:18:01Z` | 81 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per… |
+| `sn117:release:everycli v1.1.3` | 117 | RELEASE | 2026-11-11T15:30:25Z | sn117 released everycli v1.1.3 |
+| `sn117:scoring_commit:2026-11-11T11:12:58Z` | 117 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation |
 | `sn58:readme_task_diff:3b8b49ad2ebb4e84` | 58 | README_TASK_DIFF | 2026-11-04T23:36:57Z | sn58 README task/scoring sections changed |
 | `sn51:readme_task_diff:77525fe4e41362db` | 51 | README_TASK_DIFF | 2026-11-05T11:38:32Z | sn51 README task/scoring sections changed |
 | `sn58:readme_task_diff:de3e9164e32563c5` | 58 | README_TASK_DIFF | 2026-11-05T19:03:37Z | sn58 README task/scoring sections changed |

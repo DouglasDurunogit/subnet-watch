@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-11-10T20:01:50Z  |  block: 9478097  |  row_status: ok
+snapshot_utc: 2026-11-11T00:36:45Z  |  block: 9479471  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.10874500000000001 USD), open=True
+- registration cost: 0.0005 TAO (0.10943000000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 6  |  free: 0
-- subnet age: 936.7 days  |  registered at block 2734060
+- subnet age: 936.9 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 2380.130698657978
-- top_miner_usd_day: 2380.130698657978 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 2411.691508260051
+- top_miner_usd_day: 2411.691508260051 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -28,8 +28,8 @@ snapshot_utc: 2026-11-10T20:01:50Z  |  block: 9478097  |  row_status: ok
 - status: **ok** 
 - README: 1374 bytes, sha 668296f1d9856c8f
 - latest release: (none) 
-- last commit: 2026-11-06T21:26:38Z
-- scoring-related commit: Publish operator-focused SN2 validator documentation 2026-11-06T21:26:38Z
+- last commit: 2026-11-10T21:20:50Z
+- scoring-related commit: Merge pull request #1 from mybelovedstar123/test/score-properties 2026-11-10T21:17:39Z
 
 ## Resources
 

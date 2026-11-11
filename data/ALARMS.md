@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-10T20:01:50Z, block 9478097
+# ALARMS - generated 2026-11-11T00:36:45Z, block 9479471
 
-window: first_seen in [2026-11-10T18:47:20Z, 2026-11-10T20:02:20Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-10T23:22:10Z, 2026-11-11T00:37:10Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn3:scoring_commit:2026-11-10T12:44:11Z` | 3 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… |
-| `sn12:release:miner-staging-2026-11-10-42883644919-432` | 12 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862) |
-| `sn66:release:v2026.11.10.2` | 66 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn66 released v2026.11.10.2 |
-| `sn70:scoring_commit:2026-11-10T16:23:25Z` | 70 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn70 commit touches scoring: Merge pull request #188 from fugal-ai/docs/miner-guide-v2-on-main |
-| `sn71:scoring_commit:2026-11-10T16:56:50Z` | 71 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn71 commit touches scoring: Verify composed evidence prompts without fixed message offsets |
-| `sn108:scoring_commit:2026-11-10T17:27:04Z` | 108 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn108 commit touches scoring: Neuron 1.0.7: miner_cli.py withdraw and replace pick, by default, onl… |
-| `sn116:scoring_commit:2026-11-10T13:33:08Z` | 116 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn116 commit touches scoring: Updates: the lost-task re-queued uploads take the owner's (a): submit… |
-| `sn117:release:everycli v1.1.0` | 117 | RELEASE | P1 | 2026-11-10T20:02:20Z | sn117 released everycli v1.1.0 |
-| `sn124:scoring_commit:2026-11-10T16:24:24Z` | 124 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie… |
-| `sn127:scoring_commit:2026-11-10T19:00:30Z` | 127 | SCORING_COMMIT | P1 | 2026-11-10T20:02:20Z | sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first |
-| `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | P2 | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
-| `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | P2 | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
+| `sn2:scoring_commit:2026-11-10T21:17:39Z` | 2 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties |
+| `sn17:scoring_commit:2026-11-10T20:39:45Z` | 17 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94) |
+| `sn54:scoring_commit:2026-11-10T23:12:47Z` | 54 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn54 commit touches scoring: Validate validator requests and submission integrity (#126) |
+| `sn70:release:Fugal Subnet v0.3.1` | 70 | RELEASE | P1 | 2026-11-11T00:37:10Z | sn70 released Fugal Subnet v0.3.1 |
+| `sn71:scoring_commit:2026-11-10T20:51:26Z` | 71 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn71 commit touches scoring: Reserve replay network budget after local final validation |
+| `sn108:scoring_commit:2026-11-10T21:48:50Z` | 108 | SCORING_COMMIT | P1 | 2026-11-11T00:37:10Z | sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be… |
+| `sn117:release:everycli v1.1.1` | 117 | RELEASE | P1 | 2026-11-11T00:37:10Z | sn117 released everycli v1.1.1 |
 
 ### detail
 
-- **`sn3:scoring_commit:2026-11-10T12:44:11Z`** - sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum…
+- **`sn2:scoring_commit:2026-11-10T21:17:39Z`** - sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn12:release:miner-staging-2026-11-10-42883644919-432`** - sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862)
-  - published 2026-11-10T19:16:41Z (was sdk-v0.0.20: feat: local executor and local bind mount volumes (#861))
-- **`sn66:release:v2026.11.10.2`** - sn66 released v2026.11.10.2
-  - published 2026-11-10T15:30:51Z (was v2026.11.10)
-- **`sn70:scoring_commit:2026-11-10T16:23:25Z`** - sn70 commit touches scoring: Merge pull request #188 from fugal-ai/docs/miner-guide-v2-on-main
+- **`sn17:scoring_commit:2026-11-10T20:39:45Z`** - sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-10T16:56:50Z`** - sn71 commit touches scoring: Verify composed evidence prompts without fixed message offsets
+- **`sn54:scoring_commit:2026-11-10T23:12:47Z`** - sn54 commit touches scoring: Validate validator requests and submission integrity (#126)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn108:scoring_commit:2026-11-10T17:27:04Z`** - sn108 commit touches scoring: Neuron 1.0.7: miner_cli.py withdraw and replace pick, by default, onl…
+- **`sn70:release:Fugal Subnet v0.3.1`** - sn70 released Fugal Subnet v0.3.1
+  - published 2026-11-10T21:19:08Z (was build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2)
+- **`sn71:scoring_commit:2026-11-10T20:51:26Z`** - sn71 commit touches scoring: Reserve replay network budget after local final validation
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-10T13:33:08Z`** - sn116 commit touches scoring: Updates: the lost-task re-queued uploads take the owner's (a): submit…
+- **`sn108:scoring_commit:2026-11-10T21:48:50Z`** - sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.1.0`** - sn117 released everycli v1.1.0
-  - published 2026-11-10T14:13:32Z (was everycli v1.0.0)
-- **`sn124:scoring_commit:2026-11-10T16:24:24Z`** - sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:scoring_commit:2026-11-10T19:00:30Z`** - sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:readme_task_diff:5e2cfc5911b6cfb7`** - sn117 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn124:readme_task_diff:ed4d53fe1d12dcb7`** - sn124 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:release:everycli v1.1.1`** - sn117 released everycli v1.1.1
+  - published 2026-11-10T22:59:47Z (was everycli v1.1.0)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn126:burn_drop:0.956` | 126 | BURN_DROP | 2026-11-03T22:27:15Z | sn126 burn fell 1.000 -> 0.956 - miners can earn again |
 | `sn70:burn_drop:0.101` | 70 | BURN_DROP | 2026-11-04T09:56:37Z | sn70 burn fell 1.000 -> 0.101 - miners can earn again |
 | `sn10:burn_drop:0.605` | 10 | BURN_DROP | 2026-11-04T17:58:02Z | sn10 burn fell 1.000 -> 0.605 - miners can earn again |
 | `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
@@ -67,16 +51,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
-| `sn25:scoring_commit:2026-11-03T17:23:34Z` | 25 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn25 commit touches scoring: Merge fix/validator-ledger-startup-prefix: a start authenticates only… |
-| `sn28:release:v0.5.19-dev` | 28 | RELEASE | 2026-11-03T22:27:15Z | sn28 released v0.5.19-dev |
-| `sn51:scoring_commit:2026-11-03T17:34:44Z` | 51 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn51 commit touches scoring: DAH-5635 - [P1] Validator: hide an unreachable node as soon as its mi… |
-| `sn70:scoring_commit:2026-11-03T21:11:05Z` | 70 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn70 commit touches scoring: fix(validator): keep a proof's JSON numbers as serialised; int 0 cost… |
-| `sn71:scoring_commit:2026-11-03T21:45:36Z` | 71 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn71 commit touches scoring: Merge pull request #988 from leadpoet/feat/history-rank-by-score |
-| `sn78:scoring_commit:2026-11-03T18:42:41Z` | 78 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn78 commit touches scoring: Merge PR #503: reuse completed work and publish approved rewards |
-| `sn91:scoring_commit:2026-11-03T21:02:09Z` | 91 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn91 commit touches scoring: fix(trainer): carry infra-failed challenger bench sweeps like deferre… |
-| `sn108:scoring_commit:2026-11-03T18:12:32Z` | 108 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn108 commit touches scoring: Neuron 1.0.1: when the challenge server withholds the reward ladder (… |
-| `sn111:scoring_commit:2026-11-03T19:58:36Z` | 111 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn111 commit touches scoring: Separate competition intake from sequential evaluation |
-| `sn116:scoring_commit:2026-11-03T20:24:59Z` | 116 | SCORING_COMMIT | 2026-11-03T22:27:15Z | sn116 commit touches scoring: Kit local scorer: a thin caller of the official graph path, plus its … |
 | `sn70:scoring_commit:2026-11-04T02:05:25Z` | 70 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn70 commit touches scoring: Merge pull request #125 from fugal-ai/diag/save-verified-heads |
 | `sn71:scoring_commit:2026-11-03T22:30:50Z` | 71 | SCORING_COMMIT | 2026-11-04T02:38:42Z | sn71 commit touches scoring: Accept asserted acquisition-completion announcements and verify final… |
 | `sn25:scoring_commit:2026-11-04T03:01:40Z` | 25 | SCORING_COMMIT | 2026-11-04T09:56:37Z | sn25 commit touches scoring: Merge fix/validator-tunnel-tls-timeout: a tunnel's TLS establishment … |
@@ -230,9 +204,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
 | `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
 | `sn71:scoring_commit:2026-11-10T08:22:18Z` | 71 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native… |
-| `sn78:readme_task_diff:905be9e940ec4dea` | 78 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn78 README task/scoring sections changed |
-| `sn82:readme_task_diff:08b2f7bf22367533` | 82 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn82 README task/scoring sections changed |
-| `sn127:readme_task_diff:501a9ff7ce421afb` | 127 | README_TASK_DIFF | 2026-11-03T22:27:15Z | sn127 README task/scoring sections changed |
+| `sn3:scoring_commit:2026-11-10T12:44:11Z` | 3 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… |
+| `sn12:release:miner-staging-2026-11-10-42883644919-432` | 12 | RELEASE | 2026-11-10T20:02:20Z | sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862) |
+| `sn66:release:v2026.11.10.2` | 66 | RELEASE | 2026-11-10T20:02:20Z | sn66 released v2026.11.10.2 |
+| `sn70:scoring_commit:2026-11-10T16:23:25Z` | 70 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn70 commit touches scoring: Merge pull request #188 from fugal-ai/docs/miner-guide-v2-on-main |
+| `sn71:scoring_commit:2026-11-10T16:56:50Z` | 71 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn71 commit touches scoring: Verify composed evidence prompts without fixed message offsets |
+| `sn108:scoring_commit:2026-11-10T17:27:04Z` | 108 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn108 commit touches scoring: Neuron 1.0.7: miner_cli.py withdraw and replace pick, by default, onl… |
+| `sn116:scoring_commit:2026-11-10T13:33:08Z` | 116 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn116 commit touches scoring: Updates: the lost-task re-queued uploads take the owner's (a): submit… |
+| `sn117:release:everycli v1.1.0` | 117 | RELEASE | 2026-11-10T20:02:20Z | sn117 released everycli v1.1.0 |
+| `sn124:scoring_commit:2026-11-10T16:24:24Z` | 124 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn124 commit touches scoring: Build test_RL tasks through the family runtime so a Sentinel run flie… |
+| `sn127:scoring_commit:2026-11-10T19:00:30Z` | 127 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn127 commit touches scoring: Merge pull request #233 from ooo-hq/open-jobs-miners-first |
 | `sn37:readme_task_diff:b959b882769e8d45` | 37 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn37 README task/scoring sections changed |
 | `sn51:readme_task_diff:6c34bfe187921963` | 51 | README_TASK_DIFF | 2026-11-04T09:56:37Z | sn51 README task/scoring sections changed |
 | `sn67:readme_task_diff:d645efe7e4c8621a` | 67 | README_TASK_DIFF | 2026-11-04T17:58:02Z | sn67 README task/scoring sections changed |
@@ -250,6 +231,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
 | `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
 | `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |
+| `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
+| `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

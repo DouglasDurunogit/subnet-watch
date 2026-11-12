@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-12T03:13:42Z, block 9487456
+# ALARMS - generated 2026-11-12T11:38:23Z, block 9489980
 
-window: first_seen in [2026-11-12T01:59:04Z, 2026-11-12T03:14:04Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-12T10:23:51Z, 2026-11-12T11:38:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,43 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn94:burn_drop:0.000` | 94 | BURN_DROP | P0 | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn17:scoring_commit:2026-11-11T23:11:17Z` | 17 | SCORING_COMMIT | P1 | 2026-11-12T03:14:04Z | sn17 commit touches scoring: Improve validation Pod recovery and placement (#115) |
-| `sn45:scoring_commit:2026-11-11T23:10:19Z` | 45 | SCORING_COMMIT | P1 | 2026-11-12T03:14:04Z | sn45 commit touches scoring: AlphaRidge 4.0.5: chain calls have a deadline; validators parse pages… |
-| `sn66:release:v2026.11.12.2` | 66 | RELEASE | P1 | 2026-11-12T03:14:04Z | sn66 released v2026.11.12.2 |
-| `sn70:release:Fugal Subnet v0.3.2` | 70 | RELEASE | P1 | 2026-11-12T03:14:04Z | sn70 released Fugal Subnet v0.3.2 |
-| `sn70:scoring_commit:2026-11-12T02:31:18Z` | 70 | SCORING_COMMIT | P1 | 2026-11-12T03:14:04Z | sn70 commit touches scoring: release: v0.3.2 (validator-only collection fix; consensus digest unch… |
-| `sn111:scoring_commit:2026-11-12T00:13:58Z` | 111 | SCORING_COMMIT | P1 | 2026-11-12T03:14:04Z | sn111 commit touches scoring: Publish mainnet miner burn allocation policy |
-| `sn116:scoring_commit:2026-11-11T22:55:29Z` | 116 | SCORING_COMMIT | P1 | 2026-11-12T03:14:04Z | sn116 commit touches scoring: Merge miner app catalog practice-only (eea0f584) |
-| `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | P2 | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
+| `sn21:scoring_commit:2026-11-12T11:12:43Z` | 21 | SCORING_COMMIT | P1 | 2026-11-12T11:38:51Z | sn21 commit touches scoring: docs(rewards): the 40-day count belongs to the digest - going back to… |
+| `sn51:release:executor-v1.180` | 51 | RELEASE | P1 | 2026-11-12T11:38:51Z | sn51 released executor-v1.180 |
+| `sn51:scoring_commit:2026-11-12T11:25:24Z` | 51 | SCORING_COMMIT | P1 | 2026-11-12T11:38:51Z | sn51 commit touches scoring: DAH-6222 - [P1] Validator: a filler the validator removed itself is n… |
+| `sn71:scoring_commit:2026-11-12T10:20:55Z` | 71 | SCORING_COMMIT | P1 | 2026-11-12T11:38:51Z | sn71 commit touches scoring: Merge pull request #1204 from leadpoet/fix/arena-intent-verification-… |
+| `sn81:scoring_commit:2026-11-12T09:39:19Z` | 81 | SCORING_COMMIT | P1 | 2026-11-12T11:38:51Z | sn81 commit touches scoring: perf(audit): score drawn records ahead of their pass, and size the au… |
+| `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | P2 | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
 
 ### detail
 
-- **`sn94:burn_drop:0.000`** - sn94 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn17:scoring_commit:2026-11-11T23:11:17Z`** - sn17 commit touches scoring: Improve validation Pod recovery and placement (#115)
+- **`sn21:scoring_commit:2026-11-12T11:12:43Z`** - sn21 commit touches scoring: docs(rewards): the 40-day count belongs to the digest - going back to…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-11-11T23:10:19Z`** - sn45 commit touches scoring: AlphaRidge 4.0.5: chain calls have a deadline; validators parse pages…
+- **`sn51:release:executor-v1.180`** - sn51 released executor-v1.180
+  - published 2026-11-12T06:16:36Z (was watchtower-v1.2.3)
+- **`sn51:scoring_commit:2026-11-12T11:25:24Z`** - sn51 commit touches scoring: DAH-6222 - [P1] Validator: a filler the validator removed itself is n…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.12.2`** - sn66 released v2026.11.12.2
-  - published 2026-11-12T01:07:26Z (was v2026.11.10.2)
-- **`sn70:release:Fugal Subnet v0.3.2`** - sn70 released Fugal Subnet v0.3.2
-  - published 2026-11-12T02:43:56Z (was Fugal Subnet v0.3.1)
-- **`sn70:scoring_commit:2026-11-12T02:31:18Z`** - sn70 commit touches scoring: release: v0.3.2 (validator-only collection fix; consensus digest unch…
+- **`sn71:scoring_commit:2026-11-12T10:20:55Z`** - sn71 commit touches scoring: Merge pull request #1204 from leadpoet/fix/arena-intent-verification-…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-12T00:13:58Z`** - sn111 commit touches scoring: Publish mainnet miner burn allocation policy
+- **`sn81:scoring_commit:2026-11-12T09:39:19Z`** - sn81 commit touches scoring: perf(audit): score drawn records ahead of their pass, and size the au…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-11T22:55:29Z`** - sn116 commit touches scoring: Merge miner app catalog practice-only (eea0f584)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:readme_task_diff:ddb036629e685ec6`** - sn25 README task/scoring sections changed
+- **`sn38:readme_task_diff:4acf9ce9cf638fa6`** - sn38 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn126:burn_drop:0.955` | 126 | BURN_DROP | 2026-11-05T03:46:12Z | sn126 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn127:burn_drop:0.872` | 127 | BURN_DROP | 2026-11-05T11:38:32Z | sn127 burn fell 0.990 -> 0.872 - miners can earn again |
 | `sn81:burn_drop:0.965` | 81 | BURN_DROP | 2026-11-05T19:03:37Z | sn81 burn fell 0.999 -> 0.965 - miners can earn again |
 | `sn121:burn_drop:0.602` | 121 | BURN_DROP | 2026-11-05T19:03:37Z | sn121 burn fell 1.000 -> 0.602 - miners can earn again |
 | `sn76:burn_drop:0.973` | 76 | BURN_DROP | 2026-11-06T00:09:29Z | sn76 burn fell 0.990 -> 0.973 - miners can earn again |
@@ -58,16 +47,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.823` | 108 | BURN_DROP | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn76:burn_drop:0.983` | 76 | BURN_DROP | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
 | `sn126:burn_drop:0.952` | 126 | BURN_DROP | 2026-11-11T22:18:50Z | sn126 burn fell 1.000 -> 0.952 - miners can earn again |
-| `sn27:release:archive/worktrees-2026-11-04` | 27 | RELEASE | 2026-11-05T03:46:12Z | sn27 released archive/worktrees-2026-11-04 |
-| `sn71:scoring_commit:2026-11-05T00:57:17Z` | 71 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn71 commit touches scoring: Recover only the infrastructure-damaged Nov4 miner ICP7 slot |
-| `sn82:scoring_commit:2026-11-05T02:09:15Z` | 82 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn82 commit touches scoring: Merge pull request #6: Improve validator publication diagnostics |
-| `sn116:scoring_commit:2026-11-05T02:39:53Z` | 116 | SCORING_COMMIT | 2026-11-05T03:46:12Z | sn116 commit touches scoring: Owner manifest migration: encode the Validator's M2 rule |
-| `sn51:release:executor-v1.171` | 51 | RELEASE | 2026-11-05T11:38:32Z | sn51 released executor-v1.171 |
-| `sn51:scoring_commit:2026-11-05T11:31:04Z` | 51 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn51 commit touches scoring: DAH-5664 - [P0] Validator: reclaim a killed filler's Dolphin cache di… |
-| `sn67:scoring_commit:2026-11-05T08:58:27Z` | 67 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261105.post4 |
-| `sn71:scoring_commit:2026-11-05T07:49:03Z` | 71 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn71 commit touches scoring: Merge pull request #1036 from leadpoet/op/arena-observation-verify-re… |
-| `sn81:scoring_commit:2026-11-05T07:55:40Z` | 81 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn81 commit touches scoring: fix(audit): refuse forced-draw drift without charging the miner |
-| `sn116:scoring_commit:2026-11-05T05:47:06Z` | 116 | SCORING_COMMIT | 2026-11-05T11:38:32Z | sn116 commit touches scoring: A2: keep attempt 1's evaluation files so a re-run binds its own (TL 4… |
+| `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn21:scoring_commit:2026-11-05T17:26:44Z` | 21 | SCORING_COMMIT | 2026-11-05T19:03:37Z | sn21 commit touches scoring: feat(status): each miner's model start, days unchanged and first day … |
 | `sn46:release:v0.1.5` | 46 | RELEASE | 2026-11-05T19:03:37Z | sn46 released v0.1.5 |
 | `sn51:release:lium-protocol-v2.9.0` | 51 | RELEASE | 2026-11-05T19:03:37Z | sn51 released lium-protocol-v2.9.0 |
@@ -222,7 +202,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:release:v2.0.0` | 111 | RELEASE | 2026-11-11T22:18:50Z | sn111 released v2.0.0 |
 | `sn111:scoring_commit:2026-11-11T17:38:31Z` | 111 | SCORING_COMMIT | 2026-11-11T22:18:50Z | sn111 commit touches scoring: Allocate competition weights to miners and normalize legacy carry |
 | `sn127:release:Release f9174a9` | 127 | RELEASE | 2026-11-11T22:18:50Z | sn127 released Release f9174a9 |
-| `sn51:readme_task_diff:77525fe4e41362db` | 51 | README_TASK_DIFF | 2026-11-05T11:38:32Z | sn51 README task/scoring sections changed |
+| `sn17:scoring_commit:2026-11-11T23:11:17Z` | 17 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn17 commit touches scoring: Improve validation Pod recovery and placement (#115) |
+| `sn45:scoring_commit:2026-11-11T23:10:19Z` | 45 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn45 commit touches scoring: AlphaRidge 4.0.5: chain calls have a deadline; validators parse pages… |
+| `sn66:release:v2026.11.12.2` | 66 | RELEASE | 2026-11-12T03:14:04Z | sn66 released v2026.11.12.2 |
+| `sn70:release:Fugal Subnet v0.3.2` | 70 | RELEASE | 2026-11-12T03:14:04Z | sn70 released Fugal Subnet v0.3.2 |
+| `sn70:scoring_commit:2026-11-12T02:31:18Z` | 70 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn70 commit touches scoring: release: v0.3.2 (validator-only collection fix; consensus digest unch… |
+| `sn111:scoring_commit:2026-11-12T00:13:58Z` | 111 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn111 commit touches scoring: Publish mainnet miner burn allocation policy |
+| `sn116:scoring_commit:2026-11-11T22:55:29Z` | 116 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn116 commit touches scoring: Merge miner app catalog practice-only (eea0f584) |
 | `sn58:readme_task_diff:de3e9164e32563c5` | 58 | README_TASK_DIFF | 2026-11-05T19:03:37Z | sn58 README task/scoring sections changed |
 | `sn123:readme_task_diff:855cbeee88da3234` | 123 | README_TASK_DIFF | 2026-11-06T07:08:56Z | sn123 README task/scoring sections changed |
 | `sn28:readme_task_diff:3988d29ccf7e7016` | 28 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn28 README task/scoring sections changed |
@@ -237,6 +223,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
 | `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
 | `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
+| `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

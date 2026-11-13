@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-12T19:09:59Z  |  block: 9492238  |  row_status: ok
+snapshot_utc: 2026-11-13T00:37:39Z  |  block: 9493876  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (209.25999979074 USD), open=True
+- registration cost: 0.999999999 TAO (211.13999978886 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 10  |  free: 0
-- subnet age: 739.8 days  |  registered at block 4165565
+- subnet age: 740.0 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 3037.2255418634286** (uid 242) <- the only figure quotable as achievable
-- median_miner_usd_day: 1518.5200765063385
-- top_miner_usd_day: 3037.2255418634286 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 3066.478244573709** (uid 242) <- the only figure quotable as achievable
+- median_miner_usd_day: 1533.2391222868546
+- top_miner_usd_day: 3066.478244573709 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 7  |  gini: 0.10715430245714552  |  top1_share: 0.2500114453142883  |  top10_share: 1.0
+- earners: 7  |  gini: 0.11026237999319854  |  top1_share: 0.2508087651834219  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-11-12T19:09:59Z  |  block: 9492238  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6003 bytes, sha 41ccbc4d80521129
+- README: 6229 bytes, sha f835f3b614bbd912
 - latest release: (none) 
-- last commit: 2026-11-10T12:44:11Z
-- scoring-related commit: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… 2026-11-10T12:44:11Z
+- last commit: 2026-11-12T20:37:20Z
+- scoring-related commit: V3 validator preflight and weight publication timing 2026-11-12T20:37:20Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1510.3009 USD/day  |  payback on registration: 0.14 days
+- net margin: 1525.0199 USD/day  |  payback on registration: 0.14 days
 
 ## Score
 
 - gate: **OK** 
-- score: 72.4 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 28.92 / freshness 35.0 / resource 11.25 / registration 9.95
-- freshness basis: SCORING_COMMIT 2.0d ago
+- score: 72.4 (rank 3), confidence 0.85 - hardware requirement unknown
+- components: income 28.95 / freshness 35.0 / resource 11.25 / registration 9.95
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -61,15 +61,17 @@ submission and sends the challenger and current king to a remote GPU evaluator
 for paired cross-entropy scoring. A successful challenger becomes the new king,
 and the validator updates subnet weights and publishes the resulting state.
 
-Evaluation isolates EOS-delimited document fragments inside the sampled windows,
-resets their positions, and excludes predictions across document boundaries.
-Scores are weighted by scored-token counts; bootstrap resamples paired original
-windows. See [masked evaluation setup and GPU checks](DEPLOY.md#document-masked-evaluation).
+The evaluator update samples complete UTF-8 documents deterministically from
+packed text and byte-offset indexes. Each model scores the same text with its
+native tokenizer. Reward measures improvement in the byte-weighted loss deficit
+against the pinned Horizon reference; ordinary token loss remains available for
+historical charts. The default sampling budget is 35M original MiMo tokens.
 
-Evaluation can additionally sample complete documents
-between 2049 and 8192 tokens, with category-proportional coverage of 2049–4096
-and 4097–8192. It supports MAIN, MATH, CODE and TEXT, with a combined token-weighted verdict
-and separate long-document metrics. See [configuration and GPU validation](DEPLOY.md#additional-long-document-evaluation).
+Horizon uses a deterministic eight-GPU layer pipeline, followed by four MiMo king
+and four challenger vLLM replicas. Large MiMo documents use two-GPU groups.
+Horizon preloads at startup and after each duel, remaining on the GPUs while idle;
+it unloads before the MiMo phase. GPU readiness is exposed as `horizon_gpu` in health.
+See [deployment and GPU validation](DEPLOY.md); production cutover is pending.
 
 ## Miner CLI
 
@@ -217,17 +219,14 @@ teutonic-miner status
 
 ## Competitions
 
-Miners can select `MAIN` or `MIX01`–`MIX06` with
-`teutonic-miner ready --competition MIX02` (also supported by `submit`). Omission
+For the new rollout, miners can select `MAIN`, `MIX01`, `MIX06` or `MIX07` with
+`teutonic-miner ready --competition MIX01` (also supported by `submit`). Omission
 selects MAIN. One ready submission per hotkey is shared across all competitions.
-Each competition uses an explicit category list, zero windows, and a 70M-token
-whole-document input budget. PostgreSQL holds the active configuration; repository
-initialization defaults use the same budgets. Acceptance uses the whole mix's
-token-weighted bootstrap LCB.
-A kingless MIX challenges its fixed starting MAIN king using its own mix and threshold.
-The starting king is pinned once; later MAIN promotions do not move it. After its
-first win, the MIX challenges its own current king. `competitions.json` publishes
-the pinned model as `starting_king`
+The allocation is MAIN **40%**, MIX01/MIX06/MIX07 **20% each**. MIX02/03/05 retire
+at cutover and MIX04 stays retired; models and historical results are retained.
+Each competition uses its existing category weights and a **35M original MiMo-token**
+whole-document budget. Acceptance uses a byte-weighted bootstrap LCB for reduction
+in loss above the fixed Horizon reference, in bits/byte. PostgreSQL holds th
 ```
 
-_(truncated at 6000 of 6003 chars - read the full file at https://github.com/unarbos/teutonic)_
+_(truncated at 6000 of 6229 chars - read the full file at https://github.com/unarbos/teutonic)_

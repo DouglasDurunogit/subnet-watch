@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-13T07:23:00Z  |  block: 9495903  |  row_status: ok
+snapshot_utc: 2026-11-13T15:34:38Z  |  block: 9498361  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (210.70999978929 USD), open=True
+- registration cost: 0.999999999 TAO (211.61999978838 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 7  |  free: 0
-- subnet age: 740.3 days  |  registered at block 4165565
+- subnet age: 740.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4881.370701191462** (uid 242) <- the only figure quotable as achievable
-- median_miner_usd_day: 2440.7784603256587
-- top_miner_usd_day: 4881.370701191462 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 4898.526282651697** (uid 242) <- the only figure quotable as achievable
+- median_miner_usd_day: 2449.3565782900014
+- top_miner_usd_day: 4898.526282651697 (uid 242, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,24 +26,24 @@ snapshot_utc: 2026-11-13T07:23:00Z  |  block: 9495903  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6229 bytes, sha f835f3b614bbd912
+- README: 6490 bytes, sha a4a198e174fcf804
 - latest release: (none) 
-- last commit: 2026-11-12T20:37:20Z
-- scoring-related commit: V3 validator preflight and weight publication timing 2026-11-12T20:37:20Z
+- last commit: 2026-11-13T12:59:12Z
+- scoring-related commit: Update Horizon scoring, set 60M budgets and live evaluation progress 2026-11-13T12:59:12Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2432.5593 USD/day  |  payback on registration: 0.09 days
+- net margin: 2441.1374 USD/day  |  payback on registration: 0.09 days
 
 ## Score
 
 - gate: **OK** 
 - score: 74.0 (rank 3), confidence 0.85 - hardware requirement unknown
-- components: income 30.8 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 0.3d ago
+- components: income 30.81 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -65,7 +65,7 @@ The evaluator update samples complete UTF-8 documents deterministically from
 packed text and byte-offset indexes. Each model scores the same text with its
 native tokenizer. Reward measures improvement in the byte-weighted loss deficit
 against the pinned Horizon reference; ordinary token loss remains available for
-historical charts. The default sampling budget is 35M original MiMo tokens.
+historical charts. The default sampling budget is 60M original MiMo tokens.
 
 Horizon uses a deterministic eight-GPU layer pipeline, followed by four MiMo king
 and four challenger vLLM replicas. Large MiMo documents use two-GPU groups.
@@ -224,9 +224,9 @@ For the new rollout, miners can select `MAIN`, `MIX01`, `MIX06` or `MIX07` with
 selects MAIN. One ready submission per hotkey is shared across all competitions.
 The allocation is MAIN **40%**, MIX01/MIX06/MIX07 **20% each**. MIX02/03/05 retire
 at cutover and MIX04 stays retired; models and historical results are retained.
-Each competition uses its existing category weights and a **35M original MiMo-token**
+Each competition uses its existing category weights and a **60M original MiMo-token**
 whole-document budget. Acceptance uses a byte-weighted bootstrap LCB for reduction
 in loss above the fixed Horizon reference, in bits/byte. PostgreSQL holds th
 ```
 
-_(truncated at 6000 of 6229 chars - read the full file at https://github.com/unarbos/teutonic)_
+_(truncated at 6000 of 6490 chars - read the full file at https://github.com/unarbos/teutonic)_

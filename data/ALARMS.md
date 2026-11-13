@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-13T07:23:00Z, block 9495903
+# ALARMS - generated 2026-11-13T15:34:38Z, block 9498361
 
-window: first_seen in [2026-11-13T06:08:28Z, 2026-11-13T07:23:28Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-13T14:19:59Z, 2026-11-13T15:34:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,59 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn45:scoring_commit:2026-11-13T03:38:27Z` | 45 | SCORING_COMMIT | P1 | 2026-11-13T07:23:28Z | sn45 commit touches scoring: AlphaRidge 4.1.1: validator stability |
-| `sn51:scoring_commit:2026-11-13T04:01:45Z` | 51 | SCORING_COMMIT | P1 | 2026-11-13T07:23:28Z | sn51 commit touches scoring: DAH-6325 - [P0] Validator FIXED_RATIO follows the 50% miner emission … |
-| `sn81:scoring_commit:2026-11-13T04:22:44Z` | 81 | SCORING_COMMIT | P1 | 2026-11-13T07:23:28Z | sn81 commit touches scoring: fix(admin): keep a job's counts for good only once its tasks are reti… |
-| `sn127:release:Release 3e2660e` | 127 | RELEASE | P1 | 2026-11-13T07:23:28Z | sn127 released Release 3e2660e |
-| `sn48:readme_task_diff:ccea6584910d3bd5` | 48 | README_TASK_DIFF | P2 | 2026-11-13T07:23:28Z | sn48 README task/scoring sections changed |
+| `sn10:burn_drop:0.607` | 10 | BURN_DROP | P0 | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
+| `sn3:scoring_commit:2026-11-13T12:59:12Z` | 3 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn3 commit touches scoring: Update Horizon scoring, set 60M budgets and live evaluation progress |
+| `sn25:release:v2026.11.13-1097815580` | 25 | RELEASE | P1 | 2026-11-13T15:34:59Z | sn25 released v2026.11.13-1097815580 |
+| `sn42:release:v0.6.9` | 42 | RELEASE | P1 | 2026-11-13T15:34:59Z | sn42 released v0.6.9 |
+| `sn42:scoring_commit:2026-11-13T13:19:19Z` | 42 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn42 commit touches scoring: v0.6.8: the operator can take a client job back from a miner that can… |
+| `sn51:release:executor-v1.182` | 51 | RELEASE | P1 | 2026-11-13T15:34:59Z | sn51 released executor-v1.182 |
+| `sn51:scoring_commit:2026-11-13T15:34:45Z` | 51 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn51 commit touches scoring: DAH-6381 - [P1] Validator: an ownership shift after a container-only … |
+| `sn56:scoring_commit:2026-11-13T10:48:42Z` | 56 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn56 commit touches scoring: Add next image families and native-loss evaluation (#1420) |
+| `sn69:scoring_commit:2026-11-13T02:45:24Z` | 69 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn69 commit touches scoring: Port the validator to bittensor 11.3.2 |
+| `sn71:scoring_commit:2026-11-13T09:58:30Z` | 71 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn71 commit touches scoring: Record deployed Arena migration access and verified recovery evidence |
+| `sn81:scoring_commit:2026-11-13T11:36:18Z` | 81 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn81 commit touches scoring: docs(design): Terminal-Bench 2.1 gold check results (49/89 verified o… |
+| `sn111:scoring_commit:2026-11-13T10:53:58Z` | 111 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn111 commit touches scoring: Document Silver data in evaluation exports |
+| `sn116:scoring_commit:2026-11-13T04:13:13Z` | 116 | SCORING_COMMIT | P1 | 2026-11-13T15:34:59Z | sn116 commit touches scoring: Grading paths: classify task_wall_overrides.py (Runner-C gate on 669a… |
+| `sn117:release:everycli v1.2.1` | 117 | RELEASE | P1 | 2026-11-13T15:34:59Z | sn117 released everycli v1.2.1 |
+| `sn42:readme_task_diff:a31e8e8370c6e8f8` | 42 | README_TASK_DIFF | P2 | 2026-11-13T15:34:59Z | sn42 README task/scoring sections changed |
+| `sn58:readme_task_diff:e5ddb56c3ad66771` | 58 | README_TASK_DIFF | P2 | 2026-11-13T15:34:59Z | sn58 README task/scoring sections changed |
+| `sn69:readme_task_diff:55670d0ee7030fca` | 69 | README_TASK_DIFF | P2 | 2026-11-13T15:34:59Z | sn69 README task/scoring sections changed |
 
 ### detail
 
-- **`sn45:scoring_commit:2026-11-13T03:38:27Z`** - sn45 commit touches scoring: AlphaRidge 4.1.1: validator stability
+- **`sn10:burn_drop:0.607`** - sn10 burn fell 1.000 -> 0.607 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn3:scoring_commit:2026-11-13T12:59:12Z`** - sn3 commit touches scoring: Update Horizon scoring, set 60M budgets and live evaluation progress
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-13T04:01:45Z`** - sn51 commit touches scoring: DAH-6325 - [P0] Validator FIXED_RATIO follows the 50% miner emission …
+- **`sn25:release:v2026.11.13-1097815580`** - sn25 released v2026.11.13-1097815580
+  - published 2026-11-13T15:02:31Z (was v2026.10.30-1086064830)
+- **`sn42:release:v0.6.9`** - sn42 released v0.6.9
+  - published 2026-11-13T14:26:24Z (was v0.6.6)
+- **`sn42:scoring_commit:2026-11-13T13:19:19Z`** - sn42 commit touches scoring: v0.6.8: the operator can take a client job back from a miner that can…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-13T04:22:44Z`** - sn81 commit touches scoring: fix(admin): keep a job's counts for good only once its tasks are reti…
+- **`sn51:release:executor-v1.182`** - sn51 released executor-v1.182
+  - published 2026-11-13T09:55:48Z (was executor-v1.181)
+- **`sn51:scoring_commit:2026-11-13T15:34:45Z`** - sn51 commit touches scoring: DAH-6381 - [P1] Validator: an ownership shift after a container-only …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release 3e2660e`** - sn127 released Release 3e2660e
-  - published 2026-11-13T01:33:47Z (was Release ba66e7b)
-- **`sn48:readme_task_diff:ccea6584910d3bd5`** - sn48 README task/scoring sections changed
+- **`sn56:scoring_commit:2026-11-13T10:48:42Z`** - sn56 commit touches scoring: Add next image families and native-loss evaluation (#1420)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn69:scoring_commit:2026-11-13T02:45:24Z`** - sn69 commit touches scoring: Port the validator to bittensor 11.3.2
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-13T09:58:30Z`** - sn71 commit touches scoring: Record deployed Arena migration access and verified recovery evidence
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-11-13T11:36:18Z`** - sn81 commit touches scoring: docs(design): Terminal-Bench 2.1 gold check results (49/89 verified o…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-13T10:53:58Z`** - sn111 commit touches scoring: Document Silver data in evaluation exports
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-13T04:13:13Z`** - sn116 commit touches scoring: Grading paths: classify task_wall_overrides.py (Runner-C gate on 669a…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v1.2.1`** - sn117 released everycli v1.2.1
+  - published 2026-11-13T14:00:51Z (was everycli v1.1.3)
+- **`sn42:readme_task_diff:a31e8e8370c6e8f8`** - sn42 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn58:readme_task_diff:e5ddb56c3ad66771`** - sn58 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn69:readme_task_diff:55670d0ee7030fca`** - sn69 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -43,12 +79,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn126:burn_drop:0.952` | 126 | BURN_DROP | 2026-11-11T22:18:50Z | sn126 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:release:executor-v1.172` | 51 | RELEASE | 2026-11-06T15:16:05Z | sn51 released executor-v1.172 |
-| `sn51:scoring_commit:2026-11-06T12:40:51Z` | 51 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn51 commit touches scoring: DAH-5803 - [P1] Validator registry pull: a connection reset to Docker… |
-| `sn71:scoring_commit:2026-11-06T13:56:24Z` | 71 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn71 commit touches scoring: Merge pull request #1087 from leadpoet/fix/arena-unscored-uncertain-o… |
-| `sn78:scoring_commit:2026-11-06T05:33:30Z` | 78 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn78 commit touches scoring: Reuse each freshly validated proof receipt during lookup and capture |
-| `sn108:scoring_commit:2026-11-06T12:31:40Z` | 108 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn108 commit touches scoring: Neuron 1.0.3: report the EDA server's disk. The validator reads disk … |
-| `sn116:scoring_commit:2026-11-06T11:48:04Z` | 116 | SCORING_COMMIT | 2026-11-06T15:16:05Z | sn116 commit touches scoring: H5: a door config with no accepted revision is UNKNOWN (Validator-2 1… |
 | `sn2:scoring_commit:2026-11-06T20:42:23Z` | 2 | SCORING_COMMIT | 2026-11-06T20:59:00Z | sn2 commit touches scoring: Prepare Finney SN2 validator onboarding and cron updates |
 | `sn14:scoring_commit:2026-11-03T07:50:08Z` | 14 | SCORING_COMMIT | 2026-11-06T20:59:00Z | sn14 commit touches scoring: Release reward priority after completed worker HOLDs |
 | `sn28:release:v0.5.22` | 28 | RELEASE | 2026-11-06T20:59:00Z | sn28 released v0.5.22 |
@@ -203,6 +233,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-11-12T22:42:15Z` | 94 | SCORING_COMMIT | 2026-11-13T00:38:05Z | sn94 commit touches scoring: Fetch archived hotel bindings when verifying old receipts (AB#381) (#… |
 | `sn127:release:Release ba66e7b` | 127 | RELEASE | 2026-11-13T00:38:05Z | sn127 released Release ba66e7b |
 | `sn127:scoring_commit:2026-11-12T23:33:10Z` | 127 | SCORING_COMMIT | 2026-11-13T00:38:05Z | sn127 commit touches scoring: Docs: what the soup round bank holds and why scores move when it chan… |
+| `sn45:scoring_commit:2026-11-13T03:38:27Z` | 45 | SCORING_COMMIT | 2026-11-13T07:23:28Z | sn45 commit touches scoring: AlphaRidge 4.1.1: validator stability |
+| `sn51:scoring_commit:2026-11-13T04:01:45Z` | 51 | SCORING_COMMIT | 2026-11-13T07:23:28Z | sn51 commit touches scoring: DAH-6325 - [P0] Validator FIXED_RATIO follows the 50% miner emission … |
+| `sn81:scoring_commit:2026-11-13T04:22:44Z` | 81 | SCORING_COMMIT | 2026-11-13T07:23:28Z | sn81 commit touches scoring: fix(admin): keep a job's counts for good only once its tasks are reti… |
+| `sn127:release:Release 3e2660e` | 127 | RELEASE | 2026-11-13T07:23:28Z | sn127 released Release 3e2660e |
 | `sn28:readme_task_diff:3988d29ccf7e7016` | 28 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn28 README task/scoring sections changed |
 | `sn88:readme_task_diff:b0837afa350cd1d5` | 88 | README_TASK_DIFF | 2026-11-06T20:59:00Z | sn88 README task/scoring sections changed |
 | `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
@@ -218,6 +252,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
 | `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
 | `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
+| `sn48:readme_task_diff:ccea6584910d3bd5` | 48 | README_TASK_DIFF | 2026-11-13T07:23:28Z | sn48 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

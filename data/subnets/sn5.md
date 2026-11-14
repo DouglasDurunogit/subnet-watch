@@ -1,24 +1,24 @@
 # sn5 - Hone (ε)
 
-snapshot_utc: 2026-11-13T21:40:32Z  |  block: 9500190  |  row_status: ok
+snapshot_utc: 2026-11-14T01:51:42Z  |  block: 9501446  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.237953088 TAO (51.3264810816 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 252  |  free: 0
-- subnet age: 973.4 days  |  registered at block 2491604
+- registration cost: 0.284447177 TAO (61.363789494209996 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 251  |  free: 0
+- subnet age: 973.6 days  |  registered at block 2491604
 - weights_version: 803  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 55.67155299386662** (uid 39) <- the only figure quotable as achievable
-- median_miner_usd_day: 30.756446836011968
-- top_miner_usd_day: 55.67155299386662 (uid 39, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 55.60690874802279** (uid 39) <- the only figure quotable as achievable
+- median_miner_usd_day: 30.417454357892815
+- top_miner_usd_day: 55.60690874802279 (uid 39, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 241  |  gini: 0.1935753283433217  |  top1_share: 0.0071393628080474525  |  top10_share: 0.06929921115391671
+- earners: 240  |  gini: 0.19284370449842902  |  top1_share: 0.007172963445474748  |  top10_share: 0.06915472449996168
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,24 +26,24 @@ snapshot_utc: 2026-11-13T21:40:32Z  |  block: 9500190  |  row_status: ok
 - on-chain URL: `https://github.com/hone-subnet-org/hone-subnet`
 - resolved URL: `https://github.com/hone-subnet-org/hone-subnet`
 - status: **ok** 
-- README: 4578 bytes, sha 7da13ddd527716cf
+- README: 5705 bytes, sha 0671b9a26a219d80
 - latest release: (none) 
-- last commit: 2026-11-05T21:14:43Z
-- scoring-related commit: Shorten the new-miner ramp to 12 observations 2026-11-05T21:08:24Z
+- last commit: 2026-11-14T00:46:59Z
+- scoring-related commit: Lengthen the new-miner ramp to 30 observations 2026-11-14T00:45:57Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 22.5373 USD/day  |  payback on registration: 2.28 days
+- net margin: 22.1983 USD/day  |  payback on registration: 2.76 days
 
 ## Score
 
 - gate: **OK** 
-- score: 45.9 (rank 40), confidence 0.85 - hardware requirement unknown
-- components: income 12.48 / freshness 21.0 / resource 11.25 / registration 9.24
-- freshness basis: SCORING_COMMIT 8d ago
+- score: 57.6 (rank 19), confidence 0.85 - hardware requirement unknown
+- components: income 12.42 / freshness 35.0 / resource 11.25 / registration 9.08
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 
@@ -106,6 +106,23 @@ grading time.
 
 The validator stores its scoring window in `data/validator_scores.json`.
 Preserve that file across restarts.
+
+Scoring is pooled across validators. After each round the validator posts
+its signed verdicts to the problem server's ledger and reads the other
+validators' signed rounds back. A round counts when its signature verifies
+and the signing validator is validating and holds at least 0.75% of stake;
+every admitted round counts equally, and one validator contributes at most
+50 rounds per miner inside a four-day window. A miner's score is the
+plain mean of this validator's own observations and the admitted ones, so a
+validator that cannot reach the ledger scores exactly as before. The pool is
+kept in `data/ledger_pool.json` and is rebuilt from the server if lost.
+A round counts once: a round already held, or one numbered far below the
+newest held from its validator, is refused however it is dated.
+Rounds waiting for the server, and the validator's round counter, live in
+`data/feedback-outbox/`: keep that directory with the data directory. A
+round the server has not taken by the end of its grading window is dropped,
+and if the counter is lost the server refuses rounds until the numbering
+passes what it already holds.
 
 ## Protocol
 

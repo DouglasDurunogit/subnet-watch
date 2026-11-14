@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-13T21:40:32Z, block 9500190
+# ALARMS - generated 2026-11-14T01:51:42Z, block 9501446
 
-window: first_seen in [2026-11-13T20:26:00Z, 2026-11-13T21:41:00Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-14T00:37:12Z, 2026-11-14T01:52:12Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,24 +9,30 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.11.13-1097983310` | 25 | RELEASE | P1 | 2026-11-13T21:41:00Z | sn25 released v2026.11.13-1097983310 |
-| `sn45:scoring_commit:2026-11-13T17:26:43Z` | 45 | SCORING_COMMIT | P1 | 2026-11-13T21:41:00Z | sn45 commit touches scoring: AlphaRidge 4.1.2: re-verify reads a republished page at its original … |
-| `sn66:release:v2026.11.13` | 66 | RELEASE | P1 | 2026-11-13T21:41:00Z | sn66 released v2026.11.13 |
-| `sn71:scoring_commit:2026-11-13T15:37:43Z` | 71 | SCORING_COMMIT | P1 | 2026-11-13T21:41:00Z | sn71 commit touches scoring: Preserve verified research pairs when judge input capture is unavaila… |
-| `sn117:release:everycli v1.2.2` | 117 | RELEASE | P1 | 2026-11-13T21:41:00Z | sn117 released everycli v1.2.2 |
+| `sn5:scoring_commit:2026-11-14T00:45:57Z` | 5 | SCORING_COMMIT | P1 | 2026-11-14T01:52:12Z | sn5 commit touches scoring: Lengthen the new-miner ramp to 30 observations |
+| `sn8:scoring_commit:2026-11-13T23:26:20Z` | 8 | SCORING_COMMIT | P1 | 2026-11-14T01:52:12Z | sn8 commit touches scoring: Put new regular miners on the static drawdown rules until Grow (#979) |
+| `sn42:release:v0.6.11` | 42 | RELEASE | P1 | 2026-11-14T01:52:12Z | sn42 released v0.6.11 |
+| `sn66:release:v2026.11.13.2` | 66 | RELEASE | P1 | 2026-11-14T01:52:12Z | sn66 released v2026.11.13.2 |
+| `sn71:scoring_commit:2026-11-13T23:56:56Z` | 71 | SCORING_COMMIT | P1 | 2026-11-14T01:52:12Z | sn71 commit touches scoring: Expect mandatory reward history reader in bounded schema fixture |
+| `sn116:scoring_commit:2026-11-13T20:28:33Z` | 116 | SCORING_COMMIT | P1 | 2026-11-14T01:52:12Z | sn116 commit touches scoring: Test: the in-range case rows add no score, gate or target pool row (s… |
+| `sn42:readme_task_diff:c68c8d6462ab6e33` | 42 | README_TASK_DIFF | P2 | 2026-11-14T01:52:12Z | sn42 README task/scoring sections changed |
 
 ### detail
 
-- **`sn25:release:v2026.11.13-1097983310`** - sn25 released v2026.11.13-1097983310
-  - published 2026-11-13T19:42:26Z (was v2026.11.13-1097815580)
-- **`sn45:scoring_commit:2026-11-13T17:26:43Z`** - sn45 commit touches scoring: AlphaRidge 4.1.2: re-verify reads a republished page at its original …
+- **`sn5:scoring_commit:2026-11-14T00:45:57Z`** - sn5 commit touches scoring: Lengthen the new-miner ramp to 30 observations
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.13`** - sn66 released v2026.11.13
-  - published 2026-11-13T19:38:36Z (was v2026.11.12.2)
-- **`sn71:scoring_commit:2026-11-13T15:37:43Z`** - sn71 commit touches scoring: Preserve verified research pairs when judge input capture is unavaila…
+- **`sn8:scoring_commit:2026-11-13T23:26:20Z`** - sn8 commit touches scoring: Put new regular miners on the static drawdown rules until Grow (#979)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.2.2`** - sn117 released everycli v1.2.2
-  - published 2026-11-13T16:31:18Z (was everycli v1.2.1)
+- **`sn42:release:v0.6.11`** - sn42 released v0.6.11
+  - published 2026-11-13T23:40:59Z (was v0.6.9)
+- **`sn66:release:v2026.11.13.2`** - sn66 released v2026.11.13.2
+  - published 2026-11-13T22:05:27Z (was v2026.11.13)
+- **`sn71:scoring_commit:2026-11-13T23:56:56Z`** - sn71 commit touches scoring: Expect mandatory reward history reader in bounded schema fixture
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-13T20:28:33Z`** - sn116 commit touches scoring: Test: the in-range case rows add no score, gate or target pool row (s…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn42:readme_task_diff:c68c8d6462ab6e33`** - sn42 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -44,12 +50,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.607` | 10 | BURN_DROP | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
-| `sn2:scoring_commit:2026-11-06T21:26:38Z` | 2 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn2 commit touches scoring: Publish operator-focused SN2 validator documentation |
-| `sn66:release:v2026.11.06.3` | 66 | RELEASE | 2026-11-07T00:52:36Z | sn66 released v2026.11.06.3 |
-| `sn66:scoring_commit:2026-11-06T20:07:47Z` | 66 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn66 commit touches scoring: Bound archive validation resources and enforce chat-log storage quotas |
-| `sn71:scoring_commit:2026-11-06T23:18:31Z` | 71 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn71 commit touches scoring: Test historical verifier finality with its matching frozen caller |
-| `sn116:scoring_commit:2026-11-06T21:53:51Z` | 116 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn116 commit touches scoring: Queue view: a GET never slows a grade (Validator-2 must-fix) |
-| `sn120:scoring_commit:2026-11-07T00:17:07Z` | 120 | SCORING_COMMIT | 2026-11-07T00:52:36Z | sn120 commit touches scoring: Clarify independent 64K gate limits in miner documentation |
 | `sn34:scoring_commit:2026-11-07T04:54:09Z` | 34 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn34 commit touches scoring: Rename the miner command from yugos to ycli (#48) |
 | `sn37:scoring_commit:2026-11-07T00:56:30Z` | 37 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn37 commit touches scoring: fix(miner): support reviewed runtime488 funding |
 | `sn71:scoring_commit:2026-11-07T05:16:58Z` | 71 | SCORING_COMMIT | 2026-11-07T07:02:35Z | sn71 commit touches scoring: Preserve verified identity and complete paragraph facts; explain Aren… |
@@ -207,6 +207,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-11-13T10:53:58Z` | 111 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn111 commit touches scoring: Document Silver data in evaluation exports |
 | `sn116:scoring_commit:2026-11-13T04:13:13Z` | 116 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn116 commit touches scoring: Grading paths: classify task_wall_overrides.py (Runner-C gate on 669a… |
 | `sn117:release:everycli v1.2.1` | 117 | RELEASE | 2026-11-13T15:34:59Z | sn117 released everycli v1.2.1 |
+| `sn25:release:v2026.11.13-1097983310` | 25 | RELEASE | 2026-11-13T21:41:00Z | sn25 released v2026.11.13-1097983310 |
+| `sn45:scoring_commit:2026-11-13T17:26:43Z` | 45 | SCORING_COMMIT | 2026-11-13T21:41:00Z | sn45 commit touches scoring: AlphaRidge 4.1.2: re-verify reads a republished page at its original … |
+| `sn66:release:v2026.11.13` | 66 | RELEASE | 2026-11-13T21:41:00Z | sn66 released v2026.11.13 |
+| `sn71:scoring_commit:2026-11-13T15:37:43Z` | 71 | SCORING_COMMIT | 2026-11-13T21:41:00Z | sn71 commit touches scoring: Preserve verified research pairs when judge input capture is unavaila… |
+| `sn117:release:everycli v1.2.2` | 117 | RELEASE | 2026-11-13T21:41:00Z | sn117 released everycli v1.2.2 |
 | `sn37:readme_task_diff:0ff79d9d6b17ca0c` | 37 | README_TASK_DIFF | 2026-11-07T07:02:35Z | sn37 README task/scoring sections changed |
 | `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
 | `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |

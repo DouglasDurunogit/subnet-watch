@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-14T01:51:42Z  |  block: 9501446  |  row_status: ok
+snapshot_utc: 2026-11-14T08:54:42Z  |  block: 9503561  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (215.72999978427 USD), open=True
+- registration cost: 0.999999999 TAO (207.23999979276002 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 7  |  free: 0
-- subnet age: 741.1 days  |  registered at block 4165565
+- subnet age: 741.4 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2499.7972444414286** (uid 9) <- the only figure quotable as achievable
-- median_miner_usd_day: 2499.7972444414286
-- top_miner_usd_day: 4999.403766578404 (uid 242, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2402.202893827463** (uid 9) <- the only figure quotable as achievable
+- median_miner_usd_day: 2402.202893827463
+- top_miner_usd_day: 4804.22251132214 (uid 242, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.14999084444715693  |  top1_share: 0.39999084444715716  |  top10_share: 1.0
+- earners: 4  |  gini: 0.14999084444715738  |  top1_share: 0.3999908444471572  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-11-14T01:51:42Z  |  block: 9501446  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6490 bytes, sha a4a198e174fcf804
+- README: 6839 bytes, sha 5fb9628de30cc2d9
 - latest release: (none) 
-- last commit: 2026-11-13T12:59:12Z
+- last commit: 2026-11-14T08:28:04Z
 - scoring-related commit: Update Horizon scoring, set 60M budgets and live evaluation progress 2026-11-13T12:59:12Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-11-14T01:51:42Z  |  block: 9501446  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2491.5781 USD/day  |  payback on registration: 0.09 days
+- net margin: 2393.9837 USD/day  |  payback on registration: 0.09 days
 
 ## Score
 
 - gate: **OK** 
-- score: 74.0 (rank 3), confidence 0.85 - hardware requirement unknown
-- components: income 30.89 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 0.4d ago
+- score: 73.9 (rank 2), confidence 0.85 - hardware requirement unknown
+- components: income 30.74 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 0.7d ago
 
 ## On-chain description
 
@@ -66,6 +66,11 @@ packed text and byte-offset indexes. Each model scores the same text with its
 native tokenizer. Reward measures improvement in the byte-weighted loss deficit
 against the pinned Horizon reference; ordinary token loss remains available for
 historical charts. The default sampling budget is 60M original MiMo tokens.
+
+The [public dataset manifest](https://pub-41c7413282854bc5816ba78e1e21eec8.r2.dev/teutonic-text/manifest.json)
+lists the packed documents and byte-offset indexes. Resolve object paths relative
+to its `teutonic-text/` prefix. The evaluator uses authenticated, pinned reads
+from the same `dataset` bucket. The old `datasets` bucket has been deleted.
 
 Horizon uses a deterministic eight-GPU layer pipeline, followed by four MiMo king
 and four challenger vLLM replicas. Large MiMo documents use two-GPU groups.
@@ -222,11 +227,7 @@ teutonic-miner status
 For the new rollout, miners can select `MAIN`, `MIX01`, `MIX06` or `MIX07` with
 `teutonic-miner ready --competition MIX01` (also supported by `submit`). Omission
 selects MAIN. One ready submission per hotkey is shared across all competitions.
-The allocation is MAIN **40%**, MIX01/MIX06/MIX07 **20% each**. MIX02/03/05 retire
-at cutover and MIX04 stays retired; models and historical results are retained.
-Each competition uses its existing category weights and a **60M original MiMo-token**
-whole-document budget. Acceptance uses a byte-weighted bootstrap LCB for reduction
-in loss above the fixed Horizon reference, in bits/byte. PostgreSQL holds th
+The allocation is MAIN **40%**, MIX01/MIX06/MIX07 **20% eac
 ```
 
-_(truncated at 6000 of 6490 chars - read the full file at https://github.com/unarbos/teutonic)_
+_(truncated at 6000 of 6839 chars - read the full file at https://github.com/unarbos/teutonic)_

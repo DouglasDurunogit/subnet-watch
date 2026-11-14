@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-14T15:44:53Z, block 9505612
+# ALARMS - generated 2026-11-14T20:09:15Z, block 9506934
 
-window: first_seen in [2026-11-14T14:30:22Z, 2026-11-14T15:45:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-14T18:54:45Z, 2026-11-14T20:09:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,32 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.11.14-1098667430` | 25 | RELEASE | P1 | 2026-11-14T15:45:22Z | sn25 released v2026.11.14-1098667430 |
-| `sn25:scoring_commit:2026-11-14T08:11:19Z` | 25 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn25 commit touches scoring: Merge fix/validator-attempt-upload-lane-retry: retry a reserved uploa… |
-| `sn42:release:v0.6.13` | 42 | RELEASE | P1 | 2026-11-14T15:45:22Z | sn42 released v0.6.13 |
-| `sn42:scoring_commit:2026-11-14T09:11:27Z` | 42 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn42 commit touches scoring: tests: stub the agent CLI checks where the miner's main loop runs (CI… |
-| `sn53:scoring_commit:2026-11-09T17:49:36Z` | 53 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn53 commit touches scoring: tee_miner: forward reported cache write tokens |
-| `sn56:scoring_commit:2026-11-14T11:11:50Z` | 56 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn56 commit touches scoring: Bind subnet API publicly and add task subnet-api (#1415) |
-| `sn81:scoring_commit:2026-11-14T13:11:48Z` | 81 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn81 commit touches scoring: fix(miner): stop agentic children gracefully and never charge our fai… |
-| `sn94:scoring_commit:2026-11-14T09:11:23Z` | 94 | SCORING_COMMIT | P1 | 2026-11-14T15:45:22Z | sn94 commit touches scoring: Alert the miner operator on a first missed heartbeat and ops on a cus… |
+| `sn116:burn_drop:0.750` | 116 | BURN_DROP | P0 | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
+| `sn42:release:v0.6.15` | 42 | RELEASE | P1 | 2026-11-14T20:09:45Z | sn42 released v0.6.15 |
+| `sn42:scoring_commit:2026-11-14T17:22:34Z` | 42 | SCORING_COMMIT | P1 | 2026-11-14T20:09:45Z | sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C… |
+| `sn116:scoring_commit:2026-11-14T14:36:51Z` | 116 | SCORING_COMMIT | P1 | 2026-11-14T20:09:45Z | sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA… |
 
 ### detail
 
-- **`sn25:release:v2026.11.14-1098667430`** - sn25 released v2026.11.14-1098667430
-  - published 2026-11-14T14:42:26Z (was v2026.11.13-1097983310)
-- **`sn25:scoring_commit:2026-11-14T08:11:19Z`** - sn25 commit touches scoring: Merge fix/validator-attempt-upload-lane-retry: retry a reserved uploa…
+- **`sn116:burn_drop:0.750`** - sn116 burn fell 1.000 -> 0.750 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn42:release:v0.6.15`** - sn42 released v0.6.15
+  - published 2026-11-14T17:23:07Z (was v0.6.13)
+- **`sn42:scoring_commit:2026-11-14T17:22:34Z`** - sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn42:release:v0.6.13`** - sn42 released v0.6.13
-  - published 2026-11-14T14:38:52Z (was v0.6.11)
-- **`sn42:scoring_commit:2026-11-14T09:11:27Z`** - sn42 commit touches scoring: tests: stub the agent CLI checks where the miner's main loop runs (CI…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-11-09T17:49:36Z`** - sn53 commit touches scoring: tee_miner: forward reported cache write tokens
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-11-14T11:11:50Z`** - sn56 commit touches scoring: Bind subnet API publicly and add task subnet-api (#1415)
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-14T13:11:48Z`** - sn81 commit touches scoring: fix(miner): stop agentic children gracefully and never charge our fai…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-11-14T09:11:23Z`** - sn94 commit touches scoring: Alert the miner operator on a first missed heartbeat and ops on a cus…
+- **`sn116:scoring_commit:2026-11-14T14:36:51Z`** - sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -53,11 +41,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.607` | 10 | BURN_DROP | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.800` | 108 | BURN_DROP | 2026-11-14T08:55:08Z | sn108 burn fell 1.000 -> 0.800 - miners can earn again |
-| `sn17:release:witness-client-v0.2.18` | 17 | RELEASE | 2026-11-07T18:42:57Z | sn17 released witness-client-v0.2.18 |
-| `sn17:scoring_commit:2026-11-07T18:17:24Z` | 17 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn17 commit touches scoring: Apply the request deadline to cached grant validation |
-| `sn66:release:v2026.11.07` | 66 | RELEASE | 2026-11-07T18:42:57Z | sn66 released v2026.11.07 |
-| `sn71:scoring_commit:2026-11-07T13:44:22Z` | 71 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn71 commit touches scoring: Continue evidence-source validation past unrelated candidates |
-| `sn116:scoring_commit:2026-11-07T14:54:24Z` | 116 | SCORING_COMMIT | 2026-11-07T18:42:57Z | sn116 commit touches scoring: Crown-time D + menu: the Validator's 7 Nov 08:18 must-fixes |
 | `sn71:scoring_commit:2026-11-07T20:20:23Z` | 71 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn71 commit touches scoring: Integrate current training permission metadata before verified release |
 | `sn90:release:v1.3.6: feat(subnet): show Chutes median` | 90 | RELEASE | 2026-11-07T22:21:04Z | sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard |
 | `sn90:scoring_commit:2026-11-07T20:14:43Z` | 90 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5 |
@@ -213,7 +196,14 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:scoring_commit:2026-11-14T05:29:09Z` | 25 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn25 commit touches scoring: Merge release/validator-1114-idle-fleet: the validator build 47ae3006… |
 | `sn94:scoring_commit:2026-11-14T07:44:30Z` | 94 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn94 commit touches scoring: Admit miner hotels on a declared capacity commitment (AB#331) (#498) |
 | `sn116:scoring_commit:2026-11-14T05:27:45Z` | 116 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn116 commit touches scoring: Re-class: replace the miner-facing marker atomically so the miner sto… |
-| `sn15:readme_task_diff:4d00db5f525b3425` | 15 | README_TASK_DIFF | 2026-11-07T18:42:57Z | sn15 README task/scoring sections changed |
+| `sn25:release:v2026.11.14-1098667430` | 25 | RELEASE | 2026-11-14T15:45:22Z | sn25 released v2026.11.14-1098667430 |
+| `sn25:scoring_commit:2026-11-14T08:11:19Z` | 25 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn25 commit touches scoring: Merge fix/validator-attempt-upload-lane-retry: retry a reserved uploa… |
+| `sn42:release:v0.6.13` | 42 | RELEASE | 2026-11-14T15:45:22Z | sn42 released v0.6.13 |
+| `sn42:scoring_commit:2026-11-14T09:11:27Z` | 42 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn42 commit touches scoring: tests: stub the agent CLI checks where the miner's main loop runs (CI… |
+| `sn53:scoring_commit:2026-11-09T17:49:36Z` | 53 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn53 commit touches scoring: tee_miner: forward reported cache write tokens |
+| `sn56:scoring_commit:2026-11-14T11:11:50Z` | 56 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn56 commit touches scoring: Bind subnet API publicly and add task subnet-api (#1415) |
+| `sn81:scoring_commit:2026-11-14T13:11:48Z` | 81 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn81 commit touches scoring: fix(miner): stop agentic children gracefully and never charge our fai… |
+| `sn94:scoring_commit:2026-11-14T09:11:23Z` | 94 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn94 commit touches scoring: Alert the miner operator on a first missed heartbeat and ops on a cus… |
 | `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |

@@ -1,20 +1,20 @@
 # sn4 - Targon (δ)
 
-snapshot_utc: 2026-11-15T06:17:38Z  |  block: 9509976  |  row_status: ok
+snapshot_utc: 2026-11-15T14:11:31Z  |  block: 9512345  |  row_status: ok
 
 ## Chain row
 
-- miner_burn: **1.9056256860494614e-05**
-- registration cost: 0.0005 TAO (0.093615 USD), open=True
+- miner_burn: **1.905672252178192e-05**
+- registration cost: 0.0005 TAO (0.09577500000000001 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 17  |  free: 0
-- subnet age: 1124.8 days  |  registered at block 1411451
+- subnet age: 1125.1 days  |  registered at block 1411451
 - weights_version: 70001  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 19211.792603027276** (uid 156) <- the only figure quotable as achievable
-- median_miner_usd_day: 2219.0383294932176
-- top_miner_usd_day: 19211.792603027276 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 19835.08659568148** (uid 156) <- the only figure quotable as achievable
+- median_miner_usd_day: 2291.0312605445656
+- top_miner_usd_day: 19835.08659568148 (uid 156, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,14 +36,14 @@ snapshot_utc: 2026-11-15T06:17:38Z  |  block: 9509976  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 8954.3109 USD/day  |  payback on registration: 0.0 days
+- net margin: 9245.085 USD/day  |  payback on registration: 0.0 days
 
 ## Score
 
 - gate: **OK** 
-- score: 57.5 (rank 15), confidence 0.85 - hardware requirement unknown
-- components: income 35.94 / freshness 10.5 / resource 11.25 / registration 10.0
-- freshness basis: RELEASE 58d ago
+- score: 57.6 (rank 16), confidence 0.85 - hardware requirement unknown
+- components: income 36.07 / freshness 10.5 / resource 11.25 / registration 10.0
+- freshness basis: RELEASE 59d ago
 
 ## On-chain description
 

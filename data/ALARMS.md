@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-14T20:09:15Z, block 9506934
+# ALARMS - generated 2026-11-15T00:02:25Z, block 9508100
 
-window: first_seen in [2026-11-14T18:54:45Z, 2026-11-14T20:09:45Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-14T22:47:49Z, 2026-11-15T00:02:49Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,20 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn116:burn_drop:0.750` | 116 | BURN_DROP | P0 | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
-| `sn42:release:v0.6.15` | 42 | RELEASE | P1 | 2026-11-14T20:09:45Z | sn42 released v0.6.15 |
-| `sn42:scoring_commit:2026-11-14T17:22:34Z` | 42 | SCORING_COMMIT | P1 | 2026-11-14T20:09:45Z | sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C… |
-| `sn116:scoring_commit:2026-11-14T14:36:51Z` | 116 | SCORING_COMMIT | P1 | 2026-11-14T20:09:45Z | sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA… |
+| `sn71:scoring_commit:2026-11-14T23:29:40Z` | 71 | SCORING_COMMIT | P1 | 2026-11-15T00:02:49Z | sn71 commit touches scoring: Merge pull request #1240 from leadpoet/fix/miner-responses-output-cit… |
+| `sn116:scoring_commit:2026-11-14T22:09:09Z` | 116 | SCORING_COMMIT | P1 | 2026-11-15T00:02:49Z | sn116 commit touches scoring: Queue place: a resubmission of a stop-cancelled task's recipe takes t… |
 
 ### detail
 
-- **`sn116:burn_drop:0.750`** - sn116 burn fell 1.000 -> 0.750 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn42:release:v0.6.15`** - sn42 released v0.6.15
-  - published 2026-11-14T17:23:07Z (was v0.6.13)
-- **`sn42:scoring_commit:2026-11-14T17:22:34Z`** - sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C…
+- **`sn71:scoring_commit:2026-11-14T23:29:40Z`** - sn71 commit touches scoring: Merge pull request #1240 from leadpoet/fix/miner-responses-output-cit…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-14T14:36:51Z`** - sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA…
+- **`sn116:scoring_commit:2026-11-14T22:09:09Z`** - sn116 commit touches scoring: Queue place: a resubmission of a stop-cancelled task's recipe takes t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -41,10 +35,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.607` | 10 | BURN_DROP | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.800` | 108 | BURN_DROP | 2026-11-14T08:55:08Z | sn108 burn fell 1.000 -> 0.800 - miners can earn again |
-| `sn71:scoring_commit:2026-11-07T20:20:23Z` | 71 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn71 commit touches scoring: Integrate current training permission metadata before verified release |
-| `sn90:release:v1.3.6: feat(subnet): show Chutes median` | 90 | RELEASE | 2026-11-07T22:21:04Z | sn90 released v1.3.6: feat(subnet): show Chutes median GPU revenue on dashboard |
-| `sn90:scoring_commit:2026-11-07T20:14:43Z` | 90 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn90 commit touches scoring: chore(subnet): bump validator fallback version to 1.3.5 |
-| `sn127:scoring_commit:2026-11-07T20:18:51Z` | 127 | SCORING_COMMIT | 2026-11-07T22:21:04Z | sn127 commit touches scoring: Miner terms for mainnet subnet 127 and the open tier |
+| `sn116:burn_drop:0.750` | 116 | BURN_DROP | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn17:release:witness-gateway-disconnect-20261108` | 17 | RELEASE | 2026-11-08T01:42:10Z | sn17 released witness-gateway-disconnect-20261108 |
 | `sn90:release:v1.4.1: feat(pricing): lower three-provi` | 90 | RELEASE | 2026-11-08T01:42:10Z | sn90 released v1.4.1: feat(pricing): lower three-provider markup to five percent |
 | `sn116:scoring_commit:2026-11-07T21:44:08Z` | 116 | SCORING_COMMIT | 2026-11-08T01:42:10Z | sn116 commit touches scoring: Held-contender view, miner side: signed feedback v5 + one plain line |
@@ -204,6 +195,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn56:scoring_commit:2026-11-14T11:11:50Z` | 56 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn56 commit touches scoring: Bind subnet API publicly and add task subnet-api (#1415) |
 | `sn81:scoring_commit:2026-11-14T13:11:48Z` | 81 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn81 commit touches scoring: fix(miner): stop agentic children gracefully and never charge our fai… |
 | `sn94:scoring_commit:2026-11-14T09:11:23Z` | 94 | SCORING_COMMIT | 2026-11-14T15:45:22Z | sn94 commit touches scoring: Alert the miner operator on a first missed heartbeat and ops on a cus… |
+| `sn42:release:v0.6.15` | 42 | RELEASE | 2026-11-14T20:09:45Z | sn42 released v0.6.15 |
+| `sn42:scoring_commit:2026-11-14T17:22:34Z` | 42 | SCORING_COMMIT | 2026-11-14T20:09:45Z | sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C… |
+| `sn116:scoring_commit:2026-11-14T14:36:51Z` | 116 | SCORING_COMMIT | 2026-11-14T20:09:45Z | sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA… |
 | `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
 | `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |

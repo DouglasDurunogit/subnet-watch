@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-15T14:11:31Z, block 9512345
+# ALARMS - generated 2026-11-15T19:53:27Z, block 9514055
 
-window: first_seen in [2026-11-15T12:56:53Z, 2026-11-15T14:11:53Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-15T18:38:52Z, 2026-11-15T19:53:52Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:scoring_commit:2026-11-15T08:45:01Z` | 15 | SCORING_COMMIT | P1 | 2026-11-15T14:11:53Z | sn15 commit touches scoring: chore: remove dead load_episode_artifact from validator (#398) |
-| `sn25:release:v2026.11.15-1099387180` | 25 | RELEASE | P1 | 2026-11-15T14:11:53Z | sn25 released v2026.11.15-1099387180 |
-| `sn71:scoring_commit:2026-11-15T10:55:38Z` | 71 | SCORING_COMMIT | P1 | 2026-11-15T14:11:53Z | sn71 commit touches scoring: Allow measured baselines with capture gaps in verified reward comparis |
-| `sn81:scoring_commit:2026-11-15T08:40:29Z` | 81 | SCORING_COMMIT | P1 | 2026-11-15T14:11:53Z | sn81 commit touches scoring: fix(miner): install reliquary-terminal so miners serve TMax orders (#… |
-| `sn116:scoring_commit:2026-11-15T11:18:25Z` | 116 | SCORING_COMMIT | P1 | 2026-11-15T14:11:53Z | sn116 commit touches scoring: Miner kit: check_result says why a try ended as it did |
+| `sn106:burn_drop:0.000` | 106 | BURN_DROP | P0 | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn25:release:v2026.11.15-1099669220` | 25 | RELEASE | P1 | 2026-11-15T19:53:52Z | sn25 released v2026.11.15-1099669220 |
+| `sn81:scoring_commit:2026-11-15T18:16:14Z` | 81 | SCORING_COMMIT | P1 | 2026-11-15T19:53:52Z | sn81 commit touches scoring: Keep honest batch miners' leases: default time while a batch is out, … |
+| `sn116:scoring_commit:2026-11-15T14:46:48Z` | 116 | SCORING_COMMIT | P1 | 2026-11-15T19:53:52Z | sn116 commit touches scoring: Withdraw review fixes (kit): a withdrawn task is never the round's ve… |
 
 ### detail
 
-- **`sn15:scoring_commit:2026-11-15T08:45:01Z`** - sn15 commit touches scoring: chore: remove dead load_episode_artifact from validator (#398)
+- **`sn106:burn_drop:0.000`** - sn106 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn25:release:v2026.11.15-1099669220`** - sn25 released v2026.11.15-1099669220
+  - published 2026-11-15T18:31:59Z (was v2026.11.15-1099387180)
+- **`sn81:scoring_commit:2026-11-15T18:16:14Z`** - sn81 commit touches scoring: Keep honest batch miners' leases: default time while a batch is out, …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.11.15-1099387180`** - sn25 released v2026.11.15-1099387180
-  - published 2026-11-15T10:41:40Z (was v2026.11.14-1098667430)
-- **`sn71:scoring_commit:2026-11-15T10:55:38Z`** - sn71 commit touches scoring: Allow measured baselines with capture gaps in verified reward comparis
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-15T08:40:29Z`** - sn81 commit touches scoring: fix(miner): install reliquary-terminal so miners serve TMax orders (#…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-15T11:18:25Z`** - sn116 commit touches scoring: Miner kit: check_result says why a try ended as it did
+- **`sn116:scoring_commit:2026-11-15T14:46:48Z`** - sn116 commit touches scoring: Withdraw review fixes (kit): a withdrawn task is never the round's ve…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.985` | 76 | BURN_DROP | 2026-11-08T19:38:31Z | sn76 burn fell 0.996 -> 0.985 - miners can earn again |
 | `sn121:burn_drop:0.646` | 121 | BURN_DROP | 2026-11-09T21:33:03Z | sn121 burn fell 1.000 -> 0.646 - miners can earn again |
 | `sn127:burn_drop:0.960` | 127 | BURN_DROP | 2026-11-09T21:33:03Z | sn127 burn fell 1.000 -> 0.960 - miners can earn again |
 | `sn108:burn_drop:0.823` | 108 | BURN_DROP | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
@@ -44,11 +40,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn108:burn_drop:0.800` | 108 | BURN_DROP | 2026-11-14T08:55:08Z | sn108 burn fell 1.000 -> 0.800 - miners can earn again |
 | `sn116:burn_drop:0.750` | 116 | BURN_DROP | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
-| `sn11:release:v0.7.8` | 11 | RELEASE | 2026-11-08T15:05:15Z | sn11 released v0.7.8 |
-| `sn11:scoring_commit:2026-11-08T10:30:24Z` | 11 | SCORING_COMMIT | 2026-11-08T15:05:15Z | sn11 commit touches scoring: Burn all SN11 miner emission to owner UID 74; release 0.7.8 (#347) |
-| `sn71:scoring_commit:2026-11-08T18:08:19Z` | 71 | SCORING_COMMIT | 2026-11-08T19:38:31Z | sn71 commit touches scoring: Verify full recovery function security on migration replay |
-| `sn90:release:v1.4.2` | 90 | RELEASE | 2026-11-08T19:38:31Z | sn90 released v1.4.2 |
-| `sn90:scoring_commit:2026-11-08T17:57:48Z` | 90 | SCORING_COMMIT | 2026-11-08T19:38:31Z | sn90 commit touches scoring: docs(subnet): consolidate miner node onboarding |
 | `sn15:scoring_commit:2026-11-08T21:47:52Z` | 15 | SCORING_COMMIT | 2026-11-08T23:11:26Z | sn15 commit touches scoring: feat(validator): report each episode's end reason and duration (#406) |
 | `sn71:scoring_commit:2026-11-08T20:35:21Z` | 71 | SCORING_COMMIT | 2026-11-08T23:11:26Z | sn71 commit touches scoring: Merge pull request #1132 from leadpoet/fix/arena-provider-child-score… |
 | `sn34:scoring_commit:2026-11-09T00:20:00Z` | 34 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn34 commit touches scoring: Remove grader versions from prepared tasks |
@@ -205,7 +196,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-14T22:09:09Z` | 116 | SCORING_COMMIT | 2026-11-15T00:02:49Z | sn116 commit touches scoring: Queue place: a resubmission of a stop-cancelled task's recipe takes t… |
 | `sn116:scoring_commit:2026-11-15T05:04:28Z` | 116 | SCORING_COMMIT | 2026-11-15T06:17:56Z | sn116 commit touches scoring: Merge pull request #1433: Dashboard on every page, miner CTA to the d… |
 | `sn117:release:everycli v1.2.3` | 117 | RELEASE | 2026-11-15T06:17:56Z | sn117 released everycli v1.2.3 |
-| `sn90:readme_task_diff:ddf545eb7067fc3b` | 90 | README_TASK_DIFF | 2026-11-08T19:38:31Z | sn90 README task/scoring sections changed |
+| `sn15:scoring_commit:2026-11-15T08:45:01Z` | 15 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn15 commit touches scoring: chore: remove dead load_episode_artifact from validator (#398) |
+| `sn25:release:v2026.11.15-1099387180` | 25 | RELEASE | 2026-11-15T14:11:53Z | sn25 released v2026.11.15-1099387180 |
+| `sn71:scoring_commit:2026-11-15T10:55:38Z` | 71 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn71 commit touches scoring: Allow measured baselines with capture gaps in verified reward comparis |
+| `sn81:scoring_commit:2026-11-15T08:40:29Z` | 81 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn81 commit touches scoring: fix(miner): install reliquary-terminal so miners serve TMax orders (#… |
+| `sn116:scoring_commit:2026-11-15T11:18:25Z` | 116 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn116 commit touches scoring: Miner kit: check_result says why a try ended as it did |
 | `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
 | `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |

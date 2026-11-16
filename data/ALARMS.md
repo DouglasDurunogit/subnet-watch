@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-15T23:56:30Z, block 9515270
+# ALARMS - generated 2026-11-16T06:15:37Z, block 9517166
 
-window: first_seen in [2026-11-15T22:42:01Z, 2026-11-15T23:57:01Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-16T05:01:15Z, 2026-11-16T06:16:15Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,36 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn26:burn_drop:0.000` | 26 | BURN_DROP | P0 | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn14:scoring_commit:2026-11-15T22:59:01Z` | 14 | SCORING_COMMIT | P1 | 2026-11-15T23:57:01Z | sn14 commit touches scoring: Merge pull request #161 from latent-to/claude/remeasured-reward-bar |
-| `sn25:release:v2026.11.15-1099862510` | 25 | RELEASE | P1 | 2026-11-15T23:57:01Z | sn25 released v2026.11.15-1099862510 |
-| `sn42:release:v0.6.16` | 42 | RELEASE | P1 | 2026-11-15T23:57:01Z | sn42 released v0.6.16 |
-| `sn42:scoring_commit:2026-11-15T19:40:06Z` | 42 | SCORING_COMMIT | P1 | 2026-11-15T23:57:01Z | sn42 commit touches scoring: docs: the baseline was the setup of CADmind's test miners on testnet |
-| `sn90:scoring_commit:2026-11-15T20:34:02Z` | 90 | SCORING_COMMIT | P1 | 2026-11-15T23:57:01Z | sn90 commit touches scoring: docs(subnet): enter Phase 1 with external miners |
-| `sn116:scoring_commit:2026-11-15T20:34:55Z` | 116 | SCORING_COMMIT | P1 | 2026-11-15T23:57:01Z | sn116 commit touches scoring: Build jit: keep the shared level4 registry Challenge-free; Motor 1.8 … |
-| `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | P2 | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
+| `sn24:release:v0.2.1` | 24 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn24 released v0.2.1 |
+| `sn25:release:v2026.11.15-1100072900` | 25 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn25 released v2026.11.15-1100072900 |
+| `sn25:scoring_commit:2026-11-16T02:37:34Z` | 25 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490… |
+| `sn51:scoring_commit:2026-11-16T05:08:38Z` | 51 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,… |
+| `sn66:release:v2026.11.16.3` | 66 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn66 released v2026.11.16.3 |
+| `sn66:scoring_commit:2026-11-16T03:53:45Z` | 66 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6 |
+| `sn91:scoring_commit:2026-11-16T03:23:08Z` | 91 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r… |
+| `sn116:scoring_commit:2026-11-15T23:19:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed… |
+| `sn127:release:Release 26830a1` | 127 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn127 released Release 26830a1 |
 
 ### detail
 
-- **`sn26:burn_drop:0.000`** - sn26 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn14:scoring_commit:2026-11-15T22:59:01Z`** - sn14 commit touches scoring: Merge pull request #161 from latent-to/claude/remeasured-reward-bar
+- **`sn24:release:v0.2.1`** - sn24 released v0.2.1
+  - published 2026-11-16T00:25:27Z (was v0.2.0)
+- **`sn25:release:v2026.11.15-1100072900`** - sn25 released v2026.11.15-1100072900
+  - published 2026-11-16T05:45:02Z (was v2026.11.15-1099862510)
+- **`sn25:scoring_commit:2026-11-16T02:37:34Z`** - sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.11.15-1099862510`** - sn25 released v2026.11.15-1099862510
-  - published 2026-11-15T23:54:19Z (was v2026.11.15-1099669220)
-- **`sn42:release:v0.6.16`** - sn42 released v0.6.16
-  - published 2026-11-15T20:23:30Z (was v0.6.15)
-- **`sn42:scoring_commit:2026-11-15T19:40:06Z`** - sn42 commit touches scoring: docs: the baseline was the setup of CADmind's test miners on testnet
+- **`sn51:scoring_commit:2026-11-16T05:08:38Z`** - sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:scoring_commit:2026-11-15T20:34:02Z`** - sn90 commit touches scoring: docs(subnet): enter Phase 1 with external miners
+- **`sn66:release:v2026.11.16.3`** - sn66 released v2026.11.16.3
+  - published 2026-11-16T05:09:59Z (was v2026.11.13.2)
+- **`sn66:scoring_commit:2026-11-16T03:53:45Z`** - sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-15T20:34:55Z`** - sn116 commit touches scoring: Build jit: keep the shared level4 registry Challenge-free; Motor 1.8 …
+- **`sn91:scoring_commit:2026-11-16T03:23:08Z`** - sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn90:readme_task_diff:a7b301753d76644f`** - sn90 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn116:scoring_commit:2026-11-15T23:19:53Z`** - sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn127:release:Release 26830a1`** - sn127 released Release 26830a1
+  - published 2026-11-16T00:03:04Z (was Release 3e2660e)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -53,9 +56,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:burn_drop:0.750` | 116 | BURN_DROP | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn34:scoring_commit:2026-11-09T00:20:00Z` | 34 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn34 commit touches scoring: Remove grader versions from prepared tasks |
-| `sn71:scoring_commit:2026-11-09T02:03:21Z` | 71 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn71 commit touches scoring: Merge pull request #1136 from leadpoet/fix/arena-verifier-accuracy-re… |
-| `sn116:scoring_commit:2026-11-08T02:06:53Z` | 116 | SCORING_COMMIT | 2026-11-09T02:52:26Z | sn116 commit touches scoring: Door chain reader: an uncollected SDK session-task failure is one typ… |
+| `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn15:release:v3.0.8: feat(validator): report each epi` | 15 | RELEASE | 2026-11-09T11:22:14Z | sn15 released v3.0.8: feat(validator): report each episode's end reason and duration (#406) |
 | `sn51:release:watchtower-v1.2.1: DAH-5942 - docker_bui` | 51 | RELEASE | 2026-11-09T11:22:14Z | sn51 released watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive |
 | `sn51:scoring_commit:2026-11-09T09:10:49Z` | 51 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn51 commit touches scoring: DAH-5917 - [P2] Miner releases: create the GitHub release when a mine… |
@@ -215,6 +216,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn25:release:v2026.11.15-1099669220` | 25 | RELEASE | 2026-11-15T19:53:52Z | sn25 released v2026.11.15-1099669220 |
 | `sn81:scoring_commit:2026-11-15T18:16:14Z` | 81 | SCORING_COMMIT | 2026-11-15T19:53:52Z | sn81 commit touches scoring: Keep honest batch miners' leases: default time while a batch is out, … |
 | `sn116:scoring_commit:2026-11-15T14:46:48Z` | 116 | SCORING_COMMIT | 2026-11-15T19:53:52Z | sn116 commit touches scoring: Withdraw review fixes (kit): a withdrawn task is never the round's ve… |
+| `sn14:scoring_commit:2026-11-15T22:59:01Z` | 14 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn14 commit touches scoring: Merge pull request #161 from latent-to/claude/remeasured-reward-bar |
+| `sn25:release:v2026.11.15-1099862510` | 25 | RELEASE | 2026-11-15T23:57:01Z | sn25 released v2026.11.15-1099862510 |
+| `sn42:release:v0.6.16` | 42 | RELEASE | 2026-11-15T23:57:01Z | sn42 released v0.6.16 |
+| `sn42:scoring_commit:2026-11-15T19:40:06Z` | 42 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn42 commit touches scoring: docs: the baseline was the setup of CADmind's test miners on testnet |
+| `sn90:scoring_commit:2026-11-15T20:34:02Z` | 90 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn90 commit touches scoring: docs(subnet): enter Phase 1 with external miners |
+| `sn116:scoring_commit:2026-11-15T20:34:55Z` | 116 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn116 commit touches scoring: Build jit: keep the shared level4 registry Challenge-free; Motor 1.8 … |
 | `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
 | `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
@@ -230,6 +237,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn58:readme_task_diff:e5ddb56c3ad66771` | 58 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn58 README task/scoring sections changed |
 | `sn69:readme_task_diff:55670d0ee7030fca` | 69 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn69 README task/scoring sections changed |
 | `sn42:readme_task_diff:c68c8d6462ab6e33` | 42 | README_TASK_DIFF | 2026-11-14T01:52:12Z | sn42 README task/scoring sections changed |
+| `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-16T06:15:37Z, block 9517166
+# ALARMS - generated 2026-11-16T16:14:28Z, block 9520160
 
-window: first_seen in [2026-11-16T05:01:15Z, 2026-11-16T06:16:15Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-16T14:59:51Z, 2026-11-16T16:14:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn24:release:v0.2.1` | 24 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn24 released v0.2.1 |
-| `sn25:release:v2026.11.15-1100072900` | 25 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn25 released v2026.11.15-1100072900 |
-| `sn25:scoring_commit:2026-11-16T02:37:34Z` | 25 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490… |
-| `sn51:scoring_commit:2026-11-16T05:08:38Z` | 51 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,… |
-| `sn66:release:v2026.11.16.3` | 66 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn66 released v2026.11.16.3 |
-| `sn66:scoring_commit:2026-11-16T03:53:45Z` | 66 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6 |
-| `sn91:scoring_commit:2026-11-16T03:23:08Z` | 91 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r… |
-| `sn116:scoring_commit:2026-11-15T23:19:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-16T06:16:15Z | sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed… |
-| `sn127:release:Release 26830a1` | 127 | RELEASE | P1 | 2026-11-16T06:16:15Z | sn127 released Release 26830a1 |
+| `sn3:scoring_commit:2026-11-16T11:37:13Z` | 3 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn3 commit touches scoring: Stream Horizon scoring during packed-text sampling |
+| `sn25:release:v2026.11.16-1100273030` | 25 | RELEASE | P1 | 2026-11-16T16:14:51Z | sn25 released v2026.11.16-1100273030 |
+| `sn25:scoring_commit:2026-11-16T06:53:36Z` | 25 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn25 commit touches scoring: Merge fix/validator-nonce-wait-1116: the validator waits out the weig… |
+| `sn42:release:v0.6.18` | 42 | RELEASE | P1 | 2026-11-16T16:14:51Z | sn42 released v0.6.18 |
+| `sn42:scoring_commit:2026-11-16T08:59:35Z` | 42 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn42 commit touches scoring: reference miner: a brief that asks for nothing physical is rejected n… |
+| `sn51:release:executor-v1.184` | 51 | RELEASE | P1 | 2026-11-16T16:14:51Z | sn51 released executor-v1.184 |
+| `sn51:scoring_commit:2026-11-16T15:55:07Z` | 51 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn51 commit touches scoring: Validator: quote executor-reported paths in shell commands (#2280) |
+| `sn67:scoring_commit:2026-11-16T10:09:40Z` | 67 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post8 |
+| `sn71:scoring_commit:2026-11-16T11:03:00Z` | 71 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn71 commit touches scoring: Assert exact judgment binding in score projection tests |
+| `sn111:scoring_commit:2026-11-16T12:01:40Z` | 111 | SCORING_COMMIT | P1 | 2026-11-16T16:14:51Z | sn111 commit touches scoring: Verify carried-forward scoring revisions during production handoff |
+| `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | P2 | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 
 ### detail
 
-- **`sn24:release:v0.2.1`** - sn24 released v0.2.1
-  - published 2026-11-16T00:25:27Z (was v0.2.0)
-- **`sn25:release:v2026.11.15-1100072900`** - sn25 released v2026.11.15-1100072900
-  - published 2026-11-16T05:45:02Z (was v2026.11.15-1099862510)
-- **`sn25:scoring_commit:2026-11-16T02:37:34Z`** - sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490…
+- **`sn3:scoring_commit:2026-11-16T11:37:13Z`** - sn3 commit touches scoring: Stream Horizon scoring during packed-text sampling
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-16T05:08:38Z`** - sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,…
+- **`sn25:release:v2026.11.16-1100273030`** - sn25 released v2026.11.16-1100273030
+  - published 2026-11-16T11:18:23Z (was v2026.11.15-1100072900)
+- **`sn25:scoring_commit:2026-11-16T06:53:36Z`** - sn25 commit touches scoring: Merge fix/validator-nonce-wait-1116: the validator waits out the weig…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.16.3`** - sn66 released v2026.11.16.3
-  - published 2026-11-16T05:09:59Z (was v2026.11.13.2)
-- **`sn66:scoring_commit:2026-11-16T03:53:45Z`** - sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6
+- **`sn42:release:v0.6.18`** - sn42 released v0.6.18
+  - published 2026-11-16T09:17:57Z (was v0.6.16)
+- **`sn42:scoring_commit:2026-11-16T08:59:35Z`** - sn42 commit touches scoring: reference miner: a brief that asks for nothing physical is rejected n…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-16T03:23:08Z`** - sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r…
+- **`sn51:release:executor-v1.184`** - sn51 released executor-v1.184
+  - published 2026-11-16T08:33:17Z (was executor-v1.182)
+- **`sn51:scoring_commit:2026-11-16T15:55:07Z`** - sn51 commit touches scoring: Validator: quote executor-reported paths in shell commands (#2280)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-15T23:19:53Z`** - sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed…
+- **`sn67:scoring_commit:2026-11-16T10:09:40Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post8
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release 26830a1`** - sn127 released Release 26830a1
-  - published 2026-11-16T00:03:04Z (was Release 3e2660e)
+- **`sn71:scoring_commit:2026-11-16T11:03:00Z`** - sn71 commit touches scoring: Assert exact judgment binding in score projection tests
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-16T12:01:40Z`** - sn111 commit touches scoring: Verify carried-forward scoring revisions during production handoff
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn42:readme_task_diff:dd8a6fb083469151`** - sn42 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -57,16 +63,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:release:v3.0.8: feat(validator): report each epi` | 15 | RELEASE | 2026-11-09T11:22:14Z | sn15 released v3.0.8: feat(validator): report each episode's end reason and duration (#406) |
-| `sn51:release:watchtower-v1.2.1: DAH-5942 - docker_bui` | 51 | RELEASE | 2026-11-09T11:22:14Z | sn51 released watchtower-v1.2.1: DAH-5942 - docker_build.sh: optional multi-arch build to an OCI archive |
-| `sn51:scoring_commit:2026-11-09T09:10:49Z` | 51 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn51 commit touches scoring: DAH-5917 - [P2] Miner releases: create the GitHub release when a mine… |
-| `sn53:scoring_commit:2026-11-09T08:47:21Z` | 53 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn53 commit touches scoring: tee_miner: read KV load from sglang /v1/loads when /get_load is gone … |
-| `sn66:release:v2026.11.09` | 66 | RELEASE | 2026-11-09T11:22:14Z | sn66 released v2026.11.09 |
-| `sn67:scoring_commit:2026-11-09T07:00:28Z` | 67 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post1 |
-| `sn71:scoring_commit:2026-11-09T09:13:31Z` | 71 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn71 commit touches scoring: Allow the fixed reward clock failure label in telemetry |
-| `sn97:scoring_commit:2026-11-09T10:05:07Z` | 97 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn97 commit touches scoring: fix(miner): Fixed ty format |
-| `sn108:scoring_commit:2026-11-09T08:54:14Z` | 108 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn108 commit touches scoring: Neuron 1.0.5: a validator updated mid-evaluation waits for the run it… |
-| `sn127:scoring_commit:2026-11-09T04:08:30Z` | 127 | SCORING_COMMIT | 2026-11-09T11:22:14Z | sn127 commit touches scoring: Merge pull request #222 from ooo-hq/miner-delete-data |
 | `sn28:release:v0.5.24` | 28 | RELEASE | 2026-11-09T21:33:03Z | sn28 released v0.5.24 |
 | `sn41:scoring_commit:2026-11-09T17:58:19Z` | 41 | SCORING_COMMIT | 2026-11-09T21:33:03Z | sn41 commit touches scoring: Using the validator gamma api call for the latest prices as proper pr… |
 | `sn51:scoring_commit:2026-11-09T13:43:37Z` | 51 | SCORING_COMMIT | 2026-11-09T21:33:03Z | sn51 commit touches scoring: DAH-6008 - [P0] validator: accept GB200 and pay it at the B200 rate a… |
@@ -222,7 +218,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:scoring_commit:2026-11-15T19:40:06Z` | 42 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn42 commit touches scoring: docs: the baseline was the setup of CADmind's test miners on testnet |
 | `sn90:scoring_commit:2026-11-15T20:34:02Z` | 90 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn90 commit touches scoring: docs(subnet): enter Phase 1 with external miners |
 | `sn116:scoring_commit:2026-11-15T20:34:55Z` | 116 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn116 commit touches scoring: Build jit: keep the shared level4 registry Challenge-free; Motor 1.8 … |
-| `sn15:readme_task_diff:cf22c88e3fbbce23` | 15 | README_TASK_DIFF | 2026-11-09T11:22:14Z | sn15 README task/scoring sections changed |
+| `sn24:release:v0.2.1` | 24 | RELEASE | 2026-11-16T06:16:15Z | sn24 released v0.2.1 |
+| `sn25:release:v2026.11.15-1100072900` | 25 | RELEASE | 2026-11-16T06:16:15Z | sn25 released v2026.11.15-1100072900 |
+| `sn25:scoring_commit:2026-11-16T02:37:34Z` | 25 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490… |
+| `sn51:scoring_commit:2026-11-16T05:08:38Z` | 51 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,… |
+| `sn66:release:v2026.11.16.3` | 66 | RELEASE | 2026-11-16T06:16:15Z | sn66 released v2026.11.16.3 |
+| `sn66:scoring_commit:2026-11-16T03:53:45Z` | 66 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6 |
+| `sn91:scoring_commit:2026-11-16T03:23:08Z` | 91 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r… |
+| `sn116:scoring_commit:2026-11-15T23:19:53Z` | 116 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed… |
+| `sn127:release:Release 26830a1` | 127 | RELEASE | 2026-11-16T06:16:15Z | sn127 released Release 26830a1 |
 | `sn117:readme_task_diff:833c1d2c18a944b2` | 117 | README_TASK_DIFF | 2026-11-09T21:33:03Z | sn117 README task/scoring sections changed |
 | `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
 | `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |

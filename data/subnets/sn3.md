@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-16T06:15:37Z  |  block: 9517166  |  row_status: ok
+snapshot_utc: 2026-11-16T16:14:28Z  |  block: 9520160  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (190.05999980994 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 7  |  free: 0
-- subnet age: 743.3 days  |  registered at block 4165565
+- registration cost: 0.999999999 TAO (187.4999998125 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 8  |  free: 0
+- subnet age: 743.7 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 2185.086287128416** (uid 9) <- the only figure quotable as achievable
-- median_miner_usd_day: 2185.086287128416
-- top_miner_usd_day: 4370.005862859325 (uid 242, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 2167.7144202192453** (uid 158) <- the only figure quotable as achievable
+- median_miner_usd_day: 2167.7144202192453
+- top_miner_usd_day: 4335.264295545504 (uid 242, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.14999084444715738  |  top1_share: 0.3999908444471572  |  top10_share: 1.0
+- earners: 4  |  gini: 0.15460531335357763  |  top1_share: 0.40204171943906125  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -28,22 +28,22 @@ snapshot_utc: 2026-11-16T06:15:37Z  |  block: 9517166  |  row_status: ok
 - status: **ok** 
 - README: 6839 bytes, sha 5fb9628de30cc2d9
 - latest release: (none) 
-- last commit: 2026-11-14T12:29:08Z
-- scoring-related commit: Update Horizon scoring, set 60M budgets and live evaluation progress 2026-11-13T12:59:12Z
+- last commit: 2026-11-16T15:46:22Z
+- scoring-related commit: Stream Horizon scoring during packed-text sampling 2026-11-16T11:37:13Z
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2176.8671 USD/day  |  payback on registration: 0.09 days
+- net margin: 2131.8517 USD/day  |  payback on registration: 0.09 days
 
 ## Score
 
 - gate: **OK** 
-- score: 73.6 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 30.36 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 2.6d ago
+- score: 51.9 (rank 30), confidence 0.6 - hardware requirement unknown; income rests on 2 competitive miners (n<=2: not a distribution)
+- components: income 30.28 / freshness 35.0 / resource 11.25 / registration 9.97
+- freshness basis: SCORING_COMMIT 0.0d ago
 
 ## On-chain description
 

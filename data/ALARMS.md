@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-17T00:21:44Z, block 9522596
+# ALARMS - generated 2026-11-17T08:16:06Z, block 9524968
 
-window: first_seen in [2026-11-16T23:07:13Z, 2026-11-17T00:22:13Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-17T07:01:39Z, 2026-11-17T08:16:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,48 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn15:release:v3.0.9: fix(sandbox): isolate each task ` | 15 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn15 released v3.0.9: fix(sandbox): isolate each task in a run from the run's other tasks |
-| `sn15:scoring_commit:2026-11-16T21:42:42Z` | 15 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn15 commit touches scoring: fix(sandbox): isolate each task in a run from the run's other tasks |
-| `sn25:release:v2026.11.16-1100716180` | 25 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn25 released v2026.11.16-1100716180 |
-| `sn25:scoring_commit:2026-11-16T19:08:58Z` | 25 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn25 commit touches scoring: Merge fix/validator-upload-encoding-1116: validator uploads go as zst… |
-| `sn41:scoring_commit:2026-11-11T19:25:42Z` | 41 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn41 commit touches scoring: Document the one-agent-per-hotkey upload rule in the miner guide |
-| `sn42:release:v0.6.19` | 42 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn42 released v0.6.19 |
-| `sn42:scoring_commit:2026-11-16T19:56:03Z` | 42 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn42 commit touches scoring: desk: a sweep of a miner's grants is job-scoped -- one job's grants f… |
-| `sn62:scoring_commit:2026-11-16T20:35:34Z` | 62 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn62 commit touches scoring: add more validation |
-| `sn66:release:v2026.11.16.4` | 66 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn66 released v2026.11.16.4 |
-| `sn70:release:build-v3rc1-2026.11.17: v3: pin the embe` | 70 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn70 released build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL) |
-| `sn94:scoring_commit:2026-11-16T17:02:42Z` | 94 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn94 commit touches scoring: Add miner hotel offer signer to room-kit (AB#347) (#565) |
-| `sn127:release:Release 9bd0c63` | 127 | RELEASE | P1 | 2026-11-17T00:22:13Z | sn127 released Release 9bd0c63 |
-| `sn127:scoring_commit:2026-11-16T00:13:27Z` | 127 | SCORING_COMMIT | P1 | 2026-11-17T00:22:13Z | sn127 commit touches scoring: Weekly judge: left-out bodies, scores from cached answers, the week's… |
+| `sn25:release:v2026.11.16-1101008320` | 25 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn25 released v2026.11.16-1101008320 |
+| `sn42:release:v0.6.20` | 42 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn42 released v0.6.20 |
+| `sn51:scoring_commit:2026-11-17T07:09:42Z` | 51 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after… |
+| `sn67:scoring_commit:2026-11-16T10:46:55Z` | 67 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9 |
+| `sn70:release:SUPERSEDED: use image-v2026.11.17b` | 70 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn70 released SUPERSEDED: use image-v2026.11.17b |
+| `sn70:scoring_commit:2026-11-17T06:20:06Z` | 70 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself |
+| `sn71:scoring_commit:2026-11-17T06:40:15Z` | 71 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache |
+| `sn76:release:Ormas subnet SDK 0.0.4` | 76 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn76 released Ormas subnet SDK 0.0.4 |
+| `sn91:scoring_commit:2026-11-17T01:24:31Z` | 91 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s… |
+| `sn111:scoring_commit:2026-11-17T01:46:11Z` | 111 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy |
+| `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | P2 | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 
 ### detail
 
-- **`sn15:release:v3.0.9: fix(sandbox): isolate each task `** - sn15 released v3.0.9: fix(sandbox): isolate each task in a run from the run's other tasks
-  - published 2026-11-16T21:42:42Z (was v3.0.8: feat(validator): report each episode's end reason and duration (#406))
-- **`sn15:scoring_commit:2026-11-16T21:42:42Z`** - sn15 commit touches scoring: fix(sandbox): isolate each task in a run from the run's other tasks
+- **`sn25:release:v2026.11.16-1101008320`** - sn25 released v2026.11.16-1101008320
+  - published 2026-11-17T07:43:54Z (was v2026.11.16-1100716180)
+- **`sn42:release:v0.6.20`** - sn42 released v0.6.20
+  - published 2026-11-17T06:50:52Z (was v0.6.19)
+- **`sn51:scoring_commit:2026-11-17T07:09:42Z`** - sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:release:v2026.11.16-1100716180`** - sn25 released v2026.11.16-1100716180
-  - published 2026-11-16T23:36:55Z (was v2026.11.16-1100273030)
-- **`sn25:scoring_commit:2026-11-16T19:08:58Z`** - sn25 commit touches scoring: Merge fix/validator-upload-encoding-1116: validator uploads go as zst…
+- **`sn67:scoring_commit:2026-11-16T10:46:55Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn41:scoring_commit:2026-11-11T19:25:42Z`** - sn41 commit touches scoring: Document the one-agent-per-hotkey upload rule in the miner guide
+- **`sn70:release:SUPERSEDED: use image-v2026.11.17b`** - sn70 released SUPERSEDED: use image-v2026.11.17b
+  - published 2026-11-17T06:37:36Z (was build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL))
+- **`sn70:scoring_commit:2026-11-17T06:20:06Z`** - sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn42:release:v0.6.19`** - sn42 released v0.6.19
-  - published 2026-11-16T22:04:26Z (was v0.6.18)
-- **`sn42:scoring_commit:2026-11-16T19:56:03Z`** - sn42 commit touches scoring: desk: a sweep of a miner's grants is job-scoped -- one job's grants f…
+- **`sn71:scoring_commit:2026-11-17T06:40:15Z`** - sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn62:scoring_commit:2026-11-16T20:35:34Z`** - sn62 commit touches scoring: add more validation
+- **`sn76:release:Ormas subnet SDK 0.0.4`** - sn76 released Ormas subnet SDK 0.0.4
+  - published 2026-11-17T03:35:37Z (was v0.0.3)
+- **`sn91:scoring_commit:2026-11-17T01:24:31Z`** - sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.16.4`** - sn66 released v2026.11.16.4
-  - published 2026-11-16T21:30:28Z (was v2026.11.16.3)
-- **`sn70:release:build-v3rc1-2026.11.17: v3: pin the embe`** - sn70 released build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL)
-  - published 2026-11-17T00:09:37Z (was Fugal Subnet v0.3.2)
-- **`sn94:scoring_commit:2026-11-16T17:02:42Z`** - sn94 commit touches scoring: Add miner hotel offer signer to room-kit (AB#347) (#565)
+- **`sn111:scoring_commit:2026-11-17T01:46:11Z`** - sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release 9bd0c63`** - sn127 released Release 9bd0c63
-  - published 2026-11-16T21:26:25Z (was Release 26830a1)
-- **`sn127:scoring_commit:2026-11-16T00:13:27Z`** - sn127 commit touches scoring: Weekly judge: left-out bodies, scores from cached answers, the week's…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn76:readme_task_diff:da868f725697bf9f`** - sn76 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -67,15 +61,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn15:scoring_commit:2026-11-10T02:15:07Z` | 15 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn15 commit touches scoring: docs: tag oroagents.com links in the miner and validator guides for a… |
-| `sn36:scoring_commit:2026-11-10T02:29:05Z` | 36 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn36 commit touches scoring: Validator: GPUs with a UUID nvidia-smi would not give are not counted… |
-| `sn51:release:executor-v1.173` | 51 | RELEASE | 2026-11-10T03:50:58Z | sn51 released executor-v1.173 |
-| `sn66:release:v2026.11.10` | 66 | RELEASE | 2026-11-10T03:50:58Z | sn66 released v2026.11.10 |
-| `sn70:release:build-v2026.11.10: Merge pull request #1` | 70 | RELEASE | 2026-11-10T03:50:58Z | sn70 released build-v2026.11.10: Merge pull request #185 from fugal-ai/release/v2 |
-| `sn70:scoring_commit:2026-11-10T02:28:32Z` | 70 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn70 commit touches scoring: validator: only a head hash can count as a commitment |
-| `sn71:scoring_commit:2026-11-10T00:19:25Z` | 71 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn71 commit touches scoring: Keep historical publication proofs on their frozen reward economics |
-| `sn91:scoring_commit:2026-11-10T02:09:26Z` | 91 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn91 commit touches scoring: fix(validator): keep private-eval checkpoints on the GPU host, sha256… |
-| `sn127:scoring_commit:2026-11-09T23:53:44Z` | 127 | SCORING_COMMIT | 2026-11-10T03:50:58Z | sn127 commit touches scoring: Merge pull request #229 from ooo-hq/docs-pass-miners |
 | `sn51:release:miner-v1.012` | 51 | RELEASE | 2026-11-10T12:31:16Z | sn51 released miner-v1.012 |
 | `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
 | `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
@@ -231,8 +216,19 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn67:scoring_commit:2026-11-16T10:09:40Z` | 67 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post8 |
 | `sn71:scoring_commit:2026-11-16T11:03:00Z` | 71 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn71 commit touches scoring: Assert exact judgment binding in score projection tests |
 | `sn111:scoring_commit:2026-11-16T12:01:40Z` | 111 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn111 commit touches scoring: Verify carried-forward scoring revisions during production handoff |
-| `sn70:readme_task_diff:7e6dcc00df19b743` | 70 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn70 README task/scoring sections changed |
-| `sn127:readme_task_diff:1fb144e0f2f9b150` | 127 | README_TASK_DIFF | 2026-11-10T03:50:58Z | sn127 README task/scoring sections changed |
+| `sn15:release:v3.0.9: fix(sandbox): isolate each task ` | 15 | RELEASE | 2026-11-17T00:22:13Z | sn15 released v3.0.9: fix(sandbox): isolate each task in a run from the run's other tasks |
+| `sn15:scoring_commit:2026-11-16T21:42:42Z` | 15 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn15 commit touches scoring: fix(sandbox): isolate each task in a run from the run's other tasks |
+| `sn25:release:v2026.11.16-1100716180` | 25 | RELEASE | 2026-11-17T00:22:13Z | sn25 released v2026.11.16-1100716180 |
+| `sn25:scoring_commit:2026-11-16T19:08:58Z` | 25 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn25 commit touches scoring: Merge fix/validator-upload-encoding-1116: validator uploads go as zst… |
+| `sn41:scoring_commit:2026-11-11T19:25:42Z` | 41 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn41 commit touches scoring: Document the one-agent-per-hotkey upload rule in the miner guide |
+| `sn42:release:v0.6.19` | 42 | RELEASE | 2026-11-17T00:22:13Z | sn42 released v0.6.19 |
+| `sn42:scoring_commit:2026-11-16T19:56:03Z` | 42 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn42 commit touches scoring: desk: a sweep of a miner's grants is job-scoped -- one job's grants f… |
+| `sn62:scoring_commit:2026-11-16T20:35:34Z` | 62 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn62 commit touches scoring: add more validation |
+| `sn66:release:v2026.11.16.4` | 66 | RELEASE | 2026-11-17T00:22:13Z | sn66 released v2026.11.16.4 |
+| `sn70:release:build-v3rc1-2026.11.17: v3: pin the embe` | 70 | RELEASE | 2026-11-17T00:22:13Z | sn70 released build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL) |
+| `sn94:scoring_commit:2026-11-16T17:02:42Z` | 94 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn94 commit touches scoring: Add miner hotel offer signer to room-kit (AB#347) (#565) |
+| `sn127:release:Release 9bd0c63` | 127 | RELEASE | 2026-11-17T00:22:13Z | sn127 released Release 9bd0c63 |
+| `sn127:scoring_commit:2026-11-16T00:13:27Z` | 127 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn127 commit touches scoring: Weekly judge: left-out bodies, scores from cached answers, the week's… |
 | `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
 | `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
 | `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |

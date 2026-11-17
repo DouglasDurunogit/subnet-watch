@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-11-17T08:16:06Z  |  block: 9524968  |  row_status: ok
+snapshot_utc: 2026-11-17T17:44:27Z  |  block: 9527810  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (38.486000000000004 USD), open=True
+- registration cost: 0.2 TAO (38.186 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 176  |  free: 0
-- subnet age: 875.7 days  |  registered at block 3219949
+- subnet age: 876.1 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 54.756217333516034** (uid 212) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.03703497959656141
-- top_miner_usd_day: 90.95790988915482 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 54.92049322733733** (uid 212) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.03714608943343749
+- top_miner_usd_day: 91.23079564852247 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 163  |  gini: 0.8678006348692129  |  top1_share: 0.07505194963940838  |  top10_share: 0.5119789756753453
+- earners: 163  |  gini: 0.8678015208484626  |  top1_share: 0.07505309639861263  |  top10_share: 0.511986798478158
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,7 +36,7 @@ snapshot_utc: 2026-11-17T08:16:06Z  |  block: 9524968  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.1821 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.182 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 

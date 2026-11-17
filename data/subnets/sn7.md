@@ -1,20 +1,20 @@
 # sn7 - Allways (η)
 
-snapshot_utc: 2026-11-17T08:16:06Z  |  block: 9524968  |  row_status: ok
+snapshot_utc: 2026-11-17T17:44:27Z  |  block: 9527810  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.15 TAO (28.8645 USD), open=True
+- registration cost: 0.245363805 TAO (46.84731128865 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 13  |  free: 0
-- subnet age: 958.0 days  |  registered at block 2627691
+- subnet age: 958.3 days  |  registered at block 2627691
 - weights_version: 319  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1274.4848125518852
-- top_miner_usd_day: 1274.4848125518852 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1261.5279734648557
+- top_miner_usd_day: 1261.5279734648557 (uid 53, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -26,14 +26,14 @@ snapshot_utc: 2026-11-17T08:16:06Z  |  block: 9524968  |  row_status: ok
 - on-chain URL: `https://github.com/entrius/allways`
 - resolved URL: `https://github.com/entrius/allways`
 - status: **ok** 
-- README: 19675 bytes, sha dc345f9e5261b6c1
-- latest release: release-20261021-195318: Scale the miner pool by recent swap fees (#811) 2026-10-21T19:52:45Z
-- last commit: 2026-10-21T19:52:45Z
-- scoring-related commit: Scale the miner pool by recent swap fees (#811) 2026-10-21T19:52:45Z
+- README: 3427 bytes, sha d73b7f4f20c2f067
+- latest release: release-20261117-160316 2026-11-17T16:01:21Z
+- last commit: 2026-11-17T16:01:21Z
+- scoring-related commit: Drop VALIDATOR_MODE: the validator always sets weights unless told no… 2026-11-17T16:01:21Z
 
 ## Resources
 
-- min_compute.yml present: True  |  unmodified template: False
+- min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
 - net margin: [UNKNOWN] USD/day  |  payback on registration: [UNKNOWN] days
@@ -54,105 +54,90 @@ snapshot_utc: 2026-11-17T08:16:06Z  |  block: 9524968  |  row_status: ok
 ```markdown
 # Allways
 
-**Settlement layer for agents and applications**
+Bittensor Subnet 7 (SN7).
 
-Native cross-chain transactions for programs that hold one asset and need to pay in another — no wrapped tokens, no bridges, no custodian. Bittensor Subnet 7 (SN7).
+**Links:** [Website](https://all-ways.io) · [Docs](https://docs.all-ways.io)
 
-[![Twitter](https://img.shields.io/twitter/follow/allways_io?style=social)](https://x.com/allways_io)
+## What this repository is now
 
-## Overview
+This repository holds the SN7 validator and nothing else. Every epoch the validator puts 100% of its
+weight on one pinned UID, the Allways treasury miner. It does no scoring, serves no axon, and talks to
+no chain other than Bittensor.
 
-Allways is a settlement layer built to be driven by software. An agent or application that holds SOL, TAO, BTC, or any supported asset submits a single swap and receives the destination asset natively in its own wallet — no account, no custodian, no bridge in the path. Allways creates a verification layer above independent systems: miners complete transactions, validators independently verify both legs on-chain, and a smart contract enforces outcomes through collateral and slashing.
+The previous code (cross-chain swap miner and validator, the `alw` CLI, the smart contracts) is
+preserved on the [`allways-old`](https://github.com/entrius/allways/tree/allways-old) branch.
 
-Currently live with SOL and TAO as hubs, each paired against BTC, ETH, USDC-on-Arbitrum, HYPE, BNB, AVAX, USDC-on-Base, USDC-on-Ethereum, CRO, ASTER, UNI, QNT, POL, USDC-on-Polygon, PAXG, and USDC-on-Solana — plus every Bittensor subnet alpha token (`sn1`…`sn128`) against SOL and each spoke, and SOL ↔ TAO itself (hub-and-spoke: every pair has a SOL or TAO leg). Designed to scale to any verifiable asset.
+## How the target is chosen
 
-## For agents
+`allways/constants.py` pins the target:
 
-Allways is designed to be operated by software, not clicked through by people. Every step of a swap — quote discovery, reservation, deposit, and settlement — is a CLI command (`alw swap now`) or a public API call (`api.all-ways.io`) with structured output, so an autonomous agent can clear a payment in another native asset as a single tool call, with no human in the loop, no exchange account, and no custodian holding its keys. This is how the network is used in practice: agents operated by the team and by users originate swaps today, and the miner and validator neurons in this repo are themselves unattended programs that quote, fulfill, and verify around the clock.
+| Constant          | Meaning                                                                     |
+| ----------------- | --------------------------------------------------------------------------- |
+| `NETUID_FINNEY`   | The subnet the treasury constants are pinned for (7)                        |
+| `TREASURY_UID`    | The UID that receives the full weight (78). `None` burns everything instead |
+| `TREASURY_HOTKEY` | The hotkey expected at that UID. A guard, not a lookup                      |
 
-**Why agents need a settlement layer.** An agent's wallet is a single-chain identity, but the things it pays for are not. An LLM agent earning TAO may need to buy inference from a provider that bills in USDC; a trading agent holding SOL may need to settle an obligation in BTC; a multi-agent pipeline may split revenue across operators who each want a different native asset. Bridges and centralized exchanges break the autonomy model — they require accounts, KYC, custody, and a human to unblock them. Allways lets the agent stay self-custodial: it sends the source asset from its own wallet and receives the destination asset in its own wallet, and the protocol verifies the outcome on-chain.
+On every pass the validator syncs the metagraph and sets weights `[1.0]` on:
 
-**Swap lifecycle as tool calls.**
+- `TREASURY_UID`, when the netuid is 7 and the UID is set, in range, and held by `TREASURY_HOTKEY`
+- otherwise the UID where the subnet owner hotkey is registered, read from the chain on each pass.
+  Weight placed there is burned. A `TREASURY FALLBACK` warning says why (another netuid, unset, out
+  of range, or hotkey mismatch)
+- nothing at all, with a `NO WEIGHTS SET` error, if the treasury cannot be used and the subnet owner
+  hotkey is not registered on the subnet. There is no hard-coded fallback UID
 
-- **Discover**: `GET` live quotes per pair from the API and select a rate, liquidity, and miner.
-- **Reserve**: lock that miner's quote and collateral for the swap window.
-- **Deposit**: send the source asset natively from the agent's wallet; validators attest the deposit on-chain.
-- **Settle**: the miner delivers the destination asset to the agent's wallet; validators verify the delivery or slash the miner's collateral to reimburse the agent.
+The hotkey check stops emissions going to a stranger if the UID slot is ever recycled.
 
-Each call returns machine-readable state (swap id, reservation window, deadlines, attestation status), so an agent can plan, retry, and reason over the full lifecycle without parsing prose.
+Weights are set once the validator's last update is more than `--neuron.epoch_length` blocks old
+(default 150), and never more often than the subnet's `weights_rate_limit`. Commit-reveal is handled
+by the Bittensor SDK. A validator without a validator permit logs an error and submits nothing. Any
+chain error drops the connection and reconnects on the next pass.
 
-**Use cases in production and in reach.**
+## Running a validator
 
-- **Agent-to-agent payments**: an orchestrator pays sub-agents or tool providers in whatever asset they accept, funded from a single treasury.
-- **Inference and compute procurement**: convert earned TAO or SOL into the stablecoin or native token a GPU or model provider bills in.
-- **Treasury automation**: an agent rebalances a multi-chain treasury on a schedule or on a signal, without moving funds through a custodian.
-- **Autonomous market-making**: the reference miner is itself an agent — it posts quotes, manages collateral, and fulfills swaps programmatically; operators extend it with their own pricing and risk logic.
-- **Bittensor-native economics**: agents earning alpha or TAO on other subnets settle into the asset they actually spend, with SOL and TAO as hubs.
+Requirements: a hotkey registered on SN7 with a validator permit. No GPU, and no open ports.
 
-See the Swap guide at [docs.all-ways.io](https://docs.all-ways.io/) for the full lifecycle and API reference.
-
-## Miner Risk Disclaimer
-
-The miner in this repository is **reference software**. Review the code thoroughly and build it out with your own safety and optimization measures before running it. Running the base miner, or anything you build on top of it, is at your own risk.
-
-## Getting Started
-
-### Requirements
-
-- Python 3.10+
-- Bittensor wallet
-- Docker & Docker Compose
-
-### Installation
-
-### Running with Docker
-
-**Miner:**
+### Docker (recommended)
 
 ```bash
-docker compose -f docker-compose.miner.yml up -d
-```
-
-**Validator:**
-
-```bash
+cp .env.example .env          # set WALLET_NAME, HOTKEY_NAME, WALLET_PATH
 docker compose -f docker-compose.vali.yml up -d
+docker logs -f aw-vali
 ```
 
-Both require a `.env` file with `PORT` and `WALLET_PATH` configured.
+The compose file runs `entrius/allways:latest` with watchtower, so the validator updates itself when
+a new image is published. An `.env` and compose file from the previous validator keep working:
+variables and flags that no longer apply are ignored.
 
-### CLI
+### From source
 
 ```bash
 uv sync
-# activate the uv virtual environment
-source .venv/bin/activate
-
-alw --help
+uv run python neurons/validator.py --netuid 7 --subtensor.network finney \
+  --wallet.name <coldkey> --wallet.hotkey <hotkey> --logging.info
 ```
 
-## Architecture
-
-- **Miners**: Post exchange rate pairs and collateral, fulfill swap orders
-- **Validators**: Monitor swaps, verify on-chain transactions, vote on outcomes
-- **Smart Contract**: Manages collateral, swap lifecycle, and validator voting
-- **CLI**: User interface for posting pairs, managing collateral, and executing swaps
-
-## Miner Onboarding
-
-The fast path is the wizard — it creates or picks the wallet, generates the signing keys, writes
-`.env`, runs a preflight, then walks the on-chain sequence in order and resumes on re-run:
+### Check without submitting
 
 ```bash
-alw miner init          # step by step; every prompt has a flag, -y runs it unattended
-alw doctor              # the preflight on its own
+uv run python neurons/validator.py --netuid 7 --subtensor.network finney --dry-run
 ```
 
-The manual sequence it automates: bond, then activate, then quote — in that order, for either backing. A quote is a promise that
-one specific bond answers for, so `set_quote` refuses a purse you are not already serving
-(`MinerNotActive`). Quoting before activation is rejected, not queued.
+`--dry-run` needs no wallet. It logs the weights that would be set and exits (exit code 1 if there
+is no safe target). `--neuron.disable_set_weights` runs the normal loop but only logs.
 
-**SOL-backed** (collateral held on S
+## Development
+
+```bash
+uv sync
+uv run ruff check . && uv run ruff format --check .
+uv run pytest tests/ -q
 ```
 
-_(truncated at 6000 of 19675 chars - read the full file at https://github.com/entrius/allways)_
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+MIT, see [LICENSE](LICENSE).
+
+```

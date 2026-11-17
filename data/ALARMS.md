@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-17T08:16:06Z, block 9524968
+# ALARMS - generated 2026-11-17T17:44:27Z, block 9527810
 
-window: first_seen in [2026-11-17T07:01:39Z, 2026-11-17T08:16:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-17T16:29:54Z, 2026-11-17T17:44:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,57 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn25:release:v2026.11.16-1101008320` | 25 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn25 released v2026.11.16-1101008320 |
-| `sn42:release:v0.6.20` | 42 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn42 released v0.6.20 |
-| `sn51:scoring_commit:2026-11-17T07:09:42Z` | 51 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after… |
-| `sn67:scoring_commit:2026-11-16T10:46:55Z` | 67 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9 |
-| `sn70:release:SUPERSEDED: use image-v2026.11.17b` | 70 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn70 released SUPERSEDED: use image-v2026.11.17b |
-| `sn70:scoring_commit:2026-11-17T06:20:06Z` | 70 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself |
-| `sn71:scoring_commit:2026-11-17T06:40:15Z` | 71 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache |
-| `sn76:release:Ormas subnet SDK 0.0.4` | 76 | RELEASE | P1 | 2026-11-17T08:16:39Z | sn76 released Ormas subnet SDK 0.0.4 |
-| `sn91:scoring_commit:2026-11-17T01:24:31Z` | 91 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s… |
-| `sn111:scoring_commit:2026-11-17T01:46:11Z` | 111 | SCORING_COMMIT | P1 | 2026-11-17T08:16:39Z | sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy |
-| `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | P2 | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
+| `sn113:burn_drop:0.000` | 113 | BURN_DROP | P0 | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn3:scoring_commit:2026-11-17T15:26:48Z` | 3 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn3 commit touches scoring: Add 8×H200 evaluator support with TP2 MiMo replicas |
+| `sn7:release:release-20261117-160316` | 7 | RELEASE | P1 | 2026-11-17T17:44:54Z | sn7 released release-20261117-160316 |
+| `sn7:scoring_commit:2026-11-17T16:01:21Z` | 7 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn7 commit touches scoring: Drop VALIDATOR_MODE: the validator always sets weights unless told no… |
+| `sn12:release:validator-staging-2026-11-17-44119698793` | 12 | RELEASE | P1 | 2026-11-17T17:44:54Z | sn12 released validator-staging-2026-11-17-44119698793-630-1: fix: failure to connect to miner creates a MinerIncident (#866) |
+| `sn12:scoring_commit:2026-11-17T15:52:57Z` | 12 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn12 commit touches scoring: fix: failure to connect to miner creates a MinerIncident (#866) |
+| `sn25:release:v2026.11.17-1101053110` | 25 | RELEASE | P1 | 2026-11-17T17:44:54Z | sn25 released v2026.11.17-1101053110 |
+| `sn25:scoring_commit:2026-11-17T17:27:07Z` | 25 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn25 commit touches scoring: Merge feat/one-extender-stack-per-miner-1117: a provider run builds o… |
+| `sn42:release:v0.6.21` | 42 | RELEASE | P1 | 2026-11-17T17:44:54Z | sn42 released v0.6.21 |
+| `sn42:scoring_commit:2026-11-17T08:46:33Z` | 42 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn42 commit touches scoring: reference miner: find a fitted product's real geometry before building |
+| `sn51:release:lium-protocol-v2.16.0` | 51 | RELEASE | P1 | 2026-11-17T17:44:54Z | sn51 released lium-protocol-v2.16.0 |
+| `sn51:scoring_commit:2026-11-17T16:58:36Z` | 51 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn51 commit touches scoring: DAH-6579 - [P1] Validator refuses a reserved volume path instead of m… |
+| `sn67:scoring_commit:2026-11-17T11:17:29Z` | 67 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261117.post4 |
+| `sn94:scoring_commit:2026-11-17T17:33:54Z` | 94 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn94 commit touches scoring: Add cathedral_sealed_hotels_v1 schema, pins, golden vector, verifiers… |
+| `sn114:scoring_commit:2026-11-17T12:20:39Z` | 114 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn114 commit touches scoring: Reduce validator prefetch load, reuse a pooled HTTP client for compac… |
+| `sn116:scoring_commit:2026-11-17T14:19:33Z` | 116 | SCORING_COMMIT | P1 | 2026-11-17T17:44:54Z | sn116 commit touches scoring: f02 deck 3.2: SCALAR_KEYS_V32 and public_scalars_v32 (4 approved scor… |
 
 ### detail
 
-- **`sn25:release:v2026.11.16-1101008320`** - sn25 released v2026.11.16-1101008320
-  - published 2026-11-17T07:43:54Z (was v2026.11.16-1100716180)
-- **`sn42:release:v0.6.20`** - sn42 released v0.6.20
-  - published 2026-11-17T06:50:52Z (was v0.6.19)
-- **`sn51:scoring_commit:2026-11-17T07:09:42Z`** - sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after…
+- **`sn113:burn_drop:0.000`** - sn113 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn3:scoring_commit:2026-11-17T15:26:48Z`** - sn3 commit touches scoring: Add 8×H200 evaluator support with TP2 MiMo replicas
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-16T10:46:55Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9
+- **`sn7:release:release-20261117-160316`** - sn7 released release-20261117-160316
+  - published 2026-11-17T16:01:21Z (was release-20261021-195318: Scale the miner pool by recent swap fees (#811))
+- **`sn7:scoring_commit:2026-11-17T16:01:21Z`** - sn7 commit touches scoring: Drop VALIDATOR_MODE: the validator always sets weights unless told no…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:release:SUPERSEDED: use image-v2026.11.17b`** - sn70 released SUPERSEDED: use image-v2026.11.17b
-  - published 2026-11-17T06:37:36Z (was build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL))
-- **`sn70:scoring_commit:2026-11-17T06:20:06Z`** - sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself
+- **`sn12:release:validator-staging-2026-11-17-44119698793`** - sn12 released validator-staging-2026-11-17-44119698793-630-1: fix: failure to connect to miner creates a MinerIncident (#866)
+  - published 2026-11-17T15:52:57Z (was validator-staging-2026-11-11-43092055737-629-1: fix: upgrade vulnerable dependencies across subprojects (#864))
+- **`sn12:scoring_commit:2026-11-17T15:52:57Z`** - sn12 commit touches scoring: fix: failure to connect to miner creates a MinerIncident (#866)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-17T06:40:15Z`** - sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache
+- **`sn25:release:v2026.11.17-1101053110`** - sn25 released v2026.11.17-1101053110
+  - published 2026-11-17T08:58:25Z (was v2026.11.16-1101008320)
+- **`sn25:scoring_commit:2026-11-17T17:27:07Z`** - sn25 commit touches scoring: Merge feat/one-extender-stack-per-miner-1117: a provider run builds o…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:release:Ormas subnet SDK 0.0.4`** - sn76 released Ormas subnet SDK 0.0.4
-  - published 2026-11-17T03:35:37Z (was v0.0.3)
-- **`sn91:scoring_commit:2026-11-17T01:24:31Z`** - sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s…
+- **`sn42:release:v0.6.21`** - sn42 released v0.6.21
+  - published 2026-11-17T16:13:04Z (was v0.6.20)
+- **`sn42:scoring_commit:2026-11-17T08:46:33Z`** - sn42 commit touches scoring: reference miner: find a fitted product's real geometry before building
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-17T01:46:11Z`** - sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy
+- **`sn51:release:lium-protocol-v2.16.0`** - sn51 released lium-protocol-v2.16.0
+  - published 2026-11-17T09:08:37Z (was executor-v1.184)
+- **`sn51:scoring_commit:2026-11-17T16:58:36Z`** - sn51 commit touches scoring: DAH-6579 - [P1] Validator refuses a reserved volume path instead of m…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn76:readme_task_diff:da868f725697bf9f`** - sn76 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn67:scoring_commit:2026-11-17T11:17:29Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261117.post4
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn94:scoring_commit:2026-11-17T17:33:54Z`** - sn94 commit touches scoring: Add cathedral_sealed_hotels_v1 schema, pins, golden vector, verifiers…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn114:scoring_commit:2026-11-17T12:20:39Z`** - sn114 commit touches scoring: Reduce validator prefetch load, reuse a pooled HTTP client for compac…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-17T14:19:33Z`** - sn116 commit touches scoring: f02 deck 3.2: SCALAR_KEYS_V32 and public_scalars_v32 (4 approved scor…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -61,10 +76,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn51:release:miner-v1.012` | 51 | RELEASE | 2026-11-10T12:31:16Z | sn51 released miner-v1.012 |
-| `sn51:scoring_commit:2026-11-10T11:34:23Z` | 51 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn51 commit touches scoring: Validator: judge a rented pod's ownership from / when /root reads emp… |
-| `sn67:scoring_commit:2026-11-09T15:21:32Z` | 67 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261109.post7 |
-| `sn71:scoring_commit:2026-11-10T08:22:18Z` | 71 | SCORING_COMMIT | 2026-11-10T12:31:16Z | sn71 commit touches scoring: Require visible source excerpts for citation repair and verify native… |
 | `sn3:scoring_commit:2026-11-10T12:44:11Z` | 3 | SCORING_COMMIT | 2026-11-10T20:02:20Z | sn3 commit touches scoring: Align evaluation defaults and docs with mainnet: 0 windows, 70M docum… |
 | `sn12:release:miner-staging-2026-11-10-42883644919-432` | 12 | RELEASE | 2026-11-10T20:02:20Z | sn12 released miner-staging-2026-11-10-42883644919-432-1: feat: upgrade facilitator from ubuntu 20 to 26 (#862) |
 | `sn66:release:v2026.11.10.2` | 66 | RELEASE | 2026-11-10T20:02:20Z | sn66 released v2026.11.10.2 |
@@ -229,6 +240,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-11-16T17:02:42Z` | 94 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn94 commit touches scoring: Add miner hotel offer signer to room-kit (AB#347) (#565) |
 | `sn127:release:Release 9bd0c63` | 127 | RELEASE | 2026-11-17T00:22:13Z | sn127 released Release 9bd0c63 |
 | `sn127:scoring_commit:2026-11-16T00:13:27Z` | 127 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn127 commit touches scoring: Weekly judge: left-out bodies, scores from cached answers, the week's… |
+| `sn25:release:v2026.11.16-1101008320` | 25 | RELEASE | 2026-11-17T08:16:39Z | sn25 released v2026.11.16-1101008320 |
+| `sn42:release:v0.6.20` | 42 | RELEASE | 2026-11-17T08:16:39Z | sn42 released v0.6.20 |
+| `sn51:scoring_commit:2026-11-17T07:09:42Z` | 51 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after… |
+| `sn67:scoring_commit:2026-11-16T10:46:55Z` | 67 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9 |
+| `sn70:release:SUPERSEDED: use image-v2026.11.17b` | 70 | RELEASE | 2026-11-17T08:16:39Z | sn70 released SUPERSEDED: use image-v2026.11.17b |
+| `sn70:scoring_commit:2026-11-17T06:20:06Z` | 70 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself |
+| `sn71:scoring_commit:2026-11-17T06:40:15Z` | 71 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache |
+| `sn76:release:Ormas subnet SDK 0.0.4` | 76 | RELEASE | 2026-11-17T08:16:39Z | sn76 released Ormas subnet SDK 0.0.4 |
+| `sn91:scoring_commit:2026-11-17T01:24:31Z` | 91 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s… |
+| `sn111:scoring_commit:2026-11-17T01:46:11Z` | 111 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy |
 | `sn117:readme_task_diff:5e2cfc5911b6cfb7` | 117 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn117 README task/scoring sections changed |
 | `sn124:readme_task_diff:ed4d53fe1d12dcb7` | 124 | README_TASK_DIFF | 2026-11-10T20:02:20Z | sn124 README task/scoring sections changed |
 | `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
@@ -242,6 +263,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:readme_task_diff:c68c8d6462ab6e33` | 42 | README_TASK_DIFF | 2026-11-14T01:52:12Z | sn42 README task/scoring sections changed |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
+| `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

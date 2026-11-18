@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-18T07:14:32Z, block 9531860
+# ALARMS - generated 2026-11-18T16:38:51Z, block 9534682
 
-window: first_seen in [2026-11-18T05:59:54Z, 2026-11-18T07:14:54Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-18T15:24:22Z, 2026-11-18T16:39:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,47 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-11-18T06:59:20Z` | 51 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn51 commit touches scoring: DAH-6566 - [P0] Validator writes the needrestart guard on hosts set u… |
-| `sn67:scoring_commit:2026-11-18T03:06:43Z` | 67 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post1 |
-| `sn81:scoring_commit:2026-11-17T11:05:03Z` | 81 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn81 commit touches scoring: fix(rl): a pod's link reaches its task's trainer routes and writes on… |
-| `sn127:release:Release b5a248c` | 127 | RELEASE | P1 | 2026-11-18T07:14:54Z | sn127 released Release b5a248c |
-| `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | P2 | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
+| `sn12:release:validator-staging-2026-11-18-44297690409` | 12 | RELEASE | P1 | 2026-11-18T16:39:22Z | sn12 released validator-staging-2026-11-18-44297690409-632-1: feat: miner manifest every 5000 blocks, validator ignores >25000 (#873) |
+| `sn12:scoring_commit:2026-11-18T12:17:58Z` | 12 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn12 commit touches scoring: feat: log validator ignored commitments (#874) |
+| `sn25:release:v2026.11.18-1101975730` | 25 | RELEASE | P1 | 2026-11-18T16:39:22Z | sn25 released v2026.11.18-1101975730 |
+| `sn42:release:v0.6.22` | 42 | RELEASE | P1 | 2026-11-18T16:39:22Z | sn42 released v0.6.22 |
+| `sn42:scoring_commit:2026-11-18T09:39:30Z` | 42 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn42 commit touches scoring: v0.6.22: the reference miner checks watt status at DONE |
+| `sn51:release:executor-v1.190` | 51 | RELEASE | P1 | 2026-11-18T16:39:22Z | sn51 released executor-v1.190 |
+| `sn51:scoring_commit:2026-11-18T16:26:22Z` | 51 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn51 commit touches scoring: DAH-6546 - [P2] Validator: an unread pod after a GPU-set move is no v… |
+| `sn67:scoring_commit:2026-11-18T13:20:08Z` | 67 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post6 |
+| `sn90:release:v1.4.3` | 90 | RELEASE | P1 | 2026-11-18T16:39:22Z | sn90 released v1.4.3 |
+| `sn90:scoring_commit:2026-11-18T14:27:49Z` | 90 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn90 commit touches scoring: fix(subnet): score only worker nodes |
+| `sn111:scoring_commit:2026-11-18T10:21:20Z` | 111 | SCORING_COMMIT | P1 | 2026-11-18T16:39:22Z | sn111 commit touches scoring: Score audited Bronze source faults without an artifact |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-11-18T06:59:20Z`** - sn51 commit touches scoring: DAH-6566 - [P0] Validator writes the needrestart guard on hosts set u…
+- **`sn12:release:validator-staging-2026-11-18-44297690409`** - sn12 released validator-staging-2026-11-18-44297690409-632-1: feat: miner manifest every 5000 blocks, validator ignores >25000 (#873)
+  - published 2026-11-18T11:32:13Z (was validator-staging-2026-11-17-44146334658-631-1: fix: support immutable library release, bump version (#870))
+- **`sn12:scoring_commit:2026-11-18T12:17:58Z`** - sn12 commit touches scoring: feat: log validator ignored commitments (#874)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-18T03:06:43Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post1
+- **`sn25:release:v2026.11.18-1101975730`** - sn25 released v2026.11.18-1101975730
+  - published 2026-11-18T10:36:30Z (was v2026.11.17-1101053110)
+- **`sn42:release:v0.6.22`** - sn42 released v0.6.22
+  - published 2026-11-18T09:41:04Z (was v0.6.21)
+- **`sn42:scoring_commit:2026-11-18T09:39:30Z`** - sn42 commit touches scoring: v0.6.22: the reference miner checks watt status at DONE
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-17T11:05:03Z`** - sn81 commit touches scoring: fix(rl): a pod's link reaches its task's trainer routes and writes on…
+- **`sn51:release:executor-v1.190`** - sn51 released executor-v1.190
+  - published 2026-11-18T12:26:16Z (was lium-protocol-v2.16.0)
+- **`sn51:scoring_commit:2026-11-18T16:26:22Z`** - sn51 commit touches scoring: DAH-6546 - [P2] Validator: an unread pod after a GPU-set move is no v…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release b5a248c`** - sn127 released Release b5a248c
-  - published 2026-11-18T03:36:39Z (was Release 9bd0c63)
-- **`sn127:readme_task_diff:0827763d022b8f1f`** - sn127 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn67:scoring_commit:2026-11-18T13:20:08Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post6
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn90:release:v1.4.3`** - sn90 released v1.4.3
+  - published 2026-11-18T14:27:51Z (was v1.4.2)
+- **`sn90:scoring_commit:2026-11-18T14:27:49Z`** - sn90 commit touches scoring: fix(subnet): score only worker nodes
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-18T10:21:20Z`** - sn111 commit touches scoring: Score audited Bronze source faults without an artifact
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.983` | 76 | BURN_DROP | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
 | `sn126:burn_drop:0.952` | 126 | BURN_DROP | 2026-11-11T22:18:50Z | sn126 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -44,14 +61,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn17:release:Witness SDK 0.3.0` | 17 | RELEASE | 2026-11-11T15:30:25Z | sn17 released Witness SDK 0.3.0 |
-| `sn17:scoring_commit:2026-11-11T14:24:20Z` | 17 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96) |
-| `sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht` | 51 | RELEASE | 2026-11-11T15:30:25Z | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build |
-| `sn51:scoring_commit:2026-11-11T13:01:37Z` | 51 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn51 commit touches scoring: Miner: name the executors a pubkey upload cut off at its deadline (#2… |
-| `sn71:scoring_commit:2026-11-11T07:02:19Z` | 71 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn71 commit touches scoring: Verify additive attempt bindings without replacing export golden hashe |
-| `sn81:scoring_commit:2026-11-11T09:18:01Z` | 81 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn81 commit touches scoring: feat(orders): the admin job status says what the miners were paid per… |
-| `sn117:release:everycli v1.1.3` | 117 | RELEASE | 2026-11-11T15:30:25Z | sn117 released everycli v1.1.3 |
-| `sn117:scoring_commit:2026-11-11T11:12:58Z` | 117 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn117 commit touches scoring: Retain reviewed worker artifact for attested release validation |
 | `sn8:scoring_commit:2026-11-11T22:14:38Z` | 8 | SCORING_COMMIT | 2026-11-11T22:18:50Z | sn8 commit touches scoring: New regular miners (#975) |
 | `sn12:release:validator-staging-2026-11-11-43092055737` | 12 | RELEASE | 2026-11-11T22:18:50Z | sn12 released validator-staging-2026-11-11-43092055737-629-1: fix: upgrade vulnerable dependencies across subprojects (#864) |
 | `sn17:scoring_commit:2026-11-11T21:55:09Z` | 17 | SCORING_COMMIT | 2026-11-11T22:18:50Z | sn17 commit touches scoring: Publish verdicts and launch the next validation Pod in one poll (#113) |
@@ -213,6 +222,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn70:scoring_commit:2026-11-17T20:03:28Z` | 70 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn70 commit touches scoring: validator: approve only images that can prove the protocol in force |
 | `sn116:scoring_commit:2026-11-17T21:58:00Z` | 116 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn116 commit touches scoring: Crowns: the official-score rule is the default for every version; a v… |
 | `sn124:scoring_commit:2026-11-17T13:07:25Z` | 124 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn124 commit touches scoring: Add Swarm Test Field and close two evaluation sandbox gaps |
+| `sn51:scoring_commit:2026-11-18T06:59:20Z` | 51 | SCORING_COMMIT | 2026-11-18T07:14:54Z | sn51 commit touches scoring: DAH-6566 - [P0] Validator writes the needrestart guard on hosts set u… |
+| `sn67:scoring_commit:2026-11-18T03:06:43Z` | 67 | SCORING_COMMIT | 2026-11-18T07:14:54Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post1 |
+| `sn81:scoring_commit:2026-11-17T11:05:03Z` | 81 | SCORING_COMMIT | 2026-11-18T07:14:54Z | sn81 commit touches scoring: fix(rl): a pod's link reaches its task's trainer routes and writes on… |
+| `sn127:release:Release b5a248c` | 127 | RELEASE | 2026-11-18T07:14:54Z | sn127 released Release b5a248c |
 | `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
 | `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
 | `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
@@ -225,6 +238,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
+| `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

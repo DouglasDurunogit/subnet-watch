@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-18T00:00:21Z, block 9529689
+# ALARMS - generated 2026-11-18T07:14:32Z, block 9531860
 
-window: first_seen in [2026-11-17T22:45:43Z, 2026-11-18T00:00:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-18T05:59:54Z, 2026-11-18T07:14:54Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn7:burn_drop:0.000` | 7 | BURN_DROP | P0 | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn12:release:validator-staging-2026-11-17-44146334658` | 12 | RELEASE | P1 | 2026-11-18T00:00:43Z | sn12 released validator-staging-2026-11-17-44146334658-631-1: fix: support immutable library release, bump version (#870) |
-| `sn22:scoring_commit:2026-11-17T20:44:24Z` | 22 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn22 commit touches scoring: Merge pull request #410 from Desearch-ai/fix/task-api-request-limits |
-| `sn25:scoring_commit:2026-11-17T22:14:19Z` | 25 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn25 commit touches scoring: Merge feat/verify-cohort-v2-validator-1117: verify cohort v2, validat… |
-| `sn51:scoring_commit:2026-11-17T20:16:15Z` | 51 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn51 commit touches scoring: DAH-6466 - Validator: retry the s3fs volume plugin install when the D… |
-| `sn70:scoring_commit:2026-11-17T20:03:28Z` | 70 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn70 commit touches scoring: validator: approve only images that can prove the protocol in force |
-| `sn116:scoring_commit:2026-11-17T21:58:00Z` | 116 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn116 commit touches scoring: Crowns: the official-score rule is the default for every version; a v… |
-| `sn124:scoring_commit:2026-11-17T13:07:25Z` | 124 | SCORING_COMMIT | P1 | 2026-11-18T00:00:43Z | sn124 commit touches scoring: Add Swarm Test Field and close two evaluation sandbox gaps |
-| `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | P2 | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
+| `sn51:scoring_commit:2026-11-18T06:59:20Z` | 51 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn51 commit touches scoring: DAH-6566 - [P0] Validator writes the needrestart guard on hosts set u… |
+| `sn67:scoring_commit:2026-11-18T03:06:43Z` | 67 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post1 |
+| `sn81:scoring_commit:2026-11-17T11:05:03Z` | 81 | SCORING_COMMIT | P1 | 2026-11-18T07:14:54Z | sn81 commit touches scoring: fix(rl): a pod's link reaches its task's trainer routes and writes on… |
+| `sn127:release:Release b5a248c` | 127 | RELEASE | P1 | 2026-11-18T07:14:54Z | sn127 released Release b5a248c |
+| `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | P2 | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
 
 ### detail
 
-- **`sn7:burn_drop:0.000`** - sn7 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn12:release:validator-staging-2026-11-17-44146334658`** - sn12 released validator-staging-2026-11-17-44146334658-631-1: fix: support immutable library release, bump version (#870)
-  - published 2026-11-17T17:53:44Z (was validator-staging-2026-11-17-44119698793-630-1: fix: failure to connect to miner creates a MinerIncident (#866))
-- **`sn22:scoring_commit:2026-11-17T20:44:24Z`** - sn22 commit touches scoring: Merge pull request #410 from Desearch-ai/fix/task-api-request-limits
+- **`sn51:scoring_commit:2026-11-18T06:59:20Z`** - sn51 commit touches scoring: DAH-6566 - [P0] Validator writes the needrestart guard on hosts set u…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn25:scoring_commit:2026-11-17T22:14:19Z`** - sn25 commit touches scoring: Merge feat/verify-cohort-v2-validator-1117: verify cohort v2, validat…
+- **`sn67:scoring_commit:2026-11-18T03:06:43Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261118.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-17T20:16:15Z`** - sn51 commit touches scoring: DAH-6466 - Validator: retry the s3fs volume plugin install when the D…
+- **`sn81:scoring_commit:2026-11-17T11:05:03Z`** - sn81 commit touches scoring: fix(rl): a pod's link reaches its task's trainer routes and writes on…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:scoring_commit:2026-11-17T20:03:28Z`** - sn70 commit touches scoring: validator: approve only images that can prove the protocol in force
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-17T21:58:00Z`** - sn116 commit touches scoring: Crowns: the official-score rule is the default for every version; a v…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-11-17T13:07:25Z`** - sn124 commit touches scoring: Add Swarm Test Field and close two evaluation sandbox gaps
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:readme_task_diff:3167f0c564855989`** - sn124 README task/scoring sections changed
+- **`sn127:release:Release b5a248c`** - sn127 released Release b5a248c
+  - published 2026-11-18T03:36:39Z (was Release 9bd0c63)
+- **`sn127:readme_task_diff:0827763d022b8f1f`** - sn127 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn108:burn_drop:0.823` | 108 | BURN_DROP | 2026-11-11T07:14:22Z | sn108 burn fell 1.000 -> 0.823 - miners can earn again |
 | `sn76:burn_drop:0.983` | 76 | BURN_DROP | 2026-11-11T15:30:25Z | sn76 burn fell 0.995 -> 0.983 - miners can earn again |
 | `sn126:burn_drop:0.952` | 126 | BURN_DROP | 2026-11-11T22:18:50Z | sn126 burn fell 1.000 -> 0.952 - miners can earn again |
 | `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -56,23 +43,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn2:scoring_commit:2026-11-10T21:17:39Z` | 2 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn2 commit touches scoring: Merge pull request #1 from mybelovedstar123/test/score-properties |
-| `sn17:scoring_commit:2026-11-10T20:39:45Z` | 17 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn17 commit touches scoring: Add validation worker with manual replays and resumable jobs (#94) |
-| `sn54:scoring_commit:2026-11-10T23:12:47Z` | 54 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn54 commit touches scoring: Validate validator requests and submission integrity (#126) |
-| `sn70:release:Fugal Subnet v0.3.1` | 70 | RELEASE | 2026-11-11T00:37:10Z | sn70 released Fugal Subnet v0.3.1 |
-| `sn71:scoring_commit:2026-11-10T20:51:26Z` | 71 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn71 commit touches scoring: Reserve replay network budget after local final validation |
-| `sn108:scoring_commit:2026-11-10T21:48:50Z` | 108 | SCORING_COMMIT | 2026-11-11T00:37:10Z | sn108 commit touches scoring: Neuron 1.0.9: the validator stops an evaluation at least 5 minutes be… |
-| `sn117:release:everycli v1.1.1` | 117 | RELEASE | 2026-11-11T00:37:10Z | sn117 released everycli v1.1.1 |
-| `sn36:scoring_commit:2026-11-11T06:08:30Z` | 36 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn36 commit touches scoring: Rented pool 10%, capped per miner at the platform fee its rentals pai… |
-| `sn45:scoring_commit:2026-11-08T21:20:02Z` | 45 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn45 commit touches scoring: 3.9.15: starter claims what the validator would pay; well-formed irre… |
-| `sn51:scoring_commit:2026-11-11T06:51:21Z` | 51 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn51 commit touches scoring: DAH-5845 - [P1] Validator: the rental cache reclaim never deletes the… |
-| `sn62:release:v0.3.17` | 62 | RELEASE | 2026-11-11T07:14:22Z | sn62 released v0.3.17 |
-| `sn62:scoring_commit:2026-11-11T02:39:48Z` | 62 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn62 commit touches scoring: Merge pull request #540 from ridgesai/fix/cap-miner-patch-size |
-| `sn71:scoring_commit:2026-11-11T05:08:55Z` | 71 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn71 commit touches scoring: Expose private source-backed admission rejection findings to miners (… |
-| `sn81:scoring_commit:2026-11-11T06:46:42Z` | 81 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn81 commit touches scoring: docs: one miner address, https://api.reliqua.ai (#484) |
-| `sn116:scoring_commit:2026-11-11T01:09:19Z` | 116 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn116 commit touches scoring: Updates: testnet Motor + Cooling 1.8 switch notice: miner files are n… |
-| `sn127:release:Release ed8326b` | 127 | RELEASE | 2026-11-11T07:14:22Z | sn127 released Release ed8326b |
-| `sn127:scoring_commit:2026-11-11T04:16:42Z` | 127 | SCORING_COMMIT | 2026-11-11T07:14:22Z | sn127 commit touches scoring: zils-miner report goes through the hosted API by default (ZIL-197) |
+| `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn17:release:Witness SDK 0.3.0` | 17 | RELEASE | 2026-11-11T15:30:25Z | sn17 released Witness SDK 0.3.0 |
 | `sn17:scoring_commit:2026-11-11T14:24:20Z` | 17 | SCORING_COMMIT | 2026-11-11T15:30:25Z | sn17 commit touches scoring: Run resumable candidate validation on RunPod (#96) |
 | `sn51:release:watchtower-v1.2.2: DAH-5053: lium-watcht` | 51 | RELEASE | 2026-11-11T15:30:25Z | sn51 released watchtower-v1.2.2: DAH-5053: lium-watchtower 1.2.2, the first amd64+arm64 build |
@@ -235,7 +206,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-11-17T17:33:54Z` | 94 | SCORING_COMMIT | 2026-11-17T17:44:54Z | sn94 commit touches scoring: Add cathedral_sealed_hotels_v1 schema, pins, golden vector, verifiers… |
 | `sn114:scoring_commit:2026-11-17T12:20:39Z` | 114 | SCORING_COMMIT | 2026-11-17T17:44:54Z | sn114 commit touches scoring: Reduce validator prefetch load, reuse a pooled HTTP client for compac… |
 | `sn116:scoring_commit:2026-11-17T14:19:33Z` | 116 | SCORING_COMMIT | 2026-11-17T17:44:54Z | sn116 commit touches scoring: f02 deck 3.2: SCALAR_KEYS_V32 and public_scalars_v32 (4 approved scor… |
-| `sn81:readme_task_diff:fd4904bbf0014ce9` | 81 | README_TASK_DIFF | 2026-11-11T07:14:22Z | sn81 README task/scoring sections changed |
+| `sn12:release:validator-staging-2026-11-17-44146334658` | 12 | RELEASE | 2026-11-18T00:00:43Z | sn12 released validator-staging-2026-11-17-44146334658-631-1: fix: support immutable library release, bump version (#870) |
+| `sn22:scoring_commit:2026-11-17T20:44:24Z` | 22 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn22 commit touches scoring: Merge pull request #410 from Desearch-ai/fix/task-api-request-limits |
+| `sn25:scoring_commit:2026-11-17T22:14:19Z` | 25 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn25 commit touches scoring: Merge feat/verify-cohort-v2-validator-1117: verify cohort v2, validat… |
+| `sn51:scoring_commit:2026-11-17T20:16:15Z` | 51 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn51 commit touches scoring: DAH-6466 - Validator: retry the s3fs volume plugin install when the D… |
+| `sn70:scoring_commit:2026-11-17T20:03:28Z` | 70 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn70 commit touches scoring: validator: approve only images that can prove the protocol in force |
+| `sn116:scoring_commit:2026-11-17T21:58:00Z` | 116 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn116 commit touches scoring: Crowns: the official-score rule is the default for every version; a v… |
+| `sn124:scoring_commit:2026-11-17T13:07:25Z` | 124 | SCORING_COMMIT | 2026-11-18T00:00:43Z | sn124 commit touches scoring: Add Swarm Test Field and close two evaluation sandbox gaps |
 | `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
 | `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
 | `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
@@ -247,6 +224,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
+| `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

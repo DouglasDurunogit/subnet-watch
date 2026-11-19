@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-18T23:09:42Z, block 9536636
+# ALARMS - generated 2026-11-19T04:21:03Z, block 9538193
 
-window: first_seen in [2026-11-18T21:55:24Z, 2026-11-18T23:10:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-19T03:06:26Z, 2026-11-19T04:21:26Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn109:burn_drop:0.000` | 109 | BURN_DROP | P0 | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn62:release:v0.3.18` | 62 | RELEASE | P1 | 2026-11-18T23:10:24Z | sn62 released v0.3.18 |
-| `sn71:scoring_commit:2026-11-18T21:05:38Z` | 71 | SCORING_COMMIT | P1 | 2026-11-18T23:10:24Z | sn71 commit touches scoring: Allow audited published judgment recovery with unchanged scorer |
-| `sn93:scoring_commit:2026-11-18T19:10:32Z` | 93 | SCORING_COMMIT | P1 | 2026-11-18T23:10:24Z | sn93 commit touches scoring: feat(validator): score briefs with allowed_channels only for those ch… |
-| `sn116:scoring_commit:2026-11-18T21:30:40Z` | 116 | SCORING_COMMIT | P1 | 2026-11-18T23:10:24Z | sn116 commit touches scoring: Auto retry: a spent cap (3 per failure code, 5 per task) writes an au… |
-| `sn124:scoring_commit:2026-11-18T17:46:16Z` | 124 | SCORING_COMMIT | P1 | 2026-11-18T23:10:24Z | sn124 commit touches scoring: Merge pull request #246 from swarm-subnet/feature/ali/validator-memor… |
-| `sn99:readme_task_diff:346f6cf3141fc736` | 99 | README_TASK_DIFF | P2 | 2026-11-18T23:10:24Z | sn99 README task/scoring sections changed |
+| `sn56:scoring_commit:2026-11-19T02:57:22Z` | 56 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn56 commit touches scoring: Incoming changes for miners (#1434) |
+| `sn89:scoring_commit:2026-11-18T23:39:14Z` | 89 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the … |
+| `sn94:scoring_commit:2026-11-19T00:17:55Z` | 94 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier |
+| `sn116:scoring_commit:2026-11-19T01:01:34Z` | 116 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a … |
 
 ### detail
 
-- **`sn109:burn_drop:0.000`** - sn109 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn62:release:v0.3.18`** - sn62 released v0.3.18
-  - published 2026-11-18T22:43:34Z (was v0.3.17)
-- **`sn71:scoring_commit:2026-11-18T21:05:38Z`** - sn71 commit touches scoring: Allow audited published judgment recovery with unchanged scorer
+- **`sn56:scoring_commit:2026-11-19T02:57:22Z`** - sn56 commit touches scoring: Incoming changes for miners (#1434)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn93:scoring_commit:2026-11-18T19:10:32Z`** - sn93 commit touches scoring: feat(validator): score briefs with allowed_channels only for those ch…
+- **`sn89:scoring_commit:2026-11-18T23:39:14Z`** - sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-18T21:30:40Z`** - sn116 commit touches scoring: Auto retry: a spent cap (3 per failure code, 5 per task) writes an au…
+- **`sn94:scoring_commit:2026-11-19T00:17:55Z`** - sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn124:scoring_commit:2026-11-18T17:46:16Z`** - sn124 commit touches scoring: Merge pull request #246 from swarm-subnet/feature/ali/validator-memor…
+- **`sn116:scoring_commit:2026-11-19T01:01:34Z`** - sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:readme_task_diff:346f6cf3141fc736`** - sn99 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn94:burn_drop:0.000` | 94 | BURN_DROP | 2026-11-12T03:14:04Z | sn94 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn42:burn_drop:0.000` | 42 | BURN_DROP | 2026-11-13T00:38:05Z | sn42 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn10:burn_drop:0.607` | 10 | BURN_DROP | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.800` | 108 | BURN_DROP | 2026-11-14T08:55:08Z | sn108 burn fell 1.000 -> 0.800 - miners can earn again |
@@ -48,13 +38,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn17:scoring_commit:2026-11-11T23:11:17Z` | 17 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn17 commit touches scoring: Improve validation Pod recovery and placement (#115) |
-| `sn45:scoring_commit:2026-11-11T23:10:19Z` | 45 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn45 commit touches scoring: AlphaRidge 4.0.5: chain calls have a deadline; validators parse pages… |
-| `sn66:release:v2026.11.12.2` | 66 | RELEASE | 2026-11-12T03:14:04Z | sn66 released v2026.11.12.2 |
-| `sn70:release:Fugal Subnet v0.3.2` | 70 | RELEASE | 2026-11-12T03:14:04Z | sn70 released Fugal Subnet v0.3.2 |
-| `sn70:scoring_commit:2026-11-12T02:31:18Z` | 70 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn70 commit touches scoring: release: v0.3.2 (validator-only collection fix; consensus digest unch… |
-| `sn111:scoring_commit:2026-11-12T00:13:58Z` | 111 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn111 commit touches scoring: Publish mainnet miner burn allocation policy |
-| `sn116:scoring_commit:2026-11-11T22:55:29Z` | 116 | SCORING_COMMIT | 2026-11-12T03:14:04Z | sn116 commit touches scoring: Merge miner app catalog practice-only (eea0f584) |
+| `sn109:burn_drop:0.000` | 109 | BURN_DROP | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn21:scoring_commit:2026-11-12T11:12:43Z` | 21 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn21 commit touches scoring: docs(rewards): the 40-day count belongs to the digest - going back to… |
 | `sn51:release:executor-v1.180` | 51 | RELEASE | 2026-11-12T11:38:51Z | sn51 released executor-v1.180 |
 | `sn51:scoring_commit:2026-11-12T11:25:24Z` | 51 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn51 commit touches scoring: DAH-6222 - [P1] Validator: a filler the validator removed itself is n… |
@@ -214,7 +198,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn90:release:v1.4.3` | 90 | RELEASE | 2026-11-18T16:39:22Z | sn90 released v1.4.3 |
 | `sn90:scoring_commit:2026-11-18T14:27:49Z` | 90 | SCORING_COMMIT | 2026-11-18T16:39:22Z | sn90 commit touches scoring: fix(subnet): score only worker nodes |
 | `sn111:scoring_commit:2026-11-18T10:21:20Z` | 111 | SCORING_COMMIT | 2026-11-18T16:39:22Z | sn111 commit touches scoring: Score audited Bronze source faults without an artifact |
-| `sn25:readme_task_diff:ddb036629e685ec6` | 25 | README_TASK_DIFF | 2026-11-12T03:14:04Z | sn25 README task/scoring sections changed |
+| `sn62:release:v0.3.18` | 62 | RELEASE | 2026-11-18T23:10:24Z | sn62 released v0.3.18 |
+| `sn71:scoring_commit:2026-11-18T21:05:38Z` | 71 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn71 commit touches scoring: Allow audited published judgment recovery with unchanged scorer |
+| `sn93:scoring_commit:2026-11-18T19:10:32Z` | 93 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn93 commit touches scoring: feat(validator): score briefs with allowed_channels only for those ch… |
+| `sn116:scoring_commit:2026-11-18T21:30:40Z` | 116 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn116 commit touches scoring: Auto retry: a spent cap (3 per failure code, 5 per task) writes an au… |
+| `sn124:scoring_commit:2026-11-18T17:46:16Z` | 124 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn124 commit touches scoring: Merge pull request #246 from swarm-subnet/feature/ali/validator-memor… |
 | `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
 | `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
 | `sn48:readme_task_diff:ccea6584910d3bd5` | 48 | README_TASK_DIFF | 2026-11-13T07:23:28Z | sn48 README task/scoring sections changed |
@@ -227,6 +215,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
 | `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
+| `sn99:readme_task_diff:346f6cf3141fc736` | 99 | README_TASK_DIFF | 2026-11-18T23:10:24Z | sn99 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

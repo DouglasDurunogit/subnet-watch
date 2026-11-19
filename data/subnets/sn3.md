@@ -1,24 +1,24 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-19T04:21:03Z  |  block: 9538193  |  row_status: ok
+snapshot_utc: 2026-11-19T13:41:24Z  |  block: 9540994  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (194.20999980579 USD), open=True
+- registration cost: 1.282157542 TAO (254.66213099204 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 7  |  free: 0
-- subnet age: 746.2 days  |  registered at block 4165565
+- subnet age: 746.6 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 4335.510946137767** (uid 193) <- the only figure quotable as achievable
-- median_miner_usd_day: 2167.838170794175
-- top_miner_usd_day: 4335.510946137767 (uid 193, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 4430.6440561861855** (uid 193) <- the only figure quotable as achievable
+- median_miner_usd_day: 2215.406540435369
+- top_miner_usd_day: 4430.6440561861855 (uid 193, owner=False, validator_permitted=False) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 4  |  gini: 0.14999084444715716  |  top1_share: 0.3999908444471572  |  top10_share: 1.0
+- earners: 4  |  gini: 0.14999084444715738  |  top1_share: 0.3999908444471572  |  top10_share: 1.0
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -26,9 +26,9 @@ snapshot_utc: 2026-11-19T04:21:03Z  |  block: 9538193  |  row_status: ok
 - on-chain URL: `https://github.com/unarbos/teutonic`
 - resolved URL: `https://github.com/unarbos/teutonic`
 - status: **ok** 
-- README: 6839 bytes, sha 5fb9628de30cc2d9
+- README: 8225 bytes, sha 0b1db70dd7125d32
 - latest release: (none) 
-- last commit: 2026-11-17T15:26:48Z
+- last commit: 2026-11-19T13:36:11Z
 - scoring-related commit: Add 8×H200 evaluator support with TP2 MiMo replicas 2026-11-17T15:26:48Z
 
 ## Resources
@@ -36,14 +36,14 @@ snapshot_utc: 2026-11-19T04:21:03Z  |  block: 9538193  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 2159.619 USD/day  |  payback on registration: 0.09 days
+- net margin: 2207.1874 USD/day  |  payback on registration: 0.12 days
 
 ## Score
 
 - gate: **OK** 
 - score: 73.6 (rank 2), confidence 0.85 - hardware requirement unknown
-- components: income 30.33 / freshness 35.0 / resource 11.25 / registration 9.97
-- freshness basis: SCORING_COMMIT 1.4d ago
+- components: income 30.41 / freshness 35.0 / resource 11.25 / registration 9.96
+- freshness basis: SCORING_COMMIT 1.8d ago
 
 ## On-chain description
 
@@ -71,6 +71,12 @@ The [public dataset manifest](https://pub-41c7413282854bc5816ba78e1e21eec8.r2.de
 lists the packed documents and byte-offset indexes. Resolve object paths relative
 to its `teutonic-text/` prefix. The evaluator uses authenticated, pinned reads
 from the same `dataset` bucket. The old `datasets` bucket has been deleted.
+
+The [public RefineCode manifest](https://pub-64e3f687d8a2411ca8595bc760d31654.r2.dev/refinecode-text-v2/manifest.json)
+lists the additional data used by MAIN2, MIX08 and MIX09 after cutover. Resolve
+its object paths relative to `https://pub-64e3f687d8a2411ca8595bc760d31654.r2.dev/refinecode-text-v2/`.
+The evaluator reads these objects from `code/refinecode-text-v2/`; collection
+manifests pin both sources without copying documents between buckets.
 
 Horizon uses a deterministic eight-GPU layer pipeline, followed by four MiMo king
 and four challenger vLLM replicas. Large MiMo documents use two-GPU groups.
@@ -214,20 +220,7 @@ teutonic-miner submit \
 
 ### Multiple hotkeys
 
-List saved hotkeys and select the default used when `--hotkey` is omitted:
-
-```bash
-teutonic-miner list
-teutonic-miner use your-other-hotkey
-teutonic-miner status
+List saved hotkeys and select the d
 ```
 
-## Competitions
-
-For the new rollout, miners can select `MAIN`, `MIX01`, `MIX06` or `MIX07` with
-`teutonic-miner ready --competition MIX01` (also supported by `submit`). Omission
-selects MAIN. One ready submission per hotkey is shared across all competitions.
-The allocation is MAIN **40%**, MIX01/MIX06/MIX07 **20% eac
-```
-
-_(truncated at 6000 of 6839 chars - read the full file at https://github.com/unarbos/teutonic)_
+_(truncated at 6000 of 8225 chars - read the full file at https://github.com/unarbos/teutonic)_

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-19T04:21:03Z, block 9538193
+# ALARMS - generated 2026-11-19T13:41:24Z, block 9540994
 
-window: first_seen in [2026-11-19T03:06:26Z, 2026-11-19T04:21:26Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-19T12:26:44Z, 2026-11-19T13:41:44Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,21 +9,42 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn56:scoring_commit:2026-11-19T02:57:22Z` | 56 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn56 commit touches scoring: Incoming changes for miners (#1434) |
-| `sn89:scoring_commit:2026-11-18T23:39:14Z` | 89 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the … |
-| `sn94:scoring_commit:2026-11-19T00:17:55Z` | 94 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier |
-| `sn116:scoring_commit:2026-11-19T01:01:34Z` | 116 | SCORING_COMMIT | P1 | 2026-11-19T04:21:26Z | sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a … |
+| `sn12:release:validator-staging-2026-11-19-44521972284` | 12 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875) |
+| `sn12:scoring_commit:2026-11-19T13:35:45Z` | 12 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876) |
+| `sn21:release:SN21 training data v7 (windows 2026-09-2` | 21 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04) |
+| `sn24:release:v0.3.0` | 24 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn24 released v0.3.0 |
+| `sn42:release:v0.6.24` | 42 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn42 released v0.6.24 |
+| `sn42:scoring_commit:2026-11-19T13:28:49Z` | 42 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn42 commit touches scoring: v0.6.24: the validator's vote scores reach the platform |
+| `sn45:scoring_commit:2026-11-15T03:16:42Z` | 45 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn45 commit touches scoring: Quality: each paid claim's pay is fixed by the coldkey's score when i… |
+| `sn51:scoring_commit:2026-11-19T11:18:32Z` | 51 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn51 commit touches scoring: DAH-6714 - [P1] Validator: filler GPU process attribution counts in t… |
+| `sn71:scoring_commit:2026-11-19T11:35:44Z` | 71 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn71 commit touches scoring: Fix review outage recovery lock order and verify full lifecycle |
+| `sn116:scoring_commit:2026-11-19T11:43:48Z` | 116 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn116 commit touches scoring: Queue places: unmarked is not waiting; an owner whose unmarked tasks … |
+| `sn99:readme_task_diff:70f3abe3d8c03fd9` | 99 | README_TASK_DIFF | P2 | 2026-11-19T13:41:44Z | sn99 README task/scoring sections changed |
 
 ### detail
 
-- **`sn56:scoring_commit:2026-11-19T02:57:22Z`** - sn56 commit touches scoring: Incoming changes for miners (#1434)
+- **`sn12:release:validator-staging-2026-11-19-44521972284`** - sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875)
+  - published 2026-11-19T12:12:05Z (was validator-staging-2026-11-18-44297690409-632-1: feat: miner manifest every 5000 blocks, validator ignores >25000 (#873))
+- **`sn12:scoring_commit:2026-11-19T13:35:45Z`** - sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn89:scoring_commit:2026-11-18T23:39:14Z`** - sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the …
+- **`sn21:release:SN21 training data v7 (windows 2026-09-2`** - sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04)
+  - published 2026-11-19T13:35:26Z (was SN21 training data v6 (windows 15 Aug - 20 Sep 2026))
+- **`sn24:release:v0.3.0`** - sn24 released v0.3.0
+  - published 2026-11-19T07:28:22Z (was v0.2.1)
+- **`sn42:release:v0.6.24`** - sn42 released v0.6.24
+  - published 2026-11-19T13:28:49Z (was v0.6.22)
+- **`sn42:scoring_commit:2026-11-19T13:28:49Z`** - sn42 commit touches scoring: v0.6.24: the validator's vote scores reach the platform
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-11-19T00:17:55Z`** - sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier
+- **`sn45:scoring_commit:2026-11-15T03:16:42Z`** - sn45 commit touches scoring: Quality: each paid claim's pay is fixed by the coldkey's score when i…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-19T01:01:34Z`** - sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a …
+- **`sn51:scoring_commit:2026-11-19T11:18:32Z`** - sn51 commit touches scoring: DAH-6714 - [P1] Validator: filler GPU process attribution counts in t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-19T11:35:44Z`** - sn71 commit touches scoring: Fix review outage recovery lock order and verify full lifecycle
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-19T11:43:48Z`** - sn116 commit touches scoring: Queue places: unmarked is not waiting; an owner whose unmarked tasks …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn99:readme_task_diff:70f3abe3d8c03fd9`** - sn99 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -39,11 +60,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn109:burn_drop:0.000` | 109 | BURN_DROP | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn21:scoring_commit:2026-11-12T11:12:43Z` | 21 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn21 commit touches scoring: docs(rewards): the 40-day count belongs to the digest - going back to… |
-| `sn51:release:executor-v1.180` | 51 | RELEASE | 2026-11-12T11:38:51Z | sn51 released executor-v1.180 |
-| `sn51:scoring_commit:2026-11-12T11:25:24Z` | 51 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn51 commit touches scoring: DAH-6222 - [P1] Validator: a filler the validator removed itself is n… |
-| `sn71:scoring_commit:2026-11-12T10:20:55Z` | 71 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn71 commit touches scoring: Merge pull request #1204 from leadpoet/fix/arena-intent-verification-… |
-| `sn81:scoring_commit:2026-11-12T09:39:19Z` | 81 | SCORING_COMMIT | 2026-11-12T11:38:51Z | sn81 commit touches scoring: perf(audit): score drawn records ahead of their pass, and size the au… |
 | `sn34:scoring_commit:2026-11-12T18:25:22Z` | 34 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn34 commit touches scoring: Merge pull request #54 from BitMind-AI/fix/receipt-digest-unscored-nan |
 | `sn36:scoring_commit:2026-11-12T14:03:58Z` | 36 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn36 commit touches scoring: Publish miner agent and simplify connection setup |
 | `sn51:release:executor-v1.181` | 51 | RELEASE | 2026-11-12T19:10:23Z | sn51 released executor-v1.181 |
@@ -203,7 +219,10 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn93:scoring_commit:2026-11-18T19:10:32Z` | 93 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn93 commit touches scoring: feat(validator): score briefs with allowed_channels only for those ch… |
 | `sn116:scoring_commit:2026-11-18T21:30:40Z` | 116 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn116 commit touches scoring: Auto retry: a spent cap (3 per failure code, 5 per task) writes an au… |
 | `sn124:scoring_commit:2026-11-18T17:46:16Z` | 124 | SCORING_COMMIT | 2026-11-18T23:10:24Z | sn124 commit touches scoring: Merge pull request #246 from swarm-subnet/feature/ali/validator-memor… |
-| `sn38:readme_task_diff:4acf9ce9cf638fa6` | 38 | README_TASK_DIFF | 2026-11-12T11:38:51Z | sn38 README task/scoring sections changed |
+| `sn56:scoring_commit:2026-11-19T02:57:22Z` | 56 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn56 commit touches scoring: Incoming changes for miners (#1434) |
+| `sn89:scoring_commit:2026-11-18T23:39:14Z` | 89 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the … |
+| `sn94:scoring_commit:2026-11-19T00:17:55Z` | 94 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier |
+| `sn116:scoring_commit:2026-11-19T01:01:34Z` | 116 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a … |
 | `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
 | `sn48:readme_task_diff:ccea6584910d3bd5` | 48 | README_TASK_DIFF | 2026-11-13T07:23:28Z | sn48 README task/scoring sections changed |
 | `sn42:readme_task_diff:a31e8e8370c6e8f8` | 42 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn42 README task/scoring sections changed |

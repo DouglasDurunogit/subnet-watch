@@ -1,24 +1,24 @@
 # sn6 - Numinous (ζ)
 
-snapshot_utc: 2026-11-19T04:21:03Z  |  block: 9538193  |  row_status: ok
+snapshot_utc: 2026-11-19T13:41:24Z  |  block: 9540994  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.2 TAO (38.842000000000006 USD), open=True
+- registration cost: 0.2 TAO (39.724000000000004 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 196  |  free: 0
-- subnet age: 877.5 days  |  registered at block 3219949
+- subnet age: 877.9 days  |  registered at block 3219949
 - weights_version: 4000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 75.85594926848238** (uid 223) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.03891046384636182
-- top_miner_usd_day: 115.23333868100053 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 80.45550132364232** (uid 223) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.04126981345147081
+- top_miner_usd_day: 122.22055253653078 (uid 192, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 183  |  gini: 0.8851131348444699  |  top1_share: 0.09050762507258335  |  top10_share: 0.5319213960453532
+- earners: 183  |  gini: 0.8851138008349069  |  top1_share: 0.09050900811417918  |  top10_share: 0.5319295243043352
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
@@ -36,12 +36,12 @@ snapshot_utc: 2026-11-19T04:21:03Z  |  block: 9538193  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -8.1803 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -8.1779 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 81), confidence 0.85 - hardware requirement unknown
+- score: 27.4 (rank 84), confidence 0.85 - hardware requirement unknown
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
 - freshness basis: WEIGHTS_VERSION_BUMP 27d ago
 

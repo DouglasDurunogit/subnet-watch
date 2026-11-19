@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-19T13:41:24Z, block 9540994
+# ALARMS - generated 2026-11-19T21:51:13Z, block 9543443
 
-window: first_seen in [2026-11-19T12:26:44Z, 2026-11-19T13:41:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-19T20:36:45Z, 2026-11-19T21:51:45Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,60 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:validator-staging-2026-11-19-44521972284` | 12 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875) |
-| `sn12:scoring_commit:2026-11-19T13:35:45Z` | 12 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876) |
-| `sn21:release:SN21 training data v7 (windows 2026-09-2` | 21 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04) |
-| `sn24:release:v0.3.0` | 24 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn24 released v0.3.0 |
-| `sn42:release:v0.6.24` | 42 | RELEASE | P1 | 2026-11-19T13:41:44Z | sn42 released v0.6.24 |
-| `sn42:scoring_commit:2026-11-19T13:28:49Z` | 42 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn42 commit touches scoring: v0.6.24: the validator's vote scores reach the platform |
-| `sn45:scoring_commit:2026-11-15T03:16:42Z` | 45 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn45 commit touches scoring: Quality: each paid claim's pay is fixed by the coldkey's score when i… |
-| `sn51:scoring_commit:2026-11-19T11:18:32Z` | 51 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn51 commit touches scoring: DAH-6714 - [P1] Validator: filler GPU process attribution counts in t… |
-| `sn71:scoring_commit:2026-11-19T11:35:44Z` | 71 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn71 commit touches scoring: Fix review outage recovery lock order and verify full lifecycle |
-| `sn116:scoring_commit:2026-11-19T11:43:48Z` | 116 | SCORING_COMMIT | P1 | 2026-11-19T13:41:44Z | sn116 commit touches scoring: Queue places: unmarked is not waiting; an owner whose unmarked tasks … |
-| `sn99:readme_task_diff:70f3abe3d8c03fd9` | 99 | README_TASK_DIFF | P2 | 2026-11-19T13:41:44Z | sn99 README task/scoring sections changed |
+| `sn99:burn_drop:0.500` | 99 | BURN_DROP | P0 | 2026-11-19T21:51:45Z | sn99 burn fell 1.000 -> 0.500 - miners can earn again |
+| `sn3:scoring_commit:2026-11-19T16:08:05Z` | 3 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn3 commit touches scoring: Retry incomplete R2 reads and prefetch evaluation text |
+| `sn12:release:validator-testing-2026-11-19-44554669102` | 12 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn12 released validator-testing-2026-11-19-44554669102-9-1: fix: build compute-horde-validator-nginx in CD, 2nd take (#877) |
+| `sn12:scoring_commit:2026-11-19T14:07:29Z` | 12 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD, 2nd take (#877) |
+| `sn25:release:v2026.11.19-1103236710` | 25 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn25 released v2026.11.19-1103236710 |
+| `sn28:release:v0.5.25` | 28 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn28 released v0.5.25 |
+| `sn33:scoring_commit:2026-11-19T13:44:08Z` | 33 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn33 commit touches scoring: Send a single conversation window to all miners of a bundle |
+| `sn42:release:v0.6.25` | 42 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn42 released v0.6.25 |
+| `sn42:scoring_commit:2026-11-19T14:50:07Z` | 42 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn42 commit touches scoring: reference miner: one answer register for the whole device |
+| `sn51:release:executor-v1.191` | 51 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn51 released executor-v1.191 |
+| `sn51:scoring_commit:2026-11-19T20:39:29Z` | 51 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn51 commit touches scoring: DAH-4689 validator: ignore live volume and GPU process paths in the s… |
+| `sn66:release:v2026.11.19.2` | 66 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn66 released v2026.11.19.2 |
+| `sn81:scoring_commit:2026-11-19T14:00:51Z` | 81 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn81 commit touches scoring: fix(cli): let RELIQUARY_HF_REPO_ID set validate's --hf-repo-id (#563) |
+| `sn94:scoring_commit:2026-11-19T14:03:29Z` | 94 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn94 commit touches scoring: Host DNAT 443 to the sealed guest and a DNS-01 challenge service (AB#… |
+| `sn116:scoring_commit:2026-11-19T21:18:05Z` | 116 | SCORING_COMMIT | P1 | 2026-11-19T21:51:45Z | sn116 commit touches scoring: Updates page: current crown rule, rough-solver zero, Motor 1.9, score… |
+| `sn117:release:everycli v1.2.4` | 117 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn117 released everycli v1.2.4 |
+| `sn127:release:Release e8350f5` | 127 | RELEASE | P1 | 2026-11-19T21:51:45Z | sn127 released Release e8350f5 |
 
 ### detail
 
-- **`sn12:release:validator-staging-2026-11-19-44521972284`** - sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875)
-  - published 2026-11-19T12:12:05Z (was validator-staging-2026-11-18-44297690409-632-1: feat: miner manifest every 5000 blocks, validator ignores >25000 (#873))
-- **`sn12:scoring_commit:2026-11-19T13:35:45Z`** - sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876)
+- **`sn99:burn_drop:0.500`** - sn99 burn fell 1.000 -> 0.500 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn3:scoring_commit:2026-11-19T16:08:05Z`** - sn3 commit touches scoring: Retry incomplete R2 reads and prefetch evaluation text
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:release:SN21 training data v7 (windows 2026-09-2`** - sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04)
-  - published 2026-11-19T13:35:26Z (was SN21 training data v6 (windows 15 Aug - 20 Sep 2026))
-- **`sn24:release:v0.3.0`** - sn24 released v0.3.0
-  - published 2026-11-19T07:28:22Z (was v0.2.1)
-- **`sn42:release:v0.6.24`** - sn42 released v0.6.24
-  - published 2026-11-19T13:28:49Z (was v0.6.22)
-- **`sn42:scoring_commit:2026-11-19T13:28:49Z`** - sn42 commit touches scoring: v0.6.24: the validator's vote scores reach the platform
+- **`sn12:release:validator-testing-2026-11-19-44554669102`** - sn12 released validator-testing-2026-11-19-44554669102-9-1: fix: build compute-horde-validator-nginx in CD, 2nd take (#877)
+  - published 2026-11-19T14:07:29Z (was validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875))
+- **`sn12:scoring_commit:2026-11-19T14:07:29Z`** - sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD, 2nd take (#877)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn45:scoring_commit:2026-11-15T03:16:42Z`** - sn45 commit touches scoring: Quality: each paid claim's pay is fixed by the coldkey's score when i…
+- **`sn25:release:v2026.11.19-1103236710`** - sn25 released v2026.11.19-1103236710
+  - published 2026-11-19T21:38:16Z (was v2026.11.18-1101975730)
+- **`sn28:release:v0.5.25`** - sn28 released v0.5.25
+  - published 2026-11-19T17:08:53Z (was v0.5.24)
+- **`sn33:scoring_commit:2026-11-19T13:44:08Z`** - sn33 commit touches scoring: Send a single conversation window to all miners of a bundle
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-19T11:18:32Z`** - sn51 commit touches scoring: DAH-6714 - [P1] Validator: filler GPU process attribution counts in t…
+- **`sn42:release:v0.6.25`** - sn42 released v0.6.25
+  - published 2026-11-19T19:39:59Z (was v0.6.24)
+- **`sn42:scoring_commit:2026-11-19T14:50:07Z`** - sn42 commit touches scoring: reference miner: one answer register for the whole device
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-19T11:35:44Z`** - sn71 commit touches scoring: Fix review outage recovery lock order and verify full lifecycle
+- **`sn51:release:executor-v1.191`** - sn51 released executor-v1.191
+  - published 2026-11-19T21:30:21Z (was executor-v1.190)
+- **`sn51:scoring_commit:2026-11-19T20:39:29Z`** - sn51 commit touches scoring: DAH-4689 validator: ignore live volume and GPU process paths in the s…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-19T11:43:48Z`** - sn116 commit touches scoring: Queue places: unmarked is not waiting; an owner whose unmarked tasks …
+- **`sn66:release:v2026.11.19.2`** - sn66 released v2026.11.19.2
+  - published 2026-11-19T17:39:35Z (was deployed/dev)
+- **`sn81:scoring_commit:2026-11-19T14:00:51Z`** - sn81 commit touches scoring: fix(cli): let RELIQUARY_HF_REPO_ID set validate's --hf-repo-id (#563)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:readme_task_diff:70f3abe3d8c03fd9`** - sn99 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn94:scoring_commit:2026-11-19T14:03:29Z`** - sn94 commit touches scoring: Host DNAT 443 to the sealed guest and a DNS-01 challenge service (AB#…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-19T21:18:05Z`** - sn116 commit touches scoring: Updates page: current crown rule, rough-solver zero, Motor 1.9, score…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v1.2.4`** - sn117 released everycli v1.2.4
+  - published 2026-11-19T16:19:58Z (was everycli v1.2.3)
+- **`sn127:release:Release e8350f5`** - sn127 released Release e8350f5
+  - published 2026-11-19T21:25:16Z (was Release b5a248c)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -60,13 +78,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn109:burn_drop:0.000` | 109 | BURN_DROP | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn34:scoring_commit:2026-11-12T18:25:22Z` | 34 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn34 commit touches scoring: Merge pull request #54 from BitMind-AI/fix/receipt-digest-unscored-nan |
-| `sn36:scoring_commit:2026-11-12T14:03:58Z` | 36 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn36 commit touches scoring: Publish miner agent and simplify connection setup |
-| `sn51:release:executor-v1.181` | 51 | RELEASE | 2026-11-12T19:10:23Z | sn51 released executor-v1.181 |
-| `sn51:scoring_commit:2026-11-12T16:11:22Z` | 51 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn51 commit touches scoring: DAH-4889 - [P0] validator: a foreign GPU workload on an idle node alw… |
-| `sn67:scoring_commit:2026-11-12T15:06:38Z` | 67 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261112.post5 |
-| `sn76:scoring_commit:2026-11-12T18:48:07Z` | 76 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn76 commit touches scoring: docs: runner keys do not expire; to change an existing miner's key, w… |
-| `sn116:scoring_commit:2026-11-12T13:53:04Z` | 116 | SCORING_COMMIT | 2026-11-12T19:10:23Z | sn116 commit touches scoring: Merge How rewards work (af0e367f) |
 | `sn3:scoring_commit:2026-11-12T20:37:20Z` | 3 | SCORING_COMMIT | 2026-11-13T00:38:05Z | sn3 commit touches scoring: V3 validator preflight and weight publication timing |
 | `sn42:release:v0.6.6` | 42 | RELEASE | 2026-11-13T00:38:05Z | sn42 released v0.6.6 |
 | `sn45:scoring_commit:2026-11-12T19:58:00Z` | 45 | SCORING_COMMIT | 2026-11-13T00:38:05Z | sn45 commit touches scoring: AlphaRidge 4.1.0: improved breakthrough event logic; validator fetch … |
@@ -223,7 +234,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn89:scoring_commit:2026-11-18T23:39:14Z` | 89 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the … |
 | `sn94:scoring_commit:2026-11-19T00:17:55Z` | 94 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier |
 | `sn116:scoring_commit:2026-11-19T01:01:34Z` | 116 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a … |
-| `sn94:readme_task_diff:6bfe892e700f0a93` | 94 | README_TASK_DIFF | 2026-11-12T19:10:23Z | sn94 README task/scoring sections changed |
+| `sn12:release:validator-staging-2026-11-19-44521972284` | 12 | RELEASE | 2026-11-19T13:41:44Z | sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875) |
+| `sn12:scoring_commit:2026-11-19T13:35:45Z` | 12 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876) |
+| `sn21:release:SN21 training data v7 (windows 2026-09-2` | 21 | RELEASE | 2026-11-19T13:41:44Z | sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04) |
+| `sn24:release:v0.3.0` | 24 | RELEASE | 2026-11-19T13:41:44Z | sn24 released v0.3.0 |
+| `sn42:release:v0.6.24` | 42 | RELEASE | 2026-11-19T13:41:44Z | sn42 released v0.6.24 |
+| `sn42:scoring_commit:2026-11-19T13:28:49Z` | 42 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn42 commit touches scoring: v0.6.24: the validator's vote scores reach the platform |
+| `sn45:scoring_commit:2026-11-15T03:16:42Z` | 45 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn45 commit touches scoring: Quality: each paid claim's pay is fixed by the coldkey's score when i… |
+| `sn51:scoring_commit:2026-11-19T11:18:32Z` | 51 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn51 commit touches scoring: DAH-6714 - [P1] Validator: filler GPU process attribution counts in t… |
+| `sn71:scoring_commit:2026-11-19T11:35:44Z` | 71 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn71 commit touches scoring: Fix review outage recovery lock order and verify full lifecycle |
+| `sn116:scoring_commit:2026-11-19T11:43:48Z` | 116 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn116 commit touches scoring: Queue places: unmarked is not waiting; an owner whose unmarked tasks … |
 | `sn48:readme_task_diff:ccea6584910d3bd5` | 48 | README_TASK_DIFF | 2026-11-13T07:23:28Z | sn48 README task/scoring sections changed |
 | `sn42:readme_task_diff:a31e8e8370c6e8f8` | 42 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn42 README task/scoring sections changed |
 | `sn58:readme_task_diff:e5ddb56c3ad66771` | 58 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn58 README task/scoring sections changed |
@@ -235,6 +255,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
 | `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
 | `sn99:readme_task_diff:346f6cf3141fc736` | 99 | README_TASK_DIFF | 2026-11-18T23:10:24Z | sn99 README task/scoring sections changed |
+| `sn99:readme_task_diff:70f3abe3d8c03fd9` | 99 | README_TASK_DIFF | 2026-11-19T13:41:44Z | sn99 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

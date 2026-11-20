@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-20T11:26:20Z, block 9547512
+# ALARMS - generated 2026-11-20T19:13:36Z, block 9549849
 
-window: first_seen in [2026-11-20T10:11:47Z, 2026-11-20T11:26:47Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-20T17:59:02Z, 2026-11-20T19:14:02Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,45 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn84:burn_drop:0.000` | 84 | BURN_DROP | P0 | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn25:release:v2026.11.19-1103608200` | 25 | RELEASE | P1 | 2026-11-20T11:26:47Z | sn25 released v2026.11.19-1103608200 |
-| `sn51:release:executor-v1.192` | 51 | RELEASE | P1 | 2026-11-20T11:26:47Z | sn51 released executor-v1.192 |
-| `sn51:scoring_commit:2026-11-20T09:17:54Z` | 51 | SCORING_COMMIT | P1 | 2026-11-20T11:26:47Z | sn51 commit touches scoring: DAH-6666 - [P1] Executor trusts the validator named in a subnet-owner… |
-| `sn67:scoring_commit:2026-11-20T08:01:49Z` | 67 | SCORING_COMMIT | P1 | 2026-11-20T11:26:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261120.post1 |
-| `sn71:scoring_commit:2026-11-20T07:47:14Z` | 71 | SCORING_COMMIT | P1 | 2026-11-20T11:26:47Z | sn71 commit touches scoring: Record reviewed scorer changes in protected workflow manifest |
-| `sn99:scoring_commit:2026-11-20T09:18:09Z` | 99 | SCORING_COMMIT | P1 | 2026-11-20T11:26:47Z | sn99 commit touches scoring: Validator loop: tempo read once, one try per round, sleep to the next… |
-| `sn116:scoring_commit:2026-11-20T08:40:42Z` | 116 | SCORING_COMMIT | P1 | 2026-11-20T11:26:47Z | sn116 commit touches scoring: L2 FULL RED (release g9334la/lb): the 6 tests that expected a miner's… |
-| `sn94:readme_task_diff:ef09606cbd6e8243` | 94 | README_TASK_DIFF | P2 | 2026-11-20T11:26:47Z | sn94 README task/scoring sections changed |
-| `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | P2 | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
+| `sn58:burn_drop:0.300` | 58 | BURN_DROP | P0 | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
+| `sn25:scoring_commit:2026-11-19T18:57:29Z` | 25 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn25 commit touches scoring: Merge fix/runtime-492-1119 (3e9e6f2b) onto 8c14d437, the validator sn… |
+| `sn51:scoring_commit:2026-11-20T13:09:25Z` | 51 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn51 commit touches scoring: DAH-6769 - [P4] Validator: a readable upper dir decides the reboot's … |
+| `sn58:scoring_commit:2026-11-20T13:17:06Z` | 58 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn58 commit touches scoring: feat(horizon): Horizon miners share Horizon's 70% |
+| `sn66:release:v2026.11.20` | 66 | RELEASE | P1 | 2026-11-20T19:14:02Z | sn66 released v2026.11.20 |
+| `sn71:scoring_commit:2026-11-20T13:29:24Z` | 71 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn71 commit touches scoring: Update unknown-runtime control after verified 492 support |
+| `sn99:scoring_commit:2026-11-20T15:07:44Z` | 99 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn99 commit touches scoring: task.json drops parent (starts lists it); the real-toolkit check test… |
+| `sn116:scoring_commit:2026-11-20T18:11:02Z` | 116 | SCORING_COMMIT | P1 | 2026-11-20T19:14:02Z | sn116 commit touches scoring: Client refusal text: miner-x's wording (plain words, withdraw named, … |
+| `sn56:readme_task_diff:eb830460d88616d2` | 56 | README_TASK_DIFF | P2 | 2026-11-20T19:14:02Z | sn56 README task/scoring sections changed |
+| `sn123:readme_task_diff:f4ae2b06d69e2e0b` | 123 | README_TASK_DIFF | P2 | 2026-11-20T19:14:02Z | sn123 README task/scoring sections changed |
 
 ### detail
 
-- **`sn84:burn_drop:0.000`** - sn84 burn fell 1.000 -> 0.000 - miners can earn again
+- **`sn58:burn_drop:0.300`** - sn58 burn fell 1.000 -> 0.300 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn25:release:v2026.11.19-1103608200`** - sn25 released v2026.11.19-1103608200
-  - published 2026-11-20T07:57:00Z (was v2026.11.19-1103236710)
-- **`sn51:release:executor-v1.192`** - sn51 released executor-v1.192
-  - published 2026-11-20T09:52:03Z (was executor-v1.191)
-- **`sn51:scoring_commit:2026-11-20T09:17:54Z`** - sn51 commit touches scoring: DAH-6666 - [P1] Executor trusts the validator named in a subnet-owner…
+- **`sn25:scoring_commit:2026-11-19T18:57:29Z`** - sn25 commit touches scoring: Merge fix/runtime-492-1119 (3e9e6f2b) onto 8c14d437, the validator sn…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-20T08:01:49Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261120.post1
+- **`sn51:scoring_commit:2026-11-20T13:09:25Z`** - sn51 commit touches scoring: DAH-6769 - [P4] Validator: a readable upper dir decides the reboot's …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-20T07:47:14Z`** - sn71 commit touches scoring: Record reviewed scorer changes in protected workflow manifest
+- **`sn58:scoring_commit:2026-11-20T13:17:06Z`** - sn58 commit touches scoring: feat(horizon): Horizon miners share Horizon's 70%
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:scoring_commit:2026-11-20T09:18:09Z`** - sn99 commit touches scoring: Validator loop: tempo read once, one try per round, sleep to the next…
+- **`sn66:release:v2026.11.20`** - sn66 released v2026.11.20
+  - published 2026-11-20T17:59:24Z (was v2026.11.19.2)
+- **`sn71:scoring_commit:2026-11-20T13:29:24Z`** - sn71 commit touches scoring: Update unknown-runtime control after verified 492 support
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-20T08:40:42Z`** - sn116 commit touches scoring: L2 FULL RED (release g9334la/lb): the 6 tests that expected a miner's…
+- **`sn99:scoring_commit:2026-11-20T15:07:44Z`** - sn99 commit touches scoring: task.json drops parent (starts lists it); the real-toolkit check test…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:readme_task_diff:ef09606cbd6e8243`** - sn94 README task/scoring sections changed
+- **`sn116:scoring_commit:2026-11-20T18:11:02Z`** - sn116 commit touches scoring: Client refusal text: miner-x's wording (plain words, withdraw named, …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn56:readme_task_diff:eb830460d88616d2`** - sn56 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn99:readme_task_diff:fd32093daf7672c0`** - sn99 README task/scoring sections changed
+- **`sn123:readme_task_diff:f4ae2b06d69e2e0b`** - sn123 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn10:burn_drop:0.607` | 10 | BURN_DROP | 2026-11-13T15:34:59Z | sn10 burn fell 1.000 -> 0.607 - miners can earn again |
 | `sn108:burn_drop:0.800` | 108 | BURN_DROP | 2026-11-14T08:55:08Z | sn108 burn fell 1.000 -> 0.800 - miners can earn again |
 | `sn116:burn_drop:0.750` | 116 | BURN_DROP | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
@@ -58,19 +57,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn109:burn_drop:0.000` | 109 | BURN_DROP | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn99:burn_drop:0.500` | 99 | BURN_DROP | 2026-11-19T21:51:45Z | sn99 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn2:burn_drop:0.936` | 2 | BURN_DROP | 2026-11-20T03:04:29Z | sn2 burn fell 1.000 -> 0.936 - miners can earn again |
-| `sn3:scoring_commit:2026-11-13T12:59:12Z` | 3 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn3 commit touches scoring: Update Horizon scoring, set 60M budgets and live evaluation progress |
-| `sn25:release:v2026.11.13-1097815580` | 25 | RELEASE | 2026-11-13T15:34:59Z | sn25 released v2026.11.13-1097815580 |
-| `sn42:release:v0.6.9` | 42 | RELEASE | 2026-11-13T15:34:59Z | sn42 released v0.6.9 |
-| `sn42:scoring_commit:2026-11-13T13:19:19Z` | 42 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn42 commit touches scoring: v0.6.8: the operator can take a client job back from a miner that can… |
-| `sn51:release:executor-v1.182` | 51 | RELEASE | 2026-11-13T15:34:59Z | sn51 released executor-v1.182 |
-| `sn51:scoring_commit:2026-11-13T15:34:45Z` | 51 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn51 commit touches scoring: DAH-6381 - [P1] Validator: an ownership shift after a container-only … |
-| `sn56:scoring_commit:2026-11-13T10:48:42Z` | 56 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn56 commit touches scoring: Add next image families and native-loss evaluation (#1420) |
-| `sn69:scoring_commit:2026-11-13T02:45:24Z` | 69 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn69 commit touches scoring: Port the validator to bittensor 11.3.2 |
-| `sn71:scoring_commit:2026-11-13T09:58:30Z` | 71 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn71 commit touches scoring: Record deployed Arena migration access and verified recovery evidence |
-| `sn81:scoring_commit:2026-11-13T11:36:18Z` | 81 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn81 commit touches scoring: docs(design): Terminal-Bench 2.1 gold check results (49/89 verified o… |
-| `sn111:scoring_commit:2026-11-13T10:53:58Z` | 111 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn111 commit touches scoring: Document Silver data in evaluation exports |
-| `sn116:scoring_commit:2026-11-13T04:13:13Z` | 116 | SCORING_COMMIT | 2026-11-13T15:34:59Z | sn116 commit touches scoring: Grading paths: classify task_wall_overrides.py (Runner-C gate on 669a… |
-| `sn117:release:everycli v1.2.1` | 117 | RELEASE | 2026-11-13T15:34:59Z | sn117 released everycli v1.2.1 |
+| `sn84:burn_drop:0.000` | 84 | BURN_DROP | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn25:release:v2026.11.13-1097983310` | 25 | RELEASE | 2026-11-13T21:41:00Z | sn25 released v2026.11.13-1097983310 |
 | `sn45:scoring_commit:2026-11-13T17:26:43Z` | 45 | SCORING_COMMIT | 2026-11-13T21:41:00Z | sn45 commit touches scoring: AlphaRidge 4.1.2: re-verify reads a republished page at its original … |
 | `sn66:release:v2026.11.13` | 66 | RELEASE | 2026-11-13T21:41:00Z | sn66 released v2026.11.13 |
@@ -231,9 +218,13 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn53:scoring_commit:2026-11-19T23:32:44Z` | 53 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn53 commit touches scoring: Merge pull request #65 from hanlinai/feat/tee-miner-name-only |
 | `sn99:scoring_commit:2026-11-19T21:55:03Z` | 99 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn99 commit touches scoring: A candidate is evaluated on the machine admission built its model on … |
 | `sn116:scoring_commit:2026-11-20T02:18:19Z` | 116 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn116 commit touches scoring: Box loss: a live DOWN mark stays DOWN on a later loss (Validator-2 B1… |
-| `sn42:readme_task_diff:a31e8e8370c6e8f8` | 42 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn42 README task/scoring sections changed |
-| `sn58:readme_task_diff:e5ddb56c3ad66771` | 58 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn58 README task/scoring sections changed |
-| `sn69:readme_task_diff:55670d0ee7030fca` | 69 | README_TASK_DIFF | 2026-11-13T15:34:59Z | sn69 README task/scoring sections changed |
+| `sn25:release:v2026.11.19-1103608200` | 25 | RELEASE | 2026-11-20T11:26:47Z | sn25 released v2026.11.19-1103608200 |
+| `sn51:release:executor-v1.192` | 51 | RELEASE | 2026-11-20T11:26:47Z | sn51 released executor-v1.192 |
+| `sn51:scoring_commit:2026-11-20T09:17:54Z` | 51 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn51 commit touches scoring: DAH-6666 - [P1] Executor trusts the validator named in a subnet-owner… |
+| `sn67:scoring_commit:2026-11-20T08:01:49Z` | 67 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261120.post1 |
+| `sn71:scoring_commit:2026-11-20T07:47:14Z` | 71 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn71 commit touches scoring: Record reviewed scorer changes in protected workflow manifest |
+| `sn99:scoring_commit:2026-11-20T09:18:09Z` | 99 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn99 commit touches scoring: Validator loop: tempo read once, one try per round, sleep to the next… |
+| `sn116:scoring_commit:2026-11-20T08:40:42Z` | 116 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn116 commit touches scoring: L2 FULL RED (release g9334la/lb): the 6 tests that expected a miner's… |
 | `sn42:readme_task_diff:c68c8d6462ab6e33` | 42 | README_TASK_DIFF | 2026-11-14T01:52:12Z | sn42 README task/scoring sections changed |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
@@ -242,6 +233,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
 | `sn99:readme_task_diff:346f6cf3141fc736` | 99 | README_TASK_DIFF | 2026-11-18T23:10:24Z | sn99 README task/scoring sections changed |
 | `sn99:readme_task_diff:70f3abe3d8c03fd9` | 99 | README_TASK_DIFF | 2026-11-19T13:41:44Z | sn99 README task/scoring sections changed |
+| `sn94:readme_task_diff:ef09606cbd6e8243` | 94 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn94 README task/scoring sections changed |
+| `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-21T00:54:23Z, block 9551553
+# ALARMS - generated 2026-11-21T08:14:09Z, block 9553752
 
-window: first_seen in [2026-11-20T23:39:44Z, 2026-11-21T00:54:44Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-21T06:59:47Z, 2026-11-21T08:14:47Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,23 +9,14 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn51:scoring_commit:2026-11-20T23:09:15Z` | 51 | SCORING_COMMIT | P1 | 2026-11-21T00:54:44Z | sn51 commit touches scoring: DAH-6863 - [P3] Validator runs each pod with the backend's CPU count;… |
-| `sn66:release:v2026.11.20.2` | 66 | RELEASE | P1 | 2026-11-21T00:54:44Z | sn66 released v2026.11.20.2 |
-| `sn66:scoring_commit:2026-11-20T21:36:43Z` | 66 | SCORING_COMMIT | P1 | 2026-11-21T00:54:44Z | sn66 commit touches scoring: Publish verification holds for RH, Erdős 462, and Erdős 985 |
-| `sn71:scoring_commit:2026-11-20T19:11:30Z` | 71 | SCORING_COMMIT | P1 | 2026-11-21T00:54:44Z | sn71 commit touches scoring: Preserve bounded validator readiness delivery during diagnostic floods |
-| `sn116:scoring_commit:2026-11-21T00:35:50Z` | 116 | SCORING_COMMIT | P1 | 2026-11-21T00:54:44Z | sn116 commit touches scoring: miner_lookup fix: ruff --fix + black (release LINT_DIFF_1cb183d7.patc… |
+| `sn90:release:v1.4.5 — Finney oracle and validator rel` | 90 | RELEASE | P1 | 2026-11-21T08:14:47Z | sn90 released v1.4.5 — Finney oracle and validator reliability |
+| `sn90:scoring_commit:2026-11-21T02:48:26Z` | 90 | SCORING_COMMIT | P1 | 2026-11-21T08:14:47Z | sn90 commit touches scoring: feat(validator): prefer Finney oracle for TAO pricing |
 
 ### detail
 
-- **`sn51:scoring_commit:2026-11-20T23:09:15Z`** - sn51 commit touches scoring: DAH-6863 - [P3] Validator runs each pod with the backend's CPU count;…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn66:release:v2026.11.20.2`** - sn66 released v2026.11.20.2
-  - published 2026-11-20T21:43:40Z (was v2026.11.20)
-- **`sn66:scoring_commit:2026-11-20T21:36:43Z`** - sn66 commit touches scoring: Publish verification holds for RH, Erdős 462, and Erdős 985
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-20T19:11:30Z`** - sn71 commit touches scoring: Preserve bounded validator readiness delivery during diagnostic floods
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-21T00:35:50Z`** - sn116 commit touches scoring: miner_lookup fix: ruff --fix + black (release LINT_DIFF_1cb183d7.patc…
+- **`sn90:release:v1.4.5 — Finney oracle and validator rel`** - sn90 released v1.4.5 — Finney oracle and validator reliability
+  - published 2026-11-21T03:06:09Z (was v1.4.3)
+- **`sn90:scoring_commit:2026-11-21T02:48:26Z`** - sn90 commit touches scoring: feat(validator): prefer Finney oracle for TAO pricing
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
@@ -44,12 +35,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.936` | 2 | BURN_DROP | 2026-11-20T03:04:29Z | sn2 burn fell 1.000 -> 0.936 - miners can earn again |
 | `sn84:burn_drop:0.000` | 84 | BURN_DROP | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
-| `sn5:scoring_commit:2026-11-14T00:45:57Z` | 5 | SCORING_COMMIT | 2026-11-14T01:52:12Z | sn5 commit touches scoring: Lengthen the new-miner ramp to 30 observations |
-| `sn8:scoring_commit:2026-11-13T23:26:20Z` | 8 | SCORING_COMMIT | 2026-11-14T01:52:12Z | sn8 commit touches scoring: Put new regular miners on the static drawdown rules until Grow (#979) |
-| `sn42:release:v0.6.11` | 42 | RELEASE | 2026-11-14T01:52:12Z | sn42 released v0.6.11 |
-| `sn66:release:v2026.11.13.2` | 66 | RELEASE | 2026-11-14T01:52:12Z | sn66 released v2026.11.13.2 |
-| `sn71:scoring_commit:2026-11-13T23:56:56Z` | 71 | SCORING_COMMIT | 2026-11-14T01:52:12Z | sn71 commit touches scoring: Expect mandatory reward history reader in bounded schema fixture |
-| `sn116:scoring_commit:2026-11-13T20:28:33Z` | 116 | SCORING_COMMIT | 2026-11-14T01:52:12Z | sn116 commit touches scoring: Test: the in-range case rows add no score, gate or target pool row (s… |
 | `sn25:scoring_commit:2026-11-14T05:29:09Z` | 25 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn25 commit touches scoring: Merge release/validator-1114-idle-fleet: the validator build 47ae3006… |
 | `sn94:scoring_commit:2026-11-14T07:44:30Z` | 94 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn94 commit touches scoring: Admit miner hotels on a declared capacity commitment (AB#331) (#498) |
 | `sn116:scoring_commit:2026-11-14T05:27:45Z` | 116 | SCORING_COMMIT | 2026-11-14T08:55:08Z | sn116 commit touches scoring: Re-class: replace the miner-facing marker atomically so the miner sto… |
@@ -213,7 +198,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-20T13:29:24Z` | 71 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn71 commit touches scoring: Update unknown-runtime control after verified 492 support |
 | `sn99:scoring_commit:2026-11-20T15:07:44Z` | 99 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn99 commit touches scoring: task.json drops parent (starts lists it); the real-toolkit check test… |
 | `sn116:scoring_commit:2026-11-20T18:11:02Z` | 116 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn116 commit touches scoring: Client refusal text: miner-x's wording (plain words, withdraw named, … |
-| `sn42:readme_task_diff:c68c8d6462ab6e33` | 42 | README_TASK_DIFF | 2026-11-14T01:52:12Z | sn42 README task/scoring sections changed |
+| `sn51:scoring_commit:2026-11-20T23:09:15Z` | 51 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn51 commit touches scoring: DAH-6863 - [P3] Validator runs each pod with the backend's CPU count;… |
+| `sn66:release:v2026.11.20.2` | 66 | RELEASE | 2026-11-21T00:54:44Z | sn66 released v2026.11.20.2 |
+| `sn66:scoring_commit:2026-11-20T21:36:43Z` | 66 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn66 commit touches scoring: Publish verification holds for RH, Erdős 462, and Erdős 985 |
+| `sn71:scoring_commit:2026-11-20T19:11:30Z` | 71 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn71 commit touches scoring: Preserve bounded validator readiness delivery during diagnostic floods |
+| `sn116:scoring_commit:2026-11-21T00:35:50Z` | 116 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn116 commit touches scoring: miner_lookup fix: ruff --fix + black (release LINT_DIFF_1cb183d7.patc… |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |

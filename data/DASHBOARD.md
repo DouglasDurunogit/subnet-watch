@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-11-21T00:54:23Z · block 9551553 · run_status **ok**_
+_snapshot 2026-11-21T08:14:09Z · block 9553752 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 58 of 128
+# 57 of 128
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -17,8 +17,8 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | Total subnets | 128 | everything on chain |
 | Pays miners at all | 106 | `miner_burn` < 0.99 |
 | Ranked | 106 | passed every gate |
-| **Positive margin** | **58** | income beats machine cost |
-| New events this window | 5 | see ALARMS.md |
+| **Positive margin** | **57** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -30,11 +30,11 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | miner_burn | subnets | |
 |---|---:|---|
 | 0 (none) | 70 | `████████████████████████████` |
-| 0–0.2 | 6 | `██` |
+| 0–0.2 | 5 | `██` |
 | 0.2–0.4 | 7 | `███` |
-| 0.4–0.6 | 5 | `██` |
-| 0.6–0.8 | 9 | `████` |
-| 0.8–0.99 | 9 | `████` |
+| 0.4–0.6 | 6 | `██` |
+| 0.6–0.8 | 8 | `███` |
+| 0.8–0.99 | 10 | `████` |
 | ≥0.99 dead | 22 | `█████████` |
 
 ![burn distribution](charts/burn.svg)
@@ -44,25 +44,25 @@ There is very little middle ground, which is why burn is a gate and not a score.
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
 | 1 | sn42 CADmind | 81.4 | 226 | 226 = | cpu-small | 5 | 20% |
-| 2 | sn3 Teutonic | 73 | 1,845 | 3,699 | rtx4090* | 4 | 40% |
-| 3 | sn67 Harnyx | 66.6 | 4.42 | 4.42 = | cpu-small | 227 | 8% |
-| 4 | sn15 ORO | 65.6 | 5.32 | 11.36 | cpu-small | 77 | 95% |
-| 5 | sn124 Swarm | 65.1 | 179 | 649 | rtx4090* | 11 | 30% |
-| 6 | sn66 conjectures | 64.7 | 154 | 937 | rtx4090* | 3 | 83% |
-| 7 | sn53 engy | 62.4 | 76.79 | 823 | rtx4090 | 20 | 61% |
-| 8 | sn56 Gradients | 62.1 | 468 | 2,461 | a100-80 | 6 | 43% |
-| 9 | sn120 Affine | 61.3 | 1,948 | 1,948 = | rtx4090* | 10 | 10% |
-| 10 | sn58 Attune | 61.3 | 54.79 | 138 | rtx4090* | 57 | 30% |
-| 11 | sn62 Ridges | 60.3 | 40.76 | 496 | rtx4090* | 45 | 12% |
-| 12 | sn111 Claims | 60 | 37.08 | 150 | rtx4090* | 4 | 88% |
-| 13 | sn97 Ingot | 59.4 | 1,081 | 1,081 = | rtx4090* | 4 | 40% |
-| 14 | sn25 UR | 57.8 | 18.86 | 18.86 = | rtx4090* | 9 | 46% |
-| 15 | sn34 Yugos | 57.5 | 631 | 5,425 | rtx4090* | 3 | 85% |
-| 16 | sn28 SayGM | 57.4 | 19.40 | 1,529 | rtx4090* | 100 | 45% |
-| 17 | sn102 ConnitoAI | 57.2 | 568 | 582 | rtx4090* | 4 | 26% |
-| 18 | sn5 Hone | 56.8 | 16.88 | 37.46 | rtx4090* | 241 | 1% |
-| 19 | sn1 Apex | 56.5 | 466 | 592 | rtx4090* | 4 | 57% |
-| 20 | sn4 Targon | 55.4 | 4,735 | 18,842 | rtx4090* | 5 | 66% |
+| 2 | sn3 Teutonic | 72.9 | 1,779 | 3,519 | rtx4090* | 4 | 40% |
+| 3 | sn14 Cacheon | 66.7 | 279 | 1,925 | rtx4090* | 5 | 48% |
+| 4 | sn15 ORO | 66.7 | 6.13 | 7,962 | cpu-small | 67 | 95% |
+| 5 | sn124 Swarm | 65.3 | 188 | 1,133 | rtx4090* | 11 | 28% |
+| 6 | sn56 Gradients | 63.6 | 735 | 3,028 | a100-80 | 6 | 43% |
+| 7 | sn67 Harnyx | 63.3 | 1.65 | 387 | cpu-small | 150 | 30% |
+| 8 | sn53 engy | 62.3 | 73.39 | 790 | rtx4090 | 20 | 61% |
+| 9 | sn66 conjectures | 62.3 | 72.87 | 871 | rtx4090* | 4 | 80% |
+| 10 | sn104 TAOstatus | 62 | 915 | 1,824 | cpu-small | 2 | 100% |
+| 11 | sn120 Affine | 61.2 | 1,872 | 1,872 = | rtx4090* | 10 | 10% |
+| 12 | sn58 Attune | 61.1 | 52.43 | 132 | rtx4090* | 57 | 30% |
+| 13 | sn62 Ridges | 60.2 | 38.67 | 474 | rtx4090* | 45 | 12% |
+| 14 | sn28 SayGM | 59.8 | 37.05 | 4,882 | rtx4090* | 123 | 32% |
+| 15 | sn111 Claims | 59.8 | 35.40 | 144 | rtx4090* | 4 | 88% |
+| 16 | sn97 Ingot | 59.2 | 1,033 | 1,033 = | rtx4090* | 4 | 40% |
+| 17 | sn25 UR | 57.6 | 17.41 | 17.41 = | rtx4090* | 10 | 45% |
+| 18 | sn102 ConnitoAI | 56.9 | 519 | 522 | rtx4090* | 4 | 25% |
+| 19 | sn1 Apex | 56.3 | 429 | 551 | rtx4090* | 4 | 58% |
+| 20 | sn46 Instant | 55.7 | 139 | 175 | cpu-small | 9 | 14% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -85,10 +85,10 @@ single UID takes almost everything, so the headline income is not reachable.
 
 | top-1 share | subnets (of those that pay) |
 |---|---:|
-| wide (<30%) | 26 |
+| wide (<30%) | 25 |
 | concentrated (30–60%) | 25 |
-| dominated (60–90%) | 28 |
-| captured (>90%) | 24 |
+| dominated (60–90%) | 26 |
+| captured (>90%) | 27 |
 
 ## Hardware evidence quality
 
@@ -106,6 +106,8 @@ margin assumes a default box. Treat those as indicative.
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-11-21T08:14 | sn90 | RELEASE | sn90 released v1.4.5 — Finney oracle and validator reliability |
+| 2026-11-21T08:14 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: feat(validator): prefer Finney oracle for |
 | 2026-11-21T00:54 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-6863 - [P3] Validator runs each pod w |
 | 2026-11-21T00:54 | sn66 | RELEASE | sn66 released v2026.11.20.2 |
 | 2026-11-21T00:54 | sn66 | SCORING_COMMIT | sn66 commit touches scoring: Publish verification holds for RH, Erdős  |
@@ -119,8 +121,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-11-20T19:14 | sn66 | RELEASE | sn66 released v2026.11.20 |
 | 2026-11-20T19:14 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Update unknown-runtime control after veri |
 | 2026-11-20T19:14 | sn99 | SCORING_COMMIT | sn99 commit touches scoring: task.json drops parent (starts lists it); |
-| 2026-11-20T19:14 | sn116 | SCORING_COMMIT | sn116 commit touches scoring: Client refusal text: miner-x's wording ( |
-| 2026-11-20T19:14 | sn123 | README_TASK_DIFF | sn123 README task/scoring sections changed |
 
 ---
 

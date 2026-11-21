@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-21T16:18:04Z, block 9556151
+# ALARMS - generated 2026-11-21T21:46:57Z, block 9557796
 
-window: first_seen in [2026-11-21T15:03:29Z, 2026-11-21T16:18:29Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-21T20:32:24Z, 2026-11-21T21:47:24Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,32 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn71:scoring_commit:2026-11-21T07:48:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-21T16:18:29Z | sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs |
-| `sn82:scoring_commit:2026-11-21T00:27:34Z` | 82 | SCORING_COMMIT | P1 | 2026-11-21T16:18:29Z | sn82 commit touches scoring: Harden report checkpoints and independent verification |
-| `sn91:scoring_commit:2026-11-21T13:35:05Z` | 91 | SCORING_COMMIT | P1 | 2026-11-21T16:18:29Z | sn91 commit touches scoring: validator: post-gate kings keep their crowning block as the tenure an… |
-| `sn92:scoring_commit:2026-11-20T18:43:47Z` | 92 | SCORING_COMMIT | P1 | 2026-11-21T16:18:29Z | sn92 commit touches scoring: Verify teacher metadata is independent of weight eligibility |
-| `sn99:scoring_commit:2026-11-21T15:04:52Z` | 99 | SCORING_COMMIT | P1 | 2026-11-21T16:18:29Z | sn99 commit touches scoring: Validator: a set whose reply was lost counts when the chain shows it … |
-| `sn117:release:everycli v1.2.5` | 117 | RELEASE | P1 | 2026-11-21T16:18:29Z | sn117 released everycli v1.2.5 |
-| `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | P2 | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
-| `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | P2 | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
+| `sn57:burn_drop:0.000` | 57 | BURN_DROP | P0 | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn122:burn_drop:0.115` | 122 | BURN_DROP | P0 | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
+| `sn92:scoring_commit:2026-11-21T15:13:22Z` | 92 | SCORING_COMMIT | P1 | 2026-11-21T21:47:24Z | sn92 commit touches scoring: Add verified public development roster to the REAX yardstick |
+| `sn111:scoring_commit:2026-11-21T20:43:24Z` | 111 | SCORING_COMMIT | P1 | 2026-11-21T21:47:24Z | sn111 commit touches scoring: Complete scientific result worker delivery and source-task scoring |
+| `sn116:scoring_commit:2026-11-21T17:00:53Z` | 116 | SCORING_COMMIT | P1 | 2026-11-21T21:47:24Z | sn116 commit touches scoring: DATA: the door holds verified inference snapshots' predictions.json c… |
+| `sn117:release:everycli v1.2.6` | 117 | RELEASE | P1 | 2026-11-21T21:47:24Z | sn117 released everycli v1.2.6 |
 
 ### detail
 
-- **`sn71:scoring_commit:2026-11-21T07:48:58Z`** - sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs
+- **`sn57:burn_drop:0.000`** - sn57 burn fell 1.000 -> 0.000 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn122:burn_drop:0.115`** - sn122 burn fell 1.000 -> 0.115 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn92:scoring_commit:2026-11-21T15:13:22Z`** - sn92 commit touches scoring: Add verified public development roster to the REAX yardstick
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn82:scoring_commit:2026-11-21T00:27:34Z`** - sn82 commit touches scoring: Harden report checkpoints and independent verification
+- **`sn111:scoring_commit:2026-11-21T20:43:24Z`** - sn111 commit touches scoring: Complete scientific result worker delivery and source-task scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-21T13:35:05Z`** - sn91 commit touches scoring: validator: post-gate kings keep their crowning block as the tenure an…
+- **`sn116:scoring_commit:2026-11-21T17:00:53Z`** - sn116 commit touches scoring: DATA: the door holds verified inference snapshots' predictions.json c…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:scoring_commit:2026-11-20T18:43:47Z`** - sn92 commit touches scoring: Verify teacher metadata is independent of weight eligibility
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:scoring_commit:2026-11-21T15:04:52Z`** - sn99 commit touches scoring: Validator: a set whose reply was lost counts when the chain shows it …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.2.5`** - sn117 released everycli v1.2.5
-  - published 2026-11-21T13:12:34Z (was everycli v1.2.4)
-- **`sn82:readme_task_diff:aa4f39b4e574a688`** - sn82 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
-- **`sn91:readme_task_diff:e77d0e82c1da3b20`** - sn91 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn117:release:everycli v1.2.6`** - sn117 released everycli v1.2.6
+  - published 2026-11-21T17:08:47Z (was everycli v1.2.5)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn116:burn_drop:0.750` | 116 | BURN_DROP | 2026-11-14T20:09:45Z | sn116 burn fell 1.000 -> 0.750 - miners can earn again |
 | `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -52,9 +45,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn2:burn_drop:0.936` | 2 | BURN_DROP | 2026-11-20T03:04:29Z | sn2 burn fell 1.000 -> 0.936 - miners can earn again |
 | `sn84:burn_drop:0.000` | 84 | BURN_DROP | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
-| `sn42:release:v0.6.15` | 42 | RELEASE | 2026-11-14T20:09:45Z | sn42 released v0.6.15 |
-| `sn42:scoring_commit:2026-11-14T17:22:34Z` | 42 | SCORING_COMMIT | 2026-11-14T20:09:45Z | sn42 commit touches scoring: v0.6.15: the reference miner hands a finished job in when the agent C… |
-| `sn116:scoring_commit:2026-11-14T14:36:51Z` | 116 | SCORING_COMMIT | 2026-11-14T20:09:45Z | sn116 commit touches scoring: Tests: a serve stop leaves a queued task QUEUED (queue-carry), not CA… |
 | `sn71:scoring_commit:2026-11-14T23:29:40Z` | 71 | SCORING_COMMIT | 2026-11-15T00:02:49Z | sn71 commit touches scoring: Merge pull request #1240 from leadpoet/fix/miner-responses-output-cit… |
 | `sn116:scoring_commit:2026-11-14T22:09:09Z` | 116 | SCORING_COMMIT | 2026-11-15T00:02:49Z | sn116 commit touches scoring: Queue place: a resubmission of a stop-cancelled task's recipe takes t… |
 | `sn116:scoring_commit:2026-11-15T05:04:28Z` | 116 | SCORING_COMMIT | 2026-11-15T06:17:56Z | sn116 commit touches scoring: Merge pull request #1433: Dashboard on every page, miner CTA to the d… |
@@ -211,6 +201,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn116:scoring_commit:2026-11-21T00:35:50Z` | 116 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn116 commit touches scoring: miner_lookup fix: ruff --fix + black (release LINT_DIFF_1cb183d7.patc… |
 | `sn90:release:v1.4.5 — Finney oracle and validator rel` | 90 | RELEASE | 2026-11-21T08:14:47Z | sn90 released v1.4.5 — Finney oracle and validator reliability |
 | `sn90:scoring_commit:2026-11-21T02:48:26Z` | 90 | SCORING_COMMIT | 2026-11-21T08:14:47Z | sn90 commit touches scoring: feat(validator): prefer Finney oracle for TAO pricing |
+| `sn71:scoring_commit:2026-11-21T07:48:58Z` | 71 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs |
+| `sn82:scoring_commit:2026-11-21T00:27:34Z` | 82 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn82 commit touches scoring: Harden report checkpoints and independent verification |
+| `sn91:scoring_commit:2026-11-21T13:35:05Z` | 91 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn91 commit touches scoring: validator: post-gate kings keep their crowning block as the tenure an… |
+| `sn92:scoring_commit:2026-11-20T18:43:47Z` | 92 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn92 commit touches scoring: Verify teacher metadata is independent of weight eligibility |
+| `sn99:scoring_commit:2026-11-21T15:04:52Z` | 99 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn99 commit touches scoring: Validator: a set whose reply was lost counts when the chain shows it … |
+| `sn117:release:everycli v1.2.5` | 117 | RELEASE | 2026-11-21T16:18:29Z | sn117 released everycli v1.2.5 |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
@@ -222,6 +218,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
 | `sn56:readme_task_diff:eb830460d88616d2` | 56 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn56 README task/scoring sections changed |
 | `sn123:readme_task_diff:f4ae2b06d69e2e0b` | 123 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn123 README task/scoring sections changed |
+| `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
+| `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

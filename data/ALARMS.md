@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-22T17:04:17Z, block 9563582
+# ALARMS - generated 2026-11-22T22:26:18Z, block 9565192
 
-window: first_seen in [2026-11-22T15:49:41Z, 2026-11-22T17:04:41Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-22T21:11:39Z, 2026-11-22T22:26:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,33 +9,26 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn90:release:v1.4.6` | 90 | RELEASE | P1 | 2026-11-22T17:04:41Z | sn90 released v1.4.6 |
-| `sn90:scoring_commit:2026-11-22T10:50:47Z` | 90 | SCORING_COMMIT | P1 | 2026-11-22T17:04:41Z | sn90 commit touches scoring: docs(validator): describe Lium B300 AC-only pricing |
-| `sn91:scoring_commit:2026-11-22T10:55:14Z` | 91 | SCORING_COMMIT | P1 | 2026-11-22T17:04:41Z | sn91 commit touches scoring: fix(laned): W5b scores each window from one snapshot; report names ev… |
-| `sn94:scoring_commit:2026-11-22T09:55:43Z` | 94 | SCORING_COMMIT | P1 | 2026-11-22T17:04:41Z | sn94 commit touches scoring: Revalidate the fresh plant incarnation under the write and sign lock … |
-| `sn99:scoring_commit:2026-11-21T15:54:01Z` | 99 | SCORING_COMMIT | P1 | 2026-11-22T17:04:41Z | sn99 commit touches scoring: BBH items as the toolkit's build: its 19 generated tasks, 26 each, pi… |
-| `sn99:readme_task_diff:99418d103a242136` | 99 | README_TASK_DIFF | P2 | 2026-11-22T17:04:41Z | sn99 README task/scoring sections changed |
+| `sn37:burn_drop:0.738` | 37 | BURN_DROP | P0 | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
+| `sn70:release:build-v2026.11.22: ci: 90-minute limits ` | 70 | RELEASE | P1 | 2026-11-22T22:26:39Z | sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs |
+| `sn71:scoring_commit:2026-11-22T20:43:38Z` | 71 | SCORING_COMMIT | P1 | 2026-11-22T22:26:39Z | sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer |
+| `sn91:scoring_commit:2026-11-22T22:00:58Z` | 91 | SCORING_COMMIT | P1 | 2026-11-22T22:26:39Z | sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA… |
 
 ### detail
 
-- **`sn90:release:v1.4.6`** - sn90 released v1.4.6
-  - published 2026-11-22T10:43:57Z (was v1.4.5 — Finney oracle and validator reliability)
-- **`sn90:scoring_commit:2026-11-22T10:50:47Z`** - sn90 commit touches scoring: docs(validator): describe Lium B300 AC-only pricing
+- **`sn37:burn_drop:0.738`** - sn37 burn fell 0.997 -> 0.738 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn70:release:build-v2026.11.22: ci: 90-minute limits `** - sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs
+  - published 2026-11-22T21:08:56Z (was SUPERSEDED: use image-v2026.11.17b)
+- **`sn71:scoring_commit:2026-11-22T20:43:38Z`** - sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-22T10:55:14Z`** - sn91 commit touches scoring: fix(laned): W5b scores each window from one snapshot; report names ev…
+- **`sn91:scoring_commit:2026-11-22T22:00:58Z`** - sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-11-22T09:55:43Z`** - sn94 commit touches scoring: Revalidate the fresh plant incarnation under the write and sign lock …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:scoring_commit:2026-11-21T15:54:01Z`** - sn99 commit touches scoring: BBH items as the toolkit's build: its 19 generated tasks, 26 each, pi…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:readme_task_diff:99418d103a242136`** - sn99 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -46,9 +39,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
-| `sn25:release:v2026.11.15-1099669220` | 25 | RELEASE | 2026-11-15T19:53:52Z | sn25 released v2026.11.15-1099669220 |
-| `sn81:scoring_commit:2026-11-15T18:16:14Z` | 81 | SCORING_COMMIT | 2026-11-15T19:53:52Z | sn81 commit touches scoring: Keep honest batch miners' leases: default time while a batch is out, … |
-| `sn116:scoring_commit:2026-11-15T14:46:48Z` | 116 | SCORING_COMMIT | 2026-11-15T19:53:52Z | sn116 commit touches scoring: Withdraw review fixes (kit): a withdrawn task is never the round's ve… |
 | `sn14:scoring_commit:2026-11-15T22:59:01Z` | 14 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn14 commit touches scoring: Merge pull request #161 from latent-to/claude/remeasured-reward-bar |
 | `sn25:release:v2026.11.15-1099862510` | 25 | RELEASE | 2026-11-15T23:57:01Z | sn25 released v2026.11.15-1099862510 |
 | `sn42:release:v0.6.16` | 42 | RELEASE | 2026-11-15T23:57:01Z | sn42 released v0.6.16 |
@@ -209,6 +199,11 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-11-22T07:03:10Z` | 91 | SCORING_COMMIT | 2026-11-22T08:53:59Z | sn91 commit touches scoring: fix(laned): W3b2 pod evidence live verify (suite pin, published refs,… |
 | `sn111:scoring_commit:2026-11-22T02:03:22Z` | 111 | SCORING_COMMIT | 2026-11-22T08:53:59Z | sn111 commit touches scoring: Document signed scientific evaluation and evidence downloads |
 | `sn116:scoring_commit:2026-11-22T02:55:17Z` | 116 | SCORING_COMMIT | 2026-11-22T08:53:59Z | sn116 commit touches scoring: Bank provenance record (reward lane, owner G-LEAD-36) |
+| `sn90:release:v1.4.6` | 90 | RELEASE | 2026-11-22T17:04:41Z | sn90 released v1.4.6 |
+| `sn90:scoring_commit:2026-11-22T10:50:47Z` | 90 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn90 commit touches scoring: docs(validator): describe Lium B300 AC-only pricing |
+| `sn91:scoring_commit:2026-11-22T10:55:14Z` | 91 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn91 commit touches scoring: fix(laned): W5b scores each window from one snapshot; report names ev… |
+| `sn94:scoring_commit:2026-11-22T09:55:43Z` | 94 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn94 commit touches scoring: Revalidate the fresh plant incarnation under the write and sign lock … |
+| `sn99:scoring_commit:2026-11-21T15:54:01Z` | 99 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn99 commit touches scoring: BBH items as the toolkit's build: its 19 generated tasks, 26 each, pi… |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
@@ -222,6 +217,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn123:readme_task_diff:f4ae2b06d69e2e0b` | 123 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn123 README task/scoring sections changed |
 | `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
 | `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
+| `sn99:readme_task_diff:99418d103a242136` | 99 | README_TASK_DIFF | 2026-11-22T17:04:41Z | sn99 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

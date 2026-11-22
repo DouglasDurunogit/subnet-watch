@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-22T01:41:38Z, block 9558969
+# ALARMS - generated 2026-11-22T08:53:37Z, block 9561129
 
-window: first_seen in [2026-11-22T00:27:02Z, 2026-11-22T01:42:02Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-22T07:38:59Z, 2026-11-22T08:53:59Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,18 +9,29 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn91:scoring_commit:2026-11-22T01:37:02Z` | 91 | SCORING_COMMIT | P1 | 2026-11-22T01:42:02Z | sn91 commit touches scoring: tests(laned): W5d scorer acceptance tests (tests only) (#539) |
+| `sn25:release:v2026.11.22-1105365180` | 25 | RELEASE | P1 | 2026-11-22T08:53:59Z | sn25 released v2026.11.22-1105365180 |
+| `sn53:scoring_commit:2026-11-22T02:53:53Z` | 53 | SCORING_COMMIT | P1 | 2026-11-22T08:53:59Z | sn53 commit touches scoring: docs(im): one-pager matches today — no per-response proof verified (T… |
+| `sn91:scoring_commit:2026-11-22T07:03:10Z` | 91 | SCORING_COMMIT | P1 | 2026-11-22T08:53:59Z | sn91 commit touches scoring: fix(laned): W3b2 pod evidence live verify (suite pin, published refs,… |
+| `sn111:scoring_commit:2026-11-22T02:03:22Z` | 111 | SCORING_COMMIT | P1 | 2026-11-22T08:53:59Z | sn111 commit touches scoring: Document signed scientific evaluation and evidence downloads |
+| `sn116:scoring_commit:2026-11-22T02:55:17Z` | 116 | SCORING_COMMIT | P1 | 2026-11-22T08:53:59Z | sn116 commit touches scoring: Bank provenance record (reward lane, owner G-LEAD-36) |
 
 ### detail
 
-- **`sn91:scoring_commit:2026-11-22T01:37:02Z`** - sn91 commit touches scoring: tests(laned): W5d scorer acceptance tests (tests only) (#539)
+- **`sn25:release:v2026.11.22-1105365180`** - sn25 released v2026.11.22-1105365180
+  - published 2026-11-22T08:46:29Z (was v2026.11.19-1103608200)
+- **`sn53:scoring_commit:2026-11-22T02:53:53Z`** - sn53 commit touches scoring: docs(im): one-pager matches today — no per-response proof verified (T…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-11-22T07:03:10Z`** - sn91 commit touches scoring: fix(laned): W3b2 pod evidence live verify (suite pin, published refs,…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-22T02:03:22Z`** - sn111 commit touches scoring: Document signed scientific evaluation and evidence downloads
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-22T02:55:17Z`** - sn116 commit touches scoring: Bank provenance record (reward lane, owner G-LEAD-36)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn76:burn_drop:0.975` | 76 | BURN_DROP | 2026-11-15T06:17:56Z | sn76 burn fell 1.000 -> 0.975 - miners can earn again |
 | `sn106:burn_drop:0.000` | 106 | BURN_DROP | 2026-11-15T19:53:52Z | sn106 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -32,8 +43,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
-| `sn116:scoring_commit:2026-11-15T05:04:28Z` | 116 | SCORING_COMMIT | 2026-11-15T06:17:56Z | sn116 commit touches scoring: Merge pull request #1433: Dashboard on every page, miner CTA to the d… |
-| `sn117:release:everycli v1.2.3` | 117 | RELEASE | 2026-11-15T06:17:56Z | sn117 released everycli v1.2.3 |
 | `sn15:scoring_commit:2026-11-15T08:45:01Z` | 15 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn15 commit touches scoring: chore: remove dead load_episode_artifact from validator (#398) |
 | `sn25:release:v2026.11.15-1099387180` | 25 | RELEASE | 2026-11-15T14:11:53Z | sn25 released v2026.11.15-1099387180 |
 | `sn71:scoring_commit:2026-11-15T10:55:38Z` | 71 | SCORING_COMMIT | 2026-11-15T14:11:53Z | sn71 commit touches scoring: Allow measured baselines with capture gaps in verified reward comparis |
@@ -196,6 +205,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn111:scoring_commit:2026-11-21T20:43:24Z` | 111 | SCORING_COMMIT | 2026-11-21T21:47:24Z | sn111 commit touches scoring: Complete scientific result worker delivery and source-task scoring |
 | `sn116:scoring_commit:2026-11-21T17:00:53Z` | 116 | SCORING_COMMIT | 2026-11-21T21:47:24Z | sn116 commit touches scoring: DATA: the door holds verified inference snapshots' predictions.json c… |
 | `sn117:release:everycli v1.2.6` | 117 | RELEASE | 2026-11-21T21:47:24Z | sn117 released everycli v1.2.6 |
+| `sn91:scoring_commit:2026-11-22T01:37:02Z` | 91 | SCORING_COMMIT | 2026-11-22T01:42:02Z | sn91 commit touches scoring: tests(laned): W5d scorer acceptance tests (tests only) (#539) |
 | `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |

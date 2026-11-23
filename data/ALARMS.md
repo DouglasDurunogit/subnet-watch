@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-23T03:01:18Z, block 9566567
+# ALARMS - generated 2026-11-23T12:18:50Z, block 9569355
 
-window: first_seen in [2026-11-23T01:46:39Z, 2026-11-23T03:01:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-23T11:04:17Z, 2026-11-23T12:19:17Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,30 +9,39 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn21:scoring_commit:2026-11-22T09:08:18Z` | 21 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn21 commit touches scoring: docs(scoring): the exact calculation written down (periods, measured … |
-| `sn70:release:Miner image image-v2026.11.22b (v0.7.0, ` | 70 | RELEASE | P1 | 2026-11-23T03:01:39Z | sn70 released Miner image image-v2026.11.22b (v0.7.0, protocol v4) |
-| `sn70:scoring_commit:2026-11-22T21:38:33Z` | 70 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn70 commit touches scoring: docs: the validator guide's v4 READY line in the order the validator … |
-| `sn71:scoring_commit:2026-11-22T22:55:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe… |
-| `sn91:scoring_commit:2026-11-23T02:43:11Z` | 91 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod… |
-| `sn111:scoring_commit:2026-11-22T23:52:08Z` | 111 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ… |
-| `sn21:readme_task_diff:b07e6d388638dba8` | 21 | README_TASK_DIFF | P2 | 2026-11-23T03:01:39Z | sn21 README task/scoring sections changed |
+| `sn12:release:miner-testing-2026-11-23-45138900060-7-1` | 12 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn12 released miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878) |
+| `sn42:release:v0.6.26` | 42 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn42 released v0.6.26 |
+| `sn42:scoring_commit:2026-11-23T07:20:49Z` | 42 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn42 commit touches scoring: release 0.6.26: the miner stats answer reads the votes once |
+| `sn51:release:watchtower-v1.2.4` | 51 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn51 released watchtower-v1.2.4 |
+| `sn51:scoring_commit:2026-11-23T11:36:21Z` | 51 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn51 commit touches scoring: DAH-6582 - Executor and validator: update a bundled binary (#2377) |
+| `sn56:scoring_commit:2026-11-23T11:33:11Z` | 56 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn56 commit touches scoring: Build and publish the quant evaluator image in CI (#1450) |
+| `sn71:scoring_commit:2026-11-23T11:53:12Z` | 71 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn71 commit touches scoring: Set the verified AWS region for the pilot worker |
+| `sn91:scoring_commit:2026-11-23T10:27:12Z` | 91 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750 |
+| `sn94:scoring_commit:2026-11-23T09:00:13Z` | 94 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691) |
+| `sn99:scoring_commit:2026-11-23T09:28:54Z` | 99 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi… |
 
 ### detail
 
-- **`sn21:scoring_commit:2026-11-22T09:08:18Z`** - sn21 commit touches scoring: docs(scoring): the exact calculation written down (periods, measured …
+- **`sn12:release:miner-testing-2026-11-23-45138900060-7-1`** - sn12 released miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878)
+  - published 2026-11-23T05:30:44Z (was validator-testing-2026-11-19-44554669102-9-1: fix: build compute-horde-validator-nginx in CD, 2nd take (#877))
+- **`sn42:release:v0.6.26`** - sn42 released v0.6.26
+  - published 2026-11-23T09:03:44Z (was v0.6.25)
+- **`sn42:scoring_commit:2026-11-23T07:20:49Z`** - sn42 commit touches scoring: release 0.6.26: the miner stats answer reads the votes once
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn70:release:Miner image image-v2026.11.22b (v0.7.0, `** - sn70 released Miner image image-v2026.11.22b (v0.7.0, protocol v4)
-  - published 2026-11-22T23:09:06Z (was build-v2026.11.22: ci: 90-minute limits for the test jobs)
-- **`sn70:scoring_commit:2026-11-22T21:38:33Z`** - sn70 commit touches scoring: docs: the validator guide's v4 READY line in the order the validator …
+- **`sn51:release:watchtower-v1.2.4`** - sn51 released watchtower-v1.2.4
+  - published 2026-11-23T09:07:46Z (was executor-v1.192)
+- **`sn51:scoring_commit:2026-11-23T11:36:21Z`** - sn51 commit touches scoring: DAH-6582 - Executor and validator: update a bundled binary (#2377)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-22T22:55:58Z`** - sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe…
+- **`sn56:scoring_commit:2026-11-23T11:33:11Z`** - sn56 commit touches scoring: Build and publish the quant evaluator image in CI (#1450)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-23T02:43:11Z`** - sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod…
+- **`sn71:scoring_commit:2026-11-23T11:53:12Z`** - sn71 commit touches scoring: Set the verified AWS region for the pilot worker
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-22T23:52:08Z`** - sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ…
+- **`sn91:scoring_commit:2026-11-23T10:27:12Z`** - sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn21:readme_task_diff:b07e6d388638dba8`** - sn21 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn94:scoring_commit:2026-11-23T09:00:13Z`** - sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691)
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn99:scoring_commit:2026-11-23T09:28:54Z`** - sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -48,15 +57,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
 | `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
-| `sn24:release:v0.2.1` | 24 | RELEASE | 2026-11-16T06:16:15Z | sn24 released v0.2.1 |
-| `sn25:release:v2026.11.15-1100072900` | 25 | RELEASE | 2026-11-16T06:16:15Z | sn25 released v2026.11.15-1100072900 |
-| `sn25:scoring_commit:2026-11-16T02:37:34Z` | 25 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490… |
-| `sn51:scoring_commit:2026-11-16T05:08:38Z` | 51 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn51 commit touches scoring: DAH-6295 - [P0] Validator: a node on another GPU model is reset once,… |
-| `sn66:release:v2026.11.16.3` | 66 | RELEASE | 2026-11-16T06:16:15Z | sn66 released v2026.11.16.3 |
-| `sn66:scoring_commit:2026-11-16T03:53:45Z` | 66 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn66 commit touches scoring: Admit reward statements for Hilbert 12 and Hilbert 6 |
-| `sn91:scoring_commit:2026-11-16T03:23:08Z` | 91 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn91 commit touches scoring: deploy gate: refuse unsafe trainer/validator deploys, verify after (r… |
-| `sn116:scoring_commit:2026-11-15T23:19:53Z` | 116 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn116 commit touches scoring: Evaluation key test: the committed row read backwards, not a reversed… |
-| `sn127:release:Release 26830a1` | 127 | RELEASE | 2026-11-16T06:16:15Z | sn127 released Release 26830a1 |
 | `sn3:scoring_commit:2026-11-16T11:37:13Z` | 3 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn3 commit touches scoring: Stream Horizon scoring during packed-text sampling |
 | `sn25:release:v2026.11.16-1100273030` | 25 | RELEASE | 2026-11-16T16:14:51Z | sn25 released v2026.11.16-1100273030 |
 | `sn25:scoring_commit:2026-11-16T06:53:36Z` | 25 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn25 commit touches scoring: Merge fix/validator-nonce-wait-1116: the validator waits out the weig… |
@@ -210,6 +210,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn70:release:build-v2026.11.22: ci: 90-minute limits ` | 70 | RELEASE | 2026-11-22T22:26:39Z | sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs |
 | `sn71:scoring_commit:2026-11-22T20:43:38Z` | 71 | SCORING_COMMIT | 2026-11-22T22:26:39Z | sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer |
 | `sn91:scoring_commit:2026-11-22T22:00:58Z` | 91 | SCORING_COMMIT | 2026-11-22T22:26:39Z | sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA… |
+| `sn21:scoring_commit:2026-11-22T09:08:18Z` | 21 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn21 commit touches scoring: docs(scoring): the exact calculation written down (periods, measured … |
+| `sn70:release:Miner image image-v2026.11.22b (v0.7.0, ` | 70 | RELEASE | 2026-11-23T03:01:39Z | sn70 released Miner image image-v2026.11.22b (v0.7.0, protocol v4) |
+| `sn70:scoring_commit:2026-11-22T21:38:33Z` | 70 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn70 commit touches scoring: docs: the validator guide's v4 READY line in the order the validator … |
+| `sn71:scoring_commit:2026-11-22T22:55:58Z` | 71 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe… |
+| `sn91:scoring_commit:2026-11-23T02:43:11Z` | 91 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod… |
+| `sn111:scoring_commit:2026-11-22T23:52:08Z` | 111 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ… |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
@@ -223,6 +229,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
 | `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
 | `sn99:readme_task_diff:99418d103a242136` | 99 | README_TASK_DIFF | 2026-11-22T17:04:41Z | sn99 README task/scoring sections changed |
+| `sn21:readme_task_diff:b07e6d388638dba8` | 21 | README_TASK_DIFF | 2026-11-23T03:01:39Z | sn21 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

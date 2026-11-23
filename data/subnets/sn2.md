@@ -1,20 +1,20 @@
 # sn2 - DaniLabs (β)
 
-snapshot_utc: 2026-11-23T03:01:18Z  |  block: 9566567  |  row_status: ok
+snapshot_utc: 2026-11-23T12:18:50Z  |  block: 9569355  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.0005 TAO (0.09407 USD), open=True
+- registration cost: 0.0005 TAO (0.09581 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 6  |  free: 0
-- subnet age: 949.0 days  |  registered at block 2734060
+- subnet age: 949.3 days  |  registered at block 2734060
 - weights_version: 11003  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 1860.0179629842967
-- top_miner_usd_day: 1860.0179629842967 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 1894.3890885885312
+- top_miner_usd_day: 1894.3890885885312 (uid 14, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

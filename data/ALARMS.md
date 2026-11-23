@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-22T22:26:18Z, block 9565192
+# ALARMS - generated 2026-11-23T03:01:18Z, block 9566567
 
-window: first_seen in [2026-11-22T21:11:39Z, 2026-11-22T22:26:39Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-23T01:46:39Z, 2026-11-23T03:01:39Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,27 +9,35 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn37:burn_drop:0.738` | 37 | BURN_DROP | P0 | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
-| `sn70:release:build-v2026.11.22: ci: 90-minute limits ` | 70 | RELEASE | P1 | 2026-11-22T22:26:39Z | sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs |
-| `sn71:scoring_commit:2026-11-22T20:43:38Z` | 71 | SCORING_COMMIT | P1 | 2026-11-22T22:26:39Z | sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer |
-| `sn91:scoring_commit:2026-11-22T22:00:58Z` | 91 | SCORING_COMMIT | P1 | 2026-11-22T22:26:39Z | sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA… |
+| `sn21:scoring_commit:2026-11-22T09:08:18Z` | 21 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn21 commit touches scoring: docs(scoring): the exact calculation written down (periods, measured … |
+| `sn70:release:Miner image image-v2026.11.22b (v0.7.0, ` | 70 | RELEASE | P1 | 2026-11-23T03:01:39Z | sn70 released Miner image image-v2026.11.22b (v0.7.0, protocol v4) |
+| `sn70:scoring_commit:2026-11-22T21:38:33Z` | 70 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn70 commit touches scoring: docs: the validator guide's v4 READY line in the order the validator … |
+| `sn71:scoring_commit:2026-11-22T22:55:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe… |
+| `sn91:scoring_commit:2026-11-23T02:43:11Z` | 91 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod… |
+| `sn111:scoring_commit:2026-11-22T23:52:08Z` | 111 | SCORING_COMMIT | P1 | 2026-11-23T03:01:39Z | sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ… |
+| `sn21:readme_task_diff:b07e6d388638dba8` | 21 | README_TASK_DIFF | P2 | 2026-11-23T03:01:39Z | sn21 README task/scoring sections changed |
 
 ### detail
 
-- **`sn37:burn_drop:0.738`** - sn37 burn fell 0.997 -> 0.738 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn70:release:build-v2026.11.22: ci: 90-minute limits `** - sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs
-  - published 2026-11-22T21:08:56Z (was SUPERSEDED: use image-v2026.11.17b)
-- **`sn71:scoring_commit:2026-11-22T20:43:38Z`** - sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer
+- **`sn21:scoring_commit:2026-11-22T09:08:18Z`** - sn21 commit touches scoring: docs(scoring): the exact calculation written down (periods, measured …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-22T22:00:58Z`** - sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA…
+- **`sn70:release:Miner image image-v2026.11.22b (v0.7.0, `** - sn70 released Miner image image-v2026.11.22b (v0.7.0, protocol v4)
+  - published 2026-11-22T23:09:06Z (was build-v2026.11.22: ci: 90-minute limits for the test jobs)
+- **`sn70:scoring_commit:2026-11-22T21:38:33Z`** - sn70 commit touches scoring: docs: the validator guide's v4 READY line in the order the validator …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-22T22:55:58Z`** - sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-11-23T02:43:11Z`** - sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-22T23:52:08Z`** - sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn21:readme_task_diff:b07e6d388638dba8`** - sn21 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn26:burn_drop:0.000` | 26 | BURN_DROP | 2026-11-15T23:57:01Z | sn26 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn113:burn_drop:0.000` | 113 | BURN_DROP | 2026-11-17T17:44:54Z | sn113 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn7:burn_drop:0.000` | 7 | BURN_DROP | 2026-11-18T00:00:43Z | sn7 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn109:burn_drop:0.000` | 109 | BURN_DROP | 2026-11-18T23:10:24Z | sn109 burn fell 1.000 -> 0.000 - miners can earn again |
@@ -39,12 +47,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
-| `sn14:scoring_commit:2026-11-15T22:59:01Z` | 14 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn14 commit touches scoring: Merge pull request #161 from latent-to/claude/remeasured-reward-bar |
-| `sn25:release:v2026.11.15-1099862510` | 25 | RELEASE | 2026-11-15T23:57:01Z | sn25 released v2026.11.15-1099862510 |
-| `sn42:release:v0.6.16` | 42 | RELEASE | 2026-11-15T23:57:01Z | sn42 released v0.6.16 |
-| `sn42:scoring_commit:2026-11-15T19:40:06Z` | 42 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn42 commit touches scoring: docs: the baseline was the setup of CADmind's test miners on testnet |
-| `sn90:scoring_commit:2026-11-15T20:34:02Z` | 90 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn90 commit touches scoring: docs(subnet): enter Phase 1 with external miners |
-| `sn116:scoring_commit:2026-11-15T20:34:55Z` | 116 | SCORING_COMMIT | 2026-11-15T23:57:01Z | sn116 commit touches scoring: Build jit: keep the shared level4 registry Challenge-free; Motor 1.8 … |
+| `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
 | `sn24:release:v0.2.1` | 24 | RELEASE | 2026-11-16T06:16:15Z | sn24 released v0.2.1 |
 | `sn25:release:v2026.11.15-1100072900` | 25 | RELEASE | 2026-11-16T06:16:15Z | sn25 released v2026.11.15-1100072900 |
 | `sn25:scoring_commit:2026-11-16T02:37:34Z` | 25 | SCORING_COMMIT | 2026-11-16T06:16:15Z | sn25 commit touches scoring: Merge release/validator-1115-transient-waits: the validator build 490… |
@@ -204,7 +207,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-11-22T10:55:14Z` | 91 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn91 commit touches scoring: fix(laned): W5b scores each window from one snapshot; report names ev… |
 | `sn94:scoring_commit:2026-11-22T09:55:43Z` | 94 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn94 commit touches scoring: Revalidate the fresh plant incarnation under the write and sign lock … |
 | `sn99:scoring_commit:2026-11-21T15:54:01Z` | 99 | SCORING_COMMIT | 2026-11-22T17:04:41Z | sn99 commit touches scoring: BBH items as the toolkit's build: its 19 generated tasks, 26 each, pi… |
-| `sn90:readme_task_diff:a7b301753d76644f` | 90 | README_TASK_DIFF | 2026-11-15T23:57:01Z | sn90 README task/scoring sections changed |
+| `sn70:release:build-v2026.11.22: ci: 90-minute limits ` | 70 | RELEASE | 2026-11-22T22:26:39Z | sn70 released build-v2026.11.22: ci: 90-minute limits for the test jobs |
+| `sn71:scoring_commit:2026-11-22T20:43:38Z` | 71 | SCORING_COMMIT | 2026-11-22T22:26:39Z | sn71 commit touches scoring: Stop assigning execution to a validator missing the sandbox installer |
+| `sn91:scoring_commit:2026-11-22T22:00:58Z` | 91 | SCORING_COMMIT | 2026-11-22T22:26:39Z | sn91 commit touches scoring: docs(laned): WB20 lane B in MINER, INTERFACE, AGENT_MINING and VALIDA… |
 | `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |

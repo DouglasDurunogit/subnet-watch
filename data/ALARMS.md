@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-23T12:18:50Z, block 9569355
+# ALARMS - generated 2026-11-24T00:10:52Z, block 9572915
 
-window: first_seen in [2026-11-23T11:04:17Z, 2026-11-23T12:19:17Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-23T22:56:22Z, 2026-11-24T00:11:22Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,39 +9,51 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:miner-testing-2026-11-23-45138900060-7-1` | 12 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn12 released miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878) |
-| `sn42:release:v0.6.26` | 42 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn42 released v0.6.26 |
-| `sn42:scoring_commit:2026-11-23T07:20:49Z` | 42 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn42 commit touches scoring: release 0.6.26: the miner stats answer reads the votes once |
-| `sn51:release:watchtower-v1.2.4` | 51 | RELEASE | P1 | 2026-11-23T12:19:17Z | sn51 released watchtower-v1.2.4 |
-| `sn51:scoring_commit:2026-11-23T11:36:21Z` | 51 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn51 commit touches scoring: DAH-6582 - Executor and validator: update a bundled binary (#2377) |
-| `sn56:scoring_commit:2026-11-23T11:33:11Z` | 56 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn56 commit touches scoring: Build and publish the quant evaluator image in CI (#1450) |
-| `sn71:scoring_commit:2026-11-23T11:53:12Z` | 71 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn71 commit touches scoring: Set the verified AWS region for the pilot worker |
-| `sn91:scoring_commit:2026-11-23T10:27:12Z` | 91 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750 |
-| `sn94:scoring_commit:2026-11-23T09:00:13Z` | 94 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691) |
-| `sn99:scoring_commit:2026-11-23T09:28:54Z` | 99 | SCORING_COMMIT | P1 | 2026-11-23T12:19:17Z | sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi… |
+| `sn12:release:validator-staging-2026-11-23-45269217986` | 12 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn12 released validator-staging-2026-11-23-45269217986-635-1: feat: executor download cache (#879) |
+| `sn18:release:Release 2.1.5` | 18 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn18 released Release 2.1.5 |
+| `sn28:release:v0.6.0` | 28 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn28 released v0.6.0 |
+| `sn39:scoring_commit:2026-11-23T19:58:33Z` | 39 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn39 commit touches scoring: never repair a day scored with its profit not counted |
+| `sn51:scoring_commit:2026-11-23T23:17:44Z` | 51 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn51 commit touches scoring: DAH-7005 - [P4] Validator: one miner snapshot per cycle for the payme… |
+| `sn56:scoring_commit:2026-11-23T18:00:27Z` | 56 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn56 commit touches scoring: Reuse the Docker layer cache for miner image builds (#1456) |
+| `sn67:scoring_commit:2026-11-23T06:17:42Z` | 67 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261123.post1 |
+| `sn71:scoring_commit:2026-11-23T12:52:03Z` | 71 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn71 commit touches scoring: Recover funded pilot attempts without replaying completed miner work |
+| `sn91:scoring_commit:2026-11-23T20:48:50Z` | 91 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn91 commit touches scoring: tests(laned): WB23 miner-chosen lane B leg length acceptance tests (t… |
+| `sn92:release:v1.2.0-rc11.post8.16` | 92 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn92 released v1.2.0-rc11.post8.16 |
+| `sn92:scoring_commit:2026-11-23T15:05:00Z` | 92 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn92 commit touches scoring: 1.2.0rc11.post8.16: validator source as live since 19 Nov 2026 |
+| `sn111:scoring_commit:2026-11-23T23:07:32Z` | 111 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn111 commit touches scoring: Raise validator source and structured review limits to 128k and 64k |
+| `sn116:scoring_commit:2026-11-23T20:09:13Z` | 116 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn116 commit touches scoring: Ladder: every document a miner was shown is kept append-only (DATA pl… |
+| `sn117:release:everycli v1.2.7` | 117 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn117 released everycli v1.2.7 |
 
 ### detail
 
-- **`sn12:release:miner-testing-2026-11-23-45138900060-7-1`** - sn12 released miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878)
-  - published 2026-11-23T05:30:44Z (was validator-testing-2026-11-19-44554669102-9-1: fix: build compute-horde-validator-nginx in CD, 2nd take (#877))
-- **`sn42:release:v0.6.26`** - sn42 released v0.6.26
-  - published 2026-11-23T09:03:44Z (was v0.6.25)
-- **`sn42:scoring_commit:2026-11-23T07:20:49Z`** - sn42 commit touches scoring: release 0.6.26: the miner stats answer reads the votes once
+- **`sn12:release:validator-staging-2026-11-23-45269217986`** - sn12 released validator-staging-2026-11-23-45269217986-635-1: feat: executor download cache (#879)
+  - published 2026-11-23T21:21:13Z (was miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878))
+- **`sn18:release:Release 2.1.5`** - sn18 released Release 2.1.5
+  - published 2026-11-23T15:16:56Z (was Release 2.1.4)
+- **`sn28:release:v0.6.0`** - sn28 released v0.6.0
+  - published 2026-11-23T16:16:43Z (was v0.5.25)
+- **`sn39:scoring_commit:2026-11-23T19:58:33Z`** - sn39 commit touches scoring: never repair a day scored with its profit not counted
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:watchtower-v1.2.4`** - sn51 released watchtower-v1.2.4
-  - published 2026-11-23T09:07:46Z (was executor-v1.192)
-- **`sn51:scoring_commit:2026-11-23T11:36:21Z`** - sn51 commit touches scoring: DAH-6582 - Executor and validator: update a bundled binary (#2377)
+- **`sn51:scoring_commit:2026-11-23T23:17:44Z`** - sn51 commit touches scoring: DAH-7005 - [P4] Validator: one miner snapshot per cycle for the payme…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-11-23T11:33:11Z`** - sn56 commit touches scoring: Build and publish the quant evaluator image in CI (#1450)
+- **`sn56:scoring_commit:2026-11-23T18:00:27Z`** - sn56 commit touches scoring: Reuse the Docker layer cache for miner image builds (#1456)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-23T11:53:12Z`** - sn71 commit touches scoring: Set the verified AWS region for the pilot worker
+- **`sn67:scoring_commit:2026-11-23T06:17:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261123.post1
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-23T10:27:12Z`** - sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750
+- **`sn71:scoring_commit:2026-11-23T12:52:03Z`** - sn71 commit touches scoring: Recover funded pilot attempts without replaying completed miner work
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn94:scoring_commit:2026-11-23T09:00:13Z`** - sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691)
+- **`sn91:scoring_commit:2026-11-23T20:48:50Z`** - sn91 commit touches scoring: tests(laned): WB23 miner-chosen lane B leg length acceptance tests (t…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn99:scoring_commit:2026-11-23T09:28:54Z`** - sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi…
+- **`sn92:release:v1.2.0-rc11.post8.16`** - sn92 released v1.2.0-rc11.post8.16
+  - published 2026-11-23T15:05:00Z (was v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side))
+- **`sn92:scoring_commit:2026-11-23T15:05:00Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.16: validator source as live since 19 Nov 2026
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:scoring_commit:2026-11-23T23:07:32Z`** - sn111 commit touches scoring: Raise validator source and structured review limits to 128k and 64k
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn116:scoring_commit:2026-11-23T20:09:13Z`** - sn116 commit touches scoring: Ladder: every document a miner was shown is kept append-only (DATA pl…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v1.2.7`** - sn117 released everycli v1.2.7
+  - published 2026-11-23T20:02:08Z (was everycli v1.2.6)
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -57,16 +69,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
 | `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
-| `sn3:scoring_commit:2026-11-16T11:37:13Z` | 3 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn3 commit touches scoring: Stream Horizon scoring during packed-text sampling |
-| `sn25:release:v2026.11.16-1100273030` | 25 | RELEASE | 2026-11-16T16:14:51Z | sn25 released v2026.11.16-1100273030 |
-| `sn25:scoring_commit:2026-11-16T06:53:36Z` | 25 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn25 commit touches scoring: Merge fix/validator-nonce-wait-1116: the validator waits out the weig… |
-| `sn42:release:v0.6.18` | 42 | RELEASE | 2026-11-16T16:14:51Z | sn42 released v0.6.18 |
-| `sn42:scoring_commit:2026-11-16T08:59:35Z` | 42 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn42 commit touches scoring: reference miner: a brief that asks for nothing physical is rejected n… |
-| `sn51:release:executor-v1.184` | 51 | RELEASE | 2026-11-16T16:14:51Z | sn51 released executor-v1.184 |
-| `sn51:scoring_commit:2026-11-16T15:55:07Z` | 51 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn51 commit touches scoring: Validator: quote executor-reported paths in shell commands (#2280) |
-| `sn67:scoring_commit:2026-11-16T10:09:40Z` | 67 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post8 |
-| `sn71:scoring_commit:2026-11-16T11:03:00Z` | 71 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn71 commit touches scoring: Assert exact judgment binding in score projection tests |
-| `sn111:scoring_commit:2026-11-16T12:01:40Z` | 111 | SCORING_COMMIT | 2026-11-16T16:14:51Z | sn111 commit touches scoring: Verify carried-forward scoring revisions during production handoff |
 | `sn15:release:v3.0.9: fix(sandbox): isolate each task ` | 15 | RELEASE | 2026-11-17T00:22:13Z | sn15 released v3.0.9: fix(sandbox): isolate each task in a run from the run's other tasks |
 | `sn15:scoring_commit:2026-11-16T21:42:42Z` | 15 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn15 commit touches scoring: fix(sandbox): isolate each task in a run from the run's other tasks |
 | `sn25:release:v2026.11.16-1100716180` | 25 | RELEASE | 2026-11-17T00:22:13Z | sn25 released v2026.11.16-1100716180 |
@@ -216,7 +218,16 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-22T22:55:58Z` | 71 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn71 commit touches scoring: Preserve a normal execution attempt after verified zero-cost installe… |
 | `sn91:scoring_commit:2026-11-23T02:43:11Z` | 91 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn91 commit touches scoring: fix(laned): W0c list WB16 as a verification WP (D40 option (a) is tod… |
 | `sn111:scoring_commit:2026-11-22T23:52:08Z` | 111 | SCORING_COMMIT | 2026-11-23T03:01:39Z | sn111 commit touches scoring: Verify arbiter-confirmed source corrections after unresolved independ… |
-| `sn42:readme_task_diff:dd8a6fb083469151` | 42 | README_TASK_DIFF | 2026-11-16T16:14:51Z | sn42 README task/scoring sections changed |
+| `sn12:release:miner-testing-2026-11-23-45138900060-7-1` | 12 | RELEASE | 2026-11-23T12:19:17Z | sn12 released miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878) |
+| `sn42:release:v0.6.26` | 42 | RELEASE | 2026-11-23T12:19:17Z | sn42 released v0.6.26 |
+| `sn42:scoring_commit:2026-11-23T07:20:49Z` | 42 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn42 commit touches scoring: release 0.6.26: the miner stats answer reads the votes once |
+| `sn51:release:watchtower-v1.2.4` | 51 | RELEASE | 2026-11-23T12:19:17Z | sn51 released watchtower-v1.2.4 |
+| `sn51:scoring_commit:2026-11-23T11:36:21Z` | 51 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn51 commit touches scoring: DAH-6582 - Executor and validator: update a bundled binary (#2377) |
+| `sn56:scoring_commit:2026-11-23T11:33:11Z` | 56 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn56 commit touches scoring: Build and publish the quant evaluator image in CI (#1450) |
+| `sn71:scoring_commit:2026-11-23T11:53:12Z` | 71 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn71 commit touches scoring: Set the verified AWS region for the pilot worker |
+| `sn91:scoring_commit:2026-11-23T10:27:12Z` | 91 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750 |
+| `sn94:scoring_commit:2026-11-23T09:00:13Z` | 94 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691) |
+| `sn99:scoring_commit:2026-11-23T09:28:54Z` | 99 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi… |
 | `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
 | `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |

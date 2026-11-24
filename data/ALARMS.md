@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-24T00:10:52Z, block 9572915
+# ALARMS - generated 2026-11-24T10:13:16Z, block 9575927
 
-window: first_seen in [2026-11-23T22:56:22Z, 2026-11-24T00:11:22Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-24T08:58:41Z, 2026-11-24T10:13:41Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,51 +9,60 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn12:release:validator-staging-2026-11-23-45269217986` | 12 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn12 released validator-staging-2026-11-23-45269217986-635-1: feat: executor download cache (#879) |
-| `sn18:release:Release 2.1.5` | 18 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn18 released Release 2.1.5 |
-| `sn28:release:v0.6.0` | 28 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn28 released v0.6.0 |
-| `sn39:scoring_commit:2026-11-23T19:58:33Z` | 39 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn39 commit touches scoring: never repair a day scored with its profit not counted |
-| `sn51:scoring_commit:2026-11-23T23:17:44Z` | 51 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn51 commit touches scoring: DAH-7005 - [P4] Validator: one miner snapshot per cycle for the payme… |
-| `sn56:scoring_commit:2026-11-23T18:00:27Z` | 56 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn56 commit touches scoring: Reuse the Docker layer cache for miner image builds (#1456) |
-| `sn67:scoring_commit:2026-11-23T06:17:42Z` | 67 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261123.post1 |
-| `sn71:scoring_commit:2026-11-23T12:52:03Z` | 71 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn71 commit touches scoring: Recover funded pilot attempts without replaying completed miner work |
-| `sn91:scoring_commit:2026-11-23T20:48:50Z` | 91 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn91 commit touches scoring: tests(laned): WB23 miner-chosen lane B leg length acceptance tests (t… |
-| `sn92:release:v1.2.0-rc11.post8.16` | 92 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn92 released v1.2.0-rc11.post8.16 |
-| `sn92:scoring_commit:2026-11-23T15:05:00Z` | 92 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn92 commit touches scoring: 1.2.0rc11.post8.16: validator source as live since 19 Nov 2026 |
-| `sn111:scoring_commit:2026-11-23T23:07:32Z` | 111 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn111 commit touches scoring: Raise validator source and structured review limits to 128k and 64k |
-| `sn116:scoring_commit:2026-11-23T20:09:13Z` | 116 | SCORING_COMMIT | P1 | 2026-11-24T00:11:22Z | sn116 commit touches scoring: Ladder: every document a miner was shown is kept append-only (DATA pl… |
-| `sn117:release:everycli v1.2.7` | 117 | RELEASE | P1 | 2026-11-24T00:11:22Z | sn117 released everycli v1.2.7 |
+| `sn2:burn_drop:0.881` | 2 | BURN_DROP | P0 | 2026-11-24T10:13:41Z | sn2 burn fell 1.000 -> 0.881 - miners can earn again |
+| `sn51:release:executor-v1.196` | 51 | RELEASE | P1 | 2026-11-24T10:13:41Z | sn51 released executor-v1.196 |
+| `sn51:scoring_commit:2026-11-24T09:17:23Z` | 51 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn51 commit touches scoring: DAH-6847 - [P4] Validator: a GPU whose clock reset fails before a cre… |
+| `sn56:scoring_commit:2026-11-24T02:50:01Z` | 56 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn56 commit touches scoring: Bound the database use of the per-miner boss comparisons (#1464) |
+| `sn61:release:4.11.1` | 61 | RELEASE | P1 | 2026-11-24T10:13:41Z | sn61 released 4.11.1 |
+| `sn61:scoring_commit:2026-11-24T08:10:44Z` | 61 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn61 commit touches scoring: feat: update bot virus challenge configuration and incentives |
+| `sn70:scoring_commit:2026-11-24T03:24:26Z` | 70 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn70 commit touches scoring: Merge pull request #211 from fugal-ai/docs/miner-guide-missing-row |
+| `sn71:scoring_commit:2026-11-24T09:29:58Z` | 71 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn71 commit touches scoring: Authorize bounded fixed correction quotes after ordinary reward cutove |
+| `sn82:scoring_commit:2026-11-24T06:05:34Z` | 82 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn82 commit touches scoring: Document live Mainnet V2.1 scoring |
+| `sn91:scoring_commit:2026-11-24T09:25:44Z` | 91 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn91 commit touches scoring: feat(laned): WB27 lane B miner levers, 12 h legs, token/hour limits, … |
+| `sn98:scoring_commit:2026-11-24T04:57:47Z` | 98 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn98 commit touches scoring: feat: add light validator mode that copies the main validator's weigh… |
+| `sn99:scoring_commit:2026-11-23T18:56:12Z` | 99 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn99 commit touches scoring: Board: the champion's match row shows its scores on benchmarks added … |
+| `sn116:scoring_commit:2026-11-24T09:00:58Z` | 116 | SCORING_COMMIT | P1 | 2026-11-24T10:13:41Z | sn116 commit touches scoring: miner_lookup re-run charged: release LINT_DIFF_2dd8f459.diff (sha256 … |
+| `sn117:release:everycli v1.3.0` | 117 | RELEASE | P1 | 2026-11-24T10:13:41Z | sn117 released everycli v1.3.0 |
+| `sn39:readme_task_diff:5cdeac4cf1a1b4ef` | 39 | README_TASK_DIFF | P2 | 2026-11-24T10:13:41Z | sn39 README task/scoring sections changed |
+| `sn82:readme_task_diff:123c16fec7afb63e` | 82 | README_TASK_DIFF | P2 | 2026-11-24T10:13:41Z | sn82 README task/scoring sections changed |
+| `sn91:readme_task_diff:fd8a0ae169ba905a` | 91 | README_TASK_DIFF | P2 | 2026-11-24T10:13:41Z | sn91 README task/scoring sections changed |
 
 ### detail
 
-- **`sn12:release:validator-staging-2026-11-23-45269217986`** - sn12 released validator-staging-2026-11-23-45269217986-635-1: feat: executor download cache (#879)
-  - published 2026-11-23T21:21:13Z (was miner-testing-2026-11-23-45138900060-7-1: feat: preserve commitment envelopes written by others (#878))
-- **`sn18:release:Release 2.1.5`** - sn18 released Release 2.1.5
-  - published 2026-11-23T15:16:56Z (was Release 2.1.4)
-- **`sn28:release:v0.6.0`** - sn28 released v0.6.0
-  - published 2026-11-23T16:16:43Z (was v0.5.25)
-- **`sn39:scoring_commit:2026-11-23T19:58:33Z`** - sn39 commit touches scoring: never repair a day scored with its profit not counted
+- **`sn2:burn_drop:0.881`** - sn2 burn fell 1.000 -> 0.881 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn51:release:executor-v1.196`** - sn51 released executor-v1.196
+  - published 2026-11-24T06:29:27Z (was watchtower-v1.2.4)
+- **`sn51:scoring_commit:2026-11-24T09:17:23Z`** - sn51 commit touches scoring: DAH-6847 - [P4] Validator: a GPU whose clock reset fails before a cre…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-23T23:17:44Z`** - sn51 commit touches scoring: DAH-7005 - [P4] Validator: one miner snapshot per cycle for the payme…
+- **`sn56:scoring_commit:2026-11-24T02:50:01Z`** - sn56 commit touches scoring: Bound the database use of the per-miner boss comparisons (#1464)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-11-23T18:00:27Z`** - sn56 commit touches scoring: Reuse the Docker layer cache for miner image builds (#1456)
+- **`sn61:release:4.11.1`** - sn61 released 4.11.1
+  - published 2026-11-24T09:29:24Z (was 4.10.10)
+- **`sn61:scoring_commit:2026-11-24T08:10:44Z`** - sn61 commit touches scoring: feat: update bot virus challenge configuration and incentives
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-23T06:17:42Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261123.post1
+- **`sn70:scoring_commit:2026-11-24T03:24:26Z`** - sn70 commit touches scoring: Merge pull request #211 from fugal-ai/docs/miner-guide-missing-row
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-23T12:52:03Z`** - sn71 commit touches scoring: Recover funded pilot attempts without replaying completed miner work
+- **`sn71:scoring_commit:2026-11-24T09:29:58Z`** - sn71 commit touches scoring: Authorize bounded fixed correction quotes after ordinary reward cutove
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-23T20:48:50Z`** - sn91 commit touches scoring: tests(laned): WB23 miner-chosen lane B leg length acceptance tests (t…
+- **`sn82:scoring_commit:2026-11-24T06:05:34Z`** - sn82 commit touches scoring: Document live Mainnet V2.1 scoring
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn92:release:v1.2.0-rc11.post8.16`** - sn92 released v1.2.0-rc11.post8.16
-  - published 2026-11-23T15:05:00Z (was v1.2.0-rc11.post8.1-kit1: mammoth-1 self-check (miner side))
-- **`sn92:scoring_commit:2026-11-23T15:05:00Z`** - sn92 commit touches scoring: 1.2.0rc11.post8.16: validator source as live since 19 Nov 2026
+- **`sn91:scoring_commit:2026-11-24T09:25:44Z`** - sn91 commit touches scoring: feat(laned): WB27 lane B miner levers, 12 h legs, token/hour limits, …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-23T23:07:32Z`** - sn111 commit touches scoring: Raise validator source and structured review limits to 128k and 64k
+- **`sn98:scoring_commit:2026-11-24T04:57:47Z`** - sn98 commit touches scoring: feat: add light validator mode that copies the main validator's weigh…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-23T20:09:13Z`** - sn116 commit touches scoring: Ladder: every document a miner was shown is kept append-only (DATA pl…
+- **`sn99:scoring_commit:2026-11-23T18:56:12Z`** - sn99 commit touches scoring: Board: the champion's match row shows its scores on benchmarks added …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.2.7`** - sn117 released everycli v1.2.7
-  - published 2026-11-23T20:02:08Z (was everycli v1.2.6)
+- **`sn116:scoring_commit:2026-11-24T09:00:58Z`** - sn116 commit touches scoring: miner_lookup re-run charged: release LINT_DIFF_2dd8f459.diff (sha256 …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn117:release:everycli v1.3.0`** - sn117 released everycli v1.3.0
+  - published 2026-11-24T04:21:34Z (was everycli v1.2.7)
+- **`sn39:readme_task_diff:5cdeac4cf1a1b4ef`** - sn39 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn82:readme_task_diff:123c16fec7afb63e`** - sn82 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn91:readme_task_diff:fd8a0ae169ba905a`** - sn91 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -69,29 +78,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
 | `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
-| `sn15:release:v3.0.9: fix(sandbox): isolate each task ` | 15 | RELEASE | 2026-11-17T00:22:13Z | sn15 released v3.0.9: fix(sandbox): isolate each task in a run from the run's other tasks |
-| `sn15:scoring_commit:2026-11-16T21:42:42Z` | 15 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn15 commit touches scoring: fix(sandbox): isolate each task in a run from the run's other tasks |
-| `sn25:release:v2026.11.16-1100716180` | 25 | RELEASE | 2026-11-17T00:22:13Z | sn25 released v2026.11.16-1100716180 |
-| `sn25:scoring_commit:2026-11-16T19:08:58Z` | 25 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn25 commit touches scoring: Merge fix/validator-upload-encoding-1116: validator uploads go as zst… |
-| `sn41:scoring_commit:2026-11-11T19:25:42Z` | 41 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn41 commit touches scoring: Document the one-agent-per-hotkey upload rule in the miner guide |
-| `sn42:release:v0.6.19` | 42 | RELEASE | 2026-11-17T00:22:13Z | sn42 released v0.6.19 |
-| `sn42:scoring_commit:2026-11-16T19:56:03Z` | 42 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn42 commit touches scoring: desk: a sweep of a miner's grants is job-scoped -- one job's grants f… |
-| `sn62:scoring_commit:2026-11-16T20:35:34Z` | 62 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn62 commit touches scoring: add more validation |
-| `sn66:release:v2026.11.16.4` | 66 | RELEASE | 2026-11-17T00:22:13Z | sn66 released v2026.11.16.4 |
-| `sn70:release:build-v3rc1-2026.11.17: v3: pin the embe` | 70 | RELEASE | 2026-11-17T00:22:13Z | sn70 released build-v3rc1-2026.11.17: v3: pin the embeddings file (EMBEDDINGS_SHA256 + EMBEDDINGS_URL) |
-| `sn94:scoring_commit:2026-11-16T17:02:42Z` | 94 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn94 commit touches scoring: Add miner hotel offer signer to room-kit (AB#347) (#565) |
-| `sn127:release:Release 9bd0c63` | 127 | RELEASE | 2026-11-17T00:22:13Z | sn127 released Release 9bd0c63 |
-| `sn127:scoring_commit:2026-11-16T00:13:27Z` | 127 | SCORING_COMMIT | 2026-11-17T00:22:13Z | sn127 commit touches scoring: Weekly judge: left-out bodies, scores from cached answers, the week's… |
-| `sn25:release:v2026.11.16-1101008320` | 25 | RELEASE | 2026-11-17T08:16:39Z | sn25 released v2026.11.16-1101008320 |
-| `sn42:release:v0.6.20` | 42 | RELEASE | 2026-11-17T08:16:39Z | sn42 released v0.6.20 |
-| `sn51:scoring_commit:2026-11-17T07:09:42Z` | 51 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn51 commit touches scoring: DAH-6257 - [P2] Validator: avoid a host identity false positive after… |
-| `sn67:scoring_commit:2026-11-16T10:46:55Z` | 67 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261116.post9 |
-| `sn70:release:SUPERSEDED: use image-v2026.11.17b` | 70 | RELEASE | 2026-11-17T08:16:39Z | sn70 released SUPERSEDED: use image-v2026.11.17b |
-| `sn70:scoring_commit:2026-11-17T06:20:06Z` | 70 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn70 commit touches scoring: validator: the collateral startup probe only warns, and names itself |
-| `sn71:scoring_commit:2026-11-17T06:40:15Z` | 71 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn71 commit touches scoring: Keep unvalidated paragraph replies out of shared judge cache |
-| `sn76:release:Ormas subnet SDK 0.0.4` | 76 | RELEASE | 2026-11-17T08:16:39Z | sn76 released Ormas subnet SDK 0.0.4 |
-| `sn91:scoring_commit:2026-11-17T01:24:31Z` | 91 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn91 commit touches scoring: validator: keep bench-sweep evidence; weight keep-alive during long s… |
-| `sn111:scoring_commit:2026-11-17T01:46:11Z` | 111 | SCORING_COMMIT | 2026-11-17T08:16:39Z | sn111 commit touches scoring: Compress controller evaluation transport outside frozen policy |
 | `sn3:scoring_commit:2026-11-17T15:26:48Z` | 3 | SCORING_COMMIT | 2026-11-17T17:44:54Z | sn3 commit touches scoring: Add 8×H200 evaluator support with TP2 MiMo replicas |
 | `sn7:release:release-20261117-160316` | 7 | RELEASE | 2026-11-17T17:44:54Z | sn7 released release-20261117-160316 |
 | `sn7:scoring_commit:2026-11-17T16:01:21Z` | 7 | SCORING_COMMIT | 2026-11-17T17:44:54Z | sn7 commit touches scoring: Drop VALIDATOR_MODE: the validator always sets weights unless told no… |
@@ -228,7 +214,20 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-11-23T10:27:12Z` | 91 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn91 commit touches scoring: feat(laned): W7d satellite verifies the rev6.6 armed context set (#750 |
 | `sn94:scoring_commit:2026-11-23T09:00:13Z` | 94 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn94 commit touches scoring: Count a fresh pass from the challenge, not the verdict (AB#947) (#691) |
 | `sn99:scoring_commit:2026-11-23T09:28:54Z` | 99 | SCORING_COMMIT | 2026-11-23T12:19:17Z | sn99 commit touches scoring: A champion is evaluated on benchmarks added after it, rebuilt as admi… |
-| `sn76:readme_task_diff:da868f725697bf9f` | 76 | README_TASK_DIFF | 2026-11-17T08:16:39Z | sn76 README task/scoring sections changed |
+| `sn12:release:validator-staging-2026-11-23-45269217986` | 12 | RELEASE | 2026-11-24T00:11:22Z | sn12 released validator-staging-2026-11-23-45269217986-635-1: feat: executor download cache (#879) |
+| `sn18:release:Release 2.1.5` | 18 | RELEASE | 2026-11-24T00:11:22Z | sn18 released Release 2.1.5 |
+| `sn28:release:v0.6.0` | 28 | RELEASE | 2026-11-24T00:11:22Z | sn28 released v0.6.0 |
+| `sn39:scoring_commit:2026-11-23T19:58:33Z` | 39 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn39 commit touches scoring: never repair a day scored with its profit not counted |
+| `sn51:scoring_commit:2026-11-23T23:17:44Z` | 51 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn51 commit touches scoring: DAH-7005 - [P4] Validator: one miner snapshot per cycle for the payme… |
+| `sn56:scoring_commit:2026-11-23T18:00:27Z` | 56 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn56 commit touches scoring: Reuse the Docker layer cache for miner image builds (#1456) |
+| `sn67:scoring_commit:2026-11-23T06:17:42Z` | 67 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261123.post1 |
+| `sn71:scoring_commit:2026-11-23T12:52:03Z` | 71 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn71 commit touches scoring: Recover funded pilot attempts without replaying completed miner work |
+| `sn91:scoring_commit:2026-11-23T20:48:50Z` | 91 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn91 commit touches scoring: tests(laned): WB23 miner-chosen lane B leg length acceptance tests (t… |
+| `sn92:release:v1.2.0-rc11.post8.16` | 92 | RELEASE | 2026-11-24T00:11:22Z | sn92 released v1.2.0-rc11.post8.16 |
+| `sn92:scoring_commit:2026-11-23T15:05:00Z` | 92 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn92 commit touches scoring: 1.2.0rc11.post8.16: validator source as live since 19 Nov 2026 |
+| `sn111:scoring_commit:2026-11-23T23:07:32Z` | 111 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn111 commit touches scoring: Raise validator source and structured review limits to 128k and 64k |
+| `sn116:scoring_commit:2026-11-23T20:09:13Z` | 116 | SCORING_COMMIT | 2026-11-24T00:11:22Z | sn116 commit touches scoring: Ladder: every document a miner was shown is kept append-only (DATA pl… |
+| `sn117:release:everycli v1.2.7` | 117 | RELEASE | 2026-11-24T00:11:22Z | sn117 released everycli v1.2.7 |
 | `sn124:readme_task_diff:3167f0c564855989` | 124 | README_TASK_DIFF | 2026-11-18T00:00:43Z | sn124 README task/scoring sections changed |
 | `sn127:readme_task_diff:0827763d022b8f1f` | 127 | README_TASK_DIFF | 2026-11-18T07:14:54Z | sn127 README task/scoring sections changed |
 | `sn99:readme_task_diff:346f6cf3141fc736` | 99 | README_TASK_DIFF | 2026-11-18T23:10:24Z | sn99 README task/scoring sections changed |

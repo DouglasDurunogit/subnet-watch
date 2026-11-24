@@ -1,25 +1,25 @@
 # sn7 - Algo (η)
 
-snapshot_utc: 2026-11-24T00:10:52Z  |  block: 9572915  |  row_status: ok
+snapshot_utc: 2026-11-24T10:13:16Z  |  block: 9575927  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.023170254 TAO (4.4011897473 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 2  |  free: 233
-- subnet age: 0.6 days  |  registered at block 9568319
+- registration cost: 0.007139276 TAO (1.32854787084 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 4  |  free: 213
+- subnet age: 1.1 days  |  registered at block 9568319
 - weights_version: 0  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: [UNKNOWN]
-- top_miner_usd_day: [UNKNOWN] (uid [UNKNOWN], owner=[UNKNOWN], validator_permitted=[UNKNOWN]) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 0.0
+- top_miner_usd_day: 0.0 (uid 0, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 0  |  gini: [UNKNOWN]  |  top1_share: [UNKNOWN]  |  top10_share: [UNKNOWN]
-- owner_incentive_share: [UNKNOWN] (independent check on miner_burn; disagreement n/a)
+- earners: 1  |  gini: [UNKNOWN]  |  top1_share: [UNKNOWN]  |  top10_share: [UNKNOWN]
+- owner_incentive_share: 1.0 (independent check on miner_burn; disagreement 1.0)  <- the two burn measures DISAGREE; the burn picture is shifting, treat both as provisional
 
 ## Repository
 
@@ -41,7 +41,7 @@ snapshot_utc: 2026-11-24T00:10:52Z  |  block: 9572915  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.8 (rank 72), confidence 0.6 - hardware requirement unknown; no README readable; repo none
+- score: 27.8 (rank 74), confidence 0.6 - hardware requirement unknown; no README readable; repo none
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
 - freshness basis: subnet is 1 days old
 

@@ -1,13 +1,13 @@
 # sn7 - Algo (η)
 
-snapshot_utc: 2026-11-24T20:44:55Z  |  block: 9579085  |  row_status: ok
+snapshot_utc: 2026-11-25T03:48:27Z  |  block: 9581203  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.008372573 TAO (1.5020395962 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 186
-- subnet age: 1.5 days  |  registered at block 9568319
+- registration cost: 0.007211595 TAO (1.2860437363500001 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 169
+- subnet age: 1.8 days  |  registered at block 9568319
 - weights_version: 0  |  mechanisms: 1
 
 ## Income (miner side)

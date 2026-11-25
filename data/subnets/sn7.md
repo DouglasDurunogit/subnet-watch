@@ -1,13 +1,13 @@
 # sn7 - Algo (η)
 
-snapshot_utc: 2026-11-25T14:12:23Z  |  block: 9584323  |  row_status: ok
+snapshot_utc: 2026-11-25T23:11:44Z  |  block: 9587019  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.000902024 TAO (0.15421904328 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 152
-- subnet age: 2.2 days  |  registered at block 9568319
+- registration cost: 0.000642391 TAO (0.11609932542999998 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 131
+- subnet age: 2.6 days  |  registered at block 9568319
 - weights_version: 0  |  mechanisms: 1
 
 ## Income (miner side)
@@ -41,9 +41,9 @@ snapshot_utc: 2026-11-25T14:12:23Z  |  block: 9584323  |  row_status: ok
 ## Score
 
 - gate: **OK** 
-- score: 27.8 (rank 75), confidence 0.6 - hardware requirement unknown; no README readable; repo none
+- score: 27.8 (rank 72), confidence 0.6 - hardware requirement unknown; no README readable; repo none
 - components: income 0.0 / freshness 35.0 / resource 11.25 / registration 0.0
-- freshness basis: subnet is 2 days old
+- freshness basis: subnet is 3 days old
 
 ## On-chain description
 

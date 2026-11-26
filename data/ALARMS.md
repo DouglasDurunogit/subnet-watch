@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-25T23:11:44Z, block 9587019
+# ALARMS - generated 2026-11-26T05:17:10Z, block 9588847
 
-window: first_seen in [2026-11-25T21:57:10Z, 2026-11-25T23:12:10Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-26T04:02:33Z, 2026-11-26T05:17:33Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,36 +9,39 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn40:burn_drop:0.000` | 40 | BURN_DROP | P0 | 2026-11-25T23:12:10Z | sn40 burn fell 1.000 -> 0.000 - miners can earn again |
-| `sn121:burn_drop:0.500` | 121 | BURN_DROP | P0 | 2026-11-25T23:12:10Z | sn121 burn fell 1.000 -> 0.500 - miners can earn again |
-| `sn39:scoring_commit:2026-11-25T14:35:44Z` | 39 | SCORING_COMMIT | P1 | 2026-11-25T23:12:10Z | sn39 commit touches scoring: state that spot fills count for the volume reward from 2026-11-27 |
-| `sn51:scoring_commit:2026-11-25T15:01:23Z` | 51 | SCORING_COMMIT | P1 | 2026-11-25T23:12:10Z | sn51 commit touches scoring: DAH-6683 - [P0] Validator backup, restore and login check run only it… |
-| `sn53:scoring_commit:2026-11-25T14:51:22Z` | 53 | SCORING_COMMIT | P1 | 2026-11-25T23:12:10Z | sn53 commit touches scoring: Merge pull request #69 from hanlinai/feat/miner-first-chunk-usage |
-| `sn111:scoring_commit:2026-11-25T14:30:50Z` | 111 | SCORING_COMMIT | P1 | 2026-11-25T23:12:10Z | sn111 commit touches scoring: Activate staged experimental scientific scoring with shared concurrenc |
-| `sn117:release:everycli v1.3.3` | 117 | RELEASE | P1 | 2026-11-25T23:12:10Z | sn117 released everycli v1.3.3 |
-| `sn127:release:Release eb41ab3` | 127 | RELEASE | P1 | 2026-11-25T23:12:10Z | sn127 released Release eb41ab3 |
-| `sn121:readme_task_diff:818bbda8fbb171f3` | 121 | README_TASK_DIFF | P2 | 2026-11-25T23:12:10Z | sn121 README task/scoring sections changed |
+| `sn129:new_subnet:b9588847` | 129 | NEW_SUBNET | P0 | 2026-11-26T05:17:33Z | NEW SUBNET sn129 "va" first seen |
+| `sn25:scoring_commit:2026-11-26T00:03:59Z` | 25 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn25 commit touches scoring: Merge miner-update-sn-feed: miner self-updates from urfoundation/sn r… |
+| `sn30:scoring_commit:2026-11-11T11:39:54Z` | 30 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn30 commit touches scoring: feat(scoring): weight 30d EMAs by maturity in the blended score (2045… |
+| `sn51:release:executor-v1.199` | 51 | RELEASE | P1 | 2026-11-26T05:17:33Z | sn51 released executor-v1.199 |
+| `sn51:scoring_commit:2026-11-26T04:19:12Z` | 51 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn51 commit touches scoring: DAH-7109 - [P4] Validator stale-container cleanup: one SSH call per w… |
+| `sn67:scoring_commit:2026-11-25T11:19:12Z` | 67 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261125.post4 |
+| `sn70:scoring_commit:2026-11-26T00:53:59Z` | 70 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn70 commit touches scoring: Merge pull request #218 from fugal-ai/ops/validator-autoupdate |
+| `sn71:scoring_commit:2026-11-26T02:52:24Z` | 71 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn71 commit touches scoring: Merge pull request #1378 from leadpoet/feat/pay-verified-collection |
+| `sn82:scoring_commit:2026-11-26T01:05:42Z` | 82 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn82 commit touches scoring: Use live runtime metadata for miner report submissions |
+| `sn91:scoring_commit:2026-11-25T23:31:05Z` | 91 | SCORING_COMMIT | P1 | 2026-11-26T05:17:33Z | sn91 commit touches scoring: feat(pool): pool_d takes lane A's selection from the sha-verified sna… |
 
 ### detail
 
-- **`sn40:burn_drop:0.000`** - sn40 burn fell 1.000 -> 0.000 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn121:burn_drop:0.500`** - sn121 burn fell 1.000 -> 0.500 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn39:scoring_commit:2026-11-25T14:35:44Z`** - sn39 commit touches scoring: state that spot fills count for the volume reward from 2026-11-27
+- **`sn129:new_subnet:b9588847`** - NEW SUBNET sn129 "va" first seen
+  - burn=0.0 reg=0.376021813 TAO repo=NONE
+- **`sn25:scoring_commit:2026-11-26T00:03:59Z`** - sn25 commit touches scoring: Merge miner-update-sn-feed: miner self-updates from urfoundation/sn r…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:scoring_commit:2026-11-25T15:01:23Z`** - sn51 commit touches scoring: DAH-6683 - [P0] Validator backup, restore and login check run only it…
+- **`sn30:scoring_commit:2026-11-11T11:39:54Z`** - sn30 commit touches scoring: feat(scoring): weight 30d EMAs by maturity in the blended score (2045…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn53:scoring_commit:2026-11-25T14:51:22Z`** - sn53 commit touches scoring: Merge pull request #69 from hanlinai/feat/miner-first-chunk-usage
+- **`sn51:release:executor-v1.199`** - sn51 released executor-v1.199
+  - published 2026-11-26T04:52:37Z (was executor-v1.198)
+- **`sn51:scoring_commit:2026-11-26T04:19:12Z`** - sn51 commit touches scoring: DAH-7109 - [P4] Validator stale-container cleanup: one SSH call per w…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:scoring_commit:2026-11-25T14:30:50Z`** - sn111 commit touches scoring: Activate staged experimental scientific scoring with shared concurrenc
+- **`sn67:scoring_commit:2026-11-25T11:19:12Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261125.post4
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn117:release:everycli v1.3.3`** - sn117 released everycli v1.3.3
-  - published 2026-11-25T18:01:08Z (was everycli v1.3.2)
-- **`sn127:release:Release eb41ab3`** - sn127 released Release eb41ab3
-  - published 2026-11-25T17:22:26Z (was Release e8350f5)
-- **`sn121:readme_task_diff:818bbda8fbb171f3`** - sn121 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn70:scoring_commit:2026-11-26T00:53:59Z`** - sn70 commit touches scoring: Merge pull request #218 from fugal-ai/ops/validator-autoupdate
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-26T02:52:24Z`** - sn71 commit touches scoring: Merge pull request #1378 from leadpoet/feat/pay-verified-collection
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn82:scoring_commit:2026-11-26T01:05:42Z`** - sn82 commit touches scoring: Use live runtime metadata for miner report submissions
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:scoring_commit:2026-11-25T23:31:05Z`** - sn91 commit touches scoring: feat(pool): pool_d takes lane A's selection from the sha-verified sna…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -52,10 +55,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
 | `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
 | `sn2:burn_drop:0.881` | 2 | BURN_DROP | 2026-11-24T10:13:41Z | sn2 burn fell 1.000 -> 0.881 - miners can earn again |
-| `sn56:scoring_commit:2026-11-19T02:57:22Z` | 56 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn56 commit touches scoring: Incoming changes for miners (#1434) |
-| `sn89:scoring_commit:2026-11-18T23:39:14Z` | 89 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn89 commit touches scoring: Validator: ignore blobs first stored more than 120 seconds after the … |
-| `sn94:scoring_commit:2026-11-19T00:17:55Z` | 94 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn94 commit touches scoring: Merge pull request #434 from cathedralai/feature/go-receipt-verifier |
-| `sn116:scoring_commit:2026-11-19T01:01:34Z` | 116 | SCORING_COMMIT | 2026-11-19T04:21:26Z | sn116 commit touches scoring: Miner client: 503 capacity retried like intake_busy (V2 add), with a … |
+| `sn40:burn_drop:0.000` | 40 | BURN_DROP | 2026-11-25T23:12:10Z | sn40 burn fell 1.000 -> 0.000 - miners can earn again |
+| `sn121:burn_drop:0.500` | 121 | BURN_DROP | 2026-11-25T23:12:10Z | sn121 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn12:release:validator-staging-2026-11-19-44521972284` | 12 | RELEASE | 2026-11-19T13:41:44Z | sn12 released validator-staging-2026-11-19-44521972284-633-1: fix: bump nginx (#875) |
 | `sn12:scoring_commit:2026-11-19T13:35:45Z` | 12 | SCORING_COMMIT | 2026-11-19T13:41:44Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD (#876) |
 | `sn21:release:SN21 training data v7 (windows 2026-09-2` | 21 | RELEASE | 2026-11-19T13:41:44Z | sn21 released SN21 training data v7 (windows 2026-09-21 to 2026-10-04) |
@@ -212,6 +213,12 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn99:scoring_commit:2026-11-24T16:43:07Z` | 99 | SCORING_COMMIT | 2026-11-25T14:12:53Z | sn99 commit touches scoring: Evaluation machines hold the benchmarks of every rules version of the… |
 | `sn116:scoring_commit:2026-11-25T04:10:17Z` | 116 | SCORING_COMMIT | 2026-11-25T14:12:53Z | sn116 commit touches scoring: The published reader reads an absent tasks_per_epoch as every task, a… |
 | `sn120:scoring_commit:2026-11-25T04:00:06Z` | 120 | SCORING_COMMIT | 2026-11-25T14:12:53Z | sn120 commit touches scoring: Merge pull request #322 from AffineFoundation/bb/miner-kl-local |
+| `sn39:scoring_commit:2026-11-25T14:35:44Z` | 39 | SCORING_COMMIT | 2026-11-25T23:12:10Z | sn39 commit touches scoring: state that spot fills count for the volume reward from 2026-11-27 |
+| `sn51:scoring_commit:2026-11-25T15:01:23Z` | 51 | SCORING_COMMIT | 2026-11-25T23:12:10Z | sn51 commit touches scoring: DAH-6683 - [P0] Validator backup, restore and login check run only it… |
+| `sn53:scoring_commit:2026-11-25T14:51:22Z` | 53 | SCORING_COMMIT | 2026-11-25T23:12:10Z | sn53 commit touches scoring: Merge pull request #69 from hanlinai/feat/miner-first-chunk-usage |
+| `sn111:scoring_commit:2026-11-25T14:30:50Z` | 111 | SCORING_COMMIT | 2026-11-25T23:12:10Z | sn111 commit touches scoring: Activate staged experimental scientific scoring with shared concurrenc |
+| `sn117:release:everycli v1.3.3` | 117 | RELEASE | 2026-11-25T23:12:10Z | sn117 released everycli v1.3.3 |
+| `sn127:release:Release eb41ab3` | 127 | RELEASE | 2026-11-25T23:12:10Z | sn127 released Release eb41ab3 |
 | `sn99:readme_task_diff:70f3abe3d8c03fd9` | 99 | README_TASK_DIFF | 2026-11-19T13:41:44Z | sn99 README task/scoring sections changed |
 | `sn94:readme_task_diff:ef09606cbd6e8243` | 94 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn94 README task/scoring sections changed |
 | `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
@@ -227,6 +234,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:readme_task_diff:412ce547772ecf5b` | 91 | README_TASK_DIFF | 2026-11-25T03:48:50Z | sn91 README task/scoring sections changed |
 | `sn40:readme_task_diff:2cd1a56dd0799e4e` | 40 | README_TASK_DIFF | 2026-11-25T14:12:53Z | sn40 README task/scoring sections changed |
 | `sn91:readme_task_diff:3ebcee68f1d40f73` | 91 | README_TASK_DIFF | 2026-11-25T14:12:53Z | sn91 README task/scoring sections changed |
+| `sn121:readme_task_diff:818bbda8fbb171f3` | 121 | README_TASK_DIFF | 2026-11-25T23:12:10Z | sn121 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

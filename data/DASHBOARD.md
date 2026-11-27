@@ -1,13 +1,13 @@
 # Subnet watch — dashboard
 
-_snapshot 2026-11-27T08:16:04Z · block 9596941 · run_status **ok**_
+_snapshot 2026-11-27T18:20:43Z · block 9599964 · run_status **ok**_
 
 > Numbers here are quotable. Income is always `competitive_miner_usd_day` —
 > the best miner that is neither the owner nor validator-permitted.
 
 ## The one number
 
-# 55 of 129
+# 49 of 129
 
 subnets are worth looking at: not 100% burned, registration open, and the
 competitive miner out-earns the cheapest machine that meets the requirement.
@@ -15,10 +15,10 @@ competitive miner out-earns the cheapest machine that meets the requirement.
 | | count | meaning |
 |---|---:|---|
 | Total subnets | 129 | everything on chain |
-| Pays miners at all | 102 | `miner_burn` < 0.99 |
-| Ranked | 102 | passed every gate |
-| **Positive margin** | **55** | income beats machine cost |
-| New events this window | 9 | see ALARMS.md |
+| Pays miners at all | 104 | `miner_burn` < 0.99 |
+| Ranked | 104 | passed every gate |
+| **Positive margin** | **49** | income beats machine cost |
+| New events this window | 2 | see ALARMS.md |
 
 ![viability funnel](charts/funnel.svg)
 
@@ -29,13 +29,13 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | miner_burn | subnets | |
 |---|---:|---|
-| 0 (none) | 72 | `████████████████████████████` |
-| 0–0.2 | 6 | `██` |
-| 0.2–0.4 | 4 | `██` |
-| 0.4–0.6 | 6 | `██` |
-| 0.6–0.8 | 5 | `██` |
-| 0.8–0.99 | 9 | `████` |
-| ≥0.99 dead | 27 | `██████████` |
+| 0 (none) | 73 | `████████████████████████████` |
+| 0–0.2 | 5 | `██` |
+| 0.2–0.4 | 3 | `█` |
+| 0.4–0.6 | 7 | `███` |
+| 0.6–0.8 | 6 | `██` |
+| 0.8–0.99 | 10 | `████` |
+| ≥0.99 dead | 25 | `██████████` |
 
 ![burn distribution](charts/burn.svg)
 
@@ -43,26 +43,26 @@ There is very little middle ground, which is why burn is a gate and not a score.
 
 | # | subnet | score | net $/day (median) | ceiling $/day | machine | earners | top-1 share |
 |---:|---|---:|---:|---:|---|---:|---:|
-| 1 | sn42 CADmind | 80.9 | 198 | 198 = | cpu-small | 5 | 20% |
-| 2 | sn120 Affine | 76.4 | 4,984 | 4,984 = | rtx4090* | 4 | 25% |
-| 3 | sn53 engy | 72.3 | 1,455 | 3,440 | rtx4090 | 8 | 49% |
-| 4 | sn121 sundae_bar | 71.5 | 443 | 710 | cpu-small | 3 | 50% |
-| 5 | sn124 Swarm | 65 | 174 | 1,158 | rtx4090* | 10 | 29% |
-| 6 | sn67 Harnyx | 63.9 | 1.73 | 469 | cpu-small | 95 | 36% |
-| 7 | sn56 Gradients | 62.1 | 473 | 3,185 | a100-80 | 7 | 43% |
-| 8 | sn66 conjectures | 62.1 | 70.04 | 863 | rtx4090* | 4 | 81% |
-| 9 | sn58 Attune | 61.1 | 54.58 | 1,549 | rtx4090* | 57 | 30% |
-| 10 | sn28 SayGM | 61 | 53.05 | 1,273 | rtx4090* | 115 | 26% |
-| 11 | sn3 Teutonic | 60.9 | 1,713 | 3,433 | rtx4090* | 4 | 40% |
-| 12 | sn111 Claims | 59.9 | 36.22 | 147 | rtx4090* | 4 | 88% |
-| 13 | sn127 Zils | 58.6 | 23.92 | 45.36 | rtx4090 | 6 | 88% |
-| 14 | sn25 UR | 58.1 | 20.36 | 29.89 | rtx4090* | 10 | 45% |
-| 15 | sn1 Apex | 57.1 | 551 | 564 | rtx4090* | 4 | 54% |
-| 16 | sn117 everyframe.studi | 56.5 | 13.15 | 1,300 | rtx4090* | 28 | 45% |
-| 17 | sn102 ConnitoAI | 55.7 | 367 | 367 = | rtx4090* | 5 | 25% |
-| 18 | sn99 Axonry | 54.9 | 7,502 | 7,502 = | rtx4090* | 1 | 100% |
-| 19 | sn38 ChronoLLM | 54.4 | 106 | 269 | cpu-small | 6 | 53% |
-| 20 | sn107 Minos | 53.5 | 110 | 9,381 | cpu-small | 20 | 80% |
+| 1 | sn120 Affine | 57.2 | 19,570 | 19,570 = | rtx4090* | 1 | 100% |
+| 2 | sn14 Cacheon | 52.1 | 2,316 | 2,775 | rtx4090* | 2 | 60% |
+| 3 | sn90 KubeTEE | 52.1 | 2,269 | 3,248 | rtx4090* | 3 | 43% |
+| 4 | sn116 Carbon | 51.3 | 1,647 | 3,302 | rtx4090* | 3 | 50% |
+| 5 | sn53 engy | 51 | 1,457 | 3,446 | rtx4090* | 8 | 49% |
+| 6 | sn61 RedTeam | 49.9 | 915 | 1,057 | rtx4090* | 3 | 40% |
+| 7 | sn70 Fugal | 48.9 | 597 | 597 = | rtx4090* | 2 | 50% |
+| 8 | sn56 Gradients | 48.4 | 485 | 2,423 | rtx4090* | 9 | 33% |
+| 9 | sn39 Kokoah | 46.3 | 199 | 383 | rtx4090* | 4 | 78% |
+| 10 | sn9 iota | 46.2 | 6,667 | 6,667 = | rtx4090* | 2 | 50% |
+| 11 | sn42 CADmind | 46.1 | 186 | 186 = | rtx4090* | 5 | 20% |
+| 12 | sn124 Swarm | 45.8 | 172 | 1,143 | rtx4090* | 10 | 29% |
+| 13 | sn17 404—GEN | 44.4 | 3,159 | 3,159 = | rtx4090* | 1 | 100% |
+| 14 | sn66 conjectures | 43.8 | 68.33 | 844 | rtx4090* | 4 | 81% |
+| 15 | sn91 cascade | 43.7 | 66.19 | 66.19 = | rtx4090* | 2 | 95% |
+| 16 | sn3 Teutonic | 42.9 | 1,684 | 3,376 | rtx4090* | 4 | 40% |
+| 17 | sn58 Attune | 42.9 | 46.48 | 1,526 | rtx4090* | 53 | 30% |
+| 18 | sn28 SayGM | 42.7 | 46.28 | 1,041 | rtx4090* | 121 | 31% |
+| 19 | sn111 Claims | 42.2 | 35.44 | 145 | rtx4090* | 4 | 88% |
+| 20 | sn97 Ingot | 42 | 1,126 | 1,126 = | rtx4090* | 3 | 50% |
 
 `=` after the ceiling means it equals the median exactly - either one competitive
 miner exists, or they all earn the same. Both columns use identical precision;
@@ -88,7 +88,7 @@ single UID takes almost everything, so the headline income is not reachable.
 | wide (<30%) | 25 |
 | concentrated (30–60%) | 28 |
 | dominated (60–90%) | 22 |
-| captured (>90%) | 24 |
+| captured (>90%) | 26 |
 
 ## Hardware evidence quality
 
@@ -97,15 +97,14 @@ margin assumes a default box. Treat those as indicative.
 
 | basis | subnets |
 |---|---:|
-| no evidence | 98 |
-| README keywords (GUESS) | 12 |
-| min_compute.yml (curated) | 11 |
-| code-submission (validator runs it) | 8 |
+| no evidence | 129 |
 
 ## Recent changes (last 7 days)
 
 | when | subnet | class | what |
 |---|---|---|---|
+| 2026-11-27T18:22 | sn71 | BURN_DROP | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
+| 2026-11-27T18:22 | sn91 | BURN_DROP | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
 | 2026-11-27T08:16 | sn30 | RELEASE | sn30 released v0.1.4 — Archive resilience and horizon-maturity blend,  |
 | 2026-11-27T08:16 | sn51 | RELEASE | sn51 released executor-v1.202 |
 | 2026-11-27T08:16 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-7201 - [P4] Validator: report a resta |
@@ -119,8 +118,6 @@ margin assumes a default box. Treat those as indicative.
 | 2026-11-27T00:03 | sn12 | RELEASE | sn12 released miner-staging-2026-11-26-45857591810-467-1: fix: stop th |
 | 2026-11-27T00:03 | sn51 | RELEASE | sn51 released watchtower-v1.2.5 |
 | 2026-11-27T00:03 | sn51 | SCORING_COMMIT | sn51 commit touches scoring: DAH-5238 - [P4] Validator reads liumd's c |
-| 2026-11-27T00:03 | sn71 | SCORING_COMMIT | sn71 commit touches scoring: Explain consensus-based payouts before a  |
-| 2026-11-27T00:03 | sn90 | SCORING_COMMIT | sn90 commit touches scoring: docs(attestation): registry-lookup verifi |
 
 ---
 

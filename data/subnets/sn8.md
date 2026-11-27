@@ -1,161 +1,50 @@
 # sn8 - Vanta (θ)
 
-snapshot_utc: 2026-11-27T08:16:04Z  |  block: 9596941  |  row_status: ok
+snapshot_utc: 2026-11-27T18:20:43Z  |  block: 9599964  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.0005 TAO (0.094045 USD), open=True
+- registration cost: 0.0005 TAO (0.09240999999999999 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 34  |  free: 0
-- subnet age: 1127.7 days  |  registered at block 1477264
+- subnet age: 1128.2 days  |  registered at block 1477264
 - weights_version: 199  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1.5879513228524376** (uid 87) <- the only figure quotable as achievable
-- median_miner_usd_day: 0.7939756614262188
-- top_miner_usd_day: 22400.83232364862 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1.5586284863919042** (uid 87) <- the only figure quotable as achievable
+- median_miner_usd_day: 0.7793142431959521
+- top_miner_usd_day: 21984.84445767941 (uid 117, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
-- earners: 20  |  gini: 0.9357976594249398  |  top1_share: 0.8620863507195893  |  top10_share: 0.9997861093286887
+- earners: 20  |  gini: 0.9357898033703573  |  top1_share: 0.8620078529631949  |  top10_share: 0.9997861060608375
 - owner_incentive_share: 0.0 (independent check on miner_burn; disagreement 0.0)
 
 ## Repository
 
 - on-chain URL: `https://github.com/taoshidev/vanta-network`
 - resolved URL: `https://github.com/taoshidev/vanta-network`
-- status: **ok** 
-- README: 10525 bytes, sha 0c8645084b112aa8
+- status: **error** - HTTP 504
+- README: 0 bytes, sha (none)
 - latest release: (none) 
-- last commit: 2026-11-24T23:04:03Z
-- scoring-related commit: Put new regular miners on the static drawdown rules until Grow (#979) 2026-11-13T23:26:20Z
+- last commit: (unknown)
+- scoring-related commit: (none) 
 
 ## Resources
 
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: -7.4252 USD/day  |  payback on registration: [UNKNOWN] days
+- net margin: -7.4399 USD/day  |  payback on registration: [UNKNOWN] days
 
 ## Score
 
 - gate: **OK** 
-- score: 27.4 (rank 75), confidence 0.85 - hardware requirement unknown
+- score: 19.3 (rank 75), confidence 0.6 - hardware requirement unknown; no README readable; repo error
 - components: income 0.0 / freshness 21.0 / resource 11.25 / registration 0.0
-- freshness basis: SCORING_COMMIT 13d ago
+- freshness basis: SCORING_COMMIT 14d ago
 
 ## On-chain description
 
 > The first decentralized & trustless liquidity and execution engine for prop firms and traders
-
-## README excerpt (evidence for the brief)
-
-```markdown
-<p align="center">
-  <a href="https://www.vantanetwork.io">
-    <img width="385" alt="Vanta Network logo" src="https://www.taoshi.io/white-black.png">
-  </a>
-</p>
-
-<div align='center'>
-
-[![Discord Chat](https://img.shields.io/discord/1163496128499683389.svg)](https://discord.gg/vantatrading)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-</div>
-
-<p align="center">
-  <a href="https://www.vantanetwork.io">Vanta Network</a>
-  ·
-  <a href="https://www.vantatrading.io">Vanta Trading</a>
-  ·
-  <a href="#get-started">Installation</a>
-  ·  
-  <a href="https://www.vantanetwork.io/dashboard">Dashboard</a>
-  ·
-  <a href="https://x.com/VantaNetworkSN8">Twitter</a>
-    ·
-  <a href="https://www.bittensor.com">Bittensor</a>
-</p>
-
----
-
-<details>
-  <summary>Table of contents</summary>
-  <ol>
-    <li><a href="#vanta-network">Vanta Network</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#how-does-it-work">How does it work?</a></li>
-    <li>
-      <a href="#get-started">Get Started</a>
-    </li>
-    <li><a href="#building-a-strategy">Building a Strategy</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-
-  </ol>
-</details>
-
----
-
-<details id='bittensor'>
-  <summary>What is Bittensor?</summary>
-
-Bittensor is a mining network, similar to Bitcoin, that includes built-in incentives designed to encourage computers to provide access to machine learning models in an efficient and censorship-resistant manner. Bittensor is comprised of Subnets, Miners, and Validators.
-
-> Explain Like I'm Five
-
-Bittensor is an API that connects machine learning models and incentivizes correctness through the power of the blockchain.
-
-### Subnets
-
-Subnets are decentralized networks of machines that collaborate to train and serve machine learning models.
-
-### Miners
-
-Miners run machine learning models. They send signals to the Validators.
-
-### Validators
-
-Validators recieve trade signals from Miners. Validators ensure trades are valid, store them, and track portfolio returns. 
-
-</details>
-
-<br />
-<br />
-
-# Vanta Network
-
-This repository contains the code for the Vanta Network developed by Taoshi.
-
-Vanta receives signals from quant and deep learning machine learning trading systems to deliver the world's
-most complete trading signals across a variety of asset classes.
-
-# Features
-
-🛠️&nbsp;Open Source Strategy Building Techniques (In Our Taoshi Community)<br>
-🫰&nbsp;Signals From a <a href="https://github.com/taoshidev/vanta-network/blob/main/vali_objects/trade_pair.py#L46"> Variety of Asset Classes</a> - Forex, Crypto, Equities, and Commodities<br>
-📈&nbsp;<a href="https://tokenomics.taoshi.io">Millions of $ Funding</a> to Top Traders<br>
-💪&nbsp;Innovative Trader Performance Metrics that Identify the Best Traders<br>
-🔎&nbsp;<a href="https://www.vantanetwork.io/dashboard">Trading + Metrics Visualization Dashboard</a><br>
-🔎&nbsp;Maximum <a href="https://www.vantanetwork.io/transparency">Transparency</a> for all updates
-
-## How does it work?
-
-Vanta is the most challenging & competitive network in the world. Our miners need to provide futures based signals (long/short)
-that are highly efficient and effective across various markets to compete (forex, crypto, equities, commodities). The top miners are
-those that provide the most returns, while never exceeding certain drawdown limits.
-
-### Rules
-
-1. Miners can submit LONG, SHORT, or FLAT signal for Forex, Crypto, Equities, or Commodities trade pairs into the network during market hours. Crypto, commodities and other Hyperliquid perps trade 24/7, forex trades Sunday 17:00 to Friday 17:00 ET, and equities trade 09:30–16:00 ET with limit-only pre-market (04:00–09:30 ET) and after-hours (16:00–20:00 ET) sessions. <a href="https://github.com/taoshidev/vanta-network/blob/main/docs/miner.md#market-hours-and-order-types">Market hours and order types</a> · <a href="https://github.com/taoshidev/vanta-network/blob/main/vali_objects/trade_pair.py#L125">Currently supported trade pairs</a>
-2. Miners are eliminated if they are detected as plagiarising other miners, if they exceed a 5% intraday drawdown from the day's opening equity, an 8% end-of-day drawdown from their highest-ever end-of-day equity (high-water mark), or if they go 60 days without submitting a single order (more info in the "Eliminations" section).
-3. There is a fee for leaving positions open "carry fee". The fee is equal to 10.95%/3% per year for a 1x leverage position (crypto/forex respectively); equities instead pay a 3%/yr stock-borrow fee (short) or 6.6%/yr margin interest on the borrowed amount (long). Positions in Hyperliquid-sourced trade pairs (most crypto pairs, commodities, indices, and some equities) pay live Hyperliquid funding rates instead of the flat rates above <a href="https://docs.taoshi.io/tips/p4/">More info</a>
-4. There is a spread (transaction) fee applied to crypto, equities, and commodities orders, calculated as a percentage of order value - 0.03% for crypto, 0.01% for equities, and 0.005% for commodities (forex and indices have no spread fee). This simulates a transaction cost that a normal exchange would add. Maker and taker fills are priced identically.
-5. There is a slippage assessed per order. The slippage cost is is greater for orders with higher leverages, and in assets with lower liquidity.
-6. Miners are rewarded using a debt-based scoring system that tracks their emissions, performance, and penalties. Weights are set based on the previous week's performance (PnL scaled by penalties), with payout periods starting and ending at midnight UTC on Sunday <a href="https://github.com/taoshidev/vanta-network/blob/main/docs/miner.md">More info</a>
-7. Miners whose hotkey registered after 2026-11-14 00:00 UTC trade on the standard account track: an account sized once from their collateral, the same challenge and funded stages as an entity subaccount, and a weight that pays what they ar
-```
-
-_(truncated at 6000 of 10525 chars - read the full file at https://github.com/taoshidev/vanta-network)_

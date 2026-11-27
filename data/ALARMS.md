@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-27T08:16:04Z, block 9596941
+# ALARMS - generated 2026-11-27T18:20:43Z, block 9599964
 
-window: first_seen in [2026-11-27T07:01:24Z, 2026-11-27T08:16:24Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-27T17:07:48Z, 2026-11-27T18:22:48Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,42 +9,20 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn30:release:v0.1.4 — Archive resilience and horizon-` | 30 | RELEASE | P1 | 2026-11-27T08:16:24Z | sn30 released v0.1.4 — Archive resilience and horizon-maturity blend, protocol 2045 |
-| `sn51:release:executor-v1.202` | 51 | RELEASE | P1 | 2026-11-27T08:16:24Z | sn51 released executor-v1.202 |
-| `sn51:scoring_commit:2026-11-27T07:53:24Z` | 51 | SCORING_COMMIT | P1 | 2026-11-27T08:16:24Z | sn51 commit touches scoring: DAH-7201 - [P4] Validator: report a restarting rented container in it… |
-| `sn61:release:4.12.0` | 61 | RELEASE | P1 | 2026-11-27T08:16:24Z | sn61 released 4.12.0 |
-| `sn61:scoring_commit:2026-11-27T06:01:39Z` | 61 | SCORING_COMMIT | P1 | 2026-11-27T08:16:24Z | sn61 commit touches scoring: refactor: update bot virus challenge version and increase incentive w… |
-| `sn71:scoring_commit:2026-11-27T07:29:52Z` | 71 | SCORING_COMMIT | P1 | 2026-11-27T08:16:24Z | sn71 commit touches scoring: Run standing funded experiments and verify completed work separately … |
-| `sn91:scoring_commit:2026-11-27T01:40:59Z` | 91 | SCORING_COMMIT | P1 | 2026-11-27T08:16:24Z | sn91 commit touches scoring: fix(lane-d): public half throughput: warm sweep, parallel reads, scor… |
-| `sn116:scoring_commit:2026-11-27T01:56:58Z` | 116 | SCORING_COMMIT | P1 | 2026-11-27T08:16:24Z | sn116 commit touches scoring: fix(rewards): fix SN116 Subtensor chain reads and commit-reveal tempo… |
-| `sn127:release:Release d92abe3` | 127 | RELEASE | P1 | 2026-11-27T08:16:24Z | sn127 released Release d92abe3 |
+| `sn71:burn_drop:0.989` | 71 | BURN_DROP | P0 | 2026-11-27T18:22:48Z | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
+| `sn91:burn_drop:0.955` | 91 | BURN_DROP | P0 | 2026-11-27T18:22:48Z | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
 
 ### detail
 
-- **`sn30:release:v0.1.4 — Archive resilience and horizon-`** - sn30 released v0.1.4 — Archive resilience and horizon-maturity blend, protocol 2045
-  - published 2026-11-27T03:47:16Z (was v0.1.3 — Identical-forecast pooling, protocol 2044)
-- **`sn51:release:executor-v1.202`** - sn51 released executor-v1.202
-  - published 2026-11-27T06:20:59Z (was watchtower-v1.2.5)
-- **`sn51:scoring_commit:2026-11-27T07:53:24Z`** - sn51 commit touches scoring: DAH-7201 - [P4] Validator: report a restarting rented container in it…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:release:4.12.0`** - sn61 released 4.12.0
-  - published 2026-11-27T06:08:12Z (was 4.11.1)
-- **`sn61:scoring_commit:2026-11-27T06:01:39Z`** - sn61 commit touches scoring: refactor: update bot virus challenge version and increase incentive w…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-27T07:29:52Z`** - sn71 commit touches scoring: Run standing funded experiments and verify completed work separately …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-27T01:40:59Z`** - sn91 commit touches scoring: fix(lane-d): public half throughput: warm sweep, parallel reads, scor…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-27T01:56:58Z`** - sn116 commit touches scoring: fix(rewards): fix SN116 Subtensor chain reads and commit-reveal tempo…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn127:release:Release d92abe3`** - sn127 released Release d92abe3
-  - published 2026-11-27T05:42:10Z (was Release eb41ab3)
+- **`sn71:burn_drop:0.989`** - sn71 burn fell 1.000 -> 0.989 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn91:burn_drop:0.955`** - sn91 burn fell 1.000 -> 0.955 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn84:burn_drop:0.000` | 84 | BURN_DROP | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
@@ -54,13 +32,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.500` | 121 | BURN_DROP | 2026-11-25T23:12:10Z | sn121 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn129:new_subnet:b9588847` | 129 | NEW_SUBNET | 2026-11-26T05:17:33Z | NEW SUBNET sn129 "va" first seen |
 | `sn70:burn_drop:0.500` | 70 | BURN_DROP | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
-| `sn25:release:v2026.11.19-1103608200` | 25 | RELEASE | 2026-11-20T11:26:47Z | sn25 released v2026.11.19-1103608200 |
-| `sn51:release:executor-v1.192` | 51 | RELEASE | 2026-11-20T11:26:47Z | sn51 released executor-v1.192 |
-| `sn51:scoring_commit:2026-11-20T09:17:54Z` | 51 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn51 commit touches scoring: DAH-6666 - [P1] Executor trusts the validator named in a subnet-owner… |
-| `sn67:scoring_commit:2026-11-20T08:01:49Z` | 67 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261120.post1 |
-| `sn71:scoring_commit:2026-11-20T07:47:14Z` | 71 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn71 commit touches scoring: Record reviewed scorer changes in protected workflow manifest |
-| `sn99:scoring_commit:2026-11-20T09:18:09Z` | 99 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn99 commit touches scoring: Validator loop: tempo read once, one try per round, sleep to the next… |
-| `sn116:scoring_commit:2026-11-20T08:40:42Z` | 116 | SCORING_COMMIT | 2026-11-20T11:26:47Z | sn116 commit touches scoring: L2 FULL RED (release g9334la/lb): the 6 tests that expected a miner's… |
 | `sn25:scoring_commit:2026-11-19T18:57:29Z` | 25 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn25 commit touches scoring: Merge fix/runtime-492-1119 (3e9e6f2b) onto 8c14d437, the validator sn… |
 | `sn51:scoring_commit:2026-11-20T13:09:25Z` | 51 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn51 commit touches scoring: DAH-6769 - [P4] Validator: a readable upper dir decides the reboot's … |
 | `sn58:scoring_commit:2026-11-20T13:17:06Z` | 58 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn58 commit touches scoring: feat(horizon): Horizon miners share Horizon's 70% |
@@ -213,8 +184,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn94:scoring_commit:2026-11-26T20:14:02Z` | 94 | SCORING_COMMIT | 2026-11-27T00:03:58Z | sn94 commit touches scoring: Roll guest-TLS and miner-mode sealed hotels (chi-ur-2) (#768) |
 | `sn116:scoring_commit:2026-11-26T23:47:03Z` | 116 | SCORING_COMMIT | 2026-11-27T00:03:58Z | sn116 commit touches scoring: Merge miner error rows 630c36c4 onto the docs restack 2272a51a (owner… |
 | `sn117:release:everycli v1.3.4` | 117 | RELEASE | 2026-11-27T00:03:58Z | sn117 released everycli v1.3.4 |
-| `sn94:readme_task_diff:ef09606cbd6e8243` | 94 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn94 README task/scoring sections changed |
-| `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
+| `sn30:release:v0.1.4 — Archive resilience and horizon-` | 30 | RELEASE | 2026-11-27T08:16:24Z | sn30 released v0.1.4 — Archive resilience and horizon-maturity blend, protocol 2045 |
+| `sn51:release:executor-v1.202` | 51 | RELEASE | 2026-11-27T08:16:24Z | sn51 released executor-v1.202 |
+| `sn51:scoring_commit:2026-11-27T07:53:24Z` | 51 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn51 commit touches scoring: DAH-7201 - [P4] Validator: report a restarting rented container in it… |
+| `sn61:release:4.12.0` | 61 | RELEASE | 2026-11-27T08:16:24Z | sn61 released 4.12.0 |
+| `sn61:scoring_commit:2026-11-27T06:01:39Z` | 61 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn61 commit touches scoring: refactor: update bot virus challenge version and increase incentive w… |
+| `sn71:scoring_commit:2026-11-27T07:29:52Z` | 71 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn71 commit touches scoring: Run standing funded experiments and verify completed work separately … |
+| `sn91:scoring_commit:2026-11-27T01:40:59Z` | 91 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn91 commit touches scoring: fix(lane-d): public half throughput: warm sweep, parallel reads, scor… |
+| `sn116:scoring_commit:2026-11-27T01:56:58Z` | 116 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn116 commit touches scoring: fix(rewards): fix SN116 Subtensor chain reads and commit-reveal tempo… |
+| `sn127:release:Release d92abe3` | 127 | RELEASE | 2026-11-27T08:16:24Z | sn127 released Release d92abe3 |
 | `sn56:readme_task_diff:eb830460d88616d2` | 56 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn56 README task/scoring sections changed |
 | `sn123:readme_task_diff:f4ae2b06d69e2e0b` | 123 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn123 README task/scoring sections changed |
 | `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |

@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-26T15:34:13Z, block 9591932
+# ALARMS - generated 2026-11-27T00:03:35Z, block 9594479
 
-window: first_seen in [2026-11-26T14:19:43Z, 2026-11-26T15:34:43Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-26T22:48:58Z, 2026-11-27T00:03:58Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,48 +9,44 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn70:burn_drop:0.500` | 70 | BURN_DROP | P0 | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
-| `sn14:scoring_commit:2026-11-24T10:33:33Z` | 14 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn14 commit touches scoring: Start the scored span at the cold-round release and grade every load'… |
-| `sn42:release:v0.6.27` | 42 | RELEASE | P1 | 2026-11-26T15:34:43Z | sn42 released v0.6.27 |
-| `sn42:scoring_commit:2026-11-26T10:18:12Z` | 42 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn42 commit touches scoring: miners: work an improvement job; the practice command and the second … |
-| `sn51:release:executor-v1.201` | 51 | RELEASE | P1 | 2026-11-26T15:34:43Z | sn51 released executor-v1.201 |
-| `sn51:scoring_commit:2026-11-26T10:12:10Z` | 51 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn51 commit touches scoring: DAH-7044 - [P4] Validation: a node is listed only after a rental prob… |
-| `sn67:scoring_commit:2026-11-26T08:41:17Z` | 67 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261126.post0 |
-| `sn81:scoring_commit:2026-11-26T14:21:56Z` | 81 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn81 commit touches scoring: Merge pull request #583 from reliquadotai/fix/restart-keeps-miners |
-| `sn91:scoring_commit:2026-11-26T08:47:43Z` | 91 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn91 commit touches scoring: fix(trainer): lane B judge + merge scores on the eval pod (WB27, stac… |
-| `sn116:scoring_commit:2026-11-26T08:59:32Z` | 116 | SCORING_COMMIT | P1 | 2026-11-26T15:34:43Z | sn116 commit touches scoring: An overlay dispatch for a Challenge the image registry declares, with… |
-| `sn42:readme_task_diff:62fb90a94c705fb4` | 42 | README_TASK_DIFF | P2 | 2026-11-26T15:34:43Z | sn42 README task/scoring sections changed |
+| `sn12:release:miner-staging-2026-11-26-45857591810-467` | 12 | RELEASE | P1 | 2026-11-27T00:03:58Z | sn12 released miner-staging-2026-11-26-45857591810-467-1: fix: stop the executor's job containers in kill_executor (#884) |
+| `sn51:release:watchtower-v1.2.5` | 51 | RELEASE | P1 | 2026-11-27T00:03:58Z | sn51 released watchtower-v1.2.5 |
+| `sn51:scoring_commit:2026-11-26T22:03:47Z` | 51 | SCORING_COMMIT | P1 | 2026-11-27T00:03:58Z | sn51 commit touches scoring: DAH-5238 - [P4] Validator reads liumd's containerd-store disk fields … |
+| `sn71:scoring_commit:2026-11-26T22:01:56Z` | 71 | SCORING_COMMIT | P1 | 2026-11-27T00:03:58Z | sn71 commit touches scoring: Explain consensus-based payouts before a miner signs a funding offer |
+| `sn90:scoring_commit:2026-11-26T17:29:48Z` | 90 | SCORING_COMMIT | P1 | 2026-11-27T00:03:58Z | sn90 commit touches scoring: docs(attestation): registry-lookup verification + current+previous re… |
+| `sn94:scoring_commit:2026-11-26T20:14:02Z` | 94 | SCORING_COMMIT | P1 | 2026-11-27T00:03:58Z | sn94 commit touches scoring: Roll guest-TLS and miner-mode sealed hotels (chi-ur-2) (#768) |
+| `sn116:scoring_commit:2026-11-26T23:47:03Z` | 116 | SCORING_COMMIT | P1 | 2026-11-27T00:03:58Z | sn116 commit touches scoring: Merge miner error rows 630c36c4 onto the docs restack 2272a51a (owner… |
+| `sn117:release:everycli v1.3.4` | 117 | RELEASE | P1 | 2026-11-27T00:03:58Z | sn117 released everycli v1.3.4 |
+| `sn6:readme_task_diff:a7d63b5e8f360b67` | 6 | README_TASK_DIFF | P2 | 2026-11-27T00:03:58Z | sn6 README task/scoring sections changed |
+| `sn124:readme_task_diff:0e536c389e88ce2e` | 124 | README_TASK_DIFF | P2 | 2026-11-27T00:03:58Z | sn124 README task/scoring sections changed |
 
 ### detail
 
-- **`sn70:burn_drop:0.500`** - sn70 burn fell 1.000 -> 0.500 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn14:scoring_commit:2026-11-24T10:33:33Z`** - sn14 commit touches scoring: Start the scored span at the cold-round release and grade every load'…
+- **`sn12:release:miner-staging-2026-11-26-45857591810-467`** - sn12 released miner-staging-2026-11-26-45857591810-467-1: fix: stop the executor's job containers in kill_executor (#884)
+  - published 2026-11-26T16:18:51Z (was validator-staging-2026-11-25-45557483497-637-1: feat: allow commitments up to 512 bytes (#880))
+- **`sn51:release:watchtower-v1.2.5`** - sn51 released watchtower-v1.2.5
+  - published 2026-11-26T15:48:25Z (was executor-v1.201)
+- **`sn51:scoring_commit:2026-11-26T22:03:47Z`** - sn51 commit touches scoring: DAH-5238 - [P4] Validator reads liumd's containerd-store disk fields …
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn42:release:v0.6.27`** - sn42 released v0.6.27
-  - published 2026-11-26T15:20:13Z (was v0.6.26)
-- **`sn42:scoring_commit:2026-11-26T10:18:12Z`** - sn42 commit touches scoring: miners: work an improvement job; the practice command and the second …
+- **`sn71:scoring_commit:2026-11-26T22:01:56Z`** - sn71 commit touches scoring: Explain consensus-based payouts before a miner signs a funding offer
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn51:release:executor-v1.201`** - sn51 released executor-v1.201
-  - published 2026-11-26T15:04:11Z (was executor-v1.199)
-- **`sn51:scoring_commit:2026-11-26T10:12:10Z`** - sn51 commit touches scoring: DAH-7044 - [P4] Validation: a node is listed only after a rental prob…
+- **`sn90:scoring_commit:2026-11-26T17:29:48Z`** - sn90 commit touches scoring: docs(attestation): registry-lookup verification + current+previous re…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn67:scoring_commit:2026-11-26T08:41:17Z`** - sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261126.post0
+- **`sn94:scoring_commit:2026-11-26T20:14:02Z`** - sn94 commit touches scoring: Roll guest-TLS and miner-mode sealed hotels (chi-ur-2) (#768)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-26T14:21:56Z`** - sn81 commit touches scoring: Merge pull request #583 from reliquadotai/fix/restart-keeps-miners
+- **`sn116:scoring_commit:2026-11-26T23:47:03Z`** - sn116 commit touches scoring: Merge miner error rows 630c36c4 onto the docs restack 2272a51a (owner…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:scoring_commit:2026-11-26T08:47:43Z`** - sn91 commit touches scoring: fix(trainer): lane B judge + merge scores on the eval pod (WB27, stac…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn116:scoring_commit:2026-11-26T08:59:32Z`** - sn116 commit touches scoring: An overlay dispatch for a Challenge the image registry declares, with…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn42:readme_task_diff:62fb90a94c705fb4`** - sn42 README task/scoring sections changed
+- **`sn117:release:everycli v1.3.4`** - sn117 released everycli v1.3.4
+  - published 2026-11-26T18:19:55Z (was everycli v1.3.3)
+- **`sn6:readme_task_diff:a7d63b5e8f360b67`** - sn6 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
+- **`sn124:readme_task_diff:0e536c389e88ce2e`** - sn124 README task/scoring sections changed
   - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn99:burn_drop:0.500` | 99 | BURN_DROP | 2026-11-19T21:51:45Z | sn99 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn2:burn_drop:0.936` | 2 | BURN_DROP | 2026-11-20T03:04:29Z | sn2 burn fell 1.000 -> 0.936 - miners can earn again |
 | `sn84:burn_drop:0.000` | 84 | BURN_DROP | 2026-11-20T11:26:47Z | sn84 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
@@ -61,22 +57,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn40:burn_drop:0.000` | 40 | BURN_DROP | 2026-11-25T23:12:10Z | sn40 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn121:burn_drop:0.500` | 121 | BURN_DROP | 2026-11-25T23:12:10Z | sn121 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn129:new_subnet:b9588847` | 129 | NEW_SUBNET | 2026-11-26T05:17:33Z | NEW SUBNET sn129 "va" first seen |
-| `sn3:scoring_commit:2026-11-19T16:08:05Z` | 3 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn3 commit touches scoring: Retry incomplete R2 reads and prefetch evaluation text |
-| `sn12:release:validator-testing-2026-11-19-44554669102` | 12 | RELEASE | 2026-11-19T21:51:45Z | sn12 released validator-testing-2026-11-19-44554669102-9-1: fix: build compute-horde-validator-nginx in CD, 2nd take (#877) |
-| `sn12:scoring_commit:2026-11-19T14:07:29Z` | 12 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn12 commit touches scoring: fix: build compute-horde-validator-nginx in CD, 2nd take (#877) |
-| `sn25:release:v2026.11.19-1103236710` | 25 | RELEASE | 2026-11-19T21:51:45Z | sn25 released v2026.11.19-1103236710 |
-| `sn28:release:v0.5.25` | 28 | RELEASE | 2026-11-19T21:51:45Z | sn28 released v0.5.25 |
-| `sn33:scoring_commit:2026-11-19T13:44:08Z` | 33 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn33 commit touches scoring: Send a single conversation window to all miners of a bundle |
-| `sn42:release:v0.6.25` | 42 | RELEASE | 2026-11-19T21:51:45Z | sn42 released v0.6.25 |
-| `sn42:scoring_commit:2026-11-19T14:50:07Z` | 42 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn42 commit touches scoring: reference miner: one answer register for the whole device |
-| `sn51:release:executor-v1.191` | 51 | RELEASE | 2026-11-19T21:51:45Z | sn51 released executor-v1.191 |
-| `sn51:scoring_commit:2026-11-19T20:39:29Z` | 51 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn51 commit touches scoring: DAH-4689 validator: ignore live volume and GPU process paths in the s… |
-| `sn66:release:v2026.11.19.2` | 66 | RELEASE | 2026-11-19T21:51:45Z | sn66 released v2026.11.19.2 |
-| `sn81:scoring_commit:2026-11-19T14:00:51Z` | 81 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn81 commit touches scoring: fix(cli): let RELIQUARY_HF_REPO_ID set validate's --hf-repo-id (#563) |
-| `sn94:scoring_commit:2026-11-19T14:03:29Z` | 94 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn94 commit touches scoring: Host DNAT 443 to the sealed guest and a DNS-01 challenge service (AB#… |
-| `sn116:scoring_commit:2026-11-19T21:18:05Z` | 116 | SCORING_COMMIT | 2026-11-19T21:51:45Z | sn116 commit touches scoring: Updates page: current crown rule, rough-solver zero, Motor 1.9, score… |
-| `sn117:release:everycli v1.2.4` | 117 | RELEASE | 2026-11-19T21:51:45Z | sn117 released everycli v1.2.4 |
-| `sn127:release:Release e8350f5` | 127 | RELEASE | 2026-11-19T21:51:45Z | sn127 released Release e8350f5 |
+| `sn70:burn_drop:0.500` | 70 | BURN_DROP | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn53:scoring_commit:2026-11-19T23:32:44Z` | 53 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn53 commit touches scoring: Merge pull request #65 from hanlinai/feat/tee-miner-name-only |
 | `sn99:scoring_commit:2026-11-19T21:55:03Z` | 99 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn99 commit touches scoring: A candidate is evaluated on the machine admission built its model on … |
 | `sn116:scoring_commit:2026-11-20T02:18:19Z` | 116 | SCORING_COMMIT | 2026-11-20T03:04:29Z | sn116 commit touches scoring: Box loss: a live DOWN mark stays DOWN on a later loss (Validator-2 B1… |
@@ -222,6 +203,15 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn71:scoring_commit:2026-11-26T02:52:24Z` | 71 | SCORING_COMMIT | 2026-11-26T05:17:33Z | sn71 commit touches scoring: Merge pull request #1378 from leadpoet/feat/pay-verified-collection |
 | `sn82:scoring_commit:2026-11-26T01:05:42Z` | 82 | SCORING_COMMIT | 2026-11-26T05:17:33Z | sn82 commit touches scoring: Use live runtime metadata for miner report submissions |
 | `sn91:scoring_commit:2026-11-25T23:31:05Z` | 91 | SCORING_COMMIT | 2026-11-26T05:17:33Z | sn91 commit touches scoring: feat(pool): pool_d takes lane A's selection from the sha-verified sna… |
+| `sn14:scoring_commit:2026-11-24T10:33:33Z` | 14 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn14 commit touches scoring: Start the scored span at the cold-round release and grade every load'… |
+| `sn42:release:v0.6.27` | 42 | RELEASE | 2026-11-26T15:34:43Z | sn42 released v0.6.27 |
+| `sn42:scoring_commit:2026-11-26T10:18:12Z` | 42 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn42 commit touches scoring: miners: work an improvement job; the practice command and the second … |
+| `sn51:release:executor-v1.201` | 51 | RELEASE | 2026-11-26T15:34:43Z | sn51 released executor-v1.201 |
+| `sn51:scoring_commit:2026-11-26T10:12:10Z` | 51 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn51 commit touches scoring: DAH-7044 - [P4] Validation: a node is listed only after a rental prob… |
+| `sn67:scoring_commit:2026-11-26T08:41:17Z` | 67 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn67 commit touches scoring: chore(validator): bump repo-owned validator version to 20261126.post0 |
+| `sn81:scoring_commit:2026-11-26T14:21:56Z` | 81 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn81 commit touches scoring: Merge pull request #583 from reliquadotai/fix/restart-keeps-miners |
+| `sn91:scoring_commit:2026-11-26T08:47:43Z` | 91 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn91 commit touches scoring: fix(trainer): lane B judge + merge scores on the eval pod (WB27, stac… |
+| `sn116:scoring_commit:2026-11-26T08:59:32Z` | 116 | SCORING_COMMIT | 2026-11-26T15:34:43Z | sn116 commit touches scoring: An overlay dispatch for a Challenge the image registry declares, with… |
 | `sn94:readme_task_diff:ef09606cbd6e8243` | 94 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn94 README task/scoring sections changed |
 | `sn99:readme_task_diff:fd32093daf7672c0` | 99 | README_TASK_DIFF | 2026-11-20T11:26:47Z | sn99 README task/scoring sections changed |
 | `sn56:readme_task_diff:eb830460d88616d2` | 56 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn56 README task/scoring sections changed |
@@ -237,6 +227,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn40:readme_task_diff:2cd1a56dd0799e4e` | 40 | README_TASK_DIFF | 2026-11-25T14:12:53Z | sn40 README task/scoring sections changed |
 | `sn91:readme_task_diff:3ebcee68f1d40f73` | 91 | README_TASK_DIFF | 2026-11-25T14:12:53Z | sn91 README task/scoring sections changed |
 | `sn121:readme_task_diff:818bbda8fbb171f3` | 121 | README_TASK_DIFF | 2026-11-25T23:12:10Z | sn121 README task/scoring sections changed |
+| `sn42:readme_task_diff:62fb90a94c705fb4` | 42 | README_TASK_DIFF | 2026-11-26T15:34:43Z | sn42 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

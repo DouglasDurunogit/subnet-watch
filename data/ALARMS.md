@@ -1,6 +1,6 @@
-# ALARMS - generated 2026-11-28T09:29:23Z, block 9604508
+# ALARMS - generated 2026-11-28T17:49:50Z, block 9607010
 
-window: first_seen in [2026-11-28T08:14:51Z, 2026-11-28T09:29:51Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-28T16:35:23Z, 2026-11-28T17:50:23Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
@@ -9,57 +9,27 @@ already reported in an earlier window and must not be re-alarmed.
 
 | event_id | netuid | class | severity | first_seen_utc | one_line |
 |---|---|---|---|---|---|
-| `sn35:burn_drop:0.700` | 35 | BURN_DROP | P0 | 2026-11-28T09:29:51Z | sn35 burn fell 1.000 -> 0.700 - miners can earn again |
-| `sn76:burn_drop:0.950` | 76 | BURN_DROP | P0 | 2026-11-28T09:29:51Z | sn76 burn fell 0.999 -> 0.950 - miners can earn again |
-| `sn130:new_subnet:b9604508` | 130 | NEW_SUBNET | P0 | 2026-11-28T09:29:51Z | NEW SUBNET sn130 "sha" first seen |
-| `sn25:release:v2026.11.27-1110314090` | 25 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn25 released v2026.11.27-1110314090 |
-| `sn25:scoring_commit:2026-11-28T01:57:12Z` | 25 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn25 commit touches scoring: Merge feat/pkg-managed-update-1128: a package-managed miner is update… |
-| `sn35:scoring_commit:2026-11-28T04:12:36Z` | 35 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn35 commit touches scoring: The validator guide says how to publish the Google app, so the YouTub… |
-| `sn37:scoring_commit:2026-11-28T03:05:52Z` | 37 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn37 commit touches scoring: docs: record the runtime 497 serving and funding client verification |
-| `sn56:scoring_commit:2026-11-28T07:30:58Z` | 56 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn56 commit touches scoring: Incoming change: image eval update and harder synthetic image tasks (… |
-| `sn61:scoring_commit:2026-11-28T03:01:20Z` | 61 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn61 commit touches scoring: docs: update the documentation of ada challenge |
-| `sn71:scoring_commit:2026-11-28T06:33:22Z` | 71 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn71 commit touches scoring: Verify registered programs end to end and avoid starting unfunded lane |
-| `sn81:scoring_commit:2026-11-28T04:59:39Z` | 81 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn81 commit touches scoring: Merge pull request #601 from reliquadotai/feat/rl-like-any-task |
-| `sn91:release:worker-v2.1.0-mkt-rc3` | 91 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn91 released worker-v2.1.0-mkt-rc3 |
-| `sn91:scoring_commit:2026-11-28T05:25:21Z` | 91 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn91 commit touches scoring: feat(lanes): miner-visible queue reasons and settled verdicts (WB27) … |
-| `sn111:release:v2.1.0` | 111 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn111 released v2.1.0 |
-| `sn117:release:everycli v1.3.5` | 117 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn117 released everycli v1.3.5 |
-| `sn37:readme_task_diff:f65f6f7a75609304` | 37 | README_TASK_DIFF | P2 | 2026-11-28T09:29:51Z | sn37 README task/scoring sections changed |
+| `sn71:burn_drop:0.959` | 71 | BURN_DROP | P0 | 2026-11-28T17:50:23Z | sn71 burn fell 0.999 -> 0.959 - miners can earn again |
+| `sn91:burn_drop:0.950` | 91 | BURN_DROP | P0 | 2026-11-28T17:50:23Z | sn91 burn fell 1.000 -> 0.950 - miners can earn again |
+| `sn25:release:v2026.11.28-1110821730` | 25 | RELEASE | P1 | 2026-11-28T17:50:23Z | sn25 released v2026.11.28-1110821730 |
+| `sn91:scoring_commit:2026-11-28T16:13:48Z` | 91 | SCORING_COMMIT | P1 | 2026-11-28T17:50:23Z | sn91 commit touches scoring: fix(marketcast): the MarketCast pod runs the validator's shipped rele… |
+| `sn120:scoring_commit:2026-11-28T13:30:30Z` | 120 | SCORING_COMMIT | P1 | 2026-11-28T17:50:23Z | sn120 commit touches scoring: Model merge_after_confirm in miner-facing Params |
+| `sn129:scoring_commit:2026-11-28T13:53:13Z` | 129 | SCORING_COMMIT | P1 | 2026-11-28T17:50:23Z | sn129 commit touches scoring: Pin validator build 84 and give the one time move to 0.11.0 (#248) |
 
 ### detail
 
-- **`sn35:burn_drop:0.700`** - sn35 burn fell 1.000 -> 0.700 - miners can earn again
+- **`sn71:burn_drop:0.959`** - sn71 burn fell 0.999 -> 0.959 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn76:burn_drop:0.950`** - sn76 burn fell 0.999 -> 0.950 - miners can earn again
+- **`sn91:burn_drop:0.950`** - sn91 burn fell 1.000 -> 0.950 - miners can earn again
   - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn130:new_subnet:b9604508`** - NEW SUBNET sn130 "sha" first seen
-  - burn=0.0 reg=0.083598373 TAO repo=NONE
-- **`sn25:release:v2026.11.27-1110314090`** - sn25 released v2026.11.27-1110314090
-  - published 2026-11-28T02:15:08Z (was v2026.11.27-1110249610)
-- **`sn25:scoring_commit:2026-11-28T01:57:12Z`** - sn25 commit touches scoring: Merge feat/pkg-managed-update-1128: a package-managed miner is update…
+- **`sn25:release:v2026.11.28-1110821730`** - sn25 released v2026.11.28-1110821730
+  - published 2026-11-28T16:21:21Z (was v2026.11.27-1110314090)
+- **`sn91:scoring_commit:2026-11-28T16:13:48Z`** - sn91 commit touches scoring: fix(marketcast): the MarketCast pod runs the validator's shipped rele…
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn35:scoring_commit:2026-11-28T04:12:36Z`** - sn35 commit touches scoring: The validator guide says how to publish the Google app, so the YouTub…
+- **`sn120:scoring_commit:2026-11-28T13:30:30Z`** - sn120 commit touches scoring: Model merge_after_confirm in miner-facing Params
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn37:scoring_commit:2026-11-28T03:05:52Z`** - sn37 commit touches scoring: docs: record the runtime 497 serving and funding client verification
+- **`sn129:scoring_commit:2026-11-28T13:53:13Z`** - sn129 commit touches scoring: Pin validator build 84 and give the one time move to 0.11.0 (#248)
   - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn56:scoring_commit:2026-11-28T07:30:58Z`** - sn56 commit touches scoring: Incoming change: image eval update and harder synthetic image tasks (…
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn61:scoring_commit:2026-11-28T03:01:20Z`** - sn61 commit touches scoring: docs: update the documentation of ada challenge
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn71:scoring_commit:2026-11-28T06:33:22Z`** - sn71 commit touches scoring: Verify registered programs end to end and avoid starting unfunded lane
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn81:scoring_commit:2026-11-28T04:59:39Z`** - sn81 commit touches scoring: Merge pull request #601 from reliquadotai/feat/rl-like-any-task
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn91:release:worker-v2.1.0-mkt-rc3`** - sn91 released worker-v2.1.0-mkt-rc3
-  - published 2026-11-28T01:44:16Z (was worker-v0.8.2)
-- **`sn91:scoring_commit:2026-11-28T05:25:21Z`** - sn91 commit touches scoring: feat(lanes): miner-visible queue reasons and settled verdicts (WB27) …
-  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
-- **`sn111:release:v2.1.0`** - sn111 released v2.1.0
-  - published 2026-11-28T01:42:36Z (was v2.0.0)
-- **`sn117:release:everycli v1.3.5`** - sn117 released everycli v1.3.5
-  - published 2026-11-28T04:35:45Z (was everycli v1.3.4)
-- **`sn37:readme_task_diff:f65f6f7a75609304`** - sn37 README task/scoring sections changed
-  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -75,12 +45,9 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn70:burn_drop:0.500` | 70 | BURN_DROP | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn71:burn_drop:0.989` | 71 | BURN_DROP | 2026-11-27T18:22:48Z | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn91:burn_drop:0.955` | 91 | BURN_DROP | 2026-11-27T18:22:48Z | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn71:scoring_commit:2026-11-21T07:48:58Z` | 71 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs |
-| `sn82:scoring_commit:2026-11-21T00:27:34Z` | 82 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn82 commit touches scoring: Harden report checkpoints and independent verification |
-| `sn91:scoring_commit:2026-11-21T13:35:05Z` | 91 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn91 commit touches scoring: validator: post-gate kings keep their crowning block as the tenure an… |
-| `sn92:scoring_commit:2026-11-20T18:43:47Z` | 92 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn92 commit touches scoring: Verify teacher metadata is independent of weight eligibility |
-| `sn99:scoring_commit:2026-11-21T15:04:52Z` | 99 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn99 commit touches scoring: Validator: a set whose reply was lost counts when the chain shows it … |
-| `sn117:release:everycli v1.2.5` | 117 | RELEASE | 2026-11-21T16:18:29Z | sn117 released everycli v1.2.5 |
+| `sn35:burn_drop:0.700` | 35 | BURN_DROP | 2026-11-28T09:29:51Z | sn35 burn fell 1.000 -> 0.700 - miners can earn again |
+| `sn76:burn_drop:0.950` | 76 | BURN_DROP | 2026-11-28T09:29:51Z | sn76 burn fell 0.999 -> 0.950 - miners can earn again |
+| `sn130:new_subnet:b9604508` | 130 | NEW_SUBNET | 2026-11-28T09:29:51Z | NEW SUBNET sn130 "sha" first seen |
 | `sn92:scoring_commit:2026-11-21T15:13:22Z` | 92 | SCORING_COMMIT | 2026-11-21T21:47:24Z | sn92 commit touches scoring: Add verified public development roster to the REAX yardstick |
 | `sn111:scoring_commit:2026-11-21T20:43:24Z` | 111 | SCORING_COMMIT | 2026-11-21T21:47:24Z | sn111 commit touches scoring: Complete scientific result worker delivery and source-task scoring |
 | `sn116:scoring_commit:2026-11-21T17:00:53Z` | 116 | SCORING_COMMIT | 2026-11-21T21:47:24Z | sn116 commit touches scoring: DATA: the door holds verified inference snapshots' predictions.json c… |
@@ -222,8 +189,18 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-11-27T01:40:59Z` | 91 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn91 commit touches scoring: fix(lane-d): public half throughput: warm sweep, parallel reads, scor… |
 | `sn116:scoring_commit:2026-11-27T01:56:58Z` | 116 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn116 commit touches scoring: fix(rewards): fix SN116 Subtensor chain reads and commit-reveal tempo… |
 | `sn127:release:Release d92abe3` | 127 | RELEASE | 2026-11-27T08:16:24Z | sn127 released Release d92abe3 |
-| `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
-| `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
+| `sn25:release:v2026.11.27-1110314090` | 25 | RELEASE | 2026-11-28T09:29:51Z | sn25 released v2026.11.27-1110314090 |
+| `sn25:scoring_commit:2026-11-28T01:57:12Z` | 25 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn25 commit touches scoring: Merge feat/pkg-managed-update-1128: a package-managed miner is update… |
+| `sn35:scoring_commit:2026-11-28T04:12:36Z` | 35 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn35 commit touches scoring: The validator guide says how to publish the Google app, so the YouTub… |
+| `sn37:scoring_commit:2026-11-28T03:05:52Z` | 37 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn37 commit touches scoring: docs: record the runtime 497 serving and funding client verification |
+| `sn56:scoring_commit:2026-11-28T07:30:58Z` | 56 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn56 commit touches scoring: Incoming change: image eval update and harder synthetic image tasks (… |
+| `sn61:scoring_commit:2026-11-28T03:01:20Z` | 61 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn61 commit touches scoring: docs: update the documentation of ada challenge |
+| `sn71:scoring_commit:2026-11-28T06:33:22Z` | 71 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn71 commit touches scoring: Verify registered programs end to end and avoid starting unfunded lane |
+| `sn81:scoring_commit:2026-11-28T04:59:39Z` | 81 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn81 commit touches scoring: Merge pull request #601 from reliquadotai/feat/rl-like-any-task |
+| `sn91:release:worker-v2.1.0-mkt-rc3` | 91 | RELEASE | 2026-11-28T09:29:51Z | sn91 released worker-v2.1.0-mkt-rc3 |
+| `sn91:scoring_commit:2026-11-28T05:25:21Z` | 91 | SCORING_COMMIT | 2026-11-28T09:29:51Z | sn91 commit touches scoring: feat(lanes): miner-visible queue reasons and settled verdicts (WB27) … |
+| `sn111:release:v2.1.0` | 111 | RELEASE | 2026-11-28T09:29:51Z | sn111 released v2.1.0 |
+| `sn117:release:everycli v1.3.5` | 117 | RELEASE | 2026-11-28T09:29:51Z | sn117 released everycli v1.3.5 |
 | `sn99:readme_task_diff:99418d103a242136` | 99 | README_TASK_DIFF | 2026-11-22T17:04:41Z | sn99 README task/scoring sections changed |
 | `sn21:readme_task_diff:b07e6d388638dba8` | 21 | README_TASK_DIFF | 2026-11-23T03:01:39Z | sn21 README task/scoring sections changed |
 | `sn39:readme_task_diff:5cdeac4cf1a1b4ef` | 39 | README_TASK_DIFF | 2026-11-24T10:13:41Z | sn39 README task/scoring sections changed |
@@ -236,6 +213,7 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn42:readme_task_diff:62fb90a94c705fb4` | 42 | README_TASK_DIFF | 2026-11-26T15:34:43Z | sn42 README task/scoring sections changed |
 | `sn6:readme_task_diff:a7d63b5e8f360b67` | 6 | README_TASK_DIFF | 2026-11-27T00:03:58Z | sn6 README task/scoring sections changed |
 | `sn124:readme_task_diff:0e536c389e88ce2e` | 124 | README_TASK_DIFF | 2026-11-27T00:03:58Z | sn124 README task/scoring sections changed |
+| `sn37:readme_task_diff:f65f6f7a75609304` | 37 | README_TASK_DIFF | 2026-11-28T09:29:51Z | sn37 README task/scoring sections changed |
 
 ## RESOLVED IN THIS WINDOW
 

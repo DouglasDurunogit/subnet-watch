@@ -1,20 +1,20 @@
 # sn7 - Tensorader (η)
 
-snapshot_utc: 2026-11-28T01:33:40Z  |  block: 9602129  |  row_status: ok
+snapshot_utc: 2026-11-28T09:29:23Z  |  block: 9604508  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **1.0**  <- 100% burn: miners earn NOTHING here
-- registration cost: 0.032020999 TAO (6.039480621390001 USD), open=True
-- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 89
-- subnet age: 4.7 days  |  registered at block 9568319
+- registration cost: 0.032153695 TAO (5.940395151250001 USD), open=True
+- tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 87
+- subnet age: 5.0 days  |  registered at block 9568319
 - weights_version: 0  |  mechanisms: 1
 
 ## Income (miner side)
 
 - **competitive_miner_usd_day: [UNKNOWN]** (uid [UNKNOWN]) <- the only figure quotable as achievable
-- median_miner_usd_day: 6756.949688829477
-- top_miner_usd_day: 6756.949688829477 (uid 0, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
+- median_miner_usd_day: 6882.235673213084
+- top_miner_usd_day: 6882.235673213084 (uid 0, owner=True, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 

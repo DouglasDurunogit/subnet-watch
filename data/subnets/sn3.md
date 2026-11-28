@@ -1,20 +1,20 @@
 # sn3 - Teutonic (γ)
 
-snapshot_utc: 2026-11-28T01:33:40Z  |  block: 9602129  |  row_status: ok
+snapshot_utc: 2026-11-28T09:29:23Z  |  block: 9604508  |  row_status: ok
 
 ## Chain row
 
 - miner_burn: **0.0**
-- registration cost: 0.999999999 TAO (188.60999981139003 USD), open=True
+- registration cost: 0.999999999 TAO (184.74999981525 USD), open=True
 - tempo: 360.0  |  max_uids: 256  |  active: 5  |  free: 0
-- subnet age: 755.1 days  |  registered at block 4165565
+- subnet age: 755.4 days  |  registered at block 4165565
 - weights_version: 2000  |  mechanisms: 1
 
 ## Income (miner side)
 
-- **competitive_miner_usd_day: 1701.0755063805818** (uid 25) <- the only figure quotable as achievable
-- median_miner_usd_day: 1701.0755063805818
-- top_miner_usd_day: 3402.021229019165 (uid 123, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
+- **competitive_miner_usd_day: 1665.893970233459** (uid 25) <- the only figure quotable as achievable
+- median_miner_usd_day: 1665.893970233459
+- top_miner_usd_day: 3331.6608409040714 (uid 123, owner=False, validator_permitted=True) <- NOT achievable if owner or permitted
 
 ## Incentive structure (display only - never scored)
 
@@ -36,13 +36,13 @@ snapshot_utc: 2026-11-28T01:33:40Z  |  block: 9602129  |  row_status: ok
 - min_compute.yml present: False  |  unmodified template: False
 - required: unknown (~[UNKNOWN] GB VRAM)  |  basis: **no evidence**
 - cheapest satisfying machine: rtx4090 at 8.2192 USD/day  <- ASSUMED default box; no hardware evidence was found, so the margin below is indicative only
-- net margin: 1692.8563 USD/day  |  payback on registration: 0.11 days
+- net margin: 1657.6748 USD/day  |  payback on registration: 0.11 days
 
 ## Score
 
 - gate: **OK** 
-- score: 60.8 (rank 9), confidence 0.85 - hardware requirement unknown
-- components: income 29.37 / freshness 21.0 / resource 11.25 / registration 9.96
+- score: 60.8 (rank 11), confidence 0.85 - hardware requirement unknown
+- components: income 29.28 / freshness 21.0 / resource 11.25 / registration 9.96
 - freshness basis: SCORING_COMMIT 8d ago
 
 ## On-chain description

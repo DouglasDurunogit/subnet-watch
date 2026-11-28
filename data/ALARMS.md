@@ -1,13 +1,65 @@
-# ALARMS - generated 2026-11-28T01:33:40Z, block 9602129
+# ALARMS - generated 2026-11-28T09:29:23Z, block 9604508
 
-window: first_seen in [2026-11-28T00:19:03Z, 2026-11-28T01:34:03Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-28T08:14:51Z, 2026-11-28T09:29:51Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-_none_
+| event_id | netuid | class | severity | first_seen_utc | one_line |
+|---|---|---|---|---|---|
+| `sn35:burn_drop:0.700` | 35 | BURN_DROP | P0 | 2026-11-28T09:29:51Z | sn35 burn fell 1.000 -> 0.700 - miners can earn again |
+| `sn76:burn_drop:0.950` | 76 | BURN_DROP | P0 | 2026-11-28T09:29:51Z | sn76 burn fell 0.999 -> 0.950 - miners can earn again |
+| `sn130:new_subnet:b9604508` | 130 | NEW_SUBNET | P0 | 2026-11-28T09:29:51Z | NEW SUBNET sn130 "sha" first seen |
+| `sn25:release:v2026.11.27-1110314090` | 25 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn25 released v2026.11.27-1110314090 |
+| `sn25:scoring_commit:2026-11-28T01:57:12Z` | 25 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn25 commit touches scoring: Merge feat/pkg-managed-update-1128: a package-managed miner is update… |
+| `sn35:scoring_commit:2026-11-28T04:12:36Z` | 35 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn35 commit touches scoring: The validator guide says how to publish the Google app, so the YouTub… |
+| `sn37:scoring_commit:2026-11-28T03:05:52Z` | 37 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn37 commit touches scoring: docs: record the runtime 497 serving and funding client verification |
+| `sn56:scoring_commit:2026-11-28T07:30:58Z` | 56 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn56 commit touches scoring: Incoming change: image eval update and harder synthetic image tasks (… |
+| `sn61:scoring_commit:2026-11-28T03:01:20Z` | 61 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn61 commit touches scoring: docs: update the documentation of ada challenge |
+| `sn71:scoring_commit:2026-11-28T06:33:22Z` | 71 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn71 commit touches scoring: Verify registered programs end to end and avoid starting unfunded lane |
+| `sn81:scoring_commit:2026-11-28T04:59:39Z` | 81 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn81 commit touches scoring: Merge pull request #601 from reliquadotai/feat/rl-like-any-task |
+| `sn91:release:worker-v2.1.0-mkt-rc3` | 91 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn91 released worker-v2.1.0-mkt-rc3 |
+| `sn91:scoring_commit:2026-11-28T05:25:21Z` | 91 | SCORING_COMMIT | P1 | 2026-11-28T09:29:51Z | sn91 commit touches scoring: feat(lanes): miner-visible queue reasons and settled verdicts (WB27) … |
+| `sn111:release:v2.1.0` | 111 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn111 released v2.1.0 |
+| `sn117:release:everycli v1.3.5` | 117 | RELEASE | P1 | 2026-11-28T09:29:51Z | sn117 released everycli v1.3.5 |
+| `sn37:readme_task_diff:f65f6f7a75609304` | 37 | README_TASK_DIFF | P2 | 2026-11-28T09:29:51Z | sn37 README task/scoring sections changed |
+
+### detail
+
+- **`sn35:burn_drop:0.700`** - sn35 burn fell 1.000 -> 0.700 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn76:burn_drop:0.950`** - sn76 burn fell 0.999 -> 0.950 - miners can earn again
+  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+- **`sn130:new_subnet:b9604508`** - NEW SUBNET sn130 "sha" first seen
+  - burn=0.0 reg=0.083598373 TAO repo=NONE
+- **`sn25:release:v2026.11.27-1110314090`** - sn25 released v2026.11.27-1110314090
+  - published 2026-11-28T02:15:08Z (was v2026.11.27-1110249610)
+- **`sn25:scoring_commit:2026-11-28T01:57:12Z`** - sn25 commit touches scoring: Merge feat/pkg-managed-update-1128: a package-managed miner is update…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn35:scoring_commit:2026-11-28T04:12:36Z`** - sn35 commit touches scoring: The validator guide says how to publish the Google app, so the YouTub…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn37:scoring_commit:2026-11-28T03:05:52Z`** - sn37 commit touches scoring: docs: record the runtime 497 serving and funding client verification
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn56:scoring_commit:2026-11-28T07:30:58Z`** - sn56 commit touches scoring: Incoming change: image eval update and harder synthetic image tasks (…
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn61:scoring_commit:2026-11-28T03:01:20Z`** - sn61 commit touches scoring: docs: update the documentation of ada challenge
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn71:scoring_commit:2026-11-28T06:33:22Z`** - sn71 commit touches scoring: Verify registered programs end to end and avoid starting unfunded lane
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn81:scoring_commit:2026-11-28T04:59:39Z`** - sn81 commit touches scoring: Merge pull request #601 from reliquadotai/feat/rl-like-any-task
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn91:release:worker-v2.1.0-mkt-rc3`** - sn91 released worker-v2.1.0-mkt-rc3
+  - published 2026-11-28T01:44:16Z (was worker-v0.8.2)
+- **`sn91:scoring_commit:2026-11-28T05:25:21Z`** - sn91 commit touches scoring: feat(lanes): miner-visible queue reasons and settled verdicts (WB27) …
+  - Matched on the commit MESSAGE, not a file diff - weaker evidence than a release; confirm before acting.
+- **`sn111:release:v2.1.0`** - sn111 released v2.1.0
+  - published 2026-11-28T01:42:36Z (was v2.0.0)
+- **`sn117:release:everycli v1.3.5`** - sn117 released everycli v1.3.5
+  - published 2026-11-28T04:35:45Z (was everycli v1.3.4)
+- **`sn37:readme_task_diff:f65f6f7a75609304`** - sn37 README task/scoring sections changed
+  - Only the task-describing headings are hashed, so badge and typo edits do not trigger this.
 
 ## STILL OPEN (already reported - do not re-alarm)
 
@@ -23,8 +75,6 @@ _none_
 | `sn70:burn_drop:0.500` | 70 | BURN_DROP | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn71:burn_drop:0.989` | 71 | BURN_DROP | 2026-11-27T18:22:48Z | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
 | `sn91:burn_drop:0.955` | 91 | BURN_DROP | 2026-11-27T18:22:48Z | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
-| `sn90:release:v1.4.5 — Finney oracle and validator rel` | 90 | RELEASE | 2026-11-21T08:14:47Z | sn90 released v1.4.5 — Finney oracle and validator reliability |
-| `sn90:scoring_commit:2026-11-21T02:48:26Z` | 90 | SCORING_COMMIT | 2026-11-21T08:14:47Z | sn90 commit touches scoring: feat(validator): prefer Finney oracle for TAO pricing |
 | `sn71:scoring_commit:2026-11-21T07:48:58Z` | 71 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs |
 | `sn82:scoring_commit:2026-11-21T00:27:34Z` | 82 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn82 commit touches scoring: Harden report checkpoints and independent verification |
 | `sn91:scoring_commit:2026-11-21T13:35:05Z` | 91 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn91 commit touches scoring: validator: post-gate kings keep their crowning block as the tenure an… |

@@ -1,29 +1,18 @@
-# ALARMS - generated 2026-11-27T18:20:43Z, block 9599964
+# ALARMS - generated 2026-11-28T01:33:40Z, block 9602129
 
-window: first_seen in [2026-11-27T17:07:48Z, 2026-11-27T18:22:48Z)  (60 min interval + 15 min overlap)
+window: first_seen in [2026-11-28T00:19:03Z, 2026-11-28T01:34:03Z)  (60 min interval + 15 min overlap)
 
 Report ONLY the rows under NEW SINCE LAST RUN. Rows under STILL OPEN were
 already reported in an earlier window and must not be re-alarmed.
 
 ## NEW SINCE LAST RUN
 
-| event_id | netuid | class | severity | first_seen_utc | one_line |
-|---|---|---|---|---|---|
-| `sn71:burn_drop:0.989` | 71 | BURN_DROP | P0 | 2026-11-27T18:22:48Z | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
-| `sn91:burn_drop:0.955` | 91 | BURN_DROP | P0 | 2026-11-27T18:22:48Z | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
-
-### detail
-
-- **`sn71:burn_drop:0.989`** - sn71 burn fell 1.000 -> 0.989 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
-- **`sn91:burn_drop:0.955`** - sn91 burn fell 1.000 -> 0.955 - miners can earn again
-  - This subnet paid miners nothing and now pays. Worth a look before the field fills up.
+_none_
 
 ## STILL OPEN (already reported - do not re-alarm)
 
 | event_id | netuid | class | first_seen_utc | one_line |
 |---|---|---|---|---|
-| `sn58:burn_drop:0.300` | 58 | BURN_DROP | 2026-11-20T19:14:02Z | sn58 burn fell 1.000 -> 0.300 - miners can earn again |
 | `sn57:burn_drop:0.000` | 57 | BURN_DROP | 2026-11-21T21:47:24Z | sn57 burn fell 1.000 -> 0.000 - miners can earn again |
 | `sn122:burn_drop:0.115` | 122 | BURN_DROP | 2026-11-21T21:47:24Z | sn122 burn fell 1.000 -> 0.115 - miners can earn again |
 | `sn37:burn_drop:0.738` | 37 | BURN_DROP | 2026-11-22T22:26:39Z | sn37 burn fell 0.997 -> 0.738 - miners can earn again |
@@ -32,18 +21,8 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn121:burn_drop:0.500` | 121 | BURN_DROP | 2026-11-25T23:12:10Z | sn121 burn fell 1.000 -> 0.500 - miners can earn again |
 | `sn129:new_subnet:b9588847` | 129 | NEW_SUBNET | 2026-11-26T05:17:33Z | NEW SUBNET sn129 "va" first seen |
 | `sn70:burn_drop:0.500` | 70 | BURN_DROP | 2026-11-26T15:34:43Z | sn70 burn fell 1.000 -> 0.500 - miners can earn again |
-| `sn25:scoring_commit:2026-11-19T18:57:29Z` | 25 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn25 commit touches scoring: Merge fix/runtime-492-1119 (3e9e6f2b) onto 8c14d437, the validator sn… |
-| `sn51:scoring_commit:2026-11-20T13:09:25Z` | 51 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn51 commit touches scoring: DAH-6769 - [P4] Validator: a readable upper dir decides the reboot's … |
-| `sn58:scoring_commit:2026-11-20T13:17:06Z` | 58 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn58 commit touches scoring: feat(horizon): Horizon miners share Horizon's 70% |
-| `sn66:release:v2026.11.20` | 66 | RELEASE | 2026-11-20T19:14:02Z | sn66 released v2026.11.20 |
-| `sn71:scoring_commit:2026-11-20T13:29:24Z` | 71 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn71 commit touches scoring: Update unknown-runtime control after verified 492 support |
-| `sn99:scoring_commit:2026-11-20T15:07:44Z` | 99 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn99 commit touches scoring: task.json drops parent (starts lists it); the real-toolkit check test… |
-| `sn116:scoring_commit:2026-11-20T18:11:02Z` | 116 | SCORING_COMMIT | 2026-11-20T19:14:02Z | sn116 commit touches scoring: Client refusal text: miner-x's wording (plain words, withdraw named, … |
-| `sn51:scoring_commit:2026-11-20T23:09:15Z` | 51 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn51 commit touches scoring: DAH-6863 - [P3] Validator runs each pod with the backend's CPU count;… |
-| `sn66:release:v2026.11.20.2` | 66 | RELEASE | 2026-11-21T00:54:44Z | sn66 released v2026.11.20.2 |
-| `sn66:scoring_commit:2026-11-20T21:36:43Z` | 66 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn66 commit touches scoring: Publish verification holds for RH, Erdős 462, and Erdős 985 |
-| `sn71:scoring_commit:2026-11-20T19:11:30Z` | 71 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn71 commit touches scoring: Preserve bounded validator readiness delivery during diagnostic floods |
-| `sn116:scoring_commit:2026-11-21T00:35:50Z` | 116 | SCORING_COMMIT | 2026-11-21T00:54:44Z | sn116 commit touches scoring: miner_lookup fix: ruff --fix + black (release LINT_DIFF_1cb183d7.patc… |
+| `sn71:burn_drop:0.989` | 71 | BURN_DROP | 2026-11-27T18:22:48Z | sn71 burn fell 1.000 -> 0.989 - miners can earn again |
+| `sn91:burn_drop:0.955` | 91 | BURN_DROP | 2026-11-27T18:22:48Z | sn91 burn fell 1.000 -> 0.955 - miners can earn again |
 | `sn90:release:v1.4.5 — Finney oracle and validator rel` | 90 | RELEASE | 2026-11-21T08:14:47Z | sn90 released v1.4.5 — Finney oracle and validator reliability |
 | `sn90:scoring_commit:2026-11-21T02:48:26Z` | 90 | SCORING_COMMIT | 2026-11-21T08:14:47Z | sn90 commit touches scoring: feat(validator): prefer Finney oracle for TAO pricing |
 | `sn71:scoring_commit:2026-11-21T07:48:58Z` | 71 | SCORING_COMMIT | 2026-11-21T16:18:29Z | sn71 commit touches scoring: Validate canonical Bittensor accounts on lead-order inputs |
@@ -193,8 +172,6 @@ already reported in an earlier window and must not be re-alarmed.
 | `sn91:scoring_commit:2026-11-27T01:40:59Z` | 91 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn91 commit touches scoring: fix(lane-d): public half throughput: warm sweep, parallel reads, scor… |
 | `sn116:scoring_commit:2026-11-27T01:56:58Z` | 116 | SCORING_COMMIT | 2026-11-27T08:16:24Z | sn116 commit touches scoring: fix(rewards): fix SN116 Subtensor chain reads and commit-reveal tempo… |
 | `sn127:release:Release d92abe3` | 127 | RELEASE | 2026-11-27T08:16:24Z | sn127 released Release d92abe3 |
-| `sn56:readme_task_diff:eb830460d88616d2` | 56 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn56 README task/scoring sections changed |
-| `sn123:readme_task_diff:f4ae2b06d69e2e0b` | 123 | README_TASK_DIFF | 2026-11-20T19:14:02Z | sn123 README task/scoring sections changed |
 | `sn82:readme_task_diff:aa4f39b4e574a688` | 82 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn82 README task/scoring sections changed |
 | `sn91:readme_task_diff:e77d0e82c1da3b20` | 91 | README_TASK_DIFF | 2026-11-21T16:18:29Z | sn91 README task/scoring sections changed |
 | `sn99:readme_task_diff:99418d103a242136` | 99 | README_TASK_DIFF | 2026-11-22T17:04:41Z | sn99 README task/scoring sections changed |
